@@ -1,0 +1,694 @@
+<Type Name="ShapeNodes" FullName="Microsoft.Office.Interop.Word.ShapeNodes">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="eb27a6ee4cc769c6d56e3162447fcc10ee349303" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20667085" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ShapeNodes : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeNodes implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShapeNodes" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ShapeNodes&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ShapeNodes : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000209CE-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="bd5dd-101">所有的集合<see cref="T:Microsoft.Office.Interop.Word.ShapeNode" />对象中指定的任意多边形。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="bd5dd-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Word.ShapeNode" /> objects in the specified freeform.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="bd5dd-102">
+        <para>每个<b>ShapeNode</b>对象代表任意多边形中的线段或任意多边形曲线段的控点之间的节点。您可以创建任意多边形手动或使用<see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />和<see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />方法。</para>
+        <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Nodes" />属性可返回<b>ShapeNodes</b>集合。</para>
+        <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />方法可创建一个新的节点，并将其添加到<b>ShapeNodes</b>集合。</para>
+        <para>使用<b>节点</b>(<paramref name="index" />)，其中<paramref name="index" />是节点索引号，可返回单个<b>ShapeNode</b>对象。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="bd5dd-102">
+          <para>Each <b>ShapeNode</b> object represents either a node between segments in a freeform or a control point for a curved segment of a freeform. You can create a freeform manually or by using the <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> and <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> methods.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.Shape.Nodes" /> property to return the <b>ShapeNodes</b> collection.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> method to create a new node and add it to the <b>ShapeNodes</b> collection.</para>
+          <para>Use <b>Nodes</b>(<paramref name="index" />), where <paramref name="index" /> is the node index number, to return a single <b>ShapeNode</b> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNodes.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bd5dd-103">返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-103">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNodes.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bd5dd-104">指定集合中返回的项目数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-104">Returns the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNodes.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bd5dd-105">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-105">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="bd5dd-106">
+            <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
+          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-106">
+              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete (int Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete([in]int32 Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeNodes.Delete(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete (Index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete(int Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="bd5dd-107">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-107">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="bd5dd-108">要删除的形状节点的编号。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-108">The number of the shape node to delete.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="bd5dd-109">用于删除指定的对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-109">Deletes the specified object.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeNodes.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int Index, Microsoft.Office.Core.MsoSegmentType SegmentType, Microsoft.Office.Core.MsoEditingType EditingType, float X1, float Y1, float X2 = 0, float Y2 = 0, float X3 = 0, float Y3 = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert([in]int32 Index, [in]valuetype Microsoft.Office.Core.MsoSegmentType SegmentType, [in]valuetype Microsoft.Office.Core.MsoEditingType EditingType, [in]float32 X1, [in]float32 Y1, [in]float32 X2, [in]float32 Y2, [in]float32 X3, [in]float32 Y3) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (Index As Integer, SegmentType As MsoSegmentType, EditingType As MsoEditingType, X1 As Single, Y1 As Single, Optional X2 As Single = 0, Optional Y2 As Single = 0, Optional X3 As Single = 0, Optional Y3 As Single = 0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+        <Parameter Name="SegmentType" Type="Microsoft.Office.Core.MsoSegmentType" />
+        <Parameter Name="EditingType" Type="Microsoft.Office.Core.MsoEditingType" />
+        <Parameter Name="X1" Type="System.Single" />
+        <Parameter Name="Y1" Type="System.Single" />
+        <Parameter Name="X2" Type="System.Single" />
+        <Parameter Name="Y2" Type="System.Single" />
+        <Parameter Name="X3" Type="System.Single" />
+        <Parameter Name="Y3" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="bd5dd-110">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-110">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="bd5dd-111">要在其后插入新顶点的多边形顶点的编号。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-111">The number of the shape node after which to insert a new node.</span>
+          </span>
+        </param>
+        <param name="SegmentType">
+          <span data-ttu-id="bd5dd-112">所需<see cref="T:Microsoft.Office.Core.MsoSegmentType" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-112">Required <see cref="T:Microsoft.Office.Core.MsoSegmentType" />.</span>
+          </span>
+          <span data-ttu-id="bd5dd-113">插入的顶点与邻接顶点的连线的类型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-113">The type of line that connects the inserted node to the neighboring nodes.</span>
+          </span>
+        </param>
+        <param name="EditingType">
+          <span data-ttu-id="bd5dd-114">所需<see cref="T:Microsoft.Office.Core.MsoEditingType" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-114">Required <see cref="T:Microsoft.Office.Core.MsoEditingType" />.</span>
+          </span>
+          <span data-ttu-id="bd5dd-115">插入的顶点的编辑属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-115">The editing property of the inserted node.</span>
+          </span>
+        </param>
+        <param name="X1">
+          <span data-ttu-id="bd5dd-116">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-116">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="bd5dd-117">如果<paramref name="EditingType" />新线段是<b>msoEditingAuto</b>时，此参数指定的水平距离，以磅为单位，从左上角的新线段端点的文档。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-117">If the <paramref name="EditingType" /> of the new segment is <b>msoEditingAuto</b>, this argument specifies the horizontal distance, measured in points, from the upper-left corner of the document to the end point of the new segment.</span>
+          </span>
+          <span data-ttu-id="bd5dd-118">如果<paramref name="EditingType" />的新节点是<b>msoEditingCorner</b>时，此参数指定的水平距离，以磅为单位，从左上角的新段的第一个控制点的文档。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-118">If the <paramref name="EditingType" /> of the new node is <b>msoEditingCorner</b>, this argument specifies the horizontal distance, measured in points, from the upper-left corner of the document to the first control point for the new segment.</span>
+          </span>
+        </param>
+        <param name="Y1">
+          <span data-ttu-id="bd5dd-119">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-119">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="bd5dd-120">如果<paramref name="EditingType" />新线段是<b>msoEditingAuto</b>时，此参数指定的垂直距离，以磅为单位，从左上角的新线段端点的文档。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-120">If the <paramref name="EditingType" /> of the new segment is <b>msoEditingAuto</b>, this argument specifies the vertical distance, measured in points, from the upper-left corner of the document to the end point of the new segment.</span>
+          </span>
+          <span data-ttu-id="bd5dd-121">如果<paramref name="EditingType" />的新节点是<b>msoEditingCorner</b>时，此参数指定的垂直距离，以磅为单位，从左上角的新段的第一个控制点的文档。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-121">If the <paramref name="EditingType" /> of the new node is <b>msoEditingCorner</b>, this argument specifies the vertical distance, measured in points, from the upper-left corner of the document to the first control point for the new segment.</span>
+          </span>
+        </param>
+        <param name="X2">
+          <span data-ttu-id="bd5dd-122">可选<b>单个</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-122">Optional <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="bd5dd-123">如果<paramref name="EditingType" />新线段是<b>msoEditingCorner</b>时，此参数指定的水平距离，以磅为单位，从左上角的新段的第二个控制点的文档。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-123">If the <paramref name="EditingType" /> of the new segment is <b>msoEditingCorner</b>, this argument specifies the horizontal distance, measured in points, from the upper-left corner of the document to the second control point for the new segment.</span>
+          </span>
+          <span data-ttu-id="bd5dd-124">如果<paramref name="EditingType" />的新线段是<b>msoEditingAuto</b>，不指定此参数的值。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-124">If the <paramref name="EditingType" /> of the new segment is <b>msoEditingAuto</b>, don't specify a value for this argument.</span>
+          </span>
+        </param>
+        <param name="Y2">
+          <span data-ttu-id="bd5dd-125">可选<b>单个</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-125">Optional <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="bd5dd-126">如果<paramref name="EditingType" />新线段是<b>msoEditingCorner</b>时，此参数指定的垂直距离，以磅为单位，从左上角的新段的第二个控制点的文档。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-126">If the <paramref name="EditingType" /> of the new segment is <b>msoEditingCorner</b>, this argument specifies the vertical distance, measured in points, from the upper-left corner of the document to the second control point for the new segment.</span>
+          </span>
+          <span data-ttu-id="bd5dd-127">如果<paramref name="EditingType" />的新线段是<b>msoEditingAuto</b>，不指定此参数的值。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-127">If the <paramref name="EditingType" /> of the new segment is <b>msoEditingAuto</b>, don't specify a value for this argument.</span>
+          </span>
+        </param>
+        <param name="X3">
+          <span data-ttu-id="bd5dd-128">可选<b>单个</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-128">Optional <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="bd5dd-129">如果<paramref name="EditingType" />新线段是<b>msoEditingCorner</b>时，此参数指定的水平距离，以磅为单位，从左上角的新线段端点的文档。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-129">If the <paramref name="EditingType" /> of the new segment is <b>msoEditingCorner</b>, this argument specifies the horizontal distance, measured in points, from the upper-left corner of the document to the end point of the new segment.</span>
+          </span>
+          <span data-ttu-id="bd5dd-130">如果<paramref name="EditingType" />的新线段是<b>msoEditingAuto</b>，不指定此参数的值。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-130">If the <paramref name="EditingType" /> of the new segment is <b>msoEditingAuto</b>, don't specify a value for this argument.</span>
+          </span>
+        </param>
+        <param name="Y3">
+          <span data-ttu-id="bd5dd-131">可选<b>单个</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-131">Optional <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="bd5dd-132">如果<paramref name="EditingType" />新线段是<b>msoEditingCorner</b>时，此参数指定的垂直距离，以磅为单位，从左上角的新线段端点的文档。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-132">If the <paramref name="EditingType" /> of the new segment is <b>msoEditingCorner</b>, this argument specifies the vertical distance, measured in points, from the upper-left corner of the document to the end point of the new segment.</span>
+          </span>
+          <span data-ttu-id="bd5dd-133">如果<paramref name="EditingType" />的新线段是<b>msoEditingAuto</b>，不指定此参数的值。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-133">If the <paramref name="EditingType" /> of the new segment is <b>msoEditingAuto</b>, don't specify a value for this argument.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="bd5dd-134">在任意多边形中插入顶点。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-134">Inserts a node into a freeform shape.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ShapeNode this[ref object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ShapeNode Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNodes.Item(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As ShapeNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ShapeNode ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::ShapeNode ^ get(System::Object ^ % Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ShapeNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="bd5dd-135">
+            <b>对象</b>，它指示的序号位置或一个字符串，表示单个对象的名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-135">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="bd5dd-136">返回集合中的单个对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-136">Returns an individual object in a collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeNodes.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bd5dd-137">返回一个对象，代表指定对象的父对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-137">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEditingType">
+      <MemberSignature Language="C#" Value="public void SetEditingType (int Index, Microsoft.Office.Core.MsoEditingType EditingType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetEditingType([in]int32 Index, [in]valuetype Microsoft.Office.Core.MsoEditingType EditingType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetEditingType (Index As Integer, EditingType As MsoEditingType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetEditingType(int Index, Microsoft::Office::Core::MsoEditingType EditingType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+        <Parameter Name="EditingType" Type="Microsoft.Office.Core.MsoEditingType" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="bd5dd-138">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-138">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="bd5dd-139">要设置其编辑类型的节点。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-139">The node whose editing type is to be set.</span>
+          </span>
+        </param>
+        <param name="EditingType">
+          <span data-ttu-id="bd5dd-140">所需<see cref="T:Microsoft.Office.Core.MsoEditingType" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-140">Required <see cref="T:Microsoft.Office.Core.MsoEditingType" />.</span>
+          </span>
+          <span data-ttu-id="bd5dd-141">顶点的编辑属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-141">The editing property of the vertex.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="bd5dd-142">设置指定节点的编辑类型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-142">Sets the editing type of the specified node.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="bd5dd-143">
+            <para>如果节点是曲线段的控制点，则此方法将设置与之相邻的连接两个段节点的编辑类型。请注意，具体取决于的编辑类型，此方法可能会影响相邻节点的位置。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-143">
+              <para>If the node is a control point for a curved segment, this method sets the editing type of the node adjacent to it that joins two segments. Note that depending on the editing type, this method may affect the position of adjacent nodes.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPosition">
+      <MemberSignature Language="C#" Value="public void SetPosition (int Index, float X1, float Y1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPosition([in]int32 Index, [in]float32 X1, [in]float32 Y1) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPosition (Index As Integer, X1 As Single, Y1 As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPosition(int Index, float X1, float Y1);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+        <Parameter Name="X1" Type="System.Single" />
+        <Parameter Name="Y1" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="bd5dd-144">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-144">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="bd5dd-145">要设置其位置的节点。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-145">The node whose position is to be set.</span>
+          </span>
+        </param>
+        <param name="X1">
+          <span data-ttu-id="bd5dd-146">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-146">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="bd5dd-147">新节点相对于文档左上角的位置（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-147">The position (in points) of the new node relative to the upper-left corner of the document.</span>
+          </span>
+        </param>
+        <param name="Y1">
+          <span data-ttu-id="bd5dd-148">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-148">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="bd5dd-149">新节点相对于文档左上角的位置（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-149">The position (in points) of the new node relative to the upper-left corner of the document.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="bd5dd-150">设置指定节点的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-150">Sets the location of the specified node.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="bd5dd-151">
+            <para>请注意，具体取决于节点的编辑类型，此方法可能会影响相邻节点的位置。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-151">
+              <para>Note that depending on the editing type of the node, this method may affect the position of adjacent nodes.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSegmentType">
+      <MemberSignature Language="C#" Value="public void SetSegmentType (int Index, Microsoft.Office.Core.MsoSegmentType SegmentType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSegmentType([in]int32 Index, [in]valuetype Microsoft.Office.Core.MsoSegmentType SegmentType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeNodes.SetSegmentType(System.Int32,Microsoft.Office.Core.MsoSegmentType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSegmentType (Index As Integer, SegmentType As MsoSegmentType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSegmentType(int Index, Microsoft::Office::Core::MsoSegmentType SegmentType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+        <Parameter Name="SegmentType" Type="Microsoft.Office.Core.MsoSegmentType" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="bd5dd-152">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-152">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="bd5dd-153">要设置其段类型的节点。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-153">The node whose segment type is to be set.</span>
+          </span>
+        </param>
+        <param name="SegmentType">
+          <span data-ttu-id="bd5dd-154">所需<see cref="T:Microsoft.Office.Core.MsoSegmentType" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-154">Required <see cref="T:Microsoft.Office.Core.MsoSegmentType" />.</span>
+          </span>
+          <span data-ttu-id="bd5dd-155">指明线段是直线还是曲线。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-155">Specifies if the segment is straight or curved.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="bd5dd-156">设置紧跟指定节点后面的段的段类型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-156">Sets the segment type of the segment that follows the specified node.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="bd5dd-157">
+            <para>如果节点是曲线段的控制点，则此方法设置该曲线的线段类型。注意，这可能影响通过插入或删除相邻节点的节点的总数。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bd5dd-157">
+              <para>If the node is a control point for a curved segment, this method sets the segment type for that curve. Note that this may affect the total number of nodes by inserting or deleting adjacent nodes.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

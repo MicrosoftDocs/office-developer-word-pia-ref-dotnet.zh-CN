@@ -1,0 +1,2569 @@
+<Type Name="Shapes" FullName="Microsoft.Office.Interop.Word.Shapes">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="596f5d04825cbd4362b47c3e2b57a588a0ededd6" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20667104" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shapes implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Shapes" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Shapes&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Shapes : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002099F-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="90eb4-101">一<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象表示文档中的所有形状或所有邮件头中的所有形状和文档中的页脚。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="90eb4-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objects that represent all the shapes in a document or all the shapes in all the headers and footers in a document.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="90eb4-102">&lt;b0&gt;每个&lt;b1&gt;Shape&lt;/b1&gt;对象代表绘图层，例如自选图形、 任意多边形中的对象、 OLE 对象或图片。&lt;/b0&gt;&lt;b3&gt;注意&lt;/b3&gt;如果您想要使用文档中的形状的子集&lt;b2&gt;— 例如，若要执行某些操作仅对文档的自选图形或仅对选定的形状 — 必须构造&lt;b4&gt;&lt;/b4&gt;要使用包含的形状的集合。 &lt; /c2 &gt;&lt;b5&gt;使用&lt;b6&gt;&lt;/b6&gt;属性可返回&lt;b7&gt;Shapes&lt;/b7&gt;集合。&lt;/b5&gt;&lt;b8&gt;&lt;b9&gt;注意&lt;/b9&gt;如果您想要执行类似 （删除或设置属性） 到文档的所有形状，同时使用&lt;b10&gt;&lt;/b10&gt;方法创建一个包含的&lt;b12&gt;Shapes&lt;/b12&gt;集合中的所有形状的&lt;b11&gt;ShapeRange&lt;/b11&gt;对象和然后将相应的属性或方法应用于&lt;b13&gt;ShapeRange&lt;/b13&gt;对象。&lt;/b8&gt;&lt;b15&gt;Shapes&lt;/b15&gt;集合的&lt;b14&gt;使用以下方法： &lt;b16&gt; &lt;/b16&gt;， &lt;b17&gt; &lt;/b17&gt;， &lt;b18&gt; &lt;/b18&gt;， &lt;b19&gt; &lt;/b19&gt;， &lt;b20&gt; &lt;/b20&gt;， &lt;b21&gt; &lt;/b21&gt;， &lt;b22&gt; &lt;/b22&gt;， &lt;b23&gt; &lt;/b23&gt;， &lt;b24&gt; &lt;/b24&gt;， &lt;b25&gt; &lt;/b25&gt;，或&lt;b26&gt;&lt;/b26&gt;将形状添加到文档和返回一个代表新建的形状的&lt;b27&gt;Shape&lt;/b27&gt;对象。&lt;/b14&gt;&lt;b28&gt;使用&lt;b29&gt;Shapes&lt;/b29&gt;(&lt;b30&gt;&lt;/b30&gt;)，其中&lt;b31&gt;&lt;/b31&gt;是名称或索引号，可返回单个&lt;b32&gt;Shape&lt;/b32&gt;对象。&lt;/b28&gt;&lt;b33&gt;创建时，每个形状被分配默认名称。例如，如果向文档添加三个不同的形状，它们可能被命名为"矩形 2"，"TextBox 3，"和"Oval 4"。若要赋予形状一个更有意义的名称，将设置&lt;b34&gt;&lt;/b34&gt;属性。&lt;/b33&gt;&lt;b35&gt;Shapes 集合不包括&lt;b36&gt;&lt;/b36&gt;对象。&lt;b37&gt;InlineShape&lt;/b37&gt;对象视为字符，并作为字符的文本行中放置。&lt;b38&gt;Shape&lt;/b38&gt;对象定位到文本范围，但可以自由浮动并可放置在页面上的任何位置。您可以使用&lt;b39&gt;&lt;/b39&gt;方法和&lt;b40&gt;&lt;/b40&gt;方法将形状转换为另一种类型。可以将图片、 OLE 对象和 ActiveX 控件转换为内嵌形状。&lt;/b35&gt;&lt;b41&gt;&lt;b42&gt;&lt;/b42&gt;属性文档中此集合主篇文章中返回的项目数。要计算中所有的页眉和页脚的形状，请使用&lt;b43&gt;Shapes&lt;/b43&gt;集合与任何&lt;b44&gt;&lt;/b44&gt;对象。&lt;/b41&gt;&lt;/b2&gt;&lt;b45&gt;&lt;/b45&gt;</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="90eb4-102">
+          <para>Each <b>Shape</b> object represents an object in the drawing layer, such as an AutoShape, freeform, OLE object, or picture.</para>
+          <para>
+            <b>Note</b>  If you want to work with a subset of the shapes on a document— for example, to do something to only the AutoShapes on the document or to only the selected shapes— you must construct a <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> collection that contains the shapes you want to work with.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Word._Document.Shapes" /> property to return the <b>Shapes</b> collection.</para>
+          <para>
+            <b>Note</b>  If you want to do something (like delete or set a property) to all the shapes on a document at the same time, use the <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> method to create a <b>ShapeRange</b> object that contains all the shapes in the <b>Shapes</b> collection, and then apply the appropriate property or method to the <b>ShapeRange</b> object.</para>
+          <para>Use one of the following methods of the <b>Shapes</b> collection: <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddLabel(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddLine(System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddTextEffect(Microsoft.Office.Core.MsoPresetTextEffect,System.String,System.String,System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState,System.Single,System.Single,System.Object@)" />, or <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> to add a shape to a document and return a <b>Shape</b> object that represents the newly created shape.</para>
+          <para>Use <b>Shapes</b>(<paramref name="index" />), where <paramref name="index" /> is the name or the index number, to return a single <b>Shape</b> object.</para>
+          <para>Each shape is assigned a default name when it is created. For example, if you add three different shapes to a document, they might be named "Rectangle 2," "TextBox 3," and "Oval 4." To give a shape a more meaningful name, set the <see cref="P:Microsoft.Office.Interop.Word.Shape.Name" /> property.</para>
+          <para>The Shapes collection does not include <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objects. <b>InlineShape</b> objects are treated like characters and are positioned as characters within a line of text. <b>Shape</b> objects are anchored to a range of text but are free-floating and can be positioned anywhere on the page. You can use the <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> method and the <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> method to convert shapes from one type to the other. You can convert only pictures, OLE objects, and ActiveX controls to inline shapes.</para>
+          <para>The <see cref="P:Microsoft.Office.Interop.Word.Shapes.Count" /> property for this collection in a document returns the number of items in the main story only. To count the shapes in all the headers and footers, use the <b>Shapes</b> collection with any <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddCallout">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddCallout (Microsoft.Office.Core.MsoCalloutType Type, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddCallout([in]valuetype Microsoft.Office.Core.MsoCalloutType Type, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCallout (Type As MsoCalloutType, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoCalloutType" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="90eb4-103">所需<see cref="T:Microsoft.Office.Core.MsoCalloutType" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-103">Required <see cref="T:Microsoft.Office.Core.MsoCalloutType" />.</span>
+          </span>
+          <span data-ttu-id="90eb4-104">标注的类型。<b>MsoCalloutType</b>可以是下列常量之一。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-104">The type of callout.<b>MsoCalloutType</b> can be one of these constants.</span>
+          </span>
+          <span data-ttu-id="90eb4-105">
+            <b>msoCalloutOne</b> – 位置标注表情下移行沿标注框的左边缘。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-105">
+              <b>msoCalloutOne</b> – Positions callout line straight down along the left edge of the callout box.</span>
+          </span>
+          <span data-ttu-id="90eb4-106">
+            <b>msoCalloutTwo</b> – 沿对角线向下和离开标注框的左边缘的位置标注线。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-106">
+              <b>msoCalloutTwo</b> – Positions callout line diagonally down and away from the left edge of the callout box.</span>
+          </span>
+          <span data-ttu-id="90eb4-107">
+            <b>msoCalloutThree</b> – 位置标注线的直接 out 然后沿对角线向下并离开从标注框的左边缘。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-107">
+              <b>msoCalloutThree</b> – Positions callout line straight out and then diagonally down and away from the left edge of the callout box.</span>
+          </span>
+          <span data-ttu-id="90eb4-108">
+            <b>msocalloutfour 类型</b>– 沿标注文本边框的左边缘的位置标注线。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-108">
+              <b>msoCalloutFour</b> – Positions callout line along the left edge of the callout text box.</span>
+          </span>
+          <span data-ttu-id="90eb4-109">
+            <b>msoCalloutMixed</b> – A 返回值，该值指示范围或选定内容中存在多个<b>MsoCalloutType</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-109">
+              <b>msoCalloutMixed</b> – A return value indicating that more than one <b>MsoCalloutType</b> exists in a range or selection.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="90eb4-110">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-110">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-111">标注边框左边缘的位置（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-111">The position, in points, of the left edge of the callout's bounding box.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="90eb4-112">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-112">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-113">标注边框上边缘的位置（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-113">The position, in points, of the top edge of the callout's bounding box.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="90eb4-114">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-114">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-115">标注边框的宽度（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-115">The width, in points, of the callout's bounding box.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="90eb4-116">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-116">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-117">标注边框的高度（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-117">The height, in points, of the callout's bounding box.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-118">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-118">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-119">A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表标注绑定到的文本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-119">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the callout is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-120">如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-120">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-121">如果省略此参数，则自动选择锁定区域和标注位于页面顶端和左边缘相对。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-121">If this argument is omitted, the anchoring range is selected automatically and the callout is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-122">向文档添加线形标注。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-122">Adds a borderless line callout to a document.</span>
+          </span>
+          <span data-ttu-id="90eb4-123">返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，它代表标注，并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-123">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the callout and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="90eb4-124">
+            <para>可以插入各种标注，例如气球和云朵使用<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" />方法。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-124">
+              <para>You can insert a greater variety of callouts, such as balloons and clouds, using the <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> method.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCanvas">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddCanvas (float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddCanvas([in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddCanvas(System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCanvas (Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Left">
+          <span data-ttu-id="90eb4-125">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-125">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-126">画布左侧边缘相对于锁定标记的位置，以磅为单位。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-126">The position, in points, of the left edge of the drawing canvas, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="90eb4-127">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-127">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-128">画布上部边缘相对于锁定标记的位置，以磅为单位。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-128">The position, in points, of the top edge of the drawing canvas, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="90eb4-129">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-129">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-130">画布的宽度，以磅为单位。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-130">The width, in points, of the drawing canvas.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="90eb4-131">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-131">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-132">画布的高度，以磅为单位。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-132">The height, in points, of the drawing canvas.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-133">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-133">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-134">A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象代表画布绑定到的文本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-134">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the canvas is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-135">如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-135">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-136">如果省略此参数，则自动选择锁定区域和画布位于页面顶端和左边缘相对。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-136">If this argument is omitted, the anchoring range is selected automatically and the canvas is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-137">将绘图画布上添加到文档。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-137">Adds a drawing canvas to a document.</span>
+          </span>
+          <span data-ttu-id="90eb4-138">返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表绘图画布，并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-138">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the drawing canvas and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChart">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddChart (Microsoft.Office.Core.XlChartType Type = (Microsoft.Office.Core.XlChartType) -1, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddChart([in]valuetype Microsoft.Office.Core.XlChartType Type, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddChart(Microsoft.Office.Core.XlChartType,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddChart (Optional Type As XlChartType = (Microsoft.Office.Core.XlChartType) -1, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.XlChartType" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">To be added.</param>
+        <param name="Left">To be added.</param>
+        <param name="Top">To be added.</param>
+        <param name="Width">To be added.</param>
+        <param name="Height">To be added.</param>
+        <param name="Anchor">To be added.</param>
+        <summary>
+          <span data-ttu-id="90eb4-139">此对象、成员或枚举已被弃用并且不适合在您的代码中使用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-139">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
+          </span>
+        </summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Word.Shape" />
+        </returns>
+        <remarks>To be added.</remarks>
+        <example>
+          <span data-ttu-id="90eb4-140">
+            <para>创建一个新的三维柱形图，然后将其添加到活动文档中。</para>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-140">
+              <para>Creates a new 3-D column chart and adds it to the active document.</para>
+            </span>
+          </span>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChart2">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddChart2 (int Style = -1, Microsoft.Office.Core.XlChartType Type = (Microsoft.Office.Core.XlChartType) -1, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor, ref object NewLayout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddChart2([in]int32 Style, [in]valuetype Microsoft.Office.Core.XlChartType Type, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor, [in]object&amp; NewLayout) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddChart2(System.Int32,Microsoft.Office.Core.XlChartType,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddChart2 (Optional Style As Integer = -1, Optional Type As XlChartType = (Microsoft.Office.Core.XlChartType) -1, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object, Optional ByRef NewLayout As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Style" Type="System.Int32" />
+        <Parameter Name="Type" Type="Microsoft.Office.Core.XlChartType" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NewLayout" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Style">
+          <span data-ttu-id="90eb4-141">图表样式。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-141">The chart style.</span>
+          </span>
+        </param>
+        <param name="Type">
+          <span data-ttu-id="90eb4-142">图表类型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-142">The type of chart.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="90eb4-143">图表左边缘距离定位点的以磅为单位的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-143">The position, in points, of the left edge of the chart, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="90eb4-144">图表上边缘距离定位点的以磅为单位的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-144">The position, in points, of the top edge of the chart, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="90eb4-145">以磅为单位的图表宽度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-145">The width, in points, of the chart.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="90eb4-146">以磅为单位的图表高度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-146">The height, in points, of the chart.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-147">如果<paramref name="NewLayout" />是 true，则将使用新的动态格式规则中插入图表 （标题位于和图例才上是否有多个系列）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-147">If <paramref name="NewLayout" /> is true, the chart will be inserted by using the new dynamic formatting rules (Title is on, and Legend is on only if there are multiple series).</span>
+          </span>
+        </param>
+        <param name="NewLayout">
+          <span data-ttu-id="90eb4-148">如果<paramref name="NewLayout" />是 true，则图表插入使用动态的新格式设置规则 （标题位于和图例才上是否有多个系列）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-148">If <paramref name="NewLayout" /> is true, the chart is inserted by using the new dynamic formatting rules (Title is on, and Legend is on only if there are multiple series).</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-149">向文档中添加图表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-149">Adds a chart to the document.</span>
+          </span>
+          <span data-ttu-id="90eb4-150">返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，它代表图表并将其添加到指定的集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-150">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents a chart and adds it to the specified collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddConnector">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddConnector (Microsoft.Office.Core.MsoConnectorType Type, float BeginX, float BeginY, float EndX, float EndY);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddConnector([in]valuetype Microsoft.Office.Core.MsoConnectorType Type, [in]float32 BeginX, [in]float32 BeginY, [in]float32 EndX, [in]float32 EndY) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddConnector(Microsoft.Office.Core.MsoConnectorType,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddConnector (Type As MsoConnectorType, BeginX As Single, BeginY As Single, EndX As Single, EndY As Single) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ AddConnector(Microsoft::Office::Core::MsoConnectorType Type, float BeginX, float BeginY, float EndX, float EndY);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoConnectorType" />
+        <Parameter Name="BeginX" Type="System.Single" />
+        <Parameter Name="BeginY" Type="System.Single" />
+        <Parameter Name="EndX" Type="System.Single" />
+        <Parameter Name="EndY" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Type">To be added.</param>
+        <param name="BeginX">To be added.</param>
+        <param name="BeginY">To be added.</param>
+        <param name="EndX">To be added.</param>
+        <param name="EndY">To be added.</param>
+        <summary>
+          <span data-ttu-id="90eb4-151">仅供内部使用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-151">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCurve">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddCurve (ref object SafeArrayOfPoints, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddCurve([in]object&amp; SafeArrayOfPoints, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCurve (ByRef SafeArrayOfPoints As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SafeArrayOfPoints" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="SafeArrayOfPoints">
+          <span data-ttu-id="90eb4-152">所需的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-152">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-153">数组的坐标对指定顶点和控制点的曲线。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-153">An array of coordinate pairs that specifies the vertices and control points of the curve.</span>
+          </span>
+          <span data-ttu-id="90eb4-154">您指定的第一个点是起始顶点，和后续两个点是第一段的贝塞尔曲线的控制点。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-154">The first point you specify is the starting vertex, and the next two points are control points for the first Bézier segment.</span>
+          </span>
+          <span data-ttu-id="90eb4-155">然后，为曲线的每个其他段，指定一个顶点和两个控制点。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-155">Then, for each additional segment of the curve, you specify a vertex and two control points.</span>
+          </span>
+          <span data-ttu-id="90eb4-156">您指定的最后一个点是终顶点的曲线。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-156">The last point you specify is the ending vertex for the curve.</span>
+          </span>
+          <span data-ttu-id="90eb4-157">请注意，您必须指定 3n + 1 个点，其中 n 是曲线段的数量。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-157">Note that you must always specify 3n + 1 points, where n is the number of segments in the curve.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-158">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-158">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-159">A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示曲线绑定到的文本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-159">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the curve is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-160">如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-160">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-161">如果省略此参数，则自动选择锁定区域和相对于页面顶端和左边缘位于曲线。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-161">If this argument is omitted, the anchoring range is selected automatically and the curve is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-162">返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，表示文档中的贝赛尔曲线。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-162">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents a Bézier curve in a document.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDiagram">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddDiagram (Microsoft.Office.Core.MsoDiagramType Type, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddDiagram([in]valuetype Microsoft.Office.Core.MsoDiagramType Type, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddDiagram (Type As MsoDiagramType, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoDiagramType" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="90eb4-163">所需<see cref="T:Microsoft.Office.Core.MsoDiagramType" />。<b>MsoDiagramType</b>可以是下列常量之一。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-163">Required <see cref="T:Microsoft.Office.Core.MsoDiagramType" />.<b>MsoDiagramType</b> can be one of these constants.</span>
+          </span>
+          <span data-ttu-id="90eb4-164">
+            <b>msoDiagramCycle</b> – 显示持续循环的过程。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-164">
+              <b>msoDiagramCycle</b> – Shows a process with a continuous cycle.</span>
+          </span>
+          <span data-ttu-id="90eb4-165">
+            <b>msoDiagramMixed</b> – 不用于此方法。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-165">
+              <b>msoDiagramMixed</b> – Not used with this method.</span>
+          </span>
+          <span data-ttu-id="90eb4-166">
+            <b>射线</b>– 显示分层关系。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-166">
+              <b>msoDiagramOrgChart</b> – Shows hierarchical relationships.</span>
+          </span>
+          <span data-ttu-id="90eb4-167">
+            <b>msoDiagramPyramid</b> – 显示基于基础的关系。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-167">
+              <b>msoDiagramPyramid</b> – Shows foundation-based relationships.</span>
+          </span>
+          <span data-ttu-id="90eb4-168">
+            <b>msoDiagramRadial</b> – 显示关系的核心元素。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-168">
+              <b>msoDiagramRadial</b> – Shows relationships of a core element.</span>
+          </span>
+          <span data-ttu-id="90eb4-169">
+            <b>msoDiagramTarget</b> – 向目标显示步骤。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-169">
+              <b>msoDiagramTarget</b> – Shows steps toward a goal.</span>
+          </span>
+          <span data-ttu-id="90eb4-170">
+            <b>msoDiagramVenn</b> – 元素之间的重叠的显示区域。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-170">
+              <b>msoDiagramVenn</b> – Shows areas of overlap between elements.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="90eb4-171">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-171">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-172">以磅为单位的相对于定位标记的关系图的边界框的左边缘的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-172">The position, measured in points, of the left edge of the diagram's bounding box relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="90eb4-173">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-173">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-174">以磅为单位的相对于定位标记的关系图的边界框的上边缘的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-174">The position, measured in points, of the top edge of the diagram's bounding box relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="90eb4-175">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-175">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-176">以磅为单位的关系图的边界框的宽度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-176">The width, measured in points, of the diagram's bounding box.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="90eb4-177">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-177">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-178">以磅为单位的关系图的边界框的高度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-178">The height, measured in points, of the diagram's bounding box.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-179">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-179">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-180">A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表图表绑定到的文本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-180">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the diagram is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-181">如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-181">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-182">如果省略此参数，则自动选择锁定区域和图表位于页面顶端和左边缘相对。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-182">If this argument is omitted, the anchoring range is selected automatically and the diagram is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-183">返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，表示文档中新创建的图表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-183">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents a newly created diagram in a document.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLabel">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddLabel (Microsoft.Office.Core.MsoTextOrientation Orientation, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddLabel([in]valuetype Microsoft.Office.Core.MsoTextOrientation Orientation, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddLabel(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddLabel (Orientation As MsoTextOrientation, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Orientation" Type="Microsoft.Office.Core.MsoTextOrientation" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Orientation">
+          <span data-ttu-id="90eb4-184">所需<see cref="T:Microsoft.Office.Core.MsoTextOrientation" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-184">Required <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />.</span>
+          </span>
+          <span data-ttu-id="90eb4-185">文本的方向。<b>MsoTextOrientation</b>可以是下列常量之一： <b>msoTextOrientationDownward </b><b>不同语言支持</b><b>msoTextOrientationHorizontalRotatedFarEast </b><b>msoTextOrientationMixed</b><b>msoTextOrientationUpward </b><b>常量</b><b>方向</b>，这些常量的一些可能不可用，具体取决于的语言支持 （例如，美国英语） 的所选或安装。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-185">The orientation of the text.<b>MsoTextOrientation</b> can be one of the following constants: <b>msoTextOrientationDownward </b><b>msoTextOrientationHorizontal </b><b>msoTextOrientationHorizontalRotatedFarEast </b><b>msoTextOrientationMixed </b><b>msoTextOrientationUpward </b><b>msoTextOrientationVertical </b><b>msoTextOrientationVerticalFarEast </b>Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="90eb4-186">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-186">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-187">以磅为单位，标签相对于定位标记的左边缘的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-187">The position, measured in points, of the left edge of the label relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="90eb4-188">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-188">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-189">以磅为单位的相对于定位标记的标签上边缘的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-189">The position, measured in points, of the top edge of the label relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="90eb4-190">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-190">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-191">标签的宽度（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-191">The width of the label, in points.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="90eb4-192">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-192">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-193">标签的高度（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-193">The height of the label, in points.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-194">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-194">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-195">A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，代表的文字标签绑定到该对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-195">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the label is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-196">如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-196">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-197">如果省略此参数，则自动选择锁定区域和标签放置在相对于页面顶端和左边缘。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-197">If this argument is omitted, the anchoring range is selected automatically and the label is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-198">向文档添加一个文本标签。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-198">Adds a text label to a document.</span>
+          </span>
+          <span data-ttu-id="90eb4-199">返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表文字标签并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-199">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the text label and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddLine (float BeginX, float BeginY, float EndX, float EndY, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddLine([in]float32 BeginX, [in]float32 BeginY, [in]float32 EndX, [in]float32 EndY, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddLine(System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddLine (BeginX As Single, BeginY As Single, EndX As Single, EndY As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="BeginX" Type="System.Single" />
+        <Parameter Name="BeginY" Type="System.Single" />
+        <Parameter Name="EndX" Type="System.Single" />
+        <Parameter Name="EndY" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="BeginX">
+          <span data-ttu-id="90eb4-200">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-200">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-201">水平位置，以磅为单位的线条的起点相对于定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-201">The horizontal position, measured in points, of the line's starting point, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="BeginY">
+          <span data-ttu-id="90eb4-202">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-202">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-203">垂直位置，以磅为单位的线条的起点相对于定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-203">The vertical position, measured in points, of the line's starting point, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="EndX">
+          <span data-ttu-id="90eb4-204">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-204">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-205">水平位置，以磅为单位的线条的终点相对于定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-205">The horizontal position, measured in points, of the line's end point, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="EndY">
+          <span data-ttu-id="90eb4-206">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-206">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-207">垂直位置，以磅为单位的线条的终点相对于定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-207">The vertical position, measured in points, of the line's end point, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-208">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-208">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-209">A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，代表的文字标签绑定到该对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-209">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the label is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-210">如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-210">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-211">如果省略此参数，则自动选择锁定区域和标签放置在相对于页面顶端和左边缘。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-211">If this argument is omitted, the anchoring range is selected automatically and the label is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-212">将线条添加到文档。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-212">Adds a line to a document.</span>
+          </span>
+          <span data-ttu-id="90eb4-213">返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表线条并将其添加到<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-213">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the line and adds it to the <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="90eb4-214">
+            <para>若要创建带箭头，使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Line" />属性来设置线条格式。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-214">
+              <para>To create an arrow, use the <see cref="P:Microsoft.Office.Interop.Word.Shape.Line" /> property to format a line.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOLEControl">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddOLEControl (ref object ClassType, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddOLEControl([in]object&amp; ClassType, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOLEControl (Optional ByRef ClassType As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">
+          <span data-ttu-id="90eb4-215">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-215">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-216">用于要创建的 ActiveX 控件的编程标识符。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-216">The programmatic identifier for the ActiveX control to be created.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="90eb4-217">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-217">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-218">相对于定位标记的新对象的左边缘的位置 （以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-218">The position (in points) of the left edge of the new object relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="90eb4-219">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-219">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-220">相对于定位标记的新对象的上边缘的位置 （以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-220">The position (in points) of the upper edge of the new object relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="90eb4-221">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-221">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-222">ActiveX 控件，以磅为单位的宽度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-222">The width of the ActiveX control, in points.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="90eb4-223">可选的<b>对象</b>。ActiveX 控件，以磅为单位的高度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-223">Optional <b>Object</b>.The height of the ActiveX control, in points.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-224">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-224">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-225">ActiveX 控件绑定到的区域。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-225">The range to which the ActiveX control is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-226">如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-226">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-227">如果省略此参数，但是，自动放置锁定标记和 ActiveX 控件位于页面顶端和左边缘相对。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-227">If this argument is omitted, however, the anchor is placed automatically and the ActiveX control is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-228">创建一个 ActiveX 控件（以前称为 OLE 控件）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-228">Creates an ActiveX control (formerly known as an OLE control).</span>
+          </span>
+          <span data-ttu-id="90eb4-229">返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，表示新的 ActiveX 控件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-229">Returns the <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the new ActiveX control.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOLEObject">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddOLEObject (ref object ClassType, ref object FileName, ref object LinkToFile, ref object DisplayAsIcon, ref object IconFileName, ref object IconIndex, ref object IconLabel, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddOLEObject([in]object&amp; ClassType, [in]object&amp; FileName, [in]object&amp; LinkToFile, [in]object&amp; DisplayAsIcon, [in]object&amp; IconFileName, [in]object&amp; IconIndex, [in]object&amp; IconLabel, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOLEObject (Optional ByRef ClassType As Object, Optional ByRef FileName As Object, Optional ByRef LinkToFile As Object, Optional ByRef DisplayAsIcon As Object, Optional ByRef IconFileName As Object, Optional ByRef IconIndex As Object, Optional ByRef IconLabel As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DisplayAsIcon" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconFileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconIndex" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconLabel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">
+          <span data-ttu-id="90eb4-230">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-230">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-231">用于激活指定 OLE 对象的应用程序名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-231">The name of the application used to activate the specified OLE object.</span>
+          </span>
+        </param>
+        <param name="FileName">
+          <span data-ttu-id="90eb4-232">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-232">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-233">创建对象所用的文件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-233">The file from which the object is to be created.</span>
+          </span>
+          <span data-ttu-id="90eb4-234">如果省略该参数，则使用当前的文件夹。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-234">If this argument is omitted, the current folder is used.</span>
+          </span>
+          <span data-ttu-id="90eb4-235">必须指定<paramref name="ClassType" />或<paramref name="FileName" />对象，但不是能同时参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-235">You must specify either the <paramref name="ClassType" /> or <paramref name="FileName" /> argument for the object, but not both.</span>
+          </span>
+        </param>
+        <param name="LinkToFile">
+          <span data-ttu-id="90eb4-236">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-236">Optional<b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-237">
+            <b>真</b> 若要将 OLE 对象链接到创建它的文件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-237">
+              <b>True</b> to link the OLE object to the file from which it was created.</span>
+          </span>
+          <span data-ttu-id="90eb4-238">
+            <b>假</b> 以使 OLE 对象成为独立复的文件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-238">
+              <b>False</b> to make the OLE object an independent copy of the file.</span>
+          </span>
+          <span data-ttu-id="90eb4-239">如果您指定的值<paramref name="ClassType" />、<paramref name="LinkToFile" />参数必须为<b>False</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-239">If you specified a value for <paramref name="ClassType" />, the <paramref name="LinkToFile" /> argument must be <b>False</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-240">默认值为 <b>False</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-240">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="DisplayAsIcon">
+          <span data-ttu-id="90eb4-241">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-241">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-242">
+            <b>真</b> 若要将 OLE 对象显示为图标。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-242">
+              <b>True</b> to display the OLE object as an icon.</span>
+          </span>
+          <span data-ttu-id="90eb4-243">默认值为 <b>False</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-243">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="IconFileName">
+          <span data-ttu-id="90eb4-244">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-244">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-245">包含将要显示的图标的文件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-245">The file that contains the icon to be displayed.</span>
+          </span>
+        </param>
+        <param name="IconIndex">
+          <span data-ttu-id="90eb4-246">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-246">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-247">内的图标索引号<paramref name="IconFileName" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-247">The index number of the icon within <paramref name="IconFileName" />.</span>
+          </span>
+          <span data-ttu-id="90eb4-248">图标显示在更改图标对话框 （插入菜单、 对象对话框） 顺序相对应的指定文件中的图标次序当选显示为图标复选框。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-248">The order of icons in the specified file corresponds to the order in which the icons appear in the Change Icon dialog box (Insert menu, Object dialog box) when the Display as icon check box is selected.</span>
+          </span>
+          <span data-ttu-id="90eb4-249">文件中第一个图标的索引号是 0（零）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-249">The first icon in the file has the index number 0 (zero).</span>
+          </span>
+          <span data-ttu-id="90eb4-250">如果中不存在具有给定的索引号的图标<paramref name="IconFileName" />，则使用具有索引编号 1 （在文件中的第二个图标） 图标。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-250">If an icon with the given index number doesn't exist in <paramref name="IconFileName" />, the icon with the index number 1 (the second icon in the file) is used.</span>
+          </span>
+          <span data-ttu-id="90eb4-251">默认值为 0（零）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-251">The default value is 0 (zero).</span>
+          </span>
+        </param>
+        <param name="IconLabel">
+          <span data-ttu-id="90eb4-252">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-252">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-253">显示在图标下面的标签（标题）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-253">A label (caption) to be displayed beneath the icon.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="90eb4-254">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-254">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-255">相对于定位标记的新对象的左边缘的位置 （以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-255">The position (in points) of the left edge of the new object relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="90eb4-256">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-256">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-257">相对于定位标记的新对象的上边缘的位置 （以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-257">The position (in points) of the upper edge of the new object relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="90eb4-258">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-258">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-259">OLE 对象，以磅为单位的宽度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-259">The width of the OLE object, in points.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="90eb4-260">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-260">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-261">OLE 对象，以磅为单位的高度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-261">The height of the OLE object, in points.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-262">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-262">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-263">OLE 对象绑定到的区域。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-263">The range to which the OLE object is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-264">如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-264">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph of the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-265">如果<paramref name="Anchor" />未指定，则自动放置锁定标记和 OLE 对象位于页面顶端和左边缘相对。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-265">If <paramref name="Anchor" /> is not specified, the anchor is placed automatically and the OLE Object is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-266">创建 OLE 对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-266">Creates an OLE object.</span>
+          </span>
+          <span data-ttu-id="90eb4-267">返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，表示新的 OLE 对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-267">Returns the <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the new OLE object.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPicture">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddPicture (string FileName, ref object LinkToFile, ref object SaveWithDocument, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddPicture([in]string FileName, [in]object&amp; LinkToFile, [in]object&amp; SaveWithDocument, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPicture (FileName As String, Optional ByRef LinkToFile As Object, Optional ByRef SaveWithDocument As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SaveWithDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <span data-ttu-id="90eb4-268">必需的 <b>字符串</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-268">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-269">图片的路径和文件名。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-269">The path and file name of the picture.</span>
+          </span>
+        </param>
+        <param name="LinkToFile">
+          <span data-ttu-id="90eb4-270">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-270">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-271">
+            <b>真</b> 要将图片链接到创建它的文件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-271">
+              <b>True</b> to link the picture to the file from which it was created.</span>
+          </span>
+          <span data-ttu-id="90eb4-272">
+            <b>False</b> 使图片文件的独立副本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-272">
+              <b>False</b> to make the picture an independent copy of the file.</span>
+          </span>
+          <span data-ttu-id="90eb4-273">默认值为 <b>False</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-273">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="SaveWithDocument">
+          <span data-ttu-id="90eb4-274">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-274">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-275">如果为 <b>True</b> ，则将链接的图片与文档一起保存。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-275">
+              <b>True</b> to save the linked picture with the document.</span>
+          </span>
+          <span data-ttu-id="90eb4-276">默认值为 <b>False</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-276">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="90eb4-277">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-277">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-278">以磅为单位的相对于定位标记新图片的左边缘的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-278">The position, measured in points, of the left edge of the new picture relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="90eb4-279">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-279">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-280">以磅为单位，新图片相对于定位标记的上边缘的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-280">The position, measured in points, of the top edge of the new picture relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="90eb4-281">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-281">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-282">图片的宽度（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-282">The width of the picture, in points.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="90eb4-283">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-283">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-284">图片的高度（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-284">The height of the picture, in points.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-285">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-285">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-286">图片绑定到的区域。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-286">The range to which the picture is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-287">如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-287">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-288">如果省略此参数，但是，自动放置锁定标记和图片相对于页面顶端和左边缘定位。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-288">If this argument is omitted, however, the anchor is placed automatically and the picture is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-289">在文档中添加一幅图片。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-289">Adds a picture to a document.</span>
+          </span>
+          <span data-ttu-id="90eb4-290">返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表图片，并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-290">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the picture and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPolyline">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddPolyline (ref object SafeArrayOfPoints, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddPolyline([in]object&amp; SafeArrayOfPoints, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPolyline (ByRef SafeArrayOfPoints As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SafeArrayOfPoints" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="SafeArrayOfPoints">
+          <span data-ttu-id="90eb4-291">所需的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-291">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-292">由指定多边形顶点的坐标对组成的数组。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-292">An array of coordinate pairs that specifies the polyline drawing's vertices.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-293">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-293">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-294">A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示折线绑定到的文本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-294">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the polyline is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-295">如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-295">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-296">如果省略此参数，则自动选择锁定区域和行位于页面顶端和左边缘相对。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-296">If this argument is omitted, the anchoring range is selected automatically and the line is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-297">将打开或封闭的多边形添加到文档。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-297">Adds an open or closed polygon to a document.</span>
+          </span>
+          <span data-ttu-id="90eb4-298">返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表多边形并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-298">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the polygon and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="90eb4-299">
+            <para>要组成一个封闭的多边形，为连续线段图形中的第一个和最后一个顶点指定相同的坐标。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-299">
+              <para>To form a closed polygon, assign the same coordinates to the first and last vertices in the polyline drawing.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddShape">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddShape (int Type, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddShape([in]int32 Type, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddShape (Type As Integer, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="System.Int32" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="90eb4-300">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-300">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-301">要返回的形状类型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-301">The type of shape to be returned.</span>
+          </span>
+          <span data-ttu-id="90eb4-302">可以是任意<see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />常量。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-302">Can be any <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" /> constant.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="90eb4-303">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-303">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-304">自选图形左边缘的位置（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-304">The position, measured in points, of the left edge of the AutoShape.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="90eb4-305">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-305">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-306">自选图形上边缘的位置（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-306">The position, measured in points, of the top edge of the AutoShape.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="90eb4-307">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-307">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-308">自选图形的宽度（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-308">The width, measured in points, of the AutoShape.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="90eb4-309">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-309">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-310">自选图形的高度（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-310">The height, measured in points, of the AutoShape.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-311">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-311">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-312">A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表自选图形绑定到的文本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-312">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the AutoShape is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-313">如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-313">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-314">如果省略此参数，则自动选择锁定区域和自选图形位于页面顶端和左边缘相对。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-314">If this argument is omitted, the anchoring range is selected automatically and the AutoShape is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-315">向某文档中添加一个自选图形。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-315">Adds an AutoShape to a document.</span>
+          </span>
+          <span data-ttu-id="90eb4-316">返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表自选图形，并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-316">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the AutoShape and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="90eb4-317">
+            <para>若要改变所添加的自选图形类型，将设置<see cref="P:Microsoft.Office.Interop.Word.Shape.AutoShapeType" />属性。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-317">
+              <para>To change the type of an AutoShape that you've added, set the <see cref="P:Microsoft.Office.Interop.Word.Shape.AutoShapeType" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSmartArt">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddSmartArt (Microsoft.Office.Core.SmartArtLayout Layout, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddSmartArt([in]class Microsoft.Office.Core.SmartArtLayout Layout, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddSmartArt(Microsoft.Office.Core.SmartArtLayout,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddSmartArt (Layout As SmartArtLayout, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Layout" Type="Microsoft.Office.Core.SmartArtLayout" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Layout">
+          <span data-ttu-id="90eb4-318">A<see cref="T:Microsoft.Office.Core.SmartArtLayout" />指定 SmartArt 图形的布局的对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-318">A <see cref="T:Microsoft.Office.Core.SmartArtLayout" /> object that specifies the layout for the SmartArt graphic.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="90eb4-319">从幻灯片左边缘到 SmartArt 图形左边缘之间的距离（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-319">The distance, in points, from the left edge of the slide to the left edge of the SmartArt graphic.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="90eb4-320">从幻灯片上边缘到 SmartArt 图形上边缘之间的距离（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-320">The distance, in points, from the top edge of the slide to the top edge of the SmartArt graphic.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="90eb4-321">SmartArt 图形的宽度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-321">The width of the SmartArt graphic.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="90eb4-322">SmartArt 图形的高度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-322">The height of the SmartArt graphic.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-323">A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示 SmartArt 图形绑定到的文本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-323">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the SmartArt graphic is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-324">如果指定了 Anchor，锁定标记位于锁定区域第一段的开头。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-324">If Anchor is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-325">如果省略此参数，则自动选择锁定区域和 SmartArt 图形位于页面顶端和左边缘相对。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-325">If this parameter is omitted, the anchoring range is selected automatically and the SmartArt graphic is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-326">将指定 SmartArt 图形插入活动文档。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-326">Inserts the specified SmartArt graphic into the active document.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="90eb4-327">A<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-327">A <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object.</span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTextbox">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddTextbox (Microsoft.Office.Core.MsoTextOrientation Orientation, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddTextbox([in]valuetype Microsoft.Office.Core.MsoTextOrientation Orientation, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTextbox (Orientation As MsoTextOrientation, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Orientation" Type="Microsoft.Office.Core.MsoTextOrientation" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Orientation">
+          <span data-ttu-id="90eb4-328">所需<see cref="T:Microsoft.Office.Core.MsoTextOrientation" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-328">Required <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />.</span>
+          </span>
+          <span data-ttu-id="90eb4-329">文本的方向。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-329">The orientation of the text.</span>
+          </span>
+          <span data-ttu-id="90eb4-330">这些常量中的某些可能不可用，这取决于选择或安装的语言支持（例如，美国英语）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-330">Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="90eb4-331">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-331">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-332">文本框左边缘的位置（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-332">The position, measured in points, of the left edge of the text box.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="90eb4-333">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-333">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-334">文本框上边缘的位置（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-334">The position, measured in points, of the top edge of the text box.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="90eb4-335">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-335">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-336">文本框的宽度（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-336">The width, measured in points, of the text box.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="90eb4-337">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-337">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-338">文本框的高度（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-338">The height, measured in points, of the text box.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-339">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-339">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-340">A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示文本框绑定到的文本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-340">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the text box is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-341">如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-341">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-342">如果省略此参数，则自动选择锁定区域和文本框中放置相对于页面顶端和左边缘。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-342">If this argument is omitted, the anchoring range is selected automatically and the text box is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-343">向文档添加一个文本框。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-343">Adds a text box to a document.</span>
+          </span>
+          <span data-ttu-id="90eb4-344">返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表文本框中，并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-344">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the text box and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTextEffect">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddTextEffect (Microsoft.Office.Core.MsoPresetTextEffect PresetTextEffect, string Text, string FontName, float FontSize, Microsoft.Office.Core.MsoTriState FontBold, Microsoft.Office.Core.MsoTriState FontItalic, float Left, float Top, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddTextEffect([in]valuetype Microsoft.Office.Core.MsoPresetTextEffect PresetTextEffect, [in]string Text, [in]string FontName, [in]float32 FontSize, [in]valuetype Microsoft.Office.Core.MsoTriState FontBold, [in]valuetype Microsoft.Office.Core.MsoTriState FontItalic, [in]float32 Left, [in]float32 Top, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddTextEffect(Microsoft.Office.Core.MsoPresetTextEffect,System.String,System.String,System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTextEffect (PresetTextEffect As MsoPresetTextEffect, Text As String, FontName As String, FontSize As Single, FontBold As MsoTriState, FontItalic As MsoTriState, Left As Single, Top As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PresetTextEffect" Type="Microsoft.Office.Core.MsoPresetTextEffect" />
+        <Parameter Name="Text" Type="System.String" />
+        <Parameter Name="FontName" Type="System.String" />
+        <Parameter Name="FontSize" Type="System.Single" />
+        <Parameter Name="FontBold" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="FontItalic" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="PresetTextEffect">
+          <span data-ttu-id="90eb4-345">所需<see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-345">Required <see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" />.</span>
+          </span>
+          <span data-ttu-id="90eb4-346">预设的文本效果。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-346">A preset text effect.</span>
+          </span>
+          <span data-ttu-id="90eb4-347">
+            <b>可读</b> 常数的值对应于 艺术字库对话框 (从左到右，从上到下编号) 中列出的格式。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-347">The values of the <b>MsoPresetTextEffect</b> constants correspond to the formats listed in the WordArt Gallery dialog box (numbered from left to right and from top to bottom).</span>
+          </span>
+        </param>
+        <param name="Text">
+          <span data-ttu-id="90eb4-348">必需的 <b>字符串</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-348">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-349">艺术字中的文字。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-349">The text in the WordArt.</span>
+          </span>
+        </param>
+        <param name="FontName">
+          <span data-ttu-id="90eb4-350">必需的 <b>字符串</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-350">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-351">艺术字中所用字体的名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-351">The name of the font used in the WordArt.</span>
+          </span>
+        </param>
+        <param name="FontSize">
+          <span data-ttu-id="90eb4-352">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-352">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-353">大小 （以磅为单位的艺术字中使用的字体）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-353">The size, in points, of the font used in the WordArt.</span>
+          </span>
+        </param>
+        <param name="FontBold">
+          <span data-ttu-id="90eb4-354">所需<see cref="T:Microsoft.Office.Core.MsoTriState" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-354">Required <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          </span>
+          <span data-ttu-id="90eb4-355">
+            <b>属性值为 MsoTrue</b> 为艺术字字体加粗。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-355">
+              <b>MsoTrue</b> to bold the WordArt font.</span>
+          </span>
+        </param>
+        <param name="FontItalic">
+          <span data-ttu-id="90eb4-356">所需<see cref="T:Microsoft.Office.Core.MsoTriState" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-356">Required <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          </span>
+          <span data-ttu-id="90eb4-357">
+            <b>属性值为 MsoTrue</b> ，以斜体显示艺术字。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-357">
+              <b>MsoTrue</b> to italicize the WordArt font.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="90eb4-358">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-358">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-359">以磅为单位的相对于定位标记的艺术字形状左边缘的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-359">The position, measured in points, of the left edge of the WordArt shape relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="90eb4-360">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-360">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-361">以磅为单位的艺术字形状相对于定位标记的上边缘的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-361">The position, measured in points, of the top edge of the WordArt shape relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-362">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-362">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-363">A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表艺术字绑定到的文本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-363">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the WordArt is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-364">如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-364">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-365">如果省略此参数，则自动选择锁定区域和艺术字位于页面顶端和左边缘相对。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-365">If this argument is omitted, the anchoring range is selected automatically and the WordArt is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-366">向文档添加艺术字形状。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-366">Adds a WordArt shape to a document.</span>
+          </span>
+          <span data-ttu-id="90eb4-367">返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表艺术字，并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-367">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the WordArt and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="90eb4-368">
+            <para>向文档添加艺术字的高度和宽度的艺术字将根据大小和数量的您指定的文本自动进行设置。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-368">
+              <para>When you add WordArt to a document, the height and width of the WordArt are automatically set based on the size and amount of text you specify.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddWebVideo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddWebVideo (string EmbedCode, ref object VideoWidth, ref object VideoHeight, ref object PosterFrameImage, ref object Url, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddWebVideo([in]string EmbedCode, [in]object&amp; VideoWidth, [in]object&amp; VideoHeight, [in]object&amp; PosterFrameImage, [in]object&amp; Url, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddWebVideo(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddWebVideo (EmbedCode As String, ByRef VideoWidth As Object, ByRef VideoHeight As Object, Optional ByRef PosterFrameImage As Object, Optional ByRef Url As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EmbedCode" Type="System.String" />
+        <Parameter Name="VideoWidth" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="VideoHeight" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PosterFrameImage" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Url" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="EmbedCode">
+          <span data-ttu-id="90eb4-369">要嵌入的 HTML 代码。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-369">The HTML code to embed.</span>
+          </span>
+        </param>
+        <param name="VideoWidth">
+          <span data-ttu-id="90eb4-370">Integer 值，它代表视频以像素为单位的 web 的宽度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-370">An integer that represents the width of the web video in pixels.</span>
+          </span>
+        </param>
+        <param name="VideoHeight">
+          <span data-ttu-id="90eb4-371">Integer 值，它代表 web 视频以像素为单位的高度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-371">An integer that represents the height of the web video in pixels.</span>
+          </span>
+        </param>
+        <param name="PosterFrameImage">
+          <span data-ttu-id="90eb4-372">一个字符串，指向要用作视频 web 海报帧的文件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-372">A string that points to the file to use as the poster frame for the web video.</span>
+          </span>
+        </param>
+        <param name="Url">
+          <span data-ttu-id="90eb4-373">一个字符串，包含视频 web 的 URL。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-373">A string that contains the URL to the web video.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="90eb4-374">位置，以磅为单位，从文档的边缘海报框架的左边缘。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-374">The position, measured in points, of the left edge of the poster frame from the edge of the document.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="90eb4-375">以磅为单位，从文档的边缘海报框架的上边缘的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-375">The position, measured in points, of the top edge of the poster frame from the edge of the document.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="90eb4-376">以磅为单位的文档中的海报帧宽度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-376">The width, measured in points, of the poster frame in the document.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="90eb4-377">以磅为单位的文档中的海报框架的高度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-377">The height, measured in points, of the poster frame in the document.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="90eb4-378">A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示视频 web 绑定到的文本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-378">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the web video is bound.</span>
+          </span>
+          <span data-ttu-id="90eb4-379">如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-379">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="90eb4-380">如果省略此参数，则自动选择锁定区域和视频位于页面顶端和左边缘相对。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-380">If this argument is omitted, the anchoring range is selected automatically and the video is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-381">向文档中添加新的 web 视频。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-381">Adds a new web video to the document.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="90eb4-382">返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-382">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildFreeform">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.FreeformBuilder BuildFreeform (Microsoft.Office.Core.MsoEditingType EditingType, float X1, float Y1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.FreeformBuilder BuildFreeform([in]valuetype Microsoft.Office.Core.MsoEditingType EditingType, [in]float32 X1, [in]float32 Y1) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildFreeform (EditingType As MsoEditingType, X1 As Single, Y1 As Single) As FreeformBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::FreeformBuilder ^ BuildFreeform(Microsoft::Office::Core::MsoEditingType EditingType, float X1, float Y1);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.FreeformBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EditingType" Type="Microsoft.Office.Core.MsoEditingType" />
+        <Parameter Name="X1" Type="System.Single" />
+        <Parameter Name="Y1" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="EditingType">
+          <span data-ttu-id="90eb4-383">第一个节点的编辑属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-383">The editing property of the first node.</span>
+          </span>
+          <span data-ttu-id="90eb4-384">所需<see cref="T:Microsoft.Office.Core.MsoEditingType" />。<b>MsoEditingType</b>可以是这些常量之一 （不能是<b>msoEditingSmooth</b>或<b>msoEditingSymmetric</b>）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-384">Required <see cref="T:Microsoft.Office.Core.MsoEditingType" />.<b>MsoEditingType</b> can be either of these constants (cannot be <b>msoEditingSmooth</b> or <b>msoEditingSymmetric</b>).</span>
+          </span>
+          <span data-ttu-id="90eb4-385">
+            <b>msoEditingAuto</b>
+            <b>msoEditingCorner</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-385">
+              <b>msoEditingAuto </b>
+              <b>msoEditingCorner</b>
+            </span>
+          </span>
+        </param>
+        <param name="X1">
+          <span data-ttu-id="90eb4-386">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-386">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-387">任意图形中第一个节点相对于文档左上角的位置（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-387">The position (in points) of the first node in the freeform drawing relative to the upper-left corner of the document.</span>
+          </span>
+        </param>
+        <param name="Y1">
+          <span data-ttu-id="90eb4-388">
+            <b>必选。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-388">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-389">任意图形中第一个节点相对于文档左上角的位置（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-389">The position (in points) of the first node in the freeform drawing relative to the upper-left corner of the document.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-390">建立任意多边形对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-390">Builds a freeform object.</span>
+          </span>
+          <span data-ttu-id="90eb4-391">返回<see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" />对象，代表任意多边形时几何。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-391">Returns a <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> object that represents the freeform as it is being built.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="90eb4-392">
+            <para>使用<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />方法将段添加到任意多边形。在任意多边形添加至少一个段后，您可以使用<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" />方法将转换到<b>FreeformBuilder</b>对象<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象已<b>FreeformBuilder</b>对象中已定义的几何描述。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-392">
+              <para>Use the <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> method to add segments to the freeform. After you have added at least one segment to the freeform, you can use the <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> method to convert the <b>FreeformBuilder</b> object into a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that has the geometric description you've defined in the <b>FreeformBuilder</b> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="90eb4-393">指定集合中返回的项目数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-393">Returns the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="90eb4-394">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-394">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="90eb4-395">
+            <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
+          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-395">
+              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape this[ref object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Shape Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Item(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Shape ^ get(System::Object ^ % Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="90eb4-396">
+            <b>对象</b>，它指示的序号位置或一个字符串，表示单个对象的名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-396">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-397">返回集合中的单个对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-397">Returns an individual object in a collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="90eb4-398">返回一个对象，代表指定对象的父对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-398">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ShapeRange Range (ref object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ShapeRange Range([in]object&amp; Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Range (ByRef Index As Object) As ShapeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::ShapeRange ^ Range(System::Object ^ % Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ShapeRange</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="90eb4-399">所需的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-399">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="90eb4-400">指定要包含在指定范围中的形状。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-400">Specifies which shapes are to be included in the specified range.</span>
+          </span>
+          <span data-ttu-id="90eb4-401">可以是指定的索引中的形状数的整数<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合、 一个字符串，指定形状的名称或<b>对象</b>包含整数或字符串数组。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-401">Can be an integer that specifies the index number of a shape within the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection, a string that specifies the name of a shape, or an <b>Object</b> array that contains integers or strings.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="90eb4-402">返回<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-402">Returns a <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> object.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="90eb4-403">
+            <para>与 0 （零） 文档的开头开始字符位置的值。将计算所有字符，包括非打印字符。即使它们不显示隐藏的字符是计算在内。如果不指定起始和结束字符位置的<b>Range</b>方法，以返回整个文档<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。</para>
+            <para>
+              <b>ShapeRange</b>对象不包括<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。<b>InlineShape</b>对象等效字符，并且位于作为字符的文本范围内。<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象定位到范围的文本 （所选内容，默认情况下），但可以位于页面上的任意位置。<b>Shape</b>对象将始终显示在定位到的区域位于同一页。</para>
+            <para>大多数操作，您可以处理<b>Shape</b>对象您还可以与一个包含单个形状的<b>ShapeRange</b>对象执行。某些操作，在包含多个形状的<b>ShapeRange</b>对象执行时产生错误。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-403">
+              <para>Character position values begin with 0 (zero) at the beginning of the document. All characters are counted, including nonprinting characters. Hidden characters are counted even if they're not displayed. If you don't specify starting and ending character positions for the <b>Range</b> method, the entire document is returned as a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</para>
+              <para>
+                <b>ShapeRange</b> objects don't include <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objects. An <b>InlineShape</b> object is equivalent to a character and is positioned as a character within a range of text. <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objects are anchored to a range of text (the selection, by default), but they can be positioned anywhere on the page. A <b>Shape</b> object will always appear on the same page as the range it's anchored to.</para>
+              <para>Most operations that you can do with a <b>Shape</b> object you can also do with a <b>ShapeRange</b> object that contains a single shape. Some operations, when performed on a <b>ShapeRange</b> object that contains multiple shapes, produce an error.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectAll">
+      <MemberSignature Language="C#" Value="public void SelectAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SelectAll() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.SelectAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SelectAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectAll();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="90eb4-404">选择主文章、 画布上，或文档的页眉和页脚中的所有形状。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-404">Selects all the shapes in the main story, in a canvas, or in headers and footers of a document.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="90eb4-405">
+            <para>该方法不选择<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />对象。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="90eb4-405">
+              <para>This method doesn't select <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> objects.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

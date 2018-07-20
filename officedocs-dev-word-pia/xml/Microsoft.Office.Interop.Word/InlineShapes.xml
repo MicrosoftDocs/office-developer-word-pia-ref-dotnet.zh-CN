@@ -1,0 +1,1132 @@
+<Type Name="InlineShapes" FullName="Microsoft.Office.Interop.Word.InlineShapes">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="c25c65b0fb5c59926539a5d393bfd72559673469" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20666699" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface InlineShapes : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract InlineShapes implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.InlineShapes" />
+  <TypeSignature Language="VB.NET" Value="Public Interface InlineShapes&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class InlineShapes : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000209A9-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="7c7e9-101">一<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象，代表文档、 范围或所选内容中的所有内嵌形状。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="7c7e9-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objects that represent all the inline shapes in a document, range, or selection.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="7c7e9-102">
+        <para>使用的<b>InlineShapes</b>属性<see cref="T:Microsoft.Office.Interop.Word._Document" />， <see cref="T:Microsoft.Office.Interop.Word.Range" />，或<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象返回<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合。</para>使用
+      <para><see cref="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" />方法，以创建新的图片作为内嵌形状。您可以使用<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" />和<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法添加图片或 OLE 对象并将它们链接到源文件。使用<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" />方法，以添加 ActiveX 控件。</para><para><see cref="T:Microsoft.Office.Interop.Word.Shape" />对象定位到文本范围，但可以自由浮动和可放置在页面上的任何位置。您可以使用<see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" />方法和<see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />方法将形状转换为另一种类型。可以将图片、 OLE 对象和 ActiveX 控件转换为内嵌形状。</para><para><see cref="P:Microsoft.Office.Interop.Word.InlineShapes.Count" />属性文档中此集合主篇文章中返回的项目数。若要计数的其他文章中的项目使用集合<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。</para><para>当打开在早期版本的 Microsoft Word 中创建文档时，图片将转换为内嵌形状。</para><para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="7c7e9-102">
+          <para>Use the <b>InlineShapes</b> property of a <see cref="T:Microsoft.Office.Interop.Word._Document" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, or <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object to return an <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" /> method to create a new picture as an inline shape. You can use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" /> and <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> methods to add pictures or OLE objects and link them to a source file. Use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" /> method to add an ActiveX control.</para>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objects are anchored to a range of text but are free-floating and can be positioned anywhere on the page. You can use the <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> method and the <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> method to convert shapes from one type to the other. You can convert only pictures, OLE objects, and ActiveX controls to inline shapes.</para>
+          <para>The <see cref="P:Microsoft.Office.Interop.Word.InlineShapes.Count" /> property for this collection in a document returns the number of items in the main story only. To count items in other stories use the collection with the <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</para>
+          <para>When you open a document created in an earlier version of Microsoft Word, pictures are converted to inline shapes.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddChart">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddChart (Microsoft.Office.Core.XlChartType Type = (Microsoft.Office.Core.XlChartType) -1, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddChart([in]valuetype Microsoft.Office.Core.XlChartType Type, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddChart(Microsoft.Office.Core.XlChartType,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddChart (Optional Type As XlChartType = (Microsoft.Office.Core.XlChartType) -1, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(107)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.XlChartType" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">To be added.</param>
+        <param name="Range">To be added.</param>
+        <summary>
+          <span data-ttu-id="7c7e9-103">此对象、成员或枚举已被弃用并且不适合在您的代码中使用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-103">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChart2">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddChart2 (int Style = -1, Microsoft.Office.Core.XlChartType Type = (Microsoft.Office.Core.XlChartType) -1, ref object Range, ref object NewLayout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddChart2([in]int32 Style, [in]valuetype Microsoft.Office.Core.XlChartType Type, [in]object&amp; Range, [in]object&amp; NewLayout) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddChart2(System.Int32,Microsoft.Office.Core.XlChartType,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddChart2 (Optional Style As Integer = -1, Optional Type As XlChartType = (Microsoft.Office.Core.XlChartType) -1, Optional ByRef Range As Object, Optional ByRef NewLayout As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Style" Type="System.Int32" />
+        <Parameter Name="Type" Type="Microsoft.Office.Core.XlChartType" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NewLayout" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Style">
+          <span data-ttu-id="7c7e9-104">图表样式。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-104">The chart style.</span>
+          </span>
+        </param>
+        <param name="Type">
+          <span data-ttu-id="7c7e9-105">图表类型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-105">The type of chart.</span>
+          </span>
+        </param>
+        <param name="Range">
+          <span data-ttu-id="7c7e9-106">将文本中放置图表的区域。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-106">The range where the chart will be placed in the text.</span>
+          </span>
+          <span data-ttu-id="7c7e9-107">图表将替换该范围，除非该区域折叠。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-107">The chart replaces the range, unless the range is collapsed.</span>
+          </span>
+          <span data-ttu-id="7c7e9-108">如果省略此参数，则自动放置图表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-108">If this argument is omitted, the chart is placed automatically.</span>
+          </span>
+        </param>
+        <param name="NewLayout">
+          <span data-ttu-id="7c7e9-109">如果<paramref name="NewLayout" />是 true，则图表插入使用动态的新格式设置规则 （标题位于和图例才上是否有多个系列）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-109">If <paramref name="NewLayout" /> is true, the chart is inserted by using the new dynamic formatting rules (Title is on, and Legend is on only if there are multiple series).</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="7c7e9-110">向文档中添加图表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-110">Adds a chart to the document.</span>
+          </span>
+          <span data-ttu-id="7c7e9-111">返回<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象，它代表图表并将其添加到指定的集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-111">Returns an <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object that represents the chart and adds it to the specified collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddHorizontalLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddHorizontalLine (string FileName, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddHorizontalLine([in]string FileName, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddHorizontalLine (FileName As String, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <span data-ttu-id="7c7e9-112">必需的 <b>字符串</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-112">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-113">要用于横线的图像的文件名。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-113">The file name of the image you want to use for the horizontal line.</span>
+          </span>
+        </param>
+        <param name="Range">
+          <span data-ttu-id="7c7e9-114">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-114">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-115">Microsoft Word 在其上方放置横线的区域。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-115">The range above which Microsoft Word places the horizontal line.</span>
+          </span>
+          <span data-ttu-id="7c7e9-116">如果省略该参数，则 Word 会将横线放置在当前选定内容的上方。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-116">If this argument is omitted, Word places the horizontal line above the current selection.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="7c7e9-117">向当前文档添加一条基于图像文件的横线。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-117">Adds a horizontal line based on an image file to the current document.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="7c7e9-118">
+            <para>若要添加一条横线不基于现有图像文件，请使用<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" />方法。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-118">
+              <para>To add a horizontal line that isn't based on an existing image file, use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" /> method.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddHorizontalLineStandard">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddHorizontalLineStandard (ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddHorizontalLineStandard([in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddHorizontalLineStandard (Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">
+          <span data-ttu-id="7c7e9-119">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-119">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-120">Microsoft Word 在其上方放置横线的区域。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-120">The range above which Microsoft Word places the horizontal line.</span>
+          </span>
+          <span data-ttu-id="7c7e9-121">如果省略该参数，则 Word 会将横线放置在当前选定内容的上方。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-121">If this argument is omitted, Word places the horizontal line above the current selection.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="7c7e9-122">向当前文档添加一条横线。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-122">Adds a horizontal line to the current document.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="7c7e9-123">
+            <para>若要添加基于现有图像文件的横线，使用<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" />方法。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-123">
+              <para>To add a horizontal line based on an existing image file, use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" /> method.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOLEControl">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddOLEControl (ref object ClassType, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddOLEControl([in]object&amp; ClassType, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOLEControl (Optional ByRef ClassType As Object, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">
+          <span data-ttu-id="7c7e9-124">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-124">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-125">用于要创建的 ActiveX 控件的编程标识符。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-125">The programmatic identifier for the ActiveX control to be created.</span>
+          </span>
+        </param>
+        <param name="Range">
+          <span data-ttu-id="7c7e9-126">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-126">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-127">一个区域，ActiveX 控件将放置在该区域的文本中。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-127">The range where the ActiveX control will be placed in the text.</span>
+          </span>
+          <span data-ttu-id="7c7e9-128">如果该区域未折叠，则 ActiveX 控件将替换该区域。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-128">The ActiveX control replaces the range, if the range isn't collapsed.</span>
+          </span>
+          <span data-ttu-id="7c7e9-129">如果省略该参数，则自动放置 ActiveX 控件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-129">If this argument is omitted, the Active X control is placed automatically.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="7c7e9-130">创建一个 ActiveX 控件（以前称为 OLE 控件）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-130">Creates an ActiveX control (formerly known as an OLE control).</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="7c7e9-131">
+            <para>此方法返回<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象，表示新的 ActiveX 控件。</para>
+            <para>ActiveX 控件表示为<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象或 Microsoft Word 中的<b>InlineShape</b>对象。若要修改 ActiveX 控件的属性，请使用<see cref="P:Microsoft.Office.Interop.Excel.OLEFormat.Object" />属性<see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" />指定的形状或内嵌形状对象。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-131">
+              <para>This method returns the <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object that represents the new ActiveX control.</para>
+              <para>ActiveX controls are represented as either <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects or <b>InlineShape</b> objects in Microsoft Word. To modify the properties for an ActiveX control, use the <see cref="P:Microsoft.Office.Interop.Excel.OLEFormat.Object" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> object for the specified shape or inline shape.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOLEObject">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddOLEObject (ref object ClassType, ref object FileName, ref object LinkToFile, ref object DisplayAsIcon, ref object IconFileName, ref object IconIndex, ref object IconLabel, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddOLEObject([in]object&amp; ClassType, [in]object&amp; FileName, [in]object&amp; LinkToFile, [in]object&amp; DisplayAsIcon, [in]object&amp; IconFileName, [in]object&amp; IconIndex, [in]object&amp; IconLabel, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOLEObject (Optional ByRef ClassType As Object, Optional ByRef FileName As Object, Optional ByRef LinkToFile As Object, Optional ByRef DisplayAsIcon As Object, Optional ByRef IconFileName As Object, Optional ByRef IconIndex As Object, Optional ByRef IconLabel As Object, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DisplayAsIcon" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconFileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconIndex" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconLabel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">
+          <span data-ttu-id="7c7e9-132">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-132">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-133">用于激活指定 OLE 对象的应用程序名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-133">The name of the application used to activate the specified OLE object.</span>
+          </span>
+        </param>
+        <param name="FileName">
+          <span data-ttu-id="7c7e9-134">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-134">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-135">创建对象所用的文件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-135">The file from which the object is to be created.</span>
+          </span>
+          <span data-ttu-id="7c7e9-136">如果省略该参数，则使用当前的文件夹。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-136">If this argument is omitted, the current folder is used.</span>
+          </span>
+          <span data-ttu-id="7c7e9-137">必须指定<paramref name="ClassType" />或<paramref name="FileName" />对象，但不是能同时参数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-137">You must specify either the <paramref name="ClassType" /> or <paramref name="FileName" /> argument for the object, but not both.</span>
+          </span>
+        </param>
+        <param name="LinkToFile">
+          <span data-ttu-id="7c7e9-138">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-138">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-139">
+            <b>True</b>以链接到从中创建它; 文件的 OLE 对象<b>False</b>以便 OLE 对象的文件的独立副本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-139">
+              <b>True</b> to link the OLE object to the file from which it was created; <b>False</b> to make the OLE object an independent copy of the file.</span>
+          </span>
+          <span data-ttu-id="7c7e9-140">如果您指定的值<paramref name="ClassType" />、<paramref name="LinkToFile" />参数必须为<b>False</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-140">If you specified a value for <paramref name="ClassType" />, the <paramref name="LinkToFile" /> argument must be <b>False</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-141">默认值为 <b>False</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-141">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="DisplayAsIcon">
+          <span data-ttu-id="7c7e9-142">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-142">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-143">
+            <b>真</b> 若要将 OLE 对象显示为图标。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-143">
+              <b>True</b> to display the OLE object as an icon.</span>
+          </span>
+          <span data-ttu-id="7c7e9-144">默认值为 <b>False</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-144">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="IconFileName">
+          <span data-ttu-id="7c7e9-145">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-145">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-146">包含将要显示的图标的文件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-146">The file that contains the icon to be displayed.</span>
+          </span>
+        </param>
+        <param name="IconIndex">
+          <span data-ttu-id="7c7e9-147">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-147">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-148">内的图标索引号<paramref name="IconFileName" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-148">The index number of the icon within <paramref name="IconFileName" />.</span>
+          </span>
+          <span data-ttu-id="7c7e9-149">图标显示在更改图标对话框 （插入菜单、 对象对话框） 顺序相对应的指定文件中的图标次序当选显示为图标复选框。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-149">The order of icons in the specified file corresponds to the order in which the icons appear in the Change Icon dialog box (Insert menu, Object dialog box) when the Display as icon check box is selected.</span>
+          </span>
+          <span data-ttu-id="7c7e9-150">文件中第一个图标的索引号是 0（零）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-150">The first icon in the file has the index number 0 (zero).</span>
+          </span>
+          <span data-ttu-id="7c7e9-151">如果中不存在具有给定的索引号的图标<paramref name="IconFileName" />，则使用具有索引编号 1 （在文件中的第二个图标） 图标。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-151">If an icon with the given index number doesn't exist in <paramref name="IconFileName" />, the icon with the index number 1 (the second icon in the file) is used.</span>
+          </span>
+          <span data-ttu-id="7c7e9-152">默认值为 0（零）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-152">The default value is 0 (zero).</span>
+          </span>
+        </param>
+        <param name="IconLabel">
+          <span data-ttu-id="7c7e9-153">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-153">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-154">显示在图标下面的标签（标题）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-154">A label (caption) to be displayed beneath the icon.</span>
+          </span>
+        </param>
+        <param name="Range">
+          <span data-ttu-id="7c7e9-155">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-155">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-156">指定 OLE 对象放置在文本中的区域。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-156">The range where the OLE object will be placed in the text.</span>
+          </span>
+          <span data-ttu-id="7c7e9-157">除非区域是折叠的，否则 OLE 对象将替换该区域。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-157">The OLE object replaces the range, unless the range is collapsed.</span>
+          </span>
+          <span data-ttu-id="7c7e9-158">如果省略该参数，则自动放置对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-158">If this argument is omitted, the object is placed automatically.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="7c7e9-159">创建 OLE 对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-159">Creates an OLE object.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="7c7e9-160">
+            <para>返回<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象，表示新的 OLE 对象。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-160">
+              <para>Returns the <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object that represents the new OLE object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPicture">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddPicture (string FileName, ref object LinkToFile, ref object SaveWithDocument, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddPicture([in]string FileName, [in]object&amp; LinkToFile, [in]object&amp; SaveWithDocument, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPicture (FileName As String, Optional ByRef LinkToFile As Object, Optional ByRef SaveWithDocument As Object, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SaveWithDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <span data-ttu-id="7c7e9-161">必需的 <b>字符串</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-161">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-162">图片的路径和文件名。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-162">The path and file name of the picture.</span>
+          </span>
+        </param>
+        <param name="LinkToFile">
+          <span data-ttu-id="7c7e9-163">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-163">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-164">
+            <b>真</b> 要将图片链接到创建它的文件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-164">
+              <b>True</b> to link the picture to the file from which it was created.</span>
+          </span>
+          <span data-ttu-id="7c7e9-165">
+            <b>False</b> 使图片文件的独立副本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-165">
+              <b>False</b> to make the picture an independent copy of the file.</span>
+          </span>
+          <span data-ttu-id="7c7e9-166">默认值为 <b>False</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-166">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="SaveWithDocument">
+          <span data-ttu-id="7c7e9-167">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-167">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-168">如果为 <b>True</b> ，则将链接的图片与文档一起保存。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-168">
+              <b>True</b> to save the linked picture with the document.</span>
+          </span>
+          <span data-ttu-id="7c7e9-169">默认值为 <b>False</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-169">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="Range">
+          <span data-ttu-id="7c7e9-170">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-170">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-171">图片置于文本中的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-171">The location where the picture will be placed in the text.</span>
+          </span>
+          <span data-ttu-id="7c7e9-172">如果该区域未折叠，那么图片将覆盖此区域，否则插入图片。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-172">If the range isn't collapsed, the picture replaces the range; otherwise, the picture is inserted.</span>
+          </span>
+          <span data-ttu-id="7c7e9-173">如果省略此参数，则自动放置图片。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-173">If this argument is omitted, the picture is placed automatically.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="7c7e9-174">在文档中添加一幅图片。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-174">Adds a picture to a document.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="7c7e9-175">
+            <para>此方法返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表图片，并将其添加到<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-175">
+              <para>This method returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the picture and adds it to the <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPictureBullet">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddPictureBullet (string FileName, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddPictureBullet([in]string FileName, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddPictureBullet(System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPictureBullet (FileName As String, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <span data-ttu-id="7c7e9-176">必需的 <b>字符串</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-176">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-177">要用于图片项目符号的图像的文件名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-177">The file name of the image you want to use for the picture bullet.</span>
+          </span>
+        </param>
+        <param name="Range">
+          <span data-ttu-id="7c7e9-178">可选的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-178">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="7c7e9-179">Microsoft Word 向其添加图片项目符号的区域。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-179">The range to which Microsoft Word adds the picture bullet.</span>
+          </span>
+          <span data-ttu-id="7c7e9-180">Word 会将图片项目符号添加到该区域的每个段落。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-180">Word adds the picture bullet to each paragraph in the range.</span>
+          </span>
+          <span data-ttu-id="7c7e9-181">如果省略该参数，则 Word 将图片项目符号添加到当前选定内容的每个段落中。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-181">If this argument is omitted, Word adds the picture bullet to each paragraph in the current selection.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="7c7e9-182">向当前文档添加一个基于图像文件的图片项目符号。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-182">Adds a picture bullet based on an image file to the current document.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="7c7e9-183">
+            <para>此方法返回<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-183">
+              <para>This method returns a <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSmartArt">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddSmartArt (Microsoft.Office.Core.SmartArtLayout Layout, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddSmartArt([in]class Microsoft.Office.Core.SmartArtLayout Layout, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddSmartArt(Microsoft.Office.Core.SmartArtLayout,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddSmartArt (Layout As SmartArtLayout, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Layout" Type="Microsoft.Office.Core.SmartArtLayout" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Layout">
+          <span data-ttu-id="7c7e9-184">A<see cref="T:Microsoft.Office.Core.SmartArtLayout" />指定 SmartArt 图形的布局的对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-184">A <see cref="T:Microsoft.Office.Core.SmartArtLayout" /> object that specifies the layout for the SmartArt graphic.</span>
+          </span>
+        </param>
+        <param name="Range">
+          <span data-ttu-id="7c7e9-185">指定 SmartArt 图形所绑定到的文本。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-185">Specifies the text to which the SmartArt graphic is bound.</span>
+          </span>
+          <span data-ttu-id="7c7e9-186">如果<paramref name="Range" />指定范围中的第一段的开头放置在 SmartArt 图形。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-186">If <paramref name="Range" /> is specified, the SmartArt graphic is positioned at the beginning of the first paragraph in the range.</span>
+          </span>
+          <span data-ttu-id="7c7e9-187">如果省略此参数，则自动选定区域，相对于页面顶端和左边缘位于 SmartArt 图形。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-187">If this parameter is omitted, the range is selected automatically, and the SmartArt graphic is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="7c7e9-188">将 SmartArt 图形作为内嵌形状插入活动文档。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-188">Inserts a SmartArt graphic as an inline shape into the active document.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="7c7e9-189">SmartArt 图形插入。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-189">The SmartArt graphic to insert.</span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddWebVideo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape AddWebVideo (string EmbedCode, ref object VideoWidth, ref object VideoHeight, ref object PosterFrameImage, ref object Url, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddWebVideo([in]string EmbedCode, [in]object&amp; VideoWidth, [in]object&amp; VideoHeight, [in]object&amp; PosterFrameImage, [in]object&amp; Url, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddWebVideo(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddWebVideo (EmbedCode As String, ByRef VideoWidth As Object, ByRef VideoHeight As Object, Optional ByRef PosterFrameImage As Object, Optional ByRef Url As Object, Optional ByRef Range As Object) As InlineShape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EmbedCode" Type="System.String" />
+        <Parameter Name="VideoWidth" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="VideoHeight" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PosterFrameImage" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Url" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="EmbedCode">
+          <span data-ttu-id="7c7e9-190">嵌入代码的视频。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-190">The embed code for the video.</span>
+          </span>
+        </param>
+        <param name="VideoWidth">
+          <span data-ttu-id="7c7e9-191">Integer 值，它代表视频以像素为单位的 web 的宽度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-191">An integer that represents the width of the web video in pixels.</span>
+          </span>
+        </param>
+        <param name="VideoHeight">
+          <span data-ttu-id="7c7e9-192">Integer 值，它代表 web 视频以像素为单位的高度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-192">An integer that represents the height of the web video in pixels.</span>
+          </span>
+        </param>
+        <param name="PosterFrameImage">
+          <span data-ttu-id="7c7e9-193">一个字符串，指向要用作视频 web 海报帧的文件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-193">A string that points to the file to use as the poster frame for the web video.</span>
+          </span>
+        </param>
+        <param name="Url">
+          <span data-ttu-id="7c7e9-194">指向视频的 URL。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-194">The URL to the video.</span>
+          </span>
+        </param>
+        <param name="Range">
+          <span data-ttu-id="7c7e9-195">要插入 web 视频范围。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-195">The range at which to insert the web video.</span>
+          </span>
+          <span data-ttu-id="7c7e9-196">如果<paramref name="Range" />是省略，则使用当前的选择。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-196">If <paramref name="Range" /> is omitted, the current selection is used.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="7c7e9-197">向文档中添加新的 web 视频。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-197">Adds a new web video to the document.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="7c7e9-198">返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-198">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="7c7e9-199">指定集合中返回的项目数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-199">Returns the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="7c7e9-200">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-200">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="7c7e9-201">
+            <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
+          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-201">
+              <para>If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.InlineShape Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As InlineShape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::InlineShape ^ default[int] { Microsoft::Office::Interop::Word::InlineShape ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="7c7e9-202">一个<b>整数</b>，指示的单个对象的序号位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-202">An <b>Integer</b> indicating the ordinal position of the individual object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="7c7e9-203">返回集合中的单个对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-203">Returns an individual object in a collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape New (Microsoft.Office.Interop.Word.Range Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape New([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::InlineShape ^ New(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(200)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Range">
+          <span data-ttu-id="7c7e9-204">所需<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-204">Required <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</span>
+          </span>
+          <span data-ttu-id="7c7e9-205">新图形的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-205">The location of the new graphic.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="7c7e9-206">插入边框环绕的空、 1 英寸正方形 Microsoft Word 图片对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-206">Inserts an empty, 1-inch-square Microsoft Word picture object surrounded by a border.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="7c7e9-207">
+            <para>此方法返回作为新图形<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-207">
+              <para>This method returns the new graphic as an <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="7c7e9-208">返回一个对象，代表指定对象的父对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="7c7e9-208">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

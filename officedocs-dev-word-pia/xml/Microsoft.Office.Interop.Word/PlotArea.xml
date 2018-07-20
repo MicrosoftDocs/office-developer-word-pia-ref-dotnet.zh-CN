@@ -1,0 +1,949 @@
+<Type Name="PlotArea" FullName="Microsoft.Office.Interop.Word.PlotArea">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="e3b13ffccfceb7bb7fac3ed906eefc460269879a" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20666846" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface PlotArea" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PlotArea" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PlotArea" />
+  <TypeSignature Language="VB.NET" Value="Public Interface PlotArea" />
+  <TypeSignature Language="C++ CLI" Value="public interface class PlotArea" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("56AFD330-440C-4F4C-A39C-ED306D084D5F")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="0b867-101">代表图表的绘图区。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0b867-101">Represents the plot area of a chart.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="0b867-102">
+        <para>这是绘制图表数据的区域。在二维图表的绘图区包含数据标记、 网格线、 数据标签、 趋势线，和位于图表区可选图表项。三维图表的绘图区包含上述各项以及背景墙、 floor、 轴、 轴标题和图表中的刻度线标签。</para>
+        <para>绘图区被外面的图表区。在二维图表的图表区包含轴、 图表标题、 轴标题和图例。三维图表上的图表区域包含图表标题和图例。有关设置图表区格式的信息，请参阅<see cref="T:Microsoft.Office.Interop.Word.ChartArea" />对象。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0b867-102">
+          <para>This is the area where your chart data is plotted. The plot area on a 2-D chart contains the data markers, gridlines, data labels, trendlines, and optional chart items placed in the chart area. The plot area on a 3-D chart contains all the above items plus the walls, floor, axes, axis titles, and tick-mark labels in the chart.</para>
+          <para>The plot area is surrounded by the chart area. The chart area on a 2-D chart contains the axes, the chart title, the axis titles, and the legend. The chart area on a 3-D chart contains the chart title and the legend. For information about formatting the chart area, see the <see cref="T:Microsoft.Office.Interop.Word.ChartArea" /> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+    <example>
+      <span data-ttu-id="0b867-103">
+        <para>使用<see cref="P:Microsoft.Office.Interop.Word.Chart.PlotArea" />属性返回<see cref="T:Microsoft.Office.Interop.Word.PlotArea" />对象。下面的示例在活动文档中第一个图表的图表区 places 指定虚线的边框，并将绘图区周围放置虚线的边框。</para>
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0b867-103">
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.Chart.PlotArea" /> property to return a <see cref="T:Microsoft.Office.Interop.Word.PlotArea" /> object. The following example places a dashed border around the chart area of the first chart in the active document, and then places a dotted border around the plot area.</para>
+        </span>
+      </span>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-104">当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-104">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+          <span data-ttu-id="0b867-105">如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-105">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span>
+          </span>
+          <span data-ttu-id="0b867-106">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-106">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0b867-107">
+            <b>对象</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-107">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Border">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartBorder Border { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartBorder Border" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Border" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Border As ChartBorder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartBorder ^ Border { Microsoft::Office::Interop::Word::ChartBorder ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(128)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(128)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-108">返回<see cref="T:Microsoft.Office.Interop.Word.Border" />对象，它代表对象的边框。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-108">Returns a <see cref="T:Microsoft.Office.Interop.Word.Border" /> object that represents the border of the object.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearFormats">
+      <MemberSignature Language="C#" Value="public object ClearFormats ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ClearFormats() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.PlotArea.ClearFormats" />
+      <MemberSignature Language="VB.NET" Value="Public Function ClearFormats () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ClearFormats();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(112)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-109">清除对象的格式设置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-109">Clears the formatting of the object.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="0b867-110">
+            <b>对象</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-110">
+              <b>Object</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-111">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-111">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+          <span data-ttu-id="0b867-112">
+            <b>Integer</b> 类型，只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-112">Read-only <b>Integer</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0b867-113">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-113">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="0b867-114">
+            <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-114">
+              <para>If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."  This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fill">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartFillFormat Fill { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartFillFormat Fill" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Fill" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fill As ChartFillFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFillFormat ^ Fill { Microsoft::Office::Interop::Word::ChartFillFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1663)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1663)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-115">返回<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />指定的形状的对象或<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />对象包含填充格式的形状或图表属性指定的图表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-115">Returns a <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> object for a specified shape or a <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> object for a specified chart that contains fill formatting properties for the shape or chart.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartFormat Format { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartFormat Format" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Format" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743833)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743833)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-116">返回行、 填充和效果的对象的格式。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-116">Returns the line, fill, and effect formatting for the object.</span>
+          </span>
+          <span data-ttu-id="0b867-117">只读<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-117">Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public double Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-118">返回或设置一个 <b>Double</b> 值，该值代表的高度，以磅为单位的对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-118">Returns or sets a <b>Double</b> value that represents the height, in points, of the object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0b867-119">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-119">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsideHeight">
+      <MemberSignature Language="C#" Value="public double InsideHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 InsideHeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.InsideHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property InsideHeight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double InsideHeight { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1670)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1670)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1670)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-120">返回或设置内部绘图区域，以磅为单位的高度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-120">Returns or sets the inside height of the plot area, in points.</span>
+          </span>
+          <span data-ttu-id="0b867-121">读/写 <b>双</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-121">Read/write <b>Double</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0b867-122">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-122">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="0b867-123">
+            <para>用于此度量的绘图区不包括坐标轴标签。<see cref="P:Microsoft.Office.Interop.Word.PlotArea.Height" />的绘图区的属性使用包括坐标轴标签的边框。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-123">
+              <para>The plot area used for this measurement doesn’t include the axis labels. The <see cref="P:Microsoft.Office.Interop.Word.PlotArea.Height" /> property for the plot area uses the bounding rectangle that includes the axis labels.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsideLeft">
+      <MemberSignature Language="C#" Value="public double InsideLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 InsideLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.InsideLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property InsideLeft As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double InsideLeft { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1667)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1667)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1667)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-124">返回或设置与内部图表边缘的距离左边界绘图区，以磅为单位。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-124">Returns or sets the distance from the chart edge to the inside left edge of the plot area, in points.</span>
+          </span>
+          <span data-ttu-id="0b867-125">读/写 <b>双</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-125">Read/write <b>Double</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0b867-126">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-126">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="0b867-127">
+            <para>用于此度量的绘图区不包括坐标轴标签。<see cref="P:Microsoft.Office.Interop.Word.PlotArea.Left" />的绘图区的属性使用包括坐标轴标签的边框。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-127">
+              <para>The plot area used for this measurement doesn’t include the axis labels. The <see cref="P:Microsoft.Office.Interop.Word.PlotArea.Left" /> property for the plot area uses the bounding rectangle that includes the axis labels.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsideTop">
+      <MemberSignature Language="C#" Value="public double InsideTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 InsideTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.InsideTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property InsideTop As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double InsideTop { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1668)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1668)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1668)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-128">返回或设置到内部边缘的距离图表上边缘的绘图区，以磅为单位。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-128">Returns or sets the distance from the chart edge to the inside top edge of the plot area, in points.</span>
+          </span>
+          <span data-ttu-id="0b867-129">读/写 <b>双</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-129">Read/write <b>Double</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0b867-130">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-130">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="0b867-131">
+            <para>用于此度量的绘图区不包括坐标轴标签。<see cref="P:Microsoft.Office.Interop.Word.PlotArea.Top" />的绘图区的属性使用包括坐标轴标签的边框。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-131">
+              <para>The plot area used for this measurement doesn’t include the axis labels. The <see cref="P:Microsoft.Office.Interop.Word.PlotArea.Top" /> property for the plot area uses the bounding rectangle that includes the axis labels.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsideWidth">
+      <MemberSignature Language="C#" Value="public double InsideWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 InsideWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.InsideWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property InsideWidth As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double InsideWidth { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1669)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1669)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1669)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-132">返回或设置内部绘图区域，以磅为单位的宽度。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-132">Returns or sets the inside width of the plot area, in points.</span>
+          </span>
+          <span data-ttu-id="0b867-133">读/写 <b>双</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-133">Read/write <b>Double</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0b867-134">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-134">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="0b867-135">
+            <para>用于此度量的绘图区不包括坐标轴标签。<see cref="P:Microsoft.Office.Interop.Word.PlotArea.Width" />的绘图区的属性使用包括坐标轴标签的边框。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-135">
+              <para>The plot area used for this measurement doesn’t include the axis labels. The <see cref="P:Microsoft.Office.Interop.Word.PlotArea.Width" /> property for the plot area uses the bounding rectangle that includes the axis labels.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interior">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Interior Interior { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Interior Interior" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Interior" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Interior As Interior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Interior ^ Interior { Microsoft::Office::Interop::Word::Interior ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-136">返回<see cref="T:Microsoft.Office.Interop.Word.Font" />对象，它代表指定对象的字体。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-136">Returns a <see cref="T:Microsoft.Office.Interop.Word.Font" /> object that represents the font of the specified object.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public double Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-137">返回或设置一个<b>Double</b>值，该值代表从对象左边缘的图表区的左边缘的距离，以磅为单位。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-137">Returns or sets a <b>Double</b> value that represents the distance, in points, from the left edge of the object to the left edge of the chart area.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0b867-138">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-138">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-139">返回一个 <b>字符串</b> 值，表示该对象的名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-139">Returns a <b>String</b> value that represents the name of the object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0b867-140">
+            <b>字符串</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-140">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-p108">返回指定对象的父级。只读 <b>对象</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-p108">Returns the parent for the specified object. Read-only <b>Object</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0b867-143">
+            <b>对象</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-143">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XlChartElementPosition Position { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.XlChartElementPosition Position" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Property Position As XlChartElementPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlChartElementPosition Position { Microsoft::Office::Interop::Word::XlChartElementPosition get(); void set(Microsoft::Office::Interop::Word::XlChartElementPosition value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1671)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1671)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1671)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XlChartElementPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-144">返回或设置图表上绘制区域的位置。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-144">Returns or sets the position of the plot area on the chart.</span>
+          </span>
+          <span data-ttu-id="0b867-145">读/写<see cref="T:Microsoft.Office.Interop.Word.XlChartElementPosition" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-145">Read/write <see cref="T:Microsoft.Office.Interop.Word.XlChartElementPosition" />.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.XlChartElementPosition" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public object Select ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Select() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.PlotArea.Select" />
+      <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(235)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-146">选择对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-146">Selects the object.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="0b867-147">
+            <b>对象</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-147">
+              <b>Object</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public double Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-148">返回或设置一个 <b>Double</b> 值，它代表从对象的上边缘到工作表第一行顶部或图表上的图表区顶部的距离（以磅为单位）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-148">Returns or sets a <b>Double</b> value that represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0b867-149">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-149">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public double Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0b867-150">返回或设置一个 <b>Double</b> 值，它表示的宽度，以磅为单位的对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-150">Returns or sets a <b>Double</b> value that represents the width, in points, of the object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0b867-151">
+            <b>Double</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0b867-151">
+              <b>Double</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,574 @@
+<Type Name="SynonymInfo" FullName="Microsoft.Office.Interop.Word.SynonymInfo">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="2912f319ea857dd7183dd4989af962bcd735c1a1" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20666503" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SynonymInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SynonymInfo" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SynonymInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SynonymInfo" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SynonymInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002099B-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="0d879-101">代表有关指定范围或给定字符串中的同义词、反义词、相关词或相关表达式的信息。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0d879-101">Represents the information about synonyms, antonyms, related words, or related expressions for the specified range or a given string.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="0d879-102">
+        <para>使用的<b>SynonymInfo</b>属性<see cref="T:Microsoft.Office.Interop.Word.Range" />或<see cref="T:Microsoft.Office.Interop.Word.Application" />对象可返回一个<b>SynonymInfo</b>对象。从区域或从 Microsoft Word，可以返回<b>SynonymInfo</b>对象。如果从 Word 返回，指定查找的字词或短语和校对语言 id。如果它返回区域中，则 Word 将指定的区域用作查找的字词。</para>
+        <para>许多<b>SynonymInfo</b>对象的属性返回一个<b>对象</b>，包含一个字符串数组。时使用这些属性，您可以将返回的数组分配给变量，然后索引变量以查看该数组中的元素。</para>
+        <para>您可以检查的值<see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningCount" />属性来防止在代码中潜在的错误。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0d879-102">
+          <para>Use the <b>SynonymInfo</b> property of a <see cref="T:Microsoft.Office.Interop.Word.Range" /> or <see cref="T:Microsoft.Office.Interop.Word.Application" /> object to return a <b>SynonymInfo</b> object. The <b>SynonymInfo</b> object can be returned either from a range or from Microsoft Word. If it's returned from Word, you specify the lookup word or phrase and a proofing language ID. If it's returned from a range, Word uses the specified range as the lookup word.</para>
+          <para>Many of the properties of the <b>SynonymInfo</b> object return an <b>Object</b> that contains an array of strings. When working with these properties, you can assign the returned array to a variable and then index the variable to see the elements in the array.</para>
+          <para>You can check the value of the <see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningCount" /> property to prevent potential errors in your code.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AntonymList">
+      <MemberSignature Language="C#" Value="public object AntonymList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object AntonymList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.AntonymList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AntonymList As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AntonymList { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0d879-103">返回单词或短语的反义词列表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-103">Returns a list of antonyms for the word or phrase.</span>
+          </span>
+          <span data-ttu-id="0d879-104">该列表以字符串数组的形式返回。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-104">The list is returned as an array of strings.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0d879-105">
+            <para>
+              <b>AntonymList</b>属性是属性<see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" />对象，可以返回从区域或应用程序。如果此对象返回从应用程序，您可以指定要查找的单词和要使用的语言。范围中返回该对象时，被查找区域使用的语言的区域。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-105">
+              <para>The <b>AntonymList</b> property is a property of the <see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" /> object, which can be returned from either a range or the application. If this object is returned from the application, you specify the word to look up and the language to use. When the object is returned from a range, the range is looked up using the language of the range.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0d879-106">返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-106">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0d879-107">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-107">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0d879-108">
+            <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
+          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-108">
+              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Found">
+      <MemberSignature Language="C#" Value="public bool Found { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Found" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Found" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Found As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Found { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0d879-109">
+            <b>如果在同义词库中查找同义词、 反义词，相关单词，或相关短语的单词或短语。</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-109">
+              <b>True</b> if the thesaurus finds synonyms, antonyms, related words, or related expressions for the word or phrase.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeaningCount">
+      <MemberSignature Language="C#" Value="public int MeaningCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MeaningCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MeaningCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MeaningCount { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0d879-110">返回单词或短语的同义词库中找到的含义列表中条目数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-110">Returns the number of entries in the list of meanings found in the thesaurus for the word or phrase.</span>
+          </span>
+          <span data-ttu-id="0d879-111">如果不找到任何含义，则，返回 0 (零)。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-111">Returns 0 (zero) if no meanings were found.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0d879-112">
+            <para>每一个含义都代表一个唯一的单词或短语的同义词列表。</para>
+            <para>相关的单词、 相关的词句和反义词列表不作为含义列表中的条目进行统计。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-112">
+              <para>Each meaning represents a unique list of synonyms for the word or phrase.</para>
+              <para>The lists of related words, related expressions, and antonyms aren't counted as entries in the list of meanings.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeaningList">
+      <MemberSignature Language="C#" Value="public object MeaningList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object MeaningList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MeaningList As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ MeaningList { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0d879-113">返回列表中的单词或短语的含义。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-113">Returns the list of meanings for the word or phrase.</span>
+          </span>
+          <span data-ttu-id="0d879-114">该列表以字符串数组的形式返回。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-114">The list is returned as an array of strings.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0d879-115">
+            <para>相关的单词、 相关的词句和反义词不作为含义列表中的条目进行统计。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-115">
+              <para>The lists of related words, related expressions, and antonyms aren't counted as entries in the list of meanings.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0d879-116">返回一个对象，代表指定对象的父对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-116">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartOfSpeechList">
+      <MemberSignature Language="C#" Value="public object PartOfSpeechList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object PartOfSpeechList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.PartOfSpeechList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartOfSpeechList As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PartOfSpeechList { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0d879-117">返回对应于其含义的单词或短语在同义词库中查找找到词性的列表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-117">Returns a list of the parts of speech corresponding to the meanings found for the word or phrase looked up in the thesaurus.</span>
+          </span>
+          <span data-ttu-id="0d879-118">作为一个整数数组，则返回列表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-118">The list is returned as an array of integers.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0d879-119">
+            <para>词性列表返回作为数组包含以下<see cref="T:Microsoft.Office.Interop.Word.WdPartOfSpeech" />常量： <b>wdAdjective</b>、 <b>wdAdverb</b>、 <b>wdConjunction</b>、 <b>wdIdiom</b>、 <b>wdInterjection</b>、 <b>wdNoun</b>、 <b>wdOther</b>，<b>wdPreposition</b>、 <b>wdPronoun</b>和<b>wdVerb</b>。数组元素返回的元素所对应的顺序<see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningList" />属性。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-119">
+              <para>The list of the parts of speech is returned as an array consisting of the following <see cref="T:Microsoft.Office.Interop.Word.WdPartOfSpeech" /> constants: <b>wdAdjective</b>, <b>wdAdverb</b>, <b>wdConjunction</b>, <b>wdIdiom</b>, <b>wdInterjection</b>, <b>wdNoun</b>, <b>wdOther</b>, <b>wdPreposition</b>, <b>wdPronoun</b>, and <b>wdVerb</b>. The array elements are ordered to correspond to the elements returned by the <see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningList" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelatedExpressionList">
+      <MemberSignature Language="C#" Value="public object RelatedExpressionList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RelatedExpressionList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.RelatedExpressionList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelatedExpressionList As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RelatedExpressionList { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0d879-120">返回与指定的单词或短语相关的表达式的列表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-120">Returns a list of expressions related to the specified word or phrase.</span>
+          </span>
+          <span data-ttu-id="0d879-121">该列表以字符串数组的形式返回。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-121">The list is returned as an array of strings.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0d879-122">
+            <para>通常，是很少同义词库中找到的相关的词句。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-122">
+              <para>Typically, there are very few related expressions found in the thesaurus.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelatedWordList">
+      <MemberSignature Language="C#" Value="public object RelatedWordList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RelatedWordList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.RelatedWordList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelatedWordList As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RelatedWordList { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0d879-123">返回与指定的单词或短语相关的单词的列表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-123">Returns a list of words related to the specified word or phrase.</span>
+          </span>
+          <span data-ttu-id="0d879-124">该列表以字符串数组的形式返回。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-124">The list is returned as an array of strings.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SynonymList">
+      <MemberSignature Language="C#" Value="public object SynonymList[ref object Meaning] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SynonymList(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.SynonymList(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SynonymList(ByRef Meaning As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SynonymList[System::Object ^ %] { System::Object ^ get(System::Object ^ % Meaning); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Meaning" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Meaning">
+          <span data-ttu-id="0d879-125">所需的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-125">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="0d879-126">为一个字符串或可能的含义数组中的索引号含义。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-126">The meaning as a string or an index number in the array of possible meanings.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="0d879-127">返回单词或短语某一指定含义的同义词列表。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-127">Returns a list of synonyms for a specified meaning of a word or phrase.</span>
+          </span>
+          <span data-ttu-id="0d879-128">该列表以字符串数组的形式返回。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-128">The list is returned as an array of strings.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Word">
+      <MemberSignature Language="C#" Value="public string Word { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Word" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Word" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Word As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Word { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0d879-129">返回的单词或短语的同义词库中进行查找。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-129">Returns the word or phrase that was looked up by the thesaurus.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="0d879-130">
+            <para>有时将同义词库查找的字符串或用于返回的范围的缩写形式<see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" />对象。<b>Word</b>属性允许您查看已使用的准确字符串。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0d879-130">
+              <para>The thesaurus will sometimes look up a shortened version of the string or range used to return the <see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" /> object. The <b>Word</b> property allows you to see the exact string that was used.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

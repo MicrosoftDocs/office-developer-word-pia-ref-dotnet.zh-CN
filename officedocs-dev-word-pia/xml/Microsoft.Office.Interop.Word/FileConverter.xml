@@ -1,0 +1,537 @@
+<Type Name="FileConverter" FullName="Microsoft.Office.Interop.Word.FileConverter">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b895588fe75d88bfa9fe9416f0d5c82af0369a00" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20666895" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface FileConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileConverter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FileConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Interface FileConverter" />
+  <TypeSignature Language="C++ CLI" Value="public interface class FileConverter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020999-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="a66e6-101">代表用于打开或保存文件的文件转换器。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="a66e6-101">Represents a file converter that's used to open or save files.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="a66e6-102">
+        <para>
+          <b>FileConverter</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.FileConverters" />集合。<b>FileConverters</b>集合中包含的打开和保存文件的所有安装的文件转换器。</para>
+        <para>使用<b>FileConverters</b>(<paramref name="index" />)，其中<paramref name="index" />是类名称或索引号，可返回单个<b>FileConverter</b>对象。</para>
+        <para>的索引号代表<b>FileConverters</b>集合中的文件转换器的位置。</para>无法创建新的文件转换器或向<b>FileConverters</b>集合中添加一个
+      <para>。<b>FileConverter</b>对象的 Microsoft Office 或通过安装补充文件转换器的安装过程中添加。使用任意一种<see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" />或<see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" />属性可以确定是否可以使用<b>FileConverter</b>对象打开或保存文档。</para>在另存为对话框中列出了用于保存文档
+      <para>文件转换器。用于打开文档的文件转换器显示在对话框中，如果选择工具菜单选项对话框中常规选项卡上的打开的复选框时确认转换。</para><para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="a66e6-102">
+          <para>The <b>FileConverter</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.FileConverters" /> collection. The <b>FileConverters</b> collection contains all the installed file converters for opening and saving files.</para>
+          <para>Use <b>FileConverters</b>(<paramref name="index" />), where <paramref name="index" /> is a class name or index number, to return a single <b>FileConverter</b> object.</para>
+          <para>The index number represents the position of the file converter in the <b>FileConverters</b> collection.</para>
+          <para>You cannot create a new file converter or add one to the <b>FileConverters</b> collection. <b>FileConverter</b> objects are added during installation of Microsoft Office or by installing supplemental file converters. Use either the <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" /> or <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" /> property to determine whether a <b>FileConverter</b> object can be used to open or save document.</para>
+          <para>File converters for saving documents are listed in the Save As dialog box. File converters for opening documents appear in a dialog box if the Confirm conversion at Open check box is selected on the General tab in the Options dialog box (Tools menu).</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a66e6-103">返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-103">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanOpen">
+      <MemberSignature Language="C#" Value="public bool CanOpen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanOpen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanOpen As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanOpen { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a66e6-104">确定用于指定的文件转换器打开文件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-104">Determines if the specified file converter is designed to open files.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="a66e6-105">
+            <para>如果指定的文件转换器旨在打开文件和<b>False</b>如果没有此属性返回<b>True</b> 。</para>
+            <para>
+              <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" />属性返回<b>True</b> ，如果指定的文件转换器可用于保存 （导出） 文件。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-105">
+              <para>This property returns <b>True</b> if the specified file converter is designed to open files, and <b>False</b> if not.</para>
+              <para>The <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" /> property returns <b>True</b> if the specified file converter can be used to save (export) files.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanSave">
+      <MemberSignature Language="C#" Value="public bool CanSave { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanSave" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanSave As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanSave { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a66e6-106">确定是否指定的文件转换器旨在保存文件。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-106">Determines if the specified file converter is designed to save files.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="a66e6-107">
+            <para>
+              <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" />属性返回<b>True</b> ，如果可以使用指定的文件转换器打开 （导入） 文件。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-107">
+              <para>The <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" /> property returns <b>True</b> if the specified file converter can be used to open (import) files.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassName">
+      <MemberSignature Language="C#" Value="public string ClassName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClassName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.ClassName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClassName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClassName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a66e6-108">返回唯一标识文件转换器的名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-108">Returns a unique name that identifies the file converter.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a66e6-109">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-109">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="a66e6-110">
+            <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
+          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-110">
+              <para>If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extensions">
+      <MemberSignature Language="C#" Value="public string Extensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Extensions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Extensions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Extensions { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a66e6-111">返回与指定关联的扩展名的文件<see cref="T:Microsoft.Office.Interop.Word.FileConverter" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-111">Returns the file name extensions associated with the specified <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatName">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FormatName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.FormatName" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property FormatName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a66e6-112">返回指定的文件转换器的名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-112">Returns the name of the specified file converter.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="a66e6-113">
+            <para>格式名称显示在保存 （文件菜单） 中的另存为对话框中的类型框。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-113">
+              <para>The format names appear in the Save as type box in the Save As dialog box (File menu).</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a66e6-114">返回或设置指定对象的名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-114">Returns or sets the name of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenFormat">
+      <MemberSignature Language="C#" Value="public int OpenFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 OpenFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OpenFormat As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OpenFormat { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a66e6-115">返回指定的文件转换器的文件格式。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-115">Returns the file format of the specified file converter.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="a66e6-116">
+            <para>
+              <b>OpenFormat</b>属性可以是任何有效<see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" />常量，也可以是代表外部文件转换器的唯一编号。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-116">
+              <para>The <b>OpenFormat</b> property can be any valid <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constant, or it can be a unique number that represents an external file converter.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a66e6-117">返回一个对象，代表指定对象的父对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-117">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a66e6-118">返回指定对象的磁盘或 Web 路径。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-118">Returns the disk or Web path to the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="a66e6-119">
+            <para>路径中不包括尾随字符-例如，"C:\MSOffice"或"http://MyServer"。使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />属性添加文件夹和驱动器号的分隔符。使用<see cref="P:Microsoft.Office.Interop.Word.FileConverter.Name" />属性返回的文件名不路径。</para>
+            <para>可以使用<b>PathSeparator</b>属性建立 Web 地址，即使它们包含正斜杠 （/），<b>而 PathSeparator</b>属性默认反斜杠 (\)。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-119">
+              <para>The path doesn't include a trailing character— for example, "C:\MSOffice" or "http://MyServer". Use the <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> property to add the character that separates folders and drive letters. Use the <see cref="P:Microsoft.Office.Interop.Word.FileConverter.Name" /> property to return the file name without the path.</para>
+              <para>You can use the <b>PathSeparator</b> property to build Web addresses even though they contain forward slashes (/) and the <b>PathSeparator</b> property defaults to a backslash (\).</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveFormat">
+      <MemberSignature Language="C#" Value="public int SaveFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SaveFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.SaveFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SaveFormat As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SaveFormat { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="a66e6-120">返回指定的文件转换器的文件格式。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-120">Returns the file format of the specified file converter.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="a66e6-121">
+            <para>返回的值将为指定外部文件转换器的唯一数字或<see cref="T:Microsoft.Office.Interop.Word.WdSaveFormat" />常量。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="a66e6-121">
+              <para>The returned value will be a unique number that specifies an external file converter or a <see cref="T:Microsoft.Office.Interop.Word.WdSaveFormat" /> constant.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

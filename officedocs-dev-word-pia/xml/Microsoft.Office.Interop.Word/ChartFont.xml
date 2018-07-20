@@ -1,0 +1,944 @@
+<Type Name="ChartFont" FullName="Microsoft.Office.Interop.Word.ChartFont">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="128f354a01c1410ab41d27cc4bb9445f784baa50" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20666715" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ChartFont" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartFont" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartFont" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ChartFont" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ChartFont" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("CDB0FF41-E862-47BB-AE77-3FA7B1AE3189")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="2df34-101">包含图表对象的字体属性（字体名称、字号、颜色等等）。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="2df34-101">Contains the font attributes (font name, font size, color, and so on) for an object chart.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="2df34-102">
+        <para>如果您不希望中的所有文本都格式<see cref="T:Microsoft.Office.Interop.Word.AxisTitle" />， <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />， <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />，或<see cref="T:Microsoft.Office.Interop.Word.DisplayUnitLabel" />对象相同的方式，请使用该对象的<b>Characters</b>属性首先返回作为文本的子集<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象，然后使用<see cref="P:Microsoft.Office.Interop.Word.ChartCharacters.Font" /><see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象返回<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />对象可用于根据需要设置文本的子集的格式。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="2df34-102">
+          <para>If you don’t want to format all the text in an <see cref="T:Microsoft.Office.Interop.Word.AxisTitle" />, <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />, <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />, or <see cref="T:Microsoft.Office.Interop.Word.DisplayUnitLabel" /> object the same way, use the <b>Characters</b> property of that object to first return a subset of the text as a <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /> object, then use the <see cref="P:Microsoft.Office.Interop.Word.ChartCharacters.Font" /> property of the <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /> object to return a <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> object you can use to format the subset of text as needed.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-103">当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-103">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+          <span data-ttu-id="2df34-104">如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-104">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span>
+          </span>
+          <span data-ttu-id="2df34-105">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-105">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-106">
+            <b>对象</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-106">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Background">
+      <MemberSignature Language="C#" Value="public object Background { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Background" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Background" />
+      <MemberSignature Language="VB.NET" Value="Public Property Background As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Background { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-107">返回或设置在图表中使用的文本的背景类型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-107">Returns or sets the type of background for text used in charts.</span>
+          </span>
+          <span data-ttu-id="2df34-108">为可读/写属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-108">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-109">
+            <b>对象</b>设置为常量之一<see cref="T:Microsoft.Office.Interop.Word.XlBackground" /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-109">
+              <b>Object</b> which is set to one of the constants of <see cref="T:Microsoft.Office.Interop.Word.XlBackground" /></span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bold">
+      <MemberSignature Language="C#" Value="public object Bold { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Bold" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Bold" />
+      <MemberSignature Language="VB.NET" Value="Public Property Bold As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Bold { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-110">返回或设置字体的状态。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-110">Returns or sets the status of the font.</span>
+          </span>
+          <span data-ttu-id="2df34-111">为可读/写属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-111">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-112">如果字体为粗体; 设置为<b>True</b>的<b>对象</b>否则为<b>False</b></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-112">
+              <b>Object</b> that is set to <b>True</b> if the font is bold; otherwise, <b>False</b></span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="public object Color { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Color" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Color" />
+      <MemberSignature Language="VB.NET" Value="Public Property Color As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Color { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743812)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743812)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743812)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-113">返回或设置一个代表对象的主颜色的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-113">Returns or sets an <b>Object</b> representing the primary color of the object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-114">
+            <b>对象</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-114">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorIndex">
+      <MemberSignature Language="C#" Value="public object ColorIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ColorIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.ColorIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColorIndex As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ColorIndex { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743814)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743814)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743814)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-115">返回或设置一个代表字体的颜色的<b>对象</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-115">Returns or sets an <b>Object</b> that represents the color of the font.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-116">
+            <b>对象</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-116">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="2df34-117">
+            <para>将颜色作为当前调色板的索引值或以下项之一指定<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量：</para>
+            <list type="bullet">
+              <item>
+                <para>
+                  <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" />
+                </para>
+              </item>
+              <item>
+                <para>
+                  <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />
+                </para>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-117">
+              <para>The color is specified as an index value into the current color palette, or as one of the following <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> constants:</para>
+              <list type="bullet">
+                <item>
+                  <para>
+                    <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" />
+                  </para>
+                </item>
+                <item>
+                  <para>
+                    <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />
+                  </para>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-118">返回一个 32 位<b>整数</b>，它指示在其中创建指定的对象的应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-118">Returns a 32-bit <b>Integer</b> that indicates the application in which the specified object was created.</span>
+          </span>
+          <span data-ttu-id="2df34-119">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-119">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-120">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-120">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="2df34-121">
+            <para>如果对象在 Microsoft Word 中，创建<see cref="P:Microsoft.Office.Interop.Word.ChartFont.Creator" />属性返回十六进制数字 4d535744，表示的字符串"MSWD"。 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-121">
+              <para>If the object was created in Microsoft Word, the <see cref="P:Microsoft.Office.Interop.Word.ChartFont.Creator" /> property returns the hexadecimal number 4D535744, which represents the string "MSWD".  This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontStyle">
+      <MemberSignature Language="C#" Value="public object FontStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object FontStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.FontStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontStyle As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ FontStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743816)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743816)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743816)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-122">返回或设置字体样式。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-122">Returns or sets the font style.</span>
+          </span>
+          <span data-ttu-id="2df34-123">为可读/写属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-123">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-124">
+            <b>对象</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-124">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="2df34-125">
+            <para>更改此属性可能会影响其他<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />属性 (如<see cref="P:Microsoft.Office.Interop.Word.ChartFont.Bold" />和<see cref="P:Microsoft.Office.Interop.Word.ChartFont.Italic" />)。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-125">
+              <para>Changing this property may affect other <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> properties (such as <see cref="P:Microsoft.Office.Interop.Word.ChartFont.Bold" /> and <see cref="P:Microsoft.Office.Interop.Word.ChartFont.Italic" />).</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Italic">
+      <MemberSignature Language="C#" Value="public object Italic { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Italic" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Italic" />
+      <MemberSignature Language="VB.NET" Value="Public Property Italic As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Italic { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743818)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743818)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743818)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-126">获取或设置一个确定字体的状态的<b>对象</b>的值。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-126">Gets or sets the value of an <b>Object</b> that determines the status of the font.</span>
+          </span>
+          <span data-ttu-id="2df34-127">为可读/写属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-127">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-128">如果字体为斜体; 设置为<b>True</b>的<b>对象</b>否则为<b>False</b></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-128">
+              <b>Object</b> that is set to <b>True</b> if the font is italic; otherwise, <b>False</b></span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public object Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Name { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743820)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743820)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743820)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-129">返回或设置对象的名称。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-129">Returns or sets the name of the object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-130">
+            <b>对象</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-130">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutlineFont">
+      <MemberSignature Language="C#" Value="public object OutlineFont { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object OutlineFont" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.OutlineFont" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutlineFont As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ OutlineFont { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-131">获取或返回介绍将字体设置为大纲的值。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-131">Gets or Returns the value that describes the font as outline.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-132">一个<b>对象</b>，则返回<b>True</b>如果字体为空心字体，否则为<b>False</b></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-132">An <b>Object</b> that returns <b>True</b> if the font is an outline font, otherwise <b>False</b></span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="2df34-133">
+            <para>返回<b>True</b>、 <b>False</b>，或<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" />（True 和 False 混合）。可设为<b>True</b>、 <b>False</b>，或<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdToggle" />。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-133">
+              <para>Returns <b>True</b>, <b>False</b>, or <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" /> (a mixture of True and False). Can be set to <b>True</b>, <b>False</b>, or <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdToggle" />.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-134">返回指定对象的父级。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-134">Returns the parent for the specified object.</span>
+          </span>
+          <span data-ttu-id="2df34-135">只读。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-135">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-136">
+            <b>对象</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-136">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shadow">
+      <MemberSignature Language="C#" Value="public object Shadow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Shadow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Shadow" />
+      <MemberSignature Language="VB.NET" Value="Public Property Shadow As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Shadow { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743824)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743824)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743824)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-137">设置或返回介绍将指定的字体设置为带阴影的值</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-137">Sets or Returns the value that describes the specified font as shadowed</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-138">
+            <b>对象</b>设置为<b>True</b> ，如果指定的字体格式为阴影，否则它是任一<b>False</b>或<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-138">An <b>Object</b> set to <b>True</b> if the specified font is formatted as shadowed, otherwise it is either <b>False</b> or <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" />.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public object Size { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Size" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Property Size As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Size { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743826)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743826)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743826)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-139">返回或设置字号。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-139">Returns or sets the size of the font.</span>
+          </span>
+          <span data-ttu-id="2df34-140">为可读/写属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-140">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-141">
+            <b>对象</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-141">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrikeThrough">
+      <MemberSignature Language="C#" Value="public object StrikeThrough { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object StrikeThrough" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.StrikeThrough" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrikeThrough As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ StrikeThrough { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743828)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743828)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743828)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-142">获取和设置如果字体带有上述绘制一条横线它是否。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-142">Gets and sets if the font has a horizontal line drawn though it or not.</span>
+          </span>
+          <span data-ttu-id="2df34-143">为可读/写属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-143">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-144">如果字体中间删除带有横线;<b>对象</b>设置为<b>True</b>否则为<b>False</b></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-144">
+              <b>Object</b> set to <b>True</b> if the font is struck through with a horizontal line; otherwise <b>False</b></span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscript">
+      <MemberSignature Language="C#" Value="public object Subscript { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Subscript" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Subscript" />
+      <MemberSignature Language="VB.NET" Value="Public Property Subscript As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Subscript { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743830)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743830)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743830)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-145">获取和设置字体呈现较小和较下方周围文本的级别。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-145">Gets and sets if the font has been rendered smaller and slightly beneath the level of the surrounding text.</span>
+          </span>
+          <span data-ttu-id="2df34-146">为可读/写属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-146">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-147">如果将字体设置为下标;<b>对象</b>设置为<b>True</b>否则为<b>False</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-147">
+              <b>Object</b> set to <b>True</b> if the font is formatted as subscript; otherwise <b>False</b>.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="2df34-148">
+            <para>
+              <b>False</b>默认情况下</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-148">
+              <para>
+                <b>False</b> by default</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Superscript">
+      <MemberSignature Language="C#" Value="public object Superscript { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Superscript" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Superscript" />
+      <MemberSignature Language="VB.NET" Value="Public Property Superscript As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Superscript { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743832)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743832)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743832)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-149">获取和设置字体呈现较小并会稍微高于周围文本的级别。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-149">Gets and sets if the font has been rendered smaller and slightly above the level of the surrounding text.</span>
+          </span>
+          <span data-ttu-id="2df34-150">为可读/写属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-150">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-151">如果字体格式设为上标;<b>对象</b>设置为<b>True</b>否则为<b>False</b>。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-151">
+              <b>Object</b> set to <b>True</b> if the font is formatted as superscript; otherwise <b>False</b>.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="2df34-152">
+            <para>
+              <b>False</b>默认情况下</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-152">
+              <para>
+                <b>False</b> by default</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Underline">
+      <MemberSignature Language="C#" Value="public object Underline { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Underline" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Underline" />
+      <MemberSignature Language="VB.NET" Value="Public Property Underline As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Underline { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743834)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743834)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743834)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2df34-153">返回或设置应用于字体的下划线类型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-153">Returns or sets the type of underline applied to the font.</span>
+          </span>
+          <span data-ttu-id="2df34-154">可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlUnderlineStyle" />常量。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-154">Can be one of the following <see cref="T:Microsoft.Office.Interop.Word.XlUnderlineStyle" /> constants.</span>
+          </span>
+          <span data-ttu-id="2df34-155">为可读/写属性。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-155">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2df34-156">
+            <b>对象</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2df34-156">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
