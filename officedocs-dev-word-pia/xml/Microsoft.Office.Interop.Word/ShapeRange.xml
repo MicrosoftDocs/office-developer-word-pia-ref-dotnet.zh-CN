@@ -1,0 +1,2858 @@
+<Type Name="ShapeRange" FullName="Microsoft.Office.Interop.Word.ShapeRange">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a7eccde26cae7df7de66e89f8bf37cc6115cc8d8" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20666523" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ShapeRange : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeRange implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShapeRange" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ShapeRange&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ShapeRange : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000209B5-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>代表形状区域，它是文档中的一组形状。</summary>
+    <remarks>
+      <para>形状范围可以包含文档中的只包含一个形状或所有形状。您可以包含所需的任何形状 — 从文档中的所有形状或选定内容中的所有形状选择 — 来构造形状范围。例如，可以构造一个包含文档、 文档中所有选定的形状或文档中的所有任意多边形中的前三个形状的<b>ShapeRange</b>集合。</para>
+      <para>
+        <b>注意</b>您可以处理的大多数操作<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，还可以使用只包含一个形状的<b>ShapeRange</b>对象。某些操作，在包含多个形状的<b>ShapeRange</b>对象执行时都将导致出错。</para>
+      <para>使用<b>Shapes.Range</b>(<paramref name="index" />)，其中<paramref name="index" />是名称或索引号形状或者一个数组，包含是名称或形状，返回代表一组文档的形状的<b>ShapeRange</b>集合的索引号。以编程方式可以使用数组来构造数组的名称或索引号。</para>
+      <para>虽然可以使用<see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" />方法，以返回任意数量的形状，但会更简单使用<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Item(System.Object@)" />方法，如果您想要返回仅中单个成员的集合。例如，Shapes(1) 是比 Shapes.Range(1) 简单。</para>
+      <para>使用<b>Selection.ShapeRange</b>(<paramref name="index" />)，其中<paramref name="index" />是名称或索引号，若要返回的值，该值代表选定内容中的形状的<b>Shape</b>对象。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Align(Microsoft.Office.Core.MsoAlignCmd,System.Int32)" />， <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Distribute(Microsoft.Office.Core.MsoDistributeCmd,System.Int32)" />，或<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" />方法来定位的一组形状相对于彼此或相对于文档。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Group" />， <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Regroup" />，或<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Ungroup" />方法创建和使用的单个形状形成形状范围中。<see cref="P:Microsoft.Office.Interop.Word.Shape.GroupItems" />为 Shape 对象的属性返回<see cref="T:Microsoft.Office.Interop.Word.GroupShapes" />对象，代表已分组以形成一个形状的所有形状。</para>
+      <para>记录器始终使用<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />属性记录形状时。</para>
+      <para>
+        <b>ShapeRange</b>对象不包含<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="public void Activate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Activate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Activate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(50)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>激活指定的对象。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Adjustments">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Adjustments Adjustments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Adjustments Adjustments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Adjustments" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Adjustments As Adjustments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Adjustments ^ Adjustments { Microsoft::Office::Interop::Word::Adjustments ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Adjustments</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Adjustments" />对象，其中包含在指定的所有调整的调整值<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />代表自选图形或艺术字对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Align">
+      <MemberSignature Language="C#" Value="public void Align (Microsoft.Office.Core.MsoAlignCmd Align, int RelativeTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Align([in]valuetype Microsoft.Office.Core.MsoAlignCmd Align, [in]int32 RelativeTo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Align(Microsoft.Office.Core.MsoAlignCmd,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Align (Align As MsoAlignCmd, RelativeTo As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Align(Microsoft::Office::Core::MsoAlignCmd Align, int RelativeTo);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Align" Type="Microsoft.Office.Core.MsoAlignCmd" />
+        <Parameter Name="RelativeTo" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Align">所需<see cref="T:Microsoft.Office.Core.MsoAlignCmd" />。 指定指定的形状范围中形状的对齐方式。<b>MsoAlignCmd</b>可以是下列常量之一：<b>msoAlignCenters</b><b>msoAlignMiddles</b><b>msoAlignTops</b><b>msoAlignBottoms</b><b>msoAlignLefts</b><b>msoAlignRights</b></param>
+        <param name="RelativeTo">
+          <b>必选。</b>
+          <b>真</b> 要相对于文档上边缘对齐形状。 <b>假</b> 以相对于彼此对齐形状。</param>
+        <summary>对齐指定形状区域中的形状。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlternativeText">
+      <MemberSignature Language="C#" Value="public string AlternativeText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AlternativeText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.AlternativeText" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlternativeText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AlternativeText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(131)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(131)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(131)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置与 Web 页中的形状相关联的可选文字。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Anchor">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range Anchor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range Anchor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Anchor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Anchor As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Anchor { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(304)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(304)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示指定的形状范围的锁定范围。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Apply">
+      <MemberSignature Language="C#" Value="public void Apply ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Apply() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Apply" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Apply ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Apply();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>使用已复制的指定的形状格式应用于<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.PickUp" />方法。</summary>
+        <remarks>
+          <para>如果格式<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象之前尚未复制使用<b>PickUp</b>方法、 使用<b>Apply</b>方法将生成一个错误。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoShapeType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoAutoShapeType AutoShapeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoAutoShapeType AutoShapeType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.AutoShapeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoShapeType As MsoAutoShapeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoAutoShapeType AutoShapeType { Microsoft::Office::Core::MsoAutoShapeType get(); void set(Microsoft::Office::Core::MsoAutoShapeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoAutoShapeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置指定的形状类型<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象，代表自选之外的行或任意多边形。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoBackgroundStyleIndex BackgroundStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoBackgroundStyleIndex BackgroundStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.BackgroundStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackgroundStyle As MsoBackgroundStyleIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoBackgroundStyleIndex BackgroundStyle { Microsoft::Office::Core::MsoBackgroundStyleIndex get(); void set(Microsoft::Office::Core::MsoBackgroundStyleIndex value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(151)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(151)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(151)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoBackgroundStyleIndex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>获取或设置指定的形状范围中形状的背景样式。</summary>
+        <value>指定的形状范围中形状的背景样式。</value>
+        <remarks>
+          <para>读/写<see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" />。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Callout">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.CalloutFormat Callout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.CalloutFormat Callout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Callout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Callout As CalloutFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CalloutFormat ^ Callout { Microsoft::Office::Interop::Word::CalloutFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.CalloutFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" />对象，其中包含格式设置为指定的属性的标注<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象，它代表标注。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanvasCropBottom">
+      <MemberSignature Language="C#" Value="public void CanvasCropBottom (float Increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CanvasCropBottom([in]float32 Increment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropBottom(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropBottom (Increment As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropBottom(float Increment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(143)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Increment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Increment">
+          <b>必选。</b> 裁剪后所需保留的绘图画布高度的百分比数值。 输入 0.9 作为增量从底部裁剪绘图画布高度的百分之十。 输入 0.1 从底部裁剪绘图画布高度的百分之九十。</param>
+        <summary>从绘图画布的底部裁剪一定百分比的绘图画布高度。</summary>
+        <remarks>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropTop(System.Single)" />方法可从顶部裁剪。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanvasCropLeft">
+      <MemberSignature Language="C#" Value="public void CanvasCropLeft (float Increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CanvasCropLeft([in]float32 Increment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropLeft(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropLeft (Increment As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropLeft(float Increment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(140)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Increment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Increment">
+          <b>必选。</b> 裁剪绘图画布后所需保留的绘图画布宽度的百分比数值。 输入 0.9 作为增量从左侧裁剪绘图画布宽度的百分之十。 输入 0.1 从左侧裁剪绘图画布宽度的百分之九十。</param>
+        <summary>从绘图画布左侧裁剪一定百分比的绘图画布宽度。</summary>
+        <remarks>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropRight(System.Single)" />方法可从绘图画布右侧裁剪。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanvasCropRight">
+      <MemberSignature Language="C#" Value="public void CanvasCropRight (float Increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CanvasCropRight([in]float32 Increment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropRight(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropRight (Increment As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropRight(float Increment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(142)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Increment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Increment">
+          <b>必选。</b> 裁剪绘图画布后所需保留的绘图画布宽度的百分比数值。 输入 0.9 作为增量从右侧裁剪绘图画布宽度的百分之十。 输入 0.1 从右侧裁剪绘图画布宽度的百分之九十。</param>
+        <summary>从绘图画布右侧裁剪一定百分比的绘图画布宽度。</summary>
+        <remarks>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropLeft(System.Single)" />方法可从绘图画布左侧裁剪。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanvasCropTop">
+      <MemberSignature Language="C#" Value="public void CanvasCropTop (float Increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CanvasCropTop([in]float32 Increment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropTop(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CanvasCropTop (Increment As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CanvasCropTop(float Increment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(141)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Increment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Increment">
+          <b>必选。</b> 裁剪绘图画布后所需保留的绘图画布高度的百分比数值。 输入 0.9 作为增量从顶部裁剪绘图画布高度的百分之十。 输入 0.1 从顶部裁剪绘图画布高度的百分之九十。</param>
+        <summary>裁剪一定百分比的绘图画布顶部的绘图画布宽度。</summary>
+        <remarks>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropBottom(System.Single)" />方法可从底部裁剪。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanvasItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.CanvasShapes CanvasItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.CanvasShapes CanvasItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.CanvasItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanvasItems As CanvasShapes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CanvasShapes ^ CanvasItems { Microsoft::Office::Interop::Word::CanvasShapes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(138)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(138)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.CanvasShapes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.CanvasShapes" />代表的绘图画布上形状集合的对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Child">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Child { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Child" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Child" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Child As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Child { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(136)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(136)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>如果所有形状范围中的形状是子形状的同一个父。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionSiteCount">
+      <MemberSignature Language="C#" Value="public int ConnectionSiteCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectionSiteCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.ConnectionSiteCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionSiteCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConnectionSiteCount { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>仅供内部使用。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connector">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Connector { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Connector" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Connector" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connector As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Connector { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>仅供内部使用。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectorFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ConnectorFormat ConnectorFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ConnectorFormat ConnectorFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.ConnectorFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectorFormat As ConnectorFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ConnectorFormat ^ ConnectorFormat { Microsoft::Office::Interop::Word::ConnectorFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ConnectorFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>仅供内部使用。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToFrame">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Frame ConvertToFrame ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Frame ConvertToFrame() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToFrame" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConvertToFrame () As Frame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Frame ^ ConvertToFrame();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(29)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>将指定的图形转换为图文框。 返回<see cref="T:Microsoft.Office.Interop.Word.Frame" />对象，表示新框架。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>不支持附加的文本的形状不能转换为图文框。对于图片、 OLE 对象和 ActiveX 控件，使用<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToInlineShape" />方法。</para>
+          <para>如果包含多个形状的<b>ShapeRange</b>对象使用此方法，将发生错误。</para>
+          <para>Microsoft Word 97 和更高版本中, 框架已替换为文本框。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToInlineShape">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape ConvertToInlineShape ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape ConvertToInlineShape() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToInlineShape" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConvertToInlineShape () As InlineShape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::InlineShape ^ ConvertToInlineShape();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(30)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>将文档绘图层的指定图形转换为文字层的嵌入式图形。 返回<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象，它代表图片或 OLE 对象。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>您可以仅将形状转换表示图片，OLE 对象或 ActiveX 控件。</para>
+          <para>图形支持附加的文字不能转换为内嵌形状。对于这些形状，使用<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToFrame" />方法。</para>
+          <para>如果包含多个形状的<b>ShapeRange</b>对象使用此方法，将发生错误。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定集合中返回的项目数。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
+          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>用于删除指定的对象。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Diagram">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.IMsoDiagram Diagram { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.IMsoDiagram Diagram" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Diagram" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Diagram As IMsoDiagram" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::IMsoDiagram ^ Diagram { Microsoft::Office::Core::IMsoDiagram ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(133)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(133)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.IMsoDiagram</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回图表节点所属的图表对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiagramNode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.DiagramNode DiagramNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.DiagramNode DiagramNode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.DiagramNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiagramNode As DiagramNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DiagramNode ^ DiagramNode { Microsoft::Office::Interop::Word::DiagramNode ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(135)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(135)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />对象，它代表图表中的节点。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Distribute">
+      <MemberSignature Language="C#" Value="public void Distribute (Microsoft.Office.Core.MsoDistributeCmd Distribute, int RelativeTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Distribute([in]valuetype Microsoft.Office.Core.MsoDistributeCmd Distribute, [in]int32 RelativeTo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Distribute(Microsoft.Office.Core.MsoDistributeCmd,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Distribute (Distribute As MsoDistributeCmd, RelativeTo As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Distribute(Microsoft::Office::Core::MsoDistributeCmd Distribute, int RelativeTo);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Distribute" Type="Microsoft.Office.Core.MsoDistributeCmd" />
+        <Parameter Name="RelativeTo" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Distribute">所需<see cref="T:Microsoft.Office.Core.MsoDistributeCmd" />。<b>MsoDistributeCmd</b>可以是下列常量之一：<b>msoDistributeHorizontally</b><b>msoDistributeVertically</b></param>
+        <param name="RelativeTo">
+          <b>必选。</b>
+          <b>True</b>页上的整个水平或垂直空间上均匀分布形状。 <b>False</b>的形状范围最初占有的水平或垂直空间内分布。</param>
+        <summary>在指定的形状范围内均匀分布形状。</summary>
+        <remarks>
+          <para>您可以指定是否要水平或垂直分布形状和您是否要将其分发通过整个页面或只是他们最初占用的空间。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Duplicate">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ShapeRange Duplicate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ShapeRange Duplicate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Duplicate" />
+      <MemberSignature Language="VB.NET" Value="Public Function Duplicate () As ShapeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::ShapeRange ^ Duplicate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ShapeRange</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>创建指定的副本<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象，请将形状链接到的新范围添加<see cref="T:Microsoft.Office.Interop.Word.Shapes" />从原图形，标准的偏移的集合，然后返回新<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fill">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.FillFormat Fill { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.FillFormat Fill" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Fill" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fill As FillFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::FillFormat ^ Fill { Microsoft::Office::Interop::Word::FillFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(107)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(107)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.FillFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />对象，其中包含填充格式指定形状的属性。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flip">
+      <MemberSignature Language="C#" Value="public void Flip (Microsoft.Office.Core.MsoFlipCmd FlipCmd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flip([in]valuetype Microsoft.Office.Core.MsoFlipCmd FlipCmd) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Flip(Microsoft.Office.Core.MsoFlipCmd)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Flip (FlipCmd As MsoFlipCmd)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flip(Microsoft::Office::Core::MsoFlipCmd FlipCmd);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FlipCmd" Type="Microsoft.Office.Core.MsoFlipCmd" />
+      </Parameters>
+      <Docs>
+        <param name="FlipCmd">所需<see cref="T:Microsoft.Office.Core.MsoFlipCmd" />。 翻转方向。<b>MsoFlipCmd</b>可以是下列常量之一：<b>msoFlipHorizontal</b><b>msoFlipVertical</b></param>
+        <summary>水平或垂直翻转一个图形。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Glow">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.GlowFormat Glow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.GlowFormat Glow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Glow" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Glow As GlowFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::GlowFormat ^ Glow { Microsoft::Office::Interop::Word::GlowFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(153)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(153)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.GlowFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />对象，表示的发光格式形状范围。 只读。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape Group ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape Group() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Group" />
+      <MemberSignature Language="VB.NET" Value="Public Function Group () As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ Group();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>将指定区域中的形状形成一组。 作为 single 类型返回组合的形状<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>由于将一组形状被视为一个形状，分组和取消分组形状中的项目数<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合和更改之后影响集合中的项目的项目的索引号。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.GroupShapes GroupItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.GroupShapes GroupItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.GroupItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupItems As GroupShapes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::GroupShapes ^ GroupItems { Microsoft::Office::Interop::Word::GroupShapes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.GroupShapes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.GroupShapes" />对象，表示在指定的单个形状<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象，它代表组合形状。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" />要从组中返回的单个形状的<b>GroupShapes</b>对象的方法。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasDiagram">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState HasDiagram { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState HasDiagram" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.HasDiagram" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasDiagram As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasDiagram { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(132)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(132)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>MsoTrue</b>如果形状为图表。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasDiagramNode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState HasDiagramNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState HasDiagramNode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.HasDiagramNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasDiagramNode As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasDiagramNode { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(134)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(134)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>MsoTrue</b>如果形状为图表节点。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public float Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Height { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置指定对象的高度，以磅为单位。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeightRelative">
+      <MemberSignature Language="C#" Value="public float HeightRelative { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 HeightRelative" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.HeightRelative" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeightRelative As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float HeightRelative { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(203)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(203)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(203)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置一个  <b>Single</b> 类型的值，该值代表将形状区域大小调整到的目标形状的百分比。可读写。</summary>
+        <value>
+          <b>Single</b>
+        </value>
+        <remarks>
+          <para>使用此属性与<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalSize" />属性。当设置为<b>wdShapeSizeRelativeNone</b> (-999999) (请参阅<see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" />枚举)，因为该形状不使用百分比大小应忽略此属性。仅由高度<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Height" />属性。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalFlip">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState HorizontalFlip { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState HorizontalFlip" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.HorizontalFlip" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalFlip As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HorizontalFlip { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指示形状已经水平翻转。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hyperlink">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Hyperlink Hyperlink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Hyperlink Hyperlink" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Hyperlink" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hyperlink As Hyperlink" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Hyperlink ^ Hyperlink { Microsoft::Office::Interop::Word::Hyperlink ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Hyperlink</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" />对象，表示与指定相关联的超链接<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果没有任何与指定形状相关联的超链接，则将出错。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public int ID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ID" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.ID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ID { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回指定对象的类型。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementLeft">
+      <MemberSignature Language="C#" Value="public void IncrementLeft (float Increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IncrementLeft([in]float32 Increment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.IncrementLeft(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IncrementLeft (Increment As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementLeft(float Increment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Increment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Increment">
+          <b>必选。</b> 以点为单位指定形状水平移动的距离。 正值表示将形状向右移动，负值表示将形状向左移动。</param>
+        <summary>以指定点数水平移动指定形状。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementRotation">
+      <MemberSignature Language="C#" Value="public void IncrementRotation (float Increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IncrementRotation([in]float32 Increment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.IncrementRotation(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IncrementRotation (Increment As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementRotation(float Increment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Increment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Increment">
+          <b>必选。</b> 以度为单位指定形状的水平旋转量。 正值表示使形状按顺时针方向旋转；负值表示使形状按逆时针方向旋转。</param>
+        <summary>按指定度数值，改变指定形状绕 z 轴的旋转角度。</summary>
+        <remarks>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Rotation" />属性设置形状的绝对旋转角度。</para>
+          <para>要将三维形状绕 x 轴或 y 轴，请分别使用<see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationX(System.Single)" />方法或<see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationY(System.Single)" />方法。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementTop">
+      <MemberSignature Language="C#" Value="public void IncrementTop (float Increment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IncrementTop([in]float32 Increment) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.IncrementTop(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IncrementTop (Increment As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementTop(float Increment);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Increment" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Increment">
+          <b>必选。</b> 指定对象的垂直移动距离，以磅为单位。 为正值时将形状下移；为负值时将形状上移。</param>
+        <summary>以指定点数垂直移动指定形状。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape this[ref object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Shape Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Item(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Shape ^ get(System::Object ^ % Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>对象</b>，它指示的序号位置或一个字符串，表示单个对象的名称。</param>
+        <summary>返回集合中的单个对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LayoutInCell">
+      <MemberSignature Language="C#" Value="public int LayoutInCell { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LayoutInCell" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.LayoutInCell" />
+      <MemberSignature Language="VB.NET" Value="Public Property LayoutInCell As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LayoutInCell { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(145)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(145)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(145)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个<b>整数</b>，该值代表表格中的形状显示在表格内部或外部表。 <b>True</b>指示指定的图片，将显示在表中。 <b>False</b> ，则指示指定的图片，将显示的表之外。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>注释</b>
+            <b>LayoutInCell</b>属性设置将会生效，仅当<see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" />属性<see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />对象设置为除<b>wdWrapTypeInline</b>或<b>wdWrapTypeNone</b>之外。</para>
+          <para>
+            <b>LayoutInCell</b>属性对应于高级版式对话框中的图片格式的表格单元格选项中的布局。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public float Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Left { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(111)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(111)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(111)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置<b>一个</b>值，该值代表的水平位置，以磅为单位指定的形状范围。 也可以是任何有效<see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" />常量。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>形状的位置被指从形状的边界框的左上角到形状的锁定标记。<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />属性控制是否锁定标记位于旁字符、 列、 页边距或页的边缘。</para>
+          <para>的<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象，其中包含多个形状，Left 属性设置每个形状的水平位置。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftRelative">
+      <MemberSignature Language="C#" Value="public float LeftRelative { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 LeftRelative" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.LeftRelative" />
+      <MemberSignature Language="VB.NET" Value="Public Property LeftRelative As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LeftRelative { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(200)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(200)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(200)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置<b>一个</b>值，该值代表形状范围的左侧的相对位置。 为可读/写属性。</summary>
+        <value>
+          <b>Single</b>
+        </value>
+        <remarks>
+          <para>使用此属性与<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalPosition" />属性。当设置为<b>wdShapePositionRelativeNone</b> (-999999) (请参阅<see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" />枚举)，因为该形状不使用百分比定位应忽略此属性。仅由的水平位置<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Left" />属性。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Line">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.LineFormat Line { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.LineFormat Line" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Line" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line As LineFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::LineFormat ^ Line { Microsoft::Office::Interop::Word::LineFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(112)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(112)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.LineFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />对象，其中包含线条格式指定形状的属性。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>对于线条， <b>LineFormat</b>对象代表线条本身;对于带有边框形状， <b>LineFormat</b>对象代表边框。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LockAnchor">
+      <MemberSignature Language="C#" Value="public int LockAnchor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LockAnchor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.LockAnchor" />
+      <MemberSignature Language="VB.NET" Value="Public Property LockAnchor As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LockAnchor { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(302)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(302)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(302)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>如果指定<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象的锚点已锁定到锁定的区域。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>当形状具有一个锁定的标记时，不能将形状的定位移动拖动 （如移动形状都不会移动定位标记）。</para>
+          <para>的<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象定位到一段文本，但您可以在页面上任何位置定位它。形状定位到包含锁定范围的第一段的开头。形状在其锁定标记位于同一页上将始终。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LockAspectRatio">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState LockAspectRatio { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState LockAspectRatio" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.LockAspectRatio" />
+      <MemberSignature Language="VB.NET" Value="Public Property LockAspectRatio As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState LockAspectRatio { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(113)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(113)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(113)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>MsoTrue</b> 如果指定的形状在调整尺寸时保持其原始比例。 <b>MsoFalse</b> 如果在调整尺寸时，可以更改高度和另一个形状的宽度。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(115)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(115)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(115)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置指定对象的名称。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Nodes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ShapeNodes Nodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ShapeNodes Nodes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Nodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Nodes As ShapeNodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ShapeNodes ^ Nodes { Microsoft::Office::Interop::Word::ShapeNodes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(116)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(116)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ShapeNodes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" />集合，代表指定形状的几何描述。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个对象，代表指定对象的父对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape ParentGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Shape ParentGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.ParentGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentGroup As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ ParentGroup { Microsoft::Office::Interop::Word::Shape ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(137)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(137)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，它代表子形状范围的通用父形状。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PickUp">
+      <MemberSignature Language="C#" Value="public void PickUp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PickUp() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.PickUp" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PickUp ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PickUp();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>复制指定形状的格式。</summary>
+        <remarks>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Apply" />方法，以应用于另一个形状复制格式。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PictureFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.PictureFormat PictureFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.PictureFormat PictureFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.PictureFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PictureFormat As PictureFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::PictureFormat ^ PictureFormat { Microsoft::Office::Interop::Word::PictureFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.PictureFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.PictureFormat" />对象，其中包含格式属性指定的图片<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象，它代表图片或 OLE 对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reflection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ReflectionFormat Reflection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ReflectionFormat Reflection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Reflection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reflection As ReflectionFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ReflectionFormat ^ Reflection { Microsoft::Office::Interop::Word::ReflectionFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(154)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(154)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ReflectionFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />对象，表示的反射格式形状范围。 只读。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Regroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape Regroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape Regroup() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Regroup" />
+      <MemberSignature Language="VB.NET" Value="Public Function Regroup () As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ Regroup();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>重新组合指定的形状区域内的原有的组。 作为 single 类型返回重新组合的形状<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>
+            <b>Regroup</b>方法只还原组中的第一个以前组合的形状中指定发现<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />集合。因此，如果指定的形状区域包含以前属于不同的组的形状，组之一将恢复。</para>
+          <para>注意，由于一组形状作为单个形状来处理，分组和取消分组形状的 Shapes 集合中的项目数量的更改，并更改之后影响集合中的项目的项目的索引号。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelativeHorizontalPosition">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition RelativeHorizontalPosition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition RelativeHorizontalPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelativeHorizontalPosition As WdRelativeHorizontalPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRelativeHorizontalPosition RelativeHorizontalPosition { Microsoft::Office::Interop::Word::WdRelativeHorizontalPosition get(); void set(Microsoft::Office::Interop::Word::WdRelativeHorizontalPosition value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(300)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(300)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(300)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定形状范围的水平位置所相对的对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelativeHorizontalSize">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdRelativeHorizontalSize RelativeHorizontalSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdRelativeHorizontalSize RelativeHorizontalSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelativeHorizontalSize As WdRelativeHorizontalSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRelativeHorizontalSize RelativeHorizontalSize { Microsoft::Office::Interop::Word::WdRelativeHorizontalSize get(); void set(Microsoft::Office::Interop::Word::WdRelativeHorizontalSize value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(204)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(204)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(204)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdRelativeHorizontalSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" />常量值，该值代表形状范围所相对的对象。 为可读/写属性。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" />
+        </value>
+        <remarks>
+          <para>使用此属性与<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.WidthRelative" />属性。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelativeVerticalPosition">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdRelativeVerticalPosition RelativeVerticalPosition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdRelativeVerticalPosition RelativeVerticalPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelativeVerticalPosition As WdRelativeVerticalPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRelativeVerticalPosition RelativeVerticalPosition { Microsoft::Office::Interop::Word::WdRelativeVerticalPosition get(); void set(Microsoft::Office::Interop::Word::WdRelativeVerticalPosition value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(301)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(301)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(301)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdRelativeVerticalPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定形状范围的垂直位置所相对的对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelativeVerticalSize">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdRelativeVerticalSize RelativeVerticalSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdRelativeVerticalSize RelativeVerticalSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelativeVerticalSize As WdRelativeVerticalSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRelativeVerticalSize RelativeVerticalSize { Microsoft::Office::Interop::Word::WdRelativeVerticalSize get(); void set(Microsoft::Office::Interop::Word::WdRelativeVerticalSize value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(205)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(205)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(205)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdRelativeVerticalSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" />常量值，该值代表形状范围所相对的对象。 为可读/写属性。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" />
+        </value>
+        <remarks>
+          <para>使用此属性与<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.HeightRelative" />属性。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RerouteConnections">
+      <MemberSignature Language="C#" Value="public void RerouteConnections ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RerouteConnections() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.RerouteConnections" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RerouteConnections ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RerouteConnections();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>仅供内部使用。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotation">
+      <MemberSignature Language="C#" Value="public float Rotation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Rotation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Rotation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Rotation As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Rotation { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置指定的形状绕 z 轴旋转的度数。 正值表示顺时针旋转;负值表示逆时针旋转。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>若要设置三维形状绕 x 轴或 y 轴的旋转，请使用<see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationX" />属性或<see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationY" />属性<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RTF">
+      <MemberSignature Language="C#" Value="public string RTF { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RTF" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.RTF" />
+      <MemberSignature Language="VB.NET" Value="Public Property RTF As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RTF {  void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(144)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(144)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>仅供内部使用。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleHeight">
+      <MemberSignature Language="C#" Value="public void ScaleHeight (float Factor, Microsoft.Office.Core.MsoTriState RelativeToOriginalSize, Microsoft.Office.Core.MsoScaleFrom Scale = Microsoft.Office.Core.MsoScaleFrom.msoScaleFromTopLeft);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScaleHeight([in]float32 Factor, [in]valuetype Microsoft.Office.Core.MsoTriState RelativeToOriginalSize, [in]valuetype Microsoft.Office.Core.MsoScaleFrom Scale) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.ScaleHeight(System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoScaleFrom)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScaleHeight (Factor As Single, RelativeToOriginalSize As MsoTriState, Optional Scale As MsoScaleFrom = Microsoft.Office.Core.MsoScaleFrom.msoScaleFromTopLeft)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Factor" Type="System.Single" />
+        <Parameter Name="RelativeToOriginalSize" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="Scale" Type="Microsoft.Office.Core.MsoScaleFrom" />
+      </Parameters>
+      <Docs>
+        <param name="Factor">
+          <b>必选。</b> 指定形状调整后的高度与当前或原始高度的比例。 例如，要将一个矩形放大百分之五十，请将此参数指定为 1.5。</param>
+        <param name="RelativeToOriginalSize">所需<see cref="T:Microsoft.Office.Core.MsoTriState" />。 <b>为</b> 扩展相对于原始大小的形状。 False ，则相对于当前大小缩放形状。 仅当指定的形状是图片或 OLE 对象时，可以将此参数指定为 True。<b>MsoTriState</b>可以是以下常量之一：<b>msoCTrue</b><b>msoFalse</b><b>msoTriStateMixed</b><b>msoTriStateToggle</b><b>msoTrue</b></param>
+        <param name="Scale">可选<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />。 形状的位置不变时缩放形状的一部分。<b>MsoScaleFrom</b>可以是下列常量之一：<b>msoScaleFromBottomRight</b><b>msoScaleFromTopLeft</b>默认<b>msoScaleFromMiddle</b></param>
+        <summary>按指定因子调整形状的高度。</summary>
+        <remarks>
+          <para>对于图片和 OLE 对象，您可以指示您是否要相对于原始尺寸还是当前尺寸缩放形状。图片和 OLE 对象以外的形状是总是缩放相对于其当前高度。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleWidth">
+      <MemberSignature Language="C#" Value="public void ScaleWidth (float Factor, Microsoft.Office.Core.MsoTriState RelativeToOriginalSize, Microsoft.Office.Core.MsoScaleFrom Scale = Microsoft.Office.Core.MsoScaleFrom.msoScaleFromTopLeft);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScaleWidth([in]float32 Factor, [in]valuetype Microsoft.Office.Core.MsoTriState RelativeToOriginalSize, [in]valuetype Microsoft.Office.Core.MsoScaleFrom Scale) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.ScaleWidth(System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoScaleFrom)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScaleWidth (Factor As Single, RelativeToOriginalSize As MsoTriState, Optional Scale As MsoScaleFrom = Microsoft.Office.Core.MsoScaleFrom.msoScaleFromTopLeft)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Factor" Type="System.Single" />
+        <Parameter Name="RelativeToOriginalSize" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="Scale" Type="Microsoft.Office.Core.MsoScaleFrom" />
+      </Parameters>
+      <Docs>
+        <param name="Factor">
+          <b>必选。</b> 指定形状调整后的宽度与当前或原始宽度的比例。 例如，要将一个矩形放大百分之五十，请将此参数指定为 1.5。</param>
+        <param name="RelativeToOriginalSize">所需<see cref="T:Microsoft.Office.Core.MsoTriState" />。 <b>为</b> 扩展相对于原始大小的形状。 False ，则相对于当前大小缩放形状。 仅当指定的形状是图片或 OLE 对象时，可以将此参数指定为 True。<b>MsoTriState</b>可以是以下常量之一：<b>msoCTrue</b><b>msoFalse</b><b>msoTriStateMixed</b><b>msoTriStateToggle</b><b>msoTrue</b></param>
+        <param name="Scale">可选<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />。 形状的位置不变时缩放形状的一部分。<b>MsoScaleFrom</b>可以是下列常量之一：<b>msoScaleFromBottomRight</b><b>msoScaleFromTopLeft</b>默认<b>msoScaleFromMiddle</b></param>
+        <summary>按指定因子调整形状的宽度。</summary>
+        <remarks>
+          <para>对于图片和 OLE 对象，您可以指示您是否要相对于原始尺寸还是当前尺寸缩放形状。图片和 OLE 对象以外的形状总是相对于其当前宽度缩放。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public void Select (ref object Replace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Select([in]object&amp; Replace) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Select(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select (Optional ByRef Replace As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Replace" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Replace">可选的<b>对象</b>。 如果添加一个形状， <b>则</b> 替换所选内容。 <b>假</b> 将新形状添加到所选内容。</param>
+        <summary>选择指定的对象。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetShapesDefaultProperties">
+      <MemberSignature Language="C#" Value="public void SetShapesDefaultProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetShapesDefaultProperties() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.SetShapesDefaultProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetShapesDefaultProperties ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetShapesDefaultProperties();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>应用到该文档中默认形状的指定形状的格式。 新形状将继承默认形状的许多属性。</summary>
+        <remarks>
+          <para>使用此方法等效于使用绘图工具栏上的绘图菜单上的设置自选图形的默认值命令。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shadow">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ShadowFormat Shadow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ShadowFormat Shadow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Shadow" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shadow As ShadowFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ShadowFormat ^ Shadow { Microsoft::Office::Interop::Word::ShadowFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(119)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(119)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ShadowFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />对象，表示的阴影格式指定的形状。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShapeStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoShapeStyleIndex ShapeStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoShapeStyleIndex ShapeStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.ShapeStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShapeStyle As MsoShapeStyleIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoShapeStyleIndex ShapeStyle { Microsoft::Office::Core::MsoShapeStyleIndex get(); void set(Microsoft::Office::Core::MsoShapeStyleIndex value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoShapeStyleIndex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>获取或设置指定的形状范围中形状的形状样式。</summary>
+        <value>所指定的形状范围中形状的形状样式。</value>
+        <remarks>
+          <para>读/写<see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" />。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoftEdge">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.SoftEdgeFormat SoftEdge { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.SoftEdgeFormat SoftEdge" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.SoftEdge" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoftEdge As SoftEdgeFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SoftEdgeFormat ^ SoftEdge { Microsoft::Office::Interop::Word::SoftEdgeFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(152)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(152)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.SoftEdgeFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" />对象，它代表形状范围的软边缘格式。 只读。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextEffect">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TextEffectFormat TextEffect { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.TextEffectFormat TextEffect" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.TextEffect" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextEffect As TextEffectFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextEffectFormat ^ TextEffect { Microsoft::Office::Interop::Word::TextEffectFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(120)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(120)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.TextEffectFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" />对象，包含指定的文本效果格式属性<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />代表艺术字对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextFrame">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TextFrame TextFrame { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.TextFrame TextFrame" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.TextFrame" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextFrame As TextFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextFrame ^ TextFrame { Microsoft::Office::Interop::Word::TextFrame ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(121)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(121)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.TextFrame</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />对象，其中包含指定形状的文本。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextFrame2">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.TextFrame2 TextFrame2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.TextFrame2 TextFrame2" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.TextFrame2" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextFrame2 As TextFrame2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::TextFrame2 ^ TextFrame2 { Microsoft::Office::Core::TextFrame2 ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(155)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(155)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.TextFrame2</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Core.TextFrame2" />对象，其中包含指定形状范围的文本。 只读。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.TextFrame2" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreeD">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ThreeDFormat ThreeD { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ThreeDFormat ThreeD" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.ThreeD" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreeD As ThreeDFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ThreeDFormat ^ ThreeD { Microsoft::Office::Interop::Word::ThreeDFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ThreeDFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象，其中包含三维 – 效果格式指定形状的属性。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(206)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(206)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(206)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>获取或设置一个字符串，包含指定的形状范围中形状的标题。</summary>
+        <value>一个字符串，包含指定的形状范围中形状的标题。</value>
+        <remarks>
+          <para>读/写。使用此属性提供形状的可选文字标题。此属性将添加到 Microsoft Word 2010 中的设置形状格式对话框的替换文字窗格上标题文本框中的标题文本。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public float Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Top { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置指定的形状范围的垂直位置，以磅为单位。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>形状的位置被指从形状的边界框的左上角到形状的锁定标记。<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" />属性控制是否行、 段落、 边距或页上的边缘旁放置形状的锁定标记。</para>
+          <para>的<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象，其中包含多个形状， <b>Top</b>属性设置每个形状的垂直位置。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TopRelative">
+      <MemberSignature Language="C#" Value="public float TopRelative { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 TopRelative" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.TopRelative" />
+      <MemberSignature Language="VB.NET" Value="Public Property TopRelative As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TopRelative { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(201)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(201)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(201)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置<b>一个</b>值，该值代表形状区域顶部的相对位置。 为可读/写属性。</summary>
+        <value>
+          <b>Single</b>
+        </value>
+        <remarks>
+          <para>使用此属性与<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" />属性。当设置为<b>wdShapePositionRelativeNone</b> (-999999) (请参阅<see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" />枚举)，因为该形状不使用百分比定位应忽略此属性。仅由的垂直位置<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Top" />属性。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoShapeType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoShapeType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As MsoShapeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoShapeType Type { Microsoft::Office::Core::MsoShapeType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(124)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(124)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoShapeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回图形的类型。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ungroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ShapeRange Ungroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ShapeRange Ungroup() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.Ungroup" />
+      <MemberSignature Language="VB.NET" Value="Public Function Ungroup () As ShapeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::ShapeRange ^ Ungroup();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(27)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ShapeRange</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>取消指定的形状或形状范围中所有组合的形状的组合。 反汇编中图片和 OLE 对象指定的形状或形状范围。 作为 single 类型返回取消组合的形状<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>由于将一组形状作为单个对象处理，分组和取消分组形状中的项目数<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合和更改之后影响集合中的项目的项目的索引号。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalFlip">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState VerticalFlip { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState VerticalFlip" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.VerticalFlip" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalFlip As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState VerticalFlip { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(125)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(125)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>如果指定的形状绕垂直轴翻转。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertices">
+      <MemberSignature Language="C#" Value="public object Vertices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Vertices" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Vertices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Vertices As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Vertices { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回为一系列的坐标对指定任意多边形顶点 （和贝赛尔曲线的控制点） 的坐标。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>您可以使用此属性作为参数返回的数组<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />或<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />方法。</para>
+          <para>下表显示了如何<b>Vertices</b>属性将数组 vertarray （） 中的值与三角形的顶点坐标相关联。</para>
+          <list type="table">
+            <item>
+              <description>vertArray （1，1）</description>
+              <description>的第一个顶点至文档的左边界的水平距离。</description>
+            </item>
+            <item>
+              <description>vertArray （1，2）</description>
+              <description>的第一个顶点到文档顶端的垂直距离。</description>
+            </item>
+            <item>
+              <description>vertArray （2，1）</description>
+              <description>第二个顶点至文档的左边界的水平距离。</description>
+            </item>
+            <item>
+              <description>vertArray （2，2）</description>
+              <description>从第二个顶点到文档顶端的垂直距离。</description>
+            </item>
+            <item>
+              <description>vertArray （3，1）</description>
+              <description>第三个顶点至文档的左边界的水平距离。</description>
+            </item>
+            <item>
+              <description>vertArray （3、 2）</description>
+              <description>从第三个顶点到文档顶端的垂直距离。</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Visible { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>如果指定的对象或应用的格式，，是可见的则返回 true 。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>对于任何对象，可能不可用，如果<b>Visible</b>属性为<b>false，则</b>某些方法和属性。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public float Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(128)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(128)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(128)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置指定对象的宽度（以磅为单位）。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WidthRelative">
+      <MemberSignature Language="C#" Value="public float WidthRelative { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 WidthRelative" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.WidthRelative" />
+      <MemberSignature Language="VB.NET" Value="Public Property WidthRelative As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float WidthRelative { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(202)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(202)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(202)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置<b>一个</b>值，该值代表形状范围的相对宽度。 为可读/写属性。</summary>
+        <value>
+          <b>Single</b>
+        </value>
+        <remarks>
+          <para>使用此属性与<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalSize" />属性。当设置为<b>wdShapeSizeRelativeNone</b> (-999999) (请参阅<see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" />枚举)，因为该形状不使用百分比大小应忽略此属性。仅由宽度<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Width" />属性。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WrapFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WrapFormat WrapFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.WrapFormat WrapFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.WrapFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrapFormat As WrapFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WrapFormat ^ WrapFormat { Microsoft::Office::Interop::Word::WrapFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(303)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(303)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WrapFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />对象，其中包含文字环绕指定的形状范围的属性。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZOrder">
+      <MemberSignature Language="C#" Value="public void ZOrder (Microsoft.Office.Core.MsoZOrderCmd ZOrderCmd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ZOrder([in]valuetype Microsoft.Office.Core.MsoZOrderCmd ZOrderCmd) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ZOrder (ZOrderCmd As MsoZOrderCmd)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ZOrder(Microsoft::Office::Core::MsoZOrderCmd ZOrderCmd);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ZOrderCmd" Type="Microsoft.Office.Core.MsoZOrderCmd" />
+      </Parameters>
+      <Docs>
+        <param name="ZOrderCmd">所需<see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />。 指定将移动指定的形状相对于其他形状的位置。<b>MsoZOrderCmd</b>可为以下常量之一：<b>msoBringForward</b><b>msoBringInFrontOfText</b><b>msoBringToFront</b><b>msoSendBackward</b><b>msoSendBehindText</b><b>msoSendToBack</b></param>
+        <summary>将指定的形状移到集合中其他形状的前面或后面（即更改该形状在 z-顺序中的位置）。</summary>
+        <remarks>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Word.ShapeRange.ZOrderPosition" />属性确定形状的 z-顺序中的当前位置。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZOrderPosition">
+      <MemberSignature Language="C#" Value="public int ZOrderPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ZOrderPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShapeRange.ZOrderPosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ZOrderPosition As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ZOrderPosition { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回指定的形状在 z 顺序中的位置。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>若要设置形状的 z-顺序中的位置，请使用<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd" />方法。</para>
+          <para>形状在 z-顺序中的位置对应于形状的<b>Shapes</b>集合中的索引号。例如，如果 myDocument 上第四个形状，表达式 myDocument.Shapes(1) 返回 z-次序末尾的形状，而表达式 myDocument.Shapes(4) 返回的形状在 z-顺序的顶层。</para>
+          <para>只要向集合添加新的形状，它默认情况下添加到 z-顺序的顶层。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

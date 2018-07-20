@@ -1,0 +1,1346 @@
+<Type Name="Envelope" FullName="Microsoft.Office.Interop.Word.Envelope">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="433ee9bb5f738804f44b8db15151d5f4a75a9ec8" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20666368" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Envelope" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Envelope" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Envelope" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Envelope" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Envelope" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020918-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>代表一个信封。</summary>
+    <remarks>
+      <para>没有 Envelopes 集合;每个<see cref="T:Microsoft.Office.Interop.Word.Document" />对象仅包含一个<b>Envelope</b>对象。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.Envelope" />属性返回<b>Envelope</b>对象。</para>
+      <para>
+        <b>信封</b>对象位于无论是否已将信封添加到指定的文档。但是，如果您使用的<b>信封</b>属性，将发生错误。<b>UpdateDocument</b>方法或时信封尚未添加到文档的下列属性之一： <see cref="P:Microsoft.Office.Interop.Word.Envelope.Address" />， <see cref="P:Microsoft.Office.Interop.Word.Envelope.AddressFromLeft" />， <see cref="P:Microsoft.Office.Interop.Word.Envelope.AddressFromTop" />， <see cref="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" />， <see cref="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddress" />， <see cref="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromLeft" />，和<see cref="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromTop" />。</para>使用
+      <para><see cref="M:Microsoft.Office.Interop.Word.Envelope.Insert(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法将信封添加到指定的文档。使用<see cref="M:Microsoft.Office.Interop.Word.Envelope.PrintOut(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法可设置信封属性，并打印不将其添加到文档。</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range Address { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range Address" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Address" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Address As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Address { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回作为收信人地址<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果还未将信封添加到指定的文档使用此属性，将发生错误。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressFromLeft">
+      <MemberSignature Language="C#" Value="public float AddressFromLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 AddressFromLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.AddressFromLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddressFromLeft As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float AddressFromLeft { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置信封左边的缘与收信人地址之间的距离 (以磅为单位)。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果将信封添加到文档前使用此属性，将发生错误。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressFromTop">
+      <MemberSignature Language="C#" Value="public float AddressFromTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 AddressFromTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.AddressFromTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddressFromTop As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float AddressFromTop { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置信封上的边缘与收信人地址之间的距离 (以磅为单位)。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果将信封添加到文档前使用此属性，将发生错误。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Style AddressStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Style AddressStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.AddressStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddressStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Style ^ AddressStyle { Microsoft::Office::Interop::Word::Style ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Style" />代表信封的寄信人收信人地址样式的对象。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果向文档添加了一个信封，格式为收信人地址样式的文本将自动更新。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
+          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultFaceUp">
+      <MemberSignature Language="C#" Value="public bool DefaultFaceUp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DefaultFaceUp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultFaceUp" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultFaceUp As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DefaultFaceUp { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>确定是否信封的正面向上默认情况下。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果信封的正面向上默认情况下，和<b>False</b>如果没有，则此属性返回<b>True</b> 。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultHeight">
+      <MemberSignature Language="C#" Value="public float DefaultHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 DefaultHeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultHeight As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float DefaultHeight { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置默认的信封高度，以磅为单位。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果将任一<b>DefaultHeight</b>或<see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultWidth" />属性，信封尺寸自动更改为信封选项对话框 （工具菜单） 中的自定义大小。使用<see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultSize" />属性设置为默认大小为预定义大小。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultOmitReturnAddress">
+      <MemberSignature Language="C#" Value="public bool DefaultOmitReturnAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DefaultOmitReturnAddress" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultOmitReturnAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultOmitReturnAddress As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DefaultOmitReturnAddress { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>确定从信封省略寄信人地址是否默认情况下。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果默认情况下，和<b>False</b>如果不是从信封省略寄信人地址，此属性返回<b>True</b> 。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultOrientation">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdEnvelopeOrientation DefaultOrientation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdEnvelopeOrientation DefaultOrientation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultOrientation" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultOrientation As WdEnvelopeOrientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdEnvelopeOrientation DefaultOrientation { Microsoft::Office::Interop::Word::WdEnvelopeOrientation get(); void set(Microsoft::Office::Interop::Word::WdEnvelopeOrientation value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdEnvelopeOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置默认送纸的信封的方向。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPrintBarCode">
+      <MemberSignature Language="C#" Value="public bool DefaultPrintBarCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DefaultPrintBarCode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintBarCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultPrintBarCode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DefaultPrintBarCode { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>确定默认是否 POSTNET 条码添加到信封或邮件标签。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果 POSTNET 条码被添加到信封或邮件标签，默认情况下，和<b>False</b>如果没有此属性返回<b>True</b> 。</para>
+          <para>仅为美国邮件。对于信封，此属性必须设置为<b>True</b>之前<see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintFIMA" />属性设置。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPrintFIMA">
+      <MemberSignature Language="C#" Value="public bool DefaultPrintFIMA { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DefaultPrintFIMA" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintFIMA" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultPrintFIMA As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DefaultPrintFIMA { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>确定是否饰面标识标记 (FIM A) 添加到信封默认情况下。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>此属性返回<b>True</b> ，如果饰面标识标记 (FIM A) 默认情况下，和<b>False</b>如果没有添加到信封。</para>
+          <para>仅为美国邮件。FIM-A 代码用于分拣抄送的答复邮件。<see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintBarCode" />属性必须设置为<b>True</b> ，设置该属性之前。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSize">
+      <MemberSignature Language="C#" Value="public string this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property DefaultSize As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置默认信封尺寸。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>返回的字符串对应于在信封选项对话框的信封大小框中显示的字符串的右侧。如果将以下任意设置<see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultHeight" />或<see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultWidth" />属性信封尺寸自动更改为信封选项对话框 （工具菜单） 中的自定义大小和此属性返回"自定义大小"。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultWidth">
+      <MemberSignature Language="C#" Value="public float DefaultWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 DefaultWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultWidth As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float DefaultWidth { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置默认信封宽度，以磅为单位。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果您设置<see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultHeight" />或<b>DefaultWidth</b>属性，信封尺寸自动更改为信封选项对话框 （工具菜单） 中的自定义大小。使用<see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultSize" />属性设置为默认大小为预定义大小。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FeedSource">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdPaperTray FeedSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdPaperTray FeedSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property FeedSource As WdPaperTray" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdPaperTray FeedSource { Microsoft::Office::Interop::Word::WdPaperTray get(); void set(Microsoft::Office::Interop::Word::WdPaperTray value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdPaperTray</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置信封送纸器。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果将信封添加到文档前使用此属性，将发生错误。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (ref object ExtractAddress, ref object Address, ref object AutoText, ref object OmitReturnAddress, ref object ReturnAddress, ref object ReturnAutoText, ref object PrintBarCode, ref object PrintFIMA, ref object Size, ref object Height, ref object Width, ref object FeedSource, ref object AddressFromLeft, ref object AddressFromTop, ref object ReturnAddressFromLeft, ref object ReturnAddressFromTop, ref object DefaultFaceUp, ref object DefaultOrientation, ref object PrintEPostage, ref object Vertical, ref object RecipientNamefromLeft, ref object RecipientNamefromTop, ref object RecipientPostalfromLeft, ref object RecipientPostalfromTop, ref object SenderNamefromLeft, ref object SenderNamefromTop, ref object SenderPostalfromLeft, ref object SenderPostalfromTop);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert([in]object&amp; ExtractAddress, [in]object&amp; Address, [in]object&amp; AutoText, [in]object&amp; OmitReturnAddress, [in]object&amp; ReturnAddress, [in]object&amp; ReturnAutoText, [in]object&amp; PrintBarCode, [in]object&amp; PrintFIMA, [in]object&amp; Size, [in]object&amp; Height, [in]object&amp; Width, [in]object&amp; FeedSource, [in]object&amp; AddressFromLeft, [in]object&amp; AddressFromTop, [in]object&amp; ReturnAddressFromLeft, [in]object&amp; ReturnAddressFromTop, [in]object&amp; DefaultFaceUp, [in]object&amp; DefaultOrientation, [in]object&amp; PrintEPostage, [in]object&amp; Vertical, [in]object&amp; RecipientNamefromLeft, [in]object&amp; RecipientNamefromTop, [in]object&amp; RecipientPostalfromLeft, [in]object&amp; RecipientPostalfromTop, [in]object&amp; SenderNamefromLeft, [in]object&amp; SenderNamefromTop, [in]object&amp; SenderPostalfromLeft, [in]object&amp; SenderPostalfromTop) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.Insert(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (Optional ByRef ExtractAddress As Object, Optional ByRef Address As Object, Optional ByRef AutoText As Object, Optional ByRef OmitReturnAddress As Object, Optional ByRef ReturnAddress As Object, Optional ByRef ReturnAutoText As Object, Optional ByRef PrintBarCode As Object, Optional ByRef PrintFIMA As Object, Optional ByRef Size As Object, Optional ByRef Height As Object, Optional ByRef Width As Object, Optional ByRef FeedSource As Object, Optional ByRef AddressFromLeft As Object, Optional ByRef AddressFromTop As Object, Optional ByRef ReturnAddressFromLeft As Object, Optional ByRef ReturnAddressFromTop As Object, Optional ByRef DefaultFaceUp As Object, Optional ByRef DefaultOrientation As Object, Optional ByRef PrintEPostage As Object, Optional ByRef Vertical As Object, Optional ByRef RecipientNamefromLeft As Object, Optional ByRef RecipientNamefromTop As Object, Optional ByRef RecipientPostalfromLeft As Object, Optional ByRef RecipientPostalfromTop As Object, Optional ByRef SenderNamefromLeft As Object, Optional ByRef SenderNamefromTop As Object, Optional ByRef SenderPostalfromLeft As Object, Optional ByRef SenderPostalfromTop As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ExtractAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Address" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OmitReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintBarCode" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintFIMA" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Size" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FeedSource" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultFaceUp" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultOrientation" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintEPostage" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Vertical" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientNamefromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientNamefromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientPostalfromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientPostalfromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderNamefromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderNamefromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderPostalfromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderPostalfromTop" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ExtractAddress">可选的<b>对象</b>。 <b>真</b> 要使用 EnvelopeAddress 书签 (用户定义书签) 收件人的地址作为标记的文本。</param>
+        <param name="Address">可选的<b>对象</b>。 指定收信人地址的字符串 (忽略的如果<paramref name="ExtractAddress" />是<b>True</b>)。</param>
+        <param name="AutoText">可选的<b>对象</b>。 用来指定用于地址的"自动图文集"词条的字符串。 如果指定， <paramref name="Address" /> ，则忽略。</param>
+        <param name="OmitReturnAddress">可选的<b>对象</b>。 <b>真</b> 不插入寄信人地址。</param>
+        <param name="ReturnAddress">可选的<b>对象</b>。 指定寄信人地址的字符串。</param>
+        <param name="ReturnAutoText">可选的<b>对象</b>。 用来指定用于寄信人地址的"自动图文集"词条的字符串。 如果指定， <paramref name="ReturnAddress" /> ，则忽略。</param>
+        <param name="PrintBarCode">可选的<b>对象</b>。 <b>真</b> 要添加 POSTNET 条码。 美国邮件。</param>
+        <param name="PrintFIMA">可选的<b>对象</b>。 <b>真</b> 要添加该礼节性回邮饰面标识标记 (FIMA) 使用。 美国邮件。</param>
+        <param name="Size">可选的<b>对象</b>。 指定信封尺寸的字符串。 该字符串必须与 "信封选项"对话框的 "信封尺寸"框中列出的大小（例如，"10 型"或"C4"）相匹配。</param>
+        <param name="Height">可选的<b>对象</b>。 信封，以磅为单位的高度时<paramref name="Size" />参数设置为"自定义大小"。</param>
+        <param name="Width">可选的<b>对象</b>。 信封，以磅为单位的宽度时<paramref name="Size" />参数设置为"自定义大小"。</param>
+        <param name="FeedSource">可选的<b>对象</b>。 <b>True</b>以使用<see cref="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" />属性<see cref="T:Microsoft.Office.Interop.Word.Envelope" />对象以指定打印信封时要使用哪个纸盒。</param>
+        <param name="AddressFromLeft">可选的<b>对象</b>。 信封左边缘与收信人地址之间的距离（以磅为单位）。</param>
+        <param name="AddressFromTop">可选的<b>对象</b>。 信封上边缘与收信人地址之间的距离（以磅为单位）。</param>
+        <param name="ReturnAddressFromLeft">可选的<b>对象</b>。 信封左边缘与寄信人地址之间的距离（以磅为单位）。</param>
+        <param name="ReturnAddressFromTop">可选的<b>对象</b>。 信封上边缘与寄信人地址之间的距离（以磅为单位）。</param>
+        <param name="DefaultFaceUp">可选的<b>对象</b>。 <b>真</b> 要打印信封面对 <b>假</b> 以打印它面朝下。</param>
+        <param name="DefaultOrientation">可选的<b>对象</b>。 信封的方向。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdEnvelopeOrientation" />常量。</param>
+        <param name="PrintEPostage">可选的<b>对象</b>。 <b>真正</b> 从 Internet 邮政供应商插入邮政。</param>
+        <param name="Vertical">可选的<b>对象</b>。 <b>真</b> 要在信封上打印垂直文本。 用于亚洲语言信封。 默认值为 <b>False</b> 。</param>
+        <param name="RecipientNamefromLeft">可选的<b>对象</b>。 收信人姓名距离信封左边缘的位置（以磅为单位）。 用于中文信封。</param>
+        <param name="RecipientNamefromTop">可选的<b>对象</b>。 收信人姓名距离信封上边缘的位置（以磅为单位）。 用于中文信封。</param>
+        <param name="RecipientPostalfromLeft">可选的<b>对象</b>。 收信人邮政编码距离信封左边缘的位置（以磅为单位）。 用于中文信封。</param>
+        <param name="RecipientPostalfromTop">可选的<b>对象</b>。 收信人邮政编码距离信封上边缘的位置（以磅为单位）。 用于中文信封。</param>
+        <param name="SenderNamefromLeft">可选的<b>对象</b>。 寄信人姓名距离信封左边缘的位置（以磅为单位）。 用于中文信封。</param>
+        <param name="SenderNamefromTop">可选的<b>对象</b>。 寄信人姓名距离信封上边缘的位置（以磅为单位）。 用于中文信封。</param>
+        <param name="SenderPostalfromLeft">可选的<b>对象</b>。 寄信人邮政编码距离信封左边缘的位置（以磅为单位）。 用于中文信封。</param>
+        <param name="SenderPostalfromTop">可选的<b>对象</b>。 寄信人邮政编码距离信封上边缘的位置（以磅为单位）。 用于中文信封。</param>
+        <summary>在指定文档的开头以单独一节的形式插入一个信封。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert2000">
+      <MemberSignature Language="C#" Value="public void Insert2000 (ref object ExtractAddress, ref object Address, ref object AutoText, ref object OmitReturnAddress, ref object ReturnAddress, ref object ReturnAutoText, ref object PrintBarCode, ref object PrintFIMA, ref object Size, ref object Height, ref object Width, ref object FeedSource, ref object AddressFromLeft, ref object AddressFromTop, ref object ReturnAddressFromLeft, ref object ReturnAddressFromTop, ref object DefaultFaceUp, ref object DefaultOrientation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert2000([in]object&amp; ExtractAddress, [in]object&amp; Address, [in]object&amp; AutoText, [in]object&amp; OmitReturnAddress, [in]object&amp; ReturnAddress, [in]object&amp; ReturnAutoText, [in]object&amp; PrintBarCode, [in]object&amp; PrintFIMA, [in]object&amp; Size, [in]object&amp; Height, [in]object&amp; Width, [in]object&amp; FeedSource, [in]object&amp; AddressFromLeft, [in]object&amp; AddressFromTop, [in]object&amp; ReturnAddressFromLeft, [in]object&amp; ReturnAddressFromTop, [in]object&amp; DefaultFaceUp, [in]object&amp; DefaultOrientation) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.Insert2000(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert2000 (Optional ByRef ExtractAddress As Object, Optional ByRef Address As Object, Optional ByRef AutoText As Object, Optional ByRef OmitReturnAddress As Object, Optional ByRef ReturnAddress As Object, Optional ByRef ReturnAutoText As Object, Optional ByRef PrintBarCode As Object, Optional ByRef PrintFIMA As Object, Optional ByRef Size As Object, Optional ByRef Height As Object, Optional ByRef Width As Object, Optional ByRef FeedSource As Object, Optional ByRef AddressFromLeft As Object, Optional ByRef AddressFromTop As Object, Optional ByRef ReturnAddressFromLeft As Object, Optional ByRef ReturnAddressFromTop As Object, Optional ByRef DefaultFaceUp As Object, Optional ByRef DefaultOrientation As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ExtractAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Address" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OmitReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintBarCode" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintFIMA" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Size" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FeedSource" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultFaceUp" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultOrientation" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ExtractAddress">To be added.</param>
+        <param name="Address">To be added.</param>
+        <param name="AutoText">To be added.</param>
+        <param name="OmitReturnAddress">To be added.</param>
+        <param name="ReturnAddress">To be added.</param>
+        <param name="ReturnAutoText">To be added.</param>
+        <param name="PrintBarCode">To be added.</param>
+        <param name="PrintFIMA">To be added.</param>
+        <param name="Size">To be added.</param>
+        <param name="Height">To be added.</param>
+        <param name="Width">To be added.</param>
+        <param name="FeedSource">To be added.</param>
+        <param name="AddressFromLeft">To be added.</param>
+        <param name="AddressFromTop">To be added.</param>
+        <param name="ReturnAddressFromLeft">To be added.</param>
+        <param name="ReturnAddressFromTop">To be added.</param>
+        <param name="DefaultFaceUp">To be added.</param>
+        <param name="DefaultOrientation">To be added.</param>
+        <summary>仅供内部使用。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public void Options ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Options() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.Options" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Options ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Options();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>显示信封选项对话框。</summary>
+        <remarks>
+          <para>仅当该文档是信封邮件合并主文档的工作方式， <b>Options</b>方法。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个对象，代表指定对象的父对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintOut">
+      <MemberSignature Language="C#" Value="public void PrintOut (ref object ExtractAddress, ref object Address, ref object AutoText, ref object OmitReturnAddress, ref object ReturnAddress, ref object ReturnAutoText, ref object PrintBarCode, ref object PrintFIMA, ref object Size, ref object Height, ref object Width, ref object FeedSource, ref object AddressFromLeft, ref object AddressFromTop, ref object ReturnAddressFromLeft, ref object ReturnAddressFromTop, ref object DefaultFaceUp, ref object DefaultOrientation, ref object PrintEPostage, ref object Vertical, ref object RecipientNamefromLeft, ref object RecipientNamefromTop, ref object RecipientPostalfromLeft, ref object RecipientPostalfromTop, ref object SenderNamefromLeft, ref object SenderNamefromTop, ref object SenderPostalfromLeft, ref object SenderPostalfromTop);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrintOut([in]object&amp; ExtractAddress, [in]object&amp; Address, [in]object&amp; AutoText, [in]object&amp; OmitReturnAddress, [in]object&amp; ReturnAddress, [in]object&amp; ReturnAutoText, [in]object&amp; PrintBarCode, [in]object&amp; PrintFIMA, [in]object&amp; Size, [in]object&amp; Height, [in]object&amp; Width, [in]object&amp; FeedSource, [in]object&amp; AddressFromLeft, [in]object&amp; AddressFromTop, [in]object&amp; ReturnAddressFromLeft, [in]object&amp; ReturnAddressFromTop, [in]object&amp; DefaultFaceUp, [in]object&amp; DefaultOrientation, [in]object&amp; PrintEPostage, [in]object&amp; Vertical, [in]object&amp; RecipientNamefromLeft, [in]object&amp; RecipientNamefromTop, [in]object&amp; RecipientPostalfromLeft, [in]object&amp; RecipientPostalfromTop, [in]object&amp; SenderNamefromLeft, [in]object&amp; SenderNamefromTop, [in]object&amp; SenderPostalfromLeft, [in]object&amp; SenderPostalfromTop) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.PrintOut(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrintOut (Optional ByRef ExtractAddress As Object, Optional ByRef Address As Object, Optional ByRef AutoText As Object, Optional ByRef OmitReturnAddress As Object, Optional ByRef ReturnAddress As Object, Optional ByRef ReturnAutoText As Object, Optional ByRef PrintBarCode As Object, Optional ByRef PrintFIMA As Object, Optional ByRef Size As Object, Optional ByRef Height As Object, Optional ByRef Width As Object, Optional ByRef FeedSource As Object, Optional ByRef AddressFromLeft As Object, Optional ByRef AddressFromTop As Object, Optional ByRef ReturnAddressFromLeft As Object, Optional ByRef ReturnAddressFromTop As Object, Optional ByRef DefaultFaceUp As Object, Optional ByRef DefaultOrientation As Object, Optional ByRef PrintEPostage As Object, Optional ByRef Vertical As Object, Optional ByRef RecipientNamefromLeft As Object, Optional ByRef RecipientNamefromTop As Object, Optional ByRef RecipientPostalfromLeft As Object, Optional ByRef RecipientPostalfromTop As Object, Optional ByRef SenderNamefromLeft As Object, Optional ByRef SenderNamefromTop As Object, Optional ByRef SenderPostalfromLeft As Object, Optional ByRef SenderPostalfromTop As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ExtractAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Address" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OmitReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintBarCode" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintFIMA" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Size" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FeedSource" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultFaceUp" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultOrientation" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintEPostage" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Vertical" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientNamefromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientNamefromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientPostalfromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientPostalfromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderNamefromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderNamefromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderPostalfromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderPostalfromTop" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ExtractAddress">可选的<b>对象</b>。 <b>真</b> 要使用"EnvelopeAddress"书签 (用户定义书签) 收件人的地址作为标记的文本。</param>
+        <param name="Address">可选的<b>对象</b>。 指定收信人地址的字符串 (忽略的如果<paramref name="ExtractAddress" />是<b>True</b>)。</param>
+        <param name="AutoText">可选的<b>对象</b>。 包含收信人地址的"自动图文集"词条的名称。</param>
+        <param name="OmitReturnAddress">可选的<b>对象</b>。 <b>真</b> 要省略寄信人地址。</param>
+        <param name="ReturnAddress">可选的<b>对象</b>。 指定寄信人地址的字符串。</param>
+        <param name="ReturnAutoText">可选的<b>对象</b>。 包含寄信人地址的"自动图文集"词条的名称。</param>
+        <param name="PrintBarCode">可选的<b>对象</b>。 <b>真</b> 要添加 POSTNET 条码。 美国邮件。</param>
+        <param name="PrintFIMA">可选的<b>对象</b>。 <b>真</b> 要添加该礼节性回邮饰面标识标记 (FIM A) 使用。 美国邮件。</param>
+        <param name="Size">可选的<b>对象</b>。 指定信封尺寸的字符串。 该字符串应与 "信封选项"对话框中"信封尺寸"框左侧列出的信封尺寸相匹配（例如，"10 型"）。</param>
+        <param name="Height">可选的<b>对象</b>。 （以磅为单位） 的信封高度时<paramref name="Size" />参数设置为"自定义大小"。</param>
+        <param name="Width">可选的<b>对象</b>。 （以磅为单位） 的信封宽度时<paramref name="Size" />参数设置为"自定义大小"。</param>
+        <param name="FeedSource">可选的<b>对象</b>。 <b>True</b>以使用<see cref="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" />属性<see cref="T:Microsoft.Office.Interop.Word.Envelope" />对象以指定打印信封时要使用哪个纸盒。</param>
+        <param name="AddressFromLeft">可选的<b>对象</b>。 信封左边缘与收信人地址间的距离（以磅为单位）。</param>
+        <param name="AddressFromTop">可选的<b>对象</b>。 信封上边缘与收信人地址间的距离（以磅为单位）。</param>
+        <param name="ReturnAddressFromLeft">可选的<b>对象</b>。 信封左边缘与寄信人地址间的距离（以磅为单位）。</param>
+        <param name="ReturnAddressFromTop">可选的<b>对象</b>。 信封上边缘与寄信人地址间的距离（以磅为单位）。</param>
+        <param name="DefaultFaceUp">可选的<b>对象</b>。 <b>真</b> 要打印信封面对 <b>假</b> 以打印它面朝下。</param>
+        <param name="DefaultOrientation">可选的<b>对象</b>。 信封的方向。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdEnvelopeOrientation" />常量。</param>
+        <param name="PrintEPostage">可选的<b>对象</b>。 <b>真</b> 到使用互联网电子邮政供应商打印邮资。</param>
+        <param name="Vertical">可选的<b>对象</b>。 <b>真实</b> 文本垂直打印在信封上。 用于亚洲语言信封。</param>
+        <param name="RecipientNamefromLeft">可选的<b>对象</b>。 收件人的姓名的位置以磅为单位，从左边缘的信封。 用于亚洲语言信封。</param>
+        <param name="RecipientNamefromTop">可选的<b>对象</b>。 收件人的姓名的位置以磅为单位，从信封上边缘。 用于亚洲语言信封。</param>
+        <param name="RecipientPostalfromLeft">可选的<b>对象</b>。 邮政编码的位置的收件人，以磅为单位，从左边缘的信封。 用于亚洲语言信封。</param>
+        <param name="RecipientPostalfromTop">可选的<b>对象</b>。 邮政编码的位置的收件人，以磅为单位，从信封上边缘。 用于亚洲语言信封。</param>
+        <param name="SenderNamefromLeft">可选的<b>对象</b>。 发件人名称的位置以磅为单位，从左边缘的信封。 用于亚洲语言信封。</param>
+        <param name="SenderNamefromTop">可选的<b>对象</b>。 发件人名称的位置以磅为单位，从信封上边缘。 用于亚洲语言信封。</param>
+        <param name="SenderPostalfromLeft">可选的<b>对象</b>。 邮政编码的位置发件人，以磅为单位，从左边缘的信封。 用于亚洲语言信封。</param>
+        <param name="SenderPostalfromTop">可选的<b>对象</b>。 邮政编码的位置发件人，以磅为单位，从信封上边缘。 用于亚洲语言信封。</param>
+        <summary>打印信封但不将信封添至活动文档。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintOut2000">
+      <MemberSignature Language="C#" Value="public void PrintOut2000 (ref object ExtractAddress, ref object Address, ref object AutoText, ref object OmitReturnAddress, ref object ReturnAddress, ref object ReturnAutoText, ref object PrintBarCode, ref object PrintFIMA, ref object Size, ref object Height, ref object Width, ref object FeedSource, ref object AddressFromLeft, ref object AddressFromTop, ref object ReturnAddressFromLeft, ref object ReturnAddressFromTop, ref object DefaultFaceUp, ref object DefaultOrientation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrintOut2000([in]object&amp; ExtractAddress, [in]object&amp; Address, [in]object&amp; AutoText, [in]object&amp; OmitReturnAddress, [in]object&amp; ReturnAddress, [in]object&amp; ReturnAutoText, [in]object&amp; PrintBarCode, [in]object&amp; PrintFIMA, [in]object&amp; Size, [in]object&amp; Height, [in]object&amp; Width, [in]object&amp; FeedSource, [in]object&amp; AddressFromLeft, [in]object&amp; AddressFromTop, [in]object&amp; ReturnAddressFromLeft, [in]object&amp; ReturnAddressFromTop, [in]object&amp; DefaultFaceUp, [in]object&amp; DefaultOrientation) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.PrintOut2000(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrintOut2000 (Optional ByRef ExtractAddress As Object, Optional ByRef Address As Object, Optional ByRef AutoText As Object, Optional ByRef OmitReturnAddress As Object, Optional ByRef ReturnAddress As Object, Optional ByRef ReturnAutoText As Object, Optional ByRef PrintBarCode As Object, Optional ByRef PrintFIMA As Object, Optional ByRef Size As Object, Optional ByRef Height As Object, Optional ByRef Width As Object, Optional ByRef FeedSource As Object, Optional ByRef AddressFromLeft As Object, Optional ByRef AddressFromTop As Object, Optional ByRef ReturnAddressFromLeft As Object, Optional ByRef ReturnAddressFromTop As Object, Optional ByRef DefaultFaceUp As Object, Optional ByRef DefaultOrientation As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ExtractAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Address" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OmitReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintBarCode" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintFIMA" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Size" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FeedSource" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultFaceUp" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultOrientation" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ExtractAddress">To be added.</param>
+        <param name="Address">To be added.</param>
+        <param name="AutoText">To be added.</param>
+        <param name="OmitReturnAddress">To be added.</param>
+        <param name="ReturnAddress">To be added.</param>
+        <param name="ReturnAutoText">To be added.</param>
+        <param name="PrintBarCode">To be added.</param>
+        <param name="PrintFIMA">To be added.</param>
+        <param name="Size">To be added.</param>
+        <param name="Height">To be added.</param>
+        <param name="Width">To be added.</param>
+        <param name="FeedSource">To be added.</param>
+        <param name="AddressFromLeft">To be added.</param>
+        <param name="AddressFromTop">To be added.</param>
+        <param name="ReturnAddressFromLeft">To be added.</param>
+        <param name="ReturnAddressFromTop">To be added.</param>
+        <param name="DefaultFaceUp">To be added.</param>
+        <param name="DefaultOrientation">To be added.</param>
+        <summary>仅供内部使用。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecipientNamefromLeft">
+      <MemberSignature Language="C#" Value="public float RecipientNamefromLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 RecipientNamefromLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.RecipientNamefromLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecipientNamefromLeft As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RecipientNamefromLeft { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置 <b>一个</b> 值，表示的位置，以磅为单位，收信人姓名距信封左边缘。 用于亚洲语言的信封。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecipientNamefromTop">
+      <MemberSignature Language="C#" Value="public float RecipientNamefromTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 RecipientNamefromTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.RecipientNamefromTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecipientNamefromTop As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RecipientNamefromTop { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置 <b>一个</b> 值，表示的位置，以磅为单位，收信人姓名距信封上边缘。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>此属性用于亚洲语言的信封。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecipientPostalfromLeft">
+      <MemberSignature Language="C#" Value="public float RecipientPostalfromLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 RecipientPostalfromLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.RecipientPostalfromLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecipientPostalfromLeft As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RecipientPostalfromLeft { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置 <b>一个</b> 值，表示的位置，以磅为单位，收信人邮政编码距信封左边缘。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>此属性用于亚洲语言的信封。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecipientPostalfromTop">
+      <MemberSignature Language="C#" Value="public float RecipientPostalfromTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 RecipientPostalfromTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.RecipientPostalfromTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecipientPostalfromTop As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RecipientPostalfromTop { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置 <b>一个</b> 值，表示的位置，以磅为单位，收信人邮政编码距信封上边缘。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>此属性用于亚洲语言的信封。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnAddress">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range ReturnAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range ReturnAddress" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnAddress As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ ReturnAddress { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示信封的寄信人地址。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果在将信封添加到文档之前使用此属性，将发生错误。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnAddressFromLeft">
+      <MemberSignature Language="C#" Value="public float ReturnAddressFromLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ReturnAddressFromLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReturnAddressFromLeft As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ReturnAddressFromLeft { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置信封左边的缘与寄信人地址之间的距离 (以磅为单位)。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果将信封添加到文档前使用此属性，将发生错误。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnAddressFromTop">
+      <MemberSignature Language="C#" Value="public float ReturnAddressFromTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ReturnAddressFromTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReturnAddressFromTop As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ReturnAddressFromTop { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置信封上的边缘与寄信人地址之间的距离 (以磅为单位)。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果将信封添加到文档前使用此属性，将发生错误。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnAddressStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Style ReturnAddressStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Style ReturnAddressStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnAddressStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Style ^ ReturnAddressStyle { Microsoft::Office::Interop::Word::Style ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Style" />代表信封的寄信人地址样式的对象。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果向文档添加了一个信封，格式为寄信样式的文本将自动更新。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderNamefromLeft">
+      <MemberSignature Language="C#" Value="public float SenderNamefromLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 SenderNamefromLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.SenderNamefromLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property SenderNamefromLeft As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SenderNamefromLeft { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(27)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(27)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(27)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置 <b>一个</b> 值，表示的位置，以磅为单位，发件人姓名距信封左边缘。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>此属性用于亚洲语言的信封。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderNamefromTop">
+      <MemberSignature Language="C#" Value="public float SenderNamefromTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 SenderNamefromTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.SenderNamefromTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property SenderNamefromTop As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SenderNamefromTop { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置 <b>一个</b> 值，表示的位置，以磅为单位，发件人姓名距信封上边缘。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>此属性用于亚洲语言的信封。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderPostalfromLeft">
+      <MemberSignature Language="C#" Value="public float SenderPostalfromLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 SenderPostalfromLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.SenderPostalfromLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property SenderPostalfromLeft As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SenderPostalfromLeft { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(29)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(29)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(29)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置 <b>一个</b> 值，表示的位置，以磅为单位，发件人邮政编码距信封左边缘。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>此属性用于亚洲语言的信封。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderPostalfromTop">
+      <MemberSignature Language="C#" Value="public float SenderPostalfromTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 SenderPostalfromTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.SenderPostalfromTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property SenderPostalfromTop As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SenderPostalfromTop { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(30)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(30)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(30)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置 <b>一个</b> 值，表示的位置，以磅为单位，发件人邮政编码距信封上边缘。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>此属性用于亚洲语言的信封。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateDocument">
+      <MemberSignature Language="C#" Value="public void UpdateDocument ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateDocument() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.UpdateDocument" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateDocument ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateDocument();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>用当前的信封设置更新文档中的信封。</summary>
+        <remarks>
+          <para>如果将信封添加到文档前使用此属性，将发生错误。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="public bool Vertical { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Vertical" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Vertical" />
+      <MemberSignature Language="VB.NET" Value="Public Property Vertical As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Vertical { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>垂直排列中文信封和邮件标签的文本。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>此属性返回<b>True</b>如果中文信封和邮件标签的文本是垂直方向，和<b>False</b>如果不。</para>
+          <para>此属性仅适用于邮件标签或被设置为进行邮件合并和仅适用于东亚语言的信封。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

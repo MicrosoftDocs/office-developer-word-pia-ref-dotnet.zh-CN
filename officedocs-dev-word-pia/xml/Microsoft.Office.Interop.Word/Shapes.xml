@@ -1,0 +1,1076 @@
+<Type Name="Shapes" FullName="Microsoft.Office.Interop.Word.Shapes">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="596f5d04825cbd4362b47c3e2b57a588a0ededd6" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20667104" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shapes implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Shapes" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Shapes&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Shapes : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002099F-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>一<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象表示文档中的所有形状或所有邮件头中的所有形状和文档中的页脚。</summary>
+    <remarks>&lt;b0&gt;每个&lt;b1&gt;Shape&lt;/b1&gt;对象代表绘图层，例如自选图形、 任意多边形中的对象、 OLE 对象或图片。&lt;/b0&gt;&lt;b3&gt;注意&lt;/b3&gt;如果您想要使用文档中的形状的子集&lt;b2&gt;— 例如，若要执行某些操作仅对文档的自选图形或仅对选定的形状 — 必须构造&lt;b4&gt;&lt;/b4&gt;要使用包含的形状的集合。 &lt; /c2 &gt;&lt;b5&gt;使用&lt;b6&gt;&lt;/b6&gt;属性可返回&lt;b7&gt;Shapes&lt;/b7&gt;集合。&lt;/b5&gt;&lt;b8&gt;&lt;b9&gt;注意&lt;/b9&gt;如果您想要执行类似 （删除或设置属性） 到文档的所有形状，同时使用&lt;b10&gt;&lt;/b10&gt;方法创建一个包含的&lt;b12&gt;Shapes&lt;/b12&gt;集合中的所有形状的&lt;b11&gt;ShapeRange&lt;/b11&gt;对象和然后将相应的属性或方法应用于&lt;b13&gt;ShapeRange&lt;/b13&gt;对象。&lt;/b8&gt;&lt;b15&gt;Shapes&lt;/b15&gt;集合的&lt;b14&gt;使用以下方法： &lt;b16&gt; &lt;/b16&gt;， &lt;b17&gt; &lt;/b17&gt;， &lt;b18&gt; &lt;/b18&gt;， &lt;b19&gt; &lt;/b19&gt;， &lt;b20&gt; &lt;/b20&gt;， &lt;b21&gt; &lt;/b21&gt;， &lt;b22&gt; &lt;/b22&gt;， &lt;b23&gt; &lt;/b23&gt;， &lt;b24&gt; &lt;/b24&gt;， &lt;b25&gt; &lt;/b25&gt;，或&lt;b26&gt;&lt;/b26&gt;将形状添加到文档和返回一个代表新建的形状的&lt;b27&gt;Shape&lt;/b27&gt;对象。&lt;/b14&gt;&lt;b28&gt;使用&lt;b29&gt;Shapes&lt;/b29&gt;(&lt;b30&gt;&lt;/b30&gt;)，其中&lt;b31&gt;&lt;/b31&gt;是名称或索引号，可返回单个&lt;b32&gt;Shape&lt;/b32&gt;对象。&lt;/b28&gt;&lt;b33&gt;创建时，每个形状被分配默认名称。例如，如果向文档添加三个不同的形状，它们可能被命名为"矩形 2"，"TextBox 3，"和"Oval 4"。若要赋予形状一个更有意义的名称，将设置&lt;b34&gt;&lt;/b34&gt;属性。&lt;/b33&gt;&lt;b35&gt;Shapes 集合不包括&lt;b36&gt;&lt;/b36&gt;对象。&lt;b37&gt;InlineShape&lt;/b37&gt;对象视为字符，并作为字符的文本行中放置。&lt;b38&gt;Shape&lt;/b38&gt;对象定位到文本范围，但可以自由浮动并可放置在页面上的任何位置。您可以使用&lt;b39&gt;&lt;/b39&gt;方法和&lt;b40&gt;&lt;/b40&gt;方法将形状转换为另一种类型。可以将图片、 OLE 对象和 ActiveX 控件转换为内嵌形状。&lt;/b35&gt;&lt;b41&gt;&lt;b42&gt;&lt;/b42&gt;属性文档中此集合主篇文章中返回的项目数。要计算中所有的页眉和页脚的形状，请使用&lt;b43&gt;Shapes&lt;/b43&gt;集合与任何&lt;b44&gt;&lt;/b44&gt;对象。&lt;/b41&gt;&lt;/b2&gt;&lt;b45&gt;&lt;/b45&gt;</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddCallout">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddCallout (Microsoft.Office.Core.MsoCalloutType Type, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddCallout([in]valuetype Microsoft.Office.Core.MsoCalloutType Type, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCallout (Type As MsoCalloutType, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoCalloutType" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">所需<see cref="T:Microsoft.Office.Core.MsoCalloutType" />。 标注的类型。<b>MsoCalloutType</b>可以是下列常量之一。 <b>msoCalloutOne</b> – 位置标注表情下移行沿标注框的左边缘。 <b>msoCalloutTwo</b> – 沿对角线向下和离开标注框的左边缘的位置标注线。 <b>msoCalloutThree</b> – 位置标注线的直接 out 然后沿对角线向下并离开从标注框的左边缘。 <b>msocalloutfour 类型</b>– 沿标注文本边框的左边缘的位置标注线。 <b>msoCalloutMixed</b> – A 返回值，该值指示范围或选定内容中存在多个<b>MsoCalloutType</b> 。</param>
+        <param name="Left">
+          <b>必选。</b> 标注边框左边缘的位置（以磅为单位）。</param>
+        <param name="Top">
+          <b>必选。</b> 标注边框上边缘的位置（以磅为单位）。</param>
+        <param name="Width">
+          <b>必选。</b> 标注边框的宽度（以磅为单位）。</param>
+        <param name="Height">
+          <b>必选。</b> 标注边框的高度（以磅为单位）。</param>
+        <param name="Anchor">可选的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表标注绑定到的文本。 如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。 如果省略此参数，则自动选择锁定区域和标注位于页面顶端和左边缘相对。</param>
+        <summary>向文档添加线形标注。 返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，它代表标注，并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>可以插入各种标注，例如气球和云朵使用<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" />方法。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCanvas">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddCanvas (float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddCanvas([in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddCanvas(System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCanvas (Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Left">
+          <b>必选。</b> 画布左侧边缘相对于锁定标记的位置，以磅为单位。</param>
+        <param name="Top">
+          <b>必选。</b> 画布上部边缘相对于锁定标记的位置，以磅为单位。</param>
+        <param name="Width">
+          <b>必选。</b> 画布的宽度，以磅为单位。</param>
+        <param name="Height">
+          <b>必选。</b> 画布的高度，以磅为单位。</param>
+        <param name="Anchor">可选的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象代表画布绑定到的文本。 如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。 如果省略此参数，则自动选择锁定区域和画布位于页面顶端和左边缘相对。</param>
+        <summary>将绘图画布上添加到文档。 返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表绘图画布，并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChart">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddChart (Microsoft.Office.Core.XlChartType Type = (Microsoft.Office.Core.XlChartType) -1, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddChart([in]valuetype Microsoft.Office.Core.XlChartType Type, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddChart(Microsoft.Office.Core.XlChartType,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddChart (Optional Type As XlChartType = (Microsoft.Office.Core.XlChartType) -1, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.XlChartType" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">To be added.</param>
+        <param name="Left">To be added.</param>
+        <param name="Top">To be added.</param>
+        <param name="Width">To be added.</param>
+        <param name="Height">To be added.</param>
+        <param name="Anchor">To be added.</param>
+        <summary>此对象、成员或枚举已被弃用并且不适合在您的代码中使用。</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Word.Shape" />
+        </returns>
+        <remarks>To be added.</remarks>
+        <example>
+          <para>创建一个新的三维柱形图，然后将其添加到活动文档中。</para>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChart2">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddChart2 (int Style = -1, Microsoft.Office.Core.XlChartType Type = (Microsoft.Office.Core.XlChartType) -1, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor, ref object NewLayout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddChart2([in]int32 Style, [in]valuetype Microsoft.Office.Core.XlChartType Type, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor, [in]object&amp; NewLayout) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddChart2(System.Int32,Microsoft.Office.Core.XlChartType,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddChart2 (Optional Style As Integer = -1, Optional Type As XlChartType = (Microsoft.Office.Core.XlChartType) -1, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object, Optional ByRef NewLayout As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Style" Type="System.Int32" />
+        <Parameter Name="Type" Type="Microsoft.Office.Core.XlChartType" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NewLayout" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Style">图表样式。</param>
+        <param name="Type">图表类型。</param>
+        <param name="Left">图表左边缘距离定位点的以磅为单位的位置。</param>
+        <param name="Top">图表上边缘距离定位点的以磅为单位的位置。</param>
+        <param name="Width">以磅为单位的图表宽度。</param>
+        <param name="Height">以磅为单位的图表高度。</param>
+        <param name="Anchor">如果<paramref name="NewLayout" />是 true，则将使用新的动态格式规则中插入图表 （标题位于和图例才上是否有多个系列）。</param>
+        <param name="NewLayout">如果<paramref name="NewLayout" />是 true，则图表插入使用动态的新格式设置规则 （标题位于和图例才上是否有多个系列）。</param>
+        <summary>向文档中添加图表。 返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，它代表图表并将其添加到指定的集合。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddConnector">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddConnector (Microsoft.Office.Core.MsoConnectorType Type, float BeginX, float BeginY, float EndX, float EndY);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddConnector([in]valuetype Microsoft.Office.Core.MsoConnectorType Type, [in]float32 BeginX, [in]float32 BeginY, [in]float32 EndX, [in]float32 EndY) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddConnector(Microsoft.Office.Core.MsoConnectorType,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddConnector (Type As MsoConnectorType, BeginX As Single, BeginY As Single, EndX As Single, EndY As Single) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ AddConnector(Microsoft::Office::Core::MsoConnectorType Type, float BeginX, float BeginY, float EndX, float EndY);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoConnectorType" />
+        <Parameter Name="BeginX" Type="System.Single" />
+        <Parameter Name="BeginY" Type="System.Single" />
+        <Parameter Name="EndX" Type="System.Single" />
+        <Parameter Name="EndY" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Type">To be added.</param>
+        <param name="BeginX">To be added.</param>
+        <param name="BeginY">To be added.</param>
+        <param name="EndX">To be added.</param>
+        <param name="EndY">To be added.</param>
+        <summary>仅供内部使用。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCurve">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddCurve (ref object SafeArrayOfPoints, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddCurve([in]object&amp; SafeArrayOfPoints, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCurve (ByRef SafeArrayOfPoints As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SafeArrayOfPoints" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="SafeArrayOfPoints">所需的<b>对象</b>。 数组的坐标对指定顶点和控制点的曲线。 您指定的第一个点是起始顶点，和后续两个点是第一段的贝塞尔曲线的控制点。 然后，为曲线的每个其他段，指定一个顶点和两个控制点。 您指定的最后一个点是终顶点的曲线。 请注意，您必须指定 3n + 1 个点，其中 n 是曲线段的数量。</param>
+        <param name="Anchor">可选的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示曲线绑定到的文本。 如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。 如果省略此参数，则自动选择锁定区域和相对于页面顶端和左边缘位于曲线。</param>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，表示文档中的贝赛尔曲线。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDiagram">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddDiagram (Microsoft.Office.Core.MsoDiagramType Type, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddDiagram([in]valuetype Microsoft.Office.Core.MsoDiagramType Type, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddDiagram (Type As MsoDiagramType, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoDiagramType" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">所需<see cref="T:Microsoft.Office.Core.MsoDiagramType" />。<b>MsoDiagramType</b>可以是下列常量之一。 <b>msoDiagramCycle</b> – 显示持续循环的过程。 <b>msoDiagramMixed</b> – 不用于此方法。 <b>射线</b>– 显示分层关系。 <b>msoDiagramPyramid</b> – 显示基于基础的关系。 <b>msoDiagramRadial</b> – 显示关系的核心元素。 <b>msoDiagramTarget</b> – 向目标显示步骤。 <b>msoDiagramVenn</b> – 元素之间的重叠的显示区域。</param>
+        <param name="Left">
+          <b>必选。</b> 以磅为单位的相对于定位标记的关系图的边界框的左边缘的位置。</param>
+        <param name="Top">
+          <b>必选。</b> 以磅为单位的相对于定位标记的关系图的边界框的上边缘的位置。</param>
+        <param name="Width">
+          <b>必选。</b> 以磅为单位的关系图的边界框的宽度。</param>
+        <param name="Height">
+          <b>必选。</b> 以磅为单位的关系图的边界框的高度。</param>
+        <param name="Anchor">可选的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表图表绑定到的文本。 如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。 如果省略此参数，则自动选择锁定区域和图表位于页面顶端和左边缘相对。</param>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，表示文档中新创建的图表。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLabel">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddLabel (Microsoft.Office.Core.MsoTextOrientation Orientation, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddLabel([in]valuetype Microsoft.Office.Core.MsoTextOrientation Orientation, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddLabel(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddLabel (Orientation As MsoTextOrientation, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Orientation" Type="Microsoft.Office.Core.MsoTextOrientation" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Orientation">所需<see cref="T:Microsoft.Office.Core.MsoTextOrientation" />。 文本的方向。<b>MsoTextOrientation</b>可以是下列常量之一： <b>msoTextOrientationDownward </b><b>不同语言支持</b><b>msoTextOrientationHorizontalRotatedFarEast </b><b>msoTextOrientationMixed</b><b>msoTextOrientationUpward </b><b>常量</b><b>方向</b>，这些常量的一些可能不可用，具体取决于的语言支持 （例如，美国英语） 的所选或安装。</param>
+        <param name="Left">
+          <b>必选。</b> 以磅为单位，标签相对于定位标记的左边缘的位置。</param>
+        <param name="Top">
+          <b>必选。</b> 以磅为单位的相对于定位标记的标签上边缘的位置。</param>
+        <param name="Width">
+          <b>必选。</b> 标签的宽度（以磅为单位）。</param>
+        <param name="Height">
+          <b>必选。</b> 标签的高度（以磅为单位）。</param>
+        <param name="Anchor">可选的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，代表的文字标签绑定到该对象。 如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。 如果省略此参数，则自动选择锁定区域和标签放置在相对于页面顶端和左边缘。</param>
+        <summary>向文档添加一个文本标签。 返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表文字标签并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddLine (float BeginX, float BeginY, float EndX, float EndY, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddLine([in]float32 BeginX, [in]float32 BeginY, [in]float32 EndX, [in]float32 EndY, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddLine(System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddLine (BeginX As Single, BeginY As Single, EndX As Single, EndY As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="BeginX" Type="System.Single" />
+        <Parameter Name="BeginY" Type="System.Single" />
+        <Parameter Name="EndX" Type="System.Single" />
+        <Parameter Name="EndY" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="BeginX">
+          <b>必选。</b> 水平位置，以磅为单位的线条的起点相对于定位标记。</param>
+        <param name="BeginY">
+          <b>必选。</b> 垂直位置，以磅为单位的线条的起点相对于定位标记。</param>
+        <param name="EndX">
+          <b>必选。</b> 水平位置，以磅为单位的线条的终点相对于定位标记。</param>
+        <param name="EndY">
+          <b>必选。</b> 垂直位置，以磅为单位的线条的终点相对于定位标记。</param>
+        <param name="Anchor">可选的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，代表的文字标签绑定到该对象。 如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。 如果省略此参数，则自动选择锁定区域和标签放置在相对于页面顶端和左边缘。</param>
+        <summary>将线条添加到文档。 返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表线条并将其添加到<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />集合。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>若要创建带箭头，使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Line" />属性来设置线条格式。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOLEControl">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddOLEControl (ref object ClassType, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddOLEControl([in]object&amp; ClassType, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOLEControl (Optional ByRef ClassType As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">可选的<b>对象</b>。 用于要创建的 ActiveX 控件的编程标识符。</param>
+        <param name="Left">可选的<b>对象</b>。 相对于定位标记的新对象的左边缘的位置 （以磅为单位）。</param>
+        <param name="Top">可选的<b>对象</b>。 相对于定位标记的新对象的上边缘的位置 （以磅为单位）。</param>
+        <param name="Width">可选的<b>对象</b>。 ActiveX 控件，以磅为单位的宽度。</param>
+        <param name="Height">可选的<b>对象</b>。ActiveX 控件，以磅为单位的高度。</param>
+        <param name="Anchor">可选的<b>对象</b>。 ActiveX 控件绑定到的区域。 如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。 如果省略此参数，但是，自动放置锁定标记和 ActiveX 控件位于页面顶端和左边缘相对。</param>
+        <summary>创建一个 ActiveX 控件（以前称为 OLE 控件）。 返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，表示新的 ActiveX 控件。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOLEObject">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddOLEObject (ref object ClassType, ref object FileName, ref object LinkToFile, ref object DisplayAsIcon, ref object IconFileName, ref object IconIndex, ref object IconLabel, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddOLEObject([in]object&amp; ClassType, [in]object&amp; FileName, [in]object&amp; LinkToFile, [in]object&amp; DisplayAsIcon, [in]object&amp; IconFileName, [in]object&amp; IconIndex, [in]object&amp; IconLabel, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOLEObject (Optional ByRef ClassType As Object, Optional ByRef FileName As Object, Optional ByRef LinkToFile As Object, Optional ByRef DisplayAsIcon As Object, Optional ByRef IconFileName As Object, Optional ByRef IconIndex As Object, Optional ByRef IconLabel As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DisplayAsIcon" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconFileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconIndex" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconLabel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">可选的<b>对象</b>。 用于激活指定 OLE 对象的应用程序名称。</param>
+        <param name="FileName">可选的<b>对象</b>。 创建对象所用的文件。 如果省略该参数，则使用当前的文件夹。 必须指定<paramref name="ClassType" />或<paramref name="FileName" />对象，但不是能同时参数。</param>
+        <param name="LinkToFile">可选的<b>对象</b>。 <b>真</b> 若要将 OLE 对象链接到创建它的文件。 <b>假</b> 以使 OLE 对象成为独立复的文件。 如果您指定的值<paramref name="ClassType" />、<paramref name="LinkToFile" />参数必须为<b>False</b>。 默认值为 <b>False</b> 。</param>
+        <param name="DisplayAsIcon">可选的<b>对象</b>。 <b>真</b> 若要将 OLE 对象显示为图标。 默认值为 <b>False</b> 。</param>
+        <param name="IconFileName">可选的<b>对象</b>。 包含将要显示的图标的文件。</param>
+        <param name="IconIndex">可选的<b>对象</b>。 内的图标索引号<paramref name="IconFileName" />。 图标显示在更改图标对话框 （插入菜单、 对象对话框） 顺序相对应的指定文件中的图标次序当选显示为图标复选框。 文件中第一个图标的索引号是 0（零）。 如果中不存在具有给定的索引号的图标<paramref name="IconFileName" />，则使用具有索引编号 1 （在文件中的第二个图标） 图标。 默认值为 0（零）。</param>
+        <param name="IconLabel">可选的<b>对象</b>。 显示在图标下面的标签（标题）。</param>
+        <param name="Left">可选的<b>对象</b>。 相对于定位标记的新对象的左边缘的位置 （以磅为单位）。</param>
+        <param name="Top">可选的<b>对象</b>。 相对于定位标记的新对象的上边缘的位置 （以磅为单位）。</param>
+        <param name="Width">可选的<b>对象</b>。 OLE 对象，以磅为单位的宽度。</param>
+        <param name="Height">可选的<b>对象</b>。 OLE 对象，以磅为单位的高度。</param>
+        <param name="Anchor">可选的<b>对象</b>。 OLE 对象绑定到的区域。 如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。 如果<paramref name="Anchor" />未指定，则自动放置锁定标记和 OLE 对象位于页面顶端和左边缘相对。</param>
+        <summary>创建 OLE 对象。 返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，表示新的 OLE 对象。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPicture">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddPicture (string FileName, ref object LinkToFile, ref object SaveWithDocument, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddPicture([in]string FileName, [in]object&amp; LinkToFile, [in]object&amp; SaveWithDocument, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPicture (FileName As String, Optional ByRef LinkToFile As Object, Optional ByRef SaveWithDocument As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SaveWithDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">必需的 <b>字符串</b> 。 图片的路径和文件名。</param>
+        <param name="LinkToFile">可选的<b>对象</b>。 <b>真</b> 要将图片链接到创建它的文件。 <b>False</b> 使图片文件的独立副本。 默认值为 <b>False</b> 。</param>
+        <param name="SaveWithDocument">可选的<b>对象</b>。 如果为 <b>True</b> ，则将链接的图片与文档一起保存。 默认值为 <b>False</b> 。</param>
+        <param name="Left">可选的<b>对象</b>。 以磅为单位的相对于定位标记新图片的左边缘的位置。</param>
+        <param name="Top">可选的<b>对象</b>。 以磅为单位，新图片相对于定位标记的上边缘的位置。</param>
+        <param name="Width">可选的<b>对象</b>。 图片的宽度（以磅为单位）。</param>
+        <param name="Height">可选的<b>对象</b>。 图片的高度（以磅为单位）。</param>
+        <param name="Anchor">可选的<b>对象</b>。 图片绑定到的区域。 如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。 如果省略此参数，但是，自动放置锁定标记和图片相对于页面顶端和左边缘定位。</param>
+        <summary>在文档中添加一幅图片。 返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表图片，并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPolyline">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddPolyline (ref object SafeArrayOfPoints, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddPolyline([in]object&amp; SafeArrayOfPoints, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPolyline (ByRef SafeArrayOfPoints As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SafeArrayOfPoints" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="SafeArrayOfPoints">所需的<b>对象</b>。 由指定多边形顶点的坐标对组成的数组。</param>
+        <param name="Anchor">可选的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示折线绑定到的文本。 如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。 如果省略此参数，则自动选择锁定区域和行位于页面顶端和左边缘相对。</param>
+        <summary>将打开或封闭的多边形添加到文档。 返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表多边形并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>要组成一个封闭的多边形，为连续线段图形中的第一个和最后一个顶点指定相同的坐标。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddShape">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddShape (int Type, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddShape([in]int32 Type, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddShape (Type As Integer, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="System.Int32" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <b>必选。</b> 要返回的形状类型。 可以是任意<see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />常量。</param>
+        <param name="Left">
+          <b>必选。</b> 自选图形左边缘的位置（以磅为单位）。</param>
+        <param name="Top">
+          <b>必选。</b> 自选图形上边缘的位置（以磅为单位）。</param>
+        <param name="Width">
+          <b>必选。</b> 自选图形的宽度（以磅为单位）。</param>
+        <param name="Height">
+          <b>必选。</b> 自选图形的高度（以磅为单位）。</param>
+        <param name="Anchor">可选的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表自选图形绑定到的文本。 如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。 如果省略此参数，则自动选择锁定区域和自选图形位于页面顶端和左边缘相对。</param>
+        <summary>向某文档中添加一个自选图形。 返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表自选图形，并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>若要改变所添加的自选图形类型，将设置<see cref="P:Microsoft.Office.Interop.Word.Shape.AutoShapeType" />属性。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSmartArt">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddSmartArt (Microsoft.Office.Core.SmartArtLayout Layout, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddSmartArt([in]class Microsoft.Office.Core.SmartArtLayout Layout, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddSmartArt(Microsoft.Office.Core.SmartArtLayout,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddSmartArt (Layout As SmartArtLayout, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Layout" Type="Microsoft.Office.Core.SmartArtLayout" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Layout">A<see cref="T:Microsoft.Office.Core.SmartArtLayout" />指定 SmartArt 图形的布局的对象。</param>
+        <param name="Left">从幻灯片左边缘到 SmartArt 图形左边缘之间的距离（以磅为单位）。</param>
+        <param name="Top">从幻灯片上边缘到 SmartArt 图形上边缘之间的距离（以磅为单位）。</param>
+        <param name="Width">SmartArt 图形的宽度。</param>
+        <param name="Height">SmartArt 图形的高度。</param>
+        <param name="Anchor">A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示 SmartArt 图形绑定到的文本。 如果指定了 Anchor，锁定标记位于锁定区域第一段的开头。 如果省略此参数，则自动选择锁定区域和 SmartArt 图形位于页面顶端和左边缘相对。</param>
+        <summary>将指定 SmartArt 图形插入活动文档。</summary>
+        <returns>A<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象。</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTextbox">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddTextbox (Microsoft.Office.Core.MsoTextOrientation Orientation, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddTextbox([in]valuetype Microsoft.Office.Core.MsoTextOrientation Orientation, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTextbox (Orientation As MsoTextOrientation, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Orientation" Type="Microsoft.Office.Core.MsoTextOrientation" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Orientation">所需<see cref="T:Microsoft.Office.Core.MsoTextOrientation" />。 文本的方向。 这些常量中的某些可能不可用，这取决于选择或安装的语言支持（例如，美国英语）。</param>
+        <param name="Left">
+          <b>必选。</b> 文本框左边缘的位置（以磅为单位）。</param>
+        <param name="Top">
+          <b>必选。</b> 文本框上边缘的位置（以磅为单位）。</param>
+        <param name="Width">
+          <b>必选。</b> 文本框的宽度（以磅为单位）。</param>
+        <param name="Height">
+          <b>必选。</b> 文本框的高度（以磅为单位）。</param>
+        <param name="Anchor">可选的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示文本框绑定到的文本。 如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。 如果省略此参数，则自动选择锁定区域和文本框中放置相对于页面顶端和左边缘。</param>
+        <summary>向文档添加一个文本框。 返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表文本框中，并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTextEffect">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddTextEffect (Microsoft.Office.Core.MsoPresetTextEffect PresetTextEffect, string Text, string FontName, float FontSize, Microsoft.Office.Core.MsoTriState FontBold, Microsoft.Office.Core.MsoTriState FontItalic, float Left, float Top, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddTextEffect([in]valuetype Microsoft.Office.Core.MsoPresetTextEffect PresetTextEffect, [in]string Text, [in]string FontName, [in]float32 FontSize, [in]valuetype Microsoft.Office.Core.MsoTriState FontBold, [in]valuetype Microsoft.Office.Core.MsoTriState FontItalic, [in]float32 Left, [in]float32 Top, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddTextEffect(Microsoft.Office.Core.MsoPresetTextEffect,System.String,System.String,System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTextEffect (PresetTextEffect As MsoPresetTextEffect, Text As String, FontName As String, FontSize As Single, FontBold As MsoTriState, FontItalic As MsoTriState, Left As Single, Top As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PresetTextEffect" Type="Microsoft.Office.Core.MsoPresetTextEffect" />
+        <Parameter Name="Text" Type="System.String" />
+        <Parameter Name="FontName" Type="System.String" />
+        <Parameter Name="FontSize" Type="System.Single" />
+        <Parameter Name="FontBold" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="FontItalic" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="PresetTextEffect">所需<see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" />。 预设的文本效果。 <b>可读</b> 常数的值对应于 艺术字库对话框 (从左到右，从上到下编号) 中列出的格式。</param>
+        <param name="Text">必需的 <b>字符串</b> 。 艺术字中的文字。</param>
+        <param name="FontName">必需的 <b>字符串</b> 。 艺术字中所用字体的名称。</param>
+        <param name="FontSize">
+          <b>必选。</b> 大小 （以磅为单位的艺术字中使用的字体）。</param>
+        <param name="FontBold">所需<see cref="T:Microsoft.Office.Core.MsoTriState" />。 <b>属性值为 MsoTrue</b> 为艺术字字体加粗。</param>
+        <param name="FontItalic">所需<see cref="T:Microsoft.Office.Core.MsoTriState" />。 <b>属性值为 MsoTrue</b> ，以斜体显示艺术字。</param>
+        <param name="Left">
+          <b>必选。</b> 以磅为单位的相对于定位标记的艺术字形状左边缘的位置。</param>
+        <param name="Top">
+          <b>必选。</b> 以磅为单位的艺术字形状相对于定位标记的上边缘的位置。</param>
+        <param name="Anchor">可选的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表艺术字绑定到的文本。 如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。 如果省略此参数，则自动选择锁定区域和艺术字位于页面顶端和左边缘相对。</param>
+        <summary>向文档添加艺术字形状。 返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表艺术字，并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>向文档添加艺术字的高度和宽度的艺术字将根据大小和数量的您指定的文本自动进行设置。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddWebVideo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddWebVideo (string EmbedCode, ref object VideoWidth, ref object VideoHeight, ref object PosterFrameImage, ref object Url, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddWebVideo([in]string EmbedCode, [in]object&amp; VideoWidth, [in]object&amp; VideoHeight, [in]object&amp; PosterFrameImage, [in]object&amp; Url, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddWebVideo(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddWebVideo (EmbedCode As String, ByRef VideoWidth As Object, ByRef VideoHeight As Object, Optional ByRef PosterFrameImage As Object, Optional ByRef Url As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EmbedCode" Type="System.String" />
+        <Parameter Name="VideoWidth" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="VideoHeight" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PosterFrameImage" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Url" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="EmbedCode">要嵌入的 HTML 代码。</param>
+        <param name="VideoWidth">Integer 值，它代表视频以像素为单位的 web 的宽度。</param>
+        <param name="VideoHeight">Integer 值，它代表 web 视频以像素为单位的高度。</param>
+        <param name="PosterFrameImage">一个字符串，指向要用作视频 web 海报帧的文件。</param>
+        <param name="Url">一个字符串，包含视频 web 的 URL。</param>
+        <param name="Left">位置，以磅为单位，从文档的边缘海报框架的左边缘。</param>
+        <param name="Top">以磅为单位，从文档的边缘海报框架的上边缘的位置。</param>
+        <param name="Width">以磅为单位的文档中的海报帧宽度。</param>
+        <param name="Height">以磅为单位的文档中的海报框架的高度。</param>
+        <param name="Anchor">A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示视频 web 绑定到的文本。 如果<paramref name="Anchor" />指定，则锁定区域的第一段的开头放置定位标记。 如果省略此参数，则自动选择锁定区域和视频位于页面顶端和左边缘相对。</param>
+        <summary>向文档中添加新的 web 视频。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildFreeform">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.FreeformBuilder BuildFreeform (Microsoft.Office.Core.MsoEditingType EditingType, float X1, float Y1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.FreeformBuilder BuildFreeform([in]valuetype Microsoft.Office.Core.MsoEditingType EditingType, [in]float32 X1, [in]float32 Y1) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildFreeform (EditingType As MsoEditingType, X1 As Single, Y1 As Single) As FreeformBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::FreeformBuilder ^ BuildFreeform(Microsoft::Office::Core::MsoEditingType EditingType, float X1, float Y1);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.FreeformBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EditingType" Type="Microsoft.Office.Core.MsoEditingType" />
+        <Parameter Name="X1" Type="System.Single" />
+        <Parameter Name="Y1" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="EditingType">第一个节点的编辑属性。 所需<see cref="T:Microsoft.Office.Core.MsoEditingType" />。<b>MsoEditingType</b>可以是这些常量之一 （不能是<b>msoEditingSmooth</b>或<b>msoEditingSymmetric</b>）。 <b>msoEditingAuto</b><b>msoEditingCorner</b></param>
+        <param name="X1">
+          <b>必选。</b> 任意图形中第一个节点相对于文档左上角的位置（以磅为单位）。</param>
+        <param name="Y1">
+          <b>必选。</b> 任意图形中第一个节点相对于文档左上角的位置（以磅为单位）。</param>
+        <summary>建立任意多边形对象。 返回<see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" />对象，代表任意多边形时几何。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />方法将段添加到任意多边形。在任意多边形添加至少一个段后，您可以使用<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" />方法将转换到<b>FreeformBuilder</b>对象<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象已<b>FreeformBuilder</b>对象中已定义的几何描述。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定集合中返回的项目数。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
+          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape this[ref object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Shape Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Item(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Shape ^ get(System::Object ^ % Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>对象</b>，它指示的序号位置或一个字符串，表示单个对象的名称。</param>
+        <summary>返回集合中的单个对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个对象，代表指定对象的父对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ShapeRange Range (ref object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ShapeRange Range([in]object&amp; Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Range (ByRef Index As Object) As ShapeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::ShapeRange ^ Range(System::Object ^ % Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ShapeRange</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">所需的<b>对象</b>。 指定要包含在指定范围中的形状。 可以是指定的索引中的形状数的整数<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合、 一个字符串，指定形状的名称或<b>对象</b>包含整数或字符串数组。</param>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>与 0 （零） 文档的开头开始字符位置的值。将计算所有字符，包括非打印字符。即使它们不显示隐藏的字符是计算在内。如果不指定起始和结束字符位置的<b>Range</b>方法，以返回整个文档<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。</para>
+          <para>
+            <b>ShapeRange</b>对象不包括<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。<b>InlineShape</b>对象等效字符，并且位于作为字符的文本范围内。<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象定位到范围的文本 （所选内容，默认情况下），但可以位于页面上的任意位置。<b>Shape</b>对象将始终显示在定位到的区域位于同一页。</para>
+          <para>大多数操作，您可以处理<b>Shape</b>对象您还可以与一个包含单个形状的<b>ShapeRange</b>对象执行。某些操作，在包含多个形状的<b>ShapeRange</b>对象执行时产生错误。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectAll">
+      <MemberSignature Language="C#" Value="public void SelectAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SelectAll() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.SelectAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SelectAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectAll();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>选择主文章、 画布上，或文档的页眉和页脚中的所有形状。</summary>
+        <remarks>
+          <para>该方法不选择<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />对象。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

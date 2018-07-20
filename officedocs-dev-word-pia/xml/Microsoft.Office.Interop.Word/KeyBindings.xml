@@ -1,0 +1,403 @@
+<Type Name="KeyBindings" FullName="Microsoft.Office.Interop.Word.KeyBindings">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="82a4dc883d5b7257bb70e07ee869a0f2dba9b2f1" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20666358" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface KeyBindings : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract KeyBindings implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.KeyBindings" />
+  <TypeSignature Language="VB.NET" Value="Public Interface KeyBindings&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class KeyBindings : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020996-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>一<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象表示当前上下文中自定义的按键分配方案。 在自定义键盘对话框中进行自定义按键分配方案。</summary>
+    <remarks>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.KeyBindings" />属性可返回<b>KeyBindings</b>集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />方法将<b>KeyBinding</b>对象添加到<b>KeyBindings</b>集合。</para>
+      <para>使用<b>KeyBindings</b>(<paramref name="index" />)，其中<paramref name="index" />是返回单个<b>KeyBinding</b>对象的索引号。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.KeyBinding Add (Microsoft.Office.Interop.Word.WdKeyCategory KeyCategory, string Command, int KeyCode, ref object KeyCode2, ref object CommandParameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.KeyBinding Add([in]valuetype Microsoft.Office.Interop.Word.WdKeyCategory KeyCategory, [in]string Command, [in]int32 KeyCode, [in]object&amp; KeyCode2, [in]object&amp; CommandParameter) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (KeyCategory As WdKeyCategory, Command As String, KeyCode As Integer, Optional ByRef KeyCode2 As Object, Optional ByRef CommandParameter As Object) As KeyBinding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.KeyBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="KeyCategory" Type="Microsoft.Office.Interop.Word.WdKeyCategory" />
+        <Parameter Name="Command" Type="System.String" />
+        <Parameter Name="KeyCode" Type="System.Int32" />
+        <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="CommandParameter" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="KeyCategory">所需<see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />。 键分配方案的类别。</param>
+        <param name="Command">必需的 <b>字符串</b> 。 指定组合键执行的命令。</param>
+        <param name="KeyCode">
+          <b>必选。</b> 使用之一指定的键<see cref="T:Microsoft.Office.Interop.Word.WdKey" />常量。</param>
+        <param name="KeyCode2">可选的<b>对象</b>。 使用之一指定的第二个键<see cref="T:Microsoft.Office.Interop.Word.WdKey" />常量。</param>
+        <param name="CommandParameter">可选的<b>对象</b>。 其他文本，如果有，所需的命令通过指定<paramref name="Command" />。 有关详细信息，请参阅下面的"注解"部分。</param>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象，表示宏、 内置命令、 字体、 自动图文集条目、 样式或符号的新快捷键。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>您可以使用<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />方法来创建<paramref name="KeyCode" />或<paramref name="KeyCode2" />参数。</para>
+          <para>下表中，在左侧的列中包含需要命令值的命令，右列介绍必须执行指定<paramref name="CommandParameter" />的每个这些命令。(在自定义键盘对话框 （工具菜单） 到指定的等效操作<paramref name="CommandParameter" />在命令框中选择以下命令之一时出现的列表框中选择一项。)</para>
+          <list type="table">
+            <item>
+              <description>
+                <b>边框</b>、 <b>Color</b>或<b>Shading</b></description>
+              <description>数字 — 指定为文本 — 包含值，其中 0 （零） 为第一项，列表框中选定的设置的位置相对应的 1 是第二项，等</description>
+            </item>
+            <item>
+              <description>
+                <b>列</b>
+              </description>
+              <description>介于 1 至 45 之间的数字 — 指定为文本 — 对应于要应用的列数</description>
+            </item>
+            <item>
+              <description>
+                <b>紧缩</b>
+              </description>
+              <description>一个 0.1 磅至 12.75 磅之间的文本度量值以 0.05 磅为增量 （72 磅 = 1 英寸）</description>
+            </item>
+            <item>
+              <description>
+                <b>Expanded</b>
+              </description>
+              <description>之间 0.1 磅至以 0.05 磅为增量 （72 磅 = 1 英寸） 12.75 磅的文本度量值</description>
+            </item>
+            <item>
+              <description>
+                <b>FileOpenFile</b>
+              </description>
+              <description>要打开的文件的路径和文件名称。如果未指定路径，则使用当前文件夹。</description>
+            </item>
+            <item>
+              <description>
+                <b>字体大小</b>
+              </description>
+              <description>一个正的文本度量值，指定以 0.5 磅为增量 （72 磅 = 1 英寸）</description>
+            </item>
+            <item>
+              <description>
+                <b>降低</b>、<b>凸起</b></description>
+              <description>的文本度量值之间 1 磅至 64 磅，以 0.5 磅为增量 （72 磅 = 1 英寸）</description>
+            </item>
+            <item>
+              <description>
+                <b>符号</b>
+              </description>
+              <description>创建通过串联<b>Chr()</b>指令和符号的字体名称的字符串 (例如，Chr(167) &amp; "符号")</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearAll">
+      <MemberSignature Language="C#" Value="public void ClearAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearAll() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.ClearAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAll();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>清除所有的自定义按键分配方案，并恢复原有的 Microsoft Word 快捷键分配方案。</summary>
+        <remarks>
+          <para>应用于的<b>ClearAll</b>方法后<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />对象，指定的模板或文档中的键分配将重置为默认设置。使用<see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" />属性来指定文档或模板的上下文，然后才能使用<b>ClearAll</b>方法。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public object Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Context" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Context { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个 object 值，该值代表指定的键绑定的存储位置。 此属性可返回<see cref="T:Microsoft.Office.Interop.Word.Document" />， <see cref="T:Microsoft.Office.Interop.Word.Template" />，或<see cref="T:Microsoft.Office.Interop.Word.Application" />对象。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>内置的按键分配方案 （例如，CTRL + I 为<b>斜体</b>） 作为上下文返回<b>Application</b>对象。您将添加任何键绑定将返回<b>Document</b>或<b>Template</b>对象，具体取决于自定义上下文生效时<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象已添加。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定集合中返回的项目数。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
+          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.KeyBinding this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.KeyBinding Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As KeyBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::KeyBinding ^ default[int] { Microsoft::Office::Interop::Word::KeyBinding ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.KeyBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">一个<b>整数</b>，指示的单个对象的序号位置。</param>
+        <summary>返回集合中的单个对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.KeyBinding Key (int KeyCode, ref object KeyCode2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.KeyBinding Key([in]int32 KeyCode, [in]object&amp; KeyCode2) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.KeyBindings.Key(System.Int32,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Key (KeyCode As Integer, Optional ByRef KeyCode2 As Object) As KeyBinding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.KeyBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="KeyCode" Type="System.Int32" />
+        <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="KeyCode">
+          <b>必选。</b> 通过使用 <b>WdKey</b> 常量之一指定一个密钥。</param>
+        <param name="KeyCode2">可选的<b>对象</b>。 使用之一指定的第二个键<see cref="T:Microsoft.Office.Interop.Word.WdKey" />常量。</param>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象，表示指定的自定义组合键。 如果不存在的键组合，则此方法将返回 <b>Nothing</b> 。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>您可以使用<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />方法来创建<paramref name="KeyCode" />或<paramref name="KeyCode2" />参数。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.KeyBindings.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个对象，代表指定对象的父对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

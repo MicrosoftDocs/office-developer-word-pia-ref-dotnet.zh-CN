@@ -1,0 +1,779 @@
+<Type Name="FormField" FullName="Microsoft.Office.Interop.Word.FormField">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="137dfb21b0a9bdd9ac870c9196378e48d20ab52e" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20666478" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface FormField" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormField" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FormField" />
+  <TypeSignature Language="VB.NET" Value="Public Interface FormField" />
+  <TypeSignature Language="C++ CLI" Value="public interface class FormField" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020928-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>代表单个窗体域。</summary>
+    <remarks>
+      <para>
+        <b>FormField</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.FormFields" />集合。</para>
+      <para>使用<b>FormFields</b>(<paramref name="index" />)，其中<paramref name="index" />是书签名称或索引号，可返回单个<b>FormField</b>对象。</para>
+      <para>索引号代表所选内容、 范围或文档中的窗体域的位置。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" />与要添加一个窗体域的<b>FormFields</b>对象的方法。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />， <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />，和<see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" />与要返回的<b>FormField</b>对象的属性<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />， <see cref="T:Microsoft.Office.Interop.Word.DropDown" />，和<see cref="T:Microsoft.Office.Interop.Word.TextInput" />对象。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalculateOnExit">
+      <MemberSignature Language="C#" Value="public bool CalculateOnExit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CalculateOnExit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.CalculateOnExit" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalculateOnExit As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CalculateOnExit { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>确定字段退出是否自动更新指定窗体域引用。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>此属性返回<b>True</b>如果引用指定窗体域时自动更新退出字段中，和<b>False</b>如果不需要。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
+          <para>REF 域可用于引用一个窗体域的内容。例如，{REF 分类汇总} 引用分类汇总的书签所标记的窗体域。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckBox">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.CheckBox CheckBox { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.CheckBox CheckBox" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckBox As CheckBox" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CheckBox ^ CheckBox { Microsoft::Office::Interop::Word::CheckBox ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.CheckBox</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />对象，表示复选框窗体域。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果将<b>CheckBox</b>属性应用于<see cref="T:Microsoft.Office.Interop.Word.FormField" />对象的复选框型窗体域，该属性不会失败，但<see cref="P:Microsoft.Office.Interop.Word.CheckBox.Valid" />属性返回的对象将为<b>False</b>。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public void Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Copy() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FormField.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>将指定对象复制到剪贴板。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
+          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cut">
+      <MemberSignature Language="C#" Value="public void Cut ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cut() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FormField.Cut" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>将指定对象从文档中移到剪贴板上。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FormField.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>用于删除指定的对象。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropDown">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.DropDown DropDown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.DropDown DropDown" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.DropDown" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropDown As DropDown" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DropDown ^ DropDown { Microsoft::Office::Interop::Word::DropDown ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.DropDown</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.DropDown" />对象，代表下拉型窗体字段。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果将<b>DropDown</b>属性应用于<see cref="T:Microsoft.Office.Interop.Word.FormField" />对象的下拉型窗体域，该属性不会失败，但<see cref="P:Microsoft.Office.Interop.Word.DropDown.Valid" />属性返回的对象将为<b>False</b>。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>确定是否启用一个窗体域。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>此属性返回<b>True</b>如果启用一个窗体域，则和<b>False</b>如果不需要。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
+          <para>如果启用了一个窗体域，其内容窗体位于填写可以更改</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntryMacro">
+      <MemberSignature Language="C#" Value="public string EntryMacro { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EntryMacro" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.EntryMacro" />
+      <MemberSignature Language="VB.NET" Value="Public Property EntryMacro As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntryMacro { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置指定窗体域的条目宏名称 (<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />， <see cref="T:Microsoft.Office.Interop.Word.DropDown" />，或<see cref="T:Microsoft.Office.Interop.Word.TextInput" />)。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>输入宏开始运行时的窗体域获得焦点。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitMacro">
+      <MemberSignature Language="C#" Value="public string ExitMacro { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExitMacro" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.ExitMacro" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExitMacro As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExitMacro { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置指定窗体域的退出宏名称 (<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />， <see cref="T:Microsoft.Office.Interop.Word.DropDown" />，或<see cref="T:Microsoft.Office.Interop.Word.TextInput" />)。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>当窗体域失去焦点时退出宏开始运行。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpText">
+      <MemberSignature Language="C#" Value="public string HelpText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.HelpText" />
+      <MemberSignature Language="VB.NET" Value="Public Property HelpText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置窗体域具有焦点且用户按 F1 时在消息框中显示的文本。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果<see cref="P:Microsoft.Office.Interop.Word.FormField.OwnHelp" />属性设置为<b>True</b>， <b>HelpText</b>指定的文本字符串值。如果<b>OwnHelp</b>设置为<b>False</b>， <b>HelpText</b>指定包含帮助文本的窗体域的自动图文集词条的名称。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置指定对象的名称。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.FormField Next { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.FormField Next" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Next" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Next As FormField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::FormField ^ Next { Microsoft::Office::Interop::Word::FormField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.FormField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回集合中的下一个对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnHelp">
+      <MemberSignature Language="C#" Value="public bool OwnHelp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OwnHelp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.OwnHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Property OwnHelp As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OwnHelp { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定当窗体域具有焦点且用户按 F1 时在消息框中显示的文本的源。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果<b>，则返回 True</b>，指定的文本<see cref="P:Microsoft.Office.Interop.Word.FormField.HelpText" />显示属性。如果显示<b>False</b>， <b>HelpText</b>属性指定的自动图文集条目中的文本。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnStatus">
+      <MemberSignature Language="C#" Value="public bool OwnStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OwnStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.OwnStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Property OwnStatus As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OwnStatus { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定当窗体域具有焦点时状态栏中显示的文本的源。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果该属性返回<b>True</b>，通过指定的文本<see cref="P:Microsoft.Office.Interop.Word.FormField.StatusText" />显示属性，以及如果<b>False</b>，该词条的文本指定显示<b>StatusText</b>属性。设置该属性值为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回一个对象，代表指定对象的父对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Previous">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.FormField Previous { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.FormField Previous" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Previous" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Previous As FormField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::FormField ^ Previous { Microsoft::Office::Interop::Word::FormField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.FormField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回集合中上一个对象。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range Range { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range Range" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Range" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>有关从文档返回一个区域或从形状集合返回形状范围的信息，请参阅<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public string Result { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Result" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Result" />
+      <MemberSignature Language="VB.NET" Value="Public Property Result As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Result { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>有关从文档返回一个区域或从形状集合返回形状范围的信息，请参阅<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public void Select ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Select() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FormField.Select" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(65535)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>选择指定的对象。</summary>
+        <remarks>
+          <para>使用此方法后，使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性以使用选定项。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusText">
+      <MemberSignature Language="C#" Value="public string StatusText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StatusText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.StatusText" />
+      <MemberSignature Language="VB.NET" Value="Public Property StatusText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StatusText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回或设置一个窗体域时具有焦点在状态栏中显示的文本。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果<see cref="P:Microsoft.Office.Interop.Word.FormField.OwnStatus" />属性设置为<b>True</b>， <b>StatusText</b>属性指定状态栏文本。如果<b>OwnStatus</b>属性设置为<b>False</b>，则<b>StatusText</b>属性指定包含的窗体域的状态栏文本自动图文集词条的名称。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextInput">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TextInput TextInput { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.TextInput TextInput" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.TextInput" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextInput As TextInput" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextInput ^ TextInput { Microsoft::Office::Interop::Word::TextInput ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.TextInput</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.TextInput" />对象，它代表文本窗体域。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>如果将<b>TextInput</b>属性应用于下拉型窗体域的<b>FormField</b>对象，该属性不会失败，但<see cref="P:Microsoft.Office.Interop.Word.TextInput.Valid" />属性返回的对象将为<b>False</b>。</para>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Word.FormField.Result" />属性可返回或设置的内容的<b>FormField</b>对象与<see cref="T:Microsoft.Office.Interop.Word.TextInput" />对象。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdFieldType this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdFieldType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FormField.Type" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Type As WdFieldType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFieldType default { Microsoft::Office::Interop::Word::WdFieldType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdFieldType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返回域的类型。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
