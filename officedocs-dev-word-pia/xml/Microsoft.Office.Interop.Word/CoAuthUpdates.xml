@@ -1,0 +1,331 @@
+<Type Name="CoAuthUpdates" FullName="Microsoft.Office.Interop.Word.CoAuthUpdates">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="7983db44fc17c631b58b37400b9b392ffaf1679e" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="zh-CN" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20665716" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface CoAuthUpdates : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthUpdates implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />
+  <TypeSignature Language="VB.NET" Value="Public Interface CoAuthUpdates&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class CoAuthUpdates : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("30225CFC-5A71-4FE6-B527-90A52C54AE77")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="bf430-101">一<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />代表文档中的可用更新的对象。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="bf430-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> objects that represent the available updates  in the document.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="bf430-102">
+        <para>启用共同创作文档同时编辑时，由一个共同作者所做的更改形式提供给其他共同作者更新。每次更改由单个<b>CoAuthUpdate</b>对象表示。当共同作者将保存其版本的文档时，其他共同作者所做的更改将合并到该的 co 作者的版本的文档。之前保存其版本的文档的共同作者，其他共同作者所做的更改可作为更新。</para>
+        <para>如： 两人正在编辑文档最初包含一个段落的文本，"褐色 fox。"如果第一个共同作者编辑的句读取，"通过日志快速褐色 fox 跳转"，然后保存文档的单词"快速"和"通过日志"可供第二个共同作者为两个更新到文档。以下两个更新 Microsoft Word 2010 对象模型中表示为两个<b>CoAuthUpdate</b>对象。从第一个共同作者的更新时将文档保存为第二个共同作者，合并到文档中。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="bf430-102">
+          <para>When a document with co-authoring enabled is simultaneously edited, changes made by one co-author are available to other co-authors as updates. Each change is represented by a single <b>CoAuthUpdate</b> object. When a co-author saves their version of the document, changes made by other co-authors are merged into that co-author's version of the document. Prior to the co-author saving their version of the document, changes made by other co-authors are available as updates.</para>
+          <para>For example: Two people are editing a document that initially contains a single paragraph with the text, "The brown fox." If the first co-author edits the sentence to read, "The quick brown fox jumps over the log" and then saves the document, the words "quick" and "over the log" are available to the second co-author as two updates to the document. These two updates are represented in the Microsoft Word 2010 object model as two <b>CoAuthUpdate</b> objects. When the second co-author saves the document, the updates from the first co-author are merged into the document.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bf430-103">获取<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-103">Gets an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="bf430-104">
+            <see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-104">An <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="bf430-105">
+            <para>只读的。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-105">
+              <para>Read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bf430-106">获取中的项目数<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-106">Gets the number of items in the <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> collection.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="bf430-107">中的项目数<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />集合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-107">The number of items in the <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> collection.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="bf430-108">
+            <para>只读的。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-108">
+              <para>Read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bf430-109">获取一个指示在其中创建指定的对象的应用程序的 32 位整数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-109">Gets a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="bf430-110">指示在其中创建指定的对象的应用程序的 32 位整数。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-110">A 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="bf430-111">
+            <para>只读的<b>long</b>。如果对象在 Microsoft Word 中创建的则此属性返回十六进制数字 4d535744，表示字符串"MSWD"。此属性主要旨在用于 Apple Macintosh 上，其中每个应用程序具有四个字符的创建者代码。例如，Word 具有 MSWD 的创建者代码。</para>
+            <para>
+              <b>警告</b>： 此值也可以由常量<b>wdCreatorCode</b>。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-111">
+              <para>Read-only <b>long</b>. If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD". This property was primarily designed to be used on the Apple Macintosh, where each application has a four-character creator code. For example, Word has the creator code MSWD.</para>
+              <para>
+                <b>Caution</b>: This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CoAuthUpdates.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>
+          <span data-ttu-id="bf430-112">返回<see cref="T:System.Collections.IEnumerator" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-112">Returns <see cref="T:System.Collections.IEnumerator" />.</span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.CoAuthUpdate this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.CoAuthUpdate Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As CoAuthUpdate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CoAuthUpdate ^ default[int] { Microsoft::Office::Interop::Word::CoAuthUpdate ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.CoAuthUpdate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="bf430-113">要返回的单个对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-113">The individual object to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="bf430-114">返回集合中的单个对象， <b>CoAuthUpdates</b> 。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-114">Returns an individual <b>CoAuthUpdates</b> object in a collection.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="bf430-115">返回<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-115">Returns <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="bf430-116">获取<see cref="T:System.Object" />，表示指定的父对象<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-116">Gets an <see cref="T:System.Object" /> that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="bf430-117">
+            <see cref="T:System.Object" /> ，表示指定的父对象<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />对象。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="bf430-117">An <see cref="T:System.Object" /> that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> object.</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
