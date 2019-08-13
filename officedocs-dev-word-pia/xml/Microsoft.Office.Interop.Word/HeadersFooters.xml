@@ -1,13 +1,5 @@
 <Type Name="HeadersFooters" FullName="Microsoft.Office.Interop.Word.HeadersFooters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="32606f0e2fa1a2e01b68a8926235fb029c8bcf6a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667182" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HeadersFooters : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bbb3145635811002276f2778bca17d7fa3c40db1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147996" /></Metadata><TypeSignature Language="C#" Value="public interface HeadersFooters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HeadersFooters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HeadersFooters" />
   <TypeSignature Language="VB.NET" Value="Public Interface HeadersFooters&#xA;Implements IEnumerable" />
@@ -30,35 +22,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="91681-101">一<see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" />表示的页眉或页脚的文档指定的 section 中的对象。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="91681-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objects that represent the headers or footers in the specified section of a document.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="91681-102">
-        <para>使用<see cref="P:Microsoft.Office.Interop.Word.Section.Headers" />或<see cref="P:Microsoft.Office.Interop.Word.Section.Footers" />属性返回<b>HeadersFooters</b>集合。</para>
-        <para>
-          <b>注意</b>： 您不能将<b>HeaderFooter</b>对象添加到<b>HeadersFooters</b>集合。</para>
-        <para>使用<b>标头</b>(<paramref name="index" />) 或<b>页脚</b>(<paramref name="index" />)，其中<paramref name="index" />是之一<see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />到常量 （<b>wdHeaderFooterEvenPages</b>、 <b>wdHeaderFooterFirstPage</b>或<b>wdHeaderFooterPrimary</b>）返回单个<b>HeaderFooter</b>对象。</para>
-        <para>也可以使用返回单个<b>HeaderFooter</b>对象<see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" />属性与<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象。</para>
-        <para>使用<see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" />属性与<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />对象以指定不同的首页。</para>使用
-      <para><see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" />与要指定不同的奇数页和偶数页页眉和页脚的<b>PageSetup</b>对象的属性。如果<b>OddAndEvenPagesHeaderFooter</b>属性值为<b>True</b>，则可以通过使用<b>wdHeaderFooterPrimary</b>，返回奇数页页眉或页脚和您可以使用<b>wdHeaderFooterEvenPages</b>返回偶数的页眉或页脚。</para><para>使用<see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" />方法与<see cref="T:Microsoft.Office.Interop.Word.PageNumbers" />对象的页眉或页脚中添加页码。</para><para /></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="91681-102">
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" /> or <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" /> property to return the <b>HeadersFooters</b> collection.</para>
-          <para>
-            <b>Note</b>: You cannot add <b>HeaderFooter</b> objects to the <b>HeadersFooters</b> collection.</para>
-          <para>Use <b>Headers</b>(<paramref name="index" />) or <b>Footers</b>(<paramref name="index" />), where <paramref name="index" /> is one of the <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> constants (<b>wdHeaderFooterEvenPages</b>, <b>wdHeaderFooterFirstPage</b>, or <b>wdHeaderFooterPrimary</b>), to return a single <b>HeaderFooter</b> object.</para>
-          <para>You can also return a single <b>HeaderFooter</b> object by using the <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> property with a <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> property with the <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> object to specify a different first page.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> property with the <b>PageSetup</b> object to specify different odd and even page headers and footers. If the <b>OddAndEvenPagesHeaderFooter</b> property is <b>True</b>, you can return an odd header or footer by using <b>wdHeaderFooterPrimary</b>, and you can return an even header or footer by using <b>wdHeaderFooterEvenPages</b>.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> object to add a page number to a header or footer.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="f26bb-101"><see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" />对象的集合, 这些对象代表文档指定节中的页眉或页脚。</span><span class="sxs-lookup"><span data-stu-id="f26bb-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objects that represent the headers or footers in the specified section of a document.</span></span></summary>
+    <remarks><para><span data-ttu-id="f26bb-102">使用<see cref="P:Microsoft.Office.Interop.Word.Section.Headers" />或<see cref="P:Microsoft.Office.Interop.Word.Section.Footers" />属性返回<b>HeadersFooters</b>集合。</span><span class="sxs-lookup"><span data-stu-id="f26bb-102">Use the <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" /> or <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" /> property to return the <b>HeadersFooters</b> collection.</span></span></para>
+      <para><span data-ttu-id="f26bb-103">
+        <b>注意</b>: 不能将<b>HeaderFooter</b>对象添加到<b>HeadersFooters</b>集合中。</span><span class="sxs-lookup"><span data-stu-id="f26bb-103">
+        <b>Note</b>: You cannot add <b>HeaderFooter</b> objects to the <b>HeadersFooters</b> collection.</span></span></para>
+      <para><span data-ttu-id="f26bb-104">使用<b>头</b>(<paramref name="index" />) 或<b>页脚</b>(<paramref name="index" />), 其中<paramref name="index" />是<see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />常量之一 (<b>wdHeaderFooterEvenPages</b>、 <b>wdHeaderFooterFirstPage</b>或<b>wdHeaderFooterPrimary</b>), 以返回单个<b>HeaderFooter</b>对象。</span><span class="sxs-lookup"><span data-stu-id="f26bb-104">Use <b>Headers</b>(<paramref name="index" />) or <b>Footers</b>(<paramref name="index" />), where <paramref name="index" /> is one of the <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> constants (<b>wdHeaderFooterEvenPages</b>, <b>wdHeaderFooterFirstPage</b>, or <b>wdHeaderFooterPrimary</b>), to return a single <b>HeaderFooter</b> object.</span></span></para>
+      <para><span data-ttu-id="f26bb-105">您还可以通过将<see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" />属性与<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象一起使用来返回单个<b>HeaderFooter</b>对象。</span><span class="sxs-lookup"><span data-stu-id="f26bb-105">You can also return a single <b>HeaderFooter</b> object by using the <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> property with a <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object.</span></span></para>
+      <para><span data-ttu-id="f26bb-106">将<see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" />属性与<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />对象一起使用可指定第一个不同的页面。</span><span class="sxs-lookup"><span data-stu-id="f26bb-106">Use the <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> property with the <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> object to specify a different first page.</span></span></para>
+      <para><span data-ttu-id="f26bb-107">使用 PageSetup <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" />对象的属性<b></b>可指定不同的奇数页和偶数页页眉和页脚。</span><span class="sxs-lookup"><span data-stu-id="f26bb-107">Use the <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> property with the <b>PageSetup</b> object to specify different odd and even page headers and footers.</span></span> <span data-ttu-id="f26bb-108">如果 <b>OddAndEvenPagesHeaderFooter</b> 属性为 <b>True</b> ，则可以通过使用 <b>wdHeaderFooterPrimary</b> ，返回奇数页页眉或页脚，则可以通过使用 <b>wdHeaderFooterEvenPages</b> 返回偶数页眉或页脚。</span><span class="sxs-lookup"><span data-stu-id="f26bb-108">If the <b>OddAndEvenPagesHeaderFooter</b> property is <b>True</b>, you can return an odd header or footer by using <b>wdHeaderFooterPrimary</b>, and you can return an even header or footer by using <b>wdHeaderFooterEvenPages</b>.</span></span></para>
+      <para><span data-ttu-id="f26bb-109">将<see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" />方法与<see cref="T:Microsoft.Office.Interop.Word.PageNumbers" />对象一起使用, 可向页眉或页脚中添加页码。</span><span class="sxs-lookup"><span data-stu-id="f26bb-109">Use the <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> object to add a page number to a header or footer.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -84,12 +58,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="91681-103">返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="91681-103">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f26bb-110">返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="f26bb-110">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,12 +86,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="91681-104">指定集合中返回的项目数。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="91681-104">Returns the number of items in the specified collection.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f26bb-111">返回指定集合中的项目数。</span><span class="sxs-lookup"><span data-stu-id="f26bb-111">Returns the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,25 +114,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="91681-105">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="91681-105">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f26bb-112">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="f26bb-112">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="91681-106">
-            <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="91681-106">
-              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
-              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="f26bb-113">如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="f26bb-113">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="f26bb-114">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="f26bb-114">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="f26bb-115"><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="f26bb-115">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="f26bb-116">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="f26bb-116">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="f26bb-117">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="f26bb-117">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -229,26 +179,8 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="91681-107">所需<see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="91681-107">Required <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />.</span>
-          </span>
-          <span data-ttu-id="91681-108">指定选定内容中的页眉或页脚的常量。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="91681-108">A constant that specifies the header or footer in the selection.</span>
-          </span>
-          <span data-ttu-id="91681-109">可以是下列<b>WdHeaderFooterIndex</b>常量之一：<b>wdHeaderFooterEvenPages</b><b>wdHeaderFooterFirstPage</b><b>wdHeaderFooterPrimary</b></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="91681-109">Can be one of the following <b>WdHeaderFooterIndex</b> constants:<b>wdHeaderFooterEvenPages</b><b>wdHeaderFooterFirstPage</b><b>wdHeaderFooterPrimary</b></span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="91681-110">返回一个区域或选定内容中的页眉或页脚。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="91681-110">Returns a header or footer in a range or selection.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="f26bb-118">必需<see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />。</span><span class="sxs-lookup"><span data-stu-id="f26bb-118">Required <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />.</span></span> <span data-ttu-id="f26bb-119">一个常量, 指定选定内容中的页眉或页脚。</span><span class="sxs-lookup"><span data-stu-id="f26bb-119">A constant that specifies the header or footer in the selection.</span></span> <span data-ttu-id="f26bb-120">可以是下列的<b>WdHeaderFooterIndex</b>常量之一:<b>wdHeaderFooterEvenPages</b><b>wdHeaderFooterFirstPage</b><b>wdHeaderFooterPrimary</b></span><span class="sxs-lookup"><span data-stu-id="f26bb-120">Can be one of the following <b>WdHeaderFooterIndex</b> constants:<b>wdHeaderFooterEvenPages</b><b>wdHeaderFooterFirstPage</b><b>wdHeaderFooterPrimary</b></span></span></param>
+        <summary><span data-ttu-id="f26bb-121">返回某一区域或选定内容中的页眉或页脚。</span><span class="sxs-lookup"><span data-stu-id="f26bb-121">Returns a header or footer in a range or selection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -276,12 +208,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="91681-111">返回一个对象，代表指定对象的父对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="91681-111">Returns an object that represents the parent object of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f26bb-122">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="f26bb-122">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
