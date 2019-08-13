@@ -1,13 +1,5 @@
 <Type Name="Dictionary" FullName="Microsoft.Office.Interop.Word.Dictionary">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f7e27533dba0d2d5080542778447d02727eef81e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666332" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Dictionary" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7eb1c3a125004711f709d1a46bde81b4b66d431c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147051" /></Metadata><TypeSignature Language="C#" Value="public interface Dictionary" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dictionary" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dictionary" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dictionary" />
@@ -26,34 +18,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="a1a8c-101">表示一个字典。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="a1a8c-101">Represents a dictionary.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="a1a8c-102">
-        <para>表示自定义词典的
-        <b>dictionary</b>对象是成员<see cref="T:Microsoft.Office.Interop.Word.Dictionaries" />集合。其他 dictionary 对象的属性返回<see cref="T:Microsoft.Office.Interop.Word.Language" />集合;包括<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />， <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />， <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />，和<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />属性。您可用于为其安装校对工具每种语言的这些属性。</para>
-        <para>使用<b>CustomDictionaries</b>(<paramref name="index" />)，其中<paramref name="index" />是索引号或词典，返回代表自定义词典的单个<b>Dictionary</b>对象的字符串名称。</para>使用
-      <para><see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" />属性来设置新单词添加到集合中的自定义拼写词典。如果您尝试将此属性设置为一个字典，其中不是自定义词典，将发生错误。</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" />方法将新的词典添加到活动自定义词典的集合。如果没有具有指定名称的文件，Microsoft Word 会创建它。</para><para>使用<see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" />和<see cref="P:Microsoft.Office.Interop.Word.Dictionary.Path" />属性可查找任何的词典。</para>使用
-      <para><see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" />属性来确定指定的自定义词典是否可以具有分配给其与特定语言<see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageID" />属性。如果特定于语言词典，它将验证格式指定语言的文本。</para><para><see cref="P:Microsoft.Office.Interop.Word.Dictionary.ReadOnly" />属性返回<b>True</b> .lex 文件 （内置校对词典） 和<b>False</b>而对于.dic 文件 （自定义拼写词典）。</para><para /></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="a1a8c-102">
-          <para>
-            <b>Dictionary</b> objects that represent custom dictionaries are members of the <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> collection. Other dictionary objects are returned by properties of the <see cref="T:Microsoft.Office.Interop.Word.Language" /> collection; these include the <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />, and <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> properties. You can use these properties for each language for which proofing tools are installed.</para>
-          <para>Use <b>CustomDictionaries</b>(<paramref name="index" />), where <paramref name="index" /> is an index number or the string name for the dictionary, to return a single <b>Dictionary</b> object that represents a custom dictionary.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" /> property to set the custom spelling dictionary in the collection to which new words are added. If you try to set this property to a dictionary that's not a custom dictionary, an error occurs.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> method to add a new dictionary to the collection of active custom dictionaries. If there's no file with the specified name, Microsoft Word creates it.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> and <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Path" /> property to locate any of the dictionaries.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> property to determine whether the specified custom dictionary can have a specific language assigned to it with the <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageID" /> property. If the dictionary is language specific, it will verify only text that's formatted for the specified language.</para>
-          <para>The <see cref="P:Microsoft.Office.Interop.Word.Dictionary.ReadOnly" /> property returns <b>True</b> for .lex files (built-in proofing dictionaries) and <b>False</b> for .dic files (custom spelling dictionaries).</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="6cb09-101">表示一个字典。</span><span class="sxs-lookup"><span data-stu-id="6cb09-101">Represents a dictionary.</span></span></summary>
+    <remarks><para><span data-ttu-id="6cb09-102">代表自定义词典的
+        <b>Dictionary</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Dictionaries" />集合的成员。</span><span class="sxs-lookup"><span data-stu-id="6cb09-102">
+        <b>Dictionary</b> objects that represent custom dictionaries are members of the <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> collection.</span></span> <span data-ttu-id="6cb09-103">其他 dictionary 对象由<see cref="T:Microsoft.Office.Interop.Word.Language" />集合的属性返回;其中包括<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />和<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />属性。</span><span class="sxs-lookup"><span data-stu-id="6cb09-103">Other dictionary objects are returned by properties of the <see cref="T:Microsoft.Office.Interop.Word.Language" /> collection; these include the <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />, and <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> properties.</span></span> <span data-ttu-id="6cb09-104">您可以对安装了校对工具的每种语言使用这些属性。</span><span class="sxs-lookup"><span data-stu-id="6cb09-104">You can use these properties for each language for which proofing tools are installed.</span></span></para>
+      <para><span data-ttu-id="6cb09-105">使用<b>CustomDictionaries</b>(<paramref name="index" />), 其中<paramref name="index" />是字典的索引号或字符串名称, 返回一个<b>dictionary</b>对象, 该对象表示一个自定义词典。</span><span class="sxs-lookup"><span data-stu-id="6cb09-105">Use <b>CustomDictionaries</b>(<paramref name="index" />), where <paramref name="index" /> is an index number or the string name for the dictionary, to return a single <b>Dictionary</b> object that represents a custom dictionary.</span></span></para>
+      <para><span data-ttu-id="6cb09-106">使用<see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" />属性来设置集合中添加了新单词的自定义拼写词典。</span><span class="sxs-lookup"><span data-stu-id="6cb09-106">Use the <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" /> property to set the custom spelling dictionary in the collection to which new words are added.</span></span> <span data-ttu-id="6cb09-107">如果您尝试向不是自定义词典的词典设置该属性，则会导致出错。</span><span class="sxs-lookup"><span data-stu-id="6cb09-107">If you try to set this property to a dictionary that's not a custom dictionary, an error occurs.</span></span></para>
+      <para><span data-ttu-id="6cb09-108">使用<see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" />方法可向活动自定义词典集合中添加新的词典。</span><span class="sxs-lookup"><span data-stu-id="6cb09-108">Use the <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> method to add a new dictionary to the collection of active custom dictionaries.</span></span> <span data-ttu-id="6cb09-109">如果不存在具有指定名称的文件, Microsoft Word 将创建它。</span><span class="sxs-lookup"><span data-stu-id="6cb09-109">If there's no file with the specified name, Microsoft Word creates it.</span></span></para>
+      <para><span data-ttu-id="6cb09-110">使用<see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" />和<see cref="P:Microsoft.Office.Interop.Word.Dictionary.Path" />属性可查找任何词典。</span><span class="sxs-lookup"><span data-stu-id="6cb09-110">Use the <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> and <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Path" /> property to locate any of the dictionaries.</span></span></para>
+      <para><span data-ttu-id="6cb09-111">使用<see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" />属性可确定指定的自定义词典是否可以使用该<see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageID" />属性向其分配特定的语言。</span><span class="sxs-lookup"><span data-stu-id="6cb09-111">Use the <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> property to determine whether the specified custom dictionary can have a specific language assigned to it with the <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageID" /> property.</span></span> <span data-ttu-id="6cb09-112">如果字典为特定的语言，它将验证指定语言设置格式的文本。</span><span class="sxs-lookup"><span data-stu-id="6cb09-112">If the dictionary is language specific, it will verify only text that's formatted for the specified language.</span></span></para>
+      <para><span data-ttu-id="6cb09-113">对于<see cref="P:Microsoft.Office.Interop.Word.Dictionary.ReadOnly" /> . lex 文件 (内置校对词典) 和 Home.dic 文件设置为<b>False</b> (自定义拼写词典), 该属性将返回<b>True</b> 。</span><span class="sxs-lookup"><span data-stu-id="6cb09-113">The <see cref="P:Microsoft.Office.Interop.Word.Dictionary.ReadOnly" /> property returns <b>True</b> for .lex files (built-in proofing dictionaries) and <b>False</b> for .dic files (custom spelling dictionaries).</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -79,12 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a1a8c-103">返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-103">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6cb09-114">返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="6cb09-114">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,25 +82,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a1a8c-104">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-104">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6cb09-115">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="6cb09-115">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="a1a8c-105">
-            <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-105">
-              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
-              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6cb09-116">如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="6cb09-116">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="6cb09-117">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="6cb09-117">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="6cb09-118"><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="6cb09-118">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="6cb09-119">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="6cb09-119">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="6cb09-120">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="6cb09-120">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -154,12 +110,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="a1a8c-106">用于删除指定的对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-106">Deletes the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6cb09-121">删除指定的对象。</span><span class="sxs-lookup"><span data-stu-id="6cb09-121">Deletes the specified object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,27 +140,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a1a8c-107">返回或设置指定对象的语言。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-107">Returns or sets the language for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6cb09-122">返回或设置指定对象的语言。</span><span class="sxs-lookup"><span data-stu-id="6cb09-122">Returns or sets the language for the specified object.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="a1a8c-108">
-            <para>对于自定义词典，您必须先设置<see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" />属性设置为<b>True</b>之前指定的<b>LanguageID</b>属性。自定义词典的特定语言的仅查看文本格式为该语言。</para>
-            <para>LanguageID 属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量。这些常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-108">
-              <para>For a custom dictionary, you must first set the <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> property to <b>True</b> before specifying the <b>LanguageID</b> property. Custom dictionaries that are language-specific only look at text formatted for that language.</para>
-              <para>The LanguageID property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constants. Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6cb09-123">对于自定义词典, 在指定<b>LanguageID</b>属性之前<see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> , 必须首先将该属性设置为<b>True</b> 。</span><span class="sxs-lookup"><span data-stu-id="6cb09-123">For a custom dictionary, you must first set the <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> property to <b>True</b> before specifying the <b>LanguageID</b> property.</span></span> <span data-ttu-id="6cb09-124">特定于语言的自定义词典仅查看格式为该语言的文本。</span><span class="sxs-lookup"><span data-stu-id="6cb09-124">Custom dictionaries that are language-specific only look at text formatted for that language.</span></span></para>
+          <para><span data-ttu-id="6cb09-125">LanguageID 属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一。</span><span class="sxs-lookup"><span data-stu-id="6cb09-125">The LanguageID property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constants.</span></span> <span data-ttu-id="6cb09-126">由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</span><span class="sxs-lookup"><span data-stu-id="6cb09-126">Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageSpecific">
@@ -238,14 +173,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a1a8c-109">
-            <b>True</b> 如果自定义词典只用于文本格式为特定语言。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-109">
-              <b>True</b> if the custom dictionary is to be used only with text formatted for a specific language.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6cb09-127"><b>True</b> 如果自定义词典只用于文本格式为特定语言。</span><span class="sxs-lookup"><span data-stu-id="6cb09-127"><b>True</b> if the custom dictionary is to be used only with text formatted for a specific language.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -273,12 +201,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a1a8c-110">返回或设置指定对象的名称。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-110">Returns or sets the name of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6cb09-128">返回或设置指定对象的名称。</span><span class="sxs-lookup"><span data-stu-id="6cb09-128">Returns or sets the name of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,12 +229,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a1a8c-111">返回一个对象，代表指定对象的父对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-111">Returns an object that represents the parent object of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6cb09-129">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="6cb09-129">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -339,27 +257,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a1a8c-112">返回指定对象的磁盘或 Web 路径。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-112">Returns the disk or Web path to the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6cb09-130">返回指定对象的磁盘或 Web 路径。</span><span class="sxs-lookup"><span data-stu-id="6cb09-130">Returns the disk or Web path to the specified object.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="a1a8c-113">
-            <para>路径中不包括尾随字符-例如，"C:\MSOffice"或"http://MyServer"。使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />属性添加文件夹和驱动器号的分隔符。使用<see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" />属性返回的文件名不路径。</para>
-            <para>注意您可以使用<b>PathSeparator</b>属性建立 Web 地址，即使它们包含正斜杠 （/），<b>而 PathSeparator</b>属性默认反斜杠 (\)。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-113">
-              <para>The path doesn't include a trailing character— for example, "C:\MSOffice" or "http://MyServer". Use the <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> property to add the character that separates folders and drive letters. Use the <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> property to return the file name without the path.</para>
-              <para>Note   You can use the <b>PathSeparator</b> property to build Web addresses even though they contain forward slashes (/) and the <b>PathSeparator</b> property defaults to a backslash (\).</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6cb09-131">路径中不包括尾随字符   例如，"C:\MSOffice"或"http://MyServer"。</span><span class="sxs-lookup"><span data-stu-id="6cb09-131">The path doesn't include a trailing character— for example, "C:\MSOffice" or "http://MyServer".</span></span> <span data-ttu-id="6cb09-132">使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />属性添加用于分隔文件夹和驱动器号的字符。</span><span class="sxs-lookup"><span data-stu-id="6cb09-132">Use the <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> property to add the character that separates folders and drive letters.</span></span> <span data-ttu-id="6cb09-133">使用<see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" />属性返回不带路径的文件名。</span><span class="sxs-lookup"><span data-stu-id="6cb09-133">Use the <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> property to return the file name without the path.</span></span></para>
+          <para><span data-ttu-id="6cb09-134">注意您可以使用<b>PathSeparator</b>属性来构建 Web 地址, 即使它们包含正斜杠 (/), 并且<b>PathSeparator</b>属性默认为反斜杠 (\)。</span><span class="sxs-lookup"><span data-stu-id="6cb09-134">Note   You can use the <b>PathSeparator</b> property to build Web addresses even though they contain forward slashes (/) and the <b>PathSeparator</b> property defaults to a backslash (\).</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -385,26 +287,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a1a8c-114">如果为<b>true</b>不能更改指定的词典。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-114">
-              <b>True</b> if the specified dictionary cannot be changed.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6cb09-135">如果指定的词典无法更改，则该属性为 <b>True</b>。</span><span class="sxs-lookup"><span data-stu-id="6cb09-135"><b>True</b> if the specified dictionary cannot be changed.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="a1a8c-115">
-            <para>活动的语法、 断字功能、 拼写和同义词库词典是只读的。自定义词典可读写。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-115">
-              <para>The active grammar, hyphenation, spelling, and thesaurus dictionaries are read-only. Custom dictionaries are read/write.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6cb09-136">活动语法、连字、拼写和同义词库词典都是只读的。</span><span class="sxs-lookup"><span data-stu-id="6cb09-136">The active grammar, hyphenation, spelling, and thesaurus dictionaries are read-only.</span></span> <span data-ttu-id="6cb09-137">自定义词典是可读写的。</span><span class="sxs-lookup"><span data-stu-id="6cb09-137">Custom dictionaries are read/write.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -430,26 +316,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdDictionaryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a1a8c-116">返回词典的类型。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-116">Returns the dictionary type.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6cb09-138">返回词典的类型。</span><span class="sxs-lookup"><span data-stu-id="6cb09-138">Returns the dictionary type.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="a1a8c-117">
-            <para>
-              <b>Type</b>属性可以是之一<see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" />常量。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a1a8c-117">
-              <para>The <b>Type</b> property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> constants.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6cb09-139"><b>Type</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" />常量之一。</span><span class="sxs-lookup"><span data-stu-id="6cb09-139">The <b>Type</b> property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> constants.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

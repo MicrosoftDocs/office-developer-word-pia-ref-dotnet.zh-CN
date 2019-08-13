@@ -1,13 +1,5 @@
 <Type Name="AddIns" FullName="Microsoft.Office.Interop.Word.AddIns">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="48caabb79d286f2b2fdde3c65929f418f4316fe8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667222" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddIns : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b74f31d64c51548753577cc92d207cb75a062a8d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145210" /></Metadata><TypeSignature Language="C#" Value="public interface AddIns : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIns implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AddIns" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIns&#xA;Implements IEnumerable" />
@@ -30,37 +22,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="103e4-101">一<see cref="T:Microsoft.Office.Interop.Word.AddIn" />代表所有可用加载宏的 Microsoft Word，无论他们是否是当前加载的对象。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="103e4-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objects that represents all the add-ins available to Microsoft Word, regardless of whether or not they're currently loaded.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="103e4-102">
-        <para>
-          <b>AddIns</b>集合包括共用模板或 Word 加载项库 (即 Wll) 显示在模板和加载项对话框 （工具菜单）。</para>
-        <para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.AddIns" />属性可返回<b>AddIns</b>集合。</para>
-        <para>使用<see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />方法外接程序添加到可用加载项的列表，并使用安装它 （可选）<paramref name="Install" />参数。</para>
-        <para>安装可用加载项列表中显示的外接程序，请使用<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />属性。</para>
-        <para>使用<b>加载项</b>(<paramref name="index" />)，其中<paramref name="index" />的外接程序名称或索引号，可返回单个<b>AddIn</b>对象是。您必须完全一样拼写 （但不是一定大小写） 的名称，其显示在模板和加载项对话框。若要安装可用加载项列表中显示的外接程序，请使用<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />属性。</para>
-        <para>如果加载项不位于用户模板、 工作组模板或启动文件夹外, 接程序通过名称索引时，则必须指定完整路径和文件名称。</para>
-        <para>使用<see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" />属性可以确定一个<b>AddIn</b>对象是模板还是 WLL。</para>
-        <para />
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="103e4-102">
-          <para>The <b>AddIns</b> collection includes global templates or Word add-in libraries (WLLs) displayed in the Templates and Add-ins dialog box (Tools menu).</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Word._Application.AddIns" /> property to return the <b>AddIns</b> collection.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> method to add an add-in to the list of available add-ins and (optionally) install it using the <paramref name="Install" /> argument.</para>
-          <para>To install an add-in shown in the list of available add-ins, use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> property.</para>
-          <para>Use <b>AddIns</b>(<paramref name="index" />), where <paramref name="index" /> is the add-in name or index number, to return a single <b>AddIn</b> object. You must exactly match the spelling (but not necessarily the capitalization) of the name, as it's shown in the Templates and Add-ins dialog box. To install an add-in shown in the list of available add-ins, use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> property.</para>
-          <para>If the add-in is not located in the User Templates, Workgroup Templates, or Startup folder, you must specify the full path and file name when indexing an add-in by name.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> property to determine whether an <b>AddIn</b> object is a template or a WLL.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="49bb7-101"><see cref="T:Microsoft.Office.Interop.Word.AddIn" />对象的集合, 该集合代表所有可用于 Microsoft Word 的加载项, 而不管它们当前是否已加载。</span><span class="sxs-lookup"><span data-stu-id="49bb7-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objects that represents all the add-ins available to Microsoft Word, regardless of whether or not they're currently loaded.</span></span></summary>
+    <remarks><para><span data-ttu-id="49bb7-102"><b>外</b>接程序集合包括共用模板或 Word 外接程序库 (wll), 这些库显示在 "工具" 菜单的 "模板和加载项" 对话框中。</span><span class="sxs-lookup"><span data-stu-id="49bb7-102">The <b>AddIns</b> collection includes global templates or Word add-in libraries (WLLs) displayed in the Templates and Add-ins dialog box (Tools menu).</span></span></para>
+      <para><span data-ttu-id="49bb7-103">使用<see cref="P:Microsoft.Office.Interop.Word._Application.AddIns" />属性返回<b>AddIns</b>集合。</span><span class="sxs-lookup"><span data-stu-id="49bb7-103">Use the <see cref="P:Microsoft.Office.Interop.Word._Application.AddIns" /> property to return the <b>AddIns</b> collection.</span></span></para>
+      <para><span data-ttu-id="49bb7-104">使用<see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />方法将外接程序添加到可用加载项列表中, 并使用<paramref name="Install" />参数安装它 (可选)。</span><span class="sxs-lookup"><span data-stu-id="49bb7-104">Use the <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> method to add an add-in to the list of available add-ins and (optionally) install it using the <paramref name="Install" /> argument.</span></span></para>
+      <para><span data-ttu-id="49bb7-105">若要安装可用加载项列表中显示的加载项, 请使用<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />属性。</span><span class="sxs-lookup"><span data-stu-id="49bb7-105">To install an add-in shown in the list of available add-ins, use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> property.</span></span></para>
+      <para><span data-ttu-id="49bb7-106">使用<b>AddIns</b>(<paramref name="index" />), 其中<paramref name="index" />是外接程序名称或索引号, 返回单个<b>AddIn</b>对象。</span><span class="sxs-lookup"><span data-stu-id="49bb7-106">Use <b>AddIns</b>(<paramref name="index" />), where <paramref name="index" /> is the add-in name or index number, to return a single <b>AddIn</b> object.</span></span> <span data-ttu-id="49bb7-107">名称的拼写必须与 "模板和加载项" 对话框中显示的完全匹配 (但不一定是大小写)。</span><span class="sxs-lookup"><span data-stu-id="49bb7-107">You must exactly match the spelling (but not necessarily the capitalization) of the name, as it's shown in the Templates and Add-ins dialog box.</span></span> <span data-ttu-id="49bb7-108">若要安装可用加载项列表中显示的加载项, 请使用<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />属性。</span><span class="sxs-lookup"><span data-stu-id="49bb7-108">To install an add-in shown in the list of available add-ins, use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> property.</span></span></para>
+      <para><span data-ttu-id="49bb7-109">[!注释] 如果加载项不位于用户模板、工作组模板或启动文件夹，则在通过名称索引时必需指定完整路径和文件名。</span><span class="sxs-lookup"><span data-stu-id="49bb7-109">If the add-in is not located in the User Templates, Workgroup Templates, or Startup folder, you must specify the full path and file name when indexing an add-in by name.</span></span></para>
+      <para><span data-ttu-id="49bb7-110">使用<see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" />属性来确定<b>AddIn</b>对象是模板还是 WLL。</span><span class="sxs-lookup"><span data-stu-id="49bb7-110">Use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> property to determine whether an <b>AddIn</b> object is a template or a WLL.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -86,39 +56,12 @@
         <Parameter Name="Install" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <span data-ttu-id="103e4-103">模板或 WLL 的路径。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-103">The path for the template or WLL.</span>
-          </span>
-        </param>
-        <param name="Install">
-          <span data-ttu-id="103e4-p101">
-            <b>真</b> 要安装外接程序 <b>False</b> 将外接程序添加到加载宏列表，但不是进行安装。默认值为 <b>True</b> 。 </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-p101">
-              <b>True</b> to install the add-in. <b>False</b> to add the add-in to the list of add-ins but not install it. The default value is <b>True</b>.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="103e4-107">将指定的文件添加到可用加载项的列表。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-107">Adds the specified file to the list of available add-ins.</span>
-          </span>
-        </summary>
+        <param name="FileName"><span data-ttu-id="49bb7-111">模板或 WLL 的路径。</span><span class="sxs-lookup"><span data-stu-id="49bb7-111">The path for the template or WLL.</span></span></param>
+        <param name="Install"><span data-ttu-id="49bb7-p102"><b>真</b> 要安装外接程序 <b>False</b> 将外接程序添加到加载宏列表，但不是进行安装。默认值为 <b>True</b> 。 </span><span class="sxs-lookup"><span data-stu-id="49bb7-p102"><b>True</b> to install the add-in. <b>False</b> to add the add-in to the list of add-ins but not install it. The default value is <b>True</b>.</span></span></param>
+        <summary><span data-ttu-id="49bb7-115">将指定的文件添加到可用加载项列表中。</span><span class="sxs-lookup"><span data-stu-id="49bb7-115">Adds the specified file to the list of available add-ins.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <span data-ttu-id="103e4-108">
-            <para>使用<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />的外接程序来确定是否已安装的属性。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-108">
-              <para>Use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> property of an add-in to determine if it is already installed.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="49bb7-116">使用加载<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />项的属性来确定它是否已安装。</span><span class="sxs-lookup"><span data-stu-id="49bb7-116">Use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> property of an add-in to determine if it is already installed.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -144,12 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="103e4-109">返回<see cref="T:Microsoft.Office.Interop.Word.Application" />值，该值代表指定对象的创建者的对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-109">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the creator of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="49bb7-117">返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" /> object 类型的对象, 该对象代表指定对象的创建者。</span><span class="sxs-lookup"><span data-stu-id="49bb7-117">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the creator of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,12 +115,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="103e4-110">返回一个值，指示指定集合中的项目数。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-110">Returns a value that indicates the number of items in the specified collection.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="49bb7-118">返回一个值, 该值指示指定集合中的项目数。</span><span class="sxs-lookup"><span data-stu-id="49bb7-118">Returns a value that indicates the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -210,25 +143,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="103e4-111">返回一个值，指示在其中创建指定的对象的应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-111">Returns a value that indicates the application in which the specified object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="49bb7-119">返回一个值, 该值指示在其中创建指定对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="49bb7-119">Returns a value that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="103e4-112">
-            <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-112">
-              <para>If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
-              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="49bb7-120">如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="49bb7-120">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="49bb7-121">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="49bb7-121">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="49bb7-122"><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="49bb7-122">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="49bb7-123">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="49bb7-123">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="49bb7-124">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="49bb7-124">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -289,18 +208,8 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="103e4-113">要返回的单个对象的名称。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-113">The name of the individual object to be returned.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="103e4-114">返回一个值，指示集合中指定的对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-114">Returns a value that indicates the specified object in a collection.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="49bb7-125">要返回的单个对象的名称。</span><span class="sxs-lookup"><span data-stu-id="49bb7-125">The name of the individual object to be returned.</span></span></param>
+        <summary><span data-ttu-id="49bb7-126">返回一个值, 该值指示集合中的指定对象。</span><span class="sxs-lookup"><span data-stu-id="49bb7-126">Returns a value that indicates the specified object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -328,12 +237,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="103e4-115">返回一个值，该值代表指定对象的父对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-115">Returns a value that represents the parent object of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="49bb7-127">返回一个值, 该值代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="49bb7-127">Returns a value that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -361,38 +265,10 @@
         <Parameter Name="RemoveFromList" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="RemoveFromList">
-          <span data-ttu-id="103e4-116">
-            <b>True</b> （从模板和加载项对话框中删除名称） 的<b>AddIns</b>集合中移除卸载加载项。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-116">
-              <b>True</b> to remove the unloaded add-ins from the <b>AddIns</b> collection (the names are removed from the Templates and Add-ins dialog box).</span>
-          </span>
-          <span data-ttu-id="103e4-117">
-            <b>False</b>可保留卸载加载项集合中。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-117">
-              <b>False</b> to leave the unloaded add-ins in the collection.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="103e4-118">卸载所有加载的加载项，并 （可选） 将其从<see cref="T:Microsoft.Office.Interop.Word.AddIns" />集合。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-118">Unloads all loaded add-ins and optionally removes them from the <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="103e4-119">
-            <para>若要卸载的单个模板或 WLL，将设置<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />属性<see cref="T:Microsoft.Office.Interop.Word.AddIn" />对象为<b>False</b>。若要从<b>AddIns</b>集合中删除单个模板或 WLL，应用<see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" />对<b>AddIn</b>对象的方法。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="103e4-119">
-              <para>To unload a single template or WLL, set the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> property of the <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object to <b>False</b>. To remove a single template or WLL from the <b>AddIns</b> collection, apply the <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> method to the <b>AddIn</b> object.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="RemoveFromList"><span data-ttu-id="49bb7-128"><b>如果为 True</b> , 则从<b>AddIns</b>集合中删除已卸载的外接程序 (从 "模板和加载项" 对话框中删除这些名称)。</span><span class="sxs-lookup"><span data-stu-id="49bb7-128"><b>True</b> to remove the unloaded add-ins from the <b>AddIns</b> collection (the names are removed from the Templates and Add-ins dialog box).</span></span> <span data-ttu-id="49bb7-129">如果为 <b>False</b>，则保留集合中已卸载的加载项。</span><span class="sxs-lookup"><span data-stu-id="49bb7-129"><b>False</b> to leave the unloaded add-ins in the collection.</span></span></param>
+        <summary><span data-ttu-id="49bb7-130">卸载所有加载的加载项, 并根据需要从<see cref="T:Microsoft.Office.Interop.Word.AddIns" />集合中将其删除。</span><span class="sxs-lookup"><span data-stu-id="49bb7-130">Unloads all loaded add-ins and optionally removes them from the <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection.</span></span></summary>
+        <remarks><para><span data-ttu-id="49bb7-131">若要卸载单个模板或 WLL, 请将<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />该<see cref="T:Microsoft.Office.Interop.Word.AddIn" />对象的属性设置为<b>False</b>。</span><span class="sxs-lookup"><span data-stu-id="49bb7-131">To unload a single template or WLL, set the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> property of the <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object to <b>False</b>.</span></span> <span data-ttu-id="49bb7-132">若要从<b>AddIns</b>集合中移除单个模板或 WLL, 请将<see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" />该方法应用于<b>AddIn</b>对象。</span><span class="sxs-lookup"><span data-stu-id="49bb7-132">To remove a single template or WLL from the <b>AddIns</b> collection, apply the <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> method to the <b>AddIn</b> object.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
