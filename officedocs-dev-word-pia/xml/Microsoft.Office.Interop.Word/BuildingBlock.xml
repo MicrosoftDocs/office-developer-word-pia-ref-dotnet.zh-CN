@@ -1,13 +1,5 @@
 <Type Name="BuildingBlock" FullName="Microsoft.Office.Interop.Word.BuildingBlock">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fc15f7587aceebb7da5afc606fbedbd78e590230" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666527" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface BuildingBlock" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca9bed40f87117ccf911469b9c1d874a575c9129" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146225" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlock" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlock" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlock" />
@@ -26,34 +18,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="a5073-p101">代表模板中的构建基块。构建基块是预先构建的内容，类似于自动图文集，其中可能包含文本、图像和格式。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="a5073-p101">Represents a building block in a template.  A building block is pre-built content, similar to autotext, that may contain text, images, and formatting.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="a5073-103">
-        <para>每个<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象是成员<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />和<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集。构建基块存储在 Microsoft Office Word 模板。 因此，若要访问可用于文档构建基块，您需要访问附加的模板。 内置的构建基块都存储在名为"构建基块.dotx"模板。</para>
-        <para>
-          <b>注释</b>： 使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" />集合的方法或<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />集合返回单个的构建基块。根据访问集合的方式，可能会更改返回的集合。 例如，如果访问一构建基块的类型为<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" />可能不同返回如果访问一种类型的集合的构建基块的集合中返回的集合与"常规"类别，<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" />与类别"自定义"。还是从集合返回如果访问集合的构建基块的类型为不同<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" />与"常规"类别。因此，从<b>BuildingBlockEntries</b>集合访问集合中的第一项可能不同于从<b>BuildingBlocks</b>集合访问集合中的第一项。</para>
-        <para>创建新的构建基块，您可以使用<b>BuildingBlockEntries</b>集合或<b>BuildingBlocks</b>集合的<b>Add</b>方法。 但是，创建新的构建基块的建议的方式是使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /><b>BuildingBlockEntries</b>集合方法。</para>
-        <para>使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" />方法文档中插入新的生成块。使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" />方法，以删除模板中的构建基块。</para>按类别和类型组织
-      <para>构建基块。 使用<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />集合来访问各<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />对象。使用<see cref="T:Microsoft.Office.Interop.Word.Categories" />集合来访问各<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" />对象。然后使用<b>BuildingBlocks</b>属性访问一个<b>Category</b>对象的<b>BuildingBlocks</b>集合。</para><para>每个构建基块具有属性包含只适用于，如的信息的<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />， <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />， <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />，和<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />。</para><para>有关构建基块的详细信息，请参阅<a href="HV10120827">处理构建基块</a></para><para /></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="a5073-103">
-          <para>Each <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> and <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> collections. Building blocks are stored in Microsoft Office Word templates.  Therefore, to access the building blocks available for a document, you need to access an attached template.  Built-in building blocks are stored in the template named "Building Blocks.dotx".</para>
-          <para>
-            <b>Note</b>: Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" /> method of the  collection or the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> collection to return an individual building block. Depending on how you access the collection, the collection returned may change.  For example, if you access a collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "General", the returned collection may be different from the collection returned if you access a collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "Custom". It is also  different from the collection returned if you access the collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> with a category of "General". Therefore, the first item in a collection accessed from the <b>BuildingBlockEntries</b> collection may be different from the first item in the collection accessed from the <b>BuildingBlocks</b> collection.</para>
-          <para>To create a new building block, you can use the <b>Add</b> method for either the <b>BuildingBlockEntries</b> collection or the <b>BuildingBlocks</b> collection.  However, the recommended way to create a new building block is by using the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> method for the <b>BuildingBlockEntries</b> collection. </para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" /> method to insert a new building block into a document. Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" /> method to remove a building block from a template.</para>
-          <para>Building blocks are organized by category and type.  Use the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> collection to access individual <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> objects. Use the <see cref="T:Microsoft.Office.Interop.Word.Categories" /> collection to access individual <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> objects. Then use the <b>BuildingBlocks</b> propery to access the <b>BuildingBlocks</b> collection for a <b>Category</b> object. </para>
-          <para>Each building block has properties that contain information that applies uniquely to it, such as <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />, and <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />.</para>
-          <para>For more information about building blocks, see <a href="HV10120827">Working with Building Blocks</a></para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="f82d6-p101">代表模板中的构建基块。构建基块是预先构建的内容，类似于自动图文集，其中可能包含文本、图像和格式。</span><span class="sxs-lookup"><span data-stu-id="f82d6-p101">Represents a building block in a template.  A building block is pre-built content, similar to autotext, that may contain text, images, and formatting.</span></span></summary>
+    <remarks><para><span data-ttu-id="f82d6-103">每<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />个对象都是<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />和<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集合的一个成员。</span><span class="sxs-lookup"><span data-stu-id="f82d6-103">Each <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> and <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> collections.</span></span> <span data-ttu-id="f82d6-104">构建基块存储在 Microsoft Office Word 模板中。</span><span class="sxs-lookup"><span data-stu-id="f82d6-104">Building blocks are stored in Microsoft Office Word templates.</span></span>  <span data-ttu-id="f82d6-105">因此，要访问文档可用的构建基块，需要访问附加的模板。</span><span class="sxs-lookup"><span data-stu-id="f82d6-105">Therefore, to access the building blocks available for a document, you need to access an attached template.</span></span>  <span data-ttu-id="f82d6-106">内置构建基块存储在名为“Building Blocks.dotx”的模板中。</span><span class="sxs-lookup"><span data-stu-id="f82d6-106">Built-in building blocks are stored in the template named "Building Blocks.dotx".</span></span></para>
+      <para><span data-ttu-id="f82d6-107">
+        <b>注意</b>: 使用集合<see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" />或<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />集合的方法返回单个构建基块。</span><span class="sxs-lookup"><span data-stu-id="f82d6-107">
+        <b>Note</b>: Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" /> method of the  collection or the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> collection to return an individual building block.</span></span> <span data-ttu-id="f82d6-108">根据您访问集合的方式, 返回的集合可能会发生更改。</span><span class="sxs-lookup"><span data-stu-id="f82d6-108">Depending on how you access the collection, the collection returned may change.</span></span>  <span data-ttu-id="f82d6-109">例如, 如果使用类别为 "常规" 的构建基块<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" />的集合进行访问, 则返回的集合可能与返回的集合不同, 如果您使用类别的类型<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" />访问构建基块的集合"Custom"。</span><span class="sxs-lookup"><span data-stu-id="f82d6-109">For example, if you access a collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "General", the returned collection may be different from the collection returned if you access a collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> with a category of "Custom".</span></span> <span data-ttu-id="f82d6-110">如果使用类型<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" />为 "常规" 的构建基块的集合访问构建基块的集合, 则它也不同于返回的集合。</span><span class="sxs-lookup"><span data-stu-id="f82d6-110">It is also  different from the collection returned if you access the collection of building blocks with a type of <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> with a category of "General".</span></span> <span data-ttu-id="f82d6-111">因此, 从<b>BuildingBlockEntries</b>集合中访问的集合中的第一个项目可能不同于从<b>BuildingBlocks</b>集合中访问的集合中的第一个项目。</span><span class="sxs-lookup"><span data-stu-id="f82d6-111">Therefore, the first item in a collection accessed from the <b>BuildingBlockEntries</b> collection may be different from the first item in the collection accessed from the <b>BuildingBlocks</b> collection.</span></span></para>
+      <para><span data-ttu-id="f82d6-112">要创建新的构建基块，可以使用 <b>BuildingBlockEntries</b> 集合或 <b>BuildingBlocks</b> 集合的 <b>Add</b> 方法。</span><span class="sxs-lookup"><span data-stu-id="f82d6-112">To create a new building block, you can use the <b>Add</b> method for either the <b>BuildingBlockEntries</b> collection or the <b>BuildingBlocks</b> collection.</span></span>  <span data-ttu-id="f82d6-113">但是, 使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> <b>BuildingBlockEntries</b>集合的方法来创建新的构建基块的推荐方法是使用方法。</span><span class="sxs-lookup"><span data-stu-id="f82d6-113">However, the recommended way to create a new building block is by using the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> method for the <b>BuildingBlockEntries</b> collection.</span></span> </para>
+      <para><span data-ttu-id="f82d6-114">使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" />方法可在文档中插入新的构建基块。</span><span class="sxs-lookup"><span data-stu-id="f82d6-114">Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" /> method to insert a new building block into a document.</span></span> <span data-ttu-id="f82d6-115">使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" />方法从模板中删除构建基块。</span><span class="sxs-lookup"><span data-stu-id="f82d6-115">Use the <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" /> method to remove a building block from a template.</span></span></para>
+      <para><span data-ttu-id="f82d6-116">构建基块按类别和类型进行组织。</span><span class="sxs-lookup"><span data-stu-id="f82d6-116">Building blocks are organized by category and type.</span></span>  <span data-ttu-id="f82d6-117">使用<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />集合访问各个<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />对象。</span><span class="sxs-lookup"><span data-stu-id="f82d6-117">Use the <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> collection to access individual <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> objects.</span></span> <span data-ttu-id="f82d6-118">使用<see cref="T:Microsoft.Office.Interop.Word.Categories" />集合访问各个<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" />对象。</span><span class="sxs-lookup"><span data-stu-id="f82d6-118">Use the <see cref="T:Microsoft.Office.Interop.Word.Categories" /> collection to access individual <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> objects.</span></span> <span data-ttu-id="f82d6-119">然后, 使用<b>BuildingBlocks</b>来访问<b>Category</b>对象的<b>BuildingBlocks</b>集合。</span><span class="sxs-lookup"><span data-stu-id="f82d6-119">Then use the <b>BuildingBlocks</b> propery to access the <b>BuildingBlocks</b> collection for a <b>Category</b> object.</span></span> </para>
+      <para><span data-ttu-id="f82d6-120">每个构建基块都具有一些属性, 这些属性包含对其唯一<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />应用<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />的<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />信息, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />例如、、和。</span><span class="sxs-lookup"><span data-stu-id="f82d6-120">Each building block has properties that contain information that applies uniquely to it, such as <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />, and <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />.</span></span></para>
+      <para><span data-ttu-id="f82d6-121">有关构建基块的详细信息, 请参阅<a href="HV10120827">处理构建基块</a></span><span class="sxs-lookup"><span data-stu-id="f82d6-121">For more information about building blocks, see <a href="HV10120827">Working with Building Blocks</a></span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -79,15 +54,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a5073-104">返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-104">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary><span data-ttu-id="f82d6-122">返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</span><span class="sxs-lookup"><span data-stu-id="f82d6-122">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,19 +82,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Category</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a5073-105">返回的构建基块的类别。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-105">Returns the category for a building block.</span>
-          </span>
-          <span data-ttu-id="a5073-106">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-106">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Category" />
-        </value>
+        <summary><span data-ttu-id="f82d6-123">返回一个构建基块的类别。</span><span class="sxs-lookup"><span data-stu-id="f82d6-123">Returns the category for a building block.</span></span> <span data-ttu-id="f82d6-124">只读。</span><span class="sxs-lookup"><span data-stu-id="f82d6-124">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Category" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,42 +110,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a5073-107">返回一个 32 位整数，它指示在其中创建外接程序的应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-107">Returns a 32-bit integer that indicates the application in which the add-in was created.</span>
-          </span>
-          <span data-ttu-id="a5073-108">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-108">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a5073-109">
-            <b>Integer</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-109">
-              <b>Integer</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a5073-110">
-            <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-            <para>
-              <b>注意</b>： 此值也可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-110">
-              <para>If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."  This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
-              <para>
-                <b>Note</b>: This value can also be represented by the constant <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="f82d6-125">返回一个 32 位整数，它指示在其中创建外接程序的应用程序。</span><span class="sxs-lookup"><span data-stu-id="f82d6-125">Returns a 32-bit integer that indicates the application in which the add-in was created.</span></span> <span data-ttu-id="f82d6-126">只读。</span><span class="sxs-lookup"><span data-stu-id="f82d6-126">Read-only.</span></span></summary>
+        <value><span data-ttu-id="f82d6-127"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="f82d6-127"><b>Integer</b></span></span></value>
+        <remarks><para><span data-ttu-id="f82d6-128">如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。</span><span class="sxs-lookup"><span data-stu-id="f82d6-128">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="f82d6-129">此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。</span><span class="sxs-lookup"><span data-stu-id="f82d6-129">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="f82d6-130">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="f82d6-130">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="f82d6-131">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="f82d6-131">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+          <para><span data-ttu-id="f82d6-132">
+            <b>注意</b>: 此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。</span><span class="sxs-lookup"><span data-stu-id="f82d6-132">
+            <b>Note</b>: This value can also be represented by the constant <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -212,12 +140,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="a5073-111">删除指定的生成块。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-111">Deletes the specified building block.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="f82d6-133">删除指定的生成块。</span><span class="sxs-lookup"><span data-stu-id="f82d6-133">Deletes the specified building block.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,26 +170,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a5073-112">返回或设置构建基块的说明。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-112">Returns or sets the description for a building block.</span>
-          </span>
-          <span data-ttu-id="a5073-113">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-113">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a5073-114">
-            <b>字符串</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-114">
-              <b>String</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="f82d6-134">返回或设置构建基块的说明。</span><span class="sxs-lookup"><span data-stu-id="f82d6-134">Returns or sets the description for a building block.</span></span> <span data-ttu-id="f82d6-135">读/写。</span><span class="sxs-lookup"><span data-stu-id="f82d6-135">Read/write.</span></span></summary>
+        <value><span data-ttu-id="f82d6-136"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="f82d6-136"><b>String</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,39 +198,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a5073-115">返回构建基块的内部标识号。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-115">Returns the internal identification number for a building block.</span>
-          </span>
-          <span data-ttu-id="a5073-116">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-116">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a5073-117">
-            <b>字符串</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-117">
-              <b>String</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a5073-118">
-            <para>
-              <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" />属性返回标识字符串的形式的 guid。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-118">
-              <para>The <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" /> property returns an identification string that is in the form of a GUID.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="f82d6-137">返回构建基块的内部标识号。</span><span class="sxs-lookup"><span data-stu-id="f82d6-137">Returns the internal identification number for a building block.</span></span> <span data-ttu-id="f82d6-138">只读。</span><span class="sxs-lookup"><span data-stu-id="f82d6-138">Read-only.</span></span></summary>
+        <value><span data-ttu-id="f82d6-139"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="f82d6-139"><b>String</b></span></span></value>
+        <remarks><para><span data-ttu-id="f82d6-140">该<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" />属性返回 GUID 形式的标识字符串。</span><span class="sxs-lookup"><span data-stu-id="f82d6-140">The <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" /> property returns an identification string that is in the form of a GUID.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -351,26 +227,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a5073-119">返回集合中的项的位置。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-119">Returns the position of an item in a collection.</span>
-          </span>
-          <span data-ttu-id="a5073-120">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-120">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a5073-121">
-            <b>Integer</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-121">
-              <b>Integer</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="f82d6-141">返回集合中的项的位置。</span><span class="sxs-lookup"><span data-stu-id="f82d6-141">Returns the position of an item in a collection.</span></span> <span data-ttu-id="f82d6-142">只读。</span><span class="sxs-lookup"><span data-stu-id="f82d6-142">Read-only.</span></span></summary>
+        <value><span data-ttu-id="f82d6-143"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="f82d6-143"><b>Integer</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,28 +255,10 @@
         <Parameter Name="RichText" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Where">
-          <span data-ttu-id="a5073-122">放置构建基块内容的位置。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-122">The location of where to place the contents of the building block.</span>
-          </span>
-        </param>
-        <param name="RichText">
-          <span data-ttu-id="a5073-p107">						如果为 <b>True</b>，则将构建基块作为 RTF 格式文本插入。如果为 <b>False</b>，则将构建基块作为纯文本插入。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-p107">
-              <b>True</b> inserts the building block as rich, formatted text.  <b>False</b> inserts the building block as plain text.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="a5073-125">文档中插入构建基块的值，并返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示文档中的构建基块的内容。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-125">Inserts the value of a building block into a document and returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the contents of the building block within the document.</span>
-          </span>
-        </summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.Range" />
-        </returns>
+        <param name="Where"><span data-ttu-id="f82d6-144">放置构建基块内容的位置。</span><span class="sxs-lookup"><span data-stu-id="f82d6-144">The location of where to place the contents of the building block.</span></span></param>
+        <param name="RichText"><span data-ttu-id="f82d6-145">如果为 <b>True</b>，则将构建基块作为 RTF 格式文本插入。</span><span class="sxs-lookup"><span data-stu-id="f82d6-145"><b>True</b> inserts the building block as rich, formatted text.</span></span>  <span data-ttu-id="f82d6-146">如果为 <b>False</b>，则将构建基块作为纯文本插入。</span><span class="sxs-lookup"><span data-stu-id="f82d6-146"><b>False</b> inserts the building block as plain text.</span></span></param>
+        <summary><span data-ttu-id="f82d6-147">将构建基块的值插入到文档中, 并返回<see cref="T:Microsoft.Office.Interop.Word.Range" />一个对象, 该对象表示文档中的构建基块的内容。</span><span class="sxs-lookup"><span data-stu-id="f82d6-147">Inserts the value of a building block into a document and returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the contents of the building block within the document.</span></span></summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Range" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -448,38 +288,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a5073-126">返回或设置一个<b>整数</b>，表示如何文档中插入构建基块的内容。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-126">Returns or sets an <b>Integer</b> that represents how to insert the contents of a building block into a document.</span>
-          </span>
-          <span data-ttu-id="a5073-127">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-127">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a5073-128">
-            <b>Integer</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-128">
-              <b>Integer</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a5073-129">
-            <para>值<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />属性可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" />枚举值。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-129">
-              <para>The value of the <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> property can be any of the <see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" /> enumeration values.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="f82d6-148">返回或设置一个<b>Integer</b>类型的值, 该值代表如何在文档中插入构建基块的内容。</span><span class="sxs-lookup"><span data-stu-id="f82d6-148">Returns or sets an <b>Integer</b> that represents how to insert the contents of a building block into a document.</span></span> <span data-ttu-id="f82d6-149">读/写。</span><span class="sxs-lookup"><span data-stu-id="f82d6-149">Read/write.</span></span></summary>
+        <value><span data-ttu-id="f82d6-150"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="f82d6-150"><b>Integer</b></span></span></value>
+        <remarks><para><span data-ttu-id="f82d6-151">该<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />属性的值可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" />枚举值。</span><span class="sxs-lookup"><span data-stu-id="f82d6-151">The value of the <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> property can be any of the <see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" /> enumeration values.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -508,26 +320,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a5073-130">返回或设置构建基块的名称。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-130">Returns or sets the name of a building block.</span>
-          </span>
-          <span data-ttu-id="a5073-131">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-131">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a5073-132">
-            <b>字符串</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-132">
-              <b>String</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="f82d6-152">返回或设置构建基块的名称。</span><span class="sxs-lookup"><span data-stu-id="f82d6-152">Returns or sets the name of a building block.</span></span> <span data-ttu-id="f82d6-153">读/写。</span><span class="sxs-lookup"><span data-stu-id="f82d6-153">Read/write.</span></span></summary>
+        <value><span data-ttu-id="f82d6-154"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="f82d6-154"><b>String</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -554,22 +348,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a5073-133">返回指定的父对象<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-133">Returns the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a5073-134">
-            <b>对象</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-134">
-              <b>Object</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="f82d6-155">返回指定<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="f82d6-155">Returns the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object.</span></span></summary>
+        <value><span data-ttu-id="f82d6-156"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="f82d6-156"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -596,19 +376,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a5073-135">返回构建基块的类型。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-135">Returns the type for a building block.</span>
-          </span>
-          <span data-ttu-id="a5073-136">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-136">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />
-        </value>
+        <summary><span data-ttu-id="f82d6-157">返回构建基块的类型。</span><span class="sxs-lookup"><span data-stu-id="f82d6-157">Returns the type for a building block.</span></span> <span data-ttu-id="f82d6-158">只读。</span><span class="sxs-lookup"><span data-stu-id="f82d6-158">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -638,26 +407,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a5073-137">返回或设置构建基块的内容。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-137">Returns or sets the contents of a building block.</span>
-          </span>
-          <span data-ttu-id="a5073-138">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-138">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a5073-139">
-            <b>String</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a5073-139">
-              <b>String</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="f82d6-159">返回或设置构建基块的内容。</span><span class="sxs-lookup"><span data-stu-id="f82d6-159">Returns or sets the contents of a building block.</span></span> <span data-ttu-id="f82d6-160">读/写。</span><span class="sxs-lookup"><span data-stu-id="f82d6-160">Read/write.</span></span></summary>
+        <value><span data-ttu-id="f82d6-161"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="f82d6-161"><b>String</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

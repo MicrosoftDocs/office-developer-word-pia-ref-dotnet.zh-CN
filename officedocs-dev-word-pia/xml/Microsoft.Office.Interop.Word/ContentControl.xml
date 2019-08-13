@@ -1,13 +1,5 @@
 <Type Name="ContentControl" FullName="Microsoft.Office.Interop.Word.ContentControl">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cc2bb690be9293f31f98e8e695e89ae1d1508d27" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666535" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ContentControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2847f454c15d707ff146dc7c527cbd9a80f88237" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147289" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControl" />
@@ -26,84 +18,56 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="a9851-101">单个内容控件。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="a9851-101">An  individual content control.</span>
-      </span>
-      <span data-ttu-id="a9851-102">内容控件是文档中绑定的、有可能添加标签的区域，它们充当特定类型的内容的容器。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="a9851-102">Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content.</span>
-      </span>
-      <span data-ttu-id="a9851-103">单个内容控件可能包含如日期、 列表或带格式文本段落的内容。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="a9851-103">Individual content controls may contain contents such as dates, lists, or paragraphs of formatted text.</span>
-      </span>
-      <span data-ttu-id="a9851-104">
-        <b>ContentControl</b>对象是成员<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />集合。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="a9851-104">The <b>ContentControl</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> collection.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="a9851-105">
-        <para>使用<see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" />方法<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />要创建内容控件集合。使用<paramref name="Type" />的<b>Add</b>方法可指定要创建的内容控件类型的参数。</para>
-        <para>使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" />属性更改为其他类型的内容控件的内容控件。 例如，您可能要从日期控件更改为文本控件。但是，您可能不能更改为另一种类型; 的所有内容控件一些可能不允许更改控件的类型。 此外，具体取决于内容控件的内容，您可能不能更改的类型。例如，如果您想要更改的内容控件不允许的现有内容控件中的内容类型，尝试更改的类型不允许和生成运行时错误。</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />方法从默认字符串的占位符文本更改为更适合的控件。使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" />属性指定控件的标题文本。 这将光标定位控件内或将鼠标指针放在控件上时将显示在控件上方。</para><para>取决于您拥有的内容控件的类型，您可能无法使用所有的属性和<b>ContentControl</b>对象的方法。</para><code /><para>Not all content control properties apply to all the different types of content controls.  The following table lists which properties apply to which types of content controls.</para><list type="table"><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" /> property</description><description>BuildingBlock Gallery content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlBuildingBlockGallery" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" /> property</description><description>BuildingBlock Gallery content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlBuildingBlockGallery" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> property</description><description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> property</description><description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> property</description><description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> property</description><description>Combo box and drop-down list content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlComboBox" /> and <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDropdownList" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.MultiLine" /> property</description><description>Plain text content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlText" />)</description></item><item><description><see cref="M:Microsoft.Office.Interop.Word.ContentControl.Ungroup" /> method</description><description>Group content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />)</description></item></list><para /></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="a9851-105">
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> method of the <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> collection to create a content control. Use the <paramref name="Type" /> parameter of the <b>Add</b> method to  specify the type of content control to create. </para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> property to change the content control to a different type of content control.  For example, perhaps you want to change from a date control to a text control. However, you may not be able to change all content controls to another type; some may not allow changing their type.  In addition, depending on the contents of a content control, you may not be able to change the type. For example, if the content control that you want to change to does not allow the type of content that is in the existing content control, attempting to change the type is not allowed and generates a run-time error.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> method to change the placeholder text from the default string to something more appropriate for the control. Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> property to specify the title text for the control.  This displays above the control when the cursor is positioned inside the control or the mouse pointer is positioned over the control.</para>
-          <para>Depending on the type of content control that you have, you may not be able to use all the properties and methods of the <b>ContentControl</b> object.</para>
-          <code />
-          <para>Not all content control properties apply to all the different types of content controls.  The following table lists which properties apply to which types of content controls.</para>
-          <list type="table">
-            <item>
-              <description>
-                <see cref="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" /> property</description>
-              <description>BuildingBlock Gallery content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlBuildingBlockGallery" />)</description>
-            </item>
-            <item>
-              <description>
-                <see cref="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" /> property</description>
-              <description>BuildingBlock Gallery content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlBuildingBlockGallery" />)</description>
-            </item>
-            <item>
-              <description>
-                <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> property</description>
-              <description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description>
-            </item>
-            <item>
-              <description>
-                <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> property</description>
-              <description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description>
-            </item>
-            <item>
-              <description>
-                <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> property</description>
-              <description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description>
-            </item>
-            <item>
-              <description>
-                <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> property</description>
-              <description>Combo box and drop-down list content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlComboBox" /> and <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDropdownList" />)</description>
-            </item>
-            <item>
-              <description>
-                <see cref="P:Microsoft.Office.Interop.Word.ContentControl.MultiLine" /> property</description>
-              <description>Plain text content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlText" />)</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Word.ContentControl.Ungroup" /> method</description>
-              <description>Group content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />)</description>
-            </item>
-          </list>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="d59fb-101">单个内容控件。</span><span class="sxs-lookup"><span data-stu-id="d59fb-101">An  individual content control.</span></span> <span data-ttu-id="d59fb-102">内容控件是文档中绑定的、有可能添加标签的区域，它们充当特定类型的内容的容器。</span><span class="sxs-lookup"><span data-stu-id="d59fb-102">Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content.</span></span> <span data-ttu-id="d59fb-103">单个内容控件可能包含诸如日期、列表或格式化文本段落等内容。</span><span class="sxs-lookup"><span data-stu-id="d59fb-103">Individual content controls may contain contents such as dates, lists, or paragraphs of formatted text.</span></span> <span data-ttu-id="d59fb-104"><b>ContentControl</b>对象是<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />集合的一个成员。</span><span class="sxs-lookup"><span data-stu-id="d59fb-104">The <b>ContentControl</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> collection.</span></span></summary>
+    <remarks><para><span data-ttu-id="d59fb-105">使用<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />集合<see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" />的方法创建内容控件。</span><span class="sxs-lookup"><span data-stu-id="d59fb-105">Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> method of the <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> collection to create a content control.</span></span> <span data-ttu-id="d59fb-106">使用 Add <paramref name="Type" />方法的参数<b></b>指定要创建的内容控件的类型。</span><span class="sxs-lookup"><span data-stu-id="d59fb-106">Use the <paramref name="Type" /> parameter of the <b>Add</b> method to  specify the type of content control to create.</span></span> </para>
+      <para><span data-ttu-id="d59fb-107">使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" />属性将内容控件更改为其他类型的内容控件。</span><span class="sxs-lookup"><span data-stu-id="d59fb-107">Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> property to change the content control to a different type of content control.</span></span>  <span data-ttu-id="d59fb-108">例如，你也许要从日期控件更改为文本控件。</span><span class="sxs-lookup"><span data-stu-id="d59fb-108">For example, perhaps you want to change from a date control to a text control.</span></span> <span data-ttu-id="d59fb-109">但是，你可能无法将所有内容控件更改为其他类型；某些控件可能不允许更改其类型。</span><span class="sxs-lookup"><span data-stu-id="d59fb-109">However, you may not be able to change all content controls to another type; some may not allow changing their type.</span></span>  <span data-ttu-id="d59fb-110">此外，根据内容控件的内容，可能无法更改类型。</span><span class="sxs-lookup"><span data-stu-id="d59fb-110">In addition, depending on the contents of a content control, you may not be able to change the type.</span></span> <span data-ttu-id="d59fb-111">例如，想要更改的内容控件不允许使用现有内容控件中的内容类型，如果尝试更改类型是不允许的，并且将产生运行时错误。</span><span class="sxs-lookup"><span data-stu-id="d59fb-111">For example, if the content control that you want to change to does not allow the type of content that is in the existing content control, attempting to change the type is not allowed and generates a run-time error.</span></span></para>
+      <para><span data-ttu-id="d59fb-112">使用<see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />方法可将默认字符串中的占位符文本更改为更适合控件的文本。</span><span class="sxs-lookup"><span data-stu-id="d59fb-112">Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> method to change the placeholder text from the default string to something more appropriate for the control.</span></span> <span data-ttu-id="d59fb-113">使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" />属性指定控件的标题文本。</span><span class="sxs-lookup"><span data-stu-id="d59fb-113">Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> property to specify the title text for the control.</span></span>  <span data-ttu-id="d59fb-114">当光标定位在控件内部或鼠标指针置于控件上时，这些内容将显示在控件上。</span><span class="sxs-lookup"><span data-stu-id="d59fb-114">This displays above the control when the cursor is positioned inside the control or the mouse pointer is positioned over the control.</span></span></para>
+      <para><span data-ttu-id="d59fb-115">根据所拥有的内容控件的类型，你可能无法使用 <b>ContentControl</b> 对象的所有属性和方法。</span><span class="sxs-lookup"><span data-stu-id="d59fb-115">Depending on the type of content control that you have, you may not be able to use all the properties and methods of the <b>ContentControl</b> object.</span></span></para>
+      <code />
+      <para>Not all content control properties apply to all the different types of content controls.  The following table lists which properties apply to which types of content controls.</para>
+      <list type="table">
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" /> property</description>
+          <description>BuildingBlock Gallery content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlBuildingBlockGallery" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" /> property</description>
+          <description>BuildingBlock Gallery content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlBuildingBlockGallery" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> property</description>
+          <description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> property</description>
+          <description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> property</description>
+          <description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> property</description>
+          <description>Combo box and drop-down list content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlComboBox" /> and <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDropdownList" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.MultiLine" /> property</description>
+          <description>Plain text content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlText" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Word.ContentControl.Ungroup" /> method</description>
+          <description>Group content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />)</description>
+        </item>
+      </list>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowInsertDeleteSection">
@@ -132,25 +96,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-106">获取或设置是否用户可以添加或删除从指定的重复节内容控件的节，通过使用用户界面。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-106">Gets or sets whether users can add or remove sections from the specified repeating section content control by using the user interface.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d59fb-116">获取或设置用户是否可以使用用户界面在指定的重复节内容控件中添加或删除节。</span><span class="sxs-lookup"><span data-stu-id="d59fb-116">Gets or sets whether users can add or remove sections from the specified repeating section content control by using the user interface.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="a9851-107">
-            <para>仅使用重复节内容控件，可以使用此属性。使用该控件将导致错误消息效果的其他内容。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-107">
-              <para>You can use this property only with repeating section content controls. Using it with other content controls will result in an error message effect.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="d59fb-117">只能将该属性用于重复节内容控件。</span><span class="sxs-lookup"><span data-stu-id="d59fb-117">You can use this property only with repeating section content controls.</span></span> <span data-ttu-id="d59fb-118">将其与其他内容控件一起使用将导致错误消息效果。</span><span class="sxs-lookup"><span data-stu-id="d59fb-118">Using it with other content controls will result in an error message effect.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Appearance">
@@ -179,16 +128,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlAppearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-108">返回或设置内容控件的外观。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-108">Returns or sets the appearance of the content control.</span>
-          </span>
-          <span data-ttu-id="a9851-109">读/写<see cref="T:Microsoft.Office.Interop.Word.WdContentControlAppearance" /></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-109">Read/write <see cref="T:Microsoft.Office.Interop.Word.WdContentControlAppearance" /></span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d59fb-119">返回或设置内容控件的外观。</span><span class="sxs-lookup"><span data-stu-id="d59fb-119">Returns or sets the appearance of the content control.</span></span> <span data-ttu-id="d59fb-120">读/写<see cref="T:Microsoft.Office.Interop.Word.WdContentControlAppearance" /></span><span class="sxs-lookup"><span data-stu-id="d59fb-120">Read/write <see cref="T:Microsoft.Office.Interop.Word.WdContentControlAppearance" /></span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,15 +156,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-110">返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-110">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary><span data-ttu-id="d59fb-121">返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</span><span class="sxs-lookup"><span data-stu-id="d59fb-121">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,38 +187,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-111">返回或设置的类别的构建基块内容控件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-111">Returns or sets the category for a building block content control.</span>
-          </span>
-          <span data-ttu-id="a9851-112">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-112">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-113">
-            <b>字符串</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-113">
-              <b>String</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-114">
-            <para>此属性仅适用于构建基块内容控件，并对应于内容控件属性对话框中的类别选项。您可以将此属性设置为任何字符串;但是，如果您将其设置为一个字符串，其中没有对应的类别，类别选项的值设置为"（所有类别）"。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-114">
-              <para>This property applies only to building block content controls and corresponds with the Category option in the Content Control Properties dialog box. You can set this property to any string; however, if you set it to a string for which there is no corresponding category, the value of the Category option is set to "(All Categories)".</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-122">返回或设置构建基块内容控件的类别。</span><span class="sxs-lookup"><span data-stu-id="d59fb-122">Returns or sets the category for a building block content control.</span></span> <span data-ttu-id="d59fb-123">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-123">Read/write.</span></span></summary>
+        <value><span data-ttu-id="d59fb-124"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="d59fb-124"><b>String</b></span></span></value>
+        <remarks><para><span data-ttu-id="d59fb-125">此属性仅适用于生成块内容控件，并且相当于 "内容控件属性" 对话框中的 "类别" 选项。</span><span class="sxs-lookup"><span data-stu-id="d59fb-125">This property applies only to building block content controls and corresponds with the Category option in the Content Control Properties dialog box.</span></span> <span data-ttu-id="d59fb-126">您可以将此属性设置为任何字符串；但如果您将它设置为不存在相应类别的字符串，则 "类别" 选项的值被设置为"(所有类别)"。</span><span class="sxs-lookup"><span data-stu-id="d59fb-126">You can set this property to any string; however, if you set it to a string for which there is no corresponding category, the value of the Category option is set to "(All Categories)".</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildingBlockType">
@@ -314,71 +219,30 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdBuildingBlockTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-115">返回或设置的构建基块内容控件的构建基块的类型。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-115">Returns or sets the type of building block for a building block content control.</span>
-          </span>
-          <span data-ttu-id="a9851-116">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-116">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" />
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-117">
-            <para>此属性仅适用于构建基块内容控件，并对应于内容控件属性对话框中的库选项。您可以设置该属性仅对于以下的构建基块类型：</para>
-            <list type="bullet">
-              <item>
-                <para>自定义 1 到自定义 5</para>
-              </item>
-              <item>
-                <para>自动图文集</para>
-              </item>
-              <item>
-                <para>文档部件</para>
-              </item>
-              <item>
-                <para>自定义自动图文集</para>
-              </item>
-              <item>
-                <para>自定义文档部件</para>
-              </item>
-              <item>
-                <para>公式</para>
-              </item>
-            </list>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-117">
-              <para>This property applies only to building block content controls and corresponds with the Gallery option in the Content Control Properties dialog box. You can set this property only for the following building block types:</para>
-              <list type="bullet">
-                <item>
-                  <para>Custom 1 through Custom 5</para>
-                </item>
-                <item>
-                  <para>Autotext</para>
-                </item>
-                <item>
-                  <para>Quick Parts</para>
-                </item>
-                <item>
-                  <para>Custom Autotext</para>
-                </item>
-                <item>
-                  <para>Custom Quick Parts</para>
-                </item>
-                <item>
-                  <para>Equations</para>
-                </item>
-              </list>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-127">返回或设置构建基块内容控件的构建基块的类型。</span><span class="sxs-lookup"><span data-stu-id="d59fb-127">Returns or sets the type of building block for a building block content control.</span></span> <span data-ttu-id="d59fb-128">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-128">Read/write.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /></value>
+        <remarks><para><span data-ttu-id="d59fb-129">此属性仅适用于生成块内容控件，并且相当于 "内容控件属性" 对话框中的 "库" 选项。</span><span class="sxs-lookup"><span data-stu-id="d59fb-129">This property applies only to building block content controls and corresponds with the Gallery option in the Content Control Properties dialog box.</span></span> <span data-ttu-id="d59fb-130">您只能为下列生成块类型设置此属性：</span><span class="sxs-lookup"><span data-stu-id="d59fb-130">You can set this property only for the following building block types:</span></span></para>
+          <list type="bullet">
+            <item>
+              <para><span data-ttu-id="d59fb-131">自定义 1 到自定义 5</span><span class="sxs-lookup"><span data-stu-id="d59fb-131">Custom 1 through Custom 5</span></span></para>
+            </item>
+            <item>
+              <para><span data-ttu-id="d59fb-132">自动图文集</span><span class="sxs-lookup"><span data-stu-id="d59fb-132">Autotext</span></span></para>
+            </item>
+            <item>
+              <para><span data-ttu-id="d59fb-133">文档部件</span><span class="sxs-lookup"><span data-stu-id="d59fb-133">Quick Parts</span></span></para>
+            </item>
+            <item>
+              <para><span data-ttu-id="d59fb-134">自定义自动图文集</span><span class="sxs-lookup"><span data-stu-id="d59fb-134">Custom Autotext</span></span></para>
+            </item>
+            <item>
+              <para><span data-ttu-id="d59fb-135">自定义文档部件</span><span class="sxs-lookup"><span data-stu-id="d59fb-135">Custom Quick Parts</span></span></para>
+            </item>
+            <item>
+              <para><span data-ttu-id="d59fb-136">公式</span><span class="sxs-lookup"><span data-stu-id="d59fb-136">Equations</span></span></para>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -407,32 +271,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-118">获取或设置复选框 （选中/取消选中） 的当前状态。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-118">Gets or sets the current state (checked/unchecked) for a check box.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-119">
-            <b>true</b>如果复选框处于选中状态;否则为;<b>false</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-119">
-              <b>true</b> if the check box is checked; otherwise; <b>false</b>.</span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-120">
-            <para>读/写。此属性用于获取或设置一个复选框内容控件的当前状态。如果控件不是复选框，尝试访问运行时错误属性失败"此属性才可用的复选框内容控件。"</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-120">
-              <para>Read/write. Use this property to get or set the current state for a check box content control. If the control is not a check box, attempts to access the property fail with the run-time error “This property is only available for check box content controls."</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-137">获取或设置复选框的当前状态 (选中/未选中)。</span><span class="sxs-lookup"><span data-stu-id="d59fb-137">Gets or sets the current state (checked/unchecked) for a check box.</span></span></summary>
+        <value><span data-ttu-id="d59fb-138">如果选中复选框,<b>则为 true</b> ; 否则为 false。无权<b>false</b>。</span><span class="sxs-lookup"><span data-stu-id="d59fb-138"><b>true</b> if the check box is checked; otherwise; <b>false</b>.</span></span></value>
+        <remarks><para><span data-ttu-id="d59fb-139">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-139">Read/write.</span></span> <span data-ttu-id="d59fb-140">使用此属性可获取或设置复选框内容控件的当前状态。</span><span class="sxs-lookup"><span data-stu-id="d59fb-140">Use this property to get or set the current state for a check box content control.</span></span> <span data-ttu-id="d59fb-141">如果控件不是复选框, 则尝试访问属性失败, 并出现运行时错误 "此属性仅适用于复选框内容控件。"</span><span class="sxs-lookup"><span data-stu-id="d59fb-141">If the control is not a check box, attempts to access the property fail with the run-time error “This property is only available for check box content controls."</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -461,16 +303,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-121">返回或设置内容控件的颜色。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-121">Returns or sets the color of the content control.</span>
-          </span>
-          <span data-ttu-id="a9851-122">读/写<see cref="T:Microsoft.Office.Interop.Word.WdColor" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-122">Read/write <see cref="T:Microsoft.Office.Interop.Word.WdColor" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d59fb-142">返回或设置内容控件的颜色。</span><span class="sxs-lookup"><span data-stu-id="d59fb-142">Returns or sets the color of the content control.</span></span> <span data-ttu-id="d59fb-143">读/写<see cref="T:Microsoft.Office.Interop.Word.WdColor" />。</span><span class="sxs-lookup"><span data-stu-id="d59fb-143">Read/write <see cref="T:Microsoft.Office.Interop.Word.WdColor" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -496,24 +329,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-123">将活动文档中的内容控件复制到剪贴板。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-123">Copies the content control from the active document to the Clipboard.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="a9851-124">
-            <para>当您使用<b>的复制</b>方法时，原始内容控件仍保留在活动文档，但该控件，包括所有的文本和属性设置的副本时，移动到剪贴板。您然后可以将内容控件粘贴到活动文档的其他部分。使用<see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" />方法<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象或<see cref="M:Microsoft.Office.Interop.Word.Range.Paste" />方法<see cref="T:Microsoft.Office.Interop.Word.Range" />对象插入复制的内容控件，或使用 Microsoft Office Word 中的粘贴功能。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-124">
-              <para>When you use the <b>Copy</b> method, the original content control remains in the active document, but a copy of the control, including all text and property settings, is moved to the Clipboard. You can then paste the content control into other sections of the active document. Use the <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> method of the <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object or the <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> method of the  <see cref="T:Microsoft.Office.Interop.Word.Range" /> object to insert the copied content control, or use the Paste function from within Microsoft Office Word.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-144">将活动文档中的内容控件复制到剪贴板。</span><span class="sxs-lookup"><span data-stu-id="d59fb-144">Copies the content control from the active document to the Clipboard.</span></span></summary>
+        <remarks><para><span data-ttu-id="d59fb-145">使用 <b>Copy</b> 方法时，原始内容控件仍保留在活动文档中，但一份该控件，包括所有文本和属性设置，移动到剪贴板。</span><span class="sxs-lookup"><span data-stu-id="d59fb-145">When you use the <b>Copy</b> method, the original content control remains in the active document, but a copy of the control, including all text and property settings, is moved to the Clipboard.</span></span> <span data-ttu-id="d59fb-146">然后，可以将内容控件粘贴到活动文档的其他部分。</span><span class="sxs-lookup"><span data-stu-id="d59fb-146">You can then paste the content control into other sections of the active document.</span></span> <span data-ttu-id="d59fb-147">使用对象<see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" />的方法<see cref="T:Microsoft.Office.Interop.Word.Selection" />或<see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> <see cref="T:Microsoft.Office.Interop.Word.Range" />对象的方法来插入复制的内容控件, 或使用 Microsoft Office Word 中的粘贴函数。</span><span class="sxs-lookup"><span data-stu-id="d59fb-147">Use the <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> method of the <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object or the <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> method of the  <see cref="T:Microsoft.Office.Interop.Word.Range" /> object to insert the copied content control, or use the Paste function from within Microsoft Office Word.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -539,42 +357,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-125">返回一个 32 位整数，它指示在其中创建外接程序的应用程序。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-125">Returns a 32-bit integer that indicates the application in which the add-in was created.</span>
-          </span>
-          <span data-ttu-id="a9851-126">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-126">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-127">
-            <b>Integer</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-127">
-              <b>Integer</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-128">
-            <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-            <para>
-              <b>注意</b>： 此值也可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-128">
-              <para>If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."  This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
-              <para>
-                <b>Note</b>: This value can also be represented by the constant <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-148">返回一个 32 位整数，它指示在其中创建外接程序的应用程序。</span><span class="sxs-lookup"><span data-stu-id="d59fb-148">Returns a 32-bit integer that indicates the application in which the add-in was created.</span></span> <span data-ttu-id="d59fb-149">只读。</span><span class="sxs-lookup"><span data-stu-id="d59fb-149">Read-only.</span></span></summary>
+        <value><span data-ttu-id="d59fb-150"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="d59fb-150"><b>Integer</b></span></span></value>
+        <remarks><para><span data-ttu-id="d59fb-151">如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。</span><span class="sxs-lookup"><span data-stu-id="d59fb-151">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="d59fb-152">此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。</span><span class="sxs-lookup"><span data-stu-id="d59fb-152">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="d59fb-153">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="d59fb-153">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="d59fb-154">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="d59fb-154">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+          <para><span data-ttu-id="d59fb-155">
+            <b>注意</b>: 此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。</span><span class="sxs-lookup"><span data-stu-id="d59fb-155">
+            <b>Note</b>: This value can also be represented by the constant <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -598,24 +387,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-129">从活动文档中删除内容控件并将该内容控件移动到剪贴板中。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-129">Removes the content control from the active document and moves the content control to the Clipboard.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="a9851-130">
-            <para>当您使用<b>的复制</b>方法时，原始内容控件仍保留在活动文档，但该控件，包括所有的文本和属性设置的副本时，移动到剪贴板。您然后可以将内容控件粘贴到活动文档的其他部分。使用<see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" />方法<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象或<see cref="M:Microsoft.Office.Interop.Word.Range.Paste" />方法<see cref="T:Microsoft.Office.Interop.Word.Range" />对象插入复制的内容控件，或使用 Microsoft Office Word 中的粘贴功能。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-130">
-              <para>When you use the <b>Copy</b> method, the original content control remains in the active document, but a copy of the control, including all text and property settings, is moved to the Clipboard. You can then paste the content control into other sections of the active document. Use the <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> method of the <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object or the <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> method of the  <see cref="T:Microsoft.Office.Interop.Word.Range" /> object to insert the copied content control, or use the Paste function from within Microsoft Office Word.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-156">从活动文档中删除内容控件并将该内容控件移动到剪贴板中。</span><span class="sxs-lookup"><span data-stu-id="d59fb-156">Removes the content control from the active document and moves the content control to the Clipboard.</span></span></summary>
+        <remarks><para><span data-ttu-id="d59fb-157">使用 <b>Copy</b> 方法时，原始内容控件仍保留在活动文档中，但一份该控件，包括所有文本和属性设置，移动到剪贴板。</span><span class="sxs-lookup"><span data-stu-id="d59fb-157">When you use the <b>Copy</b> method, the original content control remains in the active document, but a copy of the control, including all text and property settings, is moved to the Clipboard.</span></span> <span data-ttu-id="d59fb-158">然后，可以将内容控件粘贴到活动文档的其他部分。</span><span class="sxs-lookup"><span data-stu-id="d59fb-158">You can then paste the content control into other sections of the active document.</span></span> <span data-ttu-id="d59fb-159">使用对象<see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" />的方法<see cref="T:Microsoft.Office.Interop.Word.Selection" />或<see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> <see cref="T:Microsoft.Office.Interop.Word.Range" />对象的方法来插入复制的内容控件, 或使用 Microsoft Office Word 中的粘贴函数。</span><span class="sxs-lookup"><span data-stu-id="d59fb-159">Use the <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> method of the <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object or the <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> method of the  <see cref="T:Microsoft.Office.Interop.Word.Range" /> object to insert the copied content control, or use the Paste function from within Microsoft Office Word.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateCalendarType">
@@ -644,19 +418,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCalendarType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-131">返回或设置一个日历内容控件的日历类型。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-131">Returns or sets the calendar type for a calendar content control.</span>
-          </span>
-          <span data-ttu-id="a9851-132">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-132">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdCalendarType" />
-        </value>
+        <summary><span data-ttu-id="d59fb-160">返回或设置日历内容控件的日历类型。</span><span class="sxs-lookup"><span data-stu-id="d59fb-160">Returns or sets the calendar type for a calendar content control.</span></span>  <span data-ttu-id="d59fb-161">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-161">Read/write.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdCalendarType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -686,38 +449,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-133">返回或设置日期显示格式。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-133">Returns or sets the format in which dates are displayed.</span>
-          </span>
-          <span data-ttu-id="a9851-134">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-134">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-135">
-            <b>字符串</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-135">
-              <b>String</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-136">
-            <para>指定在 Microsoft Office Word 在用户的系统上，这通常取决于 Microsoft Windows 中的位置设置的格式设置的默认格式。例如，日期的英语 （美国） 的默认格式为"mm/dd/yyyy"。使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" />属性指定不同的日期格式。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-136">
-              <para>The default format is the format setting specified in Microsoft Office Word on the users' system, which usually depends on the location setting in Microsoft Windows. For example, the default format of dates for English (U.S.) is "mm/dd/yyyy". Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> property to specify a different date format.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-162">返回或设置日期的显示格式。</span><span class="sxs-lookup"><span data-stu-id="d59fb-162">Returns or sets the format in which dates are displayed.</span></span> <span data-ttu-id="d59fb-163">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-163">Read/write.</span></span></summary>
+        <value><span data-ttu-id="d59fb-164"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="d59fb-164"><b>String</b></span></span></value>
+        <remarks><para><span data-ttu-id="d59fb-165">默认格式是在 Microsoft Office Word 中的用户系统上指定的格式设置, 通常取决于 Microsoft Windows 中的位置设置。</span><span class="sxs-lookup"><span data-stu-id="d59fb-165">The default format is the format setting specified in Microsoft Office Word on the users' system, which usually depends on the location setting in Microsoft Windows.</span></span> <span data-ttu-id="d59fb-166">例如，日期为英语 (美国) 的默认格式是"mm/dd/yyyy"。</span><span class="sxs-lookup"><span data-stu-id="d59fb-166">For example, the default format of dates for English (U.S.) is "mm/dd/yyyy".</span></span> <span data-ttu-id="d59fb-167">使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" />属性可指定不同的日期格式。</span><span class="sxs-lookup"><span data-stu-id="d59fb-167">Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> property to specify a different date format.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDisplayLocale">
@@ -746,31 +481,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-137">返回一个日期内容控件中显示的日期的语言格式。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-137">Returns a the language format for the date displayed in a date content control.</span>
-          </span>
-          <span data-ttu-id="a9851-138">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-138">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-139">
-            <para>默认情况下，<see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" />属性最初设置为 Microsoft Office Word 中指定的编辑语言，如果这一点不同于 Microsoft Windows 中指定的位置。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-139">
-              <para>By default, the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> property is initially set to the editing language specified in Microsoft Office Word, if this is different from the location specified in Microsoft Windows.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-168">返回日期内容控件中显示的日期的语言格式。</span><span class="sxs-lookup"><span data-stu-id="d59fb-168">Returns a the language format for the date displayed in a date content control.</span></span> <span data-ttu-id="d59fb-169">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-169">Read/write.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /></value>
+        <remarks><para><span data-ttu-id="d59fb-170">默认情况下, <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" />该属性最初设置为在 Microsoft Office Word 中指定的编辑语言, 如果这与 microsoft Windows 中指定的位置不同。</span><span class="sxs-lookup"><span data-stu-id="d59fb-170">By default, the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> property is initially set to the editing language specified in Microsoft Office Word, if this is different from the location specified in Microsoft Windows.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateStorageFormat">
@@ -799,32 +513,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-140">返回或设置一个日期内容控件绑定到活动文档的 XML 数据存储区时的日期的存储和检索的格式。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-140">Returns or sets the format for storage and retrieval of dates when a date content control is bound to the XML data store of the active document.</span>
-          </span>
-          <span data-ttu-id="a9851-141">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-141">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat" />
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-142">
-            <para>
-              <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" />属性使您可以在日期格式、 日期/时间格式或文本格式存储日期。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-142">
-              <para>The <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> property allows you to store dates  in date format, date/time format, or text format.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-171">返回或设置日期内容控件绑定到活动文档的 XML 数据存储区时存储和检索日期的格式。</span><span class="sxs-lookup"><span data-stu-id="d59fb-171">Returns or sets the format for storage and retrieval of dates when a date content control is bound to the XML data store of the active document.</span></span> <span data-ttu-id="d59fb-172">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-172">Read/write.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat" /></value>
+        <remarks><para><span data-ttu-id="d59fb-173"><see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" />属性允许您存储日期格式、日期/时间格式或文本格式的日期。</span><span class="sxs-lookup"><span data-stu-id="d59fb-173">The <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> property allows you to store dates  in date format, date/time format, or text format.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTextStyle">
@@ -853,26 +545,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-143">返回或设置要使用格式文本内容控件中的文本的字符样式的名称。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-143">Returns or sets the name of the character style to use to format text in a text content control.</span>
-          </span>
-          <span data-ttu-id="a9851-144">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-144">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-145">
-            <b>对象</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-145">
-              <b>Object</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="d59fb-174">返回或设置用于设置文本内容控件中文本的格式的字符样式的名称。</span><span class="sxs-lookup"><span data-stu-id="d59fb-174">Returns or sets the name of the character style to use to format text in a text content control.</span></span> <span data-ttu-id="d59fb-175">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-175">Read/write.</span></span></summary>
+        <value><span data-ttu-id="d59fb-176"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="d59fb-176"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -898,34 +572,8 @@
         <Parameter Name="DeleteContents" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="DeleteContents">
-          <span data-ttu-id="a9851-146">指定是否删除内容控件的内容。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-146">Specifies whether to delete the contents of the content control.</span>
-          </span>
-          <span data-ttu-id="a9851-147">
-            <b>为</b> 删除内容控件及其内容。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-147">
-              <b>True</b> removes both the content control and its contents.</span>
-          </span>
-          <span data-ttu-id="a9851-148">
-            <b>假</b> 中移除该控件，但离开活动文档中的内容控件的内容。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-148">
-              <b>False</b> removes the control but leaves the contents of the content control in the active document.</span>
-          </span>
-          <span data-ttu-id="a9851-149">默认值为 <b>False</b> 。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-149">The default value is <b>False</b>.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="a9851-150">删除指定的内容控件以及内容控件中的内容。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-150">Deletes the specified content control and the contents of the content control.</span>
-          </span>
-        </summary>
+        <param name="DeleteContents"><span data-ttu-id="d59fb-177">指定是否删除内容控件的内容。</span><span class="sxs-lookup"><span data-stu-id="d59fb-177">Specifies whether to delete the contents of the content control.</span></span>  <span data-ttu-id="d59fb-178"><b>为</b> 删除内容控件及其内容。</span><span class="sxs-lookup"><span data-stu-id="d59fb-178"><b>True</b> removes both the content control and its contents.</span></span> <span data-ttu-id="d59fb-179"><b>假</b> 中移除该控件，但离开活动文档中的内容控件的内容。</span><span class="sxs-lookup"><span data-stu-id="d59fb-179"><b>False</b> removes the control but leaves the contents of the content control in the active document.</span></span> <span data-ttu-id="d59fb-180">默认值为 <b>False</b> 。</span><span class="sxs-lookup"><span data-stu-id="d59fb-180">The default value is <b>False</b>.</span></span></param>
+        <summary><span data-ttu-id="d59fb-181">删除指定的内容控件以及内容控件中的内容。</span><span class="sxs-lookup"><span data-stu-id="d59fb-181">Deletes the specified content control and the contents of the content control.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -952,19 +600,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControlListEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-151">返回项目下拉列表内容控件中或组合框内容控件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-151">Returns the items in a drop-down list content control or in a  combo box content control.</span>
-          </span>
-          <span data-ttu-id="a9851-152">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-152">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />
-        </value>
+        <summary><span data-ttu-id="d59fb-182">返回下拉列表内容控件或组合框内容控件中的项。</span><span class="sxs-lookup"><span data-stu-id="d59fb-182">Returns the items in a drop-down list content control or in a  combo box content control.</span></span> <span data-ttu-id="d59fb-183">只读。</span><span class="sxs-lookup"><span data-stu-id="d59fb-183">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -991,39 +628,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-153">返回一个内容控件的标识。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-153">Returns the identification for a content control.</span>
-          </span>
-          <span data-ttu-id="a9851-154">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-154">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-155">
-            <b>字符串</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-155">
-              <b>String</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-156">
-            <para>
-              <b>ID</b>属性是一个内部号码，则无法更改，但您可以用于标识代码中的内容控件。此号码是唯一的每个内容控件，并且不会更改。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-156">
-              <para>The <b>ID</b> property is an internal number that you cannot change but that you can use to identify a content control in code. This number is unique for each content control and does not change.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-184">返回内容控件的标识。</span><span class="sxs-lookup"><span data-stu-id="d59fb-184">Returns the identification for a content control.</span></span> <span data-ttu-id="d59fb-185">只读。</span><span class="sxs-lookup"><span data-stu-id="d59fb-185">Read-only.</span></span></summary>
+        <value><span data-ttu-id="d59fb-186"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="d59fb-186"><b>String</b></span></span></value>
+        <remarks><para><span data-ttu-id="d59fb-p126"><b>ID</b> 属性是一个内部号码，您不能更改，但您可以使用来标识代码中的内容控件。这个数字对于每个内容控件都是唯一，不会改变。</span><span class="sxs-lookup"><span data-stu-id="d59fb-p126">The <b>ID</b> property is an internal number that you cannot change but that you can use to identify a content control in code. This number is unique for each content control and does not change.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Level">
@@ -1049,16 +657,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-157">返回的内容控件的级别 — 的内容控件是否围绕文本、 段落、 表格单元格或表格行;或者，如果它为 inline。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-157">Returns the level of the content control—whether the content control surrounds text, paragraphs, table cells, or table rows; or if it is inline.</span>
-          </span>
-          <span data-ttu-id="a9851-158">只读<see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-158">Read-only <see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d59fb-189">返回内容控件的级别—内容控件是围绕文本、段落、表格单元格还是表格行。或者如果是内联的。</span><span class="sxs-lookup"><span data-stu-id="d59fb-189">Returns the level of the content control—whether the content control surrounds text, paragraphs, table cells, or table rows; or if it is inline.</span></span> <span data-ttu-id="d59fb-190">只读<see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />。</span><span class="sxs-lookup"><span data-stu-id="d59fb-190">Read-only <see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1089,38 +688,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-p116">返回或设置一个 <b>boolean 类型的值</b> ，该值表示用户能否从活动文档中删除内容控件。读/写。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-p116">Returns or sets a <b>Boolean</b> that represents whether the user can delete a content control from the active document. Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-161">
-            <b>Boolean</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-161">
-              <b>Boolean</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-162">
-            <para>此属性的默认值为<b>False</b>。 此属性对应于内容控件不能被删除内容控件属性对话框中的复选框。</para>
-            <para>
-              <b>注意</b>： 如果您不能设置此属性<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" />属性设置为<b>True</b>。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-162">
-              <para>The default value of this property is <b>False</b>.  This property corresponds to the Content control cannot be deleted check box in the Content Control Properties dialog box.</para>
-              <para>
-                <b>Note</b>: You cannot set this property if the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" /> property is set to <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-191">返回或设置一个 <b>boolean 类型的值</b> ，该值表示用户能否从活动文档中删除内容控件。</span><span class="sxs-lookup"><span data-stu-id="d59fb-191">Returns or sets a <b>Boolean</b> that represents whether the user can delete a content control from the active document.</span></span> <span data-ttu-id="d59fb-192">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-192">Read/write.</span></span></summary>
+        <value><span data-ttu-id="d59fb-193"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="d59fb-193"><b>Boolean</b></span></span></value>
+        <remarks><para><span data-ttu-id="d59fb-194">此属性的默认值为 <b>False</b> 。</span><span class="sxs-lookup"><span data-stu-id="d59fb-194">The default value of this property is <b>False</b>.</span></span>  <span data-ttu-id="d59fb-195">此属性对应于 内容控件属性对话框中的 内容不能删除控件复选框。</span><span class="sxs-lookup"><span data-stu-id="d59fb-195">This property corresponds to the Content control cannot be deleted check box in the Content Control Properties dialog box.</span></span></para>
+          <para><span data-ttu-id="d59fb-196">
+            <b>注意</b>: 如果该<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" />属性设置为<b>True</b>, 则不能设置此属性。</span><span class="sxs-lookup"><span data-stu-id="d59fb-196">
+            <b>Note</b>: You cannot set this property if the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" /> property is set to <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockContents">
@@ -1149,34 +723,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-p117">返回或设置一个 <b>boolean 类型的值</b> ，该值表示用户能否编辑内容控件的内容。读/写。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-p117">Returns or sets a <b>Boolean</b> that represents whether the user can edit the contents of a content control. Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-165">
-            <b>Boolean</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-165">
-              <b>Boolean</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-166">
-            <para>此属性的默认值为<b>False</b>。 此属性对应于内容不能为内容控件属性对话框中的已编辑的复选框。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-166">
-              <para>The default value of this property is <b>False</b>.  This property corresponds to the Contents cannot be edited check box in the Content Control Properties dialog box.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-197">返回或设置一个 <b>boolean 类型的值</b> ，该值表示用户能否编辑内容控件的内容。</span><span class="sxs-lookup"><span data-stu-id="d59fb-197">Returns or sets a <b>Boolean</b> that represents whether the user can edit the contents of a content control.</span></span> <span data-ttu-id="d59fb-198">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-198">Read/write.</span></span></summary>
+        <value><span data-ttu-id="d59fb-199"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="d59fb-199"><b>Boolean</b></span></span></value>
+        <remarks><para><span data-ttu-id="d59fb-200">此属性的默认值为 <b>False</b> 。</span><span class="sxs-lookup"><span data-stu-id="d59fb-200">The default value of this property is <b>False</b>.</span></span>  <span data-ttu-id="d59fb-201">此属性对应于 内容控件属性对话框中的 无法编辑内容复选框。</span><span class="sxs-lookup"><span data-stu-id="d59fb-201">This property corresponds to the Contents cannot be edited check box in the Content Control Properties dialog box.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiLine">
@@ -1205,34 +755,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-p118">返回一个 <b>boolean 类型的值</b> ，该值表示一个文本内容控件是否允许多行文本。读/写。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-p118">Returns a <b>Boolean</b> that represents whether a text content control allows multiple lines of text. Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-169">
-            <b>Boolean</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-169">
-              <b>Boolean</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-170">
-            <para>此属性仅适用于文本内容控件和格式文本内容控件。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-170">
-              <para>This property applies only to text content controls and rich text content controls.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-202">返回一个 <b>boolean 类型的值</b> ，该值表示一个文本内容控件是否允许多行文本。</span><span class="sxs-lookup"><span data-stu-id="d59fb-202">Returns a <b>Boolean</b> that represents whether a text content control allows multiple lines of text.</span></span> <span data-ttu-id="d59fb-203">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-203">Read/write.</span></span></summary>
+        <value><span data-ttu-id="d59fb-204"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="d59fb-204"><b>Boolean</b></span></span></value>
+        <remarks><para><span data-ttu-id="d59fb-205">此属性只应用于文本内容控件和格式文本内容控件。</span><span class="sxs-lookup"><span data-stu-id="d59fb-205">This property applies only to text content controls and rich text content controls.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1258,22 +784,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-171">返回值，该值代表指定的父对象<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-171">Returns an  that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> object.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-172">
-            <b>对象</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-172">
-              <b>Object</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="d59fb-206">返回一个代表指定<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />对象的父对象的。</span><span class="sxs-lookup"><span data-stu-id="d59fb-206">Returns an  that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> object.</span></span></summary>
+        <value><span data-ttu-id="d59fb-207"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="d59fb-207"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1300,31 +812,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-173">返回内容的父内容控件，它是控制嵌套在格式文本控件或组控件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-173">Returns the parent content control for a content control that is nested inside a rich-text control or group control.</span>
-          </span>
-          <span data-ttu-id="a9851-174">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-174">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-175">
-            <para>如果不嵌套内容控件，则此属性将返回错误。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-175">
-              <para>If a content control is not nested, this proprerty returns an error.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-208">返回嵌套在丰富文本控件或组控件中的内容控件的父内容控件。</span><span class="sxs-lookup"><span data-stu-id="d59fb-208">Returns the parent content control for a content control that is nested inside a rich-text control or group control.</span></span> <span data-ttu-id="d59fb-209">只读。</span><span class="sxs-lookup"><span data-stu-id="d59fb-209">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></value>
+        <remarks><para><span data-ttu-id="d59fb-210">如果内容控件未嵌套，则此属性返回错误。</span><span class="sxs-lookup"><span data-stu-id="d59fb-210">If a content control is not nested, this proprerty returns an error.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PlaceholderText">
@@ -1350,34 +841,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlock</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-176">返回<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />代表内容控件的占位符文本的对象。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-176">Returns a <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object that represents the placeholder text for a content control.</span>
-          </span>
-          <span data-ttu-id="a9851-177">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-177">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-178">返回<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-178">Returns <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />.</span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-179">
-            <para>使用<see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />方法，以便设置内容控件的占位符文本。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-179">
-              <para>Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> method to set the placeholder text for a content control.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-211">返回一个<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象, 表示内容控件的占位符文本。</span><span class="sxs-lookup"><span data-stu-id="d59fb-211">Returns a <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object that represents the placeholder text for a content control.</span></span> <span data-ttu-id="d59fb-212">只读。</span><span class="sxs-lookup"><span data-stu-id="d59fb-212">Read-only.</span></span></summary>
+        <value><span data-ttu-id="d59fb-213">返回<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />。</span><span class="sxs-lookup"><span data-stu-id="d59fb-213">Returns <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />.</span></span></value>
+        <remarks><para><span data-ttu-id="d59fb-214">使用<see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />方法设置内容控件的占位符文本。</span><span class="sxs-lookup"><span data-stu-id="d59fb-214">Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> method to set the placeholder text for a content control.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -1403,34 +870,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-180">返回<see cref="T:Microsoft.Office.Interop.Word.Range" />，表示活动文档中的内容控件的内容。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-180">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> that represents the contents of the content control in the active document.</span>
-          </span>
-          <span data-ttu-id="a9851-181">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-181">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-182">返回<see cref="T:Microsoft.Office.Interop.Word.Range" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-182">Returns <see cref="T:Microsoft.Office.Interop.Word.Range" />.</span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-183">
-            <para>使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" />属性来访问文本、 文本和其他文本属性的格式。 有关详细信息，请参阅<a href="HV10056876">处理 Range 对象</a></para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-183">
-              <para>Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> property to access the text, the formatting for the text, and other text properties.  For more information, see <a href="HV10056876">Working with Range Objects</a></para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-215">返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />表示活动文档中内容控件的内容的。</span><span class="sxs-lookup"><span data-stu-id="d59fb-215">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> that represents the contents of the content control in the active document.</span></span> <span data-ttu-id="d59fb-216">只读。</span><span class="sxs-lookup"><span data-stu-id="d59fb-216">Read-only.</span></span></summary>
+        <value><span data-ttu-id="d59fb-217">返回<see cref="T:Microsoft.Office.Interop.Word.Range" />。</span><span class="sxs-lookup"><span data-stu-id="d59fb-217">Returns <see cref="T:Microsoft.Office.Interop.Word.Range" />.</span></span></value>
+        <remarks><para><span data-ttu-id="d59fb-218">使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" />属性可访问文本、文本格式以及其他文本属性。</span><span class="sxs-lookup"><span data-stu-id="d59fb-218">Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> property to access the text, the formatting for the text, and other text properties.</span></span>  <span data-ttu-id="d59fb-219">有关详细信息, 请参阅<a href="HV10056876">处理 Range 对象</a></span><span class="sxs-lookup"><span data-stu-id="d59fb-219">For more information, see <a href="HV10056876">Working with Range Objects</a></span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RepeatingSectionItems">
@@ -1456,29 +899,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.RepeatingSectionItemColl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-184">返回的重复节中指定的重复节内容控件的项目的集合。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-184">Returns the collection of repeating section items in the specified repeating section content control.</span>
-          </span>
-          <span data-ttu-id="a9851-185">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-185">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d59fb-220">返回指定的重复节内容控件中的重复节项的集合。</span><span class="sxs-lookup"><span data-stu-id="d59fb-220">Returns the collection of repeating section items in the specified repeating section content control.</span></span> <span data-ttu-id="d59fb-221">只读。</span><span class="sxs-lookup"><span data-stu-id="d59fb-221">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="a9851-186">
-            <para>您可以使用重复节内容控件仅使用此属性。使用其他内容控件将导致出错。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-186">
-              <para>You can use this property with repeating section content controls only. Using it with other content controls will result in an error.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="d59fb-222">只能将该属性用于重复节内容控件。</span><span class="sxs-lookup"><span data-stu-id="d59fb-222">You can use this property with repeating section content controls only.</span></span> <span data-ttu-id="d59fb-223">将其与其他内容控件一起使用将导致错误。</span><span class="sxs-lookup"><span data-stu-id="d59fb-223">Using it with other content controls will result in an error.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RepeatingSectionItemTitle">
@@ -1507,29 +931,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-187">返回或设置与指定的重复节内容控件关联的上下文菜单中使用重复节项目的名称。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-187">Returns or sets the name of the repeating section items used in the context menu associated with the specified repeating section content control.</span>
-          </span>
-          <span data-ttu-id="a9851-188">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-188">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="d59fb-224">返回或设置与指定的重复节内容控件相关联的上下文菜单中使用的重复节项的名称。</span><span class="sxs-lookup"><span data-stu-id="d59fb-224">Returns or sets the name of the repeating section items used in the context menu associated with the specified repeating section content control.</span></span> <span data-ttu-id="d59fb-225">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-225">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="a9851-189">
-            <para>您可以使用重复节内容控件仅使用此属性。使用其他内容控件将导致出错。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-189">
-              <para>You can use this property with repeating section content controls only. Using it with other content controls will result in an error.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="d59fb-226">只能将该属性用于重复节内容控件。</span><span class="sxs-lookup"><span data-stu-id="d59fb-226">You can use this property with repeating section content controls only.</span></span> <span data-ttu-id="d59fb-227">将其与其他内容控件一起使用将导致错误。</span><span class="sxs-lookup"><span data-stu-id="d59fb-227">Using it with other content controls will result in an error.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCheckedSymbol">
@@ -1555,32 +960,9 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">
-          <span data-ttu-id="a9851-190">指定符号的 Unicode 字符编号。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-190">The Unicode character number for the specified symbol.</span>
-          </span>
-          <span data-ttu-id="a9851-191">该值始终是 31（字体开始处的控件符号的数目）加上此符号在符号表中的位置（从左向右计算）相应的数字。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-191">This value will always be the sum of 31 (the number of control symbols at the beginning of the font) and the number that corresponds to the position of the symbol in the table of symbols (counting from left to right).</span>
-          </span>
-          <span data-ttu-id="a9851-192">例如，若要指定位置 37 处的增量字符中的符号字体符号的表中，设置<paramref name="CharacterNumber" />到 68。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-192">For example, to specify a delta character at position 37 in the table of symbols in the Symbol font, set <paramref name="CharacterNumber" /> to 68.</span>
-          </span>
-        </param>
-        <param name="Font">
-          <span data-ttu-id="a9851-193">包含符号的字体的名称。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-193">The name of the font that contains the symbol.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="a9851-194">设置用于代表复选框内容控件的选中状态的符号。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-194">Sets the symbol used to represent the checked state of a check box content control.</span>
-          </span>
-        </summary>
+        <param name="CharacterNumber"><span data-ttu-id="d59fb-228">指定符号的 Unicode 字符编号。</span><span class="sxs-lookup"><span data-stu-id="d59fb-228">The Unicode character number for the specified symbol.</span></span> <span data-ttu-id="d59fb-229">该值始终是 31（字体开始处的控件符号的数目）加上此符号在符号表中的位置（从左向右计算）相应的数字。</span><span class="sxs-lookup"><span data-stu-id="d59fb-229">This value will always be the sum of 31 (the number of control symbols at the beginning of the font) and the number that corresponds to the position of the symbol in the table of symbols (counting from left to right).</span></span> <span data-ttu-id="d59fb-230">例如, 若要在符号字体的符号表中的位置37处指定增量字符, 请将设置<paramref name="CharacterNumber" />为68。</span><span class="sxs-lookup"><span data-stu-id="d59fb-230">For example, to specify a delta character at position 37 in the table of symbols in the Symbol font, set <paramref name="CharacterNumber" /> to 68.</span></span></param>
+        <param name="Font"><span data-ttu-id="d59fb-231">包含符号的字体的名称。</span><span class="sxs-lookup"><span data-stu-id="d59fb-231">The name of the font that contains the symbol.</span></span></param>
+        <summary><span data-ttu-id="d59fb-232">设置用于代表复选框内容控件的选中状态的符号。</span><span class="sxs-lookup"><span data-stu-id="d59fb-232">Sets the symbol used to represent the checked state of a check box content control.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1607,42 +989,12 @@
         <Parameter Name="Text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="BuildingBlock">
-          <span data-ttu-id="a9851-195">指定<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象包含占位符文本的内容。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-195">Specifies a <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object that contains the contents of the placeholder text.</span>
-          </span>
-        </param>
-        <param name="Range">
-          <span data-ttu-id="a9851-196">指定<see cref="T:Microsoft.Office.Interop.Word.Range" />对象包含占位符文本的内容。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-196">Specifies a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that contains the contents of the placeholder text.</span>
-          </span>
-        </param>
-        <param name="Text">
-          <span data-ttu-id="a9851-197">指定占位符文本的内容。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-197">Specifies the contents of the placeholder text.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="a9851-198">设置在用户输入自己的文本之前显示在内容控件中的占位符文本。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-198">Sets the placeholder text that displays in the content control until a user enters their own text.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="a9851-199">
-            <para>指定占位符文本时使用唯一参数中的一个。 如果使用多个参数，则 Microsoft Office Word 使用的第一个参数中指定的文本。如果省略所有参数，则占位符文本为空。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-199">
-              <para>Only one of the parameters is used when specifying placeholder text.  If more than one parameter is used, Microsoft Office Word uses the text specified in the first parameter. If all  parameters are omitted, the placeholder text is blank.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="BuildingBlock"><span data-ttu-id="d59fb-233">指定一个<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象, 该对象包含占位符文本的内容。</span><span class="sxs-lookup"><span data-stu-id="d59fb-233">Specifies a <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object that contains the contents of the placeholder text.</span></span></param>
+        <param name="Range"><span data-ttu-id="d59fb-234">指定一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 该对象包含占位符文本的内容。</span><span class="sxs-lookup"><span data-stu-id="d59fb-234">Specifies a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that contains the contents of the placeholder text.</span></span></param>
+        <param name="Text"><span data-ttu-id="d59fb-235">指定占位符文本的内容。</span><span class="sxs-lookup"><span data-stu-id="d59fb-235">Specifies the contents of the placeholder text.</span></span></param>
+        <summary><span data-ttu-id="d59fb-236">设置在用户输入自己的文本之前显示在内容控件中的占位符文本。</span><span class="sxs-lookup"><span data-stu-id="d59fb-236">Sets the placeholder text that displays in the content control until a user enters their own text.</span></span></summary>
+        <remarks><para><span data-ttu-id="d59fb-237">在指定占位符文本时，只使用一个参数。</span><span class="sxs-lookup"><span data-stu-id="d59fb-237">Only one of the parameters is used when specifying placeholder text.</span></span>  <span data-ttu-id="d59fb-238">如果使用多个参数, Microsoft Office Word 将使用在第一个参数中指定的文本。</span><span class="sxs-lookup"><span data-stu-id="d59fb-238">If more than one parameter is used, Microsoft Office Word uses the text specified in the first parameter.</span></span> <span data-ttu-id="d59fb-239">如果省略所有参数，则占位符文本将为空白。</span><span class="sxs-lookup"><span data-stu-id="d59fb-239">If all  parameters are omitted, the placeholder text is blank.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetUncheckedSymbol">
@@ -1668,32 +1020,9 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">
-          <span data-ttu-id="a9851-200">指定符号的 Unicode 字符编号。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-200">The Unicode character number for the specified symbol.</span>
-          </span>
-          <span data-ttu-id="a9851-201">该值始终是 31（字体开始处的控件符号的数目）加上此符号在符号表中的位置（从左向右计算）相应的数字。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-201">This value will always be the sum of 31 (the number of control symbols at the beginning of the font) and the number that corresponds to the position of the symbol in the table of symbols (counting from left to right).</span>
-          </span>
-          <span data-ttu-id="a9851-202">例如，若要指定位置 37 处的增量字符中的符号字体符号的表中，设置<paramref name="CharacterNumber" />到 68。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-202">For example, to specify a delta character at position 37 in the table of symbols in the Symbol font, set <paramref name="CharacterNumber" /> to 68.</span>
-          </span>
-        </param>
-        <param name="Font">
-          <span data-ttu-id="a9851-203">包含符号的字体的名称。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-203">The name of the font that contains the symbol.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="a9851-204">设置用于代表复选框内容控件的未选中状态的符号。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-204">Sets the symbol used to represent the unchecked state of a check box content control.</span>
-          </span>
-        </summary>
+        <param name="CharacterNumber"><span data-ttu-id="d59fb-240">指定符号的 Unicode 字符编号。</span><span class="sxs-lookup"><span data-stu-id="d59fb-240">The Unicode character number for the specified symbol.</span></span> <span data-ttu-id="d59fb-241">该值始终是 31（字体开始处的控件符号的数目）加上此符号在符号表中的位置（从左向右计算）相应的数字。</span><span class="sxs-lookup"><span data-stu-id="d59fb-241">This value will always be the sum of 31 (the number of control symbols at the beginning of the font) and the number that corresponds to the position of the symbol in the table of symbols (counting from left to right).</span></span> <span data-ttu-id="d59fb-242">例如, 若要在符号字体的符号表中的位置37处指定增量字符, 请将设置<paramref name="CharacterNumber" />为68。</span><span class="sxs-lookup"><span data-stu-id="d59fb-242">For example, to specify a delta character at position 37 in the table of symbols in the Symbol font, set <paramref name="CharacterNumber" /> to 68.</span></span></param>
+        <param name="Font"><span data-ttu-id="d59fb-243">包含符号的字体的名称。</span><span class="sxs-lookup"><span data-stu-id="d59fb-243">The name of the font that contains the symbol.</span></span></param>
+        <summary><span data-ttu-id="d59fb-244">设置用于代表复选框内容控件的未选中状态的符号。</span><span class="sxs-lookup"><span data-stu-id="d59fb-244">Sets the symbol used to represent the unchecked state of a check box content control.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1720,22 +1049,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-p126">返回一个 <b>boolean 类型的值</b> ，该值指示是否显示占位符文本的内容控件。只读的。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-p126">Returns a <b>Boolean</b> that indicates whether the placeholder text for the content control is displayed. Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-207">
-            <b>Boolean</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-207">
-              <b>Boolean</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="d59fb-245">返回一个 <b>boolean 类型的值</b> ，该值指示是否显示占位符文本的内容控件。</span><span class="sxs-lookup"><span data-stu-id="d59fb-245">Returns a <b>Boolean</b> that indicates whether the placeholder text for the content control is displayed.</span></span> <span data-ttu-id="d59fb-246">只读的。</span><span class="sxs-lookup"><span data-stu-id="d59fb-246">Read-only.</span></span></summary>
+        <value><span data-ttu-id="d59fb-247"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="d59fb-247"><b>Boolean</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1765,39 +1080,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-208">返回或设置一个值，以确定内容控件。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-208">Returns or sets a value to identify a content control.</span>
-          </span>
-          <span data-ttu-id="a9851-209">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-209">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-210">
-            <b>字符串</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-210">
-              <b>String</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-211">
-            <para>
-              <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" />属性是不同<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" />属性中的标记不会显示当用户在编辑文档。 相反，开发人员可以使用其同时打开文档存储编程操作的值。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-211">
-              <para>The <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" /> property is different from the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> property in that a tag is never displayed while a user edits a document.  Instead, developers can use it to store a value for programmatic manipulation while the document is opened.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-248">返回或设置一个值, 用于标识内容控件。</span><span class="sxs-lookup"><span data-stu-id="d59fb-248">Returns or sets a value to identify a content control.</span></span> <span data-ttu-id="d59fb-249">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-249">Read/write.</span></span></summary>
+        <value><span data-ttu-id="d59fb-250"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="d59fb-250"><b>String</b></span></span></value>
+        <remarks><para><span data-ttu-id="d59fb-251"><see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" />属性不同于<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" />属性, 因为用户在编辑文档时从不显示标记。</span><span class="sxs-lookup"><span data-stu-id="d59fb-251">The <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" /> property is different from the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> property in that a tag is never displayed while a user edits a document.</span></span>  <span data-ttu-id="d59fb-252">相反，开发人员可以使用它来存储编程操作的值，则在打开文档时。</span><span class="sxs-lookup"><span data-stu-id="d59fb-252">Instead, developers can use it to store a value for programmatic manipulation while the document is opened.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Temporary">
@@ -1826,38 +1112,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-p128">返回或设置一个 <b>boolean 类型的值</b> ，该值代表是否从活动文档中删除内容控件，当用户编辑控件的内容。读/写。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-p128">Returns or sets a <b>Boolean</b> that represents whether to remove a content control from the active document when the user edits the contents of the control. Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-214">
-            <b>Boolean</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-214">
-              <b>Boolean</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-215">
-            <para>默认值为<b>False</b>。当内容已编辑的复选框，在内容控件属性对话框时，此属性对应于删除内容控件。</para>
-            <para>
-              <b>注意</b>： 如果您不能设置此属性<see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" />属性设置为<b>True</b>。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-215">
-              <para>The default value is <b>False</b>. This property corresponds to the Remove content control when contents are edited check box in the Content Control Properties dialog box.</para>
-              <para>
-                <b>Note</b>: You cannot set this property if the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" /> property is set to <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-p147">返回或设置一个 <b>boolean 类型的值</b> ，该值代表是否从活动文档中删除内容控件，当用户编辑控件的内容。读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-p147">Returns or sets a <b>Boolean</b> that represents whether to remove a content control from the active document when the user edits the contents of the control. Read/write.</span></span></summary>
+        <value><span data-ttu-id="d59fb-255"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="d59fb-255"><b>Boolean</b></span></span></value>
+        <remarks><para><span data-ttu-id="d59fb-256">默认值为 <b>False</b>。</span><span class="sxs-lookup"><span data-stu-id="d59fb-256">The default value is <b>False</b>.</span></span> <span data-ttu-id="d59fb-257">此属性对应于 内容控件属性对话框中的 内容被编辑后删除内容控件复选框。</span><span class="sxs-lookup"><span data-stu-id="d59fb-257">This property corresponds to the Remove content control when contents are edited check box in the Content Control Properties dialog box.</span></span></para>
+          <para><span data-ttu-id="d59fb-258">
+            <b>注意</b>: 如果该<see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" />属性设置为<b>True</b>, 则不能设置此属性。</span><span class="sxs-lookup"><span data-stu-id="d59fb-258">
+            <b>Note</b>: You cannot set this property if the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" /> property is set to <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1886,26 +1147,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-216">返回或设置内容控件的标题。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-216">Returns or sets the title for a content control.</span>
-          </span>
-          <span data-ttu-id="a9851-217">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-217">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="a9851-218">
-            <b>字符串</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-218">
-              <b>String</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="d59fb-259">返回或设置内容控件的标题。</span><span class="sxs-lookup"><span data-stu-id="d59fb-259">Returns or sets the title for a content control.</span></span> <span data-ttu-id="d59fb-260">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-260">Read/write.</span></span></summary>
+        <value><span data-ttu-id="d59fb-261"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="d59fb-261"><b>String</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1935,31 +1178,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-219">返回或设置内容控件的类型。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-219">Returns or sets the type for a content control.</span>
-          </span>
-          <span data-ttu-id="a9851-220">为可读/写属性。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-220">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdContentControlType" />
-        </value>
-        <remarks>
-          <span data-ttu-id="a9851-221">
-            <para>您可以使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" />属性更改的类型到另一个内容控件的类型。 但是，能够更改控件的类型取决于原始类型以及内容控件中的内容更改时。 所有内容控件可以更改为格式文本或构建基块库类型的内容控件，因为这些类型允许任意内容。 对于其他类型，然后更改类型允许的内容是有效的类型的您想要更改，如果。 否则，将被拒绝更改，导致运行时错误。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-221">
-              <para>You can use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> property to change the type of a content control from one type to another.  However, the ability to change the type of control depends on the original type and on the content inside the content control at the time of the change.  All content controls can be changed to rich text or building block gallery type content controls because these types allow arbitrary content.  For other types, if the content is valid for the type that you want to change to, then changing the type is allowed.  Otherwise, the change is rejected, resulting in a run-time error.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-262">返回或设置内容控件的类型。</span><span class="sxs-lookup"><span data-stu-id="d59fb-262">Returns or sets the type for a content control.</span></span> <span data-ttu-id="d59fb-263">读/写。</span><span class="sxs-lookup"><span data-stu-id="d59fb-263">Read/write.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdContentControlType" /></value>
+        <remarks><para><span data-ttu-id="d59fb-264">可以使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" />属性将内容控件的类型从一种类型更改为另一种类型。</span><span class="sxs-lookup"><span data-stu-id="d59fb-264">You can use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> property to change the type of a content control from one type to another.</span></span>  <span data-ttu-id="d59fb-265">但是，可以更改控件的类型取决于原始类型和内容控件中的内容更改时。</span><span class="sxs-lookup"><span data-stu-id="d59fb-265">However, the ability to change the type of control depends on the original type and on the content inside the content control at the time of the change.</span></span>  <span data-ttu-id="d59fb-266">所有内容控件可以变为富文本或构建基块库类型的内容控件，因为这些类型允许任意内容。</span><span class="sxs-lookup"><span data-stu-id="d59fb-266">All content controls can be changed to rich text or building block gallery type content controls because these types allow arbitrary content.</span></span>  <span data-ttu-id="d59fb-267">对于其他类型，如果内容类型是有效的，您想要更改，然后更改类型被允许。</span><span class="sxs-lookup"><span data-stu-id="d59fb-267">For other types, if the content is valid for the type that you want to change to, then changing the type is allowed.</span></span>  <span data-ttu-id="d59fb-268">否则，将拒绝该更改，从而导致运行时错误。</span><span class="sxs-lookup"><span data-stu-id="d59fb-268">Otherwise, the change is rejected, resulting in a run-time error.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Ungroup">
@@ -1983,24 +1205,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-222">从文档中删除一个组内容控件，以便其子内容控件不再嵌套，并可以自由地进行编辑。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-222">Removes a group content control from a document so that its child content controls are no  longer nested  and can be freely edited.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="a9851-223">
-            <para>此方法将失败，如果您运行的类型不是控件上<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />。</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-223">
-              <para>This method fails if you run it on a control that is not of type <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="d59fb-269">从文档中删除一个组内容控件，以便它的子内容控件不再嵌套，并且可以自由地进行编辑。</span><span class="sxs-lookup"><span data-stu-id="d59fb-269">Removes a group content control from a document so that its child content controls are no  longer nested  and can be freely edited.</span></span></summary>
+        <remarks><para><span data-ttu-id="d59fb-270">如果在类型<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />不为的控件上运行此方法, 则此方法将失败。</span><span class="sxs-lookup"><span data-stu-id="d59fb-270">This method fails if you run it on a control that is not of type <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XMLMapping">
@@ -2026,19 +1233,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLMapping</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="a9851-224">返回内容控件的映射到数据存储的文档中的 XML 数据。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-224">Returns the mapping of a content control to XML data in the data store of a  document.</span>
-          </span>
-          <span data-ttu-id="a9851-225">只读。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="a9851-225">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XMLMapping" />
-        </value>
+        <summary><span data-ttu-id="d59fb-271">返回一个内容控件到文档数据存储区中的 XML 数据的映射。</span><span class="sxs-lookup"><span data-stu-id="d59fb-271">Returns the mapping of a content control to XML data in the data store of a  document.</span></span> <span data-ttu-id="d59fb-272">只读。</span><span class="sxs-lookup"><span data-stu-id="d59fb-272">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XMLMapping" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
