@@ -1,13 +1,5 @@
 <Type Name="ChartGroups" FullName="Microsoft.Office.Interop.Word.ChartGroups">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c1eae1ad84eba37ae4a3a9946acbcb5c23a1752c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666429" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8bebc47132f81850e7ac6d28b26efb7bbad92e07" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142248" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartGroups implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartGroups" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartGroups&#xA;Implements IEnumerable" />
@@ -31,12 +23,10 @@
   </Attributes>
   <Docs>
     <summary>代表图表中用同一格式绘制的一个或多个系列。</summary>
-    <remarks>
-      <para>A<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合是所有集合<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />指定图表中的对象。 图表包含一个或多个图表组，每个图表组包含一个或多个数据系列，以及每个数据系列包含一个或多个点。例如，单个图表可能包含折线图图表组，其中包含与折线图格式，绘制的所有系列和条形图图表组，其中都包含与条形图格式绘制的所有系列。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Chart.ChartGroups(System.Object)" />属性返回<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合。</para>
-      <para>使用<b>ChartGroups</b>(<paramref name="index" />)，其中<paramref name="Index" />是图表组的索引号，若要返回单个<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象。</para>
-      <para />
-    </remarks>
+    <remarks><para><see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合是指定图表中所有<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象的集合。  一张图表包含一个或多个图表组，每个图表组包含一个或多个系列，每个数据系列包含一个或多个点。 例如，单张图表可能既包含折线图图表组，其中包含所有用折线图格式，绘制的数据系列也条形图图表组，其中包含所有用条形图格式绘制的数据系列。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Chart.ChartGroups(System.Object)" />属性返回<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合。 </para>
+      <para>使用<b>ChartGroups</b>(<paramref name="index" />), 其中<paramref name="Index" /> , 是图表组的索引号, 返回单个<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象。 </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,10 +52,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,10 +80,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>值，该值代表集合中对象的数目。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回一个<b>Integer</b>类型的值, 该值代表集合中对象的数目。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,11 +108,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位<b>整数</b>，它指示在其中创建指定的对象的应用程序。 只读</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>如果对象在 Microsoft Word 中创建的<para>， <b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD"。也可以由常量表示此值<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。</para><para>主要设计该属性是用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <summary>返回一个32位整数, 该<b>整数</b>表示在其中创建指定对象的应用程序。 只读</summary>
+        <value><b>整数</b></value>
+        <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。 此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。</para>
+          <para>此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -187,11 +173,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需<b>对象</b>指定对象在集合中的序号位置。</param>
+        <param name="Index">必需的<b>对象</b>指定对象在集合中的序号位置。</param>
         <summary>从集合中返回指定的项。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,9 +203,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回指定对象的父级。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

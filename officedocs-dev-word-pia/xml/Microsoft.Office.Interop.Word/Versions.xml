@@ -1,13 +1,5 @@
 <Type Name="Versions" FullName="Microsoft.Office.Interop.Word.Versions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b695f096473801bedfdf026b8a3b1f096e8b7122" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666181" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Versions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="77d68bb41e562599683947b60a2a34bd29554998" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143726" /></Metadata><TypeSignature Language="C#" Value="public interface Versions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Versions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Versions" />
   <TypeSignature Language="VB.NET" Value="Public Interface Versions&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.Version" />代表文档的所有版本的对象。 对应于版本对话框 （文件菜单） 中列出的项目。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.Versions" />属性可返回<b>版本</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Versions.Save(System.Object@)" />方法将项目添加到<b>版本</b>集合。</para>
-      <para>使用<b>版本</b>(<paramref name="index" />)，其中<paramref name="index" />是返回单个<b>Version</b>对象的索引号。索引号代表版本的<b>版本</b>集合中的位置。添加到<b>版本</b>集合中的第一个版本是索引号 1。</para>
-      <para />
-    </remarks>
+    <summary>表示文档的<see cref="T:Microsoft.Office.Interop.Word.Version" />所有版本的对象的集合。 对应于 "版本" 对话框 ("文件" 菜单) 中列出的项目。</summary>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.Versions" />属性返回<b>版本</b>集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Versions.Save(System.Object@)" />方法将项添加到<b>版本</b>集合中。</para>
+      <para>使用<b>版本</b>(<paramref name="index" />) (其中<paramref name="index" />是索引号) 可返回单个<b>版本</b>对象。 索引号代表版本的 <b>版本</b> 集合中的位置。 添加到 <b>版本</b> 集合中的第一个版本是索引号为 1。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,20 +85,17 @@
       <Docs>
         <summary>返回或设置用于自动保存文档版本的选项的状态。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdAutoVersions" />可以是下列<b>WdAutoVersions</b>常量之一: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdAutoVersions" />可以是下列<b>WdAutoVersions</b>常量之一： </para>
-          <para>
-            <b>wdAutoVersionOff </b>
+            <b>wdAutoVersionOff</b>
           </para>
           <para>
             <b>wdAutoVersionOnClose</b>
           </para>
           <para>
-            <b>注意</b>
-            <b>AutoVersion</b>属性设置为<b>wdAutoVersionOnClose</b>时，文档版本是关闭文档时自动保存。</para>
-          <para />
-        </remarks>
+            <b>注释</b> 当<b>AutoVersion</b>属性设置为<b>wdAutoVersionOnClose</b>时, 文档版本会在文档关闭时自动保存。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -134,7 +121,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -164,9 +151,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -227,7 +214,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">一个<b>整数</b>，指示的单个对象的序号位置。</param>
+        <param name="Index">一个指示单个对象的序号位置的<b>整数</b>。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -283,8 +270,8 @@
         <Parameter Name="Comment" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Comment">可选的<b>对象</b>。</param>
-        <summary>使用注释保存指定的文档的版本。</summary>
+        <param name="Comment">可选<b>对象</b>。</param>
+        <summary>使用注释保存指定文档的版本。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

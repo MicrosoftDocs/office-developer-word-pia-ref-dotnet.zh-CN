@@ -1,13 +1,5 @@
 <Type Name="Page" FullName="Microsoft.Office.Interop.Word.Page">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="89b8ef148f01e9d3f0c12f2806f50476efc1f370" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666471" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Page" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8d472e16e6aba91d640b12e000710035de65e0ab" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144237" /></Metadata><TypeSignature Language="C#" Value="public interface Page" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Page" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Page" />
   <TypeSignature Language="VB.NET" Value="Public Interface Page" />
@@ -27,13 +19,10 @@
   </Attributes>
   <Docs>
     <summary>代表文档中的页面。使用 <b>Page</b> 对象及相关的方法和属性以编程方式定义文档的页面布局。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Pages.Item(System.Int32)" />方法，以访问文档中的特定页面。</para>
-      <para>若要访问页码，请使用<see cref="P:Microsoft.Office.Interop.Word.Range.Information(Microsoft.Office.Interop.Word.WdInformation)" />属性<see cref="T:Microsoft.Office.Interop.Word.Range" />或<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象，或<see cref="P:Microsoft.Office.Interop.Word.Break.PageIndex" />属性<see cref="T:Microsoft.Office.Interop.Word.Break" />属于对象<see cref="T:Microsoft.Office.Interop.Word.Breaks" />指定的<b>Page</b>对象的集合。</para>
-      <para>
-        <see cref="P:Microsoft.Office.Interop.Word.Page.Top" />和<see cref="P:Microsoft.Office.Interop.Word.Page.Left" /><b>Page</b>对象的属性始终返回 0 （零），该值指示页面的左上的角。<see cref="P:Microsoft.Office.Interop.Word.Page.Height" />和<see cref="P:Microsoft.Office.Interop.Word.Page.Width" />属性返回的高度和宽度，以磅为单位 （72 磅 = 1 英寸） 的页面设置对话框中或通过指定的纸张大小<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />对象。例如，对于纵向模式 8-1/2 通过 11 英寸页面， <b>Height</b>属性返回 792 和<b>Width</b>属性返回 612。所有四个属性都是只读的。</para>
-      <para />
-    </remarks>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Pages.Item(System.Int32)" />方法可访问文档中的特定页面。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.Range.Information(Microsoft.Office.Interop.Word.WdInformation)" />若要访问页码, 请使用<see cref="T:Microsoft.Office.Interop.Word.Range" />或<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象的属性, 或属于指定<b>page</b>对象<see cref="T:Microsoft.Office.Interop.Word.Breaks" />的集合<see cref="T:Microsoft.Office.Interop.Word.Break" />的对象的<see cref="P:Microsoft.Office.Interop.Word.Break.PageIndex" />属性。</para>
+      <para>Page <see cref="P:Microsoft.Office.Interop.Word.Page.Top" />对象<see cref="P:Microsoft.Office.Interop.Word.Page.Left" />的和属性<b></b>始终返回 0 (零), 指示页面的左上角。 和属性返回在页面设置对话框中或通过<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />对象指定的纸张大小的高度和宽度, 以磅为单位 (72 磅 = 1 英寸)。 <see cref="P:Microsoft.Office.Interop.Word.Page.Width" /> <see cref="P:Microsoft.Office.Interop.Word.Page.Height" /> 例如，对于 8-1/2 × 11 英寸页面处于纵向模式， <b>Height</b> 属性返回 792 和 <b>宽度</b> 属性返回 612。 所有四个属性都是只读的。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,12 +76,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Breaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Breaks" />代表页面上的分页符的集合。 <b>分页符</b> 的集合包括页符、 分栏符和分节符。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Breaks" />集合, 该集合代表页面上的分页符。 <b>分页符</b> 的集合包括页符、 分栏符和分节符。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<b>Breaks</b>集合及相关的对象和属性，以编程方式定义文档中的页面布局。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用 <b>Breaks</b> 集合及相关的对象和属性可通过编程方式定义文档的页面布局。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -120,9 +107,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnhMetaFileBits">
@@ -148,15 +135,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个代表文本的一页的显示方式的图片表示的<b>对象</b>。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word.Page.EnhMetaFileBits" />属性返回一个字节，可以与 Microsoft Windows 32 应用程序编程接口从 Microsoft Visual Basic 或 Microsoft c + + 开发环境中使用数组。</para>
-          <para />
-        </remarks>
+        <summary>返回一个<b>对象</b>, 表示文本页显示方式的图片表示形式。 只读。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>该<see cref="P:Microsoft.Office.Interop.Word.Page.EnhMetaFileBits" />属性返回一个字节数组, 可与 Microsoft Visual Basic 或 Microsoft c + + 开发环境中的 microsoft Windows 32 应用程序编程接口一起使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -182,13 +164,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>Height</b>属性返回的高度，以磅为单位 （72 磅 = 1 英寸） 的页面设置对话框中或通过指定的纸张大小<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />对象。</summary>
+        <summary><b>Height</b>属性返回在页面设置对话框中或通过<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />对象指定的纸张大小的高度, 以磅为单位 (72 磅 = 1 英寸)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>例如，对于纵向模式 8-1/2 通过 11 英寸页面， <b>Height</b>属性返回 792 和<b>Width</b>属性返回 612。</para>
-          <para />
-        </remarks>
+        <remarks><para>例如，对于 8-1/2 × 11 英寸页面处于纵向模式， <b>Height</b> 属性返回 792 和 <b>宽度</b> 属性返回 612。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -214,7 +193,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 0 （零），该值指示页面的左上的角。</summary>
+        <summary>返回 0 (零), 指示页面的左上角。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -270,12 +249,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Rectangles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Rectangles" />集合，它代表文本或图形页面上的文档部分。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Rectangles" />集合, 该集合代表文档中页面中的文本或图形的部分。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>用于以编程方式定义文档中的页面布局中使用<b>Rectangles</b>集合及相关的对象和属性。矩形对应的文本或文档中页面上的图形部分。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用 <b>矩形</b> 集合及相关的对象和属性对于以编程方式定义文档的页面布局。矩形对应的文本或图形的文档中的页面部分。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveAsPNG">
@@ -332,7 +309,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 0 （零），该值指示页面的左上的角。</summary>
+        <summary>返回 0 (零), 指示页面的左上角。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -360,12 +337,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回以磅为单位 （72 磅 = 1 英寸） 宽度页面设置对话框中或通过指定的纸张大小的<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />对象。</summary>
+        <summary>返回在页面设置对话框中或通过<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />对象指定的纸张大小的宽度, 以磅为单位 (72 磅 = 1 英寸)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>例如，对于纵向模式 8-1/2 通过 11 英寸页面， <b>Height</b>属性返回 792 和<b>Width</b>属性返回 612。</para>
-          <para />
-        </remarks>
+        <remarks><para>例如，对于 8-1/2 × 11 英寸页面处于纵向模式， <b>Height</b> 属性返回 792 和 <b>宽度</b> 属性返回 612。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

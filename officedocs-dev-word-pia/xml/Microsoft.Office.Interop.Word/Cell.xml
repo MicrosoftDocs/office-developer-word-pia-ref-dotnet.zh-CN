@@ -1,13 +1,5 @@
 <Type Name="Cell" FullName="Microsoft.Office.Interop.Word.Cell">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8ad0130c14870aad4b806b0703212d56fec37a14" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665915" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Cell" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5c545e74b89b7677ca1439554a6927ae25fd8a91" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142367" /></Metadata><TypeSignature Language="C#" Value="public interface Cell" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Cell" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Cell" />
   <TypeSignature Language="VB.NET" Value="Public Interface Cell" />
@@ -27,15 +19,12 @@
   </Attributes>
   <Docs>
     <summary>代表单个表格单元格。</summary>
-    <remarks>
-      <para>
-        <b>Cell</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.Cells" />集合。<b>Cells</b>集合代表指定对象中的所有单元格。</para>
-      <para>使用<b>单元格</b>(<paramref name="row" />， <paramref name="column" />)，其中<paramref name="row" />的行号和<paramref name="column" />是列号，或者<b>单元格</b>(<paramref name="index" />)，其中<paramref name="index" />是返回<b>Cell</b>对象的索引号。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" />方法将<b>Cell</b>对象添加到<b>Cells</b>集合。您还可以使用<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertCells(System.Object@)" />方法<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象来插入新单元格。</para>
-      <para>使用<b>Add</b>方法与<see cref="T:Microsoft.Office.Interop.Word.Rows" />或<see cref="T:Microsoft.Office.Interop.Word.Columns" />集合添加行或列单元格。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" />属性与<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象返回的当前行和列号。</para>
-      <para />
-    </remarks>
+    <remarks><para><b>单元格</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Cells" />集合的一个成员。 <b>单元格</b> 集合表示在指定的对象中的所有单元格。</para>
+      <para>使用<b>单元格</b><paramref name="row" />( <paramref name="column" />,), <paramref name="row" />其中是行号, <paramref name="column" />是列号或<b>单元格</b>(<paramref name="index" />, 其中<paramref name="index" />是索引号), 用于返回<b>Cell</b>对象。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" />方法将<b>Cell</b>对象添加到<b>单元格</b>集合。 您还可以使用<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertCells(System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.Selection" />对象的方法插入新单元格。</para>
+      <para>使用<see cref="T:Microsoft.Office.Interop.Word.Rows" />或<see cref="T:Microsoft.Office.Interop.Word.Columns" />集合的<b>add</b>方法可添加行或列的单元格。</para>
+      <para>将<see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" />属性与<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象一起使用可返回当前行和列的编号。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />值，该值代表指定对象的创建者的对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" /> object 类型的对象, 该对象代表指定对象的创建者。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,10 +77,8 @@
       <Parameters />
       <Docs>
         <summary>插入一个 = (Formula) 域，以计算和显示表达式指定的位于表格某一单元格上方或左侧的各单元格的数值之和。</summary>
-        <remarks>
-          <para>有关 Microsoft Word 如何确定添加哪些值的信息，请参阅<see cref="M:Microsoft.Office.Interop.Word.Cell.Formula(System.Object@,System.Object@)" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>有关 Microsoft Word 如何确定要添加哪些值的信息, 请参阅<see cref="M:Microsoft.Office.Interop.Word.Cell.Formula(System.Object@,System.Object@)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -120,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合，代表指定对象的所有边框。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合, 该集合代表指定对象的所有边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,12 +138,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 （以磅为单位） 的空间量下方单元格的内容添加。</summary>
+        <summary>返回或设置在单元格内容的下方添加的间距 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>单个单元格的<b>BottomPadding</b>属性的设置将覆盖的设置<see cref="P:Microsoft.Office.Interop.Word.Table.BottomPadding" />整个表格的属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>单个单元格的<b>BottomPadding</b>属性设置将覆盖整个表的<see cref="P:Microsoft.Office.Interop.Word.Table.BottomPadding" />属性设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -182,7 +167,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Column" />对象，表示包含指定单元格的表格列。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Column" />对象, 表示包含指定单元格的表格列。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -210,7 +195,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，指示包含指定单元格的表格列数。</summary>
+        <summary>返回一个值, 该值指示包含指定单元格的表格列的编号。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -238,11 +223,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，指示在其中创建指定的对象的应用程序。</summary>
+        <summary>返回一个值, 该值指示在其中创建指定对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -267,8 +252,8 @@
         <Parameter Name="ShiftCells" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ShiftCells">剩余单元格移动的方向。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdDeleteCells" />常量。 如果省略，最后删除的单元格的右侧单元格向左移动。</param>
-        <summary>删除表格单元格并可选择控制如何移动剩余的单元格。</summary>
+        <param name="ShiftCells">剩余单元格移动的方向。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdDeleteCells" />常量。 如果省略，最后删除的单元格的右侧单元格向左移动。</param>
+        <summary>删除表格单元格并根据需要控制剩余单元格的移动方式。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,12 +283,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示是否 Microsoft Word 直观地减少了一个单元格中键入，以便适合中为柱形宽度的文本的大小。</summary>
+        <summary>返回或设置一个值, 该值指示 Microsoft Word 是否以可视方式减小键入到单元格中的文本的大小, 使其适应列宽。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果<b>FitText</b>属性设置为<b>True</b>时，文本的字体大小不变，但字符的可视宽度调整以适应单元格的所有键入的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 <b>fittext</b> 设置为 <b>True</b> 时，文本的字体大小不变，但字符的可视宽度调整以适应单元格键入的所有文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Formula">
@@ -332,15 +315,13 @@
         <param name="Formula">希望 = (Formula) 域求值的数学公式。 可以使用与电子表格类似的方式引用表格中的单元格。 例如，"=SUM(A4:C4)"指定第四行中的前三个值。</param>
         <param name="NumFormat">= (Formula) 域的结果的格式。</param>
         <summary>将包含指定公式的 = (Formula) 域插入到单元格中。</summary>
-        <remarks>
-          <para>
-            <b>公式</b>是可选的只要至少一个包含单元格上方或左侧的插入点所在的单元格的值。如果插入点上方的单元格包含值，则插入的字段是 {= sum （above）};如果单元格左侧的插入点，包含值是 sum 插入域。如果插入点上方的单元格和插入点左边的单元格都不包含值，Microsoft Word 将使用以下规则来确定要插入的<b>SUM</b>函数：</para>
-          <para>如果单元格上方插入点包含一个值，则 Word 插入 {= sum （above）}。</para>
-          <para>如果立即上方插入点的单元格不包含值，并且立即左侧的单元格，则 Word 的插入 sum。</para>
-          <para>如果两个相邻单元格包含一个值，则 Word 插入 {= sum （above）}。</para>
-          <para>域的结果如果您不指定<b>公式</b>和所有上方和插入点左边的单元格为空，会出错。</para>
-          <para />
-        </remarks>
+        <remarks><para>只要至少一个包含单元格的上方或左侧插入点所在的单元格的值，则 
+            <b>formula</b> 是可选的。 如果插入点上方的单元格不包含值，插入的字段是 {= SUM(ABOVE)};如果单元格左侧插入的点，包含值时，插入的字段是 sum。 如果插入点上方的单元格和插入点左侧的单元格都包含值, 则 Microsoft Word 将使用以下规则来确定要插入的<b>SUM</b>函数:</para>
+          <para>如果紧邻插入点上面的单元格中含有数值，则 Word 插入 {=SUM(ABOVE)}。</para>
+          <para>如果紧邻插入点上面的单元格中不包含数值，而紧邻插入点左面的单元格中含有数值，则 Word 插入 {=SUM(LEFT)}。</para>
+          <para>如果紧邻单元格中均不包含数值，则 Word 插入 {=SUM(ABOVE)}。</para>
+          <para>如果未指定 <b>Formula</b> ，而且上方和左侧插入点的所有单元格均为空，则域的结果是错误的。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -369,12 +350,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定对象的高度 (以磅为单位除非另有说明，否则)。</summary>
+        <summary>返回或设置指定对象的高度 (以磅为单位, 除非另有说明)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" />指定行的属性为<b>wdRowHeightAuto</b>，则<b>Height</b>返回<b>wdUndefined</b>;设置<b>Height</b>属性会将<b>HeightRule</b>设置为<b>wdRowHeightAtLeast</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定<see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" />行的属性为<b>wdRowHeightAuto</b>, 则<b>Height</b>返回<b>wdUndefined</b>;设置<b>Height</b>属性会将<b>HeightRule</b>设置为<b>wdRowHeightAtLeast</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightRule">
@@ -403,12 +382,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRowHeightRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用于确定指定单元格的高度的规则。</summary>
+        <summary>返回或设置用于确定指定单元格高度的规则。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>设置的<b>HeightRule</b>属性<see cref="T:Microsoft.Office.Interop.Word.Cell" />对象会自动设置整行的属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>设置<see cref="T:Microsoft.Office.Interop.Word.Cell" />对象的<b>HeightRule</b>属性将自动设置整行的属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -437,7 +414,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用于确定指定单元格的高度的规则。</summary>
+        <summary>返回或设置用于确定指定单元格高度的规则。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -468,12 +445,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置将添加到左侧的单个单元格的内容的间距 （以磅为单位）。</summary>
+        <summary>返回或设置要添加到单个单元格的内容左侧的间距 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>设置<see cref="P:Microsoft.Office.Interop.Word.Cell.LeftPadding" />的单个单元格的属性重写的设置<see cref="P:Microsoft.Office.Interop.Word.Table.LeftPadding" />整个表格的属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>单个单元格的<see cref="P:Microsoft.Office.Interop.Word.Cell.LeftPadding" />属性设置将覆盖整个表的<see cref="P:Microsoft.Office.Interop.Word.Table.LeftPadding" />属性设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -501,10 +476,8 @@
       <Docs>
         <param name="MergeTo">要合并的单元格。</param>
         <summary>将选定的单元格与另一个单元格合并。</summary>
-        <remarks>
-          <para>调用此属性的结果是单个单元格。</para>
-          <para />
-        </remarks>
+        <remarks><para>调用此属性的结果是一个表格单元格。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NestingLevel">
@@ -532,10 +505,8 @@
       <Docs>
         <summary>返回指定单元格的嵌套层。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>最外层表的嵌套级别为 1。每个连续嵌套表格的嵌套级别是高于上表之一。</para>
-          <para />
-        </remarks>
+        <remarks><para>最外围表格的嵌套层为 1。 每一个相连嵌套表格的嵌套层比其前面表格的嵌套层高 1。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -679,7 +650,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Cell</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回集合中上一个对象。</summary>
+        <summary>返回集合中的上一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -707,7 +678,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定对象中包含的文档部分。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -738,12 +709,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 （以磅为单位） 的空间量添加右侧的单元格的内容。</summary>
+        <summary>返回或设置要添加到单元格内容右侧的间距 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>单个单元格的<b>RightPadding</b>属性的设置将覆盖的设置<see cref="P:Microsoft.Office.Interop.Word.Table.RightPadding" />整个表格的属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>单个单元格的<b>RightPadding</b>属性设置将覆盖整个表的<see cref="P:Microsoft.Office.Interop.Word.Table.RightPadding" />属性设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -769,7 +738,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Row</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Row" />对象，表示包含指定单元格的行。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Row" /> object 类型的对象, 该对象代表包含指定单元格的行。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -824,10 +793,8 @@
       <Parameters />
       <Docs>
         <summary>选择指定的对象。</summary>
-        <remarks>
-          <para>使用此方法后，使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性以使用选定项。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用此方法后, 请使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性来处理选定的项。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHeight">
@@ -855,12 +822,10 @@
       </Parameters>
       <Docs>
         <param name="RowHeight">行的高度，以磅为单位。</param>
-        <param name="HeightRule">用于确定指定单元格的高度的规则。</param>
+        <param name="HeightRule">用于确定指定单元格高度的规则。</param>
         <summary>设置表格单元格的高度。</summary>
-        <remarks>
-          <para>设置的<b>SetHeight</b>属性<see cref="T:Microsoft.Office.Interop.Word.Cell" />对象会自动设置整行的属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>设置<see cref="T:Microsoft.Office.Interop.Word.Cell" />对象的<b>SetHeight</b>属性将自动设置整行的属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetWidth">
@@ -887,14 +852,11 @@
         <Parameter Name="RulerStyle" Type="Microsoft.Office.Interop.Word.WdRulerStyle" />
       </Parameters>
       <Docs>
-        <param name="ColumnWidth">指定列，以磅为单位的宽度。</param>
-        <param name="RulerStyle">控件的方式 Microsoft Word 调整单元格宽度。</param>
-        <summary>设置表格单元格的宽度。</summary>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />上述行为适用于左对齐的表。中心和右对齐表格的<b>WdRulerStyle</b>行为可以是意外;在这些情况下，<see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" />方法应谨慎。</para>
-          <para />
-        </remarks>
+        <param name="ColumnWidth">指定列的宽度 (以磅为单位)。</param>
+        <param name="RulerStyle">控制 Microsoft Word 调整单元格宽度的方式。</param>
+        <summary>设置表格中的单元格的宽度。</summary>
+        <remarks><para>以上<see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />所述的行为适用于左对齐的表格。 中间和右对齐表的<b>WdRulerStyle</b>行为可能是意外的;在这些情况下, <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" />应谨慎使用此方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -920,7 +882,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象的引用指定对象的底纹格式。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象, 该对象代表指定对象的底纹格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -948,8 +910,8 @@
         <Parameter Name="NumColumns" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumRows">该单元格是拆分成的行数。</param>
-        <param name="NumColumns">该单元格是拆分成的列数。</param>
+        <param name="NumRows">单元格要拆分成的行数。</param>
+        <param name="NumColumns">单元格要拆分成的列数。</param>
         <summary>将一个表格单元格拆分为多个。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -977,7 +939,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Tables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Tables" />值，该值代表指定单元格中的所有表的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Tables" />集合, 该集合代表指定单元格中的所有表。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1010,10 +972,8 @@
       <Docs>
         <summary>返回或设置单个单元格或表格中的所有单元格的内容上方要增加的间距 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>单个单元格的<b>TopPadding</b>属性设置将覆盖的设置<see cref="P:Microsoft.Office.Interop.Word.Table.TopPadding" />整个表格的属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>单个单元格的<b>TopPadding</b>属性设置将覆盖整个表的<see cref="P:Microsoft.Office.Interop.Word.Table.TopPadding" />属性设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalAlignment">
@@ -1042,7 +1002,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCellVerticalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置表的单元格中的文本的垂直对齐方式。</summary>
+        <summary>返回或设置表格的单元格中文本的垂直对齐方式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1073,7 +1033,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定对象的宽度，以磅为单位。</summary>
+        <summary>返回或设置指定对象的宽度 (以磅为单位)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1104,7 +1064,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示是否 Microsoft Word 为多行文本的换行和加长单元格，以便单元格宽度保持不变。</summary>
+        <summary>返回或设置一个值, 该值指示是否 Microsoft Word 将文本换行并加长单元格, 以便单元格的宽度保持不变。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

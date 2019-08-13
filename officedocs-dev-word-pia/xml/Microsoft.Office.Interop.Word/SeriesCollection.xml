@@ -1,13 +1,5 @@
 <Type Name="SeriesCollection" FullName="Microsoft.Office.Interop.Word.SeriesCollection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fdd1aa630560e78742fe57a7803702308e5da8a7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665680" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f6dd45f5fe33b8e5a1ece1fafb9e3ad6bbeab62c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144006" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesCollection implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SeriesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface SeriesCollection&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Word.Series" />指定的图表或图表组中的对象。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Chart.SeriesCollection(System.Object)" />方法，以返回<see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.SeriesCollection.Extend(System.Object,System.Object,System.Object)" />方法，以扩展现有系列。</para>
-      <para />
-    </remarks>
+    <summary>指定的图表或图表<see cref="T:Microsoft.Office.Interop.Word.Series" />组中的所有对象的集合。</summary>
+    <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.Chart.SeriesCollection(System.Object)" />方法返回<see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.SeriesCollection.Extend(System.Object,System.Object,System.Object)" />方法可扩展现有系列。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -96,19 +86,15 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">作为区域的字符串表示形式的新数据，该区域包含在图表的 ChartData 对象的 Workbook 属性中。</param>
-        <param name="Rowcol">指定新值位于行或列指定的区域。</param>
-        <param name="SeriesLabels">
-          <b>如此</b> 如果第一行或列包含数据系列的名称。 <b>假</b> 如果第一行或列中包含第一个系列的数据点。如果省略此参数，则 Word 会尝试确定内容的第一行或列中的系列名称的位置。 </param>
-        <param name="CategoryLabels">
-          <b>如此</b> 如果第一行或第一列包含分类标签的名称。 <b>假</b> 如果第一行或列中包含第一个系列的数据点。 如果省略此参数，则 Microsoft Word 将尝试确定从第一个行或列的内容类别标签的位置。</param>
-        <param name="Replace">如果<paramref name="CategoryLabels" />是<b>True</b>和<paramref name="Replace" />为<b>True</b>，类别的当前存在的系列指定的类别替换。 如果<paramref name="Replace" />是<b>False</b>，不会替换现有类别。 默认值为 <b>False</b> 。</param>
+        <param name="Source">通过以下方式表示的新数据：包含在图表的 ChartData 对象的 Workbook 属性中的单元格区域的字符串表示形式。</param>
+        <param name="Rowcol">指定新值是否在指定区域的行或列中。</param>
+        <param name="SeriesLabels"><b>如此</b> 如果第一行或列包含数据系列的名称。 <b>假</b> 如果第一行或列中包含第一个系列的数据点。如果省略此参数，则 Word 会尝试确定内容的第一行或列中的系列名称的位置。 </param>
+        <param name="CategoryLabels"><b>如此</b> 如果第一行或第一列包含分类标签的名称。 <b>假</b> 如果第一行或列中包含第一个系列的数据点。 如果省略此参数, Microsoft Word 将尝试确定从第一行或第一列的内容中的分类标签的位置。</param>
+        <param name="Replace">如果<paramref name="CategoryLabels" />为<b>True</b>且<paramref name="Replace" />为<b>true</b>, 则指定的类别将替换系列当前存在的类别。 如果<paramref name="Replace" />为<b>False</b>, 则不会替换现有的类别。 默认值为 <b>False</b>。</param>
         <summary>向集合中添加一个或多个新系列。</summary>
-        <returns>A<see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />对象，它代表新系列。</returns>
-        <remarks>
-          <para>此方法不会实际返回<see cref="T:Microsoft.Office.Interop.Word.Series" />对象在对象浏览器中所述。</para>
-          <para />
-        </remarks>
+        <returns>一个<see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />代表新系列的对象。</returns>
+        <remarks><para>此方法实际上并不返回对象<see cref="T:Microsoft.Office.Interop.Word.Series" />浏览器中所述的对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -134,9 +120,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
-        <value>
-          <b>应用程序</b>（请参见上文）</value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <value><b>应用程序</b>(请参阅上面的)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,10 +148,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>值，代表集合中对象的数目。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回一个<b>Integer</b>值, 它代表集合中对象的数目。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,14 +176,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 <b>Integer</b> 类型，只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Integer</b>。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Extend">
@@ -227,16 +206,13 @@
         <Parameter Name="CategoryLabels" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">新的数据添加到<see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />对象，表示为 A1-样式区域引用。</param>
-        <param name="Rowcol">指定新值位于行或列的给定的范围源。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />常量：<see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlRows" />或<see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlColumns" />。 如果省略此参数，Microsoft Word 将依据选定区域的大小和方向或数组的维度确定值的位置。</param>
-        <param name="CategoryLabels">
-          <b>如此</b> ，则第一行或列包含分类标签的名称。 <b>False</b> ，则第一行或列包含第一个系列的数据点。 如果省略此参数，则 Microsoft Word 将尝试确定从第一个行或列的内容类别标签的位置。</param>
-        <summary>向现有系列集合中添加新的数据点。</summary>
+        <param name="Source">要添加到<see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />对象中的新数据, 表示为 A1 样式的区域引用。</param>
+        <param name="Rowcol">指定新值是位于给定区域源的行中还是列中。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />常量之一: <see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlRows" />或。 <see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlColumns" /> 如果省略该参数，Microsoft Word 将尝试依据选定区域的大小和方向或数组的维度确定数值的位置。</param>
+        <param name="CategoryLabels"><b>如此</b> ，则第一行或列包含分类标签的名称。 <b>False</b> ，则第一行或列包含第一个系列的数据点。 如果省略此参数, Microsoft Word 将尝试确定从第一行或第一列的内容中的分类标签的位置。</param>
+        <summary>向已存在的系列集合中添加新的数据点。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法对数据透视图无效。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法对数据透视表无效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -325,11 +301,9 @@
       <Parameters />
       <Docs>
         <summary>创建新系列。</summary>
-        <returns>A<see cref="T:Microsoft.Office.Interop.Word.Series" />对象，它代表新系列。</returns>
-        <remarks>
-          <para>此方法对数据透视图无效。</para>
-          <para />
-        </remarks>
+        <returns>一个<see cref="T:Microsoft.Office.Interop.Word.Series" />代表新系列的对象。</returns>
+        <remarks><para>此方法对数据透视图图表无效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -355,10 +329,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父级。只读 <b>对象</b> 。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父级。 只读 <b>对象</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

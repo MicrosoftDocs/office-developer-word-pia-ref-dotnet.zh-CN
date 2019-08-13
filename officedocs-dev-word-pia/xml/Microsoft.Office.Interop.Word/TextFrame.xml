@@ -1,13 +1,5 @@
 <Type Name="TextFrame" FullName="Microsoft.Office.Interop.Word.TextFrame">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="43a95d54648a4f84b9738139489698d0d40d0080" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665706" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextFrame" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9dc205fa2eb96a394cd184a865635344805cf9be" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143817" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextFrame" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextFrame" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextFrame" />
@@ -26,13 +18,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表文本框架中的<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象。 包含文本框架，以及控制边距和文本框架方向的属性中的文本。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" />属性可返回<b>TextFrame</b>对象的形状。<see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" />属性返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示在指定的文本框架的文本范围。</para>
+    <summary>代表<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象中的文本框架。 包含文本框架中的文本以及控制文本框架的边距和方向的属性。</summary>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" />属性可返回形状的<b>TextFrame</b>对象。 该<see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" />属性返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示指定的文本框架中的文本范围。</para>
       <para>
-        <b>注意</b>某些形状不支持附加文字 （行、 任意多边形、 图片和 OLE 对象，例如）。如果您试图返回或设置用于控制这些对象的文本框架中的文本属性，将发生错误。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.TextFrame.HasText" />属性可确定文本框架是否包含文本。</para>可以从一起链接
-      <para>文本框架，以便文本从一个形状的文本框架流动到另一个形状的文本框架。使用<see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" />和<see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" />链接文字框架的属性。</para><para>使用<see cref="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" />属性返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象代表之间流动整篇文章的链接文本框架。</para><para /></remarks>
+        <b>注释</b> 某些形状不支持附加文本 (例如, 线条、任意多边形、图片和 OLE 对象)。 如果试图返回或设置用于控制这些对象的文本框架中文本的属性，那么将发生错误。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.TextFrame.HasText" />属性来确定文本框架是否包含文本。</para>
+      <para>文本框架可以链接在一起以使文本从一个形状的文字框架排入另一个形状的文字框架。 使用<see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" />和<see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" />属性链接文本框架。</para>
+      <para>使用该<see cref="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" />属性返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 该对象表示在链接的文本框架之间流动的整篇文章。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +82,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>整数</b>，表示是否自动调整文本框的大小。</summary>
+        <summary>返回或设置一个<b>Integer</b>类型的值, 该值表示是否自动调整文本框架的大小。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,10 +109,8 @@
       <Parameters />
       <Docs>
         <summary>在链接存在的情况下，断开指定文本框架的前向链接。</summary>
-        <remarks>
-          <para>中间链带有链接的文本框架的形状的形状应用此方法将中断的链，离开两套链接的形状。所有文本，但是，将保留在链接的形状的第一个系列。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果将此方法应用于图形，且该图形位于一串与图文框相链接的图形的中间位置，则会使链接断开，而形成两组链接的图形。但所有文本都将保留在第一组链接的图形中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -145,13 +136,10 @@
         <ReturnType>Microsoft.Office.Core.TextColumn2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Core.TextColumn2" />对象，表示指定的文本框架的列。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.TextColumn2" />对象，表示指定的文本框架的列。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取表示<see cref="T:Microsoft.Office.Core.TextColumn2" />指定的文本框架的列的对象。</summary>
+        <value>代表<see cref="T:Microsoft.Office.Core.TextColumn2" />指定文本框架的列的对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainingRange">
@@ -177,7 +165,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示一系列形状与指定的文本框架所属的链接的文本框架中的整个篇文章。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示包含指定的文本框架所属的一系列形状中的整篇文章。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,9 +195,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteText">
@@ -260,8 +248,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果指定的形状有与其关联的文本。</summary>
+        <summary>如果指定的图形有相关的文字，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -292,12 +279,10 @@
         <ReturnType>Microsoft.Office.Core.MsoHorizontalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置文本框架中的文本的水平对齐方式。</summary>
-        <value>文本框中文本的水平对齐。</value>
-        <remarks>
-          <para>读/写<see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" />。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置文本框架中文本的水平对齐方式。</summary>
+        <value>文本框架中文本的水平对齐方式。</value>
+        <remarks><para>读/写<see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" />。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarginBottom">
@@ -481,12 +466,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置是否旋转该形状时，应不旋转文本框架中的文本。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.MsoTriState" />对象。</value>
-        <remarks>
-          <para>读/写<see cref="T:Microsoft.Office.Core.MsoTriState" />。可以使用的<b>MsoTriState</b>常量<b>msoFalse</b>和<b>msoTrue</b>来设置该属性。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置在旋转形状时, 文本框架中的文本是否不旋转。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /> 对象。</value>
+        <remarks><para>读/写<see cref="T:Microsoft.Office.Core.MsoTriState" />。 <b>MsoTriState</b> 常量 <b>msoFalse</b> ， <b>则值为 msoTrue</b> 可以用于设置此属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -517,34 +500,32 @@
       <Docs>
         <summary>返回或设置图文框内的文字方向。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />可以是下列<b>MsoTextOrientation</b>常量之一。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />可以是下列<b>MsoTextOrientation</b>常量之一。</para>
-          <para>
-            <b>msoTextOrientationDownward </b>
+            <b>msoTextOrientationDownward</b>
           </para>
           <para>
-            <b>不同语言支持</b>
+            <b>msoTextOrientationHorizontal</b>
           </para>
           <para>
-            <b>msoTextOrientationHorizontalRotatedFarEast </b>
+            <b>msoTextOrientationHorizontalRotatedFarEast</b>
           </para>
           <para>
-            <b>msoTextOrientationMixed </b>
+            <b>msoTextOrientationMixed</b>
           </para>
           <para>
             <b>msoTextOrientationUpward</b>
           </para>
           <para>
-            <b>常量</b>
+            <b>msoTextOrientationVertical</b>
           </para>
           <para>
-            <b>方向</b>
+            <b>msoTextOrientationVerticalFarEast</b>
           </para>
-          <para>上面列出的常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para>您可以设置文本框架或 range 或 selection 恰好文本框架内的方向。有关文本框架和文本框之间的差异的信息，请参阅<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />对象。</para>
-          <para />
-        </remarks>
+          <para>由于您选择或安装的语言支持不同（例如美国英语），上述部分常量可能无法使用。</para>
+          <para>您可以设置文本框架或者恰好位于文本框架内的所选内容或区域的方向。 有关文本框架和文本框之间的差异的信息, 请参阅<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Overflowing">
@@ -570,8 +551,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果指定的文字框架中的文字溢出框架中。</summary>
+        <summary><b>如此</b> 如果指定的文字框架中的文字溢出框架中。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -599,7 +579,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，它代表文本框架的父形状。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象, 表示文本框架的父形状。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -632,8 +612,7 @@
       <Docs>
         <summary>获取或设置指定的文本框架的路径类型。</summary>
         <value>指定的文本框架的路径类型。</value>
-        <remarks>
-          <para>此属性的值可以是以下项之一<see cref="T:Microsoft.Offic.Core.MsoPathType" />常量：</para>
+        <remarks><para>此属性的值可以是下列<see cref="T:Microsoft.Offic.Core.MsoPathType" />常量之一:</para>
           <list type="bullet">
             <item>
               <para>
@@ -666,8 +645,7 @@
               </para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Previous">
@@ -696,7 +674,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextFrame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回集合中上一个对象。</summary>
+        <summary>返回集合中的上一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -724,7 +702,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定的文字框架中的文本。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示指定的文本框架中的文本。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -752,12 +730,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象，其中包含三维效果格式指定的文本框架的属性。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象，其中包含三维效果格式指定的文本框架的属性。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象, 该对象包含指定文本框架的三维效果格式设置属性。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象, 包含指定文本框架的三维效果格式设置属性。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidLinkTarget">
@@ -783,14 +759,11 @@
         <Parameter Name="TargetTextFrame" Type="Microsoft.Office.Interop.Word.TextFrame" />
       </Parameters>
       <Docs>
-        <param name="TargetTextFrame">所需<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />对象。 目标文本框架要链接指定的文本框架。</param>
-        <summary>确定一个形状的文字框架是否可以链接到另一个形状的文字框架。</summary>
+        <param name="TargetTextFrame">必需<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />的对象。 要将指定的文本框架链接到的目标文本框架。</param>
+        <summary>Determines whether the text frame of one shape can be linked to the text frame of another shape.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>TextFrame</b>属性返回<b>True</b> ，如果<paramref name="TargetTextFrame" />是有效目标。将返回<b>False</b> ，如果<paramref name="TargetTextFrame" />已包含文字或已链接，或如果形状不支持附加文字。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果<paramref name="TargetTextFrame" />是有效的目标, 则<b>TextFrame</b>属性返回<b>True</b> 。 如果<paramref name="TargetTextFrame" />已包含文本或已链接, 或者形状不支持附加文本, 则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalAnchor">
@@ -819,10 +792,8 @@
         <ReturnType>Microsoft.Office.Core.MsoVerticalAnchor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>可读</b> 常量，该常量表示形状内的文本的垂直对齐方式。读/写。</summary>
-        <value>
-          <b>MsoVerticalAnchor</b>
-        </value>
+        <summary>返回或设置一个 <b>可读</b> 常量，该常量表示形状内的文本的垂直对齐方式。 读/写。</summary>
+        <value><b>MsoVerticalAnchor</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -852,12 +823,10 @@
         <ReturnType>Microsoft.Office.Core.MsoWarpFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置指定的文本框架 （如何弯曲文本） 的环绕格式。</summary>
-        <value>指定的文本框架弯曲格式 （如何弯曲文本）。</value>
-        <remarks>
-          <para>读/写<see cref="T:Microsoft.Office.Core.MsoWarpFormat" />。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置指定的文本框架的弯曲格式 (文本的变形方式)。</summary>
+        <value>指定文本框架的变形格式 (文本的变形方式)。</value>
+        <remarks><para>读/写<see cref="T:Microsoft.Office.Core.MsoWarpFormat" />。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WordWrap">
@@ -886,15 +855,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果 Microsoft Word 换行的西文单词指定的段落或文字框架中。</summary>
+        <summary>如果 Microsoft Word 在指定段落或文本框架的西文单词中间断字换行，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>WordWrap</b>属性返回<b>wdUndefined</b> ，如果只将某些指定的段落的文本框架设置为<b>True</b> 。</para>
-          <para>这种用法可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果仅某些指定段落或文本框架中的<b>WordWrap</b>属性设置为<b>True</b> , 则该属性返回<b>wdUndefined</b> 。</para>
+          <para>此用法可能对您不可用, 具体取决于您选择或安装的语言支持 (例如, 美国英语)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

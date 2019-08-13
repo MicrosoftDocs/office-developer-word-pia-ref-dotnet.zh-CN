@@ -1,13 +1,5 @@
 <Type Name="TickLabels" FullName="Microsoft.Office.Interop.Word.TickLabels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7b1c2c7fc3292641641494659a356494a0e138bf" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667090" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TickLabels" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0f6662574427978805ce85168409794e1affd85c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143810" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TickLabels" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TickLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface TickLabels" />
@@ -27,14 +19,11 @@
   </Attributes>
   <Docs>
     <summary>代表图表坐标轴上刻度线的刻度线标签。</summary>
-    <remarks>
-      <para>此对象不是一个集合。没有对象表示单个刻度线标签;您必须将所有的刻度线标签作为部门返回</para>
-      <para>的分类轴的刻度线标签文本来自于图表中关联的类别的名称。默认分类轴的刻度线标签文本是数字，用于指示相对于此轴的左端类别的位置。若要更改的未标记的刻度线刻度线标签之间的标记，则必须更改<see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabelSpacing" />属性的分类轴。</para>
-      <para>刻度线标签文本的计算数值轴基于<see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" />， <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScale" />，和<see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScale" />数值轴的属性。若要更改的数值轴的刻度线标签文本，则必须更改这些属性的值。</para>
-      <para />
-    </remarks>
-    <example>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabels" />属性可返回<b>TickLabels</b>对象。下面的示例设置活动文档中的第一个图表的数值轴上刻度线标签的数字格式。</para>
+    <remarks><para>此对象不是集合。没有代表单个刻度线标志的对象；您必须将所有刻度线标志作为一个单位返回。</para>
+      <para>分类轴的刻度线标签文字来自图表中相应分类的名称。 分类轴的默认刻度线标签文字表示该分类相对于该坐标轴最左端偏移量的数字。 若要更改刻度线标签之间的未标记刻度线的数目, 必须更改分类<see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabelSpacing" />轴的属性。</para>
+      <para>数值轴的刻度线标签文本是基于值轴的<see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" />、 <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScale" />和<see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScale" />属性计算得出的。 要更改数值的轴刻度线标签文本，您必须更改这些属性的值。</para>
+      <para> </para></remarks>
+    <example><para>使用<see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabels" />属性返回<b>TickLabels</b>对象。 下面的示例设置活动文档中第一个图表的数值轴上刻度线标志的数字格式。</para>
       <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
 
 
@@ -1059,8 +1048,7 @@
 
 
 
-End With&lt;/span&gt;</code>
-    </example>
+End With&lt;/span&gt;</code></example>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -1117,11 +1105,10 @@ End With&lt;/span&gt;</code>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>本示例显示一条有关创建 myObject 的应用程序。</para>
+        <example><para>本示例显示一条有关创建 myObject 的应用程序的消息。</para>
           <code>&lt;span class="label"&gt;Set myObject = ActiveDocument 
 
 
@@ -1380,8 +1367,7 @@ End With&lt;/span&gt;</code>
 
 If myObject.&lt;/span&gt;
 &lt;i&gt;Application&lt;/i&gt;
-&lt;span class="label"&gt;.Value = "Microsoft Word" Then    MsgBox "This is a Word Application object."Else    MsgBox "This is not a Word Application object."End If&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;.Value = "Microsoft Word" Then    MsgBox "This is a Word Application object."Else    MsgBox "This is not a Word Application object."End If&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="AutoScaleFont">
@@ -1444,12 +1430,10 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。只读的 <b>长</b> 。</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读的 <b>长</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1529,7 +1513,7 @@ If myObject.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />对象，它代表指定对象的字体。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />对象, 表示指定的对象的字体。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1590,12 +1574,10 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置是否为多级坐标轴。  可读写 <b>Boolean</b>。</summary>
+        <summary>设置坐标轴是否为多级。  读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性的默认值为<b>True</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性的默认值为 <b>True</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1654,10 +1636,8 @@ If myObject.&lt;/span&gt;
       <Docs>
         <summary>返回或设置一个 <b>String</b> 值，它代表对象的格式代码。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>单元格格式对话框中的格式代码选项相同的字符串的格式代码。<b>Format</b>函数使用格式代码字符串不同，不执行<b>与 NumberFormat</b>和<see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" />属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>格式代码是在 设置单元格格式对话框中 格式代码选项相同的字符串。 <b>Format</b>函数使用的格式代码字符串与<b>NumberFormat</b>和<see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" />属性使用的格式代码字符串不同。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -1686,12 +1666,10 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果数字格式指向单元格 (以便在单元格更改时，数字格式更改标签中)。读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary><b>如此</b> 如果数字格式指向单元格 (以便在单元格更改时，数字格式更改标签中)。读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>本示例链接到其单元格的活动文档中的第一个图表的数值轴的刻度线标签的数字格式。</para>
+        <example><para>本示例将活动文档中第一个图表的数值轴的刻度线标签的数字格式链接到其单元格。</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
 
 
@@ -2206,8 +2184,7 @@ If myObject.&lt;/span&gt;
 
         .Chart.Axes(xlValue).TickLabels.&lt;/span&gt;
 &lt;i&gt;NumberFormatLinked&lt;/i&gt;
-&lt;span class="label"&gt;= True    End IfEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= True    End IfEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLocal">
@@ -2236,13 +2213,10 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Variant</b>值，该值代表用户语言字符串形式的对象的格式代码。</summary>
+        <summary>以采用用户语言字符串的形式返回或设置一个 <b>Variant</b> 值，它代表对象的格式代码。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Format</b>函数使用使用的格式代码字符串不同<see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormat" />和<b>NumberFormatLocal</b>属性。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Format</b>函数使用的格式代码字符串与和<b>NumberFormatLocal</b>属性<see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormat" />使用的格式代码字符串不同。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -2273,12 +2247,9 @@ If myObject.&lt;/span&gt;
       <Docs>
         <summary>返回或设置一个 <b>Long</b> 值，它代表各级别标签之间的距离以及第一级标签与坐标轴之间的距离。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>默认的距离是 100%，代表坐标轴标签与坐标轴之间的默认间距。值可以是介于 0 到 1000，相对于坐标轴标签的字体大小的一个整数百分比。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>如果偏移量小于 500，本示例设置两次设置为当前，在活动文档中第一个图表的分类轴的标签间距。</para>
+        <remarks><para>其默认距离为百分之百，代表坐标轴标签之间以及标签与坐标轴线之间的默认距离。其值可以为从 0 到 1000 之间的一个整数百分比，表示相对于坐标轴标签的字号。</para>
+          <para> </para></remarks>
+        <example><para>如果偏移量小于 500, 则本示例将活动文档中第一个图表的分类轴的标签间距设置为当前设置的两倍。</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
 
 
@@ -3053,8 +3024,7 @@ If myObject.&lt;/span&gt;
 &lt;i&gt;Offset&lt;/i&gt;
 &lt;span class="label"&gt;= .&lt;/span&gt;
 &lt;i&gt;Offset&lt;/i&gt;
-&lt;span class="label"&gt;* 2            End If        End With    End IfEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;* 2            End If        End With    End IfEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -3085,10 +3055,8 @@ If myObject.&lt;/span&gt;
       <Docs>
         <summary>返回或设置一个 <b>Long</b> 值，它代表文本方向。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性的值可以是介于 – 90 到 90 度或之一的整数值<see cref="T:Microsoft.Office.Interop.Word.XlTickLabelOrientation" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性的值可以是从–90到90度或其中一个<see cref="T:Microsoft.Office.Interop.Word.XlTickLabelOrientation" />常量的整数值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -3114,7 +3082,7 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父级。只读 <b>对象</b> 。</summary>
+        <summary>返回指定对象的父级。 只读 <b>对象</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3145,7 +3113,7 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" />常量值，该值代表指定对象的读取顺序。 可读/写 <b>Long</b> 类型。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" />常量, 该常量代表指定对象的阅读顺序。 读/写 <b>Long</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

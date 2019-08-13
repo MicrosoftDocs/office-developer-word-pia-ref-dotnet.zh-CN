@@ -1,13 +1,5 @@
 <Type Name="MailMerge" FullName="Microsoft.Office.Interop.Word.MailMerge">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f5bb8ad4de7fc159ec30e1c17d9fcf1851962f01" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666918" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMerge" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6af9ade1b4ba89c72ee01b49396483c2c4e1bb64" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146183" /></Metadata><TypeSignature Language="C#" Value="public interface MailMerge" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMerge" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMerge" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMerge" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>代表 Microsoft Word 中的邮件合并功能。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.MailMerge" />属性可返回<b>MailMerge</b>对象。<b>MailMerge</b>对象始终是可用无论是否已开始邮件合并操作。使用<see cref="P:Microsoft.Office.Interop.Word.MailMerge.State" />属性可以确定邮件合并操作的状态。</para>
-      <para />
-    </remarks>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.MailMerge" />属性返回邮件<b>合并</b>对象。 <b>邮件合并</b> 对象始终是可用而不考虑是否已开始邮件合并操作。 使用<see cref="P:Microsoft.Office.Interop.Word.MailMerge.State" />属性来确定邮件合并操作的状态。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,21 +106,19 @@
         <Parameter Name="LinkToSource" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">可选的<b>对象</b>。 新数据源的路径名和文件名。</param>
-        <param name="PasswordDocument">可选的<b>对象</b>。 打开新数据源所需的密码。</param>
-        <param name="WritePasswordDocument">可选的<b>对象</b>。 保存对数据源的修改所需的密码。</param>
-        <param name="HeaderRecord">可选的<b>对象</b>。 域名记录所需的域名。 如果省略该参数，则使用标准的域名记录："称谓、名字、姓氏、职务、单位、地址 1、地址 2、市/县、省/市/自治区、邮政编码、国家/地区、住宅电话、办公电话"。 要分隔域名，可使用在 控制面板的 "区域设置"中指定的列表分隔符。</param>
-        <param name="MSQuery">可选的<b>对象</b>。 <b>True</b>如果安装启动 Microsoft Query。 <paramref name="Name" />， <paramref name="PasswordDocument" />，和<paramref name="HeaderRecord" />参数将被忽略。</param>
-        <param name="SQLStatement">可选的<b>对象</b>。 定义查询选项以检索数据。</param>
-        <param name="SQLStatement1">可选的<b>对象</b>。 如果查询字符串长于 255 个字符，<paramref name="SQLStatement" />指定字符串的第一个部分和<paramref name="SQLStatement1" />指定第二部分。</param>
-        <param name="Connection">可选的<b>对象</b>。 在其中指定的查询范围<paramref name="SQLStatement" />将执行。 指定范围的方式取决于检索数据的方式。 对于通过 ODBC 检索数据的示例： 时，您可以指定一个连接字符串。 当从 Microsoft Excel 使用动态数据交换 (DDE) 检索数据，您可以指定命名的区域。 <b>安全</b> 动态数据交换 (DDE) 是不安全的较旧的技术。 如果可能，请使用 DDE 的更安全的替代。当从 Microsoft Access 中检索数据，您指定的单词"Table"或"Query"，后面紧接表格或查询名称。</param>
-        <param name="LinkToSource">可选的<b>对象</b>。 <b>True</b>执行由指定的查询<paramref name="Connection" />和<paramref name="SQLStatement" />每次打开主文档。</param>
+        <param name="Name">可选<b>对象</b>。 新数据源的路径名和文件名。</param>
+        <param name="PasswordDocument">可选<b>对象</b>。 打开新数据源所需的密码。</param>
+        <param name="WritePasswordDocument">可选<b>对象</b>。 保存对数据源的修改所需的密码。</param>
+        <param name="HeaderRecord">可选<b>对象</b>。 域名记录所需的域名。 如果省略该参数，则使用标准的域名记录："称谓、名字、姓氏、职务、单位、地址 1、地址 2、市/县、省/市/自治区、邮政编码、国家/地区、住宅电话、办公电话"。 要分隔域名，可使用在 控制面板的 "区域设置" 中指定的列表分隔符。</param>
+        <param name="MSQuery">可选<b>对象</b>。 如果为<b>True</b> , 则启动 Microsoft Query (如果已安装)。 <paramref name="Name" />、 <paramref name="PasswordDocument" />、和<paramref name="HeaderRecord" />参数将被忽略。</param>
+        <param name="SQLStatement">可选<b>对象</b>。 定义查询选项以检索数据。</param>
+        <param name="SQLStatement1">可选<b>对象</b>。 如果查询字符串的长度超过255个字符, <paramref name="SQLStatement" />则指定字符串的第一部分, 并<paramref name="SQLStatement1" />指定第二部分。</param>
+        <param name="Connection">可选<b>对象</b>。 <paramref name="SQLStatement" />将在其中执行指定的查询的范围。 指定区域的方式取决于检索数据的方式。 例如: 通过 ODBC 检索数据时, 您可以指定一个连接字符串。 使用动态数据交换 (DDE) 检索 Microsoft Excel 中的数据时, 请指定一个命名区域。 <b>安全性</b> 动态数据交换 (DDE) 是一种不安全的旧技术。 如果可能, 请使用更安全的 DDE 替代方法。检索 Microsoft Access 中的数据时, 请指定单词 "Table" 或 "Query", 后跟表或查询的名称。</param>
+        <param name="LinkToSource">可选<b>对象</b>。 <b>如果为 True</b> , 则在<paramref name="Connection" /> <paramref name="SQLStatement" />每次打开主文档时执行指定的查询。</param>
         <summary>创建一个 Microsoft Word 文档，该文档使用表格保存邮件合并数据。</summary>
-        <remarks>
-          <para>新数据源附加到指定的文档，如果不是，则将变成主文档。</para>
-          <para>避免在您的应用程序中使用硬编码的密码。如果在某个过程中需要密码，用户请求该密码、 将其存储在变量，然后在代码中使用该变量。</para>
-          <para />
-        </remarks>
+        <remarks><para>新的数据源附加到指定文档, 如果该文档不是主文档, 则将成为主文档。</para>
+          <para>避免在应用程序中使用硬编码的密码。如果某个过程需要密码，可要求用户提供密码，将其以变量形式进行存储，然后在编码中使用该变量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateHeaderSource">
@@ -159,16 +147,14 @@
       </Parameters>
       <Docs>
         <param name="Name">必需的 <b>字符串</b> 。 新域名源的路径名和文件名。</param>
-        <param name="PasswordDocument">可选的<b>对象</b>。 打开新域名源所需的密码。</param>
-        <param name="WritePasswordDocument">可选的<b>对象</b>。 保存对新域名源所作修改所需的密码。</param>
-        <param name="HeaderRecord">可选的<b>对象</b>。 为域名记录指定域名的字符串。 如果省略该参数，则使用标准的域名记录："称谓、名字、姓氏、职务、单位、地址 1、地址 2、市/县、省/市/自治区、邮政编码、国家/地区、住宅电话、办公电话"。 若要分隔在 Windows 中的域名，使用控制面板中的区域设置中指定的列表分隔符。</param>
-        <summary>创建一个 Microsoft Word 文档存储域名记录用于替换邮件合并中的数据源域名记录。</summary>
-        <remarks>
-          <para>此方法将新的域名源附加到指定的文档，如果不是，则将变成主文档。</para>
-          <para>新域名源使用表格排列邮件合并域的名称。</para>
-          <para>避免在您的应用程序中使用硬编码的密码。如果在某个过程中需要密码，用户请求该密码、 将其存储在变量，然后在代码中使用该变量。</para>
-          <para />
-        </remarks>
+        <param name="PasswordDocument">可选<b>对象</b>。 打开新域名源所需的密码。</param>
+        <param name="WritePasswordDocument">可选<b>对象</b>。 保存对新域名源所作修改所需的密码。</param>
+        <param name="HeaderRecord">可选<b>对象</b>。 为域名记录指定域名的字符串。 如果省略该参数，则使用标准的域名记录："称谓、名字、姓氏、职务、单位、地址 1、地址 2、市/县、省/市/自治区、邮政编码、国家/地区、住宅电话、办公电话"。 若要在 Windows 中分隔字段名称, 请使用 "控制面板" 的 "区域设置" 中指定的列表分隔符。</param>
+        <summary>创建一个 Microsoft Word 文档, 该文档存储用于替代邮件合并中的数据源域名记录的域名记录。</summary>
+        <remarks><para>此方法将新的域名源附加到指定文档, 如果该文档不是主文档, 则将成为主文档。</para>
+          <para>新的域名源使用表格来排列邮件合并域的名称。</para>
+          <para>避免在应用程序中使用硬编码的密码。如果某个过程需要密码，可要求用户提供密码，将其以变量形式进行存储，然后在编码中使用该变量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -196,9 +182,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -224,7 +210,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeDataSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.MailMergeDataSource" />对象的引用的数据源附加到邮件合并主文档。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMergeDataSource" />对象, 该对象引用附加到邮件合并主文档的数据源。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,9 +243,7 @@
       <Docs>
         <summary>返回或设置邮件合并结果的目标。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Destination</b>属性可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDestination" />常量： </para>
+        <remarks><para><b>Destination</b>属性可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDestination" />常量之一: </para>
           <para>
             <b>wdSendToFax</b>
           </para>
@@ -272,8 +256,7 @@
           <para>
             <b>wdSendToNewDocument</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditDataSource">
@@ -298,11 +281,11 @@
       <Parameters />
       <Docs>
         <summary>打开或者切换到邮件合并数据源。</summary>
-        <remarks>
-          <para>Microsoft Word 文档的数据源时，此方法打开的数据源 （或激活该数据源，如果已经打开）。</para>
-          <para>如果 Word 访问的数据通过动态数据交换 (DDE) — 使用应用程序，如 Microsoft Excel 或 Microsoft Access — 该方法显示的数据源的应用程序中。</para>
-          <para>动态数据交换 (DDE) 是不安全的较旧的技术。如果可能，请使用 DDE 的更安全的替代。</para>如果 Word
-          <para>通过开放式数据库连接 (ODBC) 访问的数据，此方法的 Word 文档中显示的数据。请注意，是否安装了 Microsoft Query，显示一条消息，提供显示 Microsoft Query，而不是将数据转换的选项。</para><para /></remarks>
+        <remarks><para>如果数据源是 Microsoft Word 文档, 则此方法将打开数据源 (或激活数据源 (如果已打开)。</para>
+          <para>如果 Word 通过动态数据交换 (DDE) 访问数据 (使用 Microsoft Excel 或 Microsoft Access 等应用程序), 此方法将在该应用程序中显示数据源。</para>
+          <para>动态数据交换 (DDE) 是一种比较陈旧的技术并且不是十分安全。 如果可能, 请使用更安全的 DDE 替代方法。</para>
+          <para>如果 Word 通过开放式数据库连接 (ODBC) 访问数据，则该方法在 Word 文档中显示数据。 请注意, 如果安装了 Microsoft Query, 则会显示一条消息, 提供用于显示 Microsoft 查询而不是转换数据的选项。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditHeaderSource">
@@ -326,11 +309,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>打开域名源附加到邮件合并主文档，或如果已经打开，则激活该域名源。</summary>
-        <remarks>
-          <para>如果邮件合并主文档没有域名源，此方法将导致出错。</para>
-          <para />
-        </remarks>
+        <summary>打开附加到邮件合并主文档的域名源, 如果已打开, 则激活该域名源。</summary>
+        <remarks><para>如果邮件合并主文档没有域名源，这个方法会导致出错。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditMainDocument">
@@ -355,10 +336,8 @@
       <Parameters />
       <Docs>
         <summary>激活与指定域名源或者数据源文档相关的邮件合并主文档。</summary>
-        <remarks>
-          <para>如果主文档未打开，则会发生错误。使用<see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />如果主文档不是当前打开的方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果主文档没有打开，则会导致出错。 如果主<see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />文档当前未打开, 请使用方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -383,7 +362,7 @@
         <Parameter Name="Pause" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Pause">可选的<b>对象</b>。 <b>True</b> Microsoft Word 暂停和显示疑难解答的对话框中，如果找到一个邮件合并错误;<b>False</b>新文档中的报告错误。</param>
+        <param name="Pause">可选<b>对象</b>。 <b>真正</b>的 Microsoft Word 暂停并显示故障排除对话框如果找到邮件合并错误, 则为; 否则为。<b>如果为 False, 则</b>报告新文档中的错误。</param>
         <summary>执行指定的邮件合并操作。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -411,7 +390,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.MailMergeFields" />集合，代表所有邮件合并相关的指定文档中的字段。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMergeFields" />集合, 该集合代表指定文档中的所有邮件合并相关域。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -442,12 +421,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定文档中的合并字段会突出显示。</summary>
+        <summary>确定是否突出显示文档中的合并域。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>如果突出显示合并域，和<b>False</b>如果不需要。设置该属性值为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果合并域突出显示, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailAddressFieldName">
@@ -507,12 +484,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定当邮件合并目标为电子邮件或传真是否作为附件发送合并后的文档。</summary>
+        <summary>确定当邮件合并目标是电子邮件或传真时, 是否将合并文档作为附件发送。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果邮件合并目标为电子邮件或传真，和<b>False</b>如果不需要时，将作为附件发送合并后的文档，此属性返回<b>True</b> 。设置该属性值为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果在邮件合并目标是电子邮件或传真时, 合并文档作为附件发送, 则此属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailFormat">
@@ -541,18 +516,16 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdMailMergeMailFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMailFormat" />常量，代表邮件合并目标为电子邮件时要使用的格式。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMailFormat" />常量, 该常量代表邮件合并目标是电子邮件时要使用的格式。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <b>WdMailMergeMailFormat</b>可以是下列<b>WdMailMergeMailFormat</b>常量之一:</para>
           <para>
-            <b>WdMailMergeMailFormat</b>可以是下列<b>WdMailMergeMailFormat</b>常量之一：</para>
+            <b>wdMailFormatHTML</b>使用 HTML 格式发送邮件合并电子邮件文档。</para>
           <para>
-            <b>wdMailFormatHTML</b>发送邮件合并电子邮件文档使用 HTML 格式。</para>
-          <para>使用纯文本
-            <b>wdMailFormatPlainText</b>发送邮件合并电子邮件文档。</para>
-          <para>如果，则忽略<b>MailFormat</b>属性<see cref="P:Microsoft.Office.Interop.Word.MailMerge.MailAsAttachment" />属性设置为<b>True</b>。</para>
-          <para />
-        </remarks>
+            <b>wdMailFormatPlainText</b>使用纯文本格式发送邮件合并电子邮件文档。</para>
+          <para>如果<b></b>将该<see cref="P:Microsoft.Office.Interop.Word.MailMerge.MailAsAttachment" />属性设置为<b>True</b>, 则忽略 MailFormat 属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailSubject">
@@ -614,9 +587,7 @@
       <Docs>
         <summary>返回或设置邮件合并主文档类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>MainDocumentType</b>属性可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMainDocType" />常量：</para>
+        <remarks><para><b>MainDocumentType</b>属性可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMainDocType" />常量之一:</para>
           <para>
             <b>wdCatalog</b>
           </para>
@@ -641,9 +612,8 @@
           <para>
             <b>wdNotAMergeDocument</b>
           </para>
-          <para>如果设置此属性的文档已经是主文档，则会删除附加的数据源。</para>
-          <para />
-        </remarks>
+          <para>如果为已成为主文档的文档设置此属性, 则将删除附加的数据源。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenDataSource">
@@ -683,25 +653,25 @@
         <Parameter Name="SubType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">必需的 <b>字符串</b> 。 数据源的文件名中。 您可以指定而不是指定数据源、 连接字符串和查询字符串的 Microsoft Query (.qry) 文件。</param>
-        <param name="Format">可选的<b>对象</b>。 用于打开文档的文件转换器。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" />常量。 若要指定外部文件格式，请使用<see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" />属性与<see cref="T:Microsoft.Office.Interop.Word.FileConverter" />对象，以确定要使用此参数的值。<b>WdOpenFormat</b>可以是下列常量之一：<b>wdOpenFormatAllWord</b><b>wdOpenFormatAuto 默认。</b><b>wdOpenFormatDocument</b><b>wdOpenFormatEncodedText</b><b>wdOpenFormatRTF</b><b>wdOpenFormatTemplate</b><b>wdOpenFormatText</b><b>wdOpenFormatUnicodeText</b><b>wdOpenFormatWebPages</b><b>wdOpenFormatXML</b></param>
-        <param name="ConfirmConversions">可选的<b>对象</b>。 <b>True</b> 显示 转换文件对话框中，如果该文件不是 Microsoft Word 格式。</param>
-        <param name="ReadOnly">可选的<b>对象</b>。 						如果该属性值为 <b>True</b>，则以只读方式打开数据源。</param>
-        <param name="LinkToSource">可选的<b>对象</b>。 <b>True</b>执行由指定的查询<paramref name="Connection" />和<paramref name="SQLStatement" />每次打开主文档。</param>
-        <param name="AddToRecentFiles">可选的<b>对象</b>。 <b>真</b> 要将文件名添加到列表中最近使用的文件在文件菜单的底部。</param>
-        <param name="PasswordDocument">可选的<b>对象</b>。 用于打开数据源的密码。 请参阅下面的"说明"）。</param>
-        <param name="PasswordTemplate">可选的<b>对象</b>。 用于打开的模板的密码。 请参阅下面的"说明"）。</param>
-        <param name="Revert">可选的<b>对象</b>。 控制出现什么情况<paramref name="Name" />是打开的文档的文件名。 <b>真正</b> 放弃对已打开文档任何未保存的更改并重新打开该文件; <b>假</b> 以激活打开的文档。</param>
-        <param name="WritePasswordDocument">可选的<b>对象</b>。 用于将更改保存到文档的密码。 请参阅下面的"说明"）。</param>
-        <param name="WritePasswordTemplate">可选对象。 用于保存模板更改的密码。 请参阅下面的"说明"）。</param>
-        <param name="Connection">可选的<b>对象</b>。 在其中指定的查询范围<paramref name="SQLStatement" />执行。 （请参阅下面的备注。）指定范围的方式取决于检索数据的方式。 对于示例： 检索数据通过开放式数据库连接 (ODBC) 时，您可以指定一个连接字符串。 当从 Microsoft Excel 使用动态数据交换 (DDE) 检索数据，您可以指定命名的区域。动态数据交换 (DDE) 是不安全的较旧的技术。 如果可能，请使用 DDE 的更安全的替代。当从 Microsoft Access 中检索数据，您指定的单词"Table"或"Query"，后面紧接表格或查询名称。</param>
-        <param name="SQLStatement">可选的<b>对象</b>。 定义查询选项以检索数据。 请参阅下面的"说明"）。</param>
-        <param name="SQLStatement1">可选的<b>对象</b>。 如果查询字符串长于 255 个字符，<paramref name="SQLStatement" />指定字符串的第一个部分和<paramref name="SQLStatement1" />指定第二部分。 请参阅下面的"说明"）。</param>
-        <param name="OpenExclusive">可选的<b>对象</b>。 <b>真正</b> 以独占方式打开。</param>
-        <param name="SubType">可选的<b>对象</b>。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.WdMergeSubType" />常量： wdMergeSubTypeAccess 1wdMergeSubTypeOAL 2wdMergeSubTypeOLEDBText 5wdMergeSubTypeOLEDBWord 3wdMergeSubTypeOther 0wdMergeSubTypeOutlook 6wdMergeSubTypeWord 7wdMergeSubTypeWord20008wdMergeSubTypeWorks 4</param>
-        <summary>将数据源附加到指定的文档，如果不是，则将变成主文档。</summary>
-        <remarks>
-          <para>若要确定的 ODBC 连接和查询字符串，手动设置查询选项，并使用<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.QueryString" />属性返回的连接字符串。下表包含了一些常用的 SQL 关键字。</para>
+        <param name="Name">必需的 <b>字符串</b> 。 数据源文件名。 可以指定一个 Microsoft Query (.qry) 文件，而不必指定数据源、连接字符串及查询字符串。</param>
+        <param name="Format">可选<b>对象</b>。 用于打开文档的文件转换器。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" />常量之一。 若要指定外部文件格式, 请将<see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" />该属性与<see cref="T:Microsoft.Office.Interop.Word.FileConverter" />对象一起使用, 以确定要与此参数一起使用的值。<b>WdOpenFormat</b>可以是下列常量之一:<b>wdOpenFormatAllWord</b><b>wdOpenFormatAuto Default。</b><b>wdOpenFormatDocument</b><b>wdOpenFormatEncodedText</b><b>wdOpenFormatRTF</b><b>wdOpenFormatTemplate</b><b>wdOpenFormatText</b><b>wdOpenFormatUnicodeText</b><b>wdOpenFormatWebPages</b><b>wdOpenFormatXML</b></param>
+        <param name="ConfirmConversions">可选<b>对象</b>。 <b>True</b> 显示 转换文件对话框中，如果该文件不是 Microsoft Word 格式。</param>
+        <param name="ReadOnly">可选<b>对象</b>。 
+						如果该属性值为 <b>True</b>，则以只读方式打开数据源。</param>
+        <param name="LinkToSource">可选<b>对象</b>。 <b>如果为 True</b> , 则在<paramref name="Connection" /> <paramref name="SQLStatement" />每次打开主文档时执行指定的查询。</param>
+        <param name="AddToRecentFiles">可选<b>对象</b>。 <b>真</b> 要将文件名添加到列表中最近使用的文件在文件菜单的底部。</param>
+        <param name="PasswordDocument">可选<b>对象</b>。 用于打开数据源的密码。 请参阅下面的"说明"）。</param>
+        <param name="PasswordTemplate">可选<b>对象</b>。 用于打开模板的密码。 请参阅下面的"说明"）。</param>
+        <param name="Revert">可选<b>对象</b>。 控制如果<paramref name="Name" />是打开文档的文件名, 将会发生什么情况。 <b>真正</b> 放弃对已打开文档任何未保存的更改并重新打开该文件; <b>假</b> 以激活打开的文档。</param>
+        <param name="WritePasswordDocument">可选<b>对象</b>。 用于保存对文档所做的更改的密码。 请参阅下面的"说明"）。</param>
+        <param name="WritePasswordTemplate">可选对象。 用于保存对模板所做的更改的密码。 请参阅下面的"说明"）。</param>
+        <param name="Connection">可选<b>对象</b>。 将在其中执行指定<paramref name="SQLStatement" />的查询的范围。 (请参阅下面的备注。)指定区域的方式取决于检索数据的方式。 例如: 通过开放式数据库连接 (ODBC) 检索数据时, 请指定一个连接字符串。 使用动态数据交换 (DDE) 检索 Microsoft Excel 中的数据时, 请指定一个命名区域。动态数据交换 (DDE) 是一种不安全的旧技术。 如果可能, 请使用更安全的 DDE 替代方法。检索 Microsoft Access 中的数据时, 请指定单词 "Table" 或 "Query", 后跟表或查询的名称。</param>
+        <param name="SQLStatement">可选<b>对象</b>。 定义查询选项以检索数据。 请参阅下面的"说明"）。</param>
+        <param name="SQLStatement1">可选<b>对象</b>。 如果查询字符串的长度超过255个字符, <paramref name="SQLStatement" />则指定字符串的第一部分, 并<paramref name="SQLStatement1" />指定第二部分。 请参阅下面的"说明"）。</param>
+        <param name="OpenExclusive">可选<b>对象</b>。 <b>真正</b> 以独占方式打开。</param>
+        <param name="SubType">可选<b>对象</b>。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdMergeSubType" />常量之一: WdMergeSubTypeAccess 1WdMergeSubTypeOAL 2WdMergeSubTypeOLEDBText 5WdMergeSubTypeOLEDBWord 3wdMergeSubTypeOther 0WdMergeSubTypeOutlook 6wdMergeSubTypeWord 7wdMergeSubTypeWord20008wdMergeSubTypeWorks 4</param>
+        <summary>将数据源附加到指定文档, 如果该文档不是主文档, 则将成为主文档。</summary>
+        <remarks><para>若要确定 ODBC 连接和查询字符串, 请手动设置查询选项, 并使用<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.QueryString" />属性返回连接字符串。 下表包含了一些常用的 SQL 关键字。</para>
           <list type="table">
             <item>
               <description>DSN</description>
@@ -713,22 +683,21 @@
             </item>
             <item>
               <description>PWD</description>
-              <description>用户指定密码</description>
+              <description>用户指定的密码</description>
             </item>
             <item>
               <description>DBQ</description>
-              <description>数据库文件的扩展名</description>
+              <description>数据库文件名</description>
             </item>
             <item>
-              <description>文件</description>
+              <description>FIL</description>
               <description>文件类型</description>
             </item>
           </list>
-          <para>避免使用内置的系统管理员 (sa) 登录帐户。相反，使系统管理员 sysadmin 固定的服务器角色的成员，并使其使用其自己的帐户登录。只有在没有其他方式登录时，请使用 sa。若要防止未经授权的访问通过 sa 登录帐户，您应为该帐户分配唯一的强密码。</para>
-          <para>如果可能，请使用 Windows 身份验证 （也称为的受信任连接），以使用一个 Windows 用户帐户来连接到 SQL Server。当用户连接到一个 Windows 用户帐户时，SQL Server 使用信息的 Windows 操作系统中验证的帐户名和密码。您可以使用 Windows 身份验证，服务器管理员必须先配置 SQL Server 使用此身份验证模式。如果 Windows 身份验证不可用，请避免将保存用户的登录信息。用户输入登录信息登录每次更安全。</para>
-          <para>避免在您的应用程序中使用硬编码的密码。如果在某个过程中需要密码，用户请求该密码、 将其存储在变量，然后在代码中使用该变量。</para>
-          <para />
-        </remarks>
+          <para>避免使用内置系统管理员 (sa) 登录帐户。 而是使系统管理员成为 sysadmin 固定服务器角色的成员，并让他们使用自己的帐户登录。 仅在无法使用其他方式登录时使用 sa。 要避免通过 sa 登录帐户的未经授权的访问，您应该为该帐户指定唯一的强密码。</para>
+          <para>如果可能，请使用 Windows 身份验证（也称为受信任的连接），它使用 Windows 用户帐户来连接到 SQL Server。当用户通过 Windows 用户帐户进行连接时，SQL Server 会使用 Windows 操作系统中的信息来验证帐户名称和密码。在您可以使用 Windows 身份验证之前，服务器管理员必须配置 SQL Server 以使用此模式的身份验证。如果 Windows 身份验证不可用，请不要保存用户的登录信息。对于用户而言，在每次登录时输入其登录信息更为安全。</para>
+          <para>避免在应用程序中使用硬编码的密码。如果某个过程需要密码，可要求用户提供密码，将其以变量形式进行存储，然后在编码中使用该变量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenDataSource2000">
@@ -820,22 +789,20 @@
       </Parameters>
       <Docs>
         <param name="Name">必需的 <b>字符串</b> 。 域名源的文件名。</param>
-        <param name="Format">可选的<b>对象</b>。 用于打开文档的文件转换器。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" />常量。 若要指定外部文件格式，请使用<see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" />属性与<see cref="T:Microsoft.Office.Interop.Word.FileConverter" />对象，以确定要使用此参数的值。<b>WdOpenFormat</b>可以是下列常量之一：<b>wdOpenFormatAllWord</b><b>wdOpenFormatAuto 默认。</b><b>wdOpenFormatDocument</b><b>wdOpenFormatEncodedText</b><b>wdOpenFormatRTF</b><b>wdOpenFormatTemplate</b><b>wdOpenFormatText</b><b>wdOpenFormatUnicodeText</b><b>wdOpenFormatWebPages</b><b>wdOpenFormatXML</b></param>
-        <param name="ConfirmConversions">可选的<b>对象</b>。 <b>True</b> 显示 转换文件对话框中，如果该文件不是 Microsoft Word 格式。</param>
-        <param name="ReadOnly">可选的<b>对象</b>。 <b>真</b> 要打开域名源在唯读的基础上。</param>
-        <param name="AddToRecentFiles">可选的<b>对象</b>。 <b>真</b> 要将文件名添加到列表中最近使用的文件在文件菜单的底部。</param>
-        <param name="PasswordDocument">可选的<b>对象</b>。 打开域名源文档所需的密码。 请参阅下面的"说明"）。</param>
-        <param name="PasswordTemplate">可选的<b>对象</b>。 打开域名源模板所需的密码。 请参阅下面的"说明"）。</param>
-        <param name="Revert">可选的<b>对象</b>。 控制出现什么情况<paramref name="Name" />是打开的文档的文件名。 <b>真正</b> 放弃对已打开文档任何未保存的更改并重新打开该文件; <b>假</b> 以激活打开的文档。</param>
-        <param name="WritePasswordDocument">可选的<b>对象</b>。 将更改保存到文档数据源所需的密码。 请参阅下面的"说明"）。</param>
-        <param name="WritePasswordTemplate">可选的<b>对象</b>。 将更改保存到模板数据源所需的密码。 请参阅下面的"说明"）。</param>
-        <param name="OpenExclusive">可选的<b>对象</b>。 真正 以独占方式打开。</param>
+        <param name="Format">可选<b>对象</b>。 用于打开文档的文件转换器。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" />常量之一。 若要指定外部文件格式, 请将<see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" />该属性与<see cref="T:Microsoft.Office.Interop.Word.FileConverter" />对象一起使用, 以确定要与此参数一起使用的值。<b>WdOpenFormat</b>可以是下列常量之一:<b>wdOpenFormatAllWord</b><b>wdOpenFormatAuto Default。</b><b>wdOpenFormatDocument</b><b>wdOpenFormatEncodedText</b><b>wdOpenFormatRTF</b><b>wdOpenFormatTemplate</b><b>wdOpenFormatText</b><b>wdOpenFormatUnicodeText</b><b>wdOpenFormatWebPages</b><b>wdOpenFormatXML</b></param>
+        <param name="ConfirmConversions">可选<b>对象</b>。 <b>True</b> 显示 转换文件对话框中，如果该文件不是 Microsoft Word 格式。</param>
+        <param name="ReadOnly">可选<b>对象</b>。 <b>真</b> 要打开域名源在唯读的基础上。</param>
+        <param name="AddToRecentFiles">可选<b>对象</b>。 <b>真</b> 要将文件名添加到列表中最近使用的文件在文件菜单的底部。</param>
+        <param name="PasswordDocument">可选<b>对象</b>。 打开域名源文档所需的密码。 请参阅下面的"说明"）。</param>
+        <param name="PasswordTemplate">可选<b>对象</b>。 打开域名源模板所需的密码。 请参阅下面的"说明"）。</param>
+        <param name="Revert">可选<b>对象</b>。 控制如果<paramref name="Name" />是打开文档的文件名, 将会发生什么情况。 <b>真正</b> 放弃对已打开文档任何未保存的更改并重新打开该文件; <b>假</b> 以激活打开的文档。</param>
+        <param name="WritePasswordDocument">可选<b>对象</b>。 保存对文档数据源所做的更改所需的密码。 请参阅下面的"说明"）。</param>
+        <param name="WritePasswordTemplate">可选<b>对象</b>。 保存对模板数据源所做的更改所需的密码。 请参阅下面的"说明"）。</param>
+        <param name="OpenExclusive">可选<b>对象</b>。 真正 以独占方式打开。</param>
         <summary>将一个邮件合并域名源附加到指定文档。</summary>
-        <remarks>
-          <para>附加一个域名源时，域名源中的第一个记录使用代替数据源中的域名记录。</para>
-          <para>避免在您的应用程序中使用硬编码的密码。如果在某个过程中需要密码，用户请求该密码、 将其存储在变量，然后在代码中使用该变量。</para>
-          <para />
-        </remarks>
+        <remarks><para>附加一个域名源时，域名源中的第一个记录将替换数据源中的域名记录。</para>
+          <para>避免在应用程序中使用硬编码的密码。如果某个过程需要密码，可要求用户提供密码，将其以变量形式进行存储，然后在编码中使用该变量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenHeaderSource2000">
@@ -942,10 +909,8 @@
       <Docs>
         <summary>返回或设置一个 <b>字符串</b> ，在完成自定义按钮上的题注相对应邮件合并向导的合并步骤 (第六步)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>当用户单击自定义按钮时， <b>MailMergeWizardSendToCustom</b>事件发生。</para>
-          <para />
-        </remarks>
+        <remarks><para>当用户单击自定义按钮时, <b>MailMergeWizardSendToCustom</b>事件发生。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowWizard">
@@ -976,13 +941,13 @@
         <Parameter Name="ShowMergeStep" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="InitialState">所需的<b>对象</b>。 要显示的"邮件合并向导"步骤的数目。</param>
-        <param name="ShowDocumentStep">可选的<b>对象</b>。 <b>True</b> ，则保留"选择文档类型"步骤中的邮件合并步骤序列。 <b>False</b> ，则删除的第一步。</param>
-        <param name="ShowTemplateStep">可选的<b>对象</b>。 <b>True</b>邮件合并步骤; 的序列中，保留"选择开始文档"的步骤<b>False</b>删除第二步。</param>
-        <param name="ShowDataStep">可选的<b>对象</b>。 <b>True</b>保留"收件人"步骤中选择的邮件合并步骤; 顺序<b>False</b>删除第三步。</param>
-        <param name="ShowWriteStep">可选的<b>对象</b>。 <b>True</b>保留"撰写信函"步骤中的邮件合并步骤; 顺序<b>False</b>删除第 4 步。</param>
-        <param name="ShowPreviewStep">可选的<b>对象</b>。 <b>True</b>保留"预览信函"步骤中的邮件合并步骤; 顺序<b>False</b>删除步骤 5。</param>
-        <param name="ShowMergeStep">可选的<b>对象</b>。 <b>True</b>保留"完成合并"步骤中的邮件合并步骤; 顺序<b>False</b>删除第六步。</param>
+        <param name="InitialState">必需的<b>对象</b>。 要显示的"邮件合并向导"步骤的数目。</param>
+        <param name="ShowDocumentStep">可选<b>对象</b>。 <b>True</b> ，则保留"选择文档类型"步骤中的邮件合并步骤序列。 <b>False</b> ，则删除的第一步。</param>
+        <param name="ShowTemplateStep">可选<b>对象</b>。 <b>如果为 True, 则</b>保留一系列邮件合并步骤中的 "选择开始文档" 步骤;<b>如果为 False, 则</b>删除第二步。</param>
+        <param name="ShowDataStep">可选<b>对象</b>。 <b>如果为 True</b> , 则保留邮件合并系列中的 "选择收件人" 步骤;<b>如果为 False, 则</b>删除第三步。</param>
+        <param name="ShowWriteStep">可选<b>对象</b>。 <b>如果为 True</b> , 则保留邮件合并系列中的 "撰写信函" 步骤;<b>如果为 False, 则</b>删除步骤4。</param>
+        <param name="ShowPreviewStep">可选<b>对象</b>。 <b>如果为 True, 则</b>保留邮件合并系列中的 "预览信函" 步骤;<b>如果为 False, 则</b>删除第五步。</param>
+        <param name="ShowMergeStep">可选<b>对象</b>。 <b>如果为 True</b> , 则保留一系列邮件合并步骤中的 "完成合并" 步骤;<b>如果为 False, 则</b>删除步骤6。</param>
         <summary>在文档中显示"邮件合并向导"。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1012,9 +977,7 @@
       <Docs>
         <summary>返回邮件合并操作的当前状态。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>State</b>属性可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeState" />常量：</para>
+        <remarks><para><b>State</b>属性可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeState" />常量之一:</para>
           <para>
             <b>wdDataSource</b>
           </para>
@@ -1033,8 +996,7 @@
           <para>
             <b>wdNormalDocument</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SuppressBlankLines">
@@ -1063,12 +1025,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定在邮件合并主文档中的邮件合并域为空时，是否删除空行。</summary>
+        <summary>确定当邮件合并主文档中的邮件合并域为空时是否取消空行。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>如果删除该空行，和<b>False</b>如果不需要。设置该属性值为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果隐藏空行, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseAddressBook">
@@ -1128,11 +1088,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定在邮件合并主文档中是否显示合并域的名称。</summary>
+        <summary>确定是否在邮件合并主文档中显示合并域的名称。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果当前数据记录的信息将显示在邮件合并主文档和<b>False</b>显示合并域的名称如果此属性返回<b>True</b> 。</para>如果活动文档不是邮件合并主文档
-          <para>，该属性将导致出错。若要查看合并域的名称或其结果，请设置<see cref="P:Microsoft.Office.Interop.Word.View.ShowFieldCodes" />属性设为<b>False</b>。</para><para /></remarks>
+        <remarks><para>如果合并域的名称显示在邮件合并主文档中, 则此属性返回<b>True</b> , 如果显示当前数据记录中的信息, 则返回<b>False</b> 。</para>
+          <para>如果活动文档不是邮件合并主文档，则该属性会出错。 若要查看合并字段的名称或其结果, <see cref="P:Microsoft.Office.Interop.Word.View.ShowFieldCodes" />请将该属性设置为<b>False</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WizardState">
@@ -1161,13 +1121,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>整数</b>，指示文档的当前邮件合并向导步骤。</summary>
+        <summary>返回或设置一个<b>Integer</b>类型的值, 该值指示文档的当前邮件合并向导步骤。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>WizardState</b>方法返回一个数字，等同当前邮件合并向导步骤;零 (0) 方法关闭邮件合并向导。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>WizardState</b>方法返回一个等于当前邮件合并向导步骤的数字;零 (0) 表示邮件合并向导已关闭。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="ApplicationEvents4_Event" FullName="Microsoft.Office.Interop.Word.ApplicationEvents4_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e8fc8679de3e808303fc2750b432e5243a2d864f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666568" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ApplicationEvents4_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5a8775d8e740f980588b7c678e2c9ffe63481ea2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144832" /></Metadata><TypeSignature Language="C#" Value="public interface ApplicationEvents4_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ApplicationEvents4_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ApplicationEvents4_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface ApplicationEvents4_Event" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>事件接口 word<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象的事件。这是创建处理的互操作性与相应的 COM 对象的托管代码需要 COM coclass 时.NET 接口。 此接口实现早期接口的所有事件和任何其他的新事件。 仅当您想要使用的事件共享相同的名称的 COM 对象; 方法时，才使用此接口在这种情况下，强制转换为连接到该事件，此接口并强制转换为主要接口调用方法。 否则，使用.NET 接口派生自 COM coclass 访问方法、 属性和事件的 COM 对象。</summary>
+    <summary>Word<see cref="T:Microsoft.Office.Interop.Excel.Application" />对象事件的事件接口。这是在处理托管代码为实现与相应 COM 对象的互操作性所需的 COM coclass 时创建的 .NET 接口。 此接口实现了较早版本中的所有事件和任何其他新事件。 仅当您想要使用的事件与 COM 对象的方法共享同一名称时才使用此接口；在这种情况下，转换为此接口以连接到该事件，转换为主接口以调用该方法。 否则，请使用派生自 COM coclass 的 .NET 接口来访问方法、属性和 COM 对象的事件。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -201,10 +193,8 @@
       </ReturnValue>
       <Docs>
         <summary>在用户单击“电子邮政属性”按钮（“标签和信封”对话框）或“打印电子邮政”工具栏按钮时发生。</summary>
-        <remarks>
-          <para>该事件允许第三方软件应用程序截取并显示其属性对话框。</para>
-          <para />
-        </remarks>
+        <remarks><para>该事件允许第三方软件应用程序截取并显示其属性对话框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeAfterMerge">
@@ -318,10 +308,8 @@
       </ReturnValue>
       <Docs>
         <summary>在用户通过单击邮件合并收件人对话框中的验证有效性执行地址验证时发生。</summary>
-        <remarks>
-          <para>如果您没有在计算机上安装的地址验证软件， <b>MailMergeDataSourceValidate</b>事件可以创建简单的筛选例程，如循环访问记录要检查的邮政编码和删除的任何非美国</para>
-          <para />
-        </remarks>
+        <remarks><para>如果您的计算机上未安装地址验证软件, <b>MailMergeDataSourceValidate</b>事件允许您创建简单的筛选例程, 如遍历记录以检查邮政编码并删除非美国</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeDataSourceValidate2">
@@ -339,14 +327,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_MailMergeDataSourceValidate2EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-		当用户单击“邮件合并收件人”对话框中的“验证地址”链接按钮验证邮件合并收件人时发生。</summary>
-        <remarks>
-          <para>如果您没有在计算机上安装的地址验证软件， <b>MailMergeDataSourceValidate2</b>事件可以创建简单的筛选例程，如循环访问记录要检查的邮政编码和删除的任何非美国</para>
+        <summary>当用户单击“邮件合并收件人”对话框中的“验证地址”链接按钮验证邮件合并收件人时发生。</summary>
+        <remarks><para>如果您的计算机上没有安装地址验证软件，则可以使用 <b>MailMergeDataSourceValidate2</b> 事件创建简单的筛选例程，如遍历记录以检查邮政编码并删除非美国的邮政编码。</para>
           <para>
-            <b>注意</b>： 您不能提升从该事件在 Microsoft Visual Basic for Applications (VBA) 项目。 此事件仅在托管加载项和外部应用程序中工作正常。对于 COM 加载项使用<see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.MailMergeDataSourceValidate" />事件。</para>
-          <para />
-        </remarks>
+            <b>注意</b>: 不能在 Microsoft Visual Basic for APPLICATIONS (VBA) 项目中引发此事件。  此事件只有在托管加载项和外部应用程序中才能正确工作。 对于 COM 加载项, 请使用<see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.MailMergeDataSourceValidate" />事件。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeWizardSendToCustom">
@@ -364,11 +349,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_MailMergeWizardSendToCustomEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在邮件合并向导的第 6 步单击自定义按钮时，发生此事件。</summary>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.MailMerge.ShowSendToCustom" />属性在邮件合并向导的第六步中创建自定义按钮。</para>
-          <para />
-        </remarks>
+        <summary>当单击 "邮件合并向导" 的步骤6中的自定义按钮时发生。</summary>
+        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.MailMerge.ShowSendToCustom" />属性可在 "邮件合并向导" 的第六步中创建自定义按钮。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeWizardStateChange">
@@ -519,7 +502,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowSizeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>移动或调整受保护的视图窗口时发生。</summary>
+        <summary>当移动受保护的视图窗口或调整其大小时发生。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

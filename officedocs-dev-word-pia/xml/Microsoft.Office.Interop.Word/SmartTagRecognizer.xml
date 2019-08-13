@@ -1,13 +1,5 @@
 <Type Name="SmartTagRecognizer" FullName="Microsoft.Office.Interop.Word.SmartTagRecognizer">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1596270bff23eea1f59ab9bdc76d1e9433b328f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665545" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagRecognizer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4f6682dbac9852e24913ff87211561eae8bef090" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143978" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagRecognizer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagRecognizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagRecognizer" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表已安装的组件的标签文本类型的信息。</summary>
-    <remarks>
-      <para>地址 （英文） 智能标记组件的街道、 城市、 州和邮政编码等其他解决相关的项目包含识别器。当用户激活安装的组件通过代码或通过使用自动更正对话框中的智能标记选项卡时，Microsoft Word 标签匹配文档中的这些项的文本。</para>
+    <summary>代表所安装的用信息类型来标记文本的组件。</summary>
+    <remarks><para>地址 (英语) 智能标记组件包含用于街道、市/县、州和邮政编码的识别器, 以及其他与地址相关的项目。 当用户通过代码或使用 "自动更正" 对话框中的 "智能标记" 选项卡激活已安装的组件时, Microsoft Word 会在文档中标记与这些项目相匹配的文本。</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />， <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />，和<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />对象相关的智能标记组件可以识别每个项目是一个<b>SmartTagType</b>对象。例如，"city"的地址智能标记组件中是一个特定的<b>SmartTagType</b>对象。<b>SmartTagRecognizer</b>对象 （识别文档中的"city"类型的智能标记的智能标记组件的一部分） 和<b>SmartTagAction</b>对象 （的一部分提供操作的智能标记组件，具有相关市/县智能标记类型与特定智能标记类型，这可能包括查找 MSN 上的 Microsoft MapPoint 中识别的城市）。简而言之，识别器执行标记、 操作处理程序提供最终用户功能，并将它们联系在一起是一种他们所从事的智能标记。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.SmartTagRecognizers.Item(System.Object@)" />方法<see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" />可返回一个<b>SmartTagRecognizer</b>对象的集合。一旦返回了<b>SmartTagRecognizer</b>对象，就可以确定应用程序是否启用了智能标记识别器。</para>
-      <para />
-    </remarks>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />、 <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />和<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />对象都是相关的, 智能标记组件识别的每个项目都是一个<b>SmartTagType</b>对象。 例如，Address 智能标记组件中的“city”是一个特定的 <b>SmartTagType</b> 对象。 city 智能标记类型具有相关的 <b>SmartTagRecognizer</b> 对象（智能标记组件中用于识别文档中“city”类型的智能标记的部分）和 <b>SmartTagAction</b> 对象（智能标记组件中用于提供与特定智能标记类型相关的操作的部分，这些操作可能包含在 MSN 上的 Microsoft MapPoint 中查找可识别的市/县）。 简单地说, 识别器将进行标记, 操作处理程序提供最终用户功能, 而将它们与之关联的智能标记的类型是它们所使用的智能标记的类型。</para>
+      <para>使用<see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" />集合<see cref="P:Microsoft.Office.Interop.Word.SmartTagRecognizers.Item(System.Object@)" />的方法返回一个<b>SmartTagRecognizer</b>对象。 返回 <b>SmartTagRecognizer</b> 对象后，就可以确定是否为应用程序启用了智能标记识别器。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,9 +116,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -163,7 +153,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>已启用<b>，则返回 true</b>如果智能标记识别器。</summary>
+        <summary>如果启用了智能标记识别器,<b>则返回 True</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -194,7 +184,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定的完整的<see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />对象，包括的路径。</summary>
+        <summary>指定<see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />对象的完整名称, 包括路径。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,12 +246,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取指定的对象的编程标识符 (ProgID)。</summary>
+        <summary>获取指定对象的编程标识符 (ProgID)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>动态数据交换 (DDE) 是不安全的较旧的技术。如果可能，请使用 DDE 的更安全的替代。</para>
-          <para />
-        </remarks>
+        <remarks><para>动态数据交换 (DDE) 是一种比较陈旧的技术并且不是十分安全。 如果可能, 请使用更安全的 DDE 替代方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

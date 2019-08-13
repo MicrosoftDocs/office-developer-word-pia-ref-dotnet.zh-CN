@@ -1,13 +1,5 @@
 <Type Name="View" FullName="Microsoft.Office.Interop.Word.View">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c735dc24605c2be9a7ca3d58b9f0bc399f7d9a08" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665701" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface View" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5f9e0c4e9f7ec1021964e80672f2867a5ad16420" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143719" /></Metadata><TypeSignature Language="C#" Value="public interface View" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract View" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.View" />
   <TypeSignature Language="VB.NET" Value="Public Interface View" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>包含窗口或窗格的视图属性（全部显示、域底纹、表格虚框等）。</summary>
-    <remarks>
-      <para>使用<b>View</b>属性的<see cref="T:Microsoft.Office.Interop.Word.Window" />或<see cref="T:Microsoft.Office.Interop.Word.Pane" />对象返回<b>View</b>对象。</para>
+    <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.Window" />或<see cref="T:Microsoft.Office.Interop.Word.Pane" />对象的<b>View</b>属性可返回<b>View</b>对象。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Word.View.Type" />属性更改视图。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Zoom.Percentage" />属性屏幕上更改文本的大小。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.View.SeekView" />属性查看注释、 尾注、 脚注或文档的页眉或页脚。</para>
-      <para />
-    </remarks>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Zoom.Percentage" />属性可更改屏幕上文本的大小。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.View.SeekView" />属性可查看批注、尾注、脚注或文档页眉或页脚。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,10 +113,8 @@
       <Parameters />
       <Docs>
         <summary>折叠文档中的所有标题。</summary>
-        <remarks>
-          <para>此方法对应于的上下文菜单中右键单击一个标题时出现的<b>展开/折叠</b>子菜单的<b>折叠所有标题</b>命令。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法对应于右键单击标题时出现的上下文菜单的<b>展开/折叠</b>子菜单上的 "<b>折叠所有标题</b>" 命令。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CollapseOutline">
@@ -153,11 +141,9 @@
       <Docs>
         <param name="Range">可选<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 需要折叠的段落范围。 如果省略此参数，则折叠全部选定内容。</param>
         <summary>将选定内容或指定范围内的正文折叠一个标题级别。</summary>
-        <remarks>
-          <para>
-            <b>注释</b> 如果文档未处于大纲或主控文档视图，将发生错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>注释</b> 如果文档不在大纲或主控文档视图中, 则会发生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnWidth">
@@ -186,7 +172,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColumnWidth</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或获取一个常量，该常量确定在阅读模式下的列宽。 读 / 写<see cref="T:Microsoft.Office.Interop.Word.WdColumnWidth" /></summary>
+        <summary>返回或获取一个常量, 该常量确定在阅读模式下的列宽。 读写<see cref="T:Microsoft.Office.Interop.Word.WdColumnWidth" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -217,13 +203,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置是否为冲突模式视图中的文档。</summary>
-        <value>
-          <b>true</b>如果文档处于冲突模式视图;否则为<b>false</b>。</value>
-        <remarks>
-          <para>读/写。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置文档是否处于冲突模式视图。</summary>
+        <value>如果文档处于冲突模式视图中, 则为<b>true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <remarks><para>读/写。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -251,9 +234,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayBackgrounds">
@@ -284,11 +267,8 @@
       <Docs>
         <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否在页面视图中显示文档时显示背景色和图像。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DisplayBackgrounds</b>属性对应于背景色和图像 （仅页面视图） 选项对话框的视图选项卡上的选项。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>DisplayBackgrounds</b>属性对应于 "选项" 对话框的 "视图" 选项卡上的 "背景色和图像 (仅页面视图)" 选项。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayPageBoundaries">
@@ -317,13 +297,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 显示顶部和底部页边距 (空白区域)，灰色区域 (灰色间隔) 文档中的页面之间。 <b>False</b> 隐藏这些白色和灰色区域，使页面形成很长的一页。 默认值为 <b>True</b> 。</summary>
+        <summary><b>True</b> 显示顶部和底部页边距 (空白区域)，灰色区域 (灰色间隔) 文档中的页面之间。 <b>False</b> 隐藏这些白色和灰色区域，使页面形成很长的一页。 默认值为 <b>True</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此功能仅在打印布局视图中可用，并且只影响的顶部和底部页上，不左边和右边构成的页面的灰色间隔。此设置会影响中的文档指定窗口中。保存文档时，此设置的状态被保存。</para>
-          <para />
-        </remarks>
+        <remarks><para>该功能仅在页面视图中可用，并仅影响页面顶部和底部的灰色间隔，而不影响页面的左右两边。该设置影响指定窗口中的文档。保存该文档时，同时保存该设置的状态。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplaySmartTags">
@@ -358,13 +335,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> Microsoft Word 文档中显示智能标记下方下划线。</summary>
+        <summary>如果为 <b>True</b>，则 Microsoft Word 在文档中的智能标记下方显示一条下划线。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>智能标记与虚下划线的文档中标记。<b>DisplaySmartTags</b>属性设置为<b>False</b>不会删除智能标记;它仅将关闭下划线的显示。</para>
-          <para />
-        </remarks>
+        <remarks><para>在文档中用下划线标记智能标记。 将 <b>DisplaySmartTags</b> 属性设为 <b>False</b> 不能删除智能标记；该操作仅关闭下划线的显示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Draft">
@@ -393,8 +367,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果在窗口中的所有文本都会都显示在同一无衬线字体的格式设置很少以提高显示速度。</summary>
+        <summary><b>如此</b> 如果在窗口中的所有文本都会都显示在同一无衬线字体的格式设置很少以提高显示速度。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -458,10 +431,8 @@
       <Parameters />
       <Docs>
         <summary>展开文档中的所有标题。</summary>
-        <remarks>
-          <para>此方法对应于的上下文菜单中右键单击一个标题时出现的<b>展开/折叠</b>子菜单上的<b>展开所有标题</b>命令。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法对应于右键单击标题时出现的上下文菜单的<b>展开/折叠</b>子菜单上的 "<b>展开所有标题</b>" 命令。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandOutline">
@@ -487,12 +458,10 @@
       </Parameters>
       <Docs>
         <param name="Range">可选<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 要展开的段落的范围。 如果省略此参数，则展开全部选定内容。</param>
-        <summary>扩展选定内容或指定一个标题级别范围内的文本。</summary>
-        <remarks>
-          <para>
-            <b>注释</b> 如果文档未处于大纲或主控文档视图，将发生错误。</para>
-          <para />
-        </remarks>
+        <summary>将所选内容或指定范围内的文本展开一个标题级别。</summary>
+        <remarks><para>
+            <b>注释</b> 如果文档不在大纲或主控文档视图中, 则会发生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FieldShading">
@@ -523,20 +492,18 @@
       <Docs>
         <summary>返回或设置窗体域的屏幕底纹。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFieldShading" />可以是下列<b>WdFieldShading</b>常量之一: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFieldShading" />可以是下列<b>WdFieldShading</b>常量之一： </para>
-          <para>
-            <b>wdFieldShadingAlways </b>
+            <b>wdFieldShadingAlways</b>
           </para>
           <para>
-            <b>wdFieldShadingNever </b>
+            <b>wdFieldShadingNever</b>
           </para>
           <para>
             <b>wdFieldShadingWhenSelected</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullScreen">
@@ -565,8 +532,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果窗口处于全屏显示。</summary>
+        <summary>如果窗口为全屏显示，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -597,14 +563,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如果鼠标指针显示为放大镜在打印预览中，表示用户可以单击到放大页面的某个区域或缩小以查看整页或展开多页。</b>
-        </summary>
+        <summary><b>如果鼠标指针显示为放大镜在打印预览中，表示用户可以单击到放大页面的某个区域或缩小以查看整页或展开多页。</b></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果不是在打印预览视图中，则，此属性将产生错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果不是在打印预览视图中，则该属性将产生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeDataView">
@@ -633,13 +595,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果而不是邮件合并字段指定窗口中显示邮件合并数据。</summary>
+        <summary><b>如此</b> 如果而不是邮件合并字段指定窗口中显示邮件合并数据。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的窗口不是主文档，将发生错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定窗口不是主控文档，则会产生一个错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkupMode">
@@ -668,10 +627,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />常量，代表修订的显示模式。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />
-        </value>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />常量, 表示修订的显示模式。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -696,12 +653,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>如果所选内容位于一个标题，此方法移至当前节的下一个页眉 （例如，从奇数页页眉到偶数页页眉） 或下一节中的第一个页眉。 如果所选内容位于页脚中，此方法将移至下一个页脚。</summary>
-        <remarks>
-          <para>
-            <b>注释</b> 如果所选内容位于最后一个页眉或页脚中的最后一节的文档，或者它根本不在页眉或页脚中，将发生错误。</para>
-          <para />
-        </remarks>
+        <summary>如果所选内容位于页眉中, 则此方法将移至当前节中的下一个页眉 (例如, 从奇数页眉到偶数头) 或下一节中的第一个头。 如果所选内容位于页脚中, 则移动到下一个页脚。</summary>
+        <remarks><para>
+            <b>注释</b> 如果所选内容位于文档的最后一节的最后一个页眉或页脚中, 或者, 如果不在页眉或页脚中, 则会发生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageColor">
@@ -730,7 +685,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置在以阅读模式的页面颜色。 读 / 写<see cref="T:Microsoft.Office.Interop.Word.WdPageColor" />。</summary>
+        <summary>返回并设置阅读模式下的页面颜色。 读写<see cref="T:Microsoft.Office.Interop.Word.WdPageColor" />。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -761,14 +716,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Boolean</b>值，该值代表 Microsoft Office Word 是否处于平移模式。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>全景模式将鼠标指针变为手形，使用户按下并拖动文档以页面滚动。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<b>Boolean</b>类型的值, 该值代表 Microsoft Office Word 是否处于全景模式。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>全景模式将鼠标指针变为手形，使用户能够通过按住鼠标来拖动文档，从而滚动查看文档页。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -820,12 +771,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>如果所选内容位于一个标题，此方法移至前一个页眉 （例如，从奇数页页眉偶数页页眉） 当前节或者的最后一个页眉在上一节。 如果所选内容位于页脚，此方法将移至前一个页脚。</summary>
-        <remarks>
-          <para>
-            <b>注释</b> 如果所选内容位于第一个页眉或页脚中的文档，第一节，或者它根本不在页眉或页脚，将发生错误。</para>
-          <para />
-        </remarks>
+        <summary>如果所选内容位于页眉中, 则此方法将移至当前节中的上一个页眉 (例如, 从偶数页眉到奇数页眉) 或上一节中的最后一个页眉。 如果所选内容位于页脚中, 则移动到前一个页脚。</summary>
+        <remarks><para>
+            <b>注释</b> 如果所选内容位于文档第一节的第一个页眉或页脚中, 或者, 如果不在页眉或页脚中, 则会发生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingLayout">
@@ -854,13 +803,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个<b>Boolean</b>值，该值代表是否在阅读版式视图中查看文档。</summary>
+        <summary>设置或返回一个<b>Boolean</b>类型的值, 该值表示是否在阅读版式视图中查看文档。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>则返回 true</b> ，则将文档切换到阅读版式视图中。<b>False</b>关闭阅读版式视图。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果为 
+            <b>True</b>，则将文档切换到阅读版式视图。 如果为 <b>False</b>，则关闭阅读版式视图。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingLayoutActualView">
@@ -891,10 +838,8 @@
       <Docs>
         <summary>设置或返回一个 <b>boolean 类型的值</b> ，该值代表是否在阅读版式视图中显示使用与打印页面相同的布局。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在阅读版式视图，页面不会显示包含文字打印页面中的全部内容，如普通视图或打印布局视图中，您将看到。而是它们将显示在屏幕。<b>ReadingLayoutActualView</b>属性设置为<b>True</b>时，就像显示打印时显示文档。监视器越小，这需要的缩放级别，这将使文档更容易阅读，但它没关系较大的显示器。</para>
-          <para />
-        </remarks>
+        <remarks><para>在阅读版式视图，页不会显示文本打印的页面中包含的全部内容，因为在普通视图和页面视图中，您将看到。 而它们将显示在屏幕中。 <b>ReadingLayoutActualView</b> 属性设置为 <b>True</b> ，当打印时的样子显示文档。在较小的显示器，这需要缩放级别，这将使文档更容易阅读，但它是相当不错的较大的显示器。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingLayoutAllowEditing">
@@ -997,10 +942,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdReadingLayoutMargin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" />常量值，该值代表是否边距可见还是隐藏当在阅读版式视图中查看文档。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" />
-        </value>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" />常量, 表示在阅读版式视图中查看文档时边距是可见还是隐藏。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1061,8 +1004,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真正</b> 的 Microsoft Word 显示修订和注释气球的文本连接线条。</summary>
+        <summary><b>真正</b> 的 Microsoft Word 显示修订和注释气球的文本连接线条。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1093,19 +1035,17 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsBalloonMargin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个常量，指定 Microsoft Word 是否在文档中的左边缘或右边距中显示修订气球。</summary>
+        <summary>设置或返回一个常量, 该常量指定 Microsoft Word 是否在文档的左边距或右边距中显示修订气球。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonMargin" />可以是下列<b>WdRevisionsBalloonMargin</b>常量之一: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonMargin" />可以是下列<b>WdRevisionsBalloonMargin</b>常量之一： </para>
-          <para>
-            <b>wdLeftMargin </b>
+            <b>wdLeftMargin</b>
           </para>
           <para>
             <b>wdRightMargin</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RevisionsBalloonWidth">
@@ -1134,12 +1074,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回<b>一个</b>代表指定的修订气球宽度的 Microsoft Word 中的全局设置。</summary>
+        <summary>设置或返回一个 <b>Single</b> 类型的值，该值代表 Microsoft Word 中用于指定修订气球宽度的全局设置。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>修订气球宽度包括填充的文档距的气球和八分之一英寸气球缘纸张的边缘之间的边缘之间的 1.5 英寸。Microsoft Word 添加纸张的左边缘或右边缘的间距。此宽度扩展到边距并不会更改文档或纸张大小的宽度。使用<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" />属性指定用于设置<b>RevisionsBalloonWidth</b>属性的度量值。</para>
-          <para />
-        </remarks>
+        <remarks><para>修订气球的宽度包括文档边距和气球边缘之间的半英寸的边距以及气球的边缘与纸张边缘之间的八分之一英寸的边距。 Microsoft Word 沿纸张的左边缘或右边缘添加间距。 此宽度会扩展到边距，但并不更改文档的宽度或纸张大小。 使用<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" />属性可指定在设置<b>RevisionsBalloonWidth</b>属性时要使用的度量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RevisionsBalloonWidthType">
@@ -1168,19 +1106,16 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个常量，该常量代表指定 Microsoft Word 度量修订气球宽度的方式的全局设置。</summary>
+        <summary>设置或返回一个常量, 该常量代表指定 Microsoft Word 如何测量修订气球宽度的全局设置。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" />可以是下列<b>WdRevisionsBalloonWidthType</b>常量之一: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" />可以是下列<b>WdRevisionsBalloonWidthType</b>常量之一： </para>
+            <b>wdBalloonWidthPercent</b> –以文档宽度的百分比度量。 </para>
           <para>
-            <b>wdBalloonWidthPercent</b> – 文档宽度的百分比度量。</para>
-          <para>
-            <b>wdBalloonWidthPoints</b> – 以磅为单位。</para>
-          <para>
-            <b>RevisionsBalloonWidthType</b>属性设置的度量单位设置时要使用<see cref="P:Microsoft.Office.Interop.Word.View.RevisionsBalloonWidth" />属性。</para>
-          <para />
-        </remarks>
+            <b>wdBalloonWidthPoints</b> –以磅为单位。 </para>
+          <para><b>RevisionsBalloonWidthType</b>属性设置在设置<see cref="P:Microsoft.Office.Interop.Word.View.RevisionsBalloonWidth" />属性时要使用的度量单位。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RevisionsFilter">
@@ -1243,17 +1178,15 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个常量，该常量代表指定 Microsoft Word 是否边距或嵌入的文档文本中显示气球的全局选项。</summary>
+        <summary>设置或返回一个常量, 该常量代表全局选项, 该选项指定 Microsoft Word 是在边距中显示批注框还是嵌入到文档的文本中。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />可以是下列<b>WdRevisionsMode</b>常量之一: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />可以是下列<b>WdRevisionsMode</b>常量之一： </para>
+            <b>wdBalloonRevisions</b> –在左侧或右侧边距中的气球中显示修订。 </para>
           <para>
-            <b>wdBalloonRevisions</b> – 在左边距或右边距的气球中显示修订。</para>
-          <para>
-            <b>wdInLineRevisions</b> – 显示修订中删除使用删除线和下划线表示插入的文本。这是早期版本的 Word 的默认设置。</para>
-          <para />
-        </remarks>
+            <b>wdInLineRevisions</b> –在文本中显示使用删除线的文本和插入的下划线的修订。 这是 Word 早期版本的默认设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RevisionsView">
@@ -1321,45 +1254,43 @@
       <Docs>
         <summary>返回或设置在页面视图中显示的文档元素。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdSeekView" />可以是下列<b>WdSeekView</b>常量之一: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdSeekView" />可以是下列<b>WdSeekView</b>常量之一： </para>
-          <para>
-            <b>wdSeekCurrentPageFooter </b>
+            <b>wdSeekCurrentPageFooter</b>
           </para>
           <para>
-            <b>wdSeekCurrentPageHeader </b>
+            <b>wdSeekCurrentPageHeader</b>
           </para>
           <para>
-            <b>wdSeekEndnotes </b>
+            <b>wdSeekEndnotes</b>
           </para>
           <para>
-            <b>wdSeekEvenPagesFooter </b>
+            <b>wdSeekEvenPagesFooter</b>
           </para>
           <para>
-            <b>wdSeekEvenPagesHeader </b>
+            <b>wdSeekEvenPagesHeader</b>
           </para>
           <para>
             <b>wdSeekFirstPageFooter</b>
           </para>
           <para>
-            <b>wdSeekFirstPageHeader </b>
+            <b>wdSeekFirstPageHeader</b>
           </para>
           <para>
-            <b>wdSeekFootnotes </b>
+            <b>wdSeekFootnotes</b>
           </para>
           <para>
-            <b>wdSeekMainDocument </b>
+            <b>wdSeekMainDocument</b>
           </para>
           <para>
-            <b>wdSeekPrimaryFooter </b>
+            <b>wdSeekPrimaryFooter</b>
           </para>
           <para>
             <b>wdSeekPrimaryHeader</b>
           </para>
-          <para>如果视图不是页面视图，此属性将产生错误。</para>
-          <para />
-        </remarks>
+          <para>如果当前视图不是页面视图，该属性将产生一个错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShadeEditableRanges">
@@ -1388,12 +1319,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>整数</b>，表示是否将底纹应用于文档中为其用户有权修改的区域。 <b>True</b>将底纹应用于文档的用户可以修改区域。</summary>
+        <summary>返回或设置一个<b>Integer</b>类型的值, 该值表示是否对文档中用户有权修改的区域应用底纹。 如果为 <b>True</b>，则将底纹应用于文档中用户可以修改的区域。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>默认情况下，范围底纹处于打开状态。范围底纹时，或将该属性设置为<b>True</b>时， <b>ShadeEditableRanges</b>属性返回的值为 65535。<b>ShadeEditableRanges</b>属性设置为<b>False</b>时返回的值为 0。值没有任何意义超出指示属性是否为<b>True</b>或<b>False</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>默认情况下，区域底纹处于打开状态。 当区域底纹处于打开状态，或将该属性设置为 <b>True</b> 时，<b>ShadeEditableRanges</b> 属性返回的值为 65535。 将 <b>ShadeEditableRanges</b> 属性设置为 <b>False</b> 时，返回的值为 0。 该值仅用于代表属性值为 <b>True</b> 或 <b>False</b>，没有其他意义。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAll">
@@ -1422,8 +1351,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果显示所有非打印字符 (如隐藏的文字、 制表符、 空格和段落标记)。</summary>
+        <summary><b>如此</b> 如果显示所有非打印字符 (如隐藏的文字、 制表符、 空格和段落标记)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1449,12 +1377,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>显示所有文本 （包括标题和正文） 和仅都显示标题之间切换。</summary>
-        <remarks>
-          <para>
-            <b>注释</b> 如果不是大纲视图或者主控文档视图，则此方法将生成一个错误。</para>
-          <para />
-        </remarks>
+        <summary>在显示所有文本 (包括标题和正文) 和仅显示标题之间切换。</summary>
+        <remarks><para>
+            <b>注释</b> 如果不是大纲视图或主控文档视图, 则此方法将生成一个错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAnimation">
@@ -1520,8 +1446,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果在每个书签的首尾显示方括号。</summary>
+        <summary><b>如此</b> 如果在每个书签的首尾显示方括号。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1552,13 +1477,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真正</b> 的 Microsoft Word 文档中显示的注释。</summary>
+        <summary><b>真正</b> 的 Microsoft Word 文档中显示的注释。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果气球的右侧还是左侧的边距中显示修订标记，在气球中显示批注。内联显示的修订标记时，注释应用于文本外面范围方括号中;当用户将鼠标指针放在括号内的文本上方，正上方鼠标指针在方形气球中显示相关的备注。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果修订标记显示在右边距或左边距的气球中，则备注也显示在气球中。如果修订标记显示在文本中，则应用备注的文本被括在方括号中。当将鼠标指针置于括号中的文本时，相关的备注就会显示在鼠标指针上方的方形气球中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCropMarks">
@@ -1588,15 +1510,11 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否在页面，以指示页边距的位置的角显示裁剪标记。读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>显示裁切线不允许用户通过拖动裁切线更改的边距。裁切线仅显示以指示边距页中的位置。此属性对应于 Word 选项对话框的高级选项卡中的裁切线复选框。</para>
+        <value><b>Boolean</b></value>
+        <remarks><para>如果显示裁减标记，将禁止用户通过拖动裁减标记来更改边距。 显示裁减标记只是为了指示边距在页面上的位置。 此属性对应于 "Word 选项" 对话框的 "高级" 选项卡中的 "裁减标记" 复选框。</para>
           <para>
-            <b>注释</b>： 裁切线东亚语言中默认情况下显示和所有其他语言中默认情况下处于关闭状态。</para>
-          <para />
-        </remarks>
+            <b>注意</b>: 默认情况下, 在东亚语言中显示裁剪标记, 默认情况下, 在所有其他语言中将其关闭。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDrawings">
@@ -1625,8 +1543,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果在页面视图中显示绘图工具创建的对象。</summary>
+        <summary>如果在页面视图中显示由绘图工具创建的对象，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1657,7 +1574,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>则显示域代码。</summary>
+        <summary>如果显示域代码，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1688,13 +1605,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真</b> 要是正文文本的第一行显示在大纲视图中。</summary>
+        <summary><b>真</b> 要是正文文本的第一行显示在大纲视图中。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果视图不是大纲或主控文档视图，则此属性将产生错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果不是大纲或主控文档视图，该属性将产生一个错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowFormat">
@@ -1723,13 +1637,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果在大纲视图中可见的字符格式。</summary>
+        <summary><b>如此</b> 如果在大纲视图中可见的字符格式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果视图不是大纲或主控文档视图，则此属性将产生错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果不是大纲或主控文档视图，该属性将产生一个错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowFormatChanges">
@@ -1758,13 +1669,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果在大纲视图中可见的字符格式。</summary>
+        <summary><b>如此</b> 如果在大纲视图中可见的字符格式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果视图不是大纲或主控文档视图，则此属性将产生错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果不是大纲或主控文档视图，该属性将产生一个错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowHeading">
@@ -1790,14 +1698,11 @@
         <Parameter Name="Level" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Level">
-          <b>必选。</b> 指大纲标题的级别（可取 1 到 9 之间数值）。</param>
+        <param name="Level">必需的<b>整数</b>。 指大纲标题的级别（可取 1 到 9 之间数值）。</param>
         <summary>显示所有高于指定标题级别的标题，隐藏子标题和正文。</summary>
-        <remarks>
-          <para>
-            <b>注释</b> 如果不是大纲视图或者主控文档视图，则此方法将生成一个错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>注释</b> 如果不是大纲视图或主控文档视图, 则此方法将生成一个错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowHiddenText">
@@ -1826,8 +1731,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果设置为隐藏文字格式的文本显示。</summary>
+        <summary>如果显示具有隐藏格式的文本，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1858,8 +1762,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果突出显示格式显示和打印文档。</summary>
+        <summary>如果显示和打印文档中突出显示格式的文本，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1890,8 +1793,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果显示可选连字符。 可选连字符指明在何处断开单词位于一行的末尾时。</summary>
+        <summary><b>如此</b> 如果显示可选连字符。 可选连字符指明在何处断开单词位于一行的末尾时。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1922,12 +1824,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>boolean 类型的值</b>的显示或隐藏手写的墨迹注释。 如果显示墨迹注释， <b>则返回 true</b> 。 <b>False</b> 隐藏墨迹注释。</summary>
+        <summary>返回或设置一个<b>Boolean</b>类型的值, 该值显示或隐藏手写墨迹注释。 如果显示墨迹注释， <b>则返回 true</b> 。 <b>False</b> 隐藏墨迹注释。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要处理墨迹注释，您必须运行 Microsoft Word 在平版电脑上。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要使用墨迹注释，您必须运行 Microsoft Word 在 tablet 计算机上。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowInsertionsAndDeletions">
@@ -1956,8 +1856,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真正</b> 的 Microsoft Word 显示插入和删除的文档中启用修订所做。</summary>
+        <summary><b>真正</b> 的 Microsoft Word 显示插入和删除的文档中启用修订所做。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1988,14 +1887,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果显示页眉和页脚区域时同时显示指定文档中的文字。</summary>
+        <summary><b>如此</b> 如果显示页眉和页脚区域时同时显示指定文档中的文字。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ShowMainTextLayer</b>属性等效于页眉和页脚工具栏上的显示/隐藏文档文本按钮。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>ShowMainTextLayer</b>属性等效于 "页眉和页脚" 工具栏上的 "显示/隐藏文档文字" 按钮。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowMarkupAreaHighlight">
@@ -2030,14 +1925,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示显示修订和注释气球的标记区域是否带底纹。读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>此属性对应于审阅功能区上显示标记菜单中的标记区域突出显示选项。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示显示修订和注释气球的标记区域是否带底纹。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>此属性对应于 "审阅" 功能区上的 "显示标记" 菜单中的 "标记区域突出显示" 选项。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowObjectAnchors">
@@ -2066,8 +1957,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果项目旁边显示锚点对象可在页面视图中定位。</summary>
+        <summary><b>如此</b> 如果项目旁边显示锚点对象可在页面视图中定位。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2098,8 +1988,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果 Microsoft Word 显示可选换行符。</summary>
+        <summary>如果 Microsoft Word 显示可选换行符，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2130,13 +2019,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置是否应在文档中可见其他作者的状态。</summary>
-        <value>
-          <b>true</b>如果应显示在文档中; 其他作者的状态否则为<b>false</b>。</value>
-        <remarks>
-          <para>读/写 boolean 类型的值。此属性用于切换显示共同创作时的其他作者的状态。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置是否在文档中显示其他作者的状态。</summary>
+        <value>如果其他作者的状态应在文档中可见, 则为<b>true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <remarks><para>读/写布尔。 使用此属性可在共同创作时切换显示其他作者的状态。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowParagraphs">
@@ -2165,8 +2051,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果显示段落标记。</summary>
+        <summary><b>如此</b> 如果显示段落标记。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2197,8 +2082,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果空白方框作为图片的占位符进行显示。</summary>
+        <summary><b>如此</b> 如果空白方框作为图片的占位符进行显示。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2229,8 +2113,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真正</b> 的 Microsoft Word 显示修订和批注的文档中启用修订所做。</summary>
+        <summary><b>真正</b> 的 Microsoft Word 显示修订和批注的文档中启用修订所做。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2261,8 +2144,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果显示空格字符。</summary>
+        <summary><b>如此</b> 如果显示空格字符。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2293,8 +2175,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果显示制表符。</summary>
+        <summary>如果显示制表符，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2325,8 +2206,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果显示页边距、 文本列、 对象和页面视图中的框架周围的虚线。</summary>
+        <summary><b>如此</b> 如果显示页边距、 文本列、 对象和页面视图中的框架周围的虚线。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2357,13 +2237,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>值，该值代表是否在文档中查看 XML 标记。</summary>
+        <summary>返回一个<b>Integer</b>类型的值, 该值表示是否在文档中查看 XML 标记。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>True</b>表示标记都可见。<b>False</b> ，则指示标记处于隐藏状态。<b>wdToggle</b>可以显示和隐藏 XML 标记之间切换。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>True</b> 指示标记是可见的。 <b>False</b> 指示标记处于隐藏状态。 <b>wdToggle</b> 允许您切换显示和隐藏 XML 标记。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SplitSpecial">
@@ -2394,59 +2272,58 @@
       <Docs>
         <summary>返回或设置活动窗口的窗格。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdSpecialPane" />可以是下列的<b>WdSpecialPane</b>常量之一:</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdSpecialPane" />可以是下列<b>WdSpecialPane</b>常量之一：</para>
-          <para>
-            <b>wdPaneComments </b>
+            <b>wdPaneComments</b>
           </para>
           <para>
-            <b>wdPaneCurrentPageFooter </b>
+            <b>wdPaneCurrentPageFooter</b>
           </para>
           <para>
-            <b>wdPaneCurrentPageHeader </b>
+            <b>wdPaneCurrentPageHeader</b>
           </para>
           <para>
-            <b>wdPaneEndnoteContinuationNotice </b>
+            <b>wdPaneEndnoteContinuationNotice</b>
           </para>
           <para>
             <b>wdPaneEndnoteContinuationSeparator</b>
           </para>
           <para>
-            <b>wdPaneEndnotes </b>
+            <b>wdPaneEndnotes</b>
           </para>
           <para>
-            <b>wdPaneEndnoteSeparator </b>
+            <b>wdPaneEndnoteSeparator</b>
           </para>
           <para>
-            <b>wdPaneEvenPagesFooter </b>
+            <b>wdPaneEvenPagesFooter</b>
           </para>
           <para>
-            <b>wdPaneEvenPagesHeader </b>
+            <b>wdPaneEvenPagesHeader</b>
           </para>
           <para>
-            <b>wdPaneFirstPageFooter </b>
+            <b>wdPaneFirstPageFooter</b>
           </para>
           <para>
             <b>wdPaneFirstPageHeader</b>
           </para>
           <para>
-            <b>wdPaneFootnoteContinuationNotice </b>
+            <b>wdPaneFootnoteContinuationNotice</b>
           </para>
           <para>
-            <b>wdPaneFootnoteContinuationSeparator </b>
+            <b>wdPaneFootnoteContinuationSeparator</b>
           </para>
           <para>
-            <b>wdPaneFootnotes </b>
+            <b>wdPaneFootnotes</b>
           </para>
           <para>
-            <b>wdPaneFootnoteSeparator </b>
+            <b>wdPaneFootnoteSeparator</b>
           </para>
           <para>
-            <b>wdPaneNone </b>
+            <b>wdPaneNone</b>
           </para>
           <para>
-            <b>wdPanePrimaryFooter </b>
+            <b>wdPanePrimaryFooter</b>
           </para>
           <para>
             <b>wdPanePrimaryHeader</b>
@@ -2454,8 +2331,7 @@
           <para>
             <b>wdPaneRevisions</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableGridlines">
@@ -2484,8 +2360,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果显示表格虚框。</summary>
+        <summary><b>如此</b> 如果显示表格虚框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2518,33 +2393,32 @@
       <Docs>
         <summary>返回或设置视图的类型。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdViewType" />可以是下列<b>WdViewType</b>常量之一: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdViewType" />可以是下列<b>WdViewType</b>常量之一： </para>
-          <para>
-            <b>wdMasterView </b>
+            <b>wdMasterView</b>
           </para>
           <para>
-            <b>wdOutlineView </b>
+            <b>wdOutlineView</b>
           </para>
           <para>
-            <b>wdPrintView </b>
+            <b>wdPrintView</b>
           </para>
           <para>
-            <b>wdNormalView </b>
+            <b>wdNormalView</b>
           </para>
           <para>
-            <b>wdPrintPreview </b>
+            <b>wdPrintPreview</b>
           </para>
           <para>
-            <b>wdWebView </b>
+            <b>wdWebView</b>
           </para>
           <para>
             <b>wdReadingView</b>
           </para>
-          <para>
-            <b>类型</b>属性返回的所有文档的<b>wdMasterView</b>其中当前视图是大纲或主控文档。当前视图决不会返回<b>wdOutlineView</b>除非明确地设置代码中的第一次。</para>要检查当前文档是否是大纲，请使用<b>Type</b>属性的
-          <para>和<see cref="T:Microsoft.Office.Interop.Word.Subdocuments" />集合的<see cref="P:Microsoft.Office.Interop.Word.Subdocuments.Count" />属性。<b>Type</b>属性返回<b>wdOutlineView</b>或<b>wdMasterView</b>和<b>Count</b>属性返回零，如果文档是大纲。</para><para /></remarks>
+          <para><b>Type</b> 属性返回 <b>wdMasterView</b> 是分级显示当前视图的所有文档或主控文档。当前视图将永远不会返回 <b>wdOutlineView</b> ，除非明确地设置代码中的第一次。</para>
+          <para>若要检查当前文档是否为大纲, 请使用<b>Type</b>属性和<see cref="T:Microsoft.Office.Interop.Word.Subdocuments" />集合的<see cref="P:Microsoft.Office.Interop.Word.Subdocuments.Count" />属性。 如果 <b>Type</b> 属性返回 <b>wdOutlineView</b> 或 <b>wdMasterView</b> ， <b>Count</b> 属性将返回零，该文档是大纲。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapToWindow">
@@ -2573,7 +2447,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>的文档窗口的右边缘，而不是在右边距或列的右边界换行。</summary>
+        <summary>如果文字在文档窗口的右边缘换行，而不是在右边距或文本栏的右边界，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2601,7 +2475,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Zoom</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Zoom" />对象，表示指定视图的显示比例。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Zoom" />对象, 表示指定视图的缩放比例。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="Category" FullName="Microsoft.Office.Interop.Word.Category">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="60d6731499991e5423f388f2cbbb54d084722c37" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665787" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Category" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d4ebcc53d5d821839f9a81aad950abc6d855e17c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142325" /></Metadata><TypeSignature Language="C#" Value="public interface Category" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Category" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Category" />
   <TypeSignature Language="VB.NET" Value="Public Interface Category" />
@@ -27,9 +19,11 @@
   </Attributes>
   <Docs>
     <summary>代表构建基块类型的各个类别。</summary>
-    <remarks>
-      <para>Microsoft Office Word 使用类型和类别来组织构建基块。每个构建基块类型由<see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" />常量。每个类别是用户定义的唯一字符串。Word 附带了已定义的两个类别:"常规"和"Custom";您可以根据需要创建其他类别。</para>使用
-      <para><see cref="P:Microsoft.Office.Interop.Word.Category.Type" />属性访问与特定的类别关联的构建基块类型。 使用<see cref="P:Microsoft.Office.Interop.Word.Category.BuildingBlocks" />属性可访问的构建基块类别的集合。</para><para>使用<see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" />方法<see cref="T:Microsoft.Office.Interop.Word.Categories" />集合以访问现有类别; 要创建新类别，则使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" />方法<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集合。设置的值<paramref name="Category" />参数。</para><para>有关构建基块的详细信息，请参阅<a href="HV10120827">处理构建基块</a></para><para /></remarks>
+    <remarks><para>Microsoft Office Word 使用类型和类别来组织构建基块。 每个构建基块类型由一个<see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" />常量表示。 每个类别都是用户定义的唯一字符串。 Word 附带有两个已定义的类别: "常规" 和 "自定义";您可以根据需要创建其他类别。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Category.Type" />属性可访问与特定类别相关联的构建基块类型。  使用<see cref="P:Microsoft.Office.Interop.Word.Category.BuildingBlocks" />属性可访问类别的构建基块的集合。 </para>
+      <para>使用<see cref="T:Microsoft.Office.Interop.Word.Categories" />集合<see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" />的方法访问现有类别;若要创建新类别, 请使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集合的方法。 设置<paramref name="Category" />参数的值。 </para>
+      <para>有关构建基块的详细信息, 请参阅<a href="HV10120827">处理构建基块</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -55,10 +49,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,10 +77,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlocks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个类别构建基块。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />
-        </value>
+        <summary>返回类别的构建基块。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,15 +106,11 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
+        <value><b>Integer</b></value>
+        <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注意</b>： 此值也可以由常量<b>wdCreatorCode</b>。</para>
-          <para />
-        </remarks>
+            <b>注意</b>: 此值还可由常量<b>wdcreatorcode 表示</b>表示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -151,9 +137,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回集合中的项的位置。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,9 +165,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回指定对象的名称。 只读。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,10 +192,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定<b>Category</b>对象的父对象。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定的<b>Category</b>对象的父对象。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,10 +220,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个构建基块类别的构建基块的类型。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />
-        </value>
+        <summary>返回构建基块类别的构建基块的类型。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="Diagram" FullName="Microsoft.Office.Interop.Word.Diagram">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="716f02ec4b6e7d1f64d0bb8f9f474e53ca6129f2" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666513" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Diagram" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bc06f6c988452cbcd9040e790955deac67b02537" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147100" /></Metadata><TypeSignature Language="C#" Value="public interface Diagram" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Diagram" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Diagram" />
   <TypeSignature Language="VB.NET" Value="Public Interface Diagram" />
@@ -27,13 +19,10 @@
   </Attributes>
   <Docs>
     <summary>代表文档中的单个图表。</summary>
-    <remarks>
-      <para>
-        <b>图表</b>对象是成员<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Diagram" />属性<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />， <see cref="T:Microsoft.Office.Interop.Word.Shape" />，和<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象，返回单个<b>图表</b>对象。使用<see cref="M:Microsoft.Office.Interop.Word.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" />方法，以将图表从一种类型更改为另一个。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Diagram.Reverse" />属性翻转图表中的节点的顺序。</para>
-      <para />
-    </remarks>
+    <remarks><para><b>图表</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合的一个成员。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.Shape.Diagram" />使用<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />、 <see cref="T:Microsoft.Office.Interop.Word.Shape" />和<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象的属性返回单个<b>图表</b>对象。 使用<see cref="M:Microsoft.Office.Interop.Word.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" />方法可将图表从一种类型更改为另一种类型。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Diagram.Reverse" />属性可翻转图表中节点的顺序。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +79,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回<see cref="T:Microsoft.Office.Core.MsoTriState" />指定图表的自动格式状态的常量。</summary>
+        <summary>设置或返回一个<see cref="T:Microsoft.Office.Core.MsoTriState" />常量, 该常量指定图表的自动格式设置状态。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +110,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Core.MsoTriState" />确定的节点和图表中的连接器的自动位置的常量。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Core.MsoTriState" />常量, 该常量确定图表中节点和连接器的自动定位。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,8 +138,8 @@
         <Parameter Name="Type" Type="Microsoft.Office.Core.MsoDiagramType" />
       </Parameters>
       <Docs>
-        <param name="Type">所需<see cref="T:Microsoft.Office.Core.MsoDiagramType" />。 要转换的图表的类型。</param>
-        <summary>将一种类型的图示转换到另一种类型的图表。</summary>
+        <param name="Type">必需<see cref="T:Microsoft.Office.Core.MsoDiagramType" />。 要转换为的图表的类型。</param>
+        <summary>将一种类型的图表转换为另一种类型的图表。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,9 +168,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>例如，如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>例如, 如果该对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FitText">
@@ -205,11 +194,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>调整大小以适应节点的边界内的图表中的节点中的文本。</summary>
-        <remarks>
-          <para>仅在 Microsoft Office PowerPoint 2003 本方法的作用。</para>
-          <para />
-        </remarks>
+        <summary>调整图表中的节点中的文本大小, 使其适合节点边界内。</summary>
+        <remarks><para>此方法仅在 Microsoft Office PowerPoint 2003 中起作用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -235,7 +222,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" />对象，它代表图表中的节点。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" />对象, 表示图表中的节点。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -294,8 +281,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如果为 msotrue 则</b>取消图表中的节点。</summary>
+        <summary><b>MsoTrue</b>反转图表中的节点。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

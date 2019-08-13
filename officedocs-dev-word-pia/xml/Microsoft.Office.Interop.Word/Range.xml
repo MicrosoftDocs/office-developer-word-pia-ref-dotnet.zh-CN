@@ -1,13 +1,5 @@
 <Type Name="Range" FullName="Microsoft.Office.Interop.Word.Range">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="133dc54c4c40d1f829050ede4cea0c3e51aa2a5b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666538" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Range" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="796454862c2382b44ee98f989c9ce87993127d9e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144251" /></Metadata><TypeSignature Language="C#" Value="public interface Range" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Range" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Range" />
   <TypeSignature Language="VB.NET" Value="Public Interface Range" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>表示文档中的一个连续区域。</summary>
-    <remarks>
-      <para>每个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象由起始和结束字符位置定义。类似于书签在文档中的使用的方式<see cref="T:Microsoft.Office.Interop.Word.Range" />对象用于确定文档的特定部分。但是，书签不同，<see cref="T:Microsoft.Office.Interop.Word.Range" />对象仅存在定义其编程代码运行时。<see cref="T:Microsoft.Office.Interop.Word.Range" />对象的所选内容无关。也就是说，您可以定义和操作而不更改所选内容的区域。您还可以定义多个区域在文档中，虽然可以每个窗格中只有一个选定内容。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法，以返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象定义的给定开始和结束字符位置。</para>
-      <para>使用<b>Range</b>属性返回的单个对象的<see cref="T:Microsoft.Office.Interop.Word.Range" />对象定义的开头和结尾的对象。<b>Range</b>属性适用于多个对象 (例如， <see cref="T:Microsoft.Office.Interop.Word.Paragraph" />， <see cref="T:Microsoft.Office.Interop.Word.Bookmark" />，和<see cref="T:Microsoft.Office.Interop.Word.Cell" />)。</para>
-      <para />
-    </remarks>
+    <remarks><para>每<see cref="T:Microsoft.Office.Interop.Word.Range" />个对象都由起始和结束字符位置定义。 与在文档中使用书签的方式类似, <see cref="T:Microsoft.Office.Interop.Word.Range" />对象用于标识文档的特定部分。 但是, 与书签不同的是<see cref="T:Microsoft.Office.Interop.Word.Range" /> , 对象仅在定义它的编程代码运行时才存在。 <see cref="T:Microsoft.Office.Interop.Word.Range" />对象独立于所选内容。 这就是说，你可以定义区域并对其进行操作，无需更改选定内容。 此外，你还可以在文档中定义多个区域，但每个窗格只能具有一个选定内容。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法返回由给定的<see cref="T:Microsoft.Office.Interop.Word.Range" />起始和结束字符位置定义的对象。</para>
+      <para>使用单个对象的<b>Range</b>属性可返回由该对象<see cref="T:Microsoft.Office.Interop.Word.Range" />的开头和结尾定义的对象。 <b>Range</b>属性适用于许多对象 (例如<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />、、 <see cref="T:Microsoft.Office.Interop.Word.Bookmark" />、和<see cref="T:Microsoft.Office.Interop.Word.Cell" />)。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />对象, 表示 Microsoft Word 应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +74,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>自动套用格式区域。</summary>
+        <summary>自动设置区域格式。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,13 +104,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否字体或区域设置为加粗格式。</summary>
+        <summary>确定字体或区域的格式是否为加粗。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （ <b>True</b>和<b>False</b>的混合）。</para>
-          <para>此属性可以设置为的值是<b>True</b>、 <b>False</b>，和<b>wdToggle</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>该属性返回 <b>True</b>、<b>False</b> 或 <b>wdUndefined</b>（当返回值既可为 <b>True</b>，也可为 <b>False</b> 时取该值）。</para>
+          <para>此属性的值可设置为<b>True</b>、 <b>False</b>和<b>wdToggle</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BoldBi">
@@ -149,15 +137,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否字体或区域设置为加粗格式。</summary>
+        <summary>确定字体或区域的格式是否为加粗。</summary>
         <value>.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （用于混合的粗体和非粗体文本）。</para>
-          <para>此属性可以设置为的值是<b>True</b>、 <b>False</b>，和<b>wdToggle</b>。</para>
-          <para>
-            <b>BoldBi</b>属性应用于从右向左的语言的文字。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性返回 <b>True</b> ， <b>假</b> 或 <b>wdUndefined</b> (为粗体和非粗体文本的混合)。</para>
+          <para>此属性的值可设置为<b>True</b>、 <b>False</b>和<b>wdToggle</b>。</para>
+          <para><b>BoldBi</b> 属性适用于从右向左的语言文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BookmarkID">
@@ -183,12 +168,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定的选定内容或范围; 的开头的书签的数目如果没有相应的书签，则返回 0 （零）。</summary>
+        <summary>返回包含指定的所选内容或区域的开始位置的书签的编号。如果没有相应的书签, 则返回 0 (零)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>数字对应于书签在文档中的位置 — 1 的第一个书签，2 代表第二个，以此类推。</para>
-          <para />
-        </remarks>
+        <remarks><para>该数字对应于书签在文档中的位置, 1 表示第一个书签, 2 表示第一个书签, 依此类推。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Bookmarks">
@@ -214,7 +197,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Bookmarks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Bookmarks" />集合，它代表区域中的所有书签。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Bookmarks" />集合, 该集合代表区域中的所有书签。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -245,7 +228,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合，代表指定对象的所有边框。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合, 该集合代表指定对象的所有边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -302,7 +285,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -333,7 +316,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -364,12 +347,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCharacterCase</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.WdCharacterCase" />常量值，该值代表指定范围中的文本的大小写。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdCharacterCase" />常量, 该常量代表指定区域中的文本的大小写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>上面列出的常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>由于您选择或安装的语言支持不同（例如美国英语），上述部分常量可能无法使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cells">
@@ -395,7 +376,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Cells</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Cells" />集合，代表表格单元格区域中的。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Cells" />集合, 该集合代表区域中的表格单元格。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -423,7 +404,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Characters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Characters" />集合，它代表区域中的字符。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Characters" />集合, 该集合代表区域中的字符。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -451,10 +432,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个代表用于设置一个或多个字符的格式的样式的<b>对象</b>。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回一个<b>Object</b>类型的对象, 该对象代表用于设置一个或多个字符格式的样式。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -511,10 +490,8 @@
       <Parameters />
       <Docs>
         <summary>开始对指定的区域执行拼写和语法检查。</summary>
-        <remarks>
-          <para>如果文档或区域包含错误，该方法与检查语法复选框选择显示拼写和语法对话框 （工具菜单）。应用于文档时，此方法将检查 （如页眉、 页脚和文本框） 的所有可用文字部分。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果文档或区域中包含错误, 则该方法显示 "拼写和语法" 对话框 ("工具" 菜单), 并选中 "检查语法" 复选框。 该方法应用于文档时，将检查文档中所有可用文字的拼写（如页眉、页脚和文本框）。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckSpelling">
@@ -550,23 +527,21 @@
         <Parameter Name="CustomDictionary10" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="CustomDictionary">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或自定义词典的文件名。</param>
-        <param name="IgnoreUppercase">可选的<b>对象</b>。 <b>如此</b> 如果忽略大小写。 如果省略此参数，则的当前值<see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" />属性使用。</param>
-        <param name="AlwaysSuggest">可选的<b>对象</b>。 <b>真正</b> 使 Microsoft Word 能够提出拼写建议。 如果省略此参数，则的当前值<see cref="P:Microsoft.Office.Interop.Word.Options.SuggestSpellingCorrections" />属性使用。</param>
-        <param name="CustomDictionary2">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary3">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <param name="CustomDictionary4">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <param name="CustomDictionary5">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <param name="CustomDictionary6">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <param name="CustomDictionary7">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <param name="CustomDictionary8">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <param name="CustomDictionary9">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <param name="CustomDictionary10">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <summary>开始指定区域进行拼写检查。</summary>
-        <remarks>
-          <para>如果文档或区域包含错误，该方法将显示拼写和语法对话框 （工具菜单） 中，使用检查语法复选框已清除。对于文档，此方法检查 （如页眉、 页脚和文本框） 的所有可用文字部分。</para>
-          <para />
-        </remarks>
+        <param name="CustomDictionary">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是自定义词典的文件名。</param>
+        <param name="IgnoreUppercase">可选<b>对象</b>。 <b>如此</b> 如果忽略大小写。 如果省略此参数, 则使用<see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" />属性的当前值。</param>
+        <param name="AlwaysSuggest">可选<b>对象</b>。 <b>真正</b> 使 Microsoft Word 能够提出拼写建议。 如果省略此参数, 则使用<see cref="P:Microsoft.Office.Interop.Word.Options.SuggestSpellingCorrections" />属性的当前值。</param>
+        <param name="CustomDictionary2">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary3">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <param name="CustomDictionary4">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <param name="CustomDictionary5">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <param name="CustomDictionary6">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <param name="CustomDictionary7">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <param name="CustomDictionary8">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <param name="CustomDictionary9">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <param name="CustomDictionary10">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <summary>开始对指定区域进行拼写检查。</summary>
+        <remarks><para>如果该文档或区域中包含错误，则该方法显示“拼写和语法”对话框（“工具”菜单），其中“检查语法”复选框处于清除状态。 该方法应用于文档时，将检查文档中所有可用文字的拼写（如页眉、页脚和文本框）。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckSynonyms">
@@ -616,11 +591,11 @@
         <Parameter Name="Direction" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Direction">可选的<b>对象</b>。 折叠某区域或所选内容的方向。 可以是以下任一<see cref="T:Microsoft.Office.Interop.Word.WdCollapseDirection" />常量： <b>wdCollapseEnd</b>或<b>wdCollapseStart</b>。 默认值是 <b>wdCollapseStart</b> 。</param>
-        <summary>将范围折叠到起始或结束位置。</summary>
-        <remarks>
-          <para>折叠范围后，开始和结束点相等。</para>如果您使用<b>wdCollapseEnd</b>指的是整个段落范围折叠
-          <para>，范围为位于后结束段落标记 （下一段开始）。但是，您可以移动范围通过使用备份一个字符<see cref="M:Microsoft.Office.Interop.Word.Range.MoveEnd(System.Object@,System.Object@)" />方法后该区域折叠。</para><para /></remarks>
+        <param name="Direction">可选<b>对象</b>。 折叠某区域或所选内容的方向。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdCollapseDirection" />常量之一: <b>wdCollapseEnd</b>或<b>wdCollapseStart</b>。 默认值是 <b>wdCollapseStart</b> 。</param>
+        <summary>将区域折叠到起始位置或结束位置。</summary>
+        <remarks><para>区域折叠后, 起始和结束点相等。</para>
+          <para>如果使用<b>wdCollapseEnd</b>折叠引用整个段落的区域, 则该范围位于结束段落标记之后 (下一段的开头)。 但是, 可以在区域折叠后使用<see cref="M:Microsoft.Office.Interop.Word.Range.MoveEnd(System.Object@,System.Object@)" />方法将该范围移回一个字符。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Columns">
@@ -646,7 +621,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Columns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Columns" />集合，表示范围中的所有表格列。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Columns" />集合, 该集合代表区域中的所有表格列。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -677,12 +652,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定指定的区域是否包含合并的字符。</summary>
+        <summary>确定指定区域是否包含组合字符。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的区域包含合并的字符和<b>False</b> ，如果没有，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定的区域包含组合字符, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Comments">
@@ -708,7 +681,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Comments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Comments" />集合，代表指定范围中的所有注释。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Comments" />集合, 该集合代表指定区域中的所有批注。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -736,14 +709,11 @@
         <Parameter Name="Statistic" Type="Microsoft.Office.Interop.Word.WdStatistic" />
       </Parameters>
       <Docs>
-        <param name="Statistic">所需<see cref="T:Microsoft.Office.Interop.Word.WdStatistic" />。</param>
-        <summary>返回基于指定范围内容的统计值。</summary>
+        <param name="Statistic">必需<see cref="T:Microsoft.Office.Interop.Word.WdStatistic" />。</param>
+        <summary>返回基于指定范围的内容的统计信息。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>WdStatistic</b>常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>某些<b>WdStatistic</b>常量可能不可用, 具体取决于您选择或安装的语言支持 (例如, 美国英语)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Conflicts">
@@ -769,12 +739,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Conflicts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.Conflicts" />集合对象，它包含范围中的所有冲突对象。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.Conflicts" />集合对象，它包含范围中的所有冲突对象。</value>
-        <remarks>
-          <para>只读的。使用此属性可返回<see cref="T:Microsoft.Office.Interop.Word.Conflicts" />文档集合对象。使用<b>冲突</b>(<paramref name="Index" />)，其中<paramref name="Index" />是冲突索引号，若要返回单个<see cref="T:Microsoft.Office.Interop.Word.Conflict" />对象。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.Conflicts" />集合对象, 该对象包含范围中的所有冲突对象。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Conflicts" />集合对象, 该对象包含范围中的所有冲突对象。</value>
+        <remarks><para>只读。 使用此属性可返回文档<see cref="T:Microsoft.Office.Interop.Word.Conflicts" />的集合对象。 使用<b>冲突</b>(<paramref name="Index" />), 其中<paramref name="Index" />是冲突索引号, 返回单个<see cref="T:Microsoft.Office.Interop.Word.Conflict" />对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentControls">
@@ -800,10 +768,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />集合，它代表区域中包含的内容控件。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControls" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />集合, 该集合代表区域中包含的内容控件。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -833,12 +799,12 @@
         <Parameter Name="CustomDictionary" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ConversionsMode">可选的<b>对象</b>。 设置为朝鲜文字和朝鲜文汉字之间转换的方向。 可以是以下任一<see cref="T:Microsoft.Office.Interop.Word.WdMultipleWordConversionsMode" />常量： <b>wdHangulToHanja</b>或<b>wdHanjaToHangul</b>。 默认值是当前值<see cref="P:Microsoft.Office.Interop.Word.Options.MultipleWordConversionsMode" />属性。</param>
-        <param name="FastConversion">可选的<b>对象</b>。 <b>如此</b> 如果 Microsoft Word 会自动将带有转换仅输入一个建议的单词。 默认值是当前值<see cref="P:Microsoft.Office.Interop.Word.Options.HangulHanjaFastConversion" />属性。</param>
-        <param name="CheckHangulEnding">可选的<b>对象</b>。 <b>True</b>如果 Word 自动检测朝鲜文字结尾，并将其忽略。 默认值是当前值<see cref="P:Microsoft.Office.Interop.Word.Options.CheckHangulEndings" />属性。 如果此参数，则忽略<paramref name="ConversionsMode" />参数设置为<b>wdHanjaToHangul</b>。</param>
-        <param name="EnableRecentOrdering">可选的<b>对象</b>。 <b>如此</b> 如果 Word 显示最近使用过的单词建议列表的顶部。 默认值是当前值<see cref="P:Microsoft.Office.Interop.Word.Options.EnableHangulHanjaRecentOrdering" />属性。</param>
-        <param name="CustomDictionary">可选的<b>对象</b>。 自定义的朝鲜文 / 汉字转换词典的名称。 若要使用自定义词典与朝鲜文 / 汉字转换的主词典中不包含使用此参数。</param>
-        <summary>将指定的区域从朝鲜文字转换为朝鲜文汉字，反之亦然。</summary>
+        <param name="ConversionsMode">可选<b>对象</b>。 设置朝鲜文字和朝鲜文汉字之间的转换方向。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdMultipleWordConversionsMode" />常量之一: <b>wdHangulToHanja</b>或<b>wdHanjaToHangul</b>。 默认值为<see cref="P:Microsoft.Office.Interop.Word.Options.MultipleWordConversionsMode" />属性的当前值。</param>
+        <param name="FastConversion">可选<b>对象</b>。 <b>如此</b> 如果 Microsoft Word 会自动将带有转换仅输入一个建议的单词。 默认值为<see cref="P:Microsoft.Office.Interop.Word.Options.HangulHanjaFastConversion" />属性的当前值。</param>
+        <param name="CheckHangulEnding">可选<b>对象</b>。 <b>如此</b>如果 Word 自动检测朝鲜文字结尾并忽略它们。 默认值为<see cref="P:Microsoft.Office.Interop.Word.Options.CheckHangulEndings" />属性的当前值。 如果<paramref name="ConversionsMode" />将该参数设置为<b>wdHanjaToHangul</b>, 则忽略此参数。</param>
+        <param name="EnableRecentOrdering">可选<b>对象</b>。 <b>如此</b> 如果 Word 显示最近使用过的单词建议列表的顶部。 默认值为<see cref="P:Microsoft.Office.Interop.Word.Options.EnableHangulHanjaRecentOrdering" />属性的当前值。</param>
+        <param name="CustomDictionary">可选<b>对象</b>。 自定义朝鲜文字/朝鲜文汉字转换词典的名称。 使用此参数, 可以使用主词典中未包含朝鲜文字/朝鲜文汉字转换的自定义词典。</param>
+        <summary>将指定范围从朝鲜文字转换为朝鲜文汉字, 反之亦然。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -879,23 +845,23 @@
         <Parameter Name="DefaultTableBehavior" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Separator">可选的<b>对象</b>。 指定用于将文本分隔成单元格的字符。 可以是一个字符或<see cref="T:Microsoft.Office.Interop.Word.WdTableFieldSeparator" />常量。 如果省略此参数，则使用 <b>DefaultTableSeparator</b> 属性的值。</param>
-        <param name="NumRows">可选的<b>对象</b>。 表格中的行数。 如果省略此参数，则 Word 将设置该范围的内容所基于的行数。</param>
-        <param name="NumColumns">可选的<b>对象</b>。 表格中的列数。 如果省略此参数，Word 将根据该范围的内容设置列数。</param>
-        <param name="InitialColumnWidth">可选的<b>对象</b>。 每一列的初始宽度，以磅为单位。 如果省略此参数，Word 将计算并调整列宽，以使表格填满页面。</param>
-        <param name="Format">可选的<b>对象</b>。 指定表格自动套用格式对话框 （表菜单） 中列出的预定义格式之一。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdTableFormat" />常量。</param>
-        <param name="ApplyBorders">可选的<b>对象</b>。 <b>则</b> 应用指定格式的边框属性。</param>
-        <param name="ApplyShading">可选的<b>对象</b>。 <b>则</b> 应用指定格式的底纹属性。</param>
-        <param name="ApplyFont">可选的<b>对象</b>。 <b>则</b> 应用指定格式的字体属性。</param>
-        <param name="ApplyColor">可选的<b>对象</b>。 <b>则</b> 应用指定格式的颜色属性。</param>
-        <param name="ApplyHeadingRows">可选的<b>对象</b>。 <b>则</b> 应用指定格式的标题行的属性。</param>
-        <param name="ApplyLastRow">可选的<b>对象</b>。 <b>则</b> 应用指定格式的最后一行的属性。</param>
-        <param name="ApplyFirstColumn">可选的<b>对象</b>。 <b>则</b> 应用指定格式的第一列的属性。</param>
-        <param name="ApplyLastColumn">可选的<b>对象</b>。 <b>则</b> 应用指定格式的最后一列的属性。</param>
-        <param name="AutoFit">可选的<b>对象</b>。 <b>真</b> 要减少尽最大可能的表格列的宽度，而无需更改文字换行的单元格中。</param>
-        <param name="AutoFitBehavior">可选的<b>对象</b>。 设置 Word 调整表格的大小的自动调整规则。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdAutoFitBehavior" />常量。 如果<paramref name="DefaultTableBehavior" />是<b>wdWord8TableBehavior</b>，此参数被忽略。</param>
-        <param name="DefaultTableBehavior">可选的<b>对象</b>。 设置一个值，指定是否 Microsoft Word 会自动调整大小以适合内容 (自动调整) 表中的单元格。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdDefaultTableBehavior" />常量。</param>
-        <summary>将区域或选定内容中的文本转换为表格。</summary>
+        <param name="Separator">可选<b>对象</b>。 指定用于将文本分隔成单元格的字符。 可以是一个字符或一个<see cref="T:Microsoft.Office.Interop.Word.WdTableFieldSeparator" />常量。 如果省略此参数，则使用 <b>DefaultTableSeparator</b> 属性的值。</param>
+        <param name="NumRows">可选<b>对象</b>。 表格的行数。 如果省略此参数, Word 将根据区域的内容设置行数。</param>
+        <param name="NumColumns">可选<b>对象</b>。 表格中的列数。 如果省略此参数，Word 将根据该范围的内容设置列数。</param>
+        <param name="InitialColumnWidth">可选<b>对象</b>。 每一列的初始宽度，以磅为单位。 如果省略此参数，Word 将计算并调整列宽，以使表格填满页面。</param>
+        <param name="Format">可选<b>对象</b>。 指定 "表格自动套用格式" 对话框 ("表格" 菜单) 中列出的预定义格式之一。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdTableFormat" />常量之一。</param>
+        <param name="ApplyBorders">可选<b>对象</b>。 <b>则</b> 应用指定格式的边框属性。</param>
+        <param name="ApplyShading">可选<b>对象</b>。 <b>则</b> 应用指定格式的底纹属性。</param>
+        <param name="ApplyFont">可选<b>对象</b>。 <b>则</b> 应用指定格式的字体属性。</param>
+        <param name="ApplyColor">可选<b>对象</b>。 <b>则</b> 应用指定格式的颜色属性。</param>
+        <param name="ApplyHeadingRows">可选<b>对象</b>。 <b>则</b> 应用指定格式的标题行的属性。</param>
+        <param name="ApplyLastRow">可选<b>对象</b>。 <b>则</b> 应用指定格式的最后一行的属性。</param>
+        <param name="ApplyFirstColumn">可选<b>对象</b>。 <b>则</b> 应用指定格式的第一列的属性。</param>
+        <param name="ApplyLastColumn">可选<b>对象</b>。 <b>则</b> 应用指定格式的最后一列的属性。</param>
+        <param name="AutoFit">可选<b>对象</b>。 <b>真</b> 要减少尽最大可能的表格列的宽度，而无需更改文字换行的单元格中。</param>
+        <param name="AutoFitBehavior">可选<b>对象</b>。 设置 Word 调整表格的大小的自动调整规则。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdAutoFitBehavior" />常量之一。 如果<paramref name="DefaultTableBehavior" />为<b>wdWord8TableBehavior</b>, 则忽略此参数。</param>
+        <param name="DefaultTableBehavior">可选<b>对象</b>。 设置一个值，指定是否 Microsoft Word 会自动调整大小以适合内容 (自动调整) 表中的单元格。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdDefaultTableBehavior" />常量。</param>
+        <summary>将区域或所选内容中的文本转换为表格。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1003,8 +969,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <b>CopyAsPicture</b>方法的工作方式相同为<see cref="M:Microsoft.Office.Interop.Word.Range.Copy" />方法。</summary>
+        <summary><b>CopyAsPicture</b>方法的工作方式与<see cref="M:Microsoft.Office.Interop.Word.Range.Copy" />方法相同。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1040,7 +1005,7 @@
         <param name="ContainsPICT">此参数仅适用于 Macintosh 并且不应使用。</param>
         <param name="ContainsRTF">此参数仅适用于 Macintosh 并且不应使用。</param>
         <param name="ContainsText">此参数仅适用于 Macintosh 并且不应使用。</param>
-        <summary>保留供内部使用。此成员仅用于 Macintosh，不应使用。</summary>
+        <summary>保留以供内部使用。此成员仅用于 Macintosh, 不应使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1069,9 +1034,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -1096,10 +1061,8 @@
       <Parameters />
       <Docs>
         <summary>将指定对象从文档中移到剪贴板上。</summary>
-        <remarks>
-          <para>为<see cref="T:Microsoft.Office.Interop.Word.Range" />或<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象，该对象的内容剪切到剪贴板，但折叠的对象仍保留在文档。</para>
-          <para />
-        </remarks>
+        <remarks><para>对于<see cref="T:Microsoft.Office.Interop.Word.Range" />或<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象, 将对象的内容剪切到剪贴板, 但折叠的对象仍保留在文档中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1125,14 +1088,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">可选的<b>对象</b>。 折叠的范围或所选内容的要删除的单位。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />常量： <b>wdCharacter</b> （默认值） 或<b>wdWord</b>。</param>
-        <param name="Count">可选的<b>对象</b>。 要删除的单位数。 若要删除的区域或选定内容后单位，折叠某范围或所选内容，并使用正数。 若要删除的区域或选定内容之前单位，折叠某范围或所选内容，并使用为负数。</param>
+        <param name="Unit">可选<b>对象</b>。 要删除折叠的范围或所选内容的单位。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />常量之一: <b>wdCharacter</b> (default) 或<b>wdWord</b>。</param>
+        <param name="Count">可选<b>对象</b>。 要删除的单位数。 若要删除该区域或所选内容之后的单位, 请折叠该区域或所选内容并使用一个正数。 若要删除区域或所选内容之前的单位, 请折叠该区域或所选内容并使用一个负数。</param>
         <summary>删除指定数量的字符或单词。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回一个<b>整数</b>值，指示删除的项目数，或如果删除不成功，则返回 0 （零）。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法返回一个指示已删除项目数的<b>整数</b>值, 如果删除不成功, 则返回 0 (零)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DetectLanguage">
@@ -1157,10 +1118,9 @@
       <Parameters />
       <Docs>
         <summary>分析指定文本，以确定书写文本的语言类型。</summary>
-        <remarks>
-          <para>
-            <b>DetectLanguage</b>方法的结果存储在<see cref="P:Microsoft.Office.Interop.Word.Range.LanguageID" />基于字符的字符的属性。若要读取的<b>LanguageID</b>属性，必须首先指定所选内容或范围内的文本。</para>如果<b>DetectLanguage</b>方法已应用于指定的文本，
-          <para><see cref="P:Microsoft.Office.Interop.Word.Range.LanguageDetected" />属性设置为<b>True</b>。若要重新计算的指定文本的语言，您必须先将<b>LanguageDetected</b>属性设置为 False。</para><para /></remarks>
+        <remarks><para><b>DetectLanguage</b>方法的结果按字符逐个存储在<see cref="P:Microsoft.Office.Interop.Word.Range.LanguageID" />属性中。 若要读取 <b>语言标识</b> 属性，必须首先指定所选内容或范围内的文本。</para>
+          <para>如果<b>DetectLanguage</b>方法已应用于指定的文本, 该<see cref="P:Microsoft.Office.Interop.Word.Range.LanguageDetected" />属性将设置为<b>True</b>。 若要重新计算指定文本的语言, 必须首先将<b>LanguageDetected</b>属性设置为 False。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisableCharacterSpaceGrid">
@@ -1189,13 +1149,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 忽略的每个区域的行的字符数。</summary>
+        <summary>确定 Microsoft Word 是否忽略区域中每行的字符数。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>如果 Word 将忽略的每行的范围，和<b>False</b>如果不需要的字符数。</para>
-          <para>如果只将某些指定区域的<b>DisableCharacterSpaceGrid</b>属性设置为<b>True</b> ，则返回<b>wdUndefined</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 忽略区域中每行的字符数, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para>如果仅有某些指定区域的<b>DisableCharacterSpaceGrid</b>属性设置为<b>True</b> , 则返回<b>wdUndefined</b> 。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -1221,7 +1179,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Document" />指定区域相关联的对象。</summary>
+        <summary>返回与<see cref="T:Microsoft.Office.Interop.Word.Document" />指定区域相关联的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1249,12 +1207,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，代表指定区域的所有属性。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示指定范围的所有属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>通过复制<b>Range</b>对象，可以更改所复制的区域的开始或结束字符位置，而不更改源区域。</para>
-          <para />
-        </remarks>
+        <remarks><para>通过复制 <b>Range</b> 对象，可以更改所复制的区域的开始或结尾字符位置，而不更改原始区域。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Editors">
@@ -1280,7 +1236,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Editors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Editors" />对象，表示所有用户已授权修改所选内容或文档中的范围。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Editors" />对象, 表示有权修改文档中的所选内容或区域的所有用户。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1342,14 +1298,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置范围的结束字符位置。</summary>
+        <summary>返回或设置某区域中结束字符的位置。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果该属性设置为值小于<see cref="P:Microsoft.Office.Interop.Word.Range.Start" />属性，<b>启动</b>属性设置为相同的值 （即，<b>启动</b>和<b>End</b>属性相等）。</para>
-          <para>所有<b>所选内容</b>、<b>区域</b>和<b>书签</b>对象具有一个起始位置和结束位置。结束位置是远开头的点的案例。</para>
-          <para>此属性返回的结束字符位置相对于开头的案例。主文档文章 (<b>wdMainTextStory</b>) 开头字符位置 0 （零）。通过设置此属性，可以更改所选内容、 范围或书签的大小。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果此<see cref="P:Microsoft.Office.Interop.Word.Range.Start" />属性设置为一个小于属性的值, 则<b>start</b>属性设置为相同的值 (即, <b>start</b>和<b>End</b>属性相等)。</para>
+          <para><b>所选内容</b>、<b>范围</b>和<b>书签</b>都具有起始位置和结束位置。 结束位置是故事开始距离最远的点。</para>
+          <para>此属性返回结束字符相对于开始部分的位置。 文档主体部分 (<b>wdMainTextStory</b>) 的起始字符位置为 0（零）。 通过设置该属性可以更改选定内容、区域或书签的大小。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndnoteOptions">
@@ -1375,7 +1329,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.EndnoteOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.EndnoteOptions" />对象，表示范围或所选内容中的尾注。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.EndnoteOptions" />对象, 表示某一区域或选定内容中的尾注。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1403,7 +1357,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Endnotes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Endnotes" />集合，它代表区域中的所有尾注。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Endnotes" />集合, 该集合代表区域中的所有尾注。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1431,15 +1385,13 @@
         <Parameter Name="Extend" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">可选的<b>对象</b>。 结束字符位置移至的单元。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />常量。</param>
-        <param name="Extend">可选的<b>对象</b>。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdMovementType" />常量。</param>
+        <param name="Unit">可选<b>对象</b>。 结束字符位置移至的单元。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />常量之一。</param>
+        <param name="Extend">可选<b>对象</b>。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdMovementType" />常量之一。</param>
         <summary>将区域或选定内容的结束字符位置移动或扩展至最近的一个指定文本单元末尾。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回一个值，指示的字符位置数该区域或选定内容已移动或扩展 （是向前移动文档中）。</para>
-          <para>这两个的起始和结束位置的区域或选定内容已指定单位的末尾，如果此方法不移动或扩展范围或所选内容。</para>
-          <para />
-        </remarks>
+        <remarks><para>本方法返回该区域或所选内容所移动或扩展的字符位置数（移动方向为向前）。</para>
+          <para>如果区域或选定内容的开始和结束位置都已在指定单位的末尾，则该方法不移动或扩展此区域或选定内容。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnhMetaFileBits">
@@ -1465,13 +1417,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回所选内容或范围内的文本的显示方式的图片表示形式。</summary>
+        <summary>返回所选内容或文本区域的显示方式的图片表示。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>EnhMetaFileBits</b>属性返回一个字节，可用于 Microsoft Windows 32 应用程序编程接口数组。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>EnhMetaFileBits</b>属性返回一个可与 Microsoft Windows 32 应用程序编程接口一起使用的字节数组。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Expand">
@@ -1496,13 +1445,11 @@
         <Parameter Name="Unit" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">可选的<b>对象</b>。 度量单位以展开该区域。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />常量。</param>
-        <summary>扩展指定的范围。</summary>
+        <param name="Unit">可选<b>对象</b>。 度量单位以展开该区域。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />常量之一。</param>
+        <summary>扩展指定区域。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此属性返回添加到区域的字符的数。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性返回添加到区域中的字符数。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportAsFixedFormat">
@@ -1539,24 +1486,22 @@
         <Parameter Name="FixedFormatExtClassPtr" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="OutputFileName">所需的新的 PDF 或 XPS 文件的路径和文件名称的<b>字符串</b>。</param>
-        <param name="ExportFormat">所需<see cref="T:Microsoft.Office.Interop.Word.WdExportFormat" />指定 PDF 或 XPS 格式。</param>
-        <param name="OpenAfterExport">可选<b>布尔</b>打开导出内容后新文件。</param>
-        <param name="OptimizeFor">可选<see cref="T:Microsoft.Office.Interop.Word.WdExportOptimizeFor" />指定是否针对屏幕显示优化或打印。</param>
-        <param name="ExportCurrentPage">可选<b>boolean 类型的值</b>指定是否导出当前页。  <b>True</b> 将导出整个页面。 <b>False</b> 将导出当前的选择。</param>
-        <param name="Item">可选<see cref="T:Microsoft.Office.Interop.Word.WdExportItem" />指定导出过程是只包括文本还是包括文本和标记。</param>
-        <param name="IncludeDocProps">可选<b>boolean 类型的值</b>指定是否在新导出的文件中包含文档属性。</param>
-        <param name="KeepIRM">可选<b>boolean 类型的值</b>指定是否将 IRM 权限复制到 XPS 文档，如果源文档有 IRM 保护。 默认值为 <b>True</b> 。</param>
-        <param name="CreateBookmarks">可选<see cref="T:Microsoft.Office.Interop.Word.WdExportCreateBookmarks" />指定是否导出书签和导出的书签的类型。</param>
-        <param name="DocStructureTags">可选<b>boolean 类型的值</b>指定是否包含额外数据来帮助屏幕阅读器，例如有关的流和逻辑组织的内容的信息。 默认值为<b>True</b>。</param>
-        <param name="BitmapMissingFonts">可选<b>boolean 类型的值</b>指定是否包含文本的位图。 当字体许可不允许在 PDF 文件中嵌入某一字体时，请将此参数设置为 <b>True</b> 。 如果 <b>False</b> ，则引用该字体，和查看者的计算机会替换合适的字体，如果编写的一个不可用。 默认值为<b>True</b>。</param>
-        <param name="UseISO19005_1">可选<b>boolean 类型的值</b>指定是否限制 PDF 标准化按照 ISO 19005 1 的 PDF 子集的使用。 如果 <b>真</b> ，所产生的文件会更加可靠地自我包含，但可能会更大或显示更多的视觉瑕疵，由于受到格式的限制。 默认值为<b>False</b>。</param>
-        <param name="FixedFormatExtClassPtr">可选<b>对象</b>指定到允许对备用实现的代码调用的外接程序的指针。  代码的备用实现将对应用程序生成的 EMF 和 EMF+ 页面描述进行解释，以生成其自身的 PDF 或 XPS。 有关详细信息，请参阅"<a href="bd5ab634-71c4-4d29-a264-05969eded844">扩展 Office (2007) 固定格式导出功能</a></param>
+        <param name="OutputFileName">必需的<b>字符串</b>: 新的 PDF 或 XPS 文件的路径和文件名。</param>
+        <param name="ExportFormat">必需<see cref="T:Microsoft.Office.Interop.Word.WdExportFormat" />指定 PDF 或 XPS 格式。</param>
+        <param name="OpenAfterExport">可选<b>布尔值</b>在导出内容后打开新文件。</param>
+        <param name="OptimizeFor">Optional <see cref="T:Microsoft.Office.Interop.Word.WdExportOptimizeFor" />指定是否针对屏幕或打印进行优化。</param>
+        <param name="ExportCurrentPage">可选<b>布尔值</b>指定是否导出当前页。  <b>True</b> 将导出整个页面。 <b>False</b> 将导出当前的选择。</param>
+        <param name="Item">Optional <see cref="T:Microsoft.Office.Interop.Word.WdExportItem" />指定导出过程是仅包含文本还是包含带标记的文本。</param>
+        <param name="IncludeDocProps">可选<b>布尔值</b>指定是否在新导出的文件中包含文档属性。</param>
+        <param name="KeepIRM">可选<b>布尔值</b>指定是否将 irm 权限复制到 XPS 文档中 (如果源文档具有 IRM 保护)。 默认值为 <b>True</b> 。</param>
+        <param name="CreateBookmarks">Optional <see cref="T:Microsoft.Office.Interop.Word.WdExportCreateBookmarks" />指定是否导出书签以及要导出的书签的类型。</param>
+        <param name="DocStructureTags">可选<b>布尔值</b>指定是否包含其他数据来帮助屏幕阅读器, 例如内容的流和逻辑组织的相关信息。 默认值为<b>True</b>。</param>
+        <param name="BitmapMissingFonts">可选<b>布尔值</b>指定是否包含文本的位图。 当字体许可不允许在 PDF 文件中嵌入某一字体时，请将此参数设置为 <b>True</b> 。 如果 <b>False</b> ，则引用该字体，和查看者的计算机会替换合适的字体，如果编写的一个不可用。 默认值为<b>True</b>。</param>
+        <param name="UseISO19005_1">可选<b>布尔值</b>指定是否将 pdf 使用限制为标准化为 ISO 19005-1 的 pdf 子集。 如果 <b>真</b> ，所产生的文件会更加可靠地自我包含，但可能会更大或显示更多的视觉瑕疵，由于受到格式的限制。 默认值为<b>False</b>。</param>
+        <param name="FixedFormatExtClassPtr">Optional<b>对象</b>指定一个指向外接程序的指针, 该外接程序允许调用代码的备用实现。  代码的备用实现将对应用程序生成的 EMF 和 EMF+ 页面描述进行解释，以生成其自身的 PDF 或 XPS。 有关详细信息, 请参阅 "<a href="bd5ab634-71c4-4d29-a264-05969eded844">扩展 Office (2007) 固定格式导出功能</a>"</param>
         <summary>将文档的一部分保存为 PDF 或 XPS 格式。</summary>
-        <remarks>
-          <para>仅在您安装外接程序后，您可以保存为 PDF 或 XPS 文件从 2007 Microsoft Office 系统程序。 <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=4D951911-3E7E-4AE6-B059-A2E79ED87041&amp;displaylang=enOnline">Microsoft 下载中心</a></para>
-          <para />
-        </remarks>
+        <remarks><para>只有在安装加载项之后，才可以通过 2007 Microsoft Office system 程序将其另存为 PDF 或 XPS 文件。  <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=4D951911-3E7E-4AE6-B059-A2E79ED87041&amp;displaylang=enOnline">Microsoft 下载中心</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportFragment">
@@ -1583,8 +1528,8 @@
         <Parameter Name="Format" Type="Microsoft.Office.Interop.Word.WdSaveFormat" />
       </Parameters>
       <Docs>
-        <param name="FileName">所需<b>字符串</b>指定路径和文件名在其中保存文档片段的文件。</param>
-        <param name="Format">所需<see cref="T:Microsoft.Office.Interop.Word.WdSaveFormat" />指定的文档片段文件的文件格式。 您可以在 Microsoft Office Word 支持的任何格式保存文档片段。</param>
+        <param name="FileName">必需的<b>字符串</b>指定要在其中保存文档片段的文件的路径和文件名。</param>
+        <param name="Format">必需<see cref="T:Microsoft.Office.Interop.Word.WdSaveFormat" />指定文档片段文件的文件格式。 您可以使用 Microsoft Office Word 支持的任何格式保存文档片段。</param>
         <summary>将所选区域导出到文档中，以便用作文档片段。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1612,7 +1557,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Fields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个只读的<see cref="T:Microsoft.Office.Interop.Word.Fields" />代表范围中的所有字段的集合。</summary>
+        <summary>返回一个只读<see cref="T:Microsoft.Office.Interop.Word.Fields" />集合, 该集合代表区域中的所有字段。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1640,12 +1585,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Find</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Find" />对象，它包含为查找操作的条件。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Find" />对象, 其中包含查找操作的条件。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>当此属性用于<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象，如果查找操作成功更改所选内容。如果此属性用于<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，所选内容未更改，除非<see cref="M:Microsoft.Office.Interop.Word.Range.Select" />应用方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>将此属性与<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象一起使用时, 如果查找操作成功, 将更改所选内容。 如果此属性与<see cref="T:Microsoft.Office.Interop.Word.Range" />对象一起使用, 则不更改所选内容, <see cref="M:Microsoft.Office.Interop.Word.Range.Select" />除非应用了该方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FitTextWidth">
@@ -1674,7 +1617,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 Microsoft Word 适合文本是当前范围的宽度 （以当前的度量单位）。</summary>
+        <summary>返回或设置 Microsoft Word 适应当前区域中的文本的宽度 (以当前度量单位表示)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1705,7 +1648,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.Font" />对象，它代表指定对象的字符格式。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.Font" />对象, 该对象代表指定对象的字符格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1733,7 +1676,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FootnoteOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.FootnoteOptions" />对象，表示范围中的脚注选项。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.FootnoteOptions" />对象, 表示区域中的脚注选项。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1761,7 +1704,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Footnotes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Footnotes" />集合，它代表区域中的所有脚注。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Footnotes" />集合, 该集合代表区域中的所有脚注。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1792,13 +1735,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.Range" />指定的区域或选定内容中包括的格式化的文本的对象。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 该对象包含指定区域或选定内容中的格式化文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回一个<b>Range</b>对象的字符格式和文本从指定范围。段落格式，则没有区域或选定内容中的段落标记包含在<b>Range</b>对象。</para>
-          <para>当您设置此属性，该区域中的文本替换带格式的文本。如果您不想要替换现有的文本，使用<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />方法之前使用此属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性返回一个<b>range</b>对象, 该对象具有指定范围中的字符格式和文本。 如果在区域或所选内容中有一个段落标记, 则<b>range</b>对象中包含段落格式。</para>
+          <para>当设置此属性时，区域中的文本将替换带格式的文本。 如果不想替换现有的文本, 请在使用此<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />属性之前使用方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormFields">
@@ -1824,7 +1765,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FormFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.FormFields" />集合，表示范围中的所有窗体域。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.FormFields" />集合, 该集合代表区域中的所有窗体域。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1852,7 +1793,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Frames" />代表范围内的所有图文框的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Frames" />集合, 该集合代表区域中的所有图文框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1891,20 +1832,20 @@
         <Parameter Name="CustomDictionary10" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="CustomDictionary">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或自定义词典的文件名。</param>
-        <param name="IgnoreUppercase">可选的<b>对象</b>。 <b>真</b> 要忽略全部大写的单词。 如果省略此参数，则的当前值<see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" />属性使用。</param>
-        <param name="MainDictionary">可选的<b>对象</b>。 表达式，可返回一个 <b>字典</b> 对象或主词典的文件名。 如果不指定主词典，Word 会使用对应于该区域中的第一个单词的语言格式的主词典。</param>
-        <param name="SuggestionMode">可选的<b>对象</b>。 指定 Word 提出拼写建议的方式。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdSpellingWordType" />常量。 默认值是 <b>WdSpellword</b> 。</param>
-        <param name="CustomDictionary2">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary3">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <param name="CustomDictionary4">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <param name="CustomDictionary5">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <param name="CustomDictionary6">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <param name="CustomDictionary7">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <param name="CustomDictionary8">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <param name="CustomDictionary9">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <param name="CustomDictionary10">可选的<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" />集合，代表单词的建议拼写替换指定范围中的第一个单词。</summary>
+        <param name="CustomDictionary">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是自定义词典的文件名。</param>
+        <param name="IgnoreUppercase">可选<b>对象</b>。 <b>真</b> 要忽略全部大写的单词。 如果省略此参数, 则使用<see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" />属性的当前值。</param>
+        <param name="MainDictionary">可选<b>对象</b>。 表达式，可返回一个 <b>字典</b> 对象或主词典的文件名。 如果不指定主词典，Word 会使用对应于该区域中的第一个单词的语言格式的主词典。</param>
+        <param name="SuggestionMode">可选<b>对象</b>。 指定 Word 提出拼写建议的方式。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdSpellingWordType" />常量之一。 默认值是 <b>WdSpellword</b> 。</param>
+        <param name="CustomDictionary2">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary3">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <param name="CustomDictionary4">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <param name="CustomDictionary5">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <param name="CustomDictionary6">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <param name="CustomDictionary7">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <param name="CustomDictionary8">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <param name="CustomDictionary9">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <param name="CustomDictionary10">可选<b>对象</b>。 其中任何一个表达式，可返回一个 <b>字典</b> 对象或一个附加的自定义词典的文件名。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" />集合, 表示为指定区域中的第一个单词的拼写替换建议的单词。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1934,16 +1875,14 @@
         <Parameter Name="Name" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="What">可选的<b>对象</b>。 指定区域或选定内容要移动到的项的类别。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdGoToItem" />常量。</param>
-        <param name="Which">可选的<b>对象</b>。 指定区域或选定内容要移动到的项。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdGoToDirection" />常量。</param>
-        <param name="Count">可选的<b>对象</b>。 在文档中的项的数目。 默认值为 1.仅正整数值有效。 若要指定之前的区域或选定内容的项，使用<b>wdGoToPrevious</b>为<paramref name="Which" />参数并指定<paramref name="Count" />值。</param>
-        <param name="Name">可选的<b>对象</b>。 如果<paramref name="What" />参数为<b>wdGoToBookmark</b>、 <b>wdGoToComment</b>、 <b>wdGoToField</b>或<b>wdGoToObject</b>，此参数指定一个名称。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示指定的项，如页、 书签或域的起始位置。</summary>
+        <param name="What">可选<b>对象</b>。 指定区域或选定内容要移动到的项的类别。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdGoToItem" />常量之一。</param>
+        <param name="Which">可选<b>对象</b>。 指定区域或选定内容要移动到的项。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdGoToDirection" />常量之一。</param>
+        <param name="Count">可选<b>对象</b>。 在文档中的项的数目。 默认值为1。只有正值是有效的值。 若要指定区域或所选内容之前的项, <b></b>请使用 wdGoToPrevious <paramref name="Which" />作为参数并指定<paramref name="Count" />一个值。</param>
+        <param name="Name">可选<b>对象</b>。 如果<paramref name="What" />参数为<b>wdGoToBookmark</b>、 <b>wdGoToComment</b>、 <b>wdGoToField</b>或<b>wdGoToObject</b>, 则此参数指定一个名称。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示指定项 (如页、书签或字段) 的起始位置。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果您使用<b>GoTo</b>方法与<b>wdGoToGrammaticalError</b>、 <b>wdGoToProofreadingError</b>或<b>wdGoToSpellingError</b>常量，则返回的<b>范围</b>中包括所有语法错误的文本或拼写错误的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>当您使用 <b>GoTo</b> 方法与 <b>wdGoToGrammaticalError</b> 、 <b>wdGoToProofreadingError</b> 或 <b>wdGoToSpellingError</b> 的常量时，则返回的 <b>范围</b> 包括任何语法错误的文本或拼写错误的文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GoToEditableRange">
@@ -1968,13 +1907,11 @@
         <Parameter Name="EditorID" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="EditorID">可选的<b>对象</b>。 可以是<b>字符串</b>值，该值代表用户的电子邮件别名 （如果在同一个域），电子邮件地址，或<see cref="T:Microsoft.Office.Interop.Word.WdEditorType" />常量，代表一组用户。 如果省略，则选择所有用户都有权限编辑的所有区域。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示指定的用户或用户组可以修改的文档区域。</summary>
+        <param name="EditorID">可选<b>对象</b>。 可以是一个<b>字符串</b>, 表示用户的电子邮件别名 (如果在同一域中)、电子邮件地址或代表一<see cref="T:Microsoft.Office.Interop.Word.WdEditorType" />组用户的常量。 如果省略，则选择所有用户都有权限编辑的所有区域。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定用户或用户组可以修改的文档区域。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>您还可以使用<see cref="P:Microsoft.Office.Interop.Word.Editor.NextRange" />属性<see cref="T:Microsoft.Office.Interop.Word.Editor" />对象来返回用户有权修改的下一个区域。</para>
-          <para />
-        </remarks>
+        <remarks><para>您还可以使用<see cref="P:Microsoft.Office.Interop.Word.Editor.NextRange" /> <see cref="T:Microsoft.Office.Interop.Word.Editor" />对象的属性返回用户有权修改的下一个区域。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GoToNext">
@@ -2000,13 +1937,11 @@
         <Parameter Name="What" Type="Microsoft.Office.Interop.Word.WdGoToItem" />
       </Parameters>
       <Docs>
-        <param name="What">所需<see cref="T:Microsoft.Office.Interop.Word.WdGoToItem" />。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象的引用的下一个项目或由指定的位置的起始位置<paramref name="What" />参数。</summary>
+        <param name="What">必需<see cref="T:Microsoft.Office.Interop.Word.WdGoToItem" />。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 该对象引用由<paramref name="What" />参数指定的下一个项目或位置的起始位置。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果您使用此方法与<b>wdGoToGrammaticalError</b>、 <b>wdGoToProofreadingError</b>或<b>wdGoToSpellingError</b>常量，则返回的<b>Range</b>对象中包括所有语法错误的文本或拼写错误的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>[!注释] 当您使用此方法与 <b>wdGoToGrammaticalError</b> 、 <b>wdGoToProofreadingError</b> 或 <b>wdGoToSpellingError</b> 常量时，则返回 <b>Range</b> 对象包括任何语法错误的文本或拼写错误的文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GoToPrevious">
@@ -2032,8 +1967,8 @@
         <Parameter Name="What" Type="Microsoft.Office.Interop.Word.WdGoToItem" />
       </Parameters>
       <Docs>
-        <param name="What">所需<see cref="T:Microsoft.Office.Interop.Word.WdGoToItem" />。 指定的范围或所选内容将被移动到的项。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />指的是上一项或由指定位置的起始位置的对象<paramref name="What" />参数。</summary>
+        <param name="What">必需<see cref="T:Microsoft.Office.Interop.Word.WdGoToItem" />。 指定区域或所选内容要移动到的项目。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 该对象引用上一项或<paramref name="What" />参数指定的位置的起始位置。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2064,13 +1999,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否已在指定范围内运行语法检查。</summary>
+        <summary>确定是否已对指定区域运行语法检查。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b> ，如果已检查指定的区域或文档的语法和<b>False</b>如果指定的范围或文档的一些尚未进行语法检查。</para>
-          <para>要重新检查范围或文档中的语法，请将<b>GrammarChecked</b>属性设置为<b>False</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果已对指定的区域或文档运行语法检查, 则此属性返回<b>True</b> , 如果未对指定范围或文档中的某些文档进行语法检查, 则返回<b>False</b> 。</para>
+          <para>要重新检查区域或文档的语法，可将 <b>GrammarChecked</b> 属性设置为 <b>False</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GrammaticalErrors">
@@ -2096,13 +2029,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.ProofreadingErrors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ProofreadingErrors" />表示失败语法的句子集合检查在指定范围内。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ProofreadingErrors" />集合, 该集合代表在指定区域上进行语法检查失败的句子。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以有多个错误每个句子。</para>
-          <para>如果没有语法错误， <see cref="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Count" /><b>GrammaticalErrors</b>属性返回的<b>ProofreadingErrors</b>对象的属性返回 0 （零）。</para>
-          <para />
-        </remarks>
+        <remarks><para>可以有多个错误，每个句子。</para>
+          <para>如果没有语法错误, 由<b>GrammaticalErrors</b>属性<see cref="P:Microsoft.Office.Interop.Word.ProofreadingErrors.Count" />返回的<b>ProofreadingErrors</b>对象的属性将返回 0 (零)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HighlightColorIndex">
@@ -2133,10 +2064,8 @@
       <Docs>
         <summary>返回或设置指定区域的突出显示颜色。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性设置为<b>wdNoHighlight</b>从指定范围中删除的突出显示颜色 （如果有）。</para>
-          <para />
-        </remarks>
+        <remarks><para>将此属性设置为<b>wdNoHighlight</b>可从指定区域删除突出显示颜色 (如果有)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalInVertical">
@@ -2193,7 +2122,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.HTMLDivisions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" />对象，它代表 Web 文档中的 HTML 划分。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" />对象, 表示 Web 文档中的 HTML 划分。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2221,7 +2150,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Hyperlinks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" />集合，代表指定范围中的所有超链接。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" />集合, 该集合代表指定区域中的所有超链接。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2254,11 +2183,9 @@
       <Docs>
         <summary>返回或设置指定对象的标识标签当前文档保存为 Web 页时。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>除了<see cref="T:Microsoft.Office.Interop.Word.Editor" />对象，您可以使用一个标签作为超链接引用其他网页或当前文档。</para>
-          <para>Microsoft Word 不会存储<b>ID</b>属性设置为<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。如果您设置的<b>ID</b>属性，然后返回其值，则返回的值将为空<b>字符串</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>除<see cref="T:Microsoft.Office.Interop.Word.Editor" />对象之外, 您可以将标签用作来自其他网页或当前文档中的超链接引用。</para>
+          <para>Microsoft Word 不存储<see cref="T:Microsoft.Office.Interop.Word.Range" />对象的<b>ID</b>属性设置。 如果设置<b>ID</b>属性, 然后返回其值, 则返回的值将为空<b>字符串</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ImportFragment">
@@ -2284,14 +2211,11 @@
         <Parameter Name="MatchDestination" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="FileName">所需<b>字符串</b>指定存储文档片段的路径和文件名称。</param>
-        <param name="MatchDestination">可选<b>boolean 类型的值</b>指定是否匹配目标格式。 如果<b>False</b>，导入的文档片段，则保留原始文档中的格式。 默认值为 <b>False</b> 。</param>
-        <summary>
-		将文档片段导入文档中的指定区域。</summary>
-        <remarks>
-          <para>此方法替换范围的内容。若要阻止这出现，请使用<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />方法之前使用此方法。</para>
-          <para />
-        </remarks>
+        <param name="FileName">必需的<b>字符串</b>指定存储文档片段的路径和文件名。</param>
+        <param name="MatchDestination">可选<b>布尔值</b>指定是否匹配目标格式设置。 如果该属性值为 <b>False</b>，则导入的文档片段保持原文档的格式。 默认值为 <b>False</b> 。</param>
+        <summary>将文档片段导入文档中的指定区域。</summary>
+        <remarks><para>此方法将替换区域的内容。 若要阻止这种情况发生, <see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />请在使用此方法之前使用方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Information">
@@ -2320,8 +2244,8 @@
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Word.WdInformation" />
       </Parameters>
       <Docs>
-        <param name="Type">所需<see cref="T:Microsoft.Office.Interop.Word.WdInformation" />。 信息类型。</param>
-        <summary>返回指定的选定内容或区域的信息。</summary>
+        <param name="Type">必需<see cref="T:Microsoft.Office.Interop.Word.WdInformation" />。 信息类型。</param>
+        <summary>返回有关指定的所选内容或区域的信息。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2349,7 +2273,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合，代表所有<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />文档、 范围或所选内容中的对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合, 该集合代表<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />文档、区域或选定内容中的所有对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2376,14 +2300,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">所需的<b>Range</b>对象。 要进行比较的范围<paramref name="expression" />。</param>
-        <summary>确定该方法应用于区域是否包含指定范围中。</summary>
+        <param name="Range">必需的<b>Range</b>对象。 要对其进行比较<paramref name="expression" />的区域。</param>
+        <summary>确定应用该方法的区域是否包含在指定的范围内。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回<b>True</b> ，如果该方法应用于区域包含在指定的范围<paramref name="Range" />参数和<b>False</b>如果不。</para>
-          <para>此方法确定是否包含区域或选定表达式返回在指定<paramref name="Range" />通过比较起始和结束字符位置以及文字部分类型。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果应用该<b></b>方法的区域包含在<paramref name="Range" />参数所指定的范围中, 则此方法返回 True; 如果不是, 则返回<b>False</b> 。</para>
+          <para>此方法通过比较起始字符和结束字符的位置以及文字部分的类型<paramref name="Range" /> , 来确定表达式返回的区域或所选内容是否包含在指定中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertAfter">
@@ -2411,9 +2333,11 @@
       <Docs>
         <param name="Text">必需的 <b>字符串</b> 。 要插入的文本。</param>
         <summary>将指定文本插入范围或所选内容的末尾。</summary>
-        <remarks>
-          <para>应用此方法后，该范围将扩展以包含新文本。</para>如果您使用此方法的范围之内，指的是整个段落，文本
-          <para>结束段落标记 （文本将出现的下一个段落开始处） 之后插入。若要在段落的末尾插入文本，确定结束点，减去 1 （段落标记是一个字符） 该位置。</para><para>然而，如果该范围结束碰巧是文档结尾的段落标记，Microsoft Word 将插入前的最后一个段落标记，而不是文档的结尾处创建一个新段落的文本。</para><para>同样，如果该范围是书签，则 Word 将插入指定的文本而不会扩展范围或书签以包含新文本。</para><para /></remarks>
+        <remarks><para>应用此方法之后，该范围将扩展，以包含新文本。</para>
+          <para>如果对引用整个段落的范围使用此方法，则在末段标记之后插入文本（插入的文本将出现在下一段的开头）。 若要在段落的末尾插入文本, 请确定结束点并从该位置减去 1 (段落标记是一个字符)。</para>
+          <para>然而，如果该范围以一个段落标记结尾，而该段落标记正好又是文档的末尾，则 Microsoft Word 在末段标记前插入文本，而不是在文档末尾创建一个新段落。</para>
+          <para>同样，如果该范围是书签，Word 将插入指定的文本，但不会扩展范围或书签以包含新文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertAlignmentTab">
@@ -2439,8 +2363,8 @@
         <Parameter Name="RelativeTo" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Alignment">所需<b>整数</b>表示的对齐类型 — 左，居中或右 — 制表位。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdAlignmentTabAlignment" />常量。</param>
-        <param name="RelativeTo">相对于边距或段落缩进的制表位是否需要<b>整数</b>指示。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdAlignmentTabRelative" />常量。</param>
+        <param name="Alignment">必需的<b>Integer</b>指示制表位的对齐类型 (左对齐、居中或右对齐)。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdAlignmentTabAlignment" />常量之一。</param>
+        <param name="RelativeTo">必需的<b>Integer</b>指示制表位是相对于边距还是相对于段落缩进。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdAlignmentTabRelative" />常量之一。</param>
         <summary>相对于边距或缩进插入始终位于同一点的绝对制表符。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2467,11 +2391,9 @@
       <Parameters />
       <Docs>
         <summary>尝试将指定区域中的文字或某一区域周围的文字与现有的“自动图文集”词条名称相匹配。</summary>
-        <remarks>
-          <para>如果找到任何这样的匹配，则<b>InsertAutoText</b>插入自动图文集词条来替换该文本。如果找不到匹配项，将发生错误。</para>
-          <para>您可以使用<see cref="M:Microsoft.Office.Interop.Word.AutoTextEntry.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" />方法与<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" />对象来插入特定的自动图文集词条。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果找到任何这样的匹配项, <b>InsertAutoText</b>将插入 "自动图文集" 词条以替换该文本。 如果找不到匹配项, 则会发生错误。</para>
+          <para>可以将<see cref="M:Microsoft.Office.Interop.Word.AutoTextEntry.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" />方法与<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" />对象结合使用, 以插入特定的 "自动图文集" 词条。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertBefore">
@@ -2499,10 +2421,8 @@
       <Docs>
         <param name="Text">必需的 <b>字符串</b> 。 要插入的文本。</param>
         <summary>在指定的范围前插入指定文本。</summary>
-        <remarks>
-          <para>在插入文本后，则扩展该范围，以包含新文本。如果范围是书签，则书签还扩展以包含的下一个文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>在插入文本之后，该范围将扩展，以包含新文本。如果该范围是书签，则书签也会扩展，以包含新文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertBreak">
@@ -2527,14 +2447,11 @@
         <Parameter Name="Type" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Type">可选的<b>对象</b>。 要插入的分页符的类型。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdBreakType" />常量。</param>
+        <param name="Type">可选<b>对象</b>。 要插入的分隔符的类型。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdBreakType" />常量之一。</param>
         <summary>插入分页符、分栏符或分节符。</summary>
-        <remarks>
-          <para>插入分页符或分栏符时，被中断替换范围。如果您不希望替换该区域，使用<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />方法之前使用<b>InsertBreak</b>方法。在您插入分节符，断开时立即之前插入<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。</para>
-          <para>
-            <b>WdBreakType</b>常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>当插入分页符或分栏符时，范围将被中断。 如果不想替换该范围, 请在使用<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" /> <b>InsertBreak</b>方法之前使用该方法。 当您插入分节符时, 会在<see cref="T:Microsoft.Office.Interop.Word.Range" />对象之前紧接插入分隔符。</para>
+          <para>某些<b>WdBreakType</b>常量可能不可用, 具体取决于您选择或安装的语言支持 (例如, 美国英语)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertCaption">
@@ -2563,11 +2480,11 @@
         <Parameter Name="ExcludeLabel" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Label">所需的<b>对象</b>。 要插入的题注标签。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdCaptionLabelID" />常量。</param>
-        <param name="Title">可选的<b>对象</b>。 要紧接在题注标签插入的字符串 (忽略的如果<paramref name="TitleAutoText" />指定)。</param>
-        <param name="TitleAutoText">可选的<b>对象</b>。 要紧接在题注标签之后插入其内容中的自动图文集词条 (将覆盖由指定的任何文本<paramref name="Title" />)。</param>
-        <param name="Position">可选的<b>对象</b>。 指定是否将上方或下方插入标题<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdCaptionPosition" />常量。</param>
-        <param name="ExcludeLabel">可选的<b>对象</b>。 <b>True</b>不包含的文本标签，如中定义<paramref name="Label" />参数。 <b>错误</b> 包含指定的标签。</param>
+        <param name="Label">必需的<b>对象</b>。 要插入的题注标签。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdCaptionLabelID" />常量之一。</param>
+        <param name="Title">可选<b>对象</b>。 要紧接在标题中的标签后面插入的字符串 (如果<paramref name="TitleAutoText" />指定, 则忽略)。</param>
+        <param name="TitleAutoText">可选<b>对象</b>。 要紧接在标题中的标签后面插入其内容的 "自动图文集" 词条 (将覆盖由<paramref name="Title" />指定的任何文本)。</param>
+        <param name="Position">可选<b>对象</b>。 指定是否将题注插入<see cref="T:Microsoft.Office.Interop.Word.Range" />对象的上方或下方。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdCaptionPosition" />常量之一。</param>
+        <param name="ExcludeLabel">可选<b>对象</b>。 <b>如果为 True, 则</b>不包括在<paramref name="Label" />参数中定义的文本标签。 <b>错误</b> 包含指定的标签。</param>
         <summary>紧接在指定范围之前或之后插入题注。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2636,18 +2553,16 @@
         <Parameter Name="SeparatorString" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ReferenceType">所需的<b>对象</b>。 为要插入交叉引用的项的类型。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdReferenceType" />或<see cref="T:Microsoft.Office.Interop.Word.WdCaptionLabelID" />常量或用户定义的题注标签。</param>
-        <param name="ReferenceKind">所需<see cref="T:Microsoft.Office.Interop.Word.WdReferenceKind" />。 要包含在交叉引用中的信息。</param>
-        <param name="ReferenceItem">所需的<b>对象</b>。 如果<paramref name="ReferenceType" />是<b>wdRefTypeBookmark</b>，此参数指定的书签名称。 对于所有其他<paramref name="ReferenceType" /><b>交叉引用</b>对话框中的复选框的项的编号或名称<b>引用类型</b>中的值，该参数指定。 使用<see cref="M:Microsoft.Office.Interop.Word._Document.GetCrossReferenceItems(System.Object@)" />方法返回的项列表名称的可用于此参数。</param>
-        <param name="InsertAsHyperlink">可选的<b>对象</b>。 <b>真</b> 要插入交叉引用作为超链接引用的项。</param>
-        <param name="IncludePosition">可选的<b>对象</b>。 <b>True</b> 则根据引用项相对于交叉引用的位置插入"见上方"或"见下方，"。</param>
-        <param name="SeparateNumbers">可选的<b>对象</b>。 <b>如此</b> 使用分隔符将数字从关联文本中分离。 (使用才<paramref name="ReferenceType" />参数设置为<b>wdRefTypeNumberedItem</b>和<paramref name="ReferenceKind" />参数设置为<b>wdNumberFullContext</b>。)</param>
-        <param name="SeparatorString">可选的<b>对象</b>。 指定字符串用作分隔符，如果<b>SeparateNumbers</b>参数设置为<b>True</b>。</param>
+        <param name="ReferenceType">必需的<b>对象</b>。 为要插入交叉引用的项的类型。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdReferenceType" />或<see cref="T:Microsoft.Office.Interop.Word.WdCaptionLabelID" />常量或用户定义的题注标签。</param>
+        <param name="ReferenceKind">必需<see cref="T:Microsoft.Office.Interop.Word.WdReferenceKind" />。 要包含在交叉引用中的信息。</param>
+        <param name="ReferenceItem">必需的<b>对象</b>。 如果<paramref name="ReferenceType" />为<b>wdRefTypeBookmark</b>, 则此参数指定书签名称。 对于所有其他<paramref name="ReferenceType" />值, 此参数在<b>交叉引用</b>对话框中的<b>引用类型</b>框中指定物料编号或名称。 使用<see cref="M:Microsoft.Office.Interop.Word._Document.GetCrossReferenceItems(System.Object@)" />方法可返回可与此参数一起使用的项名称的列表。</param>
+        <param name="InsertAsHyperlink">可选<b>对象</b>。 <b>真</b> 要插入交叉引用作为超链接引用的项。</param>
+        <param name="IncludePosition">可选<b>对象</b>。 <b>True</b> 则根据引用项相对于交叉引用的位置插入"见上方"或"见下方，"。</param>
+        <param name="SeparateNumbers">可选<b>对象</b>。 <b>如此</b> 使用分隔符将数字从关联文本中分离。 (仅在<paramref name="ReferenceType" />参数设置为<b>wdRefTypeNumberedItem</b>并且<paramref name="ReferenceKind" />参数设置为<b>wdNumberFullContext</b>时使用。)</param>
+        <param name="SeparatorString">可选<b>对象</b>。 如果将<b>SeparateNumbers</b>参数设置为<b>True</b>, 则指定要用作分隔符的字符串。</param>
         <summary>插入对标题、书签、脚注、尾注或定义了题注标签的项（如公式、图表或表格）的交叉引用。</summary>
-        <remarks>
-          <para>如果您指定的值的<b>wdpagenumber 作为</b><paramref name="ReferenceKind" />，您可能需要重新分页才能看到正确的交叉引用信息的文档。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果为的<b></b> <paramref name="ReferenceKind" />值指定 wdPageNumber, 则可能需要对文档重新分页, 以便查看正确的交叉引用信息。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertCrossReference_2002">
@@ -2723,27 +2638,25 @@
         <Parameter Name="IncludeFields" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Format">可选的<b>对象</b>。 在表格自动套用格式对话框 （表菜单） 的格式框中列出的格式。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdTableFormat" />常量。 默认情况下，边框应用到表中的单元格。</param>
-        <param name="Style">可选的<b>对象</b>。 由指定的自动套用格式属性<paramref name="Format" />的应用于表。 使用以下值： ValueMeaning0 的任意组合的总和 （零） None1Borders2Shading4Font8Color16Auto Fit32Heading Rows64Last Row128First Column256Last 列</param>
-        <param name="LinkToSource">可选的<b>对象</b>。 <b>为</b> 建立新的表和数据源之间的链接。</param>
-        <param name="Connection">可选的<b>对象</b>。 在其中执行由指定的查询范围<paramref name="SQLStatement" />。 指定范围的方式取决于检索数据的方式。 对于示例： 检索数据通过开放式数据库连接 (ODBC) 时，您可以指定一个连接字符串。 当使用动态数据交换 (DDE) 检索从 Microsoft Excel 的数据，您指定命名的区域或"整张电子表格。"<b>安全</b> 动态数据交换 (DDE) 是不安全的较旧的技术。 如果可能，请使用 DDE 的更安全的替代。当从 Microsoft Access 中检索数据，您指定的单词"Table"或"Query"，后面紧接表格或查询名称。</param>
-        <param name="SQLStatement">可选的<b>字符串</b>。 检索主数据源中要插入文档的数据集。</param>
-        <param name="SQLStatement1">可选的<b>字符串</b>。 如果查询字符串长于 255 个字符，<paramref name="SQLStatement" />表示字符串的第一个部分和<paramref name="SQLStatement1" />表示第二部分。</param>
-        <param name="PasswordDocument">可选的<b>对象</b>。 打开数据源所需的密码（如果有。 请参阅下面的"说明"）。</param>
-        <param name="PasswordTemplate">可选的<b>对象</b>。 如果数据源是 Word 文档，则该参数是打开附加模板所需的密码（如果有。 请参阅下面的"说明"）。</param>
-        <param name="WritePasswordDocument">可选的<b>对象</b>。 保存对文档所作修改所需的密码（如果有。 请参阅下面的"说明"）。</param>
-        <param name="WritePasswordTemplate">可选的<b>对象</b>。 保存对模板所作修改所需的密码（如果有。 请参阅下面的"说明"）。</param>
-        <param name="DataSource">可选的<b>对象</b>。 数据源的路径和文件名称。</param>
-        <param name="From">可选的<b>对象</b>。 要插入的记录区域中的第一个数据记录数。</param>
-        <param name="To">可选的<b>对象</b>。 要插入的记录区域中的最后一个数据记录数。</param>
-        <param name="IncludeFields">可选的<b>对象</b>。 <b>为</b> 新表的第一行中包含数据源中的字段名称。</param>
+        <param name="Format">可选<b>对象</b>。 “表格”菜单“表格自动套用格式”对话框的“格式”框中列出的一种格式。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdTableFormat" />常量。 默认情况下，边框应用到表中的单元格。</param>
+        <param name="Style">可选<b>对象</b>。 由<paramref name="Format" />指定的自动套用格式的属性应用于表格。 使用以下值的任意组合的总和: ValueMeaning0 (零) None1Borders2Shading4Font8Color16Auto Fit32Heading Rows64Last Row128First Column256Last 列</param>
+        <param name="LinkToSource">可选<b>对象</b>。 <b>为</b> 建立新的表和数据源之间的链接。</param>
+        <param name="Connection">可选<b>对象</b>。 在其中执行由<paramref name="SQLStatement" />指定的查询的范围。 指定区域的方式取决于检索数据的方式。 例如: 通过开放式数据库连接 (ODBC) 检索数据时, 请指定一个连接字符串。 使用动态数据交换 (DDE) 检索 Microsoft Excel 中的数据时, 请指定一个已命名的区域或 "整个电子表格"。<b>安全性</b> 动态数据交换 (DDE) 是一种不安全的旧技术。 如果可能, 请使用更安全的 DDE 替代方法。检索 Microsoft Access 中的数据时, 请指定单词 "Table" 或 "Query", 后跟表或查询的名称。</param>
+        <param name="SQLStatement">可选<b>字符串</b>。 检索主数据源中要插入文档的数据集。</param>
+        <param name="SQLStatement1">可选<b>字符串</b>。 如果查询字符串的长度超过255个字符, <paramref name="SQLStatement" />则表示字符串的第一部分并<paramref name="SQLStatement1" />表示第二部分。</param>
+        <param name="PasswordDocument">可选<b>对象</b>。 打开数据源所需的密码（如果有。 请参阅下面的"说明"）。</param>
+        <param name="PasswordTemplate">可选<b>对象</b>。 如果数据源是 Word 文档，则该参数是打开附加模板所需的密码（如果有。 请参阅下面的"说明"）。</param>
+        <param name="WritePasswordDocument">可选<b>对象</b>。 保存对文档所作修改所需的密码（如果有。 请参阅下面的"说明"）。</param>
+        <param name="WritePasswordTemplate">可选<b>对象</b>。 保存对模板所作修改所需的密码（如果有。 请参阅下面的"说明"）。</param>
+        <param name="DataSource">可选<b>对象</b>。 数据源的路径和文件名称。</param>
+        <param name="From">可选<b>对象</b>。 要插入的记录区域中第一条数据记录的编号。</param>
+        <param name="To">可选<b>对象</b>。 要插入的记录范围中的最后一条数据记录的编号。</param>
+        <param name="IncludeFields">可选<b>对象</b>。 <b>为</b> 新表的第一行中包含数据源中的字段名称。</param>
         <summary>从数据源 (例如，一个单独的 Word 文档，Microsoft Excel 工作表中或 Microsoft Access 数据库) 检索数据并将数据插入表替换指定的范围。</summary>
-        <remarks>
-          <para>避免在您的应用程序中使用硬编码的密码。如果在某个过程中需要密码，用户请求该密码、 将其存储在变量，然后在代码中使用该变量。</para>
-          <para>避免使用内置的系统管理员 (<b>sa</b>) 登录帐户。相反，使系统管理员 sysadmin 固定的服务器角色的成员，并使其使用其自己的帐户登录。只有在没有其他方式登录时，请使用<b>sa</b> 。若要防止未经授权的访问通过 sa 登录帐户，您应为该帐户分配唯一的强密码。</para>
-          <para>如果可能，请使用 Windows 身份验证 （也称为的受信任连接），以使用一个 Windows 用户帐户来连接到 SQL Server。当用户连接到一个 Windows 用户帐户时，SQL Server 使用信息的 Windows 操作系统中验证的帐户名和密码。您可以使用 Windows 身份验证，服务器管理员必须先配置 SQL Server 使用此身份验证模式。如果 Windows 身份验证不可用，请避免将保存用户的登录信息。用户输入登录信息登录每次更安全。</para>
-          <para />
-        </remarks>
+        <remarks><para>避免在应用程序中使用硬编码的密码。如果某个过程需要密码，可要求用户提供密码，将其以变量形式进行存储，然后在编码中使用该变量。</para>
+          <para>避免使用内置系统管理员 (<b>sa</b>) 登录帐户。 而是使系统管理员成为 sysadmin 固定服务器角色的成员，并让他们使用自己的帐户登录。 仅在无法使用其他方式登录时使用 <b>sa</b>。 要避免通过 sa 登录帐户的未经授权的访问，您应该为该帐户指定唯一的强密码。</para>
+          <para>如果可能，请使用 Windows 身份验证（也称为受信任的连接），它使用 Windows 用户帐户来连接到 SQL Server。当用户通过 Windows 用户帐户进行连接时，SQL Server 会使用 Windows 操作系统中的信息来验证帐户名称和密码。在您可以使用 Windows 身份验证之前，服务器管理员必须配置 SQL Server 以使用此模式的身份验证。如果 Windows 身份验证不可用，请不要保存用户的登录信息。对于用户而言，在每次登录时输入其登录信息更为安全。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertDateTime">
@@ -2772,11 +2685,11 @@
         <Parameter Name="CalendarType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="DateTimeFormat">可选的<b>对象</b>。 显示日期或时间或者同时显示两者时所用的格式。 如果省略此参数，则 Microsoft Word 使用的短日期样式从 Windows 控制面板中 （区域设置图标）。</param>
-        <param name="InsertAsField">可选的<b>对象</b>。 <b>真</b> 要插入指定的 TIME 域的信息。 默认值为 <b>True</b> 。</param>
-        <param name="InsertAsFullWidth">可选的<b>对象</b>。 <b>真</b> 要插入双字节数字的形式指定的信息。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
-        <param name="DateLanguage">可选的<b>对象</b>。 设置要在其中显示日期或时间的语言。 可以为<see cref="T:Microsoft.Office.Interop.Word.WdDateLanguage" />常量： <b>wdDateLanguageBidi</b>或<b>wdDateLanguageLatin</b>。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
-        <param name="CalendarType">可选的<b>对象</b>。 设置显示日期或时间时要使用的日历类型。 可以为<see cref="T:Microsoft.Office.Interop.Word.WdCalendarTypeBi" />常量： <b>wdCalendarTypeBidi</b>或<b>wdCalendarTypeGregorian</b>。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
+        <param name="DateTimeFormat">可选<b>对象</b>。 显示日期或时间或者同时显示两者时所用的格式。 如果省略该参数，Microsoft Word 将使用 Windows“控制面板”（“区域设置”图标）中的短日期样式。</param>
+        <param name="InsertAsField">可选<b>对象</b>。 <b>真</b> 要插入指定的 TIME 域的信息。 默认值为 <b>True</b> 。</param>
+        <param name="InsertAsFullWidth">可选<b>对象</b>。 <b>真</b> 要插入双字节数字的形式指定的信息。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
+        <param name="DateLanguage">可选<b>对象</b>。 设置要在其中显示日期或时间的语言。 可以是以下<see cref="T:Microsoft.Office.Interop.Word.WdDateLanguage" />常量之一: <b>wdDateLanguageBidi</b>或<b>wdDateLanguageLatin</b>。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
+        <param name="CalendarType">可选<b>对象</b>。 设置显示日期或时间时要使用的日历类型。 可以是以下<see cref="T:Microsoft.Office.Interop.Word.WdCalendarTypeBi" />常量之一: <b>wdCalendarTypeBidi</b>或<b>wdCalendarTypeGregorian</b>。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
         <summary>以文本或 TIME 域的形式插入当前日期或时间，或将两者都插入。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2841,11 +2754,11 @@
         <Parameter Name="Attachment" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FileName">必需的 <b>字符串</b> 。 要插入的文件的路径及文件名。 如果不指定的路径，Microsoft Word 将假定该文件是在当前文件夹中。</param>
-        <param name="Range">可选的<b>对象</b>。 如果指定的文件是 Word 文档，则此参数代表书签。 如果该文件为其他类型（例如，Microsoft Excel 工作表），则此参数代表命名区域或单元格区域（例如，R1C1:R3C4）。</param>
-        <param name="ConfirmConversions">可选的<b>对象</b>。 <b>真</b> 要让 Word 提示您确认时插入 Word 文档格式之外的其他格式文件的转换。</param>
-        <param name="Link">可选的<b>对象</b>。 <b>真</b> 若要通过使用文本字段中插入该文件。</param>
-        <param name="Attachment">可选的<b>对象</b>。 <b>真</b> 要插入该文件作为电子邮件的附件。</param>
+        <param name="FileName">必需的 <b>字符串</b> 。 要插入的文件的路径及文件名。 如果不指定路径, Microsoft Word 将假定文件位于当前文件夹中。</param>
+        <param name="Range">可选<b>对象</b>。 如果指定的文件是 Word 文档，则此参数代表书签。 如果该文件为其他类型（例如，Microsoft Excel 工作表），则此参数代表命名区域或单元格区域（例如，R1C1:R3C4）。</param>
+        <param name="ConfirmConversions">可选<b>对象</b>。 <b>真</b> 要让 Word 提示您确认时插入 Word 文档格式之外的其他格式文件的转换。</param>
+        <param name="Link">可选<b>对象</b>。 <b>真</b> 若要通过使用文本字段中插入该文件。</param>
+        <param name="Attachment">可选<b>对象</b>。 <b>真</b> 要插入该文件作为电子邮件的附件。</param>
         <summary>插入指定文件的全部或一部分。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2872,9 +2785,9 @@
       <Parameters />
       <Docs>
         <summary>用新段落替换指定范围。</summary>
-        <remarks>
-          <para>范围在使用此方法后，将新的段落。</para>如果您不希望替换该范围，请使用
-          <para><see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />方法之前使用此方法。<b>InsertParagraphAfter</b>方法插入新的段落下面<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。</para><para /></remarks>
+        <remarks><para>使用此方法后，该范围将成为一个新段落。</para>
+          <para>如果不想替换该范围, 请在使用此<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />方法之前使用该方法。 <b>InsertParagraphAfter</b>方法在<see cref="T:Microsoft.Office.Interop.Word.Range" />对象后插入一个新段落。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertParagraphAfter">
@@ -2899,10 +2812,8 @@
       <Parameters />
       <Docs>
         <summary>在范围之后插入段落标记。</summary>
-        <remarks>
-          <para>应用此方法后，该范围将扩展以包含新段落。</para>
-          <para />
-        </remarks>
+        <remarks><para>在应用此方法之后，该范围会扩展，以包含新段落。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertParagraphBefore">
@@ -2927,10 +2838,8 @@
       <Parameters />
       <Docs>
         <summary>在指定的范围前插入一个新段落。</summary>
-        <remarks>
-          <para>应用此方法后，该范围将扩展以包含新段落。</para>
-          <para />
-        </remarks>
+        <remarks><para>在应用此方法之后，该范围会扩展，以包含新段落。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertSymbol">
@@ -2958,16 +2867,13 @@
         <Parameter Name="Bias" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">
-          <b>必选。</b> 指定符号的字符编号。 该值应是 31 加上此符号在符号表中的位置（从左向右计算）相应的数字。 例如，若要指定位置 37 处的增量字符中的符号字体符号的表中，设置<paramref name="CharacterNumber" />到 68。</param>
-        <param name="Font">可选的<b>对象</b>。 包含符号的字体的名称。</param>
-        <param name="Unicode">可选的<b>对象</b>。 <b>True</b>以插入指定的 Unicode 字符<paramref name="CharacterNumber" />;<b>False</b>插入指定的 ANSI 字符集字符<paramref name="CharacterNumber" />。 默认值为 False 。</param>
-        <param name="Bias">可选的<b>对象</b>。 设置符号的字体偏量。 此参数可用于设置东亚字符正确的字体斜线。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdFontBias" />常量： <b>wdFontBiasDefault</b>、 <b>wdFontBiasDontCare</b>或<b>wdFontBiasFareast</b>。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
+        <param name="CharacterNumber">必需的<b>整数</b>。 指定符号的字符编号。 该值应是 31 加上此符号在符号表中的位置（从左向右计算）相应的数字。 例如, 若要在符号字体的符号表中的位置37处指定增量字符, 请将设置<paramref name="CharacterNumber" />为68。</param>
+        <param name="Font">可选<b>对象</b>。 包含符号的字体的名称。</param>
+        <param name="Unicode">可选<b>对象</b>。 <b>如果为 True</b> , 则插入指定的<paramref name="CharacterNumber" />Unicode 字符;<b>如果为 False</b> , 则插入由指定<paramref name="CharacterNumber" />的 ANSI 字符。 默认值为 False。</param>
+        <param name="Bias">可选<b>对象</b>。 设置符号的字体偏量。 此参数可用于设置东亚字符正确的字体斜线。 可以<see cref="T:Microsoft.Office.Interop.Word.WdFontBias" />是常量之一: <b>wdFontBiasDefault</b>、 <b>wdFontBiasDontCare</b>或<b>wdFontBiasFareast</b>。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
         <summary>插入一个符号，用于替换指定的范围。</summary>
-        <remarks>
-          <para>如果您不想替换范围选择，使用<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />方法之前使用此方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果您不想替换范围选择, 请在使用此<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />方法之前使用方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertXML">
@@ -2994,11 +2900,12 @@
       </Parameters>
       <Docs>
         <param name="XML">必需的 <b>字符串</b> 。 要插入的 XML 文本。</param>
-        <param name="Transform">可选的<b>对象</b>。 要插入的 XML 文本应用于的转换。</param>
-        <summary>将指定的 XML 文本插入到指定的范围或所选内容。</summary>
-        <remarks>
-          <para>如果指定的区域或所选内容包含文本，现有的文本替换为<b>InsertXML</b>方法。</para>与任意 XML 或 Microsoft Word XML 标记
-          <para>使用<b>InsertXML</b>方法来插入文本。则 XML 必须是格式正确。如果它使用 Word XML，然后它还必须根据 Word XML 架构有效。Word XML 架构的详细信息，请参阅 Word XML 内容开发工具包，可以在 Microsoft Developer Network (MSDN) 网站上找到。</para><para>如果指定的 XML 文本无法插入指定的范围或所选内容，显示一条错误消息。</para><para /></remarks>
+        <param name="Transform">可选<b>对象</b>。 要应用于插入的 XML 文本的转换。</param>
+        <summary>将指定的 XML 文本插入到指定的区域或所选内容中。</summary>
+        <remarks><para>如果指定区域或所选内容包含文本, 则<b>InsertXML</b>方法将替换现有的文本。</para>
+          <para>使用<b>InsertXML</b>方法可插入带任意 XML 或 MICROSOFT Word XML 标记的文本。 XML 必须具有良好的格式。 如果它使用 Word XML, 则它还必须根据 Word XML 架构有效。 有关 Word XML 架构的详细信息, 请参阅可在 Microsoft 开发人员网络 (MSDN) 网站上找到的 Word XML 内容开发工具包。</para>
+          <para>如果无法在指定区域或所选内容中插入指定的 XML 文本, 则会显示一条错误消息。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InStory">
@@ -3023,13 +2930,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">所需<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 <b>Range</b>对象，该对象与包含的文字部分进行比较的文字<paramref name="expression" />。</param>
-        <summary>确定所选内容或此方法应用于区域是否在指定的范围相同的文字部分<paramref name="Range" />参数。</summary>
+        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 要<b></b>将其情景与包含<paramref name="expression" />的文章进行比较的 Range 对象。</param>
+        <summary>确定此方法应用于的所选内容或区域是否与<paramref name="Range" />参数指定的范围位于相同的文章中。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果所选内容或此方法应用于区域位于指定的范围相同的文字部分中，此方法返回<b>True</b><paramref name="Range" />参数和<b>False</b>如果不需要。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果应用此<b></b>方法的所选内容或区域与<paramref name="Range" />参数指定的范围位于相同的文章中, 则此方法返回 True; 如果不是, 则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEndOfRowMark">
@@ -3055,12 +2960,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否在指定的范围折叠，并位于表格中的行结束标记。</summary>
+        <summary>确定指定的范围是否为折叠且位于表中的行尾标记处。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的范围折叠且位于表格和<b>False</b>如果不在行尾标记，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定的区域处于折叠状态且位于表中的行尾标记处, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEqual">
@@ -3085,14 +2988,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">所需<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 <b>Range</b>对象，它与比较<paramref name="expression" />。</param>
-        <summary>如果应用此方法的范围等于指定的范围确定<paramref name="Range" />参数。</summary>
+        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 与<b></b>进行<paramref name="expression" />比较的 Range 对象。</param>
+        <summary>确定应用此方法的范围是否等于<paramref name="Range" />参数指定的范围。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此属性返回<b>True</b> ，如果所选内容或向其应用此方法范围等于指定的范围<paramref name="Range" />参数和<b>False</b>如果不。</para>
-          <para>此方法比较起始和结束字符的位置，以及文字部分类型。如果这些项的所有这三个相同的两个对象，对象相等。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果应用此<b></b>方法的所选内容或区域等于<paramref name="Range" />参数指定的范围, 则此属性返回 True, 否则返回<b>False</b> 。</para>
+          <para>此方法比较起始字符和结束字符的位置以及文字部分的类型。 如果两个对象的所有三项都相同，则这两个对象相等。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Italic">
@@ -3121,14 +3022,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定范围的格式设置为斜体。</summary>
+        <summary>确定区域的格式是否设置为斜体。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果该区域的格式设置为斜体，和<b>False</b>如果没有此属性返回<b>True</b> 。</para>
-          <para>此属性返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （ <b>True</b>和<b>False</b>的混合）。</para>
-          <para>此属性可以设置为的值是<b>True</b>、 <b>False</b>或<b>wdToggle</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果区域的格式设置为斜体, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para>该属性返回 <b>True</b>、<b>False</b> 或 <b>wdUndefined</b>（当返回值既可为 <b>True</b>，也可为 <b>False</b> 时取该值）。</para>
+          <para>此属性的值可设置为<b>True</b>、 <b>False</b>或<b>wdToggle</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ItalicBi">
@@ -3157,16 +3056,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定范围的格式设置为斜体。</summary>
+        <summary>确定区域的格式是否设置为斜体。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果该区域的格式设置为斜体，和<b>False</b>如果没有此属性返回<b>True</b> 。</para>
-          <para>此属性返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （用于倾斜和非斜体文本的混合）。</para>
-          <para>此属性可以设置为的值是<b>True</b>、 <b>False</b>或<b>wdToggle</b>。</para>
-          <para>
-            <b>ItalicBi</b>属性应用于从右向左的语言的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果区域的格式设置为斜体, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para>此属性返回 <b>True</b> ， <b>假</b> 或 <b>wdUndefined</b> (为斜体又有非斜体文本的混合)。</para>
+          <para>此属性的值可设置为<b>True</b>、 <b>False</b>或<b>wdToggle</b>。</para>
+          <para>[!注释] <b>ItalicBi</b> 属性适用于从右向左的语言文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Kana">
@@ -3195,12 +3091,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdKana</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的日文语言文本范围是平假名还是片假名。</summary>
+        <summary>返回或设置日文文本的指定区域是平假名还是片假名。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果该区域包含平假名和片假名或区域是否包含某些非日语文本的组合，则此属性返回<b>wdUndefined</b> 。如果将<b>Kana</b>属性设置为<b>wdUndefined</b>，会发生错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定区域含有平假名和片假名的混合文本，或包含其他非日文文本，本属性返回 <b>wdUndefined</b>。 如果将 <b>Kana</b> 属性设为 <b>wdUndefined</b>，则会产生一个错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageDetected">
@@ -3231,12 +3125,9 @@
       <Docs>
         <summary>返回或设置一个值，指定 Word 是否已检测到指定的文本的语言。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>检查<see cref="P:Microsoft.Office.Interop.Word.Range.LanguageID" />的以前任何语言检测结果属性。</para>
-          <para>
-            <b>LanguageDetected</b>属性设置为<b>True</b>时<see cref="M:Microsoft.Office.Interop.Word.Range.DetectLanguage" />调用方法。若要重新计算指定文本的语言，您必须先将<b>LanguageDetected</b>属性设置为<b>False</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>检查任何<see cref="P:Microsoft.Office.Interop.Word.Range.LanguageID" />以前的语言检测结果的属性。</para>
+          <para>调用<see cref="M:Microsoft.Office.Interop.Word.Range.DetectLanguage" />方法时, <b>LanguageDetected</b>属性设置为<b>True</b> 。 重新计算指定文本的语言，您必须首先设置 <b>为</b> <b>LanguageDetected</b> 属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageID">
@@ -3267,10 +3158,8 @@
       <Docs>
         <summary>返回或设置指定对象的语言。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>一些<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>某些<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量可能不可用, 具体取决于您选择或安装的语言支持 (例如, 美国英语)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -3301,10 +3190,8 @@
       <Docs>
         <summary>返回或设置指定对象的东亚语言。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>这是建议的方式，可返回或设置 Microsoft Word 东亚版中创建的文档中的东亚文字的语言。</para>
-          <para />
-        </remarks>
+        <remarks><para>推荐使用本方法，来返回或设置用 Microsoft Word 中文版创建的文档中东亚文字的语言。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDOther">
@@ -3335,10 +3222,8 @@
       <Docs>
         <summary>返回或设置指定对象的语言。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>这是建议的方式，可返回或设置为从右到左语言版本的 Microsoft Word 中创建的文档中西文文字的语言。</para>
-          <para />
-        </remarks>
+        <remarks><para>推荐使用本方法，来设置或返回在 Microsoft Word 从右向左语言版本所创建的文档中西文文字所用的语言。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListFormat">
@@ -3364,7 +3249,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象，表示所有的列表格式特征的范围。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象, 表示区域的所有列表格式设置特征。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3392,7 +3277,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListParagraphs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ListParagraphs" />代表该区域中的所有已编号的段落的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ListParagraphs" />集合, 该集合代表区域中的所有编号段落。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3420,10 +3305,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>对象</b>，表示用于的点符列表或编号的列表格式的样式。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回一个<b>Object</b>类型的对象, 该对象代表用于设置项目符号列表或编号列表格式的样式。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3450,12 +3333,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthLocks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />集合对象，表示范围中的所有锁。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />集合对象，表示范围中的所有锁。</value>
-        <remarks>
-          <para>只读的。使用此属性可返回<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />集合。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />集合对象, 该对象表示范围中的所有锁。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />集合对象, 该对象代表区域中的所有锁定。</value>
+        <remarks><para>只读。 使用此属性可返回<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />集合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LookupNameProperties">
@@ -3480,10 +3361,8 @@
       <Parameters />
       <Docs>
         <summary>在全局通讯簿列表中查找姓名，并显示属性对话框，该对话框中包含有关指定姓名的信息。</summary>
-        <remarks>
-          <para>如果此方法找到了多个匹配项，则会显示检查姓名对话框。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果此方法找到了多个匹配项，则显示 "检查姓名" 对话框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModifyEnclosure">
@@ -3510,9 +3389,9 @@
         <Parameter Name="EnclosedText" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Style">所需的<b>对象</b>。 盘柜的样式。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdEncloseStyle" />常量。</param>
-        <param name="Symbol">可选的<b>对象</b>。 包含指定的范围符号。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdEnclosureType" />常量。</param>
-        <param name="EnclosedText">可选的<b>对象</b>。 要圈住的字符。 如果包括该参数，则 Microsoft Word 将用被圈起来的字符代替指定区域。 如果没有指定要圈住的字符，则 Microsoft Word 将圈住指定区域中的全部文本。</param>
+        <param name="Style">必需的<b>对象</b>。 盘柜的样式。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdEncloseStyle" />常量。</param>
+        <param name="Symbol">可选<b>对象</b>。 包含指定的范围符号。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdEnclosureType" />常量。</param>
+        <param name="EnclosedText">可选<b>对象</b>。 要圈住的字符。 如果包括该参数，则 Microsoft Word 将用被圈起来的字符代替指定区域。 如果没有指定要圈住的字符，则 Microsoft Word 将圈住指定区域中的全部文本。</param>
         <summary>添加、修改或删除指定字符周围的圈号。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3540,16 +3419,14 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">可选的<b>对象</b>。 移动折叠的范围或所选内容时所基于的单位。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />常量： <b>wdCharacter</b>、 <b>wdWord</b>、 <b>wdSentence</b>、 <b>wdParagraph</b>、 <b>wdSection</b>、 <b>wdStory</b>、 <b>wdCell</b>、 <b>wdColumn</b>、 <b>wdRow</b>或<b>wdTable</b>。 如果<paramref name="expression" />返回<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象，您还可以使用<b>wdLine</b>。 默认值是 <b>wdCharacter</b> 。</param>
-        <param name="Count">可选的<b>对象</b>。 指定的区域或所选内容的移动的单位数。 如果<paramref name="Count" />是正数，该对象是折叠到结束位置和文档中向后移动指定的单位数。 如果<paramref name="Count" />是负数，该对象是折叠到其起始位置和向前移动指定的单位数。 默认值为 1。 您还可以使用控制的折叠方向<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />方法之前使用<b>Move</b>方法。 如果该区域或所选内容位于一个单位的中间，或者不能折叠，将其移动到的开头或结尾的部门计为移动它一个完整的单元。</param>
-        <summary>将指定的区域或选定内容折叠至其开始或结束位置，然后将折叠后的对象移动指定的单位数。</summary>
+        <param name="Unit">可选<b>对象</b>。 移动折叠的范围或所选内容时所基于的单位。 <see cref="T:Microsoft.Office.Interop.Word.WdUnits" />可以是下列常量之一: <b>wdCharacter</b>、 <b>wdWord</b>、 <b>wdSentence</b>、 <b>wdParagraph</b>、 <b>wdSection</b>、 <b>wdStory</b>、 <b>wdCell</b>、wdColumn、 <b></b> <b>wdRow</b>或<b>wdTable</b>。 如果<paramref name="expression" />返回一个<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象, 则还可以使用<b>wdLine</b>。 默认值是 <b>wdCharacter</b> 。</param>
+        <param name="Count">可选<b>对象</b>。 指定的区域或所选内容的移动的单位数。 如果<paramref name="Count" />是正数, 则对象折叠到其结束位置, 并在文档中向后移动指定的单位数。 如果<paramref name="Count" />是负数, 则将对象折叠到其起始位置, 并向前移动指定的单位数。 默认值为 1。 您还可以在使用<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" /> <b>Move</b>方法之前使用方法控制折叠方向。 如果该区域或所选内容位于一个单位的中间，或者不能折叠，将其移动到的开头或结尾的部门计为移动它一个完整的单元。</param>
+        <summary>将指定的区域或所选内容折叠到其起始位置或结束位置, 然后将折叠的对象移动指定的单位数。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回一个<b>整数</b>值，指示依据对象实际移动的单位数，或如果移动不成功，则返回 0 （零）。</para>
-          <para>折叠的范围或所选内容的开始和结束位置相等。</para>
-          <para>将<b>Move</b>方法应用于范围不重新排列文档中的文本。相反，它重新定义要引用在文档中的新位置的范围。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法返回一个<b>整数</b>值, 表示该对象实际移动的单位数, 如果移动不成功, 则返回 0 (零)。</para>
+          <para>折叠的范围或所选内容的开始和结束位置相同。</para>
+          <para>对一个范围应用 <b>Move</b> 方法不会重排文档中的文本。相反，它重新定义该区域，以引用文档中的新位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveEnd">
@@ -3576,13 +3453,11 @@
       </Parameters>
       <Docs>
         <param name="Unit">可选<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />。 结束字符位置移至的单元。</param>
-        <param name="Count">可选的<b>对象</b>。 要移动的单位数。 如果此 number 为正数，则的结束字符位置在文档中向前移动。 如果此 number 为负数，则向后移动结束。 如果结束位置超过的起始位置，该范围折叠并一起移动这两个字符的位置。 默认值为 1。</param>
+        <param name="Count">可选<b>对象</b>。 要移动的单位数。 如果此数字为正数, 结束字符位置将在文档中向前移动。 如果此数字为负, 则结束位置向后移动。 如果结束位置 overtakes 起始位置, 则范围将折叠, 两个字符位置将一起移动。 默认值为 1。</param>
         <summary>移动结束字符位置的范围。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回一个整数，表示范围或所选内容的单位数实际移动，或如果移动不成功，则返回 0 （零）。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法如果返回一个整数，表示范围或所选内容实际移动的单位数；如果返回 0（零），则移动失败。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveEndUntil">
@@ -3608,15 +3483,13 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Cset">所需的<b>对象</b>。 一个或多个字符。 此参数区分大小写。</param>
-        <param name="Count">可选的<b>对象</b>。 最大的指定的区域或选定内容的要移动的字符数。 可以是数字或 <b>wdForward</b> 或 <b>wdBackward</b> 常量。 如果<paramref name="Count" />是正数，则范围或文档中向前移动所选内容。 如果是为负数，区域或选定内容向后移动。 默认值是 <b>wdForward</b> 。</param>
-        <summary>移动指定的范围或所选内容的结束位置，直到在文档中找到任何指定的字符。</summary>
+        <param name="Cset">必需的<b>对象</b>。 一个或多个字符。 此参数区分大小写。</param>
+        <param name="Count">可选<b>对象</b>。 指定区域或所选内容要移动的最大字符数。 可以是数字或 <b>wdForward</b> 或 <b>wdBackward</b> 常量。 如果<paramref name="Count" />为正数, 则该区域或所选内容在文档中向前移动。 如果是负数, 则该区域或所选内容向后移动。 默认值是 <b>wdForward</b> 。</param>
+        <summary>移动指定区域或所选内容的结束位置, 直到在文档中找到任何指定的字符。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果文档中是向前移动，则扩展该范围。</para>
-          <para>此方法返回所指定区域的结束位置已移动，作为<b>整数</b>值的字符数。如果<paramref name="Count" />大于 0 （零），此方法返回的字符数移动加 1。如果<paramref name="Count" />小于 0 （零），此方法返回的减 1 的字符数。如果没有<paramref name="Cset" />找到字符、 区域或选定内容不改变，并且此方法返回 0 （零）。如果的结束位置向后移动到之前原始开始位置、 起始位置设置为新的结束位置。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果在文档中是向前移动，则扩展该范围。</para>
+          <para>此方法返回指定范围的结束位置移动的字符数, 作为<b>整数</b>值。 如果<paramref name="Count" />大于 0 (零), 则此方法返回移动的字符数加1。 如果<paramref name="Count" />小于 0 (零), 则此方法返回移动的字符数减1。 如果找<paramref name="Cset" />不到字符, 则不会更改区域或所选内容, 并且该方法返回 0 (零)。 如果结束位置向后移动到原始起始位置之前的某个点，则起始位置设置为新的结束位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveEndWhile">
@@ -3642,14 +3515,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Cset">所需的<b>对象</b>。 一个或多个字符。 此参数区分大小写。</param>
-        <param name="Count">可选的<b>对象</b>。 最大的区域或选定内容的要移动的字符数。 可以是数字或 <b>wdForward</b> 或 <b>wdBackward</b> 常量。 如果<paramref name="Count" />是正数，则范围或文档中向前移动所选内容。 如果是为负数，区域或选定内容向后移动。 默认值是 <b>wdForward</b> 。</param>
+        <param name="Cset">必需的<b>对象</b>。 一个或多个字符。 此参数区分大小写。</param>
+        <param name="Count">可选<b>对象</b>。 区域或所选内容移动的最大字符数。 可以是数字或 <b>wdForward</b> 或 <b>wdBackward</b> 常量。 如果<paramref name="Count" />为正数, 则该区域或所选内容在文档中向前移动。 如果是负数, 则该区域或所选内容向后移动。 默认值是 <b>wdForward</b> 。</param>
         <summary>在文档找到任何指定的字符时，移动某一范围的结束字符位置。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>中的任意字符<paramref name="Cset" />找到结束移动指定的范围或所选内容的位置。此方法返回范围或所选内容的结束位置移动作为<b>整数</b>值的字符的数。如果没有<paramref name="Cset" />找到字符、 区域或选定内容不改变，并且此方法返回 0 （零）。如果的结束位置向后移动到原来的开始位置之前的点的起始位置设置为新的结束位置。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果找到了中<paramref name="Cset" />的任何字符, 则移动指定区域或所选内容的结束位置。 此方法返回区域或所选内容的结束位置作为<b>整数</b>值移动的字符数。 如果找<paramref name="Cset" />不到字符, 则不会更改区域或所选内容, 并且该方法返回 0 (零)。 如果结束位置向后移动到原始起始位置之前的某个点，则起始位置设置为新的结束位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveStart">
@@ -3675,14 +3546,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">可选<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />。 度量单位的起始位置指定范围或所选内容将被移动。</param>
-        <param name="Count">可选的<b>对象</b>。 最大的指定的区域或选定内容的要移动的单位数。 如果<paramref name="Count" />是正数，则范围的起始位置或文档中向前移动所选内容。 如果是为负数，则向后移动的起始位置。 起始位置向前移动到结束位置的位置，如果折叠的范围或选定内容并移开始和结束位置。 默认值为 1。</param>
+        <param name="Unit">可选<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />。 指定区域或所选内容的起始位置要移动的单位。</param>
+        <param name="Count">可选<b>对象</b>。 指定区域或所选内容移动的最大单位数。 如果<paramref name="Count" />为正数, 则该区域或所选内容的起始位置在文档中向前移动。 如果是负数, 则起始位置向后移动。 如果将起始位置向前移动到超出结束位置的某个位置, 则折叠该区域或所选内容, 并将起始位置和结束位置移到一起。 默认值为 1。</param>
         <summary>移动指定范围的起始位置。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回一个整数，表示的起始位置范围或所选内容实际移动，或如果移动不成功，则返回 0 （零） 的单位数。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法返回一个整数, 该整数指示起始位置或区域或所选内容实际移动的单位数, 如果移动不成功, 则返回 0 (零)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveStartUntil">
@@ -3708,15 +3577,13 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Cset">所需的<b>对象</b>。 一个或多个字符。 此参数区分大小写。</param>
-        <param name="Count">可选的<b>对象</b>。 最大的指定的区域或选定内容的要移动的字符数。 可以是数字或 <b>wdForward</b> 或 <b>wdBackward</b> 常量。 如果<paramref name="Count" />是正数，则范围或文档中向前移动所选内容。 如果是为负数，区域或选定内容向后移动。 默认值是 <b>wdForward</b> 。</param>
-        <summary>移动指定的范围或所选内容的起始位置，直到在文档中找到的一个指定的字符。</summary>
+        <param name="Cset">必需的<b>对象</b>。 一个或多个字符。 此参数区分大小写。</param>
+        <param name="Count">可选<b>对象</b>。 指定区域或所选内容要移动的最大字符数。 可以是数字或 <b>wdForward</b> 或 <b>wdBackward</b> 常量。 如果<paramref name="Count" />为正数, 则该区域或所选内容在文档中向前移动。 如果是负数, 则该区域或所选内容向后移动。 默认值是 <b>wdForward</b> 。</param>
+        <summary>移动指定区域或所选内容的起始位置, 直到在文档中找到一个指定的字符。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果是文档中向后移动，则扩展该范围。</para>
-          <para>此方法返回所指定的区域或选定内容的起始位置移动，作为<b>整数</b>值的字符数。如果<paramref name="Count" />大于 0 （零），此方法返回的字符数移动加 1。如果<paramref name="Count" />小于 0 （零），此方法返回的减 1 的字符数。如果没有<paramref name="Cset" />找到字符、 指定的区域或选定内容不改变，并且此方法返回 0 （零）。如果的起始位置向前移动到结束位置的点，折叠的范围或选定内容并移开始和结束位置。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果在文档中是向后移动，则扩展该范围。</para>
+          <para>此方法返回指定区域或所选内容的起始位置移动的字符数, 作为<b>整数</b>值。 如果<paramref name="Count" />大于 0 (零), 则此方法返回移动的字符数加1。 如果<paramref name="Count" />小于 0 (零), 则此方法返回移动的字符数减1。 如果找<paramref name="Cset" />不到字符, 则不会更改指定的区域或所选内容, 并且该方法返回 0 (零)。 如果起始位置向前移动到超出结束位置的某个点, 则折叠该区域或所选内容, 并将开始和结束位置移到一起。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveStartWhile">
@@ -3742,14 +3609,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Cset">所需的<b>对象</b>。 一个或多个字符。 此参数区分大小写。</param>
-        <param name="Count">可选的<b>对象</b>。 最大的指定的区域或选定内容的要移动的字符数。 可以是数字或 <b>wdForward</b> 或 <b>wdBackward</b> 常量。 如果<paramref name="Count" />是正数，则范围或文档中向前移动所选内容。 如果是为负数，区域或选定内容向后移动。 默认值是 <b>wdForward</b> 。</param>
+        <param name="Cset">必需的<b>对象</b>。 一个或多个字符。 此参数区分大小写。</param>
+        <param name="Count">可选<b>对象</b>。 指定区域或所选内容要移动的最大字符数。 可以是数字或 <b>wdForward</b> 或 <b>wdBackward</b> 常量。 如果<paramref name="Count" />为正数, 则该区域或所选内容在文档中向前移动。 如果是负数, 则该区域或所选内容向后移动。 默认值是 <b>wdForward</b> 。</param>
         <summary>当在文档中找到任何指定的字符时，移动指定范围的起始位置。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>中的任意字符<paramref name="Cset" />找到开始移动范围或所选内容的位置。此方法返回范围或所选内容的起始位置移动作为<b>整数</b>值的字符的数。如果没有<paramref name="Cset" />找到字符、 区域或选定内容不改变，并且此方法返回 0 （零）。如果的起始位置向前移动到原始结束位置的位置，结束位置设置为新的起始位置。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果找到了中<paramref name="Cset" />的任何字符, 则移动区域或所选内容的起始位置。 此方法返回将区域或所选内容的起始位置移动为<b>整数</b>值的字符数。 如果找<paramref name="Cset" />不到字符, 则不会更改区域或所选内容, 并且该方法返回 0 (零)。 如果起始位置向前移动到超出原来的结束位置的某个位置，该结束位置设置为新的起始位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveUntil">
@@ -3775,14 +3640,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Cset">所需的<b>对象</b>。 一个或多个字符。 如果在任何字符<paramref name="Cset" />之前找到<paramref name="Count" />值过期，则指定的范围或所选内容位于作为一个插入点紧挨该字符。 此参数区分大小写。</param>
-        <param name="Count">可选的<b>对象</b>。 最大的指定的区域或选定内容的要移动的字符数。 可以是数字或 <b>wdForward</b> 或 <b>wdBackward</b> 常量。 如果<paramref name="Count" />是正数，则范围或所选内容在文档中，开头的结束位置向前移动。 如果是为负数，区域或选定内容向后移动，开头的起始位置。 默认值是 <b>wdForward</b> 。</param>
+        <param name="Cset">必需的<b>对象</b>。 一个或多个字符。 如果在<paramref name="Count" />值过期<paramref name="Cset" />之前找到了中的任何字符, 则指定的区域或所选内容将作为插入点放在该字符之前。 此参数区分大小写。</param>
+        <param name="Count">可选<b>对象</b>。 指定区域或所选内容要移动的最大字符数。 可以是数字或 <b>wdForward</b> 或 <b>wdBackward</b> 常量。 如果<paramref name="Count" />为正数, 则该区域或所选内容在文档中从结束位置开始向前移动。 如果是负数, 则该区域或所选内容从起始位置开始向后移动。 默认值是 <b>wdForward</b> 。</param>
         <summary>移动指定范围，直到在文档中找到指定字符中的一个为止。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回所指定的区域或选定内容移动，作为<b>整数</b>值的字符数。如果<paramref name="Count" />大于 0 （零），此方法返回的字符移动加上一个数。如果<paramref name="Count" />小于 0 （零），此方法返回的值减 1 移动的字符数。如果没有<paramref name="Cset" />找到字符、 区域或选定内容不改变，并且此方法返回 0 （零）。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法以<b>整数</b>值的形式返回指定区域或所选内容移动的字符数。 如果<paramref name="Count" />大于 0 (零), 则此方法返回移动的字符数加1。 如果<paramref name="Count" />小于 0 (零), 则此方法返回移动的字符数减一。 如果找<paramref name="Cset" />不到字符, 则不会更改区域或所选内容, 并且该方法返回 0 (零)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveWhile">
@@ -3808,14 +3671,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Cset">所需的<b>对象</b>。 一个或多个字符。 此参数区分大小写。</param>
-        <param name="Count">可选的<b>对象</b>。 最大的指定的区域或选定内容的要移动的字符数。 可以是数字或 <b>wdForward</b> 或 <b>wdBackward</b> 常量。 如果<paramref name="Count" />是正数，指定范围或所选内容在文档中，开头的结束位置向前移动。 如果是为负数，区域或选定内容向后移动，开头的起始位置。 默认值是 <b>wdForward</b> 。</param>
+        <param name="Cset">必需的<b>对象</b>。 一个或多个字符。 此参数区分大小写。</param>
+        <param name="Count">可选<b>对象</b>。 指定区域或所选内容要移动的最大字符数。 可以是数字或 <b>wdForward</b> 或 <b>wdBackward</b> 常量。 如果<paramref name="Count" />为正数, 则指定的区域或所选内容在文档中从结束位置开始向前移动。 如果是负数, 则该区域或所选内容从起始位置开始向后移动。 默认值是 <b>wdForward</b> 。</param>
         <summary>当在文档中找到任何指定的字符时，移动指定范围。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>中的任意字符<paramref name="Cset" />找到，则指定移动范围。产生的<see cref="T:Microsoft.Office.Interop.Word.Range" />对象作为一个插入点放置后任何<paramref name="Cset" />发现字符。此方法返回所指定的区域或选定内容移动，作为<b>整数</b>值的字符数。如果没有<paramref name="Cset" />找到字符和不改变该范围，此方法返回 0 （零）。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果找到了中<paramref name="Cset" />的任何字符, 则移动指定的范围。 生成<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象将作为插入点放置在找到的<paramref name="Cset" />任何字符之后。 此方法以<b>整数</b>值的形式返回指定区域或所选内容移动的字符数。 如果找<paramref name="Cset" />不到字符, 则该范围不变, 并且该方法返回 0 (零)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -3841,14 +3702,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">可选的<b>对象</b>。 要计算的单位类型。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />常量。</param>
-        <param name="Count">可选的<b>对象</b>。 要向前移动的单位数。 默认值为 1。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示相对于指定范围的指定的单位。</summary>
+        <param name="Unit">可选<b>对象</b>。 要计算的单位类型。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdUnits" />常量。</param>
+        <param name="Count">可选<b>对象</b>。 要向前移动的单位数。 默认值为 1。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示相对于指定范围的指定的单位。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果之前指定的范围是<paramref name="Unit" />，范围移至下一个单位。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果该范围恰好在指定<paramref name="Unit" />的之前, 则将该范围移至以下单元。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NextStoryRange">
@@ -3874,30 +3733,28 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />指下一篇文章下, 表中所示的对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />引用下一文章的对象, 如下表所示。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>下表显示了由<b>NextStoryRange</b>属性返回什么：</para>
+        <remarks><para>下表显示了<b>NextStoryRange</b>属性返回的内容:</para>
           <list type="table">
             <item>
               <description>
-                <b>wdMainTextStory</b>、 <b>wdFootnotesStory</b>、 <b>wdEndnotesStory</b>和<b>wdCommentsStory</b></description>
+                <b>wdMainTextStory</b> 、 <b>wdFootnotesStory</b> 、 <b>wdEndnotesStory</b> 和 <b>wdCommentsStory</b></description>
               <description>始终返回<b>Nothing</b>。</description>
             </item>
             <item>
               <description>
                 <b>wdTextFrameStory</b>
               </description>
-              <description>下一组链接的文本框的案例。</description>
+              <description>下一组链接文本框的文章。</description>
             </item>
             <item>
               <description>
                 <b>wdEvenPagesHeaderStory</b>、 <b>wdPrimaryHeaderStory</b>、 <b>wdEvenPagesFooterStory</b>、 <b>wdPrimaryFooterStory</b>、 <b>wdFirstPageHeaderStory</b>、 <b>wdFirstPageFooterStory</b></description>
-              <description>下一节中的文字的相同类型。</description>
+              <description>下一节的相同类型的文章。</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NextSubdocument">
@@ -3922,10 +3779,8 @@
       <Parameters />
       <Docs>
         <summary>将范围移至下一个子文档。</summary>
-        <remarks>
-          <para>如果没有一个子文档，将发生错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果没有上一个子文档，将发生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoProofing">
@@ -3956,10 +3811,8 @@
       <Docs>
         <summary>确定拼写和语法检查程序是否忽略指定的文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果拼写和语法检查指定的文本，并为<b>False</b> ，如果将忽略不，此属性返回<b>True</b> 。如果只将某些指定文本的<b>NoProofing</b>属性设置为<b>True</b> ，则返回<b>wdUndefined</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果拼写和语法检查程序忽略指定的文本, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 如果只将某些指定的文本的<b>NoProofing</b>属性设置为<b>True</b> , 则返回<b>wdUndefined</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OMaths">
@@ -3985,10 +3838,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMaths</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.OMaths" />集合，代表<see cref="T:Microsoft.Office.Interop.Word.OMath" />指定区域中的对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMaths" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.OMaths" />集合, 该集合<see cref="T:Microsoft.Office.Interop.Word.OMath" />代表指定区域中的对象。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMaths" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4020,11 +3871,9 @@
       <Docs>
         <summary>返回或设置范围中文字的方向，当启用了文字方向功能。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>上面列出的常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para>您可以设置文本框架或 range 或 selection 恰好文本框架内的方向。有关文本框架和文本框之间的差异的信息，请参阅<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>由于您选择或安装的语言支持不同（例如美国英语），上述部分常量可能无法使用。</para>
+          <para>您可以设置文本框架或者恰好位于文本框架内的所选内容或区域的方向。 有关文本框架和文本框之间的差异的信息, 请参阅<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageSetup">
@@ -4053,7 +3902,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PageSetup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />与指定区域相关联的对象。</summary>
+        <summary>返回与<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />指定区域相关联的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4084,7 +3933,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />值，该值代表指定区域的段落设置的对象。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />对象, 表示指定区域的段落设置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4112,7 +3961,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Paragraphs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Paragraphs" />值，该值代表指定范围中的所有段落的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Paragraphs" />集合, 该集合代表指定区域中的所有段落。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4140,10 +3989,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个代表用来设置段落的格式的样式的<b>对象</b>。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回一个<b>对象</b>, 表示用于设置段落格式的样式。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4198,14 +4045,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />对象值，该值代表指定区域的父内容控件。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
-        </value>
-        <remarks>
-          <para>如果指定区域没有父内容控件，此属性返回<b>Null</b> 。</para>
-          <para />
-        </remarks>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />对象, 表示指定范围的父内容控件。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></value>
+        <remarks><para>如果没有指定区域的父内容控件, 则此属性返回<b>Null</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Paste">
@@ -4230,11 +4073,9 @@
       <Parameters />
       <Docs>
         <summary>将"剪贴板"中的内容插入指定范围。</summary>
-        <remarks>
-          <para>如果您不希望替换该范围的内容，使用<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />方法之前使用此方法。</para>
-          <para>该范围将扩展以包含剪贴板的内容。当此方法用于<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象，所选内容不扩展以包含剪贴板的内容;而是选定内容位于后面粘贴剪贴板的内容。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果您不想替换该范围的内容, 请在使用此<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />方法之前使用该方法。</para>
+          <para>范围将扩展, 以包含剪贴板中的内容。 当此方法与<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象一起使用时, 所选内容不会扩展以包含剪贴板内容;而是将所选内容放置在粘贴的剪贴板内容之后。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PasteAndFormat">
@@ -4260,7 +4101,7 @@
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Word.WdRecoveryType" />
       </Parameters>
       <Docs>
-        <param name="Type">所需<see cref="T:Microsoft.Office.Interop.Word.WdRecoveryType" />。 粘贴所选的表格单元格时使用的格式类型。</param>
+        <param name="Type">必需<see cref="T:Microsoft.Office.Interop.Word.WdRecoveryType" />。 粘贴所选的表格单元格时使用的格式类型。</param>
         <summary>粘贴选定的表格单元格，并为其设置指定的格式。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4287,10 +4128,8 @@
       <Parameters />
       <Docs>
         <summary>通过在所选行之间插入粘贴的行，将粘贴的单元格合并到现有的表格中。</summary>
-        <remarks>
-          <para>没有单元格将被覆盖。</para>
-          <para />
-        </remarks>
+        <remarks><para>不覆盖任何单元格。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PasteAsNestedTable">
@@ -4315,10 +4154,8 @@
       <Parameters />
       <Docs>
         <summary>将一个或一组单元格作为嵌套表格粘贴到所选范围。</summary>
-        <remarks>
-          <para>仅当剪贴板包含单元格或单元格和所选的范围的组是一个或一组当前文档中的单元格，您可以使用<b>pasteasnestedtable 方法</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>仅当剪贴板中包含一个单元格或者单元格和选定的区域的组是一个或一组单元格当前文档中，可以使用 <b>PasteAsNestedTable</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PasteExcelTable">
@@ -4346,9 +4183,9 @@
         <Parameter Name="RTF" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="LinkedToExcel">所需<b>Boolean</b>。 <b>为</b> 链接到原始 Excel 文件粘贴的表格，以便对 Excel 文件所做的更改将反映在 Microsoft Word。</param>
-        <param name="WordFormatting">所需<b>Boolean</b>。 <b>为</b> 目录设置格式，使用 Word 文档中的格式设置。 <b>假</b> 的格式根据原始 Excel 文件。</param>
-        <param name="RTF">所需<b>Boolean</b>。 <b>True</b> 将粘贴使用丰富文本格式 (RTF) Excel 表。 <b>False</b> ，则将 Excel 表格粘贴为 HTML。</param>
+        <param name="LinkedToExcel">必需的<b>布尔值</b>。 <b>为</b> 链接到原始 Excel 文件粘贴的表格，以便对 Excel 文件所做的更改将反映在 Microsoft Word。</param>
+        <param name="WordFormatting">必需的<b>布尔值</b>。 <b>为</b> 目录设置格式，使用 Word 文档中的格式设置。 <b>假</b> 的格式根据原始 Excel 文件。</param>
+        <param name="RTF">必需的<b>布尔值</b>。 <b>True</b> 将粘贴使用丰富文本格式 (RTF) Excel 表。 <b>False</b> ，则将 Excel 表格粘贴为 HTML。</param>
         <summary>粘贴 Microsoft Excel 表格并设置其格式。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4381,17 +4218,17 @@
         <Parameter Name="IconLabel" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="IconIndex">可选的<b>对象</b>。 如果<paramref name="DisplayAsIcon" />为<b>True</b>，此参数是一个数字，对应于您想要在指定的程序文件中使用的图标<paramref name="IconFilename" />。 在更改图标对话框 （插入菜单、 对象命令创建新选项卡） 中显示图标： 0 （零） 对应于第一个图标，1 对应于第二个图标，依此类推。 如果省略此参数，则使用第一个 (默认) 图标。</param>
-        <param name="Link">可选的<b>对象</b>。 <b>True</b>创建指向剪贴板内容的源文件的链接。 默认值为 <b>False</b> 。</param>
-        <param name="Placement">可选的<b>对象</b>。 可以是以下任一<see cref="T:Microsoft.Office.Interop.Word.WdOLEPlacement" />常量： <b>wdFloatOverText</b>或<b>wdInLine</b>。 默认值是<b>wdInLine</b>。</param>
-        <param name="DisplayAsIcon">可选的<b>对象</b>。 可选的<b>对象</b>。 <b>True</b>将链接显示为图标。 默认值为 <b>False</b> 。</param>
-        <param name="DataType">可选的<b>对象</b>。 将剪贴板内容插入到文档中所使用的格式。 <see cref="T:Microsoft.Office.Interop.Word.WdPasteDataType" />.</param>
-        <param name="IconFileName">可选的<b>对象</b>。如果<paramref name="DisplayAsIcon" />为<b>True</b>，此参数是在其中存储要显示的图标的文件的路径和文件名称。</param>
-        <param name="IconLabel">可选的<b>对象</b>。 如果<paramref name="DisplayAsIcon" />为<b>True</b>，此参数是显示在图标下方的文本。</param>
+        <param name="IconIndex">可选<b>对象</b>。 如果<paramref name="DisplayAsIcon" />为<b>True</b>, 则此参数是一个与指定的程序文件中要使用的图标相对应的数字<paramref name="IconFilename" />。 图标显示在 "更改图标" 对话框 ("插入" 菜单, "对象" 命令, "新建" 选项卡) 中: 0 (零) 对应于第一个图标, 1 对应于第二个图标, 依此类推。 如果省略该参数，则使用第一个（默认）图标。</param>
+        <param name="Link">可选<b>对象</b>。 如果为 <b>True</b>，则创建指向“剪贴板”内容源文件的链接。 默认值为 <b>False</b>。</param>
+        <param name="Placement">可选<b>对象</b>。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdOLEPlacement" />常量之一: <b>wdFloatOverText</b>或<b>wdInLine</b>。 默认值为 <b>wdInLine</b>。</param>
+        <param name="DisplayAsIcon">可选<b>对象</b>。 可选<b>对象</b>。 如果为 <b>True</b>，则将链接显示为图标。 默认值为 <b>False</b> 。</param>
+        <param name="DataType">可选<b>对象</b>。 将剪贴板内容插入到文档中所使用的格式。 <see cref="T:Microsoft.Office.Interop.Word.WdPasteDataType" />.</param>
+        <param name="IconFileName">可选<b>对象</b>。如果<paramref name="DisplayAsIcon" />为<b>True</b>, 则此参数是存储要显示的图标的文件的路径和文件名。</param>
+        <param name="IconLabel">可选<b>对象</b>。 如果<paramref name="DisplayAsIcon" />为<b>True</b>, 则此参数是显示在图标下方的文本。</param>
         <summary>插入“剪贴板”中的内容。</summary>
-        <remarks>
-          <para>与不同与<see cref="M:Microsoft.Office.Interop.Word.Range.Paste" />方法，您可以使用<b>PasteSpecial</b>控制所粘贴信息的格式，并 （可选） 建立指向源文件 （例如，Microsoft Excel 工作表） 的链接。</para>如果您不想要替换指定范围使用的内容的
-          <para><see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />方法之前使用此方法。如果您使用此方法，范围不扩展以包含剪贴板的内容。</para><para /></remarks>
+        <remarks><para>与方法不同<see cref="M:Microsoft.Office.Interop.Word.Range.Paste" />的是, 通过<b>PasteSpecial</b> , 您可以控制粘贴信息的格式和 (可选) 建立指向源文件的链接 (例如, Microsoft Excel 工作表)。</para>
+          <para>如果不想替换指定范围的内容, 请在使用此方法之前<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />使用方法。 使用此方法时, 区域不会扩展以包含 "剪贴板" 中的内容。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PhoneticGuide">
@@ -4422,9 +4259,9 @@
       <Docs>
         <param name="Text">必需的 <b>字符串</b> 。 要添加的拼音文字。</param>
         <param name="Alignment">可选<see cref="T:Microsoft.Office.Interop.Word.WdPhoneticGuideAlignmentType" />。 添加的拼音文字的对齐方式。</param>
-        <param name="Raise">可选的<b>整数</b>。 从指定范围中的文字顶端到拼音文字顶端的距离（以磅为单位）。 如果未不指定任何值，Microsoft Word 自动在最佳距离之上的指定区域设置拼音文本。</param>
-        <param name="FontSize">可选的<b>整数</b>。 用于拼音文字的字体大小。 如果未不指定任何值，Word 将字体大小 50%小于指定范围中的文本。</param>
-        <param name="FontName">可选的<b>字符串</b>。 用于拼音文字的字体的名称。 如果未不指定任何值，Word 将使用相同的字体为指定范围中的文本。</param>
+        <param name="Raise">可选属性，类型为 <b>Integer</b>。 从指定区域内文字的顶端到拼音文字顶端的距离（以磅为单位）。 如果未指定任何值，则 Microsoft Word 自动将拼音文字与指定区域的距离设置为最优值。</param>
+        <param name="FontSize">可选属性，类型为 <b>Integer</b>。 拼音文字的字体大小。 如果未指定任何值，则 Word 将拼音字体的大小设置为指定区域内文字大小的一半。</param>
+        <param name="FontName">可选<b>字符串</b>。 用于拼音文字的字体的名称。 如果未指定任何值，则 Word 将其设置为与指定区域内文字相同的字体。</param>
         <summary>将拼音指南添加到指定区域。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4452,14 +4289,12 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Unit">可选的<b>对象</b>。 <see cref="T:Microsoft.Office.Interop.Word.WdUnits" /></param>
-        <param name="Count">可选的<b>对象</b>。 您要向后移动的单位数。 默认值为 1。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />相对于指定的选定内容或区域的对象。</summary>
+        <param name="Unit">可选<b>对象</b>。 <see cref="T:Microsoft.Office.Interop.Word.WdUnits" /></param>
+        <param name="Count">可选<b>对象</b>。 要向后移动的单位数。 默认值为 1。</param>
+        <summary>返回相对<see cref="T:Microsoft.Office.Interop.Word.Range" />于指定的所选内容或区域的对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果范围后，则只需指定<paramref name="Unit" />，范围移至前一个单位。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果区域恰好在指定<paramref name="Unit" />的位置之后, 则将区域移到上一个单元。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousBookmarkID">
@@ -4487,11 +4322,8 @@
       <Docs>
         <summary>返回与指定区域位于同一位置或之前的最后一个书签的编号。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>PreviousBookmarkID</b>属性返回 0 （零），如果没有相应的书签。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果没有对应的书签, 则<b>PreviousBookmarkID</b>属性返回 0 (零)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PreviousSubdocument">
@@ -4515,7 +4347,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>将区域或选定内容移至前一个子文档。 如果没有上一个子文档，将发生错误。</summary>
+        <summary>将区域或所选内容移至上一个子文档。 如果没有上一个子文档，将发生错误。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4542,7 +4374,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ReadabilityStatistics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ReadabilityStatistics" />集合，代表指定区域的可读性统计信息。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ReadabilityStatistics" />集合, 该集合代表指定区域的可读性统计信息。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4570,12 +4402,10 @@
         <Parameter Name="Direction" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Direction">所需<see cref="T:Microsoft.Office.Interop.Word.WdRelocate" />。 移动的方向。</param>
+        <param name="Direction">必需<see cref="T:Microsoft.Office.Interop.Word.WdRelocate" />。 移动的方向。</param>
         <summary>在大纲视图中，将指定区域中各段移至下一个可见段落之后或上一个可见段落之前。</summary>
-        <remarks>
-          <para>正文文本与标题同时移动仅当正文文本在大纲视图中已经折叠或是的区域部分。</para>
-          <para />
-        </remarks>
+        <remarks><para>仅当正文文本折叠在大纲视图中或区域的一部分时, 正文文本才与标题一起移动。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Revisions">
@@ -4601,7 +4431,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Revisions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Revisions" />表示范围中的修订的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Revisions" />集合, 该集合代表区域中的修订。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4629,7 +4459,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Rows</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Rows" />代表范围内的所有表格行的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Rows" />集合, 该集合代表区域中的所有表格行。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4657,7 +4487,7 @@
         <ReturnType>Microsoft.Office.Core.Scripts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.Scripts" />集合，代表集合中的 HTML 脚本中指定的对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Core.Scripts" />集合, 该集合代表指定对象中的 HTML 脚本的集合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4685,7 +4515,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Sections</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Sections" />集合，代表指定区域中的部分。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Sections" />集合, 该集合代表指定区域中的节。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4712,10 +4542,8 @@
       <Parameters />
       <Docs>
         <summary>选择指定的对象。</summary>
-        <remarks>
-          <para>使用此方法后，使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性以使用选定项。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用此方法后, 请使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性来处理选定的项。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sentences">
@@ -4741,7 +4569,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Sentences</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Sentences" />表示范围中的所有的句子集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Sentences" />集合, 该集合代表区域中的所有句子。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4769,7 +4597,7 @@
         <Parameter Name="Level" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Level">所需指示新的列表级别的<b>简短</b>的数目。</param>
+        <param name="Level">必需的<b>缩写</b>一个指示新的列表级别的数字。</param>
         <summary>为编号列表中的一个或多个项目设置列表级别。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4798,17 +4626,12 @@
         <Parameter Name="End" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Start">
-          <b>必选。</b> 区域或选定内容的起始字符位置。</param>
-        <param name="End">
-          <b>必选。</b> 区域或选定内容的结束字符位置。</param>
-        <summary>设置范围的起始和结束字符的位置。</summary>
-        <remarks>
-          <para>字符位置的值将篇文章的开头开始起始值为 0 （零）。将计算所有字符，包括非打印字符。即使它们不显示隐藏的字符计算在内。</para>
-          <para>
-            <b>SetRange</b>方法重新定义起始和结束位置的现有<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。此方法不同于<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法，用来创建范围，给出起始和结束位置。</para>
-          <para />
-        </remarks>
+        <param name="Start">必需的<b>整数</b>。 区域或所选内容的起始字符位置。</param>
+        <param name="End">必需的<b>整数</b>。 区域或所选内容的结束字符位置。</param>
+        <summary>设置范围的起始字符和结束字符的位置。</summary>
+        <remarks><para>字符位置的值从文档该部分开头计起，起始值为 0（零）。将计算所有的字符，包括非打印字符和未显示的隐藏字符。</para>
+          <para><b>SetRange</b>方法重新定义现有<see cref="T:Microsoft.Office.Interop.Word.Range" />对象的起始和结束位置。 此方法与<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法不同, 后者用于在给定起始位置和结束位置时创建范围。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -4834,7 +4657,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象的引用指定对象的底纹格式。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象, 该对象代表指定对象的底纹格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4862,12 +4685,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />集合，代表所有<see cref="T:Microsoft.Office.Interop.Word.Shape" />指定范围中的对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />集合, 该集合代表<see cref="T:Microsoft.Office.Interop.Word.Shape" />指定区域中的所有对象。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>形状范围可以包含绘图、 形状、 图片、 OLE 对象、 ActiveX 控件、 文本对象和标注。</para>
-          <para />
-        </remarks>
+        <remarks><para>形状范围可以包含图形、形状、图片、OLE 对象、ActiveX 控件、文字对象和标注。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAll">
@@ -4896,7 +4717,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否显示所有非打印字符 （如隐藏的文字、 制表符、 空格标记和段落标记）。</summary>
+        <summary>确定是否显示所有非打印字符 (如隐藏文本、制表符、空格标记和段落标记)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4927,7 +4748,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />对象，表示范围中的智能标记。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />对象, 表示区域中的智能标记。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4972,25 +4793,25 @@
         <Parameter Name="LanguageID" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ExcludeHeader">可选的<b>对象</b>。 <b>真</b> 要排除第一个行或段落标题进行排序。 默认值为 <b>False</b> 。</param>
-        <param name="FieldNumber">可选的<b>对象</b>。 要作为排序依据的字段。 Microsoft Word 排序的<paramref name="FieldNumber" />，然后通过<paramref name="FieldNumber2" />，然后按<paramref name="FieldNumber3" />。</param>
-        <param name="SortFieldType">可选的<b>对象</b>。 各自的排序类型的<paramref name="FieldNumber" />， <paramref name="FieldNumber2" />，和<paramref name="FieldNumber3" />。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />常量。</param>
-        <param name="SortOrder">可选的<b>对象</b>。 排序时使用的排序顺序<paramref name="FieldNumber" />， <paramref name="FieldNumber2" />，和<paramref name="FieldNumber3" />。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />常量。</param>
-        <param name="FieldNumber2">可选的<b>对象</b>。 要作为排序依据的字段。 Microsoft Word 排序的<paramref name="FieldNumber" />，然后通过<paramref name="FieldNumber2" />，然后按<paramref name="FieldNumber3" /></param>
-        <param name="SortFieldType2">可选的<b>对象</b>。 各自的排序类型的<paramref name="FieldNumber" />， <paramref name="FieldNumber2" />，和<paramref name="FieldNumber3" />。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />常量</param>
-        <param name="SortOrder2">可选的<b>对象</b>。 排序时使用的排序顺序<paramref name="FieldNumber" />， <paramref name="FieldNumber2" />，和<paramref name="FieldNumber3" />。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />常量。</param>
-        <param name="FieldNumber3">可选的<b>对象</b>。 要作为排序依据的字段。 Microsoft Word 排序的<paramref name="FieldNumber" />，然后通过<paramref name="FieldNumber2" />，然后按<paramref name="FieldNumber3" /></param>
-        <param name="SortFieldType3">可选的<b>对象</b>。 各自的排序类型的<paramref name="FieldNumber" />， <paramref name="FieldNumber2" />，和<paramref name="FieldNumber3" />。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />常量</param>
-        <param name="SortOrder3">可选的<b>对象</b>。 排序时使用的排序顺序<paramref name="FieldNumber" />， <paramref name="FieldNumber2" />，和<paramref name="FieldNumber3" />。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />常量。</param>
-        <param name="SortColumn">可选的<b>对象</b>。 <b>True</b>指定列的排序<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。</param>
-        <param name="Separator">可选的<b>对象</b>。 字段分隔符的类型。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdSortSeparator" />常量。</param>
-        <param name="CaseSensitive">可选的<b>对象</b>。 <b>真</b> 要排序时区分大小写。 默认值为 <b>False</b> 。</param>
-        <param name="BidiSort">可选的<b>对象</b>。 <b>真</b> 要排序按照从右到左语言规则。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
-        <param name="IgnoreThe">可选的<b>对象</b>。 <b>True</b>忽略阿拉伯语字符<paramref name="alef lam" />时从右到左语言的文本排序。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
-        <param name="IgnoreKashida">可选的<b>对象</b>。 <b>为</b> 从右向左的语言文本进行排序时忽略 kashida。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
-        <param name="IgnoreDiacritics">可选的<b>对象</b>。 <b>为</b> 从右向左的语言文本进行排序时忽略双向控制字符。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
-        <param name="IgnoreHe">可选的<b>对象</b>。 <b>True</b>以忽略希伯来字符<paramref name="he" />时从右到左语言的文本排序。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
-        <param name="LanguageID">可选的<b>对象</b>。 <paramref name="LanguageIDOptional" /><b>对象</b>。 指定排序语言。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /><b></b>常量。</param>
+        <param name="ExcludeHeader">可选<b>对象</b>。 <b>真</b> 要排除第一个行或段落标题进行排序。 默认值为 <b>False</b>。</param>
+        <param name="FieldNumber">可选<b>对象</b>。 作为排序依据的字段。 Microsoft Word 先<paramref name="FieldNumber" />排序, 再按<paramref name="FieldNumber2" />, 然后再按<paramref name="FieldNumber3" />。</param>
+        <param name="SortFieldType">可选<b>对象</b>。 <paramref name="FieldNumber" />、 <paramref name="FieldNumber2" />和<paramref name="FieldNumber3" />的各自的排序类型。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />常量之一。</param>
+        <param name="SortOrder">可选<b>对象</b>。 排序<paramref name="FieldNumber" />、 <paramref name="FieldNumber2" />和<paramref name="FieldNumber3" />时使用的排序顺序。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />常量之一。</param>
+        <param name="FieldNumber2">可选<b>对象</b>。 作为排序依据的字段。 Microsoft Word 先<paramref name="FieldNumber" />排序, 再按<paramref name="FieldNumber2" />, 然后再按<paramref name="FieldNumber3" /></param>
+        <param name="SortFieldType2">可选<b>对象</b>。 <paramref name="FieldNumber" />、 <paramref name="FieldNumber2" />和<paramref name="FieldNumber3" />的各自的排序类型。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />常量之一</param>
+        <param name="SortOrder2">可选<b>对象</b>。 排序<paramref name="FieldNumber" />、 <paramref name="FieldNumber2" />和<paramref name="FieldNumber3" />时使用的排序顺序。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />常量之一。</param>
+        <param name="FieldNumber3">可选<b>对象</b>。 作为排序依据的字段。 Microsoft Word 先<paramref name="FieldNumber" />排序, 再按<paramref name="FieldNumber2" />, 然后再按<paramref name="FieldNumber3" /></param>
+        <param name="SortFieldType3">可选<b>对象</b>。 <paramref name="FieldNumber" />、 <paramref name="FieldNumber2" />和<paramref name="FieldNumber3" />的各自的排序类型。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />常量之一</param>
+        <param name="SortOrder3">可选<b>对象</b>。 排序<paramref name="FieldNumber" />、 <paramref name="FieldNumber2" />和<paramref name="FieldNumber3" />时使用的排序顺序。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />常量之一。</param>
+        <param name="SortColumn">可选<b>对象</b>。 <b>如果为 True</b> , 则仅对<see cref="T:Microsoft.Office.Interop.Word.Range" />对象指定的列进行排序。</param>
+        <param name="Separator">可选<b>对象</b>。 域分隔符的类型。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdSortSeparator" />常量之一。</param>
+        <param name="CaseSensitive">可选<b>对象</b>。 <b>真</b> 要排序时区分大小写。 默认值为 <b>False</b> 。</param>
+        <param name="BidiSort">可选<b>对象</b>。 <b>真</b> 要排序按照从右到左语言规则。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
+        <param name="IgnoreThe">可选<b>对象</b>。 <b>如果为 True, 则</b>在<paramref name="alef lam" />对从右向左的语言文本进行排序时忽略阿拉伯语字符。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
+        <param name="IgnoreKashida">可选<b>对象</b>。 <b>为</b> 从右向左的语言文本进行排序时忽略 kashida。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
+        <param name="IgnoreDiacritics">可选<b>对象</b>。 <b>为</b> 从右向左的语言文本进行排序时忽略双向控制字符。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
+        <param name="IgnoreHe">可选<b>对象</b>。 <b>如果为 True, 则</b>在<paramref name="he" />对从右向左的语言文本进行排序时忽略希伯来字符。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
+        <param name="LanguageID">可选<b>对象</b>。 <paramref name="LanguageIDOptional" /><b>对象</b>。 指定排序语言。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> <b></b>常量之一。</param>
         <summary>对指定范围中的段落进行排序。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5017,11 +4838,9 @@
       <Parameters />
       <Docs>
         <summary>按字母数字升序对段落或表格行进行排序。</summary>
-        <remarks>
-          <para>第一个段落或表格行被视为域名记录并不包含在排序。使用<see cref="M:Microsoft.Office.Interop.Word.Range.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法，以包含在排序的域名记录。</para>
-          <para>此方法提供一种简化的形式的排序适用于邮件合并数据源的包含的数据列。对于大多数排序的任务，使用<b>Sort</b>方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>第一个段落或表格行被视为域名记录, 不包含在排序中。 使用<see cref="M:Microsoft.Office.Interop.Word.Range.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法将域名记录包含在排序中。</para>
+          <para>此方法提供针对包含数据列的邮件合并数据源进行排序一种简化的的形式。 对于大多数排序任务，请使用 <b>Sort</b> 方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortByHeadings">
@@ -5054,22 +4873,16 @@
         <Parameter Name="LanguageID" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="SortFieldType">要使用的排序字段类型。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />常量。 默认值是 <b>wdSortFieldAlphanumeric</b> 。 根据语言支持 （例如，美国英语） 已选择或安装，这些常量的一些可能不可用给您。</param>
-        <param name="SortOrder">要使用的排序顺序。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />常量。</param>
-        <param name="CaseSensitive">
-          <b>真</b> 要排序时区分大小写。默认值为 <b>False</b> 。 </param>
-        <param name="BidiSort">
-          <b>真</b> 要排序按照从右到左语言规则。 根据语言支持 （例如，美国英语） 已选择或安装，此参数不能对您可用。</param>
-        <param name="IgnoreThe">
-          <b>真</b> 要忽略阿拉伯语字符 alef lam 从右向左的语言文本进行排序时。 根据语言支持 （例如，美国英语） 已选择或安装，此参数不能对您可用。</param>
-        <param name="IgnoreKashida">
-          <b>为</b> 从右向左的语言文本进行排序时忽略 kashida。 根据语言支持 （例如，美国英语） 已选择或安装，此参数不能对您可用。</param>
-        <param name="IgnoreDiacritics">
-          <b>为</b> 从右向左的语言文本进行排序时忽略双向控制字符。 根据语言支持 （例如，美国英语） 已选择或安装，此参数不能对您可用。</param>
-        <param name="IgnoreHe">
-          <b>真</b> 要忽略希伯来字符 he 从右向左的语言文本进行排序时。 根据语言支持 （例如，美国英语） 已选择或安装，此参数不能对您可用。</param>
-        <param name="LanguageID">指定排序语言。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量。</param>
-        <summary>对指定范围中的标题进行排序。</summary>
+        <param name="SortFieldType">要使用的排序字段类型。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" />常量之一。 默认值是 <b>wdSortFieldAlphanumeric</b> 。 根据您所选择或安装的语言支持 (例如, 美国英语), 某些常量可能不可用。</param>
+        <param name="SortOrder">要使用的排序顺序。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" />常量之一。</param>
+        <param name="CaseSensitive"><b>真</b> 要排序时区分大小写。 默认值为 <b>False</b> 。</param>
+        <param name="BidiSort"><b>真</b> 要排序按照从右到左语言规则。 根据所选择或安装的语言支持 (例如, 美国英语), 此参数可能不可用。</param>
+        <param name="IgnoreThe"><b>真</b> 要忽略阿拉伯语字符 alef lam 从右向左的语言文本进行排序时。 根据所选择或安装的语言支持 (例如, 美国英语), 此参数可能不可用。</param>
+        <param name="IgnoreKashida"><b>为</b> 从右向左的语言文本进行排序时忽略 kashida。 根据所选择或安装的语言支持 (例如, 美国英语), 此参数可能不可用。</param>
+        <param name="IgnoreDiacritics"><b>为</b> 从右向左的语言文本进行排序时忽略双向控制字符。 根据所选择或安装的语言支持 (例如, 美国英语), 此参数可能不可用。</param>
+        <param name="IgnoreHe"><b>真</b> 要忽略希伯来字符 he 从右向左的语言文本进行排序时。 根据所选择或安装的语言支持 (例如, 美国英语), 此参数可能不可用。</param>
+        <param name="LanguageID">指定排序语言。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一。</param>
+        <summary>对指定区域中的标题进行排序。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5094,12 +4907,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>对段落或表格行字母数字降序进行排序。</summary>
-        <remarks>
-          <para>第一个段落或表格行被视为域名记录并不包含在排序。使用<see cref="M:Microsoft.Office.Interop.Word.Range.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法，以包含在排序的域名记录。</para>
-          <para>此方法提供一种简化的形式的排序适用于邮件合并数据源的包含的数据列。对于大多数排序的任务，使用<b>Sort</b>方法。</para>
-          <para />
-        </remarks>
+        <summary>按字母数字降序顺序对段落或表格行进行排序。</summary>
+        <remarks><para>第一个段落或表格行被视为域名记录, 不包含在排序中。 使用<see cref="M:Microsoft.Office.Interop.Word.Range.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法将域名记录包含在排序中。</para>
+          <para>此方法提供针对包含数据列的邮件合并数据源进行排序一种简化的的形式。对于大多数排序任务，请使用 <b>Sort</b> 方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortOld">
@@ -5184,14 +4995,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否已在指定范围整个检查拼写。</summary>
+        <summary>确定是否已对指定区域中的拼写进行检查。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b> ，如果已对指定的范围或文档，检查拼写和<b>False</b>如果所有或部分区域或文档尚未进行拼写检查不起作用。</para>
-          <para>要重新检查范围或文档中的拼写，请将<b>SpellingChecked</b>属性设置为<b>False</b>。</para>
-          <para>要查看的区域或文档是否含有拼写错误，请使用<see cref="P:Microsoft.Office.Interop.Word.Range.SpellingErrors" />属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果在整个指定的区域或文档中检查了拼写, 则此属性返回<b>True</b> ; 如果未检查全部或部分区域或文档的拼写, 则返回<b>False</b> 。</para>
+          <para>若要重新检查的区域或文档中的拼写错误，请 <b>SpellingChecked</b> 属性设置为 <b>False</b> 。</para>
+          <para>若要查看区域或文档中是否包含拼写错误, 请<see cref="P:Microsoft.Office.Interop.Word.Range.SpellingErrors" />使用属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SpellingErrors">
@@ -5217,7 +5026,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ProofreadingErrors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ProofreadingErrors" />集合，代表标识为指定范围中的拼写错误的单词。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ProofreadingErrors" />集合, 该集合代表指定区域中被标识为拼写错误的单词。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5250,13 +5059,11 @@
       <Docs>
         <summary>返回或设置范围的起始字符位置。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果该属性设置为值大于<see cref="P:Microsoft.Office.Interop.Word.Range.End" />属性，则<b>End</b>属性设置为相同的<b>启动</b>属性的值。</para>
+        <remarks><para>如果此属性设置为大于该<see cref="P:Microsoft.Office.Interop.Word.Range.End" />属性的值, 则<b>End</b>属性将设置为与<b>Start</b>属性相同的值。</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.Selection" />， <see cref="T:Microsoft.Office.Interop.Word.Range" />，和<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />对象具有起始和结束字符位置。起始位置是指案例接近开头的字符位置。</para>
-          <para>此属性返回的起始字符位置相对于开头的案例。正文 (<b>wdMainTextStory</b>) 开头字符位置 0 （零）。通过设置此属性，可以更改所选内容、 范围或书签的大小。</para>
-          <para />
-        </remarks>
+            <see cref="T:Microsoft.Office.Interop.Word.Selection" />、 <see cref="T:Microsoft.Office.Interop.Word.Range" />和<see cref="T:Microsoft.Office.Interop.Word.Bookmark" />对象具有起始字符和结束字符的位置。 故事的开头最近的字符位置引用的起始位置。</para>
+          <para>该属性返回起始字符相对于文档开头部分的位置。文本主体部分 (<b>wdMainTextStory</b>) 的起始字符位置为 0（零）。通过设置该属性可以更改选定内容、区域或书签的大小。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StartOf">
@@ -5286,11 +5093,9 @@
         <param name="Extend">可选<see cref="T:Microsoft.Office.Interop.Word.WdMovementType" />。</param>
         <summary>移动或扩展至最近的指定的文字单位的开头的指定的区域或所选内容的起始位置。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回一个<b>整数</b>，表示的区域或选定内容移动或扩展的字符数。如果是文档中向后移动，该方法将返回负数。</para>
-          <para>如果指定的区域或选定内容的开头已指定单位的开头，此方法不移动或扩展范围或所选内容。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法返回一个<b>整数</b>, 该整数指示区域或所选内容移动或扩展的字符数。 如果是在文档中向后移动，则该方法返回一个负数。</para>
+          <para>如果指定区域或选定内容的开始已经位于指定单位的开始，则该方法不移动或扩展区域或选定内容。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StoryLength">
@@ -5344,7 +5149,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdStoryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定范围的文字部分类型。</summary>
+        <summary>返回指定区域的文字部分类型。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5377,11 +5182,9 @@
       <Docs>
         <summary>返回或设置指定对象的样式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>设置此属性时，请指定样式，一个整数的本地名称<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或一个代表样式的对象。</para>
-          <para>时返回的范围包含多个样式的样式，请返回仅的第一个字符或段落样式。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要设置该属性, 请指定样式的本地名称、一个整数、一个<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或一个代表样式的对象。</para>
+          <para>如果返回包含多个样式的范围的样式，则只返回第一个字符样式或段落样式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Subdocuments">
@@ -5407,7 +5210,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Subdocuments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Subdocuments" />集合，代表指定范围中的所有子文档。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Subdocuments" />集合, 该集合代表指定区域中的所有子文档。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5440,7 +5243,7 @@
       <Docs>
         <param name="Edition">此参数仅适用于 Macintosh 并且不应使用。</param>
         <param name="Format">此参数仅适用于 Macintosh 并且不应使用。</param>
-        <summary>保留供内部使用。此成员仅用于 Macintosh，不应使用。</summary>
+        <summary>保留以供内部使用。此成员仅用于 Macintosh, 不应使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5467,7 +5270,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SynonymInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" />对象包含同义词、 反义词或相关的单词和表达式指定的单词或短语的同义词库中的信息。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" />对象, 该对象包含同义词库中有关指定单词或短语的同义词、反义词或相关单词和表达的信息。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5495,7 +5298,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Tables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Tables" />值，该值代表指定范围中的所有表的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Tables" />集合, 该集合代表指定区域中的所有表格。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5523,10 +5326,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个代表用于设置表格格式的样式的<b>对象</b>。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回一个<b>Object</b>类型的对象, 该对象代表用于设置表格格式的样式。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5554,7 +5355,7 @@
       </Parameters>
       <Docs>
         <param name="WdTCSCConverterDirection">可选<see cref="T:Microsoft.Office.Interop.Word.WdTCSCConverterDirection" />。</param>
-        <param name="CommonTerms">可选属性，类型为 <b>Boolean</b>。 <b>True</b>如果 Microsoft Word 将转换为通用表达式而不是转换基于字符的字符保持不变。</param>
+        <param name="CommonTerms">可选属性，类型为 <b>Boolean</b>。 <b>如此</b>如果 Microsoft Word 将完整地转换常用表达式, 而不是逐字符转换。</param>
         <param name="UseVariants">可选属性，类型为 <b>Boolean</b>。 <b>如此</b> 如果 Word 使用台湾、 Hong 香港特别行政区和澳门特别行政区字符变量。 只能从简体中文向繁体中文的转换。</param>
         <summary>将指定区域的文本由繁体中文转换为简体中文，或进行相反转换。</summary>
         <remarks>To be added.</remarks>
@@ -5586,13 +5387,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定范围中的文本。</summary>
+        <summary>返回或设置指定区域中的文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Text</b>属性返回所选内容或区域的普通、 无格式文本。当您设置此属性时，将替换范围或所选内容的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Text</b> 属性返回选定内容或区域的无格式文本。当设置此属性时，将替换该区域或所选内容的文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextRetrievalMode">
@@ -5621,7 +5419,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextRetrievalMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />控制如何从指定范围检索文本的对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />对象, 该对象控制从指定区域中检索文本的方式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5649,13 +5447,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>(C# 中<b>int</b> )，该值指示指定范围中的文本是否在屏幕上可见。 只读。</summary>
+        <summary>返回一个<b>整数</b>(<b></b>以 c # 为单位), 指示指定区域中的文本是否在屏幕上可见。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>TextVisibleOnScreen</b>属性返回 1 是否可见，则该范围内的所有文本将返回 0 如果区域中的任何文本是可见，则则返回-1，如果区域中的有些文字是可见的并且某些不是。例如，不可见的文本可以是处于折叠标题的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果区域中的所有文本都可见, 则<b>TextVisibleOnScreen</b>属性返回 1; 否则返回 false。如果区域中不显示任何文本, 则返回 0; 否则返回 false。如果区域中的某些文本可见, 而有些则不可见, 则返回-1。 不可见的文本可能是处于折叠状态的文本, 例如, 折叠的标题中的文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopLevelTables">
@@ -5681,12 +5476,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Tables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Tables" />，表示当前范围中最外层嵌套级别的表的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Tables" />集合, 该集合代表当前范围最外层嵌套级别的表格。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此方法返回包含仅在当前的区域或选定内容的上下文中的嵌套最外层这些表的集合。这些表，不能在整个圆周的嵌套级别设置的嵌套表格。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法返回一个集合, 该集合仅包含当前区域或所选内容的上下文中最外部嵌套层的表格。 这些表格可能不在整套嵌套表格的最外部嵌套层中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TwoLinesInOne">
@@ -5717,11 +5510,8 @@
       <Docs>
         <summary>返回或设置 Microsoft Word 设置在一个两行文本并指定将文本括起来的字符，如果有的话。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>TwoLinesInOne</b>属性设置为<b>wdTwoLinesInOneNoBrackets</b>设置两的行文字中没有括在任何字符的文本。<b>TwoLinesInOne</b>属性设置为<b>wdTwoLinesInOneNone</b>将组合的文本行还原到两个单独的行。</para>
-          <para />
-        </remarks>
+        <remarks><para>将 <b>TwoLinesInOne</b> 属性设置为 <b>wdTwoLinesInOneNoBrackets</b> 设置两行文本中不包含任何字符括起来的文本。将 <b>TwoLinesInOne</b> 属性设置为 <b>wdTwoLinesInOneNone</b> 恢复分两行合并的文本行。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Underline">
@@ -5750,7 +5540,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdUnderline</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置应用于该区域的下划线类型。</summary>
+        <summary>返回或设置应用于区域的下划线的类型。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5778,12 +5568,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthUpdates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />集合对象，表示范围中的所有可用更新。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />集合对象，表示范围中的所有可用更新。</value>
-        <remarks>
-          <para>只读的。使用此属性可返回<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />集合。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />集合对象, 该对象表示范围中的所有可用更新。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />集合对象, 该对象表示范围中的所有可用更新。</value>
+        <remarks><para>只读。 使用此属性可返回<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />集合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WholeStory">
@@ -5834,14 +5622,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>字符串</b>，表示包含在 Microsoft Office Word Open XML 格式范围内的 XML。 只读。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
-        <remarks>
-          <para>此属性只返回的 XML 中为表示指定的区域所需的文档。</para>
-          <para />
-        </remarks>
+        <summary>返回一个<b>字符串</b>, 表示包含在 Microsoft Office WORD Open xml 格式的范围内的 xml。 只读。</summary>
+        <value><b>String</b></value>
+        <remarks><para>此属性只返回文档中为表示指定区域所需的 XML。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Words">
@@ -5867,12 +5651,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Words</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Words" />集合，表示范围中的所有单词。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Words" />集合, 该集合代表区域中的所有单词。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>文档中的标点符号和段落标记也包括在<b>Words</b>集合。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Words</b> 集合中包含的文档中的标点符号和段落标记。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XML">
@@ -5902,7 +5684,7 @@
       </Parameters>
       <Docs>
         <param name="DataOnly">可选属性，类型为 <b>Boolean</b>。 <b>True</b> 将返回而不使用 Word XML 标记的 xml 文本。 默认设置为 <b>False</b> 。</param>
-        <summary>返回一个<b>String</b>值，该值代表指定对象中的 XML 文本。</summary>
+        <summary>返回一个<b>字符串</b>, 表示指定对象中的 XML 文本。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="Window" FullName="Microsoft.Office.Interop.Word.Window">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ef41ba1d1545160b80a5ea0214b97f73c4073af3" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667200" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Window" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4e29decd5d2ab2a5ef57937db92371976360b243" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142694" /></Metadata><TypeSignature Language="C#" Value="public interface Window" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Window" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Window" />
   <TypeSignature Language="VB.NET" Value="Public Interface Window" />
@@ -26,16 +18,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表窗口。</summary>
-    <remarks>
-      <para>许多文档特征，如滚动条和标尺，实际上是属性的窗口。<see cref="T:Microsoft.Office.Interop.Word.Window" />对象是成员<see cref="T:Microsoft.Office.Interop.Word.Windows" />集合。<see cref="T:Microsoft.Office.Interop.Word.Windows" />集合<see cref="T:Microsoft.Office.Interop.Word.Application" />对象包含应用程序中的所有窗口，而<see cref="T:Microsoft.Office.Interop.Word.Windows" />集合<see cref="T:Microsoft.Office.Interop.Word.Document" />对象都包含只显示指定的文档的窗口。</para>
-      <para>使用<b>Windows</b>(<paramref name="index" />)，其中<paramref name="index" />是窗口的名称或索引号，若要返回单个<see cref="T:Microsoft.Office.Interop.Word.Window" />对象。</para>
-      <para>索引号是窗口菜单上的窗口名称左侧号。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" />方法或<see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" />方法添加到一个新窗口<see cref="T:Microsoft.Office.Interop.Word.Windows" />集合。</para>
-      <para>窗口标题中文档打开多个窗口时显示冒号 （:） 和一个数字。</para>
-      <para>切换到打印预览视图时，创建一个新窗口。此窗口已从<see cref="T:Microsoft.Office.Interop.Word.Windows" />集合时关闭打印预览。</para>
-      <para />
-    </remarks>
+    <summary>代表一个窗口。</summary>
+    <remarks><para>许多文档特征（如滚动条和标尺）实际上是窗口的属性。 <see cref="T:Microsoft.Office.Interop.Word.Window" />对象是<see cref="T:Microsoft.Office.Interop.Word.Windows" />集合的成员。 该<see cref="T:Microsoft.Office.Interop.Word.Windows" /> <see cref="T:Microsoft.Office.Interop.Word.Application" />对象的集合包含应用程序中的所有窗口, 而该<see cref="T:Microsoft.Office.Interop.Word.Windows" /> <see cref="T:Microsoft.Office.Interop.Word.Document" />对象的集合仅包含显示指定文档的窗口。</para>
+      <para>使用<b>Windows</b>(<paramref name="index" />), 其中<paramref name="index" />是窗口名称或索引号, 返回单个<see cref="T:Microsoft.Office.Interop.Word.Window" />对象。</para>
+      <para>索引号是 窗口菜单中窗口名左侧的数字。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" />方法或<see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" />方法可向<see cref="T:Microsoft.Office.Interop.Word.Windows" />集合中添加一个新窗口。</para>
+      <para>对同一文档打开多个窗口时，窗口标题中将出现一个冒号 (:) 和一个数字。</para>
+      <para>在切换到打印预览视图时，将创建一个新窗口。 当您关闭打印预览时<see cref="T:Microsoft.Office.Interop.Word.Windows" /> , 此窗口将从集合中删除。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -86,8 +76,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果指定的窗口处于活动状态。</summary>
+        <summary><b>如此</b> 如果指定的窗口处于活动状态。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,7 +104,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Pane" />对象，表示指定窗口的活动窗格。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Pane" />对象, 表示指定窗口的活动窗格。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,7 +132,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,10 +165,8 @@
       <Docs>
         <summary>返回或设置指定的文档或应用程序窗口的标题文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要应用程序窗口的题注改为默认文本，请将此属性设置为空字符串 ("")。</para>
-          <para />
-        </remarks>
+        <remarks><para>要将应用程序窗口的题注改为默认文本，请将该属性设置为空字符串（""）。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -205,8 +192,8 @@
         <Parameter Name="RouteDocument" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="SaveChanges">可选的<b>对象</b>。 指定保存文档的操作。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.WdSaveOptions" />常量： <b>wdDoNotSaveChanges</b>、 <b>wdPromptToSaveChanges</b>或<b>wdSaveChanges</b>。</param>
-        <param name="RouteDocument">可选的<b>对象</b>。 <b>True</b> 将文档传送给下一个收件人。 如果文档没有附加的传送名单，则忽略此参数。</param>
+        <param name="SaveChanges">可选<b>对象</b>。 指定保存文档的操作。 <see cref="T:Microsoft.Office.Interop.Word.WdSaveOptions" />可以是下列常量之一: <b>wdDoNotSaveChanges</b>、 <b>wdPromptToSaveChanges</b>或<b>wdSaveChanges</b>。</param>
+        <param name="RouteDocument">可选<b>对象</b>。 <b>True</b> 将文档传送给下一个收件人。 如果文档没有附加的传送名单，则忽略此参数。</param>
         <summary>关闭指定的窗口。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -236,9 +223,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHorizontalScrollBar">
@@ -267,8 +254,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果在指定的窗口中显示水平滚动条。</summary>
+        <summary><b>如此</b> 如果在指定的窗口中显示水平滚动条。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -299,8 +285,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果在文档窗口的左侧显示垂直滚动条。</summary>
+        <summary><b>如此</b> 如果在文档窗口的左侧显示垂直滚动条。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -331,8 +316,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果垂直标尺显示在页面视图中文档窗口右侧。</summary>
+        <summary><b>如此</b> 如果垂直标尺显示在页面视图中文档窗口右侧。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -363,16 +347,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果指定的窗口或窗格中显示标尺。</summary>
+        <summary><b>如此</b> 如果指定的窗口或窗格中显示标尺。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para><b>DisplayRulers</b> 属性等效于在 视图菜单上的 标尺命令。 </para>
           <para>
-            <b>DisplayRulers</b>属性等效于视图菜单上的标尺命令。</para>
-          <para>
-            <b>注释</b>如果<b>DisplayRulers</b>为<b>False</b>，水平和垂直标尺不会显示，无论的状态<see cref="P:Microsoft.Office.Interop.Word.Window.DisplayVerticalRuler" />属性。</para>
-          <para />
-        </remarks>
+            <b>注释</b> 如果<b>DisplayRulers</b>为<b>False</b>, 则水平和垂直标尺不会显示, 无论<see cref="P:Microsoft.Office.Interop.Word.Window.DisplayVerticalRuler" />属性的状态如何。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayScreenTips">
@@ -401,8 +381,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果批注、 脚注、 尾注和超链接以提示形式显示。 有批注突出显示标记文本。</summary>
+        <summary><b>如此</b> 如果批注、 脚注、 尾注和超链接以提示形式显示。 有批注突出显示标记文本。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -433,14 +412,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果指定的窗口或窗格中显示垂直标尺。</summary>
+        <summary><b>如此</b> 如果指定的窗口或窗格中显示垂直标尺。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>注释</b> 垂直标尺只出现在页面视图，并且仅当<see cref="P:Microsoft.Office.Interop.Word.Window.DisplayRulers" />属性设置为<b>True</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>注释</b> 垂直标尺仅显示在页面视图中, 且仅当<see cref="P:Microsoft.Office.Interop.Word.Window.DisplayRulers" />属性设置为<b>True</b>时。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayVerticalScrollBar">
@@ -469,8 +445,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果在指定的窗口中显示垂直滚动条。</summary>
+        <summary><b>如此</b> 如果在指定的窗口中显示垂直滚动条。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -498,7 +473,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Document" />对象与指定的窗口相关联。</summary>
+        <summary>返回与<see cref="T:Microsoft.Office.Interop.Word.Document" />指定窗口相关联的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -529,7 +504,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>则显示文档结构图。</summary>
+        <summary>如果显示文档结构图，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -566,7 +541,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的窗口的宽度的百分比的文档结构图宽度。</summary>
+        <summary>返回或设置文档结构图宽度占指定窗口宽度的百分比。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -597,13 +572,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 如果电子邮件的标题中将显示文档窗口。 默认值为 <b>False</b> 。</summary>
+        <summary><b>True</b> 如果电子邮件的标题中将显示文档窗口。 默认值为 <b>False</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果文档不是电子邮件，则该属性无效。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果文档不是电子邮件，则该属性将不起作用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPoint">
@@ -633,20 +605,14 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ScreenPixelsLeft">
-          <b>必选。</b> 需要 Word 为对象的左边界值返回的变量名。</param>
-        <param name="ScreenPixelsTop">
-          <b>必选。</b> 需要 Word 为对象的顶部边界值返回的变量名。</param>
-        <param name="ScreenPixelsWidth">
-          <b>必选。</b> 需要 Word 为对象的宽度返回的变量名。</param>
-        <param name="ScreenPixelsHeight">
-          <b>必选。</b> 需要 Word 为对象的高度值返回的变量名。</param>
-        <param name="obj">所需的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />或<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象。</param>
+        <param name="ScreenPixelsLeft">必需的<b>整数</b>。 需要 Word 为对象的左边界值返回的变量名。</param>
+        <param name="ScreenPixelsTop">必需的<b>整数</b>。 需要 Word 为对象的顶部边界值返回的变量名。</param>
+        <param name="ScreenPixelsWidth">必需的<b>整数</b>。 需要 Word 为对象的宽度返回的变量名。</param>
+        <param name="ScreenPixelsHeight">必需的<b>整数</b>。 需要 Word 为对象的高度值返回的变量名。</param>
+        <param name="obj">必需的<b>对象</b>。 <see cref="T:Microsoft.Office.Interop.Word.Range" />或<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象。</param>
         <summary>返回指定区域或图形的屏幕坐标。</summary>
-        <remarks>
-          <para>如果在屏幕上看不到整个区域或图形，将发生错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果在屏幕上看不到整个区域或图形，则导致出错。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -677,9 +643,9 @@
       <Docs>
         <summary>返回或设置窗口的高度。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果窗口处于最大化或最小化，则无法设置该属性。</para>使用
-          <para><see cref="P:Microsoft.Office.Interop.Word._Application.UsableHeight" />属性<see cref="T:Microsoft.Office.Interop.Word.Application" />对象来确定窗口的最大大小。使用<see cref="P:Microsoft.Office.Interop.Word.Window.WindowState" />属性来确定窗口状态。</para><para /></remarks>
+        <remarks><para>如果在窗口处于最大化或最小化时，不能设置此属性。</para>
+          <para>使用<see cref="T:Microsoft.Office.Interop.Word.Application" />对象<see cref="P:Microsoft.Office.Interop.Word._Application.UsableHeight" />的属性来确定窗口的最大大小。 使用<see cref="P:Microsoft.Office.Interop.Word.Window.WindowState" />属性来确定窗口状态。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalPercentScrolled">
@@ -736,7 +702,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>(C# 中<b>int</b> )，该值指示所指定的窗口的窗口句柄。 只读。</summary>
+        <summary>返回一个指示指定窗口的窗口句柄的<b>整数</b>(在 c # 中为<b>int</b> )。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -769,41 +735,39 @@
       <Docs>
         <summary>返回或设置为日语输入方法编辑器 (IME) 的默认启动模式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdIMEMode" />可以是下列<b>WdIMEMode</b>常量之一： </para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdIMEMode" />可以是下列<b>WdIMEMode</b>常量之一: </para>
           <para>
             <b>wdIMEModeAlpha</b>
-            <b>-</b>激活输入法的半角拉丁文模式。</para>
+            <b>–</b>以半角拉丁语模式激活 IME。 </para>
           <para>
             <b>wdIMEModeAlphaFull</b>
-            <b>-</b>激活输入法的全角拉丁文模式。</para>
+            <b>–</b>以全角拉丁文模式激活 IME。 </para>
           <para>
             <b>wdIMEModeHangul</b>
-            <b>-</b>激活输入法的半角朝鲜文模式。</para>
+            <b>–</b>激活输入法的半角朝鲜文模式。 </para>
           <para>
             <b>wdIMEModeHangulFull</b>
-            <b>-</b>激活输入法的全角朝鲜文模式。</para>
+            <b>–</b>激活输入法的全角朝鲜文模式。 </para>
           <para>
             <b>wdIMEModeHiragana</b>
-            <b>-</b>激活输入法的全角平假名模式。</para>
+            <b>–</b>激活输入法的全角平假名模式。 </para>
           <para>
             <b>wdIMEModeKatakana</b>
-            <b>-</b>激活输入法的全角片假名模式。</para>
+            <b>–</b>激活输入法的全角片假名模式。 </para>
           <para>
             <b>wdIMEModeKatakanaHalf</b>
-            <b>-</b>激活输入法的半角片假名模式。</para>
+            <b>–</b>激活输入法的半角片假名模式。 </para>
           <para>
             <b>wdIMEModeNoControl</b>
-            <b>-</b>不更改 IME 模式。</para>
+            <b>–</b>不更改 IME 模式。 </para>
           <para>
             <b>wdIMEModeOff</b>
-            <b>-</b>禁用 IME 并激活拉丁文文本输入。</para>
+            <b>–</b>禁用 IME 并激活拉丁语文本输入。 </para>
           <para>
             <b>wdIMEModeOn</b>
-            <b>-</b>激活 IME。</para>
-          <para />
-        </remarks>
+            <b>–</b>激活 IME。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -829,7 +793,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>值，该值代表集合中的项目的位置。</summary>
+        <summary>返回一个<b>Integer</b>类型的值, 该值代表项目在集合中的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -859,18 +823,15 @@
         <Parameter Name="ToLeft" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down">可选的<b>对象</b>。 向下滚动窗口的屏数。</param>
-        <param name="Up">可选的<b>对象</b>。 向上滚动窗口的屏数。</param>
-        <param name="ToRight">可选的<b>对象</b>。 向右滚动窗口的屏数。</param>
-        <param name="ToLeft">可选的<b>对象</b>。 向左滚动窗口的屏数。</param>
+        <param name="Down">可选<b>对象</b>。 向下滚动窗口的屏数。</param>
+        <param name="Up">可选<b>对象</b>。 向上滚动窗口的屏数。</param>
+        <param name="ToRight">可选<b>对象</b>。 向右滚动窗口的屏数。</param>
+        <param name="ToLeft">可选<b>对象</b>。 向左滚动窗口的屏数。</param>
         <summary>将窗口或窗格滚动指定的屏数。</summary>
-        <remarks>
-          <para>
-            <b>LargeScroll</b>方法等效于单击刚之前或之后在水平和垂直滚动条上的滚动框。</para>
-          <para>如果<paramref name="Down" />和<paramref name="Up" />都已指定，则窗口滚动个参数的差。例如，如果<paramref name="Down" />是 2 和<paramref name="Up" />是 4、 两个屏幕向上滚动窗口。同样，如果<paramref name="ToLeft" />和<paramref name="ToRight" />都已指定，则窗口滚动个参数的差。</para>
-          <para>任何这些参数均可为负数。如果未不指定任何参数，则窗口下滚一屏。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>LargeScroll</b>方法等效于在水平和垂直滚动条上的滚动框的前面或后面单击。</para>
+          <para><paramref name="Up" />如果<paramref name="Down" />同时指定, 则窗口滚动的是参数的差。 例如, 如果<paramref name="Down" />为2且<paramref name="Up" />为 4, 窗口将向上滚动两屏。 同样, 如果<paramref name="ToLeft" />和<paramref name="ToRight" />都指定, 窗口将滚动的参数的差。</para>
+          <para>这四个参数都可以取负值。 如果没有指定参数，窗口将向下滚动一屏。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -899,7 +860,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>整数</b>值，该值代表指定窗口中，以磅为单位的水平位置。</summary>
+        <summary>返回或设置一个<b>Integer</b>类型的值, 该值代表指定窗口的水平位置 (以磅为单位)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -927,12 +888,10 @@
       <Docs>
         <summary>使用与指定的窗口相同的文档打开一个新窗口。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>注释</b> 窗口标题中文档打开多个窗口时显示冒号 （:） 和一个数字。</para>
-          <para>如果<b>NewWindow</b>方法用于<see cref="T:Microsoft.Office.Interop.Word.Application" />对象，活动窗口中打开一个新窗口。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>注释</b> 冒号 (:)当为一个文档打开多个窗口时, 窗口标题中会出现一个编号。</para>
+          <para>如果将<b>NewWindow</b>方法与<see cref="T:Microsoft.Office.Interop.Word.Application" />对象一起使用, 则会为活动窗口打开一个新窗口。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -986,15 +945,12 @@
         <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down">可选的<b>对象</b>。 向下滚动的页面的数量。 如果省略此参数，则假定此值为 1。</param>
-        <param name="Up">可选的<b>对象</b>。 向上滚动的页数。</param>
+        <param name="Down">可选<b>对象</b>。 向下滚动的页数。 如果省略此参数，则参数值设置为 1。</param>
+        <param name="Up">可选<b>对象</b>。 向上滚动的页数。</param>
         <summary>使指定的窗格或窗口逐页滚动。</summary>
-        <remarks>
-          <para>
-            <b>PageScroll</b>方法是您在页面视图或 web 版式视图中时，才可用。此方法不会影响的插入点位置。</para>
-          <para>如果<paramref name="Down" />和<paramref name="Up" />都已指定，则窗口滚动个参数的差。例如，如果<paramref name="Down" />是 2 和<paramref name="Up" />为 4，两页向上滚动窗口。</para>
-          <para />
-        </remarks>
+        <remarks><para>仅当您在页面视图或 web 版式视图中时, <b>PageScroll</b>方法才可用。 此方法不会影响插入点的位置。</para>
+          <para><paramref name="Up" />如果<paramref name="Down" />同时指定, 则窗口滚动的是参数的差。 例如, 如果<paramref name="Down" />为2且<paramref name="Up" />为 4, 窗口将向上滚动两页。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Panes">
@@ -1020,7 +976,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Panes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Panes" />集合，代表指定窗口中所有的窗格。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Panes" />集合, 该集合代表指定窗口中的所有窗口窗格。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1076,7 +1032,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Window</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回集合中上一个对象。</summary>
+        <summary>返回集合中的上一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1120,25 +1076,25 @@
         <Parameter Name="PrintZoomPaperHeight" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Background">可选的<b>对象</b>。 设置为 <b>True</b> 以有 Microsoft Word 打印文档的同时继续该宏。</param>
-        <param name="Append">可选的<b>对象</b>。 设置为<b>True</b>以追加到指定的文件名称的指定的文档<paramref name="OutputFileName" />参数。 <b>False</b>可覆盖的内容<paramref name="OutputFileName" />。</param>
-        <param name="Range">可选的<b>对象</b>。 页面范围。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutRange" />常量。 <b>wdPrintAllDocument</b><b>wdPrintCurrentPage</b><b>wdPrintFromTo</b><b>wdPrintRangeOfPages</b><b>wdPrintSelection</b></param>
-        <param name="OutputFileName">可选的<b>对象</b>。 如果<paramref name="PrintToFile" />为<b>True</b>，此参数指定输出文件路径和文件名。</param>
-        <param name="From">可选的<b>对象</b>。 起始页码时<paramref name="Range" />设置为<b>wdPrintFromTo</b>。</param>
-        <param name="To">可选的<b>对象</b>。 结束页码时<paramref name="Range" />设置为<b>wdPrintFromTo</b>。</param>
-        <param name="Item">可选的<b>对象</b>。 要打印的项。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutItem" />常量。<b>wdPrintAutoTextEntries</b><b>wdPrintComments</b><b>wdPrintDocumentContent</b><b>wdPrintDocumentWithMarkup</b><b>wdPrintEnvelope</b><b>wdPrintKeyAssignments</b><b>wdPrintMarkup</b><b>wdPrintProperties</b><b>wdPrintStyles</b></param>
-        <param name="Copies">可选的<b>对象</b>。 要打印的份数。</param>
-        <param name="Pages">可选的<b>对象</b>。 要打印的页码和页码范围，中间用逗号分开。 例如，"2, 6-10"表示打印第 2 页以及第 6 至第 10 页。</param>
-        <param name="PageType">可选的<b>对象</b>。 要打印的页面类型。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutPages" />常量。<b>wdPrintAllPages</b><b>wdPrintEvenPagesOnly</b><b>wdPrintOddPagesOnly</b></param>
-        <param name="PrintToFile">可选的<b>对象</b>。 <b>真</b> 要发送打印机说明文件。 请确保指定文件名<paramref name="OutputFileName" />。</param>
-        <param name="Collate">可选的<b>对象</b>。 在打印多份文档， <b>真</b> 要打印文档的所有页面后再打印下一份。</param>
-        <param name="ActivePrinterMacGX">可选的<b>对象</b>。 该参数仅适用于 Microsoft Office Macintosh Edition。 有关该参数的其他信息，请参阅 Microsoft Office Macintosh Edition 附带的语言参考帮助。</param>
-        <param name="ManualDuplexPrint">可选的<b>对象</b>。 <b>真</b> 要在无双面打印组件的打印机上打印双面文档。 如果该参数为<b>True</b>，<see cref="P:Microsoft.Office.Interop.Word.Options.PrintBackground" />和<see cref="P:Microsoft.Office.Interop.Word.Options.PrintReverse" />属性将被忽略。 使用<see cref="P:Microsoft.Office.Interop.Word.Options.PrintOddPagesInAscendingOrder" />和<see cref="P:Microsoft.Office.Interop.Word.Options.PrintEvenPagesInAscendingOrder" />属性控制在手动双面打印输出。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
-        <param name="PrintZoomColumn">可选的<b>对象</b>。 表示 Word 在一页纸上水平放置的页数。 可以是 1、2、3 或 4 页。 使用<paramref name="PrintZoomRow" />参数在张纸上打印多个页面。</param>
-        <param name="PrintZoomRow">可选的<b>对象</b>。 表示 Word 在一页纸上垂直放置的页数。 可以是 1、2 或 4 页。 使用<paramref name="PrintZoomColumn" />参数在张纸上打印多个页面。</param>
-        <param name="PrintZoomPaperWidth">可选的<b>对象</b>。 Word 将打印页面缩放到的宽度，以缇为单位（20 缇 = 1 磅；72 磅 = 1 英寸）。</param>
-        <param name="PrintZoomPaperHeight">可选的<b>对象</b>。 Word 将打印页面缩放到的高度，以缇为单位（20 缇 = 1 磅；72 磅 = 1 英寸）。</param>
-        <summary>打印指定文档的全部或部分内容。</summary>
+        <param name="Background">可选<b>对象</b>。 设置为 <b>True</b> 以有 Microsoft Word 打印文档的同时继续该宏。</param>
+        <param name="Append">可选<b>对象</b>。 设置为<b>True</b>以将指定的文档追加到由<paramref name="OutputFileName" />参数指定的文件名。 <b>如果为 False</b> , 则覆盖<paramref name="OutputFileName" />的内容。</param>
+        <param name="Range">可选<b>对象</b>。 页面范围。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutRange" />常量。 <b>wdPrintAllDocument</b><b>wdPrintCurrentPage</b><b>wdPrintFromTo</b><b>wdPrintRangeOfPages</b><b>wdPrintSelection</b></param>
+        <param name="OutputFileName">可选<b>对象</b>。 如果<paramref name="PrintToFile" />为<b>True</b>, 则此参数指定输出文件的路径和文件名。</param>
+        <param name="From">可选<b>对象</b>。 设置为<paramref name="Range" /> <b>wdPrintFromTo</b>时的起始页码。</param>
+        <param name="To">可选<b>对象</b>。 设置为<paramref name="Range" /> <b>wdPrintFromTo</b>时的结束页码。</param>
+        <param name="Item">可选<b>对象</b>。 要打印的项。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutItem" />常量。<b>wdPrintAutoTextEntries</b><b>wdPrintComments</b><b>wdPrintDocumentContent</b><b>wdPrintDocumentWithMarkup</b><b>wdPrintEnvelope</b><b>wdPrintKeyAssignments</b><b>wdPrintMarkup</b><b>wdPrintProperties</b><b>wdPrintStyles</b></param>
+        <param name="Copies">可选<b>对象</b>。 要打印的份数。</param>
+        <param name="Pages">可选<b>对象</b>。 要打印的页码和页码范围，中间用逗号分开。 例如，"2, 6-10"表示打印第 2 页以及第 6 至第 10 页。</param>
+        <param name="PageType">可选<b>对象</b>。 要打印的页面类型。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutPages" />常量。<b>wdPrintAllPages</b><b>wdPrintEvenPagesOnly</b><b>wdPrintOddPagesOnly</b></param>
+        <param name="PrintToFile">可选<b>对象</b>。 <b>真</b> 要发送打印机说明文件。 请确保使用<paramref name="OutputFileName" />指定的文件名。</param>
+        <param name="Collate">可选<b>对象</b>。 在打印多份文档， <b>真</b> 要打印文档的所有页面后再打印下一份。</param>
+        <param name="ActivePrinterMacGX">可选<b>对象</b>。 该参数仅适用于 Microsoft Office Macintosh Edition。 有关该参数的其他信息，请参阅 Microsoft Office Macintosh Edition 附带的语言参考帮助。</param>
+        <param name="ManualDuplexPrint">可选<b>对象</b>。 <b>真</b> 要在无双面打印组件的打印机上打印双面文档。 如果此参数为<b>True</b>, 则<see cref="P:Microsoft.Office.Interop.Word.Options.PrintBackground" />忽略<see cref="P:Microsoft.Office.Interop.Word.Options.PrintReverse" />和属性。 使用<see cref="P:Microsoft.Office.Interop.Word.Options.PrintOddPagesInAscendingOrder" />和<see cref="P:Microsoft.Office.Interop.Word.Options.PrintEvenPagesInAscendingOrder" />属性可在手动双面打印期间控制输出。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
+        <param name="PrintZoomColumn">可选<b>对象</b>。 表示 Word 在一页纸上水平放置的页数。 可以是 1、2、3 或 4 页。 使用<paramref name="PrintZoomRow" />参数在单张工作表上打印多个页面。</param>
+        <param name="PrintZoomRow">可选<b>对象</b>。 表示 Word 在一页纸上垂直放置的页数。 可以是 1、2 或 4 页。 使用<paramref name="PrintZoomColumn" />参数在单张工作表上打印多个页面。</param>
+        <param name="PrintZoomPaperWidth">可选<b>对象</b>。 Word 将打印页面缩放到的宽度，以缇为单位（20 缇 = 1 磅；72 磅 = 1 英寸）。</param>
+        <param name="PrintZoomPaperHeight">可选<b>对象</b>。 Word 将打印页面缩放到的高度，以缇为单位（20 缇 = 1 磅；72 磅 = 1 英寸）。</param>
+        <summary>打印全部或部分指定文档。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1202,7 +1158,7 @@
         <param name="PrintZoomRow">To be added.</param>
         <param name="PrintZoomPaperWidth">To be added.</param>
         <param name="PrintZoomPaperHeight">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1258,7 +1214,7 @@
         <param name="Collate">To be added.</param>
         <param name="ActivePrinterMacGX">To be added.</param>
         <param name="ManualDuplexPrint">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1286,16 +1242,12 @@
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">
-          <b>必选。</b> 从屏幕左边缘到该点的水平距离（以像素为单位）。</param>
-        <param name="y">
-          <b>必选。</b> 从屏幕顶部边缘到该点的垂直距离（以像素为单位）。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />或<see cref="T:Microsoft.Office.Interop.Word.Shape" />位于由屏幕位置坐标对指定的点的对象。</summary>
+        <param name="x">必需的<b>整数</b>。 从屏幕左边缘到该点的水平距离（以像素为单位）。</param>
+        <param name="y">必需的<b>整数</b>。 从屏幕顶部边缘到该点的垂直距离（以像素为单位）。</param>
+        <summary>返回位于<see cref="T:Microsoft.Office.Interop.Word.Range" />由<see cref="T:Microsoft.Office.Interop.Word.Shape" />屏幕位置坐标对指定的点处的或对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果在坐标对指定的位置没有区域或图形，则该方法返回<b>Nothing</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果在坐标对指定的位置中没有区域或图形，则该方法返回 <b>Nothing</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollIntoView">
@@ -1321,13 +1273,11 @@
         <Parameter Name="Start" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="obj">所需的<b>对象</b>。 A<see cref="T:Microsoft.Office.Interop.Word.Range" />或<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象。</param>
-        <param name="Start">可选属性，类型为 <b>Boolean</b>。 如果为<b>true</b>的左上角的区域或形状将显示在文档窗口的左上角。 在文档窗口的右下角显示的是<b>false</b>如果底部右上角的区域或图形。 默认值为 <b>True</b> 。</param>
+        <param name="obj">必需的<b>对象</b>。 <see cref="T:Microsoft.Office.Interop.Word.Range" />或<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象。</param>
+        <param name="Start">可选属性，类型为 <b>Boolean</b>。 <b>如此</b>如果该区域或形状的左上角显示在文档窗口的左上角。 <b>假</b>如果在文档窗口的右下角显示区域或形状的右下角。 默认值为 <b>True</b>。</param>
         <summary>滚动文档窗口，以便在文档窗口显示指定的区域或图形。</summary>
-        <remarks>
-          <para>如果该区域或图形大于文档窗口中，<paramref name="Start" />参数指定范围的哪个部分或形状显示，或获取初始焦点。此方法不能用于大纲视图。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果该区域或形状大于文档窗口, 则该<paramref name="Start" />参数指定该区域或形状显示的部分或获取初始焦点的部分。 此方法无法在大纲视图中使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -1353,7 +1303,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Selection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象代表选定的范围或插入点。</summary>
+        <summary>返回代表<see cref="T:Microsoft.Office.Interop.Word.Selection" />选定区域或插入点的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1380,10 +1330,8 @@
       <Parameters />
       <Docs>
         <summary>在指定的文档窗口为电子邮件设置焦点。</summary>
-        <remarks>
-          <para>如果文档不是电子邮件，则此方法无效。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果该文档不是电子邮件，则此方法将不起作用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowSourceDocuments">
@@ -1412,10 +1360,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdShowSourceDocuments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.WdShowSourceDocuments" />常量，代表 Microsoft Office Word 比较并合并过程完成后显示源文档的方式。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdShowSourceDocuments" />
-        </value>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdShowSourceDocuments" />常量, 该常量代表 Microsoft Office Word 在比较和合并过程之后显示源文档的方式。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdShowSourceDocuments" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1444,17 +1390,15 @@
         <Parameter Name="ToLeft" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down">可选的<b>对象</b>。 向下滚动窗口的行数。 一"行"对应于单击一次垂直滚动条上的向下滚动箭头所滚动的距离。</param>
-        <param name="Up">可选的<b>对象</b>。 向上滚动窗口的行数。 一"行"对应于单击一次垂直滚动条上的向上滚动箭头所滚动的距离。</param>
-        <param name="ToRight">可选的<b>对象</b>。 向右滚动窗口的行数。 一"行"对应于单击一次水平滚动条上的向右滚动箭头所滚动的距离。</param>
-        <param name="ToLeft">可选的<b>对象</b>。 向左滚动窗口的行数。 一"行"对应于单击一次水平滚动条上的向左滚动箭头所滚动的距离。</param>
+        <param name="Down">可选<b>对象</b>。 向下滚动窗口的行数。 一"行"对应于单击一次垂直滚动条上的向下滚动箭头所滚动的距离。</param>
+        <param name="Up">可选<b>对象</b>。 向上滚动窗口的行数。 一"行"对应于单击一次垂直滚动条上的向上滚动箭头所滚动的距离。</param>
+        <param name="ToRight">可选<b>对象</b>。 向右滚动窗口的行数。 一"行"对应于单击一次水平滚动条上的向右滚动箭头所滚动的距离。</param>
+        <param name="ToLeft">可选<b>对象</b>。 向左滚动窗口的行数。 一"行"对应于单击一次水平滚动条上的向左滚动箭头所滚动的距离。</param>
         <summary>将窗口或窗格滚动指定的行数。</summary>
-        <remarks>
-          <para>此方法等效于单击水平和垂直滚动条上的滚动箭头。</para>
-          <para>如果<paramref name="Down" />和<paramref name="Up" />都已指定，则窗口滚动个参数的差。例如，如果<paramref name="Down" />是 3 和<paramref name="Up" />为 6，三行向上滚动窗口。同样，如果<paramref name="ToLeft" />和<paramref name="ToRight" />都已指定，则窗口滚动个参数的差。</para>
-          <para>任何这些参数均可为负数。如果未不指定任何参数，则窗口将下滚一行。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法等效于单击水平和垂直滚动条上的滚动箭头。</para>
+          <para><paramref name="Up" />如果<paramref name="Down" />同时指定, 则窗口滚动的是参数的差。 例如, 如果<paramref name="Down" />为3且<paramref name="Up" />为 6, 则窗口向上滚动三行。 同样, 如果<paramref name="ToLeft" />和<paramref name="ToRight" />都指定, 窗口将滚动的参数的差。</para>
+          <para>这四个参数都可以取负值。 如果没有指定参数，窗口将下滚一行。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Split">
@@ -1483,8 +1427,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果将窗口拆分为多个窗格。</summary>
+        <summary><b>如此</b> 如果将窗口拆分为多个窗格。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1515,12 +1458,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的垂直拆分指定窗口的百分比。</summary>
+        <summary>返回或设置指定窗口的垂直拆分百分比。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>要取消拆分，请将此属性设置为零 (0)，或设置<see cref="P:Microsoft.Office.Interop.Word.Window.Split" />属性设为<b>False</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要删除拆分, 请将该属性设置为零 (0) 或<see cref="P:Microsoft.Office.Interop.Word.Window.Split" />将该属性设置为<b>False</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StyleAreaWidth">
@@ -1551,10 +1492,8 @@
       <Docs>
         <summary>返回或设置样式区的宽度，以磅为单位。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>大于 0 （零） <b>StyleAreaWidth</b>属性时，文本的左侧显示样式名称。在页面视图或 Web 版式视图中不显示样式区。</para>
-          <para />
-        </remarks>
+        <remarks><para>当 <b>StyleAreaWidth</b> 属性值大于 0 (零) 时，左侧的文本不显示样式区。在页面视图或 Web 版式视图中不显示样式区。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Thumbnails">
@@ -1610,10 +1549,8 @@
       <Parameters />
       <Docs>
         <summary>显示或隐藏功能区。</summary>
-        <remarks>
-          <para>如果功能区可见，<see cref="M:Microsoft.Office.Interop.Word.Window.ToggleRibbon" />方法隐藏;如果隐藏功能区，<see cref="M:Microsoft.Office.Interop.Word.Window.ToggleRibbon" />方法显示。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果功能区可见, 则该<see cref="M:Microsoft.Office.Interop.Word.Window.ToggleRibbon" />方法将隐藏它;如果功能区处于隐藏状态, <see cref="M:Microsoft.Office.Interop.Word.Window.ToggleRibbon" />则该方法会显示该功能区。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToggleShowAllReviewers">
@@ -1670,7 +1607,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的窗口的垂直位置，以磅为单位。</summary>
+        <summary>返回或设置指定窗口的垂直位置, 以磅为单位。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1700,17 +1637,15 @@
       <Docs>
         <summary>返回窗口的类型。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdWindowType" />可以是下列<b>WdWindowType</b>常量之一: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdWindowType" />可以是下列<b>WdWindowType</b>常量之一： </para>
-          <para>
-            <b>wdWindowTemplate </b>
+            <b>wdWindowTemplate</b>
           </para>
           <para>
             <b>wdWindowDocument</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UsableHeight">
@@ -1736,12 +1671,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定的文档窗口中的活动工作区的高度 （以磅为单位）。</summary>
+        <summary>返回指定的文档窗口中活动工作区的高度 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果无工作区的文档窗口中将显示， <b>UsableHeight</b>将返回 1。若要确定实际可用的高度，减去<b>UsableHeight</b>值 1。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果任何工作区的文档窗口中将显示， <b>UsableHeight</b> 返回 1。若要确定实际可用高度，减去 <b>UsableHeight</b> 值 1。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UsableWidth">
@@ -1769,10 +1702,8 @@
       <Docs>
         <summary>返回指定的文档窗口中活动工作区的宽度 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果无工作区的文档窗口中将显示， <b>UsableWidth</b>将返回 1。若要确定实际可用的高度，减去<b>UsableWidth</b>值 1。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果任何工作区的文档窗口中将显示， <b>UsableWidth</b> 将返回 1。要确定实际可用高度，减去从 <b>UsableWidth</b> 值 1。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalPercentScrolled">
@@ -1829,7 +1760,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.View" />对象，它代表指定窗口的视图。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.View" />对象, 表示指定窗口的视图。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1860,13 +1791,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>为</b> 指定的对象是否可见。</summary>
+        <summary><b>为</b> 指定的对象是否可见。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于任何对象，可能不可用，如果<b>Visible</b>属性为<b>false，则</b>某些方法和属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>对于任何对象，某些方法和属性可能不可用，如果 <b>可见性</b> 属性为 <b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1925,10 +1853,8 @@
       <Docs>
         <summary>返回在指定窗口中显示的文档窗口序号。 例如，如果窗口的标题为"Sales.doc:2"，此属性将返回数字 2。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Window.Index" />属性返回数量的指定窗口中的<see cref="T:Microsoft.Office.Interop.Word.Windows" />集合。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Window.Index" />属性可返回<see cref="T:Microsoft.Office.Interop.Word.Windows" />集合中指定窗口的编号。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowState">
@@ -1959,22 +1885,19 @@
       <Docs>
         <summary>返回或设置指定文档窗口或任务窗口的状态。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />可以是下列<b>WdWindowState</b>常量之一: </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />可以是下列<b>WdWindowState</b>常量之一： </para>
-          <para>
-            <b>wdWindowStateMaximize </b>
+            <b>wdWindowStateMaximize</b>
           </para>
           <para>
-            <b>wdWindowStateNormal </b>
+            <b>wdWindowStateNormal</b>
           </para>
           <para>
-            <b>wdWindowStateMinimize </b>
+            <b>wdWindowStateMinimize</b>
           </para>
-          <para>
-            <b>wdWindowStateNormal</b>常量指示不最大化的窗口或最小化。无法设置非活动窗口的状态。使用<see cref="M:Microsoft.Office.Interop.Word.Window.Activate" />方法，以激活之前设置窗口状态窗口。</para>
-          <para />
-        </remarks>
+          <para><b>WdWindowStateNormal</b> 常量表示未最大化或最小化的窗口。 无法设置不活动窗口的状态。 在<see cref="M:Microsoft.Office.Interop.Word.Window.Activate" />设置窗口状态之前, 使用方法激活窗口。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

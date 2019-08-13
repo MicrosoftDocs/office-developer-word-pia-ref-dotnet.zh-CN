@@ -1,13 +1,5 @@
 <Type Name="DropDown" FullName="Microsoft.Office.Interop.Word.DropDown">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d1aa9b15f2b37ab9a12aa1f385ead515fc2994b0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665821" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DropDown" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="657342fc0405fbd6f204e36ef3b45bfddf99d76e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144573" /></Metadata><TypeSignature Language="C#" Value="public interface DropDown" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DropDown" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DropDown" />
   <TypeSignature Language="VB.NET" Value="Public Interface DropDown" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>代表包含一个窗体选项列表的下拉型窗体域。</summary>
-    <remarks>
-      <para>使用<b>FormFields</b>(<paramref name="index" />)，其中 index 是索引号或关联与要返回单个的下拉型窗体域的书签名称<see cref="T:Microsoft.Office.Interop.Word.FormField" />对象。使用<see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />属性可返回<b>DropDown</b>对象的<b>FormField</b>对象与。</para>
-      <para>的索引数字表示的窗体域的位置<see cref="T:Microsoft.Office.Interop.Word.FormFields" />集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" />方法使用<b>FormFields</b>集合中添加下拉型窗体字段。</para>
-      <para />
-    </remarks>
+    <remarks><para>使用<b>FormFields</b>(<paramref name="index" />), 其中索引是索引号或与下拉型窗体域关联的书签名称, 返回单个<see cref="T:Microsoft.Office.Interop.Word.FormField" />对象。 将该<see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />属性与<b>FormField</b>对象一起使用可返回一个<b>下拉列表</b>对象。</para>
+      <para>索引号表示窗体域在<see cref="T:Microsoft.Office.Interop.Word.FormFields" />集合中的位置。</para>
+      <para>将<see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" />方法与<b>FormFields</b>集合一起使用可添加下拉型窗体域。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,9 +78,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -119,12 +109,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的默认下拉列表项。</summary>
+        <summary>返回或设置默认下拉项。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>下拉型窗体字段中的第一项为 1，第二项为 2，依此类推。</para>
-          <para />
-        </remarks>
+        <remarks><para>下拉型窗体域的第一项为 1，第二项为 2，以此类推。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListEntries">
@@ -150,7 +138,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ListEntries" />集合，代表中的所有项目<see cref="T:Microsoft.Office.Interop.Word.DropDown" />对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ListEntries" />集合, 该集合代表<see cref="T:Microsoft.Office.Interop.Word.DropDown" />对象中的所有项目。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,13 +194,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定指定的窗体 field 对象是否有效的复选框型窗体域。</summary>
+        <summary>确定指定的窗体域对象是否为有效的复选框型窗体域。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的窗体域对象为有效的复选框型窗体域和<b>False</b>如果没有，此属性返回<b>True</b> 。</para>
-          <para>的<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />， <see cref="T:Microsoft.Office.Interop.Word.DropDown" />，和<see cref="T:Microsoft.Office.Interop.Word.TextInput" />对象，请使用<see cref="P:Microsoft.Office.Interop.Word.FormField.Type" />属性<see cref="T:Microsoft.Office.Interop.Word.FormField" />对象之前确定 （<b>wdFieldFormCheckBox</b>、 <b>wdFieldFormDropDown</b>或<b>wdFieldFormTextInput</b>） 的窗体域的类型应用<see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />， <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />，或<see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" />属性。此预防措施确保<b>FormField</b>对象是预期的类型。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定的窗体域对象是有效的复选框型窗体域, 则该属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。</para>
+          <para>对于<see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> <see cref="T:Microsoft.Office.Interop.Word.DropDown" />、和<see cref="T:Microsoft.Office.Interop.Word.TextInput" />对象, 在应用<see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> <see cref="T:Microsoft.Office.Interop.Word.FormField" />对象的属性之前, 请使用对象的属性来确定窗体域的类型 (<b>wdFieldFormCheckBox</b>、 <b>wdFieldFormDropDown</b>或<b>wdFieldFormTextInput</b>)。<see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />、 <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />或<see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" />属性。 此预防措施可确保<b>FormField</b>对象是预期的类型。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">

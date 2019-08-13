@@ -1,13 +1,5 @@
 <Type Name="ListLevel" FullName="Microsoft.Office.Interop.Word.ListLevel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="40804d3d1c4f0bf8f247c8b34546720ff5855ffd" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665566" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListLevel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bba67b72f79c6b6f79e34d7a683261fcb43b7fc0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144496" /></Metadata><TypeSignature Language="C#" Value="public interface ListLevel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListLevel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListLevel" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListLevel" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>代表单个列表级别，或者可以是项目符号列表或编号列表的唯一级别或多级符号列表的九个级别之一。</summary>
-    <remarks>
-      <para>
-        <b>ListLevel</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.ListLevels" />集合。</para>
-      <para>使用<b>ListLevels</b>(<paramref name="index" />)，其中<paramref name="index" />是介于 1 至 9，返回单个<b>ListLevel</b>对象。</para>
-      <para>
-        <b>ListLevel</b>对象使您访问所有格式属性指定的列表级别，如<see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />， <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />， <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />， <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />， <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />，和<see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />属性。</para>若要应用列表级别，首先要确定范围或列表，然后使用
-      <para><see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />方法。每个段落的开头的选项卡被转换为一个列表级别。例如，段落的开头三个选项卡后，将成为第三层列表段落的<b>ApplyListTemplate</b>方法一起使用。</para><para /></remarks>
+    <remarks><para><b>ListLevel</b>对象是<see cref="T:Microsoft.Office.Interop.Word.ListLevels" />集合的一个成员。</para>
+      <para>使用<b>ListLevels</b>(<paramref name="index" />), 其中<paramref name="index" />是从1到9的数字, 返回单个<b>ListLevel</b>对象。</para>
+      <para><b>ListLevel</b>对象使您能够访问指定的列表级别的所有格式设置属性, 例如<see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />、、、和<see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />属性。</para>
+      <para>若要应用列表级别, 请首先标识该区域或列表, 然后使用<see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />方法。 该段落开头的每个选项卡都转换为一个列表级别。 例如，段落开头三个选项卡将成为第三层列表段落之后使用 <b>ApplyListTemplate</b> 方法。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListLevelAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" />常量，代表列表模板的列表级别的对齐方式。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" />常量, 该常量表示列表模板的列表级别的对齐方式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,9 +139,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -180,12 +170,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.Font" />对象，它代表指定对象的字符格式。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.Font" />对象, 该对象代表指定对象的字符格式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要设置该属性，指定一个返回<b>Font</b>对象的表达式。</para>
-          <para />
-        </remarks>
+        <remarks><para>要设置该属性，需指定一个返回 <b>Font</b> 对象的表达式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -211,7 +199,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>值，该值代表集合中的项目的位置。</summary>
+        <summary>返回一个<b>Integer</b>类型的值, 该值代表项目在集合中的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,7 +230,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置已链接到指定的样式的名称，<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象。</summary>
+        <summary>返回或设置链接到指定<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象的样式的名称。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -275,11 +263,9 @@
       <Docs>
         <summary>返回或设置指定的列表级别的数字格式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>百分号 （%） 从 1 到 9 后跟任意数量表示各自的列表级别的编号样式。例如，如果您想要"文章 I，""文章 II，"的第一级的格式和等等<b>NumberFormat</b>属性的字符串采用"文章 %1"和<see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />属性将设置为<b>编号</b>。</para>
-          <para>如果将<b>NumberStyle</b>属性设置为<b>wdListNumberStyleBullet</b>， <b>NumberFormat</b>属性的字符串只能包含一个字符。</para>
-          <para />
-        </remarks>
+        <remarks><para>百分比符号 (%) 后跟从 1 到 9 的任何数字代表从各自的列表级别的编号样式。 例如, 如果您希望第一个级别的格式为 "文章 I"、"文章 II" 等, 则<b>NumberFormat</b>属性的字符串将为 "文章% 1", 并且该<see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />属性将设置为<b>wdListNumberStyleUpperCaseRoman</b>。</para>
+          <para>如果 <b>从</b> 属性设置为 <b>wdListNumberStyleBullet</b> ， <b>样式</b> 的字符串只能包含一个字符。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberPosition">
@@ -308,12 +294,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的编号或项目符号指定的位置 （以磅为单位）<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象。</summary>
+        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象的编号或项目符号的位置 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于每个列表级别，您可以设置的编号或项目符号、 选项卡的位置和换行文本的位置的位置。</para>
-          <para />
-        </remarks>
+        <remarks><para>对于每个列表级别，可设置编号或者项目符号的位置、制表位的位置和换行文字的位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberStyle">
@@ -342,13 +326,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的编号样式<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象。</summary>
+        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象的编号样式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>NumberStyle</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdListNumberStyle" />常量。这些常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>从</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdListNumberStyle" />常量之一。 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -402,7 +383,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象，表示一个图片项目符号。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象, 表示一个图片项目符号。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -433,12 +414,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回列表级别，该级别指定的列表级别重新编号 1 之前必须显示。 将显示<b>false</b>如果继续按顺序编号每次在列表级别。</summary>
+        <summary>设置或返回列表级别，该级别指定的列表级别重新编号 1 之前必须显示。 <b>假</b>如果每次显示列表级别时按顺序连续。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此功能允许交叉，列表维护数字顺序。级别为值大于或等于中其索引，无法设置的列表，<b>则 ResetOnHigher</b>属性<see cref="T:Microsoft.Office.Interop.Word.ListLevels" />集合。</para>
-          <para />
-        </remarks>
+        <remarks><para>本功能允许交叉，列表保持数值序列。 不能将列表级别的<b>ResetOnHigher</b>属性设置为大于或等于其在<see cref="T:Microsoft.Office.Interop.Word.ListLevels" />集合中的索引的值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetOnHigherOld">
@@ -504,7 +483,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的起始编号<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象。</summary>
+        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象的起始编号。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -535,7 +514,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置为指定制表位位置<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象。</summary>
+        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象的制表位位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -566,7 +545,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置为指定的文字环绕的第二行的位置 （以磅为单位）<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象。</summary>
+        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象的第二行文字换行的位置 (以磅为单位)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -599,11 +578,8 @@
       <Docs>
         <summary>返回或设置指定的列表级别编号之后插入的字符。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>TrailingCharacter</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdTrailingCharacter" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>TrailingCharacter</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdTrailingCharacter" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

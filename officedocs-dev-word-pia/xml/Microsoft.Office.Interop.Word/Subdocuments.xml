@@ -1,13 +1,5 @@
 <Type Name="Subdocuments" FullName="Microsoft.Office.Interop.Word.Subdocuments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a21d5c2632a3938485eff78ac0f2f1d8a922befc" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665808" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ddd1247b7607cf6fdec9c86653bd6de16fa1156f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143915" /></Metadata><TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Subdocuments implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Subdocuments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Subdocuments&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />代表范围或文档中的子对象。</summary>
-    <remarks>
-      <para>使用的<b>子文档</b>属性<see cref="T:Microsoft.Office.Interop.Word.Range" />或<see cref="T:Microsoft.Office.Interop.Word.Document" />要返回的<b>子文档</b>集合对象。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />或<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" />方法向文档添加一篇子文档。</para>
-      <para>使用<b>Subdocuments</b>(<paramref name="index" />)，其中<paramref name="index" />是返回单个<b>Subdocument</b>对象的索引号。</para>
-      <para />
-    </remarks>
+    <summary>代表某一<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />区域或文档中的子文档的对象的集合。</summary>
+    <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.Range" />或<see cref="T:Microsoft.Office.Interop.Word.Document" />对象的<b>子文档</b>属性可返回<b>子文档</b>集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> or <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" />方法可将子文档添加到文档中。</para>
+      <para>使用<b>子文档</b>(<paramref name="index" />), <paramref name="index" />其中是索引号, 返回一个<b>子文档</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddFromFile">
@@ -68,21 +58,19 @@
         <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">所需的<b>对象</b>。 需要插入主文档中的子文档的文件名。</param>
-        <param name="ConfirmConversions">可选的<b>对象</b>。 <b>True</b>如果文件不是 Microsoft Word 格式时确认转换文件对话框中的文件转换。</param>
-        <param name="ReadOnly">可选的<b>对象</b>。 <b>为</b> 要插入的子文档为只读文档。</param>
-        <param name="PasswordDocument">可选的<b>对象</b>。 打开子文档，如果它受密码保护所需的密码。</param>
-        <param name="PasswordTemplate">可选的<b>对象</b>。 如果模板已用密码加以保护，则本参数是打开子文档模板所需的密码。</param>
-        <param name="Revert">可选的<b>对象</b>。 控制出现什么情况<paramref name="Name" />是打开的文档的文件名。 <b>为</b> 插入子文档的已保存的版本。 <b>假</b> 以插入子文档时，其中可能包含未保存的更改的打开版本。</param>
-        <param name="WritePasswordDocument">可选的<b>对象</b>。 将更改保存到文档文件，如果它写保护所需的密码。</param>
-        <param name="WritePasswordTemplate">可选的<b>对象</b>。 将更改保存到如果模板处于写保护对子文档附加的模板所需的密码。</param>
-        <summary>将指定的子文档添加到主控文档开头的选定内容并返回<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />对象。</summary>
+        <param name="Name">必需的<b>对象</b>。 需要插入主文档中的子文档的文件名。</param>
+        <param name="ConfirmConversions">可选<b>对象</b>。 如果为<b>True</b> , 则在文件不是 Microsoft Word 格式时, 确认转换文件对话框中的文件转换。</param>
+        <param name="ReadOnly">可选<b>对象</b>。 <b>为</b> 要插入的子文档为只读文档。</param>
+        <param name="PasswordDocument">可选<b>对象</b>。 打开子文档时所需的密码 (如果子文档受密码保护)。</param>
+        <param name="PasswordTemplate">可选<b>对象</b>。 如果模板已用密码加以保护，则本参数是打开子文档模板所需的密码。</param>
+        <param name="Revert">可选<b>对象</b>。 控制如果<paramref name="Name" />是打开文档的文件名, 将会发生什么情况。 <b>为</b> 插入子文档的已保存的版本。 <b>假</b> 以插入子文档时，其中可能包含未保存的更改的打开版本。</param>
+        <param name="WritePasswordDocument">可选<b>对象</b>。 保存对文档文件所做的更改 (如果文档处于写保护状态时) 所需的密码。</param>
+        <param name="WritePasswordTemplate">可选<b>对象</b>。 保存对子文档的模板所做的更改 (如果模板处于写保护状态) 所需的密码。</param>
+        <summary>将指定的子文档添加到主控文档中所选内容的开始处, <see cref="T:Microsoft.Office.Interop.Word.Subdocument" />并返回一个对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>注释</b> 如果活动视图不是大纲视图或者主控文档视图，将发生错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>注释</b> 如果活动视图不是大纲视图或主控文档视图, 则会发生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddFromRange">
@@ -107,14 +95,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">所需<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 <b>Range</b>对象，用于创建一个或多个子文档。</param>
-        <summary>从指定范围中的文本创建一个或多个子文档，并返回<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />对象。</summary>
+        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 用于创建一个或多个子文档的<b>Range</b>对象。</param>
+        <summary>根据指定区域中的文本创建一个或多个子文档, 并返回<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />一个对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>注释</b> 范围必须开头一个内置标题级别样式 (例如，标题 1)。具有相同的标题格式范围的开头使用的每个段落创建子文档。子文档文件保存主控文档时都保存和自动命名使用文件中的第一行文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>注释</b> 区域必须以内置标题级别样式之一 (例如, "标题 1") 开头。 如果段落具有与区域开始处相同的标题格式，则为该段创建子文档。 子文档随主文档一道保存并自动以文件第一行中的文字为名。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -140,7 +126,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,7 +154,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -198,9 +184,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -224,7 +210,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,8 +240,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果指定文档中的子文档已展开。</summary>
+        <summary><b>如此</b> 如果指定文档中的子文档已展开。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -318,7 +303,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">一个<b>整数</b>，指示的单个对象的序号位置。</param>
+        <param name="Index">一个指示单个对象的序号位置的<b>整数</b>。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -347,8 +332,8 @@
         <Parameter Name="LastSubdocument" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FirstSubdocument">可选的<b>对象</b>。 要合并的原文档的路径和文件名。</param>
-        <param name="LastSubdocument">可选的<b>对象</b>。 要合并的子文档范围中的最后一篇子文档。</param>
+        <param name="FirstSubdocument">可选<b>对象</b>。 要合并的原文档的路径和文件名。</param>
+        <param name="LastSubdocument">可选<b>对象</b>。 要合并的子文档范围中的最后一篇子文档。</param>
         <summary>将主控文档中选定的子文档合并为单独的子文档。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,11 +388,9 @@
       <Parameters />
       <Docs>
         <summary>选择指定的对象。</summary>
-        <remarks>
-          <para>
-            <b>注释</b> 使用此方法后，使用<b>Selection</b>属性以使用选定项。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>注释</b> 使用此方法后, 使用<b>Selection</b>属性可处理选定的项目。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

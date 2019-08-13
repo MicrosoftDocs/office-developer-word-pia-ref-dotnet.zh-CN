@@ -1,13 +1,5 @@
 <Type Name="XMLNamespace" FullName="Microsoft.Office.Interop.Word.XMLNamespace">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e3cee4ccfb64e6e5f08d4d11a8818c1cafb6cce0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666479" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLNamespace" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d3b52eee4a72b22c5b40876def419ead67fb9091" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145413" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNamespace" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNamespace" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNamespace" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNamespace" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>代表架构库中的单个架构。</summary>
-    <remarks>
-      <para>您可以从模板和加载项对话框中的 XML 架构选项卡访问架构库从 Microsoft Word 中。架构库代表用户已应用到 Word 文档或用户使用架构库对话框中显式添加到架构库的用户的计算机上安装的架构。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" />属性<see cref="T:Microsoft.Office.Interop.Word.XMLNamespaces" />返回的单个<b>XMLNameSpace</b>对象的集合。<b>Item</b>属性的索引值可以是一个<b>整数</b>，它指示架构的架构库中的位置或<b>字符串</b>，代表架构的名称，如使用返回<see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" />属性 (TargetNamespace 设置架构中定义）。</para>
-      <para />
-    </remarks>
+    <remarks><para>在 Microsoft Word 中，可以通过 "模板和加载项" 对话框中的 "XML 架构" 选项卡来访问架构库。 架构库表示安装在用户计算机上的架构, 用户已将其应用到 Word 文档, 或者用户已使用 "架构库" 对话框将其显式添加到架构库中。</para>
+      <para>使用<see cref="T:Microsoft.Office.Interop.Word.XMLNamespaces" />集合<see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" />的属性返回单个<b>XMLNameSpace</b>对象。 <b>Item</b>属性的索引值可以是<b>整数</b>(指示架构在架构库中的位置), 也可以是一个<b>字符串</b>, 表示使用<see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" />属性返回的架构的名称 (在架构中定义的 TargetNamespace 设置)。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alias">
@@ -63,8 +53,8 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">可选属性，类型为 <b>Boolean</b>。 如果为<b>true</b>的所有用户都有权访问指定的对象。</param>
-        <summary>返回一个<b>String</b>值，该值代表指定对象的友好名称。</summary>
+        <param name="AllUsers">可选属性，类型为 <b>Boolean</b>。 <b>如此</b>如果所有用户都有权访问指定的对象。</param>
+        <summary>返回一个<b>字符串</b>, 表示指定对象的友好名称。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,7 +110,7 @@
         <Parameter Name="Document" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Document">所需的<b>对象</b>。 将指定 XML 架构附加到的文档。</param>
+        <param name="Document">必需的<b>对象</b>。 将指定 XML 架构附加到的文档。</param>
         <summary>将 XML 架构附加到文档。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,9 +140,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTransform">
@@ -184,8 +174,8 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">可选属性，类型为 <b>Boolean</b>。 如果为<b>true</b>的所有用户都有权访问指定的对象。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.XSLTransform" />对象，表示从 XML 架构的特定命名空间中打开文档时要使用的默认 Extensible Stylesheet Language Transformation (XSLT) 文件。</summary>
+        <param name="AllUsers">可选属性，类型为 <b>Boolean</b>。 <b>如此</b>如果所有用户都有权访问指定的对象。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XSLTransform" /> object 类型的值, 该值代表在从特定命名空间的 XML 架构中打开文档时要使用的默认可扩展样式表语言转换 (XSLT) 文件。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,7 +201,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,7 +234,7 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">可选属性，类型为 <b>Boolean</b>。 如果为<b>true</b>的所有用户都有权访问指定的对象。</param>
+        <param name="AllUsers">可选属性，类型为 <b>Boolean</b>。 <b>如此</b>如果所有用户都有权访问指定的对象。</param>
         <summary>获取或设置指定的 XML 命名空间的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -329,7 +319,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XSLTransforms</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" />值，该值代表指定用于架构的 Extensible Stylesheet Language Transformation (XSLT) 文件的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" />集合, 代表指定用于架构的可扩展样式表语言转换 (XSLT) 文件。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

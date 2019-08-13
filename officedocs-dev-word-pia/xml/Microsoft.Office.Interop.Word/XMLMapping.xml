@@ -1,13 +1,5 @@
 <Type Name="XMLMapping" FullName="Microsoft.Office.Interop.Word.XMLMapping">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="789b346ac01d9a48554f8869d1aadad7ba53b43b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666990" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLMapping" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c7faf4f3e3ffccb270c1cc125874ce43681ee78" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142638" /></Metadata><TypeSignature Language="C#" Value="public interface XMLMapping" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLMapping" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLMapping" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLMapping" />
@@ -26,9 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示上的 XML 映射<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />自定义 XML 与内容控件之间的对象。 XML 映射是内容控件中的文本与此文档的自定义 XML 数据存储中的 XML 元素之间的链接。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法以添加或更改内容控件使用 XPath 字符串的 XML 映射。下面的示例设置文档作者的内置文档属性，将新的内容控件插入到活动文档中，并将控件的 XML 映射为内置文档属性。</para>
+    <summary>表示在自定义 XML 与<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />内容控件之间的对象上的 XML 映射。 XML 映射是内容控件中的文本与此文档的自定义 XML 数据存储中的 XML 元素之间的链接。</summary>
+    <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法可以添加或更改使用 XPath 字符串的内容控件的 XML 映射。 以下示例设置文档作者这一内置文档属性，在活动文档中插入新的内容控件，然后将此控件的 XML 映射设置为该内置文档属性。</para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -1822,7 +1813,7 @@ If blnMap = False Then
 
 
 End If&lt;/span&gt;</code>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法以添加或更改内容控件使用<b>CustomXMLNode</b>对象的 XML 映射。下面的示例执行同样的任务与前面的示例中，但使用<b>SetMappingByNode</b>方法。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法可使用<b>CustomXMLNode</b>对象添加或更改内容控件的 XML 映射。 下面的示例执行与上一个示例相同的操作, 但使用的是<b>SetMappingByNode</b>方法。</para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -3744,7 +3735,7 @@ Set objMap = objcc.XMLMapping
 
 
 blnMap = objMap.SetMappingByNode(objNode)&lt;/span&gt;</code>
-      <para>下面的示例创建一个新的<b>CustomXMLPart</b>对象，将自定义 XML 加载到它，然后创建两个新的内容控件并映射到不同的 XML 元素的自定义 XML 中的每个。</para>
+      <para>下面的示例创建一个新的 <b>CustomXMLPart</b> 对象、 将自定义 XML 加载到它，然后创建两个新的内容控件，并将每个不同的 XML 元素中的自定义 XML 映射。</para>
       <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -7842,7 +7833,7 @@ objCustomControl.XMLMapping.SetMappingByNode objCustomNode
 
 
 MsgBox objCustomControl.XMLMapping.IsMapped&lt;/span&gt;</code>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" />方法来删除内容控件的 XML 映射。 删除内容控件的 XML 映射删除仅之间的内容控件和 XML 数据的连接。 内容控件和 XML 数据保留在文档。 下面的示例删除活动文档中的所有内容控件的当前映射的 XML 映射。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" />方法删除内容控件的 XML 映射。  删除内容控件的 XML 映射时，只会删除内容控件与 XML 数据之间的连接。  内容控件和 XML 数据都会留在文档中。  以下示例删除活动文档内当前映射的所有内容控件的 XML 映射。</para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -8612,7 +8603,7 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 Next&lt;/span&gt;</code>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />属性可以确定是否将内容控件映射到文档的数据存储区中的 XML 节点。下面的示例删除 XML 映射的所有映射活动文档中的内容控件。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />属性来确定是否将内容控件映射到文档的数据存储区中的 XML 节点。 以下示例删除活动文档中所有映射的内容控件的 XML 映射。</para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -9382,9 +9373,8 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 Next&lt;/span&gt;</code>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />属性来访问内容控件映射到的 XML 节点。使用<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />属性访问 XML 部件的内容控件映射到。有关使用<b>CustomXMLNode</b>和<b>CustomXMLPart</b>对象的详细信息，请参阅各个对象主题。</para>
-      <para />
-    </remarks>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />属性可访问内容控件映射到的 XML 节点。 使用<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />属性可访问内容控件映射到的 XML 部件。 有关使用 <b>CustomXMLNode</b> 和 <b>CustomXMLPart</b> 对象的详细信息，请参阅各个对象主题。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -9410,7 +9400,7 @@ Next&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9438,14 +9428,12 @@ Next&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建外接程序的应用程序。只读的 <b>长</b> 。</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建外接程序的应用程序。 只读的 <b>长</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
+        <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注意</b>： 此值也可以由常量<b>wdCreatorCode</b>。</para>
-          <para />
-        </remarks>
+            <b>注意</b>: 此值还可由常量<b>wdcreatorcode 表示</b>表示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomXMLNode">
@@ -9474,8 +9462,7 @@ Next&lt;/span&gt;</code>
         <summary>返回一个 <b>CustomXMLNode</b> 对象，该对象表示文档中的内容控件映射到数据存储区中的自定义 XML 节点。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>下面的示例将活动文档中插入新的内容控件和自定义 XML 部件，将内容控件映射到自定义 XML 部件中的节点，然后设置映射的 XML 节点的值。</para>
+        <example><para>以下示例在活动文档中插入新的内容控件和自定义 XML 部件，将内容控件映射到自定义 XML 部件中的某个节点，然后设置映射的 XML 节点的值。</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -11142,8 +11129,7 @@ objMap.SetMapping "/books/book/author", , objPart
 
 Set objNode = objMap.&lt;/span&gt;
 &lt;span class="label"&gt;CustomXMLNode&lt;/span&gt;
-&lt;span class="label"&gt;objNode.Text = "Matt Hink"objCC.Range.Text = objNode.Text&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;objNode.Text = "Matt Hink"objCC.Range.Text = objNode.Text&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="CustomXMLPart">
@@ -11172,10 +11158,9 @@ Set objNode = objMap.&lt;/span&gt;
         <summary>返回一个 <b>CustomXMLPart</b> 对象，该对象表示文档中的内容控件映射到自定义 XML 部件。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>以下示例访问活动文档和自定义 XML 部件到其被映射，然后设置文本值之一的自定义 XML 部件内包含的 XML 节点中的第一个内容控件</para>
+        <example><para>以下示例访问活动文档中的第一个内容控件以及它映射到的自定义 XML 部件，然后设置自定义 XML 部件中包含的某个 XML 节点的文本值。</para>
           <para>
-            <b>注意</b>： 此示例假定活动文档中的至少一个内容控件映射到包含 XPath 字符串中指定的 XML 节点的自定义 XML 部件。</para>
+            <b>注意</b>: 此示例假定活动文档中至少有一个内容控件映射到包含 XPath 字符串中指定的 xml 节点的自定义 xml 部件。</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -11818,8 +11803,7 @@ Set objCC = ActiveDocument.ContentControls(1)
 
 Set objPart = objCC.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;CustomXMLPart&lt;/span&gt;
-&lt;span class="label"&gt;Set objNode = objPart.SelectSingleNode("/books/book/title")objNode.Text = "Mystery of the Empty Chair"&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;Set objNode = objPart.SelectSingleNode("/books/book/title")objNode.Text = "Mystery of the Empty Chair"&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -11844,12 +11828,9 @@ Set objPart = objCC.XMLMapping.&lt;/span&gt;
       <Parameters />
       <Docs>
         <summary>从父内容控件中删除 XML 映射。</summary>
-        <remarks>
-          <para>此操作删除 XML 映射。 XML 数据和内容控件将保持在文档中。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>以下示例删除所有内容控件的活动文档中的当前映射的 XML 映射。</para>
+        <remarks><para>此操作删除 XML 映射。  XML 数据和内容控件仍保留在文档中。</para>
+          <para> </para></remarks>
+        <example><para>以下示例删除活动文档内当前映射的所有内容控件的 XML 映射。</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -12364,8 +12345,7 @@ For Each objCC In ActiveDocument.ContentControls
 
         objCC.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;Delete&lt;/span&gt;
-&lt;span class="label"&gt;End IfNext&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;End IfNext&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="IsMapped">
@@ -12391,11 +12371,10 @@ For Each objCC In ActiveDocument.ContentControls
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 <b>Boolean</b> 值，该值表示文档中的内容控件是否映射到文档的 XML 数据存储内的 XML 节点。只读。</summary>
+        <summary>返回 <b>Boolean</b> 值，该值表示文档中的内容控件是否映射到文档的 XML 数据存储内的 XML 节点。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>以下示例删除所有内容控件的活动文档中的当前映射的 XML 映射。</para>
+        <example><para>以下示例删除活动文档内当前映射的所有内容控件的 XML 映射。</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -12782,8 +12761,7 @@ For Each objCC In ActiveDocument.ContentControls
 
     If objCC.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;IsMapped&lt;/span&gt;
-&lt;span class="label"&gt;Then        objCC.XMLMapping.Delete    End IfNext&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;Then        objCC.XMLMapping.Delete    End IfNext&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -12837,12 +12815,10 @@ For Each objCC In ActiveDocument.ContentControls
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>字符串</b> ，表示用于计算 XPath 的当前 XML 映射的前缀映射。只读的。</summary>
+        <summary>返回一个 <b>字符串</b> ，表示用于计算 XPath 的当前 XML 映射的前缀映射。 只读的。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要设置的内容控件映射，请使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法或<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要设置内容控件的映射, 请使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法或<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetMapping">
@@ -12870,19 +12846,16 @@ For Each objCC In ActiveDocument.ContentControls
       </Parameters>
       <Docs>
         <param name="XPath">指定 XPath 字符串，该字符串表示内容控件所映射到的 XML 节点。无效的 XPath 字符串将导致运行时错误。</param>
-        <param name="PrefixMapping">指定要查询表达式中提供时使用的前缀映射<paramref name="XPath" />参数。 如果省略，Word 将使用当前文档中指定的自定义 XML 部件的前缀映射集。</param>
+        <param name="PrefixMapping">指定在查询<paramref name="XPath" />参数中提供的表达式时要使用的前缀映射。 如果省略，Word 将使用当前文档中指定的自定义 XML 部件的前缀映射集。</param>
         <param name="Source">指定要将内容控件映射到所需的自定义 XML 数据。如果省略此参数，则 XPath 计算依据在当前文档中的所有自定义 XML，使用 XPath 解析的 XML 节点的第一个 <b>CustomXMLPart</b> 建立映射。 </param>
-        <summary>允许创建或更改的内容控件的 XML 映射。 如果 Microsoft Office Word 将内容控件映射到文档的自定义 XML 数据存储区中的自定义 XML 节点，则返回<b>True</b> 。</summary>
+        <summary>允许创建或更改的内容控件的 XML 映射。 如果 Microsoft Office Word 将内容控件映射到文档的自定义 XML 数据存储区中的自定义 XML 节点,<b>则返回 True</b> 。</summary>
         <returns>Boolean</returns>
-        <remarks>
-          <para>如果 XML 映射已存在，Word 将替换现有的 XML 映射和映射 XML 节点替换的文本内容控件的新的内容。如果指定的 XPath 不计算为中的指定自定义 XML 部件的 XML 节点中，您仍可以指定映射，并将创建一个。此映射自动链接时指定的 XPath 将计算结果为指定的自定义 XML 部件中的 XML 节点。</para>
+        <remarks><para>如果 XML 映射已经存在，Word 将替换现有 XML 映射，并以新映射的 XML 节点的内容替换内容控件的文本。如果指定的 XPath 的计算结果不是指定的自定义 XML 部件中的 XML 节点，那么仍可以指定映射，并且将创建一个映射。当指定的 XPath 的计算结果为指定的自定义 XML 部件中的 XML 节点时，此映射将自动链接。</para>
           <para>另请参阅<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法。</para>
           <para>
-            <b>注释</b>： 创建映射的格式文本内容控件将导致运行时错误。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>下面的示例插入自定义 XML 部件和设置的 XML 自定义的部件，然后在文档的开头插入两个内容控件和控件的内容映射到自定义的部件中的 XML 元素的内容。</para>
+            <b>注意</b>: 为富文本内容控件创建映射将导致运行时错误。</para>
+          <para> </para></remarks>
+        <example><para>以下示例插入自定义 XML 部件并为该自定义部件设置 XML，然后在文档开头插入两个内容控件，并将控件的内容映射为自定义部件中 XML 元素的内容。</para>
           <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -15319,8 +15292,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;SetMapping&lt;/span&gt;
 &lt;span class="label"&gt;_    "/books/book/title", , objCustomPartobjRange.InsertParagraphAfterSet objRange = ActiveDocument.Paragraphs(2).RangeSet objCustomControl = ActiveDocument.ContentControls _    .Add(wdContentControlText, objRange)objCustomControl.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;SetMapping&lt;/span&gt;
-&lt;span class="label"&gt;_    "/books/book/abstract", , objCustomPart&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;_    "/books/book/abstract", , objCustomPart&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="SetMappingByNode">
@@ -15347,16 +15319,13 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       </Parameters>
       <Docs>
         <param name="Node">指定当前内容控件所映射到的 XML 节点。</param>
-        <summary>允许创建或更改内容控件上的 XML 数据映射。 如果 Microsoft Office Word 将内容控件映射到文档的自定义 XML 数据存储区中的自定义 XML 节点，则返回<b>True</b> 。</summary>
+        <summary>允许创建或更改内容控件上的 XML 数据映射。 如果 Microsoft Office Word 将内容控件映射到文档的自定义 XML 数据存储区中的自定义 XML 节点,<b>则返回 True</b> 。</summary>
         <returns>Boolean</returns>
-        <remarks>
-          <para>如果 XML 映射已存在，则 Word 替换现有的 XML 映射和新映射的 XML 节点的内容替换为内容控件的文本。另请参阅<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法。</para>
+        <remarks><para>如果 XML 映射已经存在，则 Word 将替换现有 XML 映射，并以新映射的 XML 节点的内容替换内容控件的文本。 另请参阅<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法。</para>
           <para>
-            <b>注释</b>： 创建映射的格式文本内容控件将导致运行时错误。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>下面的示例设置文档作者的内置文档属性，将新的内容控件插入到活动文档中，并将控件的 XML 映射为内置文档属性。</para>
+            <b>注意</b>: 为富文本内容控件创建映射将导致运行时错误。</para>
+          <para> </para></remarks>
+        <example><para>以下示例设置文档作者这一内置文档属性，在活动文档中插入新的内容控件，然后将此控件的 XML 映射设置为该内置文档属性。</para>
           <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -17278,7 +17247,7 @@ Set objMap = objcc.XMLMapping
 
 
 blnMap = objMap.SetMappingByNode(objNode)&lt;/span&gt;</code>
-          <para>下面的示例创建自定义 XML 部件，然后创建两个内容控件，并将每个内容控件映射到自定义 XML 中的特定节点。</para>
+          <para>以下示例创建自定义 XML 部件，然后创建两个内容控件，并将每个内容控件映射到自定义 XML 中的特定节点。</para>
           <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -19843,8 +19812,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;SetMappingByNode&lt;/span&gt;
 &lt;span class="label"&gt;objCustomNodeobjRange.InsertParagraphAfterSet objRange = ActiveDocument.Paragraphs(2).RangeSet objCustomNode = objCustomPart.SelectSingleNode _    ("/books/book/abstract")Set objCustomControl = ActiveDocument.ContentControls _    .Add(wdContentControlText, objRange)objCustomControl.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;SetMappingByNode&lt;/span&gt;
-&lt;span class="label"&gt;objCustomNode&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;objCustomNode&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -19870,14 +19838,11 @@ objCustomControl.XMLMapping.&lt;/span&gt;
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>字符串</b> ，表示为 XML 映射，其计算结果为当前映射的 XML 节点的 XPath。只读的。</summary>
+        <summary>返回一个 <b>字符串</b> ，表示为 XML 映射，其计算结果为当前映射的 XML 节点的 XPath。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要设置的内容控件映射，请使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法或<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法。如果映射未处于活动状态，则使用此属性将返回错误。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>下面的示例检查活动文档中的第一个内容控件是否是日期控件并且是否 XPath 字符串设置为特定的内置文档属性。然后将映射到该控件，如果 XPath 不匹配，并且该控件是日期控件。</para>
+        <remarks><para>若要设置内容控件的映射, 请使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法或<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法。 如果映射不是活动的，则使用此属性将返回错误。</para>
+          <para> </para></remarks>
+        <example><para>以下示例检查活动文档中第一个内容控件是否是日期控件，以及 XPath 字符串是否设置为特定的内置文档属性。如果 XPath 不匹配并且控件是日期控件，它将设置到该控件的映射。</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -20776,8 +20741,7 @@ Set objMap = objCC.XMLMapping
 
 If (objCC.Type = wdContentControlDate) And (objMap.&lt;/span&gt;
 &lt;span class="label"&gt;XPath&lt;/span&gt;
-&lt;span class="label"&gt;&amp;lt;&amp;gt; _        "/ns1:coreProperties[1]/ns0:createdate[1]") Then    blnMap = objMap.SetMapping(XPath:="/ns1:coreProperties[1]/ns0:createdate[1]")    If blnMap = False Then        MsgBox "Unable to map the content control."    End IfEnd If&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;&amp;lt;&amp;gt; _        "/ns1:coreProperties[1]/ns0:createdate[1]") Then    blnMap = objMap.SetMapping(XPath:="/ns1:coreProperties[1]/ns0:createdate[1]")    If blnMap = False Then        MsgBox "Unable to map the content control."    End IfEnd If&lt;/span&gt;</code></example>
       </Docs>
     </Member>
   </Members>

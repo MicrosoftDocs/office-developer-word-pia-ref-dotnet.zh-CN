@@ -1,13 +1,5 @@
 <Type Name="Borders" FullName="Microsoft.Office.Interop.Word.Borders">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5d7f32a44fa68cba8d47c482f1ef6e072fecb59e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667041" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ad36491c761b9b9237c3b6b768cb3c389e6e7842" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146239" /></Metadata><TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Borders implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Borders" />
   <TypeSignature Language="VB.NET" Value="Public Interface Borders&#xA;Implements IEnumerable" />
@@ -30,10 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.Border" />对象，后者表示对象的边框。</summary>
-    <remarks>
-      <para>使用<b>Borders</b>属性可返回<b>Borders</b>集合。</para>无法将
-      <para><b>边框</b>对象添加到<b>Borders</b>集合。<b>Borders</b>集合中的成员数是有限，并且对象的类型而异。例如，表中有六个元素中<b>Borders</b>集合，而段落有四个。</para><para>使用<b>边框</b>(<paramref name="index" />)，其中<paramref name="index" />标识的边框，返回单个<b>边框</b>对象。<paramref name="Index" />可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.WdBorderType" />常量： <b>wdBorderBottom</b>、 <b>wdBorderDiagonalDown</b>、 <b>wdBorderDiagonalUp</b>、 <b>wdBorderHorizontal</b>、 <b>wdBorderLeft</b>、 <b>wdBorderRight</b>，<b>wdBorderTop</b>或<b>wdBorderVertical</b>。这些常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。使用<see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" />属性应用于<b>Border</b>对象的边框线。</para><para /></remarks>
+    <summary>代表对象的<see cref="T:Microsoft.Office.Interop.Word.Border" />边框的对象的集合。</summary>
+    <remarks><para>使用 <b>边框</b> 属性返回 <b>Borders</b> 集合。</para>
+      <para>
+        <b>Border</b> 对象不能添加到 <b>边框</b> 集合。 <b>Borders</b> 集合，集合中的成员数目是有限的并取决于对象的类型。 例如，表具有六个元素在 <b>边框</b> 集合中，而一个段落有四个。</para>
+      <para>使用<b>边框</b>(<paramref name="index" />) 来<paramref name="index" />标识边框, 以返回单个<b>边框</b>对象。 <paramref name="Index" />可以是<see cref="T:Microsoft.Office.Interop.Word.WdBorderType" />下列常量之一: <b>wdBorderBottom</b>、 <b>wdBorderDiagonalDown</b>、 <b>wdBorderDiagonalUp</b>、 <b>wdBorderHorizontal</b>、 <b>wdBorderLeft</b>、 <b>wdBorderRight</b>、 <b>wdBorderTop</b>或<b>wdBorderVertical</b>。 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。 使用<see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" />属性将边框线应用于<b>边框</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AlwaysInFront">
@@ -62,7 +56,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示是否在文档文本之前显示页面边框。</summary>
+        <summary>返回或设置一个值, 该值指示是否在文档文本之前显示页面边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />对象, 表示 Microsoft Word 应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,7 +137,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,11 +165,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，指示在其中创建指定的对象的应用程序。</summary>
+        <summary>返回一个值, 该值指示在其中创建指定对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFrom">
@@ -237,10 +231,8 @@
       <Docs>
         <summary>返回或设置文本与下边框之间的间距 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用此属性与页面边框，可以设置之间的文本和下页面边框或底部页面边框页上的下边缘之间的空间空间。其中距离从取决于的值<see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>对页面边框使用本属性，可以设置之间的文本和底端页面边框或页面的下边缘和底部页面边框之间的空间距离。 从什么位置测量距离取决于<see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />属性值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFromLeft">
@@ -271,10 +263,8 @@
       <Docs>
         <summary>返回或设置文本与左边的框之间的距离 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用此属性与页面边框，可以设置文本与左边的框或页面的左边的缘与左边的框之间的空间之间距离。其中距离从取决于的值<see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>对页面边框使用本属性，可设置文本与左边的框或页面的左边的缘与左边的框的距离之间距离。 从什么位置测量距离取决于<see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />属性值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFromRight">
@@ -305,10 +295,8 @@
       <Docs>
         <summary>返回或设置文本的右边缘与右边框之间的间距 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用此属性与页面边框，可以设置文本与右边框之间的间距或间距页上的右边缘与右边框。其中距离从取决于的值<see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>对页面边框使用本属性，可设置文本与右边框之间的空间或页面的右边缘与右边框之间的间距。 从什么位置测量距离取决于<see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />属性值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFromTop">
@@ -339,10 +327,8 @@
       <Docs>
         <summary>返回或设置文本与上边框之间的间距 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用此属性与页面边框，可以设置之间的文本和位居前列的页面边框或位居前列的页面边框页上的上边缘之间的空间空间。其中距离从取决于的值<see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>将该属性与页边框结合使用，可设置文本与上边框之间的距离，或页面上边缘与上边框之间的距离。 从什么位置测量距离取决于<see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" />属性值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enable">
@@ -371,12 +357,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定对象的格式的边框。</summary>
+        <summary>返回或设置指定对象的边框格式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>或<b>wdUndefined</b> ，如果边框格式应用于指定对象的全部或部分。可设为<b>True</b>、 <b>False</b>，或<see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" />常量。</para>
-          <b>启用</b>的
-          <para>属性应用于指定对象的所有边框。<b>为 true</b> ，则将线条样式设置为默认线条样式并将线条的宽度设置为默认线条宽度。可以使用设置的默认线条样式和线条宽度<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" />和<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" />属性。</para><para>从对象中删除所有边框，请将<b>启用</b>属性设置为<b>False</b>。</para><para>要删除或应用单个边框，请使用<b>边框</b>(<paramref name="index" />)，其中<paramref name="index" />是<see cref="T:Microsoft.Office.Interop.Word.WdBorderType" />常量，以返回一个边框，并将<see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" />属性。</para><para /></remarks>
+        <remarks><para>如果将边框格式应用于指定对象的全部或一部分, 则此属性将返回<b>True</b>或<b>wdUndefined</b> 。 可设置为<b>True</b>、 <b>False</b>或<see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" />常量。</para>
+          <para><b>启用</b> 属性将应用于指定对象的所有边框。 <b>True</b> 将线型设置为默认样式，线条宽度设置为默认线条宽度。 可以使用<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" />和<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" />属性设置默认线条样式和线宽。</para>
+          <para>若要删除对象的所有边框, 请将<b>Enable</b>属性设置为<b>False</b>。</para>
+          <para>若要删除或应用单个边框, 请<b></b>使用边框<paramref name="index" />(), <paramref name="index" />其中是<see cref="T:Microsoft.Office.Interop.Word.WdBorderType" />一个常量, 返回单个边框, 然后设置该<see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" />属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableFirstPageInSection">
@@ -405,7 +392,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示页面边框启用部分的第一页。</summary>
+        <summary>返回或设置一个值, 该值指示是否为节中的第一页启用页面边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -436,7 +423,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示是否为除第一页部分中的所有页面启用页面边框。</summary>
+        <summary>返回或设置一个值, 该值指示是否为节中除第一页之外的所有页启用页面边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -496,7 +483,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，指示是否水平边框可以应用于对象。</summary>
+        <summary>返回一个值, 该值指示是否可以将水平边框应用于对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -524,12 +511,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，指示是否垂直边框可以应用于指定对象。</summary>
+        <summary>返回一个值, 该值指示是否可以将垂直边框应用于指定的对象。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>垂直边框可以应用于包含两个或多个列的表中的单元格区域。</para>
-          <para />
-        </remarks>
+        <remarks><para>垂直边框可以应用于包含两列或多列单元格的表格区域。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideColor">
@@ -558,13 +543,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示内的 24 位颜色边框。</summary>
+        <summary>返回或设置一个值, 该值指示内部边框的24位颜色。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以是任何有效<see cref="T:Microsoft.Office.Interop.Word.WdColor" />常量或 Visual Basic 的 RGB 函数返回的值。</para>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" />属性设置为任一<b>wdLineStyleNone</b>或<b>False</b>，设置该属性不起作用。</para>
-          <para />
-        </remarks>
+        <remarks><para>可以是任何有效<see cref="T:Microsoft.Office.Interop.Word.WdColor" />常量, 也可以是 Visual BASIC 的 RGB 函数返回的值。</para>
+          <para>如果该<see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" />属性设置为<b>wdLineStyleNone</b>或<b>False</b>, 则设置该属性不起作用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideColorIndex">
@@ -595,10 +578,8 @@
       <Docs>
         <summary>返回或设置内部边框。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" />属性设置为任一<b>wdLineStyleNone</b>或<b>False</b>，设置该属性不起作用。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果该<see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" />属性设置为<b>wdLineStyleNone</b>或<b>False</b>, 则设置该属性不起作用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideLineStyle">
@@ -627,14 +608,12 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置为指定的对象的边框。</summary>
+        <summary>返回或设置指定对象的内部边框。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性可以设置为<b>True</b>、 <b>False</b>，或<see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" />常量。如果多台一种类型的边框应用于指定对象，则将返回<b>wdUndefined</b>否则为<b>False</b>或<b>WdLineStyle</b>常数。</para>
+        <remarks><para>此属性可设置为<b>True</b>、 <b>False</b>或<see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" />常量。 如果有多种类型的边框应用于指定的对象, 则该方法返回<b>wdUndefined</b> ; 否则返回 false。否则<b>为 False</b>或<b>WdLineStyle</b>常量。</para>
           <para>
-            <b>True</b>设置的线条样式的默认线条样式和线条宽度设置为默认线条宽度。可以使用设置的默认线条样式和线条宽度<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" />和<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" />属性。</para>
-          <para />
-        </remarks>
+            <b>True</b> 将线型设置为默认样式，线条宽度设置为默认线条宽度。 可以使用<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" />和<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" />属性设置默认线条样式和线宽。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideLineWidth">
@@ -663,12 +642,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLineWidth</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置线条宽度的内部对象的边框。</summary>
+        <summary>返回或设置对象内部边框的线条宽度。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性可以设置为<b>True</b>、 <b>False</b>或之一<see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" />常量。如果对象有多个线宽; 使用的边框内，它会返回<b>wdUndefined</b>否则为<b>False</b>或<b>读</b>写。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性可设置为<b>True</b>、 <b>False</b>或其中一个<see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" />常量。 如果对象具有多个线宽的边框, 则返回<b>wdUndefined</b> ; 否则, 将返回一个值。否则<b>为 False</b>或<b>读写</b>常量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -697,8 +674,8 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdBorderType" />
       </Parameters>
       <Docs>
-        <param name="Index">该表达式返回<see cref="T:Microsoft.Office.Interop.Word.Borders" />对象。</param>
-        <summary>返回一个值，指示是否以便水平边框可以连接到页面边框的则会删除段落和表格的边缘的垂直边框。</summary>
+        <param name="Index">一个返回<see cref="T:Microsoft.Office.Interop.Word.Borders" />对象的表达式。</param>
+        <summary>返回一个值, 该值指示是否删除段落和表边缘的垂直边框以使水平边框能够连接到页面边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -729,7 +706,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示是否以便水平边框可以连接到页面边框的则会删除段落和表格的边缘的垂直边框。</summary>
+        <summary>返回或设置一个值, 该值指示是否删除段落和表格边缘的垂直边框以使水平边框能够连接到页面边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -760,13 +737,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置外部边框的 24 位颜色。</summary>
+        <summary>返回或设置外部边框的24位颜色。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>返回的值可以是任何有效<see cref="T:Microsoft.Office.Interop.Word.WdColor" />常量或 Visual Basic 的 RGB 函数返回的值。</para>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Word.Borders.OutsideLineStyle" />属性设置为任一<b>wdLineStyleNone</b>或<b>False</b>，设置该属性不起作用。</para>
-          <para />
-        </remarks>
+        <remarks><para>返回值可以是任何有效<see cref="T:Microsoft.Office.Interop.Word.WdColor" />常量, 也可以是 Visual BASIC 的 RGB 函数返回的值。</para>
+          <para>如果该<see cref="P:Microsoft.Office.Interop.Word.Borders.OutsideLineStyle" />属性设置为<b>wdLineStyleNone</b>或<b>False</b>, 则设置该属性不起作用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutsideColorIndex">
@@ -797,10 +772,8 @@
       <Docs>
         <summary>返回或设置外部边框的颜色。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Word.Borders.OutsideLineStyle" />属性设置为任一<b>wdLineStyleNone</b>或<b>False</b>，设置该属性不起作用。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果该<see cref="P:Microsoft.Office.Interop.Word.Borders.OutsideLineStyle" />属性设置为<b>wdLineStyleNone</b>或<b>False</b>, 则设置该属性不起作用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutsideLineStyle">
@@ -831,12 +804,10 @@
       <Docs>
         <summary>返回或设置指定对象的外部边框。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性可以设置为<b>True</b>、 <b>False</b>，或<see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" />常量。如果多台一种类型的边框应用于指定对象，则将返回<b>wdUndefined</b>否则为<b>False</b>或<b>WdLineStyle</b>常数。</para>
+        <remarks><para>此属性可设置为<b>True</b>、 <b>False</b>或<see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" />常量。 如果有多种类型的边框应用于指定的对象, 则该方法返回<b>wdUndefined</b> ; 否则返回 false。否则<b>为 False</b>或<b>WdLineStyle</b>常量。</para>
           <para>
-            <b>True</b>设置的线条样式的默认线条样式和线条宽度设置为默认线条宽度。可以使用将设置的默认线条样式和宽度<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" />和<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" />属性。</para>
-          <para />
-        </remarks>
+            <b>True</b> 将线型设置为默认样式，线条宽度设置为默认线条宽度。 可以使用<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" />和<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" />属性设置默认线条样式和宽度。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutsideLineWidth">
@@ -867,10 +838,8 @@
       <Docs>
         <summary>返回或设置对象外部边框的线条宽度。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性可以设置为<b>True</b>、 <b>False</b>，或<see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" />常量。如果对象有外部边框使用多个线宽; 它返回<b>wdUndefined</b>否则为<b>False</b>或<b>读</b>写。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性可设置为<b>True</b>、 <b>False</b>或<see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" />常量。 如果对象具有多个线宽的外部边框, 则返回<b>wdUndefined</b> 。否则<b>为 False</b>或<b>读写</b>常量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -927,7 +896,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示指定的边框的格式设置为带有阴影。</summary>
+        <summary>返回或设置一个值, 该值指示是否将指定边框的格式设置为阴影。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -958,7 +927,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示是否页面边框环绕文档的页脚。</summary>
+        <summary>返回或设置一个值, 该值指示是否页面边框环绕文档页脚。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -989,7 +958,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示是否页面边框环绕在文档的标题。</summary>
+        <summary>返回或设置一个值, 该值指示是否页面边框环绕文档页眉。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="Interior" FullName="Microsoft.Office.Interop.Word.Interior">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fdd19513e9bb7a65e73c523dc7e9cf5aac03313" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667035" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Interior" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9ea9eed597dfec4553e666373b193716a8eb9534" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146673" /></Metadata><TypeSignature Language="C#" Value="public interface Interior" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Interior" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Interior" />
   <TypeSignature Language="VB.NET" Value="Public Interface Interior" />
@@ -53,10 +45,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +77,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置对象的主要颜色。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,11 +108,8 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置内部的颜色。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>颜色为<b>对象</b>设置为当前调色板，索引值或以下项之一指定<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量：</para>
+        <value><b>Object</b></value>
+        <remarks><para>颜色被指定为当前调色板的索引值的<b>对象</b>设置, 或以下<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量之一:</para>
           <list type="bullet">
             <item>
               <para>
@@ -137,8 +122,7 @@
               </para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -164,14 +148,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位<b>整数</b>，它指示在其中创建指定的对象的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中创建的<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD"。 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <summary>返回一个32位整数, 该<b>整数</b>表示在其中创建指定对象的应用程序。 只读。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvertIfNegative">
@@ -200,9 +180,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定当它对应于为负数，Microsoft Word 是否反转对象中的模式。 为可读/写属性。</summary>
-        <value>
-          <b>对象</b>设置为<b>True</b>时，如果模式反转为负，否则为<b>False</b></value>
+        <summary>确定当对象中的模式与一个负数对应时, Microsoft Word 是否反转该模式。 读/写。</summary>
+        <value>如果模式为负时反转, 则<b>对象</b>设置为<b>True</b> , 否则为<b>False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,10 +208,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父对象。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父级。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,10 +239,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>对象</b>，包含<see cref="T:Microsoft.Office.Interop.Word.XlPattern" />常量，代表内部图案。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回或设置一个<b></b>包含<see cref="T:Microsoft.Office.Interop.Word.XlPattern" />常量的对象, 该对象代表内部图案。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,10 +270,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>以 RGB 值返回或设置内部图案的颜色。 为可读/写属性。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>以 RGB 值返回或设置内部图案的颜色。 读/写。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,14 +301,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置内部图案的颜色，作为当前调色板中的索引也可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量： <b>xlColorIndexAutomatic</b>或<b>xlColorIndexNone</b>。 为可读/写属性。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>设置<see cref="P:Microsoft.Office.Interop.Word.Interior.PatternColorIndex" />为<b>xlColorIndexAutomatic</b>可指定图形对象的自动填充样式。将其设置为<b>xlColorIndexNone</b>指定您不希望模式 (这是设置相同<see cref="P:Microsoft.Office.Interop.Word.Interior.Pattern" />到<b>xlPatternNone</b>)。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置内部图案的颜色, 作为当前调色板中的索引, 或以下<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量之一: <b>xlColorIndexAutomatic</b>或<b>xlColorIndexNone</b>。 读/写。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>设置<see cref="P:Microsoft.Office.Interop.Word.Interior.PatternColorIndex" />为<b>xlColorIndexAutomatic</b>以指定图形对象的自动填充样式。 将其设置为<b>xlColorIndexNone</b> , 以指定不需要模式 (这与设置<see cref="P:Microsoft.Office.Interop.Word.Interior.Pattern" />为<b>xlPatternNone</b>的情况相同)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

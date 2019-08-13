@@ -1,13 +1,5 @@
 <Type Name="Source" FullName="Microsoft.Office.Interop.Word.Source">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3dd89d7c9571e46afb64a95b641d68981f2d325d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665792" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Source" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3cf829a261bb8edb3c3588016161838a1205f721" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143971" /></Metadata><TypeSignature Language="C#" Value="public interface Source" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Source" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Source" />
   <TypeSignature Language="VB.NET" Value="Public Interface Source" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>代表单个源，如书籍、杂志文章或采访。</summary>
-    <remarks>
-      <para>有关详细信息，请参阅<a href="HV10118297">处理书目</a></para>
-      <para />
-    </remarks>
+    <remarks><para>有关详细信息, 请参阅使用<a href="HV10118297">书目</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +46,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +74,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>boolean 类型的值</b> ，该值表示是否已在文档中引用源。只读的。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回一个 <b>boolean 类型的值</b> ，该值表示是否已在文档中引用源。 只读。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,16 +102,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建外接程序的应用程序。 <b>Integer</b> 类型，只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
+        <summary>返回一个 32 位整数，它指示在其中创建外接程序的应用程序。 只读 <b>Integer</b>。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注意</b>： 此值也可以由常量<b>wdCreatorCode</b>。</para>
-          <para />
-        </remarks>
+            <b>注意</b>: 此值还可由常量<b>wdcreatorcode 表示</b>表示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -183,15 +165,10 @@
       </Parameters>
       <Docs>
         <param name="Name">指定要为其检索值的域的名称。</param>
-        <summary>
-			返回一个 <b>String</b> 类型的值，该值代表书目源中域的值。只读。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
-        <remarks>
-          <para>字段的名称对应于书目源生成的 XML 中的相应的 XML 元素的名称。您可以使用<see cref="P:Microsoft.Office.Interop.Word.Source.XML" />属性可返回为书目源 XML。有关详细信息，请参阅<a href="HV10118297">处理书目</a></para>
-          <para />
-        </remarks>
+        <summary>返回一个 <b>String</b> 类型的值，该值代表书目源中域的值。 只读。</summary>
+        <value><b>String</b></value>
+        <remarks><para>该域的名称相当于书目源的结果 XML 中相应 XML 元素的名称。 您可以使用<see cref="P:Microsoft.Office.Interop.Word.Source.XML" />属性返回书目源的 XML。 有关详细信息, 请参阅使用<a href="HV10118297">书目</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -217,10 +194,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>对象</b>，代表指定的父对象的<see cref="T:Microsoft.Office.Interop.Word.Source" />对象。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回一个<b>Object</b>类型的对象, 该对象代表指定<see cref="T:Microsoft.Office.Interop.Word.Source" />对象的父对象。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,10 +222,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>字符串</b> ，表示为源的内部标识标签。只读的。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <summary>返回一个 <b>字符串</b> ，表示为源的内部标识标签。 只读的。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,15 +250,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>字符串</b>，表示的 XML 标记<see cref="T:Microsoft.Office.Interop.Word.Source" />对象。 只读。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
-        <remarks>
-          <para>
-            <paramref name="Data" />参数<see cref="M:Microsoft.Office.Interop.Word.Sources.Add(System.String)" />方法<see cref="T:Microsoft.Office.Interop.Word.Sources" />对象需要包含数据的必需元素的有效 XML 字符串。根据您所添加的源的类型，可以更改 XML。 要确定正确的 XML 需要成为特定类型的源，请通过创建源对话框中，创建一个源，然后使用<see cref="P:Microsoft.Office.Interop.Word.Source.XML" />属性返回正确的 XML 语法。</para>
-          <para />
-        </remarks>
+        <summary>返回一个<b>字符串</b>, 表示<see cref="T:Microsoft.Office.Interop.Word.Source" />对象的 XML 标记。 只读。</summary>
+        <value><b>String</b></value>
+        <remarks><para>该<paramref name="Data" /> <see cref="T:Microsoft.Office.Interop.Word.Sources" />对象的<see cref="M:Microsoft.Office.Interop.Word.Sources.Add(System.String)" />方法参数需要一个有效的 XML 字符串, 其中包含必要元素的数据。 根据您添加的源的类型，可以更改 XML。  若要确定特定类型的源是否需要正确的 XML, 请通过 "创建源" 对话框创建一个源, 然后使用该<see cref="P:Microsoft.Office.Interop.Word.Source.XML" />属性返回正确的 XML 语法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

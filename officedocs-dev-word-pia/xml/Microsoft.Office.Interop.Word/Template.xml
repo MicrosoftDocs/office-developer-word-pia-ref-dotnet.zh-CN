@@ -1,13 +1,5 @@
 <Type Name="Template" FullName="Microsoft.Office.Interop.Word.Template">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="534019c643dbd50c521e73ede295686eb260edbc" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665928" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Template" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ab6c90166c80860b2142f0d365e15d418af64385" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143852" /></Metadata><TypeSignature Language="C#" Value="public interface Template" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Template" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Template" />
   <TypeSignature Language="VB.NET" Value="Public Interface Template" />
@@ -27,30 +19,26 @@
   </Attributes>
   <Docs>
     <summary>代表一个文档模板。</summary>
-    <remarks>
-      <para>
-        <b>Template</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.Templates" />集合。<b>Templates</b>集合包含所有可用的<b>模板</b>对象。</para>
-      <para>使用<b>模板</b>(<paramref name="index" />)，其中<paramref name="index" />是将模板名称或索引号，可返回单个<b>Template</b>对象。索引号代表<b>Templates</b>集合中的模板的位置。</para>
-      <para>
-        <b>添加</b>方法不适用于<b>Templates</b>集合。相反，您可以将模板添加到<b>模板</b>集合通过执行以下任一操作：</para>
+    <remarks><para><b>模板</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Templates" />集合的一个成员。 该 <b>模板</b> 集合包括所有可用的 <b>模板</b> 对象。</para>
+      <para>使用<b>模板</b>(<paramref name="index" />) (其中<paramref name="index" />是模板名称或索引号) 可返回单个<b>模板</b>对象。 索引号代表模板的 <b>模板</b> 集合中的位置。</para>
+      <para><b>Add</b> 方法对 <b>Templates</b> 集合无效。 相反，您可以将模板添加到 <b>模板</b> 集合通过执行下列任一操作︰</para>
       <list type="bullet">
         <item>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法<see cref="T:Microsoft.Office.Interop.Word.Documents" />基于模板或模板的集合，以打开文档</para>
+          <para>将<see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法与<see cref="T:Microsoft.Office.Interop.Word.Documents" />集合结合使用, 打开基于模板或模板的文档</para>
         </item>
         <item>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" />基于模板的方法和<b>Documents</b>集合打开一个新文档</para>
+          <para>将<see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" />方法与<b>Documents</b>集合结合使用, 打开基于模板的新文档</para>
         </item>
         <item>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />方法<see cref="T:Microsoft.Office.Interop.Word.AddIns" />集合加载共用模板</para>
+          <para>将<see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />方法与<see cref="T:Microsoft.Office.Interop.Word.AddIns" />集合结合使用以加载全局模板</para>
         </item>
         <item>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" />属性与<see cref="T:Microsoft.Office.Interop.Word.Document" />对象将模板附加到文档</para>
+          <para>将<see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" />属性与<see cref="T:Microsoft.Office.Interop.Word.Document" />对象结合使用以将模板附加到文档</para>
         </item>
       </list>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" />属性可返回 template 对象的引用 Normal 模板。使用<see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" />属性可返回该模板附加到指定的文档。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" />属性可返回或设置用户或工作组模板 （即，要存储这些模板的文件夹） 的位置。</para>
-      <para />
-    </remarks>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" />属性可返回一个代表 Normal 模板的模板对象。 使用<see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" />属性返回附加到指定文档的模板。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" />属性可返回或设置用户或工作组模板的位置 (即您要在其中存储这些模板的文件夹)。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -76,7 +64,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,7 +95,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoTextEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" />集合，代表指定的模板中的所有自动图文集条目。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" />集合, 该集合代表指定模板中的所有 "自动图文集" 词条。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,10 +123,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集合，代表模板中的构建基块条目的集合。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集合, 该集合代表模板中构建基块条目的集合。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,10 +151,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />集合，代表模板中包含的构建基块类型的集合。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />集合, 该集合代表模板中包含的构建基块类型的集合。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,14 +179,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.DocumentProperties" />代表指定文档的所有内置文档属性的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Core.DocumentProperties" />集合, 该集合代表指定文档的所有内置文档属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要返回单个<see cref="T:Microsoft.Office.Core.DocumentProperty" />对象，表示特定的内置文档属性，使用<b>BuiltinDocumentProperties</b>(<paramref name="index" />)，其中<paramref name="index" />是<see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" />常量。</para>
-          <para>如果 Microsoft Word 没有定义某个内置文档属性，值读取<see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" />文档属性的属性将生成一个错误。</para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" />属性可以返回自定义文档属性的集合。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要返回代表<see cref="T:Microsoft.Office.Core.DocumentProperty" />特定内置文档属性的单个对象, 请使用<b>BuiltinDocumentProperties</b>(<paramref name="index" />), 其中<paramref name="index" />是一个<see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" />常量。</para>
+          <para>如果 Microsoft Word 没有定义某个内置文档属性的值, 则读取该文档属性的属性<see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" />将生成错误。</para>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" />属性返回自定义文档属性的集合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -230,9 +212,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDocumentProperties">
@@ -258,12 +240,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.DocumentProperties" />值，该值代表指定文档的所有自定义文档属性的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Core.DocumentProperties" />集合, 该集合代表指定文档的所有自定义文档属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" />属性可返回内置文档属性的集合。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" />属性可返回内置文档属性的集合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FarEastLineBreakLanguage">
@@ -294,9 +274,8 @@
       <Docs>
         <summary>返回或设置在指定的文档或模板中换行文本时使用的东亚语言。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID" />可以是下列<b>WdFarEastLineBreakLanguageID</b>常量之一：</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID" />可以是下列<b>WdFarEastLineBreakLanguageID</b>常量之一:</para>
           <para>
             <b>wdLineBreakJapanese</b>
           </para>
@@ -309,8 +288,7 @@
           <para>
             <b>wdLineBreakTraditionalChinese</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FarEastLineBreakLevel">
@@ -341,10 +319,9 @@
       <Docs>
         <summary>返回或设置指定文档的行中断控制级别。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果此属性，则忽略<see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" />属性设置为<b>False</b>。</para>
+        <remarks><para>如果将该<see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" />属性设置为<b>False</b>, 则忽略此属性。</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" />可以是下列<b>WdFarEastLineBreakLevel</b>常量之一：</para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" />可以是下列<b>WdFarEastLineBreakLevel</b>常量之一:</para>
           <para>
             <b>wdFarEastLineBreakLevelCustom</b>
           </para>
@@ -354,8 +331,7 @@
           <para>
             <b>wdFarEastLineBreakLevelStrict</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -383,10 +359,8 @@
       <Docs>
         <summary>指定模板的名称，其中包含驱动器或 Web 路径。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用此属性等效于使用<see cref="P:Microsoft.Office.Interop.Word.Template.Path" />， <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />，和<see cref="P:Microsoft.Office.Interop.Word.Template.Name" />序列中的属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用此属性等效于在序列中<see cref="P:Microsoft.Office.Interop.Word.Template.Path" />使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />、和<see cref="P:Microsoft.Office.Interop.Word.Template.Name" />属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="JustificationMode">
@@ -417,9 +391,8 @@
       <Docs>
         <summary>返回或设置指定模板的字符间距调整。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdJustificationMode" />可以是下列<b>WdJustificationMode</b>常量之一：</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdJustificationMode" />可以是下列<b>wdjustificationmode 类型</b>常量之一:</para>
           <para>
             <b>wdJustificationModeCompress</b>
           </para>
@@ -429,8 +402,7 @@
           <para>
             <b>wdJustificationModeExpand</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KerningByAlgorithm">
@@ -459,8 +431,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果 Microsoft Word kerns 半角拉丁文字符和指定文档中的标点符号。</summary>
+        <summary><b>如此</b> 如果 Microsoft Word kerns 半角拉丁文字符和指定文档中的标点符号。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -493,12 +464,9 @@
       <Docs>
         <summary>返回或设置指定对象的语言。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量。</para>
-          <para>
-            <b>WdLanguageID</b>常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一。</para>
+          <para>某些<b>WdLanguageID</b>常量可能不可用, 具体取决于您选择或安装的语言支持 (例如, 美国英语)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -529,11 +497,9 @@
       <Docs>
         <summary>返回或设置指定对象的东亚语言。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量。</para>
-          <para>这是建议的方式，可返回或设置 Microsoft Word 东亚版中创建的文档中的东亚文字的语言。</para>
-          <para />
-        </remarks>
+        <remarks><para>可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一。</para>
+          <para>推荐使用本方法，来返回或设置用 Microsoft Word 中文版创建的文档中东亚文字的语言。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListTemplates">
@@ -559,7 +525,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />指定模板的集合，代表所有列表格式。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />集合, 该集合代表指定模板的所有列表格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -680,8 +646,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果拼写和语法检查程序忽略基于此模板的文档。</summary>
+        <summary><b>如此</b> 如果拼写和语法检查程序忽略基于此模板的文档。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -707,12 +672,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>打开指定的模板作为文档，并返回<see cref="T:Microsoft.Office.Interop.Word.Document" />对象。</summary>
+        <summary>将指定的模板作为文档打开, 并返回<see cref="T:Microsoft.Office.Interop.Word.Document" />一个对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>打开模板作为文档允许用户编辑的模板内容。这可能是必要如果属性或方法 (<see cref="P:Microsoft.Office.Interop.Word._Document.Styles" />属性，例如) 不可用从<see cref="T:Microsoft.Office.Interop.Word.Template" />对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>打开一个文档作为模板允许用户编辑该模板的内容。 如果属性或方法 (例如, <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" />属性) 在<see cref="T:Microsoft.Office.Interop.Word.Template" />对象中不可用, 则可能需要执行此步骤。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -768,12 +731,10 @@
       <Docs>
         <summary>返回指定对象的磁盘或 Web 路径。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>路径中不包括尾随字符-例如，"C:\MSOffice"或"http://MyServer"。使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />属性添加文件夹和驱动器号的分隔符。使用<see cref="P:Microsoft.Office.Interop.Word.Template.Name" />属性返回的文件名不的路径和使用<see cref="P:Microsoft.Office.Interop.Word.Template.FullName" />属性一起返回文件名和路径。</para>
+        <remarks><para>路径中不包括尾随字符   例如，"C:\MSOffice"或"http://MyServer"。 使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />属性添加用于分隔文件夹和驱动器号的字符。 使用<see cref="P:Microsoft.Office.Interop.Word.Template.Name" />属性返回不带路径的文件名, 并使用<see cref="P:Microsoft.Office.Interop.Word.Template.FullName" />属性将文件名和路径同时返回。</para>
           <para>
-            <b>注意</b>，您可以使用<b>PathSeparator</b>属性建立 Web 地址，即使它们包含正斜杠 （/） 和<b>PathSeparator</b>属性默认为反斜杠 (\)。</para>
-          <para />
-        </remarks>
+            <b>注释</b> 您可以使用<b>PathSeparator</b>属性来构建 Web 地址, 即使它们包含正斜杠 (/), 并且<b>PathSeparator</b>属性默认为反斜杠 (\)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -798,10 +759,8 @@
       <Parameters />
       <Docs>
         <summary>保存指定的文档或模板。</summary>
-        <remarks>
-          <para>如果文档或模板、 但尚未保存之前，另存为对话框将提示用户输入文件名。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果之前未保存过该文档或模板, 则 "另存为" 对话框将提示用户输入文件名。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Saved">
@@ -830,8 +789,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果指定的文档或模板自上次保存以来未更改。 <b>假</b> 如果 Microsoft Word 显示文档关闭时保存更改的提示。</summary>
+        <summary><b>如此</b>如果指定的文档或模板自上次保存以来尚未更改。 <b>假</b> 如果 Microsoft Word 显示文档关闭时保存更改的提示。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -861,9 +819,8 @@
       <Docs>
         <summary>返回模板的类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />可以是下列<b>WdTemplateType</b>常量之一：</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />可以是下列<b>WdTemplateType</b>常量之一:</para>
           <para>
             <b>wdAttachedTemplate</b>
           </para>
@@ -873,8 +830,7 @@
           <para>
             <b>wdNormalTemplate</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VBProject">
@@ -902,11 +858,9 @@
       <Docs>
         <summary>返回指定模板的 <b>VBProject</b> 对象。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用此属性可访问代码模块和用户窗体。</para>
-          <para>对象浏览器中查看的<b>VBProject</b>对象，您必须选择 Microsoft Visual Basic for Applications 扩展性 （工具菜单） 中的引用对话框中的复选框在 Visual Basic 编辑器。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用该属性可访问代码模块和用户窗体。</para>
+          <para>若要在对象浏览器中查看<b>VBProject</b>对象, 必须在 Visual Basic 编辑器中的 "引用" 对话框 ("工具" 菜单) 中选中 "Microsoft Visual Basic For Applications 扩展" 复选框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

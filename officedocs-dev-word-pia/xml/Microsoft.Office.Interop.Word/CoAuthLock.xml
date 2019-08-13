@@ -1,13 +1,5 @@
 <Type Name="CoAuthLock" FullName="Microsoft.Office.Interop.Word.CoAuthLock">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="60e38fdacba2a46adfe9f5062c855a6e94317926" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667209" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthLock" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6aaadd2e6d6106e1de5d69cd13baf0beed987346" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142234" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthLock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthLock" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthLock" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthLock" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示文档中的锁定。 <b>CoAuthLock</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />集合。</summary>
-    <remarks>
-      <para>只读的。使用<b>锁定</b>(<paramref name="index" />)，其中<paramref name="index" />是可返回一个<b>CoAuthLock</b>对象的索引号。添加一个<b>CoAuthLock</b>对象时, 使用<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />枚举指定锁定的类型。</para>
-      <para />
-    </remarks>
+    <summary>表示文档中的锁定。 <b>CoAuthLock</b>对象是<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />集合的一个成员。</summary>
+    <remarks><para>只读。 使用<b>锁</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回一个<b>CoAuthLock</b>对象。 添加<b>CoAuthLock</b>对象时, 请使用<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />枚举指定锁定的类型。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,12 +46,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.Application" />对象。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.Application" /> Microsoft Word 应用程序的对象。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Application" /> 对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -87,12 +75,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个指示在其中创建指定的对象的应用程序的 32 位整数。</summary>
-        <value>指示在其中创建指定的对象的应用程序。</value>
-        <remarks>
-          <para>只读的<b>long</b>。如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此属性主要旨在用于 Apple Macintosh 上，其中每个应用程序具有四个字符的创建者代码。例如，Word 有 MSWD 的创建者代码。</para>
-          <para />
-        </remarks>
+        <summary>获取一个32位整数, 该整数指示在其中创建指定对象的应用程序。</summary>
+        <value>指示在其中创建指定对象的应用程序。</value>
+        <remarks><para><b>Long 类型</b>, 只读。 如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderFooter">
@@ -118,13 +104,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取锁定是否在文档的页眉页脚锁定。</summary>
-        <value>
-          <b>true</b>如果锁定文档的页眉页脚锁定否则为<b>false</b>。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取一个指示锁是否为文档的页眉/页脚锁。</summary>
+        <value>如果锁定是文档的页眉/页脚锁定, 则为<b>true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -150,9 +133,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<b>CoAuthor</b>拥有指定锁的锁定。</summary>
-        <value>
-          <b>CoAuthor</b>拥有指定锁的锁定。</value>
+        <summary>获取拥有指定锁定的<b>CoAuthor</b> 。</summary>
+        <value>拥有指定锁定的<b>CoAuthor</b> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,9 +161,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:System.Object" />，表示指定的父对象<see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />对象。</summary>
-        <value>
-          <see cref="T:System.Object" /> ，表示指定的父对象<see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />对象。</value>
+        <summary>获取一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />对象的父对象的。</summary>
+        <value>一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />对象的父对象的。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,12 +189,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 该对象代表指定对象中包含的文档部分。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示指定对象中包含的文档部分。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -239,8 +218,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />指定锁定类型的常量。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />指定锁定类型的常量。</value>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />常量, 该常量指定锁定类型。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />指定锁定类型的常量。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,10 +245,8 @@
       <Parameters />
       <Docs>
         <summary>解除对指定锁的锁定。</summary>
-        <remarks>
-          <para>此方法解除对指定锁的锁定，即使它属于当前以外的用户。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法解锁指定的锁定, 即使它属于当前用户之外的其他用户也是如此。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

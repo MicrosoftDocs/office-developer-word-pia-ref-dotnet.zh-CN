@@ -1,13 +1,5 @@
 <Type Name="XMLNodes" FullName="Microsoft.Office.Interop.Word.XMLNodes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ca593505e7b34c3c76616e23b1644ee18df222d3" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666982" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLNodes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1bb0a31f85f85e8cdffe7c844d4d494ab8d5858b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142624" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNodes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNodes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNodes&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象，代表在树视图中的 XML 结构任务窗格中，指示用户已应用于文档的元素节点。</summary>
-    <remarks>
-      <para>在树视图中的每个节点的<b>XMLNode</b>对象的实例。在树视图中的层次结构表明是否节点包含子节点。</para>
-      <para>您可以返回一个<b>XMLNodes</b>集合的选定内容、 范围或整个文档。<b>XMLNode</b>对象<b>XMLNodes</b>集合中的显示的顺序为其开始或结束标记内指定的选定内容、 范围或文档中的显示的顺序。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" />要返回的单个<b>XMLNode</b>对象的<b>XMLNodes</b>集合的属性。使用<see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" />方法，以验证是否有效根据所应用的架构的 XML 元素以及任何必需的子元素存在且需要顺序。一旦您运行<b>Validate</b>方法，请使用<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />要验证是否有效元素属性和<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />属性来显示给用户，用户需要修复才能使 XML 文档中的一条消息符合 XML 架构 rules。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" />方法将一个 XML 元素添加到选定内容、 范围或文档。</para>
-      <para>中由于 XML 区分大小写，键入 XML 元素作为<paramref name="Name" />的<b>Add</b>方法的参数必须完全按照它显示在引用中的架构键入<paramref name="Namespace" />参数。</para>
-      <para />
-    </remarks>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象的集合, 该集合代表 "XML 结构" 任务窗格的树视图中的节点, 这些节点指示用户已应用于文档的元素。</summary>
+    <remarks><para>树视图中的每个节点都是 <b>XMLNode</b> 对象的一个实例。 树视图的层次结构表明节点是否包含子节点。</para>
+      <para>您可以返回所选内容、范围或整个文档的<b>XMLNodes</b>集合。 <b>XMLNode</b> 对象显示在 <b>XMLNodes</b> 集合顺序是开始或结束标记中指定的选定内容、 范围或文档中的显示的顺序相同。</para>
+      <para>使用 XMLNodes <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" />集合的属性<b></b>返回单个<b>XMLNode</b>对象。 使用<see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" />方法来验证 XML 元素是否有效, 具体取决于所应用的架构以及任何必需的子元素是否存在并按所需顺序排列。 在运行<b>Validate</b>方法后, 使用<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />属性来验证元素是否有效, 以及<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />是否向用户显示一条消息, 以使文档中的 xml 符合 xml 架构规则的用户需要解决的问题。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" />方法可将 XML 元素添加到所选内容、范围或文档中。</para>
+      <para>由于 XML 区分大小写, 因此在<paramref name="Name" /> <b>Add</b>方法的参数中键入的 XML 元素必须完全按照在<paramref name="Namespace" />参数中所引用的架构中显示的类型键入。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -99,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,7 +117,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中获取项的数目。</summary>
+        <summary>获取指定集合中项的数目。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,11 +145,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个指示在其中创建指定的对象的应用程序的 32 位整数。</summary>
+        <summary>获取一个32位整数, 该整数指示在其中创建指定对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -220,8 +210,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>对象</b>，它指示的序号位置或一个字符串，表示单个对象的名称。</param>
+        <param name="Index">一个指示序号位置的<b>对象</b>, 或表示单个对象的名称的字符串。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

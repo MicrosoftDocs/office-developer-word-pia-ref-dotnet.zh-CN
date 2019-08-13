@@ -1,13 +1,5 @@
 <Type Name="StyleSheet" FullName="Microsoft.Office.Interop.Word.StyleSheet">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="72919b7cdf16361f5caf5cd5a9ed121ce0c8383c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666539" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface StyleSheet" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e2da0d0a53e0f2e767486bea8385d1ef59128f2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143943" /></Metadata><TypeSignature Language="C#" Value="public interface StyleSheet" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StyleSheet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.StyleSheet" />
   <TypeSignature Language="VB.NET" Value="Public Interface StyleSheet" />
@@ -26,15 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表附加到 web 文档的单独的级联样式表。</summary>
-    <remarks>
-      <para>
-        <b>StyleSheet</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.StyleSheets" />集合。<b>StyleSheets</b>集合包含所有级联样式表附加到指定文档。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.StyleSheets.Item(System.Object@)" />属性或<b>样式表</b>(<paramref name="index" />)，其中<paramref name="index" />是名称或的样式表， <b>StyleSheets</b>集合返回一个<b>StyleSheet</b>对象的数目。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Index" />属性可以确定级联样式表的优先级。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.StyleSheet.Move(Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" />方法重新排序的优先级附加样式表。</para>
-      <para />
-    </remarks>
+    <summary>代表附加到 web 文档的单个级联样式表。</summary>
+    <remarks><para><b>样式表</b>对象是<see cref="T:Microsoft.Office.Interop.Word.StyleSheets" />集合的一个成员。 <b>样式表</b> 集合中包含所有的级联样式表附加到指定文档。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.StyleSheets.Item(System.Object@)" />使用属性或样式<b></b>表集合<paramref name="index" />(其中<paramref name="index" />是样式表的名称或编号), 以返回<b>StyleSheet</b>对象<b></b>的样式表集合。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Index" />属性来确定级联样式表的优先级。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.StyleSheet.Move(Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" />方法对附加样式表的优先级进行重新排序。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,9 +79,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -116,7 +105,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,10 +134,8 @@
       <Docs>
         <summary>指定级联样式表，其中包含驱动器或 Web 路径的名称。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用此属性等效于使用<see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Path" />， <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />，和<see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" />序列中的属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用此属性等效于在序列中<see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Path" />使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />、和<see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" />属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -174,7 +161,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>值，该值代表集合中的项目的位置。</summary>
+        <summary>返回一个<b>Integer</b>类型的值, 该值代表项目在集合中的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,7 +189,7 @@
         <Parameter Name="Precedence" Type="Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />
       </Parameters>
       <Docs>
-        <param name="Precedence">所需<see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />。 优先级别。 可以是下列 WdStyleSheetPrecedence 常量之一：<b>wdStyleSheetPrecedenceHigher</b><b>wdStyleSheetPrecedenceHighest</b><b>wdStyleSheetPrecedenceLower</b><b>wdStyleSheetPrecedenceLowest</b></param>
+        <param name="Precedence">必需<see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />。 优先级别。 可以是下列 WdStyleSheetPrecedence 常量之一:<b>wdStyleSheetPrecedenceHigher</b><b>wdStyleSheetPrecedenceHighest</b><b>wdStyleSheetPrecedenceLower</b><b>wdStyleSheetPrecedenceLowest</b></param>
         <summary>移动样式表的优先顺序。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -288,12 +275,10 @@
       <Docs>
         <summary>返回指定对象的磁盘或 Web 路径。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>路径中不包括尾随字符-例如，"C:\MSOffice"或"http://MyServer"。使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />属性添加文件夹和驱动器号的分隔符。使用<see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" />属性返回的文件名不的路径和使用<see cref="P:Microsoft.Office.Interop.Word.StyleSheet.FullName" />属性一起返回文件名和路径。</para>
+        <remarks><para>路径中不包括尾随字符   例如，"C:\MSOffice"或"http://MyServer"。 使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />属性添加用于分隔文件夹和驱动器号的字符。 使用<see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" />属性返回不带路径的文件名, 并使用<see cref="P:Microsoft.Office.Interop.Word.StyleSheet.FullName" />属性将文件名和路径同时返回。</para>
           <para>
-            <b>注意</b>，您可以使用<b>PathSeparator</b>属性建立 Web 地址，即使它们包含正斜杠 （/） 和<b>PathSeparator</b>属性默认为反斜杠 (\)。</para>
-          <para />
-        </remarks>
+            <b>注释</b> 您可以使用<b>PathSeparator</b>属性来构建 Web 地址, 即使它们包含正斜杠 (/), 并且<b>PathSeparator</b>属性默认为反斜杠 (\)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -322,7 +307,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个表示 Web 样式表的标题的<b>字符串</b>。</summary>
+        <summary>返回一个<b>字符串</b>, 表示 Web 样式表的标题。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -355,9 +340,8 @@
       <Docs>
         <summary>返回模板的类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />.can 是以下常量之一：</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />。可以是下列常量之一:</para>
           <para>
             <b>wdAttachedTemplate</b>
           </para>
@@ -367,8 +351,7 @@
           <para>
             <b>wdNormalTemplate</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

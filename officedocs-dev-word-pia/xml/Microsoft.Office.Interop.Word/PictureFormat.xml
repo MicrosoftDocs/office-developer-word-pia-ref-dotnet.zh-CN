@@ -1,13 +1,5 @@
 <Type Name="PictureFormat" FullName="Microsoft.Office.Interop.Word.PictureFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7533126a34adfedd4e31baade1a3e4d7b7ecdbc5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666337" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PictureFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="47daacc6dd5e59ccb2bda07ea680b3bf997208f5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144181" /></Metadata><TypeSignature Language="C#" Value="public interface PictureFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PictureFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PictureFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface PictureFormat" />
@@ -27,12 +19,9 @@
   </Attributes>
   <Docs>
     <summary>包含应用于图片和 OLE 对象的属性和方法。</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" />对象包含属性和方法应用于链接 OLE 对象。<see cref="T:Microsoft.Office.Interop.Word.OLEFormat" />对象包含属性和方法应用于 OLE 对象是否它们的链接。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.PictureFormat" />属性可返回<b>PictureFormat</b>对象。</para>
-      <para />
-    </remarks>
+    <remarks><para><see cref="T:Microsoft.Office.Interop.Word.LinkFormat" />对象包含的属性和方法仅应用于链接的 OLE 对象。 该<see cref="T:Microsoft.Office.Interop.Word.OLEFormat" />对象包含应用于 OLE 对象的属性和方法, 无论它们是否链接在一起。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.PictureFormat" />属性返回一个<b>PictureFormat</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,9 +170,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Crop">
@@ -212,12 +201,10 @@
         <ReturnType>Microsoft.Office.Core.Crop</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置<see cref="T:Microsoft.Office.Core.Crop" />对象，表示图像裁剪。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.Crop" />对象，表示图像裁剪。</value>
-        <remarks>
-          <para>读/写。设置该属性具有相同的效果 Word 2010Options 对话框中下拉列表中选择一项 (高级选项卡上，编辑选项、 更新样式以匹配所选内容:。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置一个<see cref="T:Microsoft.Office.Core.Crop" />代表图像裁剪的对象。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Core.Crop" />代表图像裁剪的对象。</value>
+        <remarks><para>读/写。 设置该属性与在 "Word 2010Options" 对话框 ("高级" 选项卡, "编辑选项", "更新样式以匹配所选内容" 样式) 中的下拉列表中选择一个项目的效果相同:。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropBottom">
@@ -248,10 +235,8 @@
       <Docs>
         <summary>返回或设置从指定图片或 OLE 对象的底部裁剪下的磅值。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>裁剪尺寸是相对于图片的原始尺寸计算。例如，如果插入最初为 100 磅的图片，将其高度调整为 200 磅，并且然后将<b>CropBottom</b>属性设置为 50，100 磅 (而不是 50) 将裁剪图片底部。</para>
-          <para />
-        </remarks>
+        <remarks><para>裁剪以相对于图片的原始尺寸计算。 例如, 如果插入的图片最初为100磅, 将其高度调整为200磅, 然后将<b>CropBottom</b>属性设置为 50, 100 磅 (而不是 50) 将从图片底部裁剪。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropLeft">
@@ -282,10 +267,8 @@
       <Docs>
         <summary>返回或设置指定的图片或 OLE 对象的左边裁剪的磅数。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>裁剪尺寸是相对于图片的原始尺寸计算。例如，如果插入为 100 磅宽的图片，将其高度调整为 200 磅宽，并且然后将<b>CropLeft</b>属性设置为 50，100 磅 (而不是 50) 将裁剪图片的左边界。</para>
-          <para />
-        </remarks>
+        <remarks><para>裁剪以相对于图片的原始尺寸计算。 例如, 如果插入的图片原来为100磅宽, 将其宽度调整为200磅宽, 然后将<b>CropLeft</b>属性设置为 50, 100 磅 (而不是 50) 将从图片左侧裁剪。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropRight">
@@ -316,10 +299,8 @@
       <Docs>
         <summary>返回或设置从指定的图片或 OLE 对象的右边裁剪的磅数。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>裁剪尺寸是相对于图片的原始尺寸计算。例如，如果插入为 100 磅宽的图片，将其高度调整为 200 磅宽，并且然后将<b>CropRight</b>属性设置为 50，100 磅 (而不是 50) 将裁剪图片的右侧。</para>
-          <para />
-        </remarks>
+        <remarks><para>裁剪以相对于图片的原始尺寸计算。 例如, 如果插入的图片原来为100磅宽, 将其宽度调整为200磅宽, 然后将<b>CropRight</b>属性设置为 50, 100 磅 (而不是 50) 将从图片右侧裁剪。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropTop">
@@ -350,10 +331,8 @@
       <Docs>
         <summary>返回或设置从指定的图片或 OLE 对象的顶部裁剪的磅数。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>裁剪尺寸是相对于图片的原始尺寸计算。例如，如果插入最初为 100 磅的图片，将其高度调整为 200 磅，并且然后将<b>CropTop</b>属性设置为 50，100 磅 (而不是 50) 将裁剪图片顶部。</para>
-          <para />
-        </remarks>
+        <remarks><para>裁剪以相对于图片的原始尺寸计算。 例如, 如果插入的图片最初为100磅, 将其高度调整为200磅, 然后将<b>CropTop</b>属性设置为 50, 100 磅 (而不是 50) 将从图片顶部裁掉。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementBrightness">
@@ -379,13 +358,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>必选。</b> 指定量更改图片的 <b>亮度</b> 属性的值。 正值使图片更亮;使用负值可使图片变暗。</param>
+        <param name="Increment">必需<b>Single</b>。 指定量更改图片的 <b>亮度</b> 属性的值。 正值使图片更亮;使用负值可使图片变暗。</param>
         <summary>按指定数值改变图片亮度。 使用<see cref="P:Microsoft.Office.Interop.Word.PictureFormat.Brightness" />属性可设置图片的绝对亮度。</summary>
-        <remarks>
-          <para>您不能调整以前<b>Brightness</b>属性的上半部分还是下半限制图片的亮度。例如，如果<b>Brightness</b>属性最初设置为 0.9 和指定为 0.3<paramref name="Increment" />参数，将生成的亮度级别将 1.0，即<b>Brightness</b>属性，而不是 1.2 上限。</para>
-          <para />
-        </remarks>
+        <remarks><para>您不能调整 <b>亮度</b> 属性值的上下界图片的亮度。 例如, 如果<b>亮度</b>属性最初设置为 0.9, 并且您为<paramref name="Increment" />参数指定 0.3, 则生成的亮度级别将为 1.0, 这是<b>亮度</b>属性的上限, 而不是1.2。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementContrast">
@@ -411,13 +387,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>必选。</b> 指定量更改图片的 <b>对比度</b> 属性的值。 正值会增加对比度。</param>
+        <param name="Increment">必需<b>Single</b>。 指定量更改图片的 <b>对比度</b> 属性的值。 正值会增加对比度。</param>
         <summary>按指定值改变图片的对比度。 使用<see cref="P:Microsoft.Office.Interop.Word.PictureFormat.Contrast" />属性设置图片的绝对对比度。</summary>
-        <remarks>
-          <para>您不能调整以前<b>Contrast</b>属性的上半部分还是下半限制图片的对比度。例如，如果<b>Contrast</b>属性最初设置为 0.9 和指定为 0.3<paramref name="Increment" />参数，生成的对比度级别将 1.0，即<b>对比度</b>属性，而不是 1.2 上限。</para>
-          <para />
-        </remarks>
+        <remarks><para>您不能调整 <b>对比度</b> 属性值的上限或下限界图片的对比度。 例如, 如果将<b>对比度</b>属性最初设置为 0.9, 并为<paramref name="Increment" />参数指定 0.3, 则生成的对比度级别将为 1.0, 即<b>对比度</b>属性的上限, 而不是1.2。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -476,9 +449,9 @@
       <Docs>
         <summary>返回或设置指定图片的透明色，以红-绿-蓝 (RGB) 值。 仅应用于位图。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性才会生效，<see cref="P:Microsoft.Office.Interop.Word.PictureFormat.TransparentBackground" />属性必须设置为<b>True</b>。</para>如果您想要将能够看到通过一直到图片后的对象的图片的透明部分
-          <para>，必须设置<see cref="P:Microsoft.Office.Interop.Word.FillFormat.Visible" />属性的图片的<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />对象为<b>False</b>。如果您的图片具有透明色和图片的<b>FillFormat</b>对象的<b>Visible</b>属性设置为<b>True</b>，将图片填充都将看到通过透明色，但将遮盖图片后面的对象。</para><para /></remarks>
+        <remarks><para>若要使此属性生效, 该<see cref="P:Microsoft.Office.Interop.Word.PictureFormat.TransparentBackground" />属性必须设置为<b>True</b>。</para>
+          <para>如果您希望能够透过图片的透明部分查看图片后面的对象, 则必须将图片<see cref="P:Microsoft.Office.Interop.Word.FillFormat.Visible" /> <see cref="T:Microsoft.Office.Interop.Word.FillFormat" />对象的属性设置为<b>False</b>。 如果图片具有透明色 <b>的图片对象</b> 的 <b>Visible</b> 属性设置为 <b>True</b> ，将透过透明的颜色，看到图片的填充，但被遮盖的图片后面的对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TransparentBackground">
@@ -507,14 +480,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b> 如果图片使用透明色定义的部分实际上看似透明。 仅应用于位图。</summary>
+        <summary><b>MsoTrue</b> 如果图片使用透明色定义的部分实际上看似透明。 仅应用于位图。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.PictureFormat.TransparencyColor" />属性可设置透明色。</para>
-          <para>如果您想要将能够看到通过一直到图片后的对象的图片的透明部件，必须设置<see cref="P:Microsoft.Office.Interop.Word.FillFormat.Visible" />属性的图片的<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />对象为<b>False</b>。如果您的图片具有透明色和图片的<b>FillFormat</b>对象的<b>Visible</b>属性设置为<b>True</b>，将图片填充都将看到通过透明色，但将遮盖图片后面的对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.PictureFormat.TransparencyColor" />属性设置透明色。 </para>
+          <para>如果您希望能够透过图片的透明部分查看图片后面的对象, 则必须将图片<see cref="P:Microsoft.Office.Interop.Word.FillFormat.Visible" /> <see cref="T:Microsoft.Office.Interop.Word.FillFormat" />对象的属性设置为<b>False</b>。 如果图片具有透明色 <b>的图片对象</b> 的 <b>Visible</b> 属性设置为 <b>True</b> ，将透过透明的颜色，看到图片的填充，但被遮盖的图片后面的对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

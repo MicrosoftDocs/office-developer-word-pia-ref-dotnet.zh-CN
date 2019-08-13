@@ -1,13 +1,5 @@
 <Type Name="WebOptions" FullName="Microsoft.Office.Interop.Word.WebOptions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0dd920613af1fb3693498c891ecd9ed8d8ff5348" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665578" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface WebOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f88f221df7d67e0a725679f57bd1b9a883ba6147" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142729" /></Metadata><TypeSignature Language="C#" Value="public interface WebOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WebOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.WebOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface WebOptions" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>包含在将文档另存为网页或打开网页时 Microsoft Word 所使用的文档级属性。</summary>
-    <remarks>
-      <para>您可以返回或设置应用程序 （全局） 级别或在文档级别的属性。请注意，属性值可以是不同到另一个文档，具体取决于属性值时保存文档。）将文档级属性设置将会覆盖应用程序级属性设置。应用程序级属性包含在<see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" />对象。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.WebOptions" />属性可返回的<b>WebOptions</b>对象。</para>
-      <para />
-    </remarks>
+    <remarks><para>您可以在应用程序（全局）级返回或设置属性，也可以在文档级返回或设置。 (请注意, 每个文档的属性值可能不同, 具体取决于保存文档时的属性值。)文档级属性设置将覆盖应用程序级别的属性设置。 应用程序级属性包含在<see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" />对象中。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.WebOptions" />属性返回<b>WebOptions</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowPNG">
@@ -60,13 +50,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果在将文档保存为 Web 页时，允许将 PNG (可移植网络图形) 作为图像格式。 <b>假</b> 如果不允许将 PNG 作为输出格式。 默认值为 <b>False</b> 。</summary>
+        <summary><b>如此</b> 如果在将文档保存为 Web 页时，允许将 PNG (可移植网络图形) 作为图像格式。 <b>假</b> 如果不允许将 PNG 作为输出格式。 默认值为 <b>False</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果您保存为 PNG 格式图像和您的目标 Web 浏览器支持 PNG 格式，可能会提高图像的质量或减少图像文件的大小并因此减少下载时间。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果以 PNG 格式保存图像，并且所用的 Web 浏览器支持 PNG 格式，则有可能提高图像的质量或者减小这些图像文件的大小，从而减少下载时间。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -92,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,23 +110,21 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdBrowserLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个常量，代表要在其目标指定的网页的 Web 浏览器的级别。</summary>
+        <summary>返回或设置一个常量, 表示要在其上定位指定网页的 Web 浏览器的级别。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果此属性，则忽略<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OptimizeForBrowser" />属性设置为<b>False</b>。</para>
+        <remarks><para>如果将该<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OptimizeForBrowser" />属性设置为<b>False</b>, 则忽略此属性。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdBrowserLevel" />可以是下列<b>WdBrowserLevel</b>常量之一： </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdBrowserLevel" />可以是下列<b>WdBrowserLevel</b>常量之一: </para>
           <para>
-            <b>wdBrowserLevelMicrosoftInternetExplorer6 </b>
+            <b>wdBrowserLevelMicrosoftInternetExplorer6</b>
           </para>
           <para>
-            <b>wdBrowserLevelMicrosoftInternetExplorer5 </b>
+            <b>wdBrowserLevelMicrosoftInternetExplorer5</b>
           </para>
           <para>
             <b>wdBrowserLevelV4</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -167,9 +152,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -226,86 +211,85 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 Microsoft Word 使用时将文档保存为网页，使用长文件名，选择保存在单独的文件夹的支持文件的文件夹后缀 (即，如果<see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />和<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />属性设置为<b>True</b>)。</summary>
+        <summary>返回 Microsoft Word 在将文档保存为网页时使用的文件夹后缀, 使用长文件名, 并选择将支持文件保存在单独的文件夹中 (即, 如果<see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />和<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />属性设置为<b>True</b>)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>新创建的文档使用返回的后缀<see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.FolderSuffix" />属性<see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" />对象。<b>FolderSuffix</b>属性的值<see cref="T:Microsoft.Office.Interop.Word.WebOptions" />对象可能不同于<b>DefaultWebOptions</b>对象的如果以前在不同的语言版本的 Microsoft Word 中编辑文档。您可以使用<see cref="M:Microsoft.Office.Interop.Word.WebOptions.UseDefaultFolderSuffix" />方法更改为您在 Microsoft Office 中当前正在使用的语言的后缀。</para>
-          <para>默认情况下支持的文件夹的名称是网页加上下划线 (_)、 句点 （.） 或连字符 （-） 和 word"文件"（显示的顺序文件保存为网页的 Word 版本的语言） 的名称。例如，假设您使用的 Word 荷兰语版本将名为"Page1"文件另存为网页。支持的文件夹的默认名称就是 Page1_bestanden。</para>
-          <para>下表列出每个语言版本的 Office，并提供了相应的<see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" />属性值和文件夹后缀。对于表中未列出的语言，使用后缀".files"。</para>
+        <remarks><para>新创建的文档使用该<see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.FolderSuffix" /> <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" />对象的属性返回的后缀。 如果以前在其他<b></b>语言版本的 Microsoft <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> Word 中编辑过该文档, 则该对象的 FolderSuffix 属性的值可能与<b>DefaultWebOptions</b>对象的值不同。 可以使用<see cref="M:Microsoft.Office.Interop.Word.WebOptions.UseDefaultFolderSuffix" />方法将后缀更改为当前在 Microsoft Office 中使用的语言。</para>
+          <para>默认情况下，支持文件夹的名称是网页的名称加下划线 (_)、句号 (.) 或连字符 (-) 和单词"files"组成（以文件另存为网页时所用的 Word 版本的语言显示"files"）。例如，假定用 Word 的荷兰语版本将名为"Page1"的文件保存为网页，则默认的支持文件夹名为"Page1_bestanden"。</para>
+          <para>下表列出了 Office 的每种语言版本, 并提供<see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" />了相应的属性值和文件夹后缀。 对于表中未列出的语言，则使用后缀".files"。</para>
           <list type="table">
             <item>
               <description>阿拉伯语</description>
-              <description>1025年</description>
-              <description>.files</description>
+              <description>1025</description>
+              <description>。文件</description>
             </item>
             <item>
               <description>巴斯克语</description>
-              <description>1069年</description>
+              <description>1069</description>
               <description>_fitxategiak</description>
             </item>
             <item>
               <description>巴西</description>
-              <description>1046年</description>
+              <description>1046</description>
               <description>_arquivos</description>
             </item>
             <item>
               <description>保加利亚语</description>
               <description>1026</description>
-              <description>.files</description>
+              <description>。文件</description>
             </item>
             <item>
               <description>加泰罗尼亚语</description>
-              <description>1027年</description>
+              <description>1027</description>
               <description>_fitxers</description>
             </item>
             <item>
-              <description>中文-简化</description>
-              <description>2052年</description>
-              <description>.files</description>
+              <description>中文 - 简体</description>
+              <description>2052</description>
+              <description>。文件</description>
             </item>
             <item>
-              <description>中文-繁体</description>
-              <description>1028年</description>
-              <description>.files</description>
+              <description>中文 - 繁体</description>
+              <description>1028</description>
+              <description>。文件</description>
             </item>
             <item>
               <description>克罗地亚语</description>
-              <description>1050年</description>
+              <description>1050</description>
               <description>_datoteke</description>
             </item>
             <item>
               <description>捷克语</description>
-              <description>1029年</description>
+              <description>1029</description>
               <description>_soubory</description>
             </item>
             <item>
-              <description>丹麦</description>
-              <description>1030年</description>
-              <description>-文件服务器</description>
+              <description>丹麦语</description>
+              <description>1030</description>
+              <description>-filer</description>
             </item>
             <item>
               <description>荷兰语</description>
-              <description>1043年</description>
+              <description>1043</description>
               <description>_bestanden</description>
             </item>
             <item>
               <description>英语</description>
-              <description>1033年</description>
+              <description>1033</description>
               <description>_files</description>
             </item>
             <item>
-              <description>爱沙尼亚</description>
-              <description>1061年</description>
+              <description>爱沙尼亚语</description>
+              <description>1061</description>
               <description>_failid</description>
             </item>
             <item>
-              <description>芬兰</description>
-              <description>1035年</description>
+              <description>芬兰语</description>
+              <description>1035</description>
               <description>_tiedostot</description>
             </item>
             <item>
               <description>法语</description>
-              <description>1036年</description>
+              <description>1036</description>
               <description>_fichiers</description>
             </item>
             <item>
@@ -315,52 +299,52 @@
             </item>
             <item>
               <description>希腊语</description>
-              <description>1032年</description>
-              <description>.files</description>
+              <description>1032</description>
+              <description>。文件</description>
             </item>
             <item>
               <description>希伯来语</description>
-              <description>1037年</description>
-              <description>.files</description>
+              <description>1037</description>
+              <description>。文件</description>
             </item>
             <item>
               <description>匈牙利语</description>
-              <description>1038年</description>
+              <description>1038</description>
               <description>_elemei</description>
             </item>
             <item>
-              <description>意大利</description>
-              <description>1040年</description>
+              <description>意大利语</description>
+              <description>1040</description>
               <description>_file</description>
             </item>
             <item>
               <description>日语</description>
-              <description>1041年</description>
-              <description>.files</description>
+              <description>1041</description>
+              <description>。文件</description>
             </item>
             <item>
               <description>朝鲜语</description>
-              <description>1042年</description>
-              <description>.files</description>
+              <description>1042</description>
+              <description>。文件</description>
             </item>
           </list>
           <para>
             <b>LanguageID</b>属性值</para>
           <list type="table">
             <item>
-              <description>拉脱维亚</description>
-              <description>1062年</description>
+              <description>拉脱维亚语</description>
+              <description>1062</description>
               <description>_fails</description>
             </item>
             <item>
-              <description>立陶宛</description>
-              <description>1063年</description>
+              <description>立陶宛语</description>
+              <description>1063</description>
               <description>_bylos</description>
             </item>
             <item>
-              <description>挪威</description>
-              <description>1044年</description>
-              <description>-文件服务器</description>
+              <description>挪威语</description>
+              <description>1044</description>
+              <description>-filer</description>
             </item>
             <item>
               <description>波兰语</description>
@@ -369,37 +353,37 @@
             </item>
             <item>
               <description>葡萄牙语</description>
-              <description>2070年</description>
+              <description>2070</description>
               <description>_ficheiros</description>
             </item>
             <item>
               <description>罗马尼亚语</description>
-              <description>1048年</description>
-              <description>.files</description>
+              <description>1048</description>
+              <description>。文件</description>
             </item>
             <item>
               <description>俄语</description>
-              <description>1049年</description>
-              <description>.files</description>
+              <description>1049</description>
+              <description>。文件</description>
             </item>
             <item>
-              <description>塞尔维亚语 （西里尔文）</description>
+              <description>塞尔维亚语（西里尔文）</description>
               <description>3098</description>
-              <description>.files</description>
+              <description>。文件</description>
             </item>
             <item>
-              <description>塞尔维亚语 （拉丁语）</description>
-              <description>2074年</description>
+              <description>塞尔维亚语（拉丁语）</description>
+              <description>2074</description>
               <description>_fajlovi</description>
             </item>
             <item>
               <description>斯洛伐克语</description>
-              <description>1051年</description>
-              <description>.files</description>
+              <description>1051</description>
+              <description>。文件</description>
             </item>
             <item>
               <description>斯洛文尼亚语</description>
-              <description>1060年</description>
+              <description>1060</description>
               <description>_datoteke</description>
             </item>
             <item>
@@ -408,33 +392,32 @@
               <description>_archivos</description>
             </item>
             <item>
-              <description>瑞典</description>
-              <description>1053年</description>
-              <description>-文件服务器</description>
+              <description>瑞典语</description>
+              <description>1053</description>
+              <description>-filer</description>
             </item>
             <item>
               <description>泰语</description>
-              <description>1054年</description>
-              <description>.files</description>
+              <description>1054</description>
+              <description>。文件</description>
             </item>
             <item>
               <description>土耳其语</description>
-              <description>1055年</description>
+              <description>1055</description>
               <description>_dosyalar</description>
             </item>
             <item>
-              <description>乌克兰</description>
-              <description>1058年</description>
-              <description>.files</description>
+              <description>乌克兰语</description>
+              <description>1058</description>
+              <description>。文件</description>
             </item>
             <item>
               <description>越南语</description>
-              <description>1066年</description>
-              <description>.files</description>
+              <description>1066</description>
+              <description>。文件</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OptimizeForBrowser">
@@ -463,8 +446,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果 Microsoft Word 优化新网页在 Word 中创建的 Web 浏览器指定<see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.BrowserLevel" />属性 (的<see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" />对象)。 <b>True</b>如果 Word 优化由指定的 Web 浏览器指定的网页<see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" />属性 (的<see cref="T:Microsoft.Office.Interop.Word.WebOptions" />对象)。</summary>
+        <summary><b>如此</b>如果 Microsoft word 优化在 Word 中为该<see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.BrowserLevel" />属性指定的 web 浏览器创建的新网页 (针对<see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" />该对象)。 <b>如此</b>如果 Word 为由<see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" />属性指定的 web 浏览器优化指定的网页 (针对该<see cref="T:Microsoft.Office.Interop.Word.WebOptions" />对象)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -495,13 +477,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果在将指定的文档保存为 Web 页时所有的支持文件，例如，背景纹理和图形，都组织在单独的文件夹。 <b>假</b> 如果支持文件保存在与网页相同的文件夹中。 默认值为 <b>True</b> 。</summary>
+        <summary><b>如此</b> 如果在将指定的文档保存为 Web 页时所有的支持文件，例如，背景纹理和图形，都组织在单独的文件夹。 <b>假</b> 如果支持文件保存在与网页相同的文件夹中。 默认值为 <b>True</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>新的文件夹网页的保存位置的文件夹中创建和文档之后命名。如果使用长文件名，后缀将添加到的文件夹名称。<see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" />属性返回换句话说已选择或安装的语言支持的文件夹后缀或的默认文件夹后缀。</para>
-          <para>如果保存文档以前保存<b>OrganizeInFolder</b>属性设置为不同的值时，Microsoft Word 自动移动迁入或迁出文件夹，根据需要支持文件。</para>如果不使用长文件名的
-          <para>(也就是说，如果<see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />属性设置为<b>False</b>)，Word 自动将所有支持文件保存在单独的文件夹。这些文件不保存为网页的同一文件夹中。</para><para /></remarks>
+        <remarks><para>新文件夹在保存网页的文件夹中创建，与文档同名。 如果使用长文件名，则为文件夹名称添加一个后缀。 该<see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" />属性返回换句话说您已选择或安装的语言支持的文件夹后缀或默认文件夹后缀。</para>
+          <para>如果保存文档以前保存的 <b>OrganizeInFolder</b> 属性设置为一个不同的值时，Microsoft Word 将自动移动支持文件接入或接出相应的文件夹。</para>
+          <para>如果不使用长文件名 (即, 如果该<see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />属性设置为<b>False</b>), Word 会自动将所有支持文件保存在一个单独的文件夹中。 这些文件不保存在与网页相同的文件夹中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -560,12 +541,10 @@
       <Docs>
         <summary>返回或设置在 Web 页上图形图像和表格单元格的密度 (每英寸像素数)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>设置范围通常为 19 到 480，且受欢迎屏幕大小的公共设置 72、 96 和 120。默认设置是 96。</para>
-          <para>在 Web 浏览器中查看保存的文档时，此属性确定图像和文本的大小指定网页上的单元格的大小。生成的图像或单元格的物理尺寸是原始尺寸 （以英寸为单位） 的结果乘以每英寸像素数。</para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.WebOptions.ScreenSize" />属性为目标 Web 浏览器设置最佳屏幕大小。</para>
-          <para />
-        </remarks>
+        <remarks><para>密度设置范围通常为 19 到 480，对于常用屏幕大小来说，密度一般设置为 72、96 和 120。默认设置为 96。</para>
+          <para>无论何时在 Web 浏览器中查看所保存文档，本属性都可确定指定的网页中相对于文本尺寸的图像以及单元格的大小。图像或单元格的实际最终尺寸等于原始尺寸（以英寸为单位）乘以每英寸中的像素数。</para>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Word.WebOptions.ScreenSize" />属性可为目标 Web 浏览器设置最佳屏幕大小。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelyOnCSS">
@@ -594,14 +573,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果您在 Web 浏览器中查看保存的文档时，字体格式使用级联样式表 (CSS)。</summary>
+        <summary><b>如此</b> 如果您在 Web 浏览器中查看保存的文档时，字体格式使用级联样式表 (CSS)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Microsoft Word 创建的级联样式表文件，并将其保存到指定的文件夹或网页，具体取决于的值相同的文件夹<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />属性。<b>False</b>如果 HTML&lt;字体&gt;使用标记和级联样式表。默认值为<b>True</b>。</para>
-          <para>应设置此属性设置为<b>True</b> ，如果您级联样式表，因为这将使您更精确地布局和格式设置的 Web 浏览器支持控制 Web 页上，并使其更类似文档，（即在 Word 中显示）。</para>
-          <para />
-        </remarks>
+        <remarks><para>Microsoft Word 创建一个级联样式表文件, 并将其保存到指定的文件夹或与网页相同的文件夹中, 具体取决于该<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />属性的值。 <b>假</b>如果使用&lt;HTML&gt;字体标签和级联样式表。 默认值为 <b>True</b>。</para>
+          <para>如果 Web 浏览器支持级联样式表, 则应将此属性设置为<b>True</b> , 这将使您在网页上更精确地布局和设置控件, 并使其看起来更像文档 (在 Word 中显示)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelyOnVML">
@@ -630,14 +606,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果不从将文档保存为 Web 页时，图形对象中生成图像文件。 <b>假</b> 如果生成图像。 默认值为 <b>False</b> 。</summary>
+        <summary><b>如此</b> 如果不从将文档保存为 Web 页时，图形对象中生成图像文件。 <b>假</b> 如果生成图像。 默认值为 <b>False</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以通过 Web 浏览器支持矢量标记语言 (VML) 如果不生成图像的图形对象，来减小文件大小。例如，Microsoft Internet Explorer 5 支持此功能，并且您应将<b>RelyOnVML</b>属性设置为<b>True</b> ，如果您面向的此浏览器。您为 VML 图像将不会出现时不支持的浏览器查看保存启用该属性的网页。</para>
-          <para>不生成图像，如果您网页将使用您之前生成的图像文件，并保存文档的位置是不同的 Web 服务器上的页面的最终位置。</para>
-          <para />
-        </remarks>
+        <remarks><para>通过不生成图像的图形对象，如果您的 Web 浏览器支持向量标记语言 (VML)，可以减少文件大小。例如，Microsoft Internet Explorer 5 支持此功能，而应将 <b>RelyOnVML</b> 属性设置 <b>为</b> 中，如果您的目标该浏览器。不支持 VML 的浏览器，查看用此属性保存的 Web 页时，将不会显示该图像。</para>
+          <para>如果您的网页使用以前生成的图像文件，或者文档的保存位置与该网页在 Web 服务器上的最终存储位置不同，则不会生成图像。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenSize">
@@ -668,43 +641,41 @@
       <Docs>
         <summary>返回或设置在 Web 浏览器中查看保存的文档时应使用的理想最小屏幕大小 (宽度乘高度，以像素为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoScreenSize" />可以是下列<b>MsoScreenSize</b>常量之一: </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoScreenSize" />可以是下列<b>MsoScreenSize</b>常量之一： </para>
-          <para>
-            <b>msoScreenSize1024x768 </b>
+            <b>msoScreenSize1024x768</b>
           </para>
           <para>
-            <b>msoScreenSize1152x882 </b>
+            <b>msoScreenSize1152x882</b>
           </para>
           <para>
-            <b>msoScreenSize1152x900 </b>
+            <b>msoScreenSize1152x900</b>
           </para>
           <para>
-            <b>msoScreenSize1280x1024 </b>
+            <b>msoScreenSize1280x1024</b>
           </para>
           <para>
             <b>msoScreenSize1600x1200</b>
           </para>
           <para>
-            <b>msoScreenSize1800x1440 </b>
+            <b>msoScreenSize1800x1440</b>
           </para>
           <para>
-            <b>msoScreenSize1920x1200 </b>
+            <b>msoScreenSize1920x1200</b>
           </para>
           <para>
-            <b>msoScreenSize544x376 </b>
+            <b>msoScreenSize544x376</b>
           </para>
           <para>
-            <b>msoScreenSize640x480 </b>
+            <b>msoScreenSize640x480</b>
           </para>
           <para>
-            <b>msoScreenSize720x512 </b>
+            <b>msoScreenSize720x512</b>
           </para>
           <para>
-            <b>msoScreenSize800x600</b>默认</para>
-          <para />
-        </remarks>
+            <b>msoScreenSize800x600</b>默认值</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetBrowser">
@@ -733,25 +704,22 @@
         <ReturnType>Microsoft.Office.Core.MsoTargetBrowser</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个常量，该常量表示在 Web 浏览器中查看的文档的目标浏览器。</summary>
+        <summary>设置或返回一个常量, 该常量代表在 Web 浏览器中查看的文档的目标浏览器。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTargetBrowser" />可以是下列<b>MsoTargetBrowser</b>常量之一: </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTargetBrowser" />可以是下列<b>MsoTargetBrowser</b>常量之一： </para>
+            <b>msoTargetBrowserIE4</b>Microsoft Internet Explorer 4.0。 </para>
           <para>
-            <b>msoTargetBrowserIE4</b> Microsoft Internet Explorer 4.0。</para>
+            <b>msoTargetBrowserIE5</b>Internet Explorer 5。 </para>
           <para>
-            <b>msoTargetBrowserIE5</b> Internet Explorer 5。</para>
+            <b>msoTargetBrowserIE6</b>Internet Explorer 6。 </para>
           <para>
-            <b>msoTargetBrowserIE6</b> Internet Explorer 6。</para>
+            <b>msoTargetBrowserV3</b>Netscape Navigator 3. x。 </para>
           <para>
-            <b>msoTargetBrowserV3</b> Netscape Navigator 3.x。</para>
-          <para>
-            <b>msoTargetBrowserV4</b> Netscape Navigator 4.x。</para>
-          <para>
-            <b>TargetBrowser</b>属性集<see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" />属性，但<b>BrowserLevel</b>才重要如果<see cref="P:Microsoft.Office.Interop.Word._Document.DisableFeatures" />属性设置为<b>True</b>。否则，它将被忽略。<b>TargetBrowser</b>属性，但是，不会忽略和设置的浏览器级别的所有 Web 文档或单个 Web 文档。</para>
-          <para />
-        </remarks>
+            <b>msoTargetBrowserV4</b>Netscape Navigator 4。</para>
+          <para><b>TargetBrowser</b>属性设置<see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" />属性, 但仅当<b></b> <see cref="P:Microsoft.Office.Interop.Word._Document.DisableFeatures" />属性设置为<b>True</b>时, BrowserLevel 才是重要的。 否则, 它将被忽略。 但是, <b>TargetBrowser</b>属性不会被忽略, 而是设置所有 web 文档或单个 web 文档的浏览器级别。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseDefaultFolderSuffix">
@@ -776,11 +744,9 @@
       <Parameters />
       <Docs>
         <summary>根据选定或安装的语言，将含指定文档的文件夹后缀设置为默认后缀。</summary>
-        <remarks>
-          <para>Microsoft Word 文档保存为网页、 使用长文件名，然后选择保存在单独的文件夹的支持文件时所使用的文件夹后缀 (即，如果<see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />和<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />属性设置为<b>True</b>)。</para>
-          <para>后缀出现文件夹名称中后的文档名称。例如，如果为文档调用"Doc1"，并且的语言是英语，文件夹名称是 Doc1_files。中列出了可用的文件夹后缀<see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" />属性主题。</para>
-          <para />
-        </remarks>
+        <remarks><para>将文档另存为网页时, Microsoft Word 使用文件夹后缀, 使用长文件名, 并选择将支持文件保存在单独的文件夹中 (即, 如果<see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />和<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />属性设置为<b>True</b>)。</para>
+          <para>此后缀出现在文件夹名中文档名的后面。 例如：如果文档名为“Doc1”并且语言为英语，则文件夹名为“Doc1_files”。 <see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" />属性主题中列出了可用的文件夹后缀。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseLongFileNames">
@@ -809,13 +775,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果您将文档保存为网页时使用长文件名。 <b>假</b> 如果不使用长文件名和 DOS 文件名格式 (8.3) 用。 默认值为 <b>True</b> 。</summary>
+        <summary><b>如此</b> 如果您将文档保存为网页时使用长文件名。 <b>假</b> 如果不使用长文件名和 DOS 文件名格式 (8.3) 用。 默认值为 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果您不使用长文件名，并且文档有支持文件，Microsoft Word 自动将组织在单独的文件夹的那些文件。否则，使用<see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />属性可以确定是否将支持文件组织在单独的文件夹。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果不使用长文件名，您的文档有支持文件，Microsoft Word 自动将组织在一个单独的文件夹中的文件。 否则, 使用<see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" />属性来确定是否支持文件组织在单独的文件夹中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="XMLSchemaReferences" FullName="Microsoft.Office.Interop.Word.XMLSchemaReferences">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d73115d0737a9a8813cc10517309d5891eb13c07" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667221" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLSchemaReferences : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="94efe895c3428319116ab8be0f25073c91b0326b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142611" /></Metadata><TypeSignature Language="C#" Value="public interface XMLSchemaReferences : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLSchemaReferences implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLSchemaReferences" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLSchemaReferences&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.XMLSchemaReference" />代表附加到文档的唯一命名空间的对象。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaReferences" />属性返回的架构集合附加到文档。</para>
-      <para />
-    </remarks>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.XMLSchemaReference" />对象的集合, 这些对象代表附加到文档的唯一命名空间。</summary>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaReferences" />属性可返回附加到文档的架构的集合。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,11 +52,11 @@
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="NamespaceURI">可选的<b>字符串</b>。 定义架构中的架构的名称。 <paramref name="Namespace" />参数区分大小写，并且必须完全按照它显示在架构中拼写。 如果在任何附加到文档的架构中找不到指定的命名空间，将显示错误。</param>
-        <param name="Alias">可选的<b>字符串</b>。 在“模板和加载项”对话框中的“架构”选项卡上显示的架构名称。</param>
-        <param name="FileName">可选的<b>字符串</b>。 架构的路径和文件名称。 这可能是本地文件路径、 网络路径或 Internet 地址。</param>
-        <param name="InstallForAllUsers">可选属性，类型为 <b>Boolean</b>。 <b>True</b>如果登录到计算机上的所有用户，可以访问和使用新的架构。 默认值为 <b>False</b> 。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.XMLSchemaReference" />，代表应用于文档的架构。</summary>
+        <param name="NamespaceURI">可选<b>字符串</b>。 架构中定义的架构名称。 <paramref name="Namespace" />参数区分大小写, 并且必须完全按照架构中显示的拼写。 如果在附加到文档的任何架构中都找不到指定的命名空间，则显示错误。</param>
+        <param name="Alias">可选<b>字符串</b>。 在“模板和加载项”对话框中的“架构”选项卡上显示的架构名称。</param>
+        <param name="FileName">可选<b>字符串</b>。 架构的路径和文件名。 可以为本地文件路径、网络路径或 Internet 地址。</param>
+        <param name="InstallForAllUsers">可选属性，类型为 <b>Boolean</b>。 如果登录到计算机上的所有用户都能访问和使用新架构，则为 <b>True</b>。 默认值为 <b>False</b> 。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XMLSchemaReference" />表示应用于文档的架构的。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,7 +121,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,7 +186,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -226,9 +216,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -289,8 +279,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>，则返回 true</b>时 Microsoft Word 验证的 XML 文档中隐藏架构冲突。</summary>
+        <summary><b>如果为 True, 则</b>在 Microsoft Word 验证文档中的 XML 时隐藏架构冲突。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -321,13 +310,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>Boolean</b>值，该值代表是否在 Microsoft Word 在已同类元素的文本节点上执行验证并指定是否将这些文本节点保存在 XML 中时<see cref="P:Microsoft.Office.Interop.Word._Document.XMLSaveDataOnly" />属性为<b>True</b>。</summary>
+        <summary>返回一个<b>Boolean</b>类型的值, 该值表示 Microsoft Word 是否对具有元素同级的文本节点执行验证, 并指定当该<see cref="P:Microsoft.Office.Interop.Word._Document.XMLSaveDataOnly" />属性为<b>True</b>时, 是否将这些文本节点保存为 XML。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>True</b>使 Word 忽略架构冲突导致的文本节点已同类元素;它还可以阻止这些文本节点保存在 XML 时<b>XMLSaveDataOnly</b>属性为<b>True</b>，这样有助于防止指出的可扩展样式表语言转换 （） 保存为数据的一部分的文本。<b>为 false</b> ，则引发上具有同类元素的文本节点的验证错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>真正</b> 导致 Word 忽略架构冲突引起的文本节点具有同类元素;它还可以防止这些文本节点被保存在 XML 中，当 <b>同类</b> 属性为 <b>True</b> ，这有助于防止插入通过可扩展样式表语言转换 (XLST) 作为数据的一部分保存的文本。 <b>False</b> ，则指出具有同类元素的文本节点上的验证错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -356,8 +343,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>对象</b>，它指示的序号位置或一个字符串，表示单个对象的名称。</param>
+        <param name="Index">一个指示序号位置的<b>对象</b>, 或表示单个对象的名称的字符串。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -417,7 +403,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>Boolean</b>值，该值代表是否自动占位符文本会显示文档中的 XML 元素。 如果显示占位符文本， <b>则返回 true</b> 。 <b>False</b> ，则隐藏占位符文本。</summary>
+        <summary>返回一个<b>Boolean</b>类型的值, 该值表示是否为文档中的 XML 元素显示自动占位符文本。 如果显示占位符文本， <b>则返回 true</b> 。 <b>False</b> ，则隐藏占位符文本。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -443,12 +429,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>验证单个 XML 元素或根据附加的 XML 架构或架构的整个文档。</summary>
-        <remarks>
-          <para>使用<b>验证</b>方法与<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />和<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />以确定是否有效针对应用的架构的 XML 元素的属性以及向用户显示错误文本。使用<see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" />方法重写与自定义验证错误的架构冲突。</para>
-          <para>运行<b>Validate</b>方法时，Microsoft Word 填充<see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" />与具有验证错误的 XML 节点的集合。</para>
-          <para />
-        </remarks>
+        <summary>对附加的 XML 架构或架构验证单个 XML 元素或整个文档。</summary>
+        <remarks><para>将<b>Validate</b>方法与<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />和<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />属性结合使用, 可确定 XML 元素是否对应用的架构有效, 以及向用户显示的错误文本。 使用<see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" />方法替代具有自定义验证错误的架构冲突。</para>
+          <para>当您运行<b>Validate</b>方法时, Microsoft Word 将使用<see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" />具有验证错误的 XML 节点来填充集合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

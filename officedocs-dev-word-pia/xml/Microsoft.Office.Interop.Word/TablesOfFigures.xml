@@ -1,13 +1,5 @@
 <Type Name="TablesOfFigures" FullName="Microsoft.Office.Interop.Word.TablesOfFigures">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fe1e1f21bffd98afe08b6b1953eec4af668b2331" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666394" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TablesOfFigures : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a47dc8aab96b5338c26c58900de20ee909636d5e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146008" /></Metadata><TypeSignature Language="C#" Value="public interface TablesOfFigures : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TablesOfFigures implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TablesOfFigures" />
   <TypeSignature Language="VB.NET" Value="Public Interface TablesOfFigures&#xA;Implements IEnumerable" />
@@ -30,10 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.TableOfFigures" />对象表示文档中的图形的表。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.TablesOfFigures" />属性可返回<b>TablesOfFigures</b>集合。</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法，以向文档中添加图表目录。图表目录中的列出了在文档中的显示的顺序中的图表题注。</para><para>使用<b>TablesOfFigures</b>(<paramref name="index" />)，其中<paramref name="index" />是返回单个<b>TableOfFigures</b>对象的索引号。索引号代表文档中的图表目录的位置。</para><para /></remarks>
+    <summary>表示文档中<see cref="T:Microsoft.Office.Interop.Word.TableOfFigures" />的图表目录的对象的集合。</summary>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.TablesOfFigures" />属性返回<b>TablesOfFigures</b>集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法可向文档中添加图表目录。 图表目录中的列出了文档中出现的顺序在图表题注。</para>
+      <para>使用<b>TablesOfFigures</b>(<paramref name="index" />) (其中<paramref name="index" />是索引号) 返回单个<b>TableOfFigures</b>对象。 索引号代表文档中图表目录的位置。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -69,20 +62,20 @@
         <Parameter Name="HidePageNumbersInWeb" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">所需<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 指定图表目录显示 的区域。</param>
-        <param name="Caption">可选的<b>对象</b>。 标识要包括在图表目录中的项目的标签。 对应于目录 (TOC) 域中的 \c 开关。 默认值为"Figure"。</param>
-        <param name="IncludeLabel">可选的<b>对象</b>。 <b>True</b> 在图表目录中包含题注标签和题注编号。 默认值为 <b>True</b> 。</param>
-        <param name="UseHeadingStyles">可选的<b>对象</b>。 <b>则</b> 使用内置标题样式创建图表目录。 默认值为 <b>False</b> 。</param>
-        <param name="UpperHeadingLevel">可选的<b>对象</b>。 起始标题级别图表目录，如果<paramref name="UseHeadingStyles" />设置为<b>True</b>。 对应于目录 (TOC) 域的 \o 开关一起使用的起始值。 默认值为 1。</param>
-        <param name="LowerHeadingLevel">可选的<b>对象</b>。 如果标题级别图表目录，结束<paramref name="UseHeadingStyles" />设置为<b>True</b>。 对应于目录 (TOC) 域的 \o 开关一起使用的结束值。 默认值为 9。</param>
-        <param name="UseFields">可选的<b>对象</b>。 <b>如此</b> 使用目录项 (TC) 域创建图表目录。 使用<see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@)" />标记您想要在图表目录中包含的项的方法。 默认值为 <b>False</b> 。</param>
-        <param name="TableID">可选的<b>对象</b>。 用于构建内容项 (TC) 域中的图表目录的单字母标识符。 对应于目录 (TOC) 域的 \f 开关。 例如，"i"生成图的图表目录。</param>
-        <param name="RightAlignPageNumbers">可选的<b>对象</b>。 <b>真</b> 对齐页码与右边距表中的数字。 默认值为 <b>True</b> 。</param>
-        <param name="IncludePageNumbers">可选的<b>对象</b>。 <b>如此</b> 如果在图表目录中包含页码。 默认值为 <b>True</b> 。</param>
-        <param name="AddedStyles">可选的<b>对象</b>。 用于编译图表目录的其他样式的字符串名称（标题 1 – 标题 9 样式之外的其他样式）。</param>
-        <param name="UseHyperlinks">可选的<b>对象</b>。 <b>如此</b> 如果在发布到 Web 时，图表目录中的条目应为超链接格式。 默认值为 <b>True</b> 。</param>
-        <param name="HidePageNumbersInWeb">可选的<b>对象</b>。 <b>如此</b> 如果图表目录中的页码将被隐藏在发布到 Web 时。 默认值为 <b>True</b> 。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.TableOfFigures" />对象，表示添加到文档中的图表目录。</summary>
+        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 指定图表目录显示 的区域。</param>
+        <param name="Caption">可选<b>对象</b>。 标识要包括在图表目录中的项目的标签。 对应于目录 (TOC) 域中的 \c 开关。 默认值为"Figure"。</param>
+        <param name="IncludeLabel">可选<b>对象</b>。 <b>True</b> 在图表目录中包含题注标签和题注编号。 默认值为 <b>True</b>。</param>
+        <param name="UseHeadingStyles">可选<b>对象</b>。 <b>则</b> 使用内置标题样式创建图表目录。 默认值为 <b>False</b> 。</param>
+        <param name="UpperHeadingLevel">可选<b>对象</b>。 图表目录的起始标题级别 (如果<paramref name="UseHeadingStyles" />设置为<b>True</b>)。 对应于目录 (TOC) 域的 \o 开关一起使用的起始值。 默认值为 1。</param>
+        <param name="LowerHeadingLevel">可选<b>对象</b>。 图表目录的结束标题级别 (如果<paramref name="UseHeadingStyles" />设置为<b>True</b>)。 对应于目录 (TOC) 域的 \o 开关一起使用的结束值。 默认值为 9。</param>
+        <param name="UseFields">可选<b>对象</b>。 <b>如此</b> 使用目录项 (TC) 域创建图表目录。 使用<see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@)" />方法可标记要包含在图表目录中的条目。 默认值为 <b>False</b>。</param>
+        <param name="TableID">可选<b>对象</b>。 用于从目录项 (TC) 域创建图表目录的单字母标识符。 对应于目录 (TOC) 域的 \f 开关。 例如, "i" 为插图生成图表目录。</param>
+        <param name="RightAlignPageNumbers">可选<b>对象</b>。 <b>真</b> 对齐页码与右边距表中的数字。 默认值为 <b>True</b>。</param>
+        <param name="IncludePageNumbers">可选<b>对象</b>。 <b>如此</b> 如果在图表目录中包含页码。 默认值为 <b>True</b>。</param>
+        <param name="AddedStyles">可选<b>对象</b>。 用于编译图表目录的其他样式的字符串名称（标题 1 – 标题 9 样式之外的其他样式）。</param>
+        <param name="UseHyperlinks">可选<b>对象</b>。 <b>如此</b> 如果在发布到 Web 时，图表目录中的条目应为超链接格式。 默认值为 <b>True</b>。</param>
+        <param name="HidePageNumbersInWeb">可选<b>对象</b>。 <b>如此</b> 如果图表目录中的页码将被隐藏在发布到 Web 时。 默认值为 <b>True</b> 。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.TableOfFigures" />对象, 表示添加到文档中的图表目录。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,7 +153,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,7 +181,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,9 +211,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -251,29 +244,27 @@
       <Docs>
         <summary>返回或设置指定文档中图表目录的格式。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTofFormat" />可以是下列<b>WdTofFormat</b>常量之一。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTofFormat" />可以是下列<b>WdTofFormat</b>常量之一。</para>
-          <para>
-            <b>wdTOFCentered </b>
+            <b>wdTOFCentered</b>
           </para>
           <para>
-            <b>wdTOFDistinctive </b>
+            <b>wdTOFDistinctive</b>
           </para>
           <para>
-            <b>wdTOFSimple </b>
+            <b>wdTOFSimple</b>
           </para>
           <para>
-            <b>wdTOFClassic </b>
+            <b>wdTOFClassic</b>
           </para>
           <para>
-            <b>wdTOFFormal </b>
+            <b>wdTOFFormal</b>
           </para>
           <para>
             <b>wdTOFTemplate</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -334,7 +325,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">一个<b>整数</b>，指示的单个对象的序号位置。</param>
+        <param name="Index">一个指示单个对象的序号位置的<b>整数</b>。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -365,12 +356,12 @@
         <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">所需<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 该项的位置。 TC 域之后插入<paramref name="Range" />。</param>
-        <param name="Entry">可选的<b>对象</b>。 在目录或图表目录中出现的文本。 要指示次索引项，则要包括主索引项文本和次索引项文本，其间用冒号 (:) 隔开（例如，"Introduction:The Product"）。</param>
-        <param name="EntryAutoText">可选的<b>对象</b>。 包含索引、 图表目录或目录的文本的自动图文集词条名称 (<paramref name="Entry" /> ，则忽略)。</param>
-        <param name="TableID">可选的<b>对象</b>。 指图表目录或目录项的单字母标识符（例如，"i"表示"illustration"）。</param>
-        <param name="Level">可选的<b>对象</b>。 指在目录或图表目录中的项的层次。</param>
-        <summary>在指定范围后插入一个 TC (目录项) 域。 该方法返回<see cref="T:Microsoft.Office.Interop.Word.Field" />对象，代表 TC 域。</summary>
+        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 该项的位置。 TC 域插入在其后<paramref name="Range" />。</param>
+        <param name="Entry">可选<b>对象</b>。 在目录或图表目录中出现的文本。 要指示次索引项，则要包括主索引项文本和次索引项文本，其间用冒号 (:) 隔开（例如，"Introduction:The Product"）。</param>
+        <param name="EntryAutoText">可选<b>对象</b>。 包含索引、图表目录或目录的文本的 "自动图文集" 词条名称 (<paramref name="Entry" />将被忽略)。</param>
+        <param name="TableID">可选<b>对象</b>。 指图表目录或目录项的单字母标识符（例如，"i"表示"illustration"）。</param>
+        <param name="Level">可选<b>对象</b>。 指在目录或图表目录中的项的层次。</param>
+        <summary>在指定范围后插入一个 TC (目录项) 域。 该方法返回一个<see cref="T:Microsoft.Office.Interop.Word.Field" />代表 TC 域的对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

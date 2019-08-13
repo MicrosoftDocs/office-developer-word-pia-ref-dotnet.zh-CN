@@ -1,13 +1,5 @@
 <Type Name="Field" FullName="Microsoft.Office.Interop.Word.Field">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5633f7ec58f8562a12268258d5304e52105599f0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665697" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Field" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eb89b13b172f6bebe2a7acf4902ad5ae662af0d8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146855" /></Metadata><TypeSignature Language="C#" Value="public interface Field" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Field" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Field" />
   <TypeSignature Language="VB.NET" Value="Public Interface Field" />
@@ -26,12 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示一个字段。 <b>Field</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.Fields" />集合。 <b>Fields</b> 集合代表选定内容、 范围或文档中的字段。</summary>
-    <remarks>
-      <para>使用<b>字段</b>(<paramref name="index" />)，其中<paramref name="index" />是返回单个<b>Field</b>对象的索引号。索引号代表所选内容、 范围或文档中的字段的位置。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />方法将字段添加到的<b>Fields</b>集合。</para>
-      <para />
-    </remarks>
+    <summary>表示一个字段。 <b>Field</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Fields" />集合的一个成员。 <b>Fields</b> 集合代表选定内容、 范围或文档中的字段。</summary>
+    <remarks><para>使用<b>Fields</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回单个<b>Field</b>对象。 索引号代表选定内容、 范围或文档中的字段位置。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />方法将字段添加到<b>Fields</b>集合。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,12 +78,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示字段的代码。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />代表域代码的对象。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>包括前导和尾随空格的字段字符 （{}） 包含的所有域代码。您可以访问域代码，而更改视图从域结果。</para>
-          <para />
-        </remarks>
+        <remarks><para>域代码是包含在域字符 ({ }) 中的所有内容，包括前导和尾部空格。 无需更改域结果的显示方式即可访问域代码。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -146,9 +134,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -204,10 +192,8 @@
       <Docs>
         <summary>返回或设置外接程序字段中的数据。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>数据中不可见的域代码或结果;它才可通过返回的<b>数据</b>属性的值。如果字段不是一个 ADDIN 域，则此属性将导致出错。</para>
-          <para />
-        </remarks>
+        <remarks><para>数据是不可见的在域代码或结果;如果不是一个通过返回 <b>Data</b> 属性的值。如果该字段不是一个 ADDIN 域，则此属性将导致出错。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -231,7 +217,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,10 +243,8 @@
       <Parameters />
       <Docs>
         <summary>单击指定域。</summary>
-        <remarks>
-          <para>如果域为 GOTOBUTTON 域，则此方法将插入点移到指定的位置，或选择指定的书签。如果字段为 MACROBUTTON 域，则此方法运行指定的宏。如果此字段为超链接字段，此方法将跳到目标位置。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果是 GOTOBUTTON 域，该方法将插入点移至指定位置或选定指定的书签。如果是 MACROBUTTON 域，该方法将运行指定的宏。如果是 HYPERLINK 域，该方法将跳转至目标位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -286,7 +270,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>值，该值代表集合中的项目的位置。</summary>
+        <summary>返回一个<b>Integer</b>类型的值, 该值代表项目在集合中的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -314,13 +298,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象，它代表图片、 OLE 对象或作为 INCLUDEPICTURE 或 EMBED 域结果的 ActiveX 控件。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象, 表示的图片、OLE 对象或 ActiveX 控件是 INCLUDEPICTURE 或 EMBED 域的结果。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>InlineShape</b>对象被视为字符，并作为内的文本行字符放置。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>InlineShape</b> 对象被视为一个字符，并定位为一行文本字符串中的字符。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Kind">
@@ -346,17 +327,18 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFieldKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的链接类型的<see cref="T:Microsoft.Office.Interop.Word.Field" />对象。</summary>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Field" />对象的链接类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.WdFieldKind" />常量：</para>
+        <remarks><para>可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdFieldKind" />常量之一:</para>
           <para>
-            <b>wdFieldKindCold</b> A 字段没有结果，例如、 索引项 (XE)、 目录条目 (TC) 或 Private 域。</para>
+            <b>wdFieldKindCold</b>没有结果的字段, 例如, 索引项 (XE)、目录项 (TC) 或私有字段。</para>
           <para>
-            <b>wdFieldKindHot</b> A 字段自动更新的每次它显示或每次重新格式化页上，但这也可以手动更新 （例如，作为 INCLUDEPICTURE 或 FORMDROPDOWN）。</para>
+            <b>wdFieldKindHot</b>每次显示或重新格式化页面时都会自动更新的字段, 但也可以手动进行更新 (例如, INCLUDEPICTURE 或 FORMDROPDOWN)。</para>
           <para>
-            <b>wdFieldKindNone</b>无效的域 （例如，一对域字符其中没有任何内容）。</para>可以更新并将结果为
-          <para><b>wdFieldKindWarm</b> A 字段。此类型包括在源以及可以手动更新 （例如，日期或 INCLUDETEXT） 的域更改时自动更新的字段。</para><para /></remarks>
+            <b>wdFieldKindNone</b>无效字段 (例如, 不在任何内容中的一对域字符)。</para>
+          <para>
+            <b>wdFieldKindWarm</b>可以更新并具有结果的字段。 此类型包括在源发生更改时自动更新的字段, 以及可手动更新的字段 (例如, DATE 或 INCLUDETEXT)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkFormat">
@@ -382,7 +364,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.LinkFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.LinkFormat" />对象，表示指定的域、 内嵌形状或形状链接到一个文件的链接选项。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> object 类型的对象, 该对象代表链接到文件的指定域、内嵌形状或形状的链接选项。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -413,12 +395,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定指定的字段已被锁定。</summary>
+        <summary>确定指定的字段是否处于锁定状态。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>如果指定的字段被锁定，和<b>False</b>如果不需要。当域处于锁定状态时，无法更新该域的结果。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定的字段处于锁定状态, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 当域处于锁定状态时，无法更新该域的结果。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -472,7 +452,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.OLEFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.OLEFormat" />对象，表示为指定字段的 OLE （而不是链接） 特性。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.OLEFormat" />对象, 表示指定字段的 OLE 特征 (而不是链接)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -528,7 +508,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Field</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回集合中上一个对象。</summary>
+        <summary>返回集合中的上一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -559,12 +539,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示字段的结果。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示一个字段的结果。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>不更改视图从域代码的情况下，可以访问域结果。使用<see cref="P:Microsoft.Office.Interop.Word.Range.Text" />属性返回一个<b>Range</b>对象中的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>而无需改变域代码的显示，可以获得一个域结果。 使用<see cref="P:Microsoft.Office.Interop.Word.Range.Text" />属性返回<b>Range</b>对象中的文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -589,10 +567,8 @@
       <Parameters />
       <Docs>
         <summary>选择指定的对象。</summary>
-        <remarks>
-          <para>使用此方法后，使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性以使用选定项。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用此方法后, 请使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性来处理选定的项。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCodes">
@@ -621,12 +597,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定域代码是否显示为指定的字段，而不是域结果。</summary>
+        <summary>确定是否显示指定域而不是域结果的域代码。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果域代码显示为而不是域结果和<b>False</b>指定域如果未显示域代码，此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果为指定域而不是域结果显示域代码, 则此属性返回<b>True</b> ; 如果不显示域代码, 则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -654,10 +628,8 @@
       <Docs>
         <summary>返回域的类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>动态数据交换 (DDE) 是不安全的较旧的技术。如果可能，请使用 DDE 的更安全的替代。</para>
-          <para />
-        </remarks>
+        <remarks><para>动态数据交换 (DDE) 是一种比较陈旧的技术并且不是十分安全。 如果可能, 请使用更安全的 DDE 替代方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Unlink">
@@ -682,10 +654,8 @@
       <Parameters />
       <Docs>
         <summary>将指定域替换为其最新结果。</summary>
-        <remarks>
-          <para>当取消链接字段时，当前结果转换为文本或图形和不再自动更新。请注意的一些 fields — 例如 XE （索引项） 域和 SEQ （序列） 域 — 不能取消链接。</para>
-          <para />
-        </remarks>
+        <remarks><para>当您取消域链接时, 它的当前结果将转换为文本或图形, 并且无法再自动更新。 请注意, 某些字段 (如 XE (索引项) 域和 SEQ (序列) 域) 无法取消链接。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -736,10 +706,8 @@
       <Parameters />
       <Docs>
         <summary>将对 INCLUDETEXT 域所做的更改保存回源文档。</summary>
-        <remarks>
-          <para>源文档的格式必须为 Microsoft Word 文档。</para>
-          <para />
-        </remarks>
+        <remarks><para>源文档的格式必须为 Microsoft Word 文档。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="ChartColorFormat" FullName="Microsoft.Office.Interop.Word.ChartColorFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2cbca0bca2527cc63516d8972ee2ec068238e367" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667019" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartColorFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="55a04dd1372bae2f5242c5656e5564517b5a2549" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142276" /></Metadata><TypeSignature Language="C#" Value="public interface ChartColorFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartColorFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartColorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartColorFormat" />
@@ -27,8 +19,7 @@
   </Attributes>
   <Docs>
     <summary>代表单色对象的颜色，或以渐变/图案填充的对象的前景色或背景色。</summary>
-    <remarks>
-      <para>使用的属性之一可返回下表中列出<see cref="T:Microsoft.Office.Interop.Word.ChartColorFormat" />对象。</para>
+    <remarks><para>使用下表中列出的属性之一返回<see cref="T:Microsoft.Office.Interop.Word.ChartColorFormat" />对象。</para>
       <list type="table">
         <item>
           <description>
@@ -36,7 +27,8 @@
           </description>
           <description>
             <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-          </description>背景填充颜色 （用于底纹或图案填充）
+          </description>
+          <description>背景填充颜色（在底纹或带图案的填充中使用）</description>
         </item>
         <item>
           <description>
@@ -44,11 +36,11 @@
           </description>
           <description>
             <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-          </description>前景填充颜色 （或只纯色填充的填充颜色）
+          </description>
+          <description>前景填充颜色（对于纯色，则代表填充颜色）</description>
         </item>
       </list>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -105,10 +97,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />值，该值代表指定对象 （可与 OLE 自动化对象使用此属性可返回该对象的应用程序） 的创建者的对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 当与对象识别符一起使用时, 此属性<see cref="T:Microsoft.Office.Interop.Word._Application" />返回一个对象, 该对象表示指定对象的创建者 (可以将此属性与 OLE 自动化对象一起使用, 以返回该对象的应用程序)。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,13 +126,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中，创建<see cref="P:Microsoft.Office.Interop.Word.ChartColorFormat.Creator" />属性返回十六进制数字 4d535744，表示的字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.ChartColorFormat.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -169,9 +155,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回指定对象的父级。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,10 +182,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>值，该值代表指定颜色的红-绿-蓝值。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回一个<b>Integer</b>类型的值, 该值代表指定颜色的红-绿-蓝值。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,9 +214,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置当前配色方案中的颜色索引。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,12 +241,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>值，它代表颜色格式类型。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>此属性返回以下项之一<see cref="T:Microsoft.Office.Core.MsoColorType" />枚举值：</para>
+        <summary>返回一个<b>整数</b>值, 它代表颜色格式类型。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>此属性返回下列<see cref="T:Microsoft.Office.Core.MsoColorType" />枚举值之一:</para>
           <list type="bullet">
             <item>
               <para>
@@ -279,8 +256,7 @@
               </para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

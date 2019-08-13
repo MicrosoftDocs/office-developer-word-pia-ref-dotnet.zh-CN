@@ -1,13 +1,5 @@
 <Type Name="LineNumbering" FullName="Microsoft.Office.Interop.Word.LineNumbering">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="19268d70b2273750e89a9e9736b6fb7e0290ed9f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666130" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LineNumbering" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="447ca72d9089f4505bd8a5cea8ccb95ec880c18c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146568" /></Metadata><TypeSignature Language="C#" Value="public interface LineNumbering" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LineNumbering" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LineNumbering" />
   <TypeSignature Language="VB.NET" Value="Public Interface LineNumbering" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>代表位于左边距中的行号或位于各新闻稿样式分栏左侧的行号。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" />属性可返回<b>LineNumbering</b>对象。</para>
-      <para />
-    </remarks>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" />属性返回<b>LineNumbering</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Active">
@@ -59,8 +49,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真</b> 行号是否为指定的文档、 节或节活动。</summary>
+        <summary><b>真</b> 行号是否为指定的文档、 节或节活动。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,13 +108,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置行号间隔数值。 例如，如果<b>CountBy</b>属性设置为 5，每个五行将显示的行号。</summary>
+        <summary>返回或设置行号间隔数值。 例如, 如果将<b>CountBy</b>属性设置为 5, 则每五行都会显示行号。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅在页面视图和打印预览中显示行号。</para>
-          <para>此属性才有效<see cref="P:Microsoft.Office.Interop.Word.LineNumbering.Active" />属性<see cref="T:Microsoft.Office.Interop.Word.LineNumbering" />对象设置为<b>True</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>只有在页面视图和打印预览中才显示行号。</para>
+          <para>只有将<see cref="T:Microsoft.Office.Interop.Word.LineNumbering" />对象的属性设置为<see cref="P:Microsoft.Office.Interop.Word.LineNumbering.Active" /> <b>True</b>时, 此属性才有效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -153,9 +140,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFromText">
@@ -243,12 +230,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNumberingRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的方式行号运行 — 即，是否它在新页或节的开头开始通过或连续运行。</summary>
+        <summary>返回或设置行编号的运行方式, 即, 行号是从新页面或节的开头开始, 还是连续运行。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您必须在页面视图，才能看到行号。</para>
-          <para />
-        </remarks>
+        <remarks><para>只有在页面视图中才能看到行号。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StartingNumber">
@@ -279,10 +264,8 @@
       <Docs>
         <summary>返回或设置起始行号。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您必须在页面视图，才能看到行号。</para>
-          <para />
-        </remarks>
+        <remarks><para>只有在页面视图中才能看到行号。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

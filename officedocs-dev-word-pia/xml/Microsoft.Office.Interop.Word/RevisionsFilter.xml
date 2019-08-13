@@ -1,13 +1,5 @@
 <Type Name="RevisionsFilter" FullName="Microsoft.Office.Interop.Word.RevisionsFilter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="397df7212315245a8efa52af3cc6208d5c0956b1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665557" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RevisionsFilter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7a0d895b614b60a8d0c5fa9ac1b6302c0b7f7db1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144020" /></Metadata><TypeSignature Language="C#" Value="public interface RevisionsFilter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RevisionsFilter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.RevisionsFilter" />
   <TypeSignature Language="VB.NET" Value="Public Interface RevisionsFilter" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示与相关的当前设置的审阅者的注释和文档中的修订标记的显示。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.View.RevisionsFilter" />属性可返回<b>RevisionsFilter</b>对象。</para>
-      <para />
-    </remarks>
+    <summary>代表与文档中审阅者的批注和修订标记的显示相关的当前设置。</summary>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.View.RevisionsFilter" />属性返回一个<b>RevisionsFilter</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Markup">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsMarkup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMarkup" />常量，指定在文档中显示的审阅者标记的范围。 为可读/写属性。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMarkup" />常量, 该常量指定文档中显示的审阅者标记的范围。 读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,14 +77,12 @@
         <ReturnType>Microsoft.Office.Interop.Word.Reviewers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Reviewers" />对象，表示的一个或多个文档审阅者的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Reviewers" />对象, 表示一个或多个文档的审阅者的集合。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>返回<b>审阅者</b>的<b>审阅者</b>集合包含所有审阅者审阅文档打开或编辑的计算机上的名称。</para>
+        <remarks><para>审阅<b></b>者返回的审阅<b></b>者集合中包含所有审阅者在计算机上打开或编辑过文档的审阅者的姓名。</para>
           <para>
-            <b>注释</b>： <b>Reviewers</b>属性替换早期版本的 Word，现已被否决中找到的<b>View.Reviewers</b>属性。</para>
-          <para />
-        </remarks>
+            <b>注意</b>:<b>审阅者</b>属性将替换以前版本的 Word 中的 "<b>查看审阅者</b>" 属性, 该属性现在已被弃用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToggleShowAllReviewers">
@@ -118,11 +106,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>显示或隐藏包含评论和修订的文档中的所有修订。</summary>
-        <remarks>
-          <para>在早期版本的 Word， <b>ToggleShowAllReviewers</b>方法是在<b>Window</b>对象。从 Word 2013 中，该方法将被隐藏。</para>
-          <para />
-        </remarks>
+        <summary>显示或隐藏文档中包含批注和修订的所有修订。</summary>
+        <remarks><para>在早期版本的 Word 中, <b>ToggleShowAllReviewers</b>方法位于<b>Window</b>对象上。 在 Word 2013 中, 该方法是隐藏的。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="View">
@@ -151,13 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsView" />常量值，该值代表指定是否 Word 显示文档的原始版本或最终版本，可能有修订，并应用格式更改的全局选项。 为可读/写属性。</summary>
+        <summary>设置或返回一个<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsView" />常量, 该常量代表全局选项, 该选项指定 Word 是否显示文档的原始版本或最终版本 (可能应用了修订和格式更改)。 读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>RevisionsFilter.View</b>属性替换早期版本的 Word 中的<b>View.RevisionsView</b>属性。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>RevisionsFilter</b>属性将替换早期版本的 Word 中的<b>RevisionsView</b>属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

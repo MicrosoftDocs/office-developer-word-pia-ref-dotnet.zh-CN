@@ -1,13 +1,5 @@
 <Type Name="MailMergeField" FullName="Microsoft.Office.Interop.Word.MailMergeField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3826a46a79d1953bf36de88c393620df167dba62" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665550" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="740faaaa800da0c930fd0ad3e0101c4ed0cd4585" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144461" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeField" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeField" />
@@ -27,15 +19,11 @@
   </Attributes>
   <Docs>
     <summary>表示文档中的单个邮件合并字段。</summary>
-    <remarks>
-      <para>
-        <b>MailMergeDataField</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" />集合。<b>MailMergeDataFields</b>集合包含所有邮件合并相关的文档中的字段。</para>
-      <para>使用<b>字段</b>(<paramref name="index" />)，其中<paramref name="index" />是返回单个<b>MailMergeField</b>对象的索引号。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" />方法将合并域添加到<b>MailMergeFields</b>集合。</para>
-      <para>
-        <b>MailMergeFields</b>集合还有其他方法，如<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />和<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />，用于添加与邮件合并操作相关的字段。</para>
-      <para />
-    </remarks>
+    <remarks><para><b>MailMergeDataField</b>对象是<see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" />集合的一个成员。 <b>MailMergeDataFields</b> 集合中包含所有邮件合并相关文档中的域。</para>
+      <para>使用<b>Fields</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回一个<b>MailMergeField</b>对象。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" />方法将合并域添加到<b>MailMergeFields</b>集合中。</para>
+      <para><b>MailMergeFields</b>集合包含其他方法 (例如<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />和<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />), 用于添加与邮件合并操作相关的字段。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,12 +80,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示字段的代码。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />代表域代码的对象。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>包括前导和尾随空格的字段字符 （<b>{}</b>） 包含的所有域代码。您可以访问域代码，而更改视图从域结果。</para>
-          <para />
-        </remarks>
+        <remarks><para>域代码是包含在域字符 (<b>{ }</b>) 中的所有内容，包括前导和尾部空格。无需更改域结果的显示方式即可访问域代码。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -150,9 +136,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -201,7 +187,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,8 +217,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果指定的字段处于锁定状态。 当域处于锁定状态时，无法更新该域的结果。</summary>
+        <summary><b>如此</b> 如果指定的字段处于锁定状态。 当域处于锁定状态时，无法更新该域的结果。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -316,7 +301,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回集合中上一个对象。</summary>
+        <summary>返回集合中的上一个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -343,10 +328,8 @@
       <Parameters />
       <Docs>
         <summary>选择指定的对象。</summary>
-        <remarks>
-          <para>使用此方法后，使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性以使用选定项。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用此方法后, 请使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性来处理选定的项。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -374,11 +357,8 @@
       <Docs>
         <summary>返回域的类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Type</b>属性可以是之一<see cref="T:Microsoft.Office.Interop.Word.WdFieldType" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Type</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdFieldType" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

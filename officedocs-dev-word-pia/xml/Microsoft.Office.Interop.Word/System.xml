@@ -1,13 +1,5 @@
 <Type Name="System" FullName="Microsoft.Office.Interop.Word.System">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="93f16faece022e960122bec04316f252825147e5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667087" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface System" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ed58d5c3d2752ce883fdb2461eb9995959a5ba2c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143908" /></Metadata><TypeSignature Language="C#" Value="public interface System" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract System" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.System" />
   <TypeSignature Language="VB.NET" Value="Public Interface System" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>包含有关计算机系统的信息。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.System" />属性可返回<b>系统</b>对象。</para>
-      <para />
-    </remarks>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.System" />属性返回<b>系统</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +74,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>您已请求的仅用于 Macintosh 关键字的帮助。 有关此关键字的信息，请查阅的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</summary>
+        <summary>您已请求仅在 Macintosh 上使用的关键字的帮助。 有关该关键词的帮助信息，请查阅 Microsoft Office Macintosh 版的语言参考帮助。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,16 +103,14 @@
         <Parameter Name="Password" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Path">必需的 <b>字符串</b> 。 网络驱动器的路径 (例如，"\\Project\Info")。</param>
-        <param name="Drive">可选的<b>对象</b>。 对应要赋予网络驱动器盘符的数字，0（零）对应第一个有效驱动器盘符，1 对应第二个有效驱动器盘符，以此类推。 如果省略此参数，则使用下一个有效盘符。</param>
-        <param name="Password">可选的<b>对象</b>。 如果网络驱动器有密码保护，则指定密码。</param>
+        <param name="Path">必需的 <b>字符串</b> 。 网络驱动器的路径 (例如, "\\Project\Info")。</param>
+        <param name="Drive">可选<b>对象</b>。 对应要赋予网络驱动器盘符的数字，0（零）对应第一个有效驱动器盘符，1 对应第二个有效驱动器盘符，以此类推。 如果省略此参数，则使用下一个有效盘符。</param>
+        <param name="Password">可选<b>对象</b>。 如果网络驱动器有密码保护，则指定密码。</param>
         <summary>建立到网络驱动器的连接。</summary>
-        <remarks>
-          <para>
-            <b>安全</b>   避免在您的应用程序中使用硬编码的密码。如果在某个过程中需要密码，用户请求该密码、 将其存储在变量，然后在代码中使用该变量。</para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.Dialogs" />属性与<b>wdDialogConnect</b>常量显示连接到网络驱动器对话框。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>安全性</b>   避免在应用程序中使用硬编码的密码。 如果过程中需要使用密码，请向用户请求密码并将其存储在一个变量中，然后在代码中使用该变量。</para>
+          <para>将<see cref="P:Microsoft.Office.Interop.Word._Application.Dialogs" />属性与<b>wdDialogConnect</b>常量一起使用可显示 "连接到网络驱动器" 对话框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Country">
@@ -181,41 +169,40 @@
       <Docs>
         <summary>返回系统的国家/地区设定。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdCountry" />可以是下列<b>WdCountry</b>常量之一。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdCountry" />可以是下列<b>WdCountry</b>常量之一。</para>
-          <para>
-            <b>wdArgentina </b>
+            <b>wdArgentina</b>
           </para>
           <para>
-            <b>wdCanada </b>
+            <b>wdCanada</b>
           </para>
           <para>
-            <b>wdChina </b>
+            <b>wdChina</b>
           </para>
           <para>
-            <b>wdFinland </b>
+            <b>wdFinland</b>
           </para>
           <para>
-            <b>wdGermany </b>
+            <b>wdGermany</b>
           </para>
           <para>
-            <b>wdItaly </b>
+            <b>wdItaly</b>
           </para>
           <para>
-            <b>wdKorea </b>
+            <b>wdKorea</b>
           </para>
           <para>
-            <b>wdMexico </b>
+            <b>wdMexico</b>
           </para>
           <para>
-            <b>wdNorway </b>
+            <b>wdNorway</b>
           </para>
           <para>
-            <b>wdSpain </b>
+            <b>wdSpain</b>
           </para>
           <para>
-            <b>wdTaiwan </b>
+            <b>wdTaiwan</b>
           </para>
           <para>
             <b>wdUS</b>
@@ -256,8 +243,7 @@
           <para>
             <b>wdVenezuela</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -285,9 +271,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -316,7 +302,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置状态 （形状） 的指针。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.WdCursorType" />常量： <b>wdCursorIBeam</b>、 <b>wdCursorNormal</b>、 <b>wdCursorNorthwestArrow</b>或<b>wdCursorWait</b>。</summary>
+        <summary>返回或设置指针的状态（形状）。 <see cref="T:Microsoft.Office.Interop.Word.WdCursorType" />可以是下列常量之一: <b>wdCursorIBeam</b>、 <b>wdCursorNormal</b>、 <b>wdCursorNorthwestArrow</b>或<b>wdCursorWait</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -346,11 +332,9 @@
       <Docs>
         <summary>以字节为单位返回当前驱动器的可用磁盘空间。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>注释</b> 有 1024 字节，千字节 1048576 兆字节数。<b>FreeDiskSpace</b>属性返回的最大值是 2147483647。因此，即使有四个千兆字节的可用磁盘空间，它会返回 2147483647。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>注释</b> Kb 中有1024个字节, 在一个 mb 中有1048576个字节。 <b>FreeDiskSpace</b> 属性返回的最大值为 2147483647。 因此, 即使有四 gb 的可用磁盘空间, 它也会返回2147483647。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalResolution">
@@ -432,7 +416,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>您已请求的仅用于 Macintosh 关键字的帮助。 有关此关键字的信息，请查阅的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</summary>
+        <summary>您已请求仅在 Macintosh 上使用的关键字的帮助。 有关该关键词的帮助信息，请查阅 Microsoft Office Macintosh 版的语言参考帮助。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -460,8 +444,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果系统安装了数学协处理器。</summary>
+        <summary><b>如此</b> 如果系统安装了数学协处理器。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -487,7 +470,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>启动 Microsoft 系统信息如果它没有运行，应用程序或切换到其如果它已经在运行。</summary>
+        <summary>如果 Microsoft 系统信息应用程序未运行, 则启动它; 如果它已在运行, 则切换到该应用程序。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,15 +561,13 @@
         <Parameter Name="Key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">必需的 <b>字符串</b> 。 设置文件的文件名。 如果没有指定路径，则假定 Windows 文件夹。</param>
-        <param name="Section">必需的 <b>字符串</b> 。 设置文件中包含的节的名称<paramref name="Key" />。 在 Windows 设置文件中，该节的名称出现相关的键前面的括号之间 (不包括括号<paramref name="Section" />)。 如果您正在从 Windows 注册表中，返回的条目的值<paramref name="Section" />应子项，包括子树 (例如，"HKEY_CURRENT_USER\Software\Microsoft\Office\version \Word\Options") 的完整路径。</param>
-        <param name="Key">必需的 <b>字符串</b> 。 要检索的项设置或注册表项的值。 在 Windows 设置文件中，项名称后跟等号 (=) 和设置。 如果您正在从 Windows 注册表中，返回的条目的值<paramref name="Key" />指定该子项中的条目的名称应<paramref name="Section" />（例如，"启动-路径"）。</param>
-        <summary>返回或设置一个 string 设置文件或 Windows 注册表中。</summary>
+        <param name="FileName">必需的 <b>字符串</b> 。 设置文件的文件名。 如果没有指定路径, 则假定为 Windows 文件夹。</param>
+        <param name="Section">必需的 <b>字符串</b> 。 包含<paramref name="Key" />的设置文件中的节的名称。 在 Windows 设置文件中, 分区名称显示在关联的键前面的括号内 (不要在括号中<paramref name="Section" />包含)。 如果要从 Windows 注册表中返回项的值, <paramref name="Section" />应为子项的完整路径, 包括子树 (例如, "HKEY_CURRENT_USER\Software\Microsoft\Office\version \Word\Options")。</param>
+        <param name="Key">必需的 <b>字符串</b> 。 要检索的项设置或注册表项的值。 在 Windows 设置文件中，项名称后跟等号 (=) 和设置。 如果要从 Windows 注册表中返回项的值, <paramref name="Key" />应为指定的<paramref name="Section" />子项中的条目的名称 (例如, "STARTUP-PATH")。</param>
+        <summary>返回或设置设置文件或 Windows 注册表中的字符串。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以编写代码设置文件用于存储和检索设置。例如，您可以存储活动文档的名称，以便它可以重新打开自动下次启动 Microsoft Word 时退出 Word 时。设置文件是一个文本文件排列窗口中的信息类似的信息与 3.x WIN。INI 文件。</para>
-          <para />
-        </remarks>
+        <remarks><para>您可以编写使用设置文件存储和检索设置的代码。 例如, 您可以在退出 Word 时存储活动文档的名称, 以便在下次启动 Microsoft Word 时自动重新打开该文档。 设置文件是一个文本文件，其信息安排类似 Windows 3.x 版的 WIN.INI 文件中的信息。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessorType">
@@ -615,7 +596,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回系统使用 （例如，486 类型） 的处理器的类型。</summary>
+        <summary>返回系统正在使用的处理器的类型（如 i486 类型）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -650,8 +631,8 @@
         <Parameter Name="Key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Section">必需的 <b>字符串</b> 。 在 Windows 注册表中的"HKEY_CURRENT_USER\Software\Microsoft\Office\version \Word"子项下一个子项，操作。</param>
-        <param name="Key">必需的 <b>字符串</b> 。 指定该子项中的条目的名称<paramref name="Section" />(例如，"BackgroundPrint"选项子项中的)。</param>
+        <param name="Section">必需的 <b>字符串</b> 。 Windows 注册表中的 "HKEY_CURRENT_USER\Software\Microsoft\Office\version \Word" 子键下的子项。</param>
+        <param name="Key">必需的 <b>字符串</b> 。 由<paramref name="Section" />指定的子项中的条目的名称 (例如, Options 子项中的 "BackgroundPrint")。</param>
         <summary>返回或设置在以下注册表子项下的 Windows 注册表中的项的值: HKEY_CURRENT_USER\Software\Microsoft\Office\version\Word。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -680,7 +661,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>您已请求的仅用于 Macintosh 关键字的帮助。 有关此关键字的信息，请查阅的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</summary>
+        <summary>您已请求仅在 Macintosh 上使用的关键字的帮助。 有关该关键词的帮助信息，请查阅 Microsoft Office Macintosh 版的语言参考帮助。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -736,7 +717,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回以像素为单位的垂直屏幕分辨率。</summary>
+        <summary>以像素为单位返回屏幕垂直分辨率。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

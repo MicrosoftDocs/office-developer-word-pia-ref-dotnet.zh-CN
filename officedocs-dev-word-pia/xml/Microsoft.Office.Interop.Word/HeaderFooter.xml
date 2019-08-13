@@ -1,13 +1,5 @@
 <Type Name="HeaderFooter" FullName="Microsoft.Office.Interop.Word.HeaderFooter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3faeda5db3d1edc0e95dabebc04e03aa6a82943f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665549" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HeaderFooter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a143517844b5f5cef61ab0c3f18904999b976958" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146729" /></Metadata><TypeSignature Language="C#" Value="public interface HeaderFooter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HeaderFooter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HeaderFooter" />
   <TypeSignature Language="VB.NET" Value="Public Interface HeaderFooter" />
@@ -27,15 +19,15 @@
   </Attributes>
   <Docs>
     <summary>代表一个单独的页眉或页脚。</summary>
-    <remarks>
+    <remarks><para><b>HeaderFooter</b>对象是<see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" />集合的一个成员。 <b>HeadersFooters</b> 集合包含指定的文档中所有页眉和页脚。</para>
+      <para>使用<b>头</b>(<paramref name="index" />) 或<b>页脚</b>(<paramref name="index" />), 其中<paramref name="index" />是<see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />常量之一 (<b>wdHeaderFooterEvenPages</b>、 <b>wdHeaderFooterFirstPage</b>或<b>wdHeaderFooterPrimary</b>), 以返回单个<b>HeaderFooter</b>对象。</para>
+      <para>您还可以通过将<see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" />属性与<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象一起使用来返回单个<b>HeaderFooter</b>对象。</para>
       <para>
-        <b>HeaderFooter</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" />集合。<b>HeadersFooters</b>集合中指定的文档部分包括所有页眉和页脚。</para>
-      <para>使用<b>标头</b>(<paramref name="index" />) 或<b>页脚</b>(<paramref name="index" />)，其中<paramref name="index" />是之一<see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />常量 （<b>wdHeaderFooterEvenPages</b>、 <b>wdHeaderFooterFirstPage</b>或<b>wdHeaderFooterPrimary</b>） 可返回单个<b>HeaderFooter</b>对象。</para>
-      <para>也可以使用返回单个<b>HeaderFooter</b>对象<see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" />属性与<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象。</para>
-      <para>
-        <b>注意</b>： 您不能将<b>HeaderFooter</b>对象添加到<b>HeadersFooters</b>集合。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" />属性与<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />对象以指定不同的首页。</para>使用
-      <para><see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" />与要指定不同的奇数页和偶数页页眉和页脚的<b>PageSetup</b>对象的属性。如果<b>OddAndEvenPagesHeaderFooter</b>属性值为<b>True</b>，则可以通过使用<b>wdHeaderFooterPrimary</b>，返回奇数页页眉或页脚和您可以使用<b>wdHeaderFooterEvenPages</b>返回偶数的页眉或页脚。</para><para>使用<see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" />方法与<see cref="T:Microsoft.Office.Interop.Word.PageNumbers" />对象的页眉或页脚中添加页码。</para><para /></remarks>
+        <b>注意</b>: 不能将<b>HeaderFooter</b>对象添加到<b>HeadersFooters</b>集合中。</para>
+      <para>将<see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" />属性与<see cref="T:Microsoft.Office.Interop.Word.PageSetup" />对象一起使用可指定第一个不同的页面。</para>
+      <para>使用 PageSetup <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" />对象的属性<b></b>可指定不同的奇数页和偶数页页眉和页脚。 如果 <b>OddAndEvenPagesHeaderFooter</b> 属性为 <b>True</b> ，则可以通过使用 <b>wdHeaderFooterPrimary</b> ，返回奇数页页眉或页脚，则可以通过使用 <b>wdHeaderFooterEvenPages</b> 返回偶数页眉或页脚。</para>
+      <para>将<see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" />方法与<see cref="T:Microsoft.Office.Interop.Word.PageNumbers" />对象一起使用, 可向页眉或页脚中添加页码。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,9 +83,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -122,13 +114,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果指定<see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" />对象存在。</summary>
+        <summary>如果指定<see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" />的对象存在,<b>则返回 True</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>存在所有新文档中默认情况下的主页眉和页脚。使用此方法以确定是否存在第一页或奇数页页眉或页脚。您还可以使用<see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" />或<see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" />属性可返回或设置指定的文档或节中的页眉和页脚的数量。</para>
-          <para />
-        </remarks>
+        <remarks><para>存在所有新文档的默认主页眉和页脚。 使用此方法来确定是否存在首页或奇数页页眉或页脚。 您还可以使用<see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" />或<see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" />属性返回或设置指定的文档或节中的页眉和页脚的数目。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -154,7 +143,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdHeaderFooterIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />常量值，该值代表指定的页眉或页脚中的文档或节。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />常量, 该常量代表文档或节中的指定页眉或页脚。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -182,8 +171,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果指定<see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" />对象是标题。</summary>
+        <summary><b>如此</b>如果指定<see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" />的对象是页眉。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -214,14 +202,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>的指定的页眉或页脚链接到相应的页眉或页脚中上一节。 当链接页眉或页脚时，其内容会相同的前一个页眉或页脚。</summary>
+        <summary>如果指定页眉或页脚链接至前一节中相应的页眉或页脚，则该属性值为 <b>True</b>。 链接页眉或页脚时，其内容与前一个页眉或页脚中的内容相同。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>由于默认情况下将<b>LinkToPrevious</b>属性设置为<b>True</b> ，您可以添加页眉，页脚，页码到您的整个文档通过使用页眉，页脚，并第一节的页码。</para>
-          <para>
-            <b>LinkToPrevious</b>属性分别适用于每个页眉或页脚。例如， <b>LinkToPrevious</b>属性无法设置为<b>True</b>偶数编号-页页眉但<b>False</b>偶数编号-页页脚。</para>
-          <para />
-        </remarks>
+        <remarks><para>因为默认情况下，<b>LinkToPrevious</b> 属性设为 <b>True</b>，所以可以通过设置第一节的页眉、页脚和页码来为整个文档添加页眉、页脚和页码。</para>
+          <para><b>LinkToPrevious</b> 属性可以分别应用于每个页眉或页脚。 例如，可将偶数页的页眉的 <b>LinkToPrevious</b> 属性设置为 <b>True</b>，而将偶数页的页脚设置为 <b>False</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageNumbers">
@@ -247,7 +232,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PageNumbers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.PageNumbers" />集合，代表所有页码域包含指定的页眉或页脚。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.PageNumbers" />集合, 该集合代表指定页眉或页脚中包含的所有页码域。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -303,12 +288,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定对象中包含的文档部分。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关从文档返回一个区域或从形状集合返回形状范围的信息，请参阅<see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息, 请参阅<see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shapes">
@@ -334,12 +317,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合，代表所有<see cref="T:Microsoft.Office.Interop.Word.Shape" />指定的页眉或页脚中的对象。 该集合可以包含绘图、 图形、 图片、 OLE 对象、 ActiveX 控件、 文本对象和标注。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合, 该集合代表<see cref="T:Microsoft.Office.Interop.Word.Shape" />指定页眉或页脚中的所有对象。 该集合可以包含绘图、形状、图片、OLE 对象、ActiveX 控件、文本对象和标注。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>应用于时<see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" />对象，该<b>形状</b>属性将返回中所有的页眉和页脚的文档中找到的所有<b>Shape</b>对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>当应用于<see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" />对象时, <b>Shapes</b>属性返回在文档中的所有页眉和页脚中找到的所有<b>Shape</b>对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

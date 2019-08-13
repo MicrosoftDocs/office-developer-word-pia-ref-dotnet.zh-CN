@@ -1,13 +1,5 @@
 <Type Name="XSLTransforms" FullName="Microsoft.Office.Interop.Word.XSLTransforms">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="de29b43f46f2692a2b0d2a38cc3c95ef7c260389" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665548" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XSLTransforms : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="80575a845a8b4cdb5dae2ad29be77f4a4dcf8029" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142614" /></Metadata><TypeSignature Language="C#" Value="public interface XSLTransforms : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XSLTransforms implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XSLTransforms" />
   <TypeSignature Language="VB.NET" Value="Public Interface XSLTransforms&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.XSLTransform" />对象，表示所有的特定的 XML 命名空间的可扩展样式表语言转换 (Xslt)。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" />添加到架构的 Xslt 集合的单个<b>XSLTransform</b>对象的方法。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.XSLTransform" />对象的集合, 这些对象代表特定 XML 命名空间的所有可扩展样式表语言转换 (xslt)。</summary>
+    <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" />方法将单个<b>XSLTransform</b>对象添加到架构的 xslt 集合中。</para>
       <para>使用<see cref="P:Microsoft.Office.Interop.Word.XSLTransforms.Item(System.Object@)" />属性返回一个<b>XSLTransform</b>对象。</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,10 +52,10 @@
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Location">必需的 <b>字符串</b> 。 路径和文件名的 xslt 名称。 这可能是本地文件路径、 网络路径或 Internet 地址。</param>
-        <param name="Alias">可选的<b>字符串</b>。 架构库中显示的 XSLT 名称。</param>
-        <param name="InstallForAllUsers">可选属性，类型为 <b>Boolean</b>。 <b>True</b>如果登录到计算机上的所有用户，可以访问和使用新的架构。 默认值为 <b>False</b> 。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.XSLTransform" />添加到指定架构的 Xslt 集合的对象，表示 Extensible Stylesheet Language Transformation (XSLT)。</summary>
+        <param name="Location">必需的 <b>字符串</b> 。 XSLT 的路径和文件名。 可以为本地文件路径、网络路径或 Internet 地址。</param>
+        <param name="Alias">可选<b>字符串</b>。 架构库中显示的 XSLT 名称。</param>
+        <param name="InstallForAllUsers">可选属性，类型为 <b>Boolean</b>。 如果登录到计算机上的所有用户都能访问和使用新架构，则为 <b>True</b>。 默认值为 <b>False</b> 。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XSLTransform" />对象, 该对象代表添加到指定架构的 xslt 集合中的可扩展样式表语言转换 (XSLT)。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +111,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,9 +141,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -214,8 +204,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>对象</b>，它指示的序号位置或一个字符串，表示单个对象的名称。</param>
+        <param name="Index">一个指示序号位置的<b>对象</b>, 或表示单个对象的名称的字符串。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

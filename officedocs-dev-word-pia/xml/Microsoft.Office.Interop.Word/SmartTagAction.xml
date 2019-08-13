@@ -1,13 +1,5 @@
 <Type Name="SmartTagAction" FullName="Microsoft.Office.Interop.Word.SmartTagAction">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e5c4bc9e1f8c1df339fe6ea64518ce507e0f8afe" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665681" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagAction" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ec49e7fe750928cbb025ed46930bedb2516ad95e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143992" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagAction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagAction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagAction" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagAction" />
@@ -27,9 +19,13 @@
   </Attributes>
   <Docs>
     <summary>代表智能标记的单个操作。</summary>
-    <remarks>
-      <para>智能标记操作是编入允许用户执行到智能标记相关的特定功能的智能标记的过程。例如，一次操作的智能标记可能要访问的网站，而另一项操作将插入 Microsoft Outlook 联系人信息，而又另一个显示地图和驱动的说明操作。</para>到智能文档中内置的操作和文档操作任务窗格中的控件，还与相关
-      <para>智能标记操作。例如，您可能必须为用户更改文本框的内容时执行操作的智能文档任务窗格中显示一个 textbox 控件。</para><para><see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />， <b>SmartTagAction</b>，和<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />对象中的智能标记组件可以识别每个项目相关<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />对象。例如，"city"的地址智能标记组件中是一个特定的<b>SmartTagType</b>对象。<b>SmartTagRecognizer</b>对象 （识别文档中的"city"类型的智能标记的智能标记组件的一部分） 和<b>SmartTagAction</b>对象 （的一部分提供操作的智能标记组件，具有相关市/县智能标记类型与特定智能标记类型，这可能包括查找 MSN 上的 Microsoft MapPoint 中识别的城市）。简而言之，识别器执行标记、 操作处理程序提供最终用户功能，并将它们联系在一起是一种他们所从事的智能标记。</para><para>使用<see cref="P:Microsoft.Office.Interop.Word.SmartTagActions.Item(System.Object@)" />方法返回的单个<b>SmartTagAction</b>对象<see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" />集合。</para><para>使用<see cref="P:Microsoft.Office.Interop.Word.SmartTagAction.Type" />属性可以确定与<b>SmartTagAction</b>对象相关联的控件的类型。</para><para /></remarks>
+    <remarks><para>智能标记操作是编入智能标记的过程，使用户能够执行与智能标记相关的特定功能。 例如, 智能标记的一个操作可能是访问网站, 而另一个操作则将联系人信息插入到 Microsoft Outlook 中, 而另一个操作将显示地图和行车路线。</para>
+      <para>智能标记操作还与内置于智能文档中的操作以及 "文档操作" 任务窗格中的控件相关。 例如, 您可能在智能文档的任务窗格中显示一个 textbox 控件, 该控件在用户更改文本框的内容时执行某项操作。</para>
+      <para>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />、 <b>SmartTagAction</b>和对象<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />都是相关的, 因此智能标记组件识别的每个项目都<see cref="T:Microsoft.Office.Interop.Word.SmartTagType" />是一个对象。 例如，Address 智能标记组件中的“city”是一个特定的 <b>SmartTagType</b> 对象。 city 智能标记类型具有相关的 <b>SmartTagRecognizer</b> 对象（智能标记组件中用于识别文档中“city”类型的智能标记的部分）和 <b>SmartTagAction</b> 对象（智能标记组件中用于提供与特定智能标记类型相关的操作的部分，这些操作可能包含在 MSN 上的 Microsoft MapPoint 中查找可识别的市/县）。 简单地说, 识别器将进行标记, 操作处理程序提供最终用户功能, 而将它们与之关联的智能标记的类型是它们所使用的智能标记的类型。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.SmartTagActions.Item(System.Object@)" />方法返回<see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" />集合中的单个<b>SmartTagAction</b>对象。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.SmartTagAction.Type" />属性来确定与<b>SmartTagAction</b>对象相关联的控件的类型。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveXControl">
@@ -58,12 +54,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>对象</b>，表示文档操作任务窗格中显示的 ActiveX 控件。</summary>
+        <summary>返回一个<b>对象</b>, 表示在 "文档操作" 任务窗格中显示的 ActiveX 控件。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关智能文档的详细信息，请参阅 Microsoft Developer Network (MSDN) 网站上的 Smart Document Software Development Kit。</para>
-          <para />
-        </remarks>
+        <remarks><para>有关智能文档的详细信息，请参阅 Microsoft Developer Network (MSDN) 网站上的 Smart Document Software Development Kit。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -92,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,13 +123,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>boolean 类型的值</b>，该值指示是否选中智能文档中的复选框。</summary>
+        <summary>返回或设置一个<b>Boolean</b>类型的值, 该值指示是否选中智能文档中的复选框。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果清除了该，此属性将返回<b>True</b>如果标记选中的复选框，和<b>False</b> 。</para>
-          <para>智能文档的详细信息，请参阅 Smart Document Software Development Kit Microsoft Developer Network (MSDN) 网站上。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果标记选中的复选框, 则此属性返回<b>True</b> ; 如果清除该复选框, 则返回<b>False</b> 。</para>
+          <para>有关智能文档的详细信息，请参阅 Microsoft Developer Network (MSDN) 网站上的 Smart Document Software Development Kit。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -166,9 +158,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -231,13 +223,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Boolean</b>值，该值代表指定的文档片段控件展开或折叠的文档操作任务窗格中。</summary>
+        <summary>返回或设置一个<b>Boolean</b>类型的值, 该值代表是否在 "文档操作" 任务窗格中展开或折叠指定的文档片段控件。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>以指示该控件已展开，和<b>False</b>以指示该控件已折叠。</para>
-          <para>的智能文档的详细信息，请参阅 Smart Document Software Development Kit Microsoft Developer Network (MSDN) 网站上。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性返回<b>True</b>以指示控件已展开, 设置为<b>False</b>可指示控件已折叠。</para>
+          <para>有关智能文档的详细信息，请参阅 Microsoft Developer Network (MSDN) 网站上的 Smart Document Software Development Kit。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandHelp">
@@ -272,13 +262,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Boolean</b>值，该值代表是否将指定的智能文档的帮助文本控件是在展开或折叠文档操作任务窗格。</summary>
+        <summary>返回或设置一个<b>Boolean</b>类型的值, 该值表示是否在 "文档操作" 任务窗格中展开或折叠指定的智能文档 "帮助" 文本控件。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>表示该控件已展开，并折叠<b>False</b>指示控件。</para>
-          <para>有关智能文档的详细信息，请参阅 Microsoft Developer Network (MSDN) 网站上 Smart Document Software Development Kit。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性返回<b>True</b>以指示控件已展开, 设置为<b>False</b>可指示控件已折叠。</para>
+          <para>有关智能文档的详细信息，请参阅 Microsoft Developer Network (MSDN) 网站上的“智能文档软件开发工具包”。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListSelection">
@@ -313,12 +301,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>整数</b>值，该值代表智能文档列表框控件中选定项的索引号。</summary>
+        <summary>返回或设置一个<b>Integer</b>类型的值, 该值代表智能文档列表框控件中选定项目的索引号。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关智能文档的详细信息，请参阅 Microsoft Developer Network (MSDN) 网站上的 Smart Document Software Development Kit。</para>
-          <para />
-        </remarks>
+        <remarks><para>有关智能文档的详细信息，请参阅 Microsoft Developer Network (MSDN) 网站上的 Smart Document Software Development Kit。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -409,7 +395,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>Boolean</b>值，该值代表智能文档控件当前是否显示在文档操作任务窗格中。</summary>
+        <summary>返回一个<b>Boolean</b>类型的值, 该值代表智能文档控件当前是否显示在 "文档操作" 任务窗格中。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -446,12 +432,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>整数</b>，表示中的一组单选按钮控件智能文档中的选定项的索引号。</summary>
+        <summary>返回或设置一个<b>Integer</b>类型的值, 该值代表智能文档中的一组单选按钮控件中选定项目的索引号。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关智能文档的详细信息，请参阅 Microsoft Developer Network (MSDN) 网站上的 Smart Document Software Development Kit。</para>
-          <para />
-        </remarks>
+        <remarks><para>有关智能文档的详细信息，请参阅 Microsoft Developer Network (MSDN) 网站上的 Smart Document Software Development Kit。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextboxText">
@@ -486,12 +470,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>String</b>值，该值代表智能文档 textbox 控件中的文本。</summary>
+        <summary>返回或设置一个<b>字符串</b>, 表示智能文档文本框控件中的文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关智能文档的详细信息，请参阅 Microsoft Developer Network (MSDN) 网站上的 Smart Document Software Development Kit。</para>
-          <para />
-        </remarks>
+        <remarks><para>有关智能文档的详细信息，请参阅 Microsoft Developer Network (MSDN) 网站上的 Smart Document Software Development Kit。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -520,11 +502,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSmartTagControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" />，表示的文档操作任务窗格中显示的智能文档控件的类型。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" />表示在 "文档操作" 任务窗格中显示的智能文档控件的类型的。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" />可以是下列常量之一：</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" />可以是下列常量之一: </para>
           <para>
             <b>wdControlActiveX</b>
           </para>
@@ -573,8 +554,7 @@
           <para>
             <b>wdControlTextbox</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

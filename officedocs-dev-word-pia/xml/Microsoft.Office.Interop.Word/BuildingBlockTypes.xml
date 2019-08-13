@@ -1,13 +1,5 @@
 <Type Name="BuildingBlockTypes" FullName="Microsoft.Office.Interop.Word.BuildingBlockTypes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="293d3fc18e0491e85269f5fcd27be8ebf24cb185" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665815" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface BuildingBlockTypes" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8c4a2389e9721f4c8948dc95c730b4c330ebafec" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146176" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlockTypes" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlockTypes" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlockTypes" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表一<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />对象。</summary>
-    <remarks>
-      <para>构建基块类型由<see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" />常量。使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlockTypes.Item(Microsoft.Office.Interop.Word.WdBuildingBlockTypes)" />方法，以访问<b>BuildingBlockTypes</b>集合中的特定类型。有关构建基块的详细信息，请参阅<a href="HV10120827">处理构建基块</a></para>
-      <para />
-    </remarks>
+    <summary>表示对象的<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />集合。</summary>
+    <remarks><para>构建基块类型由<see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" />常量表示。 使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlockTypes.Item(Microsoft.Office.Interop.Word.WdBuildingBlockTypes)" />方法可访问<b>BuildingBlockTypes</b>集合中的特定类型。 有关构建基块的详细信息, 请参阅<a href="HV10120827">处理构建基块</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +46,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +74,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回中的项目数<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />集合。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />集合中项的数目。 只读。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,17 +102,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位<b>整数</b>，它指示在其中创建外接程序的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中，创建<see cref="P:Microsoft.Office.Interop.Word.BuildingBlockTypes.Creator" />属性返回十六进制数字 4d535744，表示的字符串"MSWD。" 也可以由常量表示此值<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。</para>
-          <para>此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
+        <summary>返回一个32位整数, 该<b>整数</b>表示在其中创建外接程序的应用程序。 只读。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlockTypes.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。 </para>
+          <para>此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注释</b>：</para>
-          <para />
-        </remarks>
+            <b>注意</b>： </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -152,11 +134,9 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdBuildingBlockTypes" />
       </Parameters>
       <Docs>
-        <param name="Index">所需<see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" />指定集合中的项的构建基块类型。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />对象，表示集合中的指定的项。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />
-        </returns>
+        <param name="Index">必需<see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /> : 指定集合中项的生成块类型。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />对象, 表示集合中的指定项。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,10 +163,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定的父级<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />对象。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />对象的父级。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

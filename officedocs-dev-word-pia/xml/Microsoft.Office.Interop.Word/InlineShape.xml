@@ -1,13 +1,5 @@
 <Type Name="InlineShape" FullName="Microsoft.Office.Interop.Word.InlineShape">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="66e249dbce92dbea7c1d72c74e1758b2d5b3cece" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666143" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface InlineShape" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9f81e89e789a82e62997f9c7555c77ad9c26269d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146680" /></Metadata><TypeSignature Language="C#" Value="public interface InlineShape" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract InlineShape" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.InlineShape" />
   <TypeSignature Language="VB.NET" Value="Public Interface InlineShape" />
@@ -26,15 +18,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表文档的文本层中的对象。</summary>
-    <remarks>
-      <para>内嵌形状只能图片、 OLE 对象或 ActiveX 控件。<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象视为字符和定位为字符的文本行中。<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象是成员<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合。<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合包含文档、 范围或所选内容中的所有形状。</para>
-      <para>使用<b>InlineShapes</b>(<paramref name="index" />)，其中<paramref name="index" />是索引号，若要返回单个<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。内嵌形状没有名称。</para>
+    <summary>代表文档的文字层中的对象。</summary>
+    <remarks><para>内嵌形状只能是图片、OLE 对象或 ActiveX 控件。 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象被视为字符, 并作为字符置于文本行中。 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象是<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合的成员。 <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合包含文档、区域或所选内容中的所有形状。</para>
+      <para>使用<b>InlineShapes</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回单个<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。 内嵌形状没有名称。</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.Shape" />对象定位到文本范围，但可以自由浮动和可放置在页面上的任何位置。您可以使用<see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" />方法和<see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />方法将形状转换为另一种类型。您可以将图片、 OLE 对象和 ActiveX 控件转换为内嵌形状。使用<see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" />属性返回的内嵌形状的类型： 图片、 链接的图片、 嵌入的 OLE 对象、 链接的 OLE 对象或 ActiveX 控件。</para>
-      <para>当打开在早期版本的 Microsoft Word 中创建文档时，图片将转换为内嵌形状。</para>
-      <para />
-    </remarks>
+        <see cref="T:Microsoft.Office.Interop.Word.Shape" />对象定位到文本区域, 但它们是自由浮动的, 可以放置在页面上的任何位置。 您可以使用<see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" />方法和<see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />方法将形状从一种类型转换为另一种类型。 您可以将图片、 OLE 对象和 ActiveX 控件转换为嵌入式图形。 使用<see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" />属性返回内嵌形状的类型: 图片、链接图片、嵌入的 ole 对象、链接的 ole 对象或 ActiveX 控件。</para>
+      <para>当您打开在 Microsoft Word 的早期版本中创建的文档时, 图片将转换为内嵌形状。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -150,7 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,7 +171,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合，代表指定对象的所有边框。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合, 该集合代表指定对象的所有边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,10 +199,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Chart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回文档中的内嵌形状集合内的图表。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Chart" />
-        </value>
+        <summary>返回文档中内嵌形状集合内的图表。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Chart" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,12 +225,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>将内嵌形状转换为浮动形状，并返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，表示新形状。</summary>
+        <summary>将内嵌形状转换为自由浮动形状, 并返回一个<see cref="T:Microsoft.Office.Interop.Word.Shape" />代表该新形状的对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>您必须应用<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />方法<see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" />对象至少应用一次才能使用<b>ConvertToShape</b>方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>在使用 ConvertToShape 方法<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />之前, 必须<see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" />至少对一个对象应用该方法。 <b></b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -270,9 +256,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -296,7 +282,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -354,12 +340,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Field</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Field" />对象，表示与指定形状相关联的域。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Field" />对象, 表示与指定的形状相关联的字段。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.Fields" />属性返回<see cref="T:Microsoft.Office.Interop.Word.Fields" />集合。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.Fields" />属性返回<see cref="T:Microsoft.Office.Interop.Word.Fields" />集合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -385,7 +369,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />对象，其中包含填充格式指定形状的属性。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />对象, 该对象包含指定形状的填充格式属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -413,10 +397,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.GlowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的发光效果的格式属性。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />
-        </value>
+        <summary>返回发光效果的格式属性。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.GlowFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -443,10 +425,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.GroupShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回分组在一起的内嵌形状的形状。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.GroupShapes" />
-        </value>
+        <summary>返回为内嵌形状组合在一起的形状。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.GroupShapes" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -473,14 +453,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果指定的形状是图表，则为 <b>True</b>。只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoTriState" />
-        </value>
-        <remarks>
-          <para>此属性始终返回<b>False</b>对于 OLE 图表。对于 OLE 图表，用于 InlineShape.OLEFormat.ProgID 并检查以下可能的值:"Excel.Chart.8"、"MSGraph.Chart.8"、"Excel.Sheet.8"、"Excel.Chart.5"、"MSGraph.Chart.5"或"Excel.Sheet.5"。</para>
-          <para />
-        </remarks>
+        <summary>如果指定的形状是图表，则为 <b>True</b>。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
+        <remarks><para>对于 OLE 图表, 该属性总是返回<b>False</b> 。 此时请使用 InlineShape.OLEFormat.ProgID，并且检查是否存在下列可能的值：“Excel.Chart.8”、“MSGraph.Chart.8”、“Excel.Sheet.8”、“Excel.Chart.5”、“MSGraph.Chart.5”或“Excel.Sheet.5”。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasSmartArt">
@@ -506,12 +482,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果形状上存在 SmartArt 图，则获取<b>True</b> 。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.MsoTriState" />对象。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>如果形状上存在 SmartArt 关系图, 则获取<b>True</b> 。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /> 对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -568,7 +542,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.HorizontalLineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.HorizontalLineFormat" />对象，其中包含指定格式的水平线<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.HorizontalLineFormat" />对象, 该对象包含指定<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象的水平线格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -596,12 +570,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Hyperlink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Hyperlink" />对象，表示与指定相关联的超链接<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Hyperlink" />对象, 表示与指定<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />的对象相关联的超链接。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果没有任何与指定形状相关联的超链接，则将出错。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果没有与指定形状相关联的超链接, 则会发生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsPictureBullet">
@@ -627,13 +599,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>判断<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象是一个图片项目符号。</summary>
+        <summary>确定<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象是否为图片项目符号。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b> ，指示<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象是一个图片项目符号。</para>
-          <para>虽然图片项目符号被看作嵌入式图形，搜索文档的<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合不会返回图片项目符号。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性返回<b>True</b>以指示<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象是图片项目符号。</para>
+          <para>[! 注意] 尽管图片项目符号被视为内嵌形状<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> , 但搜索文档的集合不会返回图片项目符号。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -659,12 +629,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.LineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />对象，其中包含线条格式指定形状的属性。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />对象, 该对象包含指定形状的线条格式属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于线条， <b>LineFormat</b>对象代表线条本身;对于带有边框形状， <b>LineFormat</b>对象代表边框。</para>
-          <para />
-        </remarks>
+        <remarks><para>对于线条， <b>LineFormat</b> 对象代表线条本身;具有边框的形状， <b>LineFormat</b> 对象表示的边框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkFormat">
@@ -690,7 +658,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.LinkFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.LinkFormat" />对象，表示指定的链接选项<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />链接到一个文件。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.LinkFormat" />对象, 表示链接到文件的指定<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />的链接选项。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -723,10 +691,9 @@
       <Docs>
         <summary>确定在调整指定形状的大小时该形状是否保持其原始比例。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的形状保留其原始比例调整大小时，和<b>MsoFalse</b>如果在调整都可以更改的高度和彼此的形状的宽度，此属性返回<b>MsoTrue</b></para>
+        <remarks><para>如果指定的形状在调整尺寸时保持其原始比例, 则此属性返回<b>MsoTrue</b> ; 如果您可以在调整其尺寸时, 单独更改形状的高度和宽度, 则返回<b>MsoFalse</b> 。</para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />可以是下列常量之一：</para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />可以是下列常量之一: </para>
           <para>
             <b>msoCTrue</b>
           </para>
@@ -742,8 +709,7 @@
           <para>
             <b>msoTrue</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OLEFormat">
@@ -769,7 +735,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.OLEFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.OLEFormat" />对象，它代表 OLE 特性 （而不是链接） 指定<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.OLEFormat" />对象, 表示指定<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />的 OLE 特征 (而不是链接)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -859,7 +825,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PictureFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.PictureFormat" />对象，其中包含图片格式指定对象的属性。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.PictureFormat" />对象, 其中包含指定对象的图片格式属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -887,12 +853,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定对象中包含的文档部分。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关从文档返回一个区域或从形状集合返回形状范围的信息，请参阅<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息, 请参阅<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reflection">
@@ -918,10 +882,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ReflectionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的反射格式形状。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />
-        </value>
+        <summary>返回形状的反射格式。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1035,12 +997,10 @@
         <ReturnType>Microsoft.Office.Core.Script</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.Script" />对象，表示的脚本或在指定的网页上的代码块。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Core.Script" />对象, 该对象代表指定网页上的一组脚本或代码。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果页上不包含任何脚本，则返回 nothing。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果该网页中不包含任何脚本，则不返回任何内容。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1065,10 +1025,8 @@
       <Parameters />
       <Docs>
         <summary>选择指定的对象。</summary>
-        <remarks>
-          <para>使用此方法后，使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性以使用选定项。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用此方法后, 请使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性来处理选定的项。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -1094,10 +1052,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShadowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的阴影格式指定的形状。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />
-        </value>
+        <summary>返回指定形状的阴影格式。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1124,12 +1080,10 @@
         <ReturnType>Microsoft.Office.Core.SmartArt</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Core.SmartArt" />提供一种方式使用 SmartArt 对象与指定的嵌入式图形。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.SmartArt" />提供一种方式使用 SmartArt 对象与指定的嵌入式图形。</value>
-        <remarks>
-          <para>只读的。此属性与内嵌形状相关联的 Smart Art 图形进行交互提供的入口点。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Core.SmartArt" />对象, 该对象提供一种处理与指定嵌入形状相关联的 SmartArt 的方式。</summary>
+        <value>提供<see cref="T:Microsoft.Office.Core.SmartArt" />一种处理与指定的嵌入式图形相关联的 SmartArt 的方法的对象。</value>
+        <remarks><para>只读。 此属性提供用于与嵌入形状相关联的 Smartart 图形进行交互的入口点。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SoftEdge">
@@ -1156,9 +1110,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回形状的柔化边缘格式。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1188,7 +1140,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextEffectFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" />对象，包含指定形状的文本效果格式属性。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" />对象, 该对象包含指定形状的文本效果格式设置属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1219,12 +1171,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置一个值，包含指定的嵌入式图形的标题。</summary>
-        <value>指定的嵌入式图形标题。</value>
-        <remarks>
-          <para>读/写。使用此属性提供的内嵌形状的可选文字标题。此属性将添加到 Microsoft Word 2010 中的设置形状格式对话框的在替换文字窗格的标题文本框中的标题文本。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置一个值, 该值包含指定的嵌入式图形的标题。</summary>
+        <value>指定内嵌形状的标题。</value>
+        <remarks><para>读/写。 使用此属性可为嵌入式形状提供可选文字标题。 此属性将标题文本添加到 Microsoft Word 2010 的 "设置形状格式" 对话框的 "替换文本" 窗格上的 "标题" 文本框中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -1250,11 +1200,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdInlineShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回内嵌形状的类型。</summary>
+        <summary>属性返回嵌入式图形的类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdInlineShapeType" />可以是下列常量之一。</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdInlineShapeType" />可以是下列常量之一。 </para>
           <para>
             <b>wdInlineShapeEmbeddedOLEObject</b>
           </para>
@@ -1288,8 +1237,7 @@
           <para>
             <b>wdInlineShapeScriptAnchor</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">

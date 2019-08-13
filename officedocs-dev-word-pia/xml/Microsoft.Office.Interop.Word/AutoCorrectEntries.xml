@@ -1,13 +1,5 @@
 <Type Name="AutoCorrectEntries" FullName="Microsoft.Office.Interop.Word.AutoCorrectEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="15161d8d9b96cdc9be82de4a41c0a978915ac25a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666957" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoCorrectEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e9481d541f5385119d68bbf3d4192d324fab9282" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146260" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrectEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrectEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrectEntries&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntry" />对象表示 Microsoft Word 可用的所有自动更正条目。 AutoCorrectEntries 集合包括 （工具菜单） 中的自动更正对话框中的所有条目。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" />属性可返回 AutoCorrectEntries 集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.Add(System.String,System.String)" />或<see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.AddRichText(System.String,Microsoft.Office.Interop.Word.Range)" />方法将自动更正项添加到可用的项的列表。</para>
-      <para>使用<b>条目</b>(<paramref name="index" />)，其中<paramref name="index" />是自动更正词条名称或索引号，可返回单个 AutoCorrectEntry 对象。您必须完全匹配拼写 （但不是一定大小写） 的名称，如下替换自动更正对话框中显示。</para>
-      <para />
-    </remarks>
+    <summary>代表可用于<see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntry" /> Microsoft Word 的所有 "自动更正" 词条的对象集合。 AutoCorrectEntries 集合包括“自动更正”对话框（“工具”菜单）中所有词条。</summary>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" />属性返回 AutoCorrectEntries 集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.Add(System.String,System.String)" />或<see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.AddRichText(System.String,Microsoft.Office.Interop.Word.Range)" />方法可将 "自动更正" 词条添加到可用条目的列表中。</para>
+      <para>使用<b>项</b>(<paramref name="index" />), 其中<paramref name="index" />是自动更正条目的名称或索引号, 返回一个 AutoCorrectEntry 对象。 名称的拼写必须与 "自动更正" 对话框中的 "替换" 下显示的完全匹配 (但不一定是大小写)。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,9 +53,9 @@
         <Parameter Name="Value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">要通过指定的文本时，自动插入文本<paramref name="Name" />键入。</param>
-        <param name="Value">您想要自动替换指定的文本的文本<paramref name="Value" />。</param>
-        <summary>向可用自动更正词条列表纯文本自动更正词条。</summary>
+        <param name="Name">在键入指定<paramref name="Name" />的文本时, 您希望自动插入的文本。</param>
+        <param name="Value">您希望自动替换为由<paramref name="Value" />指定的文本的文本。</param>
+        <summary>向可用的 "自动更正" 词条列表中添加纯文本的 "自动更正" 词条。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,15 +83,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Name">Microsoft Word 自动插入次的格式化的文本<paramref name="Name" />键入。</param>
-        <param name="Range">要自动替换的文本<paramref name="Range" />。</param>
-        <summary>创建一个带格式的自动更正词条，保留的指定范围的所有文本属性。</summary>
+        <param name="Name">键入时<paramref name="Name" /> , Microsoft Word 将自动插入的格式化文本。</param>
+        <param name="Range">自动替换的<paramref name="Range" />文本。</param>
+        <summary>创建带格式的 "自动更正" 词条, 保留指定区域的所有文本属性。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.RichText" />条目使用此方法添加的属性返回<b>True</b>。如果不使用此方法，插入自动更正词条符合当前样式。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.RichText" />此方法添加的条目的属性返回<b>True</b>。 如果未使用此方法, 则插入的 "自动更正" 条目将符合当前样式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -127,7 +114,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />值，该值代表指定对象的创建者的对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" /> object 类型的对象, 该对象代表指定对象的创建者。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,7 +142,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,11 +170,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，指示在其中创建指定的对象的应用程序。</summary>
+        <summary>返回一个值, 该值指示在其中创建指定对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建特定对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果特定对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

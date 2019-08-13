@@ -1,13 +1,5 @@
 <Type Name="CoAuthUpdate" FullName="Microsoft.Office.Interop.Word.CoAuthUpdate">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8afbe4cb2bb4043cbb3dcabbe8ea7903fb2ee981" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666838" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthUpdate" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cb489ae56e777a8913181f8d5be2c8d09a728cb2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142227" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthUpdate" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthUpdate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthUpdate" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>代表共同作者已经更新的文本范围。</summary>
-    <remarks>
-      <para>启用共同创作文档同时编辑时，由一个共同作者所做的更改形式提供给其他共同作者更新。每次更改由单个<b>CoAuthUpdate</b>对象表示。当共同作者将保存其版本的文档时，其他共同作者所做的更改将合并到该的 co 作者的版本的文档。之前的时间，共同创作时保存文档的版本，其他共同作者所做的更改可作为更新。</para>
-      <para>例如，当两人正在编辑文档最初包含一个段落的文本，"褐色 fox。"如果第一个共同作者编辑的句读取，"通过日志快速褐色 fox 跳转"，然后保存文档的单词"快速"和"通过日志"可供第二个共同作者为两个更新到文档。以下两个更新 Microsoft Word 2010 对象模型中表示为两个<b>CoAuthUpdate</b>对象。从第一个共同作者的更新时将文档保存为第二个共同作者，合并到文档中。</para>
-      <para />
-    </remarks>
+    <remarks><para>当多个作者同时编辑一个启用了共同创作的文档时，由其中一位共同作者进行的更改将作为更新提供给其他共同作者。 每个更改由单个 <b>CoAuthUpdate</b> 对象表示。 当某个共同作者保存其文档版本时，由其他共同作者进行的更改也将合并到该共同作者的文档版本中。 在共同创作者保存文档版本的时间之前, 其他共同作者所做的更改将作为更新提供。</para>
+      <para>例如，两个人在编辑一个文档，该文档最初包含一个段落，其中包含文本“棕毛狐狸”。 如果第一位共同作者将句子编辑为“敏捷的棕毛狐狸飞身跃过木头”，然后保存该文档，那么，“敏捷的”和“飞身跃过木头”将作为两个更新提供给第二位共同作者。 这两个更新在 Microsoft Word 2010 对象模型中表示为两个<b>CoAuthUpdate</b>对象。 当第二位共同作者保存该文档时，由第一位共同作者进行的更新将合并到该文档中。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,13 +47,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.Application" /> Microsoft Word 应用程序的对象。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -89,15 +76,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个指示在其中创建指定的对象的应用程序的 32 位整数。</summary>
-        <value>指示在其中创建指定的对象的应用程序的 32 位整数。</value>
-        <remarks>
-          <para>只读的<b>long</b>。如果对象在 Microsoft Word 中创建的则此属性返回十六进制数字 4d535744，表示字符串"MSWD"。此属性主要旨在用于 Apple Macintosh 上，其中每个应用程序具有四个字符的创建者代码。例如，Word 具有 MSWD 的创建者代码。</para>
+        <summary>获取一个32位整数, 该整数指示在其中创建指定对象的应用程序。</summary>
+        <value>一个32位整数, 它指示在其中创建指定对象的应用程序。</value>
+        <remarks><para><b>Long 类型</b>, 只读。 如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
           <para>
-            <b>警告</b>：</para>
-          <para>此值也可以由常量<b>wdCreatorCode</b>。</para>
-          <para />
-        </remarks>
+            <b>警告</b>: </para>
+          <para>[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -123,9 +108,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:System.Object" />，表示指定的父对象<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />对象。</summary>
-        <value>
-          <see cref="T:System.Object" /> ，表示指定的父对象<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />对象。</value>
+        <summary>获取一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />对象的父对象的。</summary>
+        <value>一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />对象的父对象的。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,12 +136,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 该对象代表指定对象中包含的文档部分。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示指定对象中包含的文档部分。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

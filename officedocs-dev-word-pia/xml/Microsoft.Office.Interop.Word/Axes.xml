@@ -1,13 +1,5 @@
 <Type Name="Axes" FullName="Microsoft.Office.Interop.Word.Axes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a7b5e852d30fbfc385bd94806dde7ae7e45ce71e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666485" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Axes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="52194e59d1daa6b8dd6756640c3b6653b9f1117a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146316" /></Metadata><TypeSignature Language="C#" Value="public interface Axes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Axes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Axes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Axes&#xA;Implements IEnumerable" />
@@ -30,10 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Word.Axis" />指定图表中的对象。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Chart.Axes(System.Object,Microsoft.Office.Interop.Word.XlAxisGroup)" />方法，以返回<see cref="T:Microsoft.Office.Interop.Word.Axes" />集合。</para>使用
-      <para><see cref="T:Microsoft.Office.Interop.Word.Axes" />(<paramref name="Type" />， <paramref name="AxisGroup" />)，其中<paramref name="Type" />为坐标轴类型和<paramref name="AxisGroup" />为坐标轴组，可返回<see cref="T:Microsoft.Office.Interop.Word.Axes" />集合，其中包含一个<see cref="T:Microsoft.Office.Interop.Word.Axis" />对象。<paramref name="Type" />可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />枚举值： <see cref="F:Microsoft.Office.Interop.Word.XlAxisType.xlCategory" />， <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlSeries" />，或<see cref="F:Microsoft.Office.Interop.Word.XlAxisType.xlValue" />。<paramref name="AxisGroup" />可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />常量：<see cref="F:Microsoft.Office.Interop.Word.XlAxisGroup.xlPrimary" />或<see cref="F:Microsoft.Office.Interop.Word.XlAxisGroup.xlSecondary" />。有关详细信息，请参阅<see cref="M:Microsoft.Office.Interop.Word.Chart.Axes(System.Object,Microsoft.Office.Interop.Word.XlAxisGroup)" />方法。</para><para /></remarks>
+    <summary>指定图表中的所有<see cref="T:Microsoft.Office.Interop.Word.Axis" />对象的集合。</summary>
+    <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.Chart.Axes(System.Object,Microsoft.Office.Interop.Word.XlAxisGroup)" />方法返回<see cref="T:Microsoft.Office.Interop.Word.Axes" />集合。</para>
+      <para>Use <see cref="T:Microsoft.Office.Interop.Word.Axes" /> (<paramref name="Type" />, <paramref name="AxisGroup" />), 其中<paramref name="Type" />是轴类型, <paramref name="AxisGroup" />是轴组, 用于返回包含单个<see cref="T:Microsoft.Office.Interop.Word.Axes" /> <see cref="T:Microsoft.Office.Interop.Word.Axis" />对象的集合。 <paramref name="Type" />可以<see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />是下列枚举值之一<see cref="F:Microsoft.Office.Interop.Word.XlAxisType.xlCategory" />:、 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlSeries" />或。 <see cref="F:Microsoft.Office.Interop.Word.XlAxisType.xlValue" /> <paramref name="AxisGroup" />可以是下列<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />常量之一: <see cref="F:Microsoft.Office.Interop.Word.XlAxisGroup.xlPrimary" />或。 <see cref="F:Microsoft.Office.Interop.Word.XlAxisGroup.xlSecondary" /> 有关详细信息, 请参阅<see cref="M:Microsoft.Office.Interop.Word.Chart.Axes(System.Object,Microsoft.Office.Interop.Word.XlAxisGroup)" />方法。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -92,10 +84,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />值，该值代表指定对象 （可与 OLE 自动化对象使用此属性可返回该对象的应用程序） 的创建者的对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 当与对象识别符一起使用时, 此属性<see cref="T:Microsoft.Office.Interop.Word._Application" />返回一个对象, 该对象表示指定对象的创建者 (可以将此属性与 OLE 自动化对象一起使用, 以返回该对象的应用程序)。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,9 +113,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回集合中对象的数目。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,13 +141,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中，创建<see cref="P:Microsoft.Office.Interop.Word.Axes.Creator" />属性返回十六进制数字 4d535744，表示的字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.Axes.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -223,10 +207,8 @@
       <Docs>
         <param name="Type">坐标轴类型。</param>
         <param name="AxisGroup">坐标轴。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Axis" />对象从<see cref="T:Microsoft.Office.Interop.Word.Axes" />集合。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Axis" />
-        </value>
+        <summary>从<see cref="T:Microsoft.Office.Interop.Word.Axes" />集合中<see cref="T:Microsoft.Office.Interop.Word.Axis" />返回单个对象。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Axis" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,9 +236,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回指定对象的父级。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
