@@ -1,13 +1,5 @@
 <Type Name="MailingLabel" FullName="Microsoft.Office.Interop.Word.MailingLabel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ea639f9554460c830e5274ddb6a737859278d9e9" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666284" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailingLabel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4afda2d9ebd64dca6130b11e02d6aa6915201036" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144433" /></Metadata><TypeSignature Language="C#" Value="public interface MailingLabel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailingLabel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailingLabel" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailingLabel" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>代表一个邮件标签。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.MailingLabel" />属性返回<see cref="T:Microsoft.Office.Interop.Word.MailingLabel" />对象。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.MailingLabel.PrintOut(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法可打印邮件标签在标签选项对话框的产品编号框中列出。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.MailingLabel.CustomLabels" />属性用于设置格式或打印的自定义邮件标签。</para>
-      <para />
-    </remarks>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.MailingLabel" />属性返回<see cref="T:Microsoft.Office.Interop.Word.MailingLabel" />对象。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.MailingLabel.PrintOut(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法打印 "标签选项" 对话框中 "产品编号" 框中列出的邮件标签。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.MailingLabel.CustomLabels" />属性可设置或打印自定义邮件标签。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,14 +81,14 @@
         <Parameter Name="Vertical" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">可选的<b>对象</b>。 邮件标签的名称。</param>
-        <param name="Address">可选的<b>对象</b>。 邮件标签的文本。</param>
-        <param name="AutoText">可选的<b>对象</b>。 包含邮件标签文本的"自动图文集"词条的名称。</param>
-        <param name="ExtractAddress">可选的<b>对象</b>。 <b>True</b>以使用的地址文本标记的用户定义的书签"envelopeaddress"而不是使用<paramref name="Address" />参数。</param>
-        <param name="LaserTray">可选的<b>对象</b>。 激光打印机纸盒。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />常量。</param>
-        <param name="PrintEPostageLabel">可选的<b>对象</b>。 <b>真</b> 到使用互联网电子邮政供应商打印邮资。</param>
-        <param name="Vertical">可选的<b>对象</b>。 <b>为</b> 格式化文本标签的垂直方向上。 用于亚洲语言邮件标签。</param>
-        <summary>创建使用默认标签选项或指定一个新的标签文档。 返回<see cref="T:Microsoft.Office.Interop.Word.Document" />对象，表示新文档。</summary>
+        <param name="Name">可选<b>对象</b>。 邮件标签的名称。</param>
+        <param name="Address">可选<b>对象</b>。 邮件标签的文本。</param>
+        <param name="AutoText">可选<b>对象</b>。 包含邮件标签文本的"自动图文集"词条的名称。</param>
+        <param name="ExtractAddress">可选<b>对象</b>。 <b>如果为 True</b> , 则使用由用户定义的名为 "EnvelopeAddress" 的书签标记的地址文本<paramref name="Address" /> , 而不是使用该参数。</param>
+        <param name="LaserTray">可选<b>对象</b>。 激光打印机纸盒。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />常量之一。</param>
+        <param name="PrintEPostageLabel">可选<b>对象</b>。 <b>真</b> 到使用互联网电子邮政供应商打印邮资。</param>
+        <param name="Vertical">可选<b>对象</b>。 <b>为</b> 格式化文本标签的垂直方向上。 用于亚洲语言邮件标签。</param>
+        <summary>创建使用默认标签选项或指定一个新的标签文档。 返回一个<see cref="T:Microsoft.Office.Interop.Word.Document" />对象, 表示新文档。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,17 +163,12 @@
         <param name="LabelID">邮件标签的标识。</param>
         <param name="Address">邮件标签的文本。</param>
         <param name="AutoText">包含邮件标签文本的"自动图文集"词条的名称。</param>
-        <param name="ExtractAddress">
-          <b>True</b>以使用的地址文本标记的用户定义的书签"envelopeaddress"而不是使用<paramref name="Address" />参数。</param>
-        <param name="LaserTray">激光打印机纸盒。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />常量。</param>
-        <param name="PrintEPostageLabel">
-          <b>真</b> 到使用互联网电子邮政供应商打印邮资。</param>
-        <param name="Vertical">
-          <b>为</b> 格式化文本标签的垂直方向上。用于亚洲语言邮件标签。 </param>
-        <summary>创建使用默认标签选项或指定一个新的标签文档。 返回<see cref="T:Microsoft.Office.Interop.Word._Document" />对象，表示新文档。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word._Document" />
-        </returns>
+        <param name="ExtractAddress"><b>如果为 True</b> , 则使用由用户定义的名为 "EnvelopeAddress" 的书签标记的地址文本<paramref name="Address" /> , 而不是使用该参数。</param>
+        <param name="LaserTray">激光打印机纸盒。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />常量之一。</param>
+        <param name="PrintEPostageLabel"><b>真</b> 到使用互联网电子邮政供应商打印邮资。</param>
+        <param name="Vertical"><b>为</b> 格式化文本标签的垂直方向上。 用于亚洲语言邮件标签。</param>
+        <summary>创建使用默认标签选项或指定一个新的标签文档。 返回一个<see cref="T:Microsoft.Office.Interop.Word._Document" />对象, 表示新文档。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word._Document" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,9 +197,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomLabels">
@@ -240,7 +225,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CustomLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.CustomLabels" />代表可用的自定义邮件标签的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.CustomLabels" />集合, 该集合代表可用的自定义邮件标签。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -273,11 +258,9 @@
       <Docs>
         <summary>返回或设置默认邮件标签的名称。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>要查找的字符串指定的内置标签，请在标签选项对话框 （工具菜单、 信封和标签对话框、 标签选项卡、 选项按钮） 中选择的标签。单击详细信息，然后查看标签名称框，其中包含要用于此属性的正确字符串。要将自定义标签设置为默认邮件标签，在详细信息对话框中，使用显示的标签名称或使用<see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Name" />属性与<see cref="T:Microsoft.Office.Interop.Word.CustomLabel" />对象。</para>
-          <para>自动从<b>CustomLabel</b>对象创建新的标签文档将<b>DefaultLabelName</b>属性设为<b>CustomLabel</b>对象的名称。</para>
-          <para />
-        </remarks>
+        <remarks><para>要查找指定内置标签的字符串，请在“工具”菜单的“信封和标签”对话框中“标签”选项卡上，单击“选项”按钮，然后在“标签选项”对话框中选择该标签。 然后单击 "详细信息" 并查看 "标签名称" 框, 其中包含要用于此属性的正确字符串。 若要将自定义标签设置为默认邮件标签, 请使用 "详细信息" 对话框中显示的标签名称, 或<see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Name" />将该属性<see cref="T:Microsoft.Office.Interop.Word.CustomLabel" />与对象一起使用。</para>
+          <para>在 <b>CustomLabel</b> 对象中创建的新标签文档自动将 <b>DefaultLabelName</b> 属性设为 <b>CustomLabel</b> 对象的名字。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultLaserTray">
@@ -308,11 +291,8 @@
       <Docs>
         <summary>返回或设置装有打印邮件标签纸张的默认纸盒。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DefaultLaserTray</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>DefaultLaserTray</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultPrintBarCode">
@@ -347,12 +327,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b> POSTNET 条码被添加到信封或邮件标签，默认情况下。</summary>
+        <summary><b>如此</b>如果默认情况下, 将 POSTNET 条码添加到信封或邮件标签。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>美国邮件。对于信封，此属性必须设置为<b>True</b>之前<see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintFIMA" />属性设置。</para>
-          <para />
-        </remarks>
+        <remarks><para>美国邮件。 对于信封, 在设置该<see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintFIMA" />属性之前, 必须将此属性设置为<b>True</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LabelOptions">
@@ -377,10 +355,8 @@
       <Parameters />
       <Docs>
         <summary>显示标签选项对话框。</summary>
-        <remarks>
-          <para>仅当该文档是邮件标签邮件合并主文档的工作方式时， <b>LabelOptions</b>方法。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>LabelOptions</b> 方法只有文档是邮件标签邮件合并主文档。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -441,15 +417,15 @@
         <Parameter Name="Vertical" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">可选的<b>对象</b>。 邮件标签的名称。</param>
-        <param name="Address">可选的<b>对象</b>。 标签地址的文本。</param>
-        <param name="ExtractAddress">可选的<b>对象</b>。 <b>真</b> 要使用"EnvelopeAddress"书签 (用户定义书签) 作为标签文本标记的文本。 如果指定此参数，则<paramref name="Address" />和<paramref name="AutoText" />将被忽略。</param>
-        <param name="LaserTray">可选的<b>对象</b>。 要使用激光打印机纸盒。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />常量。</param>
-        <param name="SingleLabel">可选的<b>对象</b>。 <b>真</b> 要打印单个标签; <b>假</b> 以打印一整页相同的标签。</param>
-        <param name="Row">可选的<b>对象</b>。 用于单独标签的标签行。 如果不是有效<paramref name="SingleLabel" />为<b>False</b>。</param>
-        <param name="Column">可选的<b>对象</b>。 用于单独标签的标签列。 如果不是有效<paramref name="SingleLabel" />为<b>False</b>。</param>
-        <param name="PrintEPostageLabel">可选的<b>对象</b>。 <b>真</b> 到使用互联网电子邮政供应商打印邮资。</param>
-        <param name="Vertical">可选的<b>对象</b>。 <b>为</b> 纵向打印标签上的文本。 用于亚洲语言邮件标签。</param>
+        <param name="Name">可选<b>对象</b>。 邮件标签的名称。</param>
+        <param name="Address">可选<b>对象</b>。 标签地址的文本。</param>
+        <param name="ExtractAddress">可选<b>对象</b>。 <b>真</b> 要使用"EnvelopeAddress"书签 (用户定义书签) 作为标签文本标记的文本。 如果指定了此参数, <paramref name="Address" />则<paramref name="AutoText" />将被忽略。</param>
+        <param name="LaserTray">可选<b>对象</b>。 要使用激光打印机纸盒。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />常量。</param>
+        <param name="SingleLabel">可选<b>对象</b>。 <b>真</b> 要打印单个标签; <b>假</b> 以打印一整页相同的标签。</param>
+        <param name="Row">可选<b>对象</b>。 用于单独标签的标签行。 如果<paramref name="SingleLabel" />为<b>False</b>, 则无效。</param>
+        <param name="Column">可选<b>对象</b>。 用于单独标签的标签列。 如果<paramref name="SingleLabel" />为<b>False</b>, 则无效。</param>
+        <param name="PrintEPostageLabel">可选<b>对象</b>。 <b>真</b> 到使用互联网电子邮政供应商打印邮资。</param>
+        <param name="Vertical">可选<b>对象</b>。 <b>为</b> 纵向打印标签上的文本。 用于亚洲语言邮件标签。</param>
         <summary>打印一个标签或具有相同地址的一页标签。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -528,17 +504,13 @@
       <Docs>
         <param name="LabelID">邮件标签的标识。</param>
         <param name="Address">标签地址的文本。</param>
-        <param name="ExtractAddress">
-          <b>真</b> 要使用"EnvelopeAddress"书签 (用户定义书签) 作为标签文本标记的文本。 如果指定此参数，则<paramref name="Address" />和<paramref name="AutoText" />将被忽略。</param>
-        <param name="LaserTray">激光打印机纸盒。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />常量。</param>
-        <param name="SingleLabel">
-          <b>真</b> 要打印单个标签; <b>假</b> 以打印一整页相同的标签。</param>
-        <param name="Row">用于单独标签的标签行。 如果不是有效<paramref name="SingleLabel" />为<b>False</b>。</param>
-        <param name="Column">用于单独标签的标签列。 如果不是有效<paramref name="SingleLabel" />为<b>False</b>。</param>
-        <param name="PrintEPostageLabel">
-          <b>真</b> 到使用互联网电子邮政供应商打印邮资。</param>
-        <param name="Vertical">
-          <b>为</b> 纵向打印标签上的文本。用于亚洲语言邮件标签。 </param>
+        <param name="ExtractAddress"><b>真</b> 要使用"EnvelopeAddress"书签 (用户定义书签) 作为标签文本标记的文本。 如果指定了此参数, <paramref name="Address" />则<paramref name="AutoText" />将被忽略。</param>
+        <param name="LaserTray">激光打印机纸盒。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" />常量之一。</param>
+        <param name="SingleLabel"><b>真</b> 要打印单个标签; <b>假</b> 以打印一整页相同的标签。</param>
+        <param name="Row">用于单独标签的标签行。 如果<paramref name="SingleLabel" />为<b>False</b>, 则无效。</param>
+        <param name="Column">用于单独标签的标签列。 如果<paramref name="SingleLabel" />为<b>False</b>, 则无效。</param>
+        <param name="PrintEPostageLabel"><b>真</b> 到使用互联网电子邮政供应商打印邮资。</param>
+        <param name="Vertical"><b>为</b> 纵向打印标签上的文本。 用于亚洲语言邮件标签。</param>
         <summary>打印一个标签或具有相同地址的一页标签。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -569,13 +541,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>垂直排列中文信封和邮件标签的文本。</summary>
+        <summary>对亚洲信封和邮件标签上的文本垂直方向<b>为 True</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性仅适用于邮件标签或信封邮件合并设置的仅适用于东亚语言。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性仅适用于为邮件合并设置的邮件标签或信封, 并且仅适用于亚洲语言。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

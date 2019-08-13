@@ -1,13 +1,5 @@
 <Type Name="_LetterContent" FullName="Microsoft.Office.Interop.Word._LetterContent">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="935d8ead36e24d408c303d383bb7e1226d4740d6" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665574" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _LetterContent" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="935d8ead36e24d408c303d383bb7e1226d4740d6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145245" /></Metadata><TypeSignature Language="C#" Value="public interface _LetterContent" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _LetterContent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word._LetterContent" />
   <TypeSignature Language="VB.NET" Value="Public Interface _LetterContent" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>这是与相应的 COM 对象的互操作性的托管代码需要 COM coclass 中的主接口。 仅当您想要使用的方法共享相同的名称的 COM 对象; 事件时，才使用此主接口在这种情况下，强制转换为此接口调用方法，并强制转换为最新的事件接口，连接到该事件。 否则，使用.NET 接口派生自 COM coclass 访问方法、 属性和事件的 COM 对象。 关于 COM 对象的详细信息，请参阅<see cref="T:Microsoft.Office.Interop.Word.LetterContent" />。</summary>
+    <summary>这是 COM coclass（托管代码需要此 Coclass 来实现与相应的 COM 对象的互操作性）中的主接口。 仅当您想要使用的方法与 COM 对象的事件共享同一名称时才使用此主接口；在这种情况下，转换为此接口以调用该方法，转换为最新的事件接口以连接到该事件。 否则，请使用派生自 COM coclass 的 .NET 接口来访问方法、属性和 COM 对象的事件。 有关 COM 对象的详细信息, 请参阅<see cref="T:Microsoft.Office.Interop.Word.LetterContent" />。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />对象, 表示 Microsoft Word 应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,9 +168,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>例如，如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>例如, 如果该对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateFormat">
@@ -235,13 +227,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.LetterContent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个只读的<see cref="T:Microsoft.Office.Interop.Word.LetterContent" />对象，表示指定的字母英文信函向导创建的内容。</summary>
+        <summary>返回一个只读<see cref="T:Microsoft.Office.Interop.Word.LetterContent" />对象, 该对象代表由 "英文信函向导" 创建的指定信件的内容。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>重复</b>属性可用于拿起重复<b>LetterContent</b>对象的所有属性的设置。您可以分配到要同时应用这些设置的相同类型的另一个对象由<b>重复</b>属性返回的对象。在之前将重复对象分配给另一个对象，您可以更改任何重复的对象的属性而不影响原始。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>重复的</b> 属性可用于获取重复 <b>LetterContent</b> 对象的所有属性的设置。 您可以分配到要一次性应用这些设置的相同类型的另一个对象 <b>复制</b> 属性返回的对象。 在将重复对象赋给另一个对象之前, 可以更改任何重复的对象的属性而不会影响原始。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnclosureNumber">
@@ -270,7 +259,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置由英文信函向导创建的信函的附件数。</summary>
+        <summary>返回或设置由“英文信函向导”创建的信件的附件编号。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -301,13 +290,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果由信函向导创建的信件中包含页眉和页脚与页面设计模板。</summary>
+        <summary><b>如此</b> 如果由信函向导创建的信件中包含页眉和页脚与页面设计模板。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word._LetterContent.PageDesign" />属性设置模板的名称附加到英文信函向导创建的文档。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._LetterContent.PageDesign" />属性设置附加到 "英文信函向导" 所创建文档的模板的名称。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InfoBlock">
@@ -336,12 +322,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>与 Microsoft Word 的"英文信函向导"相关。在 Word 的英文版本中没有使用该属性。</summary>
+        <summary>与 Microsoft Word 的"英文信函向导"相关。 在 Word 的英文版本中没有使用该属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>由于您选择或安装的语言支持不同（例如美国英语），该属性可能无法使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Letterhead">
@@ -370,14 +354,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果对于在由信函向导创建的信件的预打印信头预留空间。</summary>
+        <summary><b>如此</b> 如果对于在由信函向导创建的信件的预打印信头预留空间。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word._LetterContent.LetterheadSize" />属性控制的信头保留的空间大小。</para>
-          <para />
-        </remarks>
+        <remarks><para>该<see cref="P:Microsoft.Office.Interop.Word._LetterContent.LetterheadSize" />属性控制保留的信头空间的大小。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LetterheadLocation">
@@ -408,11 +388,8 @@
       <Docs>
         <summary>返回或设置通过英文信函向导来创建的信函中的预打印信头的位置。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>LetterheadLocation</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdLetterheadLocation" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>LetterheadLocation</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdLetterheadLocation" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LetterheadSize">
@@ -472,13 +449,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLetterStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置由英文信函向导创建的信函的布局。</summary>
+        <summary>返回或设置“英文信函向导”所建信件的版式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>LetterStyle</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdLetterStyle" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>LetterStyle</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdLetterStyle" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailingInstructions">
@@ -628,12 +602,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置收件人的代码。 并不是美国英语版本的 Microsoft Word 中。</summary>
+        <summary>返回或设置收件人的代码。 在 Microsoft Word 美国英语版中不使用该属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>由于您选择或安装的语言支持不同（例如美国英语），该属性可能无法使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RecipientGender">
@@ -664,11 +636,8 @@
       <Docs>
         <summary>返回或设置收件人的性别，如果已知。 并不是美国英语版本的 Microsoft Word 中。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>RecipientGender</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdSalutationGender" />常量。此属性可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>RecipientGender</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdSalutationGender" />常量之一。 由于您选择或安装的语言支持不同（例如美国英语），该属性可能无法使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RecipientName">
@@ -697,7 +666,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置将会收到英文信函向导创建的信件的人员的名称。</summary>
+        <summary>返回或设置由“英文信函向导”创建的信件的收件人的姓名。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -728,7 +697,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置参考线 (例如，"回复:") 英文信函向导创建的信件。</summary>
+        <summary>返回或设置由 "英文信函向导" 创建的信函的参考线 (例如, "发件人为:")。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -790,12 +759,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置缩写地址。 并不是美国英语版本的 Microsoft Word 中。</summary>
+        <summary>返回或设置缩写地址。 在 Microsoft Word 美国英语版中不使用该属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>由于您选择或安装的语言支持不同（例如美国英语），该属性可能无法使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Salutation">
@@ -855,13 +822,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSalutationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置由英文信函向导创建的信函的称呼的类型。</summary>
+        <summary>返回或设置由“英文信函向导”创建的信件的称呼类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>SalutationType</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdSalutationType" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>SalutationType</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdSalutationType" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderCity">
@@ -890,12 +854,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置发件人的城市。 并不是美国英语版本的 Microsoft Word 中。</summary>
+        <summary>返回或设置发件人的城市。 在 Microsoft Word 美国英语版中不使用该属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>由于您选择或安装的语言支持不同（例如美国英语），该属性可能无法使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderCode">
@@ -924,12 +886,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的发件人代码。 并不是美国英语版本的 Microsoft Word 中。</summary>
+        <summary>返回或设置发件人代码。 在 Microsoft Word 美国英语版中不使用该属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>由于您选择或安装的语言支持不同（例如美国英语），该属性可能无法使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderCompany">
@@ -989,13 +949,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSalutationGender</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用于称呼语的性别。 并不是美国英语版本的 Microsoft Word 中。</summary>
+        <summary>返回或设置用于称呼语的性别。 在 Microsoft Word 美国英语版中不使用该属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>SenderGender</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdSalutationGender" />常量。此属性可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>SenderGender</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdSalutationGender" />常量之一。 由于您选择或安装的语言支持不同（例如美国英语），该属性可能无法使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderInitials">
@@ -1117,12 +1074,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>并不是美国英语版本的 Microsoft Word 中。</summary>
+        <summary>在 Microsoft Word 美国英语版中不使用该属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>由于您选择或安装的语言支持不同（例如美国英语），该属性可能无法使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Subject">

@@ -1,13 +1,5 @@
 <Type Name="SmartTag" FullName="Microsoft.Office.Interop.Word.SmartTag">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d90397c8f538990a390264fd3d1b286f3e023f2a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666719" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTag" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5fa49cb1dcddf81834677aefdc8cd50240fa9578" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146120" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTag" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTag" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTag" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTag" />
@@ -26,13 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示在文档或区域包含识别的类型信息的字符串。</summary>
-    <remarks>
-      <para>
-        <b>SmartTag</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />集合。<b>SmartTags</b>集合包含文档或文档中的文本范围中的所有智能标记。Microsoft Word 使用标签智能标记识别器文件并使用操作文件，以执行与智能标记，如链接到网站相关的操作。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" />方法 — 或<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />(<paramref name="index" />)，其中<paramref name="index" />代表智能标记的数量 — 可返回单个<b>SmartTag</b>对象。</para>
-      <para />
-    </remarks>
+    <summary>代表文档或范围中包含识别类型信息的字符串。</summary>
+    <remarks><para><b>SmartTag</b>对象是<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />集合的一个成员。 <b>SmartTags</b> 集合包含文档或文档的文本范围中的所有智能标记。 Microsoft Word 使用识别器文件标记智能标记，并使用操作文件执行与智能标记相关的操作，例如链接到网站。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" />使用方法 (或<see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> (<paramref name="index" />), 其中<paramref name="index" />代表智能标记的编号) 返回单个<b>SmartTag</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,9 +83,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -123,7 +112,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,12 +142,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>String</b>值，该值代表智能标记的 URL 地址。</summary>
+        <summary>返回一个<b>字符串</b>, 表示智能标记的 URL 地址。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>相关的智能标记识别器文件中指定的 URL 地址。当一段文本识别并标记时，URL 将变为智能标记中包含的信息的一部分。如果文档发送到不具有其计算机上安装必要的识别器和操作文件中的某人有用<b>DownloadURL</b>属性。用户可以按照下载所需的智能标记文件的 URL。</para>
-          <para />
-        </remarks>
+        <remarks><para>在相关的智能标记识别器文件中指定 URL 地址。 当一段文本被识别和标记时, 该 URL 将成为智能标记中包含的信息的一部分。 如果向未在其计算机上安装必需的识别器和操作文件的用户发送文档, <b>DownloadURL</b>属性将非常有用。 用户可以按照 URL 下载所需的智能标记文件。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -249,12 +236,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CustomProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.CustomProperties" />对象，代表智能标记的属性。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.CustomProperties" />对象, 表示智能标记的属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以使用<see cref="M:Microsoft.Office.Interop.Word.SmartTags.Add(System.String,System.Object@,System.Object@)" />方法添加自定义属性。但是，自定义属性通常指定智能标记识别器和操作文件中。</para>
-          <para />
-        </remarks>
+        <remarks><para>您可以使用<see cref="M:Microsoft.Office.Interop.Word.SmartTags.Add(System.String,System.Object@,System.Object@)" />方法添加自定义属性。 但是, 自定义属性通常在智能标记识别器和操作文件中指定。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -283,12 +268,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定对象中包含的文档部分。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关从文档返回一个区域或从形状集合返回形状范围的信息，请参阅<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息, 请参阅<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -316,10 +299,8 @@
       <Parameters />
       <Docs>
         <summary>选择指定的对象。</summary>
-        <remarks>
-          <para>使用此方法后，使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性以使用选定项。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用此方法后, 请使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性来处理选定的项。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmartTagActions">
@@ -348,7 +329,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagActions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" />集合，代表智能标记上可用操作的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" />集合, 该集合代表智能标记上可用的操作的集合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -379,7 +360,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>String</b>值，该值代表智能标记相关的 XML。</summary>
+        <summary>返回一个<b>字符串</b>, 表示智能标记的相关 XML。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -410,12 +391,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象值，该值代表智能标记的 XML 元素。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象, 表示智能标记的 XML 元素。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>并非所有智能标记包含 XML 节点;但是， <b>XMLNode</b>属性使开发人员可以访问包含 XML 节点的智能标记的 XML 节点。</para>
-          <para />
-        </remarks>
+        <remarks><para>并非所有智能标记都包含 XML 节点;但是, <b>XMLNode</b>属性允许开发人员访问包含 xml 节点的智能标记的 xml 节点。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

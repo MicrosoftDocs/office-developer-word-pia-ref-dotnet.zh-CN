@@ -1,13 +1,5 @@
 <Type Name="ListLevels" FullName="Microsoft.Office.Interop.Word.ListLevels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="345ec8cf35045c8f363788631d6ef1e1f1353dda" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666351" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListLevels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="09f3bd00422a681e4357da47dfe50d934788f98e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144489" /></Metadata><TypeSignature Language="C#" Value="public interface ListLevels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListLevels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListLevels" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListLevels&#xA;Implements IEnumerable" />
@@ -30,13 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象表示的列表模板的所有列表级别、 项目符号或编号列表的唯一级别或多级符号列表的九个级别之一。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.ListTemplate.ListLevels" />属性可返回<b>ListLevels</b>集合。</para>
-      <para>使用<b>ListLevels</b>(<paramref name="index" />)，其中<paramref name="index" />是介于 1 至 9，返回单个<b>ListLevel</b>对象。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象的集合, 该集合代表列表模板的所有列表级别, 或者是项目符号列表或编号列表的唯一级别, 或者是多级符号列表中的九个级别之一。</summary>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.ListTemplate.ListLevels" />属性返回<b>ListLevels</b>集合。</para>
+      <para>使用<b>ListLevels</b>(<paramref name="index" />), 其中<paramref name="index" />是从1到9的数字, 返回单个<b>ListLevel</b>对象。</para>
       <para>
-        <b>注释</b>： 不能与一个列表模板添加新级别。</para>若要应用列表级别，首先要确定范围或列表，然后使用
-      <para><see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />方法。每个段落的开头的选项卡被转换为一个列表级别。例如，段落的开头三个选项卡后，将成为第三层列表段落的<b>ApplyListTemplate</b>方法一起使用。</para><para /></remarks>
+        <b>注意</b>: 不能向列表模板中添加新级别。</para>
+      <para>若要应用列表级别, 请首先标识该区域或列表, 然后使用<see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />方法。 该段落开头的每个选项卡都转换为一个列表级别。 例如，段落开头三个选项卡将成为第三层列表段落之后使用 <b>ApplyListTemplate</b> 方法。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +82,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,9 +112,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -183,7 +175,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">一个<b>整数</b>，指示的单个对象的序号位置。</param>
+        <param name="Index">一个指示单个对象的序号位置的<b>整数</b>。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

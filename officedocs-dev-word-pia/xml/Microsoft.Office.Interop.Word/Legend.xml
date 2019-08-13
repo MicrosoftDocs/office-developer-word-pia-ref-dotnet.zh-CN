@@ -1,13 +1,5 @@
 <Type Name="Legend" FullName="Microsoft.Office.Interop.Word.Legend">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a9e9e5a1d2b39e9479a75403dfc61a2ef2c8fbaf" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667047" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Legend" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2dd8d5ba7022d056e55567fbb8487b158d46636d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146631" /></Metadata><TypeSignature Language="C#" Value="public interface Legend" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Legend" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Legend" />
   <TypeSignature Language="VB.NET" Value="Public Interface Legend" />
@@ -27,15 +19,10 @@
   </Attributes>
   <Docs>
     <summary>代表图标中的图例。每个图表只能有一个图例。</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Word.Legend" />对象包含一个或多个<see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />对象;每个<see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />对象包含<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />对象。</para>
-      <para>图表图例不见除非<see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" />属性为<b>True</b>。如果此属性是<b>False</b>、 属性和方法的<see cref="T:Microsoft.Office.Interop.Word.Legend" />对象也将失败。</para>
-      <para />
-    </remarks>
-    <example>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Chart.Legend" />属性返回<see cref="T:Microsoft.Office.Interop.Word.Legend" />对象。下面的示例将第一个图表的图例的字体样式设置为加粗活动文档中。</para>
-    </example>
+    <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Legend" />对象包含一个或多个<see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />对象;每<see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />个对象包含<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />一个对象。</para>
+      <para>图表图例不可见, 除非该<see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" />属性为<b>True</b>。 如果此属性为<b>False</b>, 则<see cref="T:Microsoft.Office.Interop.Word.Legend" />对象的属性和方法将失败。</para>
+      <para> </para></remarks>
+    <example><para>使用<see cref="P:Microsoft.Office.Interop.Word.Chart.Legend" />属性返回<see cref="T:Microsoft.Office.Interop.Word.Legend" />对象。 下面的示例设置要用粗体显示活动文档中第一个图表中图例的字体样式。</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,10 +48,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,10 +85,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>对象大小更改时，对象中的文本更改字体大小。 默认值为 <b>True</b> 。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>如果对象大小更改时，对象内部的文本相应地更改字体大小，则该属性值为 <b>True</b>。 默认值为 <b>True</b>。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,10 +116,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Border" />对象，它代表对象的边框。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Border" /> object 类型的对象, 该对象代表对象的边框。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,9 +143,7 @@
       <Parameters />
       <Docs>
         <summary>清除整个对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,14 +170,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 <b>Integer</b> 类型，只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Integer</b>。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -223,9 +198,7 @@
       <Parameters />
       <Docs>
         <summary>删除对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,9 +228,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />指定的形状的对象或<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />对象包含填充格式的形状或图表属性指定的图表。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />.</value>
+        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />的形状或<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />对象的对象, 该对象包含形状或图表的填充格式属性指定的图表。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,10 +259,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Font" />对象，它代表指定对象的字体。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Font" />对象, 表示指定的对象的字体。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,9 +289,7 @@
       <Docs>
         <summary>返回行、 填充和效果的对象的格式。
 只读<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -352,9 +320,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>Double</b> 值，该值代表的高度，以磅为单位的对象。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -384,14 +350,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果图例将占用图表布局空间时在确定图表布局，设置为<b>True</b> 。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>不论图表是在自动版式模式下，此属性不会影响。 如果用户添加标题使用上面图表命令，将更小，请与以前版本的 Microsoft Office 调整图表。 如果用户然后删除标题，或选择覆盖标题选项之一，则图表将变大，如同标题不在图表上。</para>
-          <para />
-        </remarks>
+        <summary>如果在确定图表布局时图例将占用图表布局空间, 则设置为<b>True</b> 。 默认值为 <b>True</b> 。 读/写 <b>boolean 类型的值</b> 。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>该属性对于图表是否处于自动版式模式没有影响。  如果用户使用上面的图表命令添加标题, 图表的大小将会变小, 就像在早期版本的 Microsoft Office 中一样。  如果用户随后删除标题，或者选择其中一个覆盖标题选项，则图表将变得较大，就好像标题不在图表上那样。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -420,10 +382,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Interior" />值，该值代表指定对象的内部的对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Interior" /> object 类型的对象, 该对象代表指定对象的内部。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -454,9 +414,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 <b>Double</b> 值，它代表从对象左边缘到图表区左边缘的距离（以磅为单位）。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,10 +441,8 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />代表图例的图例项的对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> object 类型的对象, 该对象代表图例的图例项。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -514,9 +470,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 <b>字符串</b> 值，表示该对象的名称。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -543,10 +497,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父级。只读 <b>对象</b> 。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父级。 只读 <b>对象</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -576,10 +528,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlLegendPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" />值，它代表图表上图例的位置。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" />
-        </value>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" />值, 该值代表图例在图表上的位置。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlLegendPosition" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,9 +555,7 @@
       <Parameters />
       <Docs>
         <summary>选择对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -638,9 +586,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>Boolean</b> 值，它确定对象是否有阴影。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -671,9 +617,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>Double</b> 值，它代表从对象的上边缘到工作表第一行顶部或图表上的图表区顶部的距离（以磅为单位）。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -704,9 +648,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>Double</b> 值，它表示的宽度，以磅为单位的对象。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="BuildingBlockEntries" FullName="Microsoft.Office.Interop.Word.BuildingBlockEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="abc6cc3cc628e4cde8f306b8c3dc0aba2056ea9f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665958" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface BuildingBlockEntries" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f20213a0d0e97c32a29545ab30cbcb6982e5f4ec" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146198" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlockEntries" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlockEntries" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlockEntries" />
@@ -26,15 +18,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示的所有集合<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />模板中的对象。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" />方法可创建新的构建基块，并将其添加到模板。</para>
-      <para>与不同<see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Add(System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" />方法<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />集合，您需要添加的构建基块 using 时指定的类型和类别<see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Add(System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" />方法<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集合。这是因为使用类型和类别组织构建基块。当您使用<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集合，您正在访问构建基块模板; 中的整个集合但是，当您使用<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />集合，您正在访问的构建基块的特定类型和模板中的类别的集合。</para>
+    <summary>代表模板中的所有<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象的集合。</summary>
+    <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" />方法创建新的构建基块并将其添加到模板中。 </para>
+      <para>与<see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Add(System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />集合的方法不同, 您需要在使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Add(System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集合的方法添加构建基块时指定类型和类别。 这是因为按类型和类别组织的构建基块。 使用<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集合时, 您将访问模板中的整个构建基块集合;但是, 在使用<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />集合时, 您要访问模板中特定类型和类别的构建基块的集合。</para>
       <para>
-        <b>注释</b>： 使用<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" />和<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />属性<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象使您能够确定的类别和构建基块的类型。</para>
-      <para>有关构建基块的详细信息，请参阅<a href="HV10120827">处理构建基块</a></para>
-      <para />
-    </remarks>
+        <b>注意</b>: 使用<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" />和<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" /> <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象的属性使您能够确定构建基块的类别和类型。</para>
+      <para>有关构建基块的详细信息, 请参阅<a href="HV10120827">处理构建基块</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,16 +53,14 @@
         <Parameter Name="InsertOptions" Type="Microsoft.Office.Interop.Word.WdDocPartInsertOptions" />
       </Parameters>
       <Docs>
-        <param name="Name">指定生成块条目的名称。  对应于<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />属性<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象。</param>
-        <param name="Type">指定要创建的构建基块的类型。 对应于<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />属性<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象。</param>
-        <param name="Category">指定新的生成块条目的类别。 对应于<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" />属性<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象。</param>
-        <param name="Range">指定生成块条目的值。 对应于<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />属性<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象。</param>
-        <param name="Description">指定生成块条目的说明。 对应于<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />属性<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象。</param>
-        <param name="InsertOptions">指定是否为一页、 段落或内联插入构建基块条目。 如果省略，则默认值是<see cref="F:Microsoft.Office.Interop.Word.WdDocPartInsertOptions.wdInsertContent" />。 对应于<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />属性<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象。</param>
-        <summary>在模板中创建一个新的生成块条目，并返回<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象，表示新的构建基块条目。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />
-        </returns>
+        <param name="Name">指定生成块条目的名称。  对应于<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />的属性。</param>
+        <param name="Type">指定要创建的生成块的类型。 对应于<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />的属性。</param>
+        <param name="Category">指定新的生成块条目的类别。 对应于<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" />的属性。</param>
+        <param name="Range">指定生成块条目的值。 对应于<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />的属性。</param>
+        <param name="Description">指定生成块条目的说明。 对应于<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />的属性。</param>
+        <param name="InsertOptions">指定是将生成块条目作为页、段落插入还是将其内嵌。 如果省略, 则默认值为<see cref="F:Microsoft.Office.Interop.Word.WdDocPartInsertOptions.wdInsertContent" />。 对应于<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />的属性。</param>
+        <summary>在模板中创建一个新的构建基块条目, <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />并返回一个对象, 该对象表示新的构建基块条目。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,10 +87,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,10 +115,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回中的项目数<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集合。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集合中项的数目。 只读。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,15 +144,11 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建外接程序的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
+        <value><b>Integer</b></value>
+        <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注意</b>： 此值也可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。</para>
-          <para />
-        </remarks>
+            <b>注意</b>: 此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -195,10 +175,8 @@
       </Parameters>
       <Docs>
         <param name="Index">指定的 <b>字符串</b> 或 <b>整数</b> ，它表示的名称或对象的集合中的序号位置。</param>
-        <summary>返回集合中的指定的项。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />
-        </returns>
+        <summary>返回集合中的指定项。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,10 +203,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定的父对象<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />对象。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />对象的父对象。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="ChartBorder" FullName="Microsoft.Office.Interop.Word.ChartBorder">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fd24a30fabc34e696a58ddfd1adcc102522082d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667205" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartBorder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="69c49b130adc15e81ab8b1f1667ccfbd4a595e7e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147296" /></Metadata><TypeSignature Language="C#" Value="public interface ChartBorder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartBorder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartBorder" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartBorder" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>代表对象的边框。</summary>
-    <remarks>
-      <para>边框的对象都将被视为一个实体，无论具有多少构成的边框。必须作为单位返回整个边框。使用<see cref="P:Microsoft.Office.Interop.Word.Trendline.Border" />属性，例如为从<see cref="T:Microsoft.Office.Interop.Word.Trendline" />对象，返回此类型的对象的<b>边框</b>对象。</para>
-      <para />
-    </remarks>
+    <remarks><para>大多数带边框的对象都有一个作为单个实体处理的边框, 而不管它有多少个边。 整个边框必须作为一个单元。 使用<see cref="P:Microsoft.Office.Interop.Word.Trendline.Border" />属性 (如从<see cref="T:Microsoft.Office.Interop.Word.Trendline" />对象) 返回此类对象的<b>Border</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +46,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />值，该值代表指定对象 （可与 OLE 自动化对象使用此属性可返回该对象的应用程序） 的创建者的对象。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 当与对象识别符一起使用时, 此属性<see cref="T:Microsoft.Office.Interop.Word._Application" />返回一个对象, 该对象表示指定对象的创建者 (可以将此属性与 OLE 自动化对象一起使用, 以返回该对象的应用程序)。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,10 +77,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个代表对象的主颜色的<b>对象</b>。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回或设置一个<b>对象</b>, 表示该对象的主颜色。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,12 +108,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Object</b>值，它代表边框的颜色。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>将颜色作为当前调色板的索引值或以下项之一指定<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量：</para>
+        <summary>返回或设置一个<b>Object</b>值, 它代表边框的颜色。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>将颜色指定为当前调色板中的索引值, 或指定为以下<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量之一:</para>
           <list type="bullet">
             <item>
               <para>
@@ -140,8 +123,7 @@
               </para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -167,14 +149,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位<b>整数</b>，它指示在其中创建指定的对象的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中，创建<see cref="P:Microsoft.Office.Interop.Word.ChartBorder.Creator" />属性返回十六进制数字 4d535744，表示的字符串"MSWD"。 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <summary>返回一个32位整数, 该<b>整数</b>表示在其中创建指定对象的应用程序。 只读。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.ChartBorder.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineStyle">
@@ -204,13 +182,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置边框的线条样式。 读/写</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>有关详细信息，请参阅： <see cref="T:Microsoft.Office.Interop.Word.XlLineStyle" />， <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlGray25" />， <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlGray50" />， <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlGray75" />，或<see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlAutomatic" />。此外，<see cref="F:Microsoft.Office.Interop.Word.XlLineStyle.xlDouble" />和<see cref="F:Microsoft.Office.Interop.Word.XlLineStyle.xlSlantDashDot" />不适用于图表。</para>
-          <para />
-        </remarks>
+        <value><b>Object</b></value>
+        <remarks><para>有关详细信息, 请<see cref="T:Microsoft.Office.Interop.Word.XlLineStyle" />参阅<see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlGray25" />: <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlGray50" />、 <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlGray75" />、、 <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlAutomatic" />或。 此外, <see cref="F:Microsoft.Office.Interop.Word.XlLineStyle.xlDouble" /> <see cref="F:Microsoft.Office.Interop.Word.XlLineStyle.xlSlantDashDot" />不应用于图表。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -237,9 +211,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回指定对象的父级。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,10 +241,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.XlBorderWeight" />对象，它代表边框的粗细。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.XlBorderWeight" /> object 类型的值, 该值代表边框的粗细。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

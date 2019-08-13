@@ -1,13 +1,5 @@
 <Type Name="RecentFile" FullName="Microsoft.Office.Interop.Word.RecentFile">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1e434d3e1e088bc212d7bbc10abf5c431e2964b4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666584" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RecentFile" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5a818ea88a0f5d83922bdd03f47dd18ee09e79b4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147702" /></Metadata><TypeSignature Language="C#" Value="public interface RecentFile" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RecentFile" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.RecentFile" />
   <TypeSignature Language="VB.NET" Value="Public Interface RecentFile" />
@@ -27,15 +19,11 @@
   </Attributes>
   <Docs>
     <summary>代表最近使用的文件。</summary>
-    <remarks>
-      <para>
-        <b>RecentFile</b>对象是成员<see cref="T:Microsoft.Office.Interop.Word.RecentFiles" />集合。<b>RecentFiles</b>集合包括最近使用的所有文件。在文件菜单的底部显示<b>RecentFiles</b>集合中的项。</para>
-      <para>使用<b>RecentFiles</b>(<paramref name="index" />)，其中<paramref name="index" />是返回单个<b>RecentFile</b>对象的索引号。索引号表示<b>文件</b>菜单上的文件的位置。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.RecentFiles.Add(System.Object@,System.Object@)" />方法将文件添加到集合<b>中的各</b>。</para>
-      <para>
-        <see cref="M:Microsoft.Office.Interop.Word._Document.SaveAs(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />和<see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法包括<paramref name="AddToRecentFiles" />参数控制是否文件打开或保存文件时将添加到最近使用过的文件列表。</para>
-      <para />
-    </remarks>
+    <remarks><para><b>RecentFile</b>对象是<see cref="T:Microsoft.Office.Interop.Word.RecentFiles" />集合的一个成员。 集合 <b>中的各</b> 包含最近使用的所有文件。 在集合 <b>中的各</b> 项显示在 文件菜单的底部。</para>
+      <para>使用<b>RecentFiles</b>(<paramref name="index" />) (其中<paramref name="index" />是索引号) 返回单个<b>RecentFile</b>对象。 索引序号代表该文件在 <b>文件</b>菜单上的位置。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.RecentFiles.Add(System.Object@,System.Object@)" />方法将文件添加到<b>RecentFiles</b>集合中。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Word._Document.SaveAs(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />和<see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法包括一个<paramref name="AddToRecentFiles" />参数, 该参数控制在打开或保存文件时是否将文件添加到最近使用的文件列表中。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,9 +79,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -117,7 +105,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,7 +186,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>打开指定的对象。 返回<see cref="T:Microsoft.Office.Interop.Word.Document" />对象，代表打开的对象。</summary>
+        <summary>打开指定的对象。 返回一个<see cref="T:Microsoft.Office.Interop.Word.Document" />对象, 表示打开的对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,12 +244,10 @@
       <Docs>
         <summary>返回指定对象的磁盘或 Web 路径。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>路径中不包括尾随字符-例如，"C:\MSOffice"或"http://MyServer"。使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />属性添加文件夹和驱动器号的分隔符。使用<b>Name</b>属性返回的文件名不路径。</para>
+        <remarks><para>路径中不包括尾随字符   例如，"C:\MSOffice"或"http://MyServer"。 使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />属性添加用于分隔文件夹和驱动器号的字符。 使用 <b>Name</b> 属性返回的文件名不包含路径。</para>
           <para>
-            <b>注意</b>，您可以使用<b>PathSeparator</b>属性建立 Web 地址，即使它们包含正斜杠 （/） 和<b>PathSeparator</b>属性默认为反斜杠 (\)。</para>
-          <para />
-        </remarks>
+            <b>注释</b> 您可以使用<b>PathSeparator</b>属性来构建 Web 地址, 即使它们包含正斜杠 (/), 并且<b>PathSeparator</b>属性默认为反斜杠 (\)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -290,8 +276,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果对文档的更改不能保存到原始文档中。</summary>
+        <summary><b>如此</b> 如果对文档的更改不能保存到原始文档中。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

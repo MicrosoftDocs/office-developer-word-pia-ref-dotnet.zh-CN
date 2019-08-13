@@ -1,13 +1,5 @@
 <Type Name="DocumentEvents2_XMLBeforeDeleteEventHandler" FullName="Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bdccc03eae449e6d6d0cebfd1fb535ccc2027181" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666851" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range DeletedRange, XMLNode OldXMLNode, bool InUndoRedo);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dd959bd70dac23bc982627c03dc51ca9e3940e13" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146931" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range DeletedRange, XMLNode OldXMLNode, bool InUndoRedo);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocumentEvents2_XMLBeforeDeleteEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocumentEvents2_XMLBeforeDeleteEventHandler(DeletedRange As Range, OldXMLNode As XMLNode, InUndoRedo As Boolean)" />
@@ -36,17 +28,12 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="DeletedRange">
-      <see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 被删除的 XML 元素的内容。 如果只元素中删除并不相关联的文本，<paramref name="DeletedRange" />参数将不存在，将因此，设置为<b>Nothing</b>。</param>
-    <param name="OldXMLNode">
-      <see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象。 正在被删除的节点。</param>
-    <param name="InUndoRedo">
-      <b>Boolean 类型的值</b> 。 <b>为 true</b> ，则表示使用 Microsoft Word 中的 <b>撤消</b>或 <b>重做</b>功能时执行的操作。</param>
-    <summary>用于添加事件处理程序<b>委托</b>类型<see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" />事件。 当用户从文档中删除 XML 元素，则<b>XMLBeforeDelete</b>事件发生。</summary>
-    <remarks>
-      <para>如果<paramref name="InUndoRedo" />参数为<b>True</b>时，永远不会更改时对文档中的 XML<see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" />和<b>XMLBeforeDelete</b>事件运行。</para>
-      <para>如果<paramref name="InUndoRedo" />参数为<b>False</b>，则可以插入并删除文档中的 XML，但应谨慎，则<b>不要在 XMLAfterInsert</b>和<b>XMLBeforeDelete</b>事件不会取消出，每个其他导致无限循环。您可以使用全局阻止无限循环<b>Boolean</b>变量并进行检查错误处理程序的开头。</para>
-      <para />
-    </remarks>
+    <param name="DeletedRange"><see cref="T:Microsoft.Office.Interop.Word.Range" />对象. 被删除的 XML 元素的内容。 如果仅删除元素且不删除相关文本, 则该<paramref name="DeletedRange" />参数将不存在, 因此会将其设置为<b>Nothing</b>。</param>
+    <param name="OldXMLNode"><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象. 正在被删除的节点。</param>
+    <param name="InUndoRedo"><b>Boolean 类型的值</b> 。 <b>为 true</b> ，则表示使用 Microsoft Word 中的 <b>撤消</b>或 <b>重做</b>功能时执行的操作。</param>
+    <summary>用于<b></b>为<see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" />事件添加事件处理程序的委托类型。 当用户从文档中删除 XML 元素时, <b>XMLBeforeDelete</b>事件发生。</summary>
+    <remarks><para>如果此<paramref name="InUndoRedo" />参数为<b>True</b>, 则从不在运行<see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" />和<b>XMLBeforeDelete</b>事件的情况下更改文档中的 XML。 </para>
+      <para>如果<paramref name="InUndoRedo" />参数为<b>False</b>, 则可以在文档中插入和删除 XML, 但请注意, <b>XMLAfterInsert</b>和<b>XMLBeforeDelete</b>事件不会尝试相互取消, 从而导致无限循环。 您可以通过使用全局<b>布尔</b>变量阻止无限循环, 并在错误处理程序的开头检查该变量。</para>
+      <para> </para></remarks>
   </Docs>
 </Type>

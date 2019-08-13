@@ -1,13 +1,5 @@
 <Type Name="Frameset" FullName="Microsoft.Office.Interop.Word.Frameset">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a153326e0a463fab1ea2191a5ff18e8f268d65d4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666335" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Frameset : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a60060da0b1c4ff85a021ce286850c649ffa86e1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146806" /></Metadata><TypeSignature Language="C#" Value="public interface Frameset : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Frameset implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Frameset" />
   <TypeSignature Language="VB.NET" Value="Public Interface Frameset&#xA;Implements IEnumerable" />
@@ -31,10 +23,9 @@
   </Attributes>
   <Docs>
     <summary>代表整个框架页或框架页中的单个图文框。</summary>
-    <remarks>
-      <para>没有<b>框架集</b>集合;每个<see cref="T:Microsoft.Office.Interop.Word.Document" />对象或<see cref="T:Microsoft.Office.Interop.Word.Pane" />对象仅包含一个<b>Frameset</b>对象。</para>
-      <b>Document</b>或<b>Pane</b>对象返回的<b>Frameset</b>对象的
-      <para>使用<b>Frameset</b>属性。属性或方法会影响框架页上的所有图文框，请使用<b>Document</b>对象中的<b>Frameset</b>对象。属性或方法会影响框架页中，单个图文框使用<b>Pane</b>对象中的<b>Frameset</b>对象。</para><para /></remarks>
+    <remarks><para>没有<b>框架</b>集集合;每<see cref="T:Microsoft.Office.Interop.Word.Document" />个对象<see cref="T:Microsoft.Office.Interop.Word.Pane" />或对象只包含一个<b>Frameset</b>对象。</para>
+      <para>使用<b>文档</b>或<b>窗格</b>对象的<b>frameset</b>属性可返回<b>Frameset</b>对象。 对于影响框架页上的所有框架的属性或方法, 请使用<b>Document</b>对象中的<b>Frameset</b>对象。 对于影响框架页上各个帧的属性或方法, 请使用<b>Pane</b>对象中的<b>Frameset</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNewFrame">
@@ -60,7 +51,7 @@
         <Parameter Name="Where" Type="Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />
       </Parameters>
       <Docs>
-        <param name="Where">所需<see cref="T:Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />。 设置新框架与指定框架的相对位置。</param>
+        <param name="Where">必需<see cref="T:Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />。 设置新框架与指定框架的相对位置。</param>
         <summary>该方法在框架页中添加一个新框架。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -89,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,12 +108,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的子数<see cref="T:Microsoft.Office.Interop.Word.Frameset" />与指定的<b>Frameset</b>对象关联的对象。</summary>
+        <summary>返回与指定的<see cref="T:Microsoft.Office.Interop.Word.Frameset" /> <b>Frameset</b>对象相关联的子对象的数目。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性仅适用于<b>wdFramesetTypeFrameset</b>类型的<b>Frameset</b>对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性仅适用于类型 <b>wdFramesetTypeFrameset</b> 的 <b>框架</b> 对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChildFramesetItem">
@@ -151,14 +140,11 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>必选。</b> 指定的框架的索引序号。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Frameset" />对象，表示指定的子<b>Frameset</b>对象。</summary>
+        <param name="Index">必需的<b>整数</b>。 指定的框架的索引序号。</param>
+        <summary>返回表示<see cref="T:Microsoft.Office.Interop.Word.Frameset" />指定的子<b>框架集</b>对象的对象。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性仅适用于<b>wdFramesetTypeFrameset</b>类型的<b>Frameset</b>对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性仅适用于类型 <b>wdFramesetTypeFrameset</b> 的 <b>框架</b> 对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -186,9 +172,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -212,7 +198,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,8 +259,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果显示在指定的框架页的框架边框。</summary>
+        <summary><b>如此</b> 如果显示在指定的框架页的框架边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -305,8 +290,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果网页或其他文档指定<see cref="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" />属性是指 Microsoft Word 维护仅从指定框架的链接的外部文件。</summary>
+        <summary><b>如此</b>如果该<see cref="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" />属性所指定的网页或其他文档是一个外部文件, Microsoft Word 仅保留指定框架中的一个链接。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -337,7 +321,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置框架页上的指定框架的名称。</summary>
+        <summary>返回或设置框架页上指定框架的名称。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -368,8 +352,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果用户在 Web 浏览器中查看框架页时可调整指定的框架的大小。</summary>
+        <summary><b>如此</b> 如果用户在 Web 浏览器中查看框架页时可调整指定的框架的大小。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -400,7 +383,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdScrollbarType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置当在 Web 浏览器中查看的框架页时可用于指定框架滚动条。</summary>
+        <summary>返回或设置当用 Web 浏览器浏览指定框架的框架页时，何时可以在该指定框架中使用滚动条。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -431,7 +414,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的框架页上的图文框边框的颜色。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdColor" />常量。</summary>
+        <summary>返回或设置指定框架页上框架边框的颜色。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdColor" />常量。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -525,13 +508,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的高度<see cref="T:Microsoft.Office.Interop.Word.Frameset" />对象。</summary>
+        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.Frameset" />对象的高度。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word.Frameset.HeightType" />属性确定此值表示的单位的类型。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.Frameset.HeightType" />属性确定表示此值的单位的类型。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightType">
@@ -616,7 +596,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frameset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Frameset" />代表指定框架页的<b>Frameset</b>对象的父对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Frameset" />对象, 表示框架页上指定的<b>Frameset</b>对象的父对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -644,7 +624,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFramesetType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Frameset" />对象类型。</summary>
+        <summary>返回对象<see cref="T:Microsoft.Office.Interop.Word.Frameset" />的类型。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -675,13 +655,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的宽度<see cref="T:Microsoft.Office.Interop.Word.Frameset" />对象。</summary>
+        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.Frameset" />对象的宽度。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word.Frameset.WidthType" />属性确定此值表示的单位的类型。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.Frameset.WidthType" />属性确定表示此值的单位的类型。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WidthType">
@@ -710,7 +687,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFramesetSizeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的宽度类型<see cref="T:Microsoft.Office.Interop.Word.Frameset" />对象。</summary>
+        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.Frameset" />对象的宽度类型。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

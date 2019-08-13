@@ -1,13 +1,5 @@
 <Type Name="MailMergeDataSource" FullName="Microsoft.Office.Interop.Word.MailMergeDataSource">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d2e937147dc7f6dd07ddb11fc242a7e8007f5285" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666874" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeDataSource" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="263ac1a3dcb0cca2f828e652dcaa7b7f382a381b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144468" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeDataSource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeDataSource" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>代表邮件合并操作中的邮件合并数据源。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.MailMerge.DataSource" />属性可返回<b>MailMergeDataSource</b>对象。</para>
-      <para />
-    </remarks>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.MailMerge.DataSource" />属性返回<b>MailMergeDataSource</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveRecord">
@@ -59,14 +49,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdMailMergeActiveRecord</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的活动邮件合并数据记录。</summary>
+        <summary>返回或设置活动邮件合并数据记录。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ActiveRecord</b>属性可以是在查询结果中的一个有效的数据记录号或之一<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeActiveRecord" />常量。</para>
-          <para>活动数据记录号是由当前的查询选项生成的查询结果中记录的位置; 因此，此号码不一定是记录的数据源中的位置。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>ActiveRecord</b>属性可以是查询结果中的有效数据记录号, 也可以是其中一个<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeActiveRecord" />常量。</para>
+          <para>活动数据记录号是记录在当前查询选项生成的查询结果中的位置;因此, 此数字不一定是记录在数据源中的位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -92,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -145,7 +132,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定的邮件合并数据源的连接字符串。</summary>
+        <summary>返回指定邮件合并数据源的连接字符串。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,9 +162,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFields">
@@ -203,7 +190,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeDataFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" />值，该值代表指定的邮件合并数据源中的字段的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" />集合, 代表指定的邮件合并数据源中的域。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -231,7 +218,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeFieldNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.MailMergeFieldNames" />集合，代表指定的邮件合并数据源中的所有域的名称。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMergeFieldNames" />集合, 该集合代表指定的邮件合并数据源中所有域的名称。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -260,16 +247,12 @@
       </Parameters>
       <Docs>
         <param name="FindText">必需的 <b>字符串</b> 。 要查找的文字。</param>
-        <param name="Field">必需的<b>Variant</b>。 要搜索的字段的名称。</param>
+        <param name="Field">指定要将规划求解模型保存在的单元格区域。 要搜索的域的名称。</param>
         <summary>搜索特定字段中的文本指定的邮件合并数据源中的内容。 如果找到了搜索文本，则返回 <b>True</b> 。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>FindRecord</b>方法对应于邮件合并工具栏上的查找记录按钮。</para>
-          <para>
-            <b>FindRecord</b>方法执行仅向前搜索。因此，如果活动记录不是数据源中的第一个记录，而您要搜索的记录的活动记录前， <b>FindRecord</b>方法将返回任何结果。若要确保搜索整个数据源，设置<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" />属性设为<b>wdFirstRecord</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>FindRecord</b>方法对应于 "邮件合并" 工具栏上的 "查找记录" 按钮。</para>
+          <para><b>FindRecord</b> 方法没有向前搜索。 因此，如果活动记录不是数据源中的第一个记录，而您要搜索的记录是在活动记录前，则 <b>FindRecord</b> 方法将返回任何结果。 若要确保搜索整个数据源, 请将该<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" />属性设置为<b>activerecordwdfirstrecord</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FindRecord2000">
@@ -332,7 +315,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置要在邮件合并操作中进行合并的第一个数据记录数。</summary>
+        <summary>返回或设置在邮件合并操作中要合并的第一条数据记录的编号。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -388,13 +371,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdMailMergeDataSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，指示该域名源的方式为其提供的邮件合并操作。</summary>
+        <summary>返回一个值，该值表明为邮件合并操作提供域名源的方式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>HeaderSourceType</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDataSource" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>HeaderSourceType</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDataSource" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Included">
@@ -423,13 +403,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果包含在邮件合并中的记录。</summary>
+        <summary><b>如此</b> 如果包含在邮件合并中的记录。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllIncludedFlags(System.Boolean)" />方法，以包含或排除邮件合并数据源中的所有记录。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllIncludedFlags(System.Boolean)" />方法可在邮件合并数据源中包含或排除所有记录。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidAddress">
@@ -458,13 +435,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真正</b> 的 Microsoft Word，以便将标记邮件合并数据源中的记录，如果它包含一个地址字段中的数据无效。</summary>
+        <summary><b>真正</b> 的 Microsoft Word，以便将标记邮件合并数据源中的记录，如果它包含一个地址字段中的数据无效。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllErrorFlags(System.Boolean,System.String)" />方法，以便设置这两个<b>InvalidAddress</b>和<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidComments" />数据源中的所有记录的属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllErrorFlags(System.Boolean,System.String)" />方法可设置数据源中所有记录<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidComments" />的<b>InvalidAddress</b>和属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvalidComments">
@@ -493,12 +467,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" />属性为<b>True</b>，返回或设置一个<b>字符串</b>，描述无效地址错误。</summary>
+        <summary>如果该<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" />属性为<b>True</b>, 则返回或设置一个<b>字符串</b>, 描述无效地址错误。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllErrorFlags(System.Boolean,System.String)" />方法同时设置<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" />和<b>InvalidComments</b>属性的数据源中的所有记录。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.MailMergeDataSource.SetAllErrorFlags(System.Boolean,System.String)" />方法来设置数据源中<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" />所有记录的和<b>InvalidComments</b>属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastRecord">
@@ -527,7 +499,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置要在邮件合并操作中进行合并的最后一个数据记录数。</summary>
+        <summary>返回或设置要在邮件合并操作中进行合并的最后一个数据记录的编号。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -555,7 +527,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MappedDataFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" />对象代表 Microsoft Word 中可用的映射的数据字段。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" />对象, 表示在 Microsoft Word 中可用的映射数据字段。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -670,12 +642,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>值，该值代表的数据源中的记录数。</summary>
+        <summary>返回一个<b>Integer</b>类型的值, 该值代表数据源中的记录数。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 不能确定数据源中的记录数，则<b>RecordCount</b>属性将返回值-1。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Microsoft Word 不能确定数据源中的记录数，则 <b>RecordCount</b> 属性将返回值 -1。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAllErrorFlags">
@@ -702,13 +672,11 @@
         <Parameter Name="InvalidComment" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Invalid">所需<b>Boolean</b>。 <b>如此</b> ，则将邮件合并的数据源中的所有记录都标记为无效。</param>
+        <param name="Invalid">必需的<b>布尔值</b>。 <b>如此</b> ，则将邮件合并的数据源中的所有记录都标记为无效。</param>
         <param name="InvalidComment">必需的 <b>字符串</b> 。 说明无效设置的文本。</param>
-        <summary>将邮件合并数据源中的所有记录标记为地址字段中包含无效数据。</summary>
-        <remarks>
-          <para>您可以逐个标记在使用包含无效数据的地址字段中的数据源记录<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" />和<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidComments" />属性。</para>
-          <para />
-        </remarks>
+        <summary>将邮件合并数据源中的所有记录标记为地址域中包含无效数据。</summary>
+        <remarks><para>您可以使用<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidAddress" />和<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.InvalidComments" />属性在地址字段中单独标记包含无效数据的数据源记录。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetAllIncludedFlags">
@@ -734,13 +702,10 @@
         <Parameter Name="Included" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Included">所需<b>Boolean</b>。 <b>为</b> 要包括在邮件合并中的所有数据源记录。 <b>假</b> 以排除邮件合并中的所有数据源记录。</param>
-        <summary>
-          <b>为</b> 要包括在邮件合并中的所有数据源记录。</summary>
-        <remarks>
-          <para>您可以设置数据源中包含或排除在邮件合并使用中的单个记录<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.Included" />属性。</para>
-          <para />
-        </remarks>
+        <param name="Included">必需的<b>布尔值</b>。 <b>为</b> 要包括在邮件合并中的所有数据源记录。 <b>假</b> 以排除邮件合并中的所有数据源记录。</param>
+        <summary><b>为</b> 要包括在邮件合并中的所有数据源记录。</summary>
+        <remarks><para>您可以将数据源中的单个记录设置为包含在邮件合并中, 或使用<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.Included" />属性将其排除在邮件合并中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableName">
@@ -766,7 +731,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个带有 SQL 查询的 <b>字符串</b> 用于从邮件合并文档附加的数据源文件中检索到的记录。 可能为空，如果表格名称未知或不适用于当前数据源。</summary>
+        <summary>返回一个带有 SQL 查询的 <b>字符串</b> 用于从邮件合并文档附加的数据源文件中检索到的记录。 如果表名称未知或不适用于当前数据源, 则可能为空。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -796,11 +761,8 @@
       <Docs>
         <summary>返回邮件合并数据源的类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Type</b>属性可以是之一<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDataSource" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Type</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDataSource" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

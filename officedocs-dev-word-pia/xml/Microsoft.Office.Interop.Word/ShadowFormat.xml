@@ -1,13 +1,5 @@
 <Type Name="ShadowFormat" FullName="Microsoft.Office.Interop.Word.ShadowFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0b6412510f201bbd4e881c10ec66518079051e6b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666972" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShadowFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eb5a077942f8ab29b6ab8f08c82918caf0ad8bea" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147646" /></Metadata><TypeSignature Language="C#" Value="public interface ShadowFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShadowFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShadowFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShadowFormat" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>代表形状的阴影格式。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Shadow" />属性返回<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />对象。</para>
-      <para />
-    </remarks>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Shadow" />属性返回一个<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,10 +77,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<b>一个</b>值，该值代表阴影格式的模糊级别。 为可读/写属性。</summary>
-        <value>
-          <b>Single</b>
-        </value>
+        <summary>返回或设置一个<b></b>值, 该值代表阴影格式的模糊级别。 读/写。</summary>
+        <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,9 +107,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -147,7 +135,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />对象，表示阴影的前景色。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />对象, 该对象代表阴影的前景色。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,13 +163,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>必选。</b> 指定阴影的水平偏移量（以磅为单位）。 正值表示阴影右移，负值表示阴影左移。</param>
-        <summary>按指定磅值更改阴影的水平偏移量。</summary>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetX" />属性设置阴影的绝对水平偏移量。</para>
-          <para />
-        </remarks>
+        <param name="Increment">必需<b>Single</b>。 以磅为单位指定阴影水平移动的距离。 正值使阴影向右移动，负值使阴影向左移动。</param>
+        <summary>按指定磅值改变阴影的水平偏移量。</summary>
+        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetX" />属性设置绝对水平阴影偏移量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementOffsetY">
@@ -207,13 +192,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>必选。</b> 指定阴影的垂直偏移量（以磅为单位）。 正值表示阴影下移，负值表示阴影上移。</param>
+        <param name="Increment">必需<b>Single</b>。 指定阴影的垂直偏移量（以磅为单位）。 正值表示阴影下移，负值表示阴影上移。</param>
         <summary>按指定磅值更改阴影的垂直偏移量。</summary>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetY" />属性设置阴影的绝对垂直偏移量。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetY" />属性设置绝对垂直阴影偏移量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Obscured">
@@ -242,29 +224,26 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b> 如果指定形状的阴影填充且被形状，遮盖，即使形状没有填充。 <b>MsoFalse</b> 阴影没有填充，并且阴影轮廓，如果是透过形状看到，当形状没有填充。</summary>
+        <summary><b>MsoTrue</b> 如果指定形状的阴影填充且被形状，遮盖，即使形状没有填充。 <b>MsoFalse</b> 阴影没有填充，并且阴影轮廓，如果是透过形状看到，当形状没有填充。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />可以是下列<b>MsoTriState</b>常量之一。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />可以是下列<b>MsoTriState</b>常量之一。</para>
-          <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
             <b>msoTrue</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetX">
@@ -295,10 +274,8 @@
       <Docs>
         <summary>返回或设置指定图形的水平偏移量 (以磅为单位) 的阴影。 正值表示负值表示阴影向图形; 右侧读它的左侧。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果您想要微移阴影的水平或垂直从当前位置而无需指定其绝对位置，使用<see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" />或<see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果要从当前位置水平或垂直地微移阴影, 而无需指定绝对位置, 请使用<see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" />或<see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetY">
@@ -329,10 +306,8 @@
       <Docs>
         <summary>返回或设置指定形状的阴影的垂直偏移 (以磅为单位)。 正值表示阴影向图形; 下表示读上面的形状。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果您想要微移阴影的水平或垂直从当前位置而无需指定其绝对位置，使用<see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" />或<see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果要从当前位置水平或垂直地微移阴影, 而无需指定绝对位置, 请使用<see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" />或<see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -389,10 +364,8 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Core.MsoTriState" />，表示是否旋转该形状时旋转阴影。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoTriState" />
-        </value>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Core.MsoTriState" />代表是否在旋转形状时旋转阴影。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -422,10 +395,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<b>一个</b>值，该值代表阴影的宽度。 为可读/写属性。</summary>
-        <value>
-          <b>Single</b>
-        </value>
+        <summary>返回或设置一个<b></b>值, 该值代表阴影的宽度。 读/写。</summary>
+        <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -455,10 +426,8 @@
         <ReturnType>Microsoft.Office.Core.MsoShadowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Core.MsoShadowType" />，表示的格式应用于形状的阴影类型。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoShadowType" />
-        </value>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Core.MsoShadowType" />代表要应用于形状的阴影格式的类型。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoShadowType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -521,65 +490,64 @@
       <Docs>
         <summary>返回或设置图形阴影的类型。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoShadowType" />可以是下列<b>MsoShadowType</b>常量之一。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoShadowType" />可以是下列<b>MsoShadowType</b>常量之一。</para>
-          <para>
-            <b>msoShadow10 </b>
+            <b>msoShadow10</b>
           </para>
           <para>
-            <b>msoShadow12 </b>
+            <b>msoShadow12</b>
           </para>
           <para>
-            <b>msoShadow14 </b>
+            <b>msoShadow14</b>
           </para>
           <para>
-            <b>msoShadow16 </b>
+            <b>msoShadow16</b>
           </para>
           <para>
-            <b>msoShadow18 </b>
+            <b>msoShadow18</b>
           </para>
           <para>
-            <b>msoShadow2 </b>
+            <b>msoShadow2</b>
           </para>
           <para>
-            <b>msoShadow3 </b>
+            <b>msoShadow3</b>
           </para>
           <para>
-            <b>msoShadow5 </b>
+            <b>msoShadow5</b>
           </para>
           <para>
-            <b>msoShadow7 </b>
+            <b>msoShadow7</b>
           </para>
           <para>
             <b>msoShadow9</b>
           </para>
           <para>
-            <b>msoShadow1 </b>
+            <b>msoShadow1</b>
           </para>
           <para>
-            <b>msoShadow11 </b>
+            <b>msoShadow11</b>
           </para>
           <para>
-            <b>msoShadow13 </b>
+            <b>msoShadow13</b>
           </para>
           <para>
-            <b>msoShadow15 </b>
+            <b>msoShadow15</b>
           </para>
           <para>
-            <b>msoShadow17 </b>
+            <b>msoShadow17</b>
           </para>
           <para>
-            <b>msoShadow19 </b>
+            <b>msoShadow19</b>
           </para>
           <para>
-            <b>msoShadow20 </b>
+            <b>msoShadow20</b>
           </para>
           <para>
-            <b>msoShadow4 </b>
+            <b>msoShadow4</b>
           </para>
           <para>
-            <b>msoShadow6 </b>
+            <b>msoShadow6</b>
           </para>
           <para>
             <b>msoShadow8</b>
@@ -587,8 +555,7 @@
           <para>
             <b>msoShadowMixed</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -619,27 +586,25 @@
       <Docs>
         <summary>如果指定的对象或应用的格式，，是可见的则返回 true 。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />可以是下列<b>MsoTriState</b>常量之一。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />可以是下列<b>MsoTriState</b>常量之一。</para>
-          <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
             <b>msoTrue</b>
           </para>
-          <para>对于任何对象，某些方法和属性可能不可用，如果<b>Visible</b>属性为<b>False</b>。</para>
-          <para />
-        </remarks>
+          <para>对于任何对象，某些方法和属性可能不可用，如果 <b>可见性</b> 属性为 <b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

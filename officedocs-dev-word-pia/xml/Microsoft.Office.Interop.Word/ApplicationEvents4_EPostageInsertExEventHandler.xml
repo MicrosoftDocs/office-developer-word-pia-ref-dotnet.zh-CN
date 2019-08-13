@@ -1,13 +1,5 @@
 <Type Name="ApplicationEvents4_EPostageInsertExEventHandler" FullName="Microsoft.Office.Interop.Word.ApplicationEvents4_EPostageInsertExEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1c6b1e2fa691a9be9bf147368164681f801784e0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667018" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_EPostageInsertExEventHandler(Document Doc, int cpDeliveryAddrStart, int cpDeliveryAddrEnd, int cpReturnAddrStart, int cpReturnAddrEnd, int xaWidth, int yaHeight, string bstrPrinterName, string bstrPaperFeed, bool fPrint, out bool fCancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="94af4b0a8aa74cc409913103a77c2efdb8781bff" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144821" /></Metadata><TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_EPostageInsertExEventHandler(Document Doc, int cpDeliveryAddrStart, int cpDeliveryAddrEnd, int cpReturnAddrStart, int cpReturnAddrEnd, int xaWidth, int yaHeight, string bstrPrinterName, string bstrPaperFeed, bool fPrint, out bool fCancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ApplicationEvents4_EPostageInsertExEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ApplicationEvents4_EPostageInsertExEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ApplicationEvents4_EPostageInsertExEventHandler(Doc As Document, cpDeliveryAddrStart As Integer, cpDeliveryAddrEnd As Integer, cpReturnAddrStart As Integer, cpReturnAddrEnd As Integer, xaWidth As Integer, yaHeight As Integer, bstrPrinterName As String, bstrPaperFeed As String, fPrint As Boolean, ByRef fCancel As Boolean)" />
@@ -44,28 +36,18 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="Doc">所需<see cref="T:Microsoft.Office.Interop.Word.Document" />。 要添加电子邮政的文档。</param>
-    <param name="cpDeliveryAddrStart">
-      <b>整数</b>。 收信人地址的文档中的起始位置。 定位对应的值<see cref="P:Microsoft.Office.Interop.Word.Range.Start" />属性<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。</param>
-    <param name="cpDeliveryAddrEnd">
-      <b>整数</b>。 在文档中收信人地址的结束位置。 定位对应的值<see cref="P:Microsoft.Office.Interop.Word.Range.End" />的<b>Range</b>对象的属性。</param>
-    <param name="cpReturnAddrStart">
-      <b>整数</b>。 寄信人地址的文档中的起始位置。 定位到一个 <b>Range</b> 对象， <b>启动</b> 属性的值对应。</param>
-    <param name="cpReturnAddrEnd">
-      <b>整数</b>。 在文档中寄信人地址的结束位置。 定位与 <b>Range</b> 对象的 <b>最终</b> 属性值相对应。</param>
-    <param name="xaWidth">
-      <b>整数</b>。 以 1/1440 英寸为单位的信封宽度。</param>
-    <param name="yaHeight">
-      <b>整数</b>。 以 1/1440 英寸为单位的信封高度。</param>
-    <param name="bstrPrinterName">
-      <b>字符串</b> 。 "信封选项"对话框的 "打印选项"选项卡上指定的打印机名称。</param>
-    <param name="bstrPaperFeed">
-      <b>字符串</b> 。 "信封选项"对话框的 "打印选项"选项卡上指定的送纸方法。</param>
-    <param name="fPrint">
-      <b>Boolean 类型的值</b> 。 <b>如此</b> 如果用户已指定要打印的信封。 <b>假</b> 如果用户已指定要插入到文档中的信封。</param>
-    <param name="fCancel">
-      <b>Boolean 类型的值</b> 。 <b>则返回 true</b> ，则取消操作指定中所述的用户<paramref name="fPrint" />参数。</param>
-    <summary>用于添加事件处理程序<b>委托</b>类型<see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.EPostageInsertEx" />事件。 当用户在文档中插入电子邮政时发生<b>EPostageInsertEx</b>事件。</summary>
+    <param name="Doc">必需<see cref="T:Microsoft.Office.Interop.Word.Document" />。 要添加电子邮政的文档。</param>
+    <param name="cpDeliveryAddrStart"><b>Integer</b>。 收信人地址的文档中的起始位置。 定位对应于<see cref="P:Microsoft.Office.Interop.Word.Range.Start" /> <see cref="T:Microsoft.Office.Interop.Word.Range" />对象的属性值。</param>
+    <param name="cpDeliveryAddrEnd"><b>Integer</b>。 在文档中收信人地址的结束位置。 定位对应于<see cref="P:Microsoft.Office.Interop.Word.Range.End" /> <b>Range</b>对象的属性值。</param>
+    <param name="cpReturnAddrStart"><b>Integer</b>。 寄信人地址的文档中的起始位置。 定位到一个 <b>Range</b> 对象， <b>启动</b> 属性的值对应。</param>
+    <param name="cpReturnAddrEnd"><b>Integer</b>。 在文档中寄信人地址的结束位置。 定位与 <b>Range</b> 对象的 <b>最终</b> 属性值相对应。</param>
+    <param name="xaWidth"><b>Integer</b>。 以 1/1440 英寸为单位的信封宽度。</param>
+    <param name="yaHeight"><b>Integer</b>。 以 1/1440 英寸为单位的信封高度。</param>
+    <param name="bstrPrinterName"><b>字符串</b> 。 "信封选项" 对话框的 "打印选项" 选项卡上指定的打印机名称。</param>
+    <param name="bstrPaperFeed"><b>字符串</b> 。 "信封选项" 对话框的 "打印选项" 选项卡上指定的送纸方法。</param>
+    <param name="fPrint"><b>Boolean 类型的值</b> 。 <b>如此</b> 如果用户已指定要打印的信封。 <b>假</b> 如果用户已指定要插入到文档中的信封。</param>
+    <param name="fCancel"><b>Boolean 类型的值</b> 。 <b>如果为 True</b> , 则取消用户指定的操作, <paramref name="fPrint" />参数中所指定的操作。</param>
+    <summary>用于<b></b>为<see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.EPostageInsertEx" />事件添加事件处理程序的委托类型。 当用户在文档中插入电子邮政时, <b>EPostageInsertEx</b>事件发生。</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

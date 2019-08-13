@@ -1,13 +1,5 @@
 <Type Name="Style" FullName="Microsoft.Office.Interop.Word.Style">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f00a0a687c5ad4964390a068d041ec8490b3eecf" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666602" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Style" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="74f93bf5a3bfe99659200d0b7c65cb0b82d3670e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146113" /></Metadata><TypeSignature Language="C#" Value="public interface Style" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Style" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Style" />
   <TypeSignature Language="VB.NET" Value="Public Interface Style" />
@@ -27,13 +19,12 @@
   </Attributes>
   <Docs>
     <summary>代表单个内置或用户定义的样式。</summary>
-    <remarks>
-      <para>
-        <b>Style</b>对象作为<b>Style</b>对象的属性包括样式属性 （字体、 字形、 段落间距等）。<b>Style</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.Styles" />集合。<b>Styles</b>集合包含的所有样式中指定的文档。</para>
-      <para>使用<b>样式</b>(<paramref name="index" />)，其中<paramref name="index" />是样式的名称，<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或索引号，可返回单个<b>Style</b>对象。您必须完全匹配的拼写和间距该样式名称，但不是一定是其大小写。</para>
-      <para>样式索引编号代表的样式的样式名称按字母顺序排列的列表中的位置。</para>
-      <para>要将样式应用到区域、 段落或多个段落，请将<b>Style</b>属性设置为用户定义或内置样式名称。</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" />方法复制文档和模板之间的样式。使用<see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" />方法来更新活动文档，以匹配将附加模板中的样式定义中的样式。使用<see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />方法，以作为文档打开的模板，以便您可以修改模板中的样式。</para><para /></remarks>
+    <remarks><para><b>Style</b>对象包括样式属性 (字体、字体样式、段落间距等) 作为<b>样式</b>对象的属性。 <b>样式</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Styles" />集合的一个成员。 <b>Styles</b> 集合包含指定文档中的所有样式。</para>
+      <para>使用<b>Styles</b>(<paramref name="index" />), 其中<paramref name="index" />是样式名称、 <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或索引号, 用于返回单个<b>样式</b>对象。 您必须完全匹配的拼写和间距样式名称，但不是一定是其市值。</para>
+      <para>样式索引编号代表样式在按字母顺序排列的样式名列表中的位置。</para>
+      <para>若要将样式应用于范围、 段落或多个段落，设置 <b>样式</b> 属性设置为用户定义的或内置的样式名称。</para>
+      <para>使用方法<see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" />可在文档和模板之间复制样式。 使用<see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" />方法更新活动文档中的样式, 以与附加模板中的样式定义相匹配。 使用<see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />方法将模板作为文档打开, 以便您可以修改模板样式。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,12 +81,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果返回 <b>true</b> 样式自动重新定义基于所选内容时。 <b>False</b>如果 Microsoft Word 根据选定内容的样式重新定义之前进行确认提示。 可读写 <b>Boolean</b>。</summary>
+        <summary>如果返回 <b>true</b> 样式自动重新定义基于所选内容时。 <b>假</b>如果 Microsoft Word 在重新定义基于所选内容的样式之前提示确认。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>其应用于选定内容具有相同样式、 但不同的手动设定的格式时，可以重新定义样式。</para>
-          <para />
-        </remarks>
+        <remarks><para>将应用于所选内容具有相同的样式，但不同的手动格式时，可以重新定义样式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseStyle">
@@ -126,10 +115,8 @@
       <Docs>
         <summary>返回或设置现有的样式，您可以基于其他样式的格式。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要设置此属性，指定的基本样式本地名称整数或一个<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或一个代表的基本样式的对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要设置该属性, 请指定基准样式的本地名称、整数或<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量, 或者指定代表基准样式的对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -158,7 +145,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合，代表指定对象的所有边框。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合, 该集合代表指定对象的所有边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -186,13 +173,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果指定的对象是一个内置样式或 Microsoft Word 中的题注标签。 只读 <b>Boolean</b>。</summary>
+        <summary><b>如此</b>如果指定的对象是 Microsoft Word 中的内置样式或题注标签之一。 只读 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以通过在所有语言指定内置样式<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或通过使用 Microsoft Word 的语言版本的样式名称的语言。</para>
-          <para />
-        </remarks>
+        <remarks><para>通过使用<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或语言中的样式名称, 可以使用 Microsoft Word 的语言版本在所有语言中指定内置样式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -218,11 +202,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 <b>Integer</b> 类型，只读。</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Integer</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -246,7 +230,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,12 +257,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定样式的说明。只读 <b>String</b> 类型。</summary>
+        <summary>返回指定样式的说明。 只读 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>例如，标题 2 样式的典型说明可能"正文 + 字体： Arial、 12 磅、 加粗、 倾斜、 段前 12 磅、 段后 3 磅、 KeepWithNext、 2 级。"</para>
-          <para />
-        </remarks>
+        <remarks><para>例如, "标题 2" 样式的典型说明可能是 "Normal + Font: Arial、12 pt、加粗、倾斜、3磅之后12磅之后的空格, KeepWithNext, 2 级"。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -307,12 +289,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.Font" />对象，它代表指定对象的字符格式。 <b>Font</b> 类型，可读写。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.Font" />对象, 该对象代表指定对象的字符格式。 <b>Font</b> 类型，可读写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要设置该属性，指定一个返回<b>Font</b>对象的表达式。</para>
-          <para />
-        </remarks>
+        <remarks><para>要设置该属性，需指定一个返回 <b>Font</b> 对象的表达式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Frame">
@@ -338,7 +318,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Frame" />对象，表示的图文框格式指定的样式。 只读。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Frame" />对象, 表示指定样式的图文框格式。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,13 +383,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> 指定的样式是否已修改或已在文档中创建一个新样式或文档中应用的内置样式。只读的 <b>布尔值</b> 。</summary>
+        <summary><b>True</b> 指定的样式是否已修改或已在文档中创建一个新样式或文档中应用的内置样式。只读的 <b>布尔值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性不一定表示样式当前是否已应用到文档中的任何文本。例如，如果已设置为样式的文本被删除，该样式的<b>InUse</b>属性保留<b>，则返回 True</b>。对于以前从未使用文档中的内置样式，此属性返回<b>False</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性并不一定表明样式当前是否已应用于文档中的任何文本。 例如，如果删除已有的样式设置格式的文本，则 <b>InUse</b> 属性的样式将保持 <b>为 True</b> 。 对于尚未在文档中使用过的内置样式，该属性返回 <b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageID">
@@ -438,14 +415,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定对象的语言。 为可读/写属性。</summary>
+        <summary>返回或设置指定对象的语言。 读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量。</para>
-          <para>
-            <b>WdLanguageID</b>常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量。</para>
+          <para>某些<b>WdLanguageID</b>常量可能不可用, 具体取决于您选择或安装的语言支持 (例如, 美国英语)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -476,11 +450,9 @@
       <Docs>
         <summary>返回或设置指定对象的东亚语言。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量。</para>
-          <para>这是建议的方式，可返回或设置 Microsoft Word 东亚版中创建的文档中的东亚文字的语言。</para>
-          <para />
-        </remarks>
+        <remarks><para>可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量。</para>
+          <para>推荐使用本方法，来返回或设置用 Microsoft Word 中文版创建的文档中东亚文字的语言。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Linked">
@@ -506,15 +478,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 <b>Boolean</b> 值，该值表示某样式是否是段落和字符格式都可以使用的链接样式。只读。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>
-            <b>True</b>表示修改样式对话框中的样式类型选项设置为"链接 （段落和字符）"。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置 <b>Boolean</b> 值，该值表示某样式是否是段落和字符格式都可以使用的链接样式。 只读。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>
+            <b>如果为 True</b> , 则表示 "修改样式" 对话框中的 "样式类型" 选项设置为 "链接 (段落和字符)"。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkStyle">
@@ -543,12 +511,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个<b>对象</b>，代表一个段落和字符样式之间的链接。 为可读/写属性。</summary>
+        <summary>设置或返回一个<b>对象</b>, 表示段落和字符样式之间的链接。 读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>当将字符样式与段落样式链接时，两种样式就采取相同的字符格式。</para>
-          <para />
-        </remarks>
+        <remarks><para>一旦将字符样式与段落样式链接起来，这两种样式就采取相同的字符格式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkToListTemplate">
@@ -573,8 +539,8 @@
         <Parameter Name="ListLevelNumber" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate">所需<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />对象。 与样式相链接的列表模板。</param>
-        <param name="ListLevelNumber">可选的<b>对象</b>。 对应样式所链接到的列表级的整数。 如果省略该参数，则使用样式的级别。</param>
+        <param name="ListTemplate">必需<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />的对象。 与样式相链接的列表模板。</param>
+        <param name="ListLevelNumber">可选<b>对象</b>。 对应样式所链接到的列表级的整数。 如果省略该参数，则使用样式的级别。</param>
         <summary>将指定的样式与一个列表模板链接，如此该样式中的格式就可以应用于列表。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -602,7 +568,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定样式的列表级别。 <b>Integer</b> 类型，只读。</summary>
+        <summary>返回指定样式的列表级别。 只读 <b>Integer</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -630,13 +596,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />对象，表示的列表格式指定<see cref="T:Microsoft.Office.Interop.Word.Style" />对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object 类型的对象, 该对象代表指定<see cref="T:Microsoft.Office.Interop.Word.Style" />对象的列表格式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A 列表模板包含定义特定列表的所有格式。每个 （不包括无） 的七种格式在每个项目符号中的选项卡上找到和编号对话框 （格式菜单） 对应的列表模板。文档和模板还可以包含列表模板的集合。</para>
-          <para>如果<b>ListFormat</b>对象的范围中的第一段的格式不是列表，则<b>ListTemplate</b>属性返回<b>Nothing</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>一个列表模板包含定义特定列表的所有格式。 “项目符号和编号”对话框（“格式”菜单）中的每个选项卡上有七种格式（不包括“无”），每一种格式对应于一个列表模板。 文档和模板也可以包含列表模板的集合。</para>
+          <para>如果 <b>ListFormat</b> 对象的范围的第一个段落的格式不是列表，则 <b>ListTemplate</b> 属性将返回 <b>Nothing</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -665,7 +629,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>指定的样式已被锁定。</summary>
+        <summary><b>如此</b>如果指定的样式被锁定。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -696,12 +660,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回用户的语言中内置样式的名称。读/写， <b>字符串</b> 。</summary>
+        <summary>返回用户的语言中内置样式的名称。 读/写， <b>字符串</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>设置该属性为用户定义的样式重新命名，或者为内置样式添加别名。</para>
-          <para />
-        </remarks>
+        <remarks><para>通过设置该属性可为用户定义的样式重新命名，或者为内置样式添加别名。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NextParagraphStyle">
@@ -730,12 +692,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置要应用于自动格式与指定样式的段落之后插入一个新段落的样式。 读取/写入 <b>对象</b> 。</summary>
+        <summary>返回或设置应用于新段落的样式, 该段落将在设置了指定样式的段落后插入。 读取/写入 <b>对象</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要设置此属性，指定下一个样式，本地名称整数或一个<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或一个代表下一个样式的对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要设置此属性, 请指定下一个样式的本地名称、一个整数或一个<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量, 或者指定一个代表下一个样式的对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoProofing">
@@ -764,7 +724,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>与该样式<b>，则返回 true</b>如果拼写和语法检查忽略文本格式。 可读写 <b>Integer</b>。</summary>
+        <summary>如果拼写和语法检查程序忽略设置为此样式格式的文本，则该属性值为 <b>True</b>。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -795,8 +755,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真正</b> 的 Microsoft Word 删除都使用相同的样式格式化的段落之间的间距。读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary><b>真正</b> 的 Microsoft Word 删除都使用相同的样式格式化的段落之间的间距。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -827,7 +786,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />值，该值代表指定样式的段落设置的对象。 为可读/写属性。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />对象, 表示指定样式的段落设置。 读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -886,10 +845,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>整数</b>，表示排序样式任务窗格中的样式的优先级。 为可读/写属性。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回或设置一个<b>Integer</b>类型的值, 该值表示对样式任务窗格中的样式进行排序的优先级。 读/写。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -919,10 +876,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值代表样式是否对应于可用的快速样式。读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值代表样式是否对应于可用的快速样式。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -949,7 +904,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象的引用指定对象的底纹格式。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象, 该对象代表指定对象的底纹格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -977,7 +932,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TableStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.TableStyle" />对象代表可应用于使用表格样式表的属性。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.TableStyle" />对象, 该对象表示可使用表格样式应用于表格的属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1007,9 +962,8 @@
       <Docs>
         <summary>返回样式的类型。 只读<see cref="T:Microsoft.Office.Interop.Word.Style" />。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>WdStyleType</b>可以是下列常量之一：</para>
+        <remarks><para>
+            <b>WdStyleType</b>可以是下列常量之一:</para>
           <para>
             <b>wdStyleTypeCharacter</b>
           </para>
@@ -1022,8 +976,7 @@
           <para>
             <b>wdStyleTypeTable</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UnhideWhenUsed">
@@ -1052,7 +1005,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置为<b>True</b>以清除<see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" />属性时使用此样式。</summary>
+        <summary>设置<b>为 True</b>可在<see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" />使用此样式时清除属性。</summary>
         <value>Boolean</value>
         <remarks>To be added.</remarks>
       </Docs>

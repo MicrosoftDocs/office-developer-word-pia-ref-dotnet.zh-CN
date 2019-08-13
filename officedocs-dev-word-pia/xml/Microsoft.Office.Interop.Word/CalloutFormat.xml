@@ -1,13 +1,5 @@
 <Type Name="CalloutFormat" FullName="Microsoft.Office.Interop.Word.CalloutFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c04c571668cd9e557fbce92649a5a632d6c743de" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665962" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CalloutFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e225a3d98b4c368d5c9c0b464dfefb3fd25e89a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147318" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalloutFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CalloutFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalloutFormat" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>包含应用于线形标注的属性和方法。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Callout" />属性可返回<b>CalloutFormat</b>对象。</para>
-      <para />
-    </remarks>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Callout" />属性返回一个<b>CalloutFormat</b>对象。 </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Accent">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示是否垂直强调线将标注文字线与标注线分开。</summary>
+        <summary>返回或设置一个值, 该值指示是否垂直强调线分隔标注文本与标注线。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,13 +80,11 @@
         <ReturnType>Microsoft.Office.Core.MsoCalloutAngleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示标注线的角度。</summary>
+        <summary>返回或设置一个值, 该值指示标注线的角度。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>标注线包含多个线段，如果此属性返回或设置线段标注文本边框最远的角度。</para>
-          <para>拖动标注时如果将此属性的值设置为<b>msocalloutangleautomatic</b>，标注线将保持固定的角度。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果该标注线条包含多条线段，则此属性返回或设置离标注文本框最远的线段的角度。</para>
+          <para>如果将此属性的值设置为 <b>msoCalloutAngleAutomatic</b> 以外的任何值，标注线保持固定的角度拖动标注。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -122,7 +110,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,13 +147,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示是否标注线连接到标注文本框的位置更改具体取决于标注线位置 （标注指向的位置） 的原点而言是标注文本边框的左侧或右侧。</summary>
+        <summary>返回或设置一个值, 该值指示标注线附加到标注文本框的位置是否随标注线的原点 (标注指向的位置) 是在标注文本框的左侧还是右侧而变化。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>文本框右侧的原点时此属性的值为<b>True</b>，从文本框的顶端度量投递值 （即标注文本边框的边缘到标注线连接的位置的垂直距离）的原点左侧文本框中时算从文本框的底部。当此属性的值为<b>False</b>时，拖放值是从顶部的文本框中，而不考虑的相对位置文本框和原始始终算起。使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" />方法来设置下拉值，并使用<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" />属性返回的投递值。</para>
-          <para>设置此属性影响标注，仅当它具有显式设置放置值 — 即，如果的值<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" />属性是<b>msoCalloutDropCustom</b>。默认情况下，标注明确设置投递值在创建时会。</para>
-          <para />
-        </remarks>
+        <remarks><para>当该属性的值为<b>True</b>时, 当文本框位于原点右侧时, 从文本框顶部开始计算的垂直距离 (从标注文本框的边缘到标注线的位置) 的拖放值。, 当文本框位于原点的左侧时, 从文本框的底部测量。 如果本属性的值为 <b>False</b>，那么不管标注文本框与标注线起点的相对位置怎样，标注的落差值都从标注文本框的顶边开始计算。 使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" />方法设置拖放值, 并使用<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" />属性返回拖放值。</para>
+          <para>仅当该属性具有显式设置的放置值 (即, 如果该<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" />属性的值为<b>msoCalloutDropCustom</b>时), 设置该属性才会影响标注。 默认情况下，在创建标注时会明确设置垂直距离。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoLength">
@@ -191,12 +177,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，该值指示是否自动设置标注线的长度。</summary>
+        <summary>返回一个值, 该值指示是否自动设置标注线的长度。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" />方法将此属性设置为<b>msoTrue</b>，并使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" />方法将此属性设置为<b>msoFalse</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" />方法将此属性设置为<b>msoTrue</b>, 并使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" />方法将此属性设置为<b>msoFalse</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutomaticLength">
@@ -224,11 +208,9 @@
       <Parameters />
       <Docs>
         <summary>指定在移动标注时，自动调整的第一段 (附加到文本标注框的线段) 在标注线。</summary>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" />方法，以指定标注线的第一段保留返回的固定的长度<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" />移动标注的属性。仅适用于其线条由 （类型<b>msoCalloutThree</b>和<b>msocalloutfour 类型</b>） 的多个线段组成的标注。</para>
-          <para>应用此方法设置<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" />属性设置为<b>True</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" />方法可指定在移动标注时标注线的第一段保持由该<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" />属性返回的固定长度。 只应用于其线条由多个段组成的标注（<b>msoCalloutThree</b> 和 <b>msoCalloutFour</b> 类型）。</para>
+          <para>应用此方法会将<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" />该属性设置为<b>True</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -257,7 +239,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示是否指定标注中文本的周围带有边框。</summary>
+        <summary>返回或设置一个值, 该值指示指定标注中的文本是否环绕边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -285,11 +267,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，指示在其中创建指定的对象的应用程序。</summary>
+        <summary>返回一个值, 该值指示在其中创建指定对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDrop">
@@ -317,11 +299,9 @@
       <Docs>
         <param name="Drop">垂直距离（以磅为单位）。</param>
         <summary>设置缘的文本边界框到标注线与文本框的连接位置的垂直距离 (以磅为单位)。</summary>
-        <remarks>
-          <para>此距离顶部的文本框<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" />属性设置为<b>True</b> ，并且文本框为案例距离距离底部左侧的原点的标注线 （标注线所指向的位置），文本框。</para>
-          <para>如果<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" />方法先前用于设置指定标注，调用再次使自定义放置设置使用<b>CustomDrop</b>方法前使用<b>msoCalloutDropCustom</b>参数<b>PresetDrop</b>方法才会生效。</para>
-          <para />
-        </remarks>
+        <remarks><para>此距离是从文本框顶部算起的, 除非该<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" />属性设置为<b>True</b> , 文本框位于标注线的原点左侧 (标注指向的位置), 在这种情况下, 垂直距离从底部测量。的文本框。</para>
+          <para>如果该<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" />方法以前用于设置指定标注的放置, 请在使用<b>CustomDrop</b>方法之前使用<b>msoCalloutDropCustom</b>参数再次调用<b>PresetDrop</b>方法, 以使自定义放置设置采用结果.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomLength">
@@ -349,11 +329,9 @@
       <Docs>
         <param name="Length">标注的第一段长度，以磅为单位。</param>
         <summary>指明在移动标注时标注线的第一条线段（即附加于文字标注框的线段）保持固定长度。</summary>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" />方法，以指定无论何时移动标注，自动调整标注线的第一段。仅适用于其线条由 （类型<b>msoCalloutThree</b>和<b>msocalloutfour 类型</b>） 的多个线段组成的标注。</para>
-          <para>应用此方法设置<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" />属性设<b>为 False</b>且设置为<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" />属性设为指定的值为<paramref name="Length" />参数。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" />方法指定在移动标注时自动缩放标注线的第一段。 只应用于其线条由多个段组成的标注（<b>msoCalloutThree</b> 和 <b>msoCalloutFour</b> 类型）。</para>
+          <para>如果应用此方法, <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" />则会将该属性设置<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" />为<b>False</b> , 并将该属性<paramref name="Length" />设置为参数指定的值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Drop">
@@ -381,12 +359,10 @@
       <Docs>
         <summary>对于具有明确的垂直距离值设置的标注，此属性返回文本框的边缘与标注线附加到文本框上的位置之间的垂直距离（以磅为单位）。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此距离顶部的文本框<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" />属性设置为<b>True</b> ，并且文本框为案例距离距离底部左侧的原点的标注线 （标注线所指向的位置），文本框。</para>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" />方法，以便设置此属性的值。</para>
-          <para>此属性的值准确地反映到文本框标注行附件的位置，仅当具有显式设置标注放置值 — 即，如果的值<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" />属性是<b>msoCalloutDropCustom</b>。使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" />方法<b>msoCalloutCustomDrop</b>参数将<b>DropType</b>属性设置为<b>msoCalloutDropCustom</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>此距离是从文本框顶部算起的, 除非该<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" />属性设置为<b>True</b> , 文本框位于标注线的原点左侧 (标注指向的位置), 在这种情况下, 垂直距离从底部测量。的文本框。</para>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" />方法来设置此属性的值。</para>
+          <para>仅当标注有显式设置的下拉值时, 该属性的值才反映标注行附件的位置, 即, 如果该<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" />属性的值为<b>msoCalloutDropCustom</b>。 将<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" />方法与<b>msoCalloutCustomDrop</b>参数一起使用可将<b>DropType</b>属性设置为<b>msoCalloutDropCustom</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DropType">
@@ -414,11 +390,9 @@
       <Docs>
         <summary>返回一个值，该值指示标注线与标注文本框的连接位置。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>标注拖放类型是否<b>msoCalloutDropCustom</b>，值<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" />和<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" />属性和标注文本边框和标注线起点 （标注线所指向的位置） 的相对位置用于确定位置标注线条连接到文本框中。</para>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" />方法，以便设置此属性的值。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果标注拖放类型为<b>msoCalloutDropCustom</b>, 则<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" />和<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" />属性的值以及标注文本框和标注线原点的相对位置 (标注所指向的位置) 用于确定标注的位置。"线条" 附加到文本框。</para>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" />方法来设置此属性的值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Gap">
@@ -447,7 +421,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示的水平距离 （以磅为单位） 之间的末尾标注线和边界框的文本。</summary>
+        <summary>返回或设置一个值, 该值指示标注线终点和文本边界框之间的水平距离 (以磅为单位)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -475,13 +449,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" />指定标注的属性设置为<b>False</b>，则<b>长度</b>属性返回的第一段标注线 （文本标注框所附线段） 的长度 （以磅为单位）。</summary>
+        <summary>当指定<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" />标注的属性设置为<b>False</b>时, <b>length</b>属性返回标注线的第一条线段 (附加到文本标注框的线段) 的长度 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅适用于其线条由 （类型<b>msoCalloutThree</b>和<b>msocalloutfour 类型</b>） 的多个线段组成的标注。</para>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" />方法，以便设置此属性的值<see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" />对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>只应用于其线条由多个段组成的标注（<b>msoCalloutThree</b> 和 <b>msoCalloutFour</b> 类型）。</para>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" />方法设置<see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" />对象的此属性的值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -537,10 +509,8 @@
       <Docs>
         <param name="DropType">相对于文本边界框的标注线起始位置。</param>
         <summary>指定是将标注线条连接到标注文本框的顶部、底部或中心，还是将它连接到距文本框的顶部或底部为指定距离的某个点上。</summary>
-        <remarks>
-          <para>如果指定的<b>msoCalloutDropCustom</b><paramref name="DropType" /> parameter、 值<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" />和<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" />属性和标注文本边框和标注线起点 （标注线所指向的位置） 的相对位置使用来确定其中标注线连接到文本框。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果为<paramref name="DropType" />参数指定<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> <b>msoCalloutDropCustom</b> , 则和<see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" />属性的值以及标注文本框和标注线原点的相对位置 (标注所指向的位置) 用于确定标注线附加到文本框的位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -569,7 +539,7 @@
         <ReturnType>Microsoft.Office.Core.MsoCalloutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指示标注类型。</summary>
+        <summary>返回或设置一个值, 该值指示标注的类型。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

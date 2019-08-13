@@ -1,13 +1,5 @@
 <Type Name="SpellingSuggestions" FullName="Microsoft.Office.Interop.Word.SpellingSuggestions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c30fd4820009953509a43ffbb37abf5462125885" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666728" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SpellingSuggestions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4cee29ad3d8de668efc42731bf2fa1ab75a7b415" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146091" /></Metadata><TypeSignature Language="C#" Value="public interface SpellingSuggestions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SpellingSuggestions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SpellingSuggestions" />
   <TypeSignature Language="VB.NET" Value="Public Interface SpellingSuggestions&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestion" />代表指定单词或指定范围中的第一个单词的所有建议的对象。</summary>
-    <remarks>
-      <para>使用<b>GetSpellingSuggestions</b>方法<see cref="T:Microsoft.Office.Interop.Word.Application" />或<see cref="T:Microsoft.Office.Interop.Word.Range" />要返回<b>SpellingSuggestions</b>集合对象。<b>SpellingSuggestions</b>方法，如果将应用于<b>Application</b>对象，必须指定要检查的单词。当<b>GetSpellingSuggestions</b>方法应用于区域时，将检查范围中的第一个单词。</para>
-      <para>不能添加到建议或删除建议从拼写建议的集合。拼写建议从主和自定义词典文件。</para>
-      <para />
-    </remarks>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestion" />对象的集合, 这些对象代表指定单词或指定范围中的第一个单词的所有建议。</summary>
+    <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.Application" />或<see cref="T:Microsoft.Office.Interop.Word.Range" />对象的<b>GetSpellingSuggestions</b>方法可返回<b>SpellingSuggestions</b>集合。 <b>SpellingSuggestions</b> 方法，应用于 <b>应用程序</b> 对象，必须指定要检查的单词。 当 <b>GetSpellingSuggestions</b> 方法应用于区域时，将检查范围中的第一个单词。</para>
+      <para>不能在拼写建议集合中添加或删除建议。拼写建议是从主词典或自定义词典文件中获取的。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +79,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,9 +109,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -182,7 +172,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">一个<b>整数</b>，指示的单个对象的序号位置。</param>
+        <param name="Index">一个指示单个对象的序号位置的<b>整数</b>。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -241,8 +231,7 @@
       <Docs>
         <summary>返回拼写错误类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdSpellingErrorType" />可以是下列<b>WdSpellingErrorType</b>常量之一。</para>
           <para>
             <b>wdSpellingCapitalization</b>
@@ -252,8 +241,9 @@
           </para>
           <para>
             <b>wdSpellingNotInDictionary</b>
-          </para>使用
-          <para><see cref="M:Microsoft.Office.Interop.Word._Application.GetSpellingSuggestions(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法返回的建议拼写替换单词的集合。如果某个单词的拼写错误，<see cref="M:Microsoft.Office.Interop.Word._Application.CheckSpelling(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法返回<b>True</b>。</para><para /></remarks>
+          </para>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Word._Application.GetSpellingSuggestions(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法返回建议为拼写替换的单词的集合。 如果某个单词的拼写错误, <see cref="M:Microsoft.Office.Interop.Word._Application.CheckSpelling(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />该方法将返回<b>True</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

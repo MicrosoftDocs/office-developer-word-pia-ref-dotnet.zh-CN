@@ -1,13 +1,5 @@
 <Type Name="ShapeNodes" FullName="Microsoft.Office.Interop.Word.ShapeNodes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eb27a6ee4cc769c6d56e3162447fcc10ee349303" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667085" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShapeNodes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="35df8d05c8a08728b7df796ac68fa68a69de02c2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143999" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNodes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeNodes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShapeNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeNodes&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Word.ShapeNode" />对象中指定的任意多边形。</summary>
-    <remarks>
-      <para>每个<b>ShapeNode</b>对象代表任意多边形中的线段或任意多边形曲线段的控点之间的节点。您可以创建任意多边形手动或使用<see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />和<see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />方法。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Nodes" />属性可返回<b>ShapeNodes</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />方法可创建一个新的节点，并将其添加到<b>ShapeNodes</b>集合。</para>
-      <para>使用<b>节点</b>(<paramref name="index" />)，其中<paramref name="index" />是节点索引号，可返回单个<b>ShapeNode</b>对象。</para>
-      <para />
-    </remarks>
+    <summary>指定任意多边形中的<see cref="T:Microsoft.Office.Interop.Word.ShapeNode" />所有对象的集合。</summary>
+    <remarks><para>每个 <b>ShapeNode</b> 对象代表任意多边形中的线段或任意多边形曲线段的控点之间的节点。 您可以手动创建任意多边形<see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> , 也可以使用和<see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />方法创建任意多边形。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Nodes" />属性返回<b>ShapeNodes</b>集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />方法创建一个新节点并将其添加到<b>ShapeNodes</b>集合中。</para>
+      <para>使用<b>节点</b>(<paramref name="index" />), 其中<paramref name="index" />是节点索引号, 返回一个<b>ShapeNode</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,7 +81,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,9 +111,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -149,9 +139,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>必选。</b> 要删除的形状节点的编号。</param>
-        <summary>用于删除指定的对象。</summary>
+        <param name="Index">必需的<b>整数</b>。 要删除的图形节点的数目。</param>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,18 +206,15 @@
         <Parameter Name="Y3" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>必选。</b> 要在其后插入新顶点的多边形顶点的编号。</param>
-        <param name="SegmentType">所需<see cref="T:Microsoft.Office.Core.MsoSegmentType" />。 插入的顶点与邻接顶点的连线的类型。</param>
-        <param name="EditingType">所需<see cref="T:Microsoft.Office.Core.MsoEditingType" />。 插入的顶点的编辑属性。</param>
-        <param name="X1">
-          <b>必选。</b> 如果<paramref name="EditingType" />新线段是<b>msoEditingAuto</b>时，此参数指定的水平距离，以磅为单位，从左上角的新线段端点的文档。 如果<paramref name="EditingType" />的新节点是<b>msoEditingCorner</b>时，此参数指定的水平距离，以磅为单位，从左上角的新段的第一个控制点的文档。</param>
-        <param name="Y1">
-          <b>必选。</b> 如果<paramref name="EditingType" />新线段是<b>msoEditingAuto</b>时，此参数指定的垂直距离，以磅为单位，从左上角的新线段端点的文档。 如果<paramref name="EditingType" />的新节点是<b>msoEditingCorner</b>时，此参数指定的垂直距离，以磅为单位，从左上角的新段的第一个控制点的文档。</param>
-        <param name="X2">可选<b>单个</b>。 如果<paramref name="EditingType" />新线段是<b>msoEditingCorner</b>时，此参数指定的水平距离，以磅为单位，从左上角的新段的第二个控制点的文档。 如果<paramref name="EditingType" />的新线段是<b>msoEditingAuto</b>，不指定此参数的值。</param>
-        <param name="Y2">可选<b>单个</b>。 如果<paramref name="EditingType" />新线段是<b>msoEditingCorner</b>时，此参数指定的垂直距离，以磅为单位，从左上角的新段的第二个控制点的文档。 如果<paramref name="EditingType" />的新线段是<b>msoEditingAuto</b>，不指定此参数的值。</param>
-        <param name="X3">可选<b>单个</b>。 如果<paramref name="EditingType" />新线段是<b>msoEditingCorner</b>时，此参数指定的水平距离，以磅为单位，从左上角的新线段端点的文档。 如果<paramref name="EditingType" />的新线段是<b>msoEditingAuto</b>，不指定此参数的值。</param>
-        <param name="Y3">可选<b>单个</b>。 如果<paramref name="EditingType" />新线段是<b>msoEditingCorner</b>时，此参数指定的垂直距离，以磅为单位，从左上角的新线段端点的文档。 如果<paramref name="EditingType" />的新线段是<b>msoEditingAuto</b>，不指定此参数的值。</param>
+        <param name="Index">必需的<b>整数</b>。 要在其后插入新顶点的多边形顶点的编号。</param>
+        <param name="SegmentType">必需<see cref="T:Microsoft.Office.Core.MsoSegmentType" />。 插入的顶点与邻接顶点的连线的类型。</param>
+        <param name="EditingType">必需<see cref="T:Microsoft.Office.Core.MsoEditingType" />。 插入的顶点的编辑属性。</param>
+        <param name="X1">必需<b>Single</b>。 <paramref name="EditingType" />如果新段的 msoEditingAuto 为 " <b></b>", 则此参数指定从文档的左上角到新线段的终点之间的水平距离 (以磅为单位)。 <paramref name="EditingType" />如果新节点的<b>msoEditingCorner</b>, 则此参数指定从文档的左上角到新线段的第一个控制点的水平距离 (以磅为单位)。</param>
+        <param name="Y1">必需<b>Single</b>。 <paramref name="EditingType" />如果新段的 msoEditingAuto 为 " <b></b>", 则此参数指定从文档的左上角到新线段的终点之间的垂直距离 (以磅为单位)。 <paramref name="EditingType" />如果新节点的<b>msoEditingCorner</b>, 则此参数指定垂直距离, 以磅为单位, 从文档的左上角到新线段的第一个控制点。</param>
+        <param name="X2">可选的<b>Single</b>。 <paramref name="EditingType" />如果新段的 msoEditingCorner 为 " <b></b>", 则此参数指定从文档的左上角到新线段的第二个控制点的水平距离 (以磅为单位)。 <paramref name="EditingType" />如果新段的 msoEditingAuto 为 " <b></b>", 则不要为此参数指定值。</param>
+        <param name="Y2">可选的<b>Single</b>。 <paramref name="EditingType" />如果新段的 msoEditingCorner 为 " <b></b>", 则此参数指定从文档的左上角到新线段的第二个控制点的垂直距离 (以磅为单位)。 <paramref name="EditingType" />如果新段的 msoEditingAuto 为 " <b></b>", 则不要为此参数指定值。</param>
+        <param name="X3">可选的<b>Single</b>。 <paramref name="EditingType" />如果新段的 msoEditingCorner 为 " <b></b>", 则此参数指定从文档的左上角到新线段的终点之间的水平距离 (以磅为单位)。 <paramref name="EditingType" />如果新段的 msoEditingAuto 为 " <b></b>", 则不要为此参数指定值。</param>
+        <param name="Y3">可选的<b>Single</b>。 <paramref name="EditingType" />如果新段的 msoEditingCorner 为 " <b></b>", 则此参数指定从文档的左上角到新线段的终点之间的垂直距离 (以磅为单位)。 <paramref name="EditingType" />如果新段的 msoEditingAuto 为 " <b></b>", 则不要为此参数指定值。</param>
         <summary>在任意多边形中插入顶点。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,8 +245,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>对象</b>，它指示的序号位置或一个字符串，表示单个对象的名称。</param>
+        <param name="Index">一个指示序号位置的<b>对象</b>, 或表示单个对象的名称的字符串。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -318,14 +303,11 @@
         <Parameter Name="EditingType" Type="Microsoft.Office.Core.MsoEditingType" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>必选。</b> 要设置其编辑类型的节点。</param>
-        <param name="EditingType">所需<see cref="T:Microsoft.Office.Core.MsoEditingType" />。 顶点的编辑属性。</param>
+        <param name="Index">必需的<b>整数</b>。 需要设置编辑类型的节点。</param>
+        <param name="EditingType">必需<see cref="T:Microsoft.Office.Core.MsoEditingType" />。 顶点的编辑属性。</param>
         <summary>设置指定节点的编辑类型。</summary>
-        <remarks>
-          <para>如果节点是曲线段的控制点，则此方法将设置与之相邻的连接两个段节点的编辑类型。请注意，具体取决于的编辑类型，此方法可能会影响相邻节点的位置。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果节点是曲线段的控制点，则该方法将设置与之相邻的连接两个段的节点的编辑类型。 请注意, 根据编辑类型, 此方法可能会影响相邻节点的位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPosition">
@@ -353,17 +335,12 @@
         <Parameter Name="Y1" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>必选。</b> 要设置其位置的节点。</param>
-        <param name="X1">
-          <b>必选。</b> 新节点相对于文档左上角的位置（以磅为单位）。</param>
-        <param name="Y1">
-          <b>必选。</b> 新节点相对于文档左上角的位置（以磅为单位）。</param>
+        <param name="Index">必需的<b>整数</b>。 要设置其位置的节点。</param>
+        <param name="X1">必需<b>Single</b>。 新节点相对于文档左上角的位置（以磅为单位）。</param>
+        <param name="Y1">必需<b>Single</b>。 新节点相对于文档左上角的位置（以磅为单位）。</param>
         <summary>设置指定节点的位置。</summary>
-        <remarks>
-          <para>请注意，具体取决于节点的编辑类型，此方法可能会影响相邻节点的位置。</para>
-          <para />
-        </remarks>
+        <remarks><para>请注意, 根据节点的编辑类型, 此方法可能会影响相邻节点的位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSegmentType">
@@ -390,14 +367,11 @@
         <Parameter Name="SegmentType" Type="Microsoft.Office.Core.MsoSegmentType" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>必选。</b> 要设置其段类型的节点。</param>
-        <param name="SegmentType">所需<see cref="T:Microsoft.Office.Core.MsoSegmentType" />。 指明线段是直线还是曲线。</param>
+        <param name="Index">必需的<b>整数</b>。 需要设置线段类型的节点。</param>
+        <param name="SegmentType">必需<see cref="T:Microsoft.Office.Core.MsoSegmentType" />。 指明线段是直线段还是曲线段。</param>
         <summary>设置紧跟指定节点后面的段的段类型。</summary>
-        <remarks>
-          <para>如果节点是曲线段的控制点，则此方法设置该曲线的线段类型。注意，这可能影响通过插入或删除相邻节点的节点的总数。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果节点是曲线段的控制点，该方法将设置该曲线的段类型。注意，这会由于插入或删除相邻的节点而影响节点的总数。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

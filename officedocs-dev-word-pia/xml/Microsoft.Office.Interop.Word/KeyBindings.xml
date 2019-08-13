@@ -1,13 +1,5 @@
 <Type Name="KeyBindings" FullName="Microsoft.Office.Interop.Word.KeyBindings">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="82a4dc883d5b7257bb70e07ee869a0f2dba9b2f1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666358" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface KeyBindings : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c0bf61c2c56c0399c987bf635fa00d822963862c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146666" /></Metadata><TypeSignature Language="C#" Value="public interface KeyBindings : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract KeyBindings implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.KeyBindings" />
   <TypeSignature Language="VB.NET" Value="Public Interface KeyBindings&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象表示当前上下文中自定义的按键分配方案。 在自定义键盘对话框中进行自定义按键分配方案。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.KeyBindings" />属性可返回<b>KeyBindings</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />方法将<b>KeyBinding</b>对象添加到<b>KeyBindings</b>集合。</para>
-      <para>使用<b>KeyBindings</b>(<paramref name="index" />)，其中<paramref name="index" />是返回单个<b>KeyBinding</b>对象的索引号。</para>
-      <para />
-    </remarks>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象的集合, 这些对象代表当前上下文中的自定义键分配方案。 在自定义键盘对话框中进行自定义按键分配方案。</summary>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.KeyBindings" />属性返回<b>键绑定</b>集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />方法将<b>KeyBinding</b>对象添加到<b>键绑定</b>集合中。</para>
+      <para>使用<b>键绑定</b>(<paramref name="index" />) (其中<paramref name="index" />是索引号) 返回单个<b>KeyBinding</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -65,67 +55,64 @@
         <Parameter Name="CommandParameter" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCategory">所需<see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />。 键分配方案的类别。</param>
+        <param name="KeyCategory">必需<see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />。 键分配方案的类别。</param>
         <param name="Command">必需的 <b>字符串</b> 。 指定组合键执行的命令。</param>
-        <param name="KeyCode">
-          <b>必选。</b> 使用之一指定的键<see cref="T:Microsoft.Office.Interop.Word.WdKey" />常量。</param>
-        <param name="KeyCode2">可选的<b>对象</b>。 使用之一指定的第二个键<see cref="T:Microsoft.Office.Interop.Word.WdKey" />常量。</param>
-        <param name="CommandParameter">可选的<b>对象</b>。 其他文本，如果有，所需的命令通过指定<paramref name="Command" />。 有关详细信息，请参阅下面的"注解"部分。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象，表示宏、 内置命令、 字体、 自动图文集条目、 样式或符号的新快捷键。</summary>
+        <param name="KeyCode">必需的<b>整数</b>。 通过使用<see cref="T:Microsoft.Office.Interop.Word.WdKey" />常量之一指定的键。</param>
+        <param name="KeyCode2">可选<b>对象</b>。 使用其中一个<see cref="T:Microsoft.Office.Interop.Word.WdKey" />常量指定的第二个键。</param>
+        <param name="CommandParameter">可选<b>对象</b>。 由<paramref name="Command" />指定的命令所需的附加文本 (如果有)。 有关详细信息，请参阅下面的"注解"部分。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象, 该对象代表宏、内置命令、字体、"自动图文集" 词条、样式或符号的新快捷键。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>您可以使用<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />方法来创建<paramref name="KeyCode" />或<paramref name="KeyCode2" />参数。</para>
-          <para>下表中，在左侧的列中包含需要命令值的命令，右列介绍必须执行指定<paramref name="CommandParameter" />的每个这些命令。(在自定义键盘对话框 （工具菜单） 到指定的等效操作<paramref name="CommandParameter" />在命令框中选择以下命令之一时出现的列表框中选择一项。)</para>
+        <remarks><para>您可以使用<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />方法创建<paramref name="KeyCode" />或<paramref name="KeyCode2" />参数。</para>
+          <para>在下表中, 左侧列包含需要命令值的命令, 右边的列描述为每个命令指定<paramref name="CommandParameter" />必须执行的操作。 ("自定义键盘" 对话框 ("工具" 菜单) 中的等效<paramref name="CommandParameter" />操作是选择列表框中的一个项目, 当您在 "命令" 框中选择下列命令之一时, 将显示该项目。</para>
           <list type="table">
             <item>
               <description>
-                <b>边框</b>、 <b>Color</b>或<b>Shading</b></description>
-              <description>数字 — 指定为文本 — 包含值，其中 0 （零） 为第一项，列表框中选定的设置的位置相对应的 1 是第二项，等</description>
+                <b>Borders</b> 、 <b>Color</b> 或 <b>Shading</b></description>
+              <description>一个指定为文本的数字, 对应于在包含值的列表框中选择的设置的位置, 其中 0 (零) 是第一个项目, 1 是第二个项目, 依此类推。</description>
             </item>
             <item>
               <description>
-                <b>列</b>
+                <b>列为</b>
               </description>
-              <description>介于 1 至 45 之间的数字 — 指定为文本 — 对应于要应用的列数</description>
+              <description>一个介于1和45之间的数字 (指定为文本), 对应于要应用的列数</description>
             </item>
             <item>
               <description>
-                <b>紧缩</b>
+                <b>压缩</b>
               </description>
-              <description>一个 0.1 磅至 12.75 磅之间的文本度量值以 0.05 磅为增量 （72 磅 = 1 英寸）</description>
+              <description>一个 0.1 磅至 12.75 磅之间的文本度量值，以 0.05 磅为增量（72 磅 = 1 英寸）</description>
             </item>
             <item>
               <description>
-                <b>Expanded</b>
+                <b>增大</b>
               </description>
-              <description>之间 0.1 磅至以 0.05 磅为增量 （72 磅 = 1 英寸） 12.75 磅的文本度量值</description>
+              <description>一个 0.1 磅至 12.75 磅之间的文本度量值，以 0.05 磅为增量（72 磅 = 1 英寸）</description>
             </item>
             <item>
               <description>
                 <b>FileOpenFile</b>
               </description>
-              <description>要打开的文件的路径和文件名称。如果未指定路径，则使用当前文件夹。</description>
+              <description>需要打开文件的路径和名称。 如果没有指定路径，则使用当前文件夹</description>
             </item>
             <item>
               <description>
-                <b>字体大小</b>
+                <b>字号</b>
               </description>
-              <description>一个正的文本度量值，指定以 0.5 磅为增量 （72 磅 = 1 英寸）</description>
+              <description>一个正的文本度量值，以 0.5 磅为增量（72 磅 = 1 英寸）</description>
             </item>
             <item>
               <description>
-                <b>降低</b>、<b>凸起</b></description>
-              <description>的文本度量值之间 1 磅至 64 磅，以 0.5 磅为增量 （72 磅 = 1 英寸）</description>
+                <b>降低</b>,<b>凸起</b></description>
+              <description>一个 1 磅至 64 磅之间的文本度量值，以 0.5 磅为增量（72 磅 = 1 英寸）</description>
             </item>
             <item>
               <description>
                 <b>符号</b>
               </description>
-              <description>创建通过串联<b>Chr()</b>指令和符号的字体名称的字符串 (例如，Chr(167) &amp; "符号")</description>
+              <description>通过将<b>Chr ()</b>指令和符号字体的名称 (例如, chr (167) &amp; "symbol") 来创建的字符串</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -151,7 +138,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,10 +165,8 @@
       <Parameters />
       <Docs>
         <summary>清除所有的自定义按键分配方案，并恢复原有的 Microsoft Word 快捷键分配方案。</summary>
-        <remarks>
-          <para>应用于的<b>ClearAll</b>方法后<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />对象，指定的模板或文档中的键分配将重置为默认设置。使用<see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" />属性来指定文档或模板的上下文，然后才能使用<b>ClearAll</b>方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>对<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />对象应用<b>ClearAll</b>方法后, 指定的模板或文档中的键分配方案将重置为默认设置。 在使用<see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" /> <b>ClearAll</b>方法之前, 请使用属性指定文档或模板上下文。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -207,12 +192,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 object 值，该值代表指定的键绑定的存储位置。 此属性可返回<see cref="T:Microsoft.Office.Interop.Word.Document" />， <see cref="T:Microsoft.Office.Interop.Word.Template" />，或<see cref="T:Microsoft.Office.Interop.Word.Application" />对象。</summary>
+        <summary>返回一个对象, 表示指定键绑定的存储位置。 此属性可以返回<see cref="T:Microsoft.Office.Interop.Word.Document" />、 <see cref="T:Microsoft.Office.Interop.Word.Template" />或<see cref="T:Microsoft.Office.Interop.Word.Application" />对象。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>内置的按键分配方案 （例如，CTRL + I 为<b>斜体</b>） 作为上下文返回<b>Application</b>对象。您将添加任何键绑定将返回<b>Document</b>或<b>Template</b>对象，具体取决于自定义上下文生效时<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象已添加。</para>
-          <para />
-        </remarks>
+        <remarks><para>内置键分配方案（例如，将 Ctrl+I 分配给 <b>Italic</b>）将以上下文形式返回 <b>Application</b> 对象。 您添加的任何键绑定将返回<b>文档</b>或<b>模板</b>对象, 具体取决于添加<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象时生效的自定义上下文。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -238,7 +221,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,9 +251,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -331,7 +314,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">一个<b>整数</b>，指示的单个对象的序号位置。</param>
+        <param name="Index">一个指示单个对象的序号位置的<b>整数</b>。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -360,15 +343,12 @@
         <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCode">
-          <b>必选。</b> 通过使用 <b>WdKey</b> 常量之一指定一个密钥。</param>
-        <param name="KeyCode2">可选的<b>对象</b>。 使用之一指定的第二个键<see cref="T:Microsoft.Office.Interop.Word.WdKey" />常量。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象，表示指定的自定义组合键。 如果不存在的键组合，则此方法将返回 <b>Nothing</b> 。</summary>
+        <param name="KeyCode">必需的<b>整数</b>。 通过使用 <b>WdKey</b> 常量之一指定一个密钥。</param>
+        <param name="KeyCode2">可选<b>对象</b>。 使用其中一个<see cref="T:Microsoft.Office.Interop.Word.WdKey" />常量指定的第二个键。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象, 表示指定的自定义组合键。 如果不存在的键组合，则此方法将返回 <b>Nothing</b> 。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>您可以使用<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />方法来创建<paramref name="KeyCode" />或<paramref name="KeyCode2" />参数。</para>
-          <para />
-        </remarks>
+        <remarks><para>您可以使用<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />方法创建<paramref name="KeyCode" />或<paramref name="KeyCode2" />参数。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

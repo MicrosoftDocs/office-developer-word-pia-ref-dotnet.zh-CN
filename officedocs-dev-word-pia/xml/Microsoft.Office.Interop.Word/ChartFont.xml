@@ -1,13 +1,5 @@
 <Type Name="ChartFont" FullName="Microsoft.Office.Interop.Word.ChartFont">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="128f354a01c1410ab41d27cc4bb9445f784baa50" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666715" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartFont" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7219cd262a2d7cb6c460e3a546798d13518ba259" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142297" /></Metadata><TypeSignature Language="C#" Value="public interface ChartFont" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartFont" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartFont" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartFont" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>包含图表对象的字体属性（字体名称、字号、颜色等等）。</summary>
-    <remarks>
-      <para>如果您不希望中的所有文本都格式<see cref="T:Microsoft.Office.Interop.Word.AxisTitle" />， <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />， <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />，或<see cref="T:Microsoft.Office.Interop.Word.DisplayUnitLabel" />对象相同的方式，请使用该对象的<b>Characters</b>属性首先返回作为文本的子集<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象，然后使用<see cref="P:Microsoft.Office.Interop.Word.ChartCharacters.Font" /><see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象返回<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />对象可用于根据需要设置文本的子集的格式。</para>
-      <para />
-    </remarks>
+    <remarks><para>如果不想<see cref="T:Microsoft.Office.Interop.Word.AxisTitle" />以相同的方式设置、 <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />、或<see cref="T:Microsoft.Office.Interop.Word.DisplayUnitLabel" />对象中的所有文本的格式, 请使用该对象的<b>字符</b>属性以先以<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象的形式返回文本的子集, 然后使用该<see cref="P:Microsoft.Office.Interop.Word.ChartCharacters.Font" />属性的<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象返回一个<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />对象, 您可以根据需要使用该对象设置文本子集的格式。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +46,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,9 +77,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置在图表中使用的文本的背景类型。 为可读/写属性。</summary>
-        <value>
-          <b>对象</b>设置为常量之一<see cref="T:Microsoft.Office.Interop.Word.XlBackground" /></value>
+        <summary>返回或设置在图表中使用的文本的背景类型。 读/写。</summary>
+        <value>设置为以下常量之一的<b>对象</b><see cref="T:Microsoft.Office.Interop.Word.XlBackground" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,8 +108,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置字体的状态。 为可读/写属性。</summary>
-        <value>如果字体为粗体; 设置为<b>True</b>的<b>对象</b>否则为<b>False</b></value>
+        <summary>返回或设置字体的状态。 读/写。</summary>
+        <value>如果字体为粗体, 则设置为<b>True</b>的<b>对象</b>。否则<b>为 False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,10 +139,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个代表对象的主颜色的<b>对象</b>。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回或设置一个<b>对象</b>, 表示该对象的主颜色。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,12 +170,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个代表字体的颜色的<b>对象</b>。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>将颜色作为当前调色板的索引值或以下项之一指定<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量：</para>
+        <summary>返回或设置一个<b>对象</b>, 该对象代表字体的颜色。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>将颜色指定为当前调色板中的索引值, 或指定为以下<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量之一:</para>
           <list type="bullet">
             <item>
               <para>
@@ -203,8 +185,7 @@
               </para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -230,14 +211,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位<b>整数</b>，它指示在其中创建指定的对象的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中，创建<see cref="P:Microsoft.Office.Interop.Word.ChartFont.Creator" />属性返回十六进制数字 4d535744，表示的字符串"MSWD"。 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <summary>返回一个32位整数, 该<b>整数</b>表示在其中创建指定对象的应用程序。 只读。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.ChartFont.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FontStyle">
@@ -266,14 +243,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置字体样式。 为可读/写属性。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>更改此属性可能会影响其他<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />属性 (如<see cref="P:Microsoft.Office.Interop.Word.ChartFont.Bold" />和<see cref="P:Microsoft.Office.Interop.Word.ChartFont.Italic" />)。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置字体样式。 读/写。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>更改此属性可能会影响<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />其他属性 (如<see cref="P:Microsoft.Office.Interop.Word.ChartFont.Bold" />和<see cref="P:Microsoft.Office.Interop.Word.ChartFont.Italic" />)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Italic">
@@ -302,8 +275,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置一个确定字体的状态的<b>对象</b>的值。 为可读/写属性。</summary>
-        <value>如果字体为斜体; 设置为<b>True</b>的<b>对象</b>否则为<b>False</b></value>
+        <summary>获取或设置确定字体状态的<b>对象</b>的值。 读/写。</summary>
+        <value>如果字体为斜体, 则设置为<b>True</b>的<b>对象</b>。否则<b>为 False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,9 +307,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置对象的名称。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,12 +343,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或返回介绍将字体设置为大纲的值。</summary>
-        <value>一个<b>对象</b>，则返回<b>True</b>如果字体为空心字体，否则为<b>False</b></value>
-        <remarks>
-          <para>返回<b>True</b>、 <b>False</b>，或<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" />（True 和 False 混合）。可设为<b>True</b>、 <b>False</b>，或<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdToggle" />。</para>
-          <para />
-        </remarks>
+        <summary>获取或返回一个值, 该值将字体描述为轮廓。</summary>
+        <value>一个<b>对象</b>, 如果字体是边框字体, 则返回<b>True</b> , 否则返回<b>False</b></value>
+        <remarks><para>返回<b>true</b>、 <b>False</b>或<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" /> (true 和 False 的混合)。 可设置为<b>True</b>、 <b>False</b>或<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdToggle" />。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -404,9 +373,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回指定对象的父级。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,9 +409,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回介绍将指定的字体设置为带阴影的值</summary>
-        <value>
-          <b>对象</b>设置为<b>True</b> ，如果指定的字体格式为阴影，否则它是任一<b>False</b>或<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" />。</value>
+        <summary>设置或返回一个值, 该值将指定的字体描述为阴影</summary>
+        <value>如果指定的字体设置为阴影格式, 则该<b>对象</b>设置为<b>True</b> , 否则为<b>False</b>或<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" />。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -474,10 +440,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置字号。 为可读/写属性。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回或设置字号。 读/写。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -507,8 +471,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取和设置如果字体带有上述绘制一条横线它是否。 为可读/写属性。</summary>
-        <value>如果字体中间删除带有横线;<b>对象</b>设置为<b>True</b>否则为<b>False</b></value>
+        <summary>获取或设置字体是否绘制了水平线条。 读/写。</summary>
+        <value>如果使用水平线将字体设置为 True, 则<b>对象</b>设置为<b>True</b> ; 否则为 false。否则<b>为 False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -538,13 +502,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取和设置字体呈现较小和较下方周围文本的级别。 为可读/写属性。</summary>
-        <value>如果将字体设置为下标;<b>对象</b>设置为<b>True</b>否则为<b>False</b>。</value>
-        <remarks>
-          <para>
-            <b>False</b>默认情况下</para>
-          <para />
-        </remarks>
+        <summary>获取和设置字体是否已呈现得更小且在周围文本的级别之下稍有略微。 读/写。</summary>
+        <value>如果将字体格式设置为下标, 则<b>对象</b>设置为<b>True</b> ;否则<b>为 False</b>。</value>
+        <remarks><para>默认
+            <b>为 False</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Superscript">
@@ -573,13 +535,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取和设置字体呈现较小并会稍微高于周围文本的级别。 为可读/写属性。</summary>
-        <value>如果字体格式设为上标;<b>对象</b>设置为<b>True</b>否则为<b>False</b>。</value>
-        <remarks>
-          <para>
-            <b>False</b>默认情况下</para>
-          <para />
-        </remarks>
+        <summary>获取和设置字体是否已呈现得更小且略高于周围文本的级别。 读/写。</summary>
+        <value>如果字体格式为上标, 则<b>对象</b>设置为<b>True</b> ;否则<b>为 False</b>。</value>
+        <remarks><para>默认
+            <b>为 False</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Underline">
@@ -608,10 +568,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置应用于字体的下划线类型。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlUnderlineStyle" />常量。 为可读/写属性。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回或设置应用于字体的下划线类型。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.XlUnderlineStyle" />常量之一。 读/写。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="DataLabels" FullName="Microsoft.Office.Interop.Word.DataLabels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a33924104c6a32705d90232fdb8eadce5b62224e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665726" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="849af9e318dead8239cad6dd722fca3def9aadf0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147114" /></Metadata><TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataLabels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DataLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataLabels&#xA;Implements IEnumerable" />
@@ -30,15 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />指定系列的对象。</summary>
-    <remarks>
-      <para>每个<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />对象代表的数据点或趋势线的数据标签。对于没有 （如面积系列），可定义点<see cref="T:Microsoft.Office.Interop.Word.DataLabels" />集合包含单个数据标签。</para>
-      <para />
-    </remarks>
-    <example>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Series.DataLabels(System.Object)" />方法，以返回<see cref="T:Microsoft.Office.Interop.Word.DataLabels" />集合。下面的示例在活动文档中的第一个图表的第一个系列设置数据标签的数字格式。</para>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Word.DataLabels" />(<paramref name="Index" />)，其中<paramref name="Index" />为数据标签的索引号，若要返回单个<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />对象。</para>
-    </example>
+    <summary>指定系列的所有<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />对象的集合。</summary>
+    <remarks><para>每<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />个对象代表一个数据点或趋势线的数据标签。 对于没有可定义点 (如区域系列) 的系列, 该<see cref="T:Microsoft.Office.Interop.Word.DataLabels" />集合包含单个数据标签。</para>
+      <para> </para></remarks>
+    <example><para>使用<see cref="M:Microsoft.Office.Interop.Word.Series.DataLabels(System.Object)" />方法返回<see cref="T:Microsoft.Office.Interop.Word.DataLabels" />集合。 下面的示例设置活动文档中第一个图表的第一个系列的数据标签的数字格式。</para>
+      <para>Use <see cref="T:Microsoft.Office.Interop.Word.DataLabels" /> (<paramref name="Index" />), 其中<paramref name="Index" />是数据标签的索引号, 用于返回单个<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />对象。</para></example>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -96,10 +84,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,10 +121,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>对象大小更改时，对象中的文本更改字体大小。 默认值为 <b>True</b> 。 读取/写入 <b>对象</b> 。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>如果对象大小更改时，对象内部的文本相应地更改字体大小，则该属性值为 <b>True</b>。 默认值为 <b>True</b>。 读取/写入 <b>对象</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,14 +152,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果集合中的所有对象自动都生成合适基于上下文的文字，设置为<b>True</b> 。 可读写 <b>Boolean</b>。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>设置此属性的值设置<see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" />属性的所有<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />包含在集合中的对象。此属性返回<b>True</b>时才<see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" />属性的所有<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />包含在集合中的对象设置为<b>True</b>;否则，此属性返回<b>False</b>。</para>
-          <para />
-        </remarks>
+        <summary>如果集合中的所有对象根据上下文自动生成适当的文本, 则设置为<b>True</b> 。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>设置此属性的值将设置集合<see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" />包含的所有<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />对象的属性。 仅当集合<b></b>中包含的所有<see cref="P:Microsoft.Office.Interop.Word.DataLabel.AutoText" /> <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />对象的属性设置为<b>True</b>时, 此属性才返回 true; 否则, 将返回 true。否则, 此属性将返回<b>False</b>。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -204,10 +184,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Border" />对象，它代表对象的边框。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Border" /> object 类型的对象, 该对象代表对象的边框。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,10 +212,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>值，代表集合中对象的数目。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回一个<b>Integer</b>值, 它代表集合中对象的数目。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,14 +240,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 <b>Integer</b> 类型，只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中，创建<see cref="P:Microsoft.Office.Interop.Word.DataLabels.Creator" />属性返回十六进制数字 4d535744，表示的字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Integer</b>。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.DataLabels.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -296,9 +268,7 @@
       <Parameters />
       <Docs>
         <summary>删除对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -328,10 +298,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />指定的形状的对象或<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />对象包含填充格式的形状或图表属性指定的图表。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />的形状或<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />对象的对象, 该对象包含形状或图表的填充格式属性指定的图表。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,10 +329,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Font" />对象，它代表指定对象的字体。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Font" />对象, 表示指定的对象的字体。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -393,9 +359,7 @@
       <Docs>
         <summary>返回行、 填充和效果的对象的格式。
 只读<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -457,15 +421,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，该值代表指定对象的水平对齐方式的<b>对象</b>值。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>此属性的值可以设置为之一<see cref="T:Microsoft.Office.Interop.Word.XlConstants" />常量。</para>
-          <para>注意： 这些常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<b>Object</b>值, 它代表指定对象的水平对齐方式。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>此属性的值可设置为其中一个<see cref="T:Microsoft.Office.Interop.Word.XlConstants" />常量。</para>
+          <para>注意: 某些常量可能不可用, 具体取决于您选择或安装的语言支持 (例如, 美国英语)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -494,10 +454,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Interior" />值，该值代表指定对象的内部的对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Interior" /> object 类型的对象, 该对象代表指定对象的内部。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -527,11 +485,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需的<b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回单个对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DataLabel" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -559,9 +515,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 <b>字符串</b> 值，表示该对象的名称。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -592,13 +546,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>String</b> 值，它代表对象的格式代码。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
-        <remarks>
-          <para>单元格格式对话框中的格式代码选项相同的字符串的格式代码。<b>Format</b>函数<b>与 NumberFormat</b>和<b>NumberFormatLocal</b>属性使用格式代码字符串不同。</para>
-          <para />
-        </remarks>
+        <value><b>String</b></value>
+        <remarks><para>格式代码是在 设置单元格格式对话框中 格式代码选项相同的字符串。 <b>Format</b> 函数与 <b>NumberFormat</b> 和 <b>NumberFormatLocal</b> 属性所使用的格式代码串不同。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -627,10 +577,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果的数字格式链接到单元格 （以便它在单元格中更改时，则将更改的数字格式标签），则设置为<b>True</b> 。 可读写 <b>Boolean</b>。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>如果数字格式链接到单元格, 则设置为<b>True</b> (以便数字格式在单元格更改时更改标签中的数字格式)。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -660,15 +608,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个代表用户语言字符串形式的对象的格式代码的<b>对象</b>值。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>
-            <b>Format</b>函数使用使用的格式代码字符串不同<see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormat" />和<see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormatLocal" />属性。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<b>object</b>值, 该值以用户语言的字符串形式表示对象的格式代码。</summary>
+        <value><b>Object</b></value>
+        <remarks><para><b>Format</b>函数使用的格式代码字符串与和<see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.DataLabels.NumberFormatLocal" />属性使用的格式代码字符串不同。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -697,14 +640,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>整数</b>值，它代表文本方向。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>此属性的值可以是介于 – 90 到 90 度或之一的整数值<see cref="T:Microsoft.Office.Interop.Word.XlOrientation" />常量。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<b>Integer</b>值, 它代表文本方向。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>此属性的值可以是从–90到90度或其中一个<see cref="T:Microsoft.Office.Interop.Word.XlOrientation" />常量的整数值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -730,10 +669,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父级。只读 <b>对象</b> 。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父级。 只读 <b>对象</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -763,10 +700,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlDataLabelPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" />值，它代表数据标签的位置。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" />
-        </value>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" />值, 该值代表数据标签的位置。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlDataLabelPosition" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -793,12 +728,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">中的数据标签传播<b>DataLabels</b>集合的索引号。</param>
-        <summary>将传播的内容和格式指定的数据标签的系列中的所有数据标签。</summary>
-        <remarks>
-          <para>如果源数据标签支持与目标数据标签不兼容的字段，这些字段插入窗体 [字段名] 中。</para>
-          <para />
-        </remarks>
+        <param name="Index">要传播的数据标签的<b>DataLabels</b>集合中的索引号。</param>
+        <summary>将指定数据标签的内容和格式传播到系列中的所有其他数据标签。</summary>
+        <remarks><para>如果 "源数据" 标签支持与 "目标数据" 标签不兼容的字段, 则会以 "格式" [字段名称] 形式插入这些域。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingOrder">
@@ -827,10 +760,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" />常量值，该值代表指定对象的读取顺序。 可读写 <b>Integer</b>。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" />常量, 该常量代表指定对象的阅读顺序。 <b>Integer</b> 型，可读/写。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -856,9 +787,7 @@
       <Parameters />
       <Docs>
         <summary>选择对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -888,14 +817,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个<b>对象</b>，代表用于图表上的数据标签的分隔符。 为可读/写属性。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>如果您使用一个字符串，则会字符串用作分隔符。如果您将其设置为的等效项<see cref="F:Microsoft.Office.Interop.Word.XlDataLabelSeparator.xlDataLabelSeparatorDefault" />常量 （= 1），则会收到逗号或新行，具体取决于数据标签的默认数据标签分隔符。</para>
-          <para />
-        </remarks>
+        <summary>设置或返回一个<b>对象</b>, 表示用于图表上的数据标签的分隔符。 读/写。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>如果使用字符串，则会一个字符串作为分隔符。 如果将其设置为<see cref="F:Microsoft.Office.Interop.Word.XlDataLabelSeparator.xlDataLabelSeparatorDefault" />常量的等效项 (= 1), 则将获取默认的数据标签分隔符, 该分隔符为逗号或换行符, 具体取决于数据标签。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -925,9 +850,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>Boolean</b> 值，它确定对象是否有阴影。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -957,10 +880,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置为<b>True</b> ，以在图表中显示的数据标签的气泡大小。 <b>False</b>以隐藏。 可读写 <b>Boolean</b>。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>如果设置为<b>True</b> , 则在图表中显示数据标签的气泡大小。 如果为 <b>False</b>，则隐藏该分类的名称。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -990,10 +911,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置为<b>True</b> ，以在图表中显示的数据标签的分类名称。 <b>False</b>以隐藏。 可读写 <b>Boolean</b>。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>如果设置为<b>True</b> , 则在图表上显示数据标签的类别名称。 如果为 <b>False</b>，则隐藏该分类的名称。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1023,10 +942,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据标签图例项标示可见，则设置为<b>True</b> 。 可读写 <b>Boolean</b>。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>如果数据标签图例项标示可见, 则设置为<b>True</b> 。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1056,10 +973,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置为<b>True</b> ，以在图表中显示的数据标签的百分比值。 <b>False</b>以隐藏。 可读写 <b>Boolean</b>。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>设置为<b>True</b>以在图表上显示数据标签的百分比值。 如果为 <b>False</b>，则隐藏该分类的名称。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1089,7 +1004,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置为<b>True</b> ，以显示<b>值从单元格</b>范围字段中指定的图表的所有图表数据标签。 设置为<b>False</b>以隐藏该字段。 读/写<b>boolean 类型的值</b>(C# 中<b>bool</b> )。</summary>
+        <summary>如果设置为<b>True</b> , 则在指定图表的所有图表数据标签中显示<b>单元格</b>区域字段的值。 设置为<b>False</b>以隐藏该字段。 读/写<b>布尔值</b>(在 c # 中为<b>bool</b> )。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1120,10 +1035,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>Boolean</b> 值，它指明图表上数据标签的系列名称显示方式。如果为 <b>True</b>，则显示系列名称。如果为 <b>False</b>，则隐藏系列名称。可读写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回或设置一个 <b>Boolean</b> 值，它指明图表上数据标签的系列名称显示方式。 如果为 <b>True</b>，则显示系列名称。 如果为 <b>False</b>，则隐藏数据标签值。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1153,10 +1066,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>Boolean</b> 值，该值对应所指定图表的数据标签值显示方式。如果为 <b>True</b>，则显示数据标签值。如果为 <b>False</b>，则隐藏数据标签值。可读写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回或设置一个 <b>Boolean</b> 值，该值对应所指定图表的数据标签值显示方式。 如果为 <b>True</b>，则显示数据标签值。 如果为 <b>False</b>，则隐藏数据标签值。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1193,9 +1104,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置标签类型。 读取/写入 <b>对象</b> 。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1225,14 +1134,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，该值代表指定对象的垂直对齐方式的<b>对象</b>值。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>此属性的值可以设置为之一<see cref="T:Microsoft.Office.Interop.Word.XlConstants" />常量。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<b>Object</b>值, 它代表指定对象的垂直对齐方式。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>此属性的值可设置为其中一个<see cref="T:Microsoft.Office.Interop.Word.XlConstants" />常量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

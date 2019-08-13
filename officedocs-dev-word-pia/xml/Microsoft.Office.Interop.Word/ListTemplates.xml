@@ -1,13 +1,5 @@
 <Type Name="ListTemplates" FullName="Microsoft.Office.Interop.Word.ListTemplates">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d310b851d2271c26e1d4aa7224eb7cc832228f87" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666273" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListTemplates : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8a116bd1e716c5b1c23d5751a9411b77f6343408" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146155" /></Metadata><TypeSignature Language="C#" Value="public interface ListTemplates : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListTemplates implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListTemplates" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListTemplates&#xA;Implements IEnumerable" />
@@ -30,14 +22,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />代表项目符号中每个选项卡上的七种预定义的列表格式的对象和编号对话框。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.ListTemplates" />属性可返回<b>ListTemplates</b>集合。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />对象的集合, 这些对象代表 "项目符号和编号" 对话框中每个选项卡上的七个预定义列表格式。</summary>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.ListTemplates" />属性返回<b>ListTemplates</b>集合。</para>
       <para>使用<see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />方法将列表模板添加到指定的文档或模板中的集合。</para>
-      <para>使用<b>ListTemplates</b>(<paramref name="index" />)，其中<paramref name="index" />是数字 1 至 7，从列表库中返回单个列表模板。</para>
+      <para>使用<b>ListTemplates</b>(<paramref name="index" />) (其中<paramref name="index" />是数字1到 7) 从列表库中返回单个列表模板。</para>
       <para>
-        <b>注释</b>： 某些属性和方法 —<see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" />和<see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />，例如 — 不会使用从一个列表库中进行访问的列表模板。您可以修改这些列表模板，但不是能更改其列表库类型 （<b>wdBulletGallery</b>、 <b>wdNumberGallery</b>或<b>wdOutlineNumberGallery</b>）。</para>指定的列表模板是否包含内置 Microsoft Word 中，使用的格式的
-      <para><see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" />属性与<see cref="T:Microsoft.Office.Interop.Word.ListGallery" />对象。若要重置为原始列表格式的格式，请使用<see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /><b>ListGallery</b>对象的方法。</para><para>具有返回一个<b>ListTemplate</b>对象后，请使用<b>ListLevels</b>(<paramref name="index" />)，其中<paramref name="index" />是介于 1 至 9，返回单个<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象。与<b>ListLevel</b>对象，您有权访问所有格式属性指定的列表级别，例如<see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />， <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />， <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />， <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />， <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />，和<see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />。</para><para>使用<see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" />方法将一个多级列表模板转换为单级模板。</para><para /></remarks>
+        <b>注意</b>: 某些属性和方法<see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />(例如) 不能与从列表库中访问的列表模板一起使用。 您可以修改这些列表模板，但不能改变它们的列表库类型（<b>wdBulletGallery</b>、<b>wdNumberGallery</b> 或 <b>wdOutlineNumberGallery</b>）。</para>
+      <para>若要查看指定的列表模板是否包含 Microsoft Word 中内置的格式, 请<see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" />将该属性<see cref="T:Microsoft.Office.Interop.Word.ListGallery" />与该对象一起使用。 若要将格式重置为原始列表格式, <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" />请使用<b>ListGallery</b>对象的方法。</para>
+      <para>返回<b>ListTemplate</b>对象后, 请使用<b>ListLevels</b><paramref name="index" />(), 其中<paramref name="index" />是从1到9的数字, 返回单个<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象。 通过<b>ListLevel</b>对象, 您可以访问指定的列表级别的所有格式设置属性, 例如<see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />、、、和。 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /></para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" />方法可将多级别列表模板转换为单级模板。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,14 +57,12 @@
         <Parameter Name="Name" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="OutlineNumbered">可选的<b>对象</b>。 <b>True</b> 将多级符号的新列表模板应用。</param>
-        <param name="Name">可选的<b>对象</b>。 用于链接到 LISTNUM 域列表模板可选名称。 不能使用此名称索引集合中的列表模板。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />对象，表示新的列表模板。</summary>
+        <param name="OutlineNumbered">可选<b>对象</b>。 <b>True</b> 将多级符号的新列表模板应用。</param>
+        <param name="Name">可选<b>对象</b>。 用于将列表模板链接到 LISTNUM 域的可选名称。 不能使用该名称在集合中对列表模板进行索引。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />对象, 表示一个新的列表模板。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>您不能使用<b>Add</b>方法在<see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />从返回对象<see cref="T:Microsoft.Office.Interop.Word.ListGallery" />对象。但是，可以修改现有列表模板库中。</para>
-          <para />
-        </remarks>
+        <remarks><para>不能对<see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />从<see cref="T:Microsoft.Office.Interop.Word.ListGallery" />对象返回的对象使用<b>Add</b>方法。 但是，可以修改现有库中的列表模板。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -96,7 +88,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,7 +116,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,9 +146,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -217,8 +209,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>对象</b>，它指示的序号位置或一个字符串，表示单个对象的名称。</param>
+        <param name="Index">一个指示序号位置的<b>对象</b>, 或表示单个对象的名称的字符串。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

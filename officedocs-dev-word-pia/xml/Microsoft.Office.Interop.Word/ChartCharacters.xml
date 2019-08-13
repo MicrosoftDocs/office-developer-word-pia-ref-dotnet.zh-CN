@@ -1,13 +1,5 @@
 <Type Name="ChartCharacters" FullName="Microsoft.Office.Interop.Word.ChartCharacters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0201661352937f8642817ba72ac6a71b16dfaba3" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665693" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartCharacters" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="91f49ab172734f23f2839e7fd38c0277a2ca51c0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147275" /></Metadata><TypeSignature Language="C#" Value="public interface ChartCharacters" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartCharacters" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartCharacters" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartCharacters" />
@@ -27,12 +19,9 @@
   </Attributes>
   <Docs>
     <summary>代表包含文本的对象中的字符。</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象可修改包含在全文本字符串中的字符的任意序列。</para>
-      <para>使用<b>字符</b>(<paramref name="Start" />， <paramref name="Length" />)，其中<paramref name="Start" />为起始字符号和<paramref name="Length" />是字符数，返回<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象。</para>
-      <para />
-    </remarks>
+    <remarks><para>该<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象允许您修改包含在全文本字符串中的任意字符序列。</para>
+      <para>使用<b>字符</b>(<paramref name="Start" />, <paramref name="Length" />), 其中<paramref name="Start" />是起始字符数, <paramref name="Length" />是要返回<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象的字符数。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />值，该值代表指定对象 （可与 OLE 自动化对象使用此属性可返回该对象的应用程序） 的创建者的对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 当与对象识别符一起使用时, 此属性<see cref="T:Microsoft.Office.Interop.Word._Application" />返回一个对象, 该对象表示指定对象的创建者 (可以将此属性与 OLE 自动化对象一起使用, 以返回该对象的应用程序)。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +79,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回字符范围内的文本。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,9 +107,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回集合中对象的数目。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,13 +135,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中，创建<see cref="P:Microsoft.Office.Interop.Word.ChartCharacters.Creator" />属性返回十六进制数字 4d535744，表示的字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.ChartCharacters.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -183,9 +162,7 @@
       <Parameters />
       <Docs>
         <summary>删除对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,9 +190,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回指定对象的字体。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,9 +218,7 @@
       <Docs>
         <param name="String">要插入的字符串。</param>
         <summary>在所选的字符前面插入一个字符串。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -273,9 +246,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回指定对象的父级。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -305,10 +276,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置对象的拼音文本。 为可读/写属性。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <summary>返回或设置对象的拼音文本。 读/写。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -338,10 +307,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定对象中的文本。 为可读/写属性。</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <summary>返回或设置指定对象中的文本。 读/写。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

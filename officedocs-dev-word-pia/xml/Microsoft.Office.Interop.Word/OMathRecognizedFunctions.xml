@@ -1,13 +1,5 @@
 <Type Name="OMathRecognizedFunctions" FullName="Microsoft.Office.Interop.Word.OMathRecognizedFunctions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2dd61c72117652e19beb2691742b4b0671001ec3" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665824" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathRecognizedFunctions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c8fd1be39d686c2e086ff3f03c01186d279dbe9a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147752" /></Metadata><TypeSignature Language="C#" Value="public interface OMathRecognizedFunctions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathRecognizedFunctions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathRecognizedFunctions&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示可识别函数的集合。 使用<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />对象，以访问集合中的单个成员。</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />是可识别的函数对话框中包含的名称的集合。</para>
-      <para />
-    </remarks>
+    <summary>代表可识别函数的集合。 使用<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />对象访问集合中的各个成员。</summary>
+    <remarks><para>
+        <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />是 "可识别的函数" 对话框中包含的名称的集合。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,11 +51,9 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">所需的可识别函数名称的<b>字符串</b>。</param>
-        <summary>创建新的可识别的函数并返回<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />对象。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />
-        </returns>
+        <param name="Name">必需的<b>字符串</b>识别的函数的名称。</param>
+        <summary>创建一个新的可识别函数并返回<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />一个对象。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,10 +80,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +108,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回中的项目数<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />集合。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />集合中项的数目。 只读。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,11 +136,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位<b>整数</b>，它指示在其中创建外接程序的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>如果对象在 Microsoft Word 中创建的<para><see cref="P:Microsoft.Office.Interop.Word.OMathRecognizedFunctions.Creator" />属性返回十六进制数字 4d535744，表示字符串"MSWD"。 也可以由常量表示此值<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。</para><para>此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <summary>返回一个32位整数, 该<b>整数</b>表示在其中创建外接程序的应用程序。 只读。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.OMathRecognizedFunctions.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。 </para>
+          <para>此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -217,11 +201,9 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">需要<b>整数</b>指定对象在集合中的序号位置。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />对象，表示集合中的指定的项。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />
-        </value>
+        <param name="Index">必需的<b>Integer</b>指定对象在集合中的序号位置。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />对象, 表示集合中的指定项。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,10 +230,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定的父级<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />对象。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />对象的父级。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

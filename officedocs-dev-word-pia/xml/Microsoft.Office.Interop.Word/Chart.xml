@@ -1,13 +1,5 @@
 <Type Name="Chart" FullName="Microsoft.Office.Interop.Word.Chart">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="616cb136ed9c6470acdef04821482823dc95523f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667094" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Chart" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b01d3cd03a0e6d162566e25b45eaa2b405ccb58a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147303" /></Metadata><TypeSignature Language="C#" Value="public interface Chart" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Chart" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Chart" />
   <TypeSignature Language="VB.NET" Value="Public Interface Chart" />
@@ -27,27 +19,22 @@
   </Attributes>
   <Docs>
     <summary>代表文档中的图表。</summary>
-    <remarks>
-      <para>在示例部分中描述了以下属性和用于返回<b>Chart</b>对象的方法：</para>
-      <para />
+    <remarks><para>示例部分中介绍了下面用于返回 <b>Chart</b> 对象的属性和方法：</para>
+      <para> </para>
       <list type="bullet">
         <item>
           <para>
-            <b>图表</b>属性</para>
+            <b>Chart</b>属性</para>
         </item>
         <item>
           <para>
             <b>AddChart</b>方法</para>
         </item>
       </list>
-      <para />
-      <para />
-    </remarks>
-    <example>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合包含的文档中包括图表，每个内嵌形状对象。使用<b>InlineShapes</b>(<paramref name="Index" />)，其中<paramref name="Index" />是内嵌形状，以返回单个<b>InlineShape</b>对象的索引号。使用<see cref="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" />属性以确定是否<b>InlineShape</b>对象代表图表。<b>HasChart</b>属性设置为<b>True</b>，如果使用<see cref="P:Microsoft.Office.Interop.Word.InlineShape.Chart" />属性可返回<b>Chart</b>对象。</para>
-      <para>也可以使用<see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" />属性以确定是否<b>InlineShape</b>对象代表图表。内嵌形状的<b>Type</b>属性设置为<b>WdInlineShapeChart</b>，如果表示图表。</para>
-    </example>
+      <para> </para>
+      <para> </para></remarks>
+    <example><para><see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合包含文档中每个内嵌形状 (包括图表) 的对象。 使用<b>InlineShapes</b>(<paramref name="Index" />) (其中<paramref name="Index" />是内嵌形状的索引号) 返回单个<b>InlineShape</b>对象。 使用<see cref="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" />属性来确定<b>InlineShape</b>对象是否表示一个图表。 如果将<b>HasChart</b>属性设置为<b>True</b>, 则使用<see cref="P:Microsoft.Office.Interop.Word.InlineShape.Chart" />属性返回<b>Chart</b>对象。</para>
+      <para>您还可以使用<see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" />属性来确定<b>InlineShape</b>对象是否表示一个图表。 如果 <b>类型</b> 属性设置为 <b>WdInlineShapeChart</b> ，内嵌形状表示的图表。</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -73,10 +60,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,12 +88,10 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">所需的图表模板的文件名的<b>字符串</b>。</param>
+        <param name="FileName">必需的<b>字符串</b>图表模板的文件名。</param>
         <summary>将标准图表类型或自定义图表类型应用于图表。</summary>
-        <remarks>
-          <para>此方法不支持本机或组合图的做笔记常量。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法不支持采用原图表或组合图的常量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyCustomType">
@@ -137,8 +120,8 @@
         <Parameter Name="TypeName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ChartType">所需<see cref="T:Microsoft.Office.Core.XlChartType" />标准图表类型</param>
-        <param name="TypeName">所需<b>对象</b>的标准图表类型</param>
+        <param name="ChartType">需要<see cref="T:Microsoft.Office.Core.XlChartType" />标准图表类型</param>
+        <param name="TypeName">必需的<b>对象</b>一个标准图表类型</param>
         <summary>将标准图表类型或自定义图表类型应用于图表。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,48 +160,45 @@
         <Parameter Name="Separator" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">所需<see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" />要应用的数据标签的类型。</param>
-        <param name="LegendKey">						如果为 <b>True</b>，则在数据点旁边显示图例项标示。默认值为 <b>False</b>。</param>
-        <param name="AutoText">
-          <b>如此</b> 如果对象自动生成合适的文字内容。</param>
-        <param name="HasLeaderLines">为<see cref="T:Microsoft.Office.Interop.Word.Chart" />和<see cref="T:Microsoft.Office.Interop.Word.Series" />对象，<b>则返回 True</b>如果系列有引导线。</param>
+        <param name="Type">必需<see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" />要应用的数据标签的类型。</param>
+        <param name="LegendKey"><b>True</b> 显示图例项标示点旁。 默认值为 <b>False</b>。</param>
+        <param name="AutoText"><b>如此</b> 如果对象自动生成合适的文字内容。</param>
+        <param name="HasLeaderLines">对于<see cref="T:Microsoft.Office.Interop.Word.Chart" />和<see cref="T:Microsoft.Office.Interop.Word.Series" />对象, 如果系列有引导线,<b>则为 True</b> 。</param>
         <param name="ShowSeriesName">传递布尔值以启用或禁用数据标签的系列名称。</param>
         <param name="ShowCategoryName">传递布尔值以启用或禁用数据标签的分类名称。</param>
         <param name="ShowValue">传递布尔值以启用或禁用数据标签的值。</param>
-        <param name="ShowPercentage">一个布尔值以启用或禁用数据标签的百分比。</param>
+        <param name="ShowPercentage">一个布尔值, 用于启用或禁用数据标签的百分比。</param>
         <param name="ShowBubbleSize">传递布尔值以启用或禁用数据标签的气泡大小。</param>
         <param name="Separator">数据标签的分隔符。</param>
         <summary>将数据标签应用于图表中的所有系列。</summary>
-        <remarks>
-          <para>下表显示<see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" />参数可以传递给<paramref name="Type" />参数<see cref="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法。</para>
+        <remarks><para>下表显示了可<see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" />传递给<paramref name="Type" /> <see cref="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法参数的参数。</para>
           <list type="table">
             <item>
               <description>
-                <b>xlDataLabelsShowBubbleSizes</b>。数据标签的气泡大小。</description>
+                <b>xlDataLabelsShowBubbleSizes</b>。 数据标签的气泡尺寸。</description>
             </item>
             <item>
               <description>
-                <b>xlDataLabelsShowLabelAndPercent</b>。 类别点和总计的百分比。仅适用于饼图和圆环图图表。</description>
+                <b>xlDataLabelsShowLabelAndPercent</b>。  占总数的百分比及数据点所属的分类。 仅用于饼图和圆环图。</description>
             </item>
             <item>
               <description>
-                <b>xlDataLabelsShowPercent</b>。总计的百分比。仅适用于饼图和圆环图图表。</description>
+                <b>xlDataLabelsShowPercent</b>。 占总数的百分比。 仅用于饼图和圆环图。</description>
             </item>
             <item>
               <description>
-                <b>xlDataLabelsShowLabel</b>。点所属的分类。</description>
+                <b>xlDataLabelsShowLabel</b>。 数据点所属的分类。</description>
             </item>
             <item>
               <description>
-                <b>xlDataLabelsShowNone</b>。无数据标签。</description>
+                <b>xlDataLabelsShowNone</b>。 无数据标签。</description>
             </item>
             <item>
               <description>
-                <b>xlDataLabelsShowValue</b>。 默认值。（假定如果不指定此参数） 数据点的值。</description>
+                <b>xlDataLabelsShowValue</b>。 默认值。 数据点的值（若未指定此参数，则假定为此值）。</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyLayout">
@@ -244,15 +224,11 @@
         <Parameter Name="ChartType" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Layout">
-          <b>整数</b>指定版式的类型。  版式类型由 1 到 10 的数字表示。</param>
-        <param name="ChartType">
-          <b>对象</b>，其中包含表示图表类型的<b>XlChartType</b>常量。</param>
+        <param name="Layout"><b>Integer</b>指定布局的类型。  版式类型由 1 到 10 的数字表示。</param>
+        <param name="ChartType">包含<b>XlChartType</b>常量的<b>对象</b>, 该常量表示图表的类型。</param>
         <summary>应用功能区中显示的版式。</summary>
-        <remarks>
-          <para>当使用当前的图表类型布局时，从 1 到 10 的数字应用于图表类型。 您还可以在另一种图表类型应用一个图表类型的布局。 例如，您可以应用程序可从折线图为柱形图的布局。 布局仅添加图表元素可供该特定图表类型。</para>
-          <para />
-        </remarks>
+        <remarks><para>在当前图表类型上使用版式时，会将介于 1 到 10 之间的数字应用于该图表类型。  还可以将某一图表类型的版式应用于另一个图表类型。  例如，可以将折线图中的可用版式应用于柱形图。  版式只会添加可用于该特定图表类型的图表元素。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Area3DGroup">
@@ -284,10 +260,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回面积图图表组在三维图表。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>返回三维图表上的面积图组。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -320,10 +294,8 @@
       </Parameters>
       <Docs>
         <param name="Index">可选<b>对象</b>图表组编号。</param>
-        <summary>在二维图表中，返回一个 object 值，该值代表以下任意单个面积图图表组 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或面积图图表组集合 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合)。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <summary>在二维图表中, 返回一个对象, 该对象代表单个区域图表组 (一个<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或一个面积图组的集合 (一个<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合)。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -353,13 +325,9 @@
         <Parameter Name="Format" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Gallery">
-          <b>Integer</b>
-        </param>
-        <param name="Format">
-          <b>对象</b>
-        </param>
-        <summary>此 API 支持 Visual Studio Tools for Office 基础结构，不应在代码中直接使用。</summary>
+        <param name="Gallery"><b>Integer</b></param>
+        <param name="Format"><b>Object</b></param>
+        <summary>此 API 支持 Visual Studio Tools for Office 基础结构, 不应在代码中直接使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -395,10 +363,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>自动调整三维图表，使其更接近于等效的二维图表尺寸。 <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />属性必须为<b>True</b>。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-          <b>True</b>如果 Microsoft Word 调整三维图表，以便更接近于等效的二维图表中; 尺寸否则为<b>False</b>。</value>
+        <summary>缩放三维图表, 使其大小接近于等效的二维图表。 该<see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />属性必须为<b>True</b>。 读/写。</summary>
+        <value><b>Boolean 类型</b>
+          <b>如此</b>如果 Microsoft Word 缩放三维图表, 使其大小接近于等效的二维图表;否则<b>为 False</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -428,12 +395,10 @@
         <Parameter Name="AxisGroup" Type="Microsoft.Office.Interop.Word.XlAxisGroup" />
       </Parameters>
       <Docs>
-        <param name="Type">所需<b>对象</b>指定坐标轴返回。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />常量： <b>xlValue</b>、 <b>xlCategory</b>或<b>xlSeriesAxis</b> （<b>xlseriesaxis：</b>为仅对三维图表有效）。</param>
-        <param name="AxisGroup">可选<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />指定坐标轴组。 如果省略此参数，则使用的主要组。 三维图表具有只有一个坐标轴组。</param>
-        <summary>获取的任何一个代表单个坐标轴或坐标轴上第一个图表的集合的对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <param name="Type">必需的<b>对象</b>指定要返回的轴。 <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />可以是下列常量之一: <b>xlValue</b>、 <b>xlCategory</b>或<b>xlSeriesAxis</b> (<b>xlSeriesAxis</b>仅对三维图表有效)。</param>
+        <param name="AxisGroup">Optional <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />指定轴组。 如果省略该参数，则使用主坐标轴组。 三维图表仅有一个坐标轴组。</param>
+        <summary>获取表示单个轴或图表上的轴集合的对象。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -460,10 +425,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Walls" />对象，它允许用户单独进行格式设置的三维图表背景墙。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Walls" />对象, 该对象允许用户单独对三维图表的背景墙进行格式设置。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -496,10 +459,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回上三维图表的条形图组。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>返回三维图表上的条形图组。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -531,11 +492,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选<b>对象</b>指定的图表组。</param>
-        <summary>在二维图表中，返回一个 object 值，该值代表以下任意单个条形图图表组 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或条形图图表组集合的 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合)。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <param name="Index">Optional<b>对象</b>指定图表组。</param>
+        <summary>在二维图表中, 返回代表单个条形图图表组 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或条形图图表组集合 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合) 的对象。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -565,10 +524,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlBarShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用于三维条形图或柱形图中每个系列的形状。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlBarShape" />
-        </value>
+        <summary>返回或设置用于三维条形图或柱形图中每个系列的形状。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlBarShape" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -598,7 +555,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlCategoryLabelLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.XlCategoryLabelLevel" />指定的图表的分类标签源级别的常量。 读写。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.XlCategoryLabelLevel" />常量, 指定图表分类标签的源级别。 读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -629,10 +586,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ChartArea" />对象，它代表图表的完整图表区域。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartArea" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ChartArea" />对象, 表示图表的完整图表区域。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartArea" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -662,12 +617,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个整数，表示图表的配色方案。 读写。</summary>
+        <summary>返回或设置一个用于表示图表配色方案的整数。 读写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>从 1 到 17; 编号图表配色方案此属性设置对应于显示在图表工具设计功能区选项卡上更改颜色库上的配色方案。</para>
-          <para />
-        </remarks>
+        <remarks><para>图表配色方案的编号为1到 17;该属性的设置对应于 "图表工具设计" 功能区选项卡上的 "更改颜色" 库中显示的配色方案。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartData">
@@ -694,9 +647,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回与图表关联的链接或嵌入数据的相关信息。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartData" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartData" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -729,11 +680,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">图表组的编号。 如果指定，一个<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象返回。 如果省略，<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />对象返回的集合： 其中包含每个<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象，该图表。</param>
+        <param name="Index">图表组的编号。 如果指定, 则返回<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />单个对象。 如果省略, 则<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />返回一个对象, 其中包含该图表的<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />每个对象的集合。</param>
         <summary>返回代表单个图表组或所有图表组集合的某个对象。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -764,13 +713,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置图表的图表样式。 读取/写入 <b>对象</b> 。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>您可以使用从 1 到 48 之间的数字设置图表样式。</para>
-          <para />
-        </remarks>
+        <value><b>Object</b></value>
+        <remarks><para>您可以使用介于 1 到 48 之间的数字设置图表样式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartTitle">
@@ -799,15 +744,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartTitle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />对象值，该值代表指定图表的标题。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />
-        </value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />对象才存在，除非不能使用<see cref="P:Microsoft.Office.Interop.Word.Chart.HasTitle" />图表属性为<b>True</b>。</para>
-          <para />
-        </remarks>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> object 类型的对象, 该对象代表指定图表的标题。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /></value>
+        <remarks><para>该<see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />对象不存在, 如果图表的<see cref="P:Microsoft.Office.Interop.Word.Chart.HasTitle" />属性为<b>True</b>, 则不能使用该对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartType">
@@ -836,14 +776,10 @@
         <ReturnType>Microsoft.Office.Core.XlChartType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置图表类型。 为可读/写属性。</summary>
-        <value>
-          <b>XlChartType</b>
-        </value>
-        <remarks>
-          <para>某些图表类型对数据透视图无效。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置图表类型。 读/写。</summary>
+        <value><b>XlChartType</b></value>
+        <remarks><para>某些图表类型对数据透视图报表无效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartWizard">
@@ -882,21 +818,19 @@
       </Parameters>
       <Docs>
         <param name="Source">可选<b>对象</b>包含新图表的源数据的区域。 如果省略此参数，Microsoft Word 将编辑活动图表工作表或活动工作表上处于选定状态的图表。</param>
-        <param name="Gallery">可选<b>对象</b>包含的常量之一，<see cref="T:Microsoft.Office.Interop.Excel.XlChartType" />指定图表类型。</param>
-        <param name="Format">可选<b>对象</b>的内置的自动套用格式选项号。 可为从 1 到 10 的数字，其取值依赖于库的类型。 如果省略此参数，则 Microsoft Word 会选择基于库类型和数据源的默认值。</param>
-        <param name="PlotBy">可选<b>对象</b>指定每个系列的数据是否行或列中。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />常量： <b>xlRows</b>或<b>xlColumns</b>。</param>
-        <param name="CategoryLabels">可选<b>对象</b>包含一个<b>整数</b>，指定的行或包含分类标签的源范围内的列数。 合法值是从 0 （零） 到相应的类别或系列的最大数减。</param>
-        <param name="SeriesLabels">可选<b>对象</b>包含一个<b>整数</b>，指定的行或包含系列标签的源范围内的列数。 合法值是从 0 （零） 到相应的类别或系列的最大数减。</param>
-        <param name="HasLegend">可选<b>对象</b>设置为<b>True</b>将具有图例。</param>
-        <param name="Title">可选<b>对象</b>的图表标题文本。</param>
+        <param name="Gallery">Optional<b>对象</b>包含<see cref="T:Microsoft.Office.Interop.Excel.XlChartType" />指定图表类型的常量之一。</param>
+        <param name="Format">可选<b>对象</b>内置自动套用格式的选项编号。 可为从 1 到 10 的数字，其取值依赖于库的类型。 如果省略此参数, Microsoft Word 将根据库的类型和数据源选择默认值。</param>
+        <param name="PlotBy">Optional<b>对象</b>指定每个系列的数据是否在行或列中。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />常量之一: <b>xlRows</b>或<b>xlColumns</b>。</param>
+        <param name="CategoryLabels">Optional<b>对象</b>包含一个<b>整数</b>, 用于指定包含分类标签的源区域中的行数或列数。 合法值为从 0（零）至小于相应分类或系列的最大个数间的某一数字。</param>
+        <param name="SeriesLabels">Optional<b>对象</b>包含一个<b>整数</b>, 用于指定包含系列标签的源范围内的行数或列数。 合法值为从 0（零）至小于相应分类或系列的最大个数间的某一数字。</param>
+        <param name="HasLegend">可选<b>对象</b>设置为<b>True</b>以包含图例。</param>
+        <param name="Title">可选<b>对象</b>图表标题文本。</param>
         <param name="CategoryTitle">可选<b>对象</b>分类轴标题文本。</param>
         <param name="ValueTitle">可选<b>对象</b>数值轴标题文本。</param>
-        <param name="ExtraTitle">可选<b>对象</b>用于三维图表的系列轴标题或二维图表的第二个数值轴标题。</param>
-        <summary>修改给定图表的属性。 可使用本方法快速设置图表的格式，而不必逐个设置所有属性。 非交互式，此方法，并更改指定的属性。</summary>
-        <remarks>
-          <para>如果<paramref name="Source" />省略和所选内容不活动文档中的图表，此方法将失败并出现错误。</para>
-          <para />
-        </remarks>
+        <param name="ExtraTitle">可选<b>对象</b>三维图表的系列轴标题或二维图表的第二个数值轴标题。</param>
+        <summary>修改给定图表的属性。 可使用本方法快速设置图表的格式，而不必逐个设置所有属性。 此方法是非交互式的, 它只更改指定的属性。</summary>
+        <remarks><para>如果<paramref name="Source" />省略, 并且所选内容不是活动文档中的图表, 则此方法将失败并出现错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearToMatchColorStyle">
@@ -920,11 +854,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>清除指定图表上所有不会遵循应用于图表的颜色样式的颜色。</summary>
-        <remarks>
-          <para>使用此方法重置格式应用于图表的颜色样式的所有图表颜色。</para>
-          <para />
-        </remarks>
+        <summary>清除指定图表中不遵循应用于图表的颜色样式的所有颜色。</summary>
+        <remarks><para>使用此方法可将所有图表颜色格式重置为应用于图表的颜色样式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearToMatchStyle">
@@ -949,10 +881,8 @@
       <Parameters />
       <Docs>
         <summary>清除图表元素格式以改为自动格式。</summary>
-        <remarks>
-          <para>使用此方法重置格式设置为自动的图表元素。   如果您在图表中使用此方法，所有格式 （包括重写） 将重置。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用此方法将图表元素格式重置为自动格式。    如果在图表上使用此方法，则将重置所有格式（包括替代项）。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Column3DGroup">
@@ -984,10 +914,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回上三维图表的柱形图组。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>返回三维图表上的柱形图组。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1019,11 +947,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 指定图表组。</param>
-        <summary>在二维图表中，返回一个 object 值，该值代表以下任意单个柱形图组 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或柱形图图表组集合 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合)。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <param name="Index">可选<b>对象</b>。 指定图表组。</param>
+        <summary>在二维图表中, 返回代表单个柱形图组 (一个<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或柱形图组集合 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合) 的对象。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1086,9 +1012,9 @@
         <Parameter Name="Size" Type="Microsoft.Office.Interop.Word.XlPictureAppearance" />
       </Parameters>
       <Docs>
-        <param name="Appearance">可选<see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" />指定图片的复制方式。 默认值是<see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen" />。</param>
-        <param name="Format">可选<see cref="T:Microsoft.Office.Interop.Word.XlCopyPictureFormat" />图片的格式。 默认值是<see cref="F:Microsoft.Office.Interop.Word.XlCopyPictureFormat.xlPicture" />。</param>
-        <param name="Size">可选<see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" />复制的图片对象时图表工作表 （未工作表上嵌入） 的第一个图表的大小。 默认值是<see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter" />。</param>
+        <param name="Appearance">可选<see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" />指定图片的复制方式。 默认值为 <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen" />。</param>
+        <param name="Format">可选<see cref="T:Microsoft.Office.Interop.Word.XlCopyPictureFormat" />图片的格式。 默认值为 <see cref="F:Microsoft.Office.Interop.Word.XlCopyPictureFormat.xlPicture" />。</param>
+        <param name="Size">可选<see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" /> : 当对象是图表工作表上的图表 (未嵌入在工作表上) 时复制的图片的大小。 默认值为 <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter" />。</param>
         <summary>将所选对象作为图片复制到剪贴板。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1122,9 +1048,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Corners</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回三维图表的角。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Corners" />corners</value>
+        <summary>返回三维图表的角部。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Corners" />处</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1151,14 +1076,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位<b>整数</b>，它指示在其中创建指定的对象的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中，创建<see cref="P:Microsoft.Office.Interop.Word.Chart.Creator" />属性返回十六进制数字 4d535744，表示的字符串"MSWD"。 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <summary>返回一个32位整数, 该<b>整数</b>表示在其中创建指定对象的应用程序。 只读。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.Chart.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataTable">
@@ -1184,10 +1105,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.DataTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.DataTable" />对象，它代表图表模拟运算表。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DataTable" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.DataTable" />对象, 表示图表模拟运算表。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DataTable" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1216,9 +1135,7 @@
       <Parameters />
       <Docs>
         <summary>删除对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1282,14 +1199,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置三维图表的深度，以图表宽度的百分比表示（有效范围从 20% 到 2000%）。 为可读/写属性。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>此属性仅适用于三维图表。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置三维图表的深度，以图表宽度的百分比表示（有效范围从 20% 到 2000%）。 读/写。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>该属性只适用于三维图表。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayBlanksAs">
@@ -1324,10 +1237,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlDisplayBlanksAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置在图表上绘制空白单元格方式。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" />常量。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" />
-        </value>
+        <summary>返回或设置图表上的空白单元格的绘制方式。 可以是<see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" />常量之一。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1359,11 +1270,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选的<b>对象</b>。 指定图表组。</param>
-        <summary>在二维图表中，返回一个 object 值，该值代表以下任意一个圆环图图表组 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或圆环图图表组集合的 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合)。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <param name="Index">可选<b>对象</b>。 指定图表组。</param>
+        <summary>在二维图表中, 返回代表单个圆环图图表组 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或圆环图图表组集合 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合) 的对象。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1399,16 +1308,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置度数三维图表视图中，提升。 为可读/写属性。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>图表提升是以度表示的图表，查看频率的高度。默认为 15，为大多数图表类型。此属性的值必须是介于-90 到 90，除三维条形图，之间它必须是介于 0 到 44 之间。</para>
+        <summary>返回或设置三维图表视图的仰角（以角度为单位）。 读/写。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>图表的仰角以角度为单位表示观察图表的高度。对于绝大多数图表类型，其默认值为 15。本属性的值必须介于 -90 到 90 之间，但三维条形图除外，对于三维条形图，该值必须介于 0 到 44 之间。</para>
           <para>
-            <b>注意</b>： 该属性仅适用于三维图表。</para>
-          <para />
-        </remarks>
+            <b>注意</b>: 此属性仅适用于三维图表。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Export">
@@ -1435,13 +1340,11 @@
         <Parameter Name="Interactive" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="FileName">所需的导出的文件名称的<b>字符串</b>。</param>
-        <param name="FilterName">在注册表中显示的图形筛选器设置为它的可选<b>对象</b>独立于语言的名称。</param>
-        <param name="Interactive">可选<b>对象</b><b>，则返回 True</b>要显示的对话框中包含特定于筛选器的选项。 如果该参数为<b>False</b>，Microsoft Word 使用的默认值筛选器。 默认值为 <b>False</b> 。</param>
-        <summary>以图形格式导出图表。 此方法返回一个<b>Boolean</b>值，该值指示导出是否成功。</summary>
-        <returns>
-          <b>Boolean</b>
-        </returns>
+        <param name="FileName">必需的<b>字符串</b>导出的文件的名称。</param>
+        <param name="FilterName">Optional<b>对象</b>显示在注册表中的图形筛选器的与语言无关的名称。</param>
+        <param name="Interactive">可选<b>对象</b><b>True</b>显示包含筛选器特定的选项的对话框。 如果此参数为<b>False</b>, Microsoft Word 将使用筛选器的默认值。 默认值为 <b>False</b>。</param>
+        <summary>以图形格式导出图表。 此方法返回一个<b>布尔</b>值, 指示导出是否成功。</summary>
+        <returns><b>Boolean</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1471,10 +1374,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Floor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Floor" />对象，它代表三维图表的基底。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Floor" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Floor" />对象, 表示三维图表的基底。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Floor" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1503,8 +1404,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">中要返回的系列在 series 集合的索引号。</param>
-        <summary>返回在指定图表中的所有系列的指定的系列的集合。</summary>
+        <param name="Index">要返回的系列的系列集合中的索引号。</param>
+        <summary>返回指定图表中所有系列的集合, 或指定系列中的所有系列的集合。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1541,15 +1442,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置标记宽度的百分比，三维图表中的数据系列之间的距离。 该属性的值必须介于 0 到 500 之间。 为可读/写属性。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>
-            <b>注意</b>： 该属性仅适用于三维图表。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置三维图表中的数据系列之间的距离 (以标记宽度的百分比表示)。 该属性的值必须介于 0 到 500 之间。 读/写。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>
+            <b>注意</b>: 此属性仅适用于三维图表。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChartElement">
@@ -1579,23 +1476,19 @@
         <Parameter Name="Arg2" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="x">需要<b>整数</b>图表元素的 X 坐标。</param>
-        <param name="y">需要<b>整数</b>图表元素的 Y 坐标。</param>
-        <param name="ElementID">
-          <b>整数</b>该方法返回时，此参数包含<see cref="T:Microsoft.Office.Interop.Word.XlChartItem" />指定坐标处图表元素的值。 有关详细信息，请参阅"备注"部分。</param>
-        <param name="Arg1">
-          <b>整数</b>方法返回时，此参数包含与图表元素的信息。 有关详细信息，请参阅"备注"部分。</param>
-        <param name="Arg2">
-          <b>整数</b>方法返回时，此参数包含与图表元素的信息。 有关详细信息，请参阅"备注"部分。</param>
-        <summary>返回有关处图表元素的信息指定 X 和 Y 坐标。 本方法的与众不同之处在于只需指定前两个参数的值。 Microsoft Word 会为其余参数赋值，代码应在方法返回时检查这些值。</summary>
-        <remarks>
-          <para>值<paramref name="ElementID" />方法返回确定后是否<paramref name="Arg1" />和<paramref name="Arg2" />包含下表中所示的信息，。</para>
+        <param name="x">Chart 元素的 X 坐标所必需的<b>整数</b>。</param>
+        <param name="y">必需<b>整数</b>chart 元素的 Y 坐标。</param>
+        <param name="ElementID"><b>Integer</b>方法返回时, 此参数包含指定坐标<see cref="T:Microsoft.Office.Interop.Word.XlChartItem" />处的 chart 元素的值。 有关详细信息，请参阅“备注”部分。</param>
+        <param name="Arg1"><b>Integer</b>方法返回时, 此参数包含与 chart 元素相关的信息。 有关详细信息，请参阅“备注”部分。</param>
+        <param name="Arg2"><b>Integer</b>方法返回时, 此参数包含与 chart 元素相关的信息。 有关详细信息，请参阅“备注”部分。</param>
+        <summary>返回有关指定的 X 和 Y 坐标的 chart 元素的信息。 本方法的与众不同之处在于只需指定前两个参数的值。 Microsoft Word 会为其余参数赋值，代码应在方法返回时检查这些值。</summary>
+        <remarks><para>该方法返回<paramref name="ElementID" />后的值决定是否<paramref name="Arg1" />并<paramref name="Arg2" />包含任何信息, 如下表所示。</para>
           <list type="table">
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlAxis" />
               </description>
-              <description>21</description>
+              <description>不足</description>
               <description>AxisIndex</description>
               <description>AxisType</description>
             </item>
@@ -1603,7 +1496,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlAxisTitle" />
               </description>
-              <description>17</description>
+              <description>×</description>
               <description>AxisIndex</description>
               <description>AxisType</description>
             </item>
@@ -1619,7 +1512,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlMajorGridlines" />
               </description>
-              <description>15</description>
+              <description>个</description>
               <description>AxisIndex</description>
               <description>AxisType</description>
             </item>
@@ -1627,7 +1520,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlMinorGridlines" />
               </description>
-              <description>16</description>
+              <description>位</description>
               <description>AxisIndex</description>
               <description>AxisType</description>
             </item>
@@ -1653,7 +1546,7 @@
               </description>
               <description>20</description>
               <description>GroupIndex</description>
-              <description>无</description>
+              <description>None</description>
             </item>
             <item>
               <description>
@@ -1667,9 +1560,9 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlHiLoLines" />
               </description>
-              <description>25</description>
+              <description>word</description>
               <description>GroupIndex</description>
-              <description>无</description>
+              <description>None</description>
             </item>
             <item>
               <description>
@@ -1677,7 +1570,7 @@
               </description>
               <description>27</description>
               <description>GroupIndex</description>
-              <description>无</description>
+              <description>None</description>
             </item>
             <item>
               <description>
@@ -1685,7 +1578,7 @@
               </description>
               <description>22</description>
               <description>GroupIndex</description>
-              <description>无</description>
+              <description>None</description>
             </item>
             <item>
               <description>
@@ -1693,14 +1586,14 @@
               </description>
               <description>18</description>
               <description>GroupIndex</description>
-              <description>无</description>
+              <description>None</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlChartArea" />
               </description>
-              <description>2</description>
-              <description>None</description>
+              <description>双面</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
@@ -1708,14 +1601,14 @@
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlChartTitle" />
               </description>
               <description>4</description>
-              <description>None</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlCorners" />
               </description>
-              <description>6</description>
+              <description>型</description>
               <description>无</description>
               <description>无</description>
             </item>
@@ -1723,16 +1616,16 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataTable" />
               </description>
-              <description>7</description>
-              <description>none</description>
+              <description>步</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlFloor" />
               </description>
-              <description>23</description>
-              <description>none</description>
+              <description>上午</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
@@ -1740,7 +1633,7 @@
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLeaderLines" />
               </description>
               <description>29</description>
-              <description>none</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
@@ -1748,7 +1641,7 @@
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegend" />
               </description>
               <description>24</description>
-              <description>none</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
@@ -1756,15 +1649,15 @@
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlNothing" />
               </description>
               <description>28</description>
-              <description>none</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlPlotArea" />
               </description>
-              <description>19</description>
-              <description>none</description>
+              <description>合</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
@@ -1772,14 +1665,14 @@
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlWalls" />
               </description>
               <description>5</description>
-              <description>none</description>
+              <description>无</description>
               <description>无</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataLabel" />
               </description>
-              <description>7</description>
+              <description>步</description>
               <description>SeriesIndex</description>
               <description>PointIndex</description>
             </item>
@@ -1787,7 +1680,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlErrorBars" />
               </description>
-              <description>9</description>
+              <description>第</description>
               <description>SeriesIndex</description>
               <description>无</description>
             </item>
@@ -1811,7 +1704,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlSeries" />
               </description>
-              <description>3</description>
+              <description>第三章</description>
               <description>SeriesIndex</description>
               <description>PointIndex</description>
             </item>
@@ -1819,7 +1712,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlShape" />
               </description>
-              <description>14</description>
+              <description>日</description>
               <description>ShapeIndex</description>
               <description>无</description>
             </item>
@@ -1827,7 +1720,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlTrendline" />
               </description>
-              <description>8</description>
+              <description>utf-8</description>
               <description>SeriesIndex</description>
               <description>TrendLineIndex</description>
             </item>
@@ -1835,7 +1728,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlXErrorBars" />
               </description>
-              <description>10</description>
+              <description>10 </description>
               <description>SeriesIndex</description>
               <description>无</description>
             </item>
@@ -1843,48 +1736,47 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlYErrorBars" />
               </description>
-              <description>11</description>
+              <description>11x17</description>
               <description>SeriesIndex</description>
               <description>无</description>
             </item>
           </list>
-          <para>下表介绍的含义<paramref name="Arg1" />和<paramref name="Arg2" />该方法返回后。</para>
+          <para>下表说明了方法返回后<paramref name="Arg1" />和<paramref name="Arg2" />的含义。</para>
           <list type="table">
             <item>
               <description>AxisIndex</description>
-              <description>指定坐标轴是否主要或次要。可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />常量： <b>xlPrimary</b>或<b>xlSecondary</b>。</description>
+              <description>指定轴主要或辅助。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />常量之一: <b>xlPrimary</b>或<b>xlSecondary</b>。</description>
             </item>
             <item>
               <description>AxisType</description>
-              <description>指定坐标轴类型。可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />常量： <b>xlCategory</b>、 <b>xlSeriesAxis</b>或<b>xlValue</b>。</description>
+              <description>指定坐标轴类型。 <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />可以是下列常量之一: <b>xlCategory</b>、 <b>xlSeriesAxis</b>或<b>xlValue</b>。</description>
             </item>
             <item>
               <description>DropZoneType</description>
-              <description>指定拖放区域类型： 列、 数据、 页或行字段。可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlPivotFieldOrientation" />常量： <b>xlColumnField</b>、 <b>xlDataField</b>、 <b>xlPageField</b>或<b>xlRowField</b>。列和行字段常量指定系列和类别字段中，分别。</description>
+              <description>指定拖放区域类型: 列、 数据、 页或行字段。 <see cref="T:Microsoft.Office.Interop.Word.XlPivotFieldOrientation" />可以是下列常量之一: <b>xlColumnField</b>、 <b>xlDataField</b>、 <b>xlPageField</b>或<b>xlRowField</b>。 列和行字段常量分别指定系列和分类字段。</description>
             </item>
             <item>
               <description>GroupIndex</description>
-              <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />特定图表组集合。</description>
+              <description>指定特定图表组在<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合中的偏移量。</description>
             </item>
             <item>
               <description>PointIndex</description>
-              <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Word.Points" />一系列中特定点的集合。值为-1 表示所有数据点都选定。</description>
+              <description>指定系列中的特定<see cref="T:Microsoft.Office.Interop.Word.Points" />点在集合中的偏移量。 -1 表示选定了所有数据点。</description>
             </item>
             <item>
               <description>SeriesIndex</description>
-              <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Word.Series" />特定系列的集合。</description>
+              <description>指定特定系列在<see cref="T:Microsoft.Office.Interop.Word.Series" />集合中的偏移量。</description>
             </item>
             <item>
               <description>ShapeIndex</description>
-              <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Word.Shapes" />特定形状的集合。</description>
+              <description>指定特定形状在<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合中的偏移量。</description>
             </item>
             <item>
               <description>TrendlineIndex</description>
-              <description>指定中的偏移量<see cref="T:Microsoft.Office.Interop.Word.Trendlines" />一系列中特定趋势线的集合。</description>
+              <description>指定系列中特定趋势<see cref="T:Microsoft.Office.Interop.Word.Trendlines" />线在集合中的偏移量。</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasAxis">
@@ -1923,17 +1815,13 @@
         <Parameter Name="Index2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index1">所需<b>对象</b>坐标轴类型。 系列坐标轴仅应用于三维图表。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />常量。</param>
-        <param name="Index2">可选<b>对象</b>坐标轴组。 三维图表有只有一组轴。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />常量。</param>
-        <summary>返回或设置图表中出现的坐标轴。 为可读/写属性。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>设置此属性时，必须至少一个参数输入值。</para>
-          <para>Microsoft Word 可能会创建或删除坐标轴，如果更改图表类型或<see cref="P:Microsoft.Office.Interop.Word.Axis.AxisGroup" />属性。</para>
-          <para />
-        </remarks>
+        <param name="Index1">必需的<b>对象</b>轴类型。 系列坐标轴仅应用于三维图表。 可以是<see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />常量之一。</param>
+        <param name="Index2">可选<b>对象</b>轴组。 三维图表有只有一组轴。 可以是<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />常量之一。</param>
+        <summary>返回或设置图表中出现的坐标轴。 读/写。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>设置该属性时，必须至少输入一个参数的值。</para>
+          <para>如果更改图表类型或<see cref="P:Microsoft.Office.Interop.Word.Axis.AxisGroup" />属性, Microsoft Word 可能会创建或删除坐标轴。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDataTable">
@@ -1962,10 +1850,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置一个值，指示是否<see cref="T:Microsoft.Office.Interop.Word.Chart" />具有的模拟运算表。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-          <b>True</b>如果图表模拟运算表。 否则为<b>False</b></value>
+        <summary>获取或设置一个值, 该值指示是否<see cref="T:Microsoft.Office.Interop.Word.Chart" />具有模拟运算表。 读/写。</summary>
+        <value><b>Boolean 类型</b>
+          <b>如此</b>如果图表有模拟运算表。 否则<b>为 False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2032,10 +1919,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果图表图例，则返回<b>True</b> 。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>如果图表有图例, 则返回<b>True</b> 。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2071,13 +1956,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否在指定的数据透视图报表上显示的数据透视图控件</summary>
-        <value>
-          <b>Boolean</b>对于常规的图表，此属性始终返回<b>False</b> ，且不能设置。</value>
-        <remarks>
-          <para>默认值为<b>True</b></para>
-          <para />
-        </remarks>
+        <summary>确定是否在指定的数据透视图报表上显示数据透视图控件</summary>
+        <value><b>Boolean 类型</b>对于常规图表, 该属性总是返回<b>False</b>且不能进行设置。</value>
+        <remarks><para>默认值为 <b>True</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasTitle">
@@ -2112,14 +1994,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果坐标轴或图表有可见标题，则该属性值为 <b>True</b> 。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>图表标题由<see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />对象。</para>
-          <para />
-        </remarks>
+        <summary>如果坐标轴或图表有可见标题，则该属性值为 <b>True</b> 。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>图表标题由<see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />对象表示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightPercent">
@@ -2154,10 +2032,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置三维图表的高度 （之间 5 和 500%） 的图表宽度的百分比。 为可读/写属性。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回或设置三维图表的高度，以图表宽度的百分比表示（有效范围从 5% 到 500%）。 读/写。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2187,10 +2063,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Legend</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Legend" />对象，它代表图表的图例。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Legend" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Legend" />对象, 表示图表的图例。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Legend" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2223,10 +2097,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回折线图图表组在三维图表。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>返回三维图表上的折线图组。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2258,11 +2130,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选<b>对象</b>指定的图表组。</param>
-        <summary>在二维图表中，返回一个 object 值，该值代表以下任意单个折线图图表组 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或折线图图表组集合 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合)。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <param name="Index">Optional<b>对象</b>指定图表组。</param>
+        <summary>在二维图表中, 返回代表单个折线图组 (一个<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或折线图图表组 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合) 的集合的对象。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2290,9 +2160,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回指定对象的父级。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2321,7 +2189,7 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">指定要粘贴的图表信息（如果剪贴板中有一个图表）。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" /><b>xlPasteFormats</b>、 <b>xlPasteFormulas</b>或<b>xlPasteAll</b>。 默认值是<b>xlPasteAll</b>。 如果没有之外剪贴板中的图表数据，则不能使用此参数。 粘贴</param>
+        <param name="Type">指定要粘贴的图表信息（如果剪贴板中有一个图表）。 可以是下列<see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" />的<b>xlPasteFormats</b>、 <b>xlPasteFormulas</b>或<b>xlPasteAll</b>之一。 默认值为 <b>xlPasteAll</b>。 如果剪贴板上的数据不是图表数据，则不能使用该参数。 选择性</param>
         <summary>将剪贴板中的图表数据粘贴到指定的图表中。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2358,14 +2226,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Integer</b>值，该值代表三维图表视图的透视系数。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>此属性的值必须介于 0 和 100 之间。如果此属性，则忽略<see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />属性设置为<b>True</b>。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<b>Integer</b>类型的值, 该值代表三维图表视图的透视系数。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>此属性的值必须是介于 0 和 100 之间。 如果该<see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />属性设置为<b>True</b>, 则忽略此属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Pie3DGroup">
@@ -2397,10 +2261,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回饼图图表组在三维图表。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>返回三维图表上的饼图组。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2432,11 +2294,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选<b>对象</b>指定的图表组。</param>
-        <summary>在二维图表中，返回一个 object 值，该值代表以下任意单个饼图图表组 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或饼图图表组集合 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合)。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <param name="Index">Optional<b>对象</b>指定图表组。</param>
+        <summary>在二维图表中, 返回一个对象, 该对象代表单个饼图图表组 (一个<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或一个饼图组的集合 (一个<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合)。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2494,10 +2354,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.PlotArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.PlotArea" />对象，它代表图表的绘图区。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.PlotArea" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.PlotArea" />对象, 表示图表的绘图区。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.PlotArea" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2527,14 +2385,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlRowCol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置行或列用作数据系列在图表上的方式。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />常量： <b>xlColumns</b>或<b>xlRows</b>。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />
-        </value>
-        <remarks>
-          <para>对于数据透视图报表，此属性是只读的且始终返回<b>xlColumns</b>。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置图表上的列或行用作数据系列的方式。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />常量之一: <b>xlColumns</b>或<b>xlRows</b>。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /></value>
+        <remarks><para>对于数据透视图报表中，此属性是只读的且始终返回 <b>xlColumns</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PlotVisibleOnly">
@@ -2569,10 +2423,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置一个值，指示是否绘制仅可见单元格。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-          <b>True</b>如果仅绘制可见单元格。 <b>假</b> 如果可见和隐藏单元格的绘制。</value>
+        <summary>获取或设置一个值, 该值指示是否仅绘制可见单元格。 读/写。</summary>
+        <value><b>Boolean 类型</b>
+          <b>如此</b>如果只绘制可见单元格。 <b>假</b> 如果可见和隐藏单元格的绘制。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2604,11 +2457,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选<b>对象</b>指定的图表组。</param>
-        <summary>在二维图表中，返回一个 object 值，该值代表以下任意单个雷达图图表组 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或雷达图图表组集合的 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合)。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <param name="Index">Optional<b>对象</b>指定图表组。</param>
+        <summary>在二维图表中, 返回代表单个雷达图图表组 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或雷达图图表组集合 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合) 的对象。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2669,15 +2520,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果图表的坐标轴为直角，并与图表旋转角或仰角无关。 适用于仅三维折线图、 柱形图和条形图。 为可读/写属性。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>如果此属性设置为<b>True</b>，<see cref="P:Microsoft.Office.Interop.Word.Chart.Perspective" />属性将被忽略。</para>
-          <para />
-        </remarks>
+        <summary>如果图表的坐标轴为直角，并与图表的转角或仰角无关，则该属性值为 <b>True</b>。 仅应用于三维折线图、柱形图和条形图。 读/写。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>如果此属性设置为<b>True</b>, 则忽略<see cref="P:Microsoft.Office.Interop.Word.Chart.Perspective" />该属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rotation">
@@ -2712,14 +2558,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置三维图表视图 （的绘图区绕 z 轴中度旋转） 的旋转角度。 此属性的值必须是介于 0 到 360 之间，除三维条形图，其中的值必须是介于 0 到 44。 默认值为 20。 仅适用于三维图表。 为可读/写属性。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>旋转量始终四舍五入到最接近的整数。</para>
-          <para />
-        </remarks>
+        <summary>以度为单位返回或设置三维图表视图的转角（绘图区绕 Z 轴的转角）。 本属性的取值必须介于 0 到 360 之间，三维条形图除外（从 0 到 44 之间）。 默认值为 20。 仅适用于三维图表。 读/写。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>转角始终四舍五入到最接近的整数。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveChartTemplate">
@@ -2745,12 +2587,10 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">所需的图表模板的名称的<b>字符串</b>。</param>
+        <param name="FileName">必需的<b>字符串</b>图表模板的名称。</param>
         <summary>将自定义图表模板保存到可用图表模板的列表中。</summary>
-        <remarks>
-          <para>默认情况下，此方法将活动图表保存到用户的图表模板目录。 如果指定的 UNC 或 URL，则将保存图表到指定的位置。</para>
-          <para />
-        </remarks>
+        <remarks><para>默认情况下，此方法将活动图表保存到用户的图表模板库中。如果指定了 UNC 或 URL，则图表将保存到指定位置。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2778,11 +2618,9 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">（仅用于工作表）。 可选<b>对象</b><b>，则返回 True</b>当前选定内容替换为指定的对象。 <b>False</b> 来扩展当前选定内容以包括任何以前选定的对象和指定的对象。</param>
+        <param name="Replace">（仅用于工作表）。 可选<b>对象</b><b>True</b>将当前所选内容替换为指定的对象。 <b>False</b> 来扩展当前选定内容以包括任何以前选定的对象和指定的对象。</param>
         <summary>选择对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2811,11 +2649,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需<b>对象</b>的名称或数据系列的编号。</param>
-        <summary>返回一个代表图表中的所有系列的<b>对象</b>。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <param name="Index">必需<b>对象</b>系列的名称或编号。</param>
+        <summary>返回一个<b>Object</b>类型的对象, 该对象代表图表中的所有系列。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2845,7 +2681,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlSeriesNameLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.XlSeriesNameLevel" />指定的系列名称源级别的常量。 读写。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.XlSeriesNameLevel" />常量, 该常量指定系列名称的源级别。 读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2873,7 +2709,7 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">所需的图形文件的名称的<b>字符串</b>。</param>
+        <param name="FileName">必需的<b>字符串</b>图形文件的名称。</param>
         <summary>设置图表的背景图形。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2901,8 +2737,8 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">必需。 <b>对象</b>指定将用于新建图表时的默认图表模板的名称。  此名称可以库或特殊中设置用户自定义图表模板的名称为<see cref="T:Microsoft.Office.Interop.Word.XlChartGallery" />常量， <see cref="F:Microsoft.Office.Interop.Word.XlChartGallery.xlBuiltIn" />，以指定内置图表模板。</param>
-        <summary>指定 Microsoft Word 新建图表时所使用的图表模板的名称。</summary>
+        <param name="Name">必需。 <b>对象</b>指定创建新图表时将使用的默认图表模板的名称。  此名称可设置为库中用户定义的图表模板的名称或特殊<see cref="T:Microsoft.Office.Interop.Word.XlChartGallery" />常量<see cref="F:Microsoft.Office.Interop.Word.XlChartGallery.xlBuiltIn" />, 以指定内置图表模板。</param>
+        <summary>指定 Microsoft Word 在创建新图表时使用的图表模板的名称。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2929,28 +2765,26 @@
         <Parameter Name="Element" Type="Microsoft.Office.Core.MsoChartElementType" />
       </Parameters>
       <Docs>
-        <param name="Element">所需<see cref="T:Microsoft.Office.Core.MsoChartElementType" />指定图表元素类型。</param>
-        <summary>设置图表上图表元素。 为可读/写属性。</summary>
-        <remarks>
-          <para>对于图表，布局选项卡中的以下命令对应于<see cref="M:Microsoft.Office.Interop.Word.Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" />方法：</para>
+        <param name="Element">必需<see cref="T:Microsoft.Office.Core.MsoChartElementType" />指定图表元素类型。</param>
+        <summary>设置图表上图表元素。 读/写。</summary>
+        <remarks><para>对于图表, "布局" 选项卡中的以下命令对应<see cref="M:Microsoft.Office.Interop.Word.Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" />于方法:</para>
           <list type="bullet">
             <item>
-              <para>标签组中的全部内容。</para>
+              <para>"标签" 组中的全部内容。</para>
             </item>
             <item>
-              <para>坐标轴组中的全部内容。</para>
+              <para>"坐标轴" 组中的全部内容。</para>
             </item>
             <item>
-              <para>分析组中的全部内容。</para>
+              <para>"分析" 组中的全部内容。</para>
             </item>
             <item>
-              <para>PlotArea、 图表背景墙和图表基底按钮。</para>
+              <para>"绘图区"、 "图表背景墙" 和 "图表基底" 按钮。</para>
             </item>
           </list>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoChartElementType" />是常量枚举，引用上述命令的所有。</para>
-          <para />
-        </remarks>
+            <see cref="T:Microsoft.Office.Core.MsoChartElementType" />是引用上述所有命令的常量枚举。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSourceData">
@@ -2976,9 +2810,9 @@
         <Parameter Name="PlotBy" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">必需的<b>字符串</b>包含源数据的图表数据范围的地址。</param>
-        <param name="PlotBy">可选<b>对象</b>指定绘制数据的方式。 可以是以下任一<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />常量： <b>xlColumns</b>或<b>xlRows</b>。</param>
-        <summary>设置源数据范围的<see cref="T:Microsoft.Office.Interop.Word.Chart" />。</summary>
+        <param name="Source">必需的<b>字符串</b>包含源数据的图表数据区域的地址。</param>
+        <param name="PlotBy">Optional<b>对象</b>指定绘制数据的方式。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />常量之一: <b>xlColumns</b>或<b>xlRows</b>。</param>
+        <summary>设置的<see cref="T:Microsoft.Office.Interop.Word.Chart" />源数据范围。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3005,10 +2839,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合，它代表图表工作表上的所有形状。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合, 该集合代表图表工作表上的所有形状。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3039,8 +2871,7 @@
       </ReturnValue>
       <Docs>
         <summary>此对象、成员或枚举已被弃用并且不适合在您的代码中使用。</summary>
-        <value>
-          <b>true</b>如果所有字段数据透视表图表上的按钮应显示;否则为<b>false</b>。</value>
+        <value>如果应显示数据透视图上的所有字段按钮,<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3101,14 +2932,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置时是否显示数据标签的值大于上数值轴的最大值。  为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>如果更改变得数据点的大小小于中数值轴，您可以使用此属性设置是否显示数据标签。此属性适用于二维图表无效。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个值, 指示当值大于数值轴上的最大值时, 是否显示数据标签。  读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>如果您更改数值轴, 使其变得小于数据点的大小, 则可以使用此属性来设置是否显示数据标签。 该属性只适用于二维图表。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowLegendFieldButtons">
@@ -3138,8 +2965,7 @@
       </ReturnValue>
       <Docs>
         <summary>此对象、成员或枚举已被弃用并且不适合在您的代码中使用。</summary>
-        <value>
-          <b>true</b>如果图例字段按钮的数据透视图上应显示;否则为<b>false</b>。</value>
+        <value>如果应显示数据透视图上的图例字段按钮,<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3169,9 +2995,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此对象、 成员或枚举已弃用，不应在代码中使用正在</summary>
-        <value>
-          <b>true</b>如果报表筛选字段按钮的数据透视图上应显示;否则为<b>false</b>。</value>
+        <summary>此对象、成员或枚举已被弃用, 不应在您的代码中使用。</summary>
+        <value>如果应显示数据透视图上的报表筛选字段按钮,<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3201,8 +3026,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此对象、 成员或枚举已弃用，不应在代码中使用正在</summary>
-        <value>如果为<b>true</b>的值字段按钮的数据透视图上应显示;否则为<b>false</b>。</value>
+        <summary>此对象、成员或枚举已被弃用, 不应在您的代码中使用。</summary>
+        <value>如果应显示数据透视图上的值字段按钮,<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3229,10 +3054,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Walls" />对象，它允许用户单独进行格式设置三维图表的侧面墙。  只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Walls" />对象, 该对象允许用户单独对三维图表的侧面墙进行格式设置。  只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3274,10 +3097,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此 API 支持 Visual Studio Tools for Office 基础结构，不应在代码中直接使用。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>此 API 支持 Visual Studio Tools for Office 基础结构, 不应在代码中直接使用。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3310,10 +3131,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回对三维图表的曲面图组。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>返回三维图表的曲面图组。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3356,9 +3175,7 @@
       </ReturnValue>
       <Docs>
         <summary>仅供内部使用。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3388,10 +3205,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Walls" />对象，它代表三维图表的背景墙。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Walls" /> object 类型的对象, 该对象代表三维图表的背景墙。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3423,11 +3238,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">可选<b>对象</b>指定的图表组。</param>
-        <summary>在二维图表中，返回一个 object 值，该值代表以下任意单个散点图图表组 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或散点图图表组集合的 (<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合)。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <param name="Index">Optional<b>对象</b>指定图表组。</param>
+        <summary>在二维图表中, 返回代表单个散点图图表组 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或散点图组集合 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合) 的对象。</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

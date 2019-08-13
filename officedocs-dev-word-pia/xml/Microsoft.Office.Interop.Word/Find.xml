@@ -1,13 +1,5 @@
 <Type Name="Find" FullName="Microsoft.Office.Interop.Word.Find">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f63dc36acb8e1cf56f86311f5fd23d30d0daa392" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666283" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Find" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="771250bff76eecefd95fd6cad7906709cfc8f69c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146841" /></Metadata><TypeSignature Language="C#" Value="public interface Find" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Find" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Find" />
   <TypeSignature Language="VB.NET" Value="Public Interface Find" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>代表查找操作的执行条件。</summary>
-    <remarks>
-      <para>属性和<b>Find</b>对象的方法对应于查找和替换对话框中的选项。</para>
-      <para>使用<b>Find</b>属性可返回<b>Find</b>对象。</para>
-      <para>如果您已将对<b>查找</b>对象从<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象，所选内容更改时找到与查找条件匹配的文本。</para>
-      <para>如果您已将对<b>查找</b>对象从<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，找到与查找条件匹配的文本，但重新定义<b>Range</b>对象时，所选内容未更改。</para>
-      <para />
-    </remarks>
+    <remarks><para><b>Find</b> 对象的属性和方法对应于“查找和替换”对话框中的选项。</para>
+      <para>使用 <b>Find</b> 属性返回 <b>Find</b> 对象。</para>
+      <para>如果从<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象中获取了<b>Find</b>对象, 则在找到符合查找条件的文本时, 所选内容将发生变化。</para>
+      <para>如果从<see cref="T:Microsoft.Office.Interop.Word.Range" />对象中获取了<b>find</b>对象, 则在找到符合查找条件的文本时, 不会更改所选内容, 但会重新定义<b>Range</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,8 +76,7 @@
       <Parameters />
       <Docs>
         <summary>清除所有与日语文本相关联的非特定搜索选项。</summary>
-        <remarks>
-          <para>此方法将下列属性的值设置为<b>False</b>:</para>
+        <remarks><para>此方法将以下属性的值设置为<b>False</b>:</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyAY" />
           </para>
@@ -142,8 +131,7 @@
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyZJ" />
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearFormatting">
@@ -167,11 +155,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>删除文本格式和段落格式从选定内容或查找或替换操作中指定的格式。</summary>
-        <remarks>
-          <para>若要确保格式不包含作为条件在查找或替换操作，请在执行此操作之前使用此方法。</para>
-          <para />
-        </remarks>
+        <summary>从所选内容或在查找或替换操作中指定的格式中删除文本和段落格式。</summary>
+        <remarks><para>若要确保在查找或替换操作中不将格式作为条件包括在内, 请在执行操作之前使用此方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearHitHighlight">
@@ -196,13 +182,9 @@
       <Parameters />
       <Docs>
         <summary>取消突出显示在点击突出显示的查找，找到的所有文本并返回一个 <b>boolean 类型的值</b> ，表示该操作是否成功。</summary>
-        <returns>
-          <b>Boolean</b>
-        </returns>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.Find.HitHighlight(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法，以突出显示找到的文本。</para>
-          <para />
-        </remarks>
+        <returns><b>Boolean</b></returns>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.Find.HitHighlight(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法突出显示找到的文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CorrectHangulEndings">
@@ -231,12 +213,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定在替换朝鲜文字文本时是否 Microsoft Word 将自动更正朝鲜文字结尾。</summary>
+        <summary>确定在替换朝鲜文字时, Microsoft Word 是否自动更正朝鲜文字结尾。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 自动更正朝鲜文字结尾，在替换朝鲜文字文本和<b>False</b>如果不需要时，此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Microsoft Word 在替换朝鲜文文本时自动更正朝鲜文字结尾, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -264,9 +244,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -305,31 +285,29 @@
         <Parameter Name="MatchControl" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FindText">可选的<b>对象</b>。 要搜索的文本。 使用空字符串 ("") 可以仅搜索格式。 可以指定适当的字符代码来搜索特殊字符。 例如，"^p"对应段落标记，"^t"对应制表符。</param>
-        <param name="MatchCase">可选的<b>对象</b>。 <b>True</b> 指定查找文本是区分大小写。 对应于查找和替换对话框 （编辑菜单） 中的区分大小写复选框。</param>
-        <param name="MatchWholeWord">可选的<b>对象</b>。 <b>True</b>只查找完整单词，则查找操作不是更长词语的一部分的文本。 对应于 查找和替换对话框中的 全字匹配复选框。</param>
-        <param name="MatchWildcards">可选的<b>对象</b>。 <b>为</b> 要查找的文字是特殊搜索操作符。 对应于 查找和替换对话框中的 使用通配符复选框。</param>
-        <param name="MatchSoundsLike">可选的<b>对象</b>。 类似于查找的文字发音单词 <b>，则返回 true</b> ，则查找操作定位。 对应于 查找和替换对话框中的 听起来象复选框。</param>
-        <param name="MatchAllWordForms">可选的<b>对象</b>。 <b>，则返回 true</b> ，则查找操作定位查找文字的所有形式 (例如，"sit"查找"坐"，而"坐")。 对应于 查找和替换对话框中的 查找单词的各种形式复选框。</param>
-        <param name="Forward">可选的<b>对象</b>。 <b>真</b> 要向前搜索 (向文档的末尾)。</param>
-        <param name="Wrap">可选的<b>对象</b>。 控制如果搜索开始于文档的开头的点，达到文档的末尾，会发生什么情况 (或进行相反的转换如果<paramref name="Forward" />设置为<b>False</b>)。 该参数还将控制如果选定内容或范围和搜索文本在所选内容或范围中未找到时会发生什么情况。可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />常量：<b>wdFindAsk</b>搜索所选内容或范围，Microsoft Word 之后显示一条消息，询问是否搜索文档的其余部分。<b>wdFindContinue</b>如果到达的开头或结尾的搜索范围，继续执行查找操作。<b>wdFindStop</b>如果达到的开头或结尾的搜索范围，将停止查找操作。</param>
-        <param name="Format">可选的<b>对象</b>。 <b>True</b>则查找操作定位于或而不是查找文本的格式。</param>
-        <param name="ReplaceWith">可选的<b>对象</b>。 替换文字。 删除指定的文本<paramref name="Find" />参数使用空字符串 ("")。 为实现与指定特殊字符和高级的搜索条件<paramref name="Find" />参数。 若要指定为替换 graphic 对象或其他非文本项目，将项目移动到剪贴板，并指定"^ c"的<paramref name="ReplaceWith" />。</param>
-        <param name="Replace">可选的<b>对象</b>。 指定要执行替换的个数：一个、全部或者不替换。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdReplace" />常量：<b>wdReplaceAll </b><b>wdReplaceNone </b><b>wdReplaceOne</b></param>
-        <param name="MatchKashida">可选的<b>对象</b>。 <b>如此</b> 如果查找操作用 kashida 阿拉伯语文档中匹配的文本。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
-        <param name="MatchDiacritics">可选的<b>对象</b>。 <b>如此</b> 如果查找操作用匹配从右到左语言的文档中的音调符号来匹配文字。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
-        <param name="MatchAlefHamza">可选的<b>对象</b>。 <b>如此</b> 如果查找操作用匹配 alef hamza 适用于阿拉伯语文档中的匹配的文本。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
-        <param name="MatchControl">可选的<b>对象</b>。 <b>如此</b> 如果查找操作用匹配的从右到左语言的文档中的双向控制字符来匹配文字。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
+        <param name="FindText">可选<b>对象</b>。 要搜索的文本。 使用空字符串 ("") 仅搜索格式。 可以指定适当的字符代码来搜索特殊字符。 例如，"^p"对应段落标记，"^t"对应制表符。</param>
+        <param name="MatchCase">可选<b>对象</b>。 <b>True</b> 指定查找文本是区分大小写。 对应于“查找和替换”对话框（“编辑”菜单）中的“区分大小写”复选框。</param>
+        <param name="MatchWholeWord">可选<b>对象</b>。 <b>如果该属性值为 True</b> , 则查找操作仅查找整个单词, 而不是较长单词的一部分的文本。 对应于“查找和替换”对话框中的“全字匹配”复选框。</param>
+        <param name="MatchWildcards">可选<b>对象</b>。 <b>为</b> 要查找的文字是特殊搜索操作符。 对应于“查找和替换”对话框中的“使用通配符”复选框。</param>
+        <param name="MatchSoundsLike">可选<b>对象</b>。 类似于查找的文字发音单词 <b>，则返回 true</b> ，则查找操作定位。 对应于 查找和替换对话框中的 听起来象复选框。</param>
+        <param name="MatchAllWordForms">可选<b>对象</b>。 <b>，则返回 true</b> ，则查找操作定位查找文字的所有形式 (例如，"sit"查找"坐"，而"坐")。 对应于 查找和替换对话框中的 查找单词的各种形式复选框。</param>
+        <param name="Forward">可选<b>对象</b>。 <b>真</b> 要向前搜索 (向文档的末尾)。</param>
+        <param name="Wrap">可选<b>对象</b>。 如果从文档开头之外的某个位置开始搜索, 并到达文档结尾处 (反之亦然, 如果<paramref name="Forward" />设置为<b>False</b>), 则控制所发生的操作。 此参数还控制在选定内容或区域中找不到搜索文本时, 将会发生什么情况。可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />常量之一:<b>wdFindAsk</b>在搜索所选内容或区域后, Microsoft Word 将显示一条消息, 询问是否搜索文档的其余部分。<b>wdFindContinue</b>到达搜索范围的开始或结尾时, 继续执行查找操作。<b>wdFindStop</b>如果到达了搜索范围的开始或结尾, 则结束查找操作。</param>
+        <param name="Format">可选<b>对象</b>。 <b>如果该属性值为 True</b> , 则查找操作定位于格式, 而不是查找文本。</param>
+        <param name="ReplaceWith">可选<b>对象</b>。 替换文字。 若要删除<paramref name="Find" />参数指定的文本, 请使用空字符串 ("")。 您可以指定特殊字符和高级搜索条件, 就像对<paramref name="Find" />参数执行的操作一样。 若要将图形对象或其他非文本项指定为替换, 请将该项移动到剪贴板, 并为<paramref name="ReplaceWith" />指定 "^ c"。</param>
+        <param name="Replace">可选<b>对象</b>。 指定要执行替换的个数：一个、全部或者不替换。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdReplace" />常量:<b>wdReplaceAll </b> <b>wdReplaceNone </b> <b>wdReplaceOne</b></param>
+        <param name="MatchKashida">可选<b>对象</b>。 <b>如此</b> 如果查找操作用 kashida 阿拉伯语文档中匹配的文本。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
+        <param name="MatchDiacritics">可选<b>对象</b>。 <b>如此</b> 如果查找操作用匹配从右到左语言的文档中的音调符号来匹配文字。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
+        <param name="MatchAlefHamza">可选<b>对象</b>。 <b>如此</b> 如果查找操作用匹配 alef hamza 适用于阿拉伯语文档中的匹配的文本。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
+        <param name="MatchControl">可选<b>对象</b>。 <b>如此</b> 如果查找操作用匹配的从右到左语言的文档中的双向控制字符来匹配文字。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
         <summary>运行指定的查找操作。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果查找操作成功，则此方法返回<b>True</b> 。</para>
-          <para>如果<paramref name="MatchWildcards" />为<b>True</b>，您可以指定通配符字符和其他高级的搜索条件<paramref name="FindText" />参数。例如，"* （来）"查找任何 word 的结束中"来。"</para>
-          <para>若要搜索符号字符，请键入插字号 (^)、 零 (0)，然后符号的字符代码。例如，"^0151"对应于长划线 （—）。</para>
-          <para>除非另外指定，替换文本继承的文字格式它替换文档中的。例如，如果您将字符串"abc"替换"xyz"时，出现"abc"加粗格式被替换"xyz"加粗格式的字符串。</para>
-          <para>此外，如果<paramref name="MatchCase" />是<b>False</b>，搜索文本的大写的匹配项将替换为替代文本，而不考虑搜索和替换文本的大小写的大写版本。使用上面的示例，出现"ABC"替换"XYZ。"</para>
-          <para />
-        </remarks>
+        <remarks><para>如果查找操作成功, 则此方法返回<b>True</b> 。</para>
+          <para>如果<paramref name="MatchWildcards" />为<b>True</b>, 则可以指定<paramref name="FindText" />参数的通配符和其他高级搜索条件。 例如, "* (ing)" 查找以 "ing" 结尾的任何单词。</para>
+          <para>要搜索符号字符，可键入脱字符号 (^)、零 (0)，然后键入符号字符的代码。 例如, "^ 0151" 对应于长划线 (—)。</para>
+          <para>除非另外指定，否则替换文本将沿用文档中被替换文本的格式。 例如, 如果将字符串 "abc" 替换为 "xyz", 则使用加粗格式的字符串 "xyz" 替换 "abc" 的 "abc" 的匹配项。</para>
+          <para>此外, 如果<paramref name="MatchCase" />为<b>False</b>, 则大写的搜索文本将替换为大写的替换文本版本, 而不考虑搜索和替换文本的大小写。 使用前面的示例, "ABC" 的事件将替换为 "XYZ"。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute2007">
@@ -374,49 +352,33 @@
       </Parameters>
       <Docs>
         <param name="FindText">要搜索的文本。可用空字符串 ("") 仅搜索格式，也可通过指定相应的字符代码搜索特殊字符。例如，"^p"对应段落标记，"^t"对应制表符。</param>
-        <param name="MatchCase">
-          <b>True</b>指定查找文本是区分大小写。 对应于查找和替换对话框 （编辑菜单） 中的区分大小写复选框。</param>
-        <param name="MatchWholeWord">
-          <b>真</b> 要查找操作只查找整个单词，而非较长单词的一部分的文字。对应于 查找和替换对话框中的 全字匹配复选框。 </param>
-        <param name="MatchWildcards">
-          <b>为</b> 要查找的文字是特殊搜索操作符。对应于 查找和替换对话框中的 使用通配符复选框。 </param>
-        <param name="MatchSoundsLike">类似于查找的文字发音单词 <b>，则返回 true</b> ，则查找操作定位。对应于 查找和替换对话框中的 听起来象复选框。 </param>
-        <param name="MatchAllWordForms">
-          <b>，则返回 true</b> ，则查找操作定位查找文字的所有形式 (例如，"sit"查找"坐"，而"坐")。对应于 查找和替换对话框中的 查找单词的各种形式复选框。 </param>
-        <param name="Forward">
-          <b>真</b> 要向前搜索 (向文档的末尾)。</param>
-        <param name="Wrap">控制如果搜索开始于文档的开头的点，达到文档的末尾，会发生什么情况 (或进行相反的转换如果<paramref name="Forward" />设置为<b>False</b>)。 此参数还控制如果选定内容或所选内容或区域中未找到范围和搜索文本，将会发生什么情况。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />枚举值。</param>
+        <param name="MatchCase">如果该属性值为 <b>True</b>，则指定查找文本区分大小写。 对应于“查找和替换”对话框（“编辑”菜单）中的“区分大小写”复选框。</param>
+        <param name="MatchWholeWord"><b>真</b> 要查找操作只查找整个单词，而非较长单词的一部分的文字。 对应于“查找和替换”对话框中的“全字匹配”复选框。</param>
+        <param name="MatchWildcards"><b>为</b> 要查找的文字是特殊搜索操作符。 对应于“查找和替换”对话框中的“使用通配符”复选框。</param>
+        <param name="MatchSoundsLike">类似于查找的文字发音单词 <b>，则返回 true</b> ，则查找操作定位。 对应于 查找和替换对话框中的 听起来象复选框。</param>
+        <param name="MatchAllWordForms"><b>，则返回 true</b> ，则查找操作定位查找文字的所有形式 (例如，"sit"查找"坐"，而"坐")。 对应于 查找和替换对话框中的 查找单词的各种形式复选框。</param>
+        <param name="Forward"><b>真</b> 要向前搜索 (向文档的末尾)。</param>
+        <param name="Wrap">如果从文档开头之外的某个位置开始搜索, 并到达文档结尾处 (反之亦然, 如果<paramref name="Forward" />设置为<b>False</b>), 则控制所发生的操作。 此参数还控制如果选定内容或所选内容或区域中未找到范围和搜索文本，将会发生什么情况。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />枚举值之一。</param>
         <param name="Format">
             如果该属性值为 <b>True</b>，则查找操作定位于格式或带格式的文本，而不是查找文本。</param>
-        <param name="ReplaceWith">替换文字。 删除指定的文本<paramref name="Find" />参数使用空字符串 ("")。 为实现与指定特殊字符和高级的搜索条件<paramref name="Find" />参数。 若要指定为替换 graphic 对象或其他非文本项目，将项目移动到剪贴板，并指定"^ c"的<paramref name="ReplaceWith" />。</param>
-        <param name="Replace">指定要执行替换的个数：一个、全部或者不替换。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdReplace" />枚举值。</param>
-        <param name="MatchKashida">
-          <b>如此</b> 如果查找操作用 kashida 阿拉伯语语言的文档中匹配的文本。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
-        <param name="MatchDiacritics">
-          <b>如此</b> 如果查找操作用匹配从右到左语言的文档中的音调符号来匹配文字。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
-        <param name="MatchAlefHamza">
-          <b>如此</b> 如果查找操作用匹配 alef hamza 适用于阿拉伯语语言的文档中匹配的文本。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
-        <param name="MatchControl">
-          <b>如此</b> 如果查找操作用匹配的从右到左语言的文档中的双向控制字符来匹配文字。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
-        <param name="MatchPrefix">
-          <b>真</b> 才能匹配以搜索字符串开头的单词。对应于 查找和替换对话框中的 区分前缀复选框。 </param>
-        <param name="MatchSuffix">
-          <b>真</b> 才能匹配以搜索字符串结尾的单词。  对应于 查找和替换对话框中的 区分后缀复选框。</param>
-        <param name="MatchPhrase">
-          <b>真正</b> 忽略所有空格和控制字符，词与词之间。</param>
-        <param name="IgnoreSpace">
-          <b>真</b> 会忽略单词之间的所有空格。对应于 查找和替换对话框中的 忽略空格复选框。 </param>
-        <param name="IgnorePunct">
-          <b>True</b> ，则忽略单词之间的所有标点符号。对应于 查找和替换对话框中的 忽略标点符号复选框。 </param>
-        <summary>运行指定的查找操作。如果查找操作成功，则返回 <b>True</b> 。</summary>
-        <returns>指示查找操作是否成功的<b>Boolean</b>值。</returns>
-        <remarks>
-          <para>如果<paramref name="MatchWildcards" />为<b>True</b>，您可以指定通配符字符和其他高级的搜索条件<paramref name="FindText" />参数。例如，"* （来）"查找任何 word 的结束"运算结果"中。</para>
-          <para>若要搜索符号字符，请键入插字号 (^)、 零 (0)，然后符号的字符代码。例如，"^0151"对应于长划线 （—）。</para>
-          <para>除非另外指定，替换文本继承的文字格式它替换文档中的。例如，如果您将字符串"abc"替换"xyz"时，出现"abc"加粗格式被替换"xyz"加粗格式的字符串。</para>
-          <para>此外，如果<paramref name="MatchCase" />是<b>False</b>，搜索文本的大写的匹配项将替换为替代文本，而不考虑替换文本的大小写的大写版本。使用上面的示例，出现"ABC"替换"XYZ"。</para>
-          <para />
-        </remarks>
+        <param name="ReplaceWith">替换文字。 若要删除<paramref name="Find" />参数指定的文本, 请使用空字符串 ("")。 您可以指定特殊字符和高级搜索条件, 就像对<paramref name="Find" />参数执行的操作一样。 若要将图形对象或其他非文本项指定为替换项, 请将该项移动到剪贴板, 并为<paramref name="ReplaceWith" />指定 "^ c"。</param>
+        <param name="Replace">指定要执行替换的个数：一个、全部或者不替换。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdReplace" />枚举值。</param>
+        <param name="MatchKashida"><b>如此</b> 如果查找操作用 kashida 阿拉伯语语言的文档中匹配的文本。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
+        <param name="MatchDiacritics"><b>如此</b> 如果查找操作用匹配从右到左语言的文档中的音调符号来匹配文字。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
+        <param name="MatchAlefHamza"><b>如此</b> 如果查找操作用匹配 alef hamza 适用于阿拉伯语语言的文档中匹配的文本。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
+        <param name="MatchControl"><b>如此</b> 如果查找操作用匹配的从右到左语言的文档中的双向控制字符来匹配文字。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
+        <param name="MatchPrefix"><b>真</b> 才能匹配以搜索字符串开头的单词。 对应于“查找和替换”对话框中的“匹配前缀”复选框。</param>
+        <param name="MatchSuffix"><b>真</b> 才能匹配以搜索字符串结尾的单词。  对应于“查找和替换”对话框中的“匹配后缀”复选框。</param>
+        <param name="MatchPhrase"><b>真正</b> 忽略所有空格和控制字符，词与词之间。</param>
+        <param name="IgnoreSpace"><b>真</b> 会忽略单词之间的所有空格。 对应于“查找和替换”对话框中的“忽略空格字符”复选框。</param>
+        <param name="IgnorePunct"><b>True</b> ，则忽略单词之间的所有标点符号。 对应于“查找和替换”对话框中的“忽略标点符号”复选框。</param>
+        <summary>运行指定的查找操作。 如果查找操作成功，则返回 <b>True</b> 。</summary>
+        <returns>一个<b>布尔</b>值, 指示查找操作是否成功。</returns>
+        <remarks><para>如果<paramref name="MatchWildcards" />为<b>True</b>, 则可以指定<paramref name="FindText" />参数的通配符和其他高级搜索条件。 例如，“*(ing)”查找任何以“ing”结尾的单词。</para>
+          <para>要搜索符号字符，可键入脱字符号 (^)、零 (0)，然后键入符号字符的代码。例如，“^0151”对应一条长划线 (—)。</para>
+          <para>除非另外指定，否则替换文本将沿用文档中被替换文本的格式。例如，如果用“xyz”替换字符串“abc”，那么加粗“abc”将被加粗字符串“xyz”所替换。</para>
+          <para>此外, 如果<paramref name="MatchCase" />为<b>False</b>, 则大写形式的搜索文本将被替换为大写形式的替换文本, 而不考虑替换文本的大小写。 例如，上例中，“ABC”将被“XYZ”替换。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteOld">
@@ -496,7 +458,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.Font" />对象，它代表指定对象的字符格式。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.Font" />对象, 该对象代表指定对象的字符格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -527,12 +489,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定在查找操作中，是否包含格式。</summary>
+        <summary>确定是否在查找操作中包含格式设置。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果格式，则不包含在查找操作和<b>False</b> ，则此属性返回<b>True</b> 。设置该属性值为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果在查找操作中包含格式设置, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Forward">
@@ -561,12 +521,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定查找操作向前搜索整个文档。</summary>
+        <summary>确定查找操作是否在文档中向前搜索。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果查找操作向前搜索文档，然后<b>False</b>如果往回搜索文档，此属性返回<b>True</b> 。设置该属性值为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果查找操作在文档中向前搜索, 则此属性返回<b>True</b> , 如果它在文档中向后搜索, 则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Found">
@@ -592,12 +550,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定搜索指定的对象已得到了匹配项。</summary>
+        <summary>确定指定对象的搜索是否已生成匹配项。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果生成搜索的匹配项，而<b>False</b>如果没有，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果搜索产生一个匹配项, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Frame">
@@ -623,7 +579,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Frame" />对象，表示的图文框格式指定的样式的或查找和替换操作。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Frame" />对象, 表示指定的样式或查找和替换操作的图文框格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -654,10 +610,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否查找朝鲜文拼音和朝鲜文汉字字符在朝鲜语查找操作。读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否查找朝鲜文拼音和朝鲜文汉字字符在朝鲜语查找操作。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -687,14 +641,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否在查找条件中包括是突出显示格式。</summary>
+        <summary>确定是否在查找条件中包含突出显示格式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>WdUndefined</b>值可与<see cref="T:Microsoft.Office.Interop.Word.Find" />搜索要忽略突出显示所选内容中的格式设置的状态或范围的对象。</para>
-          <para>如果突出显示格式包括在查找条件，此属性返回<b>True</b> 。可返回或设置为<b>True</b>、 <b>False</b>或<b>wdUndefined</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>WdUndefined</b>值可与<see cref="T:Microsoft.Office.Interop.Word.Find" />对象一起使用, 以忽略所搜索的选定内容或范围中的突出显示格式的状态。</para>
+          <para>如果在查找条件中包含突出显示格式, 则此属性返回<b>True</b> 。 可以返回或被设置为 <b>真</b> 、 <b>假</b> 或 <b>wdUndefined</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HitHighlight">
@@ -739,48 +690,29 @@
       </Parameters>
       <Docs>
         <param name="FindText">指定要查找的文本。使用空字符串 ("") 可以仅搜索格式。可以指定适当的字符代码来搜索特殊字符。例如，"^p"对应段落标记，"^t"对应制表符。</param>
-        <param name="HighlightColor">指定文本的突出显示颜色。 可以是任何 RGB 颜色或之一<see cref="T:Microsoft.Office.Interop.Word.WdColor" />枚举值。</param>
-        <param name="TextColor">指定文本的颜色。 可以是任何 RGB 颜色或之一<see cref="T:Microsoft.Office.Interop.Word.WdColor" />枚举值。</param>
-        <param name="MatchCase">
-          <b>True</b> 指定查找文本是区分大小写。对应于 查找和替换对话框中的 区分大小写复选框。 </param>
-        <param name="MatchWholeWord">
-          <b>真</b> 要查找操作只查找整个单词，而非较长单词的一部分的文字。对应于 查找和替换对话框中的 全字匹配复选框。 </param>
-        <param name="MatchPrefix">
-          <b>真</b> 才能匹配以搜索字符串开头的单词。对应于 查找和替换对话框中的 区分前缀复选框。 </param>
-        <param name="MatchSuffix">
-          <b>真</b> 才能匹配以搜索字符串结尾的单词。  对应于 查找和替换对话框中的 区分后缀复选框。</param>
-        <param name="MatchPhrase">
-          <b>真正</b> 忽略所有空格和控制字符，词与词之间。</param>
-        <param name="MatchWildcards">
-          <b>为</b> 要查找的文字是特殊搜索操作符。对应于 查找和替换对话框中的 使用通配符复选框。 </param>
-        <param name="MatchSoundsLike">类似于查找的文字发音单词 <b>，则返回 true</b> ，则查找操作定位。对应于 查找和替换对话框中的 听起来象复选框。 </param>
-        <param name="MatchAllWordForms">
-          <b>，则返回 true</b> ，则查找操作定位查找文字的所有形式 (例如，"sit"查找"坐"，而"坐")。对应于 查找和替换对话框中的 查找单词的各种形式复选框。 </param>
-        <param name="MatchByte">
-          <b>True</b> 在搜索过程中区分全角和半角字母或字符。</param>
-        <param name="MatchFuzzy">
-          <b>True</b> 在搜索过程中对日语文本使用非特定搜索选项。读/写。 </param>
-        <param name="MatchKashida">
-          <b>如此</b> 如果查找操作用 kashida 阿拉伯语语言的文档中匹配的文本。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
-        <param name="MatchDiacritics">
-          <b>如此</b> 如果查找操作用匹配从右到左语言的文档中的音调符号来匹配文字。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
-        <param name="MatchAlefHamza">
-          <b>如此</b> 如果查找操作用匹配 alef hamza 适用于阿拉伯语语言的文档中匹配的文本。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
-        <param name="MatchControl">
-          <b>如此</b> 如果查找操作用匹配的从右到左语言的文档中的双向控制字符来匹配文字。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
-        <param name="IgnoreSpace">
-          <b>真</b> 会忽略单词之间的所有空格。对应于 查找和替换对话框中的 忽略空格复选框。 </param>
-        <param name="IgnorePunct">
-          <b>True</b> ，则忽略单词之间的所有标点符号。对应于 查找和替换对话框中的 忽略标点符号复选框。 </param>
-        <param name="HanjaPhoneticHangul">
-          <b>真</b> 会忽略朝鲜文字和朝鲜文汉字的拼音字符。有朝鲜语支持时才可用。 </param>
+        <param name="HighlightColor">指定文本的突出显示颜色。 可以是任何 RGB 颜色或<see cref="T:Microsoft.Office.Interop.Word.WdColor" />枚举值之一。</param>
+        <param name="TextColor">指定文本的颜色。 可以是任何 RGB 颜色或<see cref="T:Microsoft.Office.Interop.Word.WdColor" />枚举值之一。</param>
+        <param name="MatchCase"><b>True</b> 指定查找文本是区分大小写。 对应于 "查找和替换" 对话框中的 "区分大小写" 复选框。</param>
+        <param name="MatchWholeWord"><b>真</b> 要查找操作只查找整个单词，而非较长单词的一部分的文字。 对应于“查找和替换”对话框中的“全字匹配”复选框。</param>
+        <param name="MatchPrefix"><b>真</b> 才能匹配以搜索字符串开头的单词。 对应于“查找和替换”对话框中的“匹配前缀”复选框。</param>
+        <param name="MatchSuffix"><b>真</b> 才能匹配以搜索字符串结尾的单词。  对应于“查找和替换”对话框中的“匹配后缀”复选框。</param>
+        <param name="MatchPhrase"><b>真正</b> 忽略所有空格和控制字符，词与词之间。</param>
+        <param name="MatchWildcards"><b>为</b> 要查找的文字是特殊搜索操作符。 对应于“查找和替换”对话框中的“使用通配符”复选框。</param>
+        <param name="MatchSoundsLike">类似于查找的文字发音单词 <b>，则返回 true</b> ，则查找操作定位。 对应于 查找和替换对话框中的 听起来象复选框。</param>
+        <param name="MatchAllWordForms"><b>，则返回 true</b> ，则查找操作定位查找文字的所有形式 (例如，"sit"查找"坐"，而"坐")。 对应于 查找和替换对话框中的 查找单词的各种形式复选框。</param>
+        <param name="MatchByte"><b>True</b> 在搜索过程中区分全角和半角字母或字符。</param>
+        <param name="MatchFuzzy"><b>True</b> 在搜索过程中对日语文本使用非特定搜索选项。 读/写。</param>
+        <param name="MatchKashida"><b>如此</b> 如果查找操作用 kashida 阿拉伯语语言的文档中匹配的文本。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
+        <param name="MatchDiacritics"><b>如此</b> 如果查找操作用匹配从右到左语言的文档中的音调符号来匹配文字。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
+        <param name="MatchAlefHamza"><b>如此</b> 如果查找操作用匹配 alef hamza 适用于阿拉伯语语言的文档中匹配的文本。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
+        <param name="MatchControl"><b>如此</b> 如果查找操作用匹配的从右到左语言的文档中的双向控制字符来匹配文字。此参数可能不可用，这取决于您所选择或安装的语言支持 (例如美国英语)。 </param>
+        <param name="IgnoreSpace"><b>真</b> 会忽略单词之间的所有空格。 对应于“查找和替换”对话框中的“忽略空格字符”复选框。</param>
+        <param name="IgnorePunct"><b>True</b> ，则忽略单词之间的所有标点符号。 对应于“查找和替换”对话框中的“忽略标点符号”复选框。</param>
+        <param name="HanjaPhoneticHangul"><b>真</b> 会忽略朝鲜文字和朝鲜文汉字的拼音字符。 有朝鲜语支持时才可用。</param>
         <summary>突出显示找到的所有匹配项并返回一个 <b>boolean 类型的值</b> ，该值代表是否找到匹配项。</summary>
         <returns>Boolean</returns>
-        <remarks>
-          <para>
-            <b>HitHighlight</b>方法主要适用于搜索 Microsoft Office Word 指定为电子邮件编辑器时，Microsoft Office Outlook 中突出显示。 但是，您可以使用此方法 Word 内的文档，如果您想要突出显示找到的文本。 否则，使用<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>在 microsoft office Word 被指定为电子邮件编辑器时, <b>HitHighlight</b>方法主要适用于 Microsoft office Outlook 中的搜索突出显示。  但如果您希望突出显示所找到的文字，则可以对 Word 内的文档使用此方法。  否则, 请使用<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnorePunct">
@@ -809,14 +741,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示查找操作是否应忽略找到的文本中的标点符号。读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>此属性对应于查找和替换对话框中的忽略标点符号字符复选框。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示查找操作是否应忽略找到的文本中的标点符号。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>此属性对应于 "查找和替换" 对话框中的 "忽略标点符号" 复选框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreSpace">
@@ -845,14 +773,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示查找操作是否应忽略找到的文本中的额外空格。读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>此属性对应于查找和替换对话框中的忽略空格复选框。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示查找操作是否应忽略找到的文本中的额外空格。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>此属性对应于 "查找和替换" 对话框中的 "忽略空格" 复选框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageID">
@@ -883,10 +807,8 @@
       <Docs>
         <summary>返回或设置指定对象的语言。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>上面的<b>WdLanguageID</b>常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>上面的一些<b>WdLanguageID</b>常量可能不可用, 具体取决于您选择或安装的语言支持 (例如, 美国英语)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -917,10 +839,8 @@
       <Docs>
         <summary>返回或设置指定对象的东亚语言。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>这是建议的方式，可返回或设置 Microsoft Word 东亚版中创建的文档中的东亚文字的语言。</para>
-          <para />
-        </remarks>
+        <remarks><para>推荐使用本方法，来返回或设置用 Microsoft Word 中文版创建的文档中东亚文字的语言。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDOther">
@@ -980,12 +900,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定如果查找操作匹配具有匹配以 alef hamza 的阿拉伯语文档中的文字。</summary>
+        <summary>确定查找操作是否与阿拉伯语文档中具有匹配的 alef hamza 适用于的文本相匹配。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b> ，如果查找操作匹配 alef hamzas 阿拉伯语文档和<b>False</b>如果不匹配的文本。设置该属性值为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果查找操作在阿拉伯语文档中匹配 alef hamza 适用于匹配的文本, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchAllWordForms">
@@ -1014,13 +932,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否要查找的文本的所有窗体位于查找操作 （例如，如果要查找的文本，"sit"sat"和"达到"以及找到）。</summary>
+        <summary>确定查找操作是否找到要查找的文本的所有形式 (例如, 如果要查找的文本是 "sit", 则还找到 "sat" 和 "坐")。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果要查找的文本的所有窗体位于由查找操作 （例如，如果要查找的文本，"sit"sat"和"达到"以及找到），和<b>False</b>如果没有，则此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />属性<see cref="T:Microsoft.Office.Interop.Word.Find" />对象或<paramref name="FindText" />参数<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法，以指定要搜索的文档中的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果查找操作找到了要查找的文本的所有形式 (例如, 如果要查找的文本是 "sit"、"sat" 和 "坐"), 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>将<see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> <see cref="T:Microsoft.Office.Interop.Word.Find" />对象或<paramref name="FindText" />参数的属性与<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法一起使用, 可指定要在文档中搜索的文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchByte">
@@ -1049,12 +965,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 区分全角和半角字母或字符在搜索过程。</summary>
+        <summary>确定在搜索过程中 Microsoft Word 是否区分全角和半角字母或字符。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 区分全角和半角字母或字符期间搜索和<b>False</b>如果没有，则此属性返回<b>True</b> 。设置该属性值为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 在搜索过程中区分全角和半角字母或字符, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchCase">
@@ -1085,11 +999,9 @@
       <Docs>
         <summary>确定查找操作是否区分大小写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>如果查找操作是区分大小写，和<b>False</b>如果不需要。默认值为<b>False</b>。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />属性<see cref="T:Microsoft.Office.Interop.Word.Find" />对象或使用<paramref name="FindText" />参数<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法，以指定要位于文档中的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果查找操作区分大小写, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 默认值为 <b>False</b>。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> <see cref="T:Microsoft.Office.Interop.Word.Find" />对象的属性或将<paramref name="FindText" />参数与<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法一起使用, 以指定要放置在文档中的文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchControl">
@@ -1118,12 +1030,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定如果查找操作匹配匹配双向控制字符从右到左语言文档中的文字。</summary>
+        <summary>确定查找操作是否与从右向左语言的文档中的双向控制字符相匹配的文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b> ，如果查找操作匹配双向控制字符中从右到左语言文档和<b>False</b>如果不匹配的文本。设置该属性值为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果查找操作在从右向左语言的文档中匹配双向控制字符, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchDiacritics">
@@ -1152,12 +1062,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定如果查找操作匹配具有匹配从右到左语言文档中的音调符号的文字。</summary>
+        <summary>确定是否在从右向左语言的文档中查找操作匹配与音调符号匹配的文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b> ，如果查找操作匹配音调符号中从右到左语言文档和<b>False</b>如果不匹配的文本。设置该属性值为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果查找操作在从右向左语言的文档中匹配与音调符号匹配的文本, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchFuzzy">
@@ -1186,12 +1094,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定如果 Microsoft Word 所使用的非特定搜索选项的日文文字在搜索过程。</summary>
+        <summary>确定在搜索过程中, Microsoft Word 是否对日语文本使用非特定搜索选项。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 过程中使用的非特定搜索选项的日文文本搜索和<b>False</b>如果没有，则此属性返回<b>True</b> 。设置该属性值为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 在搜索过程中对日语文本使用非特定搜索选项, 则此属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchKashida">
@@ -1220,12 +1126,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定如果查找操作匹配文本 kashida 的阿拉伯语文档中。</summary>
+        <summary>确定查找操作是否与包含匹配的 kashida 的阿拉伯语语言的文档中的文本相匹配。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b> ，如果查找操作 kashida 的阿拉伯语文档和<b>False</b>如果不匹配的文本。设置该属性值为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果查找操作在阿拉伯语语言文档中匹配 kashida 匹配的文本, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchPhrase">
@@ -1254,11 +1158,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真正</b> 忽略所有空格和控制字符，词与词之间。读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>真正</b> 忽略所有空格和控制字符，词与词之间。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1288,15 +1189,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真</b> 才能匹配以搜索字符串开头的单词。读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>此属性对应于查找和替换对话框中区分前缀复选框。</para>
-          <para />
-        </remarks>
+        <summary><b>真</b> 才能匹配以搜索字符串开头的单词。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>此属性相当于 "查找和替换" 对话框中的 "区分前缀" 复选框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchSoundsLike">
@@ -1325,13 +1221,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否查找操作返回发音相近的要查找的文本的单词。</summary>
+        <summary>确定查找操作是否返回与要查找的文本发音相近的词语。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果不由查找操作和<b>False</b>返回发音相近的要查找的文本的单词，则此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />属性<see cref="T:Microsoft.Office.Interop.Word.Find" />对象或<paramref name="FindText" />参数<see cref="M:Microsoft.Office.Interop.Word.Find.ExecuteOld(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法，以指定要位于文档中的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果查找操作返回与要查找的文本发音相近的单词, 则此属性返回<b>True</b> ; 否则, 返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>将<see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> <see cref="T:Microsoft.Office.Interop.Word.Find" />对象或<paramref name="FindText" />参数的属性与<see cref="M:Microsoft.Office.Interop.Word.Find.ExecuteOld(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法一起使用, 以指定要放置在文档中的文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchSuffix">
@@ -1360,14 +1254,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果该属性值为 <b>True</b>，则匹配以搜索字符串结尾的单词。可读写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>此属性对应于查找和替换对话框中区分后缀复选框。</para>
-          <para />
-        </remarks>
+        <summary><b>真</b> 才能匹配以搜索字符串结尾的单词。  读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>此属性相当于“查找和替换”对话框中的“区分后缀”复选框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchWholeWord">
@@ -1396,13 +1286,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否查找操作只查找全字匹配，而不是更长词语的一部分的文本。</summary>
+        <summary>确定查找操作是否仅查找整个单词, 而不是查找较长单词的一部分的文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果查找操作只查找全字匹配，而不是更大的词和<b>False</b>如果不需要的一部分的文本，此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />属性<see cref="T:Microsoft.Office.Interop.Word.Find" />对象或<paramref name="FindText" />参数<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法，以指定要位于文档中的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果查找操作仅查找整个单词, 而不是较长单词的一部分, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>将<see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> <see cref="T:Microsoft.Office.Interop.Word.Find" />对象或<paramref name="FindText" />参数的属性与<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法一起使用, 以指定要放置在文档中的文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchWildcards">
@@ -1431,14 +1319,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否要查找的文本包含通配符。</summary>
+        <summary>确定要查找的文本是否包含通配符。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果要查找的文本包含通配符，和<b>False</b>如果没有，则此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>对应于查找和替换对话框 （编辑菜单） 中使用通配符复选框。</para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Find.Text" />属性<see cref="T:Microsoft.Office.Interop.Word.Find" />对象或使用<paramref name="FindText" />参数<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法，以指定要位于文档中的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果要查找的文本包含通配符, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>对应于 "查找和替换" 对话框 ("编辑" 菜单) 中的 "使用通配符" 复选框。</para>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> <see cref="T:Microsoft.Office.Interop.Word.Find" />对象的属性或将<paramref name="FindText" />参数与<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法一起使用, 以指定要放置在文档中的文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoProofing">
@@ -1467,12 +1353,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定 Microsoft Word 查找还是拼写和语法检查程序忽略的文本替换为。</summary>
+        <summary>确定 Microsoft Word 是否查找或替换拼写和语法检查程序忽略的文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 查找或替换的拼写和语法检查程序忽略，文本和<b>False</b>如果没有，则返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 查找或替换拼写和语法检查程序忽略的文本, 则返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ParagraphFormat">
@@ -1501,7 +1385,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />值，该值代表指定的区域、 选定内容、 查找或替换操作或样式的段落设置的对象。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />对象, 该对象代表指定区域、所选内容、查找或替换操作或样式的段落设置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1557,7 +1441,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Replacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Replacement" />对象，其中包含替换操作的条件。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Replacement" />对象, 其中包含替换操作的条件。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1584,8 +1468,7 @@
       <Parameters />
       <Docs>
         <summary>激活所有与日语文本相关的非特定搜索选项。</summary>
-        <remarks>
-          <para>此方法将下列属性设置为<b>True</b>:</para>
+        <remarks><para>此方法将以下属性设置为 <b>True</b>:</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyAY" />
           </para>
@@ -1640,8 +1523,7 @@
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyZJ" />
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -1672,11 +1554,9 @@
       <Docs>
         <summary>返回或设置指定对象的样式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>设置此属性时，请指定样式，一个整数的本地名称<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或一个代表样式的对象。</para>
-          <para>时返回的范围包含多个样式的样式，请返回仅的第一个字符或段落样式。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要设置该属性, 请指定样式的本地名称、一个整数、一个<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或一个代表样式的对象。</para>
+          <para>如果返回包含多个样式的范围的样式，则只返回第一个字符样式或段落样式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1705,13 +1585,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置要查找或替换指定的范围或选定内容中的文本。</summary>
+        <summary>返回或设置要在指定区域或所选内容中查找或替换的文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Text</b>属性返回所选内容或区域的普通、 无格式文本。当您设置此属性时，将替换范围或所选内容的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Text</b> 属性返回选定内容或区域的无格式文本。当设置此属性时，将替换该区域或所选内容的文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -1740,19 +1617,17 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFindWrap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置如果搜索开始于文档的开头的点，达到文档的末尾，会发生什么情况 (或进行相反的转换如果<see cref="P:Microsoft.Office.Interop.Word.Find.Forward" />设置为<b>False</b>) 或如果指定的选定内容或区域中找不到搜索文本。</summary>
+        <summary>返回或设置在搜索从文档开头之外的另一个点开始, 如果到达文档结尾处 (如果<see cref="P:Microsoft.Office.Interop.Word.Find.Forward" />设置为<b>False</b>, 则为反之亦然) 或在指定的所选内容或区域中找不到搜索文本时, 将执行此操作。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />可以是下列常量之一:</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />可以是下列常量之一：</para>
+            <b>wdFindAsk</b>在搜索所选内容或区域后, Microsoft Word 将显示一条消息, 询问是否搜索文档的其余部分。</para>
           <para>
-            <b>wdFindAsk</b>搜索所选内容或范围，Microsoft Word 之后显示一条消息，询问是否搜索文档的其余部分。</para>
+            <b>wdFindContinue</b>到达搜索范围的开始或结尾时, 继续执行查找操作。</para>
           <para>
-            <b>wdFindContinue</b>达到的开头或结尾的搜索范围时，继续执行查找操作。</para>
-          <para>到达的开始或搜索范围的结束时查找操作结束
-            <b>wdFindStop</b> 。</para>
-          <para />
-        </remarks>
+            <b>wdFindStop</b>到达搜索范围的开始或结尾时, 将结束查找操作。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

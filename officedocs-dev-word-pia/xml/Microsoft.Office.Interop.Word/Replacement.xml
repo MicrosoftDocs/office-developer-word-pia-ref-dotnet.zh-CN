@@ -1,13 +1,5 @@
 <Type Name="Replacement" FullName="Microsoft.Office.Interop.Word.Replacement">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4985169de481c1ed3cf3fdc2889fc8652b1a9f74" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666890" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Replacement" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c7eadfe1a27659ab4f508fb009a9a7a299dace9" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144125" /></Metadata><TypeSignature Language="C#" Value="public interface Replacement" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Replacement" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Replacement" />
   <TypeSignature Language="VB.NET" Value="Public Interface Replacement" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>代表查找和替换操作的替换条件。</summary>
-    <remarks>
-      <para>属性和<b>Replacement</b>对象的方法对应于查找和替换对话框中的选项。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Find.Replacement" />属性可返回一个<b>Replacement</b>对象。</para>
-      <para>要查找和替换格式，将设置查找文本和替换文本为空字符串 ("")，并将设置<paramref name="Format" />参数<see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法为<b>True</b>。</para>
-      <para />
-    </remarks>
+    <remarks><para>属性和方法的 <b>替换</b> 对象对应于 查找和替换对话框中的选项。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Find.Replacement" />属性返回<b>替换</b>对象。</para>
+      <para>若要查找和替换格式, 请将 "查找文本" 和 "替换文本" 都设置为空字符串 (" <paramref name="Format" /> "), <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />并将该方法的参数设置为<b>True</b>。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,11 +74,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>删除文本格式和段落格式从选定内容或查找或替换操作中指定的格式。</summary>
-        <remarks>
-          <para>若要确保格式不包含作为条件在查找或替换操作，请在执行此操作之前使用此方法。</para>
-          <para />
-        </remarks>
+        <summary>从所选内容或在查找或替换操作中指定的格式中删除文本和段落格式。</summary>
+        <remarks><para>若要确保在查找或替换操作中不将格式作为条件包括在内, 请在执行操作之前使用此方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -116,9 +104,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -147,12 +135,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.Font" />对象，它代表指定对象的字符格式。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.Font" />对象, 该对象代表指定对象的字符格式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要设置该属性，指定一个返回<b>Font</b>对象的表达式。</para>
-          <para />
-        </remarks>
+        <remarks><para>要设置该属性，需指定一个返回 <b>Font</b> 对象的表达式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Frame">
@@ -178,7 +164,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Frame" />对象，表示的图文框格式指定的样式的或查找和替换操作。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Frame" />对象, 表示指定的样式或查找和替换操作的图文框格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,8 +195,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果突出显示格式应用于替换文本。 可以返回或被设置为 <b>真</b> 、 <b>假</b> 或 <b>wdUndefined</b> 。</summary>
+        <summary><b>如此</b> 如果突出显示格式应用于替换文本。 可以返回或被设置为 <b>真</b> 、 <b>假</b> 或 <b>wdUndefined</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -243,11 +228,8 @@
       <Docs>
         <summary>返回或设置指定对象的语言。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>LanguageID</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量。这些常量可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>LanguageID</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一。 对于所选择或安装的不同语言支持（例如，英语（美国）），这些常量可能不可用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -278,12 +260,9 @@
       <Docs>
         <summary>返回或设置指定对象的东亚语言。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>LanuageIDFarEast</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量。</para>
-          <para>这是建议的方式，可返回或设置 Microsoft Word 东亚版中创建的文档中的东亚文字的语言。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>LanuageIDFarEast</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一。</para>
+          <para>推荐使用本方法，来返回或设置用 Microsoft Word 中文版创建的文档中东亚文字的语言。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoProofing">
@@ -312,8 +291,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果 Microsoft Word 查找或替换拼写和语法检查程序忽略的文本。</summary>
+        <summary><b>如此</b> 如果 Microsoft Word 查找或替换拼写和语法检查程序忽略的文本。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -344,7 +322,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />对象，表示指定的替换操作的段落设置。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />对象, 表示指定的替换操作的段落设置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -405,10 +383,8 @@
       <Docs>
         <summary>返回或设置指定对象的样式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要设置该属性，请指定样式，一个整数的本地名称<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或一个代表样式的对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要设置该属性, 请指定样式的本地名称、一个整数、一个<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或一个代表样式的对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -437,13 +413,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置要查找或替换指定的范围或选定内容中的文本。</summary>
+        <summary>返回或设置要在指定区域或所选内容中查找或替换的文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Text</b>属性返回所选内容或区域的普通、 无格式文本。当您设置此属性时，将替换范围或所选内容的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Text</b> 属性返回选定内容或区域的无格式文本。当设置此属性时，将替换该区域或所选内容的文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

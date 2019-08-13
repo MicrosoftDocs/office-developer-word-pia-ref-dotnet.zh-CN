@@ -1,13 +1,5 @@
 <Type Name="Dialog" FullName="Microsoft.Office.Interop.Word.Dialog">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="48514fbfc024b02f9dcbf4a3b5c4070722ec2532" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665785" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Dialog" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="380f2c7cc87b01108dff60968ffecadad651a7bd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147079" /></Metadata><TypeSignature Language="C#" Value="public interface Dialog" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dialog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dialog" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dialog" />
@@ -26,12 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示一个内置对话框。</summary>
-    <remarks>
-      <para>
-        <b>Dialog</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.Dialogs" />集合。<b>Dialogs</b>集合包含 Microsoft Word 中的所有内置对话框框。无法创建一个新的内置对话框或向<b>Dialogs</b>集合中添加一个。</para>
-      <para>使用<b>Dialogs</b>(<paramref name="index" />)，其中<paramref name="index" />是<see cref="T:Microsoft.Office.Interop.Word.WdWordDialog" />标识对话框中，返回单个<b>Dialog</b>对象的常量。</para>从"wdDialog"，后面紧接菜单和对话框中的名称的前缀形成
-      <para><b>WdWordDialog</b>常量。例如，页面设置对话框的常量是<b>wdDialogFilePageSetup</b>，和新对话框的常量是<b>wdDialogFileNew</b>。</para><para /></remarks>
+    <summary>代表一个内置对话框。</summary>
+    <remarks><para><b>对话框</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Dialogs" />集合的一个成员。 <b>对话框</b>集合中包含 Microsoft Word 中的所有内置对话框。 无法创建新的内置对话框，或添加到 <b>对话框的</b> 集合。</para>
+      <para>使用<b>对话框</b>(<paramref name="index" />), 其中<paramref name="index" />是标识<see cref="T:Microsoft.Office.Interop.Word.WdWordDialog" />对话框的常量, 返回单个<b>dialog</b>对象。</para>
+      <para><b>WdWordDialog</b> 常量由“wdDialog”前缀加上菜单和对话框的名称组成。 例如，“页面设置”对话框的该常量为 <b>wdDialogFilePageSetup</b>，而“新建”对话框的该常量为 <b>wdDialogFileNew</b>。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,10 +76,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个内置的 Microsoft Office Word 对话框中的工具栏控件 id。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回内置的 Microsoft Office Word 对话框的工具栏控件 id。 只读。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,9 +134,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>例如，如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>例如, 如果该对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTab">
@@ -203,29 +192,31 @@
         <Parameter Name="TimeOut" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="TimeOut">可选的<b>对象</b>。 自动关闭对话框前 Word 等待的时间。 每一单位大约为 0.001 秒。 并发系统活动可能会增加有效时间值。 如果省略这一参数，对话框只有在用户关闭它时才关闭。</param>
-        <summary>显示指定的内置 Microsoft Word 对话框中，直到用户将其关闭或已通过指定的时间量。 返回一个<b>整数</b>，指示单击了哪个按钮以关闭对话框。</summary>
+        <param name="TimeOut">可选<b>对象</b>。 自动关闭对话框前 Word 等待的时间。 每一单位大约为 0.001 秒。 并发系统活动可能会增加有效时间值。 如果省略这一参数，对话框只有在用户关闭它时才关闭。</param>
+        <summary>显示指定的内置 Microsoft Word 对话框, 直到用户关闭它或指定的时间量已过。 返回一个<b>Integer</b>类型的值, 该值指示单击哪个按钮以关闭对话框。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <list type="table">
+        <remarks><list type="table">
             <item>
               <description>-2</description>
-              <description>关闭按钮。</description>
+              <description>The Close button.</description>
             </item>
             <item>
               <description>-1</description>
-              <description>确定按钮。</description>
+              <description>The OK button.</description>
             </item>
             <item>
-              <description>0 （零）</description>
-              <description>取消按钮。</description>
+              <description>0（零）</description>
+              <description>The Cancel button.</description>
             </item>
             <item>
-              <description> &gt; 0 （零）</description>
-              <description>命令按钮： 1 是第一个按钮，2 代表第二个按钮，依此类推。</description>
+              <description>&gt; 0 (zero)</description>
+              <description>命令按钮：1 代表第一个按钮，2 代表第二个按钮，依此类推。</description>
             </item>
-          </list>使用
-          <para><see cref="M:Microsoft.Office.Interop.Word.Dialog.Show(System.Object@)" />方法来显示指定的内置 Word 对话框中，然后 （如果用户单击确定按钮） 执行用户在对话框中指定的操作。<b>Display</b>方法，另一方面，显示指定内置 Word 对话框中，但后关闭对话框，用户不执行任何操作。因此，您应在其中选择要使用，如下所示的方法：</para><para>使用<b>显示</b>方法，如果用户要在对话框中执行的操作已完成之前用户关闭对话框-例如，当用户自定义菜单或工具栏。使用自定义对话框 (<b>wdDialogToolsCustomize</b>)。如果您想要忽略用户，请求的操作，如果这些操作通常完成后关闭对话框，用户还可以使用<b>Display</b>方法。</para><para>使用<b>Show</b>方法，如果用户要在对话框中执行的操作通常完成后用户关闭对话框-例如，当用户选择要使用打开对话框 (<b>wdDialogFileOpen</b>) 打开的文件。</para><para /></remarks>
+          </list>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Word.Dialog.Show(System.Object@)" />方法显示指定的内置 Word 对话框, 然后 (如果用户单击 "确定" 按钮) 在对话框中执行用户指定的操作。 另一方面, <b>Display</b>方法显示指定的内置 Word 对话框, 但在用户关闭对话框后不执行任何操作。 因此, 应按如下所示选择要使用的方法:</para>
+          <para>如果用户在对话框中执行的操作在用户关闭对话框之前完成 (例如, 当用户使用 "自定义" 对话框 (<b>wdDialogToolsCustomize</b>) 自定义菜单或工具栏时), 请使用<b>Display</b>方法。 如果要忽略用户请求的操作 (如果用户关闭对话框后这些操作通常完成), 也可以使用<b>Display</b>方法。</para>
+          <para>如果用户在对话框中执行的操作通常在用户关闭对话框之后完成 (例如, 当用户使用 "打开" 对话框 (<b>wdDialogFileOpen</b>) 选择要打开的文件时), 请使用<b>Show</b>方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -303,31 +294,37 @@
         <Parameter Name="TimeOut" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="TimeOut">可选的<b>对象</b>。 自动关闭对话框前 Word 等待的时间。 每一单位大约为 0.001 秒。 并发系统活动可能会增加有效时间值。 如果省略这一参数，对话框只有在用户关闭它时才关闭。</param>
-        <summary>显示和执行启动在指定的内置 Microsoft Word 对话框中的操作。 返回一个<b>整数</b>，指示单击了哪个按钮以关闭对话框。</summary>
+        <param name="TimeOut">可选<b>对象</b>。 自动关闭对话框前 Word 等待的时间。 每一单位大约为 0.001 秒。 并发系统活动可能会增加有效时间值。 如果省略这一参数，对话框只有在用户关闭它时才关闭。</param>
+        <summary>显示并执行在指定的内置 Microsoft Word 对话框中启动的操作。 返回一个<b>Integer</b>类型的值, 该值指示单击哪个按钮以关闭对话框。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <list type="table">
+        <remarks><list type="table">
             <item>
               <description>-2</description>
-              <description>
-                <b>关闭</b>按钮。</description>
+              <description>The <b>Close</b> button.</description>
             </item>
             <item>
               <description>-1</description>
-              <description>
-                <b>确定</b>按钮。</description>
+              <description>The <b>OK</b> button.</description>
             </item>
             <item>
-              <description>0 （零）</description>
-              <description>
-                <b>取消</b>按钮。</description>
+              <description>0（零）</description>
+              <description>The <b>Cancel</b> button.</description>
             </item>
             <item>
-              <description> &gt; 0 （零）</description>
-              <description>命令按钮： 1 是第一个按钮，2 代表第二个按钮，依此类推。</description>
+              <description>&gt; 0 (zero)</description>
+              <description>命令按钮：1 代表第一个按钮，2 代表第二个按钮，依此类推。</description>
             </item>
-          </list>使用<b>显示</b><para>方法显示指定的内置 Word 对话框中，然后 （如果用户单击<b>确定</b>按钮） 执行用户在对话框中指定的操作。<see cref="M:Microsoft.Office.Interop.Word.Dialog.Display(System.Object@)" />方法，另一方面，显示指定内置 Word 对话框中，但后关闭对话框，用户不执行任何操作。因此，您应在其中选择要使用，如下所示的方法：</para><list type="bullet"><item><para>使用<b>显示</b>方法，如果用户要在对话框中执行的操作完成之前用户关闭对话框-例如，当用户自定义菜单或使用自定义对话框 (<b>wdDialogToolsCustomize</b>) 的工具栏。如果您想要忽略用户，请求的操作，如果这些操作通常完成后关闭对话框，用户还可以使用<b>Display</b>方法。</para></item><item><para>使用<b>Show</b>方法，如果用户要在对话框中执行的操作通常完成后用户关闭对话框-例如，当用户选择要使用打开对话框 (<b>wdDialogFileOpen</b>) 打开的文件。</para></item></list><para /></remarks>
+          </list>
+          <para>使用<b>Show</b>方法显示指定的内置 Word 对话框, 然后 (如果用户单击<b>"确定"</b>按钮) 在对话框中执行用户指定的操作。 另一方面<see cref="M:Microsoft.Office.Interop.Word.Dialog.Display(System.Object@)" /> , 方法会显示指定的内置 Word 对话框, 但在用户关闭对话框后不执行任何操作。 因此, 应按如下所示选择要使用的方法:</para>
+          <list type="bullet">
+            <item>
+              <para>如果用户在对话框中执行的操作在用户关闭对话框之前完成 (例如, 当用户使用 "自定义" 对话框 (<b>wdDialogToolsCustomize</b>) 自定义菜单或工具栏时), 请使用<b>Display</b>方法。 如果要忽略用户请求的操作 (如果用户关闭对话框后这些操作通常完成), 也可以使用<b>Display</b>方法。</para>
+            </item>
+            <item>
+              <para>如果用户在对话框中执行的操作通常在用户关闭对话框之后完成 (例如, 当用户使用 "打开" 对话框 (<b>wdDialogFileOpen</b>) 选择要打开的文件时), 请使用<b>Show</b>方法。</para>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">

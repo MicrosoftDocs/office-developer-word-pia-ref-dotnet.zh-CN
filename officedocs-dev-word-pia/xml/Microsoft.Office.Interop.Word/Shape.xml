@@ -1,13 +1,5 @@
 <Type Name="Shape" FullName="Microsoft.Office.Interop.Word.Shape">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2915d39cd9f30924e816a91d0fc0360b7f46543b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666619" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Shape" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="acacfe3317c3167f71680de182a642ad6c015546" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144069" /></Metadata><TypeSignature Language="C#" Value="public interface Shape" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shape" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Shape" />
   <TypeSignature Language="VB.NET" Value="Public Interface Shape" />
@@ -27,19 +19,26 @@
   </Attributes>
   <Docs>
     <summary>表示对象在绘图层中，如自选图形、 任意多边形、 OLE 对象、 ActiveX 控件或图片。</summary>
-    <remarks>
+    <remarks><para>该<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象是<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合的成员, 其中包括文档的主要部分或文档的所有页眉和页脚中的所有形状。</para>
+      <para>形状总是附加到某个锚定范围。 您可以将形状放置在包含锁定标记的页面上的任何位置。</para>
+      <para>有三个代表形状的对象: <see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合, 代表文档中的所有形状;该<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />集合代表文档中的形状的指定子集 (例如, 一个<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象可以代表文档中的第一个形状和四个形状, 也可以代表文档中的所有选定形状);<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象, 表示文档中的单个形状。 如果要同时处理多个形状或选定内容中的形状, 请使用<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />集合。</para>
+      <para>使用<b>Shapes</b>(<paramref name="index" />), 其中<paramref name="index" />是名称或索引号, 返回单个<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象。 </para>
+      <para>每个形状创建时分配一个默认名称。 例如，如果向文档中添加了三个不同的形状，它们可能会被命名为"矩形 2、"文本框 3"和"椭圆 4。 若要为形状指定更有意义的名称, <see cref="P:Microsoft.Office.Interop.Word.Shape.Name" />请设置属性。</para>
+      <para>使用<b>所选内容。 ShapeRange</b>(<paramref name="index" />) <paramref name="index" /> , 其中是名称或索引号, 用于返回一个<see cref="T:Microsoft.Office.Interop.Word.Shape" />代表所选内容中的形状的对象。</para>
+      <para>若要将<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象添加到指定文档的形状集合中, 并返回表示<see cref="T:Microsoft.Office.Interop.Word.Shape" />新创建的形状<see cref="T:Microsoft.Office.Interop.Word.Shapes" />的对象, 请使用以下集合中的以下方法之一<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />:、 <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />、、 <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddLabel(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddLine(System.Single,System.Single,System.Single,System.Single,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />、、、或<see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddTextEffect(Microsoft.Office.Core.MsoPresetTextEffect,System.String,System.String,System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState,System.Single,System.Single,System.Object@)" /></para>
+      <para>使用<b>GroupItems</b>(<paramref name="index" />) (其中<paramref name="index" />是形状名称或组中的索引号) 可返回一个<b>shape</b>对象, 该对象表示组合形状中的单个形状。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Group" /> or <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Regroup" />方法可对一系列形状进行分组, 并返回代表<see cref="T:Microsoft.Office.Interop.Word.Shape" />新形成的组的单个对象。 一组形成之后，处理组相同的方式使用任何其他形状。</para>
+      <para>每<see cref="T:Microsoft.Office.Interop.Word.Shape" />个对象都锚定到一个文本区域。 将某个形状锁定到包含锁定范围的第一段的开头。 该形状总是与其锁定标记在同一页上。</para>
+      <para>您可以通过将<see cref="P:Microsoft.Office.Interop.Word.View.ShowObjectAnchors" />属性设置为<b>True</b>来查看锚点本身。 形状的<see cref="P:Microsoft.Office.Interop.Word.Shape.Top" />和<see cref="P:Microsoft.Office.Interop.Word.Shape.Left" />属性确定其垂直和水平位置。 形状<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" />和<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalPosition" />属性决定了位置是从锚定段落、包含锚定段落的列、边距还是页面的边缘进行度量。</para>
+      <para>如果形状<see cref="P:Microsoft.Office.Interop.Word.Shape.LockAnchor" />的属性设置为<b>True</b>, 则不能将定位标记从其在页面上的位置拖放。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Fill" />属性返回<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />对象, 该对象包含用于设置闭合形状的填充格式的所有属性和方法。 该<see cref="P:Microsoft.Office.Interop.Word.Shape.Shadow" />属性返回用于<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />设置阴影格式的对象。 使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Line" />属性返回<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />对象, 该对象包含用于设置线条和箭头格式的属性和方法。 该<see cref="P:Microsoft.Office.Interop.Word.Shape.TextEffect" />属性返回用于<see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" />设置艺术字格式的对象。 <see cref="P:Microsoft.Office.Interop.Word.Shape.Callout" />属性返回<see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" />对象, 该对象用于设置线形标注的格式。 <see cref="P:Microsoft.Office.Interop.Word.Shape.WrapFormat" />属性返回<see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />对象, 该对象用于定义文字环绕形状的方式。 该<see cref="P:Microsoft.Office.Interop.Word.Shape.ThreeD" />属性返回用于<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />创建三维形状的对象。 您可以使用<see cref="M:Microsoft.Office.Interop.Word.Shape.PickUp" />和<see cref="M:Microsoft.Office.Interop.Word.Shape.Apply" />方法将格式从一个形状转移到另一个形状。</para>
+      <para>使用<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象<see cref="M:Microsoft.Office.Interop.Word.Shape.SetShapesDefaultProperties" />的方法设置文档的默认形状的格式。 新形状将继承默认形状的许多属性。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Type" />属性可指定形状的类型: 任意多边形、自选图形、OLE 对象、标注或链接图片, 例如。 使用<see cref="P:Microsoft.Office.Interop.Word.Shape.AutoShapeType" />属性可指定自选图形的类型: 椭圆形、矩形或球标, 例如。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Width" />和<see cref="P:Microsoft.Office.Interop.Word.Shape.Height" />属性可指定形状的大小。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" />属性返回<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />对象, 该对象包含用于将文本附加到形状以及在文本框架之间链接文本的所有属性和方法。</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.Shape" />对象是成员<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合，其中包括所有形状，在文档正文部分或所有页眉和页脚的文档。</para>
-      <para>A 形状始终被附加到锁定的区域。形状置于包含定位标记的页面上的任意位置。</para>
-      <para>有三个对象，代表形状：<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合，代表文档，则上的所有形状<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />集合，都代表指定文档的形状的子集 (例如，<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象对文档，或它的形状一和第四个可能表示文档的所有选定的形状）;<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表文档的单个形状。如果您想要使用多个形状，同时或所选内容中的形状，使用<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />集合。</para>
-      <para>使用<b>Shapes</b>(<paramref name="index" />)，其中<paramref name="index" />是名称或索引号，若要返回单个<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象。</para>
-      <para>创建时，每个形状被分配默认名称。例如，如果向文档添加三个不同的形状，它们可能被命名为"矩形 2"，"TextBox 3，"和"Oval 4"。若要赋予形状一个更有意义的名称，将设置<see cref="P:Microsoft.Office.Interop.Word.Shape.Name" />属性。</para>
-      <para>使用<b>Selection.ShapeRange</b>(<paramref name="index" />)，其中<paramref name="index" />是名称或索引号，可返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，表示选定内容中的形状。</para>若要添加的
-      <para><see cref="T:Microsoft.Office.Interop.Word.Shape" />对象传递给指定文档的形状集合，并返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表新建的形状，使用以下方法之一<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合： <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />， <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />， <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddLabel(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" /><see cref="M:Microsoft.Office.Interop.Word.Shapes.AddLine(System.Single,System.Single,System.Single,System.Single,System.Object@)" />， <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />， <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />， <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />， <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" />， <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />， <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddTextEffect(Microsoft.Office.Core.MsoPresetTextEffect,System.String,System.String,System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState,System.Single,System.Single,System.Object@)" />，或<see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />。</para><para>使用<b>GroupItems</b>(<paramref name="index" />)，其中<paramref name="index" />是形状名称或组，返回代表组合形状中的单个形状的<b>Shape</b>对象中的索引号。</para><para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Group" />或<see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Regroup" />方法以组形状范围并返回一个<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，表示新组成的组。形成一组后，您可以使用组中使用任何其他形状的方式相同。</para><para>每个<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象定位到文本范围。形状定位到包含锁定范围的第一段的开头。形状在其锁定标记位于同一页上将始终。</para>您可以通过设置查看定位本身的
-      <para><see cref="P:Microsoft.Office.Interop.Word.View.ShowObjectAnchors" />属性设置为<b>True</b>。形状的<see cref="P:Microsoft.Office.Interop.Word.Shape.Top" />和<see cref="P:Microsoft.Office.Interop.Word.Shape.Left" />属性确定其垂直和水平位置。形状的<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" />和<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalPosition" />属性确定是否位置距离定位段落，包含锁定段落、 页边距或页的边缘的列。</para><para>如果<see cref="P:Microsoft.Office.Interop.Word.Shape.LockAnchor" />形状属性设置为<b>True</b>，不能在上从其所在位置拖动定位标记。</para>使用
-      <para><see cref="P:Microsoft.Office.Interop.Word.Shape.Fill" />属性返回<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />对象，它包含所有属性和方法的闭合形状的填充格式。<see cref="P:Microsoft.Office.Interop.Word.Shape.Shadow" />属性返回<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />对象，用于设置阴影格式。使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Line" />属性返回<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />对象，它包含的线条和箭头格式属性和方法。<see cref="P:Microsoft.Office.Interop.Word.Shape.TextEffect" />属性返回<see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" />对象，它使用艺术字格式。<see cref="P:Microsoft.Office.Interop.Word.Shape.Callout" />属性返回<see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" />对象，用于设置线形标注的格式。<see cref="P:Microsoft.Office.Interop.Word.Shape.WrapFormat" />属性返回<see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />对象，用于定义文字环绕形状的方式。<see cref="P:Microsoft.Office.Interop.Word.Shape.ThreeD" />属性返回<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象，用于创建三维形状。您可以使用<see cref="M:Microsoft.Office.Interop.Word.Shape.PickUp" />和<see cref="M:Microsoft.Office.Interop.Word.Shape.Apply" />方法转接到另一个形状的格式。</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Word.Shape.SetShapesDefaultProperties" />方法<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象以设置文档的默认形状的格式。新形状将继承默认形状从的许多属性。</para>使用
-      <para><see cref="P:Microsoft.Office.Interop.Word.Shape.Type" />属性指定的形状类型： 任意多边形、 自选图形、 OLE 对象、 标注或链接的图片，例如。使用<see cref="P:Microsoft.Office.Interop.Word.Shape.AutoShapeType" />属性指定的自选图形类型： 椭圆、 矩形或气球，例如。</para><para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Width" />和<see cref="P:Microsoft.Office.Interop.Word.Shape.Height" />属性可指定形状的大小。</para><para><see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" />属性返回<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />对象，它包含所有属性和方法用于将文本附加到形状和链接文本框之间文本框架的文本。</para><para><see cref="T:Microsoft.Office.Interop.Word.Shape" />对象定位到文本范围，但可以自由浮动和可放置在页面上的任何位置。<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象视为字符和定位为字符的文本行中。您可以使用<see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" />方法和<see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />方法将形状转换为另一种类型。可以将图片、 OLE 对象和 ActiveX 控件转换为内嵌形状。</para><para /></remarks>
+        <see cref="T:Microsoft.Office.Interop.Word.Shape" />对象定位到文本区域, 但它们是自由浮动的, 可以放置在页面上的任何位置。 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象被视为字符, 并作为字符置于文本行中。 您可以使用<see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" />方法和<see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />方法将形状从一种类型转换为另一种类型。 您可以将图片、 OLE 对象和 ActiveX 控件转换为嵌入式图形。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -93,7 +92,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Adjustments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Adjustments" />对象，其中包含在指定的所有调整的调整值<see cref="T:Microsoft.Office.Interop.Word.Shape" />代表自选图形或艺术字对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Adjustments" />对象, 该对象包含指定<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象中代表自选图形或艺术字的所有调整的调整值。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,8 +151,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示指定形状的锁定范围。</summary>
-        <value>所有<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象定位到文本范围，但可以位于包含定位标记的页面上的任意位置。 如果在创建形状时，您指定了锁定范围，锚点位于包含锁定范围的第一个段落的开头。 如果不指定锁定区域，自动选择锁定区域和页的顶端和左边缘相对放置形状。形状将始终保留在其锁定标记位于同一页上。 如果<see cref="P:Microsoft.Office.Interop.Word.Shape.LockAnchor" />形状属性设置为<b>True</b>，不能在上从其所在位置拖动定位标记。</value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示指定形状的锁定范围。</summary>
+        <value>所有<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象都定位到某一文本区域, 但可将其放置在包含锁定标记的页面上的任何位置。 如果在创建形状时，您指定了锁定范围，锚点位于包含锁定范围的第一个段落的开头。 如果不指定锁定区域, 则自动选定锁定区域, 形状相对于页面的上边缘和左边缘定位。形状将始终保持与其锁定标记位于同一页上。 如果形状<see cref="P:Microsoft.Office.Interop.Word.Shape.LockAnchor" />的属性设置为<b>True</b>, 则不能将定位标记从其在页面上的位置拖放。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,7 +210,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,11 +236,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>使用已复制的指定的形状格式应用于<see cref="M:Microsoft.Office.Interop.Word.Shape.PickUp" />方法。</summary>
-        <remarks>
-          <para>如果格式<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象没有先前已使用复制<see cref="M:Microsoft.Office.Core.Shape.PickUp" />方法中，使用<see cref="M:Microsoft.Office.Interop.Word.Shape.Apply" />方法将生成一个错误。</para>
-          <para />
-        </remarks>
+        <summary>适用于使用<see cref="M:Microsoft.Office.Interop.Word.Shape.PickUp" />方法复制的指定形状格式。</summary>
+        <remarks><para>如果以前未使用<see cref="T:Microsoft.Office.Interop.Word.Shape" /> <see cref="M:Microsoft.Office.Core.Shape.PickUp" />方法复制对象的格式, 则使用方法将<see cref="M:Microsoft.Office.Interop.Word.Shape.Apply" />生成错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoShapeType">
@@ -270,12 +267,10 @@
         <ReturnType>Microsoft.Office.Core.MsoAutoShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的形状类型<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表自选之外的行或任意多边形。</summary>
+        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象的形状类型, 该类型必须代表除直线或任意多边形绘图之外的自选图形。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>更改形状的类型时，该形状保留其大小、 颜色和其他属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>改变一个形状的类型时，该形状保留其大小、颜色和其他属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundStyle">
@@ -306,10 +301,8 @@
       <Docs>
         <summary>获取或设置指定形状的背景样式。</summary>
         <value>指定形状的背景样式。</value>
-        <remarks>
-          <para>读/写<see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" />。</para>
-          <para />
-        </remarks>
+        <remarks><para>读/写<see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" />。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Callout">
@@ -335,12 +328,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CalloutFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" />对象，其中包含格式属性指定的形状的标注。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" />对象, 该对象包含指定形状的标注格式属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性适用于<see cref="T:Microsoft.Office.Interop.Word.Shape" />代表标注的对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性适用于<see cref="T:Microsoft.Office.Interop.Word.Shape" />表示标注的对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanvasCropBottom">
@@ -366,13 +357,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>必选。</b> 裁剪后所需保留的绘图画布高度的百分比数值。 输入 0.9 作为增量从底部裁剪绘图画布高度的百分之十。 输入 0.1 从底部裁剪绘图画布高度的百分之九十。</param>
+        <param name="Increment">必需<b>Single</b>。 裁剪后所需保留的绘图画布高度的百分比数值。 输入 0.9 作为增量从底部裁剪绘图画布高度的百分之十。 输入 0.1 从底部裁剪绘图画布高度的百分之九十。</param>
         <summary>从绘图画布的底部裁剪一定百分比的绘图画布高度。</summary>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropTop(System.Single)" />方法可从顶部裁剪。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropTop(System.Single)" />方法从顶部进行裁剪。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanvasCropLeft">
@@ -398,13 +386,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>必选。</b> 裁剪绘图画布后所需保留的绘图画布宽度的百分比数值。 输入 0.9 作为增量从左侧裁剪绘图画布宽度的百分之十。 输入 0.1 从左侧裁剪绘图画布宽度的百分之九十。</param>
+        <param name="Increment">必需<b>Single</b>。 裁剪绘图画布后所需保留的绘图画布宽度的百分比数值。 输入 0.9 作为增量从左侧裁剪绘图画布宽度的百分之十。 输入 0.1 从左侧裁剪绘图画布宽度的百分之九十。</param>
         <summary>从绘图画布左侧裁剪一定百分比的绘图画布宽度。</summary>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropRight(System.Single)" />方法可从绘图画布右侧裁剪。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropRight(System.Single)" />方法从绘图画布的右侧裁剪。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanvasCropRight">
@@ -430,13 +415,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>必选。</b> 裁剪绘图画布后所需保留的绘图画布宽度的百分比数值。 输入 0.9 作为增量从右侧裁剪绘图画布宽度的百分之十。 输入 0.1 从右侧裁剪绘图画布宽度的百分之九十。</param>
+        <param name="Increment">必需<b>Single</b>。 裁剪绘图画布后所需保留的绘图画布宽度的百分比数值。 输入 0.9 作为增量从右侧裁剪绘图画布宽度的百分之十。 输入 0.1 从右侧裁剪绘图画布宽度的百分之九十。</param>
         <summary>从绘图画布右侧裁剪一定百分比的绘图画布宽度。</summary>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropLeft(System.Single)" />方法可从绘图画布左侧裁剪。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropLeft(System.Single)" />方法从绘图画布的左侧进行裁剪。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanvasCropTop">
@@ -462,13 +444,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>必选。</b> 裁剪绘图画布后所需保留的绘图画布高度的百分比数值。 输入 0.9 作为增量从顶部裁剪绘图画布高度的百分之十。 输入 0.1 从顶部裁剪绘图画布高度的百分之九十。</param>
+        <param name="Increment">必需<b>Single</b>。 裁剪绘图画布后所需保留的绘图画布高度的百分比数值。 输入 0.9 作为增量从顶部裁剪绘图画布高度的百分之十。 输入 0.1 从顶部裁剪绘图画布高度的百分之九十。</param>
         <summary>从绘图画布顶部裁剪一定百分比的绘图画布高度。</summary>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropBottom(System.Single)" />方法可从底部裁剪。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.Shape.CanvasCropBottom(System.Single)" />方法从底部进行裁剪。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanvasItems">
@@ -494,7 +473,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CanvasShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.CanvasShapes" />代表的绘图画布上形状集合的对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.CanvasShapes" /> object 类型的对象, 该对象代表绘图画布上的形状的集合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -522,10 +501,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Chart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Chart" />对象，表示文档中的形状集合内的图表。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Chart" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Chart" />对象, 表示文档中的形状集合内的图表。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Chart" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -552,12 +529,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定形状是否是子形状。</summary>
+        <summary>确定形状是否为子形状。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果该形状是子形状，并<b>False</b>如果没有，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果形状是子形状, 则此属性返回<b>True</b> , 如果不是, 则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConnectionSiteCount">
@@ -586,7 +561,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -617,7 +592,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -648,7 +623,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ConnectorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -679,9 +654,10 @@
       <Docs>
         <summary>将指定的图形转换为图文框。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此属性返回<see cref="T:Microsoft.Office.Interop.Word.Frame" />对象，表示新框架。</para>不支持附加的文字的
-          <para>形状不能转换为图文框。对于图片、 OLE 对象和 ActiveX 控件，使用<see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" />方法。</para><para>Microsoft Word 97 和更高版本中, 框架已替换为文本框。</para><para /></remarks>
+        <remarks><para>此属性返回一个<see cref="T:Microsoft.Office.Interop.Word.Frame" />对象, 该对象代表新的图文框。</para>
+          <para>不支持附加文本的图形不能转换为图文框。 对于图片、OLE 对象和 ActiveX 控件, 请使用<see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" />方法。</para>
+          <para>在 Microsoft Word 97 及更高版本中, 框架已替换为文本框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToInlineShape">
@@ -707,11 +683,9 @@
       <Docs>
         <summary>将文档绘图层的指定图形转换为文字层的嵌入式图形。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>您可以将转换表示图片、 OLE 对象或 ActiveX 控件的形状。此方法返回<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象，它代表图片或 OLE 对象。</para>
-          <para>图形支持附加的文字不能转换为内嵌形状。对于这些形状，使用<see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToFrame" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>只能转换代表图片、OLE 对象或 ActiveX 控件的图形。 此方法返回一个<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象, 该对象代表图片或 OLE 对象。</para>
+          <para>支持附加的文字的图形不能转换为嵌入式图形。 对于这些形状, 请使用<see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToFrame" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -739,9 +713,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -765,7 +739,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -795,7 +769,7 @@
         <ReturnType>Microsoft.Office.Core.IMsoDiagram</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Diagram" />图节点所属对象。</summary>
+        <summary>返回图表<see cref="T:Microsoft.Office.Interop.Word.Diagram" />节点所属的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -826,7 +800,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />对象，它代表图表中的节点。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />对象, 表示图表中的节点。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -852,7 +826,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>创建指定的副本<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，请将形状链接到的新范围添加<see cref="T:Microsoft.Office.Interop.Word.Shapes" />从原图形，标准的偏移的集合，然后返回新的<b>Shape</b>对象。</summary>
+        <summary>创建指定<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象的一个副本, 将新的形状范围添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合中, 从原始形状的标准偏移量开始, 然后返回新的<b>Shape</b>对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -911,7 +885,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />对象，其中包含填充格式指定形状的属性。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />对象, 该对象包含指定形状的填充格式属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -939,7 +913,7 @@
         <Parameter Name="FlipCmd" Type="Microsoft.Office.Core.MsoFlipCmd" />
       </Parameters>
       <Docs>
-        <param name="FlipCmd">所需<see cref="T:Microsoft.Office.Core.MsoFlipCmd" />。 翻转方向。</param>
+        <param name="FlipCmd">必需<see cref="T:Microsoft.Office.Core.MsoFlipCmd" />。 翻转方向。</param>
         <summary>水平或垂直翻转一个图形。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -967,10 +941,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.GlowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />对象，表示的发光格式形状。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />对象, 该对象代表形状的发光格式。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.GlowFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -997,13 +969,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.GroupShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.GroupShapes" />对象，它代表指定组中的单个形状。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.GroupShapes" />对象, 表示指定组中的单个形状。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" />要从组中返回的单个形状的<b>GroupShapes</b>对象的方法。</para>
-          <para>此属性适用于<see cref="T:Microsoft.Office.Interop.Word.Shape" />或<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象，代表组合的形状。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用 GroupShapes <see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" />对象的方法<b></b>可返回组中的单个形状。</para>
+          <para>此属性将应用<see cref="T:Microsoft.Office.Interop.Word.Shape" />于<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />或代表已分组形状的对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasChart">
@@ -1029,15 +999,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果指定的形状包含的图表。只读的。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>此属性始终返回 false OLE 图表。对于 OLE 图表，用于 InlineShape.OLEFormat.ProgID 并检查以下可能的值:"Excel.Chart.8"、"MSGraph.Chart.8"、"Excel.Sheet.8"、"Excel.Chart.5"、"MSGraph.Chart.5"或"Excel.Sheet.5"。</para>
-          <para />
-        </remarks>
+        <summary><b>如此</b> 如果指定的形状包含的图表。 只读的。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>对于 OLE 图表，此属性总是返回 False。 此时请使用 InlineShape.OLEFormat.ProgID，并且检查是否存在下列可能的值：“Excel.Chart.8”、“MSGraph.Chart.8”、“Excel.Sheet.8”、“Excel.Chart.5”、“MSGraph.Chart.5”或“Excel.Sheet.5”。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDiagram">
@@ -1066,12 +1031,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定形状是否图表。</summary>
+        <summary>确定形状是否为图表。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果形状为图表，则此属性返回<b>，则为 MsoTrue</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果形状是图表, 则此属性返回<b>MsoTrue</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDiagramNode">
@@ -1100,12 +1063,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定形状是否图表节点。</summary>
+        <summary>确定形状是否为图表节点。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果形状为图表节点，则此属性返回<b>，则为 MsoTrue</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果形状是图表节点, 则此属性返回<b>MsoTrue</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasSmartArt">
@@ -1131,12 +1092,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果形状上存在 SmartArt 图，则获取<b>True</b> 。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.MsoTriState" />对象。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>如果形状上存在 SmartArt 关系图, 则获取<b>True</b> 。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /> 对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -1165,7 +1124,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定形状的高度，以磅为单位。</summary>
+        <summary>返回或设置指定形状的高度 (以磅为单位)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1196,14 +1155,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<b>一个</b>值，该值代表形状的相对高度的百分比。 为可读/写属性。</summary>
-        <value>
-          <b>Single</b>
-        </value>
-        <remarks>
-          <para>使用此属性与<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalSize" />属性。当设置为<b>wdShapeSizeRelativeNone</b> (-999999) (请参阅<see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" />枚举)，因为该形状不使用百分比大小应忽略此属性。仅由高度<see cref="P:Microsoft.Office.Interop.Word.Shape.Height" />属性。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<b>Single</b>类型的值, 该值代表形状的相对高度的百分比。 读/写。</summary>
+        <value><b>Single</b></value>
+        <remarks><para>将此属性与<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalSize" />属性一起使用。 当设置为<b>wdShapeSizeRelativeNone</b> (-999999) (请参阅<see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" />枚举) 时, 应忽略此属性, 因为形状不使用百分比调整大小。 高度是由<see cref="P:Microsoft.Office.Interop.Word.Shape.Height" />属性单独确定的。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalFlip">
@@ -1257,12 +1212,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Hyperlink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Hyperlink" />对象，表示与指定形状关联的超链接。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Hyperlink" />对象, 表示与指定的形状相关联的超链接。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果没有任何与指定形状相关联的超链接，则将出错。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果没有与指定形状相关联的超链接, 则会发生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -1316,9 +1269,8 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>必选。</b> 以点为单位指定形状水平移动的距离。 正值表示将形状向右移动，负值表示将形状向左移动。</param>
-        <summary>以指定点数水平移动指定形状。</summary>
+        <param name="Increment">必需<b>Single</b>。 指定形状水平移动的距离，以磅为单位。 为正值时将形状右移；为负值时将形状左移。</param>
+        <summary>将指定形状水平移动指定的磅数。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1345,14 +1297,11 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>必选。</b> 以度为单位指定形状的水平旋转量。 正值表示使形状按顺时针方向旋转；负值表示使形状按逆时针方向旋转。</param>
-        <summary>按指定度数值，改变指定形状绕 z 轴的旋转角度。</summary>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Rotation" />属性设置形状的绝对旋转角度。</para>
-          <para>要将三维形状绕 x 轴或 y 轴，请分别使用<see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationX(System.Single)" />方法或<see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationY(System.Single)" />方法。</para>
-          <para />
-        </remarks>
+        <param name="Increment">必需<b>Single</b>。 指定形状的水平旋转量，以度为单位。 为正值时顺时针旋转形状，为负值时逆时针旋转形状。</param>
+        <summary>使指定的形状绕 Z 轴旋转指定的角度。</summary>
+        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Rotation" />属性可设置形状的绝对旋转量。</para>
+          <para>若要将三维形状绕 x 轴或 y 轴旋转, 请使用<see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationX(System.Single)" />方法或<see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationY(System.Single)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementTop">
@@ -1378,9 +1327,8 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>必选。</b> 指定对象的垂直移动距离，以磅为单位。 为正值时将形状下移；为负值时将形状上移。</param>
-        <summary>以指定点数垂直移动指定形状。</summary>
+        <param name="Increment">必需<b>Single</b>。 指定对象的垂直移动距离，以磅为单位。 为正值时将形状下移；为负值时将形状上移。</param>
+        <summary>以指定磅数垂直移动指定形状。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1410,16 +1358,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>，该值代表表格中的形状显示在表格内部或外部表。</summary>
+        <summary>返回一个<b>Integer</b>类型的值, 该值代表表格中的形状是显示在表格内还是表格外部。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>表示指定的图片，将显示在表，并为<b>False</b>以指示指定的图片，将显示的表之外。</para>
-          <para>
-            <b>LayoutInCell</b>属性设置将会生效，仅当<see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" />属性<see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />对象设置为除<b>wdWrapTypeInline</b>或<b>wdWrapTypeNone</b>之外。</para>
-          <para>
-            <b>LayoutInCell</b>属性对应于高级版式对话框中的图片格式的表格单元格选项中的布局。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性返回<b>True</b>以指示指定的图片显示在表格中, 设置为<b>False</b>可指示指定的图片显示在表格外部。</para>
+          <para>仅当<b></b> <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />对象的属性设置为<b>wdWrapTypeInline</b>或<b>wdWrapTypeNone</b>以外的其他内容时, 设置 LayoutInCell 属性才会生效。</para>
+          <para><b>LayoutInCell</b> 属性对应于格式图片的 高级版式对话框中的 表格单元格中的版式选项。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -1450,11 +1394,9 @@
       <Docs>
         <summary>返回或设置一个 <b>单一</b> 的水平位置，以磅为单位指定的形状或形状范围的表示。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回任何有效<see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" />常量。</para>
-          <para>形状的位置被指从形状的边界框的左上角到形状的锁定标记。<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" />属性控制是否锁定标记位于旁字符、 列、 页边距或页的边缘。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性返回任何有效<see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" />常量。</para>
+          <para>形状的位置被指从形状边界框的左上角到图形的锁定标记。 该<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" />属性控制锚点是否位于页面的字符、列、边距或边缘的旁边。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LeftRelative">
@@ -1483,14 +1425,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<b>一个</b>值，该值代表形状的左侧的相对位置。 为可读/写属性。</summary>
-        <value>
-          <b>Single</b>
-        </value>
-        <remarks>
-          <para>使用此属性与<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" />属性。当设置为<b>wdShapePositionRelativeNone</b> (-999999) (请参阅<see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" />枚举)，因为该形状不使用百分比定位应忽略此属性。仅由的水平位置<see cref="P:Microsoft.Office.Interop.Word.Shape.Left" />属性。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<b>Single</b>类型的值, 该值代表形状左侧的相对位置。 读/写。</summary>
+        <value><b>Single</b></value>
+        <remarks><para>将此属性与<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" />属性一起使用。 当设置为<b>wdShapePositionRelativeNone</b> (-999999) (请参阅<see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" />枚举) 时, 应忽略此属性, 因为形状不使用百分比定位。 水平位置是由<see cref="P:Microsoft.Office.Interop.Word.Shape.Left" />属性单独确定的。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -1516,12 +1454,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.LineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />对象，其中包含线条格式指定形状的属性。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />对象, 该对象包含指定形状的线条格式属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于线条， <b>LineFormat</b>对象代表线条本身;对于带有边框形状， <b>LineFormat</b>对象代表边框。</para>
-          <para />
-        </remarks>
+        <remarks><para>对于线条， <b>LineFormat</b> 对象代表线条本身;具有边框的形状， <b>LineFormat</b> 对象表示的边框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkFormat">
@@ -1547,7 +1483,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.LinkFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.LinkFormat" />对象，表示在指定形状链接到一个文件中的链接选项。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> object 类型的对象, 该对象代表链接到文件的指定形状的链接选项。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1578,13 +1514,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定指定<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象的锚点已锁定到锁定的区域。</summary>
+        <summary>确定指定<see cref="T:Microsoft.Office.Interop.Word.Shape" />的对象的定位标记是否锁定到锁定区域。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果此属性返回 true 指定<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象的锚点已锁定到锁定的区域。当形状具有一个锁定的标记时，不能将形状的定位移动拖动 （如移动形状都不会移动定位标记）。</para>
-          <para>A <b>Shape</b>对象已锁定的文本范围，但是您可以在页面上任何位置定位它。形状定位到包含锁定范围的第一段的开头。形状在其锁定标记位于同一页上将始终。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象的定位标记被锁定到锁定区域, 则该属性返回 true。 如果形状具有锁定的定位标记, 则不能通过拖动来移动形状的锚点 (当形状移动时, 锁定标记不移动)。</para>
+          <para>虽然 <b>Shape</b> 对象已锁定到某一文字范围，但是您可以将该对象放在页面上的任何位置。 形状锁定到包含锁定范围的第一段的开始。 形状总是与其锁定标记位于同一页。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockAspectRatio">
@@ -1613,12 +1547,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否您可以更改的高度和宽度彼此的形状在调整，或如果其保留其原始比例。</summary>
+        <summary>确定在调整大小或保持其原始比例时, 是否可以独立地更改形状的高度和宽度。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的形状保留其原始比例调整大小时，和<b>MsoFalse</b>如果时调整其大小，您可以更改的高度和彼此的形状的宽度，此属性返回<b>，则为 MsoTrue</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定的形状在调整尺寸时保持其原始比例, 则此属性返回<b>MsoTrue</b> ; 如果您可以在调整其尺寸时, 单独更改形状的高度和宽度, 则返回<b>MsoFalse</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1675,7 +1607,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShapeNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" />集合，代表指定形状的几何描述。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" />集合, 该集合代表指定形状的几何描述。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1703,7 +1635,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.OLEFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.OLEFormat" />指定的形状代表 OLE 特性 （而不是链接） 的对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.OLEFormat" />对象, 表示指定形状的 OLE 特征 (而不是链接)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1759,7 +1691,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，它代表子形状的通用父形状。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shape" /> object 类型的对象, 该对象代表子形状的通用父形状。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1786,10 +1718,8 @@
       <Parameters />
       <Docs>
         <summary>复制指定形状的格式。</summary>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.Shape.Apply" />方法，以应用于另一个形状复制格式。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.Shape.Apply" />方法可将复制的格式应用于另一个形状。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureFormat">
@@ -1815,12 +1745,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.PictureFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.PictureFormat" />对象，其中包含图片格式指定对象的属性。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.PictureFormat" />对象, 其中包含指定对象的图片格式属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性适用于 shape 对象代表图片或 OLE 对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性适用于代表图片或 OLE 对象的 shape 对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reflection">
@@ -1846,10 +1774,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ReflectionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />对象，表示的反射格式形状。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" /> object 类型的对象, 该对象代表形状的反射格式。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1879,7 +1805,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定到形状的内容的水平位置所相对的对象。</summary>
+        <summary>指定形状的水平位置的相对位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1910,14 +1836,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeHorizontalSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" />常量值，该值代表形状范围所相对的对象。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" />
-        </value>
-        <remarks>
-          <para>使用此属性与<see cref="P:Microsoft.Office.Interop.Word.Shape.WidthRelative" />属性。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" />常量, 该常量代表形状区域相对于的对象。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" /></value>
+        <remarks><para>将此属性与<see cref="P:Microsoft.Office.Interop.Word.Shape.WidthRelative" />属性一起使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativeVerticalPosition">
@@ -1946,7 +1868,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeVerticalPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定到形状的内容的垂直位置所相对的对象。</summary>
+        <summary>指定形状的垂直位置的相对位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1977,14 +1899,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeVerticalSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" />常量值，该值代表形状的相对垂直大小。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" />
-        </value>
-        <remarks>
-          <para>使用此属性与<see cref="P:Microsoft.Office.Interop.Word.Shape.HeightRelative" />属性。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" />常量, 该常量代表形状的相对垂直大小。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" /></value>
+        <remarks><para>将此属性与<see cref="P:Microsoft.Office.Interop.Word.Shape.HeightRelative" />属性一起使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RerouteConnections">
@@ -2041,13 +1959,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定形状绕 Z 轴旋转的角度。</summary>
+        <summary>返回或设置指定的形状绕 z 轴旋转的度数。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>正值表示顺时针旋转; 负值表示逆时针旋转。</para>
-          <para>要设置三维形状绕 x 轴或 y 轴的旋转，请使用<see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationX" />属性或<see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationY" />属性<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>正值表示顺时针旋转;负值表示逆时针旋转。</para>
+          <para>若要设置三维形状绕 x 轴或 y 轴的旋转角度, 请使用该<see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationX" /> <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationY" /> <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象的属性或属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RTF">
@@ -2105,15 +2021,12 @@
         <Parameter Name="Scale" Type="Microsoft.Office.Core.MsoScaleFrom" />
       </Parameters>
       <Docs>
-        <param name="Factor">
-          <b>必选。</b> 指定形状调整后的高度与当前或原始高度的比例。 例如，要将一个矩形放大百分之五十，请将此参数指定为 1.5。</param>
-        <param name="RelativeToOriginalSize">所需<see cref="T:Microsoft.Office.Core.MsoTriState" />。 <b>为</b> 扩展相对于原始大小的形状。 <b>False</b> ，则相对于当前大小缩放形状。 仅当指定的形状是图片或 OLE 对象时，可以将此参数指定 <b>为 True</b> 。</param>
+        <param name="Factor">必需<b>Single</b>。 指定形状调整后的高度与当前或原始高度的比例。 例如，要将一个矩形放大百分之五十，请将此参数指定为 1.5。</param>
+        <param name="RelativeToOriginalSize">必需<see cref="T:Microsoft.Office.Core.MsoTriState" />。 <b>为</b> 扩展相对于原始大小的形状。 <b>False</b> ，则相对于当前大小缩放形状。 仅当指定的形状是图片或 OLE 对象时，可以将此参数指定 <b>为 True</b> 。</param>
         <param name="Scale">可选<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />。 在缩放形状时，形状中位置不变的部分。</param>
-        <summary>按指定因子调整形状的高度。</summary>
-        <remarks>
-          <para>对于图片和 OLE 对象，您可以指示您是否要相对于原始尺寸还是当前尺寸缩放形状。图片和 OLE 对象以外的形状是总是缩放相对于其当前高度。</para>
-          <para />
-        </remarks>
+        <summary>按指定因子缩放形状的高度。</summary>
+        <remarks><para>对于图片和 OLE 对象，您可以说明是相对于原始大小还是相对于当前大小缩放形状。对于图片和 OLE 对象以外的形状总是相对于当前高度缩放。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleWidth">
@@ -2140,15 +2053,12 @@
         <Parameter Name="Scale" Type="Microsoft.Office.Core.MsoScaleFrom" />
       </Parameters>
       <Docs>
-        <param name="Factor">
-          <b>必选。</b> 指定形状调整后的宽度与当前或原始宽度的比例。 例如，要将一个矩形放大百分之五十，请将此参数指定为 1.5。</param>
-        <param name="RelativeToOriginalSize">所需<see cref="T:Microsoft.Office.Core.MsoTriState" />。 <b>为</b> 扩展相对于原始大小的形状。 <b>False</b> ，则相对于当前大小缩放形状。 仅当指定的形状是图片或 OLE 对象时，可以将此参数指定 <b>为 True</b> 。</param>
+        <param name="Factor">必需<b>Single</b>。 指定形状调整后的宽度与当前或原始宽度的比例。 例如，若要将一个矩形放大百分之五十，请将此参数指定为 1.5。</param>
+        <param name="RelativeToOriginalSize">必需<see cref="T:Microsoft.Office.Core.MsoTriState" />。 <b>为</b> 扩展相对于原始大小的形状。 <b>False</b> ，则相对于当前大小缩放形状。 仅当指定的形状是图片或 OLE 对象时，可以将此参数指定 <b>为 True</b> 。</param>
         <param name="Scale">可选<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />。 在缩放形状时，形状中位置不变的部分。</param>
-        <summary>按指定因子调整形状的宽度。</summary>
-        <remarks>
-          <para>对于图片和 OLE 对象，您可以指示您是否要相对于原始尺寸还是当前尺寸缩放形状。图片和 OLE 对象以外的形状总是相对于其当前宽度缩放。</para>
-          <para />
-        </remarks>
+        <summary>按指定因子缩放形状的宽度。</summary>
+        <remarks><para>对于图片和 OLE 对象，您可以说明是相对于原始大小还是相对于当前大小缩放形状。图片和 OLE 对象以外的形状总是相对于当前宽度缩放。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Script">
@@ -2174,12 +2084,10 @@
         <ReturnType>Microsoft.Office.Core.Script</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.Script" />对象，表示的脚本或在指定的网页上的代码块。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Core.Script" />对象, 该对象代表指定网页上的一组脚本或代码。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果页上不包含任何脚本，则返回 nothing。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果该网页中不包含任何脚本，则不返回任何内容。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2204,7 +2112,7 @@
         <Parameter Name="Replace" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Replace">可选的<b>对象</b>。 如果添加一个形状， <b>则</b> 替换所选内容。 <b>假</b> 将新形状添加到所选内容。</param>
+        <param name="Replace">可选<b>对象</b>。 如果添加一个形状， <b>则</b> 替换所选内容。 <b>假</b> 将新形状添加到所选内容。</param>
         <summary>选择指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2230,11 +2138,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>应用到该文档中默认形状的指定形状的格式。 新形状将继承默认形状的许多属性。</summary>
-        <remarks>
-          <para>使用此方法等效于使用绘图工具栏上的绘图菜单上的设置自选图形的默认值命令。</para>
-          <para />
-        </remarks>
+        <summary>将指定形状的格式应用于该文档的默认形状。 新形状将继承默认形状的许多属性。</summary>
+        <remarks><para>使用此方法等效于使用 "绘图" 工具栏上 "绘图" 菜单上的 "设置自选图形默认值" 命令。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -2260,7 +2166,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShadowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />对象，表示的阴影格式指定的形状。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />对象, 表示指定形状的阴影格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2293,10 +2199,8 @@
       <Docs>
         <summary>获取或设置指定形状的形状样式。</summary>
         <value>指定形状的形状样式。</value>
-        <remarks>
-          <para>读/写<see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" />。</para>
-          <para />
-        </remarks>
+        <remarks><para>读/写<see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" />。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmartArt">
@@ -2322,12 +2226,10 @@
         <ReturnType>Microsoft.Office.Core.SmartArt</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Core.SmartArt" />提供一种方式使用 SmartArt 对象与指定形状关联。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.SmartArt" />提供一种方式使用 SmartArt 对象与指定形状关联。</value>
-        <remarks>
-          <para>只读的。此属性与形状相关联的 Smart Art 图形进行交互提供的入口点。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Core.SmartArt" />对象, 该对象提供一种处理与指定形状相关联的 SmartArt 的方式。</summary>
+        <value>提供<see cref="T:Microsoft.Office.Core.SmartArt" />一种处理与指定形状相关联的 SmartArt 的方法的对象。</value>
+        <remarks><para>只读。 此属性提供用于与形状相关联的 Smartart 图形进行交互的入口点。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SoftEdge">
@@ -2353,10 +2255,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.SoftEdgeFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" />对象，表示形状的软边缘格式。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" />对象, 表示形状的柔化边缘格式。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2383,12 +2283,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextEffectFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" />对象，包含指定形状的文本效果格式属性。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" />对象, 该对象包含指定形状的文本效果格式设置属性。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性适用于<see cref="T:Microsoft.Office.Interop.Word.Shape" />代表艺术字对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性适用于<see cref="T:Microsoft.Office.Interop.Word.Shape" />代表艺术字的对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFrame">
@@ -2414,7 +2312,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextFrame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />对象，其中包含指定形状的文本。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />对象, 该对象包含指定形状的文本。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2442,10 +2340,8 @@
         <ReturnType>Microsoft.Office.Core.TextFrame2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.TextFrame2" />对象，其中包含指定形状的文本。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.TextFrame2" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Core.TextFrame2" />对象, 该对象包含指定形状的文本。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Core.TextFrame2" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2472,7 +2368,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象，包含指定形状的三维效果格式属性。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象, 该对象包含指定形状的三维效果的格式属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2503,12 +2399,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置一个字符串，包含指定形状的标题。</summary>
-        <value>一个字符串，包含指定形状的标题。</value>
-        <remarks>
-          <para>读/写。使用此属性提供形状的可选文字标题。此属性将添加到 Microsoft Word 2010 中的设置形状格式对话框的在替换文字窗格的标题文本框中的标题文本。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置一个字符串, 该字符串包含指定形状的标题。</summary>
+        <value>一个包含指定形状的标题的字符串。</value>
+        <remarks><para>读/写。 使用此属性可为形状提供可选文字标题。 此属性将标题文本添加到 Microsoft Word 2010 的 "设置形状格式" 对话框的 "替换文本" 窗格上的 "标题" 文本框中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -2537,12 +2431,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定形状的垂直位置，以磅为单位。</summary>
+        <summary>返回或设置指定形状的垂直位置 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>形状的位置被指从形状的边界框的左上角到形状的锁定标记。<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalPosition" />属性控制是否行、 段落、 边距或页上的边缘旁放置形状的锁定标记。</para>
-          <para />
-        </remarks>
+        <remarks><para>形状的位置被指从形状边界框的左上角到图形的锁定标记。 该<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalPosition" />属性控制形状的定位标记的放置在页面上的行、段落、边距或边缘的旁边。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopRelative">
@@ -2571,14 +2463,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 <b>一个</b> 值，代表形状顶部的相对位置。读/写。</summary>
-        <value>
-          <b>Single</b>
-        </value>
-        <remarks>
-          <para>使用此属性与<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" />属性。当设置为<b>wdShapePositionRelativeNone</b> (-999999) (请参阅<see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" />枚举)，因为该形状不使用百分比定位应忽略此属性。仅由的垂直位置<see cref="P:Microsoft.Office.Interop.Word.Shape.Top" />属性。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置 <b>一个</b> 值，代表形状顶部的相对位置。 读/写。</summary>
+        <value><b>Single</b></value>
+        <remarks><para>将此属性与<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeHorizontalPosition" />属性一起使用。 当设置为<b>wdShapePositionRelativeNone</b> (-999999) (请参阅<see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" />枚举) 时, 应忽略此属性, 因为形状不使用百分比定位。 垂直位置是由<see cref="P:Microsoft.Office.Interop.Word.Shape.Top" />属性单独确定的。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -2632,12 +2520,10 @@
       <Docs>
         <summary>取消组合指定形状中的所有组合形状。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>分解图片和 OLE 对象指定的形状中。</para>
-          <para>作为 single 类型返回取消组合的形状<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象。</para>
-          <para>由于将一组形状作为单个对象处理，分组和取消分组形状中的项目数<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合和更改之后影响集合中的项目的项目的索引号。</para>
-          <para />
-        </remarks>
+        <remarks><para>分解指定形状中的图片和 OLE 对象。</para>
+          <para>以单个<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象的形式返回取消组合的形状。</para>
+          <para>由于将一组形状作为单个对象处理, 对形状进行组合和取消组合将会更改<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合中的项目数, 并更改集合中受影响的项目之后的项目的索引号。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalFlip">
@@ -2663,12 +2549,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否指定的形状绕垂直轴翻转。</summary>
+        <summary>确定指定的形状是否绕垂直轴翻转。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的形状绕垂直轴和<b>False</b>如果不翻转，此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定的形状绕垂直轴翻转, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Vertices">
@@ -2694,39 +2578,37 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回为一系列的坐标对指定任意多边形顶点 （和贝赛尔曲线的控制点） 的坐标。</summary>
+        <summary>将指定任意多边形形状的顶点（及贝塞尔曲线的控制点）坐标作为一系列坐标对返回。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以使用此属性作为参数返回的数组<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />或<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />方法。</para>
-          <para>下表显示了如何<b>Vertices</b>属性将数组 vertarray （） 中的值与三角形的顶点坐标相关联。</para>
+        <remarks><para>可以使用该属性返回的数组作为<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" /> or <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />方法的参数。</para>
+          <para>下表显示<b>顶点</b>属性如何将数组 vertArray () 中的值与三角形的顶点的坐标相关联。</para>
           <list type="table">
             <item>
-              <description>vertArray （1，1）</description>
-              <description>的第一个顶点至文档的左边界的水平距离。</description>
+              <description>vertArray (1, 1)</description>
+              <description>第一个顶点至文档的左边界的水平距离。</description>
             </item>
             <item>
-              <description>vertArray （1，2）</description>
-              <description>的第一个顶点到文档顶端的垂直距离。</description>
+              <description>vertArray (1, 2)</description>
+              <description>第一个顶点至文档顶端的垂直距离。</description>
             </item>
             <item>
-              <description>vertArray （2，1）</description>
+              <description>vertArray (2, 1)</description>
               <description>第二个顶点至文档的左边界的水平距离。</description>
             </item>
             <item>
-              <description>vertArray （2，2）</description>
-              <description>从第二个顶点到文档顶端的垂直距离。</description>
+              <description>vertArray (2, 2)</description>
+              <description>第二个顶点至文档顶端的垂直距离。</description>
             </item>
             <item>
-              <description>vertArray （3，1）</description>
+              <description>vertArray (3, 1)</description>
               <description>第三个顶点至文档的左边界的水平距离。</description>
             </item>
             <item>
-              <description>vertArray （3、 2）</description>
-              <description>从第三个顶点到文档顶端的垂直距离。</description>
+              <description>vertArray (3, 2)</description>
+              <description>第三个顶点至文档顶端的垂直距离。</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -2755,14 +2637,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定指定的对象，或者格式应用于该对象是否可见。</summary>
+        <summary>确定指定的对象或应用于它的格式是否可见。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>True</b>如果应用于该对象指定的对象，或者格式是可见的则此属性返回<b>False</b>则。</para>
-          <para>对于任何对象，某些方法和属性可能不可用，如果<b>Visible</b>属性为<b>False</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定的对象或应用于它的格式是可见的, 则此属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。</para>
+          <para>对于任何对象，某些方法和属性可能不可用，如果 <b>可见性</b> 属性为 <b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -2822,12 +2701,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个代表形状的相对宽度的 <b>Single</b>。可读写。</summary>
+        <summary>返回或设置一个代表形状的相对宽度的 <b>Single</b>。 读/写。</summary>
         <value>返回<see cref="T:System.Single" />。</value>
-        <remarks>
-          <para>使用此属性与<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalSize" />属性。当设置为<b>wdShapeSizeRelativeNone</b> (-999999) (请参阅<see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" />枚举)，因为该形状不使用百分比大小应忽略此属性。仅由宽度<see cref="P:Microsoft.Office.Interop.Word.Shape.Width" />属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>将此属性与<see cref="P:Microsoft.Office.Interop.Word.Shape.RelativeVerticalSize" />属性一起使用。 当设置为<b>wdShapeSizeRelativeNone</b> (-999999) (请参阅<see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" />枚举) 时, 应忽略此属性, 因为形状不使用百分比调整大小。 宽度由<see cref="P:Microsoft.Office.Interop.Word.Shape.Width" />属性单独确定。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapFormat">
@@ -2853,7 +2730,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WrapFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />对象，其中包含指定形状周围环绕文字的属性。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />对象, 它包含环绕指定形状的文本的属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2881,12 +2758,10 @@
         <Parameter Name="ZOrderCmd" Type="Microsoft.Office.Core.MsoZOrderCmd" />
       </Parameters>
       <Docs>
-        <param name="ZOrderCmd">所需<see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />。 指定针对其他形状将指定形状移动到的位置。</param>
-        <summary>将指定的形状移到集合中其他形状的前面或后面（即更改该形状在 z-顺序中的位置）。</summary>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.ZOrderPosition" />属性确定形状的 z-顺序中的当前位置。</para>
-          <para />
-        </remarks>
+        <param name="ZOrderCmd">必需<see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />。 指定相对于其他形状将指定形状移动到的位置。</param>
+        <summary>将指定形状移动到集合中的其他形状的前面或后面（即更改 z 顺序中的形状位置）。</summary>
+        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.ZOrderPosition" />属性可确定形状在 z-顺序中的当前位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ZOrderPosition">
@@ -2914,12 +2789,10 @@
       <Docs>
         <summary>返回指定的形状在 z 顺序中的位置。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要设置形状的 z-顺序中的位置，请使用<see cref="M:Microsoft.Office.Interop.Word.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" />方法。</para>
-          <para>对应于中的形状的索引号的 z-顺序中的形状的位置<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合。</para>
-          <para>只要向集合添加新的形状，它默认情况下添加到 z-顺序的顶层。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要设置形状在 z-顺序中的位置, 请使用<see cref="M:Microsoft.Office.Interop.Word.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" />方法。</para>
+          <para>形状在 z-顺序中的位置与形状在<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合中的索引号相对应。</para>
+          <para>无论何时将新形状添加到集合中, 默认情况下该形状都将添加到 z 顺序的最前端。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

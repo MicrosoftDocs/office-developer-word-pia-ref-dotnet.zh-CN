@@ -1,13 +1,5 @@
 <Type Name="CoAuthor" FullName="Microsoft.Office.Interop.Word.CoAuthor">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a54fc1ec631ea87a62d012687dd65c54b7edee9d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665780" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthor" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f0255cfbbf0271c447cea6351afd1bdc1f6eca9f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147227" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthor" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthor" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthor" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示文档中单个的共同作者。 <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />对象是成员<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />集合。 <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />集合包含文档 （当前正在编辑文档的作者） 中的所有共同作者。</summary>
-    <remarks>
-      <para>使用<b>CoAuthors</b>(<paramref name="Index" />)，其中<paramref name="Index" />是返回单个<b>CoAuthor</b>对象的索引号。</para>
+    <summary>表示文档中单个的共同作者。 <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />对象是<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />集合的成员。 该<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />集合包含文档中的所有共同作者 (作者正在编辑文档)。</summary>
+    <remarks><para>使用<b>合著者</b>(<paramref name="Index" />), 其中<paramref name="Index" />是要返回单个<b>CoAuthor</b>对象的索引号。</para>
       <para>
-        <b>警告</b>： 当新的共同作者开始编辑文档时，可能需要一分钟或更长时间显示文档中的共同作者。</para>
-      <para />
-    </remarks>
+        <b>警告</b>: 当新的共同作者开始编辑文档时, 它最多可能需要一分钟或更长时间, 共同作者将显示在文档中。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,13 +48,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Word 应用程序的对象。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.Application" /> Microsoft Word 应用程序的对象。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Word 应用程序的对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -90,15 +77,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个指示在其中创建指定的对象的应用程序的 32 位整数。</summary>
-        <value>指示在其中创建指定的对象的应用程序的 32 位整数。</value>
-        <remarks>
-          <para>只读的<b>long</b>。如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此属性主要旨在用于 Apple Macintosh 上，其中每个应用程序具有四个字符的创建者代码。例如，Word 具有 MSWD 的创建者代码。</para>
+        <summary>获取一个32位整数, 该整数指示在其中创建指定对象的应用程序。</summary>
+        <value>一个32位整数, 它指示在其中创建指定对象的应用程序。</value>
+        <remarks><para><b>Long 类型</b>, 只读。 如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
           <para>
-            <b>警告</b>：</para>
-          <para>此值也可以由常量<b>wdCreatorCode</b>。</para>
-          <para />
-        </remarks>
+            <b>警告</b>: </para>
+          <para>[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EmailAddress">
@@ -124,12 +109,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个字符串，指定指定共同作者的电子邮件地址。</summary>
-        <value>指定的共同作者的电子邮件地址。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取指定共同创作的电子邮件地址的字符串。</summary>
+        <value>指定的共同创作者的电子邮件地址。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -157,10 +140,8 @@
       <Docs>
         <summary>获取指定作者的唯一标识符。</summary>
         <value>指定作者的唯一标识符。</value>
-        <remarks>
-          <para>只读的。不应假定此属性返回的唯一标识符具有特定的长度或格式。</para>
-          <para />
-        </remarks>
+        <remarks><para>只读。 不应假定该属性返回的唯一标识符具有特定的长度或格式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMe">
@@ -186,13 +167,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取此作者表示当前用户是否。</summary>
-        <value>
-          <b>true</b>如果作者表示当前用户;否则为<b>false</b>。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取此作者是否代表当前用户。</summary>
+        <value>如果作者代表当前用户,<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locks">
@@ -218,12 +196,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthLocks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />集合，代表文档中与指定的共同作者相关联的锁。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />集合，代表文档中与指定的共同作者相关联的锁。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />集合, 该集合代表与指定的共同创作相关联的文档中的锁定。</summary>
+        <value>代表<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />文档中与指定共同作者相关联的锁的集合。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -249,12 +225,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取指定的共同作者的显示名称。</summary>
-        <value>指定共同作者的显示名称。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取指定的共同创作者的显示名称。</summary>
+        <value>指定的共同创作者的显示名称。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -280,9 +254,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:System.Object" />，表示指定的父对象<see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />对象。</summary>
-        <value>
-          <see cref="T:System.Object" /> ，表示指定的父对象<see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />对象。</value>
+        <summary>获取一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />对象的父对象的。</summary>
+        <value>一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />对象的父对象的。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

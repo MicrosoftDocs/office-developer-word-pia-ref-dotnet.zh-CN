@@ -1,13 +1,5 @@
 <Type Name="Task" FullName="Microsoft.Office.Interop.Word.Task">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a293fe302e518f71d73a2b60dd8cf985017ecc8a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666603" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Task" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="475c1671362444c8d7ebcb134d01290da862e462" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143873" /></Metadata><TypeSignature Language="C#" Value="public interface Task" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Task" />
   <TypeSignature Language="VB.NET" Value="Public Interface Task" />
@@ -27,12 +19,9 @@
   </Attributes>
   <Docs>
     <summary>表示系统上运行的单个任务。</summary>
-    <remarks>
-      <para>
-        <b>Task</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.Tasks" />集合。<b>Tasks</b>集合包含的系统当前运行的所有应用程序。</para>
-      <para>使用<b>任务</b>(<paramref name="index" />)，其中<paramref name="index" />是应用程序的名称或索引号，可返回单个<b>Task</b>对象。</para>
-      <para />
-    </remarks>
+    <remarks><para><b>任务</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Tasks" />集合的一个成员。 <b>Tasks</b> 集合包含当前在系统运行的所有应用程序。</para>
+      <para>使用<b>Tasks</b>(<paramref name="index" />), 其中<paramref name="index" />是应用程序名称或索引号, 返回单个<b>任务</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -57,7 +46,7 @@
         <Parameter Name="Wait" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Wait">可选的<b>对象</b>。 <b>True</b>以等到用户已激活 Microsoft Word 在激活任务之前。 <b>假</b> 以立即激活该任务，即使 Word 不活动状态。</param>
+        <param name="Wait">可选<b>对象</b>。 <b>如果为 True, 则</b>在激活该任务之前, 等待用户激活 Microsoft Word。 <b>假</b> 以立即激活该任务，即使 Word 不活动状态。</param>
         <summary>激活<see cref="T:Microsoft.Office.Interop.Word.Task" />对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +74,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -140,9 +129,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -171,7 +160,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的任务窗口的高度，以磅为单位。</summary>
+        <summary>返回或设置指定任务窗口的高度 (以磅为单位)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,7 +191,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>整数</b>值，该值代表指定的任务，以磅为单位的水平位置。</summary>
+        <summary>返回或设置一个<b>Integer</b>类型的值, 该值代表指定任务的水平位置 (以磅为单位)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -231,10 +220,8 @@
         <Parameter Name="Top" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Left">
-          <b>必选。</b> 指定窗口的水平屏幕位置。</param>
-        <param name="Top">
-          <b>必选。</b> 指定窗口的垂直屏幕位置。</param>
+        <param name="Left">必需的<b>整数</b>。 指定窗口的水平屏幕位置。</param>
+        <param name="Top">必需的<b>整数</b>。 指定窗口的垂直屏幕位置。</param>
         <summary>设置任务窗口的位置。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -319,16 +306,12 @@
         <Parameter Name="Height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Width">
-          <b>必选。</b> 窗口的宽度，以磅值为单位。</param>
-        <param name="Height">
-          <b>必选。</b> 窗口的高度，以磅值为单位。</param>
+        <param name="Width">必需的<b>整数</b>。 窗口的宽度，以磅值为单位。</param>
+        <param name="Height">必需的<b>整数</b>。 窗口的高度，以磅值为单位。</param>
         <summary>调整指定任务窗口的大小。 如果窗口处于最大化或最小化，则会导致出错。</summary>
-        <remarks>
-          <para>
-            <b>注释</b> 使用<see cref="P:Microsoft.Office.Interop.Word.Task.Width" />或<see cref="P:Microsoft.Office.Interop.Word.Task.Height" />属性可分别设置窗口的宽度和高度。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>注释</b> 使用<see cref="P:Microsoft.Office.Interop.Word.Task.Width" />或<see cref="P:Microsoft.Office.Interop.Word.Task.Height" />属性可单独设置窗口的宽度和高度。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SendWindowMessage">
@@ -356,12 +339,9 @@
         <Parameter Name="lParam" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Message">
-          <b>必选。</b> 一个十六进制数字，对应于要发送的邮件。 如果您有 Microsoft 平台软件开发工具包，可以查看 up 头文件 (例如 Winuser.h) 中的消息的名称来查找关联的十六进制数 (与的十六进制值前面&amp;h)。</param>
-        <param name="wParam">
-          <b>必选。</b> 适用于您所发送邮件的参数。 有关哪些这些值表示，请参阅 Microsoft 平台软件开发工具包中包含的文档中的邮件的参考主题。 若要检索适当的值，您可能需要使用 Spy 实用程序 （其中配备套件）。</param>
-        <param name="lParam">
-          <b>必选。</b> 适用于您所发送邮件的参数。 有关哪些这些值表示，请参阅 Microsoft 平台软件开发工具包中包含的文档中的邮件的参考主题。 若要检索适当的值，您可能需要使用 Spy 实用程序 （其中配备套件）。</param>
+        <param name="Message">必需的<b>整数</b>。 与要发送的邮件相对应的十六进制数。 如果您拥有 Microsoft 平台软件开发工具包, 则可以在头文件 (例如 Winuser) 中查找邮件的名称, 以查找关联的十六进制数 (在十六进制值前面加上&amp;h)。</param>
+        <param name="wParam">必需的<b>整数</b>。 与所发送消息对应的参数。 有关这些值表示的内容的信息, 请参阅 Microsoft 平台软件开发工具包附带的文档中有关该邮件的参考主题。 若要检索适当的值, 可能需要使用 Spy 实用工具 (随工具包一起提供)。</param>
+        <param name="lParam">必需的<b>整数</b>。 与所发送消息对应的参数。 有关这些值表示的内容的信息, 请参阅 Microsoft 平台软件开发工具包附带的文档中有关该邮件的参考主题。 若要检索适当的值, 可能需要使用 Spy 实用工具 (随工具包一起提供)。</param>
         <summary>将 Windows 提示信息及相关参数发送到指定的任务中。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -392,7 +372,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的任务的垂直位置，以磅为单位。</summary>
+        <summary>返回或设置指定任务的垂直位置 (以磅为单位)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -423,13 +403,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>为</b> 指定的对象是否可见。</summary>
+        <summary><b>为</b> 指定的对象是否可见。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>某些方法和属性可能不可用，如果<b>Visible</b>属性为<b>False</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>某些方法和属性可能不可用如果 <b>可见性</b> 属性为 <b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -489,24 +466,21 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的任务窗口的状态。</summary>
+        <summary>返回或设置指定任务窗口的状态。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />可以是下列<b>WdWindowState</b>常量之一。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />可以是下列<b>WdWindowState</b>常量之一。</para>
-          <para>
-            <b>wdWindowStateMaximize </b>
+            <b>wdWindowStateMaximize</b>
           </para>
           <para>
-            <b>wdWindowStateNormal </b>
+            <b>wdWindowStateNormal</b>
           </para>
           <para>
             <b>wdWindowStateMinimize</b>
           </para>
-          <para>
-            <b>wdWindowStateNormal</b>常量指示没有最大化或最小化的窗口。无法设置非活动窗口的状态。使用<see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" />方法，以激活之前设置窗口状态窗口。</para>
-          <para />
-        </remarks>
+          <para><b>WdWindowStateNormal</b> 常量表示未最大化或最小化的窗口。 无法设置不活动窗口的状态。 在<see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" />设置窗口状态之前, 使用方法激活窗口。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

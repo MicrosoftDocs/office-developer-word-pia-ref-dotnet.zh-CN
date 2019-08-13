@@ -1,13 +1,5 @@
 <Type Name="OMathPhantom" FullName="Microsoft.Office.Interop.Word.OMathPhantom">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9c5a42b2b3c4bdb8eac148bdcdd0a5518226c14c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666472" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathPhantom" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e5db117509f7b1119782765878e493caa816f4ca" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144286" /></Metadata><TypeSignature Language="C#" Value="public interface OMathPhantom" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathPhantom" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathPhantom" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathPhantom" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>代表 phantom 对象，该对象有两个主要用途：(1) 在不显示 phantom 基的情况下增加其间距，(2) 从间距中取消部分标志符号。</summary>
-    <remarks>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Word.OMathPhantom" />对象而不显示它，显示部分公式的间距，或从间距中删除部分标志符号的间距。</para>
-      <para />
-    </remarks>
+    <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.OMathPhantom" />对象显示公式部分的间距而不显示公式, 或从间距注意事项中移除部分标志符号的间距。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +46,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,11 +74,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位<b>整数</b>，它指示在其中创建外接程序的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>如果对象在 Microsoft Word 中创建的<para><see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.Creator" />属性返回十六进制数字 4d535744，表示字符串"MSWD"。 也可以由常量表示此值<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。</para><para>此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <summary>返回一个32位整数, 该<b>整数</b>表示在其中创建外接程序的应用程序。 只读。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。 </para>
+          <para>此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="E">
@@ -116,10 +104,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.OMath" />对象，表示指定的公式对象的基线。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.OMath" />对象, 表示指定的公式对象的底数。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMath" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,10 +132,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定的父级<see cref="T:Microsoft.Office.Interop.Word.OMathPhantom" />对象。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.OMathPhantom" />对象的父级。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,10 +163,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否显示幻像对象的内容。读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否显示幻像对象的内容。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,13 +195,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>boolean 类型的值</b> 表示的虚拟内容是可见的但，高度不考虑布局间距。  读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>如果此属性为<b>True</b>， <see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.ZeroAsc" />， <see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.ZeroDesc" />，和<see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.Show" />属性都设置为<b>True</b>。</para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>如果此属性为<b>true</b>, 则<see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.ZeroAsc" />、 <see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.ZeroDesc" />和<see cref="P:Microsoft.Office.Interop.Word.OMathPhantom.Show" />属性均设置为<b>true</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Transp">
@@ -248,10 +226,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值代表是否幻像对象是透明的。读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值代表是否幻像对象是透明的。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,10 +257,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否幻像内容的上升被忽略的布局间距。读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否幻像内容的上升被忽略的布局间距。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,10 +288,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否幻像内容的下降被忽略的布局间距。读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否幻像内容的下降被忽略的布局间距。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,10 +319,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否在布局间距中忽略幻像对象的宽度。读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否在布局间距中忽略幻像对象的宽度。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

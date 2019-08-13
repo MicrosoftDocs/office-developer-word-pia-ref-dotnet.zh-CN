@@ -1,13 +1,5 @@
 <Type Name="ShapeNode" FullName="Microsoft.Office.Interop.Word.ShapeNode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dea0f3f64b98c01fd58dabd1cbdfd93db788f7c5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665679" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShapeNode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="86c2673d3a1bd61e13b1505a88e585abcef62547" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147639" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShapeNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeNode" />
@@ -26,12 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表用户定义的任意多边形中节点的几何图形以及几何图形编辑属性。</summary>
-    <remarks>
-      <para>节点包括之间的任意多边形的线段和曲线段的控制点的顶点。<b>ShapeNode</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" />集合。<b>ShapeNodes</b>集合中包含的任意多边形中所有节点。</para>
-      <para>使用<b>节点</b>(<paramref name="index" />)，其中<paramref name="index" />是节点索引号，可返回单个<b>ShapeNode</b>对象。</para>
-      <para />
-    </remarks>
+    <summary>代表用户定义的任意多边形的顶点的几何图形以及几何图形编辑属性。</summary>
+    <remarks><para>节点包括任意多边形的线段之间的曲线段的控点的顶点。 <b>ShapeNode</b>对象是<see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" />集合的一个成员。 <b>ShapeNodes</b> 集合中包含的任意多边形中的所有节点。</para>
+      <para>使用<b>节点</b>(<paramref name="index" />), 其中<paramref name="index" />是节点索引号, 返回一个<b>ShapeNode</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,9 +77,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingType">
@@ -117,10 +107,8 @@
       <Docs>
         <summary>如果指定的节点是顶点，则此属性的返回值表示对节点所做的更改如何影响与该节点相连的两条线段。 如果该节点是曲线段的控制点，则此属性返回相邻顶点的编辑类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" />方法，以便设置此属性的值。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" />方法来设置此属性的值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -174,12 +162,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定节点的位置坐标对的形式。 每个坐标都以磅表示。</summary>
+        <summary>以坐标对形式返回指定节点的位置。 每个坐标都以磅为单位。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" />方法，以便设置节点的位置。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" />方法设置节点的位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SegmentType">
@@ -207,11 +193,9 @@
       <Docs>
         <summary>返回一个值，该值指示与指定节点关联的线段是直线段还是曲线段。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的节点是曲线段的控制点，此属性返回<b>msoSegmentCurve</b>。</para>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetSegmentType(System.Int32,Microsoft.Office.Core.MsoSegmentType)" />方法，以便设置此属性的值。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定节点是曲线段的控制点，则该属性返回 <b>msoSegmentCurve</b> 。</para>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetSegmentType(System.Int32,Microsoft.Office.Core.MsoSegmentType)" />方法来设置此属性的值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

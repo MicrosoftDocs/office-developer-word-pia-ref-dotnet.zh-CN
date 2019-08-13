@@ -1,13 +1,5 @@
 <Type Name="AxisTitle" FullName="Microsoft.Office.Interop.Word.AxisTitle">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ab60484b6d253ed008fcdee715c36b3337fc0c01" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666299" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AxisTitle" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f3a91664c50782d2c51df16bb1c1e182169cdaae" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146302" /></Metadata><TypeSignature Language="C#" Value="public interface AxisTitle" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AxisTitle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AxisTitle" />
   <TypeSignature Language="VB.NET" Value="Public Interface AxisTitle" />
@@ -26,8 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <b>为</b> 坐标轴标题将占用图表布局时图表布局空间，如果在确定。 默认值为 <b>True</b> 。 读/写</summary>
+    <summary><b>为</b> 坐标轴标题将占用图表布局时图表布局空间，如果在确定。 默认值为 <b>True</b>。 读/写</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,10 +45,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />值，该值代表指定对象 （可与 OLE 自动化对象使用此属性可返回该对象的应用程序） 的创建者的对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 当与对象识别符一起使用时, 此属性<see cref="T:Microsoft.Office.Interop.Word._Application" />返回一个对象, 该对象表示指定对象的创建者 (可以将此属性与 OLE 自动化对象一起使用, 以返回该对象的应用程序)。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,10 +82,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>对象大小更改时，对象中的文本更改字体大小。 默认值为 <b>True</b> 。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>如果对象大小更改时，对象内部的文本相应地更改字体大小，则该属性值为 <b>True</b>。 默认值为 <b>True</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,9 +114,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回对象的边框。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Border" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Border" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,10 +144,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置轴标题文本。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <summary>返回或设置坐标轴的标题文本。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,16 +177,11 @@
       </Parameters>
       <Docs>
         <param name="Start">要返回的第一个字符。如果此参数是 1 或被省略，则此属性返回一个以第一个字符为开头的字符区域。</param>
-        <param name="Length">要返回的字符数。 如果省略此参数，则此属性返回的字符串的其余部分 (之后的所有<paramref name="Start" />字符)。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象，它代表对象的文本中的字符的区域。 您可以使用<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象为格式文本字符串中的字符。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />
-        </value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象不是集合。</para>
-          <para />
-        </remarks>
+        <param name="Length">要返回的字符数。 如果省略此参数, 则此属性返回字符串的剩余部分 (字符后面的<paramref name="Start" />所有字符)。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象, 表示对象文本中的字符范围。 您可以使用<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象设置文本字符串中字符的格式。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /></value>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象不是集合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -230,13 +208,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中，创建<see cref="P:Microsoft.Office.Interop.Word.AxisTitle.Creator" />属性返回十六进制数字 4d535744，表示的字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.AxisTitle.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -261,9 +235,7 @@
       <Parameters />
       <Docs>
         <summary>删除对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,10 +265,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />对象，其中包含填充格式属性指定的图表。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />对象, 该对象包含指定图表的填充格式属性。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -327,9 +297,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回指定对象的字体。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Font" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Font" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,9 +326,7 @@
       <Docs>
         <summary>返回行、 填充和效果的对象的格式。
 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,11 +357,9 @@
       </ReturnValue>
       <Docs>
         <summary>获取或设置一个 <b>String</b> 值，该值代表公式使用 A1 样式表示法中，在英语中的对象。</summary>
-        <value>代表使用 A1 样式表示法以英文对象的公式</value>
-        <remarks>
-          <para>读/写。</para>
-          <para />
-        </remarks>
+        <value>表示使用 A1 样式表示法的对象的公式 (英文)</value>
+        <remarks><para>读/写。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaLocal">
@@ -424,11 +388,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置该对象，在语言中的用户使用 A1-样式引用的公式。</summary>
-        <value>对象，在语言中的用户使用 A1-样式引用的公式。</value>
-        <remarks>
-          <para>读/写 string 类型。如果单元格包含常量，将此属性返回的常量。如果单元格为空，则属性将返回空字符串。如果单元格包含公式，属性会将该公式返回字符串，其中将显示公式栏 （包括等号 （=）） 中的相同格式形式。</para>如果设置为日期值或单元格公式的
-          <para>，Microsoft Excel 2010 将查看是否已设置该单元格格式之一的日期或时间的数字格式。如果没有的数字格式将更改为默认的短日期数字格式。</para><para>设置多个单元格区域的公式填充公式的范围中的所有单元格。</para><para /></remarks>
+        <summary>获取或设置对象的公式 (使用用户语言的 A1 样式引用)。</summary>
+        <value>对象的公式, 使用用户语言的 A1 样式引用。</value>
+        <remarks><para>读/写字符串。 如果单元格包含一个常量，此属性返回该常量。 如果单元格为空，此属性返回一个空字符串。 如果单元格包含公式，此属性将该公式作为字符串返回，所用格式与在编辑栏（包括等号 (=)）中显示时的格式相同。</para>
+          <para>如果将单元格的值或公式设置为日期, Microsoft Excel 2010 将检查该单元格是否已设置为日期或时间的数字格式之一。 如果不符合，将采用默认的短日期数字格式。</para>
+          <para>对多重单元格区域设置公式，则该区域中所有单元格都用此公式填充。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1">
@@ -457,11 +422,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置该对象，在宏语言中使用 R1C1 样式表示法的公式。</summary>
-        <value>在宏语言中使用 R1C1 样式表示法对象的公式。</value>
-        <remarks>
-          <para>读/写 string 类型。如果单元格包含常量，该属性将返回常量。如果单元格为空，则属性将返回空字符串。如果单元格包含公式，属性会将该公式返回字符串，其中将显示公式栏 （包括等号 （=）） 中的相同格式形式。</para>如果设置为日期值或单元格公式的
-          <para>，Microsoft Excel 2010 将查看是否已设置该单元格格式之一的日期或时间的数字格式。如果没有的数字格式将更改为默认的短日期数字格式。</para><para>设置多个单元格区域的公式填充公式的范围中的所有单元格。</para><para /></remarks>
+        <summary>获取或设置对象的公式, 使用宏语言的 R1C1 样式表示法。</summary>
+        <value>对象的公式, 使用宏语言的 R1C1 样式表示法。</value>
+        <remarks><para>读/写字符串。 如果单元格包含一个常量，此属性返回该常量。 如果单元格为空，此属性返回一个空字符串。 如果单元格包含公式，此属性将该公式作为字符串返回，所用格式与在编辑栏（包括等号 (=)）中显示时的格式相同。</para>
+          <para>如果将单元格的值或公式设置为日期, Microsoft Excel 2010 将检查该单元格是否已设置为日期或时间的数字格式之一。 如果不符合，将采用默认的短日期数字格式。</para>
+          <para>对多重单元格区域设置公式，则该区域中所有单元格都用此公式填充。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1Local">
@@ -490,8 +456,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置该对象，在语言中的用户使用 R1C1 样式表示法的公式。</summary>
-        <value>读/写 string 类型。 对象，在语言中的用户使用 R1C1 样式表示法的公式。</value>
+        <summary>获取或设置对象的公式, 使用用户语言的 R1C1 样式表示法。</summary>
+        <value>读/写字符串。 对象的公式, 使用用户语言的 R1C1 样式表示法。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,12 +484,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取的高度，以磅为单位的对象。</summary>
+        <summary>获取对象的高度 (以磅为单位)。</summary>
         <value>对象的高度，以磅为单位。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlignment">
@@ -553,11 +517,8 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置指定对象的水平对齐方式。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>此属性的值可以设置为以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlConstants" />枚举值：</para>
+        <value><b>Object</b></value>
+        <remarks><para>此属性的值可设置为以下<see cref="T:Microsoft.Office.Interop.Word.XlConstants" />枚举值之一:</para>
           <list type="table">
             <item>
               <description>
@@ -585,9 +546,8 @@
               </description>
             </item>
           </list>
-          <para>这些常量的一些可能不可用给您，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+          <para>[!注释] 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeInLayout">
@@ -616,15 +576,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>为</b> 坐标轴标题将占用图表布局时图表布局空间，如果在确定。 默认值为 <b>True</b> 。 读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>不论图表是在自动版式模式下，此属性不会影响。 如果用户添加标题使用上面图表命令，将更小，请与 Microsoft Office Excel 2003 调整图表。 如果用户然后删除标题，或选择覆盖标题选项之一，则图表将变大，如同标题不在图表上。</para>
-          <para />
-        </remarks>
+        <summary><b>为</b> 坐标轴标题将占用图表布局时图表布局空间，如果在确定。 默认值为 <b>True</b> 。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>该属性对于图表是否处于自动版式模式没有影响。  如果用户使用“图表上方”命令添加标题，则图表将变得较小，就像在 Microsoft Office Excel 2003 中一样。  如果用户随后删除标题，或者选择其中一个覆盖标题选项，则图表将变得较大，就好像标题不在图表上那样。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -654,9 +609,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回指定对象的内部。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Interior" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -687,9 +640,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置的距离，以磅为单位的图表区的左边缘到该对象的左边缘。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -717,9 +668,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回的对象的名称。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -749,14 +698,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Integer</b>值，该值代表文本方向。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>此属性的值可以是介于 – 90 到 90 度或之一的整数值<see cref="T:Microsoft.Office.Interop.Word.XlOrientation" />枚举值。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<b>Integer</b>值, 它代表文本方向。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>此属性的值可以是介于–90到90度或<see cref="T:Microsoft.Office.Interop.Word.XlOrientation" />枚举值之一之间的整数值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -783,9 +728,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回指定对象的父级。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -815,10 +758,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlChartElementPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置轴标题在图表上的位置。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlChartElementPosition" />
-        </value>
+        <summary>返回或设置轴标题在图表上的位置。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlChartElementPosition" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -848,10 +789,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" />枚举值，该值代表指定对象的读取顺序。 为可读/写属性。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" />枚举值, 该值代表指定对象的阅读顺序。 读/写。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -877,9 +816,7 @@
       <Parameters />
       <Docs>
         <summary>选择对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -910,9 +847,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>Boolean</b> 值，它确定对象是否有阴影。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -942,10 +877,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定对象中的文本。 为可读/写属性。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <summary>返回或设置指定对象中的文本。 读/写。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -976,9 +909,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置的距离，以磅为单位，到顶部的第 1 行 (在工作表中) 或顶部的图表区域 (图表) 上对象的上边缘。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1009,11 +940,8 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置指定对象的垂直对齐方式。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>此属性的值可以设置为以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlConstants" />枚举值：</para>
+        <value><b>Object</b></value>
+        <remarks><para>此属性的值可设置为以下<see cref="T:Microsoft.Office.Interop.Word.XlConstants" />枚举值之一:</para>
           <list type="table">
             <item>
               <description>
@@ -1041,8 +969,7 @@
               </description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1068,12 +995,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取的宽度，以磅为单位的对象。</summary>
-        <value>对象的高度，以磅为单位。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取对象的宽度 (以磅为单位)。</summary>
+        <value>对象的宽度，以磅为单位。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

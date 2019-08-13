@@ -1,13 +1,5 @@
 <Type Name="Cells" FullName="Microsoft.Office.Interop.Word.Cells">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ca7cc850320cd08b337cf0125a3f5f4d3ec787ec" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666852" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Cells : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5f1f919c60f50e8edbe09241cd688bb7b561fc76" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147352" /></Metadata><TypeSignature Language="C#" Value="public interface Cells : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Cells implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Cells" />
   <TypeSignature Language="VB.NET" Value="Public Interface Cells&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.Cell" />表格列、 表格行、 选定内容或范围中的对象。</summary>
-    <remarks>
-      <para>使用<b>单元格</b>属性可返回<b>Cells</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" />方法将<b>Cell</b>对象添加到<b>Cells</b>集合。您还可以使用<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertCells(System.Object@)" />方法<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象来插入新单元格。</para>
-      <para>使用<b>单元格</b>(<paramref name="row" />， <paramref name="column" />)，其中<paramref name="row" />的行号和<paramref name="column" />是列号，或者<b>单元格</b>(<paramref name="index" />)，其中<paramref name="index" />是返回<b>Cell</b>对象的索引号。</para>
-      <para />
-    </remarks>
+    <summary>表格列、 <see cref="T:Microsoft.Office.Interop.Word.Cell" />表格行、选定内容或区域中的对象的集合。</summary>
+    <remarks><para>使用 <b>Cells</b> 属性来返回该 <b>单元格</b> 的集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" />方法将<b>Cell</b>对象添加到<b>单元格</b>集合。 您还可以使用<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertCells(System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.Selection" />对象的方法插入新单元格。</para>
+      <para>使用<b>单元格</b><paramref name="row" />( <paramref name="column" />,), <paramref name="row" />其中是行号, <paramref name="column" />是列号或<b>单元格</b>(<paramref name="index" />, 其中<paramref name="index" />是索引号), 用于返回<b>Cell</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,8 +51,8 @@
         <Parameter Name="BeforeCell" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeCell">A<see cref="T:Microsoft.Office.Interop.Word.Cell" />对象，表示的单元格会立即右侧的指定单元格。</param>
-        <summary>向表格单元格。</summary>
+        <param name="BeforeCell">一个<see cref="T:Microsoft.Office.Interop.Word.Cell" />对象, 表示将紧接在指定单元格右侧显示的单元格。</param>
+        <summary>向表格中添加一个单元格。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />值，该值代表指定对象的创建者的对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" /> object 类型的对象, 该对象代表指定对象的创建者。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,10 +107,8 @@
       <Parameters />
       <Docs>
         <summary>改变表格列宽，使之在单元格文本换行方式不变的情况下，适应文本宽度。</summary>
-        <remarks>
-          <para>如果表已经是相同的左右边距之间的距离，则此方法具有没有影响。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果表格的宽度已等于从左边界到右边界的距离，则此方法无效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -149,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合，代表指定对象的所有边框。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合, 该集合代表指定对象的所有边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,7 +165,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,11 +193,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，指示在其中创建指定的对象的应用程序。</summary>
+        <summary>返回一个值, 该值指示在其中创建指定对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -234,8 +222,8 @@
         <Parameter Name="ShiftCells" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ShiftCells">剩余单元格移动的方向。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdDeleteCells" />常量。 如果省略，最后删除的单元格的右侧单元格向左移动。</param>
-        <summary>删除表的单元格并可选择控制如何移动剩余的单元格。</summary>
+        <param name="ShiftCells">剩余单元格移动的方向。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdDeleteCells" />常量。 如果省略，最后删除的单元格的右侧单元格向左移动。</param>
+        <summary>删除表格中的单元格, 并可选择控制剩余单元格的移动方式。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,7 +248,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定单元格的高度调整为相等。</summary>
+        <summary>将指定单元格的高度调整为相等。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,7 +273,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定单元格的宽度调整为相等。</summary>
+        <summary>调整指定单元格的宽度, 使其相等。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,12 +335,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置表中的指定单元格的高度。</summary>
+        <summary>返回或设置表格中指定单元格的高度。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" />指定行的属性为<b>wdRowHeightAuto</b>，则<b>Height</b>返回<b>wdUndefined</b>;设置<b>Height</b>属性会将<b>HeightRule</b>设置为<b>wdRowHeightAtLeast</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定<see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" />行的属性为<b>wdRowHeightAuto</b>, 则<b>Height</b>返回<b>wdUndefined</b>;设置<b>Height</b>属性会将<b>HeightRule</b>设置为<b>wdRowHeightAtLeast</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightRule">
@@ -381,12 +367,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRowHeightRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用于确定指定单元格的高度的规则。</summary>
+        <summary>返回或设置用于确定指定单元格高度的规则。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>设置的<b>HeightRule</b>属性<see cref="T:Microsoft.Office.Interop.Word.Cell" />对象会自动设置整行的属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>设置<see cref="T:Microsoft.Office.Interop.Word.Cell" />对象的<b>HeightRule</b>属性将自动设置整行的属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -415,7 +399,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">一个值，指示的单个对象的序号位置。</param>
+        <param name="Index">一个值, 指示单个对象的序号位置。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -443,10 +427,8 @@
       <Parameters />
       <Docs>
         <summary>将指定的多个表格单元格相互合并。</summary>
-        <remarks>
-          <para>调用此属性的结果是单个单元格。</para>
-          <para />
-        </remarks>
+        <remarks><para>调用此属性的结果是一个表格单元格。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NestingLevel">
@@ -474,10 +456,8 @@
       <Docs>
         <summary>返回指定单元格的嵌套层。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>最外层表的嵌套级别为 1。每个连续嵌套表格的嵌套级别是高于上表之一。</para>
-          <para />
-        </remarks>
+        <remarks><para>最外围表格的嵌套层为 1。 每一个相连嵌套表格的嵌套层比其前面表格的嵌套层高 1。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -597,10 +577,8 @@
         <param name="RowHeight">一行或多行的高度，以磅为单位。</param>
         <param name="HeightRule">确定指定单元格高度的方法。</param>
         <summary>设定表格单元格的高度。</summary>
-        <remarks>
-          <para>设置的<b>SetHeight</b>属性<see cref="T:Microsoft.Office.Interop.Word.Cells" />对象会自动设置整行的属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>设置<see cref="T:Microsoft.Office.Interop.Word.Cells" />对象的<b>SetHeight</b>属性将自动设置整行的属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetWidth">
@@ -627,14 +605,11 @@
         <Parameter Name="RulerStyle" Type="Microsoft.Office.Interop.Word.WdRulerStyle" />
       </Parameters>
       <Docs>
-        <param name="ColumnWidth">指定列，以磅为单位的宽度。</param>
-        <param name="RulerStyle">控件的方式 Microsoft Word 调整单元格宽度。</param>
-        <summary>设置表格单元格的宽度。</summary>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />上述行为适用于左对齐的表。中心和右对齐表格的<b>WdRulerStyle</b>行为可以是意外;在这些情况下，<see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" />方法应谨慎。</para>
-          <para />
-        </remarks>
+        <param name="ColumnWidth">指定列的宽度 (以磅为单位)。</param>
+        <param name="RulerStyle">控制 Microsoft Word 调整单元格宽度的方式。</param>
+        <summary>设置表格中单元格的宽度。</summary>
+        <remarks><para>以上<see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />所述的行为适用于左对齐的表格。 中间和右对齐表的<b>WdRulerStyle</b>行为可能是意外的;在这些情况下, <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" />应谨慎使用此方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -660,7 +635,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象的引用指定对象的底纹格式。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象, 该对象代表指定对象的底纹格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -690,8 +665,8 @@
       </Parameters>
       <Docs>
         <param name="NumRows">单元格组拆分成的行数。</param>
-        <param name="NumColumns">单元格组拆分成的列数。</param>
-        <param name="MergeBeforeSplit">一个值，该值指示是否与另一个单元格前拆分它们合并。</param>
+        <param name="NumColumns">要将单元格组拆分成的列数。</param>
+        <param name="MergeBeforeSplit">一个值, 该值指示是否在拆分单元格之前将它们合并。</param>
         <summary>拆分表格单元格范围。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -722,7 +697,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCellVerticalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置表的单元格中的文本的垂直对齐方式。</summary>
+        <summary>返回或设置表格的单元格中文本的垂直对齐方式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

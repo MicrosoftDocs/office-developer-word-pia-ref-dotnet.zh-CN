@@ -1,13 +1,5 @@
 <Type Name="LegendKey" FullName="Microsoft.Office.Interop.Word.LegendKey">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5afae6ae2188a32fcf0f5a737df65138db85e28f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666369" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LegendKey" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="18cf7899909c96cd26849bf9e5bcc1ff0238e9b9" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146645" /></Metadata><TypeSignature Language="C#" Value="public interface LegendKey" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LegendKey" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LegendKey" />
   <TypeSignature Language="VB.NET" Value="Public Interface LegendKey" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>代表图表图例中的图例标示。</summary>
-    <remarks>
-      <para>每个图例项标示图形表示使用其关联的系列或趋势线图表中的图例项。图例项标示所链接到与其关联的系列或趋势线的格式之一同时更改的其他格式的方式。</para>
-      <para />
-    </remarks>
+    <remarks><para>每个图例项标示都是一个图形，它将图例项标示以及与之相关联的图表中的系列或趋势线链接起来。图例项标示链接到与之相关联的系列或趋势线的方式为：更改一个的格式会同时更改另一个的格式。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +46,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
-        <value>
-          <b>Application</b>
-        </value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <value><b>Application</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,10 +77,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Border" />对象，它代表对象的边框。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Border" /> object 类型的对象, 该对象代表对象的边框。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +104,7 @@
       <Parameters />
       <Docs>
         <summary>清除对象的格式设置。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,14 +131,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 <b>Integer</b> 类型，只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Integer</b>。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -180,10 +160,8 @@
       <Docs>
         <summary>删除对象。</summary>
         <returns>返回<see cref="T:System.Object" />。</returns>
-        <remarks>
-          <para>删除<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />对象将删除整个系列。</para>
-          <para />
-        </remarks>
+        <remarks><para>删除<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />对象将删除整个系列。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -212,10 +190,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />指定的形状的对象或<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />对象包含填充格式的形状或图表属性指定的图表。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />的形状或<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />对象的对象, 该对象包含形状或图表的填充格式属性指定的图表。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,9 +220,7 @@
       <Docs>
         <summary>返回行、 填充和效果的对象的格式。
 只读<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,9 +248,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 <b>Double</b> 值，它代表对象的高度（以磅为单位）。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,10 +278,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Interior" />值，该值代表指定对象的内部的对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Interior" /> object 类型的对象, 该对象代表指定对象的内部。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,11 +309,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果 Microsoft Word 将反转对象中的图案，当它对应于一个负数。 可读写 <b>Boolean</b>。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>如此</b> 如果 Microsoft Word 将反转对象中的图案，当它对应于一个负数。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,9 +338,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 <b>Double</b> 值，它代表从对象左边缘到图表区左边缘的距离（以磅为单位）。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,10 +368,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>将数据标志的背景色设置为 RGB 值或返回对应的颜色索引值。 仅适用于折线图、 散点图和雷达图。 可读写 <b>Integer</b>。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>将数据标志的背景色设置为 RGB 值或返回对应的颜色索引值。 仅适用于折线图、散点图和雷达图。 <b>Integer</b> 型，可读/写。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -436,10 +399,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置数据标记背景色，作为当前调色板中的索引也可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量：<see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" />或<see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />。 仅适用于折线图、 散点图和雷达图。 读/写</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />
-        </value>
+        <summary>返回或设置数据标志的背景色作为当前调色板中的索引, 或者作为下列<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量之一: <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" />或。 <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" /> 仅适用于折线图、散点图和雷达图。 读/写</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,10 +430,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>将标记前景色设置为 RGB 值或返回对应的颜色索引值。 仅适用于折线图、 散点图和雷达图。 可读写 <b>Integer</b>。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>将数据标志的背景色设置为 RGB 值或返回对应的颜色索引值。 仅适用于折线图、散点图和雷达图。 <b>Integer</b> 型，可读/写。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -502,10 +461,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置标记前景颜色，作为当前调色板中的索引也可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量：<see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" />或<see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />。 仅适用于折线图、 散点图和雷达图。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />
-        </value>
+        <summary>返回或设置标记的前景色作为当前调色板中的索引, 或作为下列<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量之一: <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" />或。 <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" /> 仅适用于折线图、散点图和雷达图。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -535,10 +492,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>以磅为单位返回或设置数据标记的大小。 可以是介于 2 到 72 之间。 可读写 <b>Integer</b>。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回或设置数据标志的大小，以磅为单位。 可以是 2 到 72 之间的一个值。 <b>Integer</b> 型，可读/写。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -569,9 +524,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置折线图、散点图或雷达图中数据点或系列的数据标记样式。 读/写<see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -598,10 +551,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父级。只读 <b>对象</b> 。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父级。 只读 <b>对象</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -631,10 +582,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" />确定图片的方式的常量值显示在图例项标示上。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" />常量值, 用于确定图片在图例项标示上的显示方式。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -670,10 +619,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置图表上的每张图片的单位，如果<see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" />属性设置为<see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" />（如果没有，则忽略此属性）。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>返回或设置图表上的每个图片的单位 (如果<see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" />该属性设置为<see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> ) (如果不是, 则忽略此属性)。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -703,10 +650,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置图表上的每张图片的单位，如果<see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" />属性设置为<b>xlStackScale</b> （如果没有，则忽略此属性）。 读/写 <b>双</b> 。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>返回或设置图表上的每个图片的单位 (如果<see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" />该属性设置为<b>xlStackScale</b> (如果不是, 则忽略此属性)。 读/写 <b>Double</b>。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -735,9 +680,7 @@
       <Parameters />
       <Docs>
         <summary>选择对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -768,9 +711,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>Boolean</b> 值，它确定对象是否有阴影。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -800,10 +741,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果图例项标示有平滑线，则为 <b>True</b>。可读写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>如此</b> 如果平滑开启图例项标示。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -830,10 +769,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>Double</b>值，代表从行 1 （在工作表） 的顶部或顶部的图表区域 （在图表上） 对象的上边缘的距离，以磅为单位。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>返回一个<b>Double</b>值, 它代表从对象的上边缘到工作表上的第1行顶部或图表上的图表区顶部的距离 (以磅为单位)。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -861,9 +798,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 <b>Double</b> 值，表示的宽度，以磅为单位的对象。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

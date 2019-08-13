@@ -1,13 +1,5 @@
 <Type Name="UndoRecord" FullName="Microsoft.Office.Interop.Word.UndoRecord">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cad0a001261dae8c6e1145efa4c99df630fc70b1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666317" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UndoRecord" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dccd67ac1bae806d140ca00b07a8119ac1166895" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143789" /></Metadata><TypeSignature Language="C#" Value="public interface UndoRecord" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UndoRecord" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.UndoRecord" />
   <TypeSignature Language="VB.NET" Value="Public Interface UndoRecord" />
@@ -53,13 +45,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 2010 应用程序。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 2010 应用程序。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.Application" /> Microsoft Word 2010 应用程序的对象。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 2010 应用程序的对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -85,14 +74,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个指示在其中创建指定的对象的应用程序的 32 位整数。</summary>
-        <value>指示在其中创建指定的对象的应用程序的 32 位整数。</value>
-        <remarks>
-          <para>只读的<b>long</b>。如果对象在 Microsoft Word 中创建的则此属性返回十六进制数字 4d535744，表示字符串"MSWD"。此属性主要旨在用于 Apple Macintosh 上，其中每个应用程序具有四个字符的创建者代码。例如，Word 具有 MSWD 的创建者代码。</para>
+        <summary>获取一个32位整数, 该整数指示在其中创建指定对象的应用程序。</summary>
+        <value>一个32位整数, 它指示在其中创建指定对象的应用程序。</value>
+        <remarks><para><b>Long 类型</b>, 只读。 如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
           <para>
-            <b>警告</b>： 此值也可以由常量<b>wdCreatorCode</b>。</para>
-          <para />
-        </remarks>
+            <b>警告</b>: 此值还可以由常量<b>wdcreatorcode 表示</b>表示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomRecordLevel">
@@ -118,12 +105,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值，指定当前处于活动状态的自定义撤消操作呼叫的数目。</summary>
-        <value>指定当前处于活动状态的自定义撤消操作呼叫的数目。</value>
-        <remarks>
-          <para>只读的。如果没有自定义撤消操作处于活动状态，则将此属性设置为零。</para>
-          <para />
-        </remarks>
+        <summary>获取一个值, 该值指定当前处于活动状态的自定义撤消操作调用的数量。</summary>
+        <value>指定当前处于活动状态的自定义撤消操作调用的数量。</value>
+        <remarks><para>只读。 如果没有处于活动状态的自定义撤消操作, 此属性将设置为零。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomRecordName">
@@ -149,12 +134,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取所有自定义撤消操作完成时，显示的项指定撤消堆栈的字符串。</summary>
-        <value>所有自定义撤消操作完成时，请在撤消堆栈中指定显示的项。</value>
-        <remarks>
-          <para>只读的。如果自定义撤消记录嵌套在其他自定义撤消记录，此属性指定哪些字符串撤消操作完成后所有自定义撤消堆栈上显示。如果多次调用<see cref="M:Microsoft.Office.Interop.Word.UndoRecord.StartCustomRecord" />嵌套的方法，由该属性返回第一次调用指定的字符串。如果没有操作处于活动状态，则属性将返回空字符串。</para>
-          <para />
-        </remarks>
+        <summary>获取一个字符串, 指定在完成所有自定义撤消操作后, 在撤消堆栈上显示的条目。</summary>
+        <value>指定在完成所有自定义撤消操作后, 在撤消堆栈上显示的条目。</value>
+        <remarks><para>只读。 如果自定义撤消记录嵌套在其他自定义撤消记录中，则该属性指定所有自定义撤消操作完成后撤消堆栈上出现的字符串。 如果嵌套对<see cref="M:Microsoft.Office.Interop.Word.UndoRecord.StartCustomRecord" />方法的多个调用, 则由第一个调用指定的字符串由该属性返回。 如果没有操作处于活动状态，该属性返回空字符串。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndCustomRecord">
@@ -205,13 +188,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取是否正在录制的自定义撤消操作。</summary>
-        <value>
-          <b>true</b>如果正在录制的自定义撤消操作;否则为<b>false</b>。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取是否正在记录自定义撤消操作。</summary>
+        <value>如果正在录制自定义撤消操作, 则为<b>true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -237,9 +217,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:System.Object" />，表示指定的父对象<see cref="T:Microsoft.Office.Interop.Word.UndoRecord" />对象。</summary>
-        <value>
-          <see cref="T:System.Object" /> ，表示指定的父对象<see cref="T:Microsoft.Office.Interop.Word.UndoRecord" />对象。</value>
+        <summary>获取一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.UndoRecord" />对象的父对象的。</summary>
+        <value>一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.UndoRecord" />对象的父对象的。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,11 +246,9 @@
       <Docs>
         <param name="Name">指定的自定义撤消记录的名称。此字符串长度为 64 个字符限制。如果提供更长的字符串，该字符串被截断为 64 个字符。</param>
         <summary>开始创建自定义撤消记录。</summary>
-        <remarks>
-          <para>如果<paramref name="Name" />参数省略或为空字符串，Word 2010 中使用的撤消记录的名称作为执行的第一个命令名称。</para>
-          <para>此方法可开始创建自定义撤消记录，其中记录时处于活动状态的记录下记录由 Name 定义到应用程序执行的所有操作。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果省略<paramref name="Name" />该参数或为空字符串, Word 2010 将使用作为撤消记录的名称执行的第一个命令的名称。</para>
+          <para>此方法开始创建自定义撤消记录, 这将记录在按名称定义的记录下活动时对该应用程序执行的所有操作。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

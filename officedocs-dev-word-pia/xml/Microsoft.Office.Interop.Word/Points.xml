@@ -1,13 +1,5 @@
 <Type Name="Points" FullName="Microsoft.Office.Interop.Word.Points">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e6ec73c293d015a6238b804a975848286853fb8c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666880" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Points : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5975220702129151c3928a376d05fe3cd4618651" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147716" /></Metadata><TypeSignature Language="C#" Value="public interface Points : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Points implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Points" />
   <TypeSignature Language="VB.NET" Value="Public Interface Points&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Word.Point" />图表中指定系列中的对象。</summary>
-    <remarks>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Series.Points(System.Object)" />(<paramref name="Index" />)，其中<paramref name="Index" />是点索引号，若要返回单个<see cref="T:Microsoft.Office.Interop.Word.Point" />对象。点编号从左到右系列。Points(1) 是最左侧的点，Points(Points.Count) 是最右侧的点。</para>
-      <para />
-    </remarks>
+    <summary>图表中指定系列中<see cref="T:Microsoft.Office.Interop.Word.Point" />的所有对象的集合。</summary>
+    <remarks><para>Use <see cref="M:Microsoft.Office.Interop.Word.Series.Points(System.Object)" />(<paramref name="Index" />), 其中<paramref name="Index" />是点索引号, 用于返回单个<see cref="T:Microsoft.Office.Interop.Word.Point" />对象。 点在系列从左至右编号。 Points(1) 为最左边的数据点，而 Points(Points.Count) 为最右边的数据点。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -92,9 +82,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
-        <value>
-          <b>应用程序</b>（请参见上文）</value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <value><b>应用程序</b>(请参阅上面的)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,9 +111,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 <b>Integer</b> 值，它代表集合中对象的数量。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,14 +138,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 <b>Integer</b> 类型，只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Integer</b>。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -219,12 +202,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>必选。</b> 对象的索引号。</param>
+        <param name="Index">必需的<b>整数</b>。 对象的索引号。</param>
         <summary>从集合中返回单个对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Point" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Point" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,10 +231,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父级。只读 <b>对象</b> 。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父级。 只读 <b>对象</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

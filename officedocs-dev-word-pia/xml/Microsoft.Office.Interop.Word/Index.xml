@@ -1,13 +1,5 @@
 <Type Name="Index" FullName="Microsoft.Office.Interop.Word.Index">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="29a048bd50da4b799253e2ded2f3f3740fa51959" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666349" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Index" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ea0b3d6991ec86522b62224092f8f026d7c830fe" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146694" /></Metadata><TypeSignature Language="C#" Value="public interface Index" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Index" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Index" />
   <TypeSignature Language="VB.NET" Value="Public Interface Index" />
@@ -27,13 +19,10 @@
   </Attributes>
   <Docs>
     <summary>代表单个的索引。</summary>
-    <remarks>
-      <para>
-        <b>Index</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.Indexes" />集合。<b>Indexes</b>集合包含的所有索引中指定的文档。</para>
-      <para>使用<b>索引</b>(<paramref name="index" />)，其中<paramref name="index" />是要返回的单个<b>Index</b>对象的索引号。索引号代表文档中的<b>Index</b>对象的位置。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Indexes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法，以创建索引，并将其添加到<b>Indexes</b>集合。</para>
-      <para />
-    </remarks>
+    <remarks><para><b>Index</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Indexes" />集合的一个成员。 <b>索引</b> 集合包含指定文档中的所有索引。</para>
+      <para>使用<b>索引</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回单个<b>index</b>对象。 索引号代表文档中的 <b>索引</b> 对象的位置。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Indexes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法可创建索引并将其添加到<b>索引</b>集合中。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AccentedLetters">
@@ -62,8 +51,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果指定的索引包含用于重音字母的单独的标题 (例如，以"À"开头的单词是一个标题下而以"A"开头的词位于另)。</summary>
+        <summary><b>如此</b> 如果指定的索引包含用于重音字母的单独的标题 (例如，以"À"开头的单词是一个标题下而以"A"开头的词位于另)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,9 +109,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -147,7 +135,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,13 +165,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdIndexFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，指定 Microsoft Word 如何对指定索引中的条目的第一个字符进行分类。</summary>
+        <summary>返回或设置一个值, 该值指定 Microsoft Word 如何对指定索引中的条目的第一个字符进行分类。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Filter</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdIndexFilter" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Filter</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdIndexFilter" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeadingSeparator">
@@ -212,13 +197,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdHeadingSeparator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置在索引中的字母组 （以相同的字母开头的条目） 之间的文字。 对应于索引域的 \h 开关。</summary>
+        <summary>返回或设置在索引中字母组 (以相同字母开头的条目) 之间的文本。 与 INDEX 域中的 \h 开关相对应。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>HeadingSeparator</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdHeadingSeparator" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>HeadingSeparator</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdHeadingSeparator" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexLanguage">
@@ -247,13 +229,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用于指定的索引的排序语言。</summary>
+        <summary>返回或设置用于指定索引的排序语言。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>IndexLanguage</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量。这些常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>IndexLanguage</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一。 [!注释] 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberOfColumns">
@@ -282,12 +261,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回每个页的索引列数。</summary>
+        <summary>返回或设置索引中每页的列数。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定为 0 （零） 将索引中的列数设置为相同的数目一样文档中。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定为 0（零）会将索引中的列数设置为与文档中的列数相同的数。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -341,12 +318,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定对象中包含的文档部分。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关从文档返回一个区域或从形状集合返回形状范围的信息，请参阅<b>Range</b>方法的<see cref="T:Microsoft.Office.Interop.Word.Document" />或<see cref="T:Microsoft.Office.Interop.Word.Shapes" />对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息, 请参阅<see cref="T:Microsoft.Office.Interop.Word.Document" /> or <see cref="T:Microsoft.Office.Interop.Word.Shapes" />对象的<b>range</b>方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightAlignPageNumbers">
@@ -375,8 +350,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果页码与索引中的右边距对齐。</summary>
+        <summary><b>如此</b> 如果页码与索引中的右边距对齐。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -409,11 +383,8 @@
       <Docs>
         <summary>返回或设置指定索引的排序准则。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>SortBy</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdIndexSortBy" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>SortBy</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdIndexSortBy" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabLeader">
@@ -442,13 +413,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTabLeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置索引中的条目和它们的页码之间的字符。</summary>
+        <summary>返回或设置索引中的条目和页码之间的字符。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>TabLeader</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>TabLeader</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -479,11 +447,8 @@
       <Docs>
         <summary>返回或设置索引的类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Type</b>属性可以是之一<see cref="T:Microsoft.Office.Interop.Word.WdIndexType" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Type</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdIndexType" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">

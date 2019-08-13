@@ -1,13 +1,5 @@
 <Type Name="Language" FullName="Microsoft.Office.Interop.Word.Language">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="040fc6fe1bbe3d61841dfc8c2ab0322e89c441c7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666259" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Language" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6a420e980d31a95af3eadfbd098d98e9a7886930" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146659" /></Metadata><TypeSignature Language="C#" Value="public interface Language" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Language" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Language" />
   <TypeSignature Language="VB.NET" Value="Public Interface Language" />
@@ -27,20 +19,16 @@
   </Attributes>
   <Docs>
     <summary>表示用于校对或设置格式在 Microsoft Word 中的语言。</summary>
-    <remarks>
-      <para>
-        <b>Language</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.Languages" />集合。</para>
-      <para>使用<b>语言</b>(<paramref name="index" />) 可返回单个<b>Language</b>对象，其中<paramref name="index" />可以的值<see cref="P:Microsoft.Office.Interop.Word.Language.Name" />属性、 值<see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />属性之一<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量或一个<see cref="T:Microsoft.Office.Core.MsoLanguageID" />常量。</para>
-      <para>
-        <see cref="P:Microsoft.Office.Interop.Word.Language.Name" />属性返回的一种语言，名称，而<see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />属性返回在用户的语言的语言的名称。</para>
-      <para>对于每种语言，其安装校对工具，您可以使用<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />， <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />， <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />，和<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />属性可返回相应<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象。</para>
-      <para>的写作风格是用语法检查的规则集。<see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" />属性返回一个代表指定语言可用写作风格的字符串数组。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" />属性设置的默认写作风格您希望 Word 使用。</para>
-      <para>您可以重写默认的写作风格与<see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" />属性。此属性应用于指定的文档文本中指定的语言标记。</para>
-      <para>您必须已安装了您打算检查每种语言的校对工具。</para>
-      <para>如果标记为<b>wdNoProofing</b>文本，Word 会跳过这些标记的文字时运行拼写或语法检查。</para>
-      <para />
-    </remarks>
+    <remarks><para><b>语言</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Languages" />集合的一个成员。</para>
+      <para>使用<b>语言</b>(<paramref name="index" />) 返回单个<b>语言</b>对象, 其中<paramref name="index" />可以是<see cref="P:Microsoft.Office.Interop.Word.Language.Name" />属性的值、 <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />属性的值、 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一或<see cref="T:Microsoft.Office.Core.MsoLanguageID" />常量之一。</para>
+      <para>该<see cref="P:Microsoft.Office.Interop.Word.Language.Name" />属性返回语言的名称, 而<see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />属性以用户语言返回语言的名称。</para>
+      <para>对于安装了校对工具的每种语言, 您<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />可以使用、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />和<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />属性来返回相应<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />的对象。</para>
+      <para>写作风格是用语法检查器的规则集。 该<see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" />属性返回一个字符串数组, 这些字符串代表指定语言的可用写作风格。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" />属性可设置希望 Word 使用的默认写作风格。</para>
+      <para>您可以使用<see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" />属性替代默认的写作风格。 此属性应用于指定的文档中以指定语言标记的文本。</para>
+      <para>[!注释] 必须为待检查的每种语言安装校对工具。</para>
+      <para>如果将标记为 <b>wdNoProofing</b> 的文本时，Word 会被标记的文本跳过运行拼写和语法检查。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveGrammarDictionary">
@@ -66,12 +54,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象，它代表指定语言的活动语法词典。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象, 表示指定语言的活动语法词典。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果没有安装指定语言的语法词典，则此属性返回<b>Nothing</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果没有安装指定语言的语法词典, 则此属性将返回<b>Nothing</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveHyphenationDictionary">
@@ -97,12 +83,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象，它代表指定语言的活动断字词典。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象, 表示指定语言的活动断字词典。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果没有安装指定语言的断字词典，则此属性返回<b>Nothing</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果没有安装指定语言的断字词典, 则此属性返回<b>Nothing</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveSpellingDictionary">
@@ -128,12 +112,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象，它代表指定语言的活动拼写词典。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象, 表示指定语言的活动拼写词典。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果没有安装指定语言的拼写词典，则此属性返回<b>Nothing</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果没有安装指定语言的拼写词典, 则此属性将返回<b>Nothing</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveThesaurusDictionary">
@@ -159,12 +141,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象，它代表指定语言的活动同义词词典。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object 类型的对象, 该对象代表指定语言的活动同义词词典。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果没有安装指定语言的同义词库词典，则此属性返回<b>Nothing</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果没有安装指定语言的同义词库词典, 则此属性将返回<b>Nothing</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -190,7 +170,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -220,9 +200,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultWritingStyle">
@@ -251,14 +231,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置默认的写作风格由用于指定的语言的语法检查器。 指定语言的本地化的名称的写作风格名称。</summary>
+        <summary>返回或设置默认的写作风格由用于指定的语言的语法检查器。 The name of the writing style is the localized name for the specified language.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性控制的写作风格的全局设置。设置此属性时，您必须使用拼写上的编写样式框中找到的确切名称&amp;工具菜单选项对话框中的语法选项卡。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" />属性文档中设置的每种语言的写作风格。<b>ActiveWritingStyle</b>设置将覆盖<b>DefaultWritingStyle</b>设置。</para>
-          <para />
-        </remarks>
+        <remarks><para>This property controls the global setting for the writing style. 设置该属性时, 必须使用 "工具" 菜单 "选项" 对话框中 "拼写&amp;语法" 选项卡上 "写作风格" 框中的确切名称。</para>
+          <para>该<see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" />属性设置文档中每种语言的写作风格。 <b>ActiveWritingStyle</b> 设置覆盖的 <b>DefaultWritingStyle</b> 设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -286,11 +263,8 @@
       <Docs>
         <summary>返回标识指定的语言的数字。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ID</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>ID</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -403,14 +377,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdDictionaryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置校对工具类型。 为可读/写属性。</summary>
+        <summary>返回或设置校对工具类型。 读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以使用此属性更改为 Microsoft Word 所使用的可用加载项词典之一的活动拼写词典。例如，有一些法律、 医疗和完整拼写词典，您可以使用而不是标准词典。</para>
-          <para>
-            <b>SpellingDictionaryType</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" />常量。这些常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>您可以使用此属性将活动拼写词典更改为与 Microsoft Word 一起使用的可用加载项词典之一。 例如，可以用法律、医学和大型拼写词典来代替标准词典。</para>
+          <para><b>SpellingDictionaryType</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" />常量之一。 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WritingStyleList">

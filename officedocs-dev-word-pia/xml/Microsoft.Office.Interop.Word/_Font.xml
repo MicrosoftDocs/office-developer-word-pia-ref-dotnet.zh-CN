@@ -1,13 +1,5 @@
 <Type Name="_Font" FullName="Microsoft.Office.Interop.Word._Font">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="05b387917c3c8ecf74282e707cae073f60320ccb" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665586" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Font" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="05b387917c3c8ecf74282e707cae073f60320ccb" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145252" /></Metadata><TypeSignature Language="C#" Value="public interface _Font" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Font" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word._Font" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Font" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>这是与相应的 COM 对象的互操作性的托管代码需要 COM coclass 中的主接口。 仅当您想要使用的方法共享相同的名称的 COM 对象; 事件时，才使用此主接口在这种情况下，强制转换为此接口调用方法，并强制转换为最新的事件接口，连接到该事件。 否则，使用.NET 接口派生自 COM coclass 访问方法、 属性和事件的 COM 对象。 有关 COM 对象的信息，请参阅<see cref="T:Microsoft.Office.Interop.Word.Font" />。</summary>
+    <summary>这是 COM coclass（托管代码需要此 Coclass 来实现与相应的 COM 对象的互操作性）中的主接口。 仅当您想要使用的方法与 COM 对象的事件共享同一名称时才使用此主接口；在这种情况下，转换为此接口以调用该方法，转换为最新的事件接口以连接到该事件。 否则，请使用派生自 COM coclass 的 .NET 接口来访问方法、属性和 COM 对象的事件。 有关 COM 对象的信息, 请参阅<see cref="T:Microsoft.Office.Interop.Word.Font" />。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,13 +48,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果字体为格式设置为全部字母大写。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （ <b>True</b>和<b>False</b>的混合）。 可以设置为<b>True</b>、 <b>False</b>或<b>wdToggle</b> （反转的当前设置）。 可读写 <b>Integer</b>。</summary>
+        <summary>如果字体格式为全部字母大写，则该属性值为 <b>True</b>。 返回 <b>True</b>、<b>False</b> 或 <b>wdUndefined</b>（当返回值既可为 <b>True</b>，也可为 <b>False</b> 时取该值）。 该属性可设置为 <b>True</b>、<b>False</b> 或 <b>wdToggle</b>（与当前设置相反）。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果设置<b>AllCaps</b>为<b>true，则</b><see cref="P:Microsoft.Office.Interop.Word._Font.SmallCaps" />为<b>False</b>，反之亦然。</para>
-          <para />
-        </remarks>
+        <remarks><para>将<b>AllCaps</b>设置<b></b>为 True <see cref="P:Microsoft.Office.Interop.Word._Font.SmallCaps" />将设置为<b>False</b>, 反之亦然。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Animation">
@@ -125,7 +114,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,8 +145,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果将字体或区域的格式设置为加粗格式。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （ <b>True</b>和<b>False</b>的混合）。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 可读写 <b>Integer</b>。</summary>
+        <summary><b>如此</b> 如果将字体或区域的格式设置为加粗格式。 返回<b>true</b>、 <b>false</b>或<b>wdUndefined</b> ( <b>true</b>和<b>False</b>的混合)。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,14 +176,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果将字体或区域的格式设置为加粗格式。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （用于混合的粗体和非粗体文本）。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 可读写 <b>Integer</b>。</summary>
+        <summary><b>如此</b> 如果将字体或区域的格式设置为加粗格式。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> (为粗体和非粗体文本的混合)。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>BoldBi</b>属性应用于从右向左的语言的文字。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>BoldBi</b> 属性适用于从右向左的语言文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -224,7 +208,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合，代表指定对象的所有边框。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合, 该集合代表指定对象的所有边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -261,7 +245,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置为指定的 24 位颜色<see cref="T:Microsoft.Office.Interop.Word.Font" />对象。</summary>
+        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.Font" />对象的24位颜色。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -292,13 +276,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的颜色<see cref="T:Microsoft.Office.Interop.Word.Border" />或<see cref="T:Microsoft.Office.Interop.Word.Font" />对象。</summary>
+        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.Border" />的或<see cref="T:Microsoft.Office.Interop.Word.Font" />对象的颜色。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>WdByAuthor</b>常量对边框和字体对象无效。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>WdByAuthor</b> 常量无效为边框和字体对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColorIndexBi">
@@ -327,7 +308,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的颜色<see cref="T:Microsoft.Office.Interop.Word.Font" />从右到左语言文档中的对象。</summary>
+        <summary>返回或设置从右到左语言<see cref="T:Microsoft.Office.Interop.Word.Font" />的文档中指定对象的颜色。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,11 +340,9 @@
       </ReturnValue>
       <Docs>
         <summary>指定对指定的字体启用上下文替代字。</summary>
-        <value>A<see cref="T:System.Int32" />对象。</value>
-        <remarks>
-          <para>上下文替换是连字应用于基于周围 （其上下文） 字母的单个字符。上下文替换也可以应用到某些上下文，例如，标题中常用的单词的整个单词 (如"的"和"")。如果字体启用上下文替换了，而不是标准的连字字体设计定义这些上下文中使用它们。设置此属性与选择使用上下文替换旁边 （在 OpenType 功能组中，高级选项卡上，在 Word 2010 中的字体对话框） 复选框的效果相同。</para>
-          <para />
-        </remarks>
+        <value><see cref="T:System.Int32" /> 对象。</value>
+        <remarks><para>上下文替换是根据单个字符周围的字母（其上下文）应用于这些字符的连字。 上下文替换还可以应用于特定上下文中的所有词，例如常常用于标题中的词（如"of"和"the"）。 为字体启用上下文替代项时, 将在字体设计器定义的这些上下文中使用标准连字, 而不使用它们。设置该属性与在 Word 2010 中的 "字体" 对话框上选中 "使用上下文替换" (在 "OpenType 功能组"、"高级" 选项卡上) 旁边的复选框的效果相同。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -389,11 +368,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 <b>Integer</b> 类型，只读。</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Integer</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DiacriticColor">
@@ -422,12 +401,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用于为指定的音调符号的 24 位颜色<see cref="T:Microsoft.Office.Interop.Word.Font" />对象。 可以是任何有效<see cref="T:Microsoft.Office.Interop.Word.WdColor" />常量或 Visual Basic 的<b>RGB</b>函数返回的值。 为可读/写属性。</summary>
+        <summary>返回或设置用于指定<see cref="T:Microsoft.Office.Interop.Word.Font" />对象的音调符号的24位颜色。 可以是任何有效<see cref="T:Microsoft.Office.Interop.Word.WdColor" />常量, 也可以是 Visual Basic 的<b>RGB</b>函数返回的值。 读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>值<see cref="P:Microsoft.Office.Interop.Word.Options.UseDiffDiacColor" />属性必须为<b>True</b>才能使用此属性。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.Options.UseDiffDiacColor" />属性的值必须为<b>True</b> , 才能使用此属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisableCharacterSpaceGrid">
@@ -456,8 +433,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果 Microsoft Word 忽略的每行对应的字符数<see cref="T:Microsoft.Office.Interop.Word.Font" />对象。 可读写 <b>Boolean</b>。</summary>
+        <summary><b>如此</b>如果 Microsoft Word 将忽略对应<see cref="T:Microsoft.Office.Interop.Word.Font" />的对象每行的字符数。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -488,13 +464,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果指定的字体格式设置为双删除线文本。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （ <b>True</b>和<b>False</b>的混合）。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 可读写 <b>Integer</b>。</summary>
+        <summary><b>如此</b>如果指定字体的格式设置为双删除线文本。 返回 <b>True</b>、<b>False</b> 或 <b>wdUndefined</b>（当返回值既可为 <b>True</b>，也可为 <b>False</b> 时取该值）。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要设置或返回单删除线格式，使用<see cref="P:Microsoft.Office.Interop.Word._Font.StrikeThrough" />属性。<b>DoubleStrikeThrough</b>设置为<b>True</b>将<b>删除线</b>设置为<b>False</b>，反之亦然。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要设置或返回单行删除线格式, 请使用<see cref="P:Microsoft.Office.Interop.Word._Font.StrikeThrough" />属性。 将<b>DoubleStrikeThrough</b>设置为<b>True</b>将<b>删除线</b>设置为<b>False</b>, 反之亦然。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Duplicate">
@@ -520,13 +493,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个只读的<see cref="T:Microsoft.Office.Interop.Word.Font" />对象，它代表指定字体的字符格式。</summary>
+        <summary>返回一个只读<see cref="T:Microsoft.Office.Interop.Word.Font" />对象, 该对象代表指定字体的字符格式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以使用<b>重复</b>属性拿起重复<b>字体</b>、 的所有属性的设置<see cref="T:Microsoft.Office.Interop.Word.LetterContent" />对象，或<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />对象。</para>
-          <para>您可以分配到要同时应用这些设置的相同类型的另一个对象由<b>重复</b>属性返回的对象。在之前将重复对象分配给另一个对象，您可以更改任何重复的对象的属性而不影响原始。</para>
-          <para />
-        </remarks>
+        <remarks><para>可以使用<b>重复</b>的属性来选取重复的<b>字体</b>、 <see cref="T:Microsoft.Office.Interop.Word.LetterContent" />对象或<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />对象的所有属性的设置。</para>
+          <para>您可以分配到要一次性应用这些设置的相同类型的另一个对象 <b>复制</b> 属性返回的对象。 在将重复对象赋给另一个对象之前, 可以更改任何重复的对象的属性而不会影响原始。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Emboss">
@@ -555,8 +526,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果将指定的字体的格式设置为阳文。 返回 <b>真</b> 、 <b>假</b> 或 <b>wdUndefined</b> 。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 可读写 <b>Integer</b>。</summary>
+        <summary><b>如此</b> 如果将指定的字体的格式设置为阳文。 返回 <b>真</b> 、 <b>假</b> 或 <b>wdUndefined</b> 。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -589,9 +559,8 @@
       <Docs>
         <summary>返回或设置字符或指定的字符字符串的着重号。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdEmphasisMark" />可以是下列常量之一：</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdEmphasisMark" />可以是下列常量之一:</para>
           <para>
             <b>wdEmphasisMarkNone</b>
           </para>
@@ -607,8 +576,7 @@
           <para>
             <b>wdEmphasisMarkUnderSolidCircle</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Engrave">
@@ -637,13 +605,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果该字体的格式设置为阴文， <b>则返回 true</b> 。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （ <b>True</b>和<b>False</b>的混合）。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 可读写 <b>Integer</b>。</summary>
+        <summary>如果该字体的格式设置为阴文， <b>则返回 true</b> 。 返回<b>true</b>、 <b>false</b>或<b>wdUndefined</b> ( <b>true</b>和<b>False</b>的混合)。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>将 Engrave</b>设置为<b>true，则</b><see cref="P:Microsoft.Office.Interop.Word._Font.Emboss" />为<b>False</b>，反之亦然。</para>
-          <para />
-        </remarks>
+        <remarks><para>将<b>阴</b>文<b></b>设置为<see cref="P:Microsoft.Office.Interop.Word._Font.Emboss" /> True 可将其设置为<b>False</b>, 反之亦然。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -672,12 +637,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />对象，其中包含填充格式由指定的文本范围的字体属性。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />对象。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />对象, 该对象包含指定文本范围使用的字体的填充格式属性。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> 对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Glow">
@@ -706,12 +669,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.GlowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />对象，表示由指定的文本范围的字体格式的发光。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />对象。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />对象, 表示指定范围的文本使用的字体的发光格式。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.GlowFormat" /> 对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Grow">
@@ -765,14 +726,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果字体的格式设置为隐藏文字。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （ <b>True</b>和<b>False</b>的混合）。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 可读写 <b>Integer</b>。</summary>
+        <summary><b>如此</b> 如果字体的格式设置为隐藏文字。 返回<b>true</b>、 <b>false</b>或<b>wdUndefined</b> ( <b>true</b>和<b>False</b>的混合)。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要控制隐藏文字的显示，请使用<see cref="P:Microsoft.Office.Interop.Word.View.ShowHiddenText" />属性<see cref="T:Microsoft.Office.Interop.Word.View" />对象。</para>
-          <para>来控制是否属性和方法的返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象包含或排除隐藏的文字时不显示隐藏的文字，使用<see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" />属性<see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要控制隐藏文字的显示, 请使用<see cref="P:Microsoft.Office.Interop.Word.View.ShowHiddenText" /> <see cref="T:Microsoft.Office.Interop.Word.View" />对象的属性。</para>
+          <para>若要控制在隐藏的文本未<see cref="T:Microsoft.Office.Interop.Word.Range" />显示时返回对象是否包含或排除隐藏文本的属性和方法<see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" /> , 请使用<see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />对象的属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Italic">
@@ -801,8 +759,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果字体或区域的格式设置为倾斜格式。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （ <b>True</b>和<b>False</b>的混合）。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 可读写 <b>Integer</b>。</summary>
+        <summary><b>如此</b> 如果字体或区域的格式设置为倾斜格式。 返回<b>true</b>、 <b>false</b>或<b>wdUndefined</b> ( <b>true</b>和<b>False</b>的混合)。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -833,14 +790,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果字体或区域的格式设置为倾斜格式。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （用于倾斜和非斜体文本的混合）。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 可读写 <b>Integer</b>。</summary>
+        <summary><b>如此</b> 如果字体或区域的格式设置为倾斜格式。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> (以斜体和非斜体文本的混合形式)。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ItalicBi</b>属性应用于从右向左的语言的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>[!注释] <b>ItalicBi</b> 属性适用于从右向左的语言文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Kerning">
@@ -869,7 +822,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 Microsoft Word 将调整自动字距调整的最小字号。读/写 <b>单个</b> 。</summary>
+        <summary>返回或设置 Microsoft Word 将调整自动字距调整的最小字号。 读/写 <b>单个</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -900,32 +853,30 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLigatures</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置为指定的<b>Font</b>对象设置连字。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.WdLigatures" />对象。</value>
-        <remarks>
-          <para>读/写<b>WdLigatures</b>。打开 Type 字体支持使用连字。此属性指定要应用于开放类型字体的 Word 2010 连字设置。</para>
+        <summary>获取或设置指定<b>Font</b>对象的连字设置。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdLigatures" /> 对象。</value>
+        <remarks><para>可读/写 <b>WdLigatures</b>。 OpenType 字体支持使用连字。 此属性指定应用于开放类型字体的 Word 2010 连字设置。</para>
           <para>下表列出了连字的四个基本值。</para>
           <list type="table">
             <item>
               <description>标准</description>
-              <description>旨在增强可读性和吸引力。拉丁语标准连字包括"图形"、"fl"和"ff"。</description>
+              <description>设计用来增强可读性和吸引力。拉丁语言中的标准连字包括“fi”、“fl”和“ff”。</description>
             </item>
             <item>
               <description>上下文</description>
-              <description>旨在通过提供周围文本的最佳连字选择来增强可读性和吸引力。</description>
+              <description>设计用来通过根据周围文本提供最佳连字选择来增强可读性和吸引力。</description>
             </item>
             <item>
-              <description>历史</description>
-              <description>旧，看起来可能为现代读者陈旧的装饰连字。不专为可读性。</description>
+              <description>过去</description>
+              <description>较老的、装饰用连字，对于现代读者可能看起来比较古老。不是专为可读性而设计的。</description>
             </item>
             <item>
-              <description>Discretional</description>
-              <description>旨在是装饰和未设计为可读。</description>
+              <description>任意</description>
+              <description>设计为装饰, 而不是旨在供阅读。</description>
             </item>
           </list>
-          <para>这四个基本值组合窗体的一套提供此属性的值。此组的值表示在<see cref="T:Microsoft.Office.Interop.Word.WdLigatures" />枚举。</para>
-          <para />
-        </remarks>
+          <para>这四个基本值的组合构成了此属性的可用值集。 此值集在<see cref="T:Microsoft.Office.Interop.Word.WdLigatures" />枚举中表示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -954,12 +905,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.LineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />指定行的格式的对象。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />对象。</value>
-        <remarks>
-          <para>读/写。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.LineFormat" />对象, 该对象指定行的格式。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.LineFormat" /> 对象。</value>
+        <remarks><para>读/写。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -988,7 +937,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定对象的名称。可读/写 <b>String</b> 类型。</summary>
+        <summary>返回或设置指定对象的名称。 可读/写 <b>String</b> 类型。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1019,12 +968,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用于西文文本 (字符代码为 0 (零) 到 127 个字符) 的字体。读/写， <b>字符串</b> 。</summary>
+        <summary>返回或设置用于西文文本 (字符代码为 0 (零) 到 127 个字符) 的字体。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在美国英语版本的 Microsoft Word 中，此属性的默认值为 Times New Roman。使用<see cref="P:Microsoft.Office.Interop.Word._Font.Name" />属性更改应用于所有文本和格式工具栏上的字体框中显示的字体。</para>
-          <para />
-        </remarks>
+        <remarks><para>在美国英语版本的 Microsoft Word 中，此属性的默认值为 Times New Roman。 使用<see cref="P:Microsoft.Office.Interop.Word._Font.Name" />属性可更改应用于所有文本和显示在 "格式" 工具栏上的 "字体" 框中的字体。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NameBi">
@@ -1053,7 +1000,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置从右到左语言的文档中的字体的名称。读/写， <b>字符串</b> 。</summary>
+        <summary>返回或设置从右到左语言的文档中的字体的名称。 读/写， <b>字符串</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1084,12 +1031,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一种东亚字体名称。读/写， <b>字符串</b> 。</summary>
+        <summary>返回或设置一种东亚字体名称。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在美国英语版本的 Microsoft Word 中，此属性的默认值为 Times New Roman。这是建议的方式，可返回或设置在 Word 中文版创建的文档中的中文文字的字体。</para>
-          <para />
-        </remarks>
+        <remarks><para>在英语（美国）版的 Microsoft Word 中，本属性的默认值是 Times New Roman。推荐使用本属性返回或设置文档中的亚洲文本所用的字体，该文档是用 Word 的亚洲版创建的。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NameOther">
@@ -1118,12 +1063,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用于从 128 到 255 的字符代码的字符的字体。读/写， <b>字符串</b> 。</summary>
+        <summary>返回或设置用于从 128 到 255 的字符代码的字符的字体。 读/写 <b>String</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在美国英语版本的 Microsoft Word 中，此属性的默认值为 Times New Roman。使用<see cref="P:Microsoft.Office.Interop.Word._Font.Name" />属性更改应用于所有文本和格式工具栏上的字体框中显示的字体。</para>
-          <para />
-        </remarks>
+        <remarks><para>在美国英语版本的 Microsoft Word 中，此属性的默认值为 Times New Roman。 使用<see cref="P:Microsoft.Office.Interop.Word._Font.Name" />属性可更改应用于所有文本和显示在 "格式" 工具栏上的 "字体" 框中的字体。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberForm">
@@ -1153,12 +1096,10 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置 OpenType 字体的数字形式设置。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.WdNumberForm" />对象。</value>
-        <remarks>
-          <para>读/写<b>WdNumberForm</b>。沿 （称为"内衬"），文本的基线的一致高度或号码上方或下方文本的基线的显示位置的不同高度 （称为"挂起"或"旧样式"），可以显示在 OpenType 字体的数字。使用此属性可指定是否使用内衬或旧样式显示号码。</para>
-          <para>设置该属性具有相同的效果数字形式旁边的下拉框中选择一项: （OpenType 功能在 Word 2010 中的字体对话框中的组的高级选项卡）。</para>
-          <para />
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdNumberForm" /> 对象。</value>
+        <remarks><para>可读/写 <b>WdNumberForm</b>。 OpenType 字体中的数字可以显示文本 (称为"宽，全高")，于基线一致高度或位置的数字显示的文本的基线之上或之下的不同高度 (称为"挂起"或"旧式")。 使用该属性可以指定是使用线形还是老式样式显示数字。</para>
+          <para>设置该属性与在 Word 2010 中的 "字体" 对话框中 "数字窗体: (OpenType 功能组, 高级" 选项卡) 旁边的下拉框中选择项的效果相同。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberSpacing">
@@ -1188,11 +1129,9 @@
       </ReturnValue>
       <Docs>
         <summary>获取或设置字体的数字间距设置。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.WdNumberSpacing" />对象。</value>
-        <remarks>
-          <para>读/写<b>WdNumberSpacing</b>。OpenType 字体支持比例和表格图功能，以控制数字间距。成比例数字间距处理每个数字类型为具有不同的宽度。例如，"1"显示为"5"比窄。表格数字间距处理号码作为相等的宽度，以使垂直对齐，从而提高可读性，尤其是对于财务信息。</para>
-          <para />
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdNumberSpacing" /> 对象。</value>
+        <remarks><para>可读/写 <b>WdNumberSpacing</b>。 OpenType 字体支持成比例和表格图表功能来控制数字间距。 成比例数字间距按不同的宽度处理每个数字。 例如，"1"的显示要比"5"窄。 表格数字间距按宽度相等处理数字，从而使它们能够垂直对齐，以增加可读性，特别是对于财务信息。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Outline">
@@ -1221,8 +1160,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果为镂空字体格式。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （True 和 False 的混合）。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 可读写 <b>Integer</b>。</summary>
+        <summary>如果字体格式为镂空，则该属性值为 <b>True</b>。 返回<b>true</b>、 <b>false</b>或<b>wdUndefined</b> (true 和 False 的混合)。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1281,7 +1219,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 (以磅为单位) 的文本相对于基准线的位置。 正值将文本提升，负值将文本降低。 可读写 <b>Integer</b>。</summary>
+        <summary>返回或设置 (以磅为单位) 的文本相对于基准线的位置。 正值将文本提升，负值将文本降低。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1312,12 +1250,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ReflectionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />对象，表示的反射格式形状。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />对象。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />对象, 该对象代表形状的反射格式。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" /> 对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -1342,10 +1278,8 @@
       <Parameters />
       <Docs>
         <summary>删除手动字符格式 (不使用样式应用的格式)。</summary>
-        <remarks>
-          <para>如果手动单词设置为加粗格式，基本样式为纯文本 （不是粗体），则重置方法将删除加粗格式。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果手动将某个单词的格式设置为加粗, 并且基本样式为纯文本 (不是粗体), 则 Reset 方法将删除加粗格式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Scaling">
@@ -1374,7 +1308,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置应用于字体的缩放百分比。 本属性以当前字体大小的百分比水平拉长或压缩文字（缩放范围从 1 到 600）。 可读写 <b>Integer</b>。</summary>
+        <summary>返回或设置应用于字体的缩放百分比。 本属性以当前字体大小的百分比水平拉长或压缩文字（缩放范围从 1 到 600）。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1427,7 +1361,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象的引用指定对象的底纹格式。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象, 该对象代表指定对象的底纹格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1458,7 +1392,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果<b>为 true 指定的字体的格式设置为</b>阴影。 可 <b>真</b> 、 <b>假</b> 或 <b>wdUndefined</b> 。 可读写 <b>Integer</b>。</summary>
+        <summary>如果将指定字体设置为阴影格式，则该属性值为 <b>True</b>。 可 <b>真</b> 、 <b>假</b> 或 <b>wdUndefined</b> 。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1514,7 +1448,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置字体大小，以磅为单位。读/写 <b>单个</b> 。</summary>
+        <summary>返回或设置字体大小，以磅为单位。 读/写 <b>单个</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1545,13 +1479,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置字体大小，以磅为单位。读/写 单个 。</summary>
+        <summary>返回或设置字体大小，以磅为单位。 读取/写入单。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>SizeBi</b>属性适用于从右到左语言的文字。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>SizeBi</b> 属性适用于从右向左的语言文本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallCaps">
@@ -1580,13 +1511,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>将字体设置为小型大写字母格式。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （ <b>True</b>和<b>False</b>的混合）。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 可读写 <b>Integer</b>。</summary>
+        <summary>如果字体格式为小型大写字母，则该属性值为 <b>True</b>。 返回<b>true</b>、 <b>false</b>或<b>wdUndefined</b> ( <b>true</b>和<b>False</b>的混合)。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>将 SmallCaps</b>属性设置为<b>true，则</b><see cref="P:Microsoft.Office.Interop.Word._Font.AllCaps" />属性为<b>False</b>，反之亦然。</para>
-          <para />
-        </remarks>
+        <remarks><para>将<b>SmallCaps</b>属性设置为<b>True</b>可将<see cref="P:Microsoft.Office.Interop.Word._Font.AllCaps" />该属性设置为<b>False</b>, 反之亦然。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Spacing">
@@ -1615,7 +1543,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置字符之间的间距 (以磅为单位)。读/写 <b>单个</b> 。</summary>
+        <summary>返回或设置字符之间的间距 (以磅为单位)。 读/写 <b>单个</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1646,13 +1574,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果字体的格式设置为带删除线的文本。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （ <b>True</b>和<b>False</b>的混合）。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 可读写 <b>Integer</b>。</summary>
+        <summary><b>如此</b> 如果字体的格式设置为带删除线的文本。 返回<b>true</b>、 <b>false</b>或<b>wdUndefined</b> ( <b>true</b>和<b>False</b>的混合)。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要设置或返回双删除线格式，使用<see cref="P:Microsoft.Office.Interop.Word._Font.DoubleStrikeThrough" />属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要设置或返回双删除线格式, <see cref="P:Microsoft.Office.Interop.Word._Font.DoubleStrikeThrough" />请使用属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StylisticSet">
@@ -1683,10 +1608,8 @@
       <Docs>
         <summary>获取或设置指定字体的样式集。</summary>
         <value>样式集。</value>
-        <remarks>
-          <para>读/写<b>WdStylisticSet</b>。某些 OpenType 字体提供样式集。样式集定义一的组内字体旨在一起使用，通常以便 visual 协调，如标题中的字符。</para>
-          <para />
-        </remarks>
+        <remarks><para>可读/写 <b>WdStylisticSet</b>。 一些 OpenType 字体提供了样式集。 样式集定义字体内要一起使用的一组字符，通常是为了获得视觉上的协调性，例如用于标题中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Subscript">
@@ -1715,14 +1638,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果字体的格式设置为下标。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （ <b>True</b>和<b>False</b>的混合）。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 可读写 <b>Integer</b>。</summary>
+        <summary><b>如此</b> 如果字体的格式设置为下标。 返回<b>true</b>、 <b>false</b>或<b>wdUndefined</b> ( <b>true</b>和<b>False</b>的混合)。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 <b>Integer</b> 型，可读/写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>下标</b>属性设置为<b>true，则</b><see cref="P:Microsoft.Office.Interop.Word._Font.Superscript" />属性为<b>False</b>，反之亦然。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果将<b>下标</b>属性设置为<b>True</b> , <see cref="P:Microsoft.Office.Interop.Word._Font.Superscript" />则会将该属性设置为<b>False</b>, 反之亦然。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Superscript">
@@ -1751,14 +1670,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果字体格式为上标。 返回<b>True</b>、 <b>False</b>或<b>wdUndefined</b> （ <b>True</b>和<b>False</b>的混合）。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 读/写 <b>长</b> 。</summary>
+        <summary><b>如此</b> 如果字体格式为上标。 返回<b>true</b>、 <b>false</b>或<b>wdUndefined</b> ( <b>true</b>和<b>False</b>的混合)。 可以设置为 <b>真</b> 、 <b>假</b> 或 <b>wdToggle</b> 。 读/写 <b>长</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>上标</b>属性设置为<b>true，则</b><see cref="P:Microsoft.Office.Interop.Word._Font.Subscript" />属性为<b>False</b>，反之亦然。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果将<b>上标</b>属性设置为<b>True</b> , <see cref="P:Microsoft.Office.Interop.Word._Font.Subscript" />则会将该属性设置为<b>False</b>, 反之亦然。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextColor">
@@ -1784,12 +1699,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />对象，它代表指定字体的颜色。</summary>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />对象, 该对象代表指定字体的颜色。</summary>
         <value>指定字体的颜色。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextShadow">
@@ -1818,8 +1731,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShadowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />指定的阴影格式指定字体的对象。</summary>
-        <value>格式指定字体的阴影。</value>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />对象, 该对象指定指定字体的阴影格式。</summary>
+        <value>指定字体的阴影格式。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1849,12 +1762,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象，其中包含三维效果格式指定字体的属性。</summary>
-        <value>三维效果格式指定字体的属性。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象, 该对象包含指定字体的三维效果格式设置属性。</summary>
+        <value>指定字体的三维效果格式属性。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Underline">
@@ -1885,44 +1796,43 @@
       <Docs>
         <summary>返回或设置应用于字体的下划线类型。 读/写<see cref="T:Microsoft.Office.Interop.Word.WdUnderline" />。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <b>WdUnderline</b>可以是下列常量之一:</para>
           <para>
-            <b>WdUnderline</b>可以是下列常量之一：</para>
-          <para>
-            <b>wdUnderlineDashHeavy </b>
+            <b>wdUnderlineDashHeavy</b>
           </para>
           <para>
-            <b>wdUnderlineDashLongHeavy </b>
+            <b>wdUnderlineDashLongHeavy</b>
           </para>
           <para>
-            <b>wdUnderlineDotDashHeavy </b>
+            <b>wdUnderlineDotDashHeavy</b>
           </para>
           <para>
-            <b>wdUnderlineDotDotDashHeavy </b>
+            <b>wdUnderlineDotDotDashHeavy</b>
           </para>
           <para>
             <b>wdUnderlineDottedHeavy</b>
           </para>
           <para>
-            <b>wdUnderlineNone </b>
+            <b>wdUnderlineNone</b>
           </para>
           <para>
-            <b>wdUnderlineThick </b>
+            <b>wdUnderlineThick</b>
           </para>
           <para>
-            <b>wdUnderlineWavyDouble </b>
+            <b>wdUnderlineWavyDouble</b>
           </para>
           <para>
-            <b>wdUnderlineWords </b>
+            <b>wdUnderlineWords</b>
           </para>
           <para>
-            <b>wdUnderlineDash </b>
+            <b>wdUnderlineDash</b>
           </para>
           <para>
-            <b>wdUnderlineDashLong </b>
+            <b>wdUnderlineDashLong</b>
           </para>
           <para>
-            <b>wdUnderlineDotDash </b>
+            <b>wdUnderlineDotDash</b>
           </para>
           <para>
             <b>wdUnderlineDotDotDash</b>
@@ -1942,8 +1852,7 @@
           <para>
             <b>wdUnderlineWavyHeavy</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UnderlineColor">
@@ -1972,13 +1881,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置为指定的下划线的 24 位颜色<see cref="T:Microsoft.Office.Interop.Word.Font" />对象。</summary>
+        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.Font" />对象的下划线的24位颜色。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>可以是任何有效<see cref="T:Microsoft.Office.Interop.Word.WdColor" />常量或 Visual Basic 的<b>RGB</b>函数返回的值。</para>
-          <para>设置将<b>UnderlineColor</b>属性设为<b>wdColorAutomatic</b>重置为都上方的文本颜色的下划线颜色</para>
-          <para />
-        </remarks>
+        <remarks><para>可以是任何有效<see cref="T:Microsoft.Office.Interop.Word.WdColor" />常量, 也可以是 Visual Basic 的<b>RGB</b>函数返回的值。</para>
+          <para>如果将<b>UnderlineColor</b>属性设置为<b>wdColorAutomatic</b> , 则会将下划线的颜色重置为上面文本的颜色。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

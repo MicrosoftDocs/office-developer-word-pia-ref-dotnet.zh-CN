@@ -1,13 +1,5 @@
 <Type Name="BuildingBlock" FullName="Microsoft.Office.Interop.Word.BuildingBlock">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fc15f7587aceebb7da5afc606fbedbd78e590230" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666527" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface BuildingBlock" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca9bed40f87117ccf911469b9c1d874a575c9129" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146225" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlock" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlock" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlock" />
@@ -27,13 +19,15 @@
   </Attributes>
   <Docs>
     <summary>代表模板中的构建基块。构建基块是预先构建的内容，类似于自动图文集，其中可能包含文本、图像和格式。</summary>
-    <remarks>
-      <para>每个<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象是成员<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />和<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集。构建基块存储在 Microsoft Office Word 模板。 因此，若要访问可用于文档构建基块，您需要访问附加的模板。 内置的构建基块都存储在名为"构建基块.dotx"模板。</para>
+    <remarks><para>每<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />个对象都是<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />和<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集合的一个成员。 构建基块存储在 Microsoft Office Word 模板中。  因此，要访问文档可用的构建基块，需要访问附加的模板。  内置构建基块存储在名为“Building Blocks.dotx”的模板中。</para>
       <para>
-        <b>注释</b>： 使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" />集合的方法或<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />集合返回单个的构建基块。根据访问集合的方式，可能会更改返回的集合。 例如，如果访问一构建基块的类型为<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" />可能不同返回如果访问一种类型的集合的构建基块的集合中返回的集合与"常规"类别，<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" />与类别"自定义"。还是从集合返回如果访问集合的构建基块的类型为不同<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" />与"常规"类别。因此，从<b>BuildingBlockEntries</b>集合访问集合中的第一项可能不同于从<b>BuildingBlocks</b>集合访问集合中的第一项。</para>
-      <para>创建新的构建基块，您可以使用<b>BuildingBlockEntries</b>集合或<b>BuildingBlocks</b>集合的<b>Add</b>方法。 但是，创建新的构建基块的建议的方式是使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /><b>BuildingBlockEntries</b>集合方法。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" />方法文档中插入新的生成块。使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" />方法，以删除模板中的构建基块。</para>按类别和类型组织
-      <para>构建基块。 使用<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />集合来访问各<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />对象。使用<see cref="T:Microsoft.Office.Interop.Word.Categories" />集合来访问各<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" />对象。然后使用<b>BuildingBlocks</b>属性访问一个<b>Category</b>对象的<b>BuildingBlocks</b>集合。</para><para>每个构建基块具有属性包含只适用于，如的信息的<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />， <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />， <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />，和<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />。</para><para>有关构建基块的详细信息，请参阅<a href="HV10120827">处理构建基块</a></para><para /></remarks>
+        <b>注意</b>: 使用集合<see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" />或<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />集合的方法返回单个构建基块。 根据您访问集合的方式, 返回的集合可能会发生更改。  例如, 如果使用类别为 "常规" 的构建基块<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" />的集合进行访问, 则返回的集合可能与返回的集合不同, 如果您使用类别的类型<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" />访问构建基块的集合"Custom"。 如果使用类型<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" />为 "常规" 的构建基块的集合访问构建基块的集合, 则它也不同于返回的集合。 因此, 从<b>BuildingBlockEntries</b>集合中访问的集合中的第一个项目可能不同于从<b>BuildingBlocks</b>集合中访问的集合中的第一个项目。</para>
+      <para>要创建新的构建基块，可以使用 <b>BuildingBlockEntries</b> 集合或 <b>BuildingBlocks</b> 集合的 <b>Add</b> 方法。  但是, 使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> <b>BuildingBlockEntries</b>集合的方法来创建新的构建基块的推荐方法是使用方法。 </para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" />方法可在文档中插入新的构建基块。 使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" />方法从模板中删除构建基块。</para>
+      <para>构建基块按类别和类型进行组织。  使用<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />集合访问各个<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />对象。 使用<see cref="T:Microsoft.Office.Interop.Word.Categories" />集合访问各个<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" />对象。 然后, 使用<b>BuildingBlocks</b>来访问<b>Category</b>对象的<b>BuildingBlocks</b>集合。 </para>
+      <para>每个构建基块都具有一些属性, 这些属性包含对其唯一<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />应用<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />的<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />信息, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />例如、、和。</para>
+      <para>有关构建基块的详细信息, 请参阅<a href="HV10120827">处理构建基块</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,10 +53,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,10 +81,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Category</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回的构建基块的类别。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Category" />
-        </value>
+        <summary>返回一个构建基块的类别。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Category" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,15 +110,11 @@
       </ReturnValue>
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建外接程序的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
+        <value><b>Integer</b></value>
+        <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注意</b>： 此值也可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。</para>
-          <para />
-        </remarks>
+            <b>注意</b>: 此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -182,10 +168,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置构建基块的说明。 为可读/写属性。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <summary>返回或设置构建基块的说明。 读/写。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,14 +197,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回构建基块的内部标识号。 只读。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" />属性返回标识字符串的形式的 guid。</para>
-          <para />
-        </remarks>
+        <value><b>String</b></value>
+        <remarks><para>该<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" />属性返回 GUID 形式的标识字符串。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -247,9 +226,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回集合中的项的位置。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,11 +254,9 @@
       </Parameters>
       <Docs>
         <param name="Where">放置构建基块内容的位置。</param>
-        <param name="RichText">						如果为 <b>True</b>，则将构建基块作为 RTF 格式文本插入。如果为 <b>False</b>，则将构建基块作为纯文本插入。</param>
-        <summary>文档中插入构建基块的值，并返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，表示文档中的构建基块的内容。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.Range" />
-        </returns>
+        <param name="RichText">如果为 <b>True</b>，则将构建基块作为 RTF 格式文本插入。  如果为 <b>False</b>，则将构建基块作为纯文本插入。</param>
+        <summary>将构建基块的值插入到文档中, 并返回<see cref="T:Microsoft.Office.Interop.Word.Range" />一个对象, 该对象表示文档中的构建基块的内容。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Range" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -311,14 +286,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>整数</b>，表示如何文档中插入构建基块的内容。 为可读/写属性。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>值<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />属性可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" />枚举值。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<b>Integer</b>类型的值, 该值代表如何在文档中插入构建基块的内容。 读/写。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>该<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />属性的值可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" />枚举值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -347,10 +318,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置构建基块的名称。 为可读/写属性。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <summary>返回或设置构建基块的名称。 读/写。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -377,10 +346,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定的父对象<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象的父对象。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -408,9 +375,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回构建基块的类型。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -440,10 +405,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置构建基块的内容。 为可读/写属性。</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <summary>返回或设置构建基块的内容。 读/写。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

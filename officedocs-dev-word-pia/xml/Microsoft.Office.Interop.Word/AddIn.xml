@@ -1,13 +1,5 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Word.AddIn">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eca0625fe8de93d38c8fe893e6a66c3f0bf7b440" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665558" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="695249a505a14baf5625853d5db3725ed54c358e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144671" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
@@ -27,16 +19,13 @@
   </Attributes>
   <Docs>
     <summary>代表已经安装或尚未安装的单个加载项。</summary>
-    <remarks>
-      <para>
-        <b>AddIn</b>对象是成员<see cref="T:Microsoft.Office.Interop.Word.AddIns" />集合。<b>AddIns</b>集合包含所有加载项适用于 Microsoft Word，无论他们是当前加载。<b>AddIns</b>集合包括共用模板或 Word 加载项库 (即 Wll) 显示在模板和加载项对话框 （工具菜单）。</para>
-      <para>使用<b>加载项</b>(<paramref name="index" />)，其中<paramref name="index" />的外接程序名称或索引号，可返回单个<b>AddIn</b>对象是。您必须完全一样拼写 （但不是一定大小写） 的名称，其显示在模板和加载项对话框。</para>
-      <para>索引号表示的加载项列表中模板和加载项对话框中的外接程序位置。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />方法外接程序添加到可用加载项的列表，并使用安装它 （可选）<paramref name="Install" />参数。</para>
-      <para>安装可用加载项列表中显示的外接程序，请使用<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />属性。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" />属性可以确定一个<b>AddIn</b>对象是模板还是 WLL。</para>
-      <para />
-    </remarks>
+    <remarks><para><b>外接</b>程序对象是<see cref="T:Microsoft.Office.Interop.Word.AddIns" />集合的一个成员。 <b>AddIns</b>集合包含所有可用于 Microsoft Word 的加载项, 而不管它们当前是否已加载。 <b>外</b>接程序集合包括共用模板或 Word 外接程序库 (wll), 这些库显示在 "工具" 菜单的 "模板和加载项" 对话框中。</para>
+      <para>使用<b>AddIns</b>(<paramref name="index" />), 其中<paramref name="index" />是外接程序名称或索引号, 返回单个<b>AddIn</b>对象。 名称的拼写必须与 "模板和加载项" 对话框中显示的完全匹配 (但不一定是大小写)。</para>
+      <para>索引编号代表加载项在 "模板和加载项" 对话框中的加载项列表上的位置。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />方法将外接程序添加到可用加载项列表中, 并使用<paramref name="Install" />参数安装它 (可选)。</para>
+      <para>若要安装可用加载项列表中显示的加载项, 请使用<see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" />属性。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" />属性来确定<b>AddIn</b>对象是模板还是 WLL。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />值，该值代表指定对象的创建者的对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" /> object 类型的对象, 该对象代表指定对象的创建者。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,12 +79,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，该值指示是否指定加载项时自动加载 Microsoft Word 已启动。</summary>
+        <summary>返回一个值, 该值指示是否在启动 Microsoft Word 时自动加载指定的加载项。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>加载项的启动文件夹中的 Word 程序文件夹位于会自动加载。</para>
-          <para />
-        </remarks>
+        <remarks><para>自动加载加载项位于启动文件夹中的 Word 程序文件夹中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Compiled">
@@ -121,12 +108,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，该值指定加载项是否 Microsoft Word 加载项库 (WLL)。</summary>
+        <summary>返回一个值, 该值指示指定的加载项是否为 Microsoft Word 加载项库 (WLL)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的加载项不 WLL，它是一个模板。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定的加载项不是 WLL, 则它是一个模板。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -152,11 +137,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，指示在其中创建指定的对象的应用程序。</summary>
+        <summary>返回一个值, 该值指示在其中创建指定对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -180,7 +165,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>删除指定<see cref="T:Microsoft.Office.Interop.Word.AddIn" />对象。</summary>
+        <summary>删除指定<see cref="T:Microsoft.Office.Interop.Word.AddIn" />的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,7 +192,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，该值代表中的项目的位置<see cref="T:Microsoft.Office.Interop.Word.AddIns" />集合。</summary>
+        <summary>返回一个值, 该值代表项目在<see cref="T:Microsoft.Office.Interop.Word.AddIns" />集合中的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -238,13 +223,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，该值<b>，则返回 True</b> ，如果安装了指定的加载项 （已加载）。</summary>
+        <summary>返回或设置一个值, 如果指定的加载项已安装 (加载),<b>则返回 True</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>（工具菜单） 的模板和加载项对话框中选择要加载的加载项。</para>
-          <para>Uninstalled 外接程序都包含在<see cref="T:Microsoft.Office.Interop.Word.AddIns" />集合。若要从<b>AddIns</b>集合中删除模板或 wll 文件，请应用<see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" />方法<see cref="T:Microsoft.Office.Interop.Word.AddIn" />对象 （从模板和加载项对话框中删除外接程序名称）。若要卸载所有的模板和即 Wll，应用<see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /><b>AddIns</b>集合的方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>可在“工具”菜单的“模板和加载项”对话框中选择需要加载的加载项。</para>
+          <para><see cref="T:Microsoft.Office.Interop.Word.AddIns" />集合中包含已卸载的外接程序。 若要从<b>AddIns</b>集合中删除模板或 WLL, 请将<see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" />该方法应用<see cref="T:Microsoft.Office.Interop.Word.AddIn" />于该对象 (外接程序名称将从 "模板和加载项" 对话框中删除)。 若要卸载所有模板和 Wll, 请<see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" />将方法应用于<b>AddIns</b>集合。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -270,7 +253,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，指示指定的名称<see cref="T:Microsoft.Office.Interop.Word.AddIn" />对象。</summary>
+        <summary>返回一个值, 该值指示指定<see cref="T:Microsoft.Office.Interop.Word.AddIn" />的对象的名称。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -298,7 +281,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，该值代表指定的父对象<see cref="T:Microsoft.Office.Interop.Word.AddIn" />对象。</summary>
+        <summary>返回一个值, 该值代表指定<see cref="T:Microsoft.Office.Interop.Word.AddIn" />对象的父对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -326,12 +309,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，指示指定的 URL<see cref="T:Microsoft.Office.Interop.Word.AddIn" />对象。</summary>
+        <summary>返回一个值, 该值指示指向指定<see cref="T:Microsoft.Office.Interop.Word.AddIn" />对象的 URL。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>路径中不包括尾随的左斜线字符-例如，"http://MyServer"。使用<see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" />属性添加尾随正斜杠字符虽然<b>PathSeparator</b>属性默认为反斜杠 (\)。</para>
-          <para />
-        </remarks>
+        <remarks><para>路径不包含尾部的正斜杠字符, 例如, "http://MyServer"。 使用<see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" />属性添加尾部的正斜杠字符, 即使<b>PathSeparator</b>属性默认为反斜杠 (\)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

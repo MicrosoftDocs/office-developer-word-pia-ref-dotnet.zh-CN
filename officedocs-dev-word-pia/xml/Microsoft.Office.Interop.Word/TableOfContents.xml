@@ -1,13 +1,5 @@
 <Type Name="TableOfContents" FullName="Microsoft.Office.Interop.Word.TableOfContents">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="053fb8945387416b2c4e96275be1372a3daede59" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666729" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableOfContents" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c492d44ba42b0c2c8ad50242bb67c9ac83678194" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143880" /></Metadata><TypeSignature Language="C#" Value="public interface TableOfContents" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableOfContents" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TableOfContents" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableOfContents" />
@@ -27,13 +19,10 @@
   </Attributes>
   <Docs>
     <summary>表示文档中的单个表。</summary>
-    <remarks>
-      <para>
-        <b>TableOfContents</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.TableOfContents" />集合。<b>TablesOfContents</b>集合包含与文档中的所有表的内容。</para>
-      <para>使用<b>TablesOfContents</b>(<paramref name="index" />)，其中<paramref name="index" />是返回单个<b>TableOfContents</b>对象的索引号。索引号代表文档中的目录位置。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.TablesOfContents.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法，将目录添加到文档。</para>
-      <para />
-    </remarks>
+    <remarks><para><b>TableOfContents</b>对象是<see cref="T:Microsoft.Office.Interop.Word.TableOfContents" />集合的一个成员。 <b>TablesOfContents</b> 集合包含文档中的所有表的内容。</para>
+      <para>使用<b>TablesOfContents</b>(<paramref name="index" />) (其中<paramref name="index" />是索引号) 返回单个<b>TableOfContents</b>对象。 索引号代表文档中的目录的位置。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.TablesOfContents.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法将目录添加到文档中。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,9 +78,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -115,7 +104,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +131,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.HeadingStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" />对象，表示用于编译目录 （标题 1 – 标题 9 样式之外的样式） 的其他样式。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" /> object 类型的对象, 该对象代表用于编译目录的其他样式 (除标题1–标题9样式之外的其他样式)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,7 +162,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置是否发布到网站时隐藏表格的页码。</summary>
+        <summary>返回或设置是否在发布到 Web 时隐藏目录中的页码。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,8 +193,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果目录中包含页码。</summary>
+        <summary><b>如此</b> 如果目录中包含页码。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -236,12 +224,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置表的内容的结束标题级别。</summary>
+        <summary>返回或设置目录的结束标题级别。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>LowerHeadingLevel</b>属性对应于目录 (TOC) 域的 \o 开关一起使用的结束值。</para>使用
-          <para><see cref="P:Microsoft.Office.Interop.Word.TableOfContents.UpperHeadingLevel" />属性设置的起始标题级别。例如，若要设置 TOC 域语法 {TOC \o"1-3"}，设置<b>LowerHeadingLevel</b>属性为 3，将<b>UpperHeadingLevel</b>属性设为 1。</para><para /></remarks>
+        <remarks><para><b>LowerHeadingLevel</b>属性对应于目录 (TOC) 域的 \o 开关一起使用的结束值。</para>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Word.TableOfContents.UpperHeadingLevel" />属性设置起始标题级别。 例如，若要设置目录字段语法 {TOC \o"1-3"}，将 <b>LowerHeadingLevel</b> 属性设置为 3， <b>UpperHeadingLevel</b> 属性设为 1。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -295,12 +282,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定对象中包含的文档部分。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关从文档返回一个区域或从形状集合返回形状范围的信息，请参阅<see cref="P:Microsoft.Office.Interop.Word.TableOfContents.Range" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息, 请参阅<see cref="P:Microsoft.Office.Interop.Word.TableOfContents.Range" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightAlignPageNumbers">
@@ -329,8 +314,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果与目录的右边距对齐的页码。</summary>
+        <summary>如果页码与目录的右边距对齐，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -361,31 +345,29 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTabLeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置在目录中的条目和它们的页码之间的字符。</summary>
+        <summary>返回或设置目录中的条目和页码之间的字符。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />可以是下列<b>WdTabLeader</b>常量之一。 </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />可以是下列<b>WdTabLeader</b>常量之一。</para>
-          <para>
-            <b>wdTabLeaderDashes </b>
+            <b>wdTabLeaderDashes</b>
           </para>
           <para>
-            <b>wdTabLeaderDots </b>
+            <b>wdTabLeaderDots</b>
           </para>
           <para>
-            <b>wdTabLeaderHeavy </b>
+            <b>wdTabLeaderHeavy</b>
           </para>
           <para>
-            <b>wdTabLeaderLines </b>
+            <b>wdTabLeaderLines</b>
           </para>
           <para>
-            <b>wdTabLeaderMiddleDot </b>
+            <b>wdTabLeaderMiddleDot</b>
           </para>
           <para>
             <b>wdTabLeaderSpaces</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableID">
@@ -414,13 +396,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用于从 TOC 域的单字母标识符。</summary>
+        <summary>返回或设置用于从 TOC 域生成目录的单字母标识符。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>TableID</b>属性对应于 TOC 域的 \f 开关。例如，"T"生成从 TOC 域使用表格标识符 T 表</para>
-          <para />
-        </remarks>
+        <remarks><para><b>TableID</b>属性对应于 TOC 域的 \f 开关。 例如，“T”表示用表格标识符 T 从 TOC 域生成目录。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -444,12 +423,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>更新内容的指定表中显示的项。</summary>
-        <remarks>
-          <para>
-            <b>注释</b>  使用<see cref="M:Microsoft.Office.Interop.Word.TableOfContents.UpdatePageNumbers" />方法更新表格中的内容的项目的页码。</para>
-          <para />
-        </remarks>
+        <summary>更新在指定的目录中显示的项。</summary>
+        <remarks><para>
+            <b>注释</b>  使用<see cref="M:Microsoft.Office.Interop.Word.TableOfContents.UpdatePageNumbers" />方法更新目录中项目的页码。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdatePageNumbers">
@@ -505,10 +482,9 @@
       <Docs>
         <summary>返回或设置目录的起始标题级别。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>UpperHeadingLevel</b>属性对应于目录 (TOC) 域的 \o 开关一起使用的起始值。</para>使用
-          <para><see cref="P:Microsoft.Office.Interop.Word.TableOfContents.LowerHeadingLevel" />属性设置的结束标题级别。例如，若要设置 TOC 域语法 {TOC \o"1-3"}，设置<b>LowerHeadingLevel</b>属性为 3，将<b>UpperHeadingLevel</b>属性设为 1。</para><para /></remarks>
+        <remarks><para><b>UpperHeadingLevel</b>属性对应于目录 (TOC) 域的 \o 开关一起使用的起始值。</para>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Word.TableOfContents.LowerHeadingLevel" />属性设置结束标题级别。 例如，若要设置目录字段语法 {TOC \o"1-3"}，将 <b>LowerHeadingLevel</b> 属性设置为 3， <b>UpperHeadingLevel</b> 属性设为 1。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseFields">
@@ -537,7 +513,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果为<b>true</b>用于创建目录的目录项 (TC) 字段。</summary>
+        <summary><b>如此</b>如果使用目录项 (TC) 域创建目录。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -568,8 +544,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果使用内置标题样式创建目录。</summary>
+        <summary><b>如此</b> 如果使用内置标题样式创建目录。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

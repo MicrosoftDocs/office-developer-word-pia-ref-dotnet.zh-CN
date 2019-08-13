@@ -1,13 +1,5 @@
 <Type Name="LineFormat" FullName="Microsoft.Office.Interop.Word.LineFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="39124d858fa3e2858bacfc840bef5cc7e6d37c84" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667181" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LineFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1047c76a8c9ae2fdbaa19fb7954aa01fb4ae033d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146603" /></Metadata><TypeSignature Language="C#" Value="public interface LineFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LineFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LineFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface LineFormat" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>代表线条和箭头格式。对于线条， <b>LineFormat</b> 对象包含关于线条本身; 的格式设置信息具有边框的形状，该对象包含形状的边框的格式设置信息。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Line" />属性可返回<b>LineFormat</b>对象。</para>
-      <para />
-    </remarks>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Line" />属性返回一个<b>LineFormat</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +74,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />对象，表示指定的填充或线条图案的背景色。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />对象, 表示指定的填充或带图案线条的背景色。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,9 +197,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DashStyle">
@@ -359,7 +349,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />对象，它代表线条的前景色。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />对象, 该对象代表线条的前景色。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -390,13 +380,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b>指定形状的内部绘制线条。</summary>
+        <summary>若要在指定形状的内部绘制线条, 则为<b>MsoTrue</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<b>InsetPen</b>属性可匹配等宽但有所不同，其线条宽度的形状的边缘。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用 <b>InsetPen</b> 属性来匹配边缘的形状的宽度相等，但其线条宽度而异。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -453,13 +440,11 @@
         <ReturnType>Microsoft.Office.Core.MsoPatternType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值，该值代表应用于指定的填充或线条的图案。</summary>
+        <summary>返回或设置一个值, 该值代表应用于指定的填充或线条的图案。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您还可以使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" />方法设置填充或线条的图案。</para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.LineFormat.BackColor" />和<see cref="P:Microsoft.Office.Interop.Word.LineFormat.ForeColor" />属性设置在图案中使用的颜色。</para>
-          <para />
-        </remarks>
+        <remarks><para>您还可以使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" />方法设置填充或线条的图案。</para>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Word.LineFormat.BackColor" />和<see cref="P:Microsoft.Office.Interop.Word.LineFormat.ForeColor" />属性设置模式中使用的颜色。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -519,12 +504,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置为 0.0 （不透明） 到 1.0 （清除） 之间的值的指定行的透明度。</summary>
+        <summary>返回或设置指定线条的透明度为 0.0 (不透明) 到 1.0 (透明) 之间的值。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性的值影响纯色填充和线条仅; 的外观它不影响的带图案线条或图案、 渐变、 纹理的填充的外观。</para>
-          <para />
-        </remarks>
+        <remarks><para>该属性的值只影响纯色填充和线条的外观。它对带图案的线条的外观或图案、渐变、图片或纹理填充不起作用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -555,10 +538,8 @@
       <Docs>
         <summary>如果指定的对象或应用的格式，，是可见的 <b>则返回 true</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>某些方法和属性可能不可用，如果<b>Visible</b>属性为<b>False</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>某些方法和属性可能不可用如果 <b>可见性</b> 属性为 <b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Weight">

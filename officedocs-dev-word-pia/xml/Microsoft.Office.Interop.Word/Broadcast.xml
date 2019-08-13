@@ -1,13 +1,5 @@
 <Type Name="Broadcast" FullName="Microsoft.Office.Interop.Word.Broadcast">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="98d790daa433768bcb289537f5925f957d798e48" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666525" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Broadcast" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0d509697e025a0a6da57a59ccf0c2e2d3d1b050a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146211" /></Metadata><TypeSignature Language="C#" Value="public interface Broadcast" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Broadcast" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Broadcast" />
   <TypeSignature Language="VB.NET" Value="Public Interface Broadcast" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示一个 Windows Live 广播服务广播的会话。</summary>
+    <summary>表示 Windows Live 广播服务广播会话。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,13 +46,11 @@
         <Parameter Name="notesWacUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="notesUrl">指定共享的会议笔记的存储位置，为与会者使用 OneNote 的富客户端的 URL。</param>
-        <param name="notesWacUrl">指定共享的会议笔记的存储位置，为与会者使用 OneNote 联机客户端的 URL。</param>
-        <summary>添加用于指定广播的共享的会议笔记可供使用 OneNote 2013 富客户端或 web 应用程序的与会者。</summary>
-        <remarks>
-          <para>如果您不能为两个两个参数传递一个字符串，该<b>AddMeetingNotes</b>方法将返回参数无效错误。如果出于任何原因方法调用失败，Word 将返回一个通用的广播的错误。</para>
-          <para />
-        </remarks>
+        <param name="notesUrl">为使用 OneNote 富客户端的与会者指定共享会议笔记的存储 URL。</param>
+        <param name="notesWacUrl">指定用于使用 OneNote Online 客户端的与会者的存储共享会议笔记的 URL。</param>
+        <summary>为使用 OneNote 2013 胖客户端或 web 应用程序的与会者添加可访问的指定广播的共享会议笔记。</summary>
+        <remarks><para>如果您无法传递两个参数之一的字符串, 则<b>AddMeetingNotes</b>方法将返回一个无效参数错误。 如果由于某种原因方法调用失败, Word 将返回常规广播错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -86,7 +76,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />对象, 表示 Microsoft Word 应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,12 +104,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果正在进行广播，返回一个<b>字符串</b>（C# 中的<b>字符串</b>） 值，该值代表 attendee 链接的 URL。 只读。</summary>
+        <summary>如果正在进行广播, 则返回一个表示与会者链接的 URL 的<b>字符串</b>(c # 中的<b>字符串</b>)。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果不正在进行广播， <b>AttendeeUrl</b>将返回空字符串。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果没有进行广播, <b>AttendeeUrl</b>将返回一个空字符串。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Capabilities">
@@ -145,25 +133,23 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<b>UInteger</b> (C# 中<b>uint</b> ) 值，该值代表指定广播的功能。 只读。</summary>
+        <summary>返回一个表示指定广播的功能的<b>UInteger</b> (在 c # 中为<b>uint</b> )。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>功能</b>属性可以返回以下值：</para>
+        <remarks><para>"<b>功能</b>" 属性可以返回以下值:</para>
           <list type="table">
             <item>
               <description>
                 <b>MSOBroadcastCapFileSizeLimited</b>
               </description>
               <description>1</description>
-              <description>文件大小限制的</description>
+              <description>文件大小受限</description>
             </item>
             <item>
               <description>
                 <b>MSOBroadcastCapSupportsMeetingNotes</b>
               </description>
-              <description>
-                <description>2</description>支持会议笔记</description>
+              <description>双面</description>
+              <description>支持会议备注</description>
             </item>
             <item>
               <description>
@@ -173,9 +159,8 @@
               <description>支持文档更新</description>
             </item>
           </list>
-          <para>返回的值对应于或者是 Microsoft Office 2013 或 Microsoft Office 2010 广播演示文稿服务功能。</para>
-          <para />
-        </remarks>
+          <para>返回的值对应于 Microsoft Office 2013 或 Microsoft Office 2010 广播演示文稿服务功能。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -199,12 +184,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>结束指定广播的会话。</summary>
-        <remarks>
-          <para>调用<b>End</b>方法广播的会话终止而不向用户显示确认提示。它还设置的值<see cref="P:Microsoft.Office.Interop.Word.Broadcast.AttendeeUrlproperty" />为空字符串。</para>
-          <para>如果文档不要广播，该方法将返回运行时错误 4702。</para>
-          <para />
-        </remarks>
+        <summary>结束指定的广播会话。</summary>
+        <remarks><para>调用<b>End</b>方法将终止广播会话, 而不向用户显示确认提示。 它还将值设置<see cref="P:Microsoft.Office.Interop.Word.Broadcast.AttendeeUrlproperty" />为空字符串。</para>
+          <para>如果不广播文档, 该方法将返回运行时错误4702。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -230,7 +213,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>对象</b>，代表指定的父对象的<b>广播</b>对象</summary>
+        <summary>返回一个<b>对象</b>, 表示指定的<b>广播</b>对象的父对象</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,10 +240,8 @@
       <Parameters />
       <Docs>
         <summary>暂停指定的广播。</summary>
-        <remarks>
-          <para>如果指定的广播不正在进行，<b>暂停</b>将返回运行时错误 4702。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果未进行指定的广播, <b>Pause</b>将返回运行时错误4702。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresenterServiceUrl">
@@ -286,12 +267,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果正在进行广播，返回一个<b>字符串</b>（C# 中的<b>字符串</b>） 值，该值代表承载广播演示者服务的 URL。 只读。</summary>
+        <summary>如果正在进行广播, 则返回一个<b>字符串</b>(c # 中的<b>字符串</b>), 表示广播所在的演示者服务的 URL。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果不正在进行广播， <b>PresenterServiceUrl</b>将返回空字符串。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果没有进行广播, <b>PresenterServiceUrl</b>将返回一个空字符串。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Resume">
@@ -316,11 +295,8 @@
       <Parameters />
       <Docs>
         <summary>恢复指定的广播。</summary>
-        <remarks>
-          <para>
-            <b>Resume</b>方法将返回错误 (#4700) 已正在广播文档是否受保护的 DRM，(#4698)，不所有 (#4702)，在广播或具有冲突编辑 （处于合并模式 #4701）。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果文档受 DRM 保护, 则<b>Resume</b>方法将返回一个错误 (#4700)、已在广播中 (#4698)、当前未进行广播 (#4702) 或发生冲突编辑 (处于合并模式, #4701)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SessionID">
@@ -346,12 +322,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果正在进行广播，返回的<b>字符串</b>（C# 中的<b>字符串</b>） 指定会话的 ID。 只读。</summary>
+        <summary>如果正在进行广播, 则返回一个指定会话 ID 的<b>字符串</b>(c # 中的<b>字符串</b>)。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果不正在进行广播， <b>SessionID</b>将返回空字符串。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果没有进行广播, <b>SessionID</b>将返回一个空字符串。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -377,11 +351,11 @@
         <Parameter Name="serverUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="serverUrl">广播的服务器的 URL。</param>
-        <summary>启动指定广播的会话。</summary>
-        <remarks>
-          <para>调用<b>启动</b>方法将设置服务器、 对用户进行身份验证和上载演示文稿。</para>如果值为传递
-          <para><paramref name="serverUrl" />有无效的格式，<b>启动</b>返回"参数无效"错误。此外，该方法返回错误 DRM 保护文档是否已正在广播，或具有冲突编辑 （是在合并模式下）。</para><para /></remarks>
+        <param name="serverUrl">广播服务器的 URL。</param>
+        <summary>启动指定的广播会话。</summary>
+        <remarks><para>调用<b>Start</b>方法将设置服务器、对用户进行身份验证并上载演示文稿。</para>
+          <para>如果为传递的<paramref name="serverUrl" />值具有无效的格式, 则<b>Start</b>将返回 "参数无效" 错误。 此外, 如果文档受 DRM 保护, 则该方法将返回错误, 已在广播或发生冲突编辑 (处于合并模式)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -407,24 +381,21 @@
         <ReturnType>Microsoft.Office.Core.MsoBroadcastState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>MSOBroadcastState</b>常量，用于描述广播的当前状态。 只读。</summary>
+        <summary>返回一个描述当前广播状态的<b>MSOBroadcastState</b>常量。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>State</b>属性可以返回以下三种状态之一：</para>
+        <remarks><para><b>State</b>属性可以返回以下三种状态之一:</para>
           <list type="bullet">
             <item>
-              <para>没有广播 (0)</para>
+              <para>无广播 (0)</para>
             </item>
             <item>
-              <para>广播已开始 (1)</para>
+              <para>广播已启动 (1)</para>
             </item>
             <item>
-              <para>广播暂停 (2)</para>
+              <para>已暂停广播 (2)</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="RepeatingSectionItem" FullName="Microsoft.Office.Interop.Word.RepeatingSectionItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e951aef451ef7f40156f1704b3da559404614c0f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666375" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RepeatingSectionItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a9f459112b2a15f59477147b596dc386a138bb6a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144097" /></Metadata><TypeSignature Language="C#" Value="public interface RepeatingSectionItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RepeatingSectionItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.RepeatingSectionItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface RepeatingSectionItem" />
@@ -53,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Word 应用程序的对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />对象, 表示 Word 应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,14 +73,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读的<b>整数</b>(C# 中<b>int</b> )。</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读<b>整数</b>(在 c # 中为<b>int</b> )。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果在 Word 中创建对象，则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。"此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Word 有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考帮助包含 Office Macintosh Edition。</para>
+        <remarks><para>如果对象是在 Word 中创建的, 则<b>Creator</b>属性返回十六进制数是 4d535744, 表示字符串 "MSWD"。 此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息, 请参阅语言参考 Office Macintosh 版本附带的帮助。</para>
           <para>
-            <b>注意</b>： 此值也可以由常量<b>wdCreatorCode</b>。</para>
-          <para />
-        </remarks>
+            <b>注意</b>: 此值还可由常量<b>wdcreatorcode 表示</b>表示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -139,11 +129,9 @@
       <Docs>
         <summary>在指定项后面添加一个重复节项，并返回新项。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>您可以重复项内容控件部分上调用此方法。</para>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />属性设置为<b>False</b>，则此方法将返回错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>只能对重复节项内容控件调用此方法。</para>
+          <para>如果该<see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />属性设置为<b>False</b>, 则此方法将返回错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertItemBefore">
@@ -169,11 +157,9 @@
       <Docs>
         <summary>在指定项前面添加一个重复节项，并返回新项。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>您可以重复项内容控件部分上调用此方法。</para>
-          <para>如果<see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />属性设置为<b>False</b>，则此方法将返回错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>只能对重复节项内容控件调用此方法。</para>
+          <para>如果该<see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />属性设置为<b>False</b>, 则此方法将返回错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -199,7 +185,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>对象</b>，代表指定<b>RepeatingSectionItem</b>对象的父对象。</summary>
+        <summary>返回一个<b>对象</b>, 表示指定的<b>RepeatingSectionItem</b>对象的父对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,7 +213,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定重复节项，但不包括开始和结束标记的区域。 只读。</summary>
+        <summary>返回指定重复节项的范围，不包括开始和结束标记。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

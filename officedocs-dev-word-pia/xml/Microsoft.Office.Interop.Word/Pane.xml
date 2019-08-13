@@ -1,13 +1,5 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Word.Pane">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a6da467368e532f2064abfe444b232f810bf1434" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666277" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Pane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c6d2b532972458c15ddcaf3f76f72a0ddd27d36" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147737" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Pane" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pane" />
@@ -26,9 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表一个窗格。 <b>Pane</b> 对象是 <b>Panes</b> 集合的成员。 <see cref="Panes#SameCHM" />集合包含单个窗口中所有的窗格。</summary>
-    <remarks>
-      <para>使用<b>窗格</b>(<paramref name="Index" />)，其中<paramref name="Index" />是返回单个<b>Pane</b>对象的索引号。下面的示例关闭活动窗格。</para>
+    <summary>代表一个窗格。 <b>Pane</b> 对象是 <b>Panes</b> 集合的成员。 <see cref="Panes#SameCHM" />集合包含单个窗口的所有窗口窗格。</summary>
+    <remarks><para>使用<b>窗格</b>(<paramref name="Index" />), 其中<paramref name="Index" />是索引号, 返回单个<b>窗格</b>对象。 下面的示例关闭活动窗格。</para>
       <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -286,12 +277,13 @@
 
 
     ActiveDocument.ActiveWindow.ActivePane.Close&lt;/span&gt;</code>
-      <para>使用<b>Add</b>方法或要添加的窗口窗格的<b>拆分</b>属性。下面的示例拆分活动窗口的当前窗口的大小 20%。</para>
+      <para>使用 <b>Add</b> 方法或 <b>拆分</b> 属性添加一个窗格。下面的示例拆分活动窗口的当前窗口大小的 20%。</para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes.Add SplitVertical:=20&lt;/span&gt;</code>
-      <para>下面的示例拆分活动窗口。</para>
+      <para>以下示例将活动窗口一分为二。</para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Split = True&lt;/span&gt;</code>
-      <para>您可以使用<b>SplitSpecial</b>属性显示单独窗格中的批注、 脚注或尾注。</para>当窗口拆分时或视图不是页面视图和信息，如脚注或显示批注， 
-      <para>A 窗口具有多个窗格。下面的示例在普通视图中显示批注窗格，然后提示关闭窗格。</para><code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.View.Type = wdNormalView 
+      <para>您可以使用 <b>SplitSpecial</b> 属性在一个单独的窗格中显示批注、 脚注或尾注。</para>
+      <para>当窗口被拆分或在非页面视图下显示脚注、批注等信息时，窗口具有多个窗格。以下示例在普通视图中显示批注窗格，然后提示关闭该窗格。</para>
+      <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.View.Type = wdNormalView 
 
 
 
@@ -2083,7 +2075,8 @@ If ActiveDocument.Comments.Count &amp;gt;= 1 Then
 
 
 
-End If&lt;/span&gt;</code><para /></remarks>
+End If&lt;/span&gt;</code>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -2109,8 +2102,7 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Docs>
         <summary>激活指定的窗格。</summary>
         <remarks>To be added.</remarks>
-        <example>
-          <para>本示例拆分活动窗口，然后激活第一个窗格。</para>
+        <example><para>本示例拆分活动窗口，然后激活第一个窗格。</para>
           <code>&lt;span class="label"&gt;Sub SplitWindow() 
 
 
@@ -2881,8 +2873,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .Panes(1).&lt;/span&gt;
 &lt;span class="label"&gt;Activate&lt;/span&gt;
-&lt;span class="label"&gt;End WithEnd Sub&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;End WithEnd Sub&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -2908,12 +2899,10 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />对象, 表示 Microsoft Word 应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Visual Basic 的 CreateObject 和 GetObject 函数的使您从 Visual Basic for Applications 项目访问 OLE 自动化对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>Visual Basic 的 CreateObject 和 GetObject 函数使您可以从 Visual Basic for Applications 项目中访问 OLE 自动化对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoScroll">
@@ -2939,7 +2928,7 @@ End If&lt;/span&gt;</code><para /></remarks>
         <Parameter Name="Velocity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Velocity">滚动速度。</param>
+        <param name="Velocity">滚动的速度。</param>
         <summary>在指定的窗格中自动滚动。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3004,12 +2993,10 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回在指定窗格中的文字换行的区域的宽度 (以磅为单位)。只读的 <b>长</b> 。</summary>
+        <summary>返回在指定窗格中的文字换行的区域的宽度 (以磅为单位)。 只读的 <b>长</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>仅当您在 Web 版式视图中时，此属性起作用。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性仅用于 Web 版式视图。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -3035,8 +3022,7 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Docs>
         <summary>关闭指定的邮件合并数据源、窗格或任务。</summary>
         <remarks>To be added.</remarks>
-        <example>
-          <para>如果拆分活动窗口时，本示例关闭活动窗格。</para>
+        <example><para>本示例在拆分活动窗口时关闭活动窗格。</para>
           <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -3294,8 +3280,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
 
     ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;Close&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;Close&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -3321,12 +3306,10 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。只读的 <b>长</b> 。</summary>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Long</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayRulers">
@@ -3355,16 +3338,11 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果在指定窗格中显示标尺。读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary><b>如此</b> 如果在指定窗格中显示标尺。 读/写 <b>Boolean</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DisplayRulers</b>属性等效于视图菜单上的标尺命令。如果<b>DisplayRulers</b>为<b>False</b>，水平和垂直标尺不会显示，无论<b>DisplayVerticalRuler</b>属性的状态。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>本示例切换活动窗格布局视图，并显示水平和垂直标尺。</para>
+        <remarks><para><b>DisplayRulers</b> 属性等效于在 视图菜单上的 标尺命令。 如果 <b>DisplayRulers</b> 是 <b>假</b> 的水平和垂直标尺将不会显示，而不考虑 <b>DisplayVerticalRuler</b> 属性的状态。</para>
+          <para> </para></remarks>
+        <example><para>本示例将活动窗格切换到页面视图并显示水平和垂直标尺。</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -3879,8 +3857,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .&lt;/span&gt;
 &lt;span class="label"&gt;DisplayRulers&lt;/span&gt;
-&lt;span class="label"&gt;= True    .DisplayVerticalRuler = TrueEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= True    .DisplayVerticalRuler = TrueEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="DisplayVerticalRuler">
@@ -3909,15 +3886,11 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果在指定窗格中显示垂直标尺。读/写 <b>boolean 类型的值</b> 。</summary>
+        <summary><b>如此</b> 如果在指定窗格中显示垂直标尺。 读/写 <b>boolean 类型的值</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>垂直标尺只出现在页面视图中，且仅当<b>DisplayRulers</b>属性设置为<b>True</b>。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>本示例切换活动窗格布局视图，并显示水平和垂直标尺。</para>
+        <remarks><para>仅在页面视图中显示垂直标尺并且只有将 <b>DisplayRulers</b> 属性设置为 <b>True</b> 。</para>
+          <para> </para></remarks>
+        <example><para>本示例将活动窗格切换到页面视图并显示水平和垂直标尺。</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -4688,8 +4661,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .&lt;/span&gt;
 &lt;span class="label"&gt;DisplayVerticalRuler&lt;/span&gt;
-&lt;span class="label"&gt;= TrueEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= TrueEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -4715,7 +4687,7 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Document" />指定的窗格相关联的对象。 只读。</summary>
+        <summary>返回与<see cref="T:Microsoft.Office.Interop.Word.Document" />指定窗格相关联的对象。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4743,19 +4715,15 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>Microsoft.Office.Interop.Word.Frameset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Frameset" />代表整个框架页或框架页上的单个图文框对象。 只读。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Frameset" /> object 类型的值, 该值代表整个框架页或框架页上的单个框架。 只读。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关详细信息创建框架页，请参阅<see cref="Creatingframespages#SameCHM" />。</para>
-          <para />
-          <para />
-        </remarks>
-        <example>
-          <para>本示例紧邻指定框架的右侧添加一个新框架。</para>
+        <remarks><para>有关创建框架页的详细信息, 请<see cref="Creatingframespages#SameCHM" />参阅。</para>
+          <para> </para>
+          <para> </para></remarks>
+        <example><para>本示例紧邻指定框架的右侧添加一个新框架。</para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Frameset&lt;/span&gt;
-&lt;span class="label"&gt;_    .AddNewFrame wdFramesetNewRight&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;_    .AddNewFrame wdFramesetNewRight&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="HorizontalPercentScrolled">
@@ -4784,11 +4752,10 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置文档宽度的百分比表示的水平滚动位置。读/写 <b>长</b> 。</summary>
+        <summary>返回或设置文档宽度的百分比表示的水平滚动位置。 读/写 <b>长</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>以下示例水平滚动窗口的活动窗格 document1 一直到左侧。</para>
+        <example><para>以下示例将 Document1 窗口的活动窗格水平滚动至最左边。</para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -5303,8 +5270,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;HorizontalPercentScrolled&lt;/span&gt;
-&lt;span class="label"&gt;= 0End With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= 0End With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -5330,7 +5296,7 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>Long</b> ，该值表示集合中项的位置。只读的。</summary>
+        <summary>返回一个 <b>Long</b> ，该值表示集合中项的位置。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5365,10 +5331,8 @@ End If&lt;/span&gt;</code><para /></remarks>
         <param name="ToRight">向右滚动窗口的屏数。</param>
         <param name="ToLeft">向左滚动窗口的屏数。</param>
         <summary>将窗口或窗格滚动指定的屏数。</summary>
-        <remarks>
-          <para>此方法等效于单击刚之前或之后在水平和垂直滚动条上的滚动框。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法等效于在水平和垂直滚动条上单击滚动块以外的位置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumFontSize">
@@ -5397,14 +5361,11 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置在指定窗格中显示的最小字体大小 (以磅为单位)。读/写 <b>长</b> 。</summary>
+        <summary>返回或设置在指定窗格中显示的最小字体大小 (以磅为单位)。 读/写 <b>Long</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Web 版式视图中所示，此属性只影响的文本。在格式工具栏上显示和打印时使用的字体大小不会改变。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>本示例将活动窗口设置为大纲视图，并将活动窗格中的最小字号设置为 12 磅。</para>
+        <remarks><para>此属性仅影响 Web 版式视图中显示的文本。 显示在 "格式" 工具栏上并用于打印的磅大小不会发生变化。</para>
+          <para> </para></remarks>
+        <example><para>本示例将活动窗口设置为大纲视图，并将活动窗格中的最小字号设置为 12 磅。</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow 
 
 
@@ -6178,8 +6139,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
 
     ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;MinimumFontSize&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;MinimumFontSize&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="NewFrameset">
@@ -6204,12 +6164,9 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Parameters />
       <Docs>
         <summary>基于指定的窗格新建一个框架页。</summary>
-        <remarks>
-          <para>有关详细信息创建框架页，请参阅<see cref="Creatingframespages#SameCHM" />。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>本示例打开名为"Temp.doc"的文档，然后创建一个新的框架页，其唯一的框架中包含"Temp.doc"。</para>
+        <remarks><para>有关创建框架页的详细信息, 请<see cref="Creatingframespages#SameCHM" />参阅。</para>
+          <para> </para></remarks>
+        <example><para>本示例将打开一个名为"Temp.doc"的文件，然后创建一个新的框架页，该框架页中唯一的一个框架中包含"Temp.doc"。</para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Temp.doc" 
 
 
@@ -6467,8 +6424,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
 
 ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;NewFrameset&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;NewFrameset&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -6494,7 +6450,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>Pane</b> 对象，该对象代表集合中的下一个文档窗格。只读的。</summary>
+        <summary>返回一个 <b>Pane</b> 对象，该对象代表集合中的下一个文档窗格。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6522,7 +6478,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Pages" />代表文档中的页面的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Pages" />集合, 该集合代表文档中的页面。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6550,7 +6506,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down">向下滚动的页面的数量。</param>
+        <param name="Down">向下滚动的页数。</param>
         <param name="Up">向上滚动的页数。</param>
         <summary>使指定的窗格或窗口逐页滚动。</summary>
         <remarks>To be added.</remarks>
@@ -6607,7 +6563,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>Pane</b> 对象，该对象代表集合中的上一个文档窗格。只读。</summary>
+        <summary>返回一个 <b>Pane</b> 对象，该对象代表集合中的上一个文档窗格。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6635,7 +6591,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Selection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回表示所选内容或插入点在文档窗格中的 <b>选择</b> 对象。只读的。</summary>
+        <summary>返回表示所选内容或插入点在文档窗格中的 <b>选择</b> 对象。 只读的。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6695,12 +6651,9 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <Parameters />
       <Docs>
         <summary>基于指定文档创建一个目录，并将其放入框架页左边的新框架中。</summary>
-        <remarks>
-          <para>有关详细信息创建框架页，请参阅<see cref="Creatingframespages#SameCHM" />。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>本示例打开名为"Proposal.doc"的文件、 创建框架页根据文件，并添加一个图文框 （位于页面的左侧） 包含的文件的目录。</para>
+        <remarks><para>有关创建框架页的详细信息, 请<see cref="Creatingframespages#SameCHM" />参阅。</para>
+          <para> </para></remarks>
+        <example><para>本示例实现的功能是：打开一个名为“Proposal.doc”的文件，基于该文件创建一个框架页，并添加一个含有该文件目录的框架（位于页面的左侧）。</para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Proposal.doc" 
 
 
@@ -7214,8 +7167,7 @@ ActiveDocument.ActiveWindow.ActivePane.NewFrameset
 
 
 ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;TOCInFrameset&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;TOCInFrameset&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="VerticalPercentScrolled">
@@ -7244,11 +7196,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置垂直滚动位置占文档长度的百分比。读/写 <b>长</b> 。</summary>
+        <summary>返回或设置垂直滚动位置占文档长度的百分比。 读/写 <b>Long</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>本示例垂直滚动窗口的活动窗格 Document1 到末尾。</para>
+        <example><para>以下示例将 Document1 窗口的活动窗格垂直滚动至结尾。</para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -7763,8 +7714,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;VerticalPercentScrolled&lt;/span&gt;
-&lt;span class="label"&gt;= 100End With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= 100End With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="View">
@@ -7793,8 +7743,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <summary>返回一个 <b>View</b> 对象，该对象表示指定窗格的视图。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>本示例显示<b>Windows</b>集合中的第一个窗口相关联的窗格的所有非打印字符。</para>
+        <example><para>本示例显示与 <b>Windows</b> 集合中的第一个窗口相关联的窗格的所有非打印字符。</para>
           <code>&lt;span class="label"&gt;For Each myPane In Windows(1).Panes 
 
 
@@ -8053,8 +8002,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 
     myPane.&lt;/span&gt;
 &lt;span class="label"&gt;View&lt;/span&gt;
-&lt;span class="label"&gt;.ShowAll = TrueNext myPane&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;.ShowAll = TrueNext myPane&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Zooms">
@@ -8080,14 +8028,11 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Zooms</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="Zooms#SameCHM" />代表每个视图 （如普通视图、 大纲视图或页面视图） 的缩放选项的集合。</summary>
+        <summary>返回一个<see cref="Zooms#SameCHM" />集合, 该集合代表每个视图 (如普通视图、大纲视图或页面视图) 的缩放选项。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关返回集合中的单个成员的信息，请参阅<see cref="ReturninganObjectfromaCollection#SameCHM" />。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>本示例设置为 100%每个打开的窗口的普通视图中的放大倍数。</para>
+        <remarks><para>有关返回集合中单个成员的信息, 请参阅<see cref="ReturninganObjectfromaCollection#SameCHM" />。</para>
+          <para> </para></remarks>
+        <example><para>本示例将在普通视图中打开的所有窗口的显示比例设为 100%。</para>
           <code>&lt;span class="label"&gt;Dim wndLoop as Window 
 
 
@@ -8859,11 +8804,10 @@ For Each wndLoop In Windows
     wndLoop.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
 &lt;span class="label"&gt;(wdNormalView).Percentage = 100Next wndLoop&lt;/span&gt;</code>
-          <para>本示例在页面视图中设置的显示比例，以便整个页面可见。</para>
+          <para>本示例设置页面视图的显示比例，使整个页面可见。</para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes(1).&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
-&lt;span class="label"&gt;(wdPrintView).PageFit = _    wdPageFitFullPage&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;(wdPrintView).PageFit = _    wdPageFitFullPage&lt;/span&gt;</code></example>
       </Docs>
     </Member>
   </Members>

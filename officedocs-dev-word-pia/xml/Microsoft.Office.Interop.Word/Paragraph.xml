@@ -1,13 +1,5 @@
 <Type Name="Paragraph" FullName="Microsoft.Office.Interop.Word.Paragraph">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eb6fc32f516a2111c9909f04cf35b9f2026b1635" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666221" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Paragraph" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c0eabea100e5c4a8348271768adcd33704731223" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147744" /></Metadata><TypeSignature Language="C#" Value="public interface Paragraph" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Paragraph" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Paragraph" />
   <TypeSignature Language="VB.NET" Value="Public Interface Paragraph" />
@@ -26,14 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表所选内容、 范围或文档中的一个段落。</summary>
-    <remarks>
-      <para>
-        <b>Paragraph</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.Paragraphs" />集合。<b>Paragraphs</b>集合包含的所有段落中选定内容、 范围或文档。</para>
-      <para>使用<b>段落</b>(<paramref name="index" />)，其中<paramref name="index" />是要返回的单个<b>Paragraph</b>对象的索引号。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Paragraphs.Add(System.Object@)" />， <b>InsertParagraph</b>、 <b>InsertParagraphAfter</b>或<b>InsertParagraphBefore</b>方法向文档添加一个新的空白段落。</para>
-      <para />
-    </remarks>
+    <summary>代表所选内容、范围或文档中的一个段落。</summary>
+    <remarks><para><b>段落</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Paragraphs" />集合的一个成员。 <b>Paragraphs</b> 集合包含所选内容、范围或文档中的所有段落。</para>
+      <para>使用<b>段落</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回单个<b>段落</b>对象。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Paragraphs.Add(System.Object@)" />、 <b>InsertParagraph</b>、 <b>InsertParagraphAfter</b>或<b>InsertParagraphBefore</b>方法可向文档中添加一个新的空白段落。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddSpaceBetweenFarEastAndAlpha">
@@ -62,13 +51,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否设置 Microsoft Word 自动添加为指定段落的段的日文文字和拉丁文字之间的空格。</summary>
+        <summary>确定是否将 Microsoft Word 设置为在指定段落的日语和西文文字之间自动添加空格。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果设置了 Word 可自动添加指定段落，日文和拉丁文文字和<b>False</b>之间的空格，如果没有，则此属性返回<b>True</b> 。将此属性的值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>如果只将某些指定段落设置为<b>True</b> ，此属性返回<b>wdUndefined</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 设置为在指定段落中的日文和西文文字之间自动添加空格, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将此属性的值设置为<b>True</b>或<b>False</b>以启用或禁用功能。</para>
+          <para>如果只对某些指定段落设置为<b>True</b> , 则此属性将返回<b>wdUndefined</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSpaceBetweenFarEastAndDigit">
@@ -97,13 +84,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否设置 Microsoft Word 自动添加中文文字和指定段落的数字之间的空格。</summary>
+        <summary>确定是否将 Microsoft Word 设置为在日语文本和数字之间为指定段落自动添加空格。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果设置了 Word 可自动添加中文文字和数字的指定的段落和<b>False</b>之间的空格，如果没有，则此属性返回<b>True</b> 。</para>
-          <para>如果只将某些指定段落设置为<b>True</b> ，此属性返回<b>wdUndefined</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 设置为在指定段落的日语文本和数字之间自动添加空格, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 </para>
+          <para>如果只对某些指定段落设置为<b>True</b> , 则此属性将返回<b>wdUndefined</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -132,41 +117,39 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdParagraphAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.WdParagraphAlignment" />常量值，该值代表指定段落的对齐方式。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdParagraphAlignment" />常量, 该常量代表指定段落的对齐方式。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <b>WdParagraphAlignment</b>可以是下列常量之一: </para>
           <para>
-            <b>WdParagraphAlignment</b>可以是下列常量之一： </para>
-          <para>
-            <b>wdAlignParagraphCenter </b>
+            <b>wdAlignParagraphCenter</b>
           </para>
           <para>
-            <b>wdAlignParagraphDistribute </b>
+            <b>wdAlignParagraphDistribute</b>
           </para>
           <para>
-            <b>wdAlignParagraphJustify </b>
+            <b>wdAlignParagraphJustify</b>
           </para>
           <para>
             <b>wdAlignParagraphJustifyHi</b>
           </para>
           <para>
-            <b>wdAlignParagraphJustifyLow </b>
+            <b>wdAlignParagraphJustifyLow</b>
           </para>
           <para>
-            <b>wdAlignParagraphJustifyMed </b>
+            <b>wdAlignParagraphJustifyMed</b>
           </para>
           <para>
-            <b>wdAlignParagraphLeft </b>
+            <b>wdAlignParagraphLeft</b>
           </para>
           <para>
-            <b>wdAlignParagraphRight </b>
+            <b>wdAlignParagraphRight</b>
           </para>
           <para>
             <b>wdAlignParagraphThaiJustify</b>
           </para>
-          <para>上面列出的常量的一些可能不可用到您，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+          <para>由于您选择或安装的语言支持不同（例如美国英语），上述部分常量可能无法使用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -192,7 +175,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -223,13 +206,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否设置 Microsoft Word 自动调整指定段落的右缩进，如果已指定一组每行字符数。</summary>
+        <summary>确定是否将 Microsoft Word 设置为自动调整指定段落的右缩进 (如果已指定每行的字符数)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果设置了 Word 可自动调整指定段落的右缩进，如果已指定每行中，和<b>False</b>如果没有字符设置数，则此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>如果只将某些指定段落的<b>AutoAdjustRightIndent</b>属性设置为<b>True</b> ，此属性返回<b>wdUndefined</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果将 Word 设置为自动调整指定段落的右缩进 (如果您指定了每行的字符数), 则此属性返回<b>True</b> ; 如果您指定了设置的每行字符数, 则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果仅有某些指定段落的<b>AutoAdjustRightIndent</b>属性设置为<b>True</b> , 则此属性返回<b>wdUndefined</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseLineAlignment">
@@ -258,28 +239,26 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdBaselineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.WdBaselineAlignment" />常量，代表在行上的字体的垂直位置。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdBaselineAlignment" />常量, 该常量代表字体在线条上的垂直位置。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <b>WdBaselineAlignment</b>可以是下列常量之一: </para>
           <para>
-            <b>WdBaselineAlignment</b>可以是下列常量之一： </para>
-          <para>
-            <b>wdBaselineAlignAuto </b>
+            <b>wdBaselineAlignAuto</b>
           </para>
           <para>
-            <b>wdBaselineAlignCenter </b>
+            <b>wdBaselineAlignCenter</b>
           </para>
           <para>
-            <b>wdBaselineAlignTop </b>
+            <b>wdBaselineAlignTop</b>
           </para>
           <para>
-            <b>wdBaselineAlignBaseline </b>
+            <b>wdBaselineAlignBaseline</b>
           </para>
           <para>
             <b>wdBaselineAlignFarEast50</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -308,7 +287,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合，代表指定对象的所有边框。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合, 该集合代表指定对象的所有边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -341,10 +320,8 @@
       <Docs>
         <summary>返回或设置首行或悬挂缩进的值 (以字符为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用正值设置为首行缩进，并使用负值设置悬挂缩进。</para>
-          <para />
-        </remarks>
+        <remarks><para>用正值设置首行缩进，并使用一个负值设置悬挂缩进。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CharacterUnitLeftIndent">
@@ -404,7 +381,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定段落的右缩进值 （以字符为单位）。</summary>
+        <summary>该属性返回或设置指定段落的右缩进量（以字符为单位）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -460,7 +437,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的段落当前是否处于折叠状态。 读 / 写<b>boolean 类型的值</b>(C# 中<b>bool</b> )。</summary>
+        <summary>返回或设置指定段落当前是否处于折叠状态。 读写<b>布尔值</b>(在 c # 中为<b>bool</b> )。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -491,7 +468,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置是否加载文档时，默认折叠指定的段落。 读 / 写<b>boolean 类型的值</b>(C# 中<b>bool</b> )。</summary>
+        <summary>返回或设置在加载文档时是否默认折叠指定段落。 读写<b>布尔值</b>(在 c # 中为<b>bool</b> )。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -521,9 +498,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisableLineHeightGrid">
@@ -552,13 +529,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定 Microsoft Word 将对齐指定与行网格时数每页行的指定段落中的字符。</summary>
+        <summary>确定在指定每页的行数时, Microsoft Word 是否将指定段落中的字符与行网格对齐。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 将与行网格时指定一组每页行数，则和<b>False</b>如果不指定段落中的字符，则此属性返回<b>True</b> 。 将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>如果只将某些指定段落的<b>DisableLineHeightGrid</b>属性设置为<b>True</b> ，此属性返回<b>wdUndefined</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定的段落中的字符数为每页的行数, 则此属性返回<b>True</b> ; 如果指定每页的行数, 则此属性返回 False; 否则, 将返回<b>False</b> 。  将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果仅有某些指定段落的<b>DisableLineHeightGrid</b>属性设置为<b>True</b> , 则此属性返回<b>wdUndefined</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DropCap">
@@ -584,7 +559,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DropCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.DropCap" />对象，表示指定段落的首字下沉字母。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.DropCap" />对象, 表示指定段落的首字下沉字母。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -615,13 +590,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 将东亚语言文字的换行规则应用于指定的段落。</summary>
+        <summary>确定 Microsoft Word 是否对指定段落应用东亚语言换行规则。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 对指定的段落和<b>False</b>应用东亚语言文字的换行规则，如果没有，则此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>如果<b>FarEastLineBreakControl</b>属性只将某些指定段落设置为<b>True</b> ，此属性返回<b>wdUndefined</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 将东亚语言的换行规则应用于指定段落, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果仅有某些指定段落的<b>FarEastLineBreakControl</b>属性设置为<b>True</b> , 则此属性返回<b>wdUndefined</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstLineIndent">
@@ -652,10 +625,8 @@
       <Docs>
         <summary>返回或设置首行的行或悬挂缩进的值 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用正值设置为首行缩进，并使用负值设置悬挂缩进。</para>
-          <para />
-        </remarks>
+        <remarks><para>用正数设置首行缩进的尺寸，用负数设置悬挂缩进的尺寸。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -684,7 +655,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />对象，表示指定的段落或段落的格式。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />对象, 表示指定的一个或多个段落的格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -715,13 +686,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 的行首标点符号更改为指定段落的半角字符。</summary>
+        <summary>确定是否 Microsoft Word 将行首的标点符号更改为指定段落的半角字符。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 对指定的段落和<b>False</b>如果不需要的半角字符更改行首标点符号，此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>如果只将某些指定段落设置为<b>True</b> ，此属性返回<b>wdUndefined</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 将行首的标点符号更改为指定段落的半角字符, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果只对某些指定段落设置为<b>True</b> , 则此属性将返回<b>wdUndefined</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HangingPunctuation">
@@ -752,11 +721,9 @@
       <Docs>
         <summary>确定是否为指定段落启用标点溢出边界。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果不标点溢出边界启用了指定的段落和<b>False</b> ，则此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>如果只将某些指定段落设置为<b>True</b> ，此属性返回<b>wdUndefined</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果为指定段落启用标点溢出边界, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果只对某些指定段落设置为<b>True</b> , 则此属性将返回<b>wdUndefined</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Hyphenation">
@@ -785,13 +752,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否自动断字功能中包含指定的段落。</summary>
+        <summary>确定是否在自动断字中包含指定的段落。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的段落中自动断字功能，和<b>False</b>指定的段落的自动断字功能从排除如果包含，则此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>可能返回值为<b>True</b>、 <b>False</b>或<b>wdUndefined</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定的段落包含在自动断字中, 则此属性返回<b>True</b> ; 如果要从自动断字中排除指定段落, 则此属性返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>可能的返回值为<b>True</b>、 <b>False</b>或<b>wdUndefined</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -822,11 +787,9 @@
       <Docs>
         <summary>返回或设置指定对象的标识标签当前文档保存为 Web 页时。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>除了<see cref="T:Microsoft.Office.Interop.Word.Editor" />对象，您可以使用一个标签作为超链接引用其他网页或当前文档。</para>
-          <para>Microsoft Word 不会存储<b>ID</b>属性设置为<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。如果您设置的<b>ID</b>属性，然后返回其值，则返回的值将为空<b>字符串</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>除<see cref="T:Microsoft.Office.Interop.Word.Editor" />对象之外, 您可以将标签用作来自其他网页或当前文档中的超链接引用。</para>
+          <para>Microsoft Word 不存储<see cref="T:Microsoft.Office.Interop.Word.Range" />对象的<b>ID</b>属性设置。 如果设置<b>ID</b>属性, 然后返回其值, 则返回的值将为空<b>字符串</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Indent">
@@ -851,10 +814,8 @@
       <Parameters />
       <Docs>
         <summary>为一个或多个段落增加一个级别的缩进。</summary>
-        <remarks>
-          <para>使用此方法等效于单击格式工具栏上的增加缩进量按钮。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法等效于单击 "格式" 工具栏上的 "增加缩进量" 按钮。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentCharWidth">
@@ -880,13 +841,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">
-          <b>必选。</b> 指定段落要缩进的字符数。</param>
+        <param name="Count">必需的<b>整数</b>。 指定段落要缩进的字符数。</param>
         <summary>将一个或多个段落缩进指定的字符数。</summary>
-        <remarks>
-          <para>使用此方法等效于单击格式工具栏上的增加缩进量按钮。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法等效于单击 "格式" 工具栏上的 "增加缩进量" 按钮。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentFirstLineCharWidth">
@@ -912,13 +870,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">
-          <b>必选。</b> 指定段落要缩进的字符数。</param>
+        <param name="Count">必需的<b>整数</b>。 指定段落要缩进的字符数。</param>
         <summary>将一个或多个段落缩进指定的字符数。</summary>
-        <remarks>
-          <para>使用此方法等效于单击格式工具栏上的增加缩进量按钮。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法等效于单击 "格式" 工具栏上的 "增加缩进量" 按钮。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsStyleSeparator">
@@ -944,12 +899,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定一个段落是否包含一个特殊隐藏的段落标记，使 Microsoft Word 显示加入另一种段落样式的段落。</summary>
+        <summary>确定段落是否包含特殊的隐藏段落标记, 使 Microsoft Word 能够显示不同段落样式的段落。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果一个段落包含允许 Word 显示加入另一种段落样式的段落和<b>False</b>如果不需要特殊隐藏的段落标记，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果段落包含特殊的隐藏段落标记, 使 Word 可以加入不同段落样式的段落, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="JoinList">
@@ -1003,13 +956,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定 Microsoft Word 对文档重新分页时是否指定段落中的所有行也都保持在同一页上。</summary>
+        <summary>确定当 Microsoft Word 对文档重新分页时, 指定段落中的所有行是否保持在同一页上。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定段落中的所有行 Word 对文档和<b>False</b>如果不需要重新分页时都保留在同一页上，此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>可能返回值为<b>True</b>、 <b>False</b>或<b>wdUndefined</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定段落中的所有行在 Word 对文档重新分页时保持在同一页上, 则此属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>可能的返回值为<b>True</b>、 <b>False</b>或<b>wdUndefined</b>。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeepWithNext">
@@ -1038,13 +989,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定指定的段落是否保持 Microsoft Word 对文档重新分页时它后面的段同页。</summary>
+        <summary>确定当 Microsoft Word 对文档重新分页时, 指定的段落是否保留在与其后的段落相同的页面上。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 对文档和<b>False</b>如果不需要重新分页时它后面的段同页仍保持为指定的段落，此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>可能的值为<b>True</b>、 <b>False</b>或<b>wdUndefined</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定的段落在 Word 对文档重新分页时与其后的段落保持在同一页上, 则此属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>可能的值为<b>True</b>、 <b>False</b>或<b>wdUndefined</b>。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LeftIndent">
@@ -1073,7 +1022,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<b>一个</b>值，该值代表指定的段落、 表格行或 HTML 划分的左缩进值 （以磅为单位）。</summary>
+        <summary>返回或设置一个<b>Single</b>类型的值, 该值代表指定段落、表格行或 HTML 划分的左缩进值 (以磅为单位)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1106,18 +1055,15 @@
       <Docs>
         <summary>返回或设置指定段落的行距 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>在<b></b> <see cref="P:Microsoft.Office.Interop.Word.Paragraph.LineSpacingRule" />属性设置为以下项之后, 可以设置 LineSpacing 属性:</para>
           <para>
-            <b>LineSpacing</b>属性进行设置后<see cref="P:Microsoft.Office.Interop.Word.Paragraph.LineSpacingRule" />属性已设置为以下：</para>
+            <b>wdLineSpaceAtLeast</b> -行距可以大于或等于指定的<b>LineSpacing</b>值, 但不得小于该指定的值。</para>
           <para>
-            <b>wdLineSpaceAtLeast</b> -行距可以大于或等于，但绝不能小于，指定的<b>LineSpacing</b>值。</para>
+            <b>wdLineSpaceExactly</b> -线条间距永远不会从指定的<b>LineSpacing</b>值更改, 即使段落中使用了较大的字体也是如此。</para>
           <para>
-            <b>wdLineSpaceExactly</b> -行距永远不会更改从指定的<b>LineSpacing</b>值，即使段落中使用了较大的字体。</para>
-          <para>
-            <b>wdLineSpaceMultiple</b> -必须指定<b>LineSpacing</b>属性值，以磅为单位。</para>
-          <para>使用<b>LinesToPoints</b>方法将的行数转换为相应的值，以磅为单位。</para>
-          <para />
-        </remarks>
+            <b>wdlinespacemultiplelinespacing</b> -必须指定<b>LineSpacing</b>属性值, 以磅为单位。</para>
+          <para>使用 <b>LinesToPoints</b> 方法可将行数转换为相应的值（以磅为单位）。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineSpacingRule">
@@ -1148,9 +1094,8 @@
       <Docs>
         <summary>返回或设置指定段落的行距。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdLineSpacing" />可以是下列常量之一：</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdLineSpacing" />可以是下列常量之一:</para>
           <para>
             <b>wdLineSpace1pt5</b>
           </para>
@@ -1164,14 +1109,13 @@
             <b>wdLineSpaceExactly</b>
           </para>
           <para>
-            <b>wdLineSpaceMultiple</b>
+            <b>Wdlinespacemultiplelinespacing</b>
           </para>
           <para>
             <b>wdLineSpaceSingle</b>
           </para>
-          <para>使用<b>wdLineSpaceSingle</b>、 <b>wdLineSpace1pt5</b>或<b>wdLineSpaceDouble</b>将行距设置为下列值之一。若要将行距设置为完全的磅数或多个行数，则必须设置<see cref="P:Microsoft.Office.Interop.Word.Paragraph.LineSpacing" />属性。</para>
-          <para />
-        </remarks>
+          <para>使用 <b>wdLineSpaceSingle</b> 、 <b>wdLineSpace1pt5</b> 或 <b>wdLineSpaceDouble</b> 将行间距设置为下列值之一。 若要将行距设置为确切的磅数或多行数, 还必须设置<see cref="P:Microsoft.Office.Interop.Word.Paragraph.LineSpacing" />属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineUnitAfter">
@@ -1276,10 +1220,8 @@
         <param name="Level8">To be added.</param>
         <param name="Level9">To be added.</param>
         <summary>为列表中的段落设置列表级别。</summary>
-        <remarks>
-          <para>Microsoft Office Word 调整的编号的值，用于为指定的段落和上一个段落之间的隐藏文字插入的必要的中间段落编号指定段落的每个列表级别。</para>
-          <para />
-        </remarks>
+        <remarks><para>Microsoft Office Word 会通过在指定段落和前一段落之间的隐藏文字中插入所需的插入段落, 来调整用于对指定段落的每个列表级别进行编号的编号值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListNumberOriginal">
@@ -1309,7 +1251,7 @@
       </Parameters>
       <Docs>
         <param name="Level">指定列表级别。</param>
-        <summary>返回一个 <b>Integer</b> 类型的值，该值代表段落的原始列表级别。只读。</summary>
+        <summary>返回一个 <b>Integer</b> 类型的值，该值代表段落的原始列表级别。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1340,10 +1282,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>整数</b>，表示左右缩进是否宽度相同。 可以是<b>True</b>、 <b>False</b>，或<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" />。 为可读/写属性。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回或设置一个<b>Integer</b>类型的值, 该值代表左侧和右侧缩进的宽度是否相同。 可以为<b>True</b>、 <b>False</b>或<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" />。 读/写。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1369,8 +1309,8 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Count">可选的<b>对象</b>。 要前移的段落数。 默认值为 1。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />对象，它代表下一个段落。</summary>
+        <param name="Count">可选<b>对象</b>。 要前移的段落数。 默认值为 1。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />对象, 表示下一个段落。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1403,12 +1343,10 @@
       <Docs>
         <summary>确定是否取消指定段落的行号。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果取消指定的段落和<b>False</b>如果不需要的行号，此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
+        <remarks><para>如果指定段落的行号为取消, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
           <para>可能的值为<b>True</b>、 <b>False</b>或<b>wdUndefined</b>。</para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" />属性设置行号。</para>
-          <para />
-        </remarks>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" />属性可设置行号。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenOrCloseUp">
@@ -1483,10 +1421,8 @@
       <Parameters />
       <Docs>
         <summary>为一个或多个段落删除一个级别的缩进。</summary>
-        <remarks>
-          <para>使用此方法等效于单击格式工具栏上的减少缩进量按钮。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用此方法等效于单击 "格式" 工具栏上的 "减少缩进量" 按钮。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineDemote">
@@ -1511,10 +1447,8 @@
       <Parameters />
       <Docs>
         <summary>对指定段落应用下一个标题级别样式（从"标题 1"到"标题 8"）。</summary>
-        <remarks>
-          <para>例如，如果一个段落的格式为标题 2 样式，此方法将段落降级通过更改为标题 3 的样式。</para>
-          <para />
-        </remarks>
+        <remarks><para>例如, 如果一个段落的样式为 "标题 2", 则此方法将该段落的样式降级为 "标题 3"。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineDemoteToBody">
@@ -1569,14 +1503,10 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置指定段落的大纲级别。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdOutlineLevel" />
-        </value>
-        <remarks>
-          <para>段落具有标题样式应用于 (标题 1 到标题 9)，如果大纲级别的标题样式相同，无法更改。</para>
-          <para>大纲级别是仅在大纲视图或文档地图窗格可见。</para>
-          <para />
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdOutlineLevel" /></value>
+        <remarks><para>如果段落应用了一种标题样式（从"标题 1"到"标题 9"），则大纲级别与该标题样式相同，并且不能更改。</para>
+          <para>大纲级别仅在大纲视图或文档结构图窗格中可见。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlinePromote">
@@ -1601,10 +1531,8 @@
       <Parameters />
       <Docs>
         <summary>对指定段落应用上一个标题级别样式（从"标题 1"到"标题 8"）。</summary>
-        <remarks>
-          <para>例如，如果一个段落的格式为标题 2 样式，此方法将升级段落样式为标题 1。</para>
-          <para />
-        </remarks>
+        <remarks><para>例如, 如果一个段落的样式为 "标题 2", 则此方法通过将样式更改为 "标题 1" 来提升段落的格式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageBreakBefore">
@@ -1633,13 +1561,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定在指定段落前是否强制分页符。</summary>
+        <summary>确定在指定段落前是否强制分页。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果一个分页符强制指定的段落和<b>False</b>之前，如果没有，则此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能</para>
-          <para>可能返回值为<b>True</b>、 <b>False</b>或<b>wdUndefined</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果在指定段落之前强制分页, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能</para>
+          <para>可能的返回值为<b>True</b>、 <b>False</b>或<b>wdUndefined</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ParaID">
@@ -1723,8 +1649,8 @@
         <Parameter Name="Count" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Count">可选的<b>对象</b>。 要后移的段落数。 默认值为 1。</param>
-        <summary>返回上一段作为<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />对象。</summary>
+        <param name="Count">可选<b>对象</b>。 要后移的段落数。 默认值为 1。</param>
+        <summary>以<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />对象的形式返回上一段。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1752,12 +1678,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定对象中包含的文档部分。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关从文档返回一个区域或从形状集合返回形状范围的信息，请参阅<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息, 请参阅<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingOrder">
@@ -1788,18 +1712,16 @@
       <Docs>
         <summary>返回或设置指定段落的读取次序而不改变其对齐方式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdReadingOrder" />可以是下列常量之一：</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdReadingOrder" />可以是下列常量之一:</para>
           <para>
             <b>wdReadingOrderLtr</b>
           </para>
           <para>
             <b>wdReadingOrderRtl</b>
           </para>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.Selection.LtrPara" />， <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrRun" />， <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlPara" />，和<see cref="M:Microsoft.Office.Interop.Word.Selection.RtlRun" />方法可更改段落的对齐方式和读取次序。</para>
-          <para />
-        </remarks>
+          <para>使用<see cref="M:Microsoft.Office.Interop.Word.Selection.LtrPara" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrRun" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlPara" />和<see cref="M:Microsoft.Office.Interop.Word.Selection.RtlRun" />方法更改段落的对齐方式和阅读顺序。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -1824,10 +1746,8 @@
       <Parameters />
       <Docs>
         <summary>删除手动段落格式（不使用样式应用的格式）。</summary>
-        <remarks>
-          <para>如果手动右对齐段落而基本样式为不同的对齐方式，则用<b>Reset</b>方法更改要匹配的基本样式格式的对齐方式。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果手动右对齐段落并且基本样式为其他对齐方式，则用 <b>Reset</b> 方法将更改要匹配的基础样式的对齐方式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetAdvanceTo">
@@ -1852,10 +1772,8 @@
       <Parameters />
       <Docs>
         <summary>将使用自定义列表级别的段落重置为原始级别设置。</summary>
-        <remarks>
-          <para>Microsoft Office Word 调整的编号的值，用于删除指定的段落和上一个段落之间任何中间隐藏的段落编号指定段落的每个列表级别。</para>
-          <para />
-        </remarks>
+        <remarks><para>Microsoft Office Word 会通过删除指定段落和前一段落之间的任何隐藏段落, 来调整用于对指定段落的每个列表级别进行编号的编号值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightIndent">
@@ -1884,7 +1802,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定段落的右缩 （以磅为单位）。</summary>
+        <summary>返回或设置指定段落的右缩进量（以磅为单位）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1911,10 +1829,8 @@
       <Parameters />
       <Docs>
         <summary>选择列表中的编号或项目符号。</summary>
-        <remarks>
-          <para>如果从段落、 选定内容或范围不包含列表的调用<b>SelectNumber</b>方法，则显示一条错误消息。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果从段落、 所选内容或区域不包含列表调用 <b>SelectNumber</b> 方法时，将显示一条错误消息。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SeparateList">
@@ -1965,7 +1881,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象的引用指定对象的底纹格式。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象, 该对象代表指定对象的底纹格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2017,10 +1933,8 @@
       <Parameters />
       <Docs>
         <summary>为指定段落设置 1.5 倍行距。</summary>
-        <remarks>
-          <para>精确间距确定每个段落中的最大字符的字号加上 6 磅。</para>
-          <para />
-        </remarks>
+        <remarks><para>精确间距为各段内最大字符的字号加上 6 磅。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Space2">
@@ -2044,11 +1958,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>将指定段落的行距设为 2 倍行距。</summary>
-        <remarks>
-          <para>精确间距确定每个段落中的最大字符的字号加上 12 磅。</para>
-          <para />
-        </remarks>
+        <summary>为指定段落设置 2 倍行距。</summary>
+        <remarks><para>精确间距为各段内最大字符的字号加上 12 磅。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SpaceAfter">
@@ -2108,15 +2020,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定 Microsoft Word 自动是否将指定段落的段后间距设置。</summary>
+        <summary>确定是否 Microsoft Word 自动设置指定段落的段后间距。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 自动设置指定的段落，并为<b>False</b>之后的间距，如果没有，则此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>如果只将某些指定段落的段的<b>SpaceAfterAuto</b>属性设置为<b>True</b> ，此属性返回<b>wdUndefined</b> 。</para>
-          <para>不级联样式表的 HTML 文档打开时，Word 自动的<b>SpaceAfterAuto</b>属性设置为<b>True</b>以呈现段落间距，完全按照它将显示在 Web 浏览器中。</para>
-          <para>如果<b>将 SpaceAfterAuto</b>设置为<b>True</b>，<see cref="P:Microsoft.Office.Interop.Word.Paragraph.SpaceAfter" />属性将被忽略。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 自动设置指定段落的段后间距, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果仅有某些指定段落将 <b>SpaceAfterAuto</b> 属性设置为 <b>True</b> ，则此属性返回 <b>wdUndefined</b> 。</para>
+          <para>当您打开不带级联样式表的 HTML 文档时, Word 会自动将<b>SpaceAfterAuto</b>属性设置为<b>True</b> , 以呈现与 Web 浏览器中显示的段落间距完全一样的段落间距。</para>
+          <para>如果将<b>SpaceAfterAuto</b>设置为<b>True</b>, 则<see cref="P:Microsoft.Office.Interop.Word.Paragraph.SpaceAfter" />忽略该属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SpaceBefore">
@@ -2178,14 +2088,11 @@
       <Docs>
         <summary>确定是否 Microsoft Word 自动设置指定段落的段前间距。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 自动设置指定的段落，并为<b>False</b>之前的间距，如果没有，则此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>如果只将某些指定段落的<b>SpaceBeforeAuto</b>属性设置为<b>True</b> ，此属性返回<b>wdUndefined</b> 。</para>
-          <para>不级联样式表的 HTML 文档打开时，Word 自动的<b>SpaceBeforeAuto</b>属性设置为<b>True</b>以呈现段落间距，它将在 Web 浏览器中显示的样子。</para>
-          <para>
-            <b>SpaceBeforeAuto</b>设置为<b>True</b>，如果<see cref="P:Microsoft.Office.Interop.Word.Paragraph.SpaceBefore" />属性将被忽略。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 自动设置指定段落的段前间距, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果仅有某些指定段落将 <b>SpaceBeforeAuto</b> 属性设置为 <b>True</b> ，则此属性返回 <b>wdUndefined</b> 。 </para>
+          <para>当您打开不带级联样式表的 HTML 文档时, Word 会自动将<b>SpaceBeforeAuto</b>属性设置为<b>True</b> , 以呈现与 Web 浏览器中显示的段落间距完全一样的段落间距。</para>
+          <para>如果将<b>SpaceBeforeAuto</b>设置为<b>True</b>, 则<see cref="P:Microsoft.Office.Interop.Word.Paragraph.SpaceBefore" />忽略该属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -2216,11 +2123,9 @@
       <Docs>
         <summary>返回或设置指定对象的样式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>设置此属性时，请指定样式，一个整数的本地名称<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或一个代表样式的对象。</para>
-          <para>时返回的范围包含多个样式的样式，请返回仅的第一个字符或段落样式。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要设置该属性, 请指定样式的本地名称、一个整数、一个<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或一个代表样式的对象。</para>
+          <para>如果返回包含多个样式的范围的样式，则只返回第一个字符样式或段落样式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabHangingIndent">
@@ -2246,13 +2151,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">
-          <b>必选。</b> 如果为正，则表示要缩进的制表位数；如果为负，则表示要删除的缩进制表位数。</param>
+        <param name="Count">必需的<b>整数</b>。 如果为正，则表示要缩进的制表位数；如果为负，则表示要删除的缩进制表位数。</param>
         <summary>将悬挂缩进量设置为指定的制表位数。</summary>
-        <remarks>
-          <para>可用于删除悬挂缩进的制表位，如果的值<paramref name="Count" />是负数。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果值<paramref name="Count" />是负数, 则可用于将制表位从悬挂缩进中删除。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabIndent">
@@ -2278,13 +2180,10 @@
         <Parameter Name="Count" Type="System.Int16" />
       </Parameters>
       <Docs>
-        <param name="Count">
-          <b>必选。</b> 如果为正，则表示要缩进的制表位数；如果为负，则表示要删除的缩进制表位数。</param>
+        <param name="Count">必需的<b>整数</b>。 如果为正，则表示要缩进的制表位数；如果为负，则表示要删除的缩进制表位数。</param>
         <summary>将指定段落的左缩进量设置为指定的制表位数。</summary>
-        <remarks>
-          <para>可使用此方法删除缩进，如果的值<paramref name="Count" />是负数。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果的值<paramref name="Count" />是负数, 则可以使用此方法删除缩进。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabStops">
@@ -2313,7 +2212,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TabStops</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.TabStops" />指定段落的集合，代表所有自定义选项卡停止。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.TabStops" />集合, 该集合代表指定段落的所有自定义制表位。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2344,10 +2243,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTextboxTightWrap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.WdTextboxTightWrap" />常量，代表文字如何紧密环绕文本框或形状。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdTextboxTightWrap" />
-        </value>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdTextboxTightWrap" />常量, 表示文字环绕形状或文本框的紧密程度。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdTextboxTightWrap" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2408,13 +2305,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定 Microsoft Word 对文档重新分页时是否指定段落中第一个和最后一个行也保持在段落的其他位于同一页上。</summary>
+        <summary>确定当 Microsoft Word 对文档重新分页时, 指定段落中的第一行和最后一行是否与段落的其余部分保持一致。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定段落中的第一个和最后一个行 Word 对文档和<b>False</b>如果不需要重新分页时保留在段落的其他位于同一页上，此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
+        <remarks><para>如果指定段落中的第一行和最后一行与 Word 对文档重新分页时保留在同一页上, 则此属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
           <para>可能的值为<b>True</b>、 <b>False</b>和<b>wdUndefined</b>。</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WordWrap">
@@ -2443,13 +2338,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定 Microsoft Word 是否环绕文本框的西文单词指定的段落或文字框架中。</summary>
+        <summary>确定 Microsoft Word 是否将西文文本在指定段落或文本框架中的单词中间换行。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 换行中的指定的段落或文字框架和<b>False</b>单词中间西文文字，如果没有，则此属性返回<b>True</b> 。将该属性值设置为<b>True</b>或<b>False</b>以启用或禁用的功能。</para>
-          <para>如果只将某些指定的段落的文本框架设置为<b>True</b> ，该属性返回<b>wdUndefined</b> 。此用法可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 在指定段落或文本框架中的单词中间换行, 则此属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果仅将某些指定段落或文本框架的此属性设置为 <b>True</b>，则此属性返回 <b>wdUndefined</b>。 此用法可能对您不可用, 具体取决于您选择或安装的语言支持 (例如, 美国英语)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

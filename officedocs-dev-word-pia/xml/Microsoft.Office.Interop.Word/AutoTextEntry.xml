@@ -1,13 +1,5 @@
 <Type Name="AutoTextEntry" FullName="Microsoft.Office.Interop.Word.AutoTextEntry">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ec70f5beca361e5203612870f616a3ba39891001" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667193" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoTextEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0b55f0ca8e547da196123bbcdcfdca77303d0dfb" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146281" /></Metadata><TypeSignature Language="C#" Value="public interface AutoTextEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoTextEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoTextEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoTextEntry" />
@@ -27,13 +19,10 @@
   </Attributes>
   <Docs>
     <summary>代表单个自动图文集词条。</summary>
-    <remarks>
-      <para>
-        <b>AutoTextEntry</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" />集合。<b>AutoTextEntries</b>集合包含指定的模板中的所有自动图文集条目。（工具菜单） 中的自动更正对话框中的自动图文集选项卡上列出的条目。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />(<paramref name="index" />)，其中<paramref name="index" />是自动图文集词条名称或索引号，可返回单个<b>AutoTextEntry</b>对象。您必须完全匹配拼写 （但不是一定大小写） 的名称，如它显示在自动更正对话框的自动图文集选项卡。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" />方法，以将<b>AutoTextEntry</b>对象添加到<b>AutoTextEntries</b>集合。</para>
-      <para />
-    </remarks>
+    <remarks><para><b>AutoTextEntry</b>对象是<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" />集合的一个成员。 <b>AutoTextEntries</b> 集合中包含指定模板中的所有自动图文集词条。 这些条目列在自动更正对话框 ("工具" 菜单) 中的 "自动图文集" 选项卡上。</para>
+      <para>Use <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />(<paramref name="index" />), 其中<paramref name="index" />是 "自动图文集" 词条名称或索引号, 返回一个<b>AutoTextEntry</b>对象。 名称的拼写必须与 "自动更正" 对话框中的 "自动图文集" 选项卡上显示的完全匹配 (但不一定是大小写)。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" />方法将<b>AutoTextEntry</b>对象添加到<b>AutoTextEntries</b>集合中。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />对象, 表示 Microsoft Word 应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,11 +76,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，指示在其中创建指定的对象的应用程序。</summary>
+        <summary>返回一个值, 该值指示在其中创建指定对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -115,7 +104,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +131,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，代表集合中的项目的位置。</summary>
+        <summary>返回一个值, 该值代表项目在集合中的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,13 +160,11 @@
       </Parameters>
       <Docs>
         <param name="Where">"自动图文集"词条的位置。</param>
-        <param name="RichText">是否要插入具有其原来的格式的自动图文集条目。</param>
+        <param name="RichText">是否插入 "自动图文集" 词条的原始格式。</param>
         <summary>插入自动图文集词条替换指定的范围。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果您不希望替换该区域，使用<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />方法之前使用此方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果不想替换该范围, 请在使用此<see cref="M:Microsoft.Office.Interop.Word.Range.Collapse(System.Object@)" />方法之前使用该方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -295,10 +282,8 @@
       <Docs>
         <summary>返回或设置自动图文集词条的值。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>为<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" />对象的<b>Value</b>属性仅返回对象的值的前 255 个字符。将<b>Value</b>属性设置为超过 255 个字符的值将生成一个错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>对于<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" />对象, <b>Value</b>属性仅返回对象值的前255个字符。 将<b>value</b>属性设置为超过255个字符的值会产生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="EmailOptions" FullName="Microsoft.Office.Interop.Word.EmailOptions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9d7d89d607c233bdec70bbfbbb7aa581ba535dbd" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665683" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface EmailOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="41872900801a0a7a86f3c3520dbf45dd3b12c1a0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144531" /></Metadata><TypeSignature Language="C#" Value="public interface EmailOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract EmailOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.EmailOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface EmailOptions" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>在创建、编辑电子邮件和答复邮件时，该对象将包含 Microsoft Word 使用的全局应用程序级属性。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.EmailOptions" />属性可返回<b>EmailOptions</b>对象。</para>
-      <para />
-    </remarks>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.EmailOptions" />属性返回<b>EmailOptions</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,13 +77,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否三个或多个连字符 （-）、 等号 （=） 或下划线字符 (_) 的一系列自动替换为指定的边框线时按 ENTER 键。</summary>
+        <summary>确定当按下 ENTER 键时, 三个或更多的连字符 (-)、等号 (=) 或下划线字符 (_) 将自动替换为特定边框线的一系列。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b> ，如果一系列的三个或多个连字符 （-） 等号 （=） 或下划线字符 (_) 将自动替换通过按 ENTER 键时, 的特定的边框线和<b>False</b>如果不。</para>
-          <para>通过 0.75 磅的直线替换连字符 （-）、 0.75 磅宽的双线替换等号 （=） 和下划线字符 (_) 替换为 1.5 磅的直线。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果按下 ENTER 键时, 如果三个或更多的连字符 (-)、等号 (=) 或下划线字符 (_) 自动替换为特定的边框线, 则此属性返回<b>True</b> ; 否则, 返回<b>False</b> 。</para>
+          <para>以一条 0.75 磅的直线替换连字符 (-)，以一条 0.75 磅的双线替换等号符号 (=)，以一条 1.5 磅的直线替换下划线 (_)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeApplyBulletedLists">
@@ -122,12 +110,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定项目符号字符 (如星号、 连字符，和更高版本-号符号) 的项目符号替换从项目符号和编号对话框 （格式菜单） 您键入时。</summary>
+        <summary>确定在键入时, 是否将项目符号字符 (例如星号、连字符和大于号) 替换为项目符号和编号对话框 (格式菜单) 中的项目符号。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果此属性返回<b>True</b>的项目符号字符 (星号、 连字符，例如和更高版本-号符号) 为键入时，和<b>False</b>如果没有与从项目符号和编号对话框 （格式菜单） 的项目符号替换。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果在键入时, 项目符号字符 (例如星号、连字符和大于号) 替换为项目符号和编号对话框 (格式菜单) 中的项目符号, 则此属性返回<b>True</b> ; 否则, 返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeApplyClosings">
@@ -156,12 +142,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定 Microsoft Word 在键入时是否会自动应用到信函的结束语的结束语样式。</summary>
+        <summary>确定在键入时, Microsoft Word 是否自动将落款样式应用于信函落款。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 自动应用结束语样式为信函的结束语为键入时，和<b>False</b>如果没有，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 在键入时自动将结束样式应用于信函落款, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeApplyDates">
@@ -190,12 +174,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 自动应用于日期样式日期您键入时。</summary>
+        <summary>确定在键入时, Microsoft Word 是否自动对日期应用日期样式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 自动应用于日期样式为日期类型和<b>False</b>如果没有，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 自动对键入的日期应用日期样式, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeApplyFirstIndents">
@@ -224,12 +206,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 自动替换用首行缩进的段落开始处输入的空格。</summary>
+        <summary>确定 Microsoft Word 是否自动将在段落开头输入的空格替换为首行缩进。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性将返回<b>True</b>如果 Word 自动替换为空格输入一个段落的开头的首行缩进和<b>False</b>如果不需要。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 自动将在段落开始处输入的空格替换为首行缩进, 则此属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeApplyHeadings">
@@ -258,12 +238,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否样式会自动应用于标题您键入时。</summary>
+        <summary>确定在键入时是否自动将样式应用于标题。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果样式为键入时，和<b>False</b>如果未自动应用于标题，此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果在键入时自动将样式应用于标题, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeApplyNumberedLists">
@@ -292,13 +270,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否段落自动设置为编号列表项目符号的编号方案和编号对话框 （格式菜单），根据键入的内容。</summary>
+        <summary>根据键入的内容, 确定是否将段落自动设置为编号列表, 以及 "项目符号和编号" 对话框 ("格式" 菜单) 中的编号方案。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>如果段落自动设置，和<b>False</b>如果不。</para>
-          <para>是以下的此属性的功能的一个示例： 如果一个段落开始使用"1.1"和一个制表符，Word 自动插入"1.2"和一个制表符后按 ENTER 键。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果段落自动设置格式, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para>此属性的功能的一个示例如下: 如果段落以 "1.1" 和制表符开头, Word 将在按下 ENTER 键后自动插入 "1.2" 和制表符。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeApplyTables">
@@ -327,13 +303,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 自动创建一个表时键入一个加号、 连字符一系列，另一个加号，等，然后按 ENTER。</summary>
+        <summary>确定在键入加号、一系列连字符、另一个加号等时, Microsoft Word 是否自动创建一个表, 然后按 ENTER。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 自动创建表格和<b>False</b>如果没有此属性返回<b>True</b> 。</para>
-          <para>加号变为列边框，和连字符变为列宽度。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 自动创建一个表, 则该属性返回<b>True</b> , 如果不是, 则返回<b>False</b> 。</para>
+          <para>加号变为列边框，连字符变为列宽度。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeAutoLetterWizard">
@@ -362,12 +336,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 自动启动英文信函向导时用户输入信函称呼或关闭。</summary>
+        <summary>确定当用户输入信函称呼或结束语时, Microsoft Word 是否自动启动英文信函向导。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 自动启动英文信函向导和<b>False</b>如果没有，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Microsoft Word 自动启动 "英文信函向导", 则该属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeDefineStyles">
@@ -396,12 +368,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 自动创建新样式基于手动设定的格式。</summary>
+        <summary>确定 Microsoft Word 是否基于手动格式自动创建新样式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 自动创建新样式基于手动格式和<b>False</b>如果没有，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 自动根据手动设置的格式创建新样式, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeDeleteAutoSpaces">
@@ -430,12 +400,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 自动删除您键入时日文和拉丁文文字之间插入的空格。</summary>
+        <summary>确定在键入时, Microsoft Word 是否自动删除在日语和西文文字之间插入的空格。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 自动删除空格和<b>False</b>如果没有，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 自动删除空格, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeFormatListItemBeginning">
@@ -464,12 +432,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 将重复字符格式应用于列表项到下一个列表项的开头。</summary>
+        <summary>确定 Microsoft Word 是否重复应用于列表项的开头的字符格式到下一个列表项。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 重复字符格式，和<b>False</b> ，如果没有，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 重复字符格式, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeInsertClosings">
@@ -498,12 +464,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 自动插入相应的备忘录结束语时用户输入备忘录标题。</summary>
+        <summary>确定当用户输入备忘录标题时, Microsoft Word 是否自动插入对应的备忘录结束语。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 会自动插入的备忘录结束语，和<b>False</b>如果没有，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 自动插入备忘录结束语, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeInsertOvers">
@@ -532,12 +496,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 自动插入""当用户输入""或""。</summary>
+        <summary>确定在用户输入 "" 或 "" 时, Microsoft Word 是否自动插入 ""。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b> ，如果将自动插入单词""，和<b>False</b>如果不需要。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 自动插入 "", 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeMatchParentheses">
@@ -566,12 +528,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 自动更正不正确成对的括号。</summary>
+        <summary>确定 Microsoft Word 是否自动更正不正确的配对括号。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 自动更正不正确成对的括号，和<b>False</b>如果没有，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Microsoft Word 自动更正不正确的配对括号, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeReplaceFarEastDashes">
@@ -600,12 +560,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 自动更正长元音和划线。</summary>
+        <summary>确定 Microsoft Word 是否自动更正长元音和短划线。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 自动更正长元音和划线，与<b>False</b>如果没有，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 自动更正长元音和短划线, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeReplaceFractions">
@@ -634,12 +592,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定如果键入分数替换用当前字符集的分数键入时，为"1/2"替换"½"。</summary>
+        <summary>确定键入的分数是否被您键入时的当前字符集中的分数替换, 就像 "1/2" 替换为 "1/2"。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>如果键入的分数的替换，和<b>False</b>如果不需要。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果替换键入的分数, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeReplaceHyperlinks">
@@ -668,13 +624,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定电子邮件地址，是否服务器和共享名称 （也称为 UNC 路径） 和 Internet 地址 (也称为 Url) 会自动更改为超链接您键入时。</summary>
+        <summary>确定电子邮件地址、服务器和共享名称 (也称为 UNC 路径) 和 Internet 地址 (也称为 Url) 在键入时自动更改为超链接。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果电子邮件地址、 服务器和共享名称 （也称为 UNC 路径） 和 Internet 地址 （也称为 Url） 会自动更改为超链接和<b>False</b>如果没有此属性返回<b>True</b> 。</para>
-          <para>Microsoft Word 更改任何文字看起来像电子邮件地址、 UNC 或 URL 为超链接。Word 不检查超链接的有效性。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果电子邮件地址、服务器和共享名称 (也称为 UNC 路径) 和 Internet 地址 (也称为 Url) 自动更改为超链接, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para>Microsoft Word 会将看起来像电子邮件地址、UNC 或 URL 的任何文本更改为超链接。 Word 并不检查超链接是否有效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeReplaceOrdinals">
@@ -703,12 +657,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否序号后缀"st"、"和"、"rd"和"th"替换键入时，在上标相同的字母作为时"1st"替换"1"跟"st"设置为上标格式。</summary>
+        <summary>确定在键入时, 序号后缀 "st"、"nd"、"rd" 和 "th" 是否被替换为上标的相同字母, 就像将 "1st" 替换为 "1", 后跟 "st" 的格式为上标。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>如果序号后缀"st"、"和"、"远程桌面"，并替换为"th"，和<b>False</b>如果不需要。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果序号后缀 "st"、"nd"、"rd" 和 "th" 被替换, 则此属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeReplacePlainTextEmphasis">
@@ -737,12 +689,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否手动强调字符自动替换为字符格式键入时，为"*加粗*"更改为"<b>加粗</b>"和"_下划线_"更改为"加下划线。"</summary>
+        <summary>确定在键入时是否自动将手动强调字符替换为字符格式, 如将 "*bold*" 更改为 "<b>bold</b>" 和 "_下划线_" 更改为 "下划线" 时。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>将自动替换手动强调的字符，如果和<b>False</b>如果不需要。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果自动替换了手动强调字符, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeReplaceQuotes">
@@ -771,12 +721,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否直引号替换会自动更改为弯引号您键入时。</summary>
+        <summary>确定键入时是否自动将直引号更改为智能 (卷曲) 引号。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果直引号替换为键入时，和<b>False</b>是自动更改为智能弯引号，如果没有，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果在键入时自动将直引号更改为弯引号, 则此属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatAsYouTypeReplaceSymbols">
@@ -805,13 +753,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否将两个连续的连字符 （-） 替换短划线 （-） 或划线 （—） 作为您的类型。</summary>
+        <summary>确定键入时两个连续的连字符 (--) 是否替换为 en 短划线 (-) 或 em 短划线 (-)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>如果两个连续的连字符 （-） 替换，和<b>False</b>如果不。</para>
-          <para>如果键入的连字符替换为前导和尾随空格，则 Microsoft Word 将连字符替换为短划线; 如果没有尾随空格，将连字符替换为长划线。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果替换两个连续的连字符 (--), 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para>如果键入的连字符带有前导和尾部空格, Microsoft Word 会将连字符替换为短破折号。如果没有尾随空格, 连字符将被替换为长划线。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ComposeStyle">
@@ -837,7 +783,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Style" />对象，表示用于撰写新电子邮件的样式。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Style" />对象, 表示用于撰写新电子邮件的样式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -867,9 +813,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Dummy1">
@@ -898,7 +844,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -929,7 +875,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -958,7 +904,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -985,7 +931,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.EmailSignature</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.EmailSignature" />对象，它代表 Microsoft Word 附加在待发电子邮件的签名。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.EmailSignature" />对象, 表示 Microsoft Word 附加在待发电子邮件中的签名。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1022,11 +968,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定 Microsoft Word 是否 HTML 电子邮件中保存智能标记信息。</summary>
+        <summary>确定 Microsoft Word 是否将智能标记信息保存在 HTML 电子邮件中。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 智能标记信息保存在 HTML 电子邮件和<b>False</b>如果没有此属性返回<b>True</b> 。</para>使用 HTML 发送
-          <para>使用<b>EmbedSmartTag</b>属性单词指定为您的电子邮件编辑器和邮件时。这样，不必在其计算机上注册的识别器文件有权访问的智能标记信息的邮件的收件人。若要使 Word 默认电子邮件编辑器，更改 Microsoft Outlook 中必要的设置。</para><para /></remarks>
+        <remarks><para>如果 Word 将智能标记信息保存在 HTML 电子邮件中, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para>将 Word 指定为电子邮件编辑器, 并使用 HTML 发送邮件时, 请使用<b>emailoptions.embedsmarttag</b>属性。 这使邮件收件人能够访问智能标记信息, 而无需在其计算机上注册识别器文件。 要将 Word 作为默认的电子邮件编辑器，请更改 Microsoft Outlook 的相关设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HTMLFidelity">
@@ -1055,7 +1001,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdEmailHTMLFidelity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>用于 Microsoft Word 中打开 HTML 文件，但不是必需的显示带 HTML 标记。</summary>
+        <summary>条纹用于在 Microsoft Word 中打开 HTML 文件但不需要显示的 HTML 标记。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1086,11 +1032,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 标记电子邮件中的用户的注释。</summary>
+        <summary>确定 Microsoft Word 是否在电子邮件中标记用户的注释。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>如果 Word 标记电子邮件和<b>False</b>如果不在用户的注释。</para>此属性将使用的值的注释标记的
-          <para><see cref="P:Microsoft.Office.Interop.Word.EmailOptions.MarkCommentsWith" />属性。<b>MarkCommentsWith</b>属性的默认值是的值<see cref="P:Microsoft.Office.Interop.Word._Application.UserName" />属性。</para><para /></remarks>
+        <remarks><para>如果 Word 在电子邮件中标记用户的注释, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para>此属性将注释标记为<see cref="P:Microsoft.Office.Interop.Word.EmailOptions.MarkCommentsWith" />属性值。 <b>MarkCommentsWith</b>属性的默认值是该<see cref="P:Microsoft.Office.Interop.Word._Application.UserName" />属性的值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkCommentsWith">
@@ -1119,12 +1065,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置与 Microsoft Word 标记电子邮件中的注释的字符串。</summary>
+        <summary>返回或设置 Microsoft Word 在电子邮件中标记批注的字符串。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>默认值是的值<see cref="P:Microsoft.Office.Interop.Word._Application.UserName" />属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>默认值为<see cref="P:Microsoft.Office.Interop.Word._Application.UserName" />属性的值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NewColorOnReply">
@@ -1153,13 +1097,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定用户是否需要答复电子邮件时选择新颜色答复文本。</summary>
+        <summary>指定在答复电子邮件时, 用户是否需要为答复文本选择一种新颜色。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>指定用户需要选择新颜色和<b>False</b>如果不。</para>
-          <para>如果您想从 Microsoft Word 发送为不同的颜色原始邮件的电子邮件的回复文本使用<b>NewColorOnReply</b>属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性返回<b>True</b> , 以指定用户需要选择新颜色, 如果不需要, 则返回<b>False</b> 。</para>
+          <para>如果希望从 Microsoft Word 发送的回复电子邮件的文本与原始邮件文本的颜色不同，可使用 <b>NewColorOnReply</b> 属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1213,7 +1155,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.Style" />的电子邮件的发送或接收使用纯文本属性代表的文本的对象。</summary>
+        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.Style" />使用纯文本发送或接收的电子邮件的文本属性的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1244,14 +1186,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否级联样式表 (CSS) 使用的字体格式时 Web 浏览器中查看保存的文档。</summary>
+        <summary>确定在 Web 浏览器中查看保存的文档时, 字体格式是否使用级联样式表 (CSS)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>如果使用级联样式表，和<b>False</b>如果 HTML&lt;字体&gt;使用标记和级联样式表。默认值为<b>True</b>。</para>
-          <para>Microsoft Word 创建的级联样式表文件，并将其保存到指定的文件夹或网页，具体取决于的值相同的文件夹<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />属性。</para>
-          <para>应设置此属性设置为<b>True</b> ，如果您级联样式表，因为这将使您更精确地布局和格式设置的 Web 浏览器支持控制 Web 页上，并使其更类似文档，（即 Microsoft Word 中显示）。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果使用级联样式表, 则此属性返回<b>True</b> ; 如果使用&lt;HTML&gt;字体标签和级联样式表, 则返回<b>False</b> 。 默认值为 <b>True</b>。</para>
+          <para>Microsoft Word 创建一个级联样式表文件, 并将其保存到指定的文件夹或与网页相同的文件夹中, 具体取决于该<see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" />属性的值。</para>
+          <para>如果您的 Web 浏览器支持级联样式表，因为这会为您提供更精确的布局和格式设置控件在 Web 页上的并使其更看起来像您的文档 (即显示在 Microsoft Word 中)，应设置该属性为 <b>True</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplyStyle">
@@ -1277,7 +1217,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Style</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Style" />代表答复电子邮件时所用的样式的对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Style" />对象, 表示答复电子邮件时使用的样式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1308,12 +1248,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 TAB 和 BACKSPACE 键可用于增大和减小，分别段落和如果 BACKSPACE 键可用于更改为右对齐段落的左缩进段落居中并居中为左对齐的段落段落。</summary>
+        <summary>确定制表符和 BACKSPACE 键是否可用于分别增大和减小段落的左缩进量, 以及是否可以使用 BACKSPACE 键将右对齐段落更改为居中的段落和居中的段落以左对齐段.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>如果使用 TAB 和 BACKSPACE 键，和<b>False</b>如果不需要。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果使用 TAB 和 BACKSPACE 键, 则此属性返回<b>True</b> , 如果不使用, 则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ThemeName">
@@ -1342,13 +1280,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置主题以及任何主题格式选项用于新电子邮件的名称。</summary>
+        <summary>该属性返回或设置用于新的电子邮件的主题名称以及所有主题格式选项的名称。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回的值的说明，请参阅<paramref name="Name" />参数<see cref="M:Microsoft.Office.Interop.Word._Document.ApplyTheme(System.String)" />方法。此属性返回的值可能不对应主题的显示名称出现在主题对话框。若要返回主题的显示名称，请使用<see cref="P:Microsoft.Office.Interop.Word._Document.ActiveThemeDisplayName" />属性。</para>
-          <para>还可以使用<see cref="M:Microsoft.Office.Interop.Word._Application.GetDefaultTheme(Microsoft.Office.Interop.Word.WdDocumentMedium)" />和<see cref="M:Microsoft.Office.Interop.Word._Application.SetDefaultTheme(System.String,Microsoft.Office.Interop.Word.WdDocumentMedium)" />方法返回或设置新电子邮件的默认主题。</para>
-          <para />
-        </remarks>
+        <remarks><para>有关此属性返回的值的说明, 请参阅<paramref name="Name" /> <see cref="M:Microsoft.Office.Interop.Word._Document.ApplyTheme(System.String)" />方法的参数。 该属性返回的值可能不对应于“主题”对话框中主题的显示名称。 若要返回主题的显示名称, 请使用<see cref="P:Microsoft.Office.Interop.Word._Document.ActiveThemeDisplayName" />属性。</para>
+          <para>您还可以使用<see cref="M:Microsoft.Office.Interop.Word._Application.GetDefaultTheme(Microsoft.Office.Interop.Word.WdDocumentMedium)" />和<see cref="M:Microsoft.Office.Interop.Word._Application.SetDefaultTheme(System.String,Microsoft.Office.Interop.Word.WdDocumentMedium)" />方法返回并设置新电子邮件的默认主题。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseThemeStyle">
@@ -1377,13 +1313,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定新电子邮件是否使用通过默认的电子邮件主题定义的字符样式。</summary>
+        <summary>确定新电子邮件是否使用由默认电子邮件主题定义的字符样式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果新电子邮件使用定义的字符样式，并<b>False</b>如果没有此属性返回<b>True</b> 。</para>
-          <para>如果已指定默认的电子邮件主题，此属性会产生任何效果。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果新电子邮件使用定义的字符样式, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para>如果没有指定默认的电子邮件主题, 则此属性不起作用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseThemeStyleOnReply">
@@ -1412,12 +1346,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定 Microsoft Word 使用主题时回复电子邮件。</summary>
+        <summary>确定在答复电子邮件时, Microsoft Word 是否使用主题。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 使用主题，答复电子邮件和<b>False</b>如果不需要时，此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 在答复电子邮件时使用主题, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

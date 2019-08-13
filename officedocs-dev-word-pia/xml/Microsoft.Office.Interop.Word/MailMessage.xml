@@ -1,13 +1,5 @@
 <Type Name="MailMessage" FullName="Microsoft.Office.Interop.Word.MailMessage">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f1bc7701ac4bfc8d2bb8fe6029a2d018dfdd0031" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666468" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMessage" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="79cb7fd3ce8a5755942cbbc77c5979e3c87edcf8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144440" /></Metadata><TypeSignature Language="C#" Value="public interface MailMessage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMessage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMessage" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMessage" />
@@ -26,13 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>如果您使用的 Microsoft Word 作为邮件编辑器，表示活动的电子邮件。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.MailMessage" />属性可返回<b>MailMessage</b>对象。</para>
-      <para>
-        <b>MailMessage</b>对象的方法需要将 Word 作为电子邮件编辑器和电子邮件处于活动状态。如果不能上述任一条件，则将发生错误。</para>
-      <para />
-    </remarks>
+    <summary>如果使用 Microsoft Word 作为电子邮件编辑器, 则代表活动电子邮件。</summary>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.MailMessage" />属性返回<b>MailMessage</b>对象。</para>
+      <para><b>MailMessage</b> 对象的方法需要使用 Word 作为电子邮件编辑器，并且电子邮件活动。 如果不满足上述任一条件, 则会发生错误。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,11 +73,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>验证在显示的电子邮件地址:，抄送:，和密件抄送： 活动的电子邮件中的行。 此方法是将 Microsoft Word 作为电子邮件编辑器时才可用。</summary>
-        <remarks>
-          <para>如果无法验证名称，则显示检查姓名对话框。</para>
-          <para />
-        </remarks>
+        <summary>验证活动电子邮件中的 "收件人:"、"抄送:" 和 "密件抄送:" 行中显示的电子邮件地址。 仅当您使用 Microsoft Word 作为电子邮件编辑器时, 此方法才可用。</summary>
+        <remarks><para>如果不能验证这些姓名，则显示 "检查姓名" 对话框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -116,9 +103,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -142,7 +129,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,7 +154,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>显示“移动”对话框，用户可在该对话框中为可用的邮件存储区中的活动电子邮件指定一个新位置。 此方法是将 Microsoft Word 作为电子邮件编辑器时才可用。</summary>
+        <summary>显示“移动”对话框，用户可在该对话框中为可用的邮件存储区中的活动电子邮件指定一个新位置。 仅当您使用 Microsoft Word 作为电子邮件编辑器时, 此方法才可用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,7 +179,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>为活动的电子邮件显示“属性”对话框。 此方法是将 Microsoft Word 作为电子邮件编辑器时才可用。</summary>
+        <summary>为活动的电子邮件显示“属性”对话框。 仅当您使用 Microsoft Word 作为电子邮件编辑器时, 此方法才可用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -217,7 +204,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>显示选择姓名对话框中，在其中用户可以将地址添加到收件人:，抄送:，和密件抄送： 活动、 未发送电子邮件中的行。 此方法是将 Microsoft Word 作为电子邮件编辑器时才可用。</summary>
+        <summary>显示 "选择姓名" 对话框, 用户可在该对话框中向活动、未发送的电子邮件的 "收件人:"、"抄送:" 和 "密件抄送" 行添加地址。 仅当您使用 Microsoft Word 作为电子邮件编辑器时, 此方法才可用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,7 +229,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>到空打开一个新的电子邮件： 行以转发当前邮件。 此方法是将 Microsoft Word 作为电子邮件编辑器时才可用。</summary>
+        <summary>打开一个新的电子邮件, 其中包含空的 "To:" 行以转发活动邮件。 仅当您使用 Microsoft Word 作为电子邮件编辑器时, 此方法才可用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,7 +254,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>如果您使用的 Microsoft Word 作为邮件编辑器将显示下一步的邮件。</summary>
+        <summary>如果使用 Microsoft Word 作为电子邮件编辑器, 则显示下一封邮件。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,7 +279,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>如果您使用的 Microsoft Word 作为邮件编辑器，则显示以前的邮件。</summary>
+        <summary>如果使用 Microsoft Word 作为电子邮件编辑器, 则显示上一封邮件。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -345,7 +332,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>打开一个新的电子邮件 — 上的发件人的地址： 行 — 以答复活动邮件。</summary>
+        <summary>打开一封新的电子邮件, 并在 "发件人:" 行中包含发件人地址, 以答复活动邮件。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,7 +357,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>打开一个新的电子邮件 — 上的发件人和所有其他收件人的地址: 和抄送： 行，根据需要 — 以答复活动邮件。</summary>
+        <summary>打开一封新的电子邮件, 并在 "收件人:" 和 "抄送" 行上为 "收件人:" 和 "抄送:" 行上的发件人和所有其他收件人的地址, 以答复活动邮件。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

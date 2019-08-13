@@ -1,13 +1,5 @@
 <Type Name="TablesOfAuthorities" FullName="Microsoft.Office.Interop.Word.TablesOfAuthorities">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b04829d6e20038907ae0e4d3dfef9a45a8da9159" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666189" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TablesOfAuthorities : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fef3d3e5c7ec2a8397d6977b226d1f8051218c96" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143929" /></Metadata><TypeSignature Language="C#" Value="public interface TablesOfAuthorities : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TablesOfAuthorities implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" />
   <TypeSignature Language="VB.NET" Value="Public Interface TablesOfAuthorities&#xA;Implements IEnumerable" />
@@ -30,10 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" />对象 （TOA 域） 表示的文档中引文目录。</summary>
-    <remarks>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" />属性可返回<b>TablesOfAuthorities</b>集合。</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法添加到文档中的引文目录。从文档中的 TA （引文目录项） 域生成的引文目录。</para><para>使用<b>TablesOfAuthorities</b>(<paramref name="index" />)，其中<paramref name="index" />是返回单个<b>TableOfAuthorities</b>对象的索引号。索引号代表文档中引文目录的位置。</para><para /></remarks>
+    <summary>代表文档中<see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" />引文目录的对象 (TOA 域) 的集合。</summary>
+    <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" />属性返回<b>TablesOfAuthorities</b>集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法可向文档中添加引文目录。 从文档中的 TA (引文目录项) 域生成的引文目录。</para>
+      <para>使用<b>TablesOfAuthorities</b>(<paramref name="index" />) (其中<paramref name="index" />是索引号) 返回单个<b>TableOfAuthorities</b>对象。 索引号代表文档中引文目录的位置。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -67,23 +60,21 @@
         <Parameter Name="PageNumberSeparator" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">所需<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 引文目录出现的区域。 如果该区域未折叠，引文会替换范围。</param>
-        <param name="Category">可选的<b>对象</b>。 要包括在引文目录中的项的类别。 与引文目录 (TOA) 域的 \c 开关对应。 值为 0 至 16 对应于在索引和目录对话框 （插入菜单中的引用命令） 的引文目录选项卡上的类别框中列出的项目。 默认值为 1。</param>
-        <param name="Bookmark">可选的<b>对象</b>。 要从中收集引文目录项的书签的字符串名称。 如果<paramref name="Bookmark" />指定，则只从文档中的书签标记的部分收集条目。 对应于引文目录 (TOA) 域的 \b 开关。</param>
-        <param name="Passim">可选的<b>对象</b>。 <b>真</b> 要替换为同一机构五个或更多页引用各处在引文目录中。 对应于一个引文目录 (TOA) 域 \p 开关。 如果省略此参数，则<paramref name="Passim" />假定为<b>False</b>。</param>
-        <param name="KeepEntryFormatting">可选的<b>对象</b>。 <b>为</b> 引文在引文目录中的条目格式应用。 对应于引文目录 (TOA) 域的 \f 开关。 如果省略此参数，则<paramref name="KeepEntryFormatting" />假定为<b>True</b>。</param>
-        <param name="Separator">可选的<b>对象</b>。 引文目录中每个序列号与其页码间的字符（最多五个）。 对应于引文目录 (TOA) 域的 \d 开关。 如果省略此参数，则使用连字符 (-)。</param>
-        <param name="IncludeSequenceName">可选的<b>对象</b>。 指定引文目录的 Sequence (SEQ) 域标识符的字符串。 对应于引文目录 (TOA) 域的 \s 开关。</param>
-        <param name="EntrySeparator">可选的<b>对象</b>。 分隔引文目录中各项及其页码的字符（最多五个）。 对应于引文目录 (TOA) 域的 \e 开关。 如果省略此参数，则不使用分隔符。</param>
-        <param name="PageRangeSeparator">可选的<b>对象</b>。 分隔引文目录中各个页范围内起始和结束页码的字符（最多五个）。 对应于引文目录 (TOA) 域的 \g 开关。 如果省略此参数，则使用英文划线 (-)。</param>
-        <param name="IncludeCategoryHeader">可选的<b>对象</b>。 <b>真正</b> 让每一组引文目录项的类别名称显示在表中的机构 (例如，案例)。 对应于一个引文目录 (TOA) 域 \h 开关。 如果省略此参数，则<paramref name="IncludeCategoryHeader" />假定为<b>True</b>。</param>
-        <param name="PageNumberSeparator">可选的<b>对象</b>。 分隔引文目录中页引用内各个页码的字符（最多五个）。 对应于引文目录 (TOA) 域的 \l 开关。 如果省略此参数，则使用逗号和空格。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" />对象，表示添加到文档中引文。</summary>
+        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 引文目录出现的区域。 如果区域未折叠, 引文目录将替换该区域。</param>
+        <param name="Category">可选<b>对象</b>。 要包括在引文目录中的项的类别。 与引文目录 (TOA) 域的 \c 开关对应。 取值在 0 到 16 之间，分别对应“索引和目录”对话框的“引文目录”选项卡上“类别”框中所列的各项（单击“插入”菜单上的“引用”命令）。 默认值为 1。</param>
+        <param name="Bookmark">可选<b>对象</b>。 要从中收集引文目录项的书签的字符串名称。 如果<paramref name="Bookmark" />指定, 则仅从书签所标记的文档部分收集条目。 对应于引文目录 (TOA) 域的 \b 开关。</param>
+        <param name="Passim">可选<b>对象</b>。 <b>真</b> 要替换为同一机构五个或更多页引用各处在引文目录中。 对应于一个引文目录 (TOA) 域 \p 开关。 如果省略此参数, <paramref name="Passim" />则假定其值为<b>False</b>。</param>
+        <param name="KeepEntryFormatting">可选<b>对象</b>。 <b>为</b> 引文在引文目录中的条目格式应用。 对应于引文目录 (TOA) 域的 \f 开关。 如果省略此参数, <paramref name="KeepEntryFormatting" />则假定其值为<b>True</b>。</param>
+        <param name="Separator">可选<b>对象</b>。 引文目录中每个序列号与其页码间的字符（最多五个）。 对应于引文目录 (TOA) 域的 \d 开关。 如果省略此参数，则使用连字符 (-)。</param>
+        <param name="IncludeSequenceName">可选<b>对象</b>。 指定引文目录的 Sequence (SEQ) 域标识符的字符串。 对应于引文目录 (TOA) 域的 \s 开关。</param>
+        <param name="EntrySeparator">可选<b>对象</b>。 分隔引文目录中各项及其页码的字符（最多五个）。 对应于引文目录 (TOA) 域的 \e 开关。 如果省略此参数，则不使用分隔符。</param>
+        <param name="PageRangeSeparator">可选<b>对象</b>。 分隔引文目录中各个页范围内起始和结束页码的字符（最多五个）。 对应于引文目录 (TOA) 域的 \g 开关。 如果省略此参数，则使用英文划线 (-)。</param>
+        <param name="IncludeCategoryHeader">可选<b>对象</b>。 <b>真正</b> 让每一组引文目录项的类别名称显示在表中的机构 (例如，案例)。 对应于一个引文目录 (TOA) 域 \h 开关。 如果省略此参数, <paramref name="IncludeCategoryHeader" />则假定其值为<b>True</b>。</param>
+        <param name="PageNumberSeparator">可选<b>对象</b>。 分隔引文目录中页引用内各个页码的字符（最多五个）。 对应于引文目录 (TOA) 域的 \l 开关。 如果省略此参数，则使用逗号和空格。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" />对象, 表示添加到文档中的引文目录。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>从文档中引文目录项 (TA) 字段生成的引文目录。使用<see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />标记引文要包含在引文目录中的方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>从文档中的引文目录项 (TA) 字段生成的引文目录。 使用<see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />方法将引文标记为包含在引文目录中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -109,7 +100,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +128,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -167,9 +158,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -198,11 +189,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdToaFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的指定文档中引文目录的格式。</summary>
+        <summary>返回或设置指定文档中引文目录的格式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdToaFormat" />可以是下列<b>WdToaFormat</b>常量之一：</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdToaFormat" />可以是下列的<b>WdToaFormat</b>常量之一:</para>
           <para>
             <b>wdTOAClassic</b>
           </para>
@@ -218,8 +208,7 @@
           <para>
             <b>wdTOASimple</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -280,7 +269,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">一个<b>整数</b>，指示的单个对象的序号位置。</param>
+        <param name="Index">一个指示单个对象的序号位置的<b>整数</b>。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -312,10 +301,10 @@
       </Parameters>
       <Docs>
         <param name="ShortCitation">必需的 <b>字符串</b> 。 在“标记引文”对话框（“插入”菜单中的“索引和目录”命令）中显示的词条的短引文。</param>
-        <param name="LongCitation">可选的<b>对象</b>。 在引文目录中显示的长引文字符串。</param>
-        <param name="LongCitationAutoText">可选的<b>对象</b>。 包含要在引文目录中显示的长引文内容的"自动图文集"词条名称。</param>
-        <param name="Category">可选的<b>对象</b>。 与词条关联的类别编号：1 与 "标记引文"对话框的 "类别"框中的第一个类别相对应；2 与第二个类别相对应，以此类推。</param>
-        <summary>所有实例后插入 TA （引文目录项） 域<paramref name="ShortCitation" />文本。</summary>
+        <param name="LongCitation">可选<b>对象</b>。 在引文目录中显示的长引文字符串。</param>
+        <param name="LongCitationAutoText">可选<b>对象</b>。 包含要在引文目录中显示的长引文内容的"自动图文集"词条名称。</param>
+        <param name="Category">可选<b>对象</b>。 与词条关联的类别编号：1 与 "标记引文" 对话框的 "类别" 框中的第一个类别相对应；2 与第二个类别相对应，以此类推。</param>
+        <summary>在所有<paramref name="ShortCitation" />文本实例的后面插入 TA (引文目录项) 域。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,12 +333,12 @@
         <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">所需<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 引文目录项的位置。 之后插入 TA 域<paramref name="Range" />。</param>
+        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 引文目录项的位置。 将在 "TA" 字段<paramref name="Range" />后插入。</param>
         <param name="ShortCitation">必需的 <b>字符串</b> 。 在“标记引文”对话框（“插入”菜单中的“索引和目录”命令）中显示的词条的短引文。</param>
-        <param name="LongCitation">可选的<b>对象</b>。 在引文目录中显示的长引文。</param>
-        <param name="LongCitationAutoText">可选的<b>对象</b>。 在引文目录中显示的"自动图文集"词条名称（该词条包括长引文）。</param>
-        <param name="Category">可选的<b>对象</b>。 与词条关联的类别编号：1 与 "标记引文"对话框的 "类别"框中的第一个类别相对应；2 与第二个类别相对应，以此类推。</param>
-        <summary>插入一个 TA （引文目录项） 域，并返回该字段作为<see cref="T:Microsoft.Office.Interop.Word.Field" />对象。</summary>
+        <param name="LongCitation">可选<b>对象</b>。 在引文目录中显示的长引文。</param>
+        <param name="LongCitationAutoText">可选<b>对象</b>。 在引文目录中显示的"自动图文集"词条名称（该词条包括长引文）。</param>
+        <param name="Category">可选<b>对象</b>。 与词条关联的类别编号：1 与 "标记引文" 对话框的 "类别" 框中的第一个类别相对应；2 与第二个类别相对应，以此类推。</param>
+        <summary>插入一个 TA (引文目录项) 域并将该字段作为<see cref="T:Microsoft.Office.Interop.Word.Field" />对象返回。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -378,7 +367,7 @@
       </Parameters>
       <Docs>
         <param name="ShortCitation">必需的 <b>字符串</b> 。 短引文的文本。</param>
-        <summary>查找并选择指定的引文的下一个实例。</summary>
+        <summary>查找并选择指定引文的下一个实例。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

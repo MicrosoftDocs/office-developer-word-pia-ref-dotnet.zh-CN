@@ -1,13 +1,5 @@
 <Type Name="Hyperlink" FullName="Microsoft.Office.Interop.Word.Hyperlink">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b20d04082a16f963ccc15d9f6d80fa09a9949c11" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666948" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Hyperlink" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b605957f028ab3eb567ae3d9d066ecf695f2ce45" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146708" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlink" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Hyperlink" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlink" />
@@ -27,13 +19,10 @@
   </Attributes>
   <Docs>
     <summary>代表一个超链接。</summary>
-    <remarks>
-      <para>
-        <b>Hyperlink</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" />集合。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" />属性返回一个<b>Hyperlink</b>对象，该对象与 （形状可以有只有一个超链接） 形状相关联。</para>
-      <para>使用<b>超链接</b>(<paramref name="index" />)，其中<paramref name="index" />是从文档、 范围或所选内容中返回单个<b>Hyperlink</b>对象的索引号。</para>
-      <para />
-    </remarks>
+    <remarks><para><b>超链接</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" />集合的一个成员。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" />属性可返回与形状相关联的<b>超链接</b>对象 (一个形状只能有一个超链接)。</para>
+      <para>使用<b>超链接</b>()<paramref name="index" />( <paramref name="index" />其中是索引号) 从文档、区域或所选内容中返回单个<b>超链接</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Address">
@@ -62,7 +51,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的超链接的地址 （例如，文件名或 URL）。</summary>
+        <summary>返回或设置指定超链接的地址（例如，文件名或 URL）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +135,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />对象, 表示 Microsoft Word 应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,8 +166,8 @@
       </Parameters>
       <Docs>
         <param name="FileName">必需的 <b>字符串</b> 。 指定文档的文件名。</param>
-        <param name="EditNow">所需<b>Boolean</b>。 <b>True</b>在其关联的编辑环境中立即打开指定文档。 默认值为 <b>True</b> 。</param>
-        <param name="Overwrite">所需<b>Boolean</b>。 <b>True</b>覆盖同一文件夹中的相同名称的任何现有文件。 <b>False</b>如果保留相同名称的任何现有文件和<paramref name="FileName" />参数指定一个新的文件名称。 默认值为 <b>False</b> 。</param>
+        <param name="EditNow">必需的<b>布尔值</b>。 如果为 <b>True</b>，则立即在相关编辑环境中打开指定文档。 默认值为 <b>True</b>。</param>
+        <param name="Overwrite">必需的<b>布尔值</b>。 如果为 <b>True</b>，则覆盖相同文件夹中任何现有的同名文件。 <b>假</b>如果保留任何相同名称的现有文件, 并且该<paramref name="FileName" />参数指定新的文件名。 默认值为 <b>False</b>。</param>
         <summary>新建一篇链接到指定超链接的文档。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,9 +197,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -234,7 +223,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>用于删除指定的对象。</summary>
+        <summary>删除指定的对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,12 +253,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定超链接的主题行的文本字符串。 主题行所追加到超链接的 Internet 地址或 URL。</summary>
+        <summary>返回或设置指定超链接的主题行的文本字符串。 该主题行附加到超链接的 Internet 地址或 URL 中。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性通常用于电子邮件超链接。此属性的值优先于中指定的任何电子邮件主题<see cref="P:Microsoft.Office.Interop.Word.Hyperlink.Address" />属性相同的<see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" />对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>该属性通常用于电子邮件超链接。 此属性的值优先于在同一<see cref="P:Microsoft.Office.Interop.Word.Hyperlink.Address" /> <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" />对象的属性中指定的任何电子邮件主题。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtraInfoRequired">
@@ -295,13 +282,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果需要额外的信息来解析指定的超链接。</summary>
+        <summary><b>如此</b> 如果需要额外的信息来解析指定的超链接。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以使用指定的额外信息<paramref name="ExtraInfo" />参数<see cref="M:Microsoft.Office.Interop.Word.Hyperlink.Follow(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />或<see cref="M:Microsoft.Office.Interop.Word._Document.FollowHyperlink(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法。例如，您可以使用<paramref name="ExtraInfo" />指定图像映射的坐标、 窗体或 FAT 文件名称的内容。</para>
-          <para />
-        </remarks>
+        <remarks><para>您可以通过将<paramref name="ExtraInfo" />参数与<see cref="M:Microsoft.Office.Interop.Word.Hyperlink.Follow(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> or <see cref="M:Microsoft.Office.Interop.Word._Document.FollowHyperlink(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法一起使用来指定额外的信息。 例如, 可以使用<paramref name="ExtraInfo" />指定图像映射的坐标、窗体的内容或 FAT 文件名。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Follow">
@@ -330,16 +314,14 @@
         <Parameter Name="HeaderInfo" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NewWindow">可选的<b>对象</b>。 <b>True</b>在新窗口中显示的目标文档。 默认值为 <b>False</b> 。</param>
-        <param name="AddHistory">可选的<b>对象</b>。 该参数为以后使用而保留。</param>
-        <param name="ExtraInfo">可选的<b>对象</b>。 字符串或字节数组的指定 HTTP 用于解析超链接的其他信息。 例如，您可以使用<paramref name="ExtraInfo" />指定图像映射的坐标、 窗体或 FAT 文件名称的内容。 字符串发布或追加，具体取决于的值<paramref name="Method" />。 使用<see cref="P:Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" />属性可以确定是否需要额外信息。</param>
-        <param name="Method">可选的<b>对象</b>。 指定处理 HTTP 的方式的其他信息。 可以是任意<see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" />常量。</param>
-        <param name="HeaderInfo">可选的<b>对象</b>。 指定 HTTP 请求的标头信息的字符串。 默认值为一个空字符串。 您可以将几个标头行组合到单个字符串。 所指定的字符串自动转换为 ANSI 字符。 请注意，<paramref name="HeaderInfo" />参数可能会覆盖默认 HTTP 标头字段。</param>
-        <summary>显示与指定关联的缓存的文档<see cref="T:Microsoft.Office.Interop.Word.Hyperlink" />对象，如果已下载。 否则为此方法解析超链接，下载目标文档，并在相应的应用程序中显示的文档。</summary>
-        <remarks>
-          <para>如果超链接使用文件协议，此方法将打开而不是下载该文档。</para>
-          <para />
-        </remarks>
+        <param name="NewWindow">可选<b>对象</b>。 如果该属性值为 <b>True</b>，则在新窗口中显示目标文档。 默认值为 <b>False</b>。</param>
+        <param name="AddHistory">可选<b>对象</b>。 该参数为以后使用而保留。</param>
+        <param name="ExtraInfo">可选<b>对象</b>。 指定用于解析超链接的 HTTP 附加信息的字符串或字节数组。 例如, 可以使用<paramref name="ExtraInfo" />指定图像映射的坐标、窗体的内容或 FAT 文件名。 根据的值, 可以发布或追加该字符串<paramref name="Method" />。 使用<see cref="P:Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" />属性来确定是否需要额外的信息。</param>
+        <param name="Method">可选<b>对象</b>。 指定 HTTP 附加信息的处理方式。 可以是任何<see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" />常量。</param>
+        <param name="HeaderInfo">可选<b>对象</b>。 指定 HTTP 请求的标头信息的字符串。 默认值为一个空字符串。 您可以将多个标题行组合成一个字符串。 所指定的字符串自动转换为 ANSI 字符。 请注意, <paramref name="HeaderInfo" />该参数可能会覆盖默认 HTTP 标头字段。</param>
+        <summary>显示与指定<see cref="T:Microsoft.Office.Interop.Word.Hyperlink" />对象相关联的缓存文档 (如果已下载)。 否则，此方法将解析该超链接，下载目标文档，并在相应的应用程序中显示此文档。</summary>
+        <remarks><para>如果超链接使用文件协议，该方法不是下载而是打开该文档。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -421,12 +403,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定对象中包含的文档部分。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关从文档返回一个区域或从形状集合返回形状范围的信息，请参阅<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息, 请参阅<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenTip">
@@ -483,12 +463,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />指定超链接的对象。</summary>
+        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.Shape" />超链接的对象。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果形状不代表超链接，则会导致出错。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果超链接不是由形状表示的，则会产生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubAddress">
@@ -519,10 +497,8 @@
       <Docs>
         <summary>返回或设置指定超链接目标中命名的位置。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>命名的位置可以是命名的单元格或单元格引用 Microsoft Excel 工作表，在 Microsoft Access 数据库中，一个命名对象或 Microsoft PowerPoint 演示文稿中幻灯片编号中的 Microsoft Word 文档中的书签。</para>
-          <para />
-        </remarks>
+        <remarks><para>命名的位置可以是 Microsoft Word 文档中的书签、Microsoft Excel 工作表中命名的单元格或单元格引用、Microsoft Access 数据库中命名的对象，或者是 Microsoft PowerPoint 演示文稿中幻灯片的序号。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubAddressOld">
@@ -643,11 +619,8 @@
       <Docs>
         <summary>返回超链接的类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Type</b>属性可以是之一<see cref="T:Microsoft.Office.Core.MsoHyperlinkType" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Type</b>属性可以是<see cref="T:Microsoft.Office.Core.MsoHyperlinkType" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

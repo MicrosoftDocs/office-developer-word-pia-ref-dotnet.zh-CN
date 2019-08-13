@@ -1,13 +1,5 @@
 <Type Name="Series" FullName="Microsoft.Office.Interop.Word.Series">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7e57a20d817db9a10ad7cd7211af64a04feabae6" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665922" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Series" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="51719d6ceae8ae2f5e9f4ced767d517decf12984" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147667" /></Metadata><TypeSignature Language="C#" Value="public interface Series" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Series" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Series" />
   <TypeSignature Language="VB.NET" Value="Public Interface Series" />
@@ -27,11 +19,8 @@
   </Attributes>
   <Docs>
     <summary>代表图表上的系列。</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Word.Series" />对象是成员<see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />集合。</para>
-      <para />
-    </remarks>
+    <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Series" />对象是<see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" />集合的成员。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,9 +46,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
-        <value>
-          <b>应用程序</b>（请参见上文）</value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <value><b>应用程序</b>(请参阅上面的)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +77,7 @@
         <Parameter Name="ChartType" Type="Microsoft.Office.Core.XlChartType" />
       </Parameters>
       <Docs>
-        <param name="ChartType">所需<see cref="T:Microsoft.Office.Core.XlChartType" />。 标准图表类型。</param>
+        <param name="ChartType">必需<see cref="T:Microsoft.Office.Core.XlChartType" />。 标准图表类型。</param>
         <summary>将标准图表类型或自定义图表类型应用于数据系列。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,10 +114,9 @@
       </Parameters>
       <Docs>
         <param name="Type">要应用的数据标签的类型。</param>
-        <param name="LegendKey">						如果为 <b>True</b>，则在数据点旁边显示图例项标示。默认值为 <b>False</b>。</param>
-        <param name="AutoText">
-          <b>如此</b> 如果对象自动生成合适的文字内容。</param>
-        <param name="HasLeaderLines">为<see cref="T:Microsoft.Office.Interop.Word.Chart" />和<see cref="T:Microsoft.Office.Interop.Word.Series" />对象，<b>则返回 True</b>如果系列有引导线。</param>
+        <param name="LegendKey"><b>True</b> 显示图例项标示点旁。 默认值为 <b>False</b>。</param>
+        <param name="AutoText"><b>如此</b> 如果对象自动生成合适的文字内容。</param>
+        <param name="HasLeaderLines">对于<see cref="T:Microsoft.Office.Interop.Word.Chart" />和<see cref="T:Microsoft.Office.Interop.Word.Series" />对象, 如果系列有引导线,<b>则为 True</b> 。</param>
         <param name="ShowSeriesName">传递布尔值以启用或禁用数据标签的系列名称。</param>
         <param name="ShowCategoryName">传递布尔值以启用或禁用数据标签的分类名称。</param>
         <param name="ShowValue">传递布尔值以启用或禁用数据标签的值。</param>
@@ -138,11 +125,9 @@
         <param name="Separator">数据标签的分隔符。</param>
         <summary>向系列应用数据标签。</summary>
         <returns>返回<see cref="T:System.Object" />。</returns>
-        <remarks>
-          <para>
-            <paramref name="Type" />可以是一个<see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <paramref name="Type" />可以是<see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyPictToEnd">
@@ -171,10 +156,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果图片应用于系列中数据点或所有数据点之后，则该属性值为 <b>True</b> 。 <b>Boolean</b> 类型，可读写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>如果图片应用于系列中数据点或所有数据点之后，则该属性值为 <b>True</b> 。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,10 +187,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果图片应用于系列中数据点或所有数据点之前，则该属性值为 <b>True</b> 。 <b>Boolean</b> 类型，可读写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>如果图片应用于系列中数据点或所有数据点之前，则该属性值为 <b>True</b> 。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,9 +219,7 @@
       </ReturnValue>
       <Docs>
         <summary>如果图片应用于系列中数据点或所有数据点的旁边，则该属性值为 <b>True</b> 。 <b>Boolean</b> 类型，可读写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,10 +249,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlAxisGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />值，它代表坐标轴组的类型。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />值, 该值代表坐标轴组的类型。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,9 +281,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置用于三维条形图或柱形图中单个系列的形状。 读/写<see cref="T:Microsoft.Office.Interop.Word.XlBarShape" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlBarShape" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlBarShape" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,10 +308,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />对象，它代表对象的边框。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> object 类型的对象, 该对象代表对象的边框。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,14 +339,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 string，指的是包含气泡图 x 值、 y 值和大小数据的工作表单元格。 读取/写入 <b>对象</b> 。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>在返回的单元格引用时，它将返回描述 A1 样式表示法中的单元格的字符串。若要设置图表的气泡大小数据，必须使用 R1C1 样式表示法。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个字符串，该字符串引用包含气泡图 x 值、y 值和大小数据的工作表单元格。 读取/写入 <b>对象</b> 。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>在返回单元格引用时，它将返回以 A1 样式注释描述单元格的字符串。 要为气泡图设置大小数据，必须使用 R1 样式注释。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartType">
@@ -403,13 +372,9 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置图表类型。 读/写<see cref="T:Microsoft.Office.Core.XlChartType" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.XlChartType" />
-        </value>
-        <remarks>
-          <para>某些图表类型对数据透视图无效。</para>
-          <para />
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Core.XlChartType" /></value>
+        <remarks><para>某些图表类型对数据透视图报表无效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearFormats">
@@ -434,9 +399,7 @@
       <Parameters />
       <Docs>
         <summary>清除对象的格式设置。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,9 +425,7 @@
       <Parameters />
       <Docs>
         <summary>如果系列具有图片填充，此方法将把图片复制到剪贴板。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -491,14 +452,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 <b>Integer</b> 类型，只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中，创建<see cref="P:Microsoft.Office.Interop.Word.Series.Creator" />属性返回十六进制数字 4d535744，表示的字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Integer</b>。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.Series.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabels">
@@ -524,13 +481,11 @@
       </Parameters>
       <Docs>
         <param name="Index">数据标签的编号。</param>
-        <summary>返回一个 object 值，该值代表之一的单个数据标签 (<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />对象) 或所有数据系列的数据标签集合 (<see cref="T:Microsoft.Office.Interop.Word.DataLabels" />集合)。</summary>
-        <returns>一个<b>对象</b>，表示单个数据标签 (<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />对象) 或所有数据系列的数据标签集合 (<see cref="T:Microsoft.Office.Interop.Word.DataLabels" />集合)。</returns>
-        <remarks>
-          <para>如果系列有显示值选项处于打开状态的数据标签，则返回的集合可以包含每个点的最多为 1 个标签。数据标签可以打开还是关闭的系列中单个点。</para>
-          <para>如果系列已面积图，并具有显示标签选项已打开的数据标签，则返回的集合包含仅单个数据标签，即区域的数据系列的标签。</para>
-          <para />
-        </remarks>
+        <summary>返回一个 object 类型的值, 该值代表系列 ( <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> <see cref="T:Microsoft.Office.Interop.Word.DataLabels" />集合) 的单个数据标签 (一个对象) 或所有数据标签的集合。</summary>
+        <returns>一个<b></b>代表系列的单个数据标签 (一个<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />对象) 或所有数据标签集合的对象 ( <see cref="T:Microsoft.Office.Interop.Word.DataLabels" />集合)。</returns>
+        <remarks><para>如果系列中指定数据标签的 "显示值" 选项处于打开状态，则返回的集合中每个数据点最多包含一个数据标签。 可对系列中的各个数据点打开或关闭数据标签。</para>
+          <para>如果指定系列处于面积图中，并且数据标签的 "显示标签" 选项处于打开状态，则返回的集合中仅包含单个数据标签，即面积系列的标签。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -555,9 +510,7 @@
       <Parameters />
       <Docs>
         <summary>删除对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -590,12 +543,10 @@
         <param name="Direction">误差线方向。</param>
         <param name="Include">要包含的误差线部分。</param>
         <param name="Type">误差线类型。</param>
-        <param name="Amount">误差量。 用于仅正误差量时<paramref name="Type" />是<see cref="F:Microsoft.Office.Interop.Word.XlErrorBarType.xlErrorBarTypeCustom" />。</param>
-        <param name="MinusValues">负误差量时<paramref name="Type" />是<see cref="F:Microsoft.Office.Interop.Word.XlErrorBarType.xlErrorBarTypeCustom" />。</param>
+        <param name="Amount">误差量。 仅用于在时<paramref name="Type" />为正误差量。 <see cref="F:Microsoft.Office.Interop.Word.XlErrorBarType.xlErrorBarTypeCustom" /></param>
+        <param name="MinusValues">时<paramref name="Type" />的负误差量为<see cref="F:Microsoft.Office.Interop.Word.XlErrorBarType.xlErrorBarTypeCustom" />。</param>
         <summary>将误差线应用于系列。 <b>对象</b>。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -622,10 +573,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ErrorBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ErrorBars" />对象，它代表数据系列的误差线。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ErrorBars" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ErrorBars" />对象, 表示系列的误差线。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ErrorBars" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -655,10 +604,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置饼图或圆环图的扇区的分离程度值。 如果没有分离 （切片的提示是与饼图中心中），则返回 0 （零）。 可读写 <b>Integer</b>。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回或设置饼图或圆环图切片的分解程度值。 如果未分解（切片尖端位于饼图中心），则返回 0（零）。 <b>Integer</b> 型，可读/写。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -688,10 +635,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />对于本系列。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <summary>返回此<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />系列的。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -721,9 +666,7 @@
         <summary>返回行、 填充和效果的对象的格式。
 
 只读<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -754,13 +697,11 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>String</b> 值，它代表 A1 样式表示法和宏语言中的对象的公式。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
-        <remarks>
-          <para>此属性不可用于 OLAP 数据源。</para>
-          <para>当对象包含一个常量，该属性返回的常量。如果对象是为空，这<see cref="P:Microsoft.Office.Interop.Word.Series.Formula" />属性返回一个空字符串。如果此对象包含公式，<see cref="P:Microsoft.Office.Interop.Word.Series.Formula" />属性返回相同的格式将公式栏 （包括等号） 中显示的字符串形式的公式。</para>如果该区域是一个-或两维范围
-          <para>，可以将公式设置为相同尺寸的 Visual Basic 阵列中。同样，将公式放到 Visual Basic 阵列中。</para><para /></remarks>
+        <value><b>String</b></value>
+        <remarks><para>此属性对于 OLAP 数据源无效。</para>
+          <para>如果对象包含一个常量，则此属性返回该常量。 如果对象为空, 则此<see cref="P:Microsoft.Office.Interop.Word.Series.Formula" />属性返回一个空字符串。 如果对象包含公式, 则该<see cref="P:Microsoft.Office.Interop.Word.Series.Formula" />属性以字符串的形式返回公式, 该格式将显示在公式栏中 (包括等号)。</para>
+          <para>如果指定区域是一维或二维区域，则可将公式指定为 Visual Basic 中相同维数的数组。同样，也可在 Visual Basic 数组中使用公式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaLocal">
@@ -789,14 +730,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置对象，在语言中的用户使用 A1-样式引用的公式。读/写， <b>字符串</b> 。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
-        <remarks>
-          <para>如果单元格包含常量，该属性返回的常量。如果单元格为空，则属性将返回空字符串。如果单元格包含公式，则该属性返回公式作为字符串中，在其中将显示公式栏 （包括等号） 中的格式。</para>如果设置为日期值或单元格公式的
-          <para>，Microsoft Word 将查看是否已设置该单元格格式之一的日期或时间的数字格式。如果没有的数字格式将更改为默认的短日期数字格式。</para>如果该区域是一个-或两维范围
-          <para>，可以将公式设置为相同尺寸的 Visual Basic 阵列中。同样，将公式放到 Visual Basic 阵列中。</para><para>设置多个单元格区域的公式填充公式的范围中的所有单元格。</para><para /></remarks>
+        <summary>返回或设置对象，在语言中的用户使用 A1-样式引用的公式。 读/写 <b>String</b>。</summary>
+        <value><b>String</b></value>
+        <remarks><para>如果单元格包含一个常量，此属性返回该常量。如果单元格为空，此属性返回一个空字符串。如果单元格包含公式，此属性将该公式作为字符串返回，所使用的格式与在公式栏中显示的格式相同（包括等号）。</para>
+          <para>如果将单元格的值或公式设置为日期, Microsoft Word 将检查该单元格是否已使用日期或时间数字格式之一进行了格式设置。 如果不是，数字格式将更改为默认的短日期数字格式。</para>
+          <para>如果指定区域是一维或二维区域，则可将公式指定为 Visual Basic 中相同维数的数组。同样，也可在 Visual Basic 数组中使用公式。</para>
+          <para>对多重单元格区域设置公式，则该区域中所有单元格都用此公式填充。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1">
@@ -825,14 +765,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置对象，用宏语言的 R1C1 样式表示法表示的公式。读/写， <b>字符串</b> 。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
-        <remarks>
-          <para>如果单元格包含常量，该属性返回的常量。如果单元格为空，则属性将返回空字符串。如果单元格包含公式，则该属性返回公式作为字符串中，在其中将显示公式栏 （包括等号） 中的格式。</para>如果设置为日期值或单元格公式的
-          <para>，Microsoft Word 将查看是否已设置该单元格格式之一的日期或时间的数字格式。如果没有的数字格式将更改为默认的短日期数字格式。</para>如果该区域是一个-或两维范围
-          <para>，可以将公式设置为相同尺寸的 Visual Basic 阵列中。同样，将公式放到 Visual Basic 阵列中。</para><para>设置多个单元格区域的公式填充公式的范围中的所有单元格。</para><para /></remarks>
+        <summary>返回或设置对象，用宏语言的 R1C1 样式表示法表示的公式。 读/写 <b>String</b>。</summary>
+        <value><b>String</b></value>
+        <remarks><para>如果单元格包含一个常量，此属性返回该常量。如果单元格为空，此属性返回一个空字符串。如果单元格包含公式，此属性将该公式作为字符串返回，所使用的格式与在公式栏中显示的格式相同（包括等号）。</para>
+          <para>如果将单元格的值或公式设置为日期, Microsoft Word 将检查该单元格是否已使用日期或时间数字格式之一进行了格式设置。 如果不是，数字格式将更改为默认的短日期数字格式。</para>
+          <para>如果指定区域是一维或二维区域，则可将公式指定为 Visual Basic 中相同维数的数组。同样，也可在 Visual Basic 数组中使用公式。</para>
+          <para>对多重单元格区域设置公式，则该区域中所有单元格都用此公式填充。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1Local">
@@ -861,14 +800,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置对象，使用的用户语言的 R1C1 样式表示法表示的公式。读/写， <b>字符串</b> 。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
-        <remarks>
-          <para>如果单元格包含常量，该属性返回的常量。如果单元格为空，则属性将返回空字符串。如果单元格包含公式，则该属性返回公式作为字符串中，在其中将显示公式栏 （包括等号） 中的格式。</para>如果设置为日期值或单元格公式的
-          <para>，Microsoft Word 将查看是否已设置该单元格格式之一的日期或时间的数字格式。如果没有的数字格式将更改为默认的短日期数字格式。</para>如果该区域是一个-或两维范围
-          <para>，可以将公式设置为相同尺寸的 Visual Basic 阵列中。同样，将公式放到 Visual Basic 阵列中。</para><para>设置多个单元格区域的公式填充公式的范围中的所有单元格。</para><para /></remarks>
+        <summary>返回或设置对象，使用的用户语言的 R1C1 样式表示法表示的公式。 读/写， <b>字符串</b> 。</summary>
+        <value><b>String</b></value>
+        <remarks><para>如果单元格包含一个常量，此属性返回该常量。如果单元格为空，此属性返回一个空字符串。如果单元格包含公式，此属性将该公式作为字符串返回，所使用的格式与在公式栏中显示的格式相同（包括等号）。</para>
+          <para>如果将单元格的值或公式设置为日期, Microsoft Word 将检查该单元格是否已使用日期或时间数字格式之一进行了格式设置。 如果不是，数字格式将更改为默认的短日期数字格式。</para>
+          <para>如果指定区域是一维或二维区域，则可将公式指定为 Visual Basic 中相同维数的数组。同样，也可在 Visual Basic 数组中使用公式。</para>
+          <para>对多重单元格区域设置公式，则该区域中所有单元格都用此公式填充。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Has3DEffect">
@@ -897,14 +835,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据系列有三维外观，则为 <b>True</b> 。可读/写 <b>Boolean</b> 类型。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>此属性仅适用于气泡图。</para>
-          <para />
-        </remarks>
+        <summary>如果数据系列有三维外观，则为 <b>True</b> 。 可读/写 <b>Boolean</b> 类型。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>该属性仅适用于气泡图。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDataLabels">
@@ -933,10 +867,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果数据系列具有数据标签，则该属性值为 <b>True</b> 。 <b>Boolean</b> 类型，可读写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>如果数据系列具有数据标签，则该属性值为 <b>True</b> 。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -966,10 +898,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果数据系列有误差线。 此属性不可用于三维图表。 可读写 <b>Boolean</b>。</summary>
-        <value>
-          <b>Boolean 类型的值</b> 。</value>
+        <summary><b>如此</b> 如果数据系列有误差线。 该属性对三维图表无效。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean 类型的值</b> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1000,12 +930,9 @@
       </ReturnValue>
       <Docs>
         <summary>如果数据系列有引导线，则该属性值为 <b>True</b> 。 <b>Boolean</b> 类型，可读写。</summary>
-        <value>
-          <b>Boolean 类型的值</b> 。</value>
-        <remarks>
-          <para>此属性仅适用于饼图。</para>
-          <para />
-        </remarks>
+        <value><b>Boolean 类型的值</b> 。</value>
+        <remarks><para>该属性仅适用于饼图。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -1034,9 +961,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Interior" />对象的数据系列。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />.</value>
+        <summary>返回系列<see cref="T:Microsoft.Office.Interop.Word.Interior" />的对象。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1066,12 +992,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置在一系列中的负数据点的填充颜色。</summary>
+        <summary>获取或设置系列中的负数据点的填充颜色。</summary>
         <value>系列中的负数据点的填充颜色。</value>
-        <remarks>
-          <para>读/写。此属性设置为特定的数字、 十六进制数，八进制数或 RGB 颜色值的负数据点的填充颜色。除了使用此属性，您可以使用<see cref="P:Microsoft.Office.Interop.Word.Series.InvertColorIndex" />属性，使用一更加简单易行的当前调色板中的整数值。此属性才有效，<see cref="P:Microsoft.Office.Interop.Word.Series.InvertIfNegative" />属性还必须设置为<b>true</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>读/写。 此属性将负数据点的填充颜色设置为特定的数值、十六进制、八进制或 RGB 颜色值。 您可以使用<see cref="P:Microsoft.Office.Interop.Word.Series.InvertColorIndex" />属性, 该属性使用当前调色板中的一组更加简单易行整数值, 而不是使用此属性。 若要使此属性生效, 该<see cref="P:Microsoft.Office.Interop.Word.Series.InvertIfNegative" />属性还必须设置为<b>true</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvertColorIndex">
@@ -1100,12 +1024,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置在一系列中的负数据点的填充颜色。</summary>
+        <summary>获取或设置系列中的负数据点的填充颜色。</summary>
         <value>系列中的负数据点的填充颜色。</value>
-        <remarks>
-          <para>读/写。从零到 56 情况下，此属性设置为颜色索引值范围中的负数据点的填充颜色。除了使用此属性，您可以使用<see cref="P:Microsoft.Office.Interop.Word.Series.InvertColor" />属性，将颜色设置为特定的数字、 十六进制数，八进制数或 RGB 颜色值。</para>
-          <para />
-        </remarks>
+        <remarks><para>读/写。 此属性将负数据点的填充颜色设置为从零到56范围内的颜色索引值。 您可以使用<see cref="P:Microsoft.Office.Interop.Word.Series.InvertColor" />属性将颜色设置为特定的数值、十六进制、八进制或 RGB 颜色值, 而不是使用此属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvertIfNegative">
@@ -1134,11 +1056,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果 Microsoft Word 将反转对象中的图案，当它对应于一个负数。 可读写 <b>Boolean</b>。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>如此</b> 如果 Microsoft Word 将反转对象中的图案，当它对应于一个负数。 读/写 <b>Boolean</b>。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1168,7 +1087,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>布尔</b>(C# 中<b>bool</b> ) 确定是否从图表筛选出指定的图表数据系列。 读写。</summary>
+        <summary>返回或设置一个<b>Boolean 类型的值</b>(以 c # 为<b>bool</b> ), 用于确定指定的图表系列是否从图表中筛选出。 读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1196,17 +1115,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.LeaderLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.LeaderLines" />代表系列引导线的对象。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.LeaderLines" />
-        </value>
-        <remarks>
-          <para>此属性仅适用于饼图。</para>
-          <para />
-        </remarks>
-        <example>
-          <para>本示例将添加到活动文档中第一个饼图图表上第一个数据系列的数据标签和蓝色引导线。如果没有引导线都能看到此代码示例将失败。在此情况下，您可以手动将一个离开饼图图表以进行显示引导线的数据标签。</para>
-        </example>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.LeaderLines" />对象, 表示系列的引导线。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.LeaderLines" /></value>
+        <remarks><para>该属性仅适用于饼图。</para>
+          <para> </para></remarks>
+        <example><para>本示例向活动文档中第一个饼图上的第一个数据系列添加数据标签和蓝色引导线。 如果看不到引导线，此示例代码将会失败。 在这种情况下，您可以手动将一个数据标签从饼图上拖离，以便显示出引导线。</para></example>
       </Docs>
     </Member>
     <Member MemberName="MarkerBackgroundColor">
@@ -1235,10 +1148,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>将数据标志的背景色设置为 RGB 值或返回对应的颜色索引值。 仅适用于折线图、 散点图和雷达图。 可读写 <b>Integer</b>。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>将数据标志的背景色设置为 RGB 值或返回对应的颜色索引值。 仅适用于折线图、散点图和雷达图。 <b>Integer</b> 型，可读/写。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1268,10 +1179,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置数据标记背景色，作为当前调色板中的索引也可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量：<see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" />或<see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />。 仅适用于折线图、 散点图和雷达图。 读/写</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />
-        </value>
+        <summary>返回或设置数据标志的背景色作为当前调色板中的索引, 或者作为下列<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量之一: <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" />或。 <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" /> 仅适用于折线图、散点图和雷达图。 读/写</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1301,10 +1210,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>将标记前景色设置为 RGB 值或返回对应的颜色索引值。 仅适用于折线图、 散点图和雷达图。 可读写 <b>Integer</b>。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>将数据标志的背景色设置为 RGB 值或返回对应的颜色索引值。 仅适用于折线图、散点图和雷达图。 <b>Integer</b> 型，可读/写。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1334,10 +1241,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置标记前景颜色，作为当前调色板中的索引也可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量：<see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" />或<see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />。 仅适用于折线图、 散点图和雷达图。 为可读/写属性。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />
-        </value>
+        <summary>返回或设置标记的前景色作为当前调色板中的索引, 或作为下列<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量之一: <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" />或。 <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" /> 仅适用于折线图、散点图和雷达图。 读/写。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1367,10 +1272,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>以磅为单位返回或设置数据标记的大小。 可以是介于 2 到 72 之间。 可读写 <b>Integer</b>。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回或设置数据标志的大小，以磅为单位。 可以是 2 到 72 之间的一个值。 <b>Integer</b> 型，可读/写。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1401,9 +1304,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置折线图、散点图或雷达图中数据点或系列的数据标记样式。 读/写<see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1434,9 +1335,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>String</b> 值，它代表对象的名称。</summary>
-        <value>
-          <b>字符串</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1463,10 +1362,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父级。只读 <b>对象</b> 。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父级。 只读 <b>对象</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1491,14 +1388,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>从剪贴板中粘贴图片，将其作为所选系列的标记。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
-        <remarks>
-          <para>此方法可用于列、 条形图、 行或雷达图，并且将<see cref="P:Microsoft.Office.Interop.Word.Series.MarkerStyle" />属性设为<see cref="F:Microsoft.Office.Interop.Word.XlMarkerStyle.xlMarkerStylePicture" />。</para>
-          <para />
-        </remarks>
+        <summary>从剪贴板中粘贴图片，将其作为所选系列的标志。</summary>
+        <returns><b>Object</b></returns>
+        <remarks><para>此方法可用于柱形图、条形图、折线图或雷达图, 并将<see cref="P:Microsoft.Office.Interop.Word.Series.MarkerStyle" />属性设置为。 <see cref="F:Microsoft.Office.Interop.Word.XlMarkerStyle.xlMarkerStylePicture" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureType">
@@ -1527,10 +1420,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlChartPictureType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" />在柱形或条形图上的显示值，它代表图片的方式。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" />
-        </value>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" />值, 表示在柱形图或条形图上的图片的显示方式。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1566,10 +1457,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置图表上的每张图片的单位，如果<see cref="P:Microsoft.Office.Interop.Word.Series.PictureType" />属性设置为<see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" />（如果没有，则忽略此属性）。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>返回或设置图表上的每个图片的单位 (如果<see cref="P:Microsoft.Office.Interop.Word.Series.PictureType" />该属性设置为<see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> ) (如果不是, 则忽略此属性)。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1599,9 +1488,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置图表上的每张图片的单位，如果<see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" />属性设置为<see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" />（如果没有，则忽略此属性）。 读/写 <b>双</b> 。</summary>
-        <value>
-          <see cref="T:System.Double" />.</value>
+        <summary>返回或设置图表上的每个图片的单位 (如果<see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" />该属性设置为<see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> ) (如果不是, 则忽略此属性)。 读/写 <b>Double</b>。</summary>
+        <value><see cref="T:System.Double" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1628,12 +1516,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取在内部用于将系列格式与图表元素相关联的索引值。</summary>
-        <value>在内部用于将系列格式与图表元素相关联的索引值。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取内部用于将系列格式与图表元素相关联的索引值。</summary>
+        <value>内部使用的索引值, 用于将系列格式与图表元素相关联。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PlotOrder">
@@ -1662,15 +1548,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定图表组中选定数据系列的绘制顺序。 可读写 <b>Integer</b>。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>您可以设置 （如果您有多个图表类型不能设置整个图表的绘制顺序） 图表组内的绘制顺序。图表组是使用相同的图表类型的系列集合。</para>
-          <para>更改某个系列的绘制顺序将导致根据需要调整图图表组中的其他数据系列的绘制顺序。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置指定图表组中选定数据系列的绘制顺序。 <b>Integer</b> 型，可读/写。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>只能设置图表组内的绘制顺序（在图表中包含若干图表类型的情况下，不能设置整个图表的绘制顺序）。图表组指具有相同图表类型和子类型的数据系列的集合。</para>
+          <para>更改某个系列的绘制顺序将导致同一图表组内其他数据系列的绘制顺序的必要调整。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Points">
@@ -1697,11 +1579,9 @@
       <Docs>
         <param name="Index">数据点的名称或编号。</param>
         <summary>返回系列中所有数据点的集合。</summary>
-        <returns>A<see cref="T:Microsoft.Office.Interop.Word.Points" />对象，它代表系列中的所有数据点。</returns>
+        <returns>一个<see cref="T:Microsoft.Office.Interop.Word.Points" />代表系列中所有数据点的对象。</returns>
         <remarks>To be added.</remarks>
-        <example>
-          <para>本示例应用数据标签指向一个活动文档中第一个图表的系列中。</para>
-        </example>
+        <example><para>本示例对活动文档中第一个图表的第一个数据系列中的第一个数据点应用数据标签。</para></example>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1726,9 +1606,7 @@
       <Parameters />
       <Docs>
         <summary>选择对象。</summary>
-        <returns>
-          <b>对象</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1759,9 +1637,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置一个 <b>Boolean</b> 值，它确定对象是否有阴影。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1791,10 +1667,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果折线图或散点图有平滑线，则为 <b>True</b>。仅适用于折线图和散点图。可读写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>如果折线图或散点图有平滑线，则该属性值为 <b>True</b>。 仅适用于折线图和散点图。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1821,12 +1695,10 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>返回系列中所有趋势线的集合。</summary>
-        <returns>A<see cref="T:Microsoft.Office.Interop.Word.Trendlines" />代表数据系列的所有趋势线的对象。</returns>
+        <summary>返回系列的所有趋势线的集合。</summary>
+        <returns>一个<see cref="T:Microsoft.Office.Interop.Word.Trendlines" />代表系列的所有趋势线的对象。</returns>
         <remarks>To be added.</remarks>
-        <example>
-          <para>此示例向活动文档中的第一个图表的第一个数据系列添加线性趋势线。</para>
-        </example>
+        <example><para>本示例为活动文档中第一个图表的第一个数据系列添加线性趋势线。</para></example>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -1855,13 +1727,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个代表系列类型的<b>整数</b>值。</summary>
+        <summary>返回或设置一个<b>Integer</b>值, 它代表系列类型。</summary>
         <value>返回<see cref="T:System.Int32" />。</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.XlConstants" />常量可以用于此属性。</para>
-          <para />
-        </remarks>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.XlConstants" />常量可用于此属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -1890,14 +1759,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个代表系列中的所有值的集合的<b>对象</b>值。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>此属性的值可以是区域上的图表工作表或数组常量的值，但不是两者的组合的地址。请参阅详细信息的示例。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<b>Object</b>值, 它代表系列中所有值的集合。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>此属性值可以是图表的工作表中某一区域的地址或常量值的数组，但不能是两者的组合。有关详细信息，请参阅示例。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XValues">
@@ -1926,14 +1791,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 x 值的图表系列的数组。 <see cref="P:Microsoft.Office.Interop.Word.Series.XValues" />属性可以设置到工作表上的区域或数组值，但不是能为二者的组合。 读取/写入 <b>对象</b> 。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>对于数据透视图报表，此属性是只读的。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置 x 值的图表系列的数组。 可以<see cref="P:Microsoft.Office.Interop.Word.Series.XValues" />将该属性设置为工作表上的区域或值的数组, 但不能同时为二者的组合。 读取/写入 <b>对象</b> 。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>对于数据透视图，该属性为只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

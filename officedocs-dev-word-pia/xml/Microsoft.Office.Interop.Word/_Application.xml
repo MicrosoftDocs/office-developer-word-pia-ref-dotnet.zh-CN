@@ -1,13 +1,5 @@
 <Type Name="_Application" FullName="Microsoft.Office.Interop.Word._Application">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="64c70f2483e24c85e86d9e31da43039a41436bc5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667261" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Application" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="64c70f2483e24c85e86d9e31da43039a41436bc5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145343" /></Metadata><TypeSignature Language="C#" Value="public interface _Application" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Application" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word._Application" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Application" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>这是与相应的 COM 对象的互操作性的托管代码需要 COM coclass 中的主接口。 仅当您想要使用的方法共享相同的名称的 COM 对象; 事件时，才使用此主接口在这种情况下，强制转换为此接口调用方法，并强制转换为最新的事件接口，连接到该事件。 否则，使用.NET 接口派生自 COM coclass 访问方法、 属性和事件的 COM 对象。 有关 COM 对象的信息，请参阅<see cref="T:Microsoft.Office.Interop.Word.Application" />。</summary>
+    <summary>这是 COM coclass（托管代码需要此 Coclass 来实现与相应的 COM 对象的互操作性）中的主接口。 仅当您想要使用的方法与 COM 对象的事件共享同一名称时才使用此主接口；在这种情况下，转换为此接口以调用该方法，转换为最新的事件接口以连接到该事件。 否则，请使用派生自 COM coclass 的 .NET 接口来访问方法、属性和 COM 对象的事件。 有关 COM 对象的信息, 请参阅<see cref="T:Microsoft.Office.Interop.Word.Application" />。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -78,13 +70,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Document" />对象，表示活动文档。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Document" />代表活动文档的对象。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>活动文档是具有焦点的文档。</para>
-          <para>如果没有打开的文档，将发生错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>活动文档是具有焦点的文档。</para>
+          <para>如果没有打开的文档，就会导致出错。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveEncryptionSession">
@@ -110,16 +100,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>，表示与活动文档相关的加密会话。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>加密提供程序机制管理在单独的进程，每个文件，因此每个文件均与单独的加密会话关联。</para>
+        <summary>返回一个<b>Integer</b>类型的值, 该值代表与活动文档相关联的加密会话。 只读。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>加密提供程序机制在单独的进程中管理每个文件，因此每个文件均与单独的加密会话相关。</para>
           <para>
-            <b>注意</b>： 该属性适用仅当文档执行自定义加密时。</para>
-          <para />
-        </remarks>
+            <b>注意</b>: 仅当文档实施自定义加密时, 此属性才适用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivePrinter">
@@ -176,12 +162,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ProtectedViewWindow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />对象，表示活动的受保护的视图窗口。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />对象。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />对象, 该对象表示活动的受保护的视图窗口。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> 对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveWindow">
@@ -207,13 +191,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.Window</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Window" />对象，表示活动窗口。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Window" />对象, 表示活动窗口。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>活动窗口是具有焦点的窗口。</para>
-          <para>如果没有打开的窗口，将发生错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>活动窗口是具有焦点的窗口。</para>
+          <para>如果没有打开的窗口，则会发生错误。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAddress">
@@ -240,13 +222,11 @@
         <Parameter Name="Value" Type="System.Array&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="TagID">必需的字符串<b>数组</b>。 新地址项的标签 ID 值。 数组中的每个元素可包含下表所列的字符串之一。 仅显示名称为必需的;剩余的条目是可选的。标记 IDDescriptionPR_DISPLAY_NAMEName 显示在通讯簿对话框 boxPR_DISPLAY_NAME_PREFIXTitle (例如，"Ms。" 或"Dr."） PR_GIVEN_NAMEFirst namePR_SURNAMELast namePR_STREET_ADDRESSStreet addressPR_LOCALITYCity localityPR_STATE_OR_PROVINCEState 或 provincePR_POSTAL_CODEPostal codePR_COUNTRYCountry/RegionPR_TITLEJob titlePR_COMPANY_NAMECompany内 companyPR_OFFICE_LOCATIONOffice locationPR_PRIMARY_TELEPHONE_NUMBERPrimary 电话 numberPR_PRIMARY_FAX_NUMBERPrimary 传真 numberPR_OFFICE_TELEPHONE_NUMBEROffice 电话 numberPR_ namePR_DEPARTMENT_NAMEDepartment 名称OFFICE2_TELEPHONE_NUMBERSecond office 电话 numberPR_HOME_TELEPHONE_NUMBERHome 电话 numberPR_CELLULAR_TELEPHONE_NUMBERCellular 电话 numberPR_BEEPER_TELEPHONE_NUMBERBeeper 电话 numberPR_COMMENTText 包含备注   地址 entryPR_EMAIL_ADDRESSElectronic 邮件 addressPR_ADDRTYPEElectronic 邮件地址 typePR_OTHER_TELEPHONE_NUMBERAlternate 电话号码 （区别于住宅或办公室） PR_BUSINESS_FAX_NUMBERBusiness 传真 numberPR_HOME_FAX_ 选项卡NUMBERHome 传真 numberPR_RADIO_TELEPHONE_NUMBERRadio 电话 numberPR_INITIALSInitialsPR_LOCATIONLocation，格式为楼号/房间号 （例如，7/3007 代表楼 3007 房间 7） 中的 PR_CAR_TELEPHONE_NUMBERCar 电话号码</param>
-        <param name="Value">必需的字符串<b>数组</b>。 新的地址条目的值。 每个元素对应于中的元素<paramref name="TagID" />数组。</param>
+        <param name="TagID">必需的字符串<b>数组</b>。 新地址项的标签 ID 值。 数组中的每个元素可包含下表所列的字符串之一。 仅显示名称是必需的。其余的项是可选的。标记 IDDescriptionPR_DISPLAY_NAMEName 显示在通讯簿对话框 boxPR_DISPLAY_NAME_PREFIXTitle 中 (例如, "Ms")。 或 "Dr.") PR_GIVEN_NAMEFirst namePR_SURNAMELast namePR_STREET_ADDRESSStreet addressPR_LOCALITYCity or localityPR_STATE_OR_PROVINCEState or provincePR_POSTAL_CODEPostal codePR_COUNTRYCountry/RegionPR_TITLEJob titlePR_COMPANY_NAMECompanycompanyPR_OFFICE_LOCATIONOffice locationPR_PRIMARY_TELEPHONE_NUMBERPrimary 电话 numberPR_PRIMARY_FAX_NUMBERPrimary FAX numberPR_OFFICE_TELEPHONE_NUMBEROffice 电话 numberPR_ 中的 namePR_DEPARTMENT_NAMEDepartment 名称OFFICE2_TELEPHONE_NUMBERSecond office 电话号码 numberPR_HOME_TELEPHONE_NUMBERHome 电话 numberPR_CELLULAR_TELEPHONE_NUMBERCellular 电话 numberPR_BEEPER_TELEPHONE_NUMBERBeeper 电话 numberPR_COMMENTText 包括在笔记中   address entryPR_EMAIL_ADDRESSElectronic mail addressPR_ADDRTYPEElectronic mail address typePR_OTHER_TELEPHONE_NUMBERAlternate 电话号码 (除 home 或 office 之外) PR_BUSINESS_FAX_NUMBERBusiness 传真 numberPR_HOME_FAX_ 的选项卡NUMBERHome fax numberPR_RADIO_TELEPHONE_NUMBERRadio 电话 numberPR_INITIALSInitialsPR_LOCATIONLocation, 格式 buildingnumber/roomnumber (例如, 7/3007 代表大楼7中的房间 3007) PR_CAR_TELEPHONE_NUMBERCar 电话多种</param>
+        <param name="Value">必需的字符串<b>数组</b>。 新地址项的值。 每个元素都对应于<paramref name="TagID" />数组中的一个元素。</param>
         <summary>本方法在通讯簿中新增一项。</summary>
-        <remarks>
-          <para>每个条目都有一个或多个标记 Id 值。</para>
-          <para />
-        </remarks>
+        <remarks><para>每项都有一个或多个标签 ID 值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddIns">
@@ -272,13 +252,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.AddIns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.AddIns" />代表所有可用加载项，无论他们是否是当前加载的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.AddIns" />集合, 该集合代表所有可用的加载项, 而不考虑它们当前是否已加载。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>AddIns</b>集合包括共用模板和 Word 加载项库 (即 Wll) 在模板和加载项对话框 （工具菜单） 中列出。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>外</b>接程序集合包括共用模板和 Word 加载项库 (wll) ("工具" 菜单中的 "模板和加载项" 对话框中列出)。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AnswerWizard">
@@ -307,7 +284,7 @@
         <ReturnType>Microsoft.Office.Core.AnswerWizard</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.AnswerWizard" />对象，它包含使用联机帮助搜索引擎的文件。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Core.AnswerWizard" />对象, 该对象包含联机帮助搜索引擎所使用的文件。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -335,7 +312,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />。</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -363,12 +340,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 <b>boolean 类型的值</b> ，该值代表 Word 接受自定义 XML 架构。 如果 Word 接受自定义 XML 架构，或<b>False</b> ，如果不接受架构，则返回<b>True</b> 。</summary>
+        <summary>返回一个 <b>boolean 类型的值</b> ，该值代表 Word 接受自定义 XML 架构。 如果 Word 接受自定义 XML 架构, 则返回<b>True</b> ; 如果不接受架构, 则返回<b>False</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Microsoft Office Standard Edition 2003 包含 XML 支持使用 Word XML 架构，但它不支持提供的自定义 XML 架构。仅在 Office Word 2003 的独立版本和 Office 2003 Professional 版提供了对自定义 XML 架构的支持。安装使用<b>ArbitraryXMLSupportAvailable</b>属性，以确定哪些版本。</para>
-          <para />
-        </remarks>
+        <remarks><para>Microsoft Office 标准版 2003年包括 XML 支持使用 Word XML 架构，但不提供自定义 XML 架构的支持。 对自定义 XML 架构的支持仅适用于 Office Word 2003 和 Office Professional Edition 2003 中的独立版本。 使用 <b>ArbitraryXMLSupportAvailable</b> 属性，以确定哪些版本已安装。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Assistance">
@@ -394,15 +369,10 @@
         <ReturnType>Microsoft.Office.Core.IAssistance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.IAssistance" />对象，表示在 Microsoft Office 帮助查看器。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.IAssistance" />
-        </value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Core.IAssistance" />对象使开发人员可以显示自定义帮助以及随 Office 帮助查看器中的 Office 一起安装的帮助。</para>
-          <para />
-        </remarks>
+        <summary>返回一个<see cref="T:Microsoft.Office.Core.IAssistance" />代表 Microsoft Office 帮助查看器的对象。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Core.IAssistance" /></value>
+        <remarks><para>该<see cref="T:Microsoft.Office.Core.IAssistance" />对象允许开发人员在 Office 帮助查看器中显示与 office 一起安装的自定义帮助和帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Assistant">
@@ -431,7 +401,7 @@
         <ReturnType>Microsoft.Office.Core.Assistant</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.Assistant" />对象，它代表 Microsoft Office 助手。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Core.Assistant" />代表 Microsoft Office 助手的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -459,7 +429,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoCaptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.AutoCaptions" />如表的集合，代表的时会自动添加题注项目和文档中插入图片。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.AutoCaptions" />集合, 该集合代表将表格和图片等项目插入文档时自动添加的标题。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -487,7 +457,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoCorrect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.AutoCorrect" />对象，其中包含当前的自动更正选项、 项和例外。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.AutoCorrect" />对象, 该对象包含当前的自动更正选项、项和异常。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -515,7 +485,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoCorrect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.AutoCorrect" />对象，代表对电子邮件进行自动更正。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.AutoCorrect" />对象, 表示对电子邮件的自动更正。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -541,11 +511,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Office 助手建议的更改时，请执行<b>自动套用格式</b>操作。</summary>
-        <remarks>
-          <para>如果没有<b>自动套用格式</b>操作处于活动状态，则此方法将生成一个错误。</para>
-          <para />
-        </remarks>
+        <summary>在 Office 助手建议的更改时执行<b>"自动套用格式"</b>操作。</summary>
+        <remarks><para>如果没有处于活动状态的<b>"自动套用格式</b>" 操作, 此方法将生成错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutomationSecurity">
@@ -574,14 +542,11 @@
         <ReturnType>Microsoft.Office.Core.MsoAutomationSecurity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Core.MsoAutomationSecurity" />常量表示的安全设置 Microsoft Word 在以编程方式打开文件时使用。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Core.MsoAutomationSecurity" />常量, 该常量代表 Microsoft Word 以编程方式打开文件时使用的安全设置。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>AutomationSecurity</b>属性的默认设置是<b>msoAutomationSecurityLow</b>。因此，为了避免更改用户的安全设置或取消依赖的默认设置的解决方案，您应注意将此属性设置回其初始设置后以编程方式打开文件。</para>
-          <para>设置<see cref="P:Microsoft.Office.Interop.Word._Application.ScreenUpdating" />为<b>False</b>不会影响通知并将不影响安全警告。<see cref="P:Microsoft.Office.Interop.Word._Application.DisplayAlerts" />设置不会应用于安全警告。例如，如果用户设置<b>DisplayAlerts</b>等于<b>False</b>和<see cref="P:Microsoft.Office.Interop.Word._Application.AutomationSecurity" /><b>msoAutomationSecurityByUI</b>，向用户时在中型安全级别，然后将有安全警告时运行宏。这样，同时仍然显示安全警告如果文件成功打开捕获文件打开错误的宏。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>AutomationSecurity</b> 属性的默认设置为 <b>msoAutomationSecurityLow</b> 。 因此, 为了避免更改用户的安全设置或破坏依赖于默认设置的解决方案, 在以编程方式打开文件后, 应注意将此属性设置回其原始设置。</para>
+          <para>设置<see cref="P:Microsoft.Office.Interop.Word._Application.ScreenUpdating" />为<b>False</b>不会影响通知, 并且不会影响安全警告。 <see cref="P:Microsoft.Office.Interop.Word._Application.DisplayAlerts" />设置不会应用于安全警告。 例如, 如果用户将<b>DisplayAlerts</b>设置为<b>False</b> , 并<see cref="P:Microsoft.Office.Interop.Word._Application.AutomationSecurity" />将其设置为<b>msoAutomationSecurityByUI</b>, 而用户为 "中" 安全级别, 则在运行宏时将出现安全警告。 这允许宏捕获文件打开错误, 同时仍显示安全警告 (如果文件成功打开)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundPrintingStatus">
@@ -663,10 +628,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Bibliography</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Bibliography" />代表 bibliography 对象引用存储在 Microsoft Office Word 中的源。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Bibliography" />
-        </value>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Bibliography" />对象, 表示存储在 Microsoft Office Word 中的书目参考源。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Bibliography" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -696,7 +659,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置此属性设为"text/html"以允许在 Microsoft Word 中 （而不是默认 Internet 浏览器） 打开超链接 HTML 文件。</summary>
+        <summary>如果将该属性设置为“text/html”，则用 Microsoft Word（而不是默认的 Internet 浏览器）可以打开超链接的 HTML 文件。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -724,7 +687,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Browser</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Browser" />对象，表示垂直滚动条上的选择浏览对象工具。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Browser" />对象, 该对象代表垂直滚动条上的选择浏览对象工具。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -752,7 +715,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 Word 应用程序版本号和内部版本号。</summary>
+        <summary>返回 Word 应用程序的版本号及编译序号。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -844,7 +807,7 @@
         <Parameter Name="Arg4" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Arg1">所需<b>WdKey</b>。 通过使用 <b>WdKey</b> 常量之一指定一个密钥。</param>
+        <param name="Arg1">必需的<b>WdKey</b>。 通过使用 <b>WdKey</b> 常量之一指定一个密钥。</param>
         <param name="Arg2">可选<b>WdKey</b>。 通过使用 <b>WdKey</b> 常量之一指定一个密钥。</param>
         <param name="Arg3">可选<b>WdKey</b>。 通过使用 <b>WdKey</b> 常量之一指定一个密钥。</param>
         <param name="Arg4">可选<b>WdKey</b>。 通过使用 <b>WdKey</b> 常量之一指定一个密钥。</param>
@@ -876,7 +839,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 CAPS LOCK 键处于。 返回<b>True</b>如果 CAPS LOCK 键处于打开状态，和<b>False</b>如果不是。</summary>
+        <summary>确定是否打开了 CAPS LOCK 键。 如果 CAPS LOCK 键处于打开状态, 则返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -909,10 +872,8 @@
       <Docs>
         <summary>返回或设置指定的文档或应用程序窗口的标题文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>若要应用程序窗口的题注改为默认文本，请将此属性设置为空字符串 ("")。</para>
-          <para />
-        </remarks>
+        <remarks><para>要将应用程序窗口的题注改为默认文本，请将该属性设置为空字符串（""）。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CaptionLabels">
@@ -938,7 +899,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CaptionLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" />代表所有可用的题注标签的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" />集合, 该集合代表所有可用的题注标签。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -966,14 +927,11 @@
         <Parameter Name="Centimeters" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Centimeters">
-          <b>必选。</b> 要转换为磅的厘米值。</param>
+        <param name="Centimeters">必需<b>Single</b>。 要转换为磅的厘米值。</param>
         <summary>将度量单位从厘米转换为磅 (1 厘米 = 28.35 磅)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>返回作为一个<b>单个</b>的转换后的度量值。</para>
-          <para />
-        </remarks>
+        <remarks><para>返回已转换为一个 <b>单一</b> 测量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeFileOpenDirectory">
@@ -1000,12 +958,10 @@
       </Parameters>
       <Docs>
         <param name="Path">必需的 <b>字符串</b> 。 文件夹路径，Word 将在该文件夹中搜索文档。</param>
-        <summary>设置 Microsoft Word 搜索的文档的文件夹。</summary>
-        <remarks>
-          <para>的下次显示打开对话框 （文件菜单），将列出指定的文件夹的内容。</para>
-          <para>Word 搜索的文档指定的文件夹，直到在用户更改的文件夹中打开对话框或当前 Word 会话结束。使用<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" />属性更改每个 Word 会话中的文档的默认文件夹。</para>
-          <para />
-        </remarks>
+        <summary>设置 Microsoft Word 在其中搜索文档的文件夹。</summary>
+        <remarks><para>下次显示“文件”菜单的“打开”对话框时，将列出指定文件夹的内容。</para>
+          <para>Word 将搜索指定的文件夹的文档，直到用户更改文件夹在 打开对话框中或当前 Word 会话结束。 使用<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" />属性更改每个 Word 会话中的文档的默认文件夹。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartDataPointTrack">
@@ -1034,12 +990,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>boolean 类型的值</b>(C# 中<b>bool</b> ) 的指定图表是否使用单元格引用数据点跟踪。 读写。</summary>
+        <summary>返回或设置一个<b>Boolean</b> (<b></b>以 c # 为单位), 用于指定图表是否使用单元格引用数据点跟踪。 读写。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在单元格引用数据点跟踪数据标签跟踪单元格引用包含数据点的值，而不是数据点的索引号。执行操作是这样有助于保留图表是排序或筛选时，即使应用的用户的自定义格式。<b>ChartDataPointTrack</b>设置为<b>True</b> ，则指定图表使用单元格引用数据点跟踪。</para>
-          <para />
-        </remarks>
+        <remarks><para>在单元格引用数据点跟踪中, 数据标签跟踪包含数据点值的单元格引用, 而不是数据点的索引号。 这样做有助于保留用户应用的自定义格式设置, 即使对图表进行排序或筛选也是如此。 将<b>ChartDataPointTrack</b>设置为<b>True</b>指定图表使用单元格引用数据点跟踪。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckGrammar">
@@ -1067,10 +1021,8 @@
         <param name="String">必需的 <b>字符串</b> 。 要对其进行语法检查的字符串。</param>
         <summary>检查字符串的语法错误。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回一个<b>boolean 类型的值</b>以指示字符串是否包含语法错误。如果字符串包含任何错误，和<b>False</b>如果字符串中包含错误，则返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法返回一个<b>Boolean 类型的值</b>, 指示字符串是否包含语法错误。 如果字符串中不包含任何错误, 则返回<b>True</b> ; 如果字符串包含错误, 则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckLanguage">
@@ -1099,12 +1051,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否 Microsoft Word 自动检测您键入时所使用的语言。 如果 Microsoft Word 自动检测键入时，所使用的语言和<b>False</b>如果它不会自动检测语言，则返回<b>True</b> 。</summary>
+        <summary>确定 Microsoft Word 是否自动检测您在键入时使用的语言。 如果 Microsoft Word 自动检测您在键入时使用的语言, 则返回<b>True</b> ; 如果不自动检测语言, 则返回<b>False</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果您尚未将 Word 设置用于多语言编辑，则<b>CheckLanguage</b>属性始终返回<b>False</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果未将 Word 设置为多语言编辑，则 <b>CheckLanguage</b> 属性始终返回 <b>False</b> 。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckSpelling">
@@ -1142,24 +1092,22 @@
       </Parameters>
       <Docs>
         <param name="Word">必需的 <b>字符串</b> 。 要对其进行拼写检查的文本。</param>
-        <param name="CustomDictionary">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或自定义词典的文件名。</param>
-        <param name="IgnoreUppercase">可选的<b>对象</b>。 <b>如此</b> 如果忽略大小写。 如果省略此参数，则的当前值<see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" />属性使用。</param>
-        <param name="MainDictionary">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或主词典的文件名。</param>
-        <param name="CustomDictionary2">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary3">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary4">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary5">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary6">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary7">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary8">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary9">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary10">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是自定义词典的文件名。</param>
+        <param name="IgnoreUppercase">可选<b>对象</b>。 <b>如此</b> 如果忽略大小写。 如果省略此参数, 则使用<see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" />属性的当前值。</param>
+        <param name="MainDictionary">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是主词典的文件名。</param>
+        <param name="CustomDictionary2">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary3">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary4">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary5">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary6">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary7">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary8">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary9">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary10">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
         <summary>检查字符串的拼写错误。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果字符串有没有拼写错误和<b>False</b>如果字符串有拼写错误，则此方法返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果字符串中没有拼写错误, 则此方法返回<b>True</b> ; 如果字符串包含拼写错误, 则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CleanString">
@@ -1185,50 +1133,48 @@
       </Parameters>
       <Docs>
         <param name="String">必需的 <b>字符串</b> 。 源字符串。</param>
-        <summary>删除指定的字符串的非打印字符 （字符代码 1 – 29） 和 Microsoft Word 的特殊字符或空格 （字符代码 32） 更改它们。</summary>
+        <summary>从指定的字符串中删除非打印字符 (字符代码1– 29) 和特殊 Microsoft Word 字符, 或将其更改为空格 (字符代码 32)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>下列字符转换此表中所述。</para>
+        <remarks><para>以下字符将按此表所示进行转换。</para>
           <list type="table">
             <item>
-              <description>7 (beep)</description>
-              <description>删除前导字符 13 （段落），然后转换为字符 9 （制表符）。</description>
+              <description>7（蜂鸣）</description>
+              <description>如果前导字符代码不是 13（段落），则将其删除并转换为字符 9（制表符）。</description>
             </item>
             <item>
-              <description>10 （换行）</description>
-              <description>前导字符 13、 转换为字符 13 （段落），然后删除。</description>
+              <description>10（换行）</description>
+              <description>如果前导字符代码不是 13，则转换为字符 13（段落），然后将其删除。</description>
             </item>
             <item>
-              <description>13 （段落）</description>
-              <description>未更改。</description>
+              <description>13（段落）</description>
+              <description>不改变。</description>
             </item>
             <item>
-              <description>31 （可选连字符）</description>
-              <description>删除了。</description>
+              <description>31（可选连字符）</description>
+              <description>删除。</description>
             </item>
             <item>
-              <description>160 （不间断空格）</description>
-              <description>转换为字符 32 （空格）。</description>
+              <description>160（不间断空格）</description>
+              <description>转换为字符 32（空格）。</description>
             </item>
             <item>
-              <description>172 （可选连字符）</description>
-              <description>删除了。</description>
+              <description>172（可选连字符）</description>
+              <description>删除。</description>
             </item>
             <item>
-              <description>176 （不间断空格）</description>
-              <description>转换为字符 32 （空格）。</description>
+              <description>176（不间断空格）</description>
+              <description>转换为字符 32（空格）。</description>
             </item>
             <item>
-              <description>182 （段落标记）</description>
-              <description>删除了。</description>
+              <description>182（段落标记）</description>
+              <description>删除。</description>
             </item>
             <item>
-              <description>183 （段落）</description>
-              <description>转换为字符 32 （空格）。</description>
+              <description>183（项目符号）</description>
+              <description>转换为字符 32（空格）。</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="COMAddIns">
@@ -1254,12 +1200,10 @@
         <ReturnType>Microsoft.Office.Core.COMAddIns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个对引用<see cref="T:Microsoft.Office.Core.COMAddIns" />Microsoft Word 中加载当前代表所有组件对象模型 (COM) 加载项的集合。</summary>
+        <summary>返回一个对<see cref="T:Microsoft.Office.Core.COMAddIns" />集合的引用, 该集合代表 Microsoft Word 中当前加载的所有组件对象模型 (COM) 加载项。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在 COM 加载项对话框中列出了这些。使用自定义对话框中工具菜单，可以向您工具菜单中添加 COM 加载项命令。</para>
-          <para />
-        </remarks>
+        <remarks><para>These are listed in the COM Add-Ins dialog box. 可以使用“自定义”对话框（“工具”菜单），向“工具”菜单添加“COM 加载项”命令。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandBars">
@@ -1285,12 +1229,10 @@
         <ReturnType>Microsoft.Office.Core.CommandBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.CommandBars" />集合，表示菜单栏和 Microsoft Word 中的所有工具栏。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Core.CommandBars" />集合, 该集合代表 Microsoft Word 中的菜单栏和所有工具栏。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" />属性设置在访问<b>CommandBars</b>集合之前模板或文档上下文。</para>
-          <para />
-        </remarks>
+        <remarks><para>在<see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" />访问<b>CommandBars</b>集合之前, 使用属性来设置模板或文档上下文。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CompareDocuments">
@@ -1332,24 +1274,22 @@
       <Docs>
         <param name="OriginalDocument">指定原始文档的路径和文件名。</param>
         <param name="RevisedDocument">指定与原始文档进行比较的修订后文档的路径和文件名。</param>
-        <param name="Destination">指定是否要创建新文件或是否标记两个文档在原始文档或修订文档之间的差异。 默认值是<see cref="F:Microsoft.Office.Interop.Word.WdCompareDestination.wdCompareDestinationNew" />。</param>
-        <param name="Granularity">指定是否按字符还是按 word 跟踪更改。 默认值是<see cref="F:Microsoft.Office.Interop.Word.WdGranularity.wdGranularityWordLevel" />。</param>
-        <param name="CompareFormatting">指定是否标记两个文档之间的差别。默认值为 <b>True</b> 。 </param>
-        <param name="CompareCaseChanges">指定是否标记两个文档之间的差异情况。默认值为 <b>True</b> 。 </param>
-        <param name="CompareWhitespace">指定是否标记两个文档之间的空白区域，如段落或空格，差别。默认值为 <b>True</b> 。 </param>
-        <param name="CompareTables">指定是否比较两个文档之间的表中包含的数据中的差异。默认值为 <b>True</b> 。 </param>
-        <param name="CompareHeaders">指定是否比较两个文档之间的差别在页眉和页脚中。默认值为 <b>True</b> 。 </param>
-        <param name="CompareFootnotes">指定是否比较两个文档之间的差异的脚注和尾注。默认值为 <b>True</b> 。 </param>
-        <param name="CompareTextboxes">指定是否比较两个文档之间的文本框中所包含数据的差别。默认值为 <b>True</b> 。 </param>
-        <param name="CompareFields">指定是否比较两个文档之间的差异域。默认值为 <b>True</b> 。 </param>
-        <param name="CompareComments">指定是否比较两个文档之间的差别在注释中。默认值为 <b>True</b> 。 </param>
+        <param name="Destination">指定是否要创建新文件或是否标记两个文档在原始文档或修订文档之间的差异。 默认值为 <see cref="F:Microsoft.Office.Interop.Word.WdCompareDestination.wdCompareDestinationNew" />。</param>
+        <param name="Granularity">指定是否按字符还是按 word 跟踪更改。 默认值为 <see cref="F:Microsoft.Office.Interop.Word.WdGranularity.wdGranularityWordLevel" />。</param>
+        <param name="CompareFormatting">指定是否标记两个文档之间的差别。 默认值为 <b>True</b> 。</param>
+        <param name="CompareCaseChanges">指定是否标记两个文档之间的差异情况。 默认值为 <b>True</b> 。</param>
+        <param name="CompareWhitespace">指定是否标记两个文档之间的空白区域，如段落或空格，差别。 默认值为 <b>True</b> 。</param>
+        <param name="CompareTables">指定是否比较两个文档之间的表中包含的数据中的差异。 默认值为 <b>True</b> 。</param>
+        <param name="CompareHeaders">指定是否比较两个文档之间的差别在页眉和页脚中。 默认值为 <b>True</b> 。</param>
+        <param name="CompareFootnotes">指定是否比较两个文档之间的差异的脚注和尾注。 默认值为 <b>True</b> 。</param>
+        <param name="CompareTextboxes">指定是否比较两个文档之间的文本框中所包含数据的差别。 默认值为 <b>True</b> 。</param>
+        <param name="CompareFields">指定是否比较两个文档之间的差异域。 默认值为 <b>True</b> 。</param>
+        <param name="CompareComments">指定是否比较两个文档之间的差别在注释中。 默认值为 <b>True</b> 。</param>
         <param name="CompareMoves">指定在比较两个文档时做出更改的人员的姓名。</param>
         <param name="RevisedAuthor">指定在比较两个文档时是否忽视警告消息。</param>
         <param name="IgnoreAllComparisonWarnings">指定在比较两个文档时是否忽视警告消息。</param>
-        <summary>比较两个文档，并返回<see cref="T:Microsoft.Office.Interop.Word._Document" />对象，表示包含两个文档之间的差别的文档标记使用修订。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word._Document" />
-        </returns>
+        <summary>比较两个文档并返回<see cref="T:Microsoft.Office.Interop.Word._Document" />一个对象, 该对象表示包含两个文档之间的差异的文档 (使用修订进行了标记)。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word._Document" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1378,9 +1318,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDictionaries">
@@ -1406,7 +1346,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionaries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Dictionaries" />对象，表示活动自定义词典的集合。 使用自定义词典中复选标记活动自定义词典<b />对话框。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> object 类型的对象, 该对象代表活动自定义词典的集合。 使用 "自定义词典<b />" 对话框中的复选标记来标记活动的自定义词典。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1437,12 +1377,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.Template" />或<see cref="T:Microsoft.Office.Interop.Word.Document" />对象，表示在其中存储更改菜单栏、 工具栏和键绑定的模板或文档。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.Template" />或<see cref="T:Microsoft.Office.Interop.Word.Document" />对象, 该对象代表存储菜单栏、工具栏和键绑定的更改的模板或文档。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对应于保存于框中，在自定义对话框 （工具菜单） 中的命令选项卡上的值。</para>
-          <para />
-        </remarks>
+        <remarks><para>对应于“工具”菜单的“自定义”对话框中“命令”选项卡上的“保存于”框中的值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDEExecute">
@@ -1469,14 +1407,11 @@
         <Parameter Name="Command" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Channel">
-          <b>必选。</b> 返回的通道号<see cref="M:Microsoft.Office.Interop.Word._Application.DDEInitiate(System.String,System.String)" />方法。</param>
+        <param name="Channel">必需的<b>整数</b>。 <see cref="M:Microsoft.Office.Interop.Word._Application.DDEInitiate(System.String,System.String)" />方法返回的通道号。</param>
         <param name="Command">必需的 <b>字符串</b> 。 由接收应用程序（DDE 服务器）识别的一条或一组命令。 如果接收应用程序不能执行指定的命令，则会出现错误。</param>
         <summary>通过指定的 DDE（即动态数据交换）通道，向应用程序发送一条或一组命令。</summary>
-        <remarks>
-          <para>动态数据交换 (DDE) 是不安全的较旧的技术。如果可能，请使用 DDE 的更安全的替代。</para>
-          <para />
-        </remarks>
+        <remarks><para>动态数据交换 (DDE) 是一种比较陈旧的技术并且不是十分安全。 如果可能, 请使用更安全的 DDE 替代方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDEInitiate">
@@ -1503,15 +1438,13 @@
         <Parameter Name="Topic" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="App">必需的 <b>字符串</b> 。 应用程序名。</param>
-        <param name="Topic">必需的 <b>字符串</b> 。 DDE 主题的名称 — 例如，打开文档的名称 — 通道正在向其应用程序将识别。</param>
+        <param name="App">必需的 <b>字符串</b> 。 应用程序的名称。</param>
+        <param name="Topic">必需的 <b>字符串</b> 。 DDE 主题的名称 (例如, 打开的文档的名称), 您要打开通道的应用程序识别该文档。</param>
         <summary>打开通向其他应用程序的 DDE（动态数据交换）通道，并返回通道序号。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>动态数据交换 (DDE) 是不安全的较旧的技术。如果可能，请使用 DDE 的更安全的替代。</para>
-          <para>如果操作成功， <b>DDEInitiate</b>方法返回打开的通道号。所有后续 DDE 函数使用此号码指定该频道。</para>
-          <para />
-        </remarks>
+        <remarks><para>动态数据交换 (DDE) 是一种比较陈旧的技术并且不是十分安全。 如果可能, 请使用更安全的 DDE 替代方法。</para>
+          <para>如果成功,<b>查阅</b>方法将返回打开的通道的编号。 所有后续 DDE 函数使用此数字来指定通道。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDEPoke">
@@ -1539,16 +1472,13 @@
         <Parameter Name="Data" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Channel">
-          <b>必选。</b> 返回的通道号<see cref="M:Microsoft.Office.Interop.Word._Application.DDEInitiate(System.String,System.String)" />方法。</param>
+        <param name="Channel">必需的<b>整数</b>。 <see cref="M:Microsoft.Office.Interop.Word._Application.DDEInitiate(System.String,System.String)" />方法返回的通道号。</param>
         <param name="Item">必需的 <b>字符串</b> 。 DDE 主题中的项，指定的数据将发送给该项。</param>
         <param name="Data">必需的 <b>字符串</b> 。 需要发送至接收应用程序（即 DDE 服务器）的数据。</param>
         <summary>通过打开的 DDE（动态数据交换）通道向应用程序发送数据。</summary>
-        <remarks>
-          <para>动态数据交换 (DDE) 是不安全的较旧的技术。如果可能，请使用 DDE 的更安全的替代。</para>
-          <para>如果<b>DDEPoke</b>方法不成功，将发生错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>动态数据交换 (DDE) 是一种比较陈旧的技术并且不是十分安全。 如果可能, 请使用更安全的 DDE 替代方法。</para>
+          <para>如果 <b>DDEPoke</b> 方法不成功，则会发生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDERequest">
@@ -1575,31 +1505,28 @@
         <Parameter Name="Item" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Channel">
-          <b>必选。</b> 返回的通道号<see cref="M:Microsoft.Office.Interop.Word._Application.DDEInitiate(System.String,System.String)" />方法。</param>
+        <param name="Channel">必需的<b>整数</b>。 <see cref="M:Microsoft.Office.Interop.Word._Application.DDEInitiate(System.String,System.String)" />方法返回的通道号。</param>
         <param name="Item">必需的 <b>字符串</b> 。 需要进行查询的项。</param>
         <summary>通过打开的 DDE（动态数据交换）通道向接收应用程序查询信息，并以 String 类型返回该信息。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>动态数据交换 (DDE) 是不安全的较旧的技术。如果可能，请使用 DDE 的更安全的替代。</para>
-          <para>当您请求从服务器应用程序中的主题的信息时，您必须请求其内容的主题中指定的项目。例如，Microsoft Excel 中的单元格是有效项目和您引用它们通过使用"R1C1"格式或名称的引用。</para>
-          <para>Microsoft Excel 和其他应用程序支持 DDE 识别主题名为"系统"。System 主题中的三个标准项下表所述。请注意，您可以获取其他项目列表的 System 主题中使用的 SysItems 项。</para>
+        <remarks><para>动态数据交换 (DDE) 是一种比较陈旧的技术并且不是十分安全。 如果可能, 请使用更安全的 DDE 替代方法。</para>
+          <para>当您从服务器应用程序中的主题请求信息时, 您必须指定要请求其内容的主题中的项。 例如，在 Microsoft Excel 中，单元格是合法项目，可以通过"R1C1"格式或已命名的引用来引用单元格。</para>
+          <para>Microsoft Excel 和其他支持 DDE 的应用程序可识别名为"System"的主题。下表对 System 主题中的三个标准项目加以说明。请注意：使用 SysItems 项目可得到 System 主题中的其他项目列表。</para>
           <list type="table">
             <item>
               <description>SysItems</description>
-              <description>返回 System 主题中的所有项的列表。</description>
+              <description>返回 System 主题中的所有项目的列表。</description>
             </item>
             <item>
-              <description>主题</description>
-              <description>返回所有可用的主题的列表。</description>
+              <description>Topics</description>
+              <description>返回所有有效主题的列表。</description>
             </item>
             <item>
-              <description>格式</description>
+              <description>Formats</description>
               <description>返回 Microsoft Word 支持的所有剪贴板格式的列表。</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDETerminate">
@@ -1625,13 +1552,10 @@
         <Parameter Name="Channel" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Channel">
-          <b>必选。</b> 返回的通道号<see cref="M:Microsoft.Office.Interop.Word._Application.DDEInitiate(System.String,System.String)" />方法。</param>
+        <param name="Channel">必需的<b>整数</b>。 <see cref="M:Microsoft.Office.Interop.Word._Application.DDEInitiate(System.String,System.String)" />方法返回的通道号。</param>
         <summary>关闭指定的通向另一应用程序的 DDE（动态数据交换）通道。</summary>
-        <remarks>
-          <para>动态数据交换 (DDE) 是不安全的较旧的技术。如果可能，请使用 DDE 的更安全的替代。</para>
-          <para />
-        </remarks>
+        <remarks><para>动态数据交换 (DDE) 是一种比较陈旧的技术并且不是十分安全。 如果可能, 请使用更安全的 DDE 替代方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DDETerminateAll">
@@ -1656,12 +1580,10 @@
       <Parameters />
       <Docs>
         <summary>关闭所有由 Microsoft Word 打开的动态数据交换 (DDE) 通道。</summary>
-        <remarks>
-          <para>此方法不会关闭打开的客户端应用程序到 Word 的通道。使用此方法等同于使用<see cref="M:Microsoft.Office.Interop.Word._Application.DDETerminate(System.Int32)" />方法，用于每个打开的通道。</para>
-          <para>动态数据交换 (DDE) 是不安全的较旧的技术。如果可能，请使用 DDE 的更安全的替代。</para>
-          <para>如果中断打开的 DDE 通道的宏，您可能无意通道将保持打开状态。当宏结束，并且每个打开的通道占用系统资源时，不自动关闭打开的通道。因此，它是您正在调试代码打开一个或多个 DDE 通道时使用此方法，最好。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法不会关闭客户端应用程序向 Word 打开的通道。 使用此方法与对每个打开的<see cref="M:Microsoft.Office.Interop.Word._Application.DDETerminate(System.Int32)" />通道使用方法相同。</para>
+          <para>动态数据交换 (DDE) 是一种比较陈旧的技术并且不是十分安全。 如果可能, 请使用更安全的 DDE 替代方法。</para>
+          <para>如果中断打开 DDE 通道的宏，可能会无意中使一个通道处于打开状态。 当宏结束时, 打开的通道不会自动关闭, 并且每个打开的通道都将使用系统资源。 因此, 在调试打开一个或多个 DDE 通道的代码时, 最好使用此方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultLegalBlackline">
@@ -1690,7 +1612,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定 Microsoft Word 是否将比较并合并文档使用比较并合并文档对话框中的精确比较选项。 如果 Word 将使用的选项，和<b>False</b>如果没有，则返回<b>True</b> 。</summary>
+        <summary>确定 Microsoft Word 是否将使用 "比较并合并文档" 对话框中的 "精确比较" 选项比较和合并文档。 如果 Word 将使用选项, 则返回<b>True</b> , 否则返回<b>False</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1721,11 +1643,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置的默认格式，其将出现在保存为 （文件菜单） 中的另存为对话框中的类型框。</summary>
+        <summary>返回或设置将在 "文件" 菜单的 "另存为" 对话框中的 "保存类型" 框中显示的默认格式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对应保存 Word 文件选项对话框 （工具菜单） 中的保存选项卡上的框。</para>
-          <para>使用此属性的字符串是文件转换器的类名称。下表中列出内部 Microsoft Word 格式的类名称。</para>
+        <remarks><para>对应于 "工具" 菜单 "选项" 对话框中 "保存" 选项卡上的 "将 Word 文件保存为" 框。</para>
+          <para>本属性所用字符串是文件转换程序类名。 下表列出了内部 Microsoft Word 格式的类名称。</para>
           <list type="table">
             <item>
               <description>Word 文档</description>
@@ -1733,14 +1654,14 @@
             </item>
             <item>
               <description>文档模板</description>
-              <description>"Dot"</description>
+              <description>圆</description>
             </item>
             <item>
               <description>纯文本</description>
-              <description>"Text"</description>
+              <description>文本框</description>
             </item>
             <item>
-              <description>仅文本行换</description>
+              <description>带换行符的纯文本</description>
               <description>"CRText"</description>
             </item>
             <item>
@@ -1748,21 +1669,20 @@
               <description>"8Text"</description>
             </item>
             <item>
-              <description>MS-DOS 文本行换</description>
+              <description>带换行符的 MS-DOS 文本</description>
               <description>"8CRText"</description>
             </item>
             <item>
-              <description>格式文本格式</description>
-              <description>"Rtf"</description>
+              <description>RTF 格式</description>
+              <description>Rtf</description>
             </item>
             <item>
               <description>Unicode 文本</description>
-              <description>"Unicode"</description>
+              <description>黑体</description>
             </item>
           </list>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.FileConverter.ClassName" />属性与<see cref="T:Microsoft.Office.Interop.Word.FileConverter" />对象确定外部文件转换器的类名。</para>
-          <para />
-        </remarks>
+          <para>使用<see cref="T:Microsoft.Office.Interop.Word.FileConverter" />对象<see cref="P:Microsoft.Office.Interop.Word.FileConverter.ClassName" />的属性可确定外部文件转换器的类名称。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTableSeparator">
@@ -1791,12 +1711,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用于分隔到单元格中的文本，当文本转换为表格的单个字符。</summary>
+        <summary>返回或设置一个字符；在将文本转换为表格时，该字符用来将文本分隔为单元格。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果，则使用<b>DefaultTableSeparator</b>属性的值<paramref name="Separator" />省略从<see cref="M:Microsoft.Office.Interop.Word.Selection.ConvertToTable(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果从<paramref name="Separator" /> <see cref="M:Microsoft.Office.Interop.Word.Selection.ConvertToTable(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法中省略该参数, 则使用<b>DefaultTableSeparator</b>属性的值。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultWebOptions">
@@ -1820,7 +1738,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" />对象，其中包含 Microsoft Word 每当将文档保存为网页或打开网页时使用的全局应用程序级属性。</summary>
+        <summary>返回包含<see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" />全局应用程序级属性的对象, 每当您将文档保存为网页或打开网页时, Microsoft Word 将使用这些属性。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1848,7 +1766,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dialogs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Dialogs" />集合，代表所有内置对话框框 Microsoft Word 中。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Dialogs" />集合, 该集合代表 Microsoft Word 中的所有内置对话框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1916,10 +1834,8 @@
       <Docs>
         <summary>返回或设置运行宏时的一些警告和消息的处理的方式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果此属性设置为<b>wdAlertsNone</b>或<b>wdAlertsMessageBox</b>时，Microsoft Word 不将其设置回<b>wdAlertsAll</b>时停止执行。您应编写代码，它始终设置<b>DisplayAlerts</b>属性回<b>wdAlertsAll</b>时停止运行方式。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果将此属性设置为<b>wdAlertsNone</b>或<b>wdAlertsMessageBox</b>, 则当执行停止时, Microsoft Word 不会将其重新设置为<b>wdAlertsAll</b> 。 您应编写代码, 使其在停止运行时始终将<b>DisplayAlerts</b>属性设置回<b>wdAlertsAll</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayAutoCompleteTips">
@@ -1948,12 +1864,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>决定 Microsoft Word 是否显示建议您键入时完成单词、 日期或短语的文本的提示。</summary>
+        <summary>确定 Microsoft Word 是否显示提示, 以在您键入时为完成单词、日期或短语提供建议文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Word 显示建议完成单词、 日期或词组键入时，和<b>False</b>如果没有文本的提示，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 显示在您键入时建议的完整单词、日期或短语文本的提示, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayDocumentInformationPanel">
@@ -1982,10 +1896,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否显示文档属性面板。读/写。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否显示文档属性面板。 读/写。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2015,12 +1927,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定最近使用过的名称显示在文件菜单上的文件。</summary>
+        <summary>确定最近使用的文件的名称是否显示在 "文件" 菜单上。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果不需要最近使用过的文件的名称显示在文件菜单，或<b>False</b> ，则此属性返回<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果最近使用的文件的名称显示在 "文件" 菜单上, 则此属性返回<b>True</b> ; 否则, 返回<b>False</b> 。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayScreenTips">
@@ -2049,12 +1959,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定批注、 脚注、 尾注和超链接是否显示为提示。 有批注突出显示标记文本。</summary>
+        <summary>确定批注、脚注、尾注和超链接是否显示为提示。 有批注突出显示标记文本。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果批注、 脚注、 尾注和超链接显示为提示和<b>False</b>如果没有，则此属性返回<b>True</b> 。有批注突出显示那些标记的文本。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果批注、脚注、尾注和超链接显示为提示, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 有批注突出显示标记文本。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayScrollBars">
@@ -2083,8 +1991,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定 Word 是否至少一个文档窗口中显示滚动条。</summary>
-        <value>如果 Microsoft Word 中至少一个文档窗口中，和<b>False</b>显示滚动条，如果不有任何窗口中显示任何滚动条，则此属性返回<b>True</b> 。<b>DisplayScrollBars</b>属性设置为<b>true，</b>在所有窗口中显示水平和垂直滚动条。 该属性设置为<b>False</b>将关闭所有窗口中的所有滚动条。使用<see cref="P:Microsoft.Office.Interop.Word.Window.DisplayHorizontalScrollBar" />和<see cref="P:Microsoft.Office.Interop.Word.Window.DisplayVerticalScrollBar" />属性指定窗口中显示单独的滚动条。</value>
+        <summary>确定 Word 是否在至少一个文档窗口中显示滚动条。</summary>
+        <value>如果 Microsoft Word 在至少一个文档窗口中显示一个滚动条, 则此属性返回<b>True</b> ; 如果在任何窗口中不显示任何滚动条, 则返回<b>False</b> 。如果将<b>DisplayScrollBars</b>属性设置为<b>True, 则</b>在所有窗口中显示水平和垂直滚动条。 如果将该属性设置为<b>False, 则</b>在所有窗口中关闭所有滚动条。使用<see cref="P:Microsoft.Office.Interop.Word.Window.DisplayHorizontalScrollBar" />和<see cref="P:Microsoft.Office.Interop.Word.Window.DisplayVerticalScrollBar" />属性在指定的窗口中显示单个滚动条。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2122,10 +2030,8 @@
       <Docs>
         <summary>确定是否显示状态栏。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>如果显示状态栏，则和<b>False</b>如果不需要。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果显示状态栏, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Documents">
@@ -2151,7 +2057,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Documents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Documents" />集合，代表所有打开的文档。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Documents" />集合, 该集合代表所有打开的文档。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2182,17 +2088,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Boolean</b>值，该值代表是否运行其他代码后，Microsoft Office Word 维护该位置的插入点处的文本的格式设置属性。
-为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>在某些情况下，Word 格式丢失在插入点之后运行其他 Microsoft Visual Basic for Applications (VBA) 代码。发生这种情况，则会导致的依赖于屏幕阅读器应用程序的用户的难度。他们会丢失的格式时其辅助应用程序执行看起来不相关的任务。此属性可防止 Word 丢失或更改时运行其他代码已应用于插入点的位置的文本的格式包含属性或方法 Word 对象模型中的。</para>
+        <summary>返回或设置一个<b>Boolean</b>类型的值, 该值表示 Microsoft Office Word 是否在运行其他代码后保持该插入点的位置的文本的格式属性。
+读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>有时，在运行其他 Microsoft Visual Basic for Applications (VBA) 代码后，Word 会丢失插入点的格式。如果发生这样的情况，则会给依赖屏幕读取器应用程序的用户造成困难。当用户的辅助应用程序执行看起来不相关的任务时，他们会丢失格式。当运行包含 Word 对象模型中的属性或方法的其他代码时，此属性可防止 Word 丢失或更改位于插入点位置的文本的格式。</para>
           <para>
-            <b>重要说明</b>： 除非明确需要以正确进行解决方案函数不使用此属性。</para>
-          <para />
-        </remarks>
+            <b>重要说明</b>: 请勿使用此属性, 除非明确需要它才能正确设置解决方案。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Dummy1">
@@ -2221,7 +2123,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2250,7 +2152,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2279,7 +2181,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2306,7 +2208,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.EmailOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.EmailOptions" />对象，表示电子邮件创作的全局首选项。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.EmailOptions" />对象, 表示用于电子邮件创作的全局首选项。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2339,10 +2241,8 @@
       <Docs>
         <summary>返回或设置一个 <b>字符串</b> ，表示要发送电子邮件时使用的文档模板。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>指定 Microsoft Word 为电子邮件编辑器，您必须在 Microsoft outlook 中执行此操作时，请使用<b>EmailTemplate</b>属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>指定 Microsoft Word 作为电子邮件编辑器，您必须在 Microsoft Outlook 中执行此操作时，请使用 <b>EmailTemplate</b> 属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableCancelKey">
@@ -2371,12 +2271,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdEnableCancelKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置 Word 处理 CTRL + BREAK 中断用户的方式。</summary>
+        <summary>返回或设置 Word 处理 Ctrl+Break 用户中断的方式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>谨慎使用此属性。如果您使用<b>wdCancelDisabled</b>，没有任何方式中断超越循环或其他非 – 自终止的代码。此外， <b>EnableCancelKey</b>属性将不重置为<b>wdCancelInterrupt</b>时您的代码停止运行;除非您明确重置其值，它将一直保持到<b>wdCancelDisabled</b>为 Word 会话的持续时间。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用此属性时应非常小心。 如果使用<b>wdCancelDisabled</b>, 则无法中断失控循环或其他非自终止代码。 另外，当代码停止运行时，除非明确地重新设置其值，否则 <b>EnableCancelKey</b> 属性不会重新设置为 <b>wdCancelInterrupt</b>，该属性在 Word 会话期间内仍为 <b>wdCancelDisabled</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FeatureInstall">
@@ -2407,10 +2305,9 @@
       <Docs>
         <summary>返回或设置 Microsoft Word 如何处理调用方法和属性的需要尚未安装的功能。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>MsoFeatureInstallOnDemandWithUI</b>常数可用于防止用户相信的应用程序未响应时安装功能。如果您想开发人员是唯一可以安装功能的人使用<b>msoFeatureInstallNone</b>常量。</para>如果您有
-          <para><see cref="P:Microsoft.Office.Interop.Word._Application.DisplayAlerts" />属性设置为<b>False</b>，用户将不会提示安装新功能，即使<b>FeatureInstall</b>属性设置为<b>msoFeatureInstallOnDemand</b>。如果<b>DisplayAlerts</b>属性设置为<b>True</b>，将显示安装进度指示器，如果<b>FeatureInstall</b>属性设置为<b>msoFeatureInstallOnDemand</b>。</para><para /></remarks>
+        <remarks><para><b>MsoFeatureInstallOnDemandWithUI</b> 常量可用于防止用户认为该应用程序没有响应时安装的功能的。如果您想开发人员是唯一可以安装的功能的用户，请使用 <b>msoFeatureInstallNone</b> 常量。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word._Application.DisplayAlerts" />如果将该属性设置为<b>False</b>, 则即使<b>FeatureInstall</b>属性设置为<b>msoFeatureInstallOnDemand</b>, 也不会提示用户安装新功能。 如果 <b>DisplayAlerts</b> 属性设置为 <b>True</b> ，将 <b>FeatureInstall</b> 属性设置为 <b>msoFeatureInstallOnDemand</b> 将显示安装进度计量表。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FileConverters">
@@ -2436,7 +2333,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FileConverters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.FileConverters" />代表对 Microsoft Word 可用的所有文件转换器的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.FileConverters" />集合, 该集合代表可用于 Microsoft Word 的所有文件转换器。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2467,8 +2364,8 @@
         <Parameter Name="FileDialogType" Type="Microsoft.Office.Core.MsoFileDialogType" />
       </Parameters>
       <Docs>
-        <param name="FileDialogType">所需<b>MsoFileDialogType</b>。 对话框类型。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Core.FileDialog" />对象代表文件对话框中的单个实例。</summary>
+        <param name="FileDialogType">必需的<b>MsoFileDialogType</b>。 对话框类型。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Core.FileDialog" />代表文件对话框的单个实例的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2499,7 +2396,7 @@
         <ReturnType>Microsoft.Office.Core.FileSearch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.FileSearch" />对象的可用于搜索的文件使用绝对或相对路径。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Core.FileSearch" />对象, 该对象可用于使用绝对或相对路径搜索文件。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2530,12 +2427,10 @@
         <ReturnType>Microsoft.Office.Core.MsoFileValidationMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置如何 Word 将在打开它们之前验证文件。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.MsoFileValidationMode" />对象。</value>
-        <remarks>
-          <para>读 / 写<b>MsoFileValidationMode</b>。在打开没有通过验证的文件<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />。<see cref="P:Microsoft.Office.Interop.Word._Application.FileValidation" />属性是每个会话仅。如果您设置<see cref="P:Microsoft.Office.Interop.Word._Application.FileValidation" />属性，该设置将保持有效整个应用程序已打开的会话。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置 Word 在打开文件之前对其进行验证的方式。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoFileValidationMode" /> 对象。</value>
+        <remarks><para>读写<b>MsoFileValidationMode</b>。 未通过验证的文件将在中打开<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />。 该<see cref="P:Microsoft.Office.Interop.Word._Application.FileValidation" />属性仅为每个会话。 如果设置了<see cref="P:Microsoft.Office.Interop.Word._Application.FileValidation" />该属性, 则该设置将对应用程序打开的整个会话保持有效。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FindKey">
@@ -2565,15 +2460,12 @@
         <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCode">
-          <b>必选。</b> 使用之一指定的键<see cref="T:Microsoft.Office.Interop.Word.WdKey" />常量。</param>
-        <param name="KeyCode2">可选的<b>对象</b>。 通过使用 <b>WdKey</b> 常量之一指定第二个键。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />对象，表示指定的组合键。</summary>
+        <param name="KeyCode">必需的<b>整数</b>。 通过使用<see cref="T:Microsoft.Office.Interop.Word.WdKey" />常量之一指定的键。</param>
+        <param name="KeyCode2">可选<b>对象</b>。 通过使用 <b>WdKey</b> 常量之一指定第二个键。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />对象, 表示指定的组合键。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您可以使用<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />方法来创建<paramref name="KeyCode" />或<paramref name="KeyCode2" />参数。</para>
-          <para />
-        </remarks>
+        <remarks><para>您可以使用<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />方法创建<paramref name="KeyCode" />或<paramref name="KeyCode2" />参数。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FocusInMailHeader">
@@ -2599,12 +2491,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否插入点位于电子邮件标题域。</summary>
+        <summary>确定插入点是否在电子邮件头字段中。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b> ，如果插入点位于电子邮件标题域 (收件人： 字段，例如)， <b>False</b>如果不需要。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果插入点位于电子邮件标题字段中 (例如, "To:" 字段), 则此属性返回<b>True</b> , 如果不是, 则返回<b>False</b> 。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FontNames">
@@ -2630,7 +2520,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FontNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.FontNames" />对象，包括所有可用字体的名称。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.FontNames" />对象, 其中包含所有可用字体的名称。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2664,14 +2554,14 @@
         <Parameter Name="UpdateRecentAddresses" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">可选的<b>对象</b>。 收件人姓名，与通讯簿中 "查找姓名"对话框中所指定的相同。</param>
-        <param name="AddressProperties">可选的<b>对象</b>。 如果<paramref name="UseAutoText" />为<b>True</b>，则该参数代表定义通讯簿属性自动图文集词条的名称。 如果<paramref name="UseAutoText" />为<b>False</b>或省略，此参数定义一个自定义版式。 有效的地址簿属性名称或设置的属性名称外面尖括号 ("&lt;"和"&gt;")，由空格或段落标记分隔 (例如，"&lt;PR_GIVEN_NAME&gt; &lt;PR_SURNAME&gt;" &amp;vbCr &amp; "&lt;PR_OFFICE_TELEPHONE_NUMBER&gt;")。如果省略此参数，则使用名为"AddressLayout"的默认自动图文集条目。 如果未定义"AddressLayout"，则使用以下地址布局定义:"&lt;PR_GIVEN_NAME&gt; &lt;PR_SURNAME&gt;" &amp; vbCr &amp; "&lt;PR_STREET_ADDRESS&gt;" &amp; vbCr &amp; "&lt;PR_LOCALITY&gt;" &amp; "，" &amp; "&lt;PR_STATE_OR_PROVINCE&gt;" &amp; "" &amp; "&lt;PR_POSTAL_CODE&gt;" &amp; vbCr &amp; "&lt;PR_COUNTRY&gt;"。有效的地址簿属性名列表，请参阅<see cref="M:Microsoft.Office.Interop.Word._Application.AddAddress(System.Array@,System.Array@)" />方法。</param>
-        <param name="UseAutoText">可选的<b>对象</b>。 <b>True</b>如果<paramref name="AddressProperties" />指定定义通讯簿属性; 一个序列自动图文集词条的名称<b>False</b>如果它指定一个自定义版式。</param>
-        <param name="DisplaySelectDialog">可选的<b>对象</b>。 指定是否显示选择姓名对话框下, 表中所示。ValueResult0 （零） 选择姓名对话框中不 displayed.1 或 omittedThe 对话框时不显示 displayed.2The 选择姓名对话框，并且不搜索特定名称的选择的名称。 该方法返回的地址将是以前选择的地址。</param>
-        <param name="SelectDialog">可选的<b>对象</b>。 指定选择姓名对话框的显示方式 (即以何种模式) 下, 表中所示。ValueDisplay mode0 （零） 或 omittedBrowse mode1Compose 模式，只收件人： box2Compose 模式，这两个收件人: 和抄送： 框</param>
-        <param name="CheckNamesDialog">可选的<b>对象</b>。 <b>True</b>以显示检查姓名对话框中的框时的值<paramref name="Name" />参数不是不够具体。</param>
-        <param name="RecentAddressesChoice">可选的<b>对象</b>。 <b>真</b> 要使用列表中的最近使用的回信地址。</param>
-        <param name="UpdateRecentAddresses">可选的<b>对象</b>。 <b>True</b>将地址添加到列表中最近使用的地址。<b>False</b>不添加地址。 如果<paramref name="SelectDialog" />设置为 1 或 2，则忽略此参数。</param>
+        <param name="Name">可选<b>对象</b>。 收件人姓名，与通讯簿中 "查找姓名" 对话框中所指定的相同。</param>
+        <param name="AddressProperties">可选<b>对象</b>。 如果<paramref name="UseAutoText" />为<b>True</b>, 则此参数表示定义通讯簿属性序列的 "自动图文集" 词条的名称。 如果<paramref name="UseAutoText" />为<b>False</b>或省略, 则此参数定义自定义布局。 有效的通讯簿属性名称或属性名称集由尖括号 ("&lt;" 和 "&gt;") 括起, 并由空格或段落标记 (例如, "&lt;PR_GIVEN_NAME&gt; &lt;PR_SURNAME&gt;" &amp; ) 括起。vbCr &amp; "&lt;PR_OFFICE_TELEPHONE_NUMBER&gt;")。如果省略此参数, 则使用默认的 "自动图文集" 词条 "AddressLayout"。 如果&lt;尚未定义 "AddressLayout", 则使用以下地址布局定义: "PR_GIVEN_NAME&gt; &lt;PR_SURNAME&gt;" &amp; vbCr &amp; "&lt;&gt;PR_STREET_ADDRESS" &amp; vbCr " &amp; &lt;PR_LOCALITY&gt;" &amp; ", " &amp; "&lt;PR_STATE_OR_PROVINCE&gt;" &amp; " &amp; ""&lt;PR_POSTAL_CODE&gt;" &amp; vbCr &amp; "&lt;PR_COUNTRY&gt;"。有关有效通讯簿属性名称的列表, 请参阅<see cref="M:Microsoft.Office.Interop.Word._Application.AddAddress(System.Array@,System.Array@)" />方法。</param>
+        <param name="UseAutoText">可选<b>对象</b>。 如果<paramref name="AddressProperties" />指定定义通讯簿属性序列的自动图文集词条的名称,<b>则为 True</b> ; 否则为 false。<b>假</b>如果指定自定义版式。</param>
+        <param name="DisplaySelectDialog">可选<b>对象</b>。 指定是否显示 "选择姓名" 对话框, 如下表所示。ValueResult0 (零) 不显示 "选择姓名" 对话框。将显示1个或 omittedThe "选择姓名" 对话框。不显示 "2The 选择名称" 对话框, 并且不执行任何特定名称搜索。 该方法返回的地址将是以前选择的地址。</param>
+        <param name="SelectDialog">可选<b>对象</b>。 指定应如何显示 "选择姓名" 对话框 (即, 在何种模式下), 如下表所示。ValueDisplay mode0 (零) 或 omittedBrowse mode1Compose 模式 (仅限 To: box2Compose 模式, 同时包含 "收件人:" 和 "抄送:" 框)</param>
+        <param name="CheckNamesDialog">可选<b>对象</b>。 <b>如果为 True</b> , 则当<paramref name="Name" />参数的值不够具体时显示 "检查姓名" 对话框。</param>
+        <param name="RecentAddressesChoice">可选<b>对象</b>。 <b>真</b> 要使用列表中的最近使用的回信地址。</param>
+        <param name="UpdateRecentAddresses">可选<b>对象</b>。 如果该属性值为 <b>True</b>，则向最近使用的地址列表中添加一个地址；如果该属性值为 <b>False</b>，则不添加地址。 如果<paramref name="SelectDialog" />设置为1或 2, 则忽略此参数。</param>
         <summary>返回默认通讯簿中的地址。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -2700,14 +2590,11 @@
         <Parameter Name="DocumentType" Type="Microsoft.Office.Interop.Word.WdDocumentMedium" />
       </Parameters>
       <Docs>
-        <param name="DocumentType">
-          <b>WdDocumentMedium</b>常量，指示要为其检索默认主题名的新文档的类型。</param>
+        <param name="DocumentType">一个<b>WdDocumentMedium</b>常量, 该常量指示要为其检索默认主题名称的新文档的类型。</param>
         <summary>返回一个 <b>字符串</b> ，表示默认主题以及主题格式设置的选项，Word 会使用新的文档、 电子邮件或 Web 页的名称。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>您还可以使用<see cref="P:Microsoft.Office.Interop.Word.EmailOptions.ThemeName" />属性返回或设置新电子邮件的默认主题。</para>
-          <para />
-        </remarks>
+        <remarks><para>您还可以使用<see cref="P:Microsoft.Office.Interop.Word.EmailOptions.ThemeName" />属性返回并设置新电子邮件的默认主题。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSpellingSuggestions">
@@ -2746,25 +2633,23 @@
       </Parameters>
       <Docs>
         <param name="Word">必需的 <b>字符串</b> 。 将接受拼写检查的单词。</param>
-        <param name="CustomDictionary">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或自定义词典的文件名。</param>
-        <param name="IgnoreUppercase">可选的<b>对象</b>。 <b>真</b> 要忽略全部大写的单词。 如果省略此参数，则的当前值<see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" />属性使用。</param>
-        <param name="MainDictionary">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或主词典的文件名。 如果不指定主词典，Microsoft Word 所使用的语言格式对应的主词典<paramref name="Word" />或范围中的第一个单词。</param>
-        <param name="SuggestionMode">可选的<b>对象</b>。 指定 Word 提出拼写建议的方式。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.WdSpellingWordType" />常量。 默认值是 <b>WdSpellword</b> 。</param>
-        <param name="CustomDictionary2">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary3">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary4">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary5">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary6">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary7">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary8">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary9">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <param name="CustomDictionary10">可选的<b>对象</b>。 任一表达式返回的<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象或其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" />代表建议给定单词的拼写替换单词的集合。</summary>
+        <param name="CustomDictionary">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是自定义词典的文件名。</param>
+        <param name="IgnoreUppercase">可选<b>对象</b>。 <b>真</b> 要忽略全部大写的单词。 如果省略此参数, 则使用<see cref="P:Microsoft.Office.Interop.Word.Options.IgnoreUppercase" />属性的当前值。</param>
+        <param name="MainDictionary">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是主词典的文件名。 如果不指定主词典, Microsoft Word 将使用与区域中第一个单词的<paramref name="Word" />或语言格式相对应的主词典。</param>
+        <param name="SuggestionMode">可选<b>对象</b>。 指定 Word 提出拼写建议的方式。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdSpellingWordType" />常量之一。 默认值是 <b>WdSpellword</b> 。</param>
+        <param name="CustomDictionary2">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary3">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary4">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary5">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary6">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary7">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary8">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary9">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <param name="CustomDictionary10">可选<b>对象</b>。 可以是返回<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象的表达式, 也可以是其他自定义词典的文件名。 您可以指定多达 9 个附加词典。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" />集合, 该集合代表作为给定单词的拼写替换建议的单词。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>如果该单词拼写正确，<see cref="P:Microsoft.Office.Interop.Word.SpellingSuggestions.Count" />属性<see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" />对象返回 0 （零）。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果单词拼写正确, 该<see cref="P:Microsoft.Office.Interop.Word.SpellingSuggestions.Count" /> <see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" />对象的属性将返回 0 (零)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GoBack">
@@ -2788,11 +2673,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>编辑活动文档中的发生位置最后三个位置之间移动插入点。</summary>
-        <remarks>
-          <para>此属性提供的功能等同于按 SHIFT + F5 的结果。</para>
-          <para />
-        </remarks>
+        <summary>在活动文档中发生编辑的最后三个位置之间移动插入点。</summary>
+        <remarks><para>此属性提供的功能与按 SHIFT + F5 的结果相同。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GoForward">
@@ -2843,12 +2726,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" />集合，代表所有活动自定义转换词典。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" />集合, 该集合代表所有活动的自定义转换词典。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在自定义词典对话框中选中复选标记活动自定义转换词典 (在工具菜单中，单击选项，然后单击拼写&amp;语法选项卡，，然后单击自定义词典按钮)。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用 "自定义词典" 对话框 (在 "工具" 菜单上, 单击 "选项", 再单击 "拼写&amp;语法" 选项卡, 然后单击 "自定义词典" 按钮) 中的选中标记, 将激活自定义转换词典。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -2905,13 +2786,10 @@
         <Parameter Name="HelpType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="HelpType">所需的<b>对象</b>。 联机帮助主题或窗口。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdHelpType" />常量。</param>
+        <param name="HelpType">必需的<b>对象</b>。 联机帮助主题或窗口。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdHelpType" />常量。</param>
         <summary>此方法显示联机帮助信息。</summary>
-        <remarks>
-          <para>
-            <b>WdHelpType</b>常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语）。</para>
-          <para />
-        </remarks>
+        <remarks><para>某些<b>WdHelpType</b>常量可能不可用, 具体取决于您选择或安装的语言支持 (例如, 美国英语)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HelpTool">
@@ -2935,11 +2813,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>将指针从箭头变为问号，表明您将获取上下文相关帮助信息元素的下一个命令或屏幕上单击。</summary>
-        <remarks>
-          <para>如果单击了文本，Microsoft Word 显示描述当前段落和字符格式的对话框。按 ESC 可将回箭头指针。</para>
-          <para />
-        </remarks>
+        <summary>指针从箭头改为问号，表明这是关于将要单击的命令或屏幕元素的快捷帮助。</summary>
+        <remarks><para>如果单击 "文本", Microsoft Word 将显示一个描述当前段落和字符格式的方框。 按 Esc 可将指针恢复为原始状态。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InchesToPoints">
@@ -2965,14 +2841,11 @@
         <Parameter Name="Inches" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Inches">
-          <b>必选。</b> 要转换为磅值的英寸值。</param>
+        <param name="Inches">必需<b>Single</b>。 要转换为磅值的英寸值。</param>
         <summary>将度量单位从英寸转换为磅 (1 英寸 = 72 磅)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>返回作为一个<b>单个</b>的转换后的度量值。</para>
-          <para />
-        </remarks>
+        <remarks><para>返回已转换为一个 <b>单一</b> 测量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="International">
@@ -3001,7 +2874,7 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdInternationalIndex" />
       </Parameters>
       <Docs>
-        <param name="Index">所需<b>WdInternationalIndex</b>。 当前的国家/地区和/或国际设置。</param>
+        <param name="Index">必需的<b>WdInternationalIndex</b>。 当前的国家/地区和/或国际设置。</param>
         <summary>返回当前国家/地区和国际设置的信息。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -3033,13 +2906,11 @@
         <Parameter Name="Object" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Object">所需的<b>对象</b>。 一个引用某一对象的变量。</param>
-        <summary>确定指定的变量引用的对象是否有效。</summary>
+        <param name="Object">必需的<b>对象</b>。 一个引用某一对象的变量。</param>
+        <summary>确定引用对象的指定变量是否有效。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性将返回<b>True</b>指定的变量引用的对象是否有效;<b>False</b>如果该变量引用的对象已被删除。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果指定的引用对象的变量有效, 则此属性返回<b>True</b> ; 否则返回 false。<b>假</b>如果变量引用的对象已被删除。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSandboxed">
@@ -3065,13 +2936,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取应用程序窗口是否受保护的视图窗口。</summary>
-        <value>
-          <b>true</b>如果应用程序窗口是受保护的视图窗口;否则为<b>false</b>。</value>
-        <remarks>
-          <para>只读的。此属性用于确定文档是否在受保护的视图窗口内打开。</para>
-          <para />
-        </remarks>
+        <summary>获取应用程序窗口是否为受保护的视图窗口。</summary>
+        <value>如果应用程序窗口为受保护的视图窗口,<b>则为 true</b> ;否则<b>为 false</b>。</value>
+        <remarks><para>只读。 使用此属性可确定文档是否在受保护的视图窗口中打开。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyBindings">
@@ -3097,7 +2965,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.KeyBindings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />集合，代表自定义按键分配方案，包含了键代码、 键类别和命令。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />集合, 该集合代表自定义的按键分配方案, 其中包括关键代码、键类别和命令。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3124,13 +2992,11 @@
         <Parameter Name="LangId" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="LangId">可选的<b>整数</b>。 Microsoft Word 要针对其设置键盘的语言和布局组合。 如果省略该参数，则该方法返回当前的语言和布局设置。</param>
+        <param name="LangId">可选属性，类型为 <b>Integer</b>。 Microsoft Word 要针对其设置键盘的语言和布局组合。 如果省略该参数，则该方法返回当前的语言和布局设置。</param>
         <summary>返回或设置键盘的语言和布局设置。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Microsoft Windows 跟踪使用调用输入的语言句柄，通常称作 HKL 变量类型的键盘语言和布局设置。低 word 的句柄的语言 ID，并且高 word 的键盘布局的句柄。</para>
-          <para />
-        </remarks>
+        <remarks><para>Microsoft Windows 用一种名为"输入语言句柄"的变量类型来跟踪键盘的语言和布局设置，常把这种变量称为"HKL"。句柄的低端字是语言 ID，句柄的高端字是键盘布局。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyboardBidi">
@@ -3211,10 +3077,10 @@
         <Parameter Name="CommandParameter" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCategory">所需<b>WdKeyCategory</b>。 组合键的类别。</param>
+        <param name="KeyCategory">必需的<b>WdKeyCategory</b>。 组合键的类别。</param>
         <param name="Command">必需的 <b>字符串</b> 。 命令名称。</param>
-        <param name="CommandParameter">可选的<b>对象</b>。 其他文本，如果有，所需的命令通过指定<paramref name="Command" />。 有关详细信息，请参阅<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />方法<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />对象。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.KeysBoundTo" />对象，表示分配给指定项的所有组合键。</summary>
+        <param name="CommandParameter">可选<b>对象</b>。 由<paramref name="Command" />指定的命令所需的附加文本 (如果有)。 有关详细信息, 请参阅<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />对象的方法。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.KeysBoundTo" />对象, 表示分配给指定项的所有组合键。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3242,15 +3108,12 @@
         <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCode">
-          <b>必选。</b> 通过使用 <b>WdKey</b> 常量之一指定一个密钥。</param>
-        <param name="KeyCode2">可选的<b>对象</b>。 使用之一指定的第二个键<see cref="T:Microsoft.Office.Interop.Word.WdKey" />常量。</param>
+        <param name="KeyCode">必需的<b>整数</b>。 通过使用 <b>WdKey</b> 常量之一指定一个密钥。</param>
+        <param name="KeyCode2">可选<b>对象</b>。 使用其中一个<see cref="T:Microsoft.Office.Interop.Word.WdKey" />常量指定的第二个键。</param>
         <summary>返回指定的键 (例如，CTRL + SHIFT + A) 组合键字符串。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>您可以使用<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />方法创建<b>KeyCode</b>或<b>KeyCode2</b>参数。</para>
-          <para />
-        </remarks>
+        <remarks><para>您可以使用<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />方法创建<b>KeyCode</b>或<b>KeyCode2</b>参数。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LandscapeFontNames">
@@ -3276,7 +3139,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FontNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.FontNames" />对象，其中包括所有可用的横向字体的名称。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.FontNames" />对象, 其中包含所有可用的横向字体的名称。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3332,12 +3195,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Languages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Languages" />语言对话框中列出的值，该值代表校对语言的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Languages" />集合, 该集合代表在 "语言" 对话框中列出的校对语言。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>通过单击语言，然后单击设置语言，可以在工具菜单上访问语言对话框。</para>
-          <para />
-        </remarks>
+        <remarks><para>可以通过单击 "语言", 然后单击 "设置语言", 在 "工具" 菜单上访问 "语言" 对话框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageSettings">
@@ -3363,7 +3224,7 @@
         <ReturnType>Microsoft.Office.Core.LanguageSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.LanguageSettings" />对象，它包含 Microsoft Word 中语言设置的信息。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Core.LanguageSettings" />对象, 该对象包含有关 Microsoft Word 中的语言设置的信息。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3394,7 +3255,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>整数</b>，表示活动文档的水平位置 (为<see cref="T:Microsoft.Office.Interop.Word.Application" />对象) 或指定的任务或窗口中，以磅为单位。</summary>
+        <summary>返回或设置一个<b>Integer</b>类型的值, 该值代表活动文档 ( <see cref="T:Microsoft.Office.Interop.Word.Application" />对象) 或指定的任务或窗口的水平位置 (以磅为单位)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3422,14 +3283,11 @@
         <Parameter Name="Lines" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Lines">
-          <b>必选。</b> 要转换为磅值的行值。</param>
+        <param name="Lines">必需<b>Single</b>。 要转换为磅值的行值。</param>
         <summary>将度量单位从行转换为磅 (1 行 = 12 磅)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此属性返回作为一个<b>单个</b>的转换后的度量值。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性返回转换后的度量值为<b>Single</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListCommands">
@@ -3455,8 +3313,8 @@
         <Parameter Name="ListAllCommands" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="ListAllCommands">所需<b>Boolean</b>。 <b>True</b>以包括所有 Word 命令及其设定 （无论是自定义或内置）;<b>False</b>包括仅与自定义的工作分配的命令。</param>
-        <summary>创建一个新文档，然后插入以及其相关的快捷键和菜单设定 Microsoft Word 命令表。</summary>
+        <param name="ListAllCommands">必需的<b>布尔值</b>。 <b>如果为 True, 则</b>包括所有 Word 命令及其分配 (无论是自定义的还是内置的);<b>如果为 False, 则</b>仅包含具有自定义工作分配的命令。</param>
+        <summary>创建一个新文档, 然后插入一个 Microsoft Word 命令表格及其关联的快捷键和菜单分配。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3483,12 +3341,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListGalleries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ListGalleries" />集合，代表三个列表模板库 （项目符号列表、 编号，和多级符号）。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ListGalleries" />集合, 该集合代表三个列表模板库 (项目符号、编号和多级符号)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>每个库对应于选项卡中的项目符号和编号对话框 （格式菜单）。</para>
-          <para />
-        </remarks>
+        <remarks><para>每个库对应于 "项目符号和编号" 对话框 ("格式" 菜单) 中的一个选项卡。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadMasterList">
@@ -3515,8 +3371,7 @@
       </Parameters>
       <Docs>
         <param name="FileName">书目源文件的路径和文件名。</param>
-        <summary>
-		加载书目源文件。</summary>
+        <summary>加载书目源文件。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3545,10 +3400,8 @@
       <Docs>
         <param name="Name">必需的 <b>字符串</b> 。 全局通讯簿中的一个姓名。</param>
         <summary>在全局通讯簿列表中查找姓名，并显示属性对话框，该对话框中包含有关指定姓名的信息。</summary>
-        <remarks>
-          <para>如果此方法找到了多个匹配项，则会显示检查姓名对话框。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果此方法找到了多个匹配项，则显示 "检查姓名" 对话框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MacroContainer">
@@ -3574,7 +3427,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Template" />或<see cref="T:Microsoft.Office.Interop.Word.Document" />对象，表示的模板或文档中存储的模块包含正在运行的过程。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Template" />或<see cref="T:Microsoft.Office.Interop.Word.Document" />一个对象, 该对象代表存储包含正在运行的过程的模块的模板或文档。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3602,7 +3455,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailingLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.MailingLabel" />对象，它代表一个邮件标签。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.MailingLabel" />对象, 该对象代表一个邮件标签。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3630,7 +3483,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMessage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.MailMessage" />对象，表示活动的电子邮件。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMessage" />对象, 表示活动的电子邮件。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3658,12 +3511,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdMailSystem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回主机计算机上安装的邮件系统 （或系统）。</summary>
+        <summary>返回安装在主机上的邮件系统 (或系统)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>一些<see cref="T:Microsoft.Office.Interop.Word.WdMailSystem" />常量是仅在 Microsoft Office Macintosh Edition 中可用。有关这些常量的其他信息，请参阅语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <remarks><para>某些<see cref="T:Microsoft.Office.Interop.Word.WdMailSystem" />常量仅在 Microsoft Office Macintosh 版本中可用。 有关这些常量的其他信息，请参阅 Microsoft Office Macintosh Edition 中的语言参考的帮助文件。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MAPIAvailable">
@@ -3689,7 +3540,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定已安装了 MAPI。 此属性返回<b>True</b>如果安装了 MAPI，和<b>False</b>如果不需要。</summary>
+        <summary>确定是否安装了 MAPI。 如果安装了 MAPI, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3717,7 +3568,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定了数学协处理器是否已安装和适用于 Microsoft Word。 安装并可供 Microsoft Word 和<b>False</b>如果没有，此属性将返回<b>True</b>如果数学协处理器。</summary>
+        <summary>确定数学协处理器是否已安装并适用于 Microsoft Word。 如果安装了数学协处理器并将其提供给 Microsoft Word, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3762,25 +3613,23 @@
       <Docs>
         <param name="OriginalDocument">指定原始文档的路径和文件名。</param>
         <param name="RevisedDocument">指定与原始文档进行比较的修订后文档的路径和文件名。</param>
-        <param name="Destination">指定是否要创建新的文件或是否标记在原始文档或修订的文档中的两个文档之间的差异。 默认值是<see cref="F:Microsoft.Office.Interop.Word.WdCompareDestination.wdCompareDestinationNew" />。</param>
-        <param name="Granularity">指定是否按字符还是按 word 跟踪更改。 默认值是<see cref="F:Microsoft.Office.Interop.Word.WdGranularity.wdGranularityWordLevel" />。</param>
-        <param name="CompareFormatting">指定是否标记两个文档之间的差别。默认值为 <b>True</b> 。 </param>
-        <param name="CompareCaseChanges">指定是否标记两个文档之间的差异情况。默认值为 <b>True</b> 。 </param>
-        <param name="CompareWhitespace">指定是否标记两个文档之间的空白区域，如段落或空格，差别。默认值为 <b>True</b> 。 </param>
-        <param name="CompareTables">指定是否比较两个文档之间的表中包含的数据中的差异。默认值为 <b>True</b> 。 </param>
-        <param name="CompareHeaders">指定是否比较两个文档之间的差别在页眉和页脚中。默认值为 <b>True</b> 。 </param>
-        <param name="CompareFootnotes">指定是否比较两个文档之间的差异的脚注和尾注。默认值为 <b>True</b> 。 </param>
-        <param name="CompareTextboxes">指定是否比较两个文档之间的文本框中所包含数据的差别。默认值为 <b>True</b> 。 </param>
-        <param name="CompareFields">指定是否比较两个文档之间的差异域。默认值为 <b>True</b> 。 </param>
-        <param name="CompareComments">指定是否比较两个文档之间的差别在注释中。默认值为 <b>True</b> 。 </param>
+        <param name="Destination">指定是创建新文件还是在原始文档或修订后文档中标记两个文档之间的差别。 默认值为 <see cref="F:Microsoft.Office.Interop.Word.WdCompareDestination.wdCompareDestinationNew" />。</param>
+        <param name="Granularity">指定是否按字符还是按 word 跟踪更改。 默认值为 <see cref="F:Microsoft.Office.Interop.Word.WdGranularity.wdGranularityWordLevel" />。</param>
+        <param name="CompareFormatting">指定是否标记两个文档之间的差别。 默认值为 <b>True</b> 。</param>
+        <param name="CompareCaseChanges">指定是否标记两个文档之间的差异情况。 默认值为 <b>True</b> 。</param>
+        <param name="CompareWhitespace">指定是否标记两个文档之间的空白区域，如段落或空格，差别。 默认值为 <b>True</b> 。</param>
+        <param name="CompareTables">指定是否比较两个文档之间的表中包含的数据中的差异。 默认值为 <b>True</b> 。</param>
+        <param name="CompareHeaders">指定是否比较两个文档之间的差别在页眉和页脚中。 默认值为 <b>True</b> 。</param>
+        <param name="CompareFootnotes">指定是否比较两个文档之间的差异的脚注和尾注。 默认值为 <b>True</b> 。</param>
+        <param name="CompareTextboxes">指定是否比较两个文档之间的文本框中所包含数据的差别。 默认值为 <b>True</b> 。</param>
+        <param name="CompareFields">指定是否比较两个文档之间的差异域。 默认值为 <b>True</b> 。</param>
+        <param name="CompareComments">指定是否比较两个文档之间的差别在注释中。 默认值为 <b>True</b> 。</param>
         <param name="CompareMoves">指定原始文档作者的姓名。</param>
         <param name="OriginalAuthor">指定合并两个文档之后进行非属性化更改的人员的姓名。</param>
         <param name="RevisedAuthor">指定要保留其格式的文档。</param>
         <param name="FormatFrom">指定要保留其格式的文档。</param>
-        <summary>比较两个文档，并返回<see cref="T:Microsoft.Office.Interop.Word._Document" />对象，表示包含两个文档之间的差别的文档标记使用修订。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word._Document" />
-        </returns>
+        <summary>比较两个文档并返回<see cref="T:Microsoft.Office.Interop.Word._Document" />一个对象, 该对象表示包含两个文档之间的差异的文档 (使用修订进行了标记)。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word._Document" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3807,14 +3656,11 @@
         <Parameter Name="Millimeters" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Millimeters">
-          <b>必选。</b> 要转换为磅值的毫米值。</param>
+        <param name="Millimeters">必需<b>Single</b>。 要转换为磅值的毫米值。</param>
         <summary>将度量单位从毫米转换为磅 (1 毫米 = 2.85 磅)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此属性返回作为一个<b>单个</b>的转换后的度量值。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性返回转换后的度量值为<b>Single</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MountVolume">
@@ -3881,7 +3727,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否存在可用于系统鼠标。 如果没有可供系统和<b>False</b>如果不需要的鼠标，此属性返回<b>True</b> 。</summary>
+        <summary>确定是否有可用于系统的鼠标。 如果有适用于系统的鼠标, 则此属性返回<b>True</b> ; 如果不存在, 则返回<b>False</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3910,10 +3756,8 @@
         <Parameter Name="Top" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Left">
-          <b>必选。</b> 指定窗口的水平屏幕位置。</param>
-        <param name="Top">
-          <b>必选。</b> 指定窗口的垂直屏幕位置。</param>
+        <param name="Left">必需的<b>整数</b>。 指定窗口的水平屏幕位置。</param>
+        <param name="Top">必需的<b>整数</b>。 指定窗口的垂直屏幕位置。</param>
         <summary>设置任务窗口或活动文档窗口的位置。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3969,7 +3813,7 @@
         <ReturnType>Microsoft.Office.Core.NewFile</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Core.NewFile" />新建文档任务窗格上列出的值，该值代表文档的对象。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Core.NewFile" />对象, 表示在 "新建文档" 任务窗格上列出的文档。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3997,7 +3841,9 @@
       <Docs>
         <summary>使用与指定的窗口相同的文档打开一个新窗口。</summary>
         <returns>To be added.</returns>
-        <remarks>此方法将返回<para><see cref="T:Microsoft.Office.Interop.Word.Window" />对象。活动窗口中打开一个新窗口。</para><para>窗口标题中文档打开多个窗口时显示冒号 （:） 和一个数字。</para><para /></remarks>
+        <remarks><para>此方法返回一个<see cref="T:Microsoft.Office.Interop.Word.Window" />对象。 为活动窗口打开一个新窗口。</para>
+          <para>对同一文档打开多个窗口时，窗口标题中将出现一个冒号 (:) 和一个数字。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NextLetter">
@@ -4048,7 +3894,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Template</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Template" />对象，表示 Normal 模板。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Template" />代表 Normal 模板的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4076,7 +3922,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 NUM LOCK 键的状态。 如果数字键盘上的键如果注册表项移动插入点插入数字和<b>False</b> ，则返回<b>True</b> 。</summary>
+        <summary>返回 NUM LOCK 键的状态。 如果数字键盘上的键插入数字, 则返回<b>True</b> ; 如果键移动插入点, 则返回<b>False</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4104,10 +3950,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMathAutoCorrect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回自动正确的条目的公式。 只读。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrect" />
-        </value>
+        <summary>返回公式的自动更正条目。 只读。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrect" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4135,14 +3979,12 @@
         <Parameter Name="Tolerance" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="When">所需的<b>对象</b>。 运行宏的时间。 可以是一个字符串，指定时间 （例如，"4:30 pm"或"16:30"），也可以是由如<b>TimeValue</b>或<b>TimeSerial</b>函数返回一个序列号 (例如，TimeValue ("2:30 pm") 或 TimeSerial （14、 30、 00）)。 您还可以包括日期 (例如，"6 月 30 日下午 4:15"或 TimeValue ("6 月 30 日 4:15 pm"))。使用<b>Now</b>函数和<b>TimeValue</b>或<b>TimeSerial</b>函数的返回值的总和设置计时器运行宏指定运行该语句之后的时间量。 例如，使用 Now+TimeValue("00:05:30") 5 分钟和 30 秒后运行语句时运行宏。</param>
-        <param name="Name">必需的 <b>字符串</b> 。 要运行的宏的名称。 使用完整的宏路径以确保正确的宏将运行 （例如，"Project.Module1.Macro1"）。 对于要运行的宏，文档或模板可用，必须同时都<b>OnTime</b>指令运行时指定的时间<paramref name="When" />到达。 因此，最好 Normal.dot 或自动加载的另一个全局模板中存储宏。</param>
-        <param name="Tolerance">可选的<b>对象</b>。 未能在指定的时间运行的宏之前所经过的最长时间 （以秒为单位）<paramref name="When" />被取消。 宏不一定总在指定时间运行。 例如，如果正在进行排序操作，或者正在显示某一对话框，则宏将延迟到 Word 完成当前任务后才运行。 如果此参数为 0 （零） 或被省略，无论多少时间以来指定的时间运行该宏<paramref name="When" />。</param>
+        <param name="When">必需的<b>对象</b>。 运行宏的时间。 可以是指定时间的字符串 (例如, "4:30 pm" 或 "16:30"), 也可以是函数 (如<b>TimeValue</b>或<b>TimeSerial</b> ) 返回的序列号 (例如, TimeValue ("2:30 Pm") 或 TimeSerial (14, 30, 00))。 您还可以包括日期 (例如, "6/30 4:15 pm" 或 TimeValue ("6/30 4:15 pm"))。使用<b>Now</b>函数的返回值总和和<b>TimeValue</b>或<b>TimeSerial</b>函数设置计时器, 在语句运行后指定的一段时间运行宏。 例如，使用 Now+TimeValue("00:05:30") 可以使宏在语句运行后再过 5 分 30 秒运行。</param>
+        <param name="Name">必需的 <b>字符串</b> 。 要运行的宏的名称。 使用完整的宏路径以确保运行正确的宏 (例如, "Macro1")。 若要运行该宏, 文档或模板必须在<b>OnTime</b>指令运行时以及 " <paramref name="When" />到达时" 指定的时间可用。 因此, 最好将宏存储在 normal.dot 或另一个自动加载的全局模板中。</param>
+        <param name="Tolerance">可选<b>对象</b>。 在取消指定的时间之前<paramref name="When" />未运行的宏之前可以经过的最长时间 (以秒为单位)。 宏不一定总在指定时间运行。 例如，如果正在进行排序操作，或者正在显示某一对话框，则宏将延迟到 Word 完成当前任务后才运行。 如果此参数为 0 (零) 或被省略, 则无论自指定的时间以来经过了多长时间, 都会运行<paramref name="When" />宏。</param>
         <summary>启动在指定的时间运行宏的后台计时器。</summary>
-        <remarks>
-          <para>Microsoft Word 可以维护只有一个设置<b>OnTime</b>的后台计时器。如果您启动另一个计时器现有计时器运行之前，，取消现有计时器。</para>
-          <para />
-        </remarks>
+        <remarks><para>Microsoft Word 只能维护一个由<b>OnTime</b>设置的背景计时器。 如果在现有计时器运行之前，您可以启动另一个计时器，则取消现有计时器。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenAttachmentsInFullScreen">
@@ -4171,14 +4013,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Boolean</b>值，该值代表是否在 Microsoft Office Word 在阅读模式中打开电子邮件附件。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>此属性对应于 Word 选项对话框中的阅读模式复选框中的打开的电子邮件附件。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<b>Boolean</b>类型的值, 该值代表 Microsoft Office Word 是否在阅读模式下打开电子邮件附件。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>此属性对应于 "Word 选项" 对话框中的 "在读取模式下打开电子邮件附件" 复选框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Options">
@@ -4204,7 +4042,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Options</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Options" />对象，它代表 Microsoft Word 中的应用程序设置。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Options" />对象, 表示 Microsoft Word 中的应用程序设置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4238,7 +4076,7 @@
         <param name="Source">必需的 <b>字符串</b> 。 含有要复制的条目的文档或模板的名称。</param>
         <param name="Destination">必需的 <b>字符串</b> 。 要向其复制条目的文档或模板的名称。</param>
         <param name="Name">必需的 <b>字符串</b> 。 要复制的"自动图文集"词条、工具栏、样式或宏的名称。</param>
-        <param name="Object">所需<see cref="T:Microsoft.Office.Interop.Word.WdOrganizerObject" />。 要复制的项目的类型。</param>
+        <param name="Object">必需<see cref="T:Microsoft.Office.Interop.Word.WdOrganizerObject" />。 要复制的项目的类型。</param>
         <summary>将指定的"自动图文集"词条、工具栏、样式或宏方案项从源文档或模板中复制到目标文档或模板上。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4270,7 +4108,7 @@
       <Docs>
         <param name="Source">必需的 <b>字符串</b> 。 含有需要删除的条目的文档或模板的名称。</param>
         <param name="Name">必需的 <b>字符串</b> 。 要删除的样式、"自动图文集"词条、工具栏或宏的名称。</param>
-        <param name="Object">所需<see cref="T:Microsoft.Office.Interop.Word.WdOrganizerObject" />。 要复制的项目的类型。</param>
+        <param name="Object">必需<see cref="T:Microsoft.Office.Interop.Word.WdOrganizerObject" />。 要复制的项目的类型。</param>
         <summary>从文档或模板中删除指定的样式、"自动图文集"词条、工具栏或宏方案项。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4304,7 +4142,7 @@
         <param name="Source">必需的 <b>字符串</b> 。 含有需要重新命名的项目的文档或模板的名称。</param>
         <param name="Name">必需的 <b>字符串</b> 。 要重命名的样式、"自动图文集"词条、工具栏或宏的名称。</param>
         <param name="NewName">必需的 <b>字符串</b> 。 项目的新名称。</param>
-        <param name="Object">所需<see cref="T:Microsoft.Office.Interop.Word.WdOrganizerObject" />。 要复制的项目的类型。</param>
+        <param name="Object">必需<see cref="T:Microsoft.Office.Interop.Word.WdOrganizerObject" />。 要复制的项目的类型。</param>
         <summary>重新命名文档或模板中指定的样式、"自动图文集"词条、工具栏或宏方案项。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4362,12 +4200,10 @@
       <Docs>
         <summary>返回指定对象的磁盘或 Web 路径。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>路径中不包括尾随字符-例如，"C:\MSOffice"或"http://MyServer"。使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />属性添加文件夹和驱动器号的分隔符。使用<see cref="P:Microsoft.Office.Interop.Word._Application.Name" />属性返回的文件名不路径。</para>
+        <remarks><para>路径中不包括尾随字符   例如，"C:\MSOffice"或"http://MyServer"。 使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />属性添加用于分隔文件夹和驱动器号的字符。 使用<see cref="P:Microsoft.Office.Interop.Word._Application.Name" />属性返回不带路径的文件名。</para>
           <para>
-            <b>注意</b>： 可以使用<b>PathSeparator</b>属性建立 Web 地址，即使它们包含正斜杠 （/），<b>而 PathSeparator</b>属性默认反斜杠 (\)。</para>
-          <para />
-        </remarks>
+            <b>注意</b>: 可以使用<b>PathSeparator</b>属性来构建 Web 地址, 即使它们包含正斜杠 (/), 并且<b>PathSeparator</b>属性默认为反斜杠 (\)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PathSeparator">
@@ -4395,11 +4231,9 @@
       <Docs>
         <summary>返回用于分隔文件夹名称的字符。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回反斜杠 (\)。</para>
-          <para>您可以使用<b>PathSeparator</b>属性建立 Web 地址，即使它们包含正斜杠 （/）。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性返回一个反斜杠 (\)。</para>
+          <para>您可以使用 <b>PathSeparator</b> 属性来构建 Web 地址，即使它们包含正斜杠 (/)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PicasToPoints">
@@ -4425,14 +4259,11 @@
         <Parameter Name="Picas" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Picas">
-          <b>必选。</b> 要转换为磅值的十二点活字值。</param>
+        <param name="Picas">必需<b>Single</b>。 要转换为磅值的十二点活字值。</param>
         <summary>将从十二点活字度量转换为磅 (1 派卡 = 12 磅)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此属性返回作为一个<b>单个</b>的转换后的度量值。</para>
-          <para />
-        </remarks>
+        <remarks><para>此属性返回转换后的度量值为<b>Single</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PickerDialog">
@@ -4458,10 +4289,9 @@
         <ReturnType>Microsoft.Office.Core.PickerDialog</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Core.PickerDialog" />对象，它提供了功能，以选择对话框中的人员或数据。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.PickerDialog" />对象。</value>
-        <remarks>
-          <para>只读的。<see cref="T:Microsoft.Office.Core.PickerDialog" />对象是在 Microsoft Office 类型库中可用。有关详细信息，请参阅下列对象和及其成员：</para>
+        <summary>获取一个<see cref="T:Microsoft.Office.Core.PickerDialog" />对象, 该对象提供在对话框中选择人员或数据的功能。</summary>
+        <value><see cref="T:Microsoft.Office.Core.PickerDialog" /> 对象。</value>
+        <remarks><para>只读。 该<see cref="T:Microsoft.Office.Core.PickerDialog" />对象在 Microsoft Office 类型库中可用。 有关详细信息，请参阅下列对象和它们的成员:</para>
           <list type="number">
             <item>
               <description>
@@ -4499,8 +4329,7 @@
               </description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PixelsToPoints">
@@ -4526,15 +4355,12 @@
         <Parameter Name="fVertical" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Pixels">
-          <b>必选。</b> 要转换为磅值的像素值。</param>
-        <param name="fVertical">可选的<b>对象</b>。 <b>真</b> 要转换垂直像素; <b>False</b> 转换水平像素。</param>
+        <param name="Pixels">必需<b>Single</b>。 要转换为磅值的像素值。</param>
+        <param name="fVertical">可选<b>对象</b>。 <b>真</b> 要转换垂直像素; <b>False</b> 转换水平像素。</param>
         <summary>将度量单位从像素转换为磅。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>返回作为一个<b>单个</b>的转换后的度量值。</para>
-          <para />
-        </remarks>
+        <remarks><para>返回已转换为一个 <b>单一</b> 测量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToCentimeters">
@@ -4560,14 +4386,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>必选。</b> 以磅为单位的度量值。</param>
+        <param name="Points">必需<b>Single</b>。 以磅为单位的度量值。</param>
         <summary>将度量单位从磅转换为厘米 (1 厘米 = 28.35 磅)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回作为一个<b>单个</b>的转换后的度量值。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法将转换后的度量返回为<b>Single</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToInches">
@@ -4593,14 +4416,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>必选。</b> 以磅为单位的度量值。</param>
+        <param name="Points">必需<b>Single</b>。 以磅为单位的度量值。</param>
         <summary>将度量单位从磅转换为英寸 (1 英寸 = 72 磅)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回作为一个<b>单个</b>的转换后的度量值。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法将转换后的度量返回为<b>Single</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToLines">
@@ -4626,14 +4446,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>必选。</b> 以磅为单位的度量值。</param>
+        <param name="Points">必需<b>Single</b>。 以磅为单位的度量值。</param>
         <summary>将度量单位从磅转换为行 (1 行 = 12 磅)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回作为一个<b>单个</b>的转换后的度量值。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法将转换后的度量返回为<b>Single</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToMillimeters">
@@ -4659,14 +4476,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>必选。</b> 以磅为单位的度量值。</param>
+        <param name="Points">必需<b>Single</b>。 以磅为单位的度量值。</param>
         <summary>将度量单位从磅转换为毫米 (1 毫米 = 2.835 磅)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回作为一个<b>单个</b>的转换后的度量值。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法将转换后的度量返回为<b>Single</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToPicas">
@@ -4692,14 +4506,11 @@
         <Parameter Name="Points" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>必选。</b> 以磅为单位的度量值。</param>
+        <param name="Points">必需<b>Single</b>。 以磅为单位的度量值。</param>
         <summary>将度量单位从磅转换为十二点活字 (1 派卡 = 12 磅)。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回作为一个<b>单个</b>的转换后的度量值。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法将转换后的度量返回为<b>Single</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PointsToPixels">
@@ -4725,15 +4536,13 @@
         <Parameter Name="fVertical" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <b>必选。</b> 要转换为像素值的磅值。</param>
-        <param name="fVertical">可选的<b>对象</b>。 						如果该属性值为 <b>True</b>，则返回的结果是垂直像素值；如果该属性值为 <b>False</b>，则返回的结果是水平像素值。</param>
-        <summary>将度量单位从磅转换为像素。</summary>
+        <param name="Points">必需<b>Single</b>。 要转换为像素值的磅值。</param>
+        <param name="fVertical">可选<b>对象</b>。 
+						如果该属性值为 <b>True</b>，则返回的结果是垂直像素值；如果该属性值为 <b>False</b>，则返回的结果是水平像素值。</param>
+        <summary>将长度值的单位由磅转换为像素。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回作为一个<b>单个</b>的转换后的度量值。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法将转换后的度量返回为<b>Single</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PortraitFontNames">
@@ -4759,7 +4568,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FontNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.FontNames" />对象，其中包括所有有效纵向字体的名称。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.FontNames" />对象, 该对象包含所有可用的纵向字体的名称。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4804,26 +4613,26 @@
         <Parameter Name="PrintZoomPaperHeight" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Background">可选的<b>对象</b>。 设置为 <b>True</b> 以有 Microsoft Word 打印文档的同时继续该宏。</param>
-        <param name="Append">可选的<b>对象</b>。 设置为<b>True</b>以追加到指定的文件名称的指定的文档<paramref name="OutputFileName" />参数。 <b>False</b>可覆盖的内容<paramref name="OutputFileName" />。</param>
-        <param name="Range">可选的<b>对象</b>。 页面范围。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutRange" />常量。</param>
-        <param name="OutputFileName">可选的<b>对象</b>。 如果<paramref name="PrintToFile" />为<b>True</b>，此参数指定输出文件路径和文件名。</param>
-        <param name="From">可选的<b>对象</b>。 起始页码时<paramref name="Range" />设置为<b>wdPrintFromTo</b>。</param>
-        <param name="To">可选的<b>对象</b>。 结束页码时<paramref name="Range" />设置为<b>wdPrintFromTo</b>。</param>
-        <param name="Item">可选的<b>对象</b>。 要打印的项。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutItem" />常量。</param>
-        <param name="Copies">可选的<b>对象</b>。 要打印的份数。</param>
-        <param name="Pages">可选的<b>对象</b>。 要打印的页码和页码范围，中间用逗号分开。 例如，"2, 6-10"表示打印第 2 页以及第 6 至第 10 页。</param>
-        <param name="PageType">可选的<b>对象</b>。 要打印的页面类型。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutPages" />常量。</param>
-        <param name="PrintToFile">可选的<b>对象</b>。 <b>真</b> 要发送打印机说明文件。 请确保指定文件名<paramref name="OutputFileName" />。</param>
-        <param name="Collate">可选的<b>对象</b>。 在打印多份文档， <b>真</b> 要打印文档的所有页面后再打印下一份。</param>
-        <param name="FileName">可选的<b>对象</b>。 要打印的文档的路径和文件名称。 如果省略此参数，Word 将打印活动文档。</param>
-        <param name="ActivePrinterMacGX">可选的<b>对象</b>。 该参数仅适用于 Microsoft Office Macintosh Edition。 有关该参数的其他信息，请参阅 Microsoft Office Macintosh Edition 附带的语言参考帮助。</param>
-        <param name="ManualDuplexPrint">可选的<b>对象</b>。 <b>真</b> 要在无双面打印组件的打印机上打印双面文档。 如果该参数为<b>True</b>，<see cref="P:Microsoft.Office.Interop.Word.Options.PrintBackground" />和<see cref="P:Microsoft.Office.Interop.Word.Options.PrintReverse" />属性将被忽略。 使用<see cref="P:Microsoft.Office.Interop.Word.Options.PrintOddPagesInAscendingOrder" />和<see cref="P:Microsoft.Office.Interop.Word.Options.PrintEvenPagesInAscendingOrder" />属性控制在手动双面打印输出。 由于选择或安装的语言支持（如美国英语）不同，该参数可能不可用。</param>
-        <param name="PrintZoomColumn">可选的<b>对象</b>。 表示 Word 在一页纸上水平放置的页数。 可以是 1、2、3 或 4 页。 使用<paramref name="PrintZoomRow" />参数在张纸上打印多个页面。</param>
-        <param name="PrintZoomRow">可选的<b>对象</b>。 表示 Word 在一页纸上垂直放置的页数。 可以是 1、2 或 4 页。 使用<paramref name="PrintZoomColumn" />参数在张纸上打印多个页面。</param>
-        <param name="PrintZoomPaperWidth">可选的<b>对象</b>。 Word 将打印页面缩放到的宽度，以缇为单位（20 缇 = 1 磅；72 磅 = 1 英寸）。</param>
-        <param name="PrintZoomPaperHeight">可选的<b>对象</b>。 Word 将打印页面缩放到的高度，以缇为单位（20 缇 = 1 磅；72 磅 = 1 英寸）。</param>
-        <summary>打印指定文档的全部或部分内容。</summary>
+        <param name="Background">可选<b>对象</b>。 设置为 <b>True</b> 以有 Microsoft Word 打印文档的同时继续该宏。</param>
+        <param name="Append">可选<b>对象</b>。 设置为<b>True</b>以将指定的文档追加到由<paramref name="OutputFileName" />参数指定的文件名。 <b>如果为 False</b> , 则覆盖<paramref name="OutputFileName" />的内容。</param>
+        <param name="Range">可选<b>对象</b>。 页面范围。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutRange" />常量。</param>
+        <param name="OutputFileName">可选<b>对象</b>。 如果<paramref name="PrintToFile" />为<b>True</b>, 则此参数指定输出文件的路径和文件名。</param>
+        <param name="From">可选<b>对象</b>。 设置为<paramref name="Range" /> <b>wdPrintFromTo</b>时的起始页码。</param>
+        <param name="To">可选<b>对象</b>。 设置为<paramref name="Range" /> <b>wdPrintFromTo</b>时的结束页码。</param>
+        <param name="Item">可选<b>对象</b>。 要打印的项。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutItem" />常量。</param>
+        <param name="Copies">可选<b>对象</b>。 要打印的份数。</param>
+        <param name="Pages">可选<b>对象</b>。 要打印的页码和页码范围，中间用逗号分开。 例如，"2, 6-10"表示打印第 2 页以及第 6 至第 10 页。</param>
+        <param name="PageType">可选<b>对象</b>。 要打印的页面类型。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdPrintOutPages" />常量。</param>
+        <param name="PrintToFile">可选<b>对象</b>。 <b>真</b> 要发送打印机说明文件。 请确保使用<paramref name="OutputFileName" />指定的文件名。</param>
+        <param name="Collate">可选<b>对象</b>。 在打印多份文档， <b>真</b> 要打印文档的所有页面后再打印下一份。</param>
+        <param name="FileName">可选<b>对象</b>。 要打印的文档的路径和文件名称。 如果省略此参数，Word 将打印活动文档。</param>
+        <param name="ActivePrinterMacGX">可选<b>对象</b>。 该参数仅适用于 Microsoft Office Macintosh Edition。 有关该参数的其他信息，请参阅 Microsoft Office Macintosh Edition 附带的语言参考帮助。</param>
+        <param name="ManualDuplexPrint">可选<b>对象</b>。 <b>真</b> 要在无双面打印组件的打印机上打印双面文档。 如果此参数为<b>True</b>, 则<see cref="P:Microsoft.Office.Interop.Word.Options.PrintBackground" />忽略<see cref="P:Microsoft.Office.Interop.Word.Options.PrintReverse" />和属性。 使用<see cref="P:Microsoft.Office.Interop.Word.Options.PrintOddPagesInAscendingOrder" />和<see cref="P:Microsoft.Office.Interop.Word.Options.PrintEvenPagesInAscendingOrder" />属性可在手动双面打印期间控制输出。 根据您所选择或安装的语言支持（例如，美国英语），此参数可能不可用。</param>
+        <param name="PrintZoomColumn">可选<b>对象</b>。 表示 Word 在一页纸上水平放置的页数。 可以是 1、2、3 或 4 页。 使用<paramref name="PrintZoomRow" />参数在单张工作表上打印多个页面。</param>
+        <param name="PrintZoomRow">可选<b>对象</b>。 表示 Word 在一页纸上垂直放置的页数。 可以是 1、2 或 4 页。 使用<paramref name="PrintZoomColumn" />参数在单张工作表上打印多个页面。</param>
+        <param name="PrintZoomPaperWidth">可选<b>对象</b>。 Word 将打印页面缩放到的宽度，以缇为单位（20 缇 = 1 磅；72 磅 = 1 英寸）。</param>
+        <param name="PrintZoomPaperHeight">可选<b>对象</b>。 Word 将打印页面缩放到的高度，以缇为单位（20 缇 = 1 磅；72 磅 = 1 英寸）。</param>
+        <summary>打印全部或部分指定文档。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4889,7 +4698,7 @@
         <param name="PrintZoomRow">To be added.</param>
         <param name="PrintZoomPaperWidth">To be added.</param>
         <param name="PrintZoomPaperHeight">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。 </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4947,7 +4756,7 @@
         <param name="FileName">To be added.</param>
         <param name="ActivePrinterMacGX">To be added.</param>
         <param name="ManualDuplexPrint">To be added.</param>
-        <summary>仅供内部使用。</summary>
+        <summary>保留以供内部使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4977,7 +4786,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否打印预览是当前视图。 如果当前视图和<b>False</b>如果不是打印预览，此属性返回<b>True</b> 。</summary>
+        <summary>确定打印预览是否为当前视图。 如果打印预览是当前视图, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5031,12 +4840,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ProtectedViewWindows</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" />集合，代表所有受保护的视图窗口。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" />对象。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" />所有受保护的视图窗口的集合。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" /> 对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PutFocusInMailHeader">
@@ -5061,10 +4868,8 @@
       <Parameters />
       <Docs>
         <summary>如果活动窗口中的文档是电子邮件文档，则将插入点置于邮件标题的收件人行。</summary>
-        <remarks>
-          <para>为了获得最佳结果，使用将<b>PutFocusInMailHeader</b>方法与<see cref="P:Microsoft.Office.Interop.Word.Window.EnvelopeVisible" />属性。当<b>EnvelopeVisible</b>属性设置为<b>True</b>时，则<b>PutFocusInMailHeader</b>方法将邮件头中放置插入点。</para>
-          <para />
-        </remarks>
+        <remarks><para>为获得最佳结果, 请将<b>PutFocusInMailHeader</b>方法与<see cref="P:Microsoft.Office.Interop.Word.Window.EnvelopeVisible" />属性一起使用。 <b>EnvelopeVisible</b> 属性设置为 <b>True</b> ，当 <b>PutFocusInMailHeader</b> 方法将放置插入点在邮件标题。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Quit">
@@ -5091,9 +4896,9 @@
         <Parameter Name="RouteDocument" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="SaveChanges">可选的<b>对象</b>。 指定 Word 是否在退出之前保存更改的文档。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdSaveOptions" />常量。</param>
-        <param name="OriginalFormat">可选的<b>对象</b>。 指定方法 Word 保存文档的原始格式不是 Word 文档格式。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdOriginalFormat" />常量。</param>
-        <param name="RouteDocument">可选的<b>对象</b>。 <b>True</b> 将文档传送给下一个收件人。 如果文档没有附加的传送名单，则忽略此参数。</param>
+        <param name="SaveChanges">可选<b>对象</b>。 指定 Word 在退出前是否保存已更改的文档。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdSaveOptions" />常量之一。</param>
+        <param name="OriginalFormat">可选<b>对象</b>。 指定方法 Word 保存文档的原始格式不是 Word 文档格式。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdOriginalFormat" />常量之一。</param>
+        <param name="RouteDocument">可选<b>对象</b>。 <b>True</b> 将文档传送给下一个收件人。 如果文档没有附加的传送名单，则忽略此参数。</param>
         <summary>退出 Microsoft Word，并可选择保存或传送打开的文档。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5121,7 +4926,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.RecentFiles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.RecentFiles" />集合，代表最近访问过的文件。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.RecentFiles" />集合, 该集合代表最近访问过的文件。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5148,13 +4953,11 @@
         <Parameter Name="Times" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Times">可选的<b>对象</b>。 要重复上一个命令的次数。</param>
+        <param name="Times">可选<b>对象</b>。 要重复上一个命令的次数。</param>
         <summary>重复最近的编辑操作一个或更多的时间。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回<b>True</b>如果成功，重复命令和<b>False</b>如果不需要。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果命令重复成功, 则此方法返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetIgnoreAll">
@@ -5179,12 +4982,9 @@
       <Parameters />
       <Docs>
         <summary>在拼写检查时，取消以前的忽略词汇表。</summary>
-        <remarks>
-          <para>
-            <b>ResetIgnoreAll</b>方法，以使，首先必须设置<see cref="P:Microsoft.Office.Interop.Word._Document.SpellingChecked" />属性设为<b>False</b>。</para>
-          <para>运行此方法后，以及所有其他单词检查是否以前被忽略的单词。</para>
-          <para />
-        </remarks>
+        <remarks><para>为了使<b>ResetIgnoreAll</b>方法有效, 必须首先将该<see cref="P:Microsoft.Office.Interop.Word._Document.SpellingChecked" />属性设置为<b>False</b>。</para>
+          <para>运行此方法后，以前被忽略的词以及所有其他单词检查。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Resize">
@@ -5211,16 +5011,12 @@
         <Parameter Name="Height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Width">
-          <b>必选。</b> 窗口的宽度，以磅值为单位。</param>
-        <param name="Height">
-          <b>必选。</b> 窗口的高度，以磅值为单位。</param>
-        <summary>Microsoft Word 应用程序窗口或指定的任务窗口调整大小时。</summary>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.Width" />或<see cref="P:Microsoft.Office.Interop.Word._Application.Height" />属性可分别设置窗口的宽度和高度。</para>
-          <para>如果窗口处于最大化或最小化，将发生错误。</para>
-          <para />
-        </remarks>
+        <param name="Width">必需的<b>整数</b>。 窗口的宽度，以磅值为单位。</param>
+        <param name="Height">必需的<b>整数</b>。 窗口的高度，以磅值为单位。</param>
+        <summary>调整 Microsoft Word 应用程序窗口或指定任务窗口的大小。</summary>
+        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.Width" />或<see cref="P:Microsoft.Office.Interop.Word._Application.Height" />属性可单独设置窗口的宽度和高度。</para>
+          <para>如果窗口处于最大化或最小化，则会导致出错。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RestrictLinkedStyles">
@@ -5249,14 +5045,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Boolean</b>值，该值代表是否在 Microsoft Office Word 允许链接的样式。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>链接的样式是可以应用作为字符样式或段落样式。此属性对应于样式对话框中的禁用链接样式复选框。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<b>Boolean</b>类型的值, 该值表示 Microsoft Office Word 是否允许链接的样式。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>链接样式是可以作为字符样式或段落样式应用的样式。 此属性对应于 "样式" 对话框中的 "禁用链接样式" 复选框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -5311,43 +5103,41 @@
         <Parameter Name="varg30" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="MacroName">必需的 <b>字符串</b> 。 宏的名称。 可以是任意组合的模板、 模块和宏名称。如果指定了文档名，则您的代码只能运行与当前上下文相关的文档中的宏 — 任何文档中的只是没有任何宏。</param>
-        <param name="varg1">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg2">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg3">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg4">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg5">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg6">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg7">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg8">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg9">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg10">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg11">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg12">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg13">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg14">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg15">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg16">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg17">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg18">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg19">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg20">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg21">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg22">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg23">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg24">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg25">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg26">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg27">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg28">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg29">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
-        <param name="varg30">可选的<b>对象</b>。 宏参数值。 您可以将最多 30 个参数值传递给指定的宏。</param>
+        <param name="MacroName">必需的 <b>字符串</b> 。 宏的名称。 可以是模板、模块和宏名称的任意组合。如果指定文档名称, 则代码只能在与当前上下文相关的文档 (而不只是任何文档中的任何宏) 上运行宏。</param>
+        <param name="varg1">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg2">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg3">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg4">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg5">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg6">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg7">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg8">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg9">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg10">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg11">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg12">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg13">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg14">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg15">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg16">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg17">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg18">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg19">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg20">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg21">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg22">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg23">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg24">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg25">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg26">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg27">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg28">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg29">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
+        <param name="varg30">可选<b>对象</b>。 宏参数值。 最多可以给指定宏传递 30 个参数值。</param>
         <summary>运行 Visual Basic 宏。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>尽管您可以调用宏直接 （不使用<b>Run</b>方法），此方法很有用时存储在变量中宏的名称。</para>
-          <para />
-        </remarks>
+        <remarks><para>虽然您可以直接调用宏 (而不使用<b>Run</b>方法), 但当宏名称存储在变量中时, 此方法很有用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RunOld">
@@ -5403,12 +5193,10 @@
       <Parameters />
       <Docs>
         <summary>使用视频内存缓冲区的当前信息更新显示器的显示。</summary>
-        <remarks>
-          <para>您可以使用此方法使用后<see cref="P:Microsoft.Office.Interop.Word._Application.ScreenUpdating" />属性禁用屏幕更新。</para>
+        <remarks><para>可以在使用<see cref="P:Microsoft.Office.Interop.Word._Application.ScreenUpdating" />属性禁用屏幕更新之后使用此方法。</para>
           <para>
-            <b>ScreenRefresh</b>打开屏幕更新只有一个指令，然后将其立即将关闭。后续的说明不更新屏幕，直到屏幕更新打开再次使用<b>ScreenUpdating</b>属性。</para>
-          <para />
-        </remarks>
+            <b>ScreenRefresh</b> 打开屏幕更新只是一个指令，然后立即将其关闭。 后续指令不更新屏幕，直到屏幕更新再次打开的 <b>ScreenUpdating</b> 属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenUpdating">
@@ -5437,13 +5225,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否已打开屏幕更新。 返回<b>True</b> ，则打开屏幕更新和<b>False</b>如果不需要。</summary>
+        <summary>确定是否打开了屏幕更新。 如果打开屏幕更新, 则返回<b>True</b> , 否则返回<b>False</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ScreenUpdating</b>属性控制最过程运行时监视器上显示做的更改。打开屏幕更新后，工具栏仍可见和 Microsoft Word 仍允许显示或使用状态栏提示、 输入的框、 对话框和消息框检索信息的过程。您可以关闭屏幕更新 ケ 增加一些过程的速度。过程完成后，或在出错后停止时，您必须将<b>ScreenUpdating</b>属性设置为<b>True</b> 。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>ScreenUpdating</b> 属性控件最在某个过程正在运行时在显示器上显示更改。 当屏幕更新关闭时, 工具栏仍保持可见, Microsoft Word 仍允许过程使用状态栏提示、输入框、对话框和消息框显示或检索信息。 通过保持关闭屏幕更新，可以提高某些过程的速度。 当该过程完成后或者在出错后停止时，必须设置 <b>ScreenUpdating</b> 属性设 <b>为 True</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Selection">
@@ -5469,7 +5254,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Selection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象代表选定的范围或插入点。</summary>
+        <summary>返回代表<see cref="T:Microsoft.Office.Interop.Word.Selection" />选定区域或插入点的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5526,14 +5311,12 @@
         <Parameter Name="DocumentType" Type="Microsoft.Office.Interop.Word.WdDocumentMedium" />
       </Parameters>
       <Docs>
-        <param name="Name">必需的 <b>字符串</b> 。 由要指定为默认主题的主题名称加上任何要应用的主题格式选项组成。 此字符串的格式为"<paramref name="theme nnn" />"其中<paramref name="theme" />和<paramref name="nnn" />定义为包含的数据的请求的主题的文件夹如下所示： StringDescriptionthemeThe 名称。 （主题数据文件夹的默认位置为 C:\Program Files\Common Files\Microsoft 中显示的名称）。您必须使用主题的文件夹名称，而不是主题对话框框 （格式菜单中的主题命令）.nnnA 三个数字字符串指示的主题格式选项激活 (1 激活，0 停用) 中出现的显示名称。 数字对应于鲜艳颜色、 动态图形和主题对话框 （格式菜单中的主题命令） 中的背景图像复选框。 如果省略此字符串，则的默认值为<paramref name="nnn" />"011"（活动的图形和背景图像都被激活）。</param>
-        <param name="DocumentType">所需<see cref="T:Microsoft.Office.Interop.Word.WdDocumentMedium" />。 为其指定默认主题的新文档的类型。</param>
+        <param name="Name">必需的 <b>字符串</b> 。 由要指定为默认主题的主题名称加上任何要应用的主题格式选项组成。 此字符串的格式为 "<paramref name="theme nnn" />", <paramref name="theme" />并<paramref name="nnn" />按如下所示定义: StringDescriptionthemeThe 包含所请求主题的数据的文件夹的名称。 (主题数据文件夹的默认位置是 C:\Program Files\Common Files\Microsoft Shared\Themes.)必须使用主题的文件夹名称, 而不是显示在主题对话框 (主题命令, "格式" 菜单) 中的显示名称。 nnnA 三个数字字符串, 用于指示要激活的主题格式选项 (1 为激活, 0 表示停用)。 每个数字分别对应“主题”对话框（“格式”菜单中的“主题”命令）中的“鲜艳颜色”、“动态图形”和“背景图像”复选框。 如果省略此字符串, <paramref name="nnn" />则的默认值为 "011" (活动图形和背景图像将被激活)。</param>
+        <param name="DocumentType">必需<see cref="T:Microsoft.Office.Interop.Word.WdDocumentMedium" />。 为其指定默认主题的新文档的类型。</param>
         <summary>为 Microsoft Word 设置用于新文档、电子邮件或网页的默认主题。</summary>
-        <remarks>
-          <para>设置默认主题将应用于该主题时启动 Word 自动创建的空白文档。将对默认主题后创建的任何新文档。</para>
-          <para>您还可以使用<see cref="P:Microsoft.Office.Interop.Word.EmailOptions.ThemeName" />属性返回或设置新电子邮件的默认主题。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果设置了一个默认主题，则此主题将不用于启动 Word 时自动创建的空白文档。此后所创建的任何文档都将具有该默认主题。</para>
+          <para>您还可以使用<see cref="P:Microsoft.Office.Interop.Word.EmailOptions.ThemeName" />属性返回并设置新电子邮件的默认主题。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAnimation">
@@ -5613,11 +5396,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>当没有可用的详细信息，请显示 Office 助手或帮助窗口。</summary>
-        <remarks>
-          <para>如果其他信息不可用，则此方法将生成没有关联的帮助主题存在一条消息。</para>
-          <para />
-        </remarks>
+        <summary>当有更多可用信息时, 显示 Office 助手或帮助窗口。</summary>
+        <remarks><para>如果没有进一步的有效信息，该方法将显示一则信息以提示不存在相关“帮助”主题。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowStartupDialog">
@@ -5646,14 +5427,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定启动 Microsoft Word 时，是否将显示任务窗格。</summary>
+        <summary>确定启动 Microsoft Word 时是否显示任务窗格。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果将显示任务窗格中，启动 Word 和<b>False</b>如果不需要时此属性返回<b>True</b> 。</para>
-          <para>
-            <b>ShowStartupDialog</b>全局选项，且新设置将仅在重新启动 Word 后才会生效。使用<see cref="P:Microsoft.Office.Core.CommandBar.Visible" />属性来显示或隐藏任务窗格中，不需要重新启动 Word。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果启动 Word 时将显示任务窗格, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para><b>ShowStartupDialog</b>是一个全局选项, 只有在重新启动 Word 后, 新设置才会生效。 使用<see cref="P:Microsoft.Office.Core.CommandBar.Visible" />属性可以显示或隐藏任务窗格, 而无需重新启动 Word。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowStylePreviews">
@@ -5682,14 +5460,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Boolean</b>值，该值代表是否在 Microsoft Office Word 中显示样式对话框中的样式的格式的预览。 为可读/写属性。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>此属性对应于样式对话框中的显示预览复选框。</para>
-          <para />
-        </remarks>
+        <summary>返回或设置一个<b>Boolean</b>类型的值, 该值代表 Microsoft Office Word 是否在 "样式" 对话框中显示样式的格式预览。 读/写。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>此属性对应于 "样式" 对话框中的 "显示预览" 复选框。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowVisualBasicEditor">
@@ -5718,7 +5492,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定在 Visual Basic 编辑器窗口是否可见。 此属性返回<b>True</b>如果 Visual Basic 编辑器窗口可见，和<b>False</b>如果不需要。</summary>
+        <summary>确定 Visual Basic 编辑器窗口是否可见。 如果 "Visual Basic 编辑器" 窗口可见, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5783,12 +5557,10 @@
         <ReturnType>Microsoft.Office.Core.SmartArtColors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Core.SmartArtColors" />对象，表示当前加载的应用程序中的颜色样式集。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.SmartArtColors" />对象。</value>
-        <remarks>
-          <para>只读的。颜色由该属性设置对应于在 Word 2010 中的 SmartArt 工具上下文选项卡上的设计选项卡上的更改颜色按钮上的可用颜色样式。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Core.SmartArtColors" />对象, 该对象表示应用程序中当前加载的颜色样式集。</summary>
+        <value><see cref="T:Microsoft.Office.Core.SmartArtColors" /> 对象。</value>
+        <remarks><para>只读。 此属性表示的一组颜色与 Word 2010 中 "SmartArt 工具" 上下文选项卡上 "设计" 选项卡上的 "更改颜色" 按钮上的可用颜色样式相对应。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmartArtLayouts">
@@ -5814,12 +5586,10 @@
         <ReturnType>Microsoft.Office.Core.SmartArtLayouts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Core.SmartArtLayouts" />对象，表示当前加载的应用程序中的 SmartArt 布局的集。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.SmartArtLayouts" />对象。</value>
-        <remarks>
-          <para>只读的。一组由布局的<see cref="P:Microsoft.Office.Interop.Word._Application.SmartArtLayouts" />属性对应于 Word 2010 中的 SmartArt 工具上下文选项卡上的设计选项卡上的布局组中的可用布局。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Core.SmartArtLayouts" />对象, 表示当前在应用程序中加载的一组 SmartArt 布局。</summary>
+        <value><see cref="T:Microsoft.Office.Core.SmartArtLayouts" /> 对象。</value>
+        <remarks><para>只读。 由<see cref="P:Microsoft.Office.Interop.Word._Application.SmartArtLayouts" />属性表示的一组布局对应于 Word 2010 中的 "SmartArt 工具" 上下文选项卡上 "设计" 选项卡上的 "布局" 组中的可用布局。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmartArtQuickStyles">
@@ -5845,12 +5615,10 @@
         <ReturnType>Microsoft.Office.Core.SmartArtQuickStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Core.SmartArtQuickStyles" />对象，表示当前加载的应用程序中的 SmartArt 样式集。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.SmartArtQuickStyles" />对象。</value>
-        <remarks>
-          <para>只读的。由的样式集<see cref="P:Microsoft.Office.Interop.Word._Application.SmartArtQuickStyles" />属性对应于 Word 2010 中的 SmartArt 工具上下文选项卡上的设计选项卡上的样式组中的可用样式。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Core.SmartArtQuickStyles" />对象, 该对象表示应用程序中当前加载的 SmartArt 样式集。</summary>
+        <value><see cref="T:Microsoft.Office.Core.SmartArtQuickStyles" /> 对象。</value>
+        <remarks><para>只读。 <see cref="P:Microsoft.Office.Interop.Word._Application.SmartArtQuickStyles" />属性所代表的样式集对应于 Word 2010 中 "SmartArt 工具" 上下文选项卡上 "设计" 选项卡上的 "样式" 组中的可用样式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmartTagRecognizers">
@@ -5879,7 +5647,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagRecognizers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" />应用程序的集合。</summary>
+        <summary>返回应用<see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" />程序的集合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5910,12 +5678,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.SmartTagTypes" />的 Microsoft Word 中安装的智能标记组件类型的值，该值代表智能标记的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.SmartTagTypes" />集合, 该集合代表 Microsoft Word 中安装的智能标记组件的智能标记类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>智能标记类型是智能标记组件中的单个项。智能标记组件可以包含多个智能标记类型。例如，默认情况下安装英语系统上的地址 （英文） 智能标记列表包含名称智能标记类型、 街道智能标记类型，和市/县智能标记类型，以命名只通过几次。<see cref="T:Microsoft.Office.Interop.Word.SmartTagTypes" />集合包含用户的计算机上安装的所有组件的所有智能标记类型。</para>
-          <para />
-        </remarks>
+        <remarks><para>智能标记类型是智能标记组件中的单个项目。 智能标记组件可以包含多个智能标记类型。 例如，安装在英文系统上的 Address (English) 智能标记列表默认情况下包含 name 智能标记类型、street 智能标记类型和 city 智能标记类型，等等。 <see cref="T:Microsoft.Office.Interop.Word.SmartTagTypes" />集合包含在用户计算机上安装的所有组件的所有智能标记类型。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SpecialMode">
@@ -5941,13 +5707,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定 Microsoft Word 是否以特殊模式 （例如，复制文本模式或移动文本模式）。</summary>
+        <summary>确定 Microsoft Word 是否处于特殊模式 (例如, 处于某种模式或移动文本模式)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Word 是否处于特殊模式，并且<b>False</b>如果没有此属性返回<b>True</b> 。</para>
-          <para>Word 进入特殊的复制或移动模式如果选定文本时按 F2 或 SHIFT + F2。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果 Word 处于特殊模式, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para>在选定文本后，按 F2 或 Shift+F2，Word 将进入特殊的复制或移动模式。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StartupPath">
@@ -5978,10 +5742,8 @@
       <Docs>
         <summary>返回或设置不包括最后的分隔符的启动文件夹的完整路径。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>启动 Microsoft Word 时，会自动加载模板和加载项位于启动文件夹中。</para>
-          <para />
-        </remarks>
+        <remarks><para>启动 Microsoft Word 时, 将自动加载 "启动" 文件夹中的模板和加载项。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusBar">
@@ -6038,7 +5800,7 @@
       <Docs>
         <param name="UnavailableFont">必需的 <b>字符串</b> 。 在本计算机上无效的字体名称（因而您希望映射为其他字体以进行显示和打印输出）。</param>
         <param name="SubstituteFont">必需的 <b>字符串</b> 。 用于替换无效字体并在本计算机上有效的字体的名称。</param>
-        <summary>设置字体映射选项，反映在 theFont 替换对话框中兼容性选项卡、 选项对话框 （工具菜单）。</summary>
+        <summary>设置在 theFont 替换对话框 ("兼容性" 选项卡, "工具" 菜单) 中反映的字体映射选项。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -6070,8 +5832,8 @@
       </Parameters>
       <Docs>
         <param name="Word">必需的 <b>字符串</b> 。 指定的单词或短语。</param>
-        <param name="LanguageID">可选的<b>对象</b>。 用于同义词库的语言。 可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量 （尽管列出的常量的一些可能不可用，具体取决于您已选择或安装的语言支持 （例如，美国英语））。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" />对象包含同义词、 反义词或相关的单词和表达式指定的单词或短语的同义词库中的信息。</summary>
+        <param name="LanguageID">可选<b>对象</b>。 用于同义词库的语言。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一 (尽管列出的某些常量可能不可用, 具体取决于您选择或安装的语言支持 (例如, 美国英语)。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" />对象, 该对象包含同义词库中有关指定单词或短语的同义词、反义词或相关单词和表达的信息。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6099,7 +5861,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.System</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.System" />对象，可用于返回与系统相关的信息，并执行与系统相关的任务。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.System" />对象, 该对象可用于返回与系统相关的信息, 并执行与系统相关的任务。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6127,7 +5889,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TaskPanes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.TaskPanes" />对象，表示最常执行 Microsoft Word 中的任务。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.TaskPanes" />对象, 该对象代表 Microsoft Word 中最常执行的任务。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6155,7 +5917,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Tasks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Tasks" />代表所有正在运行的应用程序的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Tasks" />集合, 该集合代表所有正在运行的应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6183,7 +5945,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Templates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Templates" />集合，代表所有可用的模板 — 全局模板，以及那些附加到打开文档。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Templates" />集合, 该集合代表所有可用的模板, 包括共用模板和附加到打开文档的模板。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6276,7 +6038,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置活动文档的垂直位置，以磅为单位。</summary>
+        <summary>返回或设置活动文档的垂直位置 (以磅为单位)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6304,12 +6066,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.UndoRecord</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.UndoRecord" />提供撤消堆栈自定义的入口点的对象。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.UndoRecord" />对象。</value>
-        <remarks>
-          <para>只读的。使用<see cref="T:Microsoft.Office.Interop.Word.UndoRecord" />对象，以创建并修改在 Word 2010 撤消堆栈中的自定义撤消记录。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.UndoRecord" />对象, 该对象提供撤消堆栈的自定义入口点。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.UndoRecord" /> 对象。</value>
+        <remarks><para>只读。 使用<see cref="T:Microsoft.Office.Interop.Word.UndoRecord" />对象在 Word 2010 撤消堆栈中创建和修改自定义撤消记录。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UsableHeight">
@@ -6363,7 +6123,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回 Microsoft Word 文档窗口的宽度设置成的最大宽度 （以磅为单位）。</summary>
+        <summary>返回 Microsoft Word 文档窗口可设置的最大宽度（以磅为单位）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6396,10 +6156,8 @@
       <Docs>
         <summary>返回或设置用户的邮件地址。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>通讯地址用作上信封的寄信人地址。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用该通讯地址作为信封上的寄信人地址。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UserControl">
@@ -6425,13 +6183,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定文档或应用程序是否是创建或打开的用户。</summary>
+        <summary>确定文档或应用程序是由用户创建还是打开。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果文档或应用程序是创建或打开的用户，并为<b>False</b> ，如果创建或以编程方式打开文档或应用程序，此属性返回<b>True</b> 。</para>
-          <para>如果 Microsoft Word 是显示给用户，或者调用<b>UserControl</b>属性的<see cref="T:Microsoft.Office.Interop.Word.Application" />对象从在 Word 代码模块中，此属性将始终返回<b>True</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果文档或应用程序是由用户创建或打开的, 则此属性返回<b>True</b> , 如果以编程方式创建或打开文档或应用程序, 则返回<b>False</b> 。</para>
+          <para>如果 Microsoft Word 对用户可见, 或者从 Word 代码模块中调用<b></b> <see cref="T:Microsoft.Office.Interop.Word.Application" />对象的 UserControl 属性, 则该属性将始终返回<b>True</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UserInitials">
@@ -6491,7 +6247,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置用户的名称，用于信封和<b>作者</b>文档属性。</summary>
+        <summary>返回或设置用户的名称, 该名称用于信封和<b>作者</b>文档属性。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6578,12 +6334,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定指定的对象是否可见。 此属性返回<b>True</b>如果指定的对象是可见的和<b>False</b>如果不需要。</summary>
+        <summary>确定指定的对象是否可见。 如果指定的对象可见, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>对于任何对象，可能不可用，如果<b>Visible</b>属性为<b>false，则</b>某些方法和属性。</para>
-          <para />
-        </remarks>
+        <remarks><para>对于任何对象，某些方法和属性可能不可用，如果 <b>可见性</b> 属性为 <b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -6640,12 +6394,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Windows</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Windows" />集合，代表所有文档窗口。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Windows" />代表所有文档窗口的集合。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>该集合对应于窗口菜单的底部显示的窗口名称。</para>
-          <para />
-        </remarks>
+        <remarks><para>该集合对应于"窗口"菜单底部显示的窗口名称。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowState">
@@ -6676,11 +6428,8 @@
       <Docs>
         <summary>返回或设置指定文档窗口或任务窗口的状态。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>WdWindowStateNormal</b>常量指示没有最大化或最小化的窗口。无法设置非活动窗口的状态。使用<see cref="M:Microsoft.Office.Interop.Word.Window.Activate" />方法，以激活一个窗口之前设置窗口状态。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>WdWindowStateNormal</b> 常量表示未最大化或最小化的窗口。 无法设置不活动窗口的状态。 在<see cref="M:Microsoft.Office.Interop.Word.Window.Activate" />设置窗口状态之前, 使用方法激活窗口。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WordBasic">
@@ -6706,13 +6455,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 Microsoft Word 版本 6.0 和 Word for Windows 95 中包含的所有 WordBasic 语句和可用功能的方法的自动化对象 (Word.Basic)。</summary>
+        <summary>返回一个自动化对象 (Word Basic), 其中包括 Microsoft Word 版本6.0 和 Word for Windows 95 中提供的所有 WordBasic 语句和函数的方法。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>在 Word 2000 和更高版本，打开时的 Word 版本 6.0 或 Word for Windows 95 包含 WordBasic 宏的模板，则宏将自动转换为 Visual Basic 模块。每个 WordBasic 语句和宏中的函数将转换为相应的 Word.Basic 方法。</para>
-          <para>有关 WordBasic 语句和函数的信息，请参阅在 Word 6.0 版或 Word for Windows 95 的 WordBasic 帮助。</para>
-          <para />
-        </remarks>
+        <remarks><para>在 Word 2000 及其后续版本中，当打开一个包含 WordBasic 宏的 Word 6.0 或 Word for Windows 95 模板时，宏将自动转换为 VB 模块。宏内部的每个 WordBasic 语句和函数都转换为相应的 Word.Basic 方法。</para>
+          <para>有关 WordBasic 语句和函数的信息，请参阅 Word 6.0 或 Word for Windows 95 中的"WordBasic 帮助"。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XMLNamespaces">
@@ -6738,7 +6485,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNamespaces</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.XMLNamespaces" />代表架构库中的 XML 架构的集合。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XMLNamespaces" />集合, 该集合代表架构库中的 XML 架构。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

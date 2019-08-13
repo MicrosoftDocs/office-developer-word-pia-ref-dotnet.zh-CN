@@ -1,13 +1,5 @@
 <Type Name="Conflict" FullName="Microsoft.Office.Interop.Word.Conflict">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0b87b76ff93cbb3eea67868bd57964e4eb8e0287" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666520" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Conflict" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="21e74154c2475877e56ac3b4b4b6917cedd06347" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147205" /></Metadata><TypeSignature Language="C#" Value="public interface Conflict" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Conflict" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Conflict" />
   <TypeSignature Language="VB.NET" Value="Public Interface Conflict" />
@@ -26,10 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表共同创作文档中的冲突编辑。 键入的<see cref="T:Microsoft.Office.Interop.Word.Conflict" />指定对象<see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />枚举。</summary>
-    <remarks>
-      <para>通常，当启用共同创作文档同时编辑，只有一个共同作者可以一次编辑特定范围。Microsoft Word 2010 自动上放置锁范围共同作者开始编辑，以便其他共同作者同时不能编辑同一区域的时刻。</para>在启用共同创作文档中的特定范围同时编辑之前任何一个共同作者获取区域上的专用锁时，可能发生
-      <para>A 冲突。在冲突的情况下，它显示每个共同作者它们排除锁对该范围，但不是会将其锁定传递到其他共同作者。将保存到服务器的共同作者首先将不会看到冲突因为其版本的文档成为已建立的版本。尝试保存之后保存了第一个共同作者的共同作者会发生冲突。为不同版本的同一区域之间的冲突。</para><para>例如，如果一个共同作者同时编辑句子、"快速褐色 fox"读取"fast 红色 fox"，和另一个共同作者编辑读取，出现"快速白色 fox"和两个编辑之前任一共同创作上获取排除锁的句段落，发生冲突。在这种情况下，"快速红色"和"快速 white"无法协调通过 Word 2010。第一个共同作者可以将其版本的文档保存到服务器不会发生冲突。当尝试将其版本的文档保存到服务器的下一个共同作者时，发生冲突和共同创作必须选择解决冲突由接受或拒绝所做的更改。</para><para /></remarks>
+    <summary>代表共同创作的文档中的冲突编辑。 <see cref="T:Microsoft.Office.Interop.Word.Conflict" />对象的类型由<see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />枚举指定。</summary>
+    <remarks><para>通常，当多个作者同时编辑一个启用了共同创作的文档时，在同一时间只有一位共同作者可以编辑某个特定范围。 Microsoft Word 2010 会在共同作者开始编辑的时间范围内自动放置锁定, 以便其他共同作者无法同时编辑同一个区域。</para>
+      <para>如果启用了共同创作的文档中的特定范围在所有单个共同作者在该范围内获得独占锁定之前, 则会发生冲突。 在发生冲突的情况下, 它会显示给每个共同作者, 其范围为独占锁, 但其锁定不会传递给其他共同作者。 第一个将文档保存到服务器的共同作者将不会发现冲突，因为其文档版本为既定版本。 而在第一位共同作者已经保存文档之后，如果其他共同作者尝试保存文档，他们将遇到冲突。 该冲突是同一范围的不同版本之间的冲突。</para>
+      <para>例如, 如果一个共同作者编辑了句子 "quick 棕色 fox" 以读取 "quick red fox", 而另一个共同创作者同时编辑该句子以进行读取, 则 "fast 白色 fox", 并且这两种编辑都是在共同创作者在其上获取独占锁之前进行的。段落时, 将发生冲突。 在这种情况下, Word 2010 不会对 "fast red" 和 "飞速白字" 进行协调。 第一个将文档版本保存到服务器上的共同作者不会遇到冲突。 而当下一个共同作者尝试将其文档版本保存到服务器时，则会发生冲突，共同作者必须选择通过接受或拒绝更改来解决冲突。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Accept">
@@ -54,10 +47,8 @@
       <Parameters />
       <Docs>
         <summary>接受用户指定的冲突更改，删除冲突，并将更改合并到文档的服务器副本中。</summary>
-        <remarks>
-          <para>此方法接受冲突更改的用户版本，并拒绝冲突更改的服务器版本。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法接受冲突更改的用户版本, 并拒绝冲突更改的服务器版本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -83,13 +74,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.Application" /> Microsoft Word 应用程序的对象。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -115,14 +103,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个指示在其中创建指定的对象的应用程序的 32 位整数。</summary>
-        <value>指示在其中创建指定的对象的应用程序的 32 位整数。</value>
-        <remarks>
-          <para>只读的<b>long</b>。如果对象在 Microsoft Word 中创建的则此属性返回十六进制数字 4d535744，表示字符串"MSWD"。此属性主要旨在用于 Apple Macintosh 上，其中每个应用程序具有四个字符的创建者代码。例如，Word 具有 MSWD 的创建者代码。</para>
+        <summary>获取一个32位整数, 该整数指示在其中创建指定对象的应用程序。</summary>
+        <value>一个32位整数, 它指示在其中创建指定对象的应用程序。</value>
+        <remarks><para><b>Long 类型</b>, 只读。 如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
           <para>
-            <b>警告</b>： 此值也可以由常量<b>wdCreatorCode</b>。</para>
-          <para />
-        </remarks>
+            <b>警告</b>: 此值还可以由常量<b>wdcreatorcode 表示</b>表示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -148,7 +134,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，代表集合中的项目的位置。</summary>
+        <summary>返回一个值, 该值代表项目在集合中的位置。</summary>
         <value>返回<see cref="T:System.Int32" />。</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,9 +162,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:System.Object" />，表示指定的父对象<see cref="T:Microsoft.Office.Interop.Word.Conflict" />对象。</summary>
-        <value>
-          <see cref="T:System.Object" /> ，表示指定的父对象<see cref="T:Microsoft.Office.Interop.Word.Conflict" />对象。</value>
+        <summary>获取一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.Conflict" />对象的父对象的。</summary>
+        <value>一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.Conflict" />对象的父对象的。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,12 +190,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.Range" />对象，它代表指定对象中包含的文档部分。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 该对象代表指定对象中包含的文档部分。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示指定对象中包含的文档部分。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reject">
@@ -235,10 +218,8 @@
       <Parameters />
       <Docs>
         <summary>拒绝用户更改，删除冲突，并接受冲突更改的服务器版本。</summary>
-        <remarks>
-          <para>此方法拒绝冲突的用户版本，并接受服务器上的当前版本。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法拒绝冲突的用户版本, 并接受当前位于服务器上的版本。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -264,13 +245,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />的<see cref="T:Microsoft.Office.Interop.Word.Conflict" />对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />的<see cref="T:Microsoft.Office.Interop.Word.Conflict" />对象。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary><see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />获取<see cref="T:Microsoft.Office.Interop.Word.Conflict" />对象的。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> <see cref="T:Microsoft.Office.Interop.Word.Conflict" /></value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

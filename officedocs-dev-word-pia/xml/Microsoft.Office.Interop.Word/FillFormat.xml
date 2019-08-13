@@ -1,13 +1,5 @@
 <Type Name="FillFormat" FullName="Microsoft.Office.Interop.Word.FillFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3af31c574b589a1351974da01aa005e85e0d51af" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666137" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FillFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4807b5d76d632efebdfc8390e89b52ff7e61eae6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146869" /></Metadata><TypeSignature Language="C#" Value="public interface FillFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FillFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FillFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface FillFormat" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>代表形状的填充格式。形状可以有单色、渐变、纹理、图案、图片或半透明填充。</summary>
-    <remarks>
-      <para>使用的<b>填充</b>属性<see cref="T:Microsoft.Office.Interop.Word.Shape" />， <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />，或<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />返回<b>FillFormat</b>对象的对象。</para>
-      <para>许多<b>FillFormat</b>对象的属性是只读的。若要设置这些属性之一，您必须应用相应的方法。</para>
-      <para />
-    </remarks>
+    <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.Shape" />、 <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />或对象的<b>Fill</b>属性返回一个<b>FillFormat</b>对象。</para>
+      <para>许多 <b>对象</b> 的属性是只读的。 若要设置这些属性，必须应用相应的方法。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +75,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />对象，表示指定的填充或线条图案的背景色。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />对象, 表示指定的填充或带图案线条的背景色。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,9 +133,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -171,7 +161,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />对象，表示的填充前景色。</summary>
+        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />对象, 该对象代表填充的前景色。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,11 +193,9 @@
       </ReturnValue>
       <Docs>
         <summary>获取或设置指定的填充格式的渐变填充角度。</summary>
-        <value>指定的填充格式的渐变填充角度。</value>
-        <remarks>
-          <para>读/写。可以在图表中的各种元素 （形状） 的格式指定渐变填充。例如，可以使用数据系列格式对话框中为渐变填充柱形图列的格式设置。在这种情况下，此属性对应于数据系列格式对话框的角度框中填充类别的设置。此属性的值的有效范围是从零到 359.9。</para>
-          <para />
-        </remarks>
+        <value>指定填充格式的渐变填充角度。</value>
+        <remarks><para>读/写。 在图表中的各种元素 (形状) 的格式，可以指定渐变填充。 例如，可以使用 数据系列格式对话框中设置为渐变填充的 柱形 图中的列的格式。 在这种情况下, 该属性对应于 "数据系列格式" 对话框的 "填充" 类别中 "角度" 框的设置。 此属性的值的有效范围是从0到359.9。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientColorType">
@@ -235,10 +223,8 @@
       <Docs>
         <summary>返回指定填充的渐变颜色类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />， <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />，或<see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" />方法可设置填充的渐变类型。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />、 <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />或<see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" />方法设置填充的渐变类型。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientDegree">
@@ -266,11 +252,9 @@
       <Docs>
         <summary>返回一个值，该值指示单色渐变填充的深浅程度。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>值为 0 黑色混合使用形状的前景 （零） 表示颜色以形成渐变; 值为 1 表示的白色混合; 和值介于 0 和 1 的前景色深或变浅底纹混和英寸的平均值</para>
+        <remarks><para>0 表示黑色与图形前景色混色形成渐变；1 表示白色混色；介于 0 和 1 之间的值表示混入前景色偏深或偏白的阴影。</para>
           <para>使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />方法设置填充的渐变程度。</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientStops">
@@ -296,13 +280,10 @@
         <ReturnType>Microsoft.Office.Core.GradientStops</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Core.GradientStops" />指定的填充格式相关联的集合。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.GradientStops" />指定的填充格式相关联的集合。</value>
-        <remarks>
-          <para>读/写。渐变是从一种颜色状态平滑过渡到另一个。以下各节的终结点称为停止。您可以使用<b>超链接"ms help://AstroNS2/WINWORD。DEV/content/ms-help/HV10343554.htm"GradientStops.Insert</b>方法添加到指定的对象的<b>GradientStops</b>集合停止渐变。</para>
-          <para />
-        </remarks>
+        <summary>获取与<see cref="T:Microsoft.Office.Core.GradientStops" />指定的填充格式相关联的集合。</summary>
+        <value>与<see cref="T:Microsoft.Office.Core.GradientStops" />指定的填充格式相关联的集合。</value>
+        <remarks><para>读/写。 渐变是指从一种颜色状态到另一种颜色状态的平缓过渡。 这些部分的端点称为光圈。 您可以使用<b>超链接 "ms-帮助://AstroNS2/WINWORD。DEV/content/ms-help/HV10343554.htm</b>用于将梯度停止点添加到指定对象的<b>GradientStops</b>集合的 GradientStops 方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientStyle">
@@ -330,11 +311,9 @@
       <Docs>
         <summary>返回指定填充的渐变样式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />或<see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" />方法设置填充的渐变样式。</para>
-          <para>试图返回此属性的没有渐变填充将生成一个错误。使用<see cref="P:Microsoft.Office.Interop.Word.FillFormat.Type" />属性可以确定是否填充具有渐变。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> or <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" />方法可设置填充的渐变样式。</para>
+          <para>尝试对未使用渐变的填充返回此属性将生成错误。 使用<see cref="P:Microsoft.Office.Interop.Word.FillFormat.Type" />属性来确定填充是否具有渐变。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientVariant">
@@ -362,11 +341,9 @@
       <Docs>
         <summary>返回指定填充的渐变变量，对于大多数渐变填充，其返回值为从 1 到 4 的整数。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果渐变样式为<b>msoGradientFromCenter</b>，此属性将返回 1 或 2。此属性的值对应于填充效果对话框中过渡选项卡上的渐变变量 （从左到右，从上到下编号）。</para>
-          <para>此属性是只读的。使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />或<see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" />方法设置填充的渐变变形。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果渐变样式为 <b>msoGradientFromCenter</b>，则该属性返回 1 或 2。 此属性的值对应于填充效果对话框中渐变选项卡上的渐变变量 (按从左到右和从上到下的顺序编号)。</para>
+          <para>此属性是只读的。 使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> or <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" />方法可设置填充的渐变变量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OneColorGradient">
@@ -394,11 +371,9 @@
         <Parameter Name="Degree" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Style">所需<see cref="T:Microsoft.Office.Core.MsoGradientStyle" />。 渐变样式。</param>
-        <param name="Variant">
-          <b>必选。</b> 渐变变量。 可以是从 1 到 4，对应于 填充效果对话框中 渐变选项卡上的四个变量的值。 如果<paramref name="Style" />是<b>msoGradientFromCenter</b>，此参数可以是 1 或 2。</param>
-        <param name="Degree">
-          <b>必选。</b> 渐变深度。 值的范围从 0.0（深）到 1.0（浅）。</param>
+        <param name="Style">必需<see cref="T:Microsoft.Office.Core.MsoGradientStyle" />。 渐变样式。</param>
+        <param name="Variant">必需的<b>整数</b>。 渐变变量。 可以是从 1 到 4，对应于 填充效果对话框中 渐变选项卡上的四个变量的值。 如果<paramref name="Style" />为<b>整数</b>, 则此参数可以是1或2。</param>
+        <param name="Degree">必需<b>Single</b>。 渐变深度。 值的范围从 0.0（深）到 1.0（浅）。</param>
         <summary>将指定填充设置为单色渐变。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -454,13 +429,11 @@
         <ReturnType>Microsoft.Office.Core.MsoPatternType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，代表应用于指定填充的图案。</summary>
+        <summary>返回一个值, 该值代表应用于指定填充的图案。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您还可以使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" />方法设置填充的图案。</para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" />和<see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" />属性设置在图案中使用的颜色。</para>
-          <para />
-        </remarks>
+        <remarks><para>您还可以使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" />方法设置填充的图案。</para>
+          <para>使用<see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" />和<see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" />属性设置模式中使用的颜色。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Patterned">
@@ -486,12 +459,10 @@
         <Parameter Name="Pattern" Type="Microsoft.Office.Core.MsoPatternType" />
       </Parameters>
       <Docs>
-        <param name="Pattern">所需<see cref="T:Microsoft.Office.Core.MsoPatternType" />。 用于指定填充方式的图案。</param>
+        <param name="Pattern">必需<see cref="T:Microsoft.Office.Core.MsoPatternType" />。 用于指定填充方式的图案。</param>
         <summary>将指定填充设置为一种图案。</summary>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" />和<see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" />属性设置在图案中使用的颜色。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" />和<see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" />属性设置模式中使用的颜色。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureEffects">
@@ -517,12 +488,10 @@
         <ReturnType>Microsoft.Office.Core.PictureEffects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Core.PictureEffects" />对象的可用于将图片效果应用于指定的填充格式。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.PictureEffects" />对象的可用于将图片效果应用于指定的填充格式。</value>
-        <remarks>
-          <para>只读的。使用<see cref="M:Microsoft.Office.Core.PictureEffects.Insert" />方法<see cref="T:Microsoft.Office.Core.PictureEffects" />对象应用图片效果。<b>插入</b>采用<see cref="T:Microsoft.Office.Core.MsoPictureEffectType" />作为参数来指定要应用的图片效果的哪些类型的枚举常量。</para>
-          <para />
-        </remarks>
+        <summary>获取一个<see cref="T:Microsoft.Office.Core.PictureEffects" />对象, 该对象可用于将图片效果应用于指定的填充格式。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Core.PictureEffects" />可用于将图片效果应用于指定的填充格式的对象。</value>
+        <remarks><para>只读。 使用<see cref="T:Microsoft.Office.Core.PictureEffects" />对象<see cref="M:Microsoft.Office.Core.PictureEffects.Insert" />的方法应用图片效果。 <b>Insert</b>获取一个<see cref="T:Microsoft.Office.Core.MsoPictureEffectType" />枚举常量作为参数, 以指定要应用的图片效果的类型。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetGradient">
@@ -550,10 +519,9 @@
         <Parameter Name="PresetGradientType" Type="Microsoft.Office.Core.MsoPresetGradientType" />
       </Parameters>
       <Docs>
-        <param name="Style">所需<see cref="T:Microsoft.Office.Core.MsoGradientStyle" />。 渐变样式。</param>
-        <param name="Variant">
-          <b>必选。</b> 渐变变量。 可以是从 1 到 4，对应于 填充效果对话框中 渐变选项卡上的四个变量的值。 如果<paramref name="Style" />是<b>msoGradientFromCenter</b>，此参数可以是 1 或 2。</param>
-        <param name="PresetGradientType">所需<see cref="T:Microsoft.Office.Core.MsoPresetGradientType" />。 渐变类型。</param>
+        <param name="Style">必需<see cref="T:Microsoft.Office.Core.MsoGradientStyle" />。 渐变样式。</param>
+        <param name="Variant">必需的<b>整数</b>。 渐变变量。 可以是从 1 到 4，对应于 填充效果对话框中 渐变选项卡上的四个变量的值。 如果<paramref name="Style" />为<b>整数</b>, 则此参数可以是1或2。</param>
+        <param name="PresetGradientType">必需<see cref="T:Microsoft.Office.Core.MsoPresetGradientType" />。 渐变类型。</param>
         <summary>将指定填充设置为一个预设的渐变。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -583,10 +551,8 @@
       <Docs>
         <summary>返回指定填充的预设渐变类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />方法设置填充的预设渐变类型。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />方法设置填充的预设渐变类型。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetTexture">
@@ -614,10 +580,8 @@
       <Docs>
         <summary>返回指定填充的预设纹理。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" />方法可指定填充的预设的纹理。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" />方法指定填充的预设纹理。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetTextured">
@@ -643,7 +607,7 @@
         <Parameter Name="PresetTexture" Type="Microsoft.Office.Core.MsoPresetTexture" />
       </Parameters>
       <Docs>
-        <param name="PresetTexture">所需<see cref="T:Microsoft.Office.Core.MsoPresetTexture" />。 预设纹理。</param>
+        <param name="PresetTexture">必需<see cref="T:Microsoft.Office.Core.MsoPresetTexture" />。 预设纹理。</param>
         <summary>将指定填充设置为预设纹理。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -674,10 +638,9 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置是否与指定形状的填充旋转。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.MsoTriState" />对象。</value>
-        <remarks>
-          <para>读/写。此属性返回的值可以是之一<see cref="T:Microsoft.Office.Core.MsoTriState" />下表中列出的常量。</para>
+        <summary>获取或设置填充是否随指定的形状旋转。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /> 对象。</value>
+        <remarks><para>读/写。 此属性返回的值可以是下表中列出<see cref="T:Microsoft.Office.Core.MsoTriState" />的常量之一。</para>
           <list type="table">
             <item>
               <description>
@@ -689,12 +652,11 @@
               <description>
                 <b>msoTrue</b>
               </description>
-              <description>与形状的填充旋转。</description>
+              <description>填充与形状一起旋转。</description>
             </item>
           </list>
-          <para>此属性设置对应于与填充窗格上的 Microsoft Word 2010 用户界面中格式图片对话框中的形状框一起旋转的设置 （在绘图工具下格式选项卡上，在形状样式组中，单击形状格式。）</para>
-          <para />
-        </remarks>
+          <para>该属性的设置对应于 Microsoft Word 2010 用户界面中 "设置图片格式" 对话框 (在 "绘图工具" 下的 "格式" 选项卡上, 在 "形状样式" 组中, 单击 "设置形状格式") 的 "填充" 窗格上的 "用形状旋转形状框" 的设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Solid">
@@ -748,10 +710,9 @@
         <ReturnType>Microsoft.Office.Core.MsoTextureAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置的对齐方式 （坐标网格的原点） 平铺纹理填充。</summary>
-        <value>对齐方式 （坐标网格的原点） 用于平铺纹理填充。</value>
-        <remarks>
-          <para>读/写。此属性返回的值可以是以下项之一<see cref="T:Microsoft.Office.Core.MsoTextureAlignment" />常量：</para>
+        <summary>获取或设置用于平铺纹理填充的对齐方式 (坐标网格的原点)。</summary>
+        <value>用于拼贴纹理填充的对齐方式 (坐标网格的原点)。</value>
+        <remarks><para>读/写。 此属性返回的值可以是下列<see cref="T:Microsoft.Office.Core.MsoTextureAlignment" />常量之一:</para>
           <list type="bullet">
             <item>
               <para>
@@ -799,9 +760,8 @@
               </para>
             </item>
           </list>
-          <para>此属性设置对应于填充窗格上的平铺选项下的格式图片的对齐框的设置在 Microsoft Word 用户界面中的对话框 （在绘图工具下格式选项卡中，展开形状样式组。）</para>
-          <para />
-        </remarks>
+          <para>该属性的设置对应于 Microsoft Word 用户界面中 "设置图片格式" 对话框 (在 "绘图工具" 下的 "格式" 选项卡上, 展开 "形状样式" 组) 的 "填充" 窗格上 "平铺选项" 下的对齐框的设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureHorizontalScale">
@@ -830,12 +790,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置一个值，指定纹理填充的水平缩放系数。</summary>
-        <value>指定水平缩放纹理填充因子。</value>
-        <remarks>
-          <para>读/写。此属性设置对应于 Microsoft Word 用户界面中格式图片对话框的缩放 X 框在平铺填充窗格上的选项下的设置 （在绘图工具下格式选项卡中，展开形状样式组。）</para>
-          <para />
-        </remarks>
+        <summary>获取或设置一个值, 该值指定纹理填充的水平缩放比例因子。</summary>
+        <value>指定纹理填充的水平缩放比例因子。</value>
+        <remarks><para>读/写。 该属性的设置对应于 Microsoft Word 用户界面中 "设置图片格式" 对话框 (在 "绘图工具" 下的 "格式" 选项卡上, 展开 "形状样式" 组) 的 "填充" 窗格上 "平铺选项" 下的 "缩放 X" 框的设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureName">
@@ -863,10 +821,8 @@
       <Docs>
         <summary>返回指定填充的自定义纹理文件的名称。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" />方法可设置填充的纹理文件。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" />方法设置填充的纹理文件。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureOffsetX">
@@ -895,13 +851,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置一个值，以磅为单位指定的纹理从原点的水平偏移量。</summary>
-        <value>以磅为单位指定的纹理从原点的水平偏移量。</value>
-        <remarks>
-          <para>读/写。原点位置由的设置<see cref="P:Microsoft.Office.interop.Word.FillFormat.TextureAlignment" />属性。</para>
-          <para>此属性设置对应于 Microsoft Word 用户界面中的格式图片对话框的偏移量 X 框在平铺填充窗格上的选项下的设置 （在绘图工具下格式选项卡中，展开形状样式组。）</para>
-          <para />
-        </remarks>
+        <summary>获取或设置一个值, 该值指定纹理距原点的水平偏移量 (以磅为单位)。</summary>
+        <value>指定纹理距原点的水平偏移量 (以磅为单位)。</value>
+        <remarks><para>读/写。 原点的位置由<see cref="P:Microsoft.Office.interop.Word.FillFormat.TextureAlignment" />属性的设置确定。</para>
+          <para>该属性的设置对应于 Microsoft Word 用户界面中 "设置图片格式" 对话框 (在 "绘图工具" 下的 "格式" 选项卡上, 展开 "形状样式" 组) 的 "填充" 窗格上 "平铺选项" 下的 "偏移量 X" 框的设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureOffsetY">
@@ -930,13 +884,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置一个值，以磅为单位指定的垂直偏移量从原点的纹理。</summary>
-        <value>以磅为单位指定的垂直偏移量从原点的纹理。</value>
-        <remarks>
-          <para>读/写。原点位置由的设置<see cref="P:Microsoft.Office.Interop.Word.FillFormat.TextureAlignment" />属性。</para>
-          <para>设置此属性对应于 Microsoft Word 用户界面中的格式图片对话框的偏移量 Y 框在平铺填充窗格上的选项下的设置 （在绘图工具下格式选项卡中，展开形状样式组。）</para>
-          <para />
-        </remarks>
+        <summary>获取或设置一个值, 该值指定纹理距原点的垂直偏移量 (以磅为单位)。</summary>
+        <value>指定纹理距原点的垂直偏移量 (以磅为单位)。</value>
+        <remarks><para>读/写。 原点的位置由<see cref="P:Microsoft.Office.Interop.Word.FillFormat.TextureAlignment" />属性的设置确定。</para>
+          <para>该属性的设置对应于 Microsoft Word 用户界面中 "设置图片格式" 对话框 (在 "绘图工具" 下的 "格式" 选项卡上, 展开 "形状样式" 组) 的 "填充" 窗格上 "平铺选项" 下的 "偏移 Y" 框的设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureTile">
@@ -965,10 +917,9 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置是否纹理填充平铺或居中。</summary>
-        <value>A<see cref="T:Microsoft.Office.Core.MsoTriState" />对象。</value>
-        <remarks>
-          <para>读/写。此属性返回的值可以是之一<see cref="T:Microsoft.Office.Core.MsoTriState" />下表中所述的常量。</para>
+        <summary>获取或设置纹理填充是平铺还是居中。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /> 对象。</value>
+        <remarks><para>读/写。 此属性返回的值可以是下表中所<see cref="T:Microsoft.Office.Core.MsoTriState" />述的常量之一。</para>
           <list type="table">
             <item>
               <description>
@@ -983,9 +934,8 @@
               <description>纹理填充平铺。</description>
             </item>
           </list>
-          <para>此属性设置对应于平铺图片的设置为纹理框在平铺填充窗格上的选项下的 Microsoft Word 用户界面中的格式图片对话框 （在绘图工具下格式选项卡中，展开形状样式组。）</para>
-          <para />
-        </remarks>
+          <para>该属性的设置对应于 Microsoft Word 用户界面中 "设置图片格式" 对话框 (在 "绘图工具" 下的 "格式" 选项卡上, 展开 "形状样式" 组) 的 "平铺选项" 下的 "平铺选项" 下的平铺图片的设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureType">
@@ -1013,10 +963,8 @@
       <Docs>
         <summary>返回指定填充的纹理类型。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" />， <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" />，或<see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" />方法可设置填充的纹理类型。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" />、 <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" />或<see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" />方法设置填充的纹理类型。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureVerticalScale">
@@ -1045,12 +993,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置一个值，指定纹理填充的垂直缩放系数。</summary>
-        <value>指定纹理填充的垂直缩放系数。</value>
-        <remarks>
-          <para>读/写。此属性设置对应于 Microsoft Word 用户界面中格式图片对话框的缩放 Y 框在平铺填充窗格上的选项下的设置 （在绘图工具下格式选项卡中，展开形状样式组。）</para>
-          <para />
-        </remarks>
+        <summary>获取或设置一个值, 该值指定纹理填充的垂直缩放比例因子。</summary>
+        <value>指定纹理填充的垂直比例因子。</value>
+        <remarks><para>读/写。 该属性的设置对应于 Microsoft Word 用户界面中 "设置图片格式" 对话框 (在 "绘图工具" 下的 "格式" 选项卡上, 展开 "形状样式" 组) 的 "填充" 窗格上 "平铺选项" 下的 "缩放 Y" 框的设置。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Transparency">
@@ -1079,12 +1025,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定填充的透明度 0.0 （透明） 到 1.0 （清除） 之间的值。</summary>
+        <summary>返回或设置指定的填充的透明度为 0.0 (不透明) 到 1.0 (透明) 之间的值。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性的值影响纯色填充和线条仅; 的外观它不影响的带图案线条或图案、 渐变、 纹理的填充的外观。</para>
-          <para />
-        </remarks>
+        <remarks><para>该属性的值只影响纯色填充和线条的外观。它对带图案的线条的外观或图案、渐变、图片或纹理填充不起作用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TwoColorGradient">
@@ -1111,9 +1055,8 @@
         <Parameter Name="Variant" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Style">所需<see cref="T:Microsoft.Office.Core.MsoGradientStyle" />。 渐变样式。</param>
-        <param name="Variant">
-          <b>必选。</b> 渐变变量。 可以是从 1 到 4，对应于 填充效果对话框中 渐变选项卡上的四个变量的值。 如果<paramref name="Style" />是<b>msoGradientFromCenter</b>，此参数可以是 1 或 2。</param>
+        <param name="Style">必需<see cref="T:Microsoft.Office.Core.MsoGradientStyle" />。 渐变样式。</param>
+        <param name="Variant">必需的<b>整数</b>。 渐变变量。 可以是从 1 到 4，对应于 填充效果对话框中 渐变选项卡上的四个变量的值。 如果<paramref name="Style" />为<b>整数</b>, 则此参数可以是1或2。</param>
         <summary>将指定填充设置为双色渐变。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1170,11 +1113,9 @@
       </Parameters>
       <Docs>
         <param name="PictureFile">必需的 <b>字符串</b> 。 图片文件名。</param>
-        <summary>用一个大图像填充指定形状。</summary>
-        <remarks>
-          <para>如果您想要使用的图像的小拼贴填充形状，使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" />方法。</para>
-          <para />
-        </remarks>
+        <summary>用一张大图像填充指定形状。</summary>
+        <remarks><para>如果要使用图像的小图块填充形状, 请使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UserTextured">
@@ -1202,10 +1143,8 @@
       <Docs>
         <param name="TextureFile">必需的 <b>字符串</b> 。 图片文件名。</param>
         <summary>用一张图像的平铺形式填充指定形状。</summary>
-        <remarks>
-          <para>如果要用一张大图像来填充形状，使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果要使用一个大图像填充形状, 请使用<see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -1236,10 +1175,8 @@
       <Docs>
         <summary>如果指定的对象或应用的格式，，是可见的 <b>则返回 true</b> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>某些方法和属性可能不可用，如果<b>Visible</b>属性为<b>False</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>某些方法和属性可能不可用如果 <b>可见性</b> 属性为 <b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

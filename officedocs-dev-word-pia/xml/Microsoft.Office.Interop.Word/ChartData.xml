@@ -1,13 +1,5 @@
 <Type Name="ChartData" FullName="Microsoft.Office.Interop.Word.ChartData">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e54b6ef3e865f4d45416239e0540b97861b4eefc" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667237" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartData" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="20de20835218a229a3e2ed120eb0d1a884f4bd73" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147228" /></Metadata><TypeSignature Language="C#" Value="public interface ChartData" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartData" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartData" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartData" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>代表对与图表关联的链接或嵌入数据的访问。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Chart.ChartData" />属性返回<see cref="T:Microsoft.Office.Interop.Word.ChartData" />对象。</para>
-      <para />
-    </remarks>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Chart.ChartData" />属性返回<see cref="T:Microsoft.Office.Interop.Word.ChartData" />对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -55,12 +45,10 @@
       <Parameters />
       <Docs>
         <summary>激活与图表相关联的工作簿的第一个窗口。</summary>
-        <remarks>
-          <para>如果图表已链接到 Microsoft Excel 工作簿，此方法不会运行可能附加在工作簿的任何 Auto_Activate 或 Auto_Deactivate 宏 (使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />方法可运行这些宏)。</para>
+        <remarks><para>如果图表链接到 Microsoft Excel 工作簿, 则此方法不会运行任何可能附加到该工作簿的 Auto_Activate 或 Auto_Deactivate 宏 (使用<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />方法运行这些宏)。</para>
           <para>
-            <b>注意</b>： 必须在引用之前调用此方法<see cref="P:Microsoft.Office.Interop.Word.ChartData.Workbook" />属性。</para>
-          <para />
-        </remarks>
+            <b>注意</b>: 在引用该<see cref="P:Microsoft.Office.Interop.Word.ChartData.Workbook" />属性之前, 必须先调用此方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivateChartDataWindow">
@@ -84,13 +72,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>打开包含完整的源数据指定图表的 Excel 数据网格窗口。</summary>
-        <remarks>
-          <para>数据网格窗口已经打开，如果此方法不起作用。</para>
-          <para>
-            <b>ActivateChartDataWindow</b>方法与<see cref="M:Microsoft.Office.Interop.Word.ChartData.Activate" />方法，前者在 Word 中的 Excel 窗口中打开图表与 Excel 功能区不可用，而后者与功能区可打开 Excel，完整版本。</para>
-          <para />
-        </remarks>
+        <summary>打开一个 Excel 数据网格窗口, 其中包含指定图表的完整源数据。</summary>
+        <remarks><para>如果 "数据网格" 窗口已打开, 则此方法不起作用。</para>
+          <para><b>ActivateChartDataWindow</b>方法与<see cref="M:Microsoft.Office.Interop.Word.ChartData.Activate" />方法的不同之处在于, 前者在 Word 中的 excel 窗口中打开图表, excel 功能区不可用, 而后者打开 excel 的完整版本, 并且功能区可用。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BreakLink">
@@ -115,10 +100,8 @@
       <Parameters />
       <Docs>
         <summary>删除图表数据与 Microsoft Excel 工作簿之间的链接。</summary>
-        <remarks>
-          <para>调用此方法设置<see cref="P:Microsoft.Office.Interop.Word.ChartData.IsLinked" />属性<see cref="T:Microsoft.Office.Interop.Word.ChartData" />对象为<b>False</b>。</para>
-          <para />
-        </remarks>
+        <remarks><para>调用此方法会将<see cref="P:Microsoft.Office.Interop.Word.ChartData.IsLinked" /> <see cref="T:Microsoft.Office.Interop.Word.ChartData" />对象的属性设置为<b>False</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLinked">
@@ -144,15 +127,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>如此</b> 如果图表的数据链接到 Microsoft Excel 工作簿的外部。 只读。</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.ChartData.BreakLink" />方法，以删除的链接指向 Microsoft Excel 工作簿将此属性设置为<b>False</b>。</para>
-          <para />
-        </remarks>
+        <summary><b>如此</b> 如果图表的数据链接到 Microsoft Excel 工作簿的外部。 只读。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.ChartData.BreakLink" />方法删除指向 Microsoft Excel 工作簿的链接会将该属性设置为<b>False</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Workbook">
@@ -178,15 +156,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回包含图表数据与图表关联的工作簿。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
-        <remarks>
-          <para>
-            <b>注意</b>：<see cref="M:Microsoft.Office.Interop.Word.ChartData.Activate" />引用该属性; 之前，必须调用方法否则，将发生错误。</para>
-          <para />
-        </remarks>
+        <summary>返回包含与图表相关联的图表数据的工作簿。 只读。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>
+            <b>注意</b>: 在<see cref="M:Microsoft.Office.Interop.Word.ChartData.Activate" />引用此属性之前, 必须先调用方法;否则, 将发生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
