@@ -1,13 +1,5 @@
 <Type Name="ProtectedViewWindow" FullName="Microsoft.Office.Interop.Word.ProtectedViewWindow">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a0b10fae72100482f87072b069313a91b2fb8237" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665573" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4e9a73a1e5de8d6f70be3b028707aba12dd7e7a1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147723" /></Metadata><TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProtectedViewWindow" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />
   <TypeSignature Language="VB.NET" Value="Public Interface ProtectedViewWindow" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>代表受保护的视图窗口。</summary>
-    <remarks>
-      <para>受保护的视图窗口中显示的文档不能编辑，并禁止它们运行活动内容，如宏和数据连接。</para>
-      <para />
-    </remarks>
+    <remarks><para>不能编辑受保护的视图窗口中显示的文档, 并且无法运行活动内容, 如宏和数据连接。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -81,12 +71,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取是否指定受保护的视图窗口处于活动状态。</summary>
-        <value>如果为<b>true</b>指定受保护的视图窗口处于活动状态;否则为<b>false</b>。</value>
-        <remarks>
-          <para>只读的布尔值。</para>
-          <para />
-        </remarks>
+        <summary>获取指定的受保护的视图窗口是否处于活动状态。</summary>
+        <value>如果指定的受保护的视图窗口处于活动状态, 则为<b>true</b> ;否则<b>为 false</b>。</value>
+        <remarks><para>只读 Boolean 类型。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -112,13 +100,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Word 应用程序的对象。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.Application" /> Microsoft Word 应用程序的对象。</summary>
+        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Word 应用程序的对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -147,12 +132,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置文档的标题栏中显示或受保护的视图窗口的标题文本。</summary>
-        <value>文档或受保护的视图窗口的标题栏中显示的标题文本。</value>
-        <remarks>
-          <para>读/写 string 类型。要将受保护的视图窗口的标题更改为默认文本，请将此属性设置为空字符串 ("")。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置显示在 "文档" 或 "受保护的视图" 窗口的标题栏中的标题文本。</summary>
+        <value>显示在 "文档" 或 "受保护的视图" 窗口的标题栏中的标题文本。</value>
+        <remarks><para>读/写字符串。 若要将受保护的视图窗口的标题更改为默认文本，请将该属性设置为空字符串 ("")。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -203,12 +186,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个指示在其中创建指定的对象的应用程序的 32 位整数。</summary>
-        <value>指示在其中创建指定的对象的应用程序的 32 位整数。</value>
-        <remarks>
-          <para>只读的<b>long</b>。如果对象在 Microsoft Word 中创建的则此属性返回十六进制数字 4d535744，表示字符串"MSWD"。此属性主要旨在用于 Apple Macintosh 上，其中每个应用程序具有四个字符的创建者代码。例如，Word 有 MSWD 的创建者代码。</para>
-          <para />
-        </remarks>
+        <summary>获取一个32位整数, 该整数指示在其中创建指定对象的应用程序。</summary>
+        <value>一个32位整数, 它指示在其中创建指定对象的应用程序。</value>
+        <remarks><para><b>Long 类型</b>, 只读。 如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -234,12 +215,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.Document" />对象的受保护的视图窗口相关联。</summary>
-        <value>A<see cref="T:Microsoft.Office.Interop.Word.Document" />对象的受保护的视图窗口相关联。</value>
-        <remarks>
-          <para>只读的。</para>
-          <para />
-        </remarks>
+        <summary>获取与<see cref="T:Microsoft.Office.Interop.Word.Document" />受保护的视图窗口关联的对象。</summary>
+        <value>与<see cref="T:Microsoft.Office.Interop.Word.Document" />受保护的视图窗口关联的对象。</value>
+        <remarks><para>只读。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Edit">
@@ -269,12 +248,10 @@
         <param name="PasswordTemplate">打开模板时所需的密码。</param>
         <param name="WritePasswordDocument">用于保存文档更改的密码。</param>
         <param name="WritePasswordTemplate">用于保存模板更改的密码。</param>
-        <summary>打开编辑指定受保护的视图窗口。</summary>
-        <returns>A<see cref="T:Microsoft.Office.Interop.Word.Document" />对象。</returns>
-        <remarks>
-          <para>避免使用应用程序中的硬编码的密码。如果过程中需要密码，用户请求该密码、 将其存储在变量，然后在代码中使用该变量。</para>
-          <para />
-        </remarks>
+        <summary>打开指定的 "受保护的视图" 窗口进行编辑。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Document" /> 对象。</returns>
+        <remarks><para>避免在应用程序中使用硬编码的密码。 如果过程中需要密码, 请从用户处请求密码, 将其存储在变量中, 然后在代码中使用该变量。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -304,11 +281,9 @@
       </ReturnValue>
       <Docs>
         <summary>获取或设置受保护的视图窗口的高度。</summary>
-        <value>受保护的视图窗口的高度。</value>
-        <remarks>
-          <para>读/写<b>长</b>。如果窗口处于最大化或最小化，不能设置此属性。使用<b>Application</b>对象的 UsableHeight 属性来确定窗口的最大大小。<b>WindowState</b>属性用于确定窗口状态。</para>
-          <para />
-        </remarks>
+        <value>"受保护的视图" 窗口的高度。</value>
+        <remarks><para>读/写<b>long</b>。 如果在窗口处于最大化或最小化时，不能设置此属性。 使用 应用程序 对象的 <b>UsableHeight</b> 属性来确定窗口的最大大小。 使用 <b>WindowState</b> 属性来确定窗口状态。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -334,7 +309,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值，代表集合中的项目的位置。</summary>
+        <summary>返回一个值, 该值代表项目在集合中的位置。</summary>
         <value>返回<see cref="T:System.Int32" />。</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -365,12 +340,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置一个值，以磅为单位值，该值代表指定受保护的视图窗口的水平位置。</summary>
-        <value>以磅为单位的指定受保护的视图窗口的水平位置。</value>
-        <remarks>
-          <para>读/写。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置一个值, 以磅为单位, 表示指定的受保护的视图窗口的水平位置。</summary>
+        <value>指定的受保护的视图窗口的水平位置 (以磅为单位)。</value>
+        <remarks><para>读/写。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -396,9 +369,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:System.Object" />，表示指定的父对象<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />对象。</summary>
-        <value>
-          <see cref="T:System.Object" /> ，表示指定的父对象<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />对象。</value>
+        <summary>获取一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />对象的父对象的。</summary>
+        <value>一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" />对象的父对象的。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -425,12 +397,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取指定受保护的视图窗口的源文件的名称。</summary>
+        <summary>获取指定的受保护的视图窗口的源文件的名称。</summary>
         <value>指定受保护的视图窗口的源文件的名称。</value>
-        <remarks>
-          <para>只读的字符串。此属性不返回源文件的路径。</para>
-          <para />
-        </remarks>
+        <remarks><para>只读 String 即字符串类型。 该属性不返回源文件的路径。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourcePath">
@@ -458,10 +428,8 @@
       <Docs>
         <summary>获取指定的受保护的视图窗口的源文件的路径。</summary>
         <value>指定受保护的视图窗口的源文件的路径。</value>
-        <remarks>
-          <para>只读的字符串。路径不包括尾随字符 (例如，"C:\MSOffice")。使用<see cref="P:Microsoft.Office.Interop.Word.ProtectedViewWindow.PathSeparator" />属性添加文件夹和驱动器号的分隔符。使用<see cref="P:Microsoft.Office.Interop.Word.ProtectedViewWindow.SourceName" />属性返回不带路径的文件名。</para>
-          <para />
-        </remarks>
+        <remarks><para>只读 String 即字符串类型。 路径不包含结尾字符（例如，“C:\MSOffice”）。 使用<see cref="P:Microsoft.Office.Interop.Word.ProtectedViewWindow.PathSeparator" />属性添加用于分隔文件夹和驱动器号的字符。 使用<see cref="P:Microsoft.Office.Interop.Word.ProtectedViewWindow.SourceName" />属性返回不带路径的文件名。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToggleRibbon">
@@ -486,10 +454,8 @@
       <Parameters />
       <Docs>
         <summary>显示或隐藏功能区。</summary>
-        <remarks>
-          <para>如果功能区可见，则此方法隐藏如果功能区隐藏，则此方法将显示它。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果功能区可见, 此方法将隐藏它;如果功能区处于隐藏状态, 则此方法显示该功能区。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -518,12 +484,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置的垂直位置，以磅为单位指定受保护的视图窗口。</summary>
-        <value>以磅为单位指定受保护的视图窗口的垂直位置。</value>
-        <remarks>
-          <para>读/写<b>长</b>。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置指定的受保护的视图窗口的垂直位置 (以磅为单位)。</summary>
+        <value>指定的受保护的视图窗口的垂直位置 (以磅为单位)。</value>
+        <remarks><para>读/写<b>long</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -552,12 +516,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置指定的受保护的视图窗口是否可见。</summary>
-        <value>如果为<b>true</b>指定受保护的视图窗口是可见，则否则为<b>false</b>。</value>
-        <remarks>
-          <para>读/写 boolean 类型的值。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置是否显示指定的受保护的视图窗口。</summary>
+        <value>如果指定的受保护的视图窗口是可见的, 则为<b>true</b> ;否则<b>为 false</b>。</value>
+        <remarks><para>读/写布尔。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -586,12 +548,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置的宽度，以磅为单位指定受保护的视图窗口。</summary>
-        <value>以磅为单位指定受保护的视图窗口的宽度。</value>
-        <remarks>
-          <para>读/写<b>长</b>。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置指定的受保护的视图窗口的宽度 (以磅为单位)。</summary>
+        <value>指定的 "受保护的视图" 窗口的宽度 (以磅为单位)。</value>
+        <remarks><para>读/写<b>long</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowState">
@@ -620,12 +580,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置指定受保护的视图窗口的状态。</summary>
-        <value>指定受保护的视图窗口的状态。</value>
-        <remarks>
-          <para>读/写。<b>WdWindowStateNormal</b>常量指示没有最大化或最小化的窗口。无法设置非活动窗口的状态。使用<see cref="M:Microsoft.Office.Interop.Word.ProtectedViewWindow.Activate" />方法，以激活一个窗口之前设置窗口状态。</para>
-          <para />
-        </remarks>
+        <summary>获取或设置指定的受保护的视图窗口的状态。</summary>
+        <value>指定的 "受保护的视图" 窗口的状态。</value>
+        <remarks><para>读/写。 <b>WdWindowStateNormal</b> 常量表示未最大化或最小化的窗口。 无法设置不活动窗口的状态。 在<see cref="M:Microsoft.Office.Interop.Word.ProtectedViewWindow.Activate" />设置窗口状态之前, 使用方法激活窗口。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

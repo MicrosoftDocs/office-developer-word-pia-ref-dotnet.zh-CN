@@ -1,13 +1,5 @@
 <Type Name="GroupShapes" FullName="Microsoft.Office.Interop.Word.GroupShapes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5afad17fa25d53e9102518b0c3d3e09a72fa53bd" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666763" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0be8e003f7a4f84b8581f6749296fd54551f5d79" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148014" /></Metadata><TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract GroupShapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.GroupShapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface GroupShapes&#xA;Implements IEnumerable" />
@@ -31,9 +23,9 @@
   </Attributes>
   <Docs>
     <summary>代表组合形状中的单个形状。</summary>
-    <remarks>
-      <para>每个形状由<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象。使用<see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" />方法与此对象，您可以使用组合中的单个形状而不必取消组合。</para>使用
-      <para><see cref="P:Microsoft.Office.Interop.Word.Shape.GroupItems" />属性可返回<b>GroupShapes</b>集合。使用<b>GroupItems</b>(<paramref name="index" />)，其中<paramref name="index" />是组合形状，以从<b>GroupShapes</b>集合中返回的单个形状中的单个形状数。</para><para /></remarks>
+    <remarks><para>每个形状由一个<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象表示。 将<see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" />方法与此对象一起使用时, 可以使用组合中的单个形状, 而无需对其进行取消组合。</para>
+      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.GroupItems" />属性返回<b>GroupShapes</b>集合。 使用<b>GroupItems</b>(<paramref name="index" />) (其中<paramref name="index" />是组合形状中的单个形状的编号), 从<b>GroupShapes</b>集合中返回单个形状。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +79,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,9 +109,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -180,8 +172,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>对象</b>，它指示的序号位置或一个字符串，表示单个对象的名称。</param>
+        <param name="Index">一个指示序号位置的<b>对象</b>, 或表示单个对象的名称的字符串。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -238,15 +229,13 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 指定要包含在指定范围中的形状。 可以是指定的索引中的形状数的整数<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合、 一个字符串，指定形状的名称或<b>对象</b>包含整数或字符串数组。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象。</summary>
+        <param name="Index">必需的<b>对象</b>。 指定要包含在指定范围中的形状。 可以是一个整数, 用于指定形状在<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合中的索引号、指定形状名称的字符串或包含整数或字符串的<b>对象</b>数组。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>ShapeRange</b>对象不包括<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。<b>InlineShape</b>对象等效字符，并且位于作为字符的文本范围内。<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象定位到范围的文本 （所选内容，默认情况下），但可以位于页面上的任意位置。<b>Shape</b>对象将始终显示在定位到的区域位于同一页。</para>
-          <para>大多数操作，您可以处理<b>Shape</b>对象您还可以与一个包含单个形状的<b>ShapeRange</b>对象执行。某些操作，在包含多个形状的<b>ShapeRange</b>对象执行时产生错误。</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>ShapeRange</b>对象不包含<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。 <b>InlineShape</b> 对象等效于一个字符，并定位为一个文本范围内的一个字符。 <see cref="T:Microsoft.Office.Interop.Word.Shape" />对象定位到文本区域 (默认情况下为选定内容), 但它们可以放置在页面上的任何位置。 <b>Shape</b>对象将始终显示在其锁定的区域所在的同一页上。</para>
+          <para>[!注释] 与 <b>形状</b> 对象可以执行的大多数操作还可以执行与一个 <b>ShapeRange</b> 对象，该对象包含一个形状。某些操作，一个 <b>ShapeRange</b> 对象，该对象包含多个形状，在执行时产生错误。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

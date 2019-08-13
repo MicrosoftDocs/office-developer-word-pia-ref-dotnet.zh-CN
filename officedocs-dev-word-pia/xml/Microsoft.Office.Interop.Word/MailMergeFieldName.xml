@@ -1,13 +1,5 @@
 <Type Name="MailMergeFieldName" FullName="Microsoft.Office.Interop.Word.MailMergeFieldName">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="17a0081b8837d936e44189872bd9579df6529bc8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665827" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeFieldName" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b4c0158d84ccca477189a42554fd7e06a18f8c96" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147891" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeFieldName" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeFieldName" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeFieldName" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeFieldName" />
@@ -26,14 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表数据源中的邮件合并字段名称。</summary>
-    <remarks>
-      <para>
-        <b>MailMergeFieldName</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.MailMergeFieldNames" />集合。<b>MailMergeFieldNames</b>集合包括邮件合并数据源中的所有数据字段的名称。</para>
-      <para>使用<b>FieldNames</b>(<paramref name="index" />)，其中<paramref name="index" />是返回单个<b>MailMergeFieldName</b>对象的索引号。索引号代表邮件合并数据源中的字段的位置。</para>
-      <para>您不能将字段添加到<b>MailMergeFieldNames</b>集合。<b>MailMergeFieldNames</b>集合中将自动包含数据源中的字段名。</para>
-      <para />
-    </remarks>
+    <summary>代表数据源中的一个邮件合并域名称。</summary>
+    <remarks><para><b>MailMergeFieldName</b>对象是<see cref="T:Microsoft.Office.Interop.Word.MailMergeFieldNames" />集合的一个成员。 <b>MailMergeFieldNames</b> 包含邮件合并数据源中的所有数据域名称。</para>
+      <para>使用<b>FieldNames</b>(<paramref name="index" />) (其中<paramref name="index" />是索引号) 返回单个<b>MailMergeFieldName</b>对象。 索引号代表域在邮件合并数据源中的位置。</para>
+      <para>不能在 <b>MailMergeFieldNames</b> 集合中添加域。 数据源中的域名会自动包含在 <b>MailMergeFieldNames</b> 集合中。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,9 +78,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -117,7 +106,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>值，该值代表集合中的项目的位置。</summary>
+        <summary>返回一个<b>Integer</b>类型的值, 该值代表项目在集合中的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

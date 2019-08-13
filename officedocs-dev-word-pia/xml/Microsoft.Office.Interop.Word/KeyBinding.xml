@@ -1,13 +1,5 @@
 <Type Name="KeyBinding" FullName="Microsoft.Office.Interop.Word.KeyBinding">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fc64b4fc8db5345fc3e67c15c1eeed23c8027af5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666864" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface KeyBinding" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="df71ed001e9153c7b8aaaebf2ea2bd7c4f797a38" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147947" /></Metadata><TypeSignature Language="C#" Value="public interface KeyBinding" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract KeyBinding" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.KeyBinding" />
   <TypeSignature Language="VB.NET" Value="Public Interface KeyBinding" />
@@ -27,13 +19,10 @@
   </Attributes>
   <Docs>
     <summary>表示当前上下文中的自定义键盘布局。</summary>
-    <remarks>
-      <para>
-        <b>KeyBinding</b>对象所在的<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />集合。在自定义键盘对话框中进行自定义按键分配方案。</para>
-      <para>使用<b>KeyBindings</b>(<paramref name="index" />)，其中<paramref name="index" />是返回单个<b>KeyBinding</b>对象的索引号。</para>
-      <para>还可以使用<see cref="P:Microsoft.Office.Interop.Word._Application.FindKey(System.Int32,System.Object@)" />属性和<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Key(System.Int32,System.Object@)" />方法返回<b>KeyBinding</b>对象。</para>
-      <para />
-    </remarks>
+    <remarks><para><b>KeyBinding</b>对象是<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />集合的一个成员。 在自定义键盘对话框中进行自定义按键分配方案。</para>
+      <para>使用<b>键绑定</b>(<paramref name="index" />) (其中<paramref name="index" />是索引号) 返回单个<b>KeyBinding</b>对象。</para>
+      <para>您还可以使用<see cref="P:Microsoft.Office.Interop.Word._Application.FindKey(System.Int32,System.Object@)" />属性和<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Key(System.Int32,System.Object@)" />方法返回一个<b>KeyBinding</b>对象。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +74,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>删除键绑定从<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />集合并将内置命令重置为其默认按键分配方案。</summary>
+        <summary>从<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />集合中删除键绑定, 并将内置命令重置为其默认的键分配方案。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,10 +131,8 @@
       <Docs>
         <summary>返回分配给指定的快捷键的命令参数。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>有关采用参数的命令的信息，请参阅<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />方法<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />对象。使用<see cref="P:Microsoft.Office.Interop.Word.KeyBinding.Command" />属性返回分配给指定的快捷键的命令名称。</para>
-          <para />
-        </remarks>
+        <remarks><para>有关接受参数的命令的信息, 请参阅<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />对象的方法。 使用<see cref="P:Microsoft.Office.Interop.Word.KeyBinding.Command" />属性返回分配给指定快捷键的命令名称。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -171,12 +158,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 object 值，该值代表指定的键绑定的存储位置。 此属性可返回<see cref="T:Microsoft.Office.Interop.Word.Document" />， <see cref="T:Microsoft.Office.Interop.Word.Template" />，或<see cref="T:Microsoft.Office.Interop.Word.Application" />对象。</summary>
+        <summary>返回一个对象, 表示指定键绑定的存储位置。 此属性可以返回<see cref="T:Microsoft.Office.Interop.Word.Document" />、 <see cref="T:Microsoft.Office.Interop.Word.Template" />或<see cref="T:Microsoft.Office.Interop.Word.Application" />对象。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>内置的按键分配方案 （例如，CTRL + I 为<b>斜体</b>） 作为上下文返回<b>Application</b>对象。您将添加任何键绑定将返回<b>Document</b>或<b>Template</b>对象，具体取决于自定义上下文生效时<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象已添加。</para>
-          <para />
-        </remarks>
+        <remarks><para>内置键分配方案（例如，将 Ctrl+I 分配给 <b>Italic</b>）将以上下文形式返回 <b>Application</b> 对象。 您添加的任何键绑定将返回<b>文档</b>或<b>模板</b>对象, 具体取决于添加<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象时生效的自定义上下文。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -204,9 +189,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Disable">
@@ -230,10 +215,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>删除指定的组合键，如果它当前分配给命令。</summary>
-        <remarks>
-          <para>使用此方法后，该组合键不起作用。使用此方法等效于单击删除按钮 （工具菜单） 中的自定义键盘对话框中。</para>使用
-          <para><see cref="M:Microsoft.Office.Interop.Word.KeyBinding.Clear" />方法与<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象将内置命令重置为其默认按键分配方案。您无需删除或其他位置添加之前 rebind <b>KeyBinding</b>对象。</para><para /></remarks>
+        <summary>如果指定的组合键当前已分配给某个命令, 则删除该组合键。</summary>
+        <remarks><para>使用该方法后，组合键将不再起作用。 使用此方法等效于单击 "自定义键盘" 对话框 ("工具" 菜单) 中的 "删除" 按钮。</para>
+          <para>将<see cref="M:Microsoft.Office.Interop.Word.KeyBinding.Clear" />方法与<see cref="T:Microsoft.Office.Interop.Word.KeyBinding" />对象一起使用, 可将内置命令重置为其默认的键分配方案。 您不需要删除或添加其他地方之前重新绑定一个 <b>KeyBinding</b> 对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -314,10 +299,8 @@
       <Docs>
         <summary>返回指定键绑定中第一个项的唯一编号。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>您创建此号码使用<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" />方法时正在使用中添加键绑定<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />方法<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>通过使用<see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />对象的方法添加键绑定时, 可以使用方法创建此编号。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyCode2">
@@ -427,13 +410,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>如果您无法更改自定义键盘对话框中指定的键绑定 （从工具菜单中，单击自定义，然后单击键盘按钮）。</summary>
+        <summary><b>如此</b>如果您无法在 "自定义键盘" 对话框中更改指定的键绑定 (从 "工具" 菜单中, 单击 "自定义", 然后单击 "键盘" 按钮)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />方法<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />要添加的受保护状态无论键绑定对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />对象<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />的方法添加键绑定, 而不考虑受保护的状态。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rebind">
@@ -460,9 +440,9 @@
         <Parameter Name="CommandParameter" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCategory">所需<see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />。 指定组合键的键类别。</param>
+        <param name="KeyCategory">必需<see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />。 指定组合键的键类别。</param>
         <param name="Command">必需的 <b>字符串</b> 。 指定命令的名称。</param>
-        <param name="CommandParameter">可选的<b>对象</b>。 其他文本，如果有，所需的命令通过指定<paramref name="Command" />。 有关此参数的值的信息，请参阅<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />方法<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />对象。</param>
+        <param name="CommandParameter">可选<b>对象</b>。 由<paramref name="Command" />指定的命令所需的附加文本 (如果有)。 有关此参数的值的信息, 请参阅<see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" />该<see cref="T:Microsoft.Office.Interop.Word.KeyBindings" />对象的方法。</param>
         <summary>更改分配给指定的组合键的命令。</summary>
         <remarks>To be added.</remarks>
       </Docs>

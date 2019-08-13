@@ -1,13 +1,5 @@
 <Type Name="InlineShapes" FullName="Microsoft.Office.Interop.Word.InlineShapes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c25c65b0fb5c59926539a5d393bfd72559673469" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666699" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface InlineShapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="37073b7d0cfd73d163e623520cf1f2b791991061" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147940" /></Metadata><TypeSignature Language="C#" Value="public interface InlineShapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract InlineShapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.InlineShapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface InlineShapes&#xA;Implements IEnumerable" />
@@ -30,10 +22,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象，代表文档、 范围或所选内容中的所有内嵌形状。</summary>
-    <remarks>
-      <para>使用的<b>InlineShapes</b>属性<see cref="T:Microsoft.Office.Interop.Word._Document" />， <see cref="T:Microsoft.Office.Interop.Word.Range" />，或<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象返回<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合。</para>使用
-      <para><see cref="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" />方法，以创建新的图片作为内嵌形状。您可以使用<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" />和<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法添加图片或 OLE 对象并将它们链接到源文件。使用<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" />方法，以添加 ActiveX 控件。</para><para><see cref="T:Microsoft.Office.Interop.Word.Shape" />对象定位到文本范围，但可以自由浮动和可放置在页面上的任何位置。您可以使用<see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" />方法和<see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />方法将形状转换为另一种类型。可以将图片、 OLE 对象和 ActiveX 控件转换为内嵌形状。</para><para><see cref="P:Microsoft.Office.Interop.Word.InlineShapes.Count" />属性文档中此集合主篇文章中返回的项目数。若要计数的其他文章中的项目使用集合<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。</para><para>当打开在早期版本的 Microsoft Word 中创建文档时，图片将转换为内嵌形状。</para><para /></remarks>
+    <summary>代表文档、 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />区域或所选内容中的所有内嵌形状的对象的集合。</summary>
+    <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word._Document" />、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> <see cref="T:Microsoft.Office.Interop.Word.Selection" />或对象的<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> <b>InlineShapes</b>属性返回一个集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" />方法将新图片创建为内嵌形状。 您可以使用<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" />和<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法来添加图片或 OLE 对象, 并将它们链接到源文件。 使用<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" />方法添加 ActiveX 控件。</para>
+      <para>
+        <see cref="T:Microsoft.Office.Interop.Word.Shape" />对象定位到文本区域, 但它们是自由浮动的, 可以放置在页面上的任何位置。 您可以使用<see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" />方法和<see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />方法将形状从一种类型转换为另一种类型。 您可以将图片、 OLE 对象和 ActiveX 控件转换为嵌入式图形。</para>
+      <para>在<see cref="P:Microsoft.Office.Interop.Word.InlineShapes.Count" />文档中, 此集合的属性返回的只是正文中的项目数。 若要统计其他部分中的项目数, 请<see cref="T:Microsoft.Office.Interop.Word.Range" />使用带有该对象的集合。</para>
+      <para>当您打开在 Microsoft Word 的早期版本中创建的文档时, 图片将转换为内嵌形状。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddChart">
@@ -96,9 +92,9 @@
       <Docs>
         <param name="Style">图表样式。</param>
         <param name="Type">图表类型。</param>
-        <param name="Range">将文本中放置图表的区域。 图表将替换该范围，除非该区域折叠。 如果省略此参数，则自动放置图表。</param>
-        <param name="NewLayout">如果<paramref name="NewLayout" />是 true，则图表插入使用动态的新格式设置规则 （标题位于和图例才上是否有多个系列）。</param>
-        <summary>向文档中添加图表。 返回<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象，它代表图表并将其添加到指定的集合。</summary>
+        <param name="Range">将图表放置在文本中的区域。 图表将替换该区域, 除非该区域处于折叠状态。 如果省略此参数, 则自动放置图表。</param>
+        <param name="NewLayout">如果<paramref name="NewLayout" />为 true, 则使用新的动态格式规则插入图表 (标题为打开, 并且图例仅在有多个系列时才打开)。</param>
+        <summary>向文档添加图表。 返回一个<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象, 该对象表示图表并将其添加到指定的集合。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,13 +123,11 @@
       </Parameters>
       <Docs>
         <param name="FileName">必需的 <b>字符串</b> 。 要用于横线的图像的文件名。</param>
-        <param name="Range">可选的<b>对象</b>。 Microsoft Word 在其上方放置横线的区域。 如果省略该参数，则 Word 会将横线放置在当前选定内容的上方。</param>
+        <param name="Range">可选<b>对象</b>。 Microsoft Word 在其上方放置横线的区域。 如果省略该参数，则 Word 会将横线放置在当前选定内容的上方。</param>
         <summary>向当前文档添加一条基于图像文件的横线。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>若要添加一条横线不基于现有图像文件，请使用<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要添加不基于现有图像文件的水平线, 请使用<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddHorizontalLineStandard">
@@ -158,13 +152,11 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">可选的<b>对象</b>。 Microsoft Word 在其上方放置横线的区域。 如果省略该参数，则 Word 会将横线放置在当前选定内容的上方。</param>
+        <param name="Range">可选<b>对象</b>。 Microsoft Word 在其上方放置横线的区域。 如果省略该参数，则 Word 会将横线放置在当前选定内容的上方。</param>
         <summary>向当前文档添加一条横线。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>若要添加基于现有图像文件的横线，使用<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" />方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>若要基于现有的图像文件添加一条水平线, 请使用<see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" />方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddOLEControl">
@@ -190,15 +182,13 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ClassType">可选的<b>对象</b>。 用于要创建的 ActiveX 控件的编程标识符。</param>
-        <param name="Range">可选的<b>对象</b>。 一个区域，ActiveX 控件将放置在该区域的文本中。 如果该区域未折叠，则 ActiveX 控件将替换该区域。 如果省略该参数，则自动放置 ActiveX 控件。</param>
+        <param name="ClassType">可选<b>对象</b>。 用于要创建的 ActiveX 控件的编程标识符。</param>
+        <param name="Range">可选<b>对象</b>。 一个区域，ActiveX 控件将放置在该区域的文本中。 如果该区域未折叠，则 ActiveX 控件将替换该区域。 如果省略该参数，则自动放置 ActiveX 控件。</param>
         <summary>创建一个 ActiveX 控件（以前称为 OLE 控件）。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象，表示新的 ActiveX 控件。</para>
-          <para>ActiveX 控件表示为<see cref="T:Microsoft.Office.Interop.Excel.Shape" />对象或 Microsoft Word 中的<b>InlineShape</b>对象。若要修改 ActiveX 控件的属性，请使用<see cref="P:Microsoft.Office.Interop.Excel.OLEFormat.Object" />属性<see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" />指定的形状或内嵌形状对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法返回表示<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />新的 ActiveX 控件的对象。</para>
+          <para>ActiveX 控件在 Microsoft Word 中<see cref="T:Microsoft.Office.Interop.Excel.Shape" />表示为对象或<b>InlineShape</b>对象。 若要修改 ActiveX 控件的属性, 请使用指定<see cref="P:Microsoft.Office.Interop.Excel.OLEFormat.Object" />形状或内嵌<see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" />形状的对象的属性。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddOLEObject">
@@ -230,20 +220,18 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ClassType">可选的<b>对象</b>。 用于激活指定 OLE 对象的应用程序名称。</param>
-        <param name="FileName">可选的<b>对象</b>。 创建对象所用的文件。 如果省略该参数，则使用当前的文件夹。 必须指定<paramref name="ClassType" />或<paramref name="FileName" />对象，但不是能同时参数。</param>
-        <param name="LinkToFile">可选的<b>对象</b>。 <b>True</b>以链接到从中创建它; 文件的 OLE 对象<b>False</b>以便 OLE 对象的文件的独立副本。 如果您指定的值<paramref name="ClassType" />、<paramref name="LinkToFile" />参数必须为<b>False</b>。 默认值为 <b>False</b> 。</param>
-        <param name="DisplayAsIcon">可选的<b>对象</b>。 <b>真</b> 若要将 OLE 对象显示为图标。 默认值为 <b>False</b> 。</param>
-        <param name="IconFileName">可选的<b>对象</b>。 包含将要显示的图标的文件。</param>
-        <param name="IconIndex">可选的<b>对象</b>。 内的图标索引号<paramref name="IconFileName" />。 图标显示在更改图标对话框 （插入菜单、 对象对话框） 顺序相对应的指定文件中的图标次序当选显示为图标复选框。 文件中第一个图标的索引号是 0（零）。 如果中不存在具有给定的索引号的图标<paramref name="IconFileName" />，则使用具有索引编号 1 （在文件中的第二个图标） 图标。 默认值为 0（零）。</param>
-        <param name="IconLabel">可选的<b>对象</b>。 显示在图标下面的标签（标题）。</param>
-        <param name="Range">可选的<b>对象</b>。 指定 OLE 对象放置在文本中的区域。 除非区域是折叠的，否则 OLE 对象将替换该区域。 如果省略该参数，则自动放置对象。</param>
-        <summary>创建 OLE 对象。</summary>
+        <param name="ClassType">可选<b>对象</b>。 用于激活指定 OLE 对象的应用程序的名称。</param>
+        <param name="FileName">可选<b>对象</b>。 创建对象所用的文件。 如果省略该参数，则使用当前的文件夹。 必须为对象指定<paramref name="ClassType" />或<paramref name="FileName" />参数, 但不能同时指定这两者。</param>
+        <param name="LinkToFile">可选<b>对象</b>。 <b>如果该属性值为 True</b> , 则将 OLE 对象链接到创建它的文件;<b>如果为 False</b> , 则使 OLE 对象成为文件的独立副本。 如果为<paramref name="ClassType" />指定的值, 则该<paramref name="LinkToFile" />参数必须为<b>False</b>。 默认值为 <b>False</b>。</param>
+        <param name="DisplayAsIcon">可选<b>对象</b>。 <b>真</b> 若要将 OLE 对象显示为图标。 默认值为 <b>False</b> 。</param>
+        <param name="IconFileName">可选<b>对象</b>。 包含将要显示的图标的文件。</param>
+        <param name="IconIndex">可选<b>对象</b>。 中<paramref name="IconFileName" />的图标的索引号。 当选中“显示为图标”复选框时，在指定文件中图标的顺序对应于“插入”菜单“对象”对话框的“更改图标”对话框中图标出现的顺序。 文件中的第一个图标的索引号是 0 (零)。 如果具有给定索引号的图标在中<paramref name="IconFileName" />不存在, 则使用索引号为1的图标 (文件中的第二个图标)。 默认值为 0 (零)。</param>
+        <param name="IconLabel">可选<b>对象</b>。 显示在图标下面的标签（题注）。</param>
+        <param name="Range">可选<b>对象</b>。 一个范围，OLE 对象将放置在该范围的文本中。 除非范围是折叠的，否则 OLE 对象将替换该范围。 如果省略此参数，则自动放置对象。</param>
+        <summary>创建一个 OLE 对象。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>返回<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象，表示新的 OLE 对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>返回代表<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />新 OLE 对象的对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPicture">
@@ -272,15 +260,13 @@
       </Parameters>
       <Docs>
         <param name="FileName">必需的 <b>字符串</b> 。 图片的路径和文件名。</param>
-        <param name="LinkToFile">可选的<b>对象</b>。 <b>真</b> 要将图片链接到创建它的文件。 <b>False</b> 使图片文件的独立副本。 默认值为 <b>False</b> 。</param>
-        <param name="SaveWithDocument">可选的<b>对象</b>。 如果为 <b>True</b> ，则将链接的图片与文档一起保存。 默认值为 <b>False</b> 。</param>
-        <param name="Range">可选的<b>对象</b>。 图片置于文本中的位置。 如果该区域未折叠，那么图片将覆盖此区域，否则插入图片。 如果省略此参数，则自动放置图片。</param>
+        <param name="LinkToFile">可选<b>对象</b>。 <b>真</b> 要将图片链接到创建它的文件。 <b>False</b> 使图片文件的独立副本。 默认值为 <b>False</b>。</param>
+        <param name="SaveWithDocument">可选<b>对象</b>。 <b>真</b> 要随文档一起保存的链接的图片。 默认值为 <b>False</b>。</param>
+        <param name="Range">可选<b>对象</b>。 图片置于文本中的位置。 如果该区域未折叠，那么图片将覆盖此区域，否则插入图片。 如果省略此参数，则自动放置图片。</param>
         <summary>在文档中添加一幅图片。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象，代表图片，并将其添加到<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法返回一个<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象, 该对象表示图片并将其添加<see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />到集合中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPictureBullet">
@@ -307,13 +293,11 @@
       </Parameters>
       <Docs>
         <param name="FileName">必需的 <b>字符串</b> 。 要用于图片项目符号的图像的文件名称。</param>
-        <param name="Range">可选的<b>对象</b>。 Microsoft Word 向其添加图片项目符号的区域。 Word 会将图片项目符号添加到该区域的每个段落。 如果省略该参数，则 Word 将图片项目符号添加到当前选定内容的每个段落中。</param>
+        <param name="Range">可选<b>对象</b>。 Microsoft Word 向其添加图片项目符号的区域。 Word 会将图片项目符号添加到该区域的每个段落。 如果省略该参数，则 Word 将图片项目符号添加到当前选定内容的每个段落中。</param>
         <summary>向当前文档添加一个基于图像文件的图片项目符号。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法返回一个<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSmartArt">
@@ -339,10 +323,10 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Layout">A<see cref="T:Microsoft.Office.Core.SmartArtLayout" />指定 SmartArt 图形的布局的对象。</param>
-        <param name="Range">指定 SmartArt 图形所绑定到的文本。 如果<paramref name="Range" />指定范围中的第一段的开头放置在 SmartArt 图形。 如果省略此参数，则自动选定区域，相对于页面顶端和左边缘位于 SmartArt 图形。</param>
+        <param name="Layout">一个<see cref="T:Microsoft.Office.Core.SmartArtLayout" />指定 SmartArt 图形的布局的对象。</param>
+        <param name="Range">指定 SmartArt 图形所绑定到的文本。 如果<paramref name="Range" />指定, 则 SmartArt 图形位于区域中第一段的开头。 如果省略此参数, 则自动选择范围, 并且 SmartArt 图形相对于页面的上边缘和左边缘定位。</param>
         <summary>将 SmartArt 图形作为内嵌形状插入活动文档。</summary>
-        <returns>SmartArt 图形插入。</returns>
+        <returns>要插入的 SmartArt 图形。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -373,12 +357,12 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="EmbedCode">嵌入代码的视频。</param>
-        <param name="VideoWidth">Integer 值，它代表视频以像素为单位的 web 的宽度。</param>
-        <param name="VideoHeight">Integer 值，它代表 web 视频以像素为单位的高度。</param>
-        <param name="PosterFrameImage">一个字符串，指向要用作视频 web 海报帧的文件。</param>
-        <param name="Url">指向视频的 URL。</param>
-        <param name="Range">要插入 web 视频范围。 如果<paramref name="Range" />是省略，则使用当前的选择。</param>
+        <param name="EmbedCode">视频的嵌入代码。</param>
+        <param name="VideoWidth">一个整数, 表示 web 视频的宽度 (以像素为单位)。</param>
+        <param name="VideoHeight">一个整数, 表示 web 视频的高度 (以像素为单位)。</param>
+        <param name="PosterFrameImage">指向要用作 web 视频海报框架的文件的字符串。</param>
+        <param name="Url">视频的 URL。</param>
+        <param name="Range">要插入 web 视频的区域。 如果<paramref name="Range" />省略, 则使用当前所选内容。</param>
         <summary>向文档中添加新的 web 视频。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -407,7 +391,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -435,7 +419,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -465,9 +449,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -528,7 +512,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">一个<b>整数</b>，指示的单个对象的序号位置。</param>
+        <param name="Index">一个指示单个对象的序号位置的<b>整数</b>。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -556,13 +540,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">所需<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 新图形的位置。</param>
-        <summary>插入边框环绕的空、 1 英寸正方形 Microsoft Word 图片对象。</summary>
+        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 新图形的位置。</param>
+        <summary>插入一个空白的1英寸方形的 Microsoft Word picture 对象, 由边框包围。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回作为新图形<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法以<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象的形式返回新图形。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

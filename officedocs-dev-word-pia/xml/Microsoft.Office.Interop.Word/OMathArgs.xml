@@ -1,13 +1,5 @@
 <Type Name="OMathArgs" FullName="Microsoft.Office.Interop.Word.OMathArgs">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9cb9fb0ddbeaaed3135da719c1d25bf94d0cc716" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665991" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathArgs" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d53926b22241062e6717fb428f4fc2cb5b5959f6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147849" /></Metadata><TypeSignature Language="C#" Value="public interface OMathArgs" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathArgs" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathArgs" />
@@ -52,11 +44,9 @@
         <Parameter Name="BeforeArg" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeArg">（可选）<b>对象</b>。 要在其前面添加新参数的现有参数。</param>
-        <summary>将一个参数插入到具有不定数量的变量的公式 (<see cref="T:Microsoft.Office.Interop.Word.OMathDelim" />和<see cref="T:Microsoft.Office.Interop.Word.OMathEqArray" />对象)</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </returns>
+        <param name="BeforeArg">Optional<b>对象</b>。 要在其前面添加新参数的现有参数。</param>
+        <summary>将参数插入到包含可变数目的参数 (<see cref="T:Microsoft.Office.Interop.Word.OMathDelim" />和<see cref="T:Microsoft.Office.Interop.Word.OMathEqArray" />对象) 的公式中</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMath" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,10 +73,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 object 值，该值代表 Microsoft Word 应用程序。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>返回一个对象, 表示 Microsoft Word 应用程序。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,10 +101,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回中的项目数<see cref="T:Microsoft.Office.Interop.Word.OMathArgs" />集合。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.OMathArgs" />集合中项的数目。 只读。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,17 +129,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位<b>整数</b>，它指示在其中创建外接程序的应用程序。 只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中创建的则<b>Creator</b>属性返回十六进制数字 4d535744，表示字符串"MSWD。" 也可以由常量表示此值<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />。</para>
-          <para>此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
+        <summary>返回一个32位整数, 该<b>整数</b>表示在其中创建外接程序的应用程序。 只读。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。 </para>
+          <para>此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注释</b>：</para>
-          <para />
-        </remarks>
+            <b>注意</b>： </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -179,11 +161,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">（必需）一个<b>整数</b>，指定对象在集合中的序号位置。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.OMath" />对象，表示集合中的指定的项。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </returns>
+        <param name="Index">需要一个<b>整数</b>, 指定对象在集合中的序号位置。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.OMath" />对象, 表示集合中的指定项。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMath" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,10 +190,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定的父对象<see cref="T:Microsoft.Office.Interop.Word.OMathArgs" />对象。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.OMathArgs" />对象的父对象。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

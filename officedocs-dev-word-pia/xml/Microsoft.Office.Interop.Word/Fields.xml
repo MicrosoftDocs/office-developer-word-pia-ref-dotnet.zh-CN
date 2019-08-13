@@ -1,13 +1,5 @@
 <Type Name="Fields" FullName="Microsoft.Office.Interop.Word.Fields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fdd77cf26598c9ff9a9d497e81fbed99577fb24" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20666334" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Fields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="57c76419b1fbb163aa0a4e6e8b8649d94596aa1d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148073" /></Metadata><TypeSignature Language="C#" Value="public interface Fields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Fields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Fields" />
   <TypeSignature Language="VB.NET" Value="Public Interface Fields&#xA;Implements IEnumerable" />
@@ -30,16 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.Field" />对象代表所选内容、 范围或文档中的所有字段。</summary>
-    <remarks>
-      <para>使用<b>Fields</b>属性可返回<b>Fields</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />方法将字段添加到的<b>Fields</b>集合。</para>
-      <para>使用<b>字段</b>(<paramref name="index" />)，其中 index 是<paramref name="index" />编号，就可以返回单个<b>字段</b>对象。索引号代表所选内容、 范围或文档中的字段的位置。</para>
-      <para>和<b>MailMerge</b>对象使用<b>Fields</b>属性可返回<b>MailMergeFields</b>集合。</para>
-      <para>
-        <see cref="P:Microsoft.Office.Interop.Word.Fields.Count" />属性文档中此集合主篇文章中返回的项目数。若要计数的其他文章中的项目使用集合<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。</para>
-      <para />
-    </remarks>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Field" />对象的集合, 这些对象代表所选内容、范围或文档中的所有字段。</summary>
+    <remarks><para>使用 <b>字段</b> 属性返回 <b>字段</b> 集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />方法将字段添加到<b>Fields</b>集合。</para>
+      <para>使用<b>Fields</b>(<paramref name="index" />), 其中 index 是<paramref name="index" />数字, 返回单个<b>Field</b>对象。 索引号代表选定内容、 范围或文档中的字段位置。</para>
+      <para>将<b>Fields</b>属性与邮件<b>合并</b>对象一起使用可返回<b>MailMergeFields</b>集合。</para>
+      <para>在<see cref="P:Microsoft.Office.Interop.Word.Fields.Count" />文档中, 此集合的属性返回的只是正文中的项目数。 若要统计其他部分中的项目数, 请<see cref="T:Microsoft.Office.Interop.Word.Range" />使用带有该对象的集合。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -66,17 +55,16 @@
         <Parameter Name="PreserveFormatting" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">所需<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 要将域添加范围。 如果该区域未折叠，字段替换范围。</param>
-        <param name="Type">可选的<b>对象</b>。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdFieldType" />常量。 有效常量的列表，请参阅对象浏览器。 默认值是<b>wdFieldEmpty</b>。</param>
-        <param name="Text">可选的<b>对象</b>。 为该字段所需的其他文本。 例如，如果您想要指定字段的开关，可将其添加此处。</param>
-        <param name="PreserveFormatting">可选的<b>对象</b>。 						如果该属性值为 <b>True</b>，则更新时保留域所应用的格式。</param>
-        <summary>添加<see cref="T:Microsoft.Office.Interop.Word.Field" />对象传递给<see cref="T:Microsoft.Office.Interop.Word.Fields" />集合。</summary>
+        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 需要添加域的区域。 如果该区域未折叠，那么域将替换该区域。</param>
+        <param name="Type">可选<b>对象</b>。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdFieldType" />常量。 有关有效的常量列表，请参阅“对象浏览器”。 默认值为 <b>wdFieldEmpty</b>。</param>
+        <param name="Text">可选<b>对象</b>。 域所需的其他文本。 例如，如果要给域指定一个开关，可将其添加到此处。</param>
+        <param name="PreserveFormatting">可选<b>对象</b>。 
+						如果该属性值为 <b>True</b>，则更新时保留域所应用的格式。</param>
+        <summary>将<see cref="T:Microsoft.Office.Interop.Word.Field" />对象添加到<see cref="T:Microsoft.Office.Interop.Word.Fields" />集合中。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>此方法返回<b>Field</b>对象的指定区域。</para>
-          <para>不能使用<b>Fields</b>集合的<b>Add</b>方法插入某些字段 （如<b>wdFieldOCX</b>和<b>wdFieldFormCheckBox</b>）。而是必须使用特定方法如<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法和<b>Add</b>方法用于<see cref="T:Microsoft.Office.Interop.Word.FormFields" />集合。</para>
-          <para />
-        </remarks>
+        <remarks><para>此方法返回指定范围中的<b>Field</b>对象。</para>
+          <para>无法使用<b>fields</b>集合的<b>Add</b>方法插入某些字段 (如<b>wdFieldOCX</b>和<b>wdFieldFormCheckBox</b>)。 相反, 您必须使用特定的方法, 如<see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.FormFields" />集合的方法和<b>Add</b>方法。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -102,7 +90,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,7 +118,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,9 +148,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果指定的对象在 Microsoft Word 中创建的此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -223,7 +211,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">一个<b>整数</b>，指示的单个对象的序号位置。</param>
+        <param name="Index">一个指示单个对象的序号位置的<b>整数</b>。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -255,12 +243,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否所有字段在<see cref="T:Microsoft.Office.Interop.Word.Fields" />锁定集合。</summary>
+        <summary>确定是否锁定集合中的<see cref="T:Microsoft.Office.Interop.Word.Fields" />所有字段。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>此属性返回<b>True</b>如果中的所有字段<see cref="T:Microsoft.Office.Interop.Word.Fields" />锁定集合，和<b>False</b>如果不需要。</para>
-          <para />
-        </remarks>
+        <remarks><para>如果<see cref="T:Microsoft.Office.Interop.Word.Fields" />集合中的所有字段都处于锁定状态, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -312,11 +298,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>切换之间域代码和域结果的字段的显示方式。</summary>
-        <remarks>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Field.ShowCodes" />属性控制单个字段的显示。</para>
-          <para />
-        </remarks>
+        <summary>在域代码和域结果之间切换域的显示。</summary>
+        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Field.ShowCodes" />属性可控制单个字段的显示。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Unlink">
@@ -340,11 +324,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>替换中的所有字段<see cref="T:Microsoft.Office.Interop.Word.Fields" />用其最近结果的集合。</summary>
-        <remarks>
-          <para>当取消链接字段时，它的当前结果转换为文本或图形和不再自动更新。请注意的一些 fields — 例如 XE （索引项） 域和 SEQ （序列） 域 — 不能取消链接。</para>
-          <para />
-        </remarks>
+        <summary>将<see cref="T:Microsoft.Office.Interop.Word.Fields" />集合中的所有字段替换为其最近的结果。</summary>
+        <remarks><para>当取消一个域的链接时，它的当前结果将转换为文本或图形，并且不能再自动更新。 请注意, 某些字段 (如 XE (索引项) 域和 SEQ (序列) 域) 无法取消链接。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -370,10 +352,8 @@
       <Docs>
         <summary>更新域对象的结果。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>应用于时<see cref="T:Microsoft.Office.Interop.Word.Fields" />集合，返回 0 （零），任何错误发生时更新域或返回一个<b>整数</b>，表示包含错误的第一个字段的索引。</para>
-          <para />
-        </remarks>
+        <remarks><para>当应用于<see cref="T:Microsoft.Office.Interop.Word.Fields" />集合时, 如果更新字段时不发生错误, 则返回 0 (零); 或者返回一个<b>整数</b>, 表示包含错误的第一个字段的索引。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateSource">
@@ -398,10 +378,8 @@
       <Parameters />
       <Docs>
         <summary>将对 INCLUDETEXT 域所做的更改保存回源文档。</summary>
-        <remarks>
-          <para>源文档的格式必须为 Microsoft Word 文档。</para>
-          <para />
-        </remarks>
+        <remarks><para>源文档的格式必须为 Microsoft Word 文档。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="LegendEntries" FullName="Microsoft.Office.Interop.Word.LegendEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4be1cb0f4c8f23a103f1b55dd2910a9de172e15a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665565" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LegendEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f1b454addfaa2286a2fa2af265ff5ee75f6ba419" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147913" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LegendEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LegendEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface LegendEntries&#xA;Implements IEnumerable" />
@@ -30,16 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所有的集合<see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />指定的图表图例中的对象。</summary>
-    <remarks>
-      <para>每个图例项都有两个部分： 项，即的系列或趋势线与图例项; 关联的名称的文本和项的标记，以可视方式链接将图例项与及其关联的系列或趋势线图表中。项标记与其关联的系列或趋势线的格式属性包含在<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />对象。</para>
-      <para />
-    </remarks>
-    <example>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Legend.LegendEntries(System.Object)" />方法，以返回<see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />集合。下面的示例遍历活动文档中的第一个图表的图例项的集合，并更改其字体颜色。</para>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />(<paramref name="index" />)，其中<paramref name="index" />是图例项的索引号，若要返回单个<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />对象。不能按照名称返回图例项。</para>
-      <para>索引编号代表图例中图例项的位置。LegendEntries(1) 是图例的顶部;图例位于底部。</para>
-    </example>
+    <summary>指定的图表图例中<see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />的所有对象的集合。</summary>
+    <remarks><para>每个图例项都有两部分：一部分是该项的文本，它是与该图例项相关联的数据系列或趋势线的名称；另一部分是项标志，它在图表中以直观的方式将图例项以及与之相关联的数据系列或趋势线链接起来。 项目标记及其关联的系列或趋势线的格式属性包含在<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />对象中。</para>
+      <para> </para></remarks>
+    <example><para>使用<see cref="M:Microsoft.Office.Interop.Word.Legend.LegendEntries(System.Object)" />方法返回<see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />集合。 下面的示例在活动文档中第一个图表的图例项集合中循环，并更改其字体颜色。</para>
+      <para>Use <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> (<paramref name="index" />), 其中<paramref name="index" />是图例项索引号, 返回单个<see cref="T:Microsoft.Office.Interop.Word.LegendKey" />对象。 不能按名称返回图例项。</para>
+      <para>索引号代表图例项在图例中的位置。 LegendEntries(1) 位于图例的顶部；LegendEntries(LegendEntries.Count) 位于图例的底部。</para></example>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -97,10 +85,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>当使用对象识别符，此属性返回<see cref="T:Microsoft.Office.Interop.Word._Application" />对象代表 Microsoft Word 应用程序。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,10 +113,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>整数</b>值，代表集合中对象的数目。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>返回一个<b>Integer</b>值, 它代表集合中对象的数目。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,14 +141,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 <b>Integer</b> 类型，只读。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>如果对象在 Microsoft Word 中，创建<see cref="P:Microsoft.Office.Interop.Word.LegendEntries.Creator" />属性返回十六进制数字 4d535744，表示的字符串"MSWD。" 此属性主要旨在用于的 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para>
-          <para />
-        </remarks>
+        <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Integer</b>。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.LegendEntries.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -225,11 +205,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">所需的<b>对象</b>。 对象的名称或索引号。</param>
+        <param name="Index">必需的<b>对象</b>。 对象的名称或索引号。</param>
         <summary>从集合中返回单个对象。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,10 +234,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定对象的父级。只读 <b>对象</b> 。</summary>
-        <value>
-          <b>对象</b>
-        </value>
+        <summary>返回指定对象的父级。 只读 <b>对象</b> 。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

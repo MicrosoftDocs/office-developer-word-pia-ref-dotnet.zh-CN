@@ -1,13 +1,5 @@
 <Type Name="HTMLDivisions" FullName="Microsoft.Office.Interop.Word.HTMLDivisions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="28896873e2658bb7fdc695f17420fa74ec5aca73" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665786" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HTMLDivisions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c52a948104a42d913fb69b854f16407eab688443" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148003" /></Metadata><TypeSignature Language="C#" Value="public interface HTMLDivisions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HTMLDivisions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HTMLDivisions" />
   <TypeSignature Language="VB.NET" Value="Public Interface HTMLDivisions&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" />对象值，该值代表 Web 文档中存在的 HTML 划分。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.HTMLDivision.HTMLDivisions" />属性可返回<b>HTMLDivisions</b>集合。使用<see cref="M:Microsoft.Office.Interop.Word.HTMLDivisions.Add(System.Object@)" />方法添加到 Web 文档的 HTML 划分。</para>
-      <para />
-    </remarks>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" />对象的集合, 该集合代表 Web 文档中存在的 HTML 划分。</summary>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.HTMLDivision.HTMLDivisions" />属性返回<b>HTMLDivisions</b>集合。 使用<see cref="M:Microsoft.Office.Interop.Word.HTMLDivisions.Add(System.Object@)" />方法将 HTML 划分添加到 Web 文档中。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -59,8 +49,8 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">可选的<b>对象</b>。 围绕原有 HTML 划分放置新的 HTML 划分。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" />对象，表示添加到 Web 文档中的新 HTML 划分。</summary>
+        <param name="Range">可选<b>对象</b>。 围绕原有 HTML 划分放置新的 HTML 划分。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" />对象, 表示新添加到 Web 文档中的 HTML 划分。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />对象, 表示 Microsoft Word 应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,7 +106,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,9 +136,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -209,7 +199,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">一个<b>整数</b>，指示的单个对象的序号位置。</param>
+        <param name="Index">一个指示单个对象的序号位置的<b>整数</b>。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -240,10 +230,8 @@
       <Docs>
         <summary>返回指定的 HTML 划分的嵌套级别。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>最外层表的嵌套级别为 1。每个连续嵌套表格的嵌套级别是高于上表之一。</para>
-          <para />
-        </remarks>
+        <remarks><para>最外围表格的嵌套层为 1。 每一个相连嵌套表格的嵌套层比其前面表格的嵌套层高 1。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

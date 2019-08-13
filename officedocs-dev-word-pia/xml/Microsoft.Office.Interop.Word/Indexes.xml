@@ -1,13 +1,5 @@
 <Type Name="Indexes" FullName="Microsoft.Office.Interop.Word.Indexes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c47d895ce1ab76c08d23df7218a98cbdbcccf8ed" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="zh-CN" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20667040" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Indexes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7b57b53793778d56fdc6da5059ee8398d3e740c4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147959" /></Metadata><TypeSignature Language="C#" Value="public interface Indexes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Indexes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Indexes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Indexes&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一<see cref="T:Microsoft.Office.Interop.Word.Index" />对象值，该值代表指定文档中的所有索引。</summary>
-    <remarks>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.Indexes" />属性返回<b>Indexes</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Indexes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法，以创建索引，并将其添加到<b>Indexes</b>集合。</para>
-      <para>使用<b>索引</b>(<paramref name="index" />)，其中<paramref name="index" />是要返回的单个<b>Index</b>对象的索引号。索引号代表文档中的<b>Index</b>对象的位置。</para>
-      <para />
-    </remarks>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Index" />对象的集合, 该集合代表指定文档中的所有索引。</summary>
+    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Document.Indexes" />属性返回<b>索引</b>集合。</para>
+      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Indexes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法可创建索引并将其添加到<b>索引</b>集合中。</para>
+      <para>使用<b>索引</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回单个<b>index</b>对象。 索引号代表文档中的 <b>索引</b> 对象的位置。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -67,20 +57,19 @@
         <Parameter Name="IndexLanguage" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">所需的<b>Range</b>对象。 要显示索引的区域。 索引替换范围，如果该区域不折叠。</param>
-        <param name="HeadingSeparator">可选的<b>对象</b>。字母组 （以相同的字母开头的条目） 之间的文本索引中。 可以是以下项之一<see cref="T:Microsoft.Office.Interop.Word.WdHeadingSeparator" />常量： <b>wdHeadingSeparatorBlankLine</b>、 <b>wdHeadingSeparatorLetter</b>、 <b>wdHeadingSeparatorLetterFull</b>、 <b>wdHeadingSeparatorLetterLow</b>或<b>wdHeadingSeparatorNone</b>。</param>
-        <param name="RightAlignPageNumbers">可选的<b>对象</b>。 <b>为</b> 页码与右边距对齐。</param>
-        <param name="Type">可选的<b>对象</b>。 指定子项是否作为主入口位于同一行 (接排式)，或者在单独的行 (缩进) 主入口。 可以是以下任一<see cref="T:Microsoft.Office.Interop.Word.WdIndexType" />常量： <b>wdIndexIndent</b>或<b>wdIndexRunin</b>。</param>
-        <param name="NumberOfColumns">可选的<b>对象</b>。 索引每页的列数。 指定为 0（零）会将索引中的列数设置为与文档中的列数相同的数。</param>
-        <param name="AccentedLetters">可选的<b>对象</b>。 						如果该属性值为 <b>True</b>，则在索引中包括单独用于重音字母的标题（例如，以“À”开头的单词与以“A”开头的单词将列在不同的标题下）。</param>
-        <param name="SortBy">可选的<b>对象</b>。 要用于指定索引的排序准则。 可以是以下任一<see cref="T:Microsoft.Office.Interop.Word.WdIndexSortBy" />常量： <b>wdIndexSortByStroke</b>或<b>wdIndexSortBySyllable</b>。</param>
-        <param name="IndexLanguage">可选的<b>对象</b>。 要用于指定索引的排序语言。 可以是任意<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量。</param>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Index" />代表添加到文档的新索引的对象。</summary>
+        <param name="Range">必需的<b>Range</b>对象。 要显示索引的区域。 如果该区域未折叠, 则索引将替换该区域。</param>
+        <param name="HeadingSeparator">可选<b>对象</b>。索引中字母组 (以相同字母开头的条目) 之间的文本。 可以<see cref="T:Microsoft.Office.Interop.Word.WdHeadingSeparator" />是下列常量之一: <b>wdHeadingSeparatorBlankLine</b>、 <b>wdHeadingSeparatorLetter</b>、 <b>wdHeadingSeparatorLetterFull</b>、 <b>wdHeadingSeparatorLetterLow</b>或<b>wdHeadingSeparatorNone</b>。</param>
+        <param name="RightAlignPageNumbers">可选<b>对象</b>。 <b>为</b> 页码与右边距对齐。</param>
+        <param name="Type">可选<b>对象</b>。 指定子项是否作为主入口位于同一行 (接排式)，或者在单独的行 (缩进) 主入口。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdIndexType" />常量之一: <b>wdIndexIndent</b>或<b>wdIndexRunin</b>。</param>
+        <param name="NumberOfColumns">可选<b>对象</b>。 索引每页的列数。 指定为 0（零）会将索引中的列数设置为与文档中的列数相同的数。</param>
+        <param name="AccentedLetters">可选<b>对象</b>。 
+						如果该属性值为 <b>True</b>，则在索引中包括单独用于重音字母的标题（例如，以“À”开头的单词与以“A”开头的单词将列在不同的标题下）。</param>
+        <param name="SortBy">可选<b>对象</b>。 要用于指定索引的排序准则。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdIndexSortBy" />常量之一: <b>wdIndexSortByStroke</b>或<b>wdIndexSortBySyllable</b>。</param>
+        <param name="IndexLanguage">可选<b>对象</b>。 要用于指定索引的排序语言。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量。</param>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Index" />对象, 表示添加到文档中的新索引。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>从文档中的索引项 (XE) 字段建立索引。使用<see cref="M:Microsoft.Office.Interop.Word.Indexes.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />标记包含在索引中的索引项的方法。</para>
-          <para />
-        </remarks>
+        <remarks><para>从文档中的索引项 (XE) 域建立索引。 使用<see cref="M:Microsoft.Office.Interop.Word.Indexes.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法将索引项标记为要包含在索引中。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddOld">
@@ -146,7 +135,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Application" />对象代表 Microsoft Word 应用程序。</summary>
+        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,10 +165,8 @@
       <Docs>
         <param name="ConcordanceFileName">必需的 <b>字符串</b> 。 包含要索引项目列表的对应文件名称。</param>
         <summary>用对应文件中的索引项将 XE（索引项）域自动添至指定文档。</summary>
-        <remarks>
-          <para>索引文件是包含两列的表格，其中索引中的第二列中的第一列和索引条目 Microsoft Word 文档。</para>
-          <para />
-        </remarks>
+        <remarks><para>索引文件是包含两列表格的 Microsoft Word 文档, 在第一列中有要编制索引的术语, 第二列中的索引条目。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -205,7 +192,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定集合中返回的项目数。</summary>
+        <summary>返回指定集合中的项目数。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -235,9 +222,9 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>例如，如果 Microsoft Word 中创建对象，此属性返回十六进制数字 4d535744，表示字符串"MSWD。"此值也可以由常量<b>wdCreatorCode</b>。</para>主要设计
-          <para><b>Creator</b>属性用于 Macintosh，其中每个应用程序具有四个字符的创建者代码。例如，Microsoft Word 具有 MSWD 的创建者代码。有关此属性的其他信息，请咨询的语言参考 Microsoft Office Macintosh Edition 中包含的帮助。</para><para /></remarks>
+        <remarks><para>例如, 如果该对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -268,11 +255,8 @@
       <Docs>
         <summary>返回或设置指定文档中的索引的格式。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Format</b>属性可以是一个<see cref="T:Microsoft.Office.Interop.Word.WdIndexFormat" />常量。</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Format</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdIndexFormat" />常量之一。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -333,7 +317,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">一个<b>整数</b>，指示的单个对象的序号位置。</param>
+        <param name="Index">一个指示单个对象的序号位置的<b>整数</b>。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -367,15 +351,15 @@
         <Parameter Name="Italic" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">所需的<b>Range</b>对象。 其文字在整篇文档中用 XE 域标记的区域。</param>
-        <param name="Entry">可选的<b>对象</b>。 要在索引中，窗体中显示的文本<paramref name="MainEntry[:Subentry]" />。</param>
-        <param name="EntryAutoText">可选的<b>对象</b>。 要显示在索引中包含的文本自动图文集词条 (如果指定此参数，则<paramref name="Entry" />，则忽略)。</param>
-        <param name="CrossReference">可选的<b>对象</b>。 要显示在索引中的交叉引用。</param>
-        <param name="CrossReferenceAutoText">可选的<b>对象</b>。 包含交叉引用文本的自动图文集词条的名称 (如果指定此参数，则<paramref name="CrossReference" />，则忽略)。</param>
-        <param name="BookmarkName">可选的<b>对象</b>。 标记要在索引中显示的页码范围的书签名。 如果省略该参数，则在索引中显示包含 XE 域的页面的页码。</param>
-        <param name="Bold">可选的<b>对象</b>。 <b>为</b> 加粗格式添至索引项页码。</param>
-        <param name="Italic">可选的<b>对象</b>。 <b>真</b> 要斜体格式添至索引项页码。</param>
-        <summary>中的文本的所有实例后插入 XE （索引项） 域<paramref name="Range" />。</summary>
+        <param name="Range">必需的<b>Range</b>对象。 其文字在整篇文档中用 XE 域标记的区域。</param>
+        <param name="Entry">可选<b>对象</b>。 要在索引中的窗体<paramref name="MainEntry[:Subentry]" />中显示的文本。</param>
+        <param name="EntryAutoText">可选<b>对象</b>。 包含要在索引中显示的文本的 "自动图文集" 词条 (如果指定了此参数<paramref name="Entry" /> , 则将被忽略)。</param>
+        <param name="CrossReference">可选<b>对象</b>。 要显示在索引中的交叉引用。</param>
+        <param name="CrossReferenceAutoText">可选<b>对象</b>。 包含交叉引用文字的 "自动图文集" 词条的名称 (如果指定了此参数, <paramref name="CrossReference" />则将被忽略)。</param>
+        <param name="BookmarkName">可选<b>对象</b>。 标记要在索引中显示的页码范围的书签名。 如果省略该参数，则在索引中显示包含 XE 域的页面的页码。</param>
+        <param name="Bold">可选<b>对象</b>。 <b>为</b> 加粗格式添至索引项页码。</param>
+        <param name="Italic">可选<b>对象</b>。 <b>真</b> 要斜体格式添至索引项页码。</param>
+        <summary>在中<paramref name="Range" />的文本的所有实例后插入一个 XE (索引项) 域。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -408,16 +392,19 @@
         <Parameter Name="Reading" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">所需的<b>Range</b>对象。 该项的位置。 之后插入 XE 域的<paramref name="Range" />。</param>
-        <param name="Entry">可选的<b>对象</b>。 在索引中显示的文本。 要指示次索引项，则要包括主索引项文本和次索引项文本，其间用冒号 (:) 隔开（例如，"Introduction:The Product"）。</param>
-        <param name="EntryAutoText">可选的<b>对象</b>。 包含索引、 图表目录或目录的文本的自动图文集词条名称 (<paramref name="Entry" /> ，则忽略)。</param>
-        <param name="CrossReference">可选的<b>对象</b>。 将出现在索引中的交叉引用（例如，“See Apples”）。</param>
-        <param name="CrossReferenceAutoText">可选的<b>对象</b>。 包含交叉引用文本的自动图文集词条名称 (<paramref name="CrossReference" /> ，则忽略)。</param>
-        <param name="BookmarkName">可选的<b>对象</b>。 要显示在索引中的书签标记的页面范围的名称。 如果省略此参数，则在索引中出现包含 XE 域页。</param>
-        <param name="Bold">可选的<b>对象</b>。 						如果该参数值为 <b>True</b>，则为索引中的词条页码设置加粗格式。</param>
-        <param name="Italic">可选的<b>对象</b>。 						如果该参数值为 <b>True</b>，则为索引中的词条页码设置倾斜格式。</param>
-        <param name="Reading">可选的<b>对象</b>。 						如果该参数值为 <b>True</b>，则当按发音排序索引时（仅用于中文）在右侧显示索引项。</param>
-        <summary>在指定区域后插入 XE （索引项） 域。 返回<see cref="T:Microsoft.Office.Interop.Word.Field" />对象，代表 XE 域。</summary>
+        <param name="Range">必需的<b>Range</b>对象。 该项的位置。 将在此处插入 XE 域<paramref name="Range" />。</param>
+        <param name="Entry">可选<b>对象</b>。 显示在索引中的文本。 要指示次索引项，则要包括主索引项文本和次索引项文本，其间用冒号 (:) 隔开（例如，“Introduction:The Product”）。</param>
+        <param name="EntryAutoText">可选<b>对象</b>。 包含索引、图表目录或目录的文本的 "自动图文集" 词条名称 (<paramref name="Entry" />将被忽略)。</param>
+        <param name="CrossReference">可选<b>对象</b>。 将出现在索引中的交叉引用（例如，“See Apples”）。</param>
+        <param name="CrossReferenceAutoText">可选<b>对象</b>。 包含交叉引用文字的 "自动图文集" 词条名称 (<paramref name="CrossReference" />被忽略)。</param>
+        <param name="BookmarkName">可选<b>对象</b>。 用来标记要显示在索引中的页面范围的书签名称。 如果省略此参数，将在索引中显示包含 XE 域的页码。</param>
+        <param name="Bold">可选<b>对象</b>。 
+						如果该参数值为 <b>True</b>，则为索引中的词条页码设置加粗格式。</param>
+        <param name="Italic">可选<b>对象</b>。 
+						如果该参数值为 <b>True</b>，则为索引中的词条页码设置倾斜格式。</param>
+        <param name="Reading">可选<b>对象</b>。 
+						如果该参数值为 <b>True</b>，则当按发音排序索引时（仅用于中文）在右侧显示索引项。</param>
+        <summary>在指定范围后插入一个 XE（索引项）域。 返回一个<see cref="T:Microsoft.Office.Interop.Word.Field" />表示 XE 域的对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
