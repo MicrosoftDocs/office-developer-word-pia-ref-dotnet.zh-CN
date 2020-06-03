@@ -1,9 +1,10 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Word.Pane">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2c6d2b532972458c15ddcaf3f76f72a0ddd27d36" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147737" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4f308afaf8401d346ac4ffdb21a90f617e1a530a" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924751" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Pane" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pane" />
   <TypeSignature Language="C++ CLI" Value="public interface class Pane" />
+  <TypeSignature Language="F#" Value="type Pane = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,8 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="29fbe-101">代表一个窗格。</span><span class="sxs-lookup"><span data-stu-id="29fbe-101">Represents a window pane.</span></span> <span data-ttu-id="29fbe-102"><b>Pane</b> 对象是 <b>Panes</b> 集合的成员。</span><span class="sxs-lookup"><span data-stu-id="29fbe-102">The <b>Pane</b> object is a member of the <b>Panes</b> collection.</span></span> <span data-ttu-id="29fbe-103"><see cref="Panes#SameCHM" />集合包含单个窗口的所有窗口窗格。</span><span class="sxs-lookup"><span data-stu-id="29fbe-103">The <see cref="Panes#SameCHM" /> collection includes all the window panes for a single window.</span></span></summary>
-    <remarks><para><span data-ttu-id="29fbe-104">使用<b>窗格</b>(<paramref name="Index" />), 其中<paramref name="Index" />是索引号, 返回单个<b>窗格</b>对象。</span><span class="sxs-lookup"><span data-stu-id="29fbe-104">Use <b>Panes</b>(<paramref name="Index" />), where <paramref name="Index" /> is the index number, to return a single <b>Pane</b> object.</span></span> <span data-ttu-id="29fbe-105">下面的示例关闭活动窗格。</span><span class="sxs-lookup"><span data-stu-id="29fbe-105">The following example closes the active pane.</span></span></para>
+    <summary><span data-ttu-id="3083b-101">代表一个窗格。</span><span class="sxs-lookup"><span data-stu-id="3083b-101">Represents a window pane.</span></span> <span data-ttu-id="3083b-102"><b>Pane</b> 对象是 <b>Panes</b> 集合的成员。</span><span class="sxs-lookup"><span data-stu-id="3083b-102">The <b>Pane</b> object is a member of the <b>Panes</b> collection.</span></span> <span data-ttu-id="3083b-103"><see cref="Panes#SameCHM" />集合包含单个窗口的所有窗口窗格。</span><span class="sxs-lookup"><span data-stu-id="3083b-103">The <see cref="Panes#SameCHM" /> collection includes all the window panes for a single window.</span></span></summary>
+    <remarks><para><span data-ttu-id="3083b-104">使用<b>窗格</b>（ <paramref name="Index" /> ），其中 <paramref name="Index" /> 是索引号，返回单个<b>窗格</b>对象。</span><span class="sxs-lookup"><span data-stu-id="3083b-104">Use <b>Panes</b>(<paramref name="Index" />), where <paramref name="Index" /> is the index number, to return a single <b>Pane</b> object.</span></span> <span data-ttu-id="3083b-105">下面的示例关闭活动窗格。</span><span class="sxs-lookup"><span data-stu-id="3083b-105">The following example closes the active pane.</span></span></para>
       <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -277,12 +278,12 @@
 
 
     ActiveDocument.ActiveWindow.ActivePane.Close&lt;/span&gt;</code>
-      <para><span data-ttu-id="29fbe-p103">使用 <b>Add</b> 方法或 <b>拆分</b> 属性添加一个窗格。下面的示例拆分活动窗口的当前窗口大小的 20%。</span><span class="sxs-lookup"><span data-stu-id="29fbe-p103">Use the <b>Add</b> method or the <b>Split</b> property to add a window pane. The following example splits the active window at 20 percent of the current window size.</span></span></para>
+      <para><span data-ttu-id="3083b-p103">使用 <b>Add</b> 方法或 <b>拆分</b> 属性添加一个窗格。下面的示例拆分活动窗口的当前窗口大小的 20%。</span><span class="sxs-lookup"><span data-stu-id="3083b-p103">Use the <b>Add</b> method or the <b>Split</b> property to add a window pane. The following example splits the active window at 20 percent of the current window size.</span></span></para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes.Add SplitVertical:=20&lt;/span&gt;</code>
-      <para><span data-ttu-id="29fbe-108">以下示例将活动窗口一分为二。</span><span class="sxs-lookup"><span data-stu-id="29fbe-108">The following example splits the active window in half.</span></span></para>
+      <para><span data-ttu-id="3083b-108">以下示例将活动窗口一分为二。</span><span class="sxs-lookup"><span data-stu-id="3083b-108">The following example splits the active window in half.</span></span></para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Split = True&lt;/span&gt;</code>
-      <para><span data-ttu-id="29fbe-109">您可以使用 <b>SplitSpecial</b> 属性在一个单独的窗格中显示批注、 脚注或尾注。</span><span class="sxs-lookup"><span data-stu-id="29fbe-109">You can use the <b>SplitSpecial</b> property to show comments, footnotes, or endnotes in a separate pane.</span></span></para>
-      <para><span data-ttu-id="29fbe-p104">当窗口被拆分或在非页面视图下显示脚注、批注等信息时，窗口具有多个窗格。以下示例在普通视图中显示批注窗格，然后提示关闭该窗格。</span><span class="sxs-lookup"><span data-stu-id="29fbe-p104">A window has more than one pane if the window is split or the view is not print layout view and information such as footnotes or comments are displayed. The following example displays the comments pane in normal view and then prompts to close the pane.</span></span></para>
+      <para><span data-ttu-id="3083b-109">您可以使用 <b>SplitSpecial</b> 属性在一个单独的窗格中显示批注、 脚注或尾注。</span><span class="sxs-lookup"><span data-stu-id="3083b-109">You can use the <b>SplitSpecial</b> property to show comments, footnotes, or endnotes in a separate pane.</span></span></para>
+      <para><span data-ttu-id="3083b-p104">当窗口被拆分或在非页面视图下显示脚注、批注等信息时，窗口具有多个窗格。以下示例在普通视图中显示批注窗格，然后提示关闭该窗格。</span><span class="sxs-lookup"><span data-stu-id="3083b-p104">A window has more than one pane if the window is split or the view is not print layout view and information such as footnotes or comments are displayed. The following example displays the comments pane in normal view and then prompts to close the pane.</span></span></para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.View.Type = wdNormalView 
 
 
@@ -2085,6 +2086,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit" Usage="pane.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2100,9 +2102,9 @@ End If&lt;/span&gt;</code>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="29fbe-112">激活指定的窗格。</span><span class="sxs-lookup"><span data-stu-id="29fbe-112">Activates the specified pane.</span></span></summary>
+        <summary><span data-ttu-id="3083b-112">激活指定的窗格。</span><span class="sxs-lookup"><span data-stu-id="3083b-112">Activates the specified pane.</span></span></summary>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="29fbe-113">本示例拆分活动窗口，然后激活第一个窗格。</span><span class="sxs-lookup"><span data-stu-id="29fbe-113">This example splits the active window and then activates the first pane.</span></span></para>
+        <example><para><span data-ttu-id="3083b-113">本示例拆分活动窗口，然后激活第一个窗格。</span><span class="sxs-lookup"><span data-stu-id="3083b-113">This example splits the active window and then activates the first pane.</span></span></para>
           <code>&lt;span class="label"&gt;Sub SplitWindow() 
 
 
@@ -2882,6 +2884,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Pane.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2899,9 +2902,9 @@ End If&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-114">返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />对象, 表示 Microsoft Word 应用程序。</span><span class="sxs-lookup"><span data-stu-id="29fbe-114">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="3083b-114">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 对象，表示 Microsoft Word 应用程序。</span><span class="sxs-lookup"><span data-stu-id="3083b-114">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="29fbe-115">Visual Basic 的 CreateObject 和 GetObject 函数使您可以从 Visual Basic for Applications 项目中访问 OLE 自动化对象。</span><span class="sxs-lookup"><span data-stu-id="29fbe-115">Visual Basic's CreateObject and GetObject functions give you access to an OLE Automation object from a Visual Basic for Applications project.</span></span></para>
+        <remarks><para><span data-ttu-id="3083b-115">Visual Basic 的 CreateObject 和 GetObject 函数使您可以从 Visual Basic for Applications 项目中访问 OLE 自动化对象。</span><span class="sxs-lookup"><span data-stu-id="3083b-115">Visual Basic's CreateObject and GetObject functions give you access to an OLE Automation object from a Visual Basic for Applications project.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2911,6 +2914,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.AutoScroll(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AutoScroll (Velocity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AutoScroll(int Velocity);" />
+      <MemberSignature Language="F#" Value="abstract member AutoScroll : int -&gt; unit" Usage="pane.AutoScroll Velocity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2928,8 +2932,8 @@ End If&lt;/span&gt;</code>
         <Parameter Name="Velocity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Velocity"><span data-ttu-id="29fbe-116">滚动的速度。</span><span class="sxs-lookup"><span data-stu-id="29fbe-116">The speed for scrolling.</span></span></param>
-        <summary><span data-ttu-id="29fbe-117">在指定的窗格中自动滚动。</span><span class="sxs-lookup"><span data-stu-id="29fbe-117">Scrolls automatically through the specified pane.</span></span></summary>
+        <param name="Velocity"><span data-ttu-id="3083b-116">滚动的速度。</span><span class="sxs-lookup"><span data-stu-id="3083b-116">The speed for scrolling.</span></span></param>
+        <summary><span data-ttu-id="3083b-117">在指定的窗格中自动滚动。</span><span class="sxs-lookup"><span data-stu-id="3083b-117">Scrolls automatically through the specified pane.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2939,6 +2943,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.BrowseToWindow" />
       <MemberSignature Language="VB.NET" Value="Public Property BrowseToWindow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BrowseToWindow { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BrowseToWindow : bool with get, set" Usage="Microsoft.Office.Interop.Word.Pane.BrowseToWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2965,7 +2970,7 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-118">仅供内部使用。</span><span class="sxs-lookup"><span data-stu-id="29fbe-118">Reserved for internal use.</span></span></summary>
+        <summary><span data-ttu-id="3083b-118">仅供内部使用。</span><span class="sxs-lookup"><span data-stu-id="3083b-118">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2976,6 +2981,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.BrowseWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BrowseWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BrowseWidth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BrowseWidth : int" Usage="Microsoft.Office.Interop.Word.Pane.BrowseWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2993,9 +2999,9 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-119">返回在指定窗格中的文字换行的区域的宽度 (以磅为单位)。</span><span class="sxs-lookup"><span data-stu-id="29fbe-119">Returns the width (in points) of the area in which text wraps in the specified pane.</span></span> <span data-ttu-id="29fbe-120">只读的 <b>长</b> 。</span><span class="sxs-lookup"><span data-stu-id="29fbe-120">Read-only <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="3083b-119">返回在指定窗格中的文字换行的区域的宽度 (以磅为单位)。</span><span class="sxs-lookup"><span data-stu-id="3083b-119">Returns the width (in points) of the area in which text wraps in the specified pane.</span></span> <span data-ttu-id="3083b-120">只读的 <b>长</b> 。</span><span class="sxs-lookup"><span data-stu-id="3083b-120">Read-only <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="29fbe-121">此属性仅用于 Web 版式视图。</span><span class="sxs-lookup"><span data-stu-id="29fbe-121">This property works only when you are in Web layout view.</span></span></para>
+        <remarks><para><span data-ttu-id="3083b-121">此属性仅用于 Web 版式视图。</span><span class="sxs-lookup"><span data-stu-id="3083b-121">This property works only when you are in Web layout view.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3005,6 +3011,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="pane.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3020,9 +3027,9 @@ End If&lt;/span&gt;</code>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="29fbe-122">关闭指定的邮件合并数据源、窗格或任务。</span><span class="sxs-lookup"><span data-stu-id="29fbe-122">Closes the specified Mail Merge data source, pane, or task.</span></span></summary>
+        <summary><span data-ttu-id="3083b-122">关闭指定的邮件合并数据源、窗格或任务。</span><span class="sxs-lookup"><span data-stu-id="3083b-122">Closes the specified Mail Merge data source, pane, or task.</span></span></summary>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="29fbe-123">本示例在拆分活动窗口时关闭活动窗格。</span><span class="sxs-lookup"><span data-stu-id="29fbe-123">This example closes the active pane if the active window is split.</span></span></para>
+        <example><para><span data-ttu-id="3083b-123">本示例在拆分活动窗口时关闭活动窗格。</span><span class="sxs-lookup"><span data-stu-id="3083b-123">This example closes the active pane if the active window is split.</span></span></para>
           <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -3289,6 +3296,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Pane.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3306,9 +3314,9 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-124">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="29fbe-124">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="29fbe-125">只读 <b>Long</b>。</span><span class="sxs-lookup"><span data-stu-id="29fbe-125">Read-only <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="3083b-124">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="3083b-124">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="3083b-125">只读 <b>Long</b>。</span><span class="sxs-lookup"><span data-stu-id="3083b-125">Read-only <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="29fbe-126">如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。</span><span class="sxs-lookup"><span data-stu-id="29fbe-126">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="29fbe-127">此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。</span><span class="sxs-lookup"><span data-stu-id="29fbe-127">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="29fbe-128">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="29fbe-128">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="29fbe-129">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="29fbe-129">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="3083b-126">如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。</span><span class="sxs-lookup"><span data-stu-id="3083b-126">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="3083b-127">此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。</span><span class="sxs-lookup"><span data-stu-id="3083b-127">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="3083b-128">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="3083b-128">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="3083b-129">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="3083b-129">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3318,6 +3326,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.DisplayRulers" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayRulers As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayRulers { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayRulers : bool with get, set" Usage="Microsoft.Office.Interop.Word.Pane.DisplayRulers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3338,11 +3347,11 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-130"><b>如此</b> 如果在指定窗格中显示标尺。</span><span class="sxs-lookup"><span data-stu-id="29fbe-130"><b>True</b> if rulers are displayed for the specified pane.</span></span> <span data-ttu-id="29fbe-131">读/写 <b>Boolean</b>。</span><span class="sxs-lookup"><span data-stu-id="29fbe-131">Read/write <b>Boolean</b>.</span></span></summary>
+        <summary><span data-ttu-id="3083b-130"><b>如此</b> 如果在指定窗格中显示标尺。</span><span class="sxs-lookup"><span data-stu-id="3083b-130"><b>True</b> if rulers are displayed for the specified pane.</span></span> <span data-ttu-id="3083b-131">读/写 <b>Boolean</b>。</span><span class="sxs-lookup"><span data-stu-id="3083b-131">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="29fbe-132"><b>DisplayRulers</b> 属性等效于在 视图菜单上的 标尺命令。</span><span class="sxs-lookup"><span data-stu-id="29fbe-132">The <b>DisplayRulers</b> property is equivalent to the Ruler command on the View menu.</span></span> <span data-ttu-id="29fbe-133">如果 <b>DisplayRulers</b> 是 <b>假</b> 的水平和垂直标尺将不会显示，而不考虑 <b>DisplayVerticalRuler</b> 属性的状态。</span><span class="sxs-lookup"><span data-stu-id="29fbe-133">If <b>DisplayRulers</b> is <b>False</b>, the horizontal and vertical rulers won't be displayed, regardless of the state of the <b>DisplayVerticalRuler</b> property.</span></span></para>
+        <remarks><para><span data-ttu-id="3083b-132"><b>DisplayRulers</b> 属性等效于在 视图菜单上的 标尺命令。</span><span class="sxs-lookup"><span data-stu-id="3083b-132">The <b>DisplayRulers</b> property is equivalent to the Ruler command on the View menu.</span></span> <span data-ttu-id="3083b-133">如果 <b>DisplayRulers</b> 是 <b>假</b> 的水平和垂直标尺将不会显示，而不考虑 <b>DisplayVerticalRuler</b> 属性的状态。</span><span class="sxs-lookup"><span data-stu-id="3083b-133">If <b>DisplayRulers</b> is <b>False</b>, the horizontal and vertical rulers won't be displayed, regardless of the state of the <b>DisplayVerticalRuler</b> property.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="29fbe-134">本示例将活动窗格切换到页面视图并显示水平和垂直标尺。</span><span class="sxs-lookup"><span data-stu-id="29fbe-134">This example switches the active pane to print layout view and displays the horizontal and vertical rulers.</span></span></para>
+        <example><para><span data-ttu-id="3083b-134">本示例将活动窗格切换到页面视图并显示水平和垂直标尺。</span><span class="sxs-lookup"><span data-stu-id="3083b-134">This example switches the active pane to print layout view and displays the horizontal and vertical rulers.</span></span></para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -3866,6 +3875,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.DisplayVerticalRuler" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayVerticalRuler As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayVerticalRuler { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayVerticalRuler : bool with get, set" Usage="Microsoft.Office.Interop.Word.Pane.DisplayVerticalRuler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3886,11 +3896,11 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-135"><b>如此</b> 如果在指定窗格中显示垂直标尺。</span><span class="sxs-lookup"><span data-stu-id="29fbe-135"><b>True</b> if a vertical ruler is displayed for the specified pane.</span></span> <span data-ttu-id="29fbe-136">读/写 <b>boolean 类型的值</b> 。</span><span class="sxs-lookup"><span data-stu-id="29fbe-136">Read/write <b>Boolean</b>.</span></span></summary>
+        <summary><span data-ttu-id="3083b-135"><b>如此</b> 如果在指定窗格中显示垂直标尺。</span><span class="sxs-lookup"><span data-stu-id="3083b-135"><b>True</b> if a vertical ruler is displayed for the specified pane.</span></span> <span data-ttu-id="3083b-136">读/写 <b>boolean 类型的值</b> 。</span><span class="sxs-lookup"><span data-stu-id="3083b-136">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="29fbe-137">仅在页面视图中显示垂直标尺并且只有将 <b>DisplayRulers</b> 属性设置为 <b>True</b> 。</span><span class="sxs-lookup"><span data-stu-id="29fbe-137">A vertical ruler appears only in print layout view, and only if the <b>DisplayRulers</b> property is set to <b>True</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="3083b-137">仅在页面视图中显示垂直标尺并且只有将 <b>DisplayRulers</b> 属性设置为 <b>True</b> 。</span><span class="sxs-lookup"><span data-stu-id="3083b-137">A vertical ruler appears only in print layout view, and only if the <b>DisplayRulers</b> property is set to <b>True</b>.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="29fbe-138">本示例将活动窗格切换到页面视图并显示水平和垂直标尺。</span><span class="sxs-lookup"><span data-stu-id="29fbe-138">This example switches the active pane to print layout view and displays the horizontal and vertical rulers.</span></span></para>
+        <example><para><span data-ttu-id="3083b-138">本示例将活动窗格切换到页面视图并显示水平和垂直标尺。</span><span class="sxs-lookup"><span data-stu-id="3083b-138">This example switches the active pane to print layout view and displays the horizontal and vertical rulers.</span></span></para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -4670,6 +4680,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Document" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Document As Document" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Document ^ Document { Microsoft::Office::Interop::Word::Document ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Document : Microsoft.Office.Interop.Word.Document" Usage="Microsoft.Office.Interop.Word.Pane.Document" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -4687,7 +4698,7 @@ End If&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-139">返回与<see cref="T:Microsoft.Office.Interop.Word.Document" />指定窗格相关联的对象。</span><span class="sxs-lookup"><span data-stu-id="29fbe-139">Returns a <see cref="T:Microsoft.Office.Interop.Word.Document" /> object associated with the specified pane.</span></span> <span data-ttu-id="29fbe-140">只读。</span><span class="sxs-lookup"><span data-stu-id="29fbe-140">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="3083b-139">返回 <see cref="T:Microsoft.Office.Interop.Word.Document" /> 与指定窗格相关联的对象。</span><span class="sxs-lookup"><span data-stu-id="3083b-139">Returns a <see cref="T:Microsoft.Office.Interop.Word.Document" /> object associated with the specified pane.</span></span> <span data-ttu-id="3083b-140">只读。</span><span class="sxs-lookup"><span data-stu-id="3083b-140">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4698,6 +4709,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Frameset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frameset As Frameset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Frameset ^ Frameset { Microsoft::Office::Interop::Word::Frameset ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Frameset : Microsoft.Office.Interop.Word.Frameset" Usage="Microsoft.Office.Interop.Word.Pane.Frameset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -4715,12 +4727,12 @@ End If&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Frameset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-141">返回一个<see cref="T:Microsoft.Office.Interop.Word.Frameset" /> object 类型的值, 该值代表整个框架页或框架页上的单个框架。</span><span class="sxs-lookup"><span data-stu-id="29fbe-141">Returns a <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> object that represents an entire frames page or a single frame on a frames page.</span></span> <span data-ttu-id="29fbe-142">只读。</span><span class="sxs-lookup"><span data-stu-id="29fbe-142">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="3083b-141">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> object 类型的值，该值代表整个框架页或框架页上的单个框架。</span><span class="sxs-lookup"><span data-stu-id="3083b-141">Returns a <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> object that represents an entire frames page or a single frame on a frames page.</span></span> <span data-ttu-id="3083b-142">只读。</span><span class="sxs-lookup"><span data-stu-id="3083b-142">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="29fbe-143">有关创建框架页的详细信息, 请<see cref="Creatingframespages#SameCHM" />参阅。</span><span class="sxs-lookup"><span data-stu-id="29fbe-143">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
+        <remarks><para><span data-ttu-id="3083b-143">有关创建框架页的详细信息，请参阅 <see cref="Creatingframespages#SameCHM" /> 。</span><span class="sxs-lookup"><span data-stu-id="3083b-143">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
           <para> </para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="29fbe-144">本示例紧邻指定框架的右侧添加一个新框架。</span><span class="sxs-lookup"><span data-stu-id="29fbe-144">This example adds a new frame to the immediate right of the specified frame.</span></span></para>
+        <example><para><span data-ttu-id="3083b-144">本示例紧邻指定框架的右侧添加一个新框架。</span><span class="sxs-lookup"><span data-stu-id="3083b-144">This example adds a new frame to the immediate right of the specified frame.</span></span></para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Frameset&lt;/span&gt;
 &lt;span class="label"&gt;_    .AddNewFrame wdFramesetNewRight&lt;/span&gt;</code></example>
@@ -4732,6 +4744,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.HorizontalPercentScrolled" />
       <MemberSignature Language="VB.NET" Value="Public Property HorizontalPercentScrolled As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HorizontalPercentScrolled { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalPercentScrolled : int with get, set" Usage="Microsoft.Office.Interop.Word.Pane.HorizontalPercentScrolled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -4752,10 +4765,10 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-145">返回或设置文档宽度的百分比表示的水平滚动位置。</span><span class="sxs-lookup"><span data-stu-id="29fbe-145">Returns or sets the horizontal scroll position as a percentage of the document width.</span></span> <span data-ttu-id="29fbe-146">读/写 <b>长</b> 。</span><span class="sxs-lookup"><span data-stu-id="29fbe-146">Read/write <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="3083b-145">返回或设置文档宽度的百分比表示的水平滚动位置。</span><span class="sxs-lookup"><span data-stu-id="3083b-145">Returns or sets the horizontal scroll position as a percentage of the document width.</span></span> <span data-ttu-id="3083b-146">读/写 <b>长</b> 。</span><span class="sxs-lookup"><span data-stu-id="3083b-146">Read/write <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="29fbe-147">以下示例将 Document1 窗口的活动窗格水平滚动至最左边。</span><span class="sxs-lookup"><span data-stu-id="29fbe-147">This example horizontally scrolls the active pane of the window for Document1 all the way to the left.</span></span></para>
+        <example><para><span data-ttu-id="3083b-147">以下示例将 Document1 窗口的活动窗格水平滚动至最左边。</span><span class="sxs-lookup"><span data-stu-id="3083b-147">This example horizontally scrolls the active pane of the window for Document1 all the way to the left.</span></span></para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -5279,6 +5292,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Pane.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -5296,7 +5310,7 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-148">返回一个 <b>Long</b> ，该值表示集合中项的位置。</span><span class="sxs-lookup"><span data-stu-id="29fbe-148">Returns a <b>Long</b> that represents the position of an item in a collection.</span></span> <span data-ttu-id="29fbe-149">只读。</span><span class="sxs-lookup"><span data-stu-id="29fbe-149">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="3083b-148">返回一个 <b>Long</b> ，该值表示集合中项的位置。</span><span class="sxs-lookup"><span data-stu-id="3083b-148">Returns a <b>Long</b> that represents the position of an item in a collection.</span></span> <span data-ttu-id="3083b-149">只读。</span><span class="sxs-lookup"><span data-stu-id="3083b-149">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5306,6 +5320,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LargeScroll([in]object&amp; Down, [in]object&amp; Up, [in]object&amp; ToRight, [in]object&amp; ToLeft) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.LargeScroll(System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LargeScroll (Optional ByRef Down As Object, Optional ByRef Up As Object, Optional ByRef ToRight As Object, Optional ByRef ToLeft As Object)" />
+      <MemberSignature Language="F#" Value="abstract member LargeScroll : obj * obj * obj * obj -&gt; unit" Usage="pane.LargeScroll (Down, Up, ToRight, ToLeft)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -5320,18 +5335,18 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Down" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ToRight" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ToLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Down" Type="System.Object" RefType="ref" />
+        <Parameter Name="Up" Type="System.Object" RefType="ref" />
+        <Parameter Name="ToRight" Type="System.Object" RefType="ref" />
+        <Parameter Name="ToLeft" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down"><span data-ttu-id="29fbe-150">向下滚动窗口的屏数。</span><span class="sxs-lookup"><span data-stu-id="29fbe-150">The number of screens to scroll the window down.</span></span></param>
-        <param name="Up"><span data-ttu-id="29fbe-151">向上滚动窗口的屏数。</span><span class="sxs-lookup"><span data-stu-id="29fbe-151">The number of screens to scroll the window up.</span></span></param>
-        <param name="ToRight"><span data-ttu-id="29fbe-152">向右滚动窗口的屏数。</span><span class="sxs-lookup"><span data-stu-id="29fbe-152">The number of screens to scroll the window to the right.</span></span></param>
-        <param name="ToLeft"><span data-ttu-id="29fbe-153">向左滚动窗口的屏数。</span><span class="sxs-lookup"><span data-stu-id="29fbe-153">The number of screens to scroll the window to the left.</span></span></param>
-        <summary><span data-ttu-id="29fbe-154">将窗口或窗格滚动指定的屏数。</span><span class="sxs-lookup"><span data-stu-id="29fbe-154">Scrolls a window or pane by the specified number of screens.</span></span></summary>
-        <remarks><para><span data-ttu-id="29fbe-155">此方法等效于在水平和垂直滚动条上单击滚动块以外的位置。</span><span class="sxs-lookup"><span data-stu-id="29fbe-155">This method is equivalent to clicking just before or just after the scroll boxes on the horizontal and vertical scroll bars.</span></span></para>
+        <param name="Down"><span data-ttu-id="3083b-150">向下滚动窗口的屏数。</span><span class="sxs-lookup"><span data-stu-id="3083b-150">The number of screens to scroll the window down.</span></span></param>
+        <param name="Up"><span data-ttu-id="3083b-151">向上滚动窗口的屏数。</span><span class="sxs-lookup"><span data-stu-id="3083b-151">The number of screens to scroll the window up.</span></span></param>
+        <param name="ToRight"><span data-ttu-id="3083b-152">向右滚动窗口的屏数。</span><span class="sxs-lookup"><span data-stu-id="3083b-152">The number of screens to scroll the window to the right.</span></span></param>
+        <param name="ToLeft"><span data-ttu-id="3083b-153">向左滚动窗口的屏数。</span><span class="sxs-lookup"><span data-stu-id="3083b-153">The number of screens to scroll the window to the left.</span></span></param>
+        <summary><span data-ttu-id="3083b-154">将窗口或窗格滚动指定的屏数。</span><span class="sxs-lookup"><span data-stu-id="3083b-154">Scrolls a window or pane by the specified number of screens.</span></span></summary>
+        <remarks><para><span data-ttu-id="3083b-155">此方法等效于在水平和垂直滚动条上单击滚动块以外的位置。</span><span class="sxs-lookup"><span data-stu-id="3083b-155">This method is equivalent to clicking just before or just after the scroll boxes on the horizontal and vertical scroll bars.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5341,6 +5356,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.MinimumFontSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MinimumFontSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumFontSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumFontSize : int with get, set" Usage="Microsoft.Office.Interop.Word.Pane.MinimumFontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -5361,11 +5377,11 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-156">返回或设置在指定窗格中显示的最小字体大小 (以磅为单位)。</span><span class="sxs-lookup"><span data-stu-id="29fbe-156">Returns or sets the minimum font size (in points) displayed for the specified pane.</span></span> <span data-ttu-id="29fbe-157">读/写 <b>Long</b>。</span><span class="sxs-lookup"><span data-stu-id="29fbe-157">Read/write <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="3083b-156">返回或设置在指定窗格中显示的最小字体大小 (以磅为单位)。</span><span class="sxs-lookup"><span data-stu-id="3083b-156">Returns or sets the minimum font size (in points) displayed for the specified pane.</span></span> <span data-ttu-id="3083b-157">读/写 <b>Long</b>。</span><span class="sxs-lookup"><span data-stu-id="3083b-157">Read/write <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="29fbe-158">此属性仅影响 Web 版式视图中显示的文本。</span><span class="sxs-lookup"><span data-stu-id="29fbe-158">This property only affects the text as shown in Web layout view.</span></span> <span data-ttu-id="29fbe-159">显示在 "格式" 工具栏上并用于打印的磅大小不会发生变化。</span><span class="sxs-lookup"><span data-stu-id="29fbe-159">The point sizes that are displayed on the Formatting toolbar and used for printing aren't changed.</span></span></para>
+        <remarks><para><span data-ttu-id="3083b-158">此属性仅影响 Web 版式视图中显示的文本。</span><span class="sxs-lookup"><span data-stu-id="3083b-158">This property only affects the text as shown in Web layout view.</span></span> <span data-ttu-id="3083b-159">显示在 "格式" 工具栏上并用于打印的磅大小不会发生变化。</span><span class="sxs-lookup"><span data-stu-id="3083b-159">The point sizes that are displayed on the Formatting toolbar and used for printing aren't changed.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="29fbe-160">本示例将活动窗口设置为大纲视图，并将活动窗格中的最小字号设置为 12 磅。</span><span class="sxs-lookup"><span data-stu-id="29fbe-160">This example sets the active window to online view and then sets the minimum font size for the active pane to 12 points.</span></span></para>
+        <example><para><span data-ttu-id="3083b-160">本示例将活动窗口设置为大纲视图，并将活动窗格中的最小字号设置为 12 磅。</span><span class="sxs-lookup"><span data-stu-id="3083b-160">This example sets the active window to online view and then sets the minimum font size for the active pane to 12 points.</span></span></para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow 
 
 
@@ -5881,7 +5897,7 @@ End If&lt;/span&gt;</code>
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;MinimumFontSize&lt;/span&gt;
 &lt;span class="label"&gt;= 12End With&lt;/span&gt;</code>
-          <para><span data-ttu-id="29fbe-161">本示例返回活动窗格的最小字号。</span><span class="sxs-lookup"><span data-stu-id="29fbe-161">This example returns the minimum font size for the active pane.</span></span></para>
+          <para><span data-ttu-id="3083b-161">本示例返回活动窗格的最小字号。</span><span class="sxs-lookup"><span data-stu-id="3083b-161">This example returns the minimum font size for the active pane.</span></span></para>
           <code>&lt;span class="label"&gt;Msgbox _ 
 
 
@@ -6148,6 +6164,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.NewFrameset" />
       <MemberSignature Language="VB.NET" Value="Public Sub NewFrameset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewFrameset();" />
+      <MemberSignature Language="F#" Value="abstract member NewFrameset : unit -&gt; unit" Usage="pane.NewFrameset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6163,10 +6180,10 @@ End If&lt;/span&gt;</code>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="29fbe-162">基于指定的窗格新建一个框架页。</span><span class="sxs-lookup"><span data-stu-id="29fbe-162">Creates a new frames page based on the specified pane.</span></span></summary>
-        <remarks><para><span data-ttu-id="29fbe-163">有关创建框架页的详细信息, 请<see cref="Creatingframespages#SameCHM" />参阅。</span><span class="sxs-lookup"><span data-stu-id="29fbe-163">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
+        <summary><span data-ttu-id="3083b-162">基于指定的窗格新建一个框架页。</span><span class="sxs-lookup"><span data-stu-id="3083b-162">Creates a new frames page based on the specified pane.</span></span></summary>
+        <remarks><para><span data-ttu-id="3083b-163">有关创建框架页的详细信息，请参阅 <see cref="Creatingframespages#SameCHM" /> 。</span><span class="sxs-lookup"><span data-stu-id="3083b-163">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="29fbe-164">本示例将打开一个名为"Temp.doc"的文件，然后创建一个新的框架页，该框架页中唯一的一个框架中包含"Temp.doc"。</span><span class="sxs-lookup"><span data-stu-id="29fbe-164">This example opens a document named "Temp.doc" and then creates a new frames page whose only frame contains "Temp.doc".</span></span></para>
+        <example><para><span data-ttu-id="3083b-164">本示例将打开一个名为"Temp.doc"的文件，然后创建一个新的框架页，该框架页中唯一的一个框架中包含"Temp.doc"。</span><span class="sxs-lookup"><span data-stu-id="3083b-164">This example opens a document named "Temp.doc" and then creates a new frames page whose only frame contains "Temp.doc".</span></span></para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Temp.doc" 
 
 
@@ -6433,6 +6450,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Next" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Next As Pane" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Pane ^ Next { Microsoft::Office::Interop::Word::Pane ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Next : Microsoft.Office.Interop.Word.Pane" Usage="Microsoft.Office.Interop.Word.Pane.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6450,7 +6468,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-165">返回一个 <b>Pane</b> 对象，该对象代表集合中的下一个文档窗格。</span><span class="sxs-lookup"><span data-stu-id="29fbe-165">Returns a <b>Pane</b> object that represents the next document pane in the collection.</span></span> <span data-ttu-id="29fbe-166">只读。</span><span class="sxs-lookup"><span data-stu-id="29fbe-166">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="3083b-165">返回一个 <b>Pane</b> 对象，该对象代表集合中的下一个文档窗格。</span><span class="sxs-lookup"><span data-stu-id="3083b-165">Returns a <b>Pane</b> object that represents the next document pane in the collection.</span></span> <span data-ttu-id="3083b-166">只读。</span><span class="sxs-lookup"><span data-stu-id="3083b-166">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6461,6 +6479,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Pages" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pages As Pages" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Pages ^ Pages { Microsoft::Office::Interop::Word::Pages ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pages : Microsoft.Office.Interop.Word.Pages" Usage="Microsoft.Office.Interop.Word.Pane.Pages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6478,7 +6497,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-167">返回一个<see cref="T:Microsoft.Office.Interop.Word.Pages" />集合, 该集合代表文档中的页面。</span><span class="sxs-lookup"><span data-stu-id="29fbe-167">Returns a <see cref="T:Microsoft.Office.Interop.Word.Pages" /> collection that represents the pages in a document.</span></span></summary>
+        <summary><span data-ttu-id="3083b-167">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Pages" /> 集合，该集合代表文档中的页面。</span><span class="sxs-lookup"><span data-stu-id="3083b-167">Returns a <see cref="T:Microsoft.Office.Interop.Word.Pages" /> collection that represents the pages in a document.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6488,6 +6507,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageScroll([in]object&amp; Down, [in]object&amp; Up) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.PageScroll(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageScroll (Optional ByRef Down As Object, Optional ByRef Up As Object)" />
+      <MemberSignature Language="F#" Value="abstract member PageScroll : obj * obj -&gt; unit" Usage="pane.PageScroll (Down, Up)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6502,13 +6522,13 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Down" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Down" Type="System.Object" RefType="ref" />
+        <Parameter Name="Up" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down"><span data-ttu-id="29fbe-168">向下滚动的页数。</span><span class="sxs-lookup"><span data-stu-id="29fbe-168">The number of pages to be scrolled down.</span></span></param>
-        <param name="Up"><span data-ttu-id="29fbe-169">向上滚动的页数。</span><span class="sxs-lookup"><span data-stu-id="29fbe-169">The number of pages to be scrolled up.</span></span></param>
-        <summary><span data-ttu-id="29fbe-170">使指定的窗格或窗口逐页滚动。</span><span class="sxs-lookup"><span data-stu-id="29fbe-170">Scrolls through the specified pane or window page by page.</span></span></summary>
+        <param name="Down"><span data-ttu-id="3083b-168">向下滚动的页数。</span><span class="sxs-lookup"><span data-stu-id="3083b-168">The number of pages to be scrolled down.</span></span></param>
+        <param name="Up"><span data-ttu-id="3083b-169">向上滚动的页数。</span><span class="sxs-lookup"><span data-stu-id="3083b-169">The number of pages to be scrolled up.</span></span></param>
+        <summary><span data-ttu-id="3083b-170">使指定的窗格或窗口逐页滚动。</span><span class="sxs-lookup"><span data-stu-id="3083b-170">Scrolls through the specified pane or window page by page.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -6518,6 +6538,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Pane.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6535,7 +6556,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-171">返回一个 <b>对象</b> ，表示指定的 <b>窗格中</b> 对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="29fbe-171">Returns an <b>Object</b> that represents the parent object of the specified <b>Pane</b> object.</span></span></summary>
+        <summary><span data-ttu-id="3083b-171">返回一个 <b>对象</b> ，表示指定的 <b>窗格中</b> 对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="3083b-171">Returns an <b>Object</b> that represents the parent object of the specified <b>Pane</b> object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6546,6 +6567,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Previous" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Previous As Pane" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Pane ^ Previous { Microsoft::Office::Interop::Word::Pane ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Previous : Microsoft.Office.Interop.Word.Pane" Usage="Microsoft.Office.Interop.Word.Pane.Previous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6563,7 +6585,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-172">返回一个 <b>Pane</b> 对象，该对象代表集合中的上一个文档窗格。</span><span class="sxs-lookup"><span data-stu-id="29fbe-172">Returns a <b>Pane</b> object that represents the previous document pane in the collection.</span></span> <span data-ttu-id="29fbe-173">只读。</span><span class="sxs-lookup"><span data-stu-id="29fbe-173">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="3083b-172">返回一个 <b>Pane</b> 对象，该对象代表集合中的上一个文档窗格。</span><span class="sxs-lookup"><span data-stu-id="3083b-172">Returns a <b>Pane</b> object that represents the previous document pane in the collection.</span></span> <span data-ttu-id="3083b-173">只读。</span><span class="sxs-lookup"><span data-stu-id="3083b-173">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6574,6 +6596,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Selection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Selection As Selection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Selection ^ Selection { Microsoft::Office::Interop::Word::Selection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Selection : Microsoft.Office.Interop.Word.Selection" Usage="Microsoft.Office.Interop.Word.Pane.Selection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6591,7 +6614,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Selection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-174">返回表示所选内容或插入点在文档窗格中的 <b>选择</b> 对象。</span><span class="sxs-lookup"><span data-stu-id="29fbe-174">Returns the <b>Selection</b> object that represents a selection or the insertion point within a document pane.</span></span> <span data-ttu-id="29fbe-175">只读的。</span><span class="sxs-lookup"><span data-stu-id="29fbe-175">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="3083b-174">返回表示所选内容或插入点在文档窗格中的 <b>选择</b> 对象。</span><span class="sxs-lookup"><span data-stu-id="3083b-174">Returns the <b>Selection</b> object that represents a selection or the insertion point within a document pane.</span></span> <span data-ttu-id="3083b-175">只读的。</span><span class="sxs-lookup"><span data-stu-id="3083b-175">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6601,6 +6624,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SmallScroll([in]object&amp; Down, [in]object&amp; Up, [in]object&amp; ToRight, [in]object&amp; ToLeft) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.SmallScroll(System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SmallScroll (Optional ByRef Down As Object, Optional ByRef Up As Object, Optional ByRef ToRight As Object, Optional ByRef ToLeft As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SmallScroll : obj * obj * obj * obj -&gt; unit" Usage="pane.SmallScroll (Down, Up, ToRight, ToLeft)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6615,17 +6639,17 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Down" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ToRight" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ToLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Down" Type="System.Object" RefType="ref" />
+        <Parameter Name="Up" Type="System.Object" RefType="ref" />
+        <Parameter Name="ToRight" Type="System.Object" RefType="ref" />
+        <Parameter Name="ToLeft" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down"><span data-ttu-id="29fbe-176">向下滚动窗口的行数。</span><span class="sxs-lookup"><span data-stu-id="29fbe-176">The number of lines to scroll the window down.</span></span></param>
-        <param name="Up"><span data-ttu-id="29fbe-177">向上滚动窗口的行数。</span><span class="sxs-lookup"><span data-stu-id="29fbe-177">The number of lines to scroll the window up.</span></span></param>
-        <param name="ToRight"><span data-ttu-id="29fbe-178">向右滚动窗口的行数。</span><span class="sxs-lookup"><span data-stu-id="29fbe-178">The number of lines to scroll the window to the right.</span></span></param>
-        <param name="ToLeft"><span data-ttu-id="29fbe-179">向左滚动窗口的行数。</span><span class="sxs-lookup"><span data-stu-id="29fbe-179">The number of lines to scroll the window to the left.</span></span></param>
-        <summary><span data-ttu-id="29fbe-180">将窗口或窗格滚动指定的行数。</span><span class="sxs-lookup"><span data-stu-id="29fbe-180">Scrolls a window or pane by the specified number of lines.</span></span></summary>
+        <param name="Down"><span data-ttu-id="3083b-176">向下滚动窗口的行数。</span><span class="sxs-lookup"><span data-stu-id="3083b-176">The number of lines to scroll the window down.</span></span></param>
+        <param name="Up"><span data-ttu-id="3083b-177">向上滚动窗口的行数。</span><span class="sxs-lookup"><span data-stu-id="3083b-177">The number of lines to scroll the window up.</span></span></param>
+        <param name="ToRight"><span data-ttu-id="3083b-178">向右滚动窗口的行数。</span><span class="sxs-lookup"><span data-stu-id="3083b-178">The number of lines to scroll the window to the right.</span></span></param>
+        <param name="ToLeft"><span data-ttu-id="3083b-179">向左滚动窗口的行数。</span><span class="sxs-lookup"><span data-stu-id="3083b-179">The number of lines to scroll the window to the left.</span></span></param>
+        <summary><span data-ttu-id="3083b-180">将窗口或窗格滚动指定的行数。</span><span class="sxs-lookup"><span data-stu-id="3083b-180">Scrolls a window or pane by the specified number of lines.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -6635,6 +6659,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.TOCInFrameset" />
       <MemberSignature Language="VB.NET" Value="Public Sub TOCInFrameset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TOCInFrameset();" />
+      <MemberSignature Language="F#" Value="abstract member TOCInFrameset : unit -&gt; unit" Usage="pane.TOCInFrameset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6650,10 +6675,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="29fbe-181">基于指定文档创建一个目录，并将其放入框架页左边的新框架中。</span><span class="sxs-lookup"><span data-stu-id="29fbe-181">Creates a table of contents based on the specified document and puts it in a new frame on the left side of the frames page.</span></span></summary>
-        <remarks><para><span data-ttu-id="29fbe-182">有关创建框架页的详细信息, 请<see cref="Creatingframespages#SameCHM" />参阅。</span><span class="sxs-lookup"><span data-stu-id="29fbe-182">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
+        <summary><span data-ttu-id="3083b-181">基于指定文档创建一个目录，并将其放入框架页左边的新框架中。</span><span class="sxs-lookup"><span data-stu-id="3083b-181">Creates a table of contents based on the specified document and puts it in a new frame on the left side of the frames page.</span></span></summary>
+        <remarks><para><span data-ttu-id="3083b-182">有关创建框架页的详细信息，请参阅 <see cref="Creatingframespages#SameCHM" /> 。</span><span class="sxs-lookup"><span data-stu-id="3083b-182">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="29fbe-183">本示例实现的功能是：打开一个名为“Proposal.doc”的文件，基于该文件创建一个框架页，并添加一个含有该文件目录的框架（位于页面的左侧）。</span><span class="sxs-lookup"><span data-stu-id="29fbe-183">This example opens a file named "Proposal.doc", creates a frames page based on the file, and adds a frame (on the left side of the page) containing a table of contents for the file.</span></span></para>
+        <example><para><span data-ttu-id="3083b-183">本示例实现的功能是：打开一个名为“Proposal.doc”的文件，基于该文件创建一个框架页，并添加一个含有该文件目录的框架（位于页面的左侧）。</span><span class="sxs-lookup"><span data-stu-id="3083b-183">This example opens a file named "Proposal.doc", creates a frames page based on the file, and adds a frame (on the left side of the page) containing a table of contents for the file.</span></span></para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Proposal.doc" 
 
 
@@ -7176,6 +7201,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.VerticalPercentScrolled" />
       <MemberSignature Language="VB.NET" Value="Public Property VerticalPercentScrolled As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VerticalPercentScrolled { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalPercentScrolled : int with get, set" Usage="Microsoft.Office.Interop.Word.Pane.VerticalPercentScrolled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -7196,10 +7222,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-184">返回或设置垂直滚动位置占文档长度的百分比。</span><span class="sxs-lookup"><span data-stu-id="29fbe-184">Returns or sets the vertical scroll position as a percentage of the document length.</span></span> <span data-ttu-id="29fbe-185">读/写 <b>Long</b>。</span><span class="sxs-lookup"><span data-stu-id="29fbe-185">Read/write <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="3083b-184">返回或设置垂直滚动位置占文档长度的百分比。</span><span class="sxs-lookup"><span data-stu-id="3083b-184">Returns or sets the vertical scroll position as a percentage of the document length.</span></span> <span data-ttu-id="3083b-185">读/写 <b>Long</b>。</span><span class="sxs-lookup"><span data-stu-id="3083b-185">Read/write <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="29fbe-186">以下示例将 Document1 窗口的活动窗格垂直滚动至结尾。</span><span class="sxs-lookup"><span data-stu-id="29fbe-186">This example vertically scrolls the active pane of the window for Document1 to the end.</span></span></para>
+        <example><para><span data-ttu-id="3083b-186">以下示例将 Document1 窗口的活动窗格垂直滚动至结尾。</span><span class="sxs-lookup"><span data-stu-id="3083b-186">This example vertically scrolls the active pane of the window for Document1 to the end.</span></span></para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -7723,6 +7749,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.View" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property View As View" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::View ^ View { Microsoft::Office::Interop::Word::View ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.View : Microsoft.Office.Interop.Word.View" Usage="Microsoft.Office.Interop.Word.Pane.View" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -7740,10 +7767,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-187">返回一个 <b>View</b> 对象，该对象表示指定窗格的视图。</span><span class="sxs-lookup"><span data-stu-id="29fbe-187">Returns a <b>View</b> object that represents the view for the specified pane.</span></span></summary>
+        <summary><span data-ttu-id="3083b-187">返回一个 <b>View</b> 对象，该对象表示指定窗格的视图。</span><span class="sxs-lookup"><span data-stu-id="3083b-187">Returns a <b>View</b> object that represents the view for the specified pane.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="29fbe-188">本示例显示与 <b>Windows</b> 集合中的第一个窗口相关联的窗格的所有非打印字符。</span><span class="sxs-lookup"><span data-stu-id="29fbe-188">This example shows all nonprinting characters for panes associated with the first window in the <b>Windows</b> collection.</span></span></para>
+        <example><para><span data-ttu-id="3083b-188">本示例显示与 <b>Windows</b> 集合中的第一个窗口相关联的窗格的所有非打印字符。</span><span class="sxs-lookup"><span data-stu-id="3083b-188">This example shows all nonprinting characters for panes associated with the first window in the <b>Windows</b> collection.</span></span></para>
           <code>&lt;span class="label"&gt;For Each myPane In Windows(1).Panes 
 
 
@@ -8011,6 +8038,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Zooms" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Zooms As Zooms" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Zooms ^ Zooms { Microsoft::Office::Interop::Word::Zooms ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Zooms : Microsoft.Office.Interop.Word.Zooms" Usage="Microsoft.Office.Interop.Word.Pane.Zooms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -8028,11 +8056,11 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Zooms</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="29fbe-189">返回一个<see cref="Zooms#SameCHM" />集合, 该集合代表每个视图 (如普通视图、大纲视图或页面视图) 的缩放选项。</span><span class="sxs-lookup"><span data-stu-id="29fbe-189">Returns a <see cref="Zooms#SameCHM" /> collection that represents the magnification options for each view (such as normal view, outline view or print layout view).</span></span></summary>
+        <summary><span data-ttu-id="3083b-189">返回一个 <see cref="Zooms#SameCHM" /> 集合，该集合代表每个视图（如普通视图、大纲视图或页面视图）的缩放选项。</span><span class="sxs-lookup"><span data-stu-id="3083b-189">Returns a <see cref="Zooms#SameCHM" /> collection that represents the magnification options for each view (such as normal view, outline view or print layout view).</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="29fbe-190">有关返回集合中单个成员的信息, 请参阅<see cref="ReturninganObjectfromaCollection#SameCHM" />。</span><span class="sxs-lookup"><span data-stu-id="29fbe-190">For information about returning a single member of a collection, see <see cref="ReturninganObjectfromaCollection#SameCHM" />.</span></span></para>
+        <remarks><para><span data-ttu-id="3083b-190">有关返回集合中单个成员的信息，请参阅 <see cref="ReturninganObjectfromaCollection#SameCHM" /> 。</span><span class="sxs-lookup"><span data-stu-id="3083b-190">For information about returning a single member of a collection, see <see cref="ReturninganObjectfromaCollection#SameCHM" />.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="29fbe-191">本示例将在普通视图中打开的所有窗口的显示比例设为 100%。</span><span class="sxs-lookup"><span data-stu-id="29fbe-191">This example sets the magnification in normal view to 100 percent for each open window.</span></span></para>
+        <example><para><span data-ttu-id="3083b-191">本示例将在普通视图中打开的所有窗口的显示比例设为 100%。</span><span class="sxs-lookup"><span data-stu-id="3083b-191">This example sets the magnification in normal view to 100 percent for each open window.</span></span></para>
           <code>&lt;span class="label"&gt;Dim wndLoop as Window 
 
 
@@ -8804,7 +8832,7 @@ For Each wndLoop In Windows
     wndLoop.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
 &lt;span class="label"&gt;(wdNormalView).Percentage = 100Next wndLoop&lt;/span&gt;</code>
-          <para><span data-ttu-id="29fbe-192">本示例设置页面视图的显示比例，使整个页面可见。</span><span class="sxs-lookup"><span data-stu-id="29fbe-192">This example sets the magnification in print layout view so that an entire page is visible.</span></span></para>
+          <para><span data-ttu-id="3083b-192">本示例设置页面视图的显示比例，使整个页面可见。</span><span class="sxs-lookup"><span data-stu-id="3083b-192">This example sets the magnification in print layout view so that an entire page is visible.</span></span></para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes(1).&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
 &lt;span class="label"&gt;(wdPrintView).PageFit = _    wdPageFitFullPage&lt;/span&gt;</code></example>

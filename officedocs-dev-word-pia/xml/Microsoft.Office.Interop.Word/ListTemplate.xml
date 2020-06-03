@@ -1,9 +1,10 @@
 <Type Name="ListTemplate" FullName="Microsoft.Office.Interop.Word.ListTemplate">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1139c365cea882b428ac0f0075b3c20e4756cad2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144503" /></Metadata><TypeSignature Language="C#" Value="public interface ListTemplate" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="16047960fe1fb0381a7a0dd0beb15ba49ebb8c81" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925266" /></Metadata><TypeSignature Language="C#" Value="public interface ListTemplate" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListTemplate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListTemplate" />
   <TypeSignature Language="C++ CLI" Value="public interface class ListTemplate" />
+  <TypeSignature Language="F#" Value="type ListTemplate = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,16 +19,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="55728-101">代表单个列表模板，其中包含用于定义列表的所有格式。</span><span class="sxs-lookup"><span data-stu-id="55728-101">Represents a single list template that includes all the formatting that defines a list.</span></span></summary>
-    <remarks><para><span data-ttu-id="55728-102"><b>ListTemplate</b>对象是<see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />集合的一个成员。</span><span class="sxs-lookup"><span data-stu-id="55728-102">The <b>ListTemplate</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> collection.</span></span> <span data-ttu-id="55728-103">“项目符号和编号”对话框中有三张选项卡，每张选项卡上提供七种格式（不包括“无”），其中每种格式都对应一个列表模板对象。</span><span class="sxs-lookup"><span data-stu-id="55728-103">Each of the seven formats (excluding None) found on each of the three tabs in the Bullets and Numbering dialog box corresponds to a list template object.</span></span> <span data-ttu-id="55728-104">可以从<see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" />集合中的三个对象访问这些预定义的列表模板。</span><span class="sxs-lookup"><span data-stu-id="55728-104">These predefined list templates can be accessed from the three <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objects in the <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> collection.</span></span> <span data-ttu-id="55728-105">文档和模板也可以包含列表模板的集合。</span><span class="sxs-lookup"><span data-stu-id="55728-105">Documents and templates can also contain collections of list templates.</span></span></para>
-      <para><span data-ttu-id="55728-106">使用<b>ListTemplates</b>(<paramref name="index" />), 其中<paramref name="index" />是从1到7的数字, 从列表库中返回单个列表模板。</span><span class="sxs-lookup"><span data-stu-id="55728-106">Use <b>ListTemplates</b>(<paramref name="index" />), where <paramref name="index" /> is a number from 1 through 7, to return a single list template from a list gallery.</span></span></para>
-      <para><span data-ttu-id="55728-107">
-        <b>注意</b>: 某些属性和方法<see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />(例如) 不能与从列表库中访问的列表模板一起使用。</span><span class="sxs-lookup"><span data-stu-id="55728-107">
-        <b>Note</b>: Some properties and methods— <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> and <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, for example— won't work with list templates that are accessed from a list gallery.</span></span> <span data-ttu-id="55728-108">您可以修改这些列表模板，但不能改变它们的列表库类型（<b>wdBulletGallery</b>、<b>wdNumberGallery</b> 或 <b>wdOutlineNumberGallery</b>）。</span><span class="sxs-lookup"><span data-stu-id="55728-108">You can modify these list templates, but you cannot change their list gallery type (<b>wdBulletGallery</b>, <b>wdNumberGallery</b>, or <b>wdOutlineNumberGallery</b>).</span></span></para>
-      <para><span data-ttu-id="55728-109">使用<see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />方法将列表模板添加到文档或模板中的列表模板集合中。</span><span class="sxs-lookup"><span data-stu-id="55728-109">Use the <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> method to add a list template to the collection of list templates in a document or template.</span></span></para>
-      <para><span data-ttu-id="55728-110">若要查看指定的列表模板是否包含 Microsoft Word 中内置的格式设置, <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" />请将该属性与<b>ListGallery</b>对象一起使用。</span><span class="sxs-lookup"><span data-stu-id="55728-110">To see whether the specified list template contains the formatting built into Microsoft Word, use the <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> property with the <b>ListGallery</b> object.</span></span> <span data-ttu-id="55728-111">若要将格式重置为原始列表格式, <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" />请使用<b>ListGallery</b>对象的方法。</span><span class="sxs-lookup"><span data-stu-id="55728-111">To reset formatting to the original list format, use the <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> method for the <b>ListGallery</b> object.</span></span></para>
-      <para><span data-ttu-id="55728-112">返回<b>ListTemplate</b>对象后, 请使用<b>ListLevels</b><paramref name="index" />(), 其中<paramref name="index" />是从1到9的数字, 返回单个<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象。</span><span class="sxs-lookup"><span data-stu-id="55728-112">After you have returned a <b>ListTemplate</b> object, use <b>ListLevels</b>(<paramref name="index" />), where <paramref name="index" /> is a number from 1 through 9, to return a single <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> object.</span></span> <span data-ttu-id="55728-113">通过<b>ListLevel</b>对象, 您可以访问指定的列表级别的所有格式设置属性, 例如<see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />、、、和。 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /></span><span class="sxs-lookup"><span data-stu-id="55728-113">With a <b>ListLevel</b> object, you have access to all the formatting properties for the specified list level, such as <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, and <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />.</span></span></para>
-      <para><span data-ttu-id="55728-114">使用<see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" />方法可将多级别列表模板转换为单级模板。</span><span class="sxs-lookup"><span data-stu-id="55728-114">Use the <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> method to convert a multiple-level list template to a single-level template.</span></span></para>
+    <summary><span data-ttu-id="d1969-101">代表单个列表模板，其中包含用于定义列表的所有格式。</span><span class="sxs-lookup"><span data-stu-id="d1969-101">Represents a single list template that includes all the formatting that defines a list.</span></span></summary>
+    <remarks><para><span data-ttu-id="d1969-102"><b>ListTemplate</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> 。</span><span class="sxs-lookup"><span data-stu-id="d1969-102">The <b>ListTemplate</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> collection.</span></span> <span data-ttu-id="d1969-103">“项目符号和编号”对话框中有三张选项卡，每张选项卡上提供七种格式（不包括“无”），其中每种格式都对应一个列表模板对象。</span><span class="sxs-lookup"><span data-stu-id="d1969-103">Each of the seven formats (excluding None) found on each of the three tabs in the Bullets and Numbering dialog box corresponds to a list template object.</span></span> <span data-ttu-id="d1969-104">可以从集合中的三个对象访问这些预定义的列表模板 <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> 。</span><span class="sxs-lookup"><span data-stu-id="d1969-104">These predefined list templates can be accessed from the three <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objects in the <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> collection.</span></span> <span data-ttu-id="d1969-105">文档和模板也可以包含列表模板的集合。</span><span class="sxs-lookup"><span data-stu-id="d1969-105">Documents and templates can also contain collections of list templates.</span></span></para>
+      <para><span data-ttu-id="d1969-106">使用<b>ListTemplates</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是从1到7的数字，从列表库中返回单个列表模板。</span><span class="sxs-lookup"><span data-stu-id="d1969-106">Use <b>ListTemplates</b>(<paramref name="index" />), where <paramref name="index" /> is a number from 1 through 7, to return a single list template from a list gallery.</span></span></para>
+      <para><span data-ttu-id="d1969-107">
+        <b>注意</b>：某些属性和方法（ <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> 例如）不能与从列表库中访问的列表模板一起使用。</span><span class="sxs-lookup"><span data-stu-id="d1969-107">
+        <b>Note</b>: Some properties and methods— <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> and <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, for example— won't work with list templates that are accessed from a list gallery.</span></span> <span data-ttu-id="d1969-108">您可以修改这些列表模板，但不能改变它们的列表库类型（<b>wdBulletGallery</b>、<b>wdNumberGallery</b> 或 <b>wdOutlineNumberGallery</b>）。</span><span class="sxs-lookup"><span data-stu-id="d1969-108">You can modify these list templates, but you cannot change their list gallery type (<b>wdBulletGallery</b>, <b>wdNumberGallery</b>, or <b>wdOutlineNumberGallery</b>).</span></span></para>
+      <para><span data-ttu-id="d1969-109">使用 <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> 方法将列表模板添加到文档或模板中的列表模板集合中。</span><span class="sxs-lookup"><span data-stu-id="d1969-109">Use the <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> method to add a list template to the collection of list templates in a document or template.</span></span></para>
+      <para><span data-ttu-id="d1969-110">若要查看指定的列表模板是否包含 Microsoft Word 中内置的格式设置，请将该 <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> 属性与<b>ListGallery</b>对象一起使用。</span><span class="sxs-lookup"><span data-stu-id="d1969-110">To see whether the specified list template contains the formatting built into Microsoft Word, use the <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> property with the <b>ListGallery</b> object.</span></span> <span data-ttu-id="d1969-111">若要将格式重置为原始列表格式，请使用 <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> <b>ListGallery</b>对象的方法。</span><span class="sxs-lookup"><span data-stu-id="d1969-111">To reset formatting to the original list format, use the <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> method for the <b>ListGallery</b> object.</span></span></para>
+      <para><span data-ttu-id="d1969-112">返回<b>ListTemplate</b>对象后，请使用<b>ListLevels</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是从1到9的数字，返回单个 <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> 对象。</span><span class="sxs-lookup"><span data-stu-id="d1969-112">After you have returned a <b>ListTemplate</b> object, use <b>ListLevels</b>(<paramref name="index" />), where <paramref name="index" /> is a number from 1 through 9, to return a single <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> object.</span></span> <span data-ttu-id="d1969-113">通过<b>ListLevel</b>对象，您可以访问指定的列表级别的所有格式设置属性，例如、、、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" /> 、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> 和 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /> 。</span><span class="sxs-lookup"><span data-stu-id="d1969-113">With a <b>ListLevel</b> object, you have access to all the formatting properties for the specified list level, such as <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, and <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />.</span></span></para>
+      <para><span data-ttu-id="d1969-114">使用 <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> 方法可将多级别列表模板转换为单级模板。</span><span class="sxs-lookup"><span data-stu-id="d1969-114">Use the <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> method to convert a multiple-level list template to a single-level template.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ListTemplate.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,7 +56,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="55728-115">返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="55728-115">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="d1969-115">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="d1969-115">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,6 +66,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ListTemplate Convert([in]object&amp; Level) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Convert (Optional ByRef Level As Object) As ListTemplate" />
+      <MemberSignature Language="F#" Value="abstract member Convert : obj -&gt; Microsoft.Office.Interop.Word.ListTemplate" Usage="listTemplate.Convert Level" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,13 +81,13 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Level" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Level"><span data-ttu-id="55728-116">可选<b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="55728-116">Optional <b>Object</b>.</span></span> <span data-ttu-id="55728-117">新列表格式的级别。</span><span class="sxs-lookup"><span data-stu-id="55728-117">The level to use for formatting the new list.</span></span> <span data-ttu-id="55728-118">将多级列表转换为单级列表时，该参数可以是 1 至 9 之间的数字。</span><span class="sxs-lookup"><span data-stu-id="55728-118">When converting a multiple-level list to a single-level list, this argument can be a number from 1 through 9.</span></span> <span data-ttu-id="55728-119">将单级列表转换为多级列表时，1 是唯一的有效值。</span><span class="sxs-lookup"><span data-stu-id="55728-119">When converting a single-level list to a multiple-level list, 1 is the only valid value.</span></span> <span data-ttu-id="55728-120">如果省略该参数，则默认值为 1。</span><span class="sxs-lookup"><span data-stu-id="55728-120">If this argument is omitted, 1 is the default value.</span></span></param>
-        <summary><span data-ttu-id="55728-121">将多级列表转换为单级列表，或将单级列表转换为多级列表。</span><span class="sxs-lookup"><span data-stu-id="55728-121">Converts a multiple-level list to a single-level list, or vice versa.</span></span></summary>
+        <param name="Level"><span data-ttu-id="d1969-116">可选<b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="d1969-116">Optional <b>Object</b>.</span></span> <span data-ttu-id="d1969-117">新列表格式的级别。</span><span class="sxs-lookup"><span data-stu-id="d1969-117">The level to use for formatting the new list.</span></span> <span data-ttu-id="d1969-118">将多级列表转换为单级列表时，该参数可以是 1 至 9 之间的数字。</span><span class="sxs-lookup"><span data-stu-id="d1969-118">When converting a multiple-level list to a single-level list, this argument can be a number from 1 through 9.</span></span> <span data-ttu-id="d1969-119">将单级列表转换为多级列表时，1 是唯一的有效值。</span><span class="sxs-lookup"><span data-stu-id="d1969-119">When converting a single-level list to a multiple-level list, 1 is the only valid value.</span></span> <span data-ttu-id="d1969-120">如果省略该参数，则默认值为 1。</span><span class="sxs-lookup"><span data-stu-id="d1969-120">If this argument is omitted, 1 is the default value.</span></span></param>
+        <summary><span data-ttu-id="d1969-121">将多级列表转换为单级列表，或将单级列表转换为多级列表。</span><span class="sxs-lookup"><span data-stu-id="d1969-121">Converts a multiple-level list to a single-level list, or vice versa.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="55728-122">不能对派生<b></b>自<see cref="T:Microsoft.Office.Interop.Word.ListGalleries" />集合的列表模板使用 Convert 方法。</span><span class="sxs-lookup"><span data-stu-id="55728-122">You cannot use the <b>Convert</b> method on a list template that is derived from the <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> collection.</span></span></para>
+        <remarks><para><span data-ttu-id="d1969-122">不能对派生自集合的列表模板使用<b>Convert</b>方法 <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> 。</span><span class="sxs-lookup"><span data-stu-id="d1969-122">You cannot use the <b>Convert</b> method on a list template that is derived from the <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> collection.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ListTemplate.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -111,10 +115,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="55728-123">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="55728-123">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="d1969-123">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="d1969-123">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="55728-124">如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="55728-124">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="55728-125">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="55728-125">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="55728-126"><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="55728-126">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="55728-127">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="55728-127">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="55728-128">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="55728-128">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="d1969-124">如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="d1969-124">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="d1969-125">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="d1969-125">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="d1969-126"><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="d1969-126">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="d1969-127">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="d1969-127">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="d1969-128">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="d1969-128">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.ListLevels" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListLevels As ListLevels" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListLevels ^ ListLevels { Microsoft::Office::Interop::Word::ListLevels ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListLevels : Microsoft.Office.Interop.Word.ListLevels" Usage="Microsoft.Office.Interop.Word.ListTemplate.ListLevels" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,7 +146,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="55728-129">返回一个<see cref="T:Microsoft.Office.Interop.Word.ListLevels" />集合, 该集合代表指定<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />的所有级别。</span><span class="sxs-lookup"><span data-stu-id="55728-129">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> collection that represents all the levels for the specified <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />.</span></span></summary>
+        <summary><span data-ttu-id="d1969-129">返回一个 <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> 集合，该集合代表指定的所有级别 <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> 。</span><span class="sxs-lookup"><span data-stu-id="d1969-129">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> collection that represents all the levels for the specified <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.ListTemplate.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -172,7 +178,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="55728-130">返回或设置指定对象的名称。</span><span class="sxs-lookup"><span data-stu-id="55728-130">Returns or sets the name of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="d1969-130">返回或设置指定对象的名称。</span><span class="sxs-lookup"><span data-stu-id="d1969-130">Returns or sets the name of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.OutlineNumbered" />
       <MemberSignature Language="VB.NET" Value="Public Property OutlineNumbered As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OutlineNumbered { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OutlineNumbered : bool with get, set" Usage="Microsoft.Office.Interop.Word.ListTemplate.OutlineNumbered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -203,10 +210,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="55728-131"><b>如此</b>如果指定<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />的对象是多级符号。</span><span class="sxs-lookup"><span data-stu-id="55728-131"><b>True</b> if the specified <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object is outline numbered.</span></span></summary>
+        <summary><span data-ttu-id="d1969-131"><b>如此</b>如果指定的 <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> 对象是多级符号。</span><span class="sxs-lookup"><span data-stu-id="d1969-131"><b>True</b> if the specified <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object is outline numbered.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="55728-132">将此属性设置为 <b>False</b> 将列表模板转换为使用第一级的格式的单级列表。</span><span class="sxs-lookup"><span data-stu-id="55728-132">Setting this property to <b>False</b> converts the list template to a single-level list that uses the formatting of the first level.</span></span></para>
-          <para><span data-ttu-id="55728-133">您不能为从<see cref="T:Microsoft.Office.Interop.Word.ListGallery" />对象返回的<b>ListTemplate</b>对象设置该属性。</span><span class="sxs-lookup"><span data-stu-id="55728-133">You cannot set this property for a <b>ListTemplate</b> object returned from a <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> object.</span></span></para>
+        <remarks><para><span data-ttu-id="d1969-132">将此属性设置为 <b>False</b> 将列表模板转换为使用第一级的格式的单级列表。</span><span class="sxs-lookup"><span data-stu-id="d1969-132">Setting this property to <b>False</b> converts the list template to a single-level list that uses the formatting of the first level.</span></span></para>
+          <para><span data-ttu-id="d1969-133">您不能为从对象返回的<b>ListTemplate</b>对象设置该属性 <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> 。</span><span class="sxs-lookup"><span data-stu-id="d1969-133">You cannot set this property for a <b>ListTemplate</b> object returned from a <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> object.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ListTemplate.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -233,7 +241,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="55728-134">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="55728-134">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="d1969-134">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="d1969-134">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

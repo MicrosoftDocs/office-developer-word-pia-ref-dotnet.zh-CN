@@ -1,9 +1,10 @@
 <Type Name="OMathFunctions" FullName="Microsoft.Office.Interop.Word.OMathFunctions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f9dd73b5c31b36fb270ed019c2844a18dc9255cc" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147786" /></Metadata><TypeSignature Language="C#" Value="public interface OMathFunctions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1b624c52880937b1c0f95bb5712454a39297a2ad" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925084" /></Metadata><TypeSignature Language="C#" Value="public interface OMathFunctions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathFunctions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathFunctions" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathFunctions&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class OMathFunctions : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type OMathFunctions = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="4eba3-101">表示 Microsoft Office Word 支持的函数或结构的集合, 如分数、积分、总和和根式。</span><span class="sxs-lookup"><span data-stu-id="4eba3-101">Represents a collection of functions or structures that Microsoft Office Word supports, such as fractions, integrals, sums, and radicals.</span></span></summary>
+    <summary><span data-ttu-id="3837b-101">表示 Microsoft Office Word 支持的函数或结构的集合，如分数、积分、总和和根式。</span><span class="sxs-lookup"><span data-stu-id="3837b-101">Represents a collection of functions or structures that Microsoft Office Word supports, such as fractions, integrals, sums, and radicals.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,6 +31,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.OMathFunction Add (Microsoft.Office.Interop.Word.Range Range, Microsoft.Office.Interop.Word.WdOMathFunctionType Type, ref object NumArgs, ref object NumCols);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.OMathFunction Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]valuetype Microsoft.Office.Interop.Word.WdOMathFunctionType Type, [in]object&amp; NumArgs, [in]object&amp; NumCols) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OMathFunctions.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdOMathFunctionType,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Range As Range, Type As WdOMathFunctionType, Optional ByRef NumArgs As Object, Optional ByRef NumCols As Object) As OMathFunction" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.Range * Microsoft.Office.Interop.Word.WdOMathFunctionType * obj * obj -&gt; Microsoft.Office.Interop.Word.OMathFunction" Usage="oMathFunctions.Add (Range, Type, NumArgs, NumCols)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,15 +49,15 @@
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Word.WdOMathFunctionType" />
-        <Parameter Name="NumArgs" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="NumCols" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumArgs" Type="System.Object" RefType="ref" />
+        <Parameter Name="NumCols" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range"><span data-ttu-id="4eba3-102">需要<see cref="T:Microsoft.Office.Interop.Word.Range" />插入等式的位置。</span><span class="sxs-lookup"><span data-stu-id="4eba3-102">Required <see cref="T:Microsoft.Office.Interop.Word.Range" /> The place at which to insrt an equation.</span></span></param>
-        <param name="Type"><span data-ttu-id="4eba3-103">必需<see cref="T:Microsoft.Office.Interop.Word.WdOMathFunctionType" />是要插入的公式的类型。</span><span class="sxs-lookup"><span data-stu-id="4eba3-103">Required <see cref="T:Microsoft.Office.Interop.Word.WdOMathFunctionType" />The type of equation to insert.</span></span></param>
-        <param name="NumArgs"><span data-ttu-id="4eba3-104">Optional<b>对象</b>公式中的参数数目。</span><span class="sxs-lookup"><span data-stu-id="4eba3-104">Optional <b>Object</b> The number of arguments in the equation.</span></span></param>
-        <param name="NumCols"><span data-ttu-id="4eba3-105">Optional<b>对象</b>公式中的列数。</span><span class="sxs-lookup"><span data-stu-id="4eba3-105">Optional <b>Object</b> The number of columns in the equation.</span></span></param>
-        <summary><span data-ttu-id="4eba3-106">将新结构 (如分数) 插入到公式中的指定位置, 并返回一个<see cref="T:Microsoft.Office.Interop.Word.OMathFunction" />代表该结构的对象。</span><span class="sxs-lookup"><span data-stu-id="4eba3-106">Inserts a new structure, such as a fraction, into an equation at the specified position and returns an <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /> object that represents the structure.</span></span></summary>
+        <param name="Range"><span data-ttu-id="3837b-102">需要 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 插入等式的位置。</span><span class="sxs-lookup"><span data-stu-id="3837b-102">Required <see cref="T:Microsoft.Office.Interop.Word.Range" /> The place at which to insrt an equation.</span></span></param>
+        <param name="Type"><span data-ttu-id="3837b-103">必需 <see cref="T:Microsoft.Office.Interop.Word.WdOMathFunctionType" /> 是要插入的公式的类型。</span><span class="sxs-lookup"><span data-stu-id="3837b-103">Required <see cref="T:Microsoft.Office.Interop.Word.WdOMathFunctionType" />The type of equation to insert.</span></span></param>
+        <param name="NumArgs"><span data-ttu-id="3837b-104">Optional<b>对象</b>公式中的参数数目。</span><span class="sxs-lookup"><span data-stu-id="3837b-104">Optional <b>Object</b> The number of arguments in the equation.</span></span></param>
+        <param name="NumCols"><span data-ttu-id="3837b-105">Optional<b>对象</b>公式中的列数。</span><span class="sxs-lookup"><span data-stu-id="3837b-105">Optional <b>Object</b> The number of columns in the equation.</span></span></param>
+        <summary><span data-ttu-id="3837b-106">将新结构（如分数）插入到公式中的指定位置，并返回一个 <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /> 代表该结构的对象。</span><span class="sxs-lookup"><span data-stu-id="3837b-106">Inserts a new structure, such as a fraction, into an equation at the specified position and returns an <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /> object that represents the structure.</span></span></summary>
         <returns><see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMathFunctions.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.OMathFunctions.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -82,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="4eba3-107">返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</span><span class="sxs-lookup"><span data-stu-id="4eba3-107">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="3837b-107">返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 对象，表示 Microsoft Word 应用程序。</span><span class="sxs-lookup"><span data-stu-id="3837b-107">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMathFunctions.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.OMathFunctions.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -110,8 +115,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="4eba3-108">返回<see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" />集合中项的数目。</span><span class="sxs-lookup"><span data-stu-id="4eba3-108">Returns the number of items in the <see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" /> collection.</span></span> <span data-ttu-id="4eba3-109">只读。</span><span class="sxs-lookup"><span data-stu-id="4eba3-109">Read-only.</span></span></summary>
-        <value><span data-ttu-id="4eba3-110"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="4eba3-110"><b>Integer</b></span></span></value>
+        <summary><span data-ttu-id="3837b-108">返回集合中项的数目 <see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" /> 。</span><span class="sxs-lookup"><span data-stu-id="3837b-108">Returns the number of items in the <see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" /> collection.</span></span> <span data-ttu-id="3837b-109">只读。</span><span class="sxs-lookup"><span data-stu-id="3837b-109">Read-only.</span></span></summary>
+        <value><span data-ttu-id="3837b-110"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="3837b-110"><b>Integer</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMathFunctions.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.OMathFunctions.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -138,10 +144,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="4eba3-111">返回一个32位整数, 该<b>整数</b>表示在其中创建外接程序的应用程序。</span><span class="sxs-lookup"><span data-stu-id="4eba3-111">Returns a 32-bit <b>Integer</b> that indicates the application in which the add-in was created.</span></span> <span data-ttu-id="4eba3-112">只读。</span><span class="sxs-lookup"><span data-stu-id="4eba3-112">Read-only.</span></span></summary>
-        <value><span data-ttu-id="4eba3-113"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="4eba3-113"><b>Integer</b></span></span></value>
-        <remarks><para><span data-ttu-id="4eba3-114">如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.OMathFunctions.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="4eba3-114">If the object was created in Microsoft Word, the <see cref="P:Microsoft.Office.Interop.Word.OMathFunctions.Creator" /> property returns the hexadecimal number 4D535744, which represents the string "MSWD".</span></span>  <span data-ttu-id="4eba3-115">此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。</span><span class="sxs-lookup"><span data-stu-id="4eba3-115">This value can also be represented by the constant <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</span></span> </para>
-          <para><span data-ttu-id="4eba3-116">此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。</span><span class="sxs-lookup"><span data-stu-id="4eba3-116">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="4eba3-117">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="4eba3-117">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="4eba3-118">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="4eba3-118">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <summary><span data-ttu-id="3837b-111">返回一个32位整数，该<b>整数</b>表示在其中创建外接程序的应用程序。</span><span class="sxs-lookup"><span data-stu-id="3837b-111">Returns a 32-bit <b>Integer</b> that indicates the application in which the add-in was created.</span></span> <span data-ttu-id="3837b-112">只读。</span><span class="sxs-lookup"><span data-stu-id="3837b-112">Read-only.</span></span></summary>
+        <value><span data-ttu-id="3837b-113"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="3837b-113"><b>Integer</b></span></span></value>
+        <remarks><para><span data-ttu-id="3837b-114">如果对象是在 Microsoft Word 中创建的，则该 <see cref="P:Microsoft.Office.Interop.Word.OMathFunctions.Creator" /> 属性返回十六进制数字是4d535744，表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="3837b-114">If the object was created in Microsoft Word, the <see cref="P:Microsoft.Office.Interop.Word.OMathFunctions.Creator" /> property returns the hexadecimal number 4D535744, which represents the string "MSWD".</span></span>  <span data-ttu-id="3837b-115">此值还可以由常量表示 <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> 。</span><span class="sxs-lookup"><span data-stu-id="3837b-115">This value can also be represented by the constant <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</span></span> </para>
+          <para><span data-ttu-id="3837b-116">此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。</span><span class="sxs-lookup"><span data-stu-id="3837b-116">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="3837b-117">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="3837b-117">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="3837b-118">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="3837b-118">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.OMathFunctions.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="oMathFunctions.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -183,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMathFunctions.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As OMathFunction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::OMathFunction ^ default[int] { Microsoft::Office::Interop::Word::OMathFunction ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.OMathFunction" Usage="Microsoft.Office.Interop.Word.OMathFunctions.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -203,8 +211,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="4eba3-119">必需的<b>Integer</b>指定对象在集合中的序号位置。</span><span class="sxs-lookup"><span data-stu-id="4eba3-119">Required <b>Integer</b> Specifies the ordinal position of the object within the collection.</span></span></param>
-        <summary><span data-ttu-id="4eba3-120">返回一个<see cref="T:Microsoft.Office.Interop.Word.OMathFunction" />对象, 表示集合中的指定项。</span><span class="sxs-lookup"><span data-stu-id="4eba3-120">Returns an <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /> object that represents the specified item in the collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="3837b-119">必需的<b>Integer</b>指定对象在集合中的序号位置。</span><span class="sxs-lookup"><span data-stu-id="3837b-119">Required <b>Integer</b> Specifies the ordinal position of the object within the collection.</span></span></param>
+        <summary><span data-ttu-id="3837b-120">返回一个 <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /> 对象，表示集合中的指定项。</span><span class="sxs-lookup"><span data-stu-id="3837b-120">Returns an <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /> object that represents the specified item in the collection.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMathFunctions.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.OMathFunctions.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -232,8 +241,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="4eba3-121">返回指定<see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" />对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="4eba3-121">Returns the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" /> object.</span></span></summary>
-        <value><span data-ttu-id="4eba3-122"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="4eba3-122"><b>Object</b></span></span></value>
+        <summary><span data-ttu-id="3837b-121">返回指定对象的父对象 <see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" /> 。</span><span class="sxs-lookup"><span data-stu-id="3837b-121">Returns the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" /> object.</span></span></summary>
+        <value><span data-ttu-id="3837b-122"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="3837b-122"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

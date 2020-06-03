@@ -1,9 +1,10 @@
 <Type Name="List" FullName="Microsoft.Office.Interop.Word.List">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ef2af10f7fd664cca9ca3f39aea6cd66c9851d3a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147898" /></Metadata><TypeSignature Language="C#" Value="public interface List" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6082fc6429315024310244ff429fb70e8f66a012" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924401" /></Metadata><TypeSignature Language="C#" Value="public interface List" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract List" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.List" />
   <TypeSignature Language="VB.NET" Value="Public Interface List" />
   <TypeSignature Language="C++ CLI" Value="public interface class List" />
+  <TypeSignature Language="F#" Value="type List = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,16 +19,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="d1fce-101">表示已应用于文档中指定段落的列表格式。</span><span class="sxs-lookup"><span data-stu-id="d1fce-101">Represents a single list format that's been applied to specified paragraphs in a document.</span></span></summary>
-    <remarks><para><span data-ttu-id="d1fce-102"><see cref="T:Microsoft.Office.Interop.Word.List" />对象是<see cref="T:Microsoft.Office.Interop.Word.Lists" />集合的成员。</span><span class="sxs-lookup"><span data-stu-id="d1fce-102">The <see cref="T:Microsoft.Office.Interop.Word.List" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection.</span></span></para>
-      <para><span data-ttu-id="d1fce-103">使用<b>列表</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回单个<see cref="T:Microsoft.Office.Interop.Word.List" />对象。</span><span class="sxs-lookup"><span data-stu-id="d1fce-103">Use <b>Lists</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span></para>
-      <para><span data-ttu-id="d1fce-104">若要返回具有列表格式的所有段落, 请使用<see cref="P:Microsoft.Office.Interop.Word.List.ListParagraphs" />属性。</span><span class="sxs-lookup"><span data-stu-id="d1fce-104">To return all the paragraphs that have list formatting, use the <see cref="P:Microsoft.Office.Interop.Word.List.ListParagraphs" /> property.</span></span> <span data-ttu-id="d1fce-105">若要将它们作为范围返回, 请<see cref="P:Microsoft.Office.Interop.Word.List.Range" />使用属性。</span><span class="sxs-lookup"><span data-stu-id="d1fce-105">To return them as a range, use the <see cref="P:Microsoft.Office.Interop.Word.List.Range" /> property.</span></span></para>
-      <para><span data-ttu-id="d1fce-106">若要对现有列表应用不同的列表格式, 请将<see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />方法与该<see cref="T:Microsoft.Office.Interop.Word.List" />对象一起使用。</span><span class="sxs-lookup"><span data-stu-id="d1fce-106">To apply a different list format to an existing list, use the <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span> <span data-ttu-id="d1fce-107">若要向文档中添加新列表, 请对<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" />指定范围的<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象使用此方法。</span><span class="sxs-lookup"><span data-stu-id="d1fce-107">To add a new list to a document, use the <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object for a specified range.</span></span></para>
-      <para><span data-ttu-id="d1fce-108">使用<see cref="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" />方法可确定是否可以从之前应用于文档的列表中继续列表格式。</span><span class="sxs-lookup"><span data-stu-id="d1fce-108">Use the <see cref="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" /> method to determine whether you can continue the list formatting from a list that was previously applied to the document.</span></span></para>
-      <para><span data-ttu-id="d1fce-109">使用<see cref="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" />方法返回编号或项目符号列表中的项目数, 包括 LISTNUM 域。</span><span class="sxs-lookup"><span data-stu-id="d1fce-109">Use the <see cref="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" /> method to return the number of items in a numbered or bulleted list, including LISTNUM fields.</span></span></para>
-      <para><span data-ttu-id="d1fce-110">若要确定一个列表是否包含多个列表模板, 请使用<see cref="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" />属性。</span><span class="sxs-lookup"><span data-stu-id="d1fce-110">To determine whether a list contains more than one list template, use the <see cref="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" /> property.</span></span></para>
-      <para><span data-ttu-id="d1fce-111">您可以处理文档中<see cref="T:Microsoft.Office.Interop.Word.List" />的单个对象, 但若要更精确地控制, 应使用该<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象。</span><span class="sxs-lookup"><span data-stu-id="d1fce-111">You can manipulate the individual <see cref="T:Microsoft.Office.Interop.Word.List" /> objects within a document, but for more precise control you should work with the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object.</span></span></para>
-      <para><span data-ttu-id="d1fce-112">图片项目符号列表不包含在<see cref="T:Microsoft.Office.Interop.Word.Lists" />集合中, 并且不能使用<see cref="T:Microsoft.Office.Interop.Word.List" />对象进行操作。</span><span class="sxs-lookup"><span data-stu-id="d1fce-112">Picture-bulleted lists are not included in the <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection and cannot be manipulated using the <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span></para>
+    <summary><span data-ttu-id="f015b-101">表示已应用于文档中指定段落的列表格式。</span><span class="sxs-lookup"><span data-stu-id="f015b-101">Represents a single list format that's been applied to specified paragraphs in a document.</span></span></summary>
+    <remarks><para><span data-ttu-id="f015b-102"><see cref="T:Microsoft.Office.Interop.Word.List" />对象是集合的成员 <see cref="T:Microsoft.Office.Interop.Word.Lists" /> 。</span><span class="sxs-lookup"><span data-stu-id="f015b-102">The <see cref="T:Microsoft.Office.Interop.Word.List" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection.</span></span></para>
+      <para><span data-ttu-id="f015b-103">使用<b>列表</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是索引号，返回单个 <see cref="T:Microsoft.Office.Interop.Word.List" /> 对象。</span><span class="sxs-lookup"><span data-stu-id="f015b-103">Use <b>Lists</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span></para>
+      <para><span data-ttu-id="f015b-104">若要返回具有列表格式的所有段落，请使用 <see cref="P:Microsoft.Office.Interop.Word.List.ListParagraphs" /> 属性。</span><span class="sxs-lookup"><span data-stu-id="f015b-104">To return all the paragraphs that have list formatting, use the <see cref="P:Microsoft.Office.Interop.Word.List.ListParagraphs" /> property.</span></span> <span data-ttu-id="f015b-105">若要将它们作为范围返回，请使用 <see cref="P:Microsoft.Office.Interop.Word.List.Range" /> 属性。</span><span class="sxs-lookup"><span data-stu-id="f015b-105">To return them as a range, use the <see cref="P:Microsoft.Office.Interop.Word.List.Range" /> property.</span></span></para>
+      <para><span data-ttu-id="f015b-106">若要对现有列表应用不同的列表格式，请将 <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> 方法与该 <see cref="T:Microsoft.Office.Interop.Word.List" /> 对象一起使用。</span><span class="sxs-lookup"><span data-stu-id="f015b-106">To apply a different list format to an existing list, use the <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span> <span data-ttu-id="f015b-107">若要向文档中添加新列表，请对 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> 指定范围的对象使用此方法 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 。</span><span class="sxs-lookup"><span data-stu-id="f015b-107">To add a new list to a document, use the <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> method with the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object for a specified range.</span></span></para>
+      <para><span data-ttu-id="f015b-108">使用 <see cref="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" /> 方法可确定是否可以从之前应用于文档的列表中继续列表格式。</span><span class="sxs-lookup"><span data-stu-id="f015b-108">Use the <see cref="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" /> method to determine whether you can continue the list formatting from a list that was previously applied to the document.</span></span></para>
+      <para><span data-ttu-id="f015b-109">使用 <see cref="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" /> 方法返回编号或项目符号列表中的项目数，包括 LISTNUM 域。</span><span class="sxs-lookup"><span data-stu-id="f015b-109">Use the <see cref="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" /> method to return the number of items in a numbered or bulleted list, including LISTNUM fields.</span></span></para>
+      <para><span data-ttu-id="f015b-110">若要确定一个列表是否包含多个列表模板，请使用 <see cref="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" /> 属性。</span><span class="sxs-lookup"><span data-stu-id="f015b-110">To determine whether a list contains more than one list template, use the <see cref="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" /> property.</span></span></para>
+      <para><span data-ttu-id="f015b-111">您可以处理 <see cref="T:Microsoft.Office.Interop.Word.List" /> 文档中的单个对象，但若要更精确地控制，应使用该 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 对象。</span><span class="sxs-lookup"><span data-stu-id="f015b-111">You can manipulate the individual <see cref="T:Microsoft.Office.Interop.Word.List" /> objects within a document, but for more precise control you should work with the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object.</span></span></para>
+      <para><span data-ttu-id="f015b-112">图片项目符号列表不包含在集合中 <see cref="T:Microsoft.Office.Interop.Word.Lists" /> ，并且不能使用对象进行操作 <see cref="T:Microsoft.Office.Interop.Word.List" /> 。</span><span class="sxs-lookup"><span data-stu-id="f015b-112">Picture-bulleted lists are not included in the <see cref="T:Microsoft.Office.Interop.Word.Lists" /> collection and cannot be manipulated using the <see cref="T:Microsoft.Office.Interop.Word.List" /> object.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.List.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,7 +56,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="d1fce-113">返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="d1fce-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="f015b-113">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="f015b-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,6 +65,8 @@
       <MemberSignature Language="C#" Value="public void ApplyListTemplate (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ContinuePreviousList, ref object DefaultListBehavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyListTemplate([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ContinuePreviousList, [in]object&amp; DefaultListBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyListTemplate (ListTemplate As ListTemplate, Optional ByRef ContinuePreviousList As Object, Optional ByRef DefaultListBehavior As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyListTemplate : Microsoft.Office.Interop.Word.ListTemplate * obj * obj -&gt; unit" Usage="list.ApplyListTemplate (ListTemplate, ContinuePreviousList, DefaultListBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,14 +82,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
-        <Parameter Name="ContinuePreviousList" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ContinuePreviousList" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultListBehavior" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate"><span data-ttu-id="d1fce-114">必需<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />的对象。</span><span class="sxs-lookup"><span data-stu-id="d1fce-114">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span></span> <span data-ttu-id="d1fce-115">要应用的列表模板。</span><span class="sxs-lookup"><span data-stu-id="d1fce-115">The list template to be applied.</span></span></param>
-        <param name="ContinuePreviousList"><span data-ttu-id="d1fce-116">可选<b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="d1fce-116">Optional <b>Object</b>.</span></span> <span data-ttu-id="d1fce-117"><b>如此</b> 继续编排页码从前面的列表; <b>假</b> 以启动一个新的列表。</span><span class="sxs-lookup"><span data-stu-id="d1fce-117"><b>True</b> to continue the numbering from the previous list; <b>False</b> to start a new list.</span></span></param>
-        <param name="DefaultListBehavior"><span data-ttu-id="d1fce-118">可选<b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="d1fce-118">Optional <b>Object</b>.</span></span> <span data-ttu-id="d1fce-119">设置一个值，指定是否 Microsoft Word 使用新的面向 Web 的格式更好的列表中显示。</span><span class="sxs-lookup"><span data-stu-id="d1fce-119">Sets a value that specifies whether Microsoft Word uses new Web-oriented formatting for better list display.</span></span> <span data-ttu-id="d1fce-120">可以是下列常量之一: <b>wdWord8ListBehavior</b> (使用与 Microsoft Word 97 兼容格式) 或 <b>wdWord9ListBehavior</b> (使用面向 Web 的格式)。</span><span class="sxs-lookup"><span data-stu-id="d1fce-120">Can be either of the following constants: <b>wdWord8ListBehavior</b> (use formatting compatible with Microsoft Word 97) or <b>wdWord9ListBehavior</b> (use Web-oriented formatting).</span></span> <span data-ttu-id="d1fce-121">出于兼容性原因，默认常量 <b>wdWord8ListBehavior</b> ，但在新的过程，您应该使用 <b>wdWord9ListBehavior</b> 利用改进的面向 Web 的格式相对于缩进和多级列表中。</span><span class="sxs-lookup"><span data-stu-id="d1fce-121">For compatibility reasons, the default constant is <b>wdWord8ListBehavior</b>, but in new procedures you should use <b>wdWord9ListBehavior</b> to take advantage of improved Web-oriented formatting with respect to indenting and multilevel lists.</span></span></param>
-        <summary><span data-ttu-id="d1fce-122">对指定列表应用一组列表格式特征。</span><span class="sxs-lookup"><span data-stu-id="d1fce-122">Applies a set of list-formatting characteristics to the specified list.</span></span></summary>
+        <param name="ListTemplate"><span data-ttu-id="f015b-114">必需 <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> 的对象。</span><span class="sxs-lookup"><span data-stu-id="f015b-114">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span></span> <span data-ttu-id="f015b-115">要应用的列表模板。</span><span class="sxs-lookup"><span data-stu-id="f015b-115">The list template to be applied.</span></span></param>
+        <param name="ContinuePreviousList"><span data-ttu-id="f015b-116">可选<b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="f015b-116">Optional <b>Object</b>.</span></span> <span data-ttu-id="f015b-117"><b>如此</b> 继续编排页码从前面的列表; <b>假</b> 以启动一个新的列表。</span><span class="sxs-lookup"><span data-stu-id="f015b-117"><b>True</b> to continue the numbering from the previous list; <b>False</b> to start a new list.</span></span></param>
+        <param name="DefaultListBehavior"><span data-ttu-id="f015b-118">可选<b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="f015b-118">Optional <b>Object</b>.</span></span> <span data-ttu-id="f015b-119">设置一个值，指定是否 Microsoft Word 使用新的面向 Web 的格式更好的列表中显示。</span><span class="sxs-lookup"><span data-stu-id="f015b-119">Sets a value that specifies whether Microsoft Word uses new Web-oriented formatting for better list display.</span></span> <span data-ttu-id="f015b-120">可以是下列常量之一: <b>wdWord8ListBehavior</b> (使用与 Microsoft Word 97 兼容格式) 或 <b>wdWord9ListBehavior</b> (使用面向 Web 的格式)。</span><span class="sxs-lookup"><span data-stu-id="f015b-120">Can be either of the following constants: <b>wdWord8ListBehavior</b> (use formatting compatible with Microsoft Word 97) or <b>wdWord9ListBehavior</b> (use Web-oriented formatting).</span></span> <span data-ttu-id="f015b-121">出于兼容性原因，默认常量 <b>wdWord8ListBehavior</b> ，但在新的过程，您应该使用 <b>wdWord9ListBehavior</b> 利用改进的面向 Web 的格式相对于缩进和多级列表中。</span><span class="sxs-lookup"><span data-stu-id="f015b-121">For compatibility reasons, the default constant is <b>wdWord8ListBehavior</b>, but in new procedures you should use <b>wdWord9ListBehavior</b> to take advantage of improved Web-oriented formatting with respect to indenting and multilevel lists.</span></span></param>
+        <summary><span data-ttu-id="f015b-122">对指定列表应用一组列表格式特征。</span><span class="sxs-lookup"><span data-stu-id="f015b-122">Applies a set of list-formatting characteristics to the specified list.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,6 +97,8 @@
       <MemberSignature Language="C#" Value="public void ApplyListTemplateOld (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ContinuePreviousList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyListTemplateOld([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ContinuePreviousList) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.ApplyListTemplateOld(Microsoft.Office.Interop.Word.ListTemplate,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyListTemplateOld (ListTemplate As ListTemplate, Optional ByRef ContinuePreviousList As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyListTemplateOld : Microsoft.Office.Interop.Word.ListTemplate * obj -&gt; unit" Usage="list.ApplyListTemplateOld (ListTemplate, ContinuePreviousList)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -111,12 +117,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
-        <Parameter Name="ContinuePreviousList" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ContinuePreviousList" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ListTemplate">To be added.</param>
         <param name="ContinuePreviousList">To be added.</param>
-        <summary><span data-ttu-id="d1fce-123">仅供内部使用。</span><span class="sxs-lookup"><span data-stu-id="d1fce-123">Reserved for internal use.</span></span></summary>
+        <summary><span data-ttu-id="f015b-123">仅供内部使用。</span><span class="sxs-lookup"><span data-stu-id="f015b-123">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,6 +130,8 @@
       <MemberSignature Language="C#" Value="public void ApplyListTemplateWithLevel (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ContinuePreviousList, ref object DefaultListBehavior, ref object ApplyLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyListTemplateWithLevel([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ContinuePreviousList, [in]object&amp; DefaultListBehavior, [in]object&amp; ApplyLevel) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.ApplyListTemplateWithLevel(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyListTemplateWithLevel (ListTemplate As ListTemplate, Optional ByRef ContinuePreviousList As Object, Optional ByRef DefaultListBehavior As Object, Optional ByRef ApplyLevel As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyListTemplateWithLevel : Microsoft.Office.Interop.Word.ListTemplate * obj * obj * obj -&gt; unit" Usage="list.ApplyListTemplateWithLevel (ListTemplate, ContinuePreviousList, DefaultListBehavior, ApplyLevel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -139,16 +147,16 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
-        <Parameter Name="ContinuePreviousList" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ApplyLevel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ContinuePreviousList" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultListBehavior" Type="System.Object" RefType="ref" />
+        <Parameter Name="ApplyLevel" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate"><span data-ttu-id="d1fce-124">要应用的列表模板。</span><span class="sxs-lookup"><span data-stu-id="d1fce-124">The list template to be applied.</span></span></param>
-        <param name="ContinuePreviousList"><span data-ttu-id="d1fce-125"><b>如此</b> 继续编排页码从前面的列表; <b>假</b> 以启动一个新的列表。</span><span class="sxs-lookup"><span data-stu-id="d1fce-125"><b>True</b> to continue the numbering from the previous list; <b>False</b> to start a new list.</span></span></param>
-        <param name="DefaultListBehavior"><span data-ttu-id="d1fce-126">设置一个值，指定是否 Microsoft Word 使用新的面向 Web 的格式更好的列表中显示。</span><span class="sxs-lookup"><span data-stu-id="d1fce-126">Sets a value that specifies whether Microsoft Word uses new Web-oriented formatting for better list display.</span></span> <span data-ttu-id="d1fce-127">可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" />值之一: <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (使用与 Microsoft Word 97 兼容的格式设置) 或<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> (使用面向 Web 的格式)。</span><span class="sxs-lookup"><span data-stu-id="d1fce-127">Can be either of the following <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> values: <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (use formatting compatible with Microsoft Word 97) or <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> (use Web-oriented formatting).</span></span> <span data-ttu-id="d1fce-128">出于兼容性原因, 默认常量是<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />, 但在新的过程中, <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" />您应使用更好地利用针对缩进和多级列表的面向 Web 的格式设置。</span><span class="sxs-lookup"><span data-stu-id="d1fce-128">For compatibility reasons, the default constant is <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />, but in new procedures you should use <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> to take advantage of improved Web-oriented formatting with respect to indenting and multilevel lists.</span></span></param>
-        <param name="ApplyLevel"><span data-ttu-id="d1fce-129">要应用列表模板的级别。</span><span class="sxs-lookup"><span data-stu-id="d1fce-129">The level to which the list template is to be applied.</span></span></param>
-        <summary><span data-ttu-id="d1fce-130">（可选）对指定级别应用一组列表格式特征。</span><span class="sxs-lookup"><span data-stu-id="d1fce-130">Applies a set of list-formatting characteristics, optionally for a specified level.</span></span></summary>
+        <param name="ListTemplate"><span data-ttu-id="f015b-124">要应用的列表模板。</span><span class="sxs-lookup"><span data-stu-id="f015b-124">The list template to be applied.</span></span></param>
+        <param name="ContinuePreviousList"><span data-ttu-id="f015b-125"><b>如此</b> 继续编排页码从前面的列表; <b>假</b> 以启动一个新的列表。</span><span class="sxs-lookup"><span data-stu-id="f015b-125"><b>True</b> to continue the numbering from the previous list; <b>False</b> to start a new list.</span></span></param>
+        <param name="DefaultListBehavior"><span data-ttu-id="f015b-126">设置一个值，指定是否 Microsoft Word 使用新的面向 Web 的格式更好的列表中显示。</span><span class="sxs-lookup"><span data-stu-id="f015b-126">Sets a value that specifies whether Microsoft Word uses new Web-oriented formatting for better list display.</span></span> <span data-ttu-id="f015b-127">可以是下列 <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> 值之一： <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> （使用与 Microsoft Word 97 兼容的格式设置）或 <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> （使用面向 Web 的格式）。</span><span class="sxs-lookup"><span data-stu-id="f015b-127">Can be either of the following <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> values: <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (use formatting compatible with Microsoft Word 97) or <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> (use Web-oriented formatting).</span></span> <span data-ttu-id="f015b-128">出于兼容性原因，默认常量是 <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> ，但在新的过程中，您应使用 <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> 更好地利用针对缩进和多级列表的面向 Web 的格式设置。</span><span class="sxs-lookup"><span data-stu-id="f015b-128">For compatibility reasons, the default constant is <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />, but in new procedures you should use <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> to take advantage of improved Web-oriented formatting with respect to indenting and multilevel lists.</span></span></param>
+        <param name="ApplyLevel"><span data-ttu-id="f015b-129">要应用列表模板的级别。</span><span class="sxs-lookup"><span data-stu-id="f015b-129">The level to which the list template is to be applied.</span></span></param>
+        <summary><span data-ttu-id="f015b-130">（可选）对指定级别应用一组列表格式特征。</span><span class="sxs-lookup"><span data-stu-id="f015b-130">Applies a set of list-formatting characteristics, optionally for a specified level.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +164,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdContinue CanContinuePreviousList (Microsoft.Office.Interop.Word.ListTemplate ListTemplate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Office.Interop.Word.WdContinue CanContinuePreviousList([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanContinuePreviousList (ListTemplate As ListTemplate) As WdContinue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::WdContinue CanContinuePreviousList(Microsoft::Office::Interop::Word::ListTemplate ^ ListTemplate);" />
+      <MemberSignature Language="F#" Value="abstract member CanContinuePreviousList : Microsoft.Office.Interop.Word.ListTemplate -&gt; Microsoft.Office.Interop.Word.WdContinue" Usage="list.CanContinuePreviousList ListTemplate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -174,10 +184,10 @@
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate"><span data-ttu-id="d1fce-131">必需<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />的对象。</span><span class="sxs-lookup"><span data-stu-id="d1fce-131">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span></span> <span data-ttu-id="d1fce-132">一个应用于文档中先前段落的列表模板。</span><span class="sxs-lookup"><span data-stu-id="d1fce-132">A list template that's been applied to previous paragraphs in the document.</span></span></param>
-        <summary><span data-ttu-id="d1fce-133">返回一个<see cref="T:Microsoft.Office.Interop.Word.WdContinue" />常量 (<b>wdContinueDisabled</b>、 <b>wdResetList</b>或<b>wdContinueList</b>), 该常量指示是否可以继续使用上一列表中的格式。</span><span class="sxs-lookup"><span data-stu-id="d1fce-133">Returns a <see cref="T:Microsoft.Office.Interop.Word.WdContinue" /> constant (<b>wdContinueDisabled</b>, <b>wdResetList</b>, or <b>wdContinueList</b>) that indicates whether the formatting from the previous list can be continued.</span></span></summary>
+        <param name="ListTemplate"><span data-ttu-id="f015b-131">必需 <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> 的对象。</span><span class="sxs-lookup"><span data-stu-id="f015b-131">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span></span> <span data-ttu-id="f015b-132">一个应用于文档中先前段落的列表模板。</span><span class="sxs-lookup"><span data-stu-id="f015b-132">A list template that's been applied to previous paragraphs in the document.</span></span></param>
+        <summary><span data-ttu-id="f015b-133">返回一个 <see cref="T:Microsoft.Office.Interop.Word.WdContinue" /> 常量（<b>wdContinueDisabled</b>、 <b>wdResetList</b>或<b>wdContinueList</b>），该常量指示是否可以继续使用上一列表中的格式。</span><span class="sxs-lookup"><span data-stu-id="f015b-133">Returns a <see cref="T:Microsoft.Office.Interop.Word.WdContinue" /> constant (<b>wdContinueDisabled</b>, <b>wdResetList</b>, or <b>wdContinueList</b>) that indicates whether the formatting from the previous list can be continued.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="d1fce-134">此方法返回指定的列表格式的 项目符号和编号对话框中的 继续前一列表和 重新开始编号选项状态。</span><span class="sxs-lookup"><span data-stu-id="d1fce-134">This method returns the state of the Continue previous list and Restart numbering options in the Bullets and Numbering dialog box for a specified list format.</span></span> <span data-ttu-id="d1fce-135">若要更改这些选项的设置, 请设置<paramref name="ContinuePreviousList" /> <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />方法的参数。</span><span class="sxs-lookup"><span data-stu-id="d1fce-135">To change the settings of these options, set the <paramref name="ContinuePreviousList" /> argument of the <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> method.</span></span></para>
+        <remarks><para><span data-ttu-id="f015b-134">此方法返回指定的列表格式的 项目符号和编号对话框中的 继续前一列表和 重新开始编号选项状态。</span><span class="sxs-lookup"><span data-stu-id="f015b-134">This method returns the state of the Continue previous list and Restart numbering options in the Bullets and Numbering dialog box for a specified list format.</span></span> <span data-ttu-id="f015b-135">若要更改这些选项的设置，请设置 <paramref name="ContinuePreviousList" /> 方法的参数 <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> 。</span><span class="sxs-lookup"><span data-stu-id="f015b-135">To change the settings of these options, set the <paramref name="ContinuePreviousList" /> argument of the <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> method.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -186,6 +196,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConvertNumbersToText([in]object&amp; NumberType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.ConvertNumbersToText(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ConvertNumbersToText (Optional ByRef NumberType As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ConvertNumbersToText : obj -&gt; unit" Usage="list.ConvertNumbersToText NumberType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -200,14 +211,14 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumberType" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType"><span data-ttu-id="d1fce-136">可选<b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="d1fce-136">Optional <b>Object</b>.</span></span> <span data-ttu-id="d1fce-137">要转换的编号类型。</span><span class="sxs-lookup"><span data-stu-id="d1fce-137">The type of number to be converted.</span></span> <span data-ttu-id="d1fce-138">可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />常量。</span><span class="sxs-lookup"><span data-stu-id="d1fce-138">Can be any of the <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constants.</span></span></param>
-        <summary><span data-ttu-id="d1fce-139">将指定列表中的列表编号和 LISTNUM 域更改为文本。</span><span class="sxs-lookup"><span data-stu-id="d1fce-139">Changes the list numbers and LISTNUM fields in the specified list to text.</span></span></summary>
-        <remarks><para><span data-ttu-id="d1fce-140">有两种类型的数字: 预设号码 (<b>wdNumberParagraph</b>), 您可以通过在 "项目符号和编号" 对话框中选择模板来添加到段落中。和 LISTNUM 域 (<b>wdNumberListNum</b>), 允许您为每个段落添加一个以上的数字。</span><span class="sxs-lookup"><span data-stu-id="d1fce-140">There are two types of numbers: preset numbers (<b>wdNumberParagraph</b>), which you can add to paragraphs by selecting a template in the Bullets and Numbering dialog box; and LISTNUM fields (<b>wdNumberListNum</b>), which allow you to add more than one number per paragraph.</span></span></para>
-          <para><span data-ttu-id="d1fce-141">如果要在其他应用程序中使用文档, 并且该应用程序不识别列表格式或 LISTNUM 域, 则<b>ConvertNumbersToText</b>方法非常有用。</span><span class="sxs-lookup"><span data-stu-id="d1fce-141">The <b>ConvertNumbersToText</b> method is useful if you want to work with a document in another application and that application doesn't recognize list formatting or LISTNUM fields.</span></span></para>
-          <para><span data-ttu-id="d1fce-142">将列表编号转换为文本后, 不能再在列表中对其进行处理。</span><span class="sxs-lookup"><span data-stu-id="d1fce-142">After you've converted list numbers to text, you can no longer manipulate them in a list.</span></span></para>
+        <param name="NumberType"><span data-ttu-id="f015b-136">可选<b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="f015b-136">Optional <b>Object</b>.</span></span> <span data-ttu-id="f015b-137">要转换的编号类型。</span><span class="sxs-lookup"><span data-stu-id="f015b-137">The type of number to be converted.</span></span> <span data-ttu-id="f015b-138">可以是任何 <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> 常量。</span><span class="sxs-lookup"><span data-stu-id="f015b-138">Can be any of the <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constants.</span></span></param>
+        <summary><span data-ttu-id="f015b-139">将指定列表中的列表编号和 LISTNUM 域更改为文本。</span><span class="sxs-lookup"><span data-stu-id="f015b-139">Changes the list numbers and LISTNUM fields in the specified list to text.</span></span></summary>
+        <remarks><para><span data-ttu-id="f015b-140">有两种类型的数字：预设号码（<b>wdNumberParagraph</b>），您可以通过在 "项目符号和编号" 对话框中选择模板来添加到段落中。和 LISTNUM 域（<b>wdNumberListNum</b>），允许您为每个段落添加一个以上的数字。</span><span class="sxs-lookup"><span data-stu-id="f015b-140">There are two types of numbers: preset numbers (<b>wdNumberParagraph</b>), which you can add to paragraphs by selecting a template in the Bullets and Numbering dialog box; and LISTNUM fields (<b>wdNumberListNum</b>), which allow you to add more than one number per paragraph.</span></span></para>
+          <para><span data-ttu-id="f015b-141">如果要在其他应用程序中使用文档，并且该应用程序不识别列表格式或 LISTNUM 域，则<b>ConvertNumbersToText</b>方法非常有用。</span><span class="sxs-lookup"><span data-stu-id="f015b-141">The <b>ConvertNumbersToText</b> method is useful if you want to work with a document in another application and that application doesn't recognize list formatting or LISTNUM fields.</span></span></para>
+          <para><span data-ttu-id="f015b-142">将列表编号转换为文本后，不能再在列表中对其进行处理。</span><span class="sxs-lookup"><span data-stu-id="f015b-142">After you've converted list numbers to text, you can no longer manipulate them in a list.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -216,6 +227,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CountNumberedItems([in]object&amp; NumberType, [in]object&amp; Level) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.CountNumberedItems(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function CountNumberedItems (Optional ByRef NumberType As Object, Optional ByRef Level As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member CountNumberedItems : obj * obj -&gt; int" Usage="list.CountNumberedItems (NumberType, Level)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -230,16 +242,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumberType" Type="System.Object" RefType="ref" />
+        <Parameter Name="Level" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType"><span data-ttu-id="d1fce-143">可选<b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="d1fce-143">Optional <b>Object</b>.</span></span> <span data-ttu-id="d1fce-144">要进行计数的编号类型。</span><span class="sxs-lookup"><span data-stu-id="d1fce-144">The type of numbers to be counted.</span></span> <span data-ttu-id="d1fce-145"><see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />可以是下列常量之一: <b>wdNumberParagraph</b>、 <b>wdNumberListNum</b>或<b>wdNumberAllNumbers</b>。</span><span class="sxs-lookup"><span data-stu-id="d1fce-145">Can be one of the following <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constants: <b>wdNumberParagraph</b>, <b>wdNumberListNum</b>, or <b>wdNumberAllNumbers</b>.</span></span> <span data-ttu-id="d1fce-146">默认值是 <b>wdNumberAllNumbers</b> 。</span><span class="sxs-lookup"><span data-stu-id="d1fce-146">The default value is <b>wdNumberAllNumbers</b>.</span></span></param>
-        <param name="Level"><span data-ttu-id="d1fce-147">可选<b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="d1fce-147">Optional <b>Object</b>.</span></span> <span data-ttu-id="d1fce-148">与要计数的编号级别相对应的数。</span><span class="sxs-lookup"><span data-stu-id="d1fce-148">A number that corresponds to the numbering level you want to count.</span></span> <span data-ttu-id="d1fce-149">如果省略该参数，将计算所有级别的数目。</span><span class="sxs-lookup"><span data-stu-id="d1fce-149">If this argument is omitted, all levels are counted.</span></span></param>
-        <summary><span data-ttu-id="d1fce-150">返回指定列表中的项目符号或编号项和 LISTNUM 域的数目。</span><span class="sxs-lookup"><span data-stu-id="d1fce-150">Returns the number of bulleted or numbered items and LISTNUM fields in the specified list.</span></span></summary>
+        <param name="NumberType"><span data-ttu-id="f015b-143">可选<b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="f015b-143">Optional <b>Object</b>.</span></span> <span data-ttu-id="f015b-144">要进行计数的编号类型。</span><span class="sxs-lookup"><span data-stu-id="f015b-144">The type of numbers to be counted.</span></span> <span data-ttu-id="f015b-145">可以是下列 <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> 常量之一： <b>wdNumberParagraph</b>、 <b>wdNumberListNum</b>或<b>wdNumberAllNumbers</b>。</span><span class="sxs-lookup"><span data-stu-id="f015b-145">Can be one of the following <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constants: <b>wdNumberParagraph</b>, <b>wdNumberListNum</b>, or <b>wdNumberAllNumbers</b>.</span></span> <span data-ttu-id="f015b-146">默认值是 <b>wdNumberAllNumbers</b> 。</span><span class="sxs-lookup"><span data-stu-id="f015b-146">The default value is <b>wdNumberAllNumbers</b>.</span></span></param>
+        <param name="Level"><span data-ttu-id="f015b-147">可选<b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="f015b-147">Optional <b>Object</b>.</span></span> <span data-ttu-id="f015b-148">与要计数的编号级别相对应的数。</span><span class="sxs-lookup"><span data-stu-id="f015b-148">A number that corresponds to the numbering level you want to count.</span></span> <span data-ttu-id="f015b-149">如果省略该参数，将计算所有级别的数目。</span><span class="sxs-lookup"><span data-stu-id="f015b-149">If this argument is omitted, all levels are counted.</span></span></param>
+        <summary><span data-ttu-id="f015b-150">返回指定列表中的项目符号或编号项和 LISTNUM 域的数目。</span><span class="sxs-lookup"><span data-stu-id="f015b-150">Returns the number of bulleted or numbered items and LISTNUM fields in the specified list.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="d1fce-151">指定<b>wdNumberParagraph</b>或<b>wdNumberAllNumbers</b> (默认值) 时, 将对<paramref name="NumberType" />项目符号项进行计数。</span><span class="sxs-lookup"><span data-stu-id="d1fce-151">Bulleted items are counted when either <b>wdNumberParagraph</b> or <b>wdNumberAllNumbers</b> (the default) is specified for <paramref name="NumberType" />.</span></span></para>
-          <para><span data-ttu-id="d1fce-152">有两种类型的数字: 预设号码 (<b>wdNumberParagraph</b>), 您可以通过在 "项目符号和编号" 对话框中选择模板来添加到段落中。和 LISTNUM 域 (<b>wdNumberListNum</b>), 允许您为每个段落添加一个以上的数字。</span><span class="sxs-lookup"><span data-stu-id="d1fce-152">There are two types of numbers: preset numbers (<b>wdNumberParagraph</b>), which you can add to paragraphs by selecting a template in the Bullets and Numbering dialog box; and LISTNUM fields (<b>wdNumberListNum</b>), which allow you to add more than one number per paragraph.</span></span></para>
+        <remarks><para><span data-ttu-id="f015b-151">指定<b>wdNumberParagraph</b>或<b>wdNumberAllNumbers</b> （默认值）时，将对项目符号项进行计数 <paramref name="NumberType" /> 。</span><span class="sxs-lookup"><span data-stu-id="f015b-151">Bulleted items are counted when either <b>wdNumberParagraph</b> or <b>wdNumberAllNumbers</b> (the default) is specified for <paramref name="NumberType" />.</span></span></para>
+          <para><span data-ttu-id="f015b-152">有两种类型的数字：预设号码（<b>wdNumberParagraph</b>），您可以通过在 "项目符号和编号" 对话框中选择模板来添加到段落中。和 LISTNUM 域（<b>wdNumberListNum</b>），允许您为每个段落添加一个以上的数字。</span><span class="sxs-lookup"><span data-stu-id="f015b-152">There are two types of numbers: preset numbers (<b>wdNumberParagraph</b>), which you can add to paragraphs by selecting a template in the Bullets and Numbering dialog box; and LISTNUM fields (<b>wdNumberListNum</b>), which allow you to add more than one number per paragraph.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -249,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.List.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -266,10 +279,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="d1fce-153">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="d1fce-153">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="f015b-153">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="f015b-153">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="d1fce-154">如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="d1fce-154">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="d1fce-155">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="d1fce-155">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="d1fce-156"><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="d1fce-156">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="d1fce-157">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="d1fce-157">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="d1fce-158">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="d1fce-158">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="f015b-154">如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="f015b-154">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="f015b-155">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="f015b-155">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="f015b-156"><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="f015b-156">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="f015b-157">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="f015b-157">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="f015b-158">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="f015b-158">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -279,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.ListParagraphs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListParagraphs As ListParagraphs" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListParagraphs ^ ListParagraphs { Microsoft::Office::Interop::Word::ListParagraphs ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListParagraphs : Microsoft.Office.Interop.Word.ListParagraphs" Usage="Microsoft.Office.Interop.Word.List.ListParagraphs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -296,7 +310,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListParagraphs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="d1fce-159">返回一个<see cref="T:Microsoft.Office.Interop.Word.ListParagraphs" />集合, 该集合代表列表中的所有编号段落。</span><span class="sxs-lookup"><span data-stu-id="d1fce-159">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListParagraphs" /> collection that represents all the numbered paragraphs in the list.</span></span></summary>
+        <summary><span data-ttu-id="f015b-159">返回一个 <see cref="T:Microsoft.Office.Interop.Word.ListParagraphs" /> 集合，该集合代表列表中的所有编号段落。</span><span class="sxs-lookup"><span data-stu-id="f015b-159">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListParagraphs" /> collection that represents all the numbered paragraphs in the list.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.List.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -324,7 +339,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="d1fce-160">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="d1fce-160">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="f015b-160">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="f015b-160">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -335,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.List.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -352,9 +368,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="d1fce-161">返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定对象中包含的文档部分。</span><span class="sxs-lookup"><span data-stu-id="d1fce-161">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that's contained in the specified object.</span></span></summary>
+        <summary><span data-ttu-id="f015b-161">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象，该对象代表指定对象中包含的文档部分。</span><span class="sxs-lookup"><span data-stu-id="f015b-161">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that's contained in the specified object.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="d1fce-162">有关从文档返回一个区域或从形状集合返回形状范围的信息, 请参阅<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法。</span><span class="sxs-lookup"><span data-stu-id="d1fce-162">For information about returning a range from a document or returning a shape range from a collection of shapes, see the <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> method.</span></span></para>
+        <remarks><para><span data-ttu-id="f015b-162">有关从文档返回一个区域或从形状集合返回形状范围的信息，请参阅 <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> 方法。</span><span class="sxs-lookup"><span data-stu-id="f015b-162">For information about returning a range from a document or returning a shape range from a collection of shapes, see the <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> method.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -363,6 +379,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveNumbers([in]object&amp; NumberType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.List.RemoveNumbers(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveNumbers (Optional ByRef NumberType As Object)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveNumbers : obj -&gt; unit" Usage="list.RemoveNumbers NumberType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -377,12 +394,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumberType" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType"><span data-ttu-id="d1fce-163">可选<see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />。</span><span class="sxs-lookup"><span data-stu-id="d1fce-163">Optional <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />.</span></span> <span data-ttu-id="d1fce-164">要删除的编号类型。</span><span class="sxs-lookup"><span data-stu-id="d1fce-164">The type of number to be removed.</span></span></param>
-        <summary><span data-ttu-id="d1fce-165">删除指定列表中的编号或项目符号。</span><span class="sxs-lookup"><span data-stu-id="d1fce-165">Removes numbers or bullets from the specified list.</span></span></summary>
-        <remarks><para><span data-ttu-id="d1fce-166">将此方法应用于<see cref="T:Microsoft.Office.Interop.Word.List" />对象时, 只会删除指定列表中的段落中的数字, 从其他列表中跳过任何交错的号码。</span><span class="sxs-lookup"><span data-stu-id="d1fce-166">When this method is applied to a <see cref="T:Microsoft.Office.Interop.Word.List" /> object, it removes numbers only from paragraphs in the specified list, skipping over any interleaved numbers from other lists.</span></span> <span data-ttu-id="d1fce-167">如果将此方法应用于某<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />一范围的文本的对象, 则删除该范围中所有列表的所有数字。</span><span class="sxs-lookup"><span data-stu-id="d1fce-167">If this method is applied to the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object for a range of text, all numbers from all lists in the range are removed.</span></span></para>
+        <param name="NumberType"><span data-ttu-id="f015b-163">可选 <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> 。</span><span class="sxs-lookup"><span data-stu-id="f015b-163">Optional <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />.</span></span> <span data-ttu-id="f015b-164">要删除的编号类型。</span><span class="sxs-lookup"><span data-stu-id="f015b-164">The type of number to be removed.</span></span></param>
+        <summary><span data-ttu-id="f015b-165">删除指定列表中的编号或项目符号。</span><span class="sxs-lookup"><span data-stu-id="f015b-165">Removes numbers or bullets from the specified list.</span></span></summary>
+        <remarks><para><span data-ttu-id="f015b-166">将此方法应用于对象时 <see cref="T:Microsoft.Office.Interop.Word.List" /> ，只会删除指定列表中的段落中的数字，从其他列表中跳过任何交错的号码。</span><span class="sxs-lookup"><span data-stu-id="f015b-166">When this method is applied to a <see cref="T:Microsoft.Office.Interop.Word.List" /> object, it removes numbers only from paragraphs in the specified list, skipping over any interleaved numbers from other lists.</span></span> <span data-ttu-id="f015b-167">如果将此方法应用于 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 某一范围的文本的对象，则删除该范围中所有列表的所有数字。</span><span class="sxs-lookup"><span data-stu-id="f015b-167">If this method is applied to the <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> object for a range of text, all numbers from all lists in the range are removed.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -392,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.SingleListTemplate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SingleListTemplate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SingleListTemplate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SingleListTemplate : bool" Usage="Microsoft.Office.Interop.Word.List.SingleListTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -409,7 +427,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="d1fce-168"><b>如此</b>如果整个列表对象使用相同的列表模板。</span><span class="sxs-lookup"><span data-stu-id="d1fce-168"><b>True</b> if the entire list object uses the same list template.</span></span></summary>
+        <summary><span data-ttu-id="f015b-168"><b>如此</b>如果整个列表对象使用相同的列表模板。</span><span class="sxs-lookup"><span data-stu-id="f015b-168"><b>True</b> if the entire list object uses the same list template.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -420,6 +438,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.List.StyleName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StyleName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StyleName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StyleName : string" Usage="Microsoft.Office.Interop.Word.List.StyleName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -437,7 +456,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="d1fce-169">返回应用于指定的自动图文集词条的样式名称。</span><span class="sxs-lookup"><span data-stu-id="d1fce-169">Returns the name of the style applied to the specified AutoText entry.</span></span></summary>
+        <summary><span data-ttu-id="f015b-169">返回应用于指定的自动图文集词条的样式名称。</span><span class="sxs-lookup"><span data-stu-id="f015b-169">Returns the name of the style applied to the specified AutoText entry.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

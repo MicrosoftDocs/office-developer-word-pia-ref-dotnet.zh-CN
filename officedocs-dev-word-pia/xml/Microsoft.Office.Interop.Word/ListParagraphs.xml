@@ -1,9 +1,10 @@
 <Type Name="ListParagraphs" FullName="Microsoft.Office.Interop.Word.ListParagraphs">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f2ed5da4555633a8837f621bb30fd13601729534" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146148" /></Metadata><TypeSignature Language="C#" Value="public interface ListParagraphs : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="57d0102130b9bb46854110335107eedf669654e9" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925273" /></Metadata><TypeSignature Language="C#" Value="public interface ListParagraphs : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListParagraphs implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListParagraphs" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListParagraphs&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class ListParagraphs : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ListParagraphs = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,12 +23,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="8e5aa-101"><see cref="T:Microsoft.Office.Interop.Word.Paragraph" />对象的集合, 该集合代表应用了列表格式的指定文档、列表或区域中的段落。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> objects that represents the paragraphs of the specified document, list, or range that have list formatting applied.</span></span></summary>
-    <remarks><para><span data-ttu-id="8e5aa-102">使用<see cref="P:Microsoft.Office.Interop.Word._Document.ListParagraphs" />属性返回<b>ListParagraphs</b>集合。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-102">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.ListParagraphs" /> property to return the <b>ListParagraphs</b> collection.</span></span></para>
-      <para><span data-ttu-id="8e5aa-103">使用<b>ListParagraphs</b>(<paramref name="index" />) (其中<paramref name="index" />是索引号) 可返回具有列表格式的单个段落对象。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-103">Use <b>ListParagraphs</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single Paragraph object with list formatting.</span></span></para>
-      <para><span data-ttu-id="8e5aa-p101">段落可有两种类型的列表格式。第一种类型包括在该列表的各段开头自动添加的编号或项目符号。第二种类型包括可以置于段落内任意位置的 LISTNUM 域。每个段落中可有多个 LISTNUM 域。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-p101">Paragraphs can have two types of list formatting. The first type includes an automatically added number or bullet at the beginning of each paragraph in the list. The second type includes LISTNUM fields, which can be placed anywhere inside a paragraph. There can be more than one LISTNUM field per paragraph.</span></span></para>
-      <para><span data-ttu-id="8e5aa-108">若要向段落添加列表格式, 可以<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" />使用、 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" /> 、、或<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" />方法。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-108">To add list formatting to paragraphs, you can use the <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> , <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" /> , <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" /> , or <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" /> method.</span></span> <span data-ttu-id="8e5aa-109">通过指定区域的 <b>ListFormat</b> 对象中访问这些方法。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-109">You access these methods through the <b>ListFormat</b> object for a specified range.</span></span></para>
-      <para><span data-ttu-id="8e5aa-110">在<see cref="P:Microsoft.Office.Interop.Word.ListParagraphs.Count" />文档中, 此集合的属性返回的只是正文中的项目数。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-110">The <see cref="P:Microsoft.Office.Interop.Word.ListParagraphs.Count" /> property for this collection in a document returns the number of items in the main story only.</span></span> <span data-ttu-id="8e5aa-111">若要统计其他部分中的项目数, 请<see cref="T:Microsoft.Office.Interop.Word.Range" />使用带有该对象的集合。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-111">To count items in other stories use the collection with the <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</span></span></para>
+    <summary><span data-ttu-id="eb499-101">对象的集合， <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> 该集合代表应用了列表格式的指定文档、列表或区域中的段落。</span><span class="sxs-lookup"><span data-stu-id="eb499-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> objects that represents the paragraphs of the specified document, list, or range that have list formatting applied.</span></span></summary>
+    <remarks><para><span data-ttu-id="eb499-102">使用 <see cref="P:Microsoft.Office.Interop.Word._Document.ListParagraphs" /> 属性返回<b>ListParagraphs</b>集合。</span><span class="sxs-lookup"><span data-stu-id="eb499-102">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.ListParagraphs" /> property to return the <b>ListParagraphs</b> collection.</span></span></para>
+      <para><span data-ttu-id="eb499-103">使用<b>ListParagraphs</b>（ <paramref name="index" /> ）（其中 <paramref name="index" /> 是索引号）可返回具有列表格式的单个段落对象。</span><span class="sxs-lookup"><span data-stu-id="eb499-103">Use <b>ListParagraphs</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single Paragraph object with list formatting.</span></span></para>
+      <para><span data-ttu-id="eb499-p101">段落可有两种类型的列表格式。第一种类型包括在该列表的各段开头自动添加的编号或项目符号。第二种类型包括可以置于段落内任意位置的 LISTNUM 域。每个段落中可有多个 LISTNUM 域。</span><span class="sxs-lookup"><span data-stu-id="eb499-p101">Paragraphs can have two types of list formatting. The first type includes an automatically added number or bullet at the beginning of each paragraph in the list. The second type includes LISTNUM fields, which can be placed anywhere inside a paragraph. There can be more than one LISTNUM field per paragraph.</span></span></para>
+      <para><span data-ttu-id="eb499-108">若要向段落添加列表格式，可以使用 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> 、、 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" /> 、 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" /> 或 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" /> 方法。</span><span class="sxs-lookup"><span data-stu-id="eb499-108">To add list formatting to paragraphs, you can use the <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> , <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" /> , <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" /> , or <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" /> method.</span></span> <span data-ttu-id="eb499-109">通过指定区域的 <b>ListFormat</b> 对象中访问这些方法。</span><span class="sxs-lookup"><span data-stu-id="eb499-109">You access these methods through the <b>ListFormat</b> object for a specified range.</span></span></para>
+      <para><span data-ttu-id="eb499-110"><see cref="P:Microsoft.Office.Interop.Word.ListParagraphs.Count" />在文档中，此集合的属性返回的只是正文中的项目数。</span><span class="sxs-lookup"><span data-stu-id="eb499-110">The <see cref="P:Microsoft.Office.Interop.Word.ListParagraphs.Count" /> property for this collection in a document returns the number of items in the main story only.</span></span> <span data-ttu-id="eb499-111">若要统计其他部分中的项目数，请使用带有该对象的集合 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 。</span><span class="sxs-lookup"><span data-stu-id="eb499-111">To count items in other stories use the collection with the <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListParagraphs.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ListParagraphs.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,7 +56,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="8e5aa-112">返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-112">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="eb499-112">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="eb499-112">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListParagraphs.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.ListParagraphs.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -82,7 +85,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="8e5aa-113">返回指定集合中的项目数。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-113">Returns the number of items in the specified collection.</span></span></summary>
+        <summary><span data-ttu-id="eb499-113">返回指定集合中的项目数。</span><span class="sxs-lookup"><span data-stu-id="eb499-113">Returns the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListParagraphs.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ListParagraphs.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -110,10 +114,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="8e5aa-114">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-114">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="eb499-114">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="eb499-114">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="8e5aa-115">如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-115">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="8e5aa-116">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-116">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="8e5aa-117"><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-117">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="8e5aa-118">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-118">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="8e5aa-119">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-119">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="eb499-115">如果指定的对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="eb499-115">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="eb499-116">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="eb499-116">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="eb499-117"><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="eb499-117">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="eb499-118">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="eb499-118">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="eb499-119">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="eb499-119">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListParagraphs.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="listParagraphs.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListParagraphs.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Paragraph" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Paragraph ^ default[int] { Microsoft::Office::Interop::Word::Paragraph ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Paragraph" Usage="Microsoft.Office.Interop.Word.ListParagraphs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -175,8 +181,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="8e5aa-120">一个指示单个对象的序号位置的<b>整数</b>。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-120">An <b>Integer</b> indicating the ordinal position of the individual object.</span></span></param>
-        <summary><span data-ttu-id="8e5aa-121">返回集合中的单个对象。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-121">Returns an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="eb499-120">一个指示单个对象的序号位置的<b>整数</b>。</span><span class="sxs-lookup"><span data-stu-id="eb499-120">An <b>Integer</b> indicating the ordinal position of the individual object.</span></span></param>
+        <summary><span data-ttu-id="eb499-121">返回集合中的单个对象。</span><span class="sxs-lookup"><span data-stu-id="eb499-121">Returns an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListParagraphs.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ListParagraphs.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,7 +211,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="8e5aa-122">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="8e5aa-122">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="eb499-122">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="eb499-122">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
