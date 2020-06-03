@@ -1,9 +1,10 @@
 <Type Name="FirstLetterException" FullName="Microsoft.Office.Interop.Word.FirstLetterException">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4ae232b80e55fea218975f3d9714a8531449d4ef" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146834" /></Metadata><TypeSignature Language="C#" Value="public interface FirstLetterException" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9306b4a0aadd09da2673895a52c270ee532bfc69" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924226" /></Metadata><TypeSignature Language="C#" Value="public interface FirstLetterException" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FirstLetterException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FirstLetterException" />
   <TypeSignature Language="VB.NET" Value="Public Interface FirstLetterException" />
   <TypeSignature Language="C++ CLI" Value="public interface class FirstLetterException" />
+  <TypeSignature Language="F#" Value="type FirstLetterException = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>代表不应用自动更正的缩写。</summary>
-    <remarks><para><b>FirstLetterException</b>对象是<see cref="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" />集合的一个成员。 <b>FirstLetterExceptions</b>集合中包含所有排除的缩写词。 当该<see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" />属性设置为<b>True</b>时, 句点后面的第一个字符将自动大写。 您在<b>FirstLetterExceptions</b>集合中的项目之后键入的字符不大写。</para>
-      <para>使用<b>FirstLetterExceptions</b>(<paramref name="index" />) (其中<paramref name="index" />是缩写或索引号) 可返回单个<b>FirstLetterException</b>对象。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" />方法将缩写添加到首字母例外项列表中。</para>
+    <remarks><para><b>FirstLetterException</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" /> 。 <b>FirstLetterExceptions</b>集合中包含所有排除的缩写词。 当该 <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" /> 属性设置为<b>True</b>时，句点后面的第一个字符将自动大写。 您在<b>FirstLetterExceptions</b>集合中的项目之后键入的字符不大写。</para>
+      <para>使用<b>FirstLetterExceptions</b>（ <paramref name="index" /> ）（其中 <paramref name="index" /> 是缩写或索引号）可返回单个<b>FirstLetterException</b>对象。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" /> 方法将缩写添加到首字母例外项列表中。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FirstLetterException.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.FirstLetterException.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FirstLetterException.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.FirstLetterException.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,8 +81,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FirstLetterException.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="firstLetterException.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FirstLetterException.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.FirstLetterException.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -131,7 +136,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>Integer</b>类型的值, 该值代表项目在集合中的位置。</summary>
+        <summary>返回一个<b>Integer</b>类型的值，该值代表项目在集合中的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FirstLetterException.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.FirstLetterException.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FirstLetterException.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.FirstLetterException.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

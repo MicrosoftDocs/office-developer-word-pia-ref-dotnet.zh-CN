@@ -1,9 +1,10 @@
 <Type Name="FreeformBuilder" FullName="Microsoft.Office.Interop.Word.FreeformBuilder">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f7da0a16c045e6dc0d03c5438ac63fb5b3f441a0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148045" /></Metadata><TypeSignature Language="C#" Value="public interface FreeformBuilder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="db9db2782b2a0206181c5868db7aa403ea6c180e" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924128" /></Metadata><TypeSignature Language="C#" Value="public interface FreeformBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FreeformBuilder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FreeformBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Interface FreeformBuilder" />
   <TypeSignature Language="C++ CLI" Value="public interface class FreeformBuilder" />
+  <TypeSignature Language="F#" Value="type FreeformBuilder = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>代表生成任意多边形时的几何形状。</summary>
-    <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />方法返回一个<b>FreeformBuilder</b>对象。 使用<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />方法将节点添加到任意多边形。 使用<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" />方法可创建在<b>FreeformBuilder</b>对象中定义的形状并将其添加到<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合中。</para>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> 方法返回一个<b>FreeformBuilder</b>对象。 使用 <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> 方法将节点添加到任意多边形。 使用 <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> 方法可创建在<b>FreeformBuilder</b>对象中定义的形状并将其添加到 <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> 集合中。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddNodes([in]valuetype Microsoft.Office.Core.MsoSegmentType SegmentType, [in]valuetype Microsoft.Office.Core.MsoEditingType EditingType, [in]float32 X1, [in]float32 Y1, [in]float32 X2, [in]float32 Y2, [in]float32 X3, [in]float32 Y3) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddNodes (SegmentType As MsoSegmentType, EditingType As MsoEditingType, X1 As Single, Y1 As Single, Optional X2 As Single = 0, Optional Y2 As Single = 0, Optional X3 As Single = 0, Optional Y3 As Single = 0)" />
+      <MemberSignature Language="F#" Value="abstract member AddNodes : Microsoft.Office.Core.MsoSegmentType * Microsoft.Office.Core.MsoEditingType * single * single * single * single * single * single -&gt; unit" Usage="freeformBuilder.AddNodes (SegmentType, EditingType, X1, Y1, X2, Y2, X3, Y3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,16 +54,16 @@
         <Parameter Name="Y3" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="SegmentType">必需<see cref="T:Microsoft.Office.Core.MsoSegmentType" />。 要添加的线段的类型。</param>
-        <param name="EditingType">必需<see cref="T:Microsoft.Office.Core.MsoEditingType" />。 顶点的编辑属性。 如果<paramref name="SegmentType" />为<b>msoSegmentLine</b>, <paramref name="EditingType" />则必须为<b>msoEditingAuto</b>。</param>
-        <param name="X1">必需<b>Single</b>。 <paramref name="EditingType" />如果新段的 msoEditingAuto 为 " <b></b>", 则此参数指定从文档左上角到新线段的终点的水平距离 (以磅为单位)。 <paramref name="EditingType" />如果新节点的<b>msoEditingCorner</b>, 则此参数指定从文档的左上角到新线段的第一个控制点的水平距离 (以磅为单位)。</param>
-        <param name="Y1">必需<b>Single</b>。 <paramref name="EditingType" />如果新段的 msoEditingAuto 为 " <b></b>", 则此参数指定从文档左上角到新线段的终点的垂直距离 (以磅为单位)。 <paramref name="EditingType" />如果新节点的<b>msoEditingCorner</b>, 则此参数指定从文档的左上角到新线段的第一个控制点的垂直距离 (以磅为单位)。</param>
-        <param name="X2">可选的<b>Single</b>。 <paramref name="EditingType" />如果新段的 msoEditingCorner 为 " <b></b>", 则此参数指定从文档的左上角到新线段的第二个控制点的水平距离 (以磅为单位)。 <paramref name="EditingType" />如果新段的 msoEditingAuto 为 " <b></b>", 则不要为此参数指定值。</param>
-        <param name="Y2">可选的<b>Single</b>。 <paramref name="EditingType" />如果新段的 msoEditingCorner 为 " <b></b>", 则此参数指定从文档的左上角到新线段的第二个控制点的垂直距离 (以磅为单位)。 <paramref name="EditingType" />如果新段的 msoEditingAuto 为 " <b></b>", 则不要为此参数指定值。</param>
-        <param name="X3">可选的<b>Single</b>。 <paramref name="EditingType" />如果新段的 msoEditingCorner 为 " <b></b>", 则此参数指定从文档左上角到新线段的终点的水平距离 (以磅为单位)。 <paramref name="EditingType" />如果新段的 msoEditingAuto 为 " <b></b>", 则不要为此参数指定值。</param>
-        <param name="Y3">可选的<b>Single</b>。 <paramref name="EditingType" />如果新段的 msoEditingCorner 为 " <b></b>", 则此参数指定从文档左上角到新线段的终点的垂直距离 (以磅为单位)。 <paramref name="EditingType" />如果新段的 msoEditingAuto 为 " <b></b>", 则不要为此参数指定值。</param>
+        <param name="SegmentType">必需 <see cref="T:Microsoft.Office.Core.MsoSegmentType" /> 。 要添加的线段的类型。</param>
+        <param name="EditingType">必需 <see cref="T:Microsoft.Office.Core.MsoEditingType" /> 。 顶点的编辑属性。 如果 <paramref name="SegmentType" /> 为<b>msoSegmentLine</b>，则 <paramref name="EditingType" /> 必须为<b>msoEditingAuto</b>。</param>
+        <param name="X1">必需<b>Single</b>。 如果 <paramref name="EditingType" /> 新段的 msoEditingAuto 为 " <b>msoEditingAuto</b>"，则此参数指定从文档左上角到新线段的终点的水平距离（以磅为单位）。 如果 <paramref name="EditingType" /> 新节点的<b>msoEditingCorner</b>，则此参数指定从文档的左上角到新线段的第一个控制点的水平距离（以磅为单位）。</param>
+        <param name="Y1">必需<b>Single</b>。 如果 <paramref name="EditingType" /> 新段的 msoEditingAuto 为 " <b>msoEditingAuto</b>"，则此参数指定从文档左上角到新线段的终点的垂直距离（以磅为单位）。 如果 <paramref name="EditingType" /> 新节点的<b>msoEditingCorner</b>，则此参数指定从文档的左上角到新线段的第一个控制点的垂直距离（以磅为单位）。</param>
+        <param name="X2">可选的<b>Single</b>。 如果 <paramref name="EditingType" /> 新段的 msoEditingCorner 为 " <b>msoEditingCorner</b>"，则此参数指定从文档的左上角到新线段的第二个控制点的水平距离（以磅为单位）。 如果 <paramref name="EditingType" /> 新段的 msoEditingAuto 为 " <b>msoEditingAuto</b>"，则不要为此参数指定值。</param>
+        <param name="Y2">可选的<b>Single</b>。 如果 <paramref name="EditingType" /> 新段的 msoEditingCorner 为 " <b>msoEditingCorner</b>"，则此参数指定从文档的左上角到新线段的第二个控制点的垂直距离（以磅为单位）。 如果 <paramref name="EditingType" /> 新段的 msoEditingAuto 为 " <b>msoEditingAuto</b>"，则不要为此参数指定值。</param>
+        <param name="X3">可选的<b>Single</b>。 如果 <paramref name="EditingType" /> 新段的 msoEditingCorner 为 " <b>msoEditingCorner</b>"，则此参数指定从文档左上角到新线段的终点的水平距离（以磅为单位）。 如果 <paramref name="EditingType" /> 新段的 msoEditingAuto 为 " <b>msoEditingAuto</b>"，则不要为此参数指定值。</param>
+        <param name="Y3">可选的<b>Single</b>。 如果 <paramref name="EditingType" /> 新段的 msoEditingCorner 为 " <b>msoEditingCorner</b>"，则此参数指定从文档左上角到新线段的终点的垂直距离（以磅为单位）。 如果 <paramref name="EditingType" /> 新段的 msoEditingAuto 为 " <b>msoEditingAuto</b>"，则不要为此参数指定值。</param>
         <summary>新线段插入到任意多边形的末尾，正在创建，并添加定义该线段的节点。</summary>
-        <remarks><para>您可以使用此方法任意多次将节点添加到正在创建的任意多边形。 添加完节点后, 请使用<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" />方法创建刚定义的任意多边形。 若要在创建任意多边形后将节点添加到任意多边形, <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />请使用<see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" />集合的方法。</para>
+        <remarks><para>您可以使用此方法任意多次将节点添加到正在创建的任意多边形。 添加完节点后，请使用 <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> 方法创建刚定义的任意多边形。 若要在创建任意多边形后将节点添加到任意多边形，请使用 <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> 集合的方法 <see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FreeformBuilder.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.FreeformBuilder.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -88,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,6 +101,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape ConvertToShape([in]object&amp; Anchor) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToShape (Optional ByRef Anchor As Object) As Shape" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToShape : obj -&gt; Microsoft.Office.Interop.Word.Shape" Usage="freeformBuilder.ConvertToShape Anchor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -112,13 +116,13 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Anchor">可选<b>对象</b>。 一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示该形状绑定到的文本。 如果<paramref name="Anchor" />指定, 则锁定标记位于锁定区域中第一段的开头。 如果省略此参数，将自动选定锁定区域，形状相对于页面的上部和左侧边缘进行定位。</param>
-        <summary>创建一个图形，该图形具有指定对象的几何图形特征。 返回一个<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象, 表示新的形状。</summary>
+        <param name="Anchor">可选<b>对象</b>。 一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，表示该形状绑定到的文本。 如果 <paramref name="Anchor" /> 指定，则锁定标记位于锁定区域中第一段的开头。 如果省略此参数，将自动选定锁定区域，形状相对于页面的上部和左侧边缘进行定位。</param>
+        <summary>创建一个图形，该图形具有指定对象的几何图形特征。 返回一个 <see cref="T:Microsoft.Office.Interop.Word.Shape" /> 对象，表示新的形状。</summary>
         <returns>To be added.</returns>
-        <remarks><para>在使用 ConvertToShape 方法<see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />之前, 必须<see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" />至少对一个对象应用该方法。 <b></b></para>
+        <remarks><para>在 <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> 使用<b>ConvertToShape</b>方法之前，必须至少对一个对象应用该方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FreeformBuilder.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.FreeformBuilder.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -147,8 +152,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FreeformBuilder.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.FreeformBuilder.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

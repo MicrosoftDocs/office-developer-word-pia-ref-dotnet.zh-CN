@@ -1,9 +1,10 @@
 <Type Name="ListLevel" FullName="Microsoft.Office.Interop.Word.ListLevel">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="bba67b72f79c6b6f79e34d7a683261fcb43b7fc0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144496" /></Metadata><TypeSignature Language="C#" Value="public interface ListLevel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a021a7ac9d8cfb2d358eeb6e12a55cb551cbf07b" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925287" /></Metadata><TypeSignature Language="C#" Value="public interface ListLevel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListLevel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListLevel" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListLevel" />
   <TypeSignature Language="C++ CLI" Value="public interface class ListLevel" />
+  <TypeSignature Language="F#" Value="type ListLevel = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,10 +20,10 @@
   </Attributes>
   <Docs>
     <summary>代表单个列表级别，或者可以是项目符号列表或编号列表的唯一级别或多级符号列表的九个级别之一。</summary>
-    <remarks><para><b>ListLevel</b>对象是<see cref="T:Microsoft.Office.Interop.Word.ListLevels" />集合的一个成员。</para>
-      <para>使用<b>ListLevels</b>(<paramref name="index" />), 其中<paramref name="index" />是从1到9的数字, 返回单个<b>ListLevel</b>对象。</para>
-      <para><b>ListLevel</b>对象使您能够访问指定的列表级别的所有格式设置属性, 例如<see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />、、、和<see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />属性。</para>
-      <para>若要应用列表级别, 请首先标识该区域或列表, 然后使用<see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />方法。 该段落开头的每个选项卡都转换为一个列表级别。 例如，段落开头三个选项卡将成为第三层列表段落之后使用 <b>ApplyListTemplate</b> 方法。</para>
+    <remarks><para><b>ListLevel</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> 。</para>
+      <para>使用<b>ListLevels</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是从1到9的数字，返回单个<b>ListLevel</b>对象。</para>
+      <para><b>ListLevel</b>对象使您能够访问指定的列表级别的所有格式设置属性，例如、、、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" /> 、 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> 和 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /> 属性。</para>
+      <para>若要应用列表级别，请首先标识该区域或列表，然后使用 <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> 方法。 该段落开头的每个选项卡都转换为一个列表级别。 例如，段落开头三个选项卡将成为第三层列表段落之后使用 <b>ApplyListTemplate</b> 方法。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public Property Alignment As WdListLevelAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdListLevelAlignment Alignment { Microsoft::Office::Interop::Word::WdListLevelAlignment get(); void set(Microsoft::Office::Interop::Word::WdListLevelAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.Alignment : Microsoft.Office.Interop.Word.WdListLevelAlignment with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListLevelAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" />常量, 该常量表示列表模板的列表级别的对齐方式。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" /> 常量，该常量表示列表模板的列表级别的对齐方式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ListLevel.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -80,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListLevel.ApplyPictureBullet(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ApplyPictureBullet (FileName As String) As InlineShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::InlineShape ^ ApplyPictureBullet(System::String ^ FileName);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyPictureBullet : string -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="listLevel.ApplyPictureBullet FileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ListLevel.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -139,8 +144,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Font" />
       <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Font ^ Font { Microsoft::Office::Interop::Word::Font ^ get(); void set(Microsoft::Office::Interop::Word::Font ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Font : Microsoft.Office.Interop.Word.Font with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,7 +176,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.Font" />对象, 该对象代表指定对象的字符格式。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Interop.Word.Font" /> 对象，该对象代表指定对象的字符格式。</summary>
         <value>To be added.</value>
         <remarks><para>要设置该属性，需指定一个返回 <b>Font</b> 对象的表达式。</para>
           <para> </para></remarks>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.ListLevel.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -199,7 +206,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>Integer</b>类型的值, 该值代表项目在集合中的位置。</summary>
+        <summary>返回一个<b>Integer</b>类型的值，该值代表项目在集合中的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.LinkedStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property LinkedStyle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LinkedStyle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LinkedStyle : string with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.LinkedStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -230,7 +238,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置链接到指定<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象的样式的名称。</summary>
+        <summary>返回或设置链接到指定对象的样式的名称 <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -241,6 +249,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NumberFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberFormat : string with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -263,7 +272,7 @@
       <Docs>
         <summary>返回或设置指定的列表级别的数字格式。</summary>
         <value>To be added.</value>
-        <remarks><para>百分比符号 (%) 后跟从 1 到 9 的任何数字代表从各自的列表级别的编号样式。 例如, 如果您希望第一个级别的格式为 "文章 I"、"文章 II" 等, 则<b>NumberFormat</b>属性的字符串将为 "文章% 1", 并且该<see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />属性将设置为<b>wdListNumberStyleUpperCaseRoman</b>。</para>
+        <remarks><para>百分比符号 (%) 后跟从 1 到 9 的任何数字代表从各自的列表级别的编号样式。 例如，如果您希望第一个级别的格式为 "文章 I"、"文章 II" 等，则<b>NumberFormat</b>属性的字符串将为 "文章 %1"，并且该 <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> 属性将设置为<b>wdListNumberStyleUpperCaseRoman</b>。</para>
           <para>如果 <b>从</b> 属性设置为 <b>wdListNumberStyleBullet</b> ， <b>样式</b> 的字符串只能包含一个字符。</para>
           <para> </para></remarks>
       </Docs>
@@ -274,6 +283,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberPosition As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float NumberPosition { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberPosition : single with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -294,7 +304,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象的编号或项目符号的位置 (以磅为单位)。</summary>
+        <summary>返回或设置指定对象的编号或项目符号的位置（以磅为单位） <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> 。</summary>
         <value>To be added.</value>
         <remarks><para>对于每个列表级别，可设置编号或者项目符号的位置、制表位的位置和换行文字的位置。</para>
           <para> </para></remarks>
@@ -306,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberStyle As WdListNumberStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdListNumberStyle NumberStyle { Microsoft::Office::Interop::Word::WdListNumberStyle get(); void set(Microsoft::Office::Interop::Word::WdListNumberStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberStyle : Microsoft.Office.Interop.Word.WdListNumberStyle with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -326,9 +337,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象的编号样式。</summary>
+        <summary>返回或设置对象的编号样式 <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> 。</summary>
         <value>To be added.</value>
-        <remarks><para><b>从</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdListNumberStyle" />常量之一。 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
+        <remarks><para><b>从</b>属性可以是 <see cref="T:Microsoft.Office.Interop.Word.WdListNumberStyle" /> 常量之一。 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -338,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ListLevel.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -366,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.PictureBullet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PictureBullet As InlineShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::InlineShape ^ PictureBullet { Microsoft::Office::Interop::Word::InlineShape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PictureBullet : Microsoft.Office.Interop.Word.InlineShape" Usage="Microsoft.Office.Interop.Word.ListLevel.PictureBullet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -383,7 +396,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象, 表示一个图片项目符号。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> 对象，表示一个图片项目符号。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -394,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.ResetOnHigher" />
       <MemberSignature Language="VB.NET" Value="Public Property ResetOnHigher As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ResetOnHigher { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ResetOnHigher : int with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.ResetOnHigher" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -416,7 +430,7 @@
       <Docs>
         <summary>设置或返回列表级别，该级别指定的列表级别重新编号 1 之前必须显示。 <b>假</b>如果每次显示列表级别时按顺序连续。</summary>
         <value>To be added.</value>
-        <remarks><para>本功能允许交叉，列表保持数值序列。 不能将列表级别的<b>ResetOnHigher</b>属性设置为大于或等于其在<see cref="T:Microsoft.Office.Interop.Word.ListLevels" />集合中的索引的值。</para>
+        <remarks><para>本功能允许交叉，列表保持数值序列。 不能将列表级别的<b>ResetOnHigher</b>属性设置为大于或等于其在集合中的索引的值 <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -426,6 +440,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.ResetOnHigherOld" />
       <MemberSignature Language="VB.NET" Value="Public Property ResetOnHigherOld As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ResetOnHigherOld { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ResetOnHigherOld : bool with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.ResetOnHigherOld" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -463,6 +478,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.StartAt" />
       <MemberSignature Language="VB.NET" Value="Public Property StartAt As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartAt { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StartAt : int with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.StartAt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -483,7 +499,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象的起始编号。</summary>
+        <summary>返回或设置指定对象的起始编号 <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -494,6 +510,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.TabPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property TabPosition As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TabPosition { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TabPosition : single with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.TabPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -514,7 +531,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象的制表位位置。</summary>
+        <summary>返回或设置指定对象的制表位位置 <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -525,6 +542,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.TextPosition" />
       <MemberSignature Language="VB.NET" Value="Public Property TextPosition As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TextPosition { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TextPosition : single with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.TextPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -545,7 +563,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.ListLevel" />对象的第二行文字换行的位置 (以磅为单位)。</summary>
+        <summary>返回或设置指定对象的第二行文字换行的位置（以磅为单位） <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -556,6 +574,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />
       <MemberSignature Language="VB.NET" Value="Public Property TrailingCharacter As WdTrailingCharacter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdTrailingCharacter TrailingCharacter { Microsoft::Office::Interop::Word::WdTrailingCharacter get(); void set(Microsoft::Office::Interop::Word::WdTrailingCharacter value); };" />
+      <MemberSignature Language="F#" Value="member this.TrailingCharacter : Microsoft.Office.Interop.Word.WdTrailingCharacter with get, set" Usage="Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -578,7 +597,7 @@
       <Docs>
         <summary>返回或设置指定的列表级别编号之后插入的字符。</summary>
         <value>To be added.</value>
-        <remarks><para><b>TrailingCharacter</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdTrailingCharacter" />常量之一。</para>
+        <remarks><para><b>TrailingCharacter</b>属性可以是 <see cref="T:Microsoft.Office.Interop.Word.WdTrailingCharacter" /> 常量之一。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,9 +1,10 @@
 <Type Name="MailMergeDataField" FullName="Microsoft.Office.Interop.Word.MailMergeDataField">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="bde8cf0716521eb5937f2d0e38f75cfde3f6bdda" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144482" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeDataField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="710da95afe6f4ca745e5c42531562d9ebd71ef83" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925238" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeDataField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeDataField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeDataField" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeDataField" />
   <TypeSignature Language="C++ CLI" Value="public interface class MailMergeDataField" />
+  <TypeSignature Language="F#" Value="type MailMergeDataField = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,8 +20,8 @@
   </Attributes>
   <Docs>
     <summary>代表数据源中的单个邮件合并域。</summary>
-    <remarks><para><b>MailMergeDataField</b>对象是<see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" />集合的一个成员。 <b>MailMergeDataFields</b> 集合包含邮件合并数据源中的所有数据域（例如，姓名、地址和市/县等）。</para>
-      <para>使用<b></b>"数据<paramref name="index" />字段 () <paramref name="index" /> " (其中是数据字段名称或索引号) 可返回单个<b>MailMergeDataField</b>对象。 索引号代表邮件合并数据源中的数据字段的位置。</para>
+    <remarks><para><b>MailMergeDataField</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" /> 。 <b>MailMergeDataFields</b> 集合包含邮件合并数据源中的所有数据域（例如，姓名、地址和市/县等）。</para>
+      <para>使用<b>DataFields</b> <paramref name="index" /> "数据字段（）" （其中 <paramref name="index" /> 是数据字段名称或索引号）可返回单个<b>MailMergeDataField</b>对象。 索引号代表邮件合并数据源中的数据字段的位置。</para>
       <para>您不能将字段添加到 <b>MailMergeDataFields</b> 集合。 数据源中的所有数据字段将自动都包含在 <b>MailMergeDataFields</b> 集合。</para>
       <para> </para></remarks>
   </Docs>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeDataField.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.MailMergeDataField.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeDataField.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.MailMergeDataField.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,8 +81,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeDataField.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.MailMergeDataField.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -106,7 +110,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>Integer</b>类型的值, 该值代表项目在集合中的位置。</summary>
+        <summary>返回一个<b>Integer</b>类型的值，该值代表项目在集合中的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeDataField.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.MailMergeDataField.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeDataField.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.MailMergeDataField.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeDataField.Value" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="Microsoft.Office.Interop.Word.MailMergeDataField.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -192,7 +199,7 @@
       <Docs>
         <summary>返回当前记录的邮件合并数据域的内容。</summary>
         <value>To be added.</value>
-        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" />属性可设置邮件合并数据源中的活动记录。</para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> 属性可设置邮件合并数据源中的活动记录。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,9 +1,10 @@
 <Type Name="ListGallery" FullName="Microsoft.Office.Interop.Word.ListGallery">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5bd7ff965569856360b744ab132d1fadf6ac4b2d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147884" /></Metadata><TypeSignature Language="C#" Value="public interface ListGallery" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="aceab2b081b52a561d2d56efce988cc0b298c2fc" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925294" /></Metadata><TypeSignature Language="C#" Value="public interface ListGallery" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListGallery" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListGallery" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListGallery" />
   <TypeSignature Language="C++ CLI" Value="public interface class ListGallery" />
+  <TypeSignature Language="F#" Value="type ListGallery = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>代表单个列表格式的库。</summary>
-    <remarks><para><b>ListGallery</b>对象是<see cref="T:Microsoft.Office.Interop.Word.ListGalleries" />集合的一个成员。 每个 <b>ListGallery</b> 对象表示中 项目符号和编号对话框中的三个选项卡之一。</para>
-      <para>使用<b>ListGalleries</b>(<paramref name="index" />), 其中<paramref name="index" />是<b>wdBulletGallery</b>、 <b>wdNumberGallery</b>或<b>wdOutlineNumberGallery</b>, 返回一个<b>ListGallery</b>对象。</para>
-      <para>若要查看指定的列表模板是否包含 Microsoft Word 中内置的格式设置, <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" />请使用<b>ListGallery</b>对象的属性。 若要将格式重置为原始列表格式, <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" />请使用<b>ListGallery</b>对象的方法。</para>
+    <remarks><para><b>ListGallery</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> 。 每个 <b>ListGallery</b> 对象表示中 项目符号和编号对话框中的三个选项卡之一。</para>
+      <para>使用<b>ListGalleries</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是<b>wdBulletGallery</b>、 <b>wdNumberGallery</b>或<b>wdOutlineNumberGallery</b>，返回一个<b>ListGallery</b>对象。</para>
+      <para>若要查看指定的列表模板是否包含 Microsoft Word 中内置的格式设置，请使用 <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> <b>ListGallery</b>对象的属性。 若要将格式重置为原始列表格式，请使用 <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> <b>ListGallery</b>对象的方法。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListGallery.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ListGallery.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListGallery.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ListGallery.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,8 +81,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListGallery.ListTemplates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListTemplates As ListTemplates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListTemplates ^ ListTemplates { Microsoft::Office::Interop::Word::ListTemplates ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListTemplates : Microsoft.Office.Interop.Word.ListTemplates" Usage="Microsoft.Office.Interop.Word.ListGallery.ListTemplates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -106,7 +110,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />集合, 该集合代表指定的列表库的所有列表格式。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> 集合，该集合代表指定的列表库的所有列表格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Modified(Index As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Modified[int] { bool get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Modified(int) : bool" Usage="Microsoft.Office.Interop.Word.ListGallery.Modified" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -137,10 +142,10 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">必需的<b>整数</b>。 1到7之间的一个数字, 对应于模板在 "项目符号和编号" 对话框 ("格式" 菜单) 中的位置。 不包括 "无" 选项, 模板将从左到右, 从上行开始编号。</param>
+        <param name="Index">必需的<b>整数</b>。 1到7之间的一个数字，对应于模板在 "项目符号和编号" 对话框（"格式" 菜单）中的位置。 不包括 "无" 选项，模板将从左到右，从上行开始编号。</param>
         <summary><b>如此</b> 如果指定的列表模板不是列表库中相应位置的内置列表模板。</summary>
         <value>To be added.</value>
-        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" />方法将列表库中的列表模板设置为内置列表模板。</para>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> 方法将列表库中的列表模板设置为内置列表模板。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListGallery.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ListGallery.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset (Index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset(int Index);" />
+      <MemberSignature Language="F#" Value="abstract member Reset : int -&gt; unit" Usage="listGallery.Reset Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

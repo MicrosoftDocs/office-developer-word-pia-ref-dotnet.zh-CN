@@ -1,9 +1,10 @@
 <Type Name="TickLabels" FullName="Microsoft.Office.Interop.Word.TickLabels">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0f6662574427978805ce85168409794e1affd85c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143810" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c421a2e8669e592c85e345b22002f90c66e3df0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925959" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TickLabels" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TickLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface TickLabels" />
   <TypeSignature Language="C++ CLI" Value="public interface class TickLabels" />
+  <TypeSignature Language="F#" Value="type TickLabels = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,10 +21,10 @@
   <Docs>
     <summary>代表图表坐标轴上刻度线的刻度线标签。</summary>
     <remarks><para>此对象不是集合。没有代表单个刻度线标志的对象；您必须将所有刻度线标志作为一个单位返回。</para>
-      <para>分类轴的刻度线标签文字来自图表中相应分类的名称。 分类轴的默认刻度线标签文字表示该分类相对于该坐标轴最左端偏移量的数字。 若要更改刻度线标签之间的未标记刻度线的数目, 必须更改分类<see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabelSpacing" />轴的属性。</para>
-      <para>数值轴的刻度线标签文本是基于值轴的<see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" />、 <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScale" />和<see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScale" />属性计算得出的。 要更改数值的轴刻度线标签文本，您必须更改这些属性的值。</para>
+      <para>分类轴的刻度线标签文字来自图表中相应分类的名称。 分类轴的默认刻度线标签文字表示该分类相对于该坐标轴最左端偏移量的数字。 若要更改刻度线标签之间的未标记刻度线的数目，必须更改 <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabelSpacing" /> 分类轴的属性。</para>
+      <para>数值轴的刻度线标签文本是基于 <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" /> <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScale" /> 值轴的、和属性计算得出的 <see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScale" /> 。 要更改数值的轴刻度线标签文本，您必须更改这些属性的值。</para>
       <para> </para></remarks>
-    <example><para>使用<see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabels" />属性返回<b>TickLabels</b>对象。 下面的示例设置活动文档中第一个图表的数值轴上刻度线标志的数字格式。</para>
+    <example><para>使用 <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabels" /> 属性返回<b>TickLabels</b>对象。 下面的示例设置活动文档中第一个图表的数值轴上刻度线标志的数字格式。</para>
       <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
 
 
@@ -1057,6 +1058,7 @@ End With&lt;/span&gt;</code></example>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public Property Alignment As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Alignment { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Alignment : int with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1088,6 +1090,7 @@ End With&lt;/span&gt;</code></example>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.TickLabels.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1105,7 +1108,7 @@ End With&lt;/span&gt;</code></example>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <summary>在不使用对象识别符的情况下使用时，此属性返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
         <example><para>本示例显示一条有关创建 myObject 的应用程序的消息。</para>
@@ -1376,6 +1379,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.AutoScaleFont" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScaleFont As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AutoScaleFont { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScaleFont : obj with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.AutoScaleFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1403,7 +1407,7 @@ If myObject.&lt;/span&gt;
       </ReturnValue>
       <Docs>
         <summary>仅供内部使用。</summary>
-        <value>返回<see cref="T:System.Object" />。</value>
+        <value>返回 <see cref="T:System.Object" /> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1413,6 +1417,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TickLabels.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1442,6 +1447,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TickLabels.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; obj" Usage="tickLabels.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1468,6 +1474,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Depth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Depth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Depth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Depth : int" Usage="Microsoft.Office.Interop.Word.TickLabels.Depth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1496,6 +1503,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Font" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As ChartFont" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFont ^ Font { Microsoft::Office::Interop::Word::ChartFont ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Font : Microsoft.Office.Interop.Word.ChartFont" Usage="Microsoft.Office.Interop.Word.TickLabels.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1513,7 +1521,7 @@ If myObject.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />对象, 表示指定的对象的字体。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> 对象，表示指定的对象的字体。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1524,6 +1532,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ChartFormat" Usage="Microsoft.Office.Interop.Word.TickLabels.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1543,7 +1552,7 @@ If myObject.&lt;/span&gt;
       <Docs>
         <summary>返回行、 填充和效果的对象的格式。
 
-只读<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</summary>
+只读 <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1554,6 +1563,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.MultiLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property MultiLevel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MultiLevel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MultiLevel : bool with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.MultiLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1586,6 +1596,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.TickLabels.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1614,6 +1625,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NumberFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberFormat : string with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.NumberFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1636,7 +1648,7 @@ If myObject.&lt;/span&gt;
       <Docs>
         <summary>返回或设置一个 <b>String</b> 值，它代表对象的格式代码。</summary>
         <value>To be added.</value>
-        <remarks><para>格式代码是在 设置单元格格式对话框中 格式代码选项相同的字符串。 <b>Format</b>函数使用的格式代码字符串与<b>NumberFormat</b>和<see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" />属性使用的格式代码字符串不同。</para>
+        <remarks><para>格式代码是在 设置单元格格式对话框中 格式代码选项相同的字符串。 <b>Format</b>函数使用的格式代码字符串与<b>NumberFormat</b>和属性使用的格式代码字符串不同 <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1646,6 +1658,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLinked" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberFormatLinked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NumberFormatLinked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberFormatLinked : bool with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.NumberFormatLinked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2193,6 +2206,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberFormatLocal As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NumberFormatLocal { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberFormatLocal : obj with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2215,7 +2229,7 @@ If myObject.&lt;/span&gt;
       <Docs>
         <summary>以采用用户语言字符串的形式返回或设置一个 <b>Variant</b> 值，它代表对象的格式代码。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Format</b>函数使用的格式代码字符串与和<b>NumberFormatLocal</b>属性<see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormat" />使用的格式代码字符串不同。</para>
+        <remarks><para><b>Format</b>函数使用的格式代码字符串与 <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormat" /> 和<b>NumberFormatLocal</b>属性使用的格式代码字符串不同。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2225,6 +2239,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Offset" />
       <MemberSignature Language="VB.NET" Value="Public Property Offset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : int with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2249,7 +2264,7 @@ If myObject.&lt;/span&gt;
         <value>To be added.</value>
         <remarks><para>其默认距离为百分之百，代表坐标轴标签之间以及标签与坐标轴线之间的默认距离。其值可以为从 0 到 1000 之间的一个整数百分比，表示相对于坐标轴标签的字号。</para>
           <para> </para></remarks>
-        <example><para>如果偏移量小于 500, 则本示例将活动文档中第一个图表的分类轴的标签间距设置为当前设置的两倍。</para>
+        <example><para>如果偏移量小于500，则本示例将活动文档中第一个图表的分类轴的标签间距设置为当前设置的两倍。</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
 
 
@@ -3033,6 +3048,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Orientation" />
       <MemberSignature Language="VB.NET" Value="Public Property Orientation As XlTickLabelOrientation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlTickLabelOrientation Orientation { Microsoft::Office::Interop::Word::XlTickLabelOrientation get(); void set(Microsoft::Office::Interop::Word::XlTickLabelOrientation value); };" />
+      <MemberSignature Language="F#" Value="member this.Orientation : Microsoft.Office.Interop.Word.XlTickLabelOrientation with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.Orientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3055,7 +3071,7 @@ If myObject.&lt;/span&gt;
       <Docs>
         <summary>返回或设置一个 <b>Long</b> 值，它代表文本方向。</summary>
         <value>To be added.</value>
-        <remarks><para>此属性的值可以是从–90到90度或其中一个<see cref="T:Microsoft.Office.Interop.Word.XlTickLabelOrientation" />常量的整数值。</para>
+        <remarks><para>此属性的值可以是从–90到90度或其中一个常量的整数值 <see cref="T:Microsoft.Office.Interop.Word.XlTickLabelOrientation" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3065,6 +3081,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.TickLabels.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3093,6 +3110,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.ReadingOrder" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadingOrder As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReadingOrder { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadingOrder : int with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.ReadingOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3113,7 +3131,7 @@ If myObject.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" />常量, 该常量代表指定对象的阅读顺序。 读/写 <b>Long</b>。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" /> 常量，该常量代表指定对象的阅读顺序。 读/写 <b>Long</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3124,6 +3142,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TickLabels.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; obj" Usage="tickLabels.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

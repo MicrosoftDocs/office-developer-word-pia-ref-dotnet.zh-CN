@@ -1,9 +1,10 @@
 <Type Name="OMathAutoCorrect" FullName="Microsoft.Office.Interop.Word.OMathAutoCorrect">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c0cc8c6beb49c151853fe8d7c4420fa2e287c5e7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144391" /></Metadata><TypeSignature Language="C#" Value="public interface OMathAutoCorrect" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ba8c449f1e1ab0ae8a227c9263ad7c292a0311dc" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925042" /></Metadata><TypeSignature Language="C#" Value="public interface OMathAutoCorrect" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathAutoCorrect" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathAutoCorrect" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathAutoCorrect" />
   <TypeSignature Language="C++ CLI" Value="public interface class OMathAutoCorrect" />
+  <TypeSignature Language="F#" Value="type OMathAutoCorrect = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表 Microsoft Office Word 中的 "数学自动更正" 功能。 若要访问 "数学自动更正" 条目<see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /> , 请使用集合。</summary>
+    <summary>代表 Microsoft Office Word 中的 "数学自动更正" 功能。 若要访问 "数学自动更正" 条目，请使用 <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /> 集合。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMathAutoCorrect.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.OMathAutoCorrect.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -45,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个对象, 表示 Microsoft Word 应用程序。</summary>
+        <summary>返回一个对象，表示 Microsoft Word 应用程序。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMathAutoCorrect.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.OMathAutoCorrect.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -73,9 +76,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个32位整数, 该<b>整数</b>表示在其中创建外接程序的应用程序。 只读</summary>
+        <summary>返回一个32位整数，该<b>整数</b>表示在其中创建外接程序的应用程序。 只读</summary>
         <value><b>整数</b></value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrect.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。 </para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则该 <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrect.Creator" /> 属性返回十六进制数字是4d535744，表示字符串 "MSWD"。  此值还可以由常量表示 <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> 。 </para>
           <para>此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMathAutoCorrect.Entries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entries As OMathAutoCorrectEntries" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::OMathAutoCorrectEntries ^ Entries { Microsoft::Office::Interop::Word::OMathAutoCorrectEntries ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Entries : Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" Usage="Microsoft.Office.Interop.Word.OMathAutoCorrect.Entries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMathAutoCorrect.Functions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Functions As OMathRecognizedFunctions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::OMathRecognizedFunctions ^ Functions { Microsoft::Office::Interop::Word::OMathRecognizedFunctions ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Functions : Microsoft.Office.Interop.Word.OMathRecognizedFunctions" Usage="Microsoft.Office.Interop.Word.OMathAutoCorrect.Functions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMathAutoCorrect.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.OMathAutoCorrect.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -159,7 +165,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrect" />对象的父对象。</summary>
+        <summary>返回指定对象的父对象 <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrect" /> 。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMathAutoCorrect.ReplaceText" />
       <MemberSignature Language="VB.NET" Value="Public Property ReplaceText As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReplaceText { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReplaceText : bool with get, set" Usage="Microsoft.Office.Interop.Word.OMathAutoCorrect.ReplaceText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -190,7 +197,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Boolean</b>类型的值, 该值代表 Microsoft Office Word 是否使用相应的数学自动更正定义自动替换公式中的字符串。 读/写。</summary>
+        <summary>返回或设置一个<b>Boolean</b>类型的值，该值代表 Microsoft Office Word 是否使用相应的数学自动更正定义自动替换公式中的字符串。 读/写。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.OMathAutoCorrect.UseOutsideOMath" />
       <MemberSignature Language="VB.NET" Value="Public Property UseOutsideOMath As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseOutsideOMath { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseOutsideOMath : bool with get, set" Usage="Microsoft.Office.Interop.Word.OMathAutoCorrect.UseOutsideOMath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -221,7 +229,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Boolean</b>类型的值, 该值表示 Microsoft Office Word 是否在文档中的公式外部使用数学自动更正规则。 读/写。</summary>
+        <summary>返回或设置一个<b>Boolean</b>类型的值，该值表示 Microsoft Office Word 是否在文档中的公式外部使用数学自动更正规则。 读/写。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>

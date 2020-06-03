@@ -1,9 +1,10 @@
 <Type Name="Hyperlink" FullName="Microsoft.Office.Interop.Word.Hyperlink">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b605957f028ab3eb567ae3d9d066ecf695f2ce45" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146708" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="910186cf6c907f486ecf56681247ca7b360aef3a" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924002" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlink" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Hyperlink" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlink" />
   <TypeSignature Language="C++ CLI" Value="public interface class Hyperlink" />
+  <TypeSignature Language="F#" Value="type Hyperlink = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>代表一个超链接。</summary>
-    <remarks><para><b>超链接</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" />集合的一个成员。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" />属性可返回与形状相关联的<b>超链接</b>对象 (一个形状只能有一个超链接)。</para>
-      <para>使用<b>超链接</b>()<paramref name="index" />( <paramref name="index" />其中是索引号) 从文档、区域或所选内容中返回单个<b>超链接</b>对象。</para>
+    <remarks><para><b>超链接</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" /> 。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" /> 属性可返回与形状相关联的<b>超链接</b>对象（一个形状只能有一个超链接）。</para>
+      <para>使用<b>超链接</b>（ <paramref name="index" /> ）（ <paramref name="index" /> 其中是索引号）从文档、区域或所选内容中返回单个<b>超链接</b>对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Address { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Address : string with get, set" Usage="Microsoft.Office.Interop.Word.Hyperlink.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.AddressOld" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddressOld As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AddressOld { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddressOld : string" Usage="Microsoft.Office.Interop.Word.Hyperlink.AddressOld" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Hyperlink.AddToFavorites" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddToFavorites ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddToFavorites();" />
+      <MemberSignature Language="F#" Value="abstract member AddToFavorites : unit -&gt; unit" Usage="hyperlink.AddToFavorites " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Hyperlink.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -135,7 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 对象，表示 Microsoft Word 应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Hyperlink.CreateNewDocument(System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateNewDocument (FileName As String, EditNow As Boolean, Overwrite As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateNewDocument(System::String ^ FileName, bool EditNow, bool Overwrite);" />
+      <MemberSignature Language="F#" Value="abstract member CreateNewDocument : string * bool * bool -&gt; unit" Usage="hyperlink.CreateNewDocument (FileName, EditNow, Overwrite)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -167,7 +173,7 @@
       <Docs>
         <param name="FileName">必需的 <b>字符串</b> 。 指定文档的文件名。</param>
         <param name="EditNow">必需的<b>布尔值</b>。 如果为 <b>True</b>，则立即在相关编辑环境中打开指定文档。 默认值为 <b>True</b>。</param>
-        <param name="Overwrite">必需的<b>布尔值</b>。 如果为 <b>True</b>，则覆盖相同文件夹中任何现有的同名文件。 <b>假</b>如果保留任何相同名称的现有文件, 并且该<paramref name="FileName" />参数指定新的文件名。 默认值为 <b>False</b>。</param>
+        <param name="Overwrite">必需的<b>布尔值</b>。 如果为 <b>True</b>，则覆盖相同文件夹中任何现有的同名文件。 <b>假</b>如果保留任何相同名称的现有文件，并且该 <paramref name="FileName" /> 参数指定新的文件名。 默认值为 <b>False</b>。</param>
         <summary>新建一篇链接到指定超链接的文档。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Hyperlink.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -197,8 +204,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Hyperlink.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="hyperlink.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.EmailSubject" />
       <MemberSignature Language="VB.NET" Value="Public Property EmailSubject As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EmailSubject { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EmailSubject : string with get, set" Usage="Microsoft.Office.Interop.Word.Hyperlink.EmailSubject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -255,7 +264,7 @@
       <Docs>
         <summary>返回或设置指定超链接的主题行的文本字符串。 该主题行附加到超链接的 Internet 地址或 URL 中。</summary>
         <value>To be added.</value>
-        <remarks><para>该属性通常用于电子邮件超链接。 此属性的值优先于在同一<see cref="P:Microsoft.Office.Interop.Word.Hyperlink.Address" /> <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" />对象的属性中指定的任何电子邮件主题。</para>
+        <remarks><para>该属性通常用于电子邮件超链接。 此属性的值优先于在同一对象的属性中指定的任何电子邮件主题 <see cref="P:Microsoft.Office.Interop.Word.Hyperlink.Address" /> <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -265,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtraInfoRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExtraInfoRequired { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtraInfoRequired : bool" Usage="Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -284,7 +294,7 @@
       <Docs>
         <summary><b>如此</b> 如果需要额外的信息来解析指定的超链接。</summary>
         <value>To be added.</value>
-        <remarks><para>您可以通过将<paramref name="ExtraInfo" />参数与<see cref="M:Microsoft.Office.Interop.Word.Hyperlink.Follow(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> or <see cref="M:Microsoft.Office.Interop.Word._Document.FollowHyperlink(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法一起使用来指定额外的信息。 例如, 可以使用<paramref name="ExtraInfo" />指定图像映射的坐标、窗体的内容或 FAT 文件名。</para>
+        <remarks><para>您可以通过将 <paramref name="ExtraInfo" /> 参数与 or 方法一起使用来指定额外的信息 <see cref="M:Microsoft.Office.Interop.Word.Hyperlink.Follow(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word._Document.FollowHyperlink(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> 。 例如，可以使用 <paramref name="ExtraInfo" /> 指定图像映射的坐标、窗体的内容或 FAT 文件名。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -293,6 +303,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Follow([in]object&amp; NewWindow, [in]object&amp; AddHistory, [in]object&amp; ExtraInfo, [in]object&amp; Method, [in]object&amp; HeaderInfo) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Hyperlink.Follow(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Follow (Optional ByRef NewWindow As Object, Optional ByRef AddHistory As Object, Optional ByRef ExtraInfo As Object, Optional ByRef Method As Object, Optional ByRef HeaderInfo As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Follow : obj * obj * obj * obj * obj -&gt; unit" Usage="hyperlink.Follow (NewWindow, AddHistory, ExtraInfo, Method, HeaderInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -307,19 +318,19 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NewWindow" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AddHistory" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ExtraInfo" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Method" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="HeaderInfo" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NewWindow" Type="System.Object" RefType="ref" />
+        <Parameter Name="AddHistory" Type="System.Object" RefType="ref" />
+        <Parameter Name="ExtraInfo" Type="System.Object" RefType="ref" />
+        <Parameter Name="Method" Type="System.Object" RefType="ref" />
+        <Parameter Name="HeaderInfo" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="NewWindow">可选<b>对象</b>。 如果该属性值为 <b>True</b>，则在新窗口中显示目标文档。 默认值为 <b>False</b>。</param>
         <param name="AddHistory">可选<b>对象</b>。 该参数为以后使用而保留。</param>
-        <param name="ExtraInfo">可选<b>对象</b>。 指定用于解析超链接的 HTTP 附加信息的字符串或字节数组。 例如, 可以使用<paramref name="ExtraInfo" />指定图像映射的坐标、窗体的内容或 FAT 文件名。 根据的值, 可以发布或追加该字符串<paramref name="Method" />。 使用<see cref="P:Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" />属性来确定是否需要额外的信息。</param>
-        <param name="Method">可选<b>对象</b>。 指定 HTTP 附加信息的处理方式。 可以是任何<see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" />常量。</param>
-        <param name="HeaderInfo">可选<b>对象</b>。 指定 HTTP 请求的标头信息的字符串。 默认值为一个空字符串。 您可以将多个标题行组合成一个字符串。 所指定的字符串自动转换为 ANSI 字符。 请注意, <paramref name="HeaderInfo" />该参数可能会覆盖默认 HTTP 标头字段。</param>
-        <summary>显示与指定<see cref="T:Microsoft.Office.Interop.Word.Hyperlink" />对象相关联的缓存文档 (如果已下载)。 否则，此方法将解析该超链接，下载目标文档，并在相应的应用程序中显示此文档。</summary>
+        <param name="ExtraInfo">可选<b>对象</b>。 指定用于解析超链接的 HTTP 附加信息的字符串或字节数组。 例如，可以使用 <paramref name="ExtraInfo" /> 指定图像映射的坐标、窗体的内容或 FAT 文件名。 根据的值，可以发布或追加该字符串 <paramref name="Method" /> 。 使用 <see cref="P:Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" /> 属性来确定是否需要额外的信息。</param>
+        <param name="Method">可选<b>对象</b>。 指定 HTTP 附加信息的处理方式。 可以是任何 <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> 常量。</param>
+        <param name="HeaderInfo">可选<b>对象</b>。 指定 HTTP 请求的标头信息的字符串。 默认值为一个空字符串。 您可以将多个标题行组合成一个字符串。 所指定的字符串自动转换为 ANSI 字符。 请注意，该 <paramref name="HeaderInfo" /> 参数可能会覆盖默认 HTTP 标头字段。</param>
+        <summary>显示与指定对象相关联的缓存文档 <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> （如果已下载）。 否则，此方法将解析该超链接，下载目标文档，并在相应的应用程序中显示此文档。</summary>
         <remarks><para>如果超链接使用文件协议，该方法不是下载而是打开该文档。</para>
           <para> </para></remarks>
       </Docs>
@@ -330,6 +341,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Hyperlink.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -358,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Hyperlink.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -386,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Hyperlink.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -403,9 +417,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定对象中包含的文档部分。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象，该对象代表指定对象中包含的文档部分。</summary>
         <value>To be added.</value>
-        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息, 请参阅<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法。</para>
+        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息，请参阅 <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -415,6 +429,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.ScreenTip" />
       <MemberSignature Language="VB.NET" Value="Public Property ScreenTip As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScreenTip { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ScreenTip : string with get, set" Usage="Microsoft.Office.Interop.Word.Hyperlink.ScreenTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -446,6 +461,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Shape" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shape As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ Shape { Microsoft::Office::Interop::Word::Shape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shape : Microsoft.Office.Interop.Word.Shape" Usage="Microsoft.Office.Interop.Word.Hyperlink.Shape" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -463,7 +479,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.Shape" />超链接的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Word.Shape" /> 指定超链接的对象。</summary>
         <value>To be added.</value>
         <remarks><para>如果超链接不是由形状表示的，则会产生错误。</para>
           <para> </para></remarks>
@@ -475,6 +491,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.SubAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property SubAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SubAddress : string with get, set" Usage="Microsoft.Office.Interop.Word.Hyperlink.SubAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -507,6 +524,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.SubAddressOld" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubAddressOld As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubAddressOld { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubAddressOld : string" Usage="Microsoft.Office.Interop.Word.Hyperlink.SubAddressOld" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -538,6 +556,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="Microsoft.Office.Interop.Word.Hyperlink.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -569,6 +588,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.TextToDisplay" />
       <MemberSignature Language="VB.NET" Value="Public Property TextToDisplay As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TextToDisplay { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextToDisplay : string with get, set" Usage="Microsoft.Office.Interop.Word.Hyperlink.TextToDisplay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -600,6 +620,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As MsoHyperlinkType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoHyperlinkType Type { Microsoft::Office::Core::MsoHyperlinkType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Core.MsoHyperlinkType" Usage="Microsoft.Office.Interop.Word.Hyperlink.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -619,7 +640,7 @@
       <Docs>
         <summary>返回超链接的类型。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Type</b>属性可以是<see cref="T:Microsoft.Office.Core.MsoHyperlinkType" />常量之一。</para>
+        <remarks><para><b>Type</b>属性可以是 <see cref="T:Microsoft.Office.Core.MsoHyperlinkType" /> 常量之一。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

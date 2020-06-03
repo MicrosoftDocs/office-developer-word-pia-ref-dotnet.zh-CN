@@ -1,9 +1,10 @@
 <Type Name="Paragraphs" FullName="Microsoft.Office.Interop.Word.Paragraphs">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4a2d70536ec093f37369ebe6d8b316aed7b9976a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144165" /></Metadata><TypeSignature Language="C#" Value="public interface Paragraphs : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="43c78292ebc7fa33b143aaa559e01c1663cb89a7" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924702" /></Metadata><TypeSignature Language="C#" Value="public interface Paragraphs : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Paragraphs implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Paragraphs" />
   <TypeSignature Language="VB.NET" Value="Public Interface Paragraphs&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Paragraphs : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Paragraphs = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,11 +23,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>所选内容<see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> 、范围或文档中的对象的集合。</summary>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Paragraph" />所选内容、范围或文档中的对象的集合。</summary>
     <remarks><para>使用 <b>段落</b> 属性返回 <b>的段落</b> 集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Paragraphs.Add(System.Object@)" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraph" /> <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphAfter" />、或<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphBefore" />方法可向文档中添加一个新段落。</para>
-      <para>使用<b>段落</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回单个<b>段落</b>对象。</para>
-      <para>在<see cref="P:Microsoft.Office.Interop.Word.Paragraphs.Count" />文档中, 此集合的属性返回的只是正文中的项目数。 若要统计其他部分中的项目数, 请<see cref="T:Microsoft.Office.Interop.Word.Range" />使用带有该对象的集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.Paragraphs.Add(System.Object@)" /> 、、 <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraph" /> <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphAfter" /> 或 <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphBefore" /> 方法可向文档中添加一个新段落。</para>
+      <para>使用<b>段落</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是索引号，返回单个<b>段落</b>对象。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.Paragraphs.Count" />在文档中，此集合的属性返回的只是正文中的项目数。 若要统计其他部分中的项目数，请使用带有该对象的集合 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Paragraph Add([in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.Add(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Optional ByRef Range As Object) As Paragraph" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj -&gt; Microsoft.Office.Interop.Word.Paragraph" Usage="paragraphs.Add Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,13 +51,13 @@
         <ReturnType>Microsoft.Office.Interop.Word.Paragraph</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Range">可选<b>对象</b>。 要在其前添加新段落的区域。 新的段落不替换该区域。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />对象, 该对象代表添加到文档中的一个新的空白段落。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> 对象，该对象代表添加到文档中的一个新的空白段落。</summary>
         <returns>To be added.</returns>
-        <remarks><para>如果<paramref name="Range" />未指定, 则将新段落添加到所选内容或范围之后或文档末尾。</para>
+        <remarks><para>如果 <paramref name="Range" /> 未指定，则将新段落添加到所选内容或范围之后或文档末尾。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.AddSpaceBetweenFarEastAndAlpha" />
       <MemberSignature Language="VB.NET" Value="Public Property AddSpaceBetweenFarEastAndAlpha As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AddSpaceBetweenFarEastAndAlpha { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AddSpaceBetweenFarEastAndAlpha : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.AddSpaceBetweenFarEastAndAlpha" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -87,8 +90,8 @@
       <Docs>
         <summary>确定是否将 Microsoft Word 设置为在指定段落的日语和西文文字之间自动添加空格。</summary>
         <value>To be added.</value>
-        <remarks><para>如果 Word 设置为在指定段落中的日文和西文文字之间自动添加空格, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
-          <para>如果只对某些指定段落设置为<b>True</b> , 则此属性将返回<b>wdUndefined</b> 。</para>
+        <remarks><para>如果 Word 设置为在指定段落中的日文和西文文字之间自动添加空格，则此属性返回<b>True</b> ，否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果只对某些指定段落设置为<b>True</b> ，则此属性将返回<b>wdUndefined</b> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.AddSpaceBetweenFarEastAndDigit" />
       <MemberSignature Language="VB.NET" Value="Public Property AddSpaceBetweenFarEastAndDigit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AddSpaceBetweenFarEastAndDigit { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AddSpaceBetweenFarEastAndDigit : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.AddSpaceBetweenFarEastAndDigit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -120,8 +124,8 @@
       <Docs>
         <summary>确定是否将 Microsoft Word 设置为在日语文本和数字之间为指定段落自动添加空格。</summary>
         <value>To be added.</value>
-        <remarks><para>如果 Word 设置为在指定段落的日语文本和数字之间自动添加空格, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
-          <para>如果只对某些指定段落设置为<b>True</b> , 则此属性将返回<b>wdUndefined</b> 。</para>
+        <remarks><para>如果 Word 设置为在指定段落的日语文本和数字之间自动添加空格，则此属性返回<b>True</b> ，否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果只对某些指定段落设置为<b>True</b> ，则此属性将返回<b>wdUndefined</b> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public Property Alignment As WdParagraphAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdParagraphAlignment Alignment { Microsoft::Office::Interop::Word::WdParagraphAlignment get(); void set(Microsoft::Office::Interop::Word::WdParagraphAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.Alignment : Microsoft.Office.Interop.Word.WdParagraphAlignment with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -151,7 +156,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdParagraphAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdParagraphAlignment" />常量, 该常量代表指定段落的对齐方式。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Interop.Word.WdParagraphAlignment" /> 常量，该常量代表指定段落的对齐方式。</summary>
         <value>To be added.</value>
         <remarks><para>由于您选择或安装的语言支持不同（例如美国英语），上述部分常量可能无法使用。</para>
           <para> </para></remarks>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Paragraphs.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -180,7 +186,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.AutoAdjustRightIndent" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoAdjustRightIndent As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AutoAdjustRightIndent { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoAdjustRightIndent : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.AutoAdjustRightIndent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -211,10 +218,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定是否将 Microsoft Word 设置为自动调整指定段落的右缩进 (如果已指定每行的字符数)。</summary>
+        <summary>确定是否将 Microsoft Word 设置为自动调整指定段落的右缩进（如果已指定每行的字符数）。</summary>
         <value>To be added.</value>
-        <remarks><para>如果将 Word 设置为自动调整指定段落的右缩进 (如果您指定了每行的字符数), 则此属性返回<b>True</b> ; 如果您指定了设置的每行字符数, 则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
-          <para>如果仅有某些指定段落的<b>AutoAdjustRightIndent</b>属性设置为<b>True</b> , 则此属性返回<b>wdUndefined</b> 。</para>
+        <remarks><para>如果将 Word 设置为自动调整指定段落的右缩进（如果您指定了每行的字符数），则此属性返回<b>True</b> ; 如果您指定了设置的每行字符数，则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果仅有某些指定段落的<b>AutoAdjustRightIndent</b>属性设置为<b>True</b> ，则此属性返回<b>wdUndefined</b> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.BaseLineAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseLineAlignment As WdBaselineAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdBaselineAlignment BaseLineAlignment { Microsoft::Office::Interop::Word::WdBaselineAlignment get(); void set(Microsoft::Office::Interop::Word::WdBaselineAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseLineAlignment : Microsoft.Office.Interop.Word.WdBaselineAlignment with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.BaseLineAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -244,7 +252,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdBaselineAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdBaselineAlignment" />常量, 该常量代表字体在线条上的垂直位置。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Interop.Word.WdBaselineAlignment" /> 常量，该常量代表字体在线条上的垂直位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -255,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Borders" />
       <MemberSignature Language="VB.NET" Value="Public Property Borders As Borders" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Borders ^ Borders { Microsoft::Office::Interop::Word::Borders ^ get(); void set(Microsoft::Office::Interop::Word::Borders ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Borders : Microsoft.Office.Interop.Word.Borders with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.Borders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -275,7 +284,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合, 该集合代表指定对象的所有边框。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Borders" /> 集合，该集合代表指定对象的所有边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.CharacterUnitFirstLineIndent" />
       <MemberSignature Language="VB.NET" Value="Public Property CharacterUnitFirstLineIndent As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float CharacterUnitFirstLineIndent { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.CharacterUnitFirstLineIndent : single with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.CharacterUnitFirstLineIndent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -318,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.CharacterUnitLeftIndent" />
       <MemberSignature Language="VB.NET" Value="Public Property CharacterUnitLeftIndent As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float CharacterUnitLeftIndent { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.CharacterUnitLeftIndent : single with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.CharacterUnitLeftIndent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -349,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.CharacterUnitRightIndent" />
       <MemberSignature Language="VB.NET" Value="Public Property CharacterUnitRightIndent As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float CharacterUnitRightIndent { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.CharacterUnitRightIndent : single with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.CharacterUnitRightIndent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -380,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.CloseUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub CloseUp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseUp();" />
+      <MemberSignature Language="F#" Value="abstract member CloseUp : unit -&gt; unit" Usage="paragraphs.CloseUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -405,6 +418,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Paragraphs.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -433,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Paragraphs.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -452,8 +467,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -463,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.DecreaseSpacing" />
       <MemberSignature Language="VB.NET" Value="Public Sub DecreaseSpacing ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DecreaseSpacing();" />
+      <MemberSignature Language="F#" Value="abstract member DecreaseSpacing : unit -&gt; unit" Usage="paragraphs.DecreaseSpacing " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -488,6 +504,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.DisableLineHeightGrid" />
       <MemberSignature Language="VB.NET" Value="Public Property DisableLineHeightGrid As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DisableLineHeightGrid { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DisableLineHeightGrid : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.DisableLineHeightGrid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -508,9 +525,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定在指定每页的行数时, Microsoft Word 是否将指定段落中的字符与行网格对齐。</summary>
+        <summary>确定在指定每页的行数时，Microsoft Word 是否将指定段落中的字符与行网格对齐。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的段落中的字符数为每页的行数, 则此属性返回<b>True</b> ; 如果指定每页的行数, 则此属性返回 False; 否则, 将返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+        <remarks><para>如果指定的段落中的字符数为每页的行数，则此属性返回<b>True</b> ; 如果指定每页的行数，则此属性返回 False; 否则，将返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
           <para>如果仅有某些指定段落的 <b>DisableLineHeightGrid</b> 属性设置为 <b>True</b> ，则返回 <b>wdUndefined</b> 。</para>
           <para> </para></remarks>
       </Docs>
@@ -521,6 +538,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.FarEastLineBreakControl" />
       <MemberSignature Language="VB.NET" Value="Public Property FarEastLineBreakControl As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FarEastLineBreakControl { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.FarEastLineBreakControl : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.FarEastLineBreakControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -543,8 +561,8 @@
       <Docs>
         <summary>确定 Microsoft Word 是否对指定段落应用东亚语言换行规则。</summary>
         <value>To be added.</value>
-        <remarks><para>如果 Word 将东亚语言的换行规则应用于指定段落, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
-          <para>如果仅有某些指定段落的<b>FarEastLineBreakControl</b>属性设置为<b>True</b> , 则此属性返回<b>wdUndefined</b> 。</para>
+        <remarks><para>如果 Word 将东亚语言的换行规则应用于指定段落，则此属性返回<b>True</b> ，否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果仅有某些指定段落的<b>FarEastLineBreakControl</b>属性设置为<b>True</b> ，则此属性返回<b>wdUndefined</b> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -554,6 +572,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.First" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property First As Paragraph" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Paragraph ^ First { Microsoft::Office::Interop::Word::Paragraph ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.First : Microsoft.Office.Interop.Word.Paragraph" Usage="Microsoft.Office.Interop.Word.Paragraphs.First" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -571,7 +590,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Paragraph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Paragraph" />对象, 表示<see cref="T:Microsoft.Office.Interop.Word.Paragraphs" />集合中的第一个项目。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> 对象，表示集合中的第一个项目 <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -582,6 +601,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.FirstLineIndent" />
       <MemberSignature Language="VB.NET" Value="Public Property FirstLineIndent As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float FirstLineIndent { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.FirstLineIndent : single with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.FirstLineIndent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -614,6 +634,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Format" />
       <MemberSignature Language="VB.NET" Value="Public Property Format As ParagraphFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ParagraphFormat ^ Format { Microsoft::Office::Interop::Word::ParagraphFormat ^ get(); void set(Microsoft::Office::Interop::Word::ParagraphFormat ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ParagraphFormat with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -634,7 +655,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />对象, 表示指定的一个或多个段落的格式。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> 对象，表示指定的一个或多个段落的格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -645,6 +666,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="paragraphs.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -677,6 +699,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.HalfWidthPunctuationOnTopOfLine" />
       <MemberSignature Language="VB.NET" Value="Public Property HalfWidthPunctuationOnTopOfLine As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HalfWidthPunctuationOnTopOfLine { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.HalfWidthPunctuationOnTopOfLine : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.HalfWidthPunctuationOnTopOfLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -699,8 +722,8 @@
       <Docs>
         <summary>确定是否 Microsoft Word 将行首的标点符号更改为指定段落的半角字符。</summary>
         <value>To be added.</value>
-        <remarks><para>如果 Word 将行首的标点符号更改为指定段落的半角字符, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
-          <para>如果只将某些指定段落设置为<b>True</b> , 则此属性将返回<b>wdUndefined</b> 。 </para>
+        <remarks><para>如果 Word 将行首的标点符号更改为指定段落的半角字符，则此属性返回<b>True</b> ，否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果只将某些指定段落设置为<b>True</b> ，则此属性将返回<b>wdUndefined</b> 。 </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -710,6 +733,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.HangingPunctuation" />
       <MemberSignature Language="VB.NET" Value="Public Property HangingPunctuation As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HangingPunctuation { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.HangingPunctuation : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.HangingPunctuation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -732,8 +756,8 @@
       <Docs>
         <summary>确定是否为指定段落启用标点溢出边界。</summary>
         <value>To be added.</value>
-        <remarks><para>如果为指定段落启用标点溢出边界, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
-          <para>如果只将某些指定段落设置为<b>True</b> , 则此属性将返回<b>wdUndefined</b> 。</para>
+        <remarks><para>如果为指定段落启用标点溢出边界，则此属性返回<b>True</b> ，否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果只将某些指定段落设置为<b>True</b> ，则此属性将返回<b>wdUndefined</b> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -743,6 +767,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Hyphenation" />
       <MemberSignature Language="VB.NET" Value="Public Property Hyphenation As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Hyphenation { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Hyphenation : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.Hyphenation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -765,8 +790,8 @@
       <Docs>
         <summary>确定是否在自动断字中包含指定的段落。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的段落包含在自动断字中, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
-          <para>如果要从自动断字中排除指定段落, 则此属性返回<b>False</b> 。</para>
+        <remarks><para>如果指定的段落包含在自动断字中，则此属性返回<b>True</b> ，否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果要从自动断字中排除指定段落，则此属性返回<b>False</b> 。</para>
           <para>可能的返回值为<b>True</b>、 <b>False</b>和<b>wdUndefined</b>。</para>
           <para> </para></remarks>
       </Docs>
@@ -777,6 +802,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.IncreaseSpacing" />
       <MemberSignature Language="VB.NET" Value="Public Sub IncreaseSpacing ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncreaseSpacing();" />
+      <MemberSignature Language="F#" Value="abstract member IncreaseSpacing : unit -&gt; unit" Usage="paragraphs.IncreaseSpacing " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -802,6 +828,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.Indent" />
       <MemberSignature Language="VB.NET" Value="Public Sub Indent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Indent();" />
+      <MemberSignature Language="F#" Value="abstract member Indent : unit -&gt; unit" Usage="paragraphs.Indent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -828,6 +855,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.IndentCharWidth(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub IndentCharWidth (Count As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void IndentCharWidth(short Count);" />
+      <MemberSignature Language="F#" Value="abstract member IndentCharWidth : int16 -&gt; unit" Usage="paragraphs.IndentCharWidth Count" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -857,6 +885,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.IndentFirstLineCharWidth(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub IndentFirstLineCharWidth (Count As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void IndentFirstLineCharWidth(short Count);" />
+      <MemberSignature Language="F#" Value="abstract member IndentFirstLineCharWidth : int16 -&gt; unit" Usage="paragraphs.IndentFirstLineCharWidth Count" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -886,6 +915,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Paragraph" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Paragraph ^ default[int] { Microsoft::Office::Interop::Word::Paragraph ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Paragraph" Usage="Microsoft.Office.Interop.Word.Paragraphs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -918,6 +948,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.KeepTogether" />
       <MemberSignature Language="VB.NET" Value="Public Property KeepTogether As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeepTogether { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.KeepTogether : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.KeepTogether" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -938,9 +969,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定当 Microsoft Word 对文档重新分页时, 指定段落中的所有行是否保持在同一页上。</summary>
+        <summary>确定当 Microsoft Word 对文档重新分页时，指定段落中的所有行是否保持在同一页上。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定段落中的所有行在 Word 对文档重新分页时保持在同一页上, 则此属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+        <remarks><para>如果指定段落中的所有行在 Word 对文档重新分页时保持在同一页上，则此属性返回<b>True</b> ; 如果不是，则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
           <para>可能的值为<b>True</b>、 <b>False</b>和<b>wdUndefined</b>。</para>
           <para> </para></remarks>
       </Docs>
@@ -951,6 +982,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.KeepWithNext" />
       <MemberSignature Language="VB.NET" Value="Public Property KeepWithNext As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeepWithNext { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.KeepWithNext : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.KeepWithNext" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -971,9 +1003,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定当 Microsoft Word 对文档重新分页时, 指定的段落是否保留在与其后的段落相同的页面上。</summary>
+        <summary>确定当 Microsoft Word 对文档重新分页时，指定的段落是否保留在与其后的段落相同的页面上。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的段落保留在 Microsoft Word 对文档重新分页时遵循的段落, 则此属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+        <remarks><para>如果指定的段落保留在 Microsoft Word 对文档重新分页时遵循的段落，则此属性返回<b>True</b> ; 如果不是，则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
           <para>可能的值为<b>True</b>、 <b>False</b>或<b>wdUndefined</b>。</para>
           <para> </para></remarks>
       </Docs>
@@ -984,6 +1016,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Last" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Last As Paragraph" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Paragraph ^ Last { Microsoft::Office::Interop::Word::Paragraph ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Last : Microsoft.Office.Interop.Word.Paragraph" Usage="Microsoft.Office.Interop.Word.Paragraphs.Last" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1001,7 +1034,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Paragraph</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>以<see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> <see cref="T:Microsoft.Office.Interop.Word.Paragraph" />对象的形式返回集合中的最后一项。</summary>
+        <summary>以对象的形式返回集合中的最后一项 <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1012,6 +1045,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.LeftIndent" />
       <MemberSignature Language="VB.NET" Value="Public Property LeftIndent As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LeftIndent { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.LeftIndent : single with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.LeftIndent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1043,6 +1077,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacing" />
       <MemberSignature Language="VB.NET" Value="Public Property LineSpacing As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LineSpacing { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.LineSpacing : single with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.LineSpacing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1065,14 +1100,14 @@
       <Docs>
         <summary>返回或设置指定段落的行距 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks><para>在<b></b> <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacingRule" />属性设置为以下项之后, 可以设置 LineSpacing 属性:</para>
+        <remarks><para>在<b>LineSpacing</b> <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacingRule" /> 属性设置为以下项之后，可以设置 LineSpacing 属性：</para>
           <para>
-            <b>wdLineSpaceAtLeast</b> -行距可以大于或等于指定的<b>LineSpacing</b>值, 但不得小于该指定的值。</para>
+            <b>wdLineSpaceAtLeast</b> -行距可以大于或等于指定的<b>LineSpacing</b>值，但不得小于该指定的值。</para>
           <para>
-            <b>wdLineSpaceExactly</b> -线条间距永远不会从指定的<b>LineSpacing</b>值更改, 即使段落中使用了较大的字体也是如此。</para>
+            <b>wdLineSpaceExactly</b> -线条间距永远不会从指定的<b>LineSpacing</b>值更改，即使段落中使用了较大的字体也是如此。</para>
           <para>
-            <b>wdlinespacemultiplelinespacing</b> -必须指定<b>LineSpacing</b>属性值, 以磅为单位。</para>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word._Application.LinesToPoints(System.Single)" />方法可将行数转换为相应的值 (以磅为单位)。</para>
+            <b>wdlinespacemultiplelinespacing</b> -必须指定<b>LineSpacing</b>属性值，以磅为单位。</para>
+          <para>使用 <see cref="M:Microsoft.Office.Interop.Word._Application.LinesToPoints(System.Single)" /> 方法可将行数转换为相应的值（以磅为单位）。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1082,6 +1117,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacingRule" />
       <MemberSignature Language="VB.NET" Value="Public Property LineSpacingRule As WdLineSpacing" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLineSpacing LineSpacingRule { Microsoft::Office::Interop::Word::WdLineSpacing get(); void set(Microsoft::Office::Interop::Word::WdLineSpacing value); };" />
+      <MemberSignature Language="F#" Value="member this.LineSpacingRule : Microsoft.Office.Interop.Word.WdLineSpacing with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.LineSpacingRule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1105,7 +1141,7 @@
         <summary>返回或设置指定段落的行距。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdLineSpacing" />可以是下列常量之一: </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdLineSpacing" />可以是下列常量之一： </para>
           <para>
             <b>wdLineSpace1pt5</b>
           </para>
@@ -1124,7 +1160,7 @@
           <para>
             <b>wdLineSpaceSingle</b>
           </para>
-          <para>使用 <b>wdLineSpaceSingle</b> 、 <b>wdLineSpace1pt5</b> 或 <b>wdLineSpaceDouble</b> 将行间距设置为下列值之一。 若要将行距设置为确切的磅数或多行数, 还必须设置<see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacing" />属性。</para>
+          <para>使用 <b>wdLineSpaceSingle</b> 、 <b>wdLineSpace1pt5</b> 或 <b>wdLineSpaceDouble</b> 将行间距设置为下列值之一。 若要将行距设置为确切的磅数或多行数，还必须设置 <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacing" /> 属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1134,6 +1170,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.LineUnitAfter" />
       <MemberSignature Language="VB.NET" Value="Public Property LineUnitAfter As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LineUnitAfter { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.LineUnitAfter : single with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.LineUnitAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1165,6 +1202,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.LineUnitBefore" />
       <MemberSignature Language="VB.NET" Value="Public Property LineUnitBefore As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LineUnitBefore { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.LineUnitBefore : single with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.LineUnitBefore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1196,6 +1234,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.NoLineNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property NoLineNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NoLineNumber { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NoLineNumber : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.NoLineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1218,9 +1257,9 @@
       <Docs>
         <summary>确定是否取消指定段落的行号。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定段落的行号为取消, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+        <remarks><para>如果指定段落的行号为取消，则此属性返回<b>True</b> ，否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
           <para>可能的值为<b>True</b>、 <b>False</b>和<b>wdUndefined</b>。 </para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" />属性可设置行号。</para>
+          <para>使用 <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" /> 属性可设置行号。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1230,6 +1269,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.OpenOrCloseUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub OpenOrCloseUp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpenOrCloseUp();" />
+      <MemberSignature Language="F#" Value="abstract member OpenOrCloseUp : unit -&gt; unit" Usage="paragraphs.OpenOrCloseUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1255,6 +1295,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.OpenUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub OpenUp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpenUp();" />
+      <MemberSignature Language="F#" Value="abstract member OpenUp : unit -&gt; unit" Usage="paragraphs.OpenUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1280,6 +1321,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.Outdent" />
       <MemberSignature Language="VB.NET" Value="Public Sub Outdent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Outdent();" />
+      <MemberSignature Language="F#" Value="abstract member Outdent : unit -&gt; unit" Usage="paragraphs.Outdent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1306,6 +1348,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.OutlineDemote" />
       <MemberSignature Language="VB.NET" Value="Public Sub OutlineDemote ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OutlineDemote();" />
+      <MemberSignature Language="F#" Value="abstract member OutlineDemote : unit -&gt; unit" Usage="paragraphs.OutlineDemote " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1332,6 +1375,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.OutlineDemoteToBody" />
       <MemberSignature Language="VB.NET" Value="Public Sub OutlineDemoteToBody ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OutlineDemoteToBody();" />
+      <MemberSignature Language="F#" Value="abstract member OutlineDemoteToBody : unit -&gt; unit" Usage="paragraphs.OutlineDemoteToBody " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1357,6 +1401,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.OutlineLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property OutlineLevel As WdOutlineLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdOutlineLevel OutlineLevel { Microsoft::Office::Interop::Word::WdOutlineLevel get(); void set(Microsoft::Office::Interop::Word::WdOutlineLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.OutlineLevel : Microsoft.Office.Interop.Word.WdOutlineLevel with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.OutlineLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1379,7 +1424,7 @@
       <Docs>
         <summary>返回或设置指定段落的大纲级别。</summary>
         <value>To be added.</value>
-        <remarks><para>返回的 vale 可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdOutlineLevel" />常量之一:</para>
+        <remarks><para>返回的 vale 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.WdOutlineLevel" /> 常量之一：</para>
           <para>
             <b>wdOutLineLevel1</b>
           </para>
@@ -1421,6 +1466,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.OutlinePromote" />
       <MemberSignature Language="VB.NET" Value="Public Sub OutlinePromote ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OutlinePromote();" />
+      <MemberSignature Language="F#" Value="abstract member OutlinePromote : unit -&gt; unit" Usage="paragraphs.OutlinePromote " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1447,6 +1493,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.PageBreakBefore" />
       <MemberSignature Language="VB.NET" Value="Public Property PageBreakBefore As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageBreakBefore { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.PageBreakBefore : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.PageBreakBefore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1469,7 +1516,7 @@
       <Docs>
         <summary>确定在指定段落前是否强制分页。</summary>
         <value>To be added.</value>
-        <remarks><para>如果在指定段落之前强制分页, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+        <remarks><para>如果在指定段落之前强制分页，则此属性返回<b>True</b> ，否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
           <para>可能的返回值为<b>True</b>、 <b>False</b>和<b>wdUndefined</b>。</para>
           <para> </para></remarks>
       </Docs>
@@ -1480,6 +1527,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Paragraphs.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1508,6 +1556,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.ReadingOrder" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadingOrder As WdReadingOrder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdReadingOrder ReadingOrder { Microsoft::Office::Interop::Word::WdReadingOrder get(); void set(Microsoft::Office::Interop::Word::WdReadingOrder value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadingOrder : Microsoft.Office.Interop.Word.WdReadingOrder with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.ReadingOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1531,14 +1580,14 @@
         <summary>返回或设置指定段落的读取次序而不改变其对齐方式。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdReadingOrder" />可以是下列的<b>WdReadingOrder</b>常量之一:</para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdReadingOrder" />可以是下列的<b>WdReadingOrder</b>常量之一：</para>
           <para>
             <b>wdReadingOrderLtr</b>
           </para>
           <para>
             <b>wdReadingOrderRtl</b>
           </para>
-          <para>使用<see cref="M:Microsoft.Office.Interop.Word.Selection.LtrPara" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrRun" />、 <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlPara" />和<see cref="M:Microsoft.Office.Interop.Word.Selection.RtlRun" />方法更改段落的对齐方式和阅读顺序。</para>
+          <para>使用 <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrPara" /> 、 <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrRun" /> 、 <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlPara" /> 和 <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlRun" /> 方法更改段落的对齐方式和阅读顺序。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1548,6 +1597,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="paragraphs.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1574,6 +1624,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.RightIndent" />
       <MemberSignature Language="VB.NET" Value="Public Property RightIndent As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RightIndent { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.RightIndent : single with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.RightIndent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1605,6 +1656,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Shading" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shading As Shading" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shading ^ Shading { Microsoft::Office::Interop::Word::Shading ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shading : Microsoft.Office.Interop.Word.Shading" Usage="Microsoft.Office.Interop.Word.Paragraphs.Shading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1622,7 +1674,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象, 该对象代表指定对象的底纹格式。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Shading" /> 对象，该对象代表指定对象的底纹格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1633,6 +1685,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.Space1" />
       <MemberSignature Language="VB.NET" Value="Public Sub Space1 ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Space1();" />
+      <MemberSignature Language="F#" Value="abstract member Space1 : unit -&gt; unit" Usage="paragraphs.Space1 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1659,6 +1712,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.Space15" />
       <MemberSignature Language="VB.NET" Value="Public Sub Space15 ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Space15();" />
+      <MemberSignature Language="F#" Value="abstract member Space15 : unit -&gt; unit" Usage="paragraphs.Space15 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1685,6 +1739,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.Space2" />
       <MemberSignature Language="VB.NET" Value="Public Sub Space2 ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Space2();" />
+      <MemberSignature Language="F#" Value="abstract member Space2 : unit -&gt; unit" Usage="paragraphs.Space2 " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1711,6 +1766,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceAfter" />
       <MemberSignature Language="VB.NET" Value="Public Property SpaceAfter As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SpaceAfter { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.SpaceAfter : single with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.SpaceAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1742,6 +1798,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceAfterAuto" />
       <MemberSignature Language="VB.NET" Value="Public Property SpaceAfterAuto As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SpaceAfterAuto { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SpaceAfterAuto : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.SpaceAfterAuto" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1764,10 +1821,10 @@
       <Docs>
         <summary>确定是否 Microsoft Word 自动设置指定段落的段后间距。</summary>
         <value>To be added.</value>
-        <remarks><para>如果 Word 自动设置指定段落的段后间距, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+        <remarks><para>如果 Word 自动设置指定段落的段后间距，则此属性返回<b>True</b> ，否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
           <para>如果仅有某些指定段落将 <b>SpaceAfterAuto</b> 属性设置为 <b>True</b> ，则此属性返回 <b>wdUndefined</b> 。</para>
-          <para>当您打开不带级联样式表的 HTML 文档时, Word 会自动将<b>SpaceAfterAuto</b>属性设置为<b>True</b> , 以呈现与 Web 浏览器中显示的段落间距完全一样的段落间距。</para>
-          <para>如果将<b>SpaceAfterAuto</b>设置为<b>True</b>, 则<see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceAfter" />忽略该属性。</para>
+          <para>当您打开不带级联样式表的 HTML 文档时，Word 会自动将<b>SpaceAfterAuto</b>属性设置为<b>True</b> ，以呈现与 Web 浏览器中显示的段落间距完全一样的段落间距。</para>
+          <para>如果将<b>SpaceAfterAuto</b>设置为<b>True</b>，则 <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceAfter" /> 忽略该属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1777,6 +1834,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceBefore" />
       <MemberSignature Language="VB.NET" Value="Public Property SpaceBefore As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SpaceBefore { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.SpaceBefore : single with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.SpaceBefore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1808,6 +1866,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceBeforeAuto" />
       <MemberSignature Language="VB.NET" Value="Public Property SpaceBeforeAuto As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SpaceBeforeAuto { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SpaceBeforeAuto : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.SpaceBeforeAuto" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1830,10 +1889,10 @@
       <Docs>
         <summary>确定是否 Microsoft Word 自动设置指定段落的段前间距。</summary>
         <value>To be added.</value>
-        <remarks><para>如果 Word 自动设置指定段落的段前间距, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+        <remarks><para>如果 Word 自动设置指定段落的段前间距，则此属性返回<b>True</b> ，否则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
           <para>如果仅有某些指定段落将 <b>SpaceBeforeAuto</b> 属性设置为 <b>True</b> ，则此属性返回 wdUndefined 。</para>
-          <para>当您打开不带级联样式表的 HTML 文档时, Word 会自动将<b>SpaceBeforeAuto</b>属性设置为<b>True</b> , 以呈现与 Web 浏览器中显示的段落间距完全一样的段落间距。</para>
-          <para>如果将<b>SpaceBeforeAuto</b>设置为<b>True</b>, 则<see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceBefore" />忽略该属性。</para>
+          <para>当您打开不带级联样式表的 HTML 文档时，Word 会自动将<b>SpaceBeforeAuto</b>属性设置为<b>True</b> ，以呈现与 Web 浏览器中显示的段落间距完全一样的段落间距。</para>
+          <para>如果将<b>SpaceBeforeAuto</b>设置为<b>True</b>，则 <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceBefore" /> 忽略该属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1843,6 +1902,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Style" />
       <MemberSignature Language="VB.NET" Value="Public Property Style As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Style { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Style : obj with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1865,7 +1925,7 @@
       <Docs>
         <summary>返回或设置指定对象的样式。</summary>
         <value>To be added.</value>
-        <remarks><para>若要设置该属性, 请指定样式的本地名称、一个整数、一个<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或一个代表样式的对象。</para>
+        <remarks><para>若要设置该属性，请指定样式的本地名称、一个整数、一个 <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> 常量或一个代表样式的对象。</para>
           <para>如果返回包含多个样式的范围的样式，则只返回第一个字符样式或段落样式。</para>
           <para> </para></remarks>
       </Docs>
@@ -1876,6 +1936,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.TabHangingIndent(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TabHangingIndent (Count As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TabHangingIndent(short Count);" />
+      <MemberSignature Language="F#" Value="abstract member TabHangingIndent : int16 -&gt; unit" Usage="paragraphs.TabHangingIndent Count" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1895,7 +1956,7 @@
       <Docs>
         <param name="Count">必需的<b>短</b>时间。 如果为正，则表示要缩进的制表位数；如果为负，则表示要删除的缩进制表位数。</param>
         <summary>将悬挂缩进量设置为指定的制表位数。</summary>
-        <remarks><para>如果值<paramref name="Count" />是负数, 则可用于将制表位从悬挂缩进中删除。</para>
+        <remarks><para>如果值是负数，则可用于将制表位从悬挂缩进中删除 <paramref name="Count" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1905,6 +1966,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.TabIndent(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TabIndent (Count As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TabIndent(short Count);" />
+      <MemberSignature Language="F#" Value="abstract member TabIndent : int16 -&gt; unit" Usage="paragraphs.TabIndent Count" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1924,7 +1986,7 @@
       <Docs>
         <param name="Count">必需的<b>短</b>时间。 如果为正，则表示要缩进的制表位数；如果为负，则表示要删除的缩进制表位数。</param>
         <summary>将指定段落的左缩进量设置为指定的制表位数。</summary>
-        <remarks><para>如果值<paramref name="Count" />是负数, 则也可以使用删除缩进。</para>
+        <remarks><para>如果值是负数，则也可以使用删除缩进 <paramref name="Count" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1934,6 +1996,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.TabStops" />
       <MemberSignature Language="VB.NET" Value="Public Property TabStops As TabStops" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TabStops ^ TabStops { Microsoft::Office::Interop::Word::TabStops ^ get(); void set(Microsoft::Office::Interop::Word::TabStops ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TabStops : Microsoft.Office.Interop.Word.TabStops with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.TabStops" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1954,7 +2017,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TabStops</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.TabStops" />集合, 该集合代表指定段落的所有自定义制表位。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Interop.Word.TabStops" /> 集合，该集合代表指定段落的所有自定义制表位。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1965,6 +2028,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.WidowControl" />
       <MemberSignature Language="VB.NET" Value="Public Property WidowControl As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WidowControl { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.WidowControl : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.WidowControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1985,9 +2049,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>确定当 Microsoft Word 对文档重新分页时, 指定段落中的第一行和最后一行是否与段落的其余部分保持一致。</summary>
+        <summary>确定当 Microsoft Word 对文档重新分页时，指定段落中的第一行和最后一行是否与段落的其余部分保持一致。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定段落中的第一行和最后一行与 Word 对文档重新分页时保留在同一页上, 则此属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+        <remarks><para>如果指定段落中的第一行和最后一行与 Word 对文档重新分页时保留在同一页上，则此属性返回<b>True</b> ; 如果不是，则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
           <para>可能的返回值为<b>True</b>、 <b>False</b>和<b>wdUndefined</b>。</para>
           <para> </para></remarks>
       </Docs>
@@ -1998,6 +2062,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.WordWrap" />
       <MemberSignature Language="VB.NET" Value="Public Property WordWrap As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WordWrap { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.WordWrap : int with get, set" Usage="Microsoft.Office.Interop.Word.Paragraphs.WordWrap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2020,9 +2085,9 @@
       <Docs>
         <summary>确定 Microsoft Word 是否将西文文本在指定段落或文本框架中的单词中间换行。</summary>
         <value>To be added.</value>
-        <remarks><para>如果 Word 在指定段落或文本框架中的单词中间换行, 则此属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
-          <para>如果只对某些指定段落或文本框架设置为<b>True</b> , 则此属性将返回<b>wdUndefined</b> 。</para>
-          <para>此用法可能对您不可用, 具体取决于您选择或安装的语言支持 (例如, 美国英语)。</para>
+        <remarks><para>如果 Word 在指定段落或文本框架中的单词中间换行，则此属性返回<b>True</b> ; 如果不是，则返回<b>False</b> 。 将属性值设置为<b>True</b>或<b>False</b>可启用或禁用功能。</para>
+          <para>如果只对某些指定段落或文本框架设置为<b>True</b> ，则此属性将返回<b>wdUndefined</b> 。</para>
+          <para>此用法可能对您不可用，具体取决于您选择或安装的语言支持（例如，美国英语）。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

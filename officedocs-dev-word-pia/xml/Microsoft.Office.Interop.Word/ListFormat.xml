@@ -1,9 +1,10 @@
 <Type Name="ListFormat" FullName="Microsoft.Office.Interop.Word.ListFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4ae3a6e1fbf76ffb21d88db92775f307cfb0ece9" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146575" /></Metadata><TypeSignature Language="C#" Value="public interface ListFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="403409778cc62403e44d05e83bab5d9862a934d0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925308" /></Metadata><TypeSignature Language="C#" Value="public interface ListFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListFormat" />
   <TypeSignature Language="C++ CLI" Value="public interface class ListFormat" />
+  <TypeSignature Language="F#" Value="type ListFormat = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,12 +20,12 @@
   </Attributes>
   <Docs>
     <summary>代表可应用于范围中各段落的列表格式属性。</summary>
-    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" />属性返回区域的<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象。</para>
-      <para>应用列表格式的一种简单方法是, 分别<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" />使用<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" />、和<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" />方法, 分别对应于 "项目符号和编号" 对话框中每个选项卡上的第一个列表格式 (不包括 "无")。</para>
-      <para>若要应用默认格式之外的其他格式, 请使用<see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" />方法, 该方法允许您指定要应用的列表格式 (列表模板)。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.ListFormat.List" />或<see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListTemplate" />属性可返回指定区域中的第一段的列表或列表模板。</para>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Word.Range" />对象<see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" />的属性可访问可用于指定区域的列表格式设置属性和方法。</para>
-      <para>但是, 如果已在文档中定义了列表, 则可以通过使用<see cref="P:Microsoft.Office.Interop.Word._Document.Lists" />属性访问 list 对象。</para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" /> 属性返回 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 区域的对象。</para>
+      <para>应用列表格式的一种简单方法是， <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" /> 分别使用、 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" /> 和 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" /> 方法，分别对应于 "项目符号和编号" 对话框中每个选项卡上的第一个列表格式（不包括 "无"）。</para>
+      <para>若要应用默认格式之外的其他格式，请使用 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> 方法，该方法允许您指定要应用的列表格式（列表模板）。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.ListFormat.List" /> 或 <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListTemplate" /> 属性可返回指定区域中的第一段的列表或列表模板。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 可访问可用于指定区域的列表格式设置属性和方法。</para>
+      <para>但是，如果已在文档中定义了列表，则可以通过使用属性访问 List 对象 <see cref="P:Microsoft.Office.Interop.Word._Document.Lists" /> 。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListFormat.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ListFormat.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,6 +63,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyBulletDefault([in]object&amp; DefaultListBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyBulletDefault (Optional ByRef DefaultListBehavior As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyBulletDefault : obj -&gt; unit" Usage="listFormat.ApplyBulletDefault DefaultListBehavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -75,11 +78,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultListBehavior" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="DefaultListBehavior">可选<b>对象</b>。 设置一个值，指定是否 Microsoft Word 使用新的面向 Web 的格式更好的列表中显示。 可以是下列常量之一: <b>wdWord8ListBehavior</b> (使用与 Microsoft Word 97 兼容格式) 或 <b>wdWord9ListBehavior</b> (使用面向 Web 的格式)。 出于兼容性原因，默认常量 <b>wdWord8ListBehavior</b> ，但在新的过程，您应该使用 <b>wdWord9ListBehavior</b> 利用改进的面向 Web 的格式相对于缩进和多级列表中。</param>
-        <summary>为指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象的区域中的段落添加项目符号和格式。 如果该段落已经设置了项目符号，则该方法将清除其中已有的项目符号和格式。</summary>
+        <summary>为指定对象的区域中的段落添加项目符号和格式 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 。 如果该段落已经设置了项目符号，则该方法将清除其中已有的项目符号和格式。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefaultOld" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyBulletDefaultOld ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyBulletDefaultOld();" />
+      <MemberSignature Language="F#" Value="abstract member ApplyBulletDefaultOld : unit -&gt; unit" Usage="listFormat.ApplyBulletDefaultOld " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -115,6 +119,8 @@
       <MemberSignature Language="C#" Value="public void ApplyListTemplate (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ContinuePreviousList, ref object ApplyTo, ref object DefaultListBehavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyListTemplate([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ContinuePreviousList, [in]object&amp; ApplyTo, [in]object&amp; DefaultListBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyListTemplate (ListTemplate As ListTemplate, Optional ByRef ContinuePreviousList As Object, Optional ByRef ApplyTo As Object, Optional ByRef DefaultListBehavior As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyListTemplate : Microsoft.Office.Interop.Word.ListTemplate * obj * obj * obj -&gt; unit" Usage="listFormat.ApplyListTemplate (ListTemplate, ContinuePreviousList, ApplyTo, DefaultListBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -130,16 +136,16 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
-        <Parameter Name="ContinuePreviousList" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ApplyTo" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ContinuePreviousList" Type="System.Object" RefType="ref" />
+        <Parameter Name="ApplyTo" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultListBehavior" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate">必需<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />的对象。 要应用的列表模板。</param>
+        <param name="ListTemplate">必需 <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> 的对象。 要应用的列表模板。</param>
         <param name="ContinuePreviousList">可选<b>对象</b>。 <b>如此</b> 继续编排页码从前面的列表; <b>假</b> 以启动一个新的列表。</param>
-        <param name="ApplyTo">可选<b>对象</b>。 要应用于列表模板的列表部分。 <see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" />可以是下列常量之一: <b>wdListApplyToSelection</b>、 <b>wdListApplyToWholeList</b>或<b>wdListApplyToThisPointForward</b>。</param>
+        <param name="ApplyTo">可选<b>对象</b>。 要应用于列表模板的列表部分。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" /> 常量之一： <b>wdListApplyToSelection</b>、 <b>wdListApplyToWholeList</b>或<b>wdListApplyToThisPointForward</b>。</param>
         <param name="DefaultListBehavior">可选<b>对象</b>。 设置一个值，指定是否 Microsoft Word 使用新的面向 Web 的格式更好的列表中显示。 可以是下列常量之一: <b>wdWord8ListBehavior</b> (使用与 Microsoft Word 97 兼容格式) 或 <b>wdWord9ListBehavior</b> (使用面向 Web 的格式)。 出于兼容性原因，默认常量 <b>wdWord8ListBehavior</b> ，但在新的过程，您应该使用 <b>wdWord9ListBehavior</b> 利用改进的面向 Web 的格式相对于缩进和多级列表中。</param>
-        <summary>将一组列表格式特征应用于指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />的对象。</summary>
+        <summary>将一组列表格式特征应用于指定的 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,6 +153,8 @@
       <MemberSignature Language="C#" Value="public void ApplyListTemplateOld (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ContinuePreviousList, ref object ApplyTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyListTemplateOld([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ContinuePreviousList, [in]object&amp; ApplyTo) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplateOld(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyListTemplateOld (ListTemplate As ListTemplate, Optional ByRef ContinuePreviousList As Object, Optional ByRef ApplyTo As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyListTemplateOld : Microsoft.Office.Interop.Word.ListTemplate * obj * obj -&gt; unit" Usage="listFormat.ApplyListTemplateOld (ListTemplate, ContinuePreviousList, ApplyTo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -165,8 +173,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
-        <Parameter Name="ContinuePreviousList" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ApplyTo" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ContinuePreviousList" Type="System.Object" RefType="ref" />
+        <Parameter Name="ApplyTo" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ListTemplate">To be added.</param>
@@ -180,6 +188,8 @@
       <MemberSignature Language="C#" Value="public void ApplyListTemplateWithLevel (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ContinuePreviousList, ref object ApplyTo, ref object DefaultListBehavior, ref object ApplyLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyListTemplateWithLevel([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ContinuePreviousList, [in]object&amp; ApplyTo, [in]object&amp; DefaultListBehavior, [in]object&amp; ApplyLevel) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplateWithLevel(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyListTemplateWithLevel (ListTemplate As ListTemplate, Optional ByRef ContinuePreviousList As Object, Optional ByRef ApplyTo As Object, Optional ByRef DefaultListBehavior As Object, Optional ByRef ApplyLevel As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyListTemplateWithLevel : Microsoft.Office.Interop.Word.ListTemplate * obj * obj * obj * obj -&gt; unit" Usage="listFormat.ApplyListTemplateWithLevel (ListTemplate, ContinuePreviousList, ApplyTo, DefaultListBehavior, ApplyLevel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -195,16 +205,16 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
-        <Parameter Name="ContinuePreviousList" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ApplyTo" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ApplyLevel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ContinuePreviousList" Type="System.Object" RefType="ref" />
+        <Parameter Name="ApplyTo" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultListBehavior" Type="System.Object" RefType="ref" />
+        <Parameter Name="ApplyLevel" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="ListTemplate">要应用的列表模板。</param>
         <param name="ContinuePreviousList"><b>如此</b> 继续编排页码从前面的列表; <b>假</b> 以启动一个新的列表。</param>
-        <param name="ApplyTo">要应用于列表模板的列表部分。 可以是<see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" />下列常量之一<see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToSelection" />:、 <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToThisPointForward" />或。 <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToWholeList" /></param>
-        <param name="DefaultListBehavior">设置一个值，指定是否 Microsoft Word 使用新的面向 Web 的格式更好的列表中显示。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" />常量之一: <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (使用与 Microsoft Word 97 兼容的格式) 或<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> (使用面向 Web 的格式)。 出于兼容性原因, 默认常量是<see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />, 但在新的过程中, <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" />您应使用更好地利用针对缩进和多级列表的面向 Web 的格式设置。</param>
+        <param name="ApplyTo">要应用于列表模板的列表部分。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" /> 常量之一： <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToSelection" /> 、 <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToThisPointForward" /> 或 <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToWholeList" /> 。</param>
+        <param name="DefaultListBehavior">设置一个值，指定是否 Microsoft Word 使用新的面向 Web 的格式更好的列表中显示。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> 常量之一： <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> （使用与 Microsoft Word 97 兼容的格式）或 <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> （使用面向 Web 的格式）。 出于兼容性原因，默认常量是 <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> ，但在新的过程中，您应使用 <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> 更好地利用针对缩进和多级列表的面向 Web 的格式设置。</param>
         <param name="ApplyLevel">要应用列表模板的级别。</param>
         <summary>（可选）对指定级别应用一组列表格式特征。</summary>
         <remarks>To be added.</remarks>
@@ -215,6 +225,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyNumberDefault([in]object&amp; DefaultListBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyNumberDefault (Optional ByRef DefaultListBehavior As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyNumberDefault : obj -&gt; unit" Usage="listFormat.ApplyNumberDefault DefaultListBehavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -229,11 +240,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultListBehavior" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="DefaultListBehavior">可选<b>对象</b>。 设置一个值，指定是否 Microsoft Word 使用新的面向 Web 的格式更好的列表中显示。 可以是下列常量之一: <b>wdWord8ListBehavior</b> (使用与 Microsoft Word 97 兼容格式) 或 <b>wdWord9ListBehavior</b> (使用面向 Web 的格式)。 出于兼容性原因，默认常量 <b>wdWord8ListBehavior</b> ，但在新的过程，您应该使用 <b>wdWord9ListBehavior</b> 利用改进的面向 Web 的格式相对于缩进和多级列表中。</param>
-        <summary>将默认编号方案添加到指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象区域中的段落。 如果段落已设置了编号列表格式，该方法将清除其中已有的编号和格式。</summary>
+        <summary>将默认编号方案添加到指定对象区域中的段落 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 。 如果段落已设置了编号列表格式，该方法将清除其中已有的编号和格式。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefaultOld" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyNumberDefaultOld ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyNumberDefaultOld();" />
+      <MemberSignature Language="F#" Value="abstract member ApplyNumberDefaultOld : unit -&gt; unit" Usage="listFormat.ApplyNumberDefaultOld " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -270,6 +282,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyOutlineNumberDefault([in]object&amp; DefaultListBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyOutlineNumberDefault (Optional ByRef DefaultListBehavior As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyOutlineNumberDefault : obj -&gt; unit" Usage="listFormat.ApplyOutlineNumberDefault DefaultListBehavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -284,11 +297,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultListBehavior" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="DefaultListBehavior">可选<b>对象</b>。 设置一个值，指定是否 Microsoft Word 使用新的面向 Web 的格式更好的列表中显示。 可以是下列常量之一: <b>wdWord8ListBehavior</b> (使用与 Microsoft Word 97 兼容格式) 或 <b>wdWord9ListBehavior</b> (使用面向 Web 的格式)。 出于兼容性原因，默认常量 <b>wdWord8ListBehavior</b> ，但在新的过程，您应该使用 <b>wdWord9ListBehavior</b> 利用改进的面向 Web 的格式相对于缩进和多级列表中。</param>
-        <summary>将默认的多级符号方案添加到指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象的区域中的段落。 如果段落中已经设置了多级符号列表的格式，该方法将清除这些原有的符号和格式。</summary>
+        <summary>将默认的多级符号方案添加到指定对象的区域中的段落 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 。 如果段落中已经设置了多级符号列表的格式，该方法将清除这些原有的符号和格式。</summary>
         <remarks><para>该方法并不清除段落中已使用的内置标题样式。</para>
           <para> </para></remarks>
       </Docs>
@@ -299,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefaultOld" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyOutlineNumberDefaultOld ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyOutlineNumberDefaultOld();" />
+      <MemberSignature Language="F#" Value="abstract member ApplyOutlineNumberDefaultOld : unit -&gt; unit" Usage="listFormat.ApplyOutlineNumberDefaultOld " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -325,7 +339,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdContinue CanContinuePreviousList (Microsoft.Office.Interop.Word.ListTemplate ListTemplate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Office.Interop.Word.WdContinue CanContinuePreviousList([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.CanContinuePreviousList(Microsoft.Office.Interop.Word.ListTemplate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanContinuePreviousList (ListTemplate As ListTemplate) As WdContinue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::WdContinue CanContinuePreviousList(Microsoft::Office::Interop::Word::ListTemplate ^ ListTemplate);" />
+      <MemberSignature Language="F#" Value="abstract member CanContinuePreviousList : Microsoft.Office.Interop.Word.ListTemplate -&gt; Microsoft.Office.Interop.Word.WdContinue" Usage="listFormat.CanContinuePreviousList ListTemplate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -343,10 +359,10 @@
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate">必需<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />的对象。 一个应用于文档中先前段落的列表模板。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.WdContinue" />常量 (<b>wdContinueDisabled</b>、 <b>wdResetList</b>或<b>wdContinueList</b>), 该常量指示是否可以继续使用上一列表中的格式。</summary>
+        <param name="ListTemplate">必需 <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> 的对象。 一个应用于文档中先前段落的列表模板。</param>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.WdContinue" /> 常量（<b>wdContinueDisabled</b>、 <b>wdResetList</b>或<b>wdContinueList</b>），该常量指示是否可以继续使用上一列表中的格式。</summary>
         <returns>To be added.</returns>
-        <remarks><para>此方法返回指定的列表格式的 项目符号和编号对话框中的 继续前一列表和 重新开始编号选项状态。 若要更改这些选项的设置, 请设置<paramref name="ContinuePreviousList" /> <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" />方法的参数。</para>
+        <remarks><para>此方法返回指定的列表格式的 项目符号和编号对话框中的 继续前一列表和 重新开始编号选项状态。 若要更改这些选项的设置，请设置 <paramref name="ContinuePreviousList" /> 方法的参数 <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -355,6 +371,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConvertNumbersToText([in]object&amp; NumberType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.ConvertNumbersToText(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ConvertNumbersToText (Optional ByRef NumberType As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ConvertNumbersToText : obj -&gt; unit" Usage="listFormat.ConvertNumbersToText NumberType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -369,14 +386,14 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumberType" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType">可选<b>对象</b>。 要转换的编号类型。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />常量。</param>
-        <summary>将指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象中的列表编号和 LISTNUM 域更改为文本。</summary>
-        <remarks><para>有两种类型的数字: 预设号码 (<b>wdNumberParagraph</b>), 您可以通过在 "项目符号和编号" 对话框中选择模板来添加到段落中。和 LISTNUM 域 (<b>wdNumberListNum</b>), 允许您为每个段落添加一个以上的数字。</para>
-          <para>如果要在其他应用程序中使用文档, 并且该应用程序不识别列表格式或 LISTNUM 域, 则<b>ConvertNumbersToText</b>方法非常有用。</para>
-          <para>将列表编号转换为文本后, 不能再在列表中对其进行处理。</para>
+        <param name="NumberType">可选<b>对象</b>。 要转换的编号类型。 可以是任何 <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> 常量。</param>
+        <summary>将指定对象中的列表编号和 LISTNUM 域更改 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 为文本。</summary>
+        <remarks><para>有两种类型的数字：预设号码（<b>wdNumberParagraph</b>），您可以通过在 "项目符号和编号" 对话框中选择模板来添加到段落中。和 LISTNUM 域（<b>wdNumberListNum</b>），允许您为每个段落添加一个以上的数字。</para>
+          <para>如果要在其他应用程序中使用文档，并且该应用程序不识别列表格式或 LISTNUM 域，则<b>ConvertNumbersToText</b>方法非常有用。</para>
+          <para>将列表编号转换为文本后，不能再在列表中对其进行处理。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -385,6 +402,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CountNumberedItems([in]object&amp; NumberType, [in]object&amp; Level) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.CountNumberedItems(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function CountNumberedItems (Optional ByRef NumberType As Object, Optional ByRef Level As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member CountNumberedItems : obj * obj -&gt; int" Usage="listFormat.CountNumberedItems (NumberType, Level)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -399,16 +417,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumberType" Type="System.Object" RefType="ref" />
+        <Parameter Name="Level" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType">可选<b>对象</b>。 要进行计数的编号类型。 <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />可以是下列常量之一: <b>wdNumberParagraph</b>、 <b>wdNumberListNum</b>或<b>wdNumberAllNumbers</b>。 默认值是 <b>wdNumberAllNumbers</b> 。</param>
+        <param name="NumberType">可选<b>对象</b>。 要进行计数的编号类型。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> 常量之一： <b>wdNumberParagraph</b>、 <b>wdNumberListNum</b>或<b>wdNumberAllNumbers</b>。 默认值是 <b>wdNumberAllNumbers</b> 。</param>
         <param name="Level">可选<b>对象</b>。 与要计数的编号级别相对应的数。 如果省略该参数，将计算所有级别的数目。</param>
         <summary>返回指定的 <b>ListFormat</b> 对象中的项目符号或编号项和 LISTNUM 域的数目。</summary>
         <returns>To be added.</returns>
-        <remarks><para>指定<b>wdNumberParagraph</b>或<b>wdNumberAllNumbers</b> (默认值) 时, 将对<paramref name="NumberType" />项目符号项进行计数。</para>
-          <para>有两种类型的数字: 预设号码 (<b>wdNumberParagraph</b>), 您可以通过在 "项目符号和编号" 对话框中选择模板来添加到段落中。和 LISTNUM 域 (<b>wdNumberListNum</b>), 允许您为每个段落添加一个以上的数字。</para>
+        <remarks><para>指定<b>wdNumberParagraph</b>或<b>wdNumberAllNumbers</b> （默认值）时，将对项目符号项进行计数 <paramref name="NumberType" /> 。</para>
+          <para>有两种类型的数字：预设号码（<b>wdNumberParagraph</b>），您可以通过在 "项目符号和编号" 对话框中选择模板来添加到段落中。和 LISTNUM 域（<b>wdNumberListNum</b>），允许您为每个段落添加一个以上的数字。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -418,6 +436,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListFormat.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ListFormat.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -437,8 +456,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -448,6 +467,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListFormat.List" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property List As List" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::List ^ List { Microsoft::Office::Interop::Word::List ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.List : Microsoft.Office.Interop.Word.List" Usage="Microsoft.Office.Interop.Word.ListFormat.List" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -465,7 +485,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.List</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.List" /> object 类型的对象, 该对象代表指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象中包含的第一个带格式的列表。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.List" /> object 类型的对象，该对象代表指定对象中包含的第一个带格式的列表 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 。</summary>
         <value>To be added.</value>
         <remarks><para>如果没有将 <b>ListFormat</b> 对象区域中的第一段设置为列表格式，则 <b>List</b> 属性不返回值。</para>
           <para> </para></remarks>
@@ -477,6 +497,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.ListIndent" />
       <MemberSignature Language="VB.NET" Value="Public Sub ListIndent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ListIndent();" />
+      <MemberSignature Language="F#" Value="abstract member ListIndent : unit -&gt; unit" Usage="listFormat.ListIndent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -492,7 +513,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>增加指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象的区域中的段落的列表级别, 以一个级别为增量。</summary>
+        <summary>增加指定对象的区域中的段落的列表级别 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> ，以一个级别为增量。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -502,6 +523,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListFormat.ListLevelNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property ListLevelNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ListLevelNumber { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ListLevelNumber : int with get, set" Usage="Microsoft.Office.Interop.Word.ListFormat.ListLevelNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -522,7 +544,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象中的第一段的列表级别。</summary>
+        <summary>返回或设置指定对象中的第一段的列表级别 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -533,6 +555,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.ListOutdent" />
       <MemberSignature Language="VB.NET" Value="Public Sub ListOutdent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ListOutdent();" />
+      <MemberSignature Language="F#" Value="abstract member ListOutdent : unit -&gt; unit" Usage="listFormat.ListOutdent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -548,7 +571,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>减小指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象的区域中的段落的列表级别, 以一个级别为增量。</summary>
+        <summary>减小指定对象的区域中的段落的列表级别 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> ，以一个级别为增量。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -558,6 +581,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListFormat.ListPictureBullet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListPictureBullet As InlineShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::InlineShape ^ ListPictureBullet { Microsoft::Office::Interop::Word::InlineShape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListPictureBullet : Microsoft.Office.Interop.Word.InlineShape" Usage="Microsoft.Office.Interop.Word.ListFormat.ListPictureBullet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -575,7 +599,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回表示<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />用作图片项目符号列表中的项目符号的图片的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> 表示用作图片项目符号列表中的项目符号的图片的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -586,6 +610,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListFormat.ListString" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ListString { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListString : string" Usage="Microsoft.Office.Interop.Word.ListFormat.ListString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -603,10 +628,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>String</b>类型的值, 该值代表指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象的范围中第一段的列表值的外观。 例如, 字母列表中的第二段将返回 B。</summary>
+        <summary>返回一个<b>String</b>类型的值，该值代表指定对象的范围中第一段的列表值的外观 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 。 例如，字母列表中的第二段将返回 B。</summary>
         <value>To be added.</value>
-        <remarks><para>对于项目符号列表, 您需要应用正确的字体才能查看字符串。 大多数项目符号使用 Symbol 或 Wingdings 字体。</para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListValue" />属性返回段落的数字值。</para>
+        <remarks><para>对于项目符号列表，您需要应用正确的字体才能查看字符串。 大多数项目符号使用 Symbol 或 Wingdings 字体。</para>
+          <para>使用 <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListValue" /> 属性返回段落的数字值。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -616,6 +641,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListFormat.ListTemplate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListTemplate As ListTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListTemplate ^ ListTemplate { Microsoft::Office::Interop::Word::ListTemplate ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListTemplate : Microsoft.Office.Interop.Word.ListTemplate" Usage="Microsoft.Office.Interop.Word.ListFormat.ListTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -633,7 +659,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object 类型的对象, 该对象代表指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象的列表格式。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object 类型的对象，该对象代表指定对象的列表格式 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 。</summary>
         <value>To be added.</value>
         <remarks><para>一个列表模板包含定义特定列表的所有格式。 “项目符号和编号”对话框（“格式”菜单）中的每个选项卡上有七种格式（不包括“无”），每一种格式对应于一个列表模板。 文档和模板也可以包含列表模板的集合。</para>
           <para>如果 <b>ListFormat</b> 对象的范围的第一个段落的格式不是列表，则 <b>ListTemplate</b> 属性将返回 <b>Nothing</b> 。</para>
@@ -646,6 +672,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListFormat.ListType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListType As WdListType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdListType ListType { Microsoft::Office::Interop::Word::WdListType get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListType : Microsoft.Office.Interop.Word.WdListType" Usage="Microsoft.Office.Interop.Word.ListFormat.ListType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -663,9 +690,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象的范围内包含的列表的类型。</summary>
+        <summary>返回指定对象的范围内包含的列表的类型 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 。</summary>
         <value>To be added.</value>
-        <remarks><para><b>ListType</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdListType" />常量之一。 常量 <b>wdListListNumOnly</b> 指 LISTNUM 域，可以在段落的文本中添加的字段。</para>
+        <remarks><para><b>ListType</b>属性可以是 <see cref="T:Microsoft.Office.Interop.Word.WdListType" /> 常量之一。 常量 <b>wdListListNumOnly</b> 指 LISTNUM 域，可以在段落的文本中添加的字段。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -675,6 +702,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListFormat.ListValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListValue As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ListValue { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListValue : int" Usage="Microsoft.Office.Interop.Word.ListFormat.ListValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -692,11 +720,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象的区域中第一段的数值。 例如, 应用于字母列表中第二段的<b>ListValue</b>属性将返回2。</summary>
+        <summary>返回指定对象的区域中第一段的数值 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 。 例如，应用于字母列表中第二段的<b>ListValue</b>属性将返回2。</summary>
         <value>To be added.</value>
-        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListString" />属性返回表示列表值的字符串。</para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListString" /> 属性返回表示列表值的字符串。</para>
           <para>如果 <b>ListFormat</b> 对象应用于项目符号列表，则 <b>ListValue</b> 属性返回 1。</para>
-          <para>如果 <b>ListFormat</b> 对象应用一个多级符号列表， <b>ListValue</b> 属性返回数值的第一段相同级别的段落的顺序出现。 例如, 如果指定的<b>ListFormat</b>对象的第一段的编号为 "a. 2", 则<b>ListValue</b>将返回 "2"。</para>
+          <para>如果 <b>ListFormat</b> 对象应用一个多级符号列表， <b>ListValue</b> 属性返回数值的第一段相同级别的段落的顺序出现。 例如，如果指定的<b>ListFormat</b>对象的第一段的编号为 "a. 2"，则<b>ListValue</b>将返回 "2"。</para>
           <para>该属性不会返回 LISTNUM 域的值。</para>
           <para> </para></remarks>
       </Docs>
@@ -707,6 +735,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListFormat.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ListFormat.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -734,6 +763,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveNumbers([in]object&amp; NumberType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListFormat.RemoveNumbers(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveNumbers (Optional ByRef NumberType As Object)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveNumbers : obj -&gt; unit" Usage="listFormat.RemoveNumbers NumberType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -748,12 +778,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumberType" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType">可选<see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />。 要删除的编号类型。</param>
-        <summary>删除指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象的编号或项目符号。</summary>
-        <remarks><para>将此方法应用于<see cref="T:Microsoft.Office.Interop.Word.List" />对象时, 只会删除指定列表中的段落中的数字, 从其他列表中跳过任何交错的号码。 如果将此方法应用于某一范围的文本的<b>ListFormat</b>对象, 则删除该范围中所有列表的所有数字。</para>
+        <param name="NumberType">可选 <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> 。 要删除的编号类型。</param>
+        <summary>删除指定对象的编号或项目符号 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 。</summary>
+        <remarks><para>将此方法应用于对象时 <see cref="T:Microsoft.Office.Interop.Word.List" /> ，只会删除指定列表中的段落中的数字，从其他列表中跳过任何交错的号码。 如果将此方法应用于某一范围的文本的<b>ListFormat</b>对象，则删除该范围中所有列表的所有数字。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -763,6 +793,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListFormat.SingleList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SingleList As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SingleList { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SingleList : bool" Usage="Microsoft.Office.Interop.Word.ListFormat.SingleList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -780,7 +811,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如此</b>如果指定<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />的对象只包含一个列表。</summary>
+        <summary><b>如此</b>如果指定的 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 对象只包含一个列表。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -791,6 +822,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListFormat.SingleListTemplate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SingleListTemplate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SingleListTemplate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SingleListTemplate : bool" Usage="Microsoft.Office.Interop.Word.ListFormat.SingleListTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -808,7 +840,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如此</b>如果整个<see cref="T:Microsoft.Office.Interop.Word.ListFormat" />对象使用相同的列表模板。</summary>
+        <summary><b>如此</b>如果整个 <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> 对象使用相同的列表模板。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

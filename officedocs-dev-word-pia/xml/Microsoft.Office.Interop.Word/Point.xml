@@ -1,9 +1,10 @@
 <Type Name="Point" FullName="Microsoft.Office.Interop.Word.Point">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e59e39b44825c3b2a985f05858eb282283053524" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144146" /></Metadata><TypeSignature Language="C#" Value="public interface Point" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5d931e162fe6fa0f05ec54b35be5f03edd30a833" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924681" /></Metadata><TypeSignature Language="C#" Value="public interface Point" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Point" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Point" />
   <TypeSignature Language="VB.NET" Value="Public Interface Point" />
   <TypeSignature Language="C++ CLI" Value="public interface class Point" />
+  <TypeSignature Language="F#" Value="type Point = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>代表图表系列中的单个数据点。</summary>
-    <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Point" />对象是<see cref="T:Microsoft.Office.Interop.Word.Points" />集合的成员。 <see cref="T:Microsoft.Office.Interop.Word.Points" />集合中包含一个系列中的所有数据点。</para>
+    <remarks><para><see cref="T:Microsoft.Office.Interop.Word.Point" />对象是集合的成员 <see cref="T:Microsoft.Office.Interop.Word.Points" /> 。 <see cref="T:Microsoft.Office.Interop.Word.Points" />集合中包含一个系列中的所有数据点。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.Point.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,8 +48,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
-        <value><b>应用程序</b>(请参阅上面的)</value>
+        <summary>在不使用对象识别符的情况下使用时，此属性返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <value><b>应用程序</b>（请参阅上面的）</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,6 +58,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ApplyDataLabels([in]valuetype Microsoft.Office.Interop.Word.XlDataLabelsType Type, [in]object LegendKey, [in]object AutoText, [in]object HasLeaderLines, [in]object ShowSeriesName, [in]object ShowCategoryName, [in]object ShowValue, [in]object ShowPercentage, [in]object ShowBubbleSize, [in]object Separator) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Point.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ApplyDataLabels (Optional Type As XlDataLabelsType = Microsoft.Office.Interop.Word.XlDataLabelsType.xlDataLabelsShowValue, Optional LegendKey As Object, Optional AutoText As Object, Optional HasLeaderLines As Object, Optional ShowSeriesName As Object, Optional ShowCategoryName As Object, Optional ShowValue As Object, Optional ShowPercentage As Object, Optional ShowBubbleSize As Object, Optional Separator As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ApplyDataLabels : Microsoft.Office.Interop.Word.XlDataLabelsType * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; obj" Usage="point.ApplyDataLabels (Type, LegendKey, AutoText, HasLeaderLines, ShowSeriesName, ShowCategoryName, ShowValue, ShowPercentage, ShowBubbleSize, Separator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -85,7 +88,7 @@
         <param name="Type">要应用的数据标签的类型。</param>
         <param name="LegendKey"><b>True</b> 显示图例项标示点旁。 默认值为 <b>False</b>。</param>
         <param name="AutoText"><b>如此</b> 如果对象自动生成合适的文字内容。</param>
-        <param name="HasLeaderLines">对于<see cref="T:Microsoft.Office.Interop.Word.Chart" />和<see cref="T:Microsoft.Office.Interop.Word.Series" />对象, 如果系列有引导线,<b>则为 True</b> 。</param>
+        <param name="HasLeaderLines">对于 <see cref="T:Microsoft.Office.Interop.Word.Chart" /> 和 <see cref="T:Microsoft.Office.Interop.Word.Series" /> 对象，如果系列有引导线，<b>则为 True</b> 。</param>
         <param name="ShowSeriesName">传递布尔值以启用或禁用数据标签的系列名称。</param>
         <param name="ShowCategoryName">传递布尔值以启用或禁用数据标签的分类名称。</param>
         <param name="ShowValue">传递布尔值以启用或禁用数据标签的值。</param>
@@ -95,7 +98,7 @@
         <summary>对数据点应用数据标签。</summary>
         <returns><b>Object</b></returns>
         <remarks><para>
-            <paramref name="Type" />可以是<see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" />常量之一。</para>
+            <paramref name="Type" />可以是 <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> 常量之一。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -105,6 +108,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.ApplyPictToEnd" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplyPictToEnd As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyPictToEnd { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyPictToEnd : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.ApplyPictToEnd" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.ApplyPictToFront" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplyPictToFront As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyPictToFront { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyPictToFront : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.ApplyPictToFront" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -167,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.ApplyPictToSides" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplyPictToSides As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyPictToSides { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplyPictToSides : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.ApplyPictToSides" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -198,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Border" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Border As ChartBorder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartBorder ^ Border { Microsoft::Office::Interop::Word::ChartBorder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Border : Microsoft.Office.Interop.Word.ChartBorder" Usage="Microsoft.Office.Interop.Word.Point.Border" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -218,7 +225,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Border" /> object 类型的对象, 该对象代表对象的边框。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Border" /> object 类型的对象，该对象代表对象的边框。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -229,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Point.ClearFormats" />
       <MemberSignature Language="VB.NET" Value="Public Function ClearFormats () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ClearFormats();" />
+      <MemberSignature Language="F#" Value="abstract member ClearFormats : unit -&gt; obj" Usage="point.ClearFormats " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -255,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Point.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; obj" Usage="point.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -281,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Point.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -300,7 +310,7 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Integer</b>。</summary>
         <value><b>Integer</b></value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.Point.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则该 <see cref="P:Microsoft.Office.Interop.Word.Point.Creator" /> 属性返回十六进制数字是4d535744，表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -310,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.DataLabel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataLabel As DataLabel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DataLabel ^ DataLabel { Microsoft::Office::Interop::Word::DataLabel ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataLabel : Microsoft.Office.Interop.Word.DataLabel" Usage="Microsoft.Office.Interop.Word.Point.DataLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -327,7 +338,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.DataLabel" />对象, 表示与点关联的数据标签。 只读。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> 对象，表示与点关联的数据标签。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.DataLabel" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -338,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Point.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; obj" Usage="point.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -355,7 +367,7 @@
       <Docs>
         <summary>删除对象。</summary>
         <returns><b>Object</b></returns>
-        <remarks><para>删除<see cref="T:Microsoft.Office.Interop.Word.Point" />对象将删除整个系列。</para>
+        <remarks><para>删除 <see cref="T:Microsoft.Office.Interop.Word.Point" /> 对象将删除整个系列。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -365,6 +377,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Explosion" />
       <MemberSignature Language="VB.NET" Value="Public Property Explosion As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Explosion { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Explosion : int with get, set" Usage="Microsoft.Office.Interop.Word.Point.Explosion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -396,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Fill" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fill As ChartFillFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFillFormat ^ Fill { Microsoft::Office::Interop::Word::ChartFillFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fill : Microsoft.Office.Interop.Word.ChartFillFormat" Usage="Microsoft.Office.Interop.Word.Point.Fill" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -416,7 +430,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.FillFormat" />的形状或<see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />对象的对象, 该对象包含形状或图表的填充格式属性指定的图表。</summary>
+        <summary>返回指定的 <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> 形状或对象的对象， <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> 该对象包含形状或图表的填充格式属性指定的图表。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -427,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ChartFormat" Usage="Microsoft.Office.Interop.Word.Point.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -445,7 +460,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回行、 填充和效果的对象的格式。
-只读<see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />。</summary>
+只读 <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /> 。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -456,6 +471,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Has3DEffect" />
       <MemberSignature Language="VB.NET" Value="Public Property Has3DEffect As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Has3DEffect { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Has3DEffect : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.Has3DEffect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -488,6 +504,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.HasDataLabel" />
       <MemberSignature Language="VB.NET" Value="Public Property HasDataLabel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasDataLabel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasDataLabel : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.HasDataLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -519,6 +536,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Height" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double" Usage="Microsoft.Office.Interop.Word.Point.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -536,7 +554,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取对象的高度 (以磅为单位)。</summary>
+        <summary>获取对象的高度（以磅为单位）。</summary>
         <value>对象的高度，以磅为单位。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
@@ -548,6 +566,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Interior" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Interior As Interior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Interior ^ Interior { Microsoft::Office::Interop::Word::Interior ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Interior : Microsoft.Office.Interop.Word.Interior" Usage="Microsoft.Office.Interop.Word.Point.Interior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -568,7 +587,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Interior" /> object 类型的对象, 该对象代表指定对象的内部。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Interior" /> object 类型的对象，该对象代表指定对象的内部。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -579,6 +598,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.InvertIfNegative" />
       <MemberSignature Language="VB.NET" Value="Public Property InvertIfNegative As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InvertIfNegative { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.InvertIfNegative : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.InvertIfNegative" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -610,6 +630,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Left" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Left : double" Usage="Microsoft.Office.Interop.Word.Point.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -627,8 +648,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值, 该值代表从对象的左边缘到图表区域左边缘之间的距离 (以磅为单位)。</summary>
-        <value>从对象左边缘到图表区左边缘的距离 (以磅为单位)。</value>
+        <summary>获取一个值，该值代表从对象的左边缘到图表区域左边缘之间的距离（以磅为单位）。</summary>
+        <value>从对象左边缘到图表区左边缘的距离（以磅为单位）。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -639,6 +660,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.MarkerBackgroundColor" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerBackgroundColor As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MarkerBackgroundColor { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerBackgroundColor : int with get, set" Usage="Microsoft.Office.Interop.Word.Point.MarkerBackgroundColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -670,6 +692,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.MarkerBackgroundColorIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerBackgroundColorIndex As XlColorIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlColorIndex MarkerBackgroundColorIndex { Microsoft::Office::Interop::Word::XlColorIndex get(); void set(Microsoft::Office::Interop::Word::XlColorIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerBackgroundColorIndex : Microsoft.Office.Interop.Word.XlColorIndex with get, set" Usage="Microsoft.Office.Interop.Word.Point.MarkerBackgroundColorIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -690,7 +713,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置数据标志的背景色作为当前调色板中的索引, 或者作为下列<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量之一: <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" />或。 <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" /> 仅适用于折线图、散点图和雷达图。 读/写<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />。</summary>
+        <summary>返回或设置数据标志的背景色作为当前调色板中的索引，或者作为下列 <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> 常量之一： <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> 或 <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" /> 。 仅适用于折线图、散点图和雷达图。 读/写 <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> 。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -701,6 +724,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.MarkerForegroundColor" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerForegroundColor As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MarkerForegroundColor { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerForegroundColor : int with get, set" Usage="Microsoft.Office.Interop.Word.Point.MarkerForegroundColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -732,6 +756,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.MarkerForegroundColorIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerForegroundColorIndex As XlColorIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlColorIndex MarkerForegroundColorIndex { Microsoft::Office::Interop::Word::XlColorIndex get(); void set(Microsoft::Office::Interop::Word::XlColorIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerForegroundColorIndex : Microsoft.Office.Interop.Word.XlColorIndex with get, set" Usage="Microsoft.Office.Interop.Word.Point.MarkerForegroundColorIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -752,7 +777,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置标记的前景色作为当前调色板中的索引, 或作为下列<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量之一: <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" />或。 <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" /> 仅适用于折线图、散点图和雷达图。 读/写<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />。</summary>
+        <summary>返回或设置标记的前景色作为当前调色板中的索引，或作为下列 <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> 常量之一： <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> 或 <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" /> 。 仅适用于折线图、散点图和雷达图。 读/写 <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> 。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -763,6 +788,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.MarkerSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MarkerSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerSize : int with get, set" Usage="Microsoft.Office.Interop.Word.Point.MarkerSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -794,6 +820,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.MarkerStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkerStyle As XlMarkerStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlMarkerStyle MarkerStyle { Microsoft::Office::Interop::Word::XlMarkerStyle get(); void set(Microsoft::Office::Interop::Word::XlMarkerStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkerStyle : Microsoft.Office.Interop.Word.XlMarkerStyle with get, set" Usage="Microsoft.Office.Interop.Word.Point.MarkerStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -814,7 +841,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置折线图、散点图或雷达图中数据点或系列的数据标记样式。 读/写<see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" />。</summary>
+        <summary>返回或设置折线图、散点图或雷达图中数据点或系列的数据标记样式。 读/写 <see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" /> 。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -825,6 +852,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Point.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -844,7 +872,7 @@
       <Docs>
         <summary>获取对象名称。</summary>
         <value>对象名称。</value>
-        <remarks><para>只读。 This property corresponds to the name of a data point on a chart. 名称使用以下格式表示:</para>
+        <remarks><para>只读。 This property corresponds to the name of a data point on a chart. 名称使用以下格式表示：</para>
           <code>S&amp;lt;series number&amp;gt;P&amp;lt;point number&amp;gt;</code>
           <para> </para></remarks>
       </Docs>
@@ -855,6 +883,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Point.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -883,6 +912,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Point.Paste" />
       <MemberSignature Language="VB.NET" Value="Public Function Paste () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Paste();" />
+      <MemberSignature Language="F#" Value="abstract member Paste : unit -&gt; obj" Usage="point.Paste " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -900,7 +930,7 @@
       <Docs>
         <summary>从剪贴板中粘贴图片，将其作为所选数据点的标志。</summary>
         <returns><b>Object</b></returns>
-        <remarks><para>此方法可用于柱形图、条形图、折线图或雷达图, 并将<see cref="P:Microsoft.Office.Interop.Word.Point.MarkerStyle" />属性设置为。 <see cref="F:Microsoft.Office.Interop.Word.XlMarkerStyle.xlMarkerStylePicture" /></para>
+        <remarks><para>此方法可用于柱形图、条形图、折线图或雷达图，并将 <see cref="P:Microsoft.Office.Interop.Word.Point.MarkerStyle" /> 属性设置为 <see cref="F:Microsoft.Office.Interop.Word.XlMarkerStyle.xlMarkerStylePicture" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -910,6 +940,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.PictureType" />
       <MemberSignature Language="VB.NET" Value="Public Property PictureType As XlChartPictureType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlChartPictureType PictureType { Microsoft::Office::Interop::Word::XlChartPictureType get(); void set(Microsoft::Office::Interop::Word::XlChartPictureType value); };" />
+      <MemberSignature Language="F#" Value="member this.PictureType : Microsoft.Office.Interop.Word.XlChartPictureType with get, set" Usage="Microsoft.Office.Interop.Word.Point.PictureType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -930,7 +961,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlChartPictureType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" />值, 表示在柱形图或条形图上的图片的显示方式。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /> 值，表示在柱形图或条形图上的图片的显示方式。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -941,6 +972,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.PictureUnit" />
       <MemberSignature Language="VB.NET" Value="Public Property PictureUnit As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PictureUnit { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.PictureUnit : double with get, set" Usage="Microsoft.Office.Interop.Word.Point.PictureUnit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -967,7 +999,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置图表上的每个图片的单位 (如果<see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" />该属性设置为<see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> ) (如果不是, 则忽略此属性)。</summary>
+        <summary>返回或设置图表上的每个图片的单位（如果该 <see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" /> 属性设置为 <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> ）（如果不是，则忽略此属性）。</summary>
         <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -978,6 +1010,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.PictureUnit2" />
       <MemberSignature Language="VB.NET" Value="Public Property PictureUnit2 As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PictureUnit2 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.PictureUnit2 : double with get, set" Usage="Microsoft.Office.Interop.Word.Point.PictureUnit2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -998,7 +1031,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置图表上的每个图片的单位 (如果<see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" />该属性设置为<see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> ) (如果不是, 则忽略此属性)。 读/写 <b>Double</b>。</summary>
+        <summary>返回或设置图表上的每个图片的单位（如果该 <see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" /> 属性设置为 <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> ）（如果不是，则忽略此属性）。 读/写 <b>Double</b>。</summary>
         <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1008,6 +1041,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 PieSliceLocation([in]valuetype Microsoft.Office.Interop.Word.XlPieSliceLocation loc, [in]valuetype Microsoft.Office.Interop.Word.XlPieSliceIndex Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Point.PieSliceLocation(Microsoft.Office.Interop.Word.XlPieSliceLocation,Microsoft.Office.Interop.Word.XlPieSliceIndex)" />
       <MemberSignature Language="VB.NET" Value="Public Function PieSliceLocation (loc As XlPieSliceLocation, Optional Index As XlPieSliceIndex = Microsoft.Office.Interop.Word.XlPieSliceIndex.xlOuterCenterPoint) As Double" />
+      <MemberSignature Language="F#" Value="abstract member PieSliceLocation : Microsoft.Office.Interop.Word.XlPieSliceLocation * Microsoft.Office.Interop.Word.XlPieSliceIndex -&gt; double" Usage="point.PieSliceLocation (loc, Index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1028,8 +1062,8 @@
       <Docs>
         <param name="loc">指定水平或垂直坐标。</param>
         <param name="Index">指定要返回哪个饼图扇区位置坐标。 默认值为 <see cref="F:Microsoft.Office.Interop.Word.XlPieSliceIndex.xlOuterCenterPoint" />。</param>
-        <summary>获取图表项上某一点的垂直或水平位置, 以磅为单位, 从对象的上边缘或左边缘到图表区域的上边缘或左边缘。</summary>
-        <returns>图表项上某一点的垂直或水平位置, 以磅为单位。</returns>
+        <summary>获取图表项上某一点的垂直或水平位置，以磅为单位，从对象的上边缘或左边缘到图表区域的上边缘或左边缘。</summary>
+        <returns>图表项上某一点的垂直或水平位置，以磅为单位。</returns>
         <remarks><para>此属性仅适用于饼图类型。</para>
           <para> </para></remarks>
       </Docs>
@@ -1040,6 +1074,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.SecondaryPlot" />
       <MemberSignature Language="VB.NET" Value="Public Property SecondaryPlot As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SecondaryPlot { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SecondaryPlot : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.SecondaryPlot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1071,6 +1106,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Point.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; obj" Usage="point.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1097,6 +1133,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Shadow" />
       <MemberSignature Language="VB.NET" Value="Public Property Shadow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Shadow { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Shadow : bool with get, set" Usage="Microsoft.Office.Interop.Word.Point.Shadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1128,6 +1165,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Top" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Top As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Top : double" Usage="Microsoft.Office.Interop.Word.Point.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1145,8 +1183,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个值, 该值表示从对象的上边缘到图表区域的上边缘之间的距离 (以磅为单位)。</summary>
-        <value>从对象的上边缘到图表区域的上边缘之间的距离 (以磅为单位)。</value>
+        <summary>获取一个值，该值表示从对象的上边缘到图表区域的上边缘之间的距离（以磅为单位）。</summary>
+        <value>从对象的上边缘到图表区域的上边缘之间的距离（以磅为单位）。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -1157,6 +1195,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Point.Width" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double" Usage="Microsoft.Office.Interop.Word.Point.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1174,7 +1213,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取对象的宽度 (以磅为单位)。</summary>
+        <summary>获取对象的宽度（以磅为单位）。</summary>
         <value>对象的宽度，以磅为单位。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>

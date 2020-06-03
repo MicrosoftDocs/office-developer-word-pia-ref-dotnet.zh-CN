@@ -1,9 +1,10 @@
 <Type Name="MailMergeFields" FullName="Microsoft.Office.Interop.Word.MailMergeFields">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3120d6713fa67507a7ea299781a6f722aba24386" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147877" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d459ac5406313147b9099dd10768883226fc0848" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925203" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeFields&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class MailMergeFields : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type MailMergeFields = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,11 +23,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />对象的集合, 这些对象代表文档中的邮件合并相关域。</summary>
-    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" />属性返回<b>MailMergeFields</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" />方法将合并域添加到<b>MailMergeFields</b>集合中。</para>
-      <para>使用<b>Fields</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回一个<b>MailMergeField</b>对象。</para>
-      <para><b>MailMergeFields</b>集合包含其他方法 (例如<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />和<see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />), 用于添加与邮件合并操作相关的字段。</para>
+    <summary>对象的集合 <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> ，这些对象代表文档中的邮件合并相关域。</summary>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" /> 属性返回<b>MailMergeFields</b>集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> 方法将合并域添加到<b>MailMergeFields</b>集合中。</para>
+      <para>使用<b>Fields</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是索引号，返回一个<b>MailMergeField</b>对象。</para>
+      <para><b>MailMergeFields</b>集合包含其他方法（例如 <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> 和 <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> ），用于添加与邮件合并操作相关的字段。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,7 +35,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField Add (Microsoft.Office.Interop.Word.Range Range, string Name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]string Name) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Range As Range, Name As String) As MailMergeField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::MailMergeField ^ Add(Microsoft::Office::Interop::Word::Range ^ Range, System::String ^ Name);" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.Range * string -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.Add (Range, Name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -53,9 +56,9 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 要在其中显示域的区域。 如果该区域未折叠，那么域将替换此区域。</param>
+        <param name="Range">必需 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 的对象。 要在其中显示域的区域。 如果该区域未折叠，那么域将替换此区域。</param>
         <param name="Name">必需的 <b>字符串</b> 。 域名。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> object 类型的对象, 该对象代表添加到数据源文档中的邮件合并域。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> object 类型的对象，该对象代表添加到数据源文档中的邮件合并域。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,6 +67,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddAsk (Microsoft.Office.Interop.Word.Range Range, string Name, ref object Prompt, ref object DefaultAskText, ref object AskOnce);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddAsk([in]class Microsoft.Office.Interop.Word.Range Range, [in]string Name, [in]object&amp; Prompt, [in]object&amp; DefaultAskText, [in]object&amp; AskOnce) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddAsk (Range As Range, Name As String, Optional ByRef Prompt As Object, Optional ByRef DefaultAskText As Object, Optional ByRef AskOnce As Object) As MailMergeField" />
+      <MemberSignature Language="F#" Value="abstract member AddAsk : Microsoft.Office.Interop.Word.Range * string * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddAsk (Range, Name, Prompt, DefaultAskText, AskOnce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -80,17 +85,17 @@
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
         <Parameter Name="Name" Type="System.String" />
-        <Parameter Name="Prompt" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultAskText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Prompt" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultAskText" Type="System.Object" RefType="ref" />
+        <Parameter Name="AskOnce" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 ASK 域的位置。</param>
+        <param name="Range">必需 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 的对象。 ASK 域的位置。</param>
         <param name="Name">必需的 <b>字符串</b> 。 向其分配担负或默认文字的书签名称。 使用 REF 域和该书签名可在文档中显示结果。</param>
         <param name="Prompt">可选<b>对象</b>。 在对话框中显示的文字。</param>
         <param name="DefaultAskText">可选<b>对象</b>。 默认答复，将在显示对话框时显示在文本框中。 相当于 ASK 域的 \d 开关。</param>
-        <param name="AskOnce">可选<b>对象</b>。 <b>如果为 True, 则</b>仅显示对话框一次, 而不是每次合并新的数据记录时。 相当于 ASK 域的 \o 开关。</param>
-        <summary>将一个 ASK 域添加到邮件合并主文档。 返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />对象。</summary>
+        <param name="AskOnce">可选<b>对象</b>。 <b>如果为 True，则</b>仅显示对话框一次，而不是每次合并新的数据记录时。 相当于 ASK 域的 \o 开关。</param>
+        <summary>将一个 ASK 域添加到邮件合并主文档。 返回一个 <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> 对象。</summary>
         <returns>To be added.</returns>
         <remarks><para>更新时，ASK 域将显示一个对话框，提示您给指定书签分配文字。</para>
           <para> </para></remarks>
@@ -100,6 +105,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddFillIn (Microsoft.Office.Interop.Word.Range Range, ref object Prompt, ref object DefaultFillInText, ref object AskOnce);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddFillIn([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Prompt, [in]object&amp; DefaultFillInText, [in]object&amp; AskOnce) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddFillIn (Range As Range, Optional ByRef Prompt As Object, Optional ByRef DefaultFillInText As Object, Optional ByRef AskOnce As Object) As MailMergeField" />
+      <MemberSignature Language="F#" Value="abstract member AddFillIn : Microsoft.Office.Interop.Word.Range * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddFillIn (Range, Prompt, DefaultFillInText, AskOnce)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -115,19 +122,19 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="Prompt" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DefaultFillInText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Prompt" Type="System.Object" RefType="ref" />
+        <Parameter Name="DefaultFillInText" Type="System.Object" RefType="ref" />
+        <Parameter Name="AskOnce" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 FILLIN 域的位置。</param>
+        <param name="Range">必需 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 的对象。 FILLIN 域的位置。</param>
         <param name="Prompt">可选<b>对象</b>。 在对话框中显示的文字。</param>
         <param name="DefaultFillInText">可选<b>对象</b>。 默认答复，将在显示对话框时显示在文本框中。 相当于 FILLIN 域的 \d 开关。</param>
-        <param name="AskOnce">可选<b>对象</b>。 <b>如果为 True, 则</b>仅显示一次提示, 而不是每次合并新的数据记录时。 对应于 FILLIN 域的 \o 开关。 默认值为 <b>False</b> 。</param>
-        <summary>将 FILLIN 域添加到邮件合并主文档。 返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />对象。</summary>
+        <param name="AskOnce">可选<b>对象</b>。 <b>如果为 True，则</b>仅显示一次提示，而不是每次合并新的数据记录时。 对应于 FILLIN 域的 \o 开关。 默认值为 <b>False</b> 。</param>
+        <summary>将 FILLIN 域添加到邮件合并主文档。 返回一个 <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> 对象。</summary>
         <returns>To be added.</returns>
         <remarks><para>更新时，FILLIN 域将显示一个对话框，提示您输入文本将插入 FILLIN 域位置的文档。</para>
-          <para>将<see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />方法与<see cref="T:Microsoft.Office.Interop.Word.Fields" />集合对象一起使用, 可将 FILLIN 域添加到邮件合并主文档之外的文档中。</para>
+          <para>将 <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> 方法与 <see cref="T:Microsoft.Office.Interop.Word.Fields" /> 集合对象一起使用，可将 FILLIN 域添加到邮件合并主文档之外的文档中。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -135,6 +142,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddIf (Microsoft.Office.Interop.Word.Range Range, string MergeField, Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, ref object CompareTo, ref object TrueAutoText, ref object TrueText, ref object FalseAutoText, ref object FalseText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddIf([in]class Microsoft.Office.Interop.Word.Range Range, [in]string MergeField, [in]valuetype Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, [in]object&amp; CompareTo, [in]object&amp; TrueAutoText, [in]object&amp; TrueText, [in]object&amp; FalseAutoText, [in]object&amp; FalseText) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddIf(Microsoft.Office.Interop.Word.Range,System.String,Microsoft.Office.Interop.Word.WdMailMergeComparison,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddIf (Range As Range, MergeField As String, Comparison As WdMailMergeComparison, Optional ByRef CompareTo As Object, Optional ByRef TrueAutoText As Object, Optional ByRef TrueText As Object, Optional ByRef FalseAutoText As Object, Optional ByRef FalseText As Object) As MailMergeField" />
+      <MemberSignature Language="F#" Value="abstract member AddIf : Microsoft.Office.Interop.Word.Range * string * Microsoft.Office.Interop.Word.WdMailMergeComparison * obj * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddIf (Range, MergeField, Comparison, CompareTo, TrueAutoText, TrueText, FalseAutoText, FalseText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -152,24 +161,24 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
         <Parameter Name="MergeField" Type="System.String" />
         <Parameter Name="Comparison" Type="Microsoft.Office.Interop.Word.WdMailMergeComparison" />
-        <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="TrueAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="TrueText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="FalseAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="FalseText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="CompareTo" Type="System.Object" RefType="ref" />
+        <Parameter Name="TrueAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="TrueText" Type="System.Object" RefType="ref" />
+        <Parameter Name="FalseAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="FalseText" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 IF 域的位置。</param>
+        <param name="Range">必需 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 的对象。 IF 域的位置。</param>
         <param name="MergeField">必需的 <b>字符串</b> 。 合并域的名称。</param>
-        <param name="Comparison">必需<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />。 在比较中使用的操作符。</param>
-        <param name="CompareTo">可选<b>对象</b>。 要与的内容进行比较的<paramref name="MergeField" />文本。</param>
-        <param name="TrueAutoText">可选<b>对象</b>。 比较结果为 True 时插入的"自动图文集"词条。 如果指定此参数, <paramref name="TrueText" />则将被忽略。</param>
+        <param name="Comparison">必需 <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" /> 。 在比较中使用的操作符。</param>
+        <param name="CompareTo">可选<b>对象</b>。 要与的内容进行比较的文本 <paramref name="MergeField" /> 。</param>
+        <param name="TrueAutoText">可选<b>对象</b>。 比较结果为 True 时插入的"自动图文集"词条。 如果指定此参数， <paramref name="TrueText" /> 则将被忽略。</param>
         <param name="TrueText">可选<b>对象</b>。 比较结果为 True 时插入的文字。</param>
-        <param name="FalseAutoText">可选<b>对象</b>。 比较结果为 False 时插入的"自动图文集"词条。 如果指定此参数, <paramref name="FalseText" />则将被忽略。</param>
+        <param name="FalseAutoText">可选<b>对象</b>。 比较结果为 False 时插入的"自动图文集"词条。 如果指定此参数， <paramref name="FalseText" /> 则将被忽略。</param>
         <param name="FalseText">可选<b>对象</b>。 比较结果为 False 时插入的文字。</param>
-        <summary>将一个 IF 域添加到邮件合并主文档。 返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />对象。</summary>
+        <summary>将一个 IF 域添加到邮件合并主文档。 返回一个 <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> 对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>更新时, IF 域会将数据记录中的字段与指定值进行比较, 然后根据比较结果插入相应的文本。</para>
+        <remarks><para>更新时，IF 域会将数据记录中的字段与指定值进行比较，然后根据比较结果插入相应的文本。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -177,7 +186,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddMergeRec (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddMergeRec([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddMergeRec(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddMergeRec (Range As Range) As MailMergeField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::MailMergeField ^ AddMergeRec(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member AddMergeRec : Microsoft.Office.Interop.Word.Range -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddMergeRec Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -195,10 +206,10 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 MERGEREC 域的位置。</param>
-        <summary>将 MERGEREC 域添加到邮件合并主文档。 返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />对象。</summary>
+        <param name="Range">必需 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 的对象。 MERGEREC 域的位置。</param>
+        <summary>将 MERGEREC 域添加到邮件合并主文档。 返回一个 <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> 对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>MERGEREC 域在邮件合并过程中插入当前数据记录的编号 (当前查询结果中的数据记录的位置)。</para>
+        <remarks><para>MERGEREC 域在邮件合并过程中插入当前数据记录的编号（当前查询结果中的数据记录的位置）。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -206,7 +217,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddMergeSeq (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddMergeSeq([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddMergeSeq(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddMergeSeq (Range As Range) As MailMergeField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::MailMergeField ^ AddMergeSeq(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member AddMergeSeq : Microsoft.Office.Interop.Word.Range -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddMergeSeq Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -224,10 +237,10 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 MERGESEQ 域的位置。</param>
-        <summary>将一个 MERGESEQ 域添加到邮件合并主文档。 返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />对象。</summary>
+        <param name="Range">必需 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 的对象。 MERGESEQ 域的位置。</param>
+        <summary>将一个 MERGESEQ 域添加到邮件合并主文档。 返回一个 <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> 对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>MERGESEQ 字段根据合并数据记录的顺序插入数字 (例如, 当合并记录50的记录到 100 50 时, MERGESEQ 将插入数字 1)。</para>
+        <remarks><para>MERGESEQ 字段根据合并数据记录的顺序插入数字（例如，当合并记录50的记录到 100 50 时，MERGESEQ 将插入数字1）。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -235,7 +248,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddNext (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddNext([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddNext(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddNext (Range As Range) As MailMergeField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::MailMergeField ^ AddNext(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member AddNext : Microsoft.Office.Interop.Word.Range -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddNext Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -253,10 +268,10 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 NEXT 域的位置。</param>
-        <summary>将下一个字段添加到邮件合并主文档。 返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />对象。</summary>
+        <param name="Range">必需 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 的对象。 NEXT 域的位置。</param>
+        <summary>将下一个字段添加到邮件合并主文档。 返回一个 <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> 对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>NEXT 域将转到下一条数据记录, 以便可以将多条记录中的数据合并到同一个合并文档中 (例如, 一张邮件标签)。</para>
+        <remarks><para>NEXT 域将转到下一条数据记录，以便可以将多条记录中的数据合并到同一个合并文档中（例如，一张邮件标签）。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -264,6 +279,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddNextIf (Microsoft.Office.Interop.Word.Range Range, string MergeField, Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, ref object CompareTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddNextIf([in]class Microsoft.Office.Interop.Word.Range Range, [in]string MergeField, [in]valuetype Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, [in]object&amp; CompareTo) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddNextIf(Microsoft.Office.Interop.Word.Range,System.String,Microsoft.Office.Interop.Word.WdMailMergeComparison,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddNextIf (Range As Range, MergeField As String, Comparison As WdMailMergeComparison, Optional ByRef CompareTo As Object) As MailMergeField" />
+      <MemberSignature Language="F#" Value="abstract member AddNextIf : Microsoft.Office.Interop.Word.Range * string * Microsoft.Office.Interop.Word.WdMailMergeComparison * obj -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddNextIf (Range, MergeField, Comparison, CompareTo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -281,16 +298,16 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
         <Parameter Name="MergeField" Type="System.String" />
         <Parameter Name="Comparison" Type="Microsoft.Office.Interop.Word.WdMailMergeComparison" />
-        <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="CompareTo" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 NEXTIF 域的位置。</param>
+        <param name="Range">必需 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 的对象。 NEXTIF 域的位置。</param>
         <param name="MergeField">必需的 <b>字符串</b> 。 合并域的名称。</param>
-        <param name="Comparison">必需<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />。 在比较中使用的操作符。</param>
-        <param name="CompareTo">必需的 <b>字符串</b> 。 要与的内容进行比较的<paramref name="MergeField" />文本。</param>
-        <summary>将 NEXTIF 域添加到邮件合并主文档。 返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />对象。</summary>
+        <param name="Comparison">必需 <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" /> 。 在比较中使用的操作符。</param>
+        <param name="CompareTo">必需的 <b>字符串</b> 。 要与的内容进行比较的文本 <paramref name="MergeField" /> 。</param>
+        <summary>将 NEXTIF 域添加到邮件合并主文档。 返回一个 <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> 对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>NEXTIF 字段将比较两个表达式, 如果比较结果为 true, 则将下一个数据记录合并到当前合并文档中。</para>
+        <remarks><para>NEXTIF 字段将比较两个表达式，如果比较结果为 true，则将下一个数据记录合并到当前合并文档中。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -298,6 +315,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddSet (Microsoft.Office.Interop.Word.Range Range, string Name, ref object ValueText, ref object ValueAutoText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddSet([in]class Microsoft.Office.Interop.Word.Range Range, [in]string Name, [in]object&amp; ValueText, [in]object&amp; ValueAutoText) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddSet(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddSet (Range As Range, Name As String, Optional ByRef ValueText As Object, Optional ByRef ValueAutoText As Object) As MailMergeField" />
+      <MemberSignature Language="F#" Value="abstract member AddSet : Microsoft.Office.Interop.Word.Range * string * obj * obj -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddSet (Range, Name, ValueText, ValueAutoText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -314,15 +333,15 @@
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
         <Parameter Name="Name" Type="System.String" />
-        <Parameter Name="ValueText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ValueAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ValueText" Type="System.Object" RefType="ref" />
+        <Parameter Name="ValueAutoText" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 SET 域的位置。</param>
-        <param name="Name">必需的 <b>字符串</b> 。 分配给的书签<paramref name="ValueText" />名称。</param>
-        <param name="ValueText">可选<b>对象</b>。 与<paramref name="Name" />参数指定的书签相关联的文本。</param>
-        <param name="ValueAutoText">可选<b>对象</b>。 包含与<paramref name="Name" />参数指定的书签相关的文本的 "自动图文集" 词条。 如果指定此参数, <paramref name="ValueText" />则将被忽略。</param>
-        <summary>向邮件合并主文档添加一个 SET 域。 返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />对象。</summary>
+        <param name="Range">必需 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 的对象。 SET 域的位置。</param>
+        <param name="Name">必需的 <b>字符串</b> 。 分配给的书签名称 <paramref name="ValueText" /> 。</param>
+        <param name="ValueText">可选<b>对象</b>。 与参数指定的书签相关联的文本 <paramref name="Name" /> 。</param>
+        <param name="ValueAutoText">可选<b>对象</b>。 包含与参数指定的书签相关的文本的 "自动图文集" 词条 <paramref name="Name" /> 。 如果指定此参数， <paramref name="ValueText" /> 则将被忽略。</param>
+        <summary>向邮件合并主文档添加一个 SET 域。 返回一个 <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> 对象。</summary>
         <returns>To be added.</returns>
         <remarks><para>SET 域定义指定书签的文字。</para>
           <para> </para></remarks>
@@ -332,6 +351,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.MailMergeField AddSkipIf (Microsoft.Office.Interop.Word.Range Range, string MergeField, Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, ref object CompareTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.MailMergeField AddSkipIf([in]class Microsoft.Office.Interop.Word.Range Range, [in]string MergeField, [in]valuetype Microsoft.Office.Interop.Word.WdMailMergeComparison Comparison, [in]object&amp; CompareTo) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.AddSkipIf(Microsoft.Office.Interop.Word.Range,System.String,Microsoft.Office.Interop.Word.WdMailMergeComparison,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddSkipIf (Range As Range, MergeField As String, Comparison As WdMailMergeComparison, Optional ByRef CompareTo As Object) As MailMergeField" />
+      <MemberSignature Language="F#" Value="abstract member AddSkipIf : Microsoft.Office.Interop.Word.Range * string * Microsoft.Office.Interop.Word.WdMailMergeComparison * obj -&gt; Microsoft.Office.Interop.Word.MailMergeField" Usage="mailMergeFields.AddSkipIf (Range, MergeField, Comparison, CompareTo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -349,16 +370,16 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
         <Parameter Name="MergeField" Type="System.String" />
         <Parameter Name="Comparison" Type="Microsoft.Office.Interop.Word.WdMailMergeComparison" />
-        <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="CompareTo" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 SKIPIF 域的位置。</param>
+        <param name="Range">必需 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 的对象。 SKIPIF 域的位置。</param>
         <param name="MergeField">必需的 <b>字符串</b> 。 合并域的名称。</param>
-        <param name="Comparison">必需<see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />。 在比较中使用的操作符。</param>
-        <param name="CompareTo">可选<b>对象</b>。 要与的内容进行比较的<paramref name="MergeField" />文本。</param>
-        <summary>将 SKIPIF 域添加到邮件合并主文档中。 返回一个<see cref="T:Microsoft.Office.Interop.Word.MailMergeField" />对象。</summary>
+        <param name="Comparison">必需 <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" /> 。 在比较中使用的操作符。</param>
+        <param name="CompareTo">可选<b>对象</b>。 要与的内容进行比较的文本 <paramref name="MergeField" /> 。</param>
+        <summary>将 SKIPIF 域添加到邮件合并主文档中。 返回一个 <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> 对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>SKIPIF 字段将比较两个表达式, 如果比较结果为 true, 则 SKIPIF 将移动到数据源中的下一条数据记录, 并启动一个新的合并文档。</para>
+        <remarks><para>SKIPIF 字段将比较两个表达式，如果比较结果为 true，则 SKIPIF 将移动到数据源中的下一条数据记录，并启动一个新的合并文档。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -368,6 +389,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.MailMergeFields.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -385,7 +407,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -396,6 +418,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.MailMergeFields.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -424,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.MailMergeFields.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -443,8 +467,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -454,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.MailMergeFields.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="mailMergeFields.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -486,6 +511,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As MailMergeField" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::MailMergeField ^ default[int] { Microsoft::Office::Interop::Word::MailMergeField ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.MailMergeField" Usage="Microsoft.Office.Interop.Word.MailMergeFields.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -518,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.MailMergeFields.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.MailMergeFields.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

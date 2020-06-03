@@ -1,9 +1,10 @@
 <Type Name="ReflectionFormat" FullName="Microsoft.Office.Interop.Word.ReflectionFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="af972d058aa68148cf1343d131dc77f878f37d70" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144090" /></Metadata><TypeSignature Language="C#" Value="public interface ReflectionFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7af3ec7910b84b0945484f04a4e9e8c10e296016" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924597" /></Metadata><TypeSignature Language="C#" Value="public interface ReflectionFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ReflectionFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ReflectionFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ReflectionFormat" />
   <TypeSignature Language="C++ CLI" Value="public interface class ReflectionFormat" />
+  <TypeSignature Language="F#" Value="type ReflectionFormat = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ReflectionFormat.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ReflectionFormat.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -45,8 +47,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.Application" /> Microsoft Word 应用程序的对象。</summary>
-        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</value>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 表示 Microsoft Word 应用程序的对象。</summary>
+        <value>一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ReflectionFormat.Blur" />
       <MemberSignature Language="VB.NET" Value="Public Property Blur As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Blur { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Blur : single with get, set" Usage="Microsoft.Office.Interop.Word.ReflectionFormat.Blur" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -77,7 +80,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置一个值, 该值指定应用于指定对象的模糊效果的程度。</summary>
+        <summary>获取或设置一个值，该值指定应用于指定对象的模糊效果的程度。</summary>
         <value>指定应用于指定对象的模糊效果的程度。</value>
         <remarks><para>读/写。</para>
           <para> </para></remarks>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ReflectionFormat.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ReflectionFormat.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -106,9 +110,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个32位整数, 该整数指示在其中创建指定对象的应用程序。</summary>
-        <value>一个32位整数, 它指示在其中创建指定对象的应用程序。</value>
-        <remarks><para><b>Long 类型</b>, 只读。 如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
+        <summary>获取一个32位整数，该整数指示在其中创建指定对象的应用程序。</summary>
+        <value>一个32位整数，它指示在其中创建指定对象的应用程序。</value>
+        <remarks><para><b>Long 类型</b>，只读。 如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ReflectionFormat.Offset" />
       <MemberSignature Language="VB.NET" Value="Public Property Offset As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Offset { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : single with get, set" Usage="Microsoft.Office.Interop.Word.ReflectionFormat.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -138,8 +143,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置形状的图像的间距 (以磅为单位)。</summary>
-        <value>形状的图像的分隔量 (以磅为单位)。</value>
+        <summary>获取或设置形状的图像的间距（以磅为单位）。</summary>
+        <value>形状的图像的分隔量（以磅为单位）。</value>
         <remarks><para>读/写。</para>
           <para> </para></remarks>
       </Docs>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ReflectionFormat.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ReflectionFormat.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -167,8 +173,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个<see cref="T:System.Object" />表示指定的<b>T:Microsoft.Office.Interop.Word.ReflectionFormat</b>对象的父对象的。</summary>
-        <value>一个<see cref="T:System.Object" />表示指定的<b>T:Microsoft.Office.Interop.Word.ReflectionFormat</b>对象的父对象的。</value>
+        <summary>获取一个 <see cref="T:System.Object" /> 表示指定的<b>T:Microsoft.Office.Interop.Word.ReflectionFormat</b>对象的父对象的。</summary>
+        <value>一个 <see cref="T:System.Object" /> 表示指定的<b>T:Microsoft.Office.Interop.Word.ReflectionFormat</b>对象的父对象的。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ReflectionFormat.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Size { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : single with get, set" Usage="Microsoft.Office.Interop.Word.ReflectionFormat.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -198,7 +205,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置反射的形状的大小, 以从0到100的反射形状的百分比。</summary>
+        <summary>获取或设置反射的形状的大小，以从0到100的反射形状的百分比。</summary>
         <value>反映为反射形状的百分比。</value>
         <remarks><para>读/写。</para>
           <para> </para></remarks>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ReflectionFormat.Transparency" />
       <MemberSignature Language="VB.NET" Value="Public Property Transparency As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Transparency { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Transparency : single with get, set" Usage="Microsoft.Office.Interop.Word.ReflectionFormat.Transparency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -230,8 +238,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置反射效果的透明度为 0.0 (不透明) 到 1.0 (清除) 之间的值。</summary>
-        <value>反射效果的透明度为 0.0 (不透明) 到 1.0 (清除) 之间的值。</value>
+        <summary>获取或设置反射效果的透明度为0.0 （不透明）到1.0 （清除）之间的值。</summary>
+        <value>反射效果的透明度为0.0 （不透明）到1.0 （清除）之间的值。</value>
         <remarks><para>读/写。</para>
           <para> </para></remarks>
       </Docs>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ReflectionFormat.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As MsoReflectionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoReflectionType Type { Microsoft::Office::Core::MsoReflectionType get(); void set(Microsoft::Office::Core::MsoReflectionType value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Core.MsoReflectionType with get, set" Usage="Microsoft.Office.Interop.Word.ReflectionFormat.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -262,7 +271,7 @@
         <ReturnType>Microsoft.Office.Core.MsoReflectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Core.MsoLightRigType" />常量, 该常量代表形状反射的光照的类型和方向。 读/写。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Core.MsoLightRigType" /> 常量，该常量代表形状反射的光照的类型和方向。 读/写。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoLightRigType" /></value>
         <remarks>To be added.</remarks>
       </Docs>

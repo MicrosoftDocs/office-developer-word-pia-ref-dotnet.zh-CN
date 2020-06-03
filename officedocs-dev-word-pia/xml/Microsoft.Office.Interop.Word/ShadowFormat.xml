@@ -1,9 +1,10 @@
 <Type Name="ShadowFormat" FullName="Microsoft.Office.Interop.Word.ShadowFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="eb5a077942f8ab29b6ab8f08c82918caf0ad8bea" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147646" /></Metadata><TypeSignature Language="C#" Value="public interface ShadowFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5c17644e93a04259736c5e66f354fb8c15893825" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924422" /></Metadata><TypeSignature Language="C#" Value="public interface ShadowFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShadowFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShadowFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShadowFormat" />
   <TypeSignature Language="C++ CLI" Value="public interface class ShadowFormat" />
+  <TypeSignature Language="F#" Value="type ShadowFormat = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>代表形状的阴影格式。</summary>
-    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.Shadow" />属性返回一个<see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" />对象。</para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.Shape.Shadow" /> 属性返回一个 <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" /> 对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShadowFormat.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ShadowFormat.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShadowFormat.Blur" />
       <MemberSignature Language="VB.NET" Value="Public Property Blur As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Blur { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Blur : single with get, set" Usage="Microsoft.Office.Interop.Word.ShadowFormat.Blur" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -77,7 +80,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b></b>值, 该值代表阴影格式的模糊级别。 读/写。</summary>
+        <summary>返回或<b>设置一个值，该值</b>代表阴影格式的模糊级别。 读/写。</summary>
         <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShadowFormat.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ShadowFormat.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -107,8 +111,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShadowFormat.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForeColor As ColorFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ColorFormat ^ ForeColor { Microsoft::Office::Interop::Word::ColorFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : Microsoft.Office.Interop.Word.ColorFormat" Usage="Microsoft.Office.Interop.Word.ShadowFormat.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -135,7 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.ColorFormat" />对象, 该对象代表阴影的前景色。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> 对象，该对象代表阴影的前景色。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub IncrementOffsetX (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementOffsetX(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member IncrementOffsetX : single -&gt; unit" Usage="shadowFormat.IncrementOffsetX Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -165,7 +171,7 @@
       <Docs>
         <param name="Increment">必需<b>Single</b>。 以磅为单位指定阴影水平移动的距离。 正值使阴影向右移动，负值使阴影向左移动。</param>
         <summary>按指定磅值改变阴影的水平偏移量。</summary>
-        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetX" />属性设置绝对水平阴影偏移量。</para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetX" /> 属性设置绝对水平阴影偏移量。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub IncrementOffsetY (Increment As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementOffsetY(float Increment);" />
+      <MemberSignature Language="F#" Value="abstract member IncrementOffsetY : single -&gt; unit" Usage="shadowFormat.IncrementOffsetY Increment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -194,7 +201,7 @@
       <Docs>
         <param name="Increment">必需<b>Single</b>。 指定阴影的垂直偏移量（以磅为单位）。 正值表示阴影下移，负值表示阴影上移。</param>
         <summary>按指定磅值更改阴影的垂直偏移量。</summary>
-        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetY" />属性设置绝对垂直阴影偏移量。</para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetY" /> 属性设置绝对垂直阴影偏移量。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShadowFormat.Obscured" />
       <MemberSignature Language="VB.NET" Value="Public Property Obscured As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Obscured { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.Obscured : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.ShadowFormat.Obscured" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetX" />
       <MemberSignature Language="VB.NET" Value="Public Property OffsetX As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float OffsetX { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.OffsetX : single with get, set" Usage="Microsoft.Office.Interop.Word.ShadowFormat.OffsetX" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -274,7 +283,7 @@
       <Docs>
         <summary>返回或设置指定图形的水平偏移量 (以磅为单位) 的阴影。 正值表示负值表示阴影向图形; 右侧读它的左侧。</summary>
         <value>To be added.</value>
-        <remarks><para>如果要从当前位置水平或垂直地微移阴影, 而无需指定绝对位置, 请使用<see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" />或<see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" />方法。</para>
+        <remarks><para>如果要从当前位置水平或垂直地微移阴影，而无需指定绝对位置，请使用 <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" /> 或 <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -284,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetY" />
       <MemberSignature Language="VB.NET" Value="Public Property OffsetY As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float OffsetY { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.OffsetY : single with get, set" Usage="Microsoft.Office.Interop.Word.ShadowFormat.OffsetY" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -306,7 +316,7 @@
       <Docs>
         <summary>返回或设置指定形状的阴影的垂直偏移 (以磅为单位)。 正值表示阴影向图形; 下表示读上面的形状。</summary>
         <value>To be added.</value>
-        <remarks><para>如果要从当前位置水平或垂直地微移阴影, 而无需指定绝对位置, 请使用<see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" />或<see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" />方法。</para>
+        <remarks><para>如果要从当前位置水平或垂直地微移阴影，而无需指定绝对位置，请使用 <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" /> 或 <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -316,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShadowFormat.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ShadowFormat.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -344,6 +355,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShadowFormat.RotateWithShape" />
       <MemberSignature Language="VB.NET" Value="Public Property RotateWithShape As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState RotateWithShape { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.RotateWithShape : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.ShadowFormat.RotateWithShape" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -364,7 +376,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Core.MsoTriState" />代表是否在旋转形状时旋转阴影。 读/写。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 代表是否在旋转形状时旋转阴影。 读/写。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -375,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShadowFormat.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Size { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : single with get, set" Usage="Microsoft.Office.Interop.Word.ShadowFormat.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -395,7 +408,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b></b>值, 该值代表阴影的宽度。 读/写。</summary>
+        <summary>返回或<b>设置一个值，该值</b>代表阴影的宽度。 读/写。</summary>
         <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -406,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShadowFormat.Style" />
       <MemberSignature Language="VB.NET" Value="Public Property Style As MsoShadowStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoShadowStyle Style { Microsoft::Office::Core::MsoShadowStyle get(); void set(Microsoft::Office::Core::MsoShadowStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.Style : Microsoft.Office.Core.MsoShadowStyle with get, set" Usage="Microsoft.Office.Interop.Word.ShadowFormat.Style" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -426,7 +440,7 @@
         <ReturnType>Microsoft.Office.Core.MsoShadowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Core.MsoShadowType" />代表要应用于形状的阴影格式的类型。 读/写。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Core.MsoShadowType" /> 代表要应用于形状的阴影格式的类型。 读/写。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoShadowType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -437,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShadowFormat.Transparency" />
       <MemberSignature Language="VB.NET" Value="Public Property Transparency As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Transparency { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Transparency : single with get, set" Usage="Microsoft.Office.Interop.Word.ShadowFormat.Transparency" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -468,6 +483,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShadowFormat.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As MsoShadowType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoShadowType Type { Microsoft::Office::Core::MsoShadowType get(); void set(Microsoft::Office::Core::MsoShadowType value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Core.MsoShadowType with get, set" Usage="Microsoft.Office.Interop.Word.ShadowFormat.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -564,6 +580,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ShadowFormat.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Visible { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.ShadowFormat.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

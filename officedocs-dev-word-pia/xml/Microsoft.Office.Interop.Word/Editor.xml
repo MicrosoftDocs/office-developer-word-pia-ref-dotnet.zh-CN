@@ -1,9 +1,10 @@
 <Type Name="Editor" FullName="Microsoft.Office.Interop.Word.Editor">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4c3c24b5cd7783a2941b968d06d78d74af20a9dd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144552" /></Metadata><TypeSignature Language="C#" Value="public interface Editor" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="24ff8ea4b3e90ca88105fd7102623ab6575c6e12" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924296" /></Metadata><TypeSignature Language="C#" Value="public interface Editor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Editor" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Editor" />
   <TypeSignature Language="VB.NET" Value="Public Interface Editor" />
   <TypeSignature Language="C++ CLI" Value="public interface class Editor" />
+  <TypeSignature Language="F#" Value="type Editor = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,8 +21,8 @@
   <Docs>
     <summary>表示已被分配特定权限可编辑文档部分的单个用户。</summary>
     <remarks><para>可授予权限的用户包括单独的参与者以及为"文档工作区"站点定义的用户组。</para>
-      <para>分配给区域和选定的权限仅在文档受到保护之后生效。 使用<see cref="T:Microsoft.Office.Interop.Word.Editors" />集合和<b>编辑器</b>对象可将特定权限分配给文档的各个部分。 然后使用<see cref="M:Microsoft.Office.Interop.Word._Document.Protect(Microsoft.Office.Interop.Word.WdProtectionType,System.Object@,System.Object@,System.Object@,System.Object@)" />方法来保护文档。</para>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Word.Editors" />集合<see cref="M:Microsoft.Office.Interop.Word.Editors.Add(System.Object@)" />的方法为指定的用户或组授予权限, 以修改文档中的区域或选定内容。</para>
+      <para>分配给区域和选定的权限仅在文档受到保护之后生效。 使用 <see cref="T:Microsoft.Office.Interop.Word.Editors" /> 集合和<b>编辑器</b>对象可将特定权限分配给文档的各个部分。 然后使用 <see cref="M:Microsoft.Office.Interop.Word._Document.Protect(Microsoft.Office.Interop.Word.WdProtectionType,System.Object@,System.Object@,System.Object@,System.Object@)" /> 方法来保护文档。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.Editors.Add(System.Object@)" /> 集合的方法为 <see cref="T:Microsoft.Office.Interop.Word.Editors" /> 指定的用户或组授予权限，以修改文档中的区域或选定内容。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editor.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Editor.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editor.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Editor.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,8 +81,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Editor.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="editor.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Editor.DeleteAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteAll();" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAll : unit -&gt; unit" Usage="editor.DeleteAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editor.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string" Usage="Microsoft.Office.Interop.Word.Editor.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -158,7 +164,7 @@
       <Docs>
         <summary>返回或设置指定对象的标识标签当前文档保存为 Web 页时。</summary>
         <value>To be added.</value>
-        <remarks><para>除<see cref="T:Microsoft.Office.Interop.Word.Editor" />对象之外, 您可以将标签用作来自其他网页或当前文档中的超链接引用。</para>
+        <remarks><para>除 <see cref="T:Microsoft.Office.Interop.Word.Editor" /> 对象之外，您可以将标签用作来自其他网页或当前文档中的超链接引用。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -168,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editor.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Editor.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -196,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editor.NextRange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextRange As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ NextRange { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NextRange : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Editor.NextRange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -213,9 +221,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示用户有权修改的下一个区域。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，表示用户有权修改的下一个区域。</summary>
         <value>To be added.</value>
-        <remarks><para>您还可以使用<b>区域</b>或<see cref="T:Microsoft.Office.Interop.Word.Selection" />对象的<b>GoToEditableRange</b>方法返回用户有权修改的下一个区域。</para>
+        <remarks><para>您还可以使用<b>区域</b>或对象的<b>GoToEditableRange</b>方法 <see cref="T:Microsoft.Office.Interop.Word.Selection" /> 返回用户有权修改的下一个区域。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -225,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editor.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Editor.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -253,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editor.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Editor.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -270,9 +280,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定对象中包含的文档部分。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象，该对象代表指定对象中包含的文档部分。</summary>
         <value>To be added.</value>
-        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息, 请参阅<see cref="P:Microsoft.Office.Interop.Word.Editor.Range" />方法。</para>
+        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息，请参阅 <see cref="P:Microsoft.Office.Interop.Word.Editor.Range" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -282,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Editor.SelectAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub SelectAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectAll();" />
+      <MemberSignature Language="F#" Value="abstract member SelectAll : unit -&gt; unit" Usage="editor.SelectAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -298,7 +309,7 @@
       <Parameters />
       <Docs>
         <summary>选择主要文章、画布或文档的页眉和页脚中的所有形状。</summary>
-        <remarks><para>此方法不选择<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象。</para>
+        <remarks><para>此方法不选择 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> 对象。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

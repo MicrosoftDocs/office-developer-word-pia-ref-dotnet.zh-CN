@@ -1,9 +1,10 @@
 <Type Name="Trendlines" FullName="Microsoft.Office.Interop.Word.Trendlines">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d5d8e0ba867d614dca0f443355bc975b7ca84d93" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143740" /></Metadata><TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e16a8fd8562506d1a5699dd79f04e2392431c660" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925945" /></Metadata><TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendlines implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Trendlines" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendlines&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Trendlines : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Trendlines = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定系列的所有<see cref="T:Microsoft.Office.Interop.Word.Trendline" />对象的集合。</summary>
-    <remarks><para>每<see cref="T:Microsoft.Office.Interop.Word.Trendline" />个对象代表图表中的一条趋势线。 趋势线显示的趋势，或者方向，一系列中的数据。</para>
+    <summary>指定系列的所有对象的集合 <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> 。</summary>
+    <remarks><para>每个 <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> 对象代表图表中的一条趋势线。 趋势线显示的趋势，或者方向，一系列中的数据。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Trendline _Default([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Trendlines._Default(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function _Default (Optional Index As Object) As Trendline" />
+      <MemberSignature Language="F#" Value="abstract member _Default : obj -&gt; Microsoft.Office.Interop.Word.Trendline" Usage="trendlines._Default Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,7 +56,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>仅供内部使用。</summary>
-        <returns>返回<see cref="T:Microsoft.Office.Interop.Word.Trendline" />。</returns>
+        <returns>返回 <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> 。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Trendline Add([in]valuetype Microsoft.Office.Interop.Word.XlTrendlineType Type, [in]object Order, [in]object Period, [in]object Forward, [in]object Backward, [in]object Intercept, [in]object DisplayEquation, [in]object DisplayRSquared, [in]object Name) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Trendlines.Add(Microsoft.Office.Interop.Word.XlTrendlineType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Optional Type As XlTrendlineType = Microsoft.Office.Interop.Word.XlTrendlineType.xlLinear, Optional Order As Object, Optional Period As Object, Optional Forward As Object, Optional Backward As Object, Optional Intercept As Object, Optional DisplayEquation As Object, Optional DisplayRSquared As Object, Optional Name As Object) As Trendline" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.XlTrendlineType * obj * obj * obj * obj * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.Trendline" Usage="trendlines.Add (Type, Order, Period, Forward, Backward, Intercept, DisplayEquation, DisplayRSquared, Name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -88,16 +91,16 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">可选<see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" />。 趋势线类型。</param>
-        <param name="Order">可选<b>对象</b>。 如果类型为, <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" />则为必需。 趋势线顺序号。 必须为 2 到 6 之间的整数（包括 2 和 6）。</param>
-        <param name="Period">可选<b>对象</b>。 如果类型为, <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlMovingAvg" />则为必需。 趋势线周期。 必须为大于 1，而小于正添加趋势线的数据系列中数据点个数的整数。</param>
+        <param name="Type">可选 <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" /> 。 趋势线类型。</param>
+        <param name="Order">可选<b>对象</b>。 如果类型为，则为必需 <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" /> 。 趋势线顺序号。 必须为 2 到 6 之间的整数（包括 2 和 6）。</param>
+        <param name="Period">可选<b>对象</b>。 如果类型为，则为必需 <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlMovingAvg" /> 。 趋势线周期。 必须为大于 1，而小于正添加趋势线的数据系列中数据点个数的整数。</param>
         <param name="Forward">可选<b>对象</b>。 趋势线向前延伸的周期数目（或散点图中的单位个数）。</param>
         <param name="Backward">可选<b>对象</b>。 趋势线向后延伸的周期数目（或散点图中的单位个数）。</param>
         <param name="Intercept">可选<b>对象</b>。 趋势线的截距。 如果省略此参数，则由回归分析自动设置截距。</param>
         <param name="DisplayEquation">可选<b>对象</b>。 <b>真</b> (在数据标签与 R 平方值相同) 在图表上显示的趋势线公式。 默认值为 <b>False</b>。</param>
         <param name="DisplayRSquared">可选<b>对象</b>。 真 要在图表上 (中数据标签与公式的相同) 显示趋势线的 R 平方值。 默认值为 <b>False</b>。</param>
         <param name="Name">可选<b>对象</b>。 作为文本的趋势线名称。 如果省略此参数，则由 Microsoft Excel 生成名称。</param>
-        <summary>创建新的趋势线。 返回一个<see cref="T:Microsoft.Office.Interop.Word.Trendline" />对象。</summary>
+        <summary>创建新的趋势线。 返回一个 <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> 对象。</summary>
         <returns><see cref="T:Microsoft.Office.Interop.Word.Trendline" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendlines.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.Trendlines.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -125,8 +129,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
-        <value><b>应用程序</b>(请参阅上面的)</value>
+        <summary>在不使用对象识别符的情况下使用时，此属性返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <value><b>应用程序</b>（请参阅上面的）</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendlines.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Trendlines.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -153,7 +158,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>Integer</b>值, 它代表集合中对象的数目。</summary>
+        <summary>返回一个<b>Integer</b>值，它代表集合中对象的数目。</summary>
         <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendlines.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Trendlines.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -183,7 +189,7 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。 只读 <b>Integer</b>。</summary>
         <value><b>Integer</b></value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.Trendlines.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则该 <see cref="P:Microsoft.Office.Interop.Word.Trendlines.Creator" /> 属性返回十六进制数字是4d535744，表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Trendlines.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="trendlines.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -215,7 +222,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>返回<see cref="T:System.Collections.IEnumerator" />。</returns>
+        <returns>返回 <see cref="T:System.Collections.IEnumerator" /> 。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendlines.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Optional Index As Object) As Trendline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Trendline ^ default[System::Object ^] { Microsoft::Office::Interop::Word::Trendline ^ get(System::Object ^ Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Trendline" Usage="Microsoft.Office.Interop.Word.Trendlines.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -257,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendlines.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Trendlines.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

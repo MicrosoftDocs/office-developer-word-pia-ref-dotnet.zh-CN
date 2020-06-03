@@ -1,9 +1,10 @@
 <Type Name="DropDown" FullName="Microsoft.Office.Interop.Word.DropDown">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="657342fc0405fbd6f204e36ef3b45bfddf99d76e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144573" /></Metadata><TypeSignature Language="C#" Value="public interface DropDown" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca1e046dd61d0f927dceb0f5bb3fa0fa80dd59f8" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924310" /></Metadata><TypeSignature Language="C#" Value="public interface DropDown" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DropDown" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DropDown" />
   <TypeSignature Language="VB.NET" Value="Public Interface DropDown" />
   <TypeSignature Language="C++ CLI" Value="public interface class DropDown" />
+  <TypeSignature Language="F#" Value="type DropDown = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>代表包含一个窗体选项列表的下拉型窗体域。</summary>
-    <remarks><para>使用<b>FormFields</b>(<paramref name="index" />), 其中索引是索引号或与下拉型窗体域关联的书签名称, 返回单个<see cref="T:Microsoft.Office.Interop.Word.FormField" />对象。 将该<see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />属性与<b>FormField</b>对象一起使用可返回一个<b>下拉列表</b>对象。</para>
-      <para>索引号表示窗体域在<see cref="T:Microsoft.Office.Interop.Word.FormFields" />集合中的位置。</para>
-      <para>将<see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" />方法与<b>FormFields</b>集合一起使用可添加下拉型窗体域。</para>
+    <remarks><para>使用<b>FormFields</b>（ <paramref name="index" /> ），其中索引是索引号或与下拉型窗体域关联的书签名称，返回单个 <see cref="T:Microsoft.Office.Interop.Word.FormField" /> 对象。 将该 <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" /> 属性与<b>FormField</b>对象一起使用可返回一个<b>下拉列表</b>对象。</para>
+      <para>索引号表示窗体域在集合中的位置 <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> 。</para>
+      <para>将 <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> 方法与<b>FormFields</b>集合一起使用可添加下拉型窗体域。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DropDown.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.DropDown.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DropDown.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.DropDown.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,8 +81,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DropDown.Default" />
       <MemberSignature Language="VB.NET" Value="Public Property Default As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Default { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Default : int with get, set" Usage="Microsoft.Office.Interop.Word.DropDown.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DropDown.ListEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListEntries As ListEntries" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListEntries ^ ListEntries { Microsoft::Office::Interop::Word::ListEntries ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListEntries : Microsoft.Office.Interop.Word.ListEntries" Usage="Microsoft.Office.Interop.Word.DropDown.ListEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -138,7 +143,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ListEntries" />集合, 该集合代表<see cref="T:Microsoft.Office.Interop.Word.DropDown" />对象中的所有项目。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.ListEntries" /> 集合，该集合代表对象中的所有项目 <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DropDown.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.DropDown.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DropDown.Valid" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Valid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Valid : bool" Usage="Microsoft.Office.Interop.Word.DropDown.Valid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -196,8 +203,8 @@
       <Docs>
         <summary>确定指定的窗体域对象是否为有效的复选框型窗体域。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的窗体域对象是有效的复选框型窗体域, 则该属性返回<b>True</b> ; 如果不是, 则返回<b>False</b> 。</para>
-          <para>对于<see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> <see cref="T:Microsoft.Office.Interop.Word.DropDown" />、和<see cref="T:Microsoft.Office.Interop.Word.TextInput" />对象, 在应用<see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> <see cref="T:Microsoft.Office.Interop.Word.FormField" />对象的属性之前, 请使用对象的属性来确定窗体域的类型 (<b>wdFieldFormCheckBox</b>、 <b>wdFieldFormDropDown</b>或<b>wdFieldFormTextInput</b>)。<see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />、 <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />或<see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" />属性。 此预防措施可确保<b>FormField</b>对象是预期的类型。</para>
+        <remarks><para>如果指定的窗体域对象是有效的复选框型窗体域，则该属性返回<b>True</b> ; 如果不是，则返回<b>False</b> 。</para>
+          <para>对于 <see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> 、 <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> 和 <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> 对象，在 <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> <see cref="T:Microsoft.Office.Interop.Word.FormField" /> 应用<b>wdFieldFormCheckBox</b>、 <b>wdFieldFormDropDown</b> <b>wdFieldFormTextInput</b> <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" /> 或属性之前，请使用对象的属性来确定窗体域的类型（wdFieldFormCheckBox、wdFieldFormDropDown 或 wdFieldFormTextInput） <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> 。 此预防措施可确保<b>FormField</b>对象是预期的类型。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DropDown.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Value { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : int with get, set" Usage="Microsoft.Office.Interop.Word.DropDown.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

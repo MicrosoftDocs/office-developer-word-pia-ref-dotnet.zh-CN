@@ -1,9 +1,10 @@
 <Type Name="Frameset" FullName="Microsoft.Office.Interop.Word.Frameset">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a60060da0b1c4ff85a021ce286850c649ffa86e1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146806" /></Metadata><TypeSignature Language="C#" Value="public interface Frameset : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="58859f54c67d92642a807d7539834de1ec7ae9c0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924135" /></Metadata><TypeSignature Language="C#" Value="public interface Frameset : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Frameset implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Frameset" />
   <TypeSignature Language="VB.NET" Value="Public Interface Frameset&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Frameset : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Frameset = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,8 +24,8 @@
   </Attributes>
   <Docs>
     <summary>代表整个框架页或框架页中的单个图文框。</summary>
-    <remarks><para>没有<b>框架</b>集集合;每<see cref="T:Microsoft.Office.Interop.Word.Document" />个对象<see cref="T:Microsoft.Office.Interop.Word.Pane" />或对象只包含一个<b>Frameset</b>对象。</para>
-      <para>使用<b>文档</b>或<b>窗格</b>对象的<b>frameset</b>属性可返回<b>Frameset</b>对象。 对于影响框架页上的所有框架的属性或方法, 请使用<b>Document</b>对象中的<b>Frameset</b>对象。 对于影响框架页上各个帧的属性或方法, 请使用<b>Pane</b>对象中的<b>Frameset</b>对象。</para>
+    <remarks><para>没有<b>框架</b>集集合;每个 <see cref="T:Microsoft.Office.Interop.Word.Document" /> 对象或 <see cref="T:Microsoft.Office.Interop.Word.Pane" /> 对象只包含一个<b>Frameset</b>对象。</para>
+      <para>使用<b>文档</b>或<b>窗格</b>对象的<b>frameset</b>属性可返回<b>Frameset</b>对象。 对于影响框架页上的所有框架的属性或方法，请使用<b>Document</b>对象中的<b>Frameset</b>对象。 对于影响框架页上各个帧的属性或方法，请使用<b>Pane</b>对象中的<b>Frameset</b>对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Frameset.AddNewFrame(Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNewFrame (Where As WdFramesetNewFrameLocation) As Frameset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Frameset ^ AddNewFrame(Microsoft::Office::Interop::Word::WdFramesetNewFrameLocation Where);" />
+      <MemberSignature Language="F#" Value="abstract member AddNewFrame : Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation -&gt; Microsoft.Office.Interop.Word.Frameset" Usage="frameset.AddNewFrame Where" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,7 +53,7 @@
         <Parameter Name="Where" Type="Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />
       </Parameters>
       <Docs>
-        <param name="Where">必需<see cref="T:Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />。 设置新框架与指定框架的相对位置。</param>
+        <param name="Where">必需 <see cref="T:Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" /> 。 设置新框架与指定框架的相对位置。</param>
         <summary>该方法在框架页中添加一个新框架。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Frameset.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -80,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.ChildFramesetCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildFramesetCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChildFramesetCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildFramesetCount : int" Usage="Microsoft.Office.Interop.Word.Frameset.ChildFramesetCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -108,7 +112,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回与指定的<see cref="T:Microsoft.Office.Interop.Word.Frameset" /> <b>Frameset</b>对象相关联的子对象的数目。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> 与指定的<b>Frameset</b>对象相关联的子对象的数目。</summary>
         <value>To be added.</value>
         <remarks><para>此属性仅适用于类型 <b>wdFramesetTypeFrameset</b> 的 <b>框架</b> 对象。</para>
           <para> </para></remarks>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.ChildFramesetItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildFramesetItem(Index As Integer) As Frameset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Frameset ^ ChildFramesetItem[int] { Microsoft::Office::Interop::Word::Frameset ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.ChildFramesetItem(int) : Microsoft.Office.Interop.Word.Frameset" Usage="Microsoft.Office.Interop.Word.Frameset.ChildFramesetItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,7 +146,7 @@
       </Parameters>
       <Docs>
         <param name="Index">必需的<b>整数</b>。 指定的框架的索引序号。</param>
-        <summary>返回表示<see cref="T:Microsoft.Office.Interop.Word.Frameset" />指定的子<b>框架集</b>对象的对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> 表示指定的子<b>框架集</b>对象的对象。</summary>
         <value>To be added.</value>
         <remarks><para>此属性仅适用于类型 <b>wdFramesetTypeFrameset</b> 的 <b>框架</b> 对象。</para>
           <para> </para></remarks>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Frameset.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -172,8 +178,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Frameset.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="frameset.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" />
       <MemberSignature Language="VB.NET" Value="Public Property FrameDefaultURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FrameDefaultURL { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FrameDefaultURL : string with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FrameDisplayBorders" />
       <MemberSignature Language="VB.NET" Value="Public Property FrameDisplayBorders As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FrameDisplayBorders { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FrameDisplayBorders : bool with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FrameDisplayBorders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -270,6 +279,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FrameLinkToFile" />
       <MemberSignature Language="VB.NET" Value="Public Property FrameLinkToFile As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FrameLinkToFile { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FrameLinkToFile : bool with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FrameLinkToFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -290,7 +300,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如此</b>如果该<see cref="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" />属性所指定的网页或其他文档是一个外部文件, Microsoft Word 仅保留指定框架中的一个链接。</summary>
+        <summary><b>如此</b>如果该属性所指定的网页或其他文档 <see cref="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" /> 是一个外部文件，Microsoft Word 仅保留指定框架中的一个链接。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -301,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FrameName" />
       <MemberSignature Language="VB.NET" Value="Public Property FrameName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FrameName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FrameName : string with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FrameName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -332,6 +343,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FrameResizable" />
       <MemberSignature Language="VB.NET" Value="Public Property FrameResizable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FrameResizable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FrameResizable : bool with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FrameResizable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -363,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FrameScrollbarType" />
       <MemberSignature Language="VB.NET" Value="Public Property FrameScrollbarType As WdScrollbarType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdScrollbarType FrameScrollbarType { Microsoft::Office::Interop::Word::WdScrollbarType get(); void set(Microsoft::Office::Interop::Word::WdScrollbarType value); };" />
+      <MemberSignature Language="F#" Value="member this.FrameScrollbarType : Microsoft.Office.Interop.Word.WdScrollbarType with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FrameScrollbarType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -394,6 +407,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FramesetBorderColor" />
       <MemberSignature Language="VB.NET" Value="Public Property FramesetBorderColor As WdColor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColor FramesetBorderColor { Microsoft::Office::Interop::Word::WdColor get(); void set(Microsoft::Office::Interop::Word::WdColor value); };" />
+      <MemberSignature Language="F#" Value="member this.FramesetBorderColor : Microsoft.Office.Interop.Word.WdColor with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FramesetBorderColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -414,7 +428,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定框架页上框架边框的颜色。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdColor" />常量。</summary>
+        <summary>返回或设置指定框架页上框架边框的颜色。 可以是任何 <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> 常量。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -425,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.FramesetBorderWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property FramesetBorderWidth As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float FramesetBorderWidth { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.FramesetBorderWidth : single with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.FramesetBorderWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -456,6 +471,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Frameset.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="frameset.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -488,6 +504,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -508,7 +525,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.Frameset" />对象的高度。</summary>
+        <summary>返回或设置指定对象的高度 <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> 。</summary>
         <value>To be added.</value>
         <remarks><para><see cref="P:Microsoft.Office.Interop.Word.Frameset.HeightType" />属性确定表示此值的单位的类型。</para>
           <para> </para></remarks>
@@ -520,6 +537,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.HeightType" />
       <MemberSignature Language="VB.NET" Value="Public Property HeightType As WdFramesetSizeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFramesetSizeType HeightType { Microsoft::Office::Interop::Word::WdFramesetSizeType get(); void set(Microsoft::Office::Interop::Word::WdFramesetSizeType value); };" />
+      <MemberSignature Language="F#" Value="member this.HeightType : Microsoft.Office.Interop.Word.WdFramesetSizeType with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.HeightType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -551,6 +569,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Frameset.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -579,6 +598,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.ParentFrameset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentFrameset As Frameset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Frameset ^ ParentFrameset { Microsoft::Office::Interop::Word::Frameset ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentFrameset : Microsoft.Office.Interop.Word.Frameset" Usage="Microsoft.Office.Interop.Word.Frameset.ParentFrameset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -596,7 +616,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frameset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Frameset" />对象, 表示框架页上指定的<b>Frameset</b>对象的父对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> 对象，表示框架页上指定的<b>Frameset</b>对象的父对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -607,6 +627,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.Type" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Type As WdFramesetType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFramesetType default { Microsoft::Office::Interop::Word::WdFramesetType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdFramesetType" Usage="Microsoft.Office.Interop.Word.Frameset.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -624,7 +645,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFramesetType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回对象<see cref="T:Microsoft.Office.Interop.Word.Frameset" />的类型。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> 对象的类型。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -635,6 +656,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -655,7 +677,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.Frameset" />对象的宽度。</summary>
+        <summary>返回或设置指定对象的宽度 <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> 。</summary>
         <value>To be added.</value>
         <remarks><para><see cref="P:Microsoft.Office.Interop.Word.Frameset.WidthType" />属性确定表示此值的单位的类型。</para>
           <para> </para></remarks>
@@ -667,6 +689,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Frameset.WidthType" />
       <MemberSignature Language="VB.NET" Value="Public Property WidthType As WdFramesetSizeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFramesetSizeType WidthType { Microsoft::Office::Interop::Word::WdFramesetSizeType get(); void set(Microsoft::Office::Interop::Word::WdFramesetSizeType value); };" />
+      <MemberSignature Language="F#" Value="member this.WidthType : Microsoft.Office.Interop.Word.WdFramesetSizeType with get, set" Usage="Microsoft.Office.Interop.Word.Frameset.WidthType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -687,7 +710,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFramesetSizeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定<see cref="T:Microsoft.Office.Interop.Word.Frameset" />对象的宽度类型。</summary>
+        <summary>返回或设置指定对象的宽度类型 <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,9 +1,10 @@
 <Type Name="Editors" FullName="Microsoft.Office.Interop.Word.Editors">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="568545fba2629e27d2611e718e773aa1b34fdeef" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146930" /></Metadata><TypeSignature Language="C#" Value="public interface Editors" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4d1b5c7361ce27d73713bc5b24e0ba5844677d72" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924289" /></Metadata><TypeSignature Language="C#" Value="public interface Editors" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Editors" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Editors" />
   <TypeSignature Language="VB.NET" Value="Public Interface Editors" />
   <TypeSignature Language="C++ CLI" Value="public interface class Editors" />
+  <TypeSignature Language="F#" Value="type Editors = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,8 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><see cref="T:Microsoft.Office.Interop.Word.Editor" />对象的集合, 该集合代表已被授予特定权限以编辑文档部分的用户或用户组的集合。</summary>
-    <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.Editors.Add(System.Object@)" />方法可向指定的用户或组授予修改文档中的区域或所选内容的权限。</para>
+    <summary>对象的集合 <see cref="T:Microsoft.Office.Interop.Word.Editor" /> ，该集合代表已被授予特定权限以编辑文档部分的用户或用户组的集合。</summary>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Word.Editors.Add(System.Object@)" /> 方法可向指定的用户或组授予修改文档中的区域或所选内容的权限。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Editors.Add(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (ByRef EditorID As Object) As Editor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Editor ^ Add(System::Object ^ % EditorID);" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj -&gt; Microsoft.Office.Interop.Word.Editor" Usage="editors.Add EditorID" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -43,11 +45,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.Editor</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="EditorID" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="EditorID" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="EditorID">可选<b>对象</b>。 可以是一个<b>字符串</b>, 表示用户的电子邮件别名 (如果在同一域中)、电子邮件地址或<see cref="T:Microsoft.Office.Interop.Word.WdEditorType" />代表一组用户的电子邮件地址。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Editor" />对象, 表示指定用户在文档中修改区域或所选内容的新权限。</summary>
+        <param name="EditorID">可选<b>对象</b>。 可以是一个<b>字符串</b>，表示用户的电子邮件别名（如果在同一域中）、电子邮件地址或 <see cref="T:Microsoft.Office.Interop.Word.WdEditorType" /> 代表一组用户的电子邮件地址。</param>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Editor" /> 对象，表示指定用户在文档中修改区域或所选内容的新权限。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editors.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Editors.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -75,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editors.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Editors.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editors.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Editors.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -133,8 +138,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Item (ByRef Index As Object) As Editor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Editor ^ Item(System::Object ^ % Index);" />
+      <MemberSignature Language="F#" Value="abstract member Item : obj -&gt; Microsoft.Office.Interop.Word.Editor" Usage="editors.Item Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -158,11 +164,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.Editor</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">必需的<b>对象</b>。 可以是一个<b>字符串</b>, 表示用户的电子邮件别名 (如果在同一域中)、电子邮件地址或代表一组<see cref="T:Microsoft.Office.Interop.Word.WdEditorType" />用户的常量。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Editor" />对象, 表示特定用户或一组已被授予编辑文档部分的权限的用户。</summary>
+        <param name="Index">必需的<b>对象</b>。 可以是一个<b>字符串</b>，表示用户的电子邮件别名（如果在同一域中）、电子邮件地址或 <see cref="T:Microsoft.Office.Interop.Word.WdEditorType" /> 代表一组用户的常量。</param>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Editor" /> 对象，表示特定用户或一组已被授予编辑文档部分的权限的用户。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Editors.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Editors.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

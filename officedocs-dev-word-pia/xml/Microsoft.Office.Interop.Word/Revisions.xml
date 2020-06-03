@@ -1,9 +1,10 @@
 <Type Name="Revisions" FullName="Microsoft.Office.Interop.Word.Revisions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="dcf957961a05e06b776741ff11ebc85cce0581a2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147660" /></Metadata><TypeSignature Language="C#" Value="public interface Revisions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f077439701c24aa0f04972877aa8b08c3fec3694" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924541" /></Metadata><TypeSignature Language="C#" Value="public interface Revisions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Revisions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Revisions" />
   <TypeSignature Language="VB.NET" Value="Public Interface Revisions&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Revisions : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Revisions = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,11 +23,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><see cref="T:Microsoft.Office.Interop.Word.Revision" />对象的集合, 这些对象代表在某一区域或文档中带有修订标记的更改。</summary>
-    <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.Document" />或<see cref="T:Microsoft.Office.Interop.Word.Range" />对象的<b>修订</b>属性返回<b>修订</b>集合。</para>
-      <para><b>Add</b> 方法对 <b>Revisions</b> 集合无效。 在启用修订功能时，将添加 <b>修订</b> 对象。 将该<see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" />属性设置为<b>True</b>可跟踪对文档文本所做的修订。</para>
-      <para>使用<b>修订</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回单个<b>修订</b>对象。 索引号代表修订的范围或文档中的位置。</para>
-      <para>在<see cref="P:Microsoft.Office.Interop.Word.Revisions.Count" />文档中, 此集合的属性返回的只是正文中的项目数。 要统计其他部分中的个数，请使用带有 <b>Range</b> 对象的集合。</para>
+    <summary>对象的集合 <see cref="T:Microsoft.Office.Interop.Word.Revision" /> ，这些对象代表在某一区域或文档中带有修订标记的更改。</summary>
+    <remarks><para>使用或对象的<b>修订</b>属性 <see cref="T:Microsoft.Office.Interop.Word.Document" /> <see cref="T:Microsoft.Office.Interop.Word.Range" /> 返回<b>修订</b>集合。</para>
+      <para><b>Add</b> 方法对 <b>Revisions</b> 集合无效。 在启用修订功能时，将添加 <b>修订</b> 对象。 将该 <see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" /> 属性设置为<b>True</b>可跟踪对文档文本所做的修订。</para>
+      <para>使用<b>修订</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是索引号，返回单个<b>修订</b>对象。 索引号代表修订的范围或文档中的位置。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.Revisions.Count" />在文档中，此集合的属性返回的只是正文中的项目数。 要统计其他部分中的个数，请使用带有 <b>Range</b> 对象的集合。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Revisions.AcceptAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub AcceptAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AcceptAll();" />
+      <MemberSignature Language="F#" Value="abstract member AcceptAll : unit -&gt; unit" Usage="revisions.AcceptAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,8 +53,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>接受文档或区域中的所有修订。 将删除修订标记, 并将更改合并到文档中。</summary>
-        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word._Document.AcceptAllRevisions" />方法可接受文档中的所有修订。</para>
+        <summary>接受文档或区域中的所有修订。 将删除修订标记，并将更改合并到文档中。</summary>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Word._Document.AcceptAllRevisions" /> 方法可接受文档中的所有修订。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Revisions.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Revisions.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -79,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks><para>Visual Basic 的 <b>CreateObject</b> 和 <b>GetObject</b> 函数使您可以从 Visual Basic for Applications 项目中访问 OLE 自动化对象。</para>
           <para> </para></remarks>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Revisions.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Revisions.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Revisions.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Revisions.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -138,8 +143,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Revisions.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="revisions.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Revisions.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Revision" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Revision ^ default[int] { Microsoft::Office::Interop::Word::Revision ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Revision" Usage="Microsoft.Office.Interop.Word.Revisions.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Revisions.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Revisions.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -241,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Revisions.RejectAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub RejectAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RejectAll();" />
+      <MemberSignature Language="F#" Value="abstract member RejectAll : unit -&gt; unit" Usage="revisions.RejectAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -257,7 +266,7 @@
       <Parameters />
       <Docs>
         <summary>拒绝某一区域中的所有修订。 将删除修订标记，不改变原文。</summary>
-        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word._Document.RejectAllRevisions" />方法可拒绝文档中的所有修订。 不能拒绝格式更改。</para>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Word._Document.RejectAllRevisions" /> 方法可拒绝文档中的所有修订。 不能拒绝格式更改。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
