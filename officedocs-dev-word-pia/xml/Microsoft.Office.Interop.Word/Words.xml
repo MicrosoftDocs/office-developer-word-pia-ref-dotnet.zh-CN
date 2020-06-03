@@ -1,9 +1,10 @@
 <Type Name="Words" FullName="Microsoft.Office.Interop.Word.Words">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d236676b440e6d795d3c1717b83df235a2ae0ef2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142652" /></Metadata><TypeSignature Language="C#" Value="public interface Words : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca17d8491e5e14d82f4780a03b0bb4d03b136081" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926771" /></Metadata><TypeSignature Language="C#" Value="public interface Words : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Words implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Words" />
   <TypeSignature Language="VB.NET" Value="Public Interface Words&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Words : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Words = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,13 +23,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="6b28c-101">所选内容、 范围或文档中的单词集合。</span><span class="sxs-lookup"><span data-stu-id="6b28c-101">A collection of words in a selection, range, or document.</span></span></summary>
-    <remarks><para><span data-ttu-id="6b28c-102"><b>Words</b>集合中的每一项都<see cref="T:Microsoft.Office.Interop.Word.Range" />是一个代表一个单词的对象。</span><span class="sxs-lookup"><span data-stu-id="6b28c-102">Each item in the <b>Words</b> collection is a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents one word.</span></span> <span data-ttu-id="6b28c-103">没有 Word 的对象。</span><span class="sxs-lookup"><span data-stu-id="6b28c-103">There is no Word object.</span></span></para>
-      <para><span data-ttu-id="6b28c-104">使用 <b>词</b> 属性返回 <b>文字</b> 对象。</span><span class="sxs-lookup"><span data-stu-id="6b28c-104">Use the <b>Words</b> property to return the <b>Words</b> object.</span></span></para>
-      <para><span data-ttu-id="6b28c-105">使用<b>Words</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回一个<b>Range</b>对象, 该对象表示一个单词。</span><span class="sxs-lookup"><span data-stu-id="6b28c-105">Use <b>Words</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a <b>Range</b> object that represents one word.</span></span> <span data-ttu-id="6b28c-106">索引号代表单词的 <b>单词</b> 集合中的位置。</span><span class="sxs-lookup"><span data-stu-id="6b28c-106">The index number represents the position of the word in the <b>Words</b> collection.</span></span></para>
-      <para><span data-ttu-id="6b28c-107"><b>Words</b> 集合中的项包含字词后在单词和空格。</span><span class="sxs-lookup"><span data-stu-id="6b28c-107">The item in the <b>Words</b> collection includes both the word and the spaces after the word.</span></span> <span data-ttu-id="6b28c-108">如果所选内容是插入点, 并且其后紧跟一个空格, 则所选内容。词 (1) 指的是所选内容前面的单词。</span><span class="sxs-lookup"><span data-stu-id="6b28c-108">If the selection is the insertion point and it is immediately followed by a space, Selection.Words(1) refers to the word preceding the selection.</span></span> <span data-ttu-id="6b28c-109">如果所选内容是插入点且后面紧跟一个字符, 则所选内容。词 (1) 表示所选内容后面的单词。</span><span class="sxs-lookup"><span data-stu-id="6b28c-109">If the selection is the insertion point and is immediately followed by a character, Selection.Words(1) refers to the word following the selection.</span></span></para>
-      <para><span data-ttu-id="6b28c-110">在<see cref="P:Microsoft.Office.Interop.Word.Words.Count" />文档中, 此集合的属性返回的只是正文中的项目数。</span><span class="sxs-lookup"><span data-stu-id="6b28c-110">The <see cref="P:Microsoft.Office.Interop.Word.Words.Count" /> property for this collection in a document returns the number of items in the main story only.</span></span> <span data-ttu-id="6b28c-111">要统计其他部分中的个数，请使用带有 <b>Range</b> 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="6b28c-111">To count items in other stories use the collection with the <b>Range</b> object.</span></span> <span data-ttu-id="6b28c-112">此外， <b>Count</b> 属性在合计中包括标点符号和段落标记。</span><span class="sxs-lookup"><span data-stu-id="6b28c-112">Also, the <b>Count</b> property includes punctuation and paragraph marks in the total.</span></span> <span data-ttu-id="6b28c-113">如果需要文档中实际单词的数目, 请使用 "字数统计" 对话框。</span><span class="sxs-lookup"><span data-stu-id="6b28c-113">If you need a count of the actual words in a document, use the Word Count dialog box.</span></span></para>
-      <para><span data-ttu-id="6b28c-114"><b>Add</b>方法不适用于<b>Words</b>集合。</span><span class="sxs-lookup"><span data-stu-id="6b28c-114">The <b>Add</b> method isn't available for the <b>Words</b> collection.</span></span> <span data-ttu-id="6b28c-115">而是使用<see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" />方法或<see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" />方法将文本添加到<b>Range</b>对象。</span><span class="sxs-lookup"><span data-stu-id="6b28c-115">Instead, use the <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> method or the <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> method to add text to a <b>Range</b> object.</span></span></para>
+    <summary><span data-ttu-id="b92ed-101">所选内容、 范围或文档中的单词集合。</span><span class="sxs-lookup"><span data-stu-id="b92ed-101">A collection of words in a selection, range, or document.</span></span></summary>
+    <remarks><para><span data-ttu-id="b92ed-102"><b>Words</b>集合中的每一项都是一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 代表一个单词的对象。</span><span class="sxs-lookup"><span data-stu-id="b92ed-102">Each item in the <b>Words</b> collection is a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents one word.</span></span> <span data-ttu-id="b92ed-103">没有 Word 的对象。</span><span class="sxs-lookup"><span data-stu-id="b92ed-103">There is no Word object.</span></span></para>
+      <para><span data-ttu-id="b92ed-104">使用 <b>词</b> 属性返回 <b>文字</b> 对象。</span><span class="sxs-lookup"><span data-stu-id="b92ed-104">Use the <b>Words</b> property to return the <b>Words</b> object.</span></span></para>
+      <para><span data-ttu-id="b92ed-105">使用<b>Words</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是索引号，返回一个<b>Range</b>对象，该对象表示一个单词。</span><span class="sxs-lookup"><span data-stu-id="b92ed-105">Use <b>Words</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a <b>Range</b> object that represents one word.</span></span> <span data-ttu-id="b92ed-106">索引号代表单词的 <b>单词</b> 集合中的位置。</span><span class="sxs-lookup"><span data-stu-id="b92ed-106">The index number represents the position of the word in the <b>Words</b> collection.</span></span></para>
+      <para><span data-ttu-id="b92ed-107"><b>Words</b> 集合中的项包含字词后在单词和空格。</span><span class="sxs-lookup"><span data-stu-id="b92ed-107">The item in the <b>Words</b> collection includes both the word and the spaces after the word.</span></span> <span data-ttu-id="b92ed-108">如果所选内容是插入点，并且其后紧跟一个空格，则所选内容。词（1）指的是所选内容前面的单词。</span><span class="sxs-lookup"><span data-stu-id="b92ed-108">If the selection is the insertion point and it is immediately followed by a space, Selection.Words(1) refers to the word preceding the selection.</span></span> <span data-ttu-id="b92ed-109">如果所选内容是插入点且后面紧跟一个字符，则所选内容。词（1）表示所选内容后面的单词。</span><span class="sxs-lookup"><span data-stu-id="b92ed-109">If the selection is the insertion point and is immediately followed by a character, Selection.Words(1) refers to the word following the selection.</span></span></para>
+      <para><span data-ttu-id="b92ed-110"><see cref="P:Microsoft.Office.Interop.Word.Words.Count" />在文档中，此集合的属性返回的只是正文中的项目数。</span><span class="sxs-lookup"><span data-stu-id="b92ed-110">The <see cref="P:Microsoft.Office.Interop.Word.Words.Count" /> property for this collection in a document returns the number of items in the main story only.</span></span> <span data-ttu-id="b92ed-111">要统计其他部分中的个数，请使用带有 <b>Range</b> 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="b92ed-111">To count items in other stories use the collection with the <b>Range</b> object.</span></span> <span data-ttu-id="b92ed-112">此外， <b>Count</b> 属性在合计中包括标点符号和段落标记。</span><span class="sxs-lookup"><span data-stu-id="b92ed-112">Also, the <b>Count</b> property includes punctuation and paragraph marks in the total.</span></span> <span data-ttu-id="b92ed-113">如果需要文档中实际单词的数目，请使用 "字数统计" 对话框。</span><span class="sxs-lookup"><span data-stu-id="b92ed-113">If you need a count of the actual words in a document, use the Word Count dialog box.</span></span></para>
+      <para><span data-ttu-id="b92ed-114"><b>Add</b>方法不适用于<b>Words</b>集合。</span><span class="sxs-lookup"><span data-stu-id="b92ed-114">The <b>Add</b> method isn't available for the <b>Words</b> collection.</span></span> <span data-ttu-id="b92ed-115">而是使用 <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> 方法或 <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> 方法将文本添加到<b>Range</b>对象。</span><span class="sxs-lookup"><span data-stu-id="b92ed-115">Instead, use the <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> method or the <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> method to add text to a <b>Range</b> object.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Words.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -55,7 +57,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="6b28c-116">返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="6b28c-116">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="b92ed-116">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="b92ed-116">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Words.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -83,7 +86,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="6b28c-117">返回指定集合中的项目数。</span><span class="sxs-lookup"><span data-stu-id="6b28c-117">Returns the number of items in the specified collection.</span></span></summary>
+        <summary><span data-ttu-id="b92ed-117">返回指定集合中的项目数。</span><span class="sxs-lookup"><span data-stu-id="b92ed-117">Returns the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Words.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -111,10 +115,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="6b28c-118">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="6b28c-118">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="b92ed-118">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="b92ed-118">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="6b28c-119">如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="6b28c-119">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="6b28c-120">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="6b28c-120">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="6b28c-121"><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="6b28c-121">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="6b28c-122">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="6b28c-122">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="6b28c-123">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="6b28c-123">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="b92ed-119">如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="b92ed-119">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="b92ed-120">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="b92ed-120">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="b92ed-121"><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="b92ed-121">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="b92ed-122">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="b92ed-122">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="b92ed-123">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="b92ed-123">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.First" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property First As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ First { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.First : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Words.First" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,7 +146,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="6b28c-124">返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示文档、选定内容或区域中的第一个单词。</span><span class="sxs-lookup"><span data-stu-id="6b28c-124">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the first word in a document, selection or range.</span></span></summary>
+        <summary><span data-ttu-id="b92ed-124">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，表示文档、选定内容或区域中的第一个单词。</span><span class="sxs-lookup"><span data-stu-id="b92ed-124">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the first word in a document, selection or range.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Words.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="words.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ default[int] { Microsoft::Office::Interop::Word::Range ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Words.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,8 +211,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="6b28c-125">一个指示序号位置的<b>对象</b>, 或表示单个对象的名称的字符串。</span><span class="sxs-lookup"><span data-stu-id="6b28c-125">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
-        <summary><span data-ttu-id="6b28c-126">返回集合中的单个对象。</span><span class="sxs-lookup"><span data-stu-id="6b28c-126">Returns an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="b92ed-125">一个指示序号位置的<b>对象</b>，或表示单个对象的名称的字符串。</span><span class="sxs-lookup"><span data-stu-id="b92ed-125">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
+        <summary><span data-ttu-id="b92ed-126">返回集合中的单个对象。</span><span class="sxs-lookup"><span data-stu-id="b92ed-126">Returns an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Last" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Last As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Last { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Last : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Words.Last" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -233,7 +241,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="6b28c-127">返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示文档、选定内容或区域中的最后一个单词。</span><span class="sxs-lookup"><span data-stu-id="6b28c-127">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the last word in a document, selection, or range.</span></span></summary>
+        <summary><span data-ttu-id="b92ed-127">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，表示文档、选定内容或区域中的最后一个单词。</span><span class="sxs-lookup"><span data-stu-id="b92ed-127">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the last word in a document, selection, or range.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Words.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Words.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -261,7 +270,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="6b28c-128">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="6b28c-128">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="b92ed-128">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="b92ed-128">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

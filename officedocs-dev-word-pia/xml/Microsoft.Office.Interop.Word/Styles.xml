@@ -1,9 +1,10 @@
 <Type Name="Styles" FullName="Microsoft.Office.Interop.Word.Styles">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="eb701dd3171af93b44fe6b5810f09450463725fa" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143936" /></Metadata><TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="87e4ac12b95087bfc726d1151536235f423c2be7" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926211" /></Metadata><TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Styles implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Styles" />
   <TypeSignature Language="VB.NET" Value="Public Interface Styles&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Styles : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Styles = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,13 +23,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="ed839-101"><see cref="T:Microsoft.Office.Interop.Word.Style" />对象的集合, 这些对象代表文档中的内置样式和用户定义的样式。</span><span class="sxs-lookup"><span data-stu-id="ed839-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Style" /> objects that represent both the built-in and user-defined styles in a document.</span></span></summary>
-    <remarks><para><span data-ttu-id="ed839-102">使用<see cref="P:Microsoft.Office.Interop.Word._Document.Styles" />属性返回<b>Styles</b>集合。</span><span class="sxs-lookup"><span data-stu-id="ed839-102">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> property to return the <b>Styles</b> collection.</span></span></para>
-      <para><span data-ttu-id="ed839-103">使用<see cref="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" />方法创建新的用户定义样式并将其添加到<b>Styles</b>集合。</span><span class="sxs-lookup"><span data-stu-id="ed839-103">Use the <see cref="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" /> method to create a new user-defined style and add it to the <b>Styles</b> collection.</span></span></para>
-      <para><span data-ttu-id="ed839-104">使用<b>Styles</b>(<paramref name="index" />), 其中<paramref name="index" />是样式名称、 <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或索引号, 用于返回单个<b>样式</b>对象。</span><span class="sxs-lookup"><span data-stu-id="ed839-104">Use <b>Styles</b>(<paramref name="index" />), where <paramref name="index" /> is the style name, a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constant or index number, to return a single <b>Style</b> object.</span></span> <span data-ttu-id="ed839-105">您必须完全匹配的拼写和间距样式名称，但不是一定是其市值。</span><span class="sxs-lookup"><span data-stu-id="ed839-105">You must exactly match the spelling and spacing of the style name, but not necessarily its capitalization.</span></span></para>
-      <para><span data-ttu-id="ed839-106">样式索引编号代表样式在按字母顺序排列的样式名列表中的位置。</span><span class="sxs-lookup"><span data-stu-id="ed839-106">The style index number represents the position of the style in the alphabetically sorted list of style names.</span></span> </para>
-      <para><span data-ttu-id="ed839-107">无法<b></b>从<see cref="T:Microsoft.Office.Interop.Word.Template" />对象中获取样式对象。</span><span class="sxs-lookup"><span data-stu-id="ed839-107">The <b>Styles</b> object isn't available from the <see cref="T:Microsoft.Office.Interop.Word.Template" /> object.</span></span> <span data-ttu-id="ed839-108">不过, 您可以使用<see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />方法将模板作为文档打开, 以便您可以修改模板中的样式。</span><span class="sxs-lookup"><span data-stu-id="ed839-108">However, you can use the <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> method to open a template as a document so that you can modify styles in the template.</span></span></para>
-      <para><span data-ttu-id="ed839-109">使用方法<see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" />可在文档和模板之间复制样式。</span><span class="sxs-lookup"><span data-stu-id="ed839-109">Use the <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> method to copy styles between documents and templates.</span></span> <span data-ttu-id="ed839-110">使用<see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" />方法更新活动文档中的样式, 以与附加模板中的样式定义相匹配。</span><span class="sxs-lookup"><span data-stu-id="ed839-110">Use the <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> method to update the styles in the active document to match the style definitions in the attached template.</span></span></para>
+    <summary><span data-ttu-id="7c6e0-101">对象的集合 <see cref="T:Microsoft.Office.Interop.Word.Style" /> ，这些对象代表文档中的内置样式和用户定义的样式。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Style" /> objects that represent both the built-in and user-defined styles in a document.</span></span></summary>
+    <remarks><para><span data-ttu-id="7c6e0-102">使用 <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> 属性返回<b>Styles</b>集合。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-102">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> property to return the <b>Styles</b> collection.</span></span></para>
+      <para><span data-ttu-id="7c6e0-103">使用 <see cref="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" /> 方法创建新的用户定义样式并将其添加到<b>Styles</b>集合。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-103">Use the <see cref="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" /> method to create a new user-defined style and add it to the <b>Styles</b> collection.</span></span></para>
+      <para><span data-ttu-id="7c6e0-104">使用<b>Styles</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是样式名称、 <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> 常量或索引号，用于返回单个<b>样式</b>对象。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-104">Use <b>Styles</b>(<paramref name="index" />), where <paramref name="index" /> is the style name, a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constant or index number, to return a single <b>Style</b> object.</span></span> <span data-ttu-id="7c6e0-105">您必须完全匹配的拼写和间距样式名称，但不是一定是其市值。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-105">You must exactly match the spelling and spacing of the style name, but not necessarily its capitalization.</span></span></para>
+      <para><span data-ttu-id="7c6e0-106">样式索引编号代表样式在按字母顺序排列的样式名列表中的位置。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-106">The style index number represents the position of the style in the alphabetically sorted list of style names.</span></span> </para>
+      <para><span data-ttu-id="7c6e0-107">无法从对象中获取<b>样式</b>对象 <see cref="T:Microsoft.Office.Interop.Word.Template" /> 。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-107">The <b>Styles</b> object isn't available from the <see cref="T:Microsoft.Office.Interop.Word.Template" /> object.</span></span> <span data-ttu-id="7c6e0-108">不过，您可以使用 <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> 方法将模板作为文档打开，以便您可以修改模板中的样式。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-108">However, you can use the <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> method to open a template as a document so that you can modify styles in the template.</span></span></para>
+      <para><span data-ttu-id="7c6e0-109">使用 <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> 方法可在文档和模板之间复制样式。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-109">Use the <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> method to copy styles between documents and templates.</span></span> <span data-ttu-id="7c6e0-110">使用 <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> 方法更新活动文档中的样式，以与附加模板中的样式定义相匹配。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-110">Use the <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> method to update the styles in the active document to match the style definitions in the attached template.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Style Add([in]string Name, [in]object&amp; Type) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Name As String, Optional ByRef Type As Object) As Style" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj -&gt; Microsoft.Office.Interop.Word.Style" Usage="styles.Add (Name, Type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,12 +54,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Name" Type="System.String" />
-        <Parameter Name="Type" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Type" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name"><span data-ttu-id="ed839-111">必需的 <b>字符串</b> 。</span><span class="sxs-lookup"><span data-stu-id="ed839-111">Required <b>String</b>.</span></span> <span data-ttu-id="ed839-112">新样式的字符串名称。</span><span class="sxs-lookup"><span data-stu-id="ed839-112">The string name for the new style.</span></span></param>
-        <param name="Type"><span data-ttu-id="ed839-113">可选<b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="ed839-113">Optional <b>Object</b>.</span></span> <span data-ttu-id="ed839-114">新样式的样式类型。</span><span class="sxs-lookup"><span data-stu-id="ed839-114">The style type of the new style.</span></span> <span data-ttu-id="ed839-115"><see cref="T:Microsoft.Office.Interop.Word.WdStyleType" />可以是下列常量之一: <b>wdStyleTypeParagraph</b>、 <b>wdStyleTypeCharacter</b>、 <b>wdStyleTypeList</b>或<b>wdStyleTypeTable</b>。</span><span class="sxs-lookup"><span data-stu-id="ed839-115">Can be one of the following <see cref="T:Microsoft.Office.Interop.Word.WdStyleType" /> constants: <b>wdStyleTypeParagraph</b>, <b>wdStyleTypeCharacter</b>, <b>wdStyleTypeList</b>, or <b>wdStyleTypeTable</b>.</span></span></param>
-        <summary><span data-ttu-id="ed839-116">返回一个<see cref="T:Microsoft.Office.Interop.Word.Style" /> object 类型的对象, 该对象代表添加到样式列表中的新的用户定义样式。</span><span class="sxs-lookup"><span data-stu-id="ed839-116">Returns a <see cref="T:Microsoft.Office.Interop.Word.Style" /> object that represents a new user-defined style added to the list of styles.</span></span></summary>
+        <param name="Name"><span data-ttu-id="7c6e0-111">必需的 <b>字符串</b> 。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-111">Required <b>String</b>.</span></span> <span data-ttu-id="7c6e0-112">新样式的字符串名称。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-112">The string name for the new style.</span></span></param>
+        <param name="Type"><span data-ttu-id="7c6e0-113">可选<b>对象</b>。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-113">Optional <b>Object</b>.</span></span> <span data-ttu-id="7c6e0-114">新样式的样式类型。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-114">The style type of the new style.</span></span> <span data-ttu-id="7c6e0-115">可以是下列 <see cref="T:Microsoft.Office.Interop.Word.WdStyleType" /> 常量之一： <b>wdStyleTypeParagraph</b>、 <b>WdStyleTypeCharacter</b>、 <b>wdStyleTypeList</b>或<b>wdStyleTypeTable</b>。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-115">Can be one of the following <see cref="T:Microsoft.Office.Interop.Word.WdStyleType" /> constants: <b>wdStyleTypeParagraph</b>, <b>wdStyleTypeCharacter</b>, <b>wdStyleTypeList</b>, or <b>wdStyleTypeTable</b>.</span></span></param>
+        <summary><span data-ttu-id="7c6e0-116">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Style" /> object 类型的对象，该对象代表添加到样式列表中的新的用户定义样式。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-116">Returns a <see cref="T:Microsoft.Office.Interop.Word.Style" /> object that represents a new user-defined style added to the list of styles.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Styles.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -85,7 +88,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ed839-117">返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="ed839-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="7c6e0-117">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Styles.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -113,7 +117,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ed839-118">返回指定集合中的项目数。</span><span class="sxs-lookup"><span data-stu-id="ed839-118">Returns the number of items in the specified collection.</span></span> <span data-ttu-id="ed839-119">只读 <b>Integer</b>。</span><span class="sxs-lookup"><span data-stu-id="ed839-119">Read-only <b>Integer</b>.</span></span></summary>
+        <summary><span data-ttu-id="7c6e0-118">返回指定集合中的项目数。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-118">Returns the number of items in the specified collection.</span></span> <span data-ttu-id="7c6e0-119">只读 <b>Integer</b>。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-119">Read-only <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Styles.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,10 +146,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ed839-120">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="ed839-120">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="ed839-121">只读 <b>Integer</b>。</span><span class="sxs-lookup"><span data-stu-id="ed839-121">Read-only <b>Integer</b>.</span></span></summary>
+        <summary><span data-ttu-id="7c6e0-120">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-120">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="7c6e0-121">只读 <b>Integer</b>。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-121">Read-only <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ed839-122">如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="ed839-122">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="ed839-123">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="ed839-123">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="ed839-124"><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="ed839-124">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="ed839-125">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="ed839-125">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="ed839-126">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="ed839-126">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="7c6e0-122">如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-122">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="7c6e0-123">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-123">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="7c6e0-124"><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-124">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="7c6e0-125">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-125">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="7c6e0-126">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-126">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Styles.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="styles.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -186,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Style ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Style ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Style" Usage="Microsoft.Office.Interop.Word.Styles.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -203,11 +210,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.Style</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="ed839-127">一个指示序号位置的<b>对象</b>, 或表示单个对象的名称的字符串。</span><span class="sxs-lookup"><span data-stu-id="ed839-127">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
-        <summary><span data-ttu-id="ed839-128">返回集合中的单个对象。</span><span class="sxs-lookup"><span data-stu-id="ed839-128">Returns an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="7c6e0-127">一个指示序号位置的<b>对象</b>，或表示单个对象的名称的字符串。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-127">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
+        <summary><span data-ttu-id="7c6e0-128">返回集合中的单个对象。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-128">Returns an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Styles.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Styles.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -235,7 +243,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ed839-129">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="ed839-129">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="7c6e0-129">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="7c6e0-129">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

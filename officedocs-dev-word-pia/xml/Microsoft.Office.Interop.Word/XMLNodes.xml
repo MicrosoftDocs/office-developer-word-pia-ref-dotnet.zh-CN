@@ -1,9 +1,10 @@
 <Type Name="XMLNodes" FullName="Microsoft.Office.Interop.Word.XMLNodes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1bb0a31f85f85e8cdffe7c844d4d494ab8d5858b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142624" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNodes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2f843e090d441e8d069245cd7dee97c3e3c7f9de" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926708" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNodes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNodes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNodes&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLNodes : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type XMLNodes = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,12 +23,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="f6cbc-101"><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象的集合, 该集合代表 "XML 结构" 任务窗格的树视图中的节点, 这些节点指示用户已应用于文档的元素。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objects that represents the nodes in the tree view of the XML Structure task pane, which indicates the elements that a user has applied to a document.</span></span></summary>
-    <remarks><para><span data-ttu-id="f6cbc-102">树视图中的每个节点都是 <b>XMLNode</b> 对象的一个实例。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-102">Each node in the tree view is an instance of an <b>XMLNode</b> object.</span></span> <span data-ttu-id="f6cbc-103">树视图的层次结构表明节点是否包含子节点。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-103">The hierarchy in the tree view indicates whether a node contains child nodes.</span></span></para>
-      <para><span data-ttu-id="f6cbc-104">您可以返回所选内容、范围或整个文档的<b>XMLNodes</b>集合。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-104">You can return an <b>XMLNodes</b> collection for a selection, a range, or the entire document.</span></span> <span data-ttu-id="f6cbc-105"><b>XMLNode</b> 对象显示在 <b>XMLNodes</b> 集合顺序是开始或结束标记中指定的选定内容、 范围或文档中的显示的顺序相同。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-105">The order in which the <b>XMLNode</b> objects appear in the <b>XMLNodes</b> collection is the same order in which their start or end tags appear within the specified selection, range, or document.</span></span></para>
-      <para><span data-ttu-id="f6cbc-106">使用 XMLNodes <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" />集合的属性<b></b>返回单个<b>XMLNode</b>对象。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-106">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> property of the <b>XMLNodes</b> collection to return an individual <b>XMLNode</b> object.</span></span> <span data-ttu-id="f6cbc-107">使用<see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" />方法来验证 XML 元素是否有效, 具体取决于所应用的架构以及任何必需的子元素是否存在并按所需顺序排列。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-107">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> method to verify that an XML element is valid according to the applied schemas and that any required child elements exist and are in the required order.</span></span> <span data-ttu-id="f6cbc-108">在运行<b>Validate</b>方法后, 使用<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />属性来验证元素是否有效, 以及<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />是否向用户显示一条消息, 以使文档中的 xml 符合 xml 架构规则的用户需要解决的问题。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-108">Once you run the <b>Validate</b> method, use the <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> property to verify whether an element is valid and the <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> property to display a message to the user as to what the user needs to fix in order to make the XML in the document conform to the XML schema rules.</span></span></para>
-      <para><span data-ttu-id="f6cbc-109">使用<see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" />方法可将 XML 元素添加到所选内容、范围或文档中。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-109">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" /> method to add an XML element to a selection, a range, or the document.</span></span></para>
-      <para><span data-ttu-id="f6cbc-110">由于 XML 区分大小写, 因此在<paramref name="Name" /> <b>Add</b>方法的参数中键入的 XML 元素必须完全按照在<paramref name="Namespace" />参数中所引用的架构中显示的类型键入。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-110">Because XML is case-sensitive, the XML element as typed in the <paramref name="Name" /> parameter of the <b>Add</b> method must be typed exactly as it appears in the schema referenced in the <paramref name="Namespace" /> parameter.</span></span></para>
+    <summary><span data-ttu-id="05627-101">对象的集合 <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> ，该集合代表 "XML 结构" 任务窗格的树视图中的节点，这些节点指示用户已应用于文档的元素。</span><span class="sxs-lookup"><span data-stu-id="05627-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objects that represents the nodes in the tree view of the XML Structure task pane, which indicates the elements that a user has applied to a document.</span></span></summary>
+    <remarks><para><span data-ttu-id="05627-102">树视图中的每个节点都是 <b>XMLNode</b> 对象的一个实例。</span><span class="sxs-lookup"><span data-stu-id="05627-102">Each node in the tree view is an instance of an <b>XMLNode</b> object.</span></span> <span data-ttu-id="05627-103">树视图的层次结构表明节点是否包含子节点。</span><span class="sxs-lookup"><span data-stu-id="05627-103">The hierarchy in the tree view indicates whether a node contains child nodes.</span></span></para>
+      <para><span data-ttu-id="05627-104">您可以返回所选内容、范围或整个文档的<b>XMLNodes</b>集合。</span><span class="sxs-lookup"><span data-stu-id="05627-104">You can return an <b>XMLNodes</b> collection for a selection, a range, or the entire document.</span></span> <span data-ttu-id="05627-105"><b>XMLNode</b> 对象显示在 <b>XMLNodes</b> 集合顺序是开始或结束标记中指定的选定内容、 范围或文档中的显示的顺序相同。</span><span class="sxs-lookup"><span data-stu-id="05627-105">The order in which the <b>XMLNode</b> objects appear in the <b>XMLNodes</b> collection is the same order in which their start or end tags appear within the specified selection, range, or document.</span></span></para>
+      <para><span data-ttu-id="05627-106">使用 <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> <b>XMLNodes</b>集合的属性返回单个<b>XMLNode</b>对象。</span><span class="sxs-lookup"><span data-stu-id="05627-106">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> property of the <b>XMLNodes</b> collection to return an individual <b>XMLNode</b> object.</span></span> <span data-ttu-id="05627-107">使用 <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> 方法来验证 XML 元素是否有效，具体取决于所应用的架构以及任何必需的子元素是否存在并按所需顺序排列。</span><span class="sxs-lookup"><span data-stu-id="05627-107">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> method to verify that an XML element is valid according to the applied schemas and that any required child elements exist and are in the required order.</span></span> <span data-ttu-id="05627-108">在运行<b>Validate</b>方法后，使用 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> 属性来验证元素是否有效，以及是否向 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> 用户显示一条消息，以使文档中的 xml 符合 xml 架构规则的用户需要解决的问题。</span><span class="sxs-lookup"><span data-stu-id="05627-108">Once you run the <b>Validate</b> method, use the <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> property to verify whether an element is valid and the <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> property to display a message to the user as to what the user needs to fix in order to make the XML in the document conform to the XML schema rules.</span></span></para>
+      <para><span data-ttu-id="05627-109">使用 <see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" /> 方法可将 XML 元素添加到所选内容、范围或文档中。</span><span class="sxs-lookup"><span data-stu-id="05627-109">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" /> method to add an XML element to a selection, a range, or the document.</span></span></para>
+      <para><span data-ttu-id="05627-110">由于 XML 区分大小写，因此在 Add 方法的参数中键入的 XML 元素 <paramref name="Name" /> 必须完全按照在参数中所引用的架构中显示的类型<b>Add</b>键入 <paramref name="Namespace" /> 。</span><span class="sxs-lookup"><span data-stu-id="05627-110">Because XML is case-sensitive, the XML element as typed in the <paramref name="Name" /> parameter of the <b>Add</b> method must be typed exactly as it appears in the schema referenced in the <paramref name="Namespace" /> parameter.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.XMLNode Add([in]string Name, [in]string Namespace, [in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Name As String, Namespace As String, Optional ByRef Range As Object) As XMLNode" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string * obj -&gt; Microsoft.Office.Interop.Word.XMLNode" Usage="xMLNodes.Add (Name, Namespace, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -55,13 +57,13 @@
       <Parameters>
         <Parameter Name="Name" Type="System.String" />
         <Parameter Name="Namespace" Type="System.String" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Name">To be added.</param>
         <param name="Namespace">To be added.</param>
         <param name="Range">To be added.</param>
-        <summary><span data-ttu-id="f6cbc-111">此对象、成员或枚举已被弃用并且不适合在您的代码中使用。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-111">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="05627-111">此对象、成员或枚举已被弃用并且不适合在您的代码中使用。</span><span class="sxs-lookup"><span data-stu-id="05627-111">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.XMLNodes.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -89,7 +92,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="f6cbc-112">返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-112">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="05627-112">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="05627-112">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.XMLNodes.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -117,7 +121,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="f6cbc-113">获取指定集合中项的数目。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-113">Gets the number of items in the specified collection.</span></span></summary>
+        <summary><span data-ttu-id="05627-113">获取指定集合中项的数目。</span><span class="sxs-lookup"><span data-stu-id="05627-113">Gets the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.XMLNodes.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,10 +150,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="f6cbc-114">获取一个32位整数, 该整数指示在其中创建指定对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-114">Gets a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="05627-114">获取一个32位整数，该整数指示在其中创建指定对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="05627-114">Gets a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="f6cbc-115">如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-115">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="f6cbc-116">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-116">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="f6cbc-117"><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-117">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="f6cbc-118">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-118">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="f6cbc-119">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-119">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="05627-115">如果指定的对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="05627-115">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="05627-116">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="05627-116">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="05627-117"><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="05627-117">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="05627-118">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="05627-118">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="05627-119">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="05627-119">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNodes.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="xMLNodes.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ default[int] { Microsoft::Office::Interop::Word::XMLNode ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.XMLNodes.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -210,8 +217,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="f6cbc-120">一个指示序号位置的<b>对象</b>, 或表示单个对象的名称的字符串。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-120">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
-        <summary><span data-ttu-id="f6cbc-121">返回集合中的单个对象。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-121">Returns an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="05627-120">一个指示序号位置的<b>对象</b>，或表示单个对象的名称的字符串。</span><span class="sxs-lookup"><span data-stu-id="05627-120">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
+        <summary><span data-ttu-id="05627-121">返回集合中的单个对象。</span><span class="sxs-lookup"><span data-stu-id="05627-121">Returns an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNodes.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.XMLNodes.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -239,7 +247,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="f6cbc-122">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="f6cbc-122">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="05627-122">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="05627-122">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

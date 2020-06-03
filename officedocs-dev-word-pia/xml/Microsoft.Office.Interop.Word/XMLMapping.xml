@@ -1,9 +1,10 @@
 <Type Name="XMLMapping" FullName="Microsoft.Office.Interop.Word.XMLMapping">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9c7faf4f3e3ffccb270c1cc125874ce43681ee78" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142638" /></Metadata><TypeSignature Language="C#" Value="public interface XMLMapping" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a613d872defc3b239ef077ce2ad4da03a037e7ee" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926750" /></Metadata><TypeSignature Language="C#" Value="public interface XMLMapping" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLMapping" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLMapping" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLMapping" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLMapping" />
+  <TypeSignature Language="F#" Value="type XMLMapping = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,8 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="399c7-101">表示在自定义 XML 与<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />内容控件之间的对象上的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-101">Represents the XML mapping on a <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> object between custom XML and a content control.</span></span> <span data-ttu-id="399c7-102">XML 映射是内容控件中的文本与此文档的自定义 XML 数据存储中的 XML 元素之间的链接。</span><span class="sxs-lookup"><span data-stu-id="399c7-102">An XML mapping is a link between the text in a content control and an XML element in the custom XML data store for this document.</span></span></summary>
-    <remarks><para><span data-ttu-id="399c7-103">使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法可以添加或更改使用 XPath 字符串的内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-103">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method to add or change the XML mapping for a content control using an XPath string.</span></span> <span data-ttu-id="399c7-104">以下示例设置文档作者这一内置文档属性，在活动文档中插入新的内容控件，然后将此控件的 XML 映射设置为该内置文档属性。</span><span class="sxs-lookup"><span data-stu-id="399c7-104">The following example sets the built-in document property for the document author, inserts a new content control into the active document, and then sets the XML mapping for the control to the built-in document property.</span></span></para>
+    <summary><span data-ttu-id="06c48-101">表示在 <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> 自定义 XML 与内容控件之间的对象上的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-101">Represents the XML mapping on a <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> object between custom XML and a content control.</span></span> <span data-ttu-id="06c48-102">XML 映射是内容控件中的文本与此文档的自定义 XML 数据存储中的 XML 元素之间的链接。</span><span class="sxs-lookup"><span data-stu-id="06c48-102">An XML mapping is a link between the text in a content control and an XML element in the custom XML data store for this document.</span></span></summary>
+    <remarks><para><span data-ttu-id="06c48-103">使用 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> 方法可以添加或更改使用 XPath 字符串的内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-103">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method to add or change the XML mapping for a content control using an XPath string.</span></span> <span data-ttu-id="06c48-104">以下示例设置文档作者这一内置文档属性，在活动文档中插入新的内容控件，然后将此控件的 XML 映射设置为该内置文档属性。</span><span class="sxs-lookup"><span data-stu-id="06c48-104">The following example sets the built-in document property for the document author, inserts a new content control into the active document, and then sets the XML mapping for the control to the built-in document property.</span></span></para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -1813,7 +1814,7 @@ If blnMap = False Then
 
 
 End If&lt;/span&gt;</code>
-      <para><span data-ttu-id="399c7-105">使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法可使用<b>CustomXMLNode</b>对象添加或更改内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-105">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method to add or change the XML mapping for a content control using a <b>CustomXMLNode</b> object.</span></span> <span data-ttu-id="399c7-106">下面的示例执行与上一个示例相同的操作, 但使用的是<b>SetMappingByNode</b>方法。</span><span class="sxs-lookup"><span data-stu-id="399c7-106">The following example does  the same thing as the previous example, but uses the <b>SetMappingByNode</b> method.</span></span></para>
+      <para><span data-ttu-id="06c48-105">使用 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> 方法可使用<b>CustomXMLNode</b>对象添加或更改内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-105">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method to add or change the XML mapping for a content control using a <b>CustomXMLNode</b> object.</span></span> <span data-ttu-id="06c48-106">下面的示例执行与上一个示例相同的操作，但使用的是<b>SetMappingByNode</b>方法。</span><span class="sxs-lookup"><span data-stu-id="06c48-106">The following example does  the same thing as the previous example, but uses the <b>SetMappingByNode</b> method.</span></span></para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -3735,7 +3736,7 @@ Set objMap = objcc.XMLMapping
 
 
 blnMap = objMap.SetMappingByNode(objNode)&lt;/span&gt;</code>
-      <para><span data-ttu-id="399c7-107">下面的示例创建一个新的 <b>CustomXMLPart</b> 对象、 将自定义 XML 加载到它，然后创建两个新的内容控件，并将每个不同的 XML 元素中的自定义 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-107">The following example creates a new <b>CustomXMLPart</b> object, loads custom XML into it, and then creates two new content controls and maps each to a different XML element within the custom XML.</span></span></para>
+      <para><span data-ttu-id="06c48-107">下面的示例创建一个新的 <b>CustomXMLPart</b> 对象、 将自定义 XML 加载到它，然后创建两个新的内容控件，并将每个不同的 XML 元素中的自定义 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-107">The following example creates a new <b>CustomXMLPart</b> object, loads custom XML into it, and then creates two new content controls and maps each to a different XML element within the custom XML.</span></span></para>
       <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -7833,7 +7834,7 @@ objCustomControl.XMLMapping.SetMappingByNode objCustomNode
 
 
 MsgBox objCustomControl.XMLMapping.IsMapped&lt;/span&gt;</code>
-      <para><span data-ttu-id="399c7-108">使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" />方法删除内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-108">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" /> method to remove the XML mapping for a content control.</span></span>  <span data-ttu-id="399c7-109">删除内容控件的 XML 映射时，只会删除内容控件与 XML 数据之间的连接。</span><span class="sxs-lookup"><span data-stu-id="399c7-109">Deleting the XML mapping for a content control deletes only  the connection between the content control and the XML data.</span></span>  <span data-ttu-id="399c7-110">内容控件和 XML 数据都会留在文档中。</span><span class="sxs-lookup"><span data-stu-id="399c7-110">Both the content control and the XML data remain in the document.</span></span>  <span data-ttu-id="399c7-111">以下示例删除活动文档内当前映射的所有内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-111">The following example deletes the XML mapping for all content controls in the active document that are currently mapped.</span></span></para>
+      <para><span data-ttu-id="06c48-108">使用 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" /> 方法删除内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-108">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" /> method to remove the XML mapping for a content control.</span></span>  <span data-ttu-id="06c48-109">删除内容控件的 XML 映射时，只会删除内容控件与 XML 数据之间的连接。</span><span class="sxs-lookup"><span data-stu-id="06c48-109">Deleting the XML mapping for a content control deletes only  the connection between the content control and the XML data.</span></span>  <span data-ttu-id="06c48-110">内容控件和 XML 数据都会留在文档中。</span><span class="sxs-lookup"><span data-stu-id="06c48-110">Both the content control and the XML data remain in the document.</span></span>  <span data-ttu-id="06c48-111">以下示例删除活动文档内当前映射的所有内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-111">The following example deletes the XML mapping for all content controls in the active document that are currently mapped.</span></span></para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -8603,7 +8604,7 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 Next&lt;/span&gt;</code>
-      <para><span data-ttu-id="399c7-112">使用<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />属性来确定是否将内容控件映射到文档的数据存储区中的 XML 节点。</span><span class="sxs-lookup"><span data-stu-id="399c7-112">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" /> property to determine if a content control is mapped to an XML node in the document's data store.</span></span> <span data-ttu-id="399c7-113">以下示例删除活动文档中所有映射的内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-113">The following example deletes the XML mapping for all mapped content controls in the active document.</span></span></para>
+      <para><span data-ttu-id="06c48-112">使用 <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" /> 属性来确定是否将内容控件映射到文档的数据存储区中的 XML 节点。</span><span class="sxs-lookup"><span data-stu-id="06c48-112">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" /> property to determine if a content control is mapped to an XML node in the document's data store.</span></span> <span data-ttu-id="06c48-113">以下示例删除活动文档中所有映射的内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-113">The following example deletes the XML mapping for all mapped content controls in the active document.</span></span></para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -9373,7 +9374,7 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 Next&lt;/span&gt;</code>
-      <para><span data-ttu-id="399c7-114">使用<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />属性可访问内容控件映射到的 XML 节点。</span><span class="sxs-lookup"><span data-stu-id="399c7-114">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" /> property to access the XML node to which a content control maps.</span></span> <span data-ttu-id="399c7-115">使用<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />属性可访问内容控件映射到的 XML 部件。</span><span class="sxs-lookup"><span data-stu-id="399c7-115">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" /> property to access the XML part to which a content control maps.</span></span> <span data-ttu-id="399c7-116">有关使用 <b>CustomXMLNode</b> 和 <b>CustomXMLPart</b> 对象的详细信息，请参阅各个对象主题。</span><span class="sxs-lookup"><span data-stu-id="399c7-116">For more information about working with <b>CustomXMLNode</b> and <b>CustomXMLPart</b> objects, see the respective object topics.</span></span></para>
+      <para><span data-ttu-id="06c48-114">使用 <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" /> 属性可访问内容控件映射到的 XML 节点。</span><span class="sxs-lookup"><span data-stu-id="06c48-114">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" /> property to access the XML node to which a content control maps.</span></span> <span data-ttu-id="06c48-115">使用 <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" /> 属性可访问内容控件映射到的 XML 部件。</span><span class="sxs-lookup"><span data-stu-id="06c48-115">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" /> property to access the XML part to which a content control maps.</span></span> <span data-ttu-id="06c48-116">有关使用 <b>CustomXMLNode</b> 和 <b>CustomXMLPart</b> 对象的详细信息，请参阅各个对象主题。</span><span class="sxs-lookup"><span data-stu-id="06c48-116">For more information about working with <b>CustomXMLNode</b> and <b>CustomXMLPart</b> objects, see the respective object topics.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -9383,6 +9384,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.XMLMapping.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -9400,7 +9402,7 @@ Next&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="399c7-117">返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</span><span class="sxs-lookup"><span data-stu-id="399c7-117">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="06c48-117">返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 对象，表示 Microsoft Word 应用程序。</span><span class="sxs-lookup"><span data-stu-id="06c48-117">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9411,6 +9413,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.XMLMapping.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -9428,11 +9431,11 @@ Next&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="399c7-118">返回一个 32 位整数，它指示在其中创建外接程序的应用程序。</span><span class="sxs-lookup"><span data-stu-id="399c7-118">Returns a 32-bit integer that indicates the application in which the add-in was created.</span></span> <span data-ttu-id="399c7-119">只读的 <b>长</b> 。</span><span class="sxs-lookup"><span data-stu-id="399c7-119">Read-only <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="06c48-118">返回一个 32 位整数，它指示在其中创建外接程序的应用程序。</span><span class="sxs-lookup"><span data-stu-id="06c48-118">Returns a 32-bit integer that indicates the application in which the add-in was created.</span></span> <span data-ttu-id="06c48-119">只读的 <b>长</b> 。</span><span class="sxs-lookup"><span data-stu-id="06c48-119">Read-only <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="399c7-120">如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。</span><span class="sxs-lookup"><span data-stu-id="399c7-120">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="399c7-121">此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。</span><span class="sxs-lookup"><span data-stu-id="399c7-121">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="399c7-122">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="399c7-122">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="399c7-123">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="399c7-123">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
-          <para><span data-ttu-id="399c7-124">
-            <b>注意</b>: 此值还可由常量<b>wdcreatorcode 表示</b>表示。</span><span class="sxs-lookup"><span data-stu-id="399c7-124">
+        <remarks><para><span data-ttu-id="06c48-120">如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。</span><span class="sxs-lookup"><span data-stu-id="06c48-120">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="06c48-121">此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。</span><span class="sxs-lookup"><span data-stu-id="06c48-121">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="06c48-122">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="06c48-122">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="06c48-123">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="06c48-123">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+          <para><span data-ttu-id="06c48-124">
+            <b>注意</b>：此值还可由常量<b>wdcreatorcode 表示</b>表示。</span><span class="sxs-lookup"><span data-stu-id="06c48-124">
             <b>Note</b>: This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
@@ -9443,6 +9446,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomXMLNode As CustomXMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLNode ^ CustomXMLNode { Microsoft::Office::Core::CustomXMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomXMLNode : Microsoft.Office.Core.CustomXMLNode" Usage="Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -9460,10 +9464,10 @@ Next&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Core.CustomXMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="399c7-125">返回一个 <b>CustomXMLNode</b> 对象，该对象表示文档中的内容控件映射到数据存储区中的自定义 XML 节点。</span><span class="sxs-lookup"><span data-stu-id="399c7-125">Returns a <b>CustomXMLNode</b> object that represents the custom XML node in the data store to which the content control in the document maps.</span></span></summary>
+        <summary><span data-ttu-id="06c48-125">返回一个 <b>CustomXMLNode</b> 对象，该对象表示文档中的内容控件映射到数据存储区中的自定义 XML 节点。</span><span class="sxs-lookup"><span data-stu-id="06c48-125">Returns a <b>CustomXMLNode</b> object that represents the custom XML node in the data store to which the content control in the document maps.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="399c7-126">以下示例在活动文档中插入新的内容控件和自定义 XML 部件，将内容控件映射到自定义 XML 部件中的某个节点，然后设置映射的 XML 节点的值。</span><span class="sxs-lookup"><span data-stu-id="399c7-126">The following example inserts a new content control and custom XML part into the active document, maps the content control to a node in the custom XML part, and then sets the value of the mapped XML node.</span></span></para>
+        <example><para><span data-ttu-id="06c48-126">以下示例在活动文档中插入新的内容控件和自定义 XML 部件，将内容控件映射到自定义 XML 部件中的某个节点，然后设置映射的 XML 节点的值。</span><span class="sxs-lookup"><span data-stu-id="06c48-126">The following example inserts a new content control and custom XML part into the active document, maps the content control to a node in the custom XML part, and then sets the value of the mapped XML node.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -11139,6 +11143,7 @@ Set objNode = objMap.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomXMLPart As CustomXMLPart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLPart ^ CustomXMLPart { Microsoft::Office::Core::CustomXMLPart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomXMLPart : Microsoft.Office.Core.CustomXMLPart" Usage="Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -11156,12 +11161,12 @@ Set objNode = objMap.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Core.CustomXMLPart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="399c7-127">返回一个 <b>CustomXMLPart</b> 对象，该对象表示文档中的内容控件映射到自定义 XML 部件。</span><span class="sxs-lookup"><span data-stu-id="399c7-127">Returns a <b>CustomXMLPart</b> object that represents the custom XML part to which the content control in the document maps.</span></span></summary>
+        <summary><span data-ttu-id="06c48-127">返回一个 <b>CustomXMLPart</b> 对象，该对象表示文档中的内容控件映射到自定义 XML 部件。</span><span class="sxs-lookup"><span data-stu-id="06c48-127">Returns a <b>CustomXMLPart</b> object that represents the custom XML part to which the content control in the document maps.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="399c7-128">以下示例访问活动文档中的第一个内容控件以及它映射到的自定义 XML 部件，然后设置自定义 XML 部件中包含的某个 XML 节点的文本值。</span><span class="sxs-lookup"><span data-stu-id="399c7-128">The following example accesses the first content control in the active document and the custom XML part to which it is mapped, and then sets the text value of one of the XML nodes contained within the custom XML part.</span></span></para>
-          <para><span data-ttu-id="399c7-129">
-            <b>注意</b>: 此示例假定活动文档中至少有一个内容控件映射到包含 XPath 字符串中指定的 xml 节点的自定义 xml 部件。</span><span class="sxs-lookup"><span data-stu-id="399c7-129">
+        <example><para><span data-ttu-id="06c48-128">以下示例访问活动文档中的第一个内容控件以及它映射到的自定义 XML 部件，然后设置自定义 XML 部件中包含的某个 XML 节点的文本值。</span><span class="sxs-lookup"><span data-stu-id="06c48-128">The following example accesses the first content control in the active document and the custom XML part to which it is mapped, and then sets the text value of one of the XML nodes contained within the custom XML part.</span></span></para>
+          <para><span data-ttu-id="06c48-129">
+            <b>注意</b>：此示例假定活动文档中至少有一个内容控件映射到包含 XPath 字符串中指定的 xml 节点的自定义 xml 部件。</span><span class="sxs-lookup"><span data-stu-id="06c48-129">
             <b>Note</b>: This example assumes that at least one content control in the active document is mapped to a custom XML part that contains the XML nodes specified in the XPath string.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
@@ -11814,6 +11819,7 @@ Set objPart = objCC.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="xMLMapping.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -11829,10 +11835,10 @@ Set objPart = objCC.XMLMapping.&lt;/span&gt;
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="399c7-130">从父内容控件中删除 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-130">Deletes the XML mapping from the parent content control.</span></span></summary>
-        <remarks><para><span data-ttu-id="399c7-131">此操作删除 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-131">This operation removes the XML mapping.</span></span>  <span data-ttu-id="399c7-132">XML 数据和内容控件仍保留在文档中。</span><span class="sxs-lookup"><span data-stu-id="399c7-132">Both the XML data and the content control remain in the document.</span></span></para>
+        <summary><span data-ttu-id="06c48-130">从父内容控件中删除 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-130">Deletes the XML mapping from the parent content control.</span></span></summary>
+        <remarks><para><span data-ttu-id="06c48-131">此操作删除 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-131">This operation removes the XML mapping.</span></span>  <span data-ttu-id="06c48-132">XML 数据和内容控件仍保留在文档中。</span><span class="sxs-lookup"><span data-stu-id="06c48-132">Both the XML data and the content control remain in the document.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="399c7-133">以下示例删除活动文档内当前映射的所有内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-133">The following example deletes the XML mapping for all content controls in the active document that are currently mapped.</span></span></para>
+        <example><para><span data-ttu-id="06c48-133">以下示例删除活动文档内当前映射的所有内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-133">The following example deletes the XML mapping for all content controls in the active document that are currently mapped.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -12356,6 +12362,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property IsMapped As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMapped : bool" Usage="Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12373,10 +12380,10 @@ For Each objCC In ActiveDocument.ContentControls
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="399c7-134">返回 <b>Boolean</b> 值，该值表示文档中的内容控件是否映射到文档的 XML 数据存储内的 XML 节点。</span><span class="sxs-lookup"><span data-stu-id="399c7-134">Returns a <b>Boolean</b> that represents whether the content control in the document is mapped to an XML node in the document’s XML data store.</span></span> <span data-ttu-id="399c7-135">只读。</span><span class="sxs-lookup"><span data-stu-id="399c7-135">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="06c48-134">返回 <b>Boolean</b> 值，该值表示文档中的内容控件是否映射到文档的 XML 数据存储内的 XML 节点。</span><span class="sxs-lookup"><span data-stu-id="06c48-134">Returns a <b>Boolean</b> that represents whether the content control in the document is mapped to an XML node in the document’s XML data store.</span></span> <span data-ttu-id="06c48-135">只读。</span><span class="sxs-lookup"><span data-stu-id="06c48-135">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="399c7-136">以下示例删除活动文档内当前映射的所有内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-136">The following example deletes the XML mapping for all content controls in the active document that are currently mapped.</span></span></para>
+        <example><para><span data-ttu-id="06c48-136">以下示例删除活动文档内当前映射的所有内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-136">The following example deletes the XML mapping for all content controls in the active document that are currently mapped.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -12772,6 +12779,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.XMLMapping.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12789,7 +12797,7 @@ For Each objCC In ActiveDocument.ContentControls
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="399c7-137">返回一个 <b>对象</b> ，表示指定的 <b>XMLMapping</b> 对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="399c7-137">Returns an <b>Object</b> that represents the parent object of the specified <b>XMLMapping</b> object.</span></span></summary>
+        <summary><span data-ttu-id="06c48-137">返回一个 <b>对象</b> ，表示指定的 <b>XMLMapping</b> 对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="06c48-137">Returns an <b>Object</b> that represents the parent object of the specified <b>XMLMapping</b> object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -12800,6 +12808,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.PrefixMappings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrefixMappings As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrefixMappings { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrefixMappings : string" Usage="Microsoft.Office.Interop.Word.XMLMapping.PrefixMappings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12817,17 +12826,18 @@ For Each objCC In ActiveDocument.ContentControls
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="399c7-138">返回一个 <b>字符串</b> ，表示用于计算 XPath 的当前 XML 映射的前缀映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-138">Returns a <b>String</b> that represents the prefix mappings used to evaluate the XPath for the current XML mapping.</span></span> <span data-ttu-id="399c7-139">只读的。</span><span class="sxs-lookup"><span data-stu-id="399c7-139">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="06c48-138">返回一个 <b>字符串</b> ，表示用于计算 XPath 的当前 XML 映射的前缀映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-138">Returns a <b>String</b> that represents the prefix mappings used to evaluate the XPath for the current XML mapping.</span></span> <span data-ttu-id="06c48-139">只读的。</span><span class="sxs-lookup"><span data-stu-id="06c48-139">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="399c7-140">若要设置内容控件的映射, 请使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法或<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法。</span><span class="sxs-lookup"><span data-stu-id="399c7-140">To set mapping for a content control, use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method or the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method.</span></span></para>
+        <remarks><para><span data-ttu-id="06c48-140">若要设置内容控件的映射，请使用 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> 方法或 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> 方法。</span><span class="sxs-lookup"><span data-stu-id="06c48-140">To set mapping for a content control, use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method or the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetMapping">
-      <MemberSignature Language="C#" Value="public bool SetMapping (string XPath, string PrefixMapping = &quot;&quot;, Microsoft.Office.Core.CustomXMLPart Source = null);" />
+      <MemberSignature Language="C#" Value="public bool SetMapping (string XPath, string PrefixMapping = &quot;&quot;, Microsoft.Office.Core.CustomXMLPart Source = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetMapping([in]string XPath, [in]string PrefixMapping, [in]class Microsoft.Office.Core.CustomXMLPart Source) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetMapping (XPath As String, Optional PrefixMapping As String = &quot;&quot;, Optional Source As CustomXMLPart = null) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member SetMapping : string * string * Microsoft.Office.Core.CustomXMLPart -&gt; bool" Usage="xMLMapping.SetMapping (XPath, PrefixMapping, Source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12847,18 +12857,18 @@ For Each objCC In ActiveDocument.ContentControls
         <Parameter Name="Source" Type="Microsoft.Office.Core.CustomXMLPart" />
       </Parameters>
       <Docs>
-        <param name="XPath"><span data-ttu-id="399c7-p112">指定 XPath 字符串，该字符串表示内容控件所映射到的 XML 节点。无效的 XPath 字符串将导致运行时错误。</span><span class="sxs-lookup"><span data-stu-id="399c7-p112">Specifies an XPath string that represents the XML node to which to map the content control. An invalid XPath string causes a run-time error.</span></span></param>
-        <param name="PrefixMapping"><span data-ttu-id="399c7-143">指定在查询<paramref name="XPath" />参数中提供的表达式时要使用的前缀映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-143">Specifies the prefix mappings to use when querying the expression provided in the <paramref name="XPath" /> parameter.</span></span> <span data-ttu-id="399c7-144">如果省略，Word 将使用当前文档中指定的自定义 XML 部件的前缀映射集。</span><span class="sxs-lookup"><span data-stu-id="399c7-144">If omitted, Word uses the set of prefix mappings for the specified custom XML part in the current document.</span></span></param>
-        <param name="Source"><span data-ttu-id="399c7-p114">指定要将内容控件映射到所需的自定义 XML 数据。如果省略此参数，则 XPath 计算依据在当前文档中的所有自定义 XML，使用 XPath 解析的 XML 节点的第一个 <b>CustomXMLPart</b> 建立映射。 </span><span class="sxs-lookup"><span data-stu-id="399c7-p114">Specifies the desired custom XML data to which to map the content control. If this parameter is omitted, the XPath is evaluated against all custom XML in the current document, and the mapping is established with the first <b>CustomXMLPart</b> in which the XPath resolves to an XML node.</span></span></param>
-        <summary><span data-ttu-id="399c7-147">允许创建或更改的内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-147">Allows creating or changing the XML mapping on a content control.</span></span> <span data-ttu-id="399c7-148">如果 Microsoft Office Word 将内容控件映射到文档的自定义 XML 数据存储区中的自定义 XML 节点,<b>则返回 True</b> 。</span><span class="sxs-lookup"><span data-stu-id="399c7-148">Returns <b>True</b> if Microsoft Office Word maps the content control to a custom XML node in the document’s custom XML data store.</span></span></summary>
-        <returns><span data-ttu-id="399c7-149">Boolean</span><span class="sxs-lookup"><span data-stu-id="399c7-149">Boolean</span></span></returns>
-        <remarks><para><span data-ttu-id="399c7-p116">如果 XML 映射已经存在，Word 将替换现有 XML 映射，并以新映射的 XML 节点的内容替换内容控件的文本。如果指定的 XPath 的计算结果不是指定的自定义 XML 部件中的 XML 节点，那么仍可以指定映射，并且将创建一个映射。当指定的 XPath 的计算结果为指定的自定义 XML 部件中的 XML 节点时，此映射将自动链接。</span><span class="sxs-lookup"><span data-stu-id="399c7-p116">If the XML mapping already exists, Word replaces the existing XML mapping and the contents of the new mapped XML node replaces the text of the content control. If the specified XPath does not evaluate to an XML node in the specified custom XML part or parts, you can still specify the mapping, and one will be created. This mapping  automatically links when the specified XPath would evaluate to an XML node in the specified custom XML parts.</span></span></para>
-          <para><span data-ttu-id="399c7-153">另请参阅<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法。</span><span class="sxs-lookup"><span data-stu-id="399c7-153">See also the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method.</span></span></para>
-          <para><span data-ttu-id="399c7-154">
-            <b>注意</b>: 为富文本内容控件创建映射将导致运行时错误。</span><span class="sxs-lookup"><span data-stu-id="399c7-154">
+        <param name="XPath"><span data-ttu-id="06c48-p112">指定 XPath 字符串，该字符串表示内容控件所映射到的 XML 节点。无效的 XPath 字符串将导致运行时错误。</span><span class="sxs-lookup"><span data-stu-id="06c48-p112">Specifies an XPath string that represents the XML node to which to map the content control. An invalid XPath string causes a run-time error.</span></span></param>
+        <param name="PrefixMapping"><span data-ttu-id="06c48-143">指定在查询参数中提供的表达式时要使用的前缀映射 <paramref name="XPath" /> 。</span><span class="sxs-lookup"><span data-stu-id="06c48-143">Specifies the prefix mappings to use when querying the expression provided in the <paramref name="XPath" /> parameter.</span></span> <span data-ttu-id="06c48-144">如果省略，Word 将使用当前文档中指定的自定义 XML 部件的前缀映射集。</span><span class="sxs-lookup"><span data-stu-id="06c48-144">If omitted, Word uses the set of prefix mappings for the specified custom XML part in the current document.</span></span></param>
+        <param name="Source"><span data-ttu-id="06c48-p114">指定要将内容控件映射到所需的自定义 XML 数据。如果省略此参数，则 XPath 计算依据在当前文档中的所有自定义 XML，使用 XPath 解析的 XML 节点的第一个 <b>CustomXMLPart</b> 建立映射。 </span><span class="sxs-lookup"><span data-stu-id="06c48-p114">Specifies the desired custom XML data to which to map the content control. If this parameter is omitted, the XPath is evaluated against all custom XML in the current document, and the mapping is established with the first <b>CustomXMLPart</b> in which the XPath resolves to an XML node.</span></span></param>
+        <summary><span data-ttu-id="06c48-147">允许创建或更改的内容控件的 XML 映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-147">Allows creating or changing the XML mapping on a content control.</span></span> <span data-ttu-id="06c48-148">如果 Microsoft Office Word 将内容控件映射到文档的自定义 XML 数据存储区中的自定义 XML 节点，<b>则返回 True</b> 。</span><span class="sxs-lookup"><span data-stu-id="06c48-148">Returns <b>True</b> if Microsoft Office Word maps the content control to a custom XML node in the document’s custom XML data store.</span></span></summary>
+        <returns><span data-ttu-id="06c48-149">Boolean</span><span class="sxs-lookup"><span data-stu-id="06c48-149">Boolean</span></span></returns>
+        <remarks><para><span data-ttu-id="06c48-p116">如果 XML 映射已经存在，Word 将替换现有 XML 映射，并以新映射的 XML 节点的内容替换内容控件的文本。如果指定的 XPath 的计算结果不是指定的自定义 XML 部件中的 XML 节点，那么仍可以指定映射，并且将创建一个映射。当指定的 XPath 的计算结果为指定的自定义 XML 部件中的 XML 节点时，此映射将自动链接。</span><span class="sxs-lookup"><span data-stu-id="06c48-p116">If the XML mapping already exists, Word replaces the existing XML mapping and the contents of the new mapped XML node replaces the text of the content control. If the specified XPath does not evaluate to an XML node in the specified custom XML part or parts, you can still specify the mapping, and one will be created. This mapping  automatically links when the specified XPath would evaluate to an XML node in the specified custom XML parts.</span></span></para>
+          <para><span data-ttu-id="06c48-153">另请参阅 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> 方法。</span><span class="sxs-lookup"><span data-stu-id="06c48-153">See also the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method.</span></span></para>
+          <para><span data-ttu-id="06c48-154">
+            <b>注意</b>：为富文本内容控件创建映射将导致运行时错误。</span><span class="sxs-lookup"><span data-stu-id="06c48-154">
             <b>Note</b>: Creating a mapping for a rich-text content control causes a run-time error.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="399c7-155">以下示例插入自定义 XML 部件并为该自定义部件设置 XML，然后在文档开头插入两个内容控件，并将控件的内容映射为自定义部件中 XML 元素的内容。</span><span class="sxs-lookup"><span data-stu-id="399c7-155">The following example inserts a custom XML part and sets the XML for the custom part, and then inserts two content controls at the beginning of the document and maps the contents of the controls to the contents of XML elements in the custom part.</span></span></para>
+        <example><para><span data-ttu-id="06c48-155">以下示例插入自定义 XML 部件并为该自定义部件设置 XML，然后在文档开头插入两个内容控件，并将控件的内容映射为自定义部件中 XML 元素的内容。</span><span class="sxs-lookup"><span data-stu-id="06c48-155">The following example inserts a custom XML part and sets the XML for the custom part, and then inserts two content controls at the beginning of the document and maps the contents of the controls to the contents of XML elements in the custom part.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -15304,6 +15314,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetMappingByNode (Node As CustomXMLNode) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetMappingByNode(Microsoft::Office::Core::CustomXMLNode ^ Node);" />
+      <MemberSignature Language="F#" Value="abstract member SetMappingByNode : Microsoft.Office.Core.CustomXMLNode -&gt; bool" Usage="xMLMapping.SetMappingByNode Node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -15321,15 +15332,15 @@ objCustomControl.XMLMapping.&lt;/span&gt;
         <Parameter Name="Node" Type="Microsoft.Office.Core.CustomXMLNode" />
       </Parameters>
       <Docs>
-        <param name="Node"><span data-ttu-id="399c7-156">指定当前内容控件所映射到的 XML 节点。</span><span class="sxs-lookup"><span data-stu-id="399c7-156">Specifies the XML node to which to map the current content control.</span></span></param>
-        <summary><span data-ttu-id="399c7-157">允许创建或更改内容控件上的 XML 数据映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-157">Allows creating or changing the XML data mapping on a content control.</span></span> <span data-ttu-id="399c7-158">如果 Microsoft Office Word 将内容控件映射到文档的自定义 XML 数据存储区中的自定义 XML 节点,<b>则返回 True</b> 。</span><span class="sxs-lookup"><span data-stu-id="399c7-158">Returns <b>True</b> if Microsoft Office Word maps the content control to a custom XML node in the document’s custom XML data store.</span></span></summary>
-        <returns><span data-ttu-id="399c7-159">Boolean</span><span class="sxs-lookup"><span data-stu-id="399c7-159">Boolean</span></span></returns>
-        <remarks><para><span data-ttu-id="399c7-160">如果 XML 映射已经存在，则 Word 将替换现有 XML 映射，并以新映射的 XML 节点的内容替换内容控件的文本。</span><span class="sxs-lookup"><span data-stu-id="399c7-160">If the XML mapping already exists, then Word replaces the existing XML mapping, and the contents of the new mapped XML node replaces the text of the content control.</span></span> <span data-ttu-id="399c7-161">另请参阅<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法。</span><span class="sxs-lookup"><span data-stu-id="399c7-161">See also the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method.</span></span></para>
-          <para><span data-ttu-id="399c7-162">
-            <b>注意</b>: 为富文本内容控件创建映射将导致运行时错误。</span><span class="sxs-lookup"><span data-stu-id="399c7-162">
+        <param name="Node"><span data-ttu-id="06c48-156">指定当前内容控件所映射到的 XML 节点。</span><span class="sxs-lookup"><span data-stu-id="06c48-156">Specifies the XML node to which to map the current content control.</span></span></param>
+        <summary><span data-ttu-id="06c48-157">允许创建或更改内容控件上的 XML 数据映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-157">Allows creating or changing the XML data mapping on a content control.</span></span> <span data-ttu-id="06c48-158">如果 Microsoft Office Word 将内容控件映射到文档的自定义 XML 数据存储区中的自定义 XML 节点，<b>则返回 True</b> 。</span><span class="sxs-lookup"><span data-stu-id="06c48-158">Returns <b>True</b> if Microsoft Office Word maps the content control to a custom XML node in the document’s custom XML data store.</span></span></summary>
+        <returns><span data-ttu-id="06c48-159">Boolean</span><span class="sxs-lookup"><span data-stu-id="06c48-159">Boolean</span></span></returns>
+        <remarks><para><span data-ttu-id="06c48-160">如果 XML 映射已经存在，则 Word 将替换现有 XML 映射，并以新映射的 XML 节点的内容替换内容控件的文本。</span><span class="sxs-lookup"><span data-stu-id="06c48-160">If the XML mapping already exists, then Word replaces the existing XML mapping, and the contents of the new mapped XML node replaces the text of the content control.</span></span> <span data-ttu-id="06c48-161">另请参阅 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> 方法。</span><span class="sxs-lookup"><span data-stu-id="06c48-161">See also the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method.</span></span></para>
+          <para><span data-ttu-id="06c48-162">
+            <b>注意</b>：为富文本内容控件创建映射将导致运行时错误。</span><span class="sxs-lookup"><span data-stu-id="06c48-162">
             <b>Note</b>: Creating a mapping for a rich-text content control causes a run-time error.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="399c7-163">以下示例设置文档作者这一内置文档属性，在活动文档中插入新的内容控件，然后将此控件的 XML 映射设置为该内置文档属性。</span><span class="sxs-lookup"><span data-stu-id="399c7-163">The following example sets the built-in document property for the document author, inserts a new content control into the active document, and then sets the XML mapping for the control to the built-in document property.</span></span></para>
+        <example><para><span data-ttu-id="06c48-163">以下示例设置文档作者这一内置文档属性，在活动文档中插入新的内容控件，然后将此控件的 XML 映射设置为该内置文档属性。</span><span class="sxs-lookup"><span data-stu-id="06c48-163">The following example sets the built-in document property for the document author, inserts a new content control into the active document, and then sets the XML mapping for the control to the built-in document property.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -17251,7 +17262,7 @@ Set objMap = objcc.XMLMapping
 
 
 blnMap = objMap.SetMappingByNode(objNode)&lt;/span&gt;</code>
-          <para><span data-ttu-id="399c7-164">以下示例创建自定义 XML 部件，然后创建两个内容控件，并将每个内容控件映射到自定义 XML 中的特定节点。</span><span class="sxs-lookup"><span data-stu-id="399c7-164">The following example creates a custom XML part, and then creates two content controls and maps each content control to a specific node within the custom XML.</span></span></para>
+          <para><span data-ttu-id="06c48-164">以下示例创建自定义 XML 部件，然后创建两个内容控件，并将每个内容控件映射到自定义 XML 中的特定节点。</span><span class="sxs-lookup"><span data-stu-id="06c48-164">The following example creates a custom XML part, and then creates two content controls and maps each content control to a specific node within the custom XML.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -19825,6 +19836,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.XPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XPath : string" Usage="Microsoft.Office.Interop.Word.XMLMapping.XPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -19842,11 +19854,11 @@ objCustomControl.XMLMapping.&lt;/span&gt;
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="399c7-165">返回一个 <b>字符串</b> ，表示为 XML 映射，其计算结果为当前映射的 XML 节点的 XPath。</span><span class="sxs-lookup"><span data-stu-id="399c7-165">Returns a <b>String</b> that represents the XPath for the XML mapping, which evaluates to the currently mapped XML node.</span></span> <span data-ttu-id="399c7-166">只读。</span><span class="sxs-lookup"><span data-stu-id="399c7-166">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="06c48-165">返回一个 <b>字符串</b> ，表示为 XML 映射，其计算结果为当前映射的 XML 节点的 XPath。</span><span class="sxs-lookup"><span data-stu-id="06c48-165">Returns a <b>String</b> that represents the XPath for the XML mapping, which evaluates to the currently mapped XML node.</span></span> <span data-ttu-id="06c48-166">只读。</span><span class="sxs-lookup"><span data-stu-id="06c48-166">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="399c7-167">若要设置内容控件的映射, 请使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法或<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法。</span><span class="sxs-lookup"><span data-stu-id="399c7-167">To set mapping for a content control, use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method or the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method.</span></span> <span data-ttu-id="399c7-168">如果映射不是活动的，则使用此属性将返回错误。</span><span class="sxs-lookup"><span data-stu-id="399c7-168">If the mapping is not active, using this property returns an error.</span></span></para>
+        <remarks><para><span data-ttu-id="06c48-167">若要设置内容控件的映射，请使用 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> 方法或 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> 方法。</span><span class="sxs-lookup"><span data-stu-id="06c48-167">To set mapping for a content control, use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method or the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method.</span></span> <span data-ttu-id="06c48-168">如果映射不是活动的，则使用此属性将返回错误。</span><span class="sxs-lookup"><span data-stu-id="06c48-168">If the mapping is not active, using this property returns an error.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="399c7-p121">以下示例检查活动文档中第一个内容控件是否是日期控件，以及 XPath 字符串是否设置为特定的内置文档属性。如果 XPath 不匹配并且控件是日期控件，它将设置到该控件的映射。</span><span class="sxs-lookup"><span data-stu-id="399c7-p121">The following example checks whether the first content control in the active document is a date control and whether the XPath string is set to a specific built-in document property. It then sets the mapping to the control, if the XPath does not match and the control is a date control.</span></span></para>
+        <example><para><span data-ttu-id="06c48-p121">以下示例检查活动文档中第一个内容控件是否是日期控件，以及 XPath 字符串是否设置为特定的内置文档属性。如果 XPath 不匹配并且控件是日期控件，它将设置到该控件的映射。</span><span class="sxs-lookup"><span data-stu-id="06c48-p121">The following example checks whether the first content control in the active document is a date control and whether the XPath string is set to a specific built-in document property. It then sets the mapping to the control, if the XPath does not match and the control is a date control.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
