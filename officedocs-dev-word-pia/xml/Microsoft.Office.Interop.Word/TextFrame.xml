@@ -1,9 +1,10 @@
 <Type Name="TextFrame" FullName="Microsoft.Office.Interop.Word.TextFrame">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9dc205fa2eb96a394cd184a865635344805cf9be" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143817" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7d3c2759c678340f923e96191454ec4ad2f716d0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926036" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextFrame" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextFrame" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextFrame" />
   <TypeSignature Language="C++ CLI" Value="public interface class TextFrame" />
+  <TypeSignature Language="F#" Value="type TextFrame = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,13 +19,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象中的文本框架。 包含文本框架中的文本以及控制文本框架的边距和方向的属性。</summary>
-    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" />属性可返回形状的<b>TextFrame</b>对象。 该<see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" />属性返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示指定的文本框架中的文本范围。</para>
+    <summary>代表对象中的文本框架 <see cref="T:Microsoft.Office.Interop.Word.Shape" /> 。 包含文本框架中的文本以及控制文本框架的边距和方向的属性。</summary>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" /> 属性可返回形状的<b>TextFrame</b>对象。 该 <see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" /> 属性返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，表示指定的文本框架中的文本范围。</para>
       <para>
-        <b>注释</b> 某些形状不支持附加文本 (例如, 线条、任意多边形、图片和 OLE 对象)。 如果试图返回或设置用于控制这些对象的文本框架中文本的属性，那么将发生错误。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.TextFrame.HasText" />属性来确定文本框架是否包含文本。</para>
-      <para>文本框架可以链接在一起以使文本从一个形状的文字框架排入另一个形状的文字框架。 使用<see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" />和<see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" />属性链接文本框架。</para>
-      <para>使用该<see cref="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" />属性返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 该对象表示在链接的文本框架之间流动的整篇文章。</para>
+        <b>注释</b> 某些形状不支持附加文本（例如，线条、任意多边形、图片和 OLE 对象）。 如果试图返回或设置用于控制这些对象的文本框架中文本的属性，那么将发生错误。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.TextFrame.HasText" /> 属性来确定文本框架是否包含文本。</para>
+      <para>文本框架可以链接在一起以使文本从一个形状的文字框架排入另一个形状的文字框架。 使用 <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" /> 和 <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" /> 属性链接文本框架。</para>
+      <para>使用该 <see cref="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" /> 属性返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，该对象表示在链接的文本框架之间流动的整篇文章。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.TextFrame.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AutoSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : int with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.AutoSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -82,7 +85,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Integer</b>类型的值, 该值表示是否自动调整文本框架的大小。</summary>
+        <summary>返回或设置一个<b>Integer</b>类型的值，该值表示是否自动调整文本框架的大小。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextFrame.BreakForwardLink" />
       <MemberSignature Language="VB.NET" Value="Public Sub BreakForwardLink ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BreakForwardLink();" />
+      <MemberSignature Language="F#" Value="abstract member BreakForwardLink : unit -&gt; unit" Usage="textFrame.BreakForwardLink " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As TextColumn2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::TextColumn2 ^ Column { Microsoft::Office::Core::TextColumn2 ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : Microsoft.Office.Core.TextColumn2" Usage="Microsoft.Office.Interop.Word.TextFrame.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -136,8 +141,8 @@
         <ReturnType>Microsoft.Office.Core.TextColumn2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取表示<see cref="T:Microsoft.Office.Core.TextColumn2" />指定的文本框架的列的对象。</summary>
-        <value>代表<see cref="T:Microsoft.Office.Core.TextColumn2" />指定文本框架的列的对象。</value>
+        <summary>获取 <see cref="T:Microsoft.Office.Core.TextColumn2" /> 表示指定的文本框架的列的对象。</summary>
+        <value><see cref="T:Microsoft.Office.Core.TextColumn2" />代表指定文本框架的列的对象。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainingRange As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ ContainingRange { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContainingRange : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.TextFrame.ContainingRange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -165,7 +171,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示包含指定的文本框架所属的一系列形状中的整篇文章。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，表示包含指定的文本框架所属的一系列形状中的整篇文章。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TextFrame.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -195,8 +202,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextFrame.DeleteText" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteText ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteText();" />
+      <MemberSignature Language="F#" Value="abstract member DeleteText : unit -&gt; unit" Usage="textFrame.DeleteText " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -231,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.HasText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasText As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HasText { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasText : int" Usage="Microsoft.Office.Interop.Word.TextFrame.HasText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -259,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.HorizontalAnchor" />
       <MemberSignature Language="VB.NET" Value="Public Property HorizontalAnchor As MsoHorizontalAnchor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoHorizontalAnchor HorizontalAnchor { Microsoft::Office::Core::MsoHorizontalAnchor get(); void set(Microsoft::Office::Core::MsoHorizontalAnchor value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalAnchor : Microsoft.Office.Core.MsoHorizontalAnchor with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.HorizontalAnchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -281,7 +291,7 @@
       <Docs>
         <summary>获取或设置文本框架中文本的水平对齐方式。</summary>
         <value>文本框架中文本的水平对齐方式。</value>
-        <remarks><para>读/写<see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" />。</para>
+        <remarks><para>读/写 <see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -291,6 +301,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.MarginBottom" />
       <MemberSignature Language="VB.NET" Value="Public Property MarginBottom As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float MarginBottom { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.MarginBottom : single with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.MarginBottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -322,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.MarginLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property MarginLeft As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float MarginLeft { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.MarginLeft : single with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.MarginLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -353,6 +365,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.MarginRight" />
       <MemberSignature Language="VB.NET" Value="Public Property MarginRight As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float MarginRight { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.MarginRight : single with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.MarginRight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -384,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.MarginTop" />
       <MemberSignature Language="VB.NET" Value="Public Property MarginTop As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float MarginTop { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.MarginTop : single with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.MarginTop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -415,6 +429,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Next" />
       <MemberSignature Language="VB.NET" Value="Public Property Next As TextFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextFrame ^ Next { Microsoft::Office::Interop::Word::TextFrame ^ get(); void set(Microsoft::Office::Interop::Word::TextFrame ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Next : Microsoft.Office.Interop.Word.TextFrame with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -446,6 +461,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.NoTextRotation" />
       <MemberSignature Language="VB.NET" Value="Public Property NoTextRotation As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState NoTextRotation { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.NoTextRotation : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.NoTextRotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -466,9 +482,9 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置在旋转形状时, 文本框架中的文本是否不旋转。</summary>
+        <summary>获取或设置在旋转形状时，文本框架中的文本是否不旋转。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoTriState" /> 对象。</value>
-        <remarks><para>读/写<see cref="T:Microsoft.Office.Core.MsoTriState" />。 <b>MsoTriState</b> 常量 <b>msoFalse</b> ， <b>则值为 msoTrue</b> 可以用于设置此属性。</para>
+        <remarks><para>读/写 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。 <b>MsoTriState</b> 常量 <b>msoFalse</b> ， <b>则值为 msoTrue</b> 可以用于设置此属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -478,6 +494,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Orientation" />
       <MemberSignature Language="VB.NET" Value="Public Property Orientation As MsoTextOrientation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTextOrientation Orientation { Microsoft::Office::Core::MsoTextOrientation get(); void set(Microsoft::Office::Core::MsoTextOrientation value); };" />
+      <MemberSignature Language="F#" Value="member this.Orientation : Microsoft.Office.Core.MsoTextOrientation with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.Orientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -524,7 +541,7 @@
             <b>msoTextOrientationVerticalFarEast</b>
           </para>
           <para>由于您选择或安装的语言支持不同（例如美国英语），上述部分常量可能无法使用。</para>
-          <para>您可以设置文本框架或者恰好位于文本框架内的所选内容或区域的方向。 有关文本框架和文本框之间的差异的信息, 请参阅<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />对象。</para>
+          <para>您可以设置文本框架或者恰好位于文本框架内的所选内容或区域的方向。 有关文本框架和文本框之间的差异的信息，请参阅 <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> 对象。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -534,6 +551,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Overflowing" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Overflowing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Overflowing { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Overflowing : bool" Usage="Microsoft.Office.Interop.Word.TextFrame.Overflowing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -562,6 +580,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ Parent { Microsoft::Office::Interop::Word::Shape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : Microsoft.Office.Interop.Word.Shape" Usage="Microsoft.Office.Interop.Word.TextFrame.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -579,7 +598,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shape" />对象, 表示文本框架的父形状。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Shape" /> 对象，表示文本框架的父形状。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -590,6 +609,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.PathFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property PathFormat As MsoPathFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoPathFormat PathFormat { Microsoft::Office::Core::MsoPathFormat get(); void set(Microsoft::Office::Core::MsoPathFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.PathFormat : Microsoft.Office.Core.MsoPathFormat with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.PathFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -612,7 +632,7 @@
       <Docs>
         <summary>获取或设置指定的文本框架的路径类型。</summary>
         <value>指定的文本框架的路径类型。</value>
-        <remarks><para>此属性的值可以是下列<see cref="T:Microsoft.Offic.Core.MsoPathType" />常量之一:</para>
+        <remarks><para>此属性的值可以是下列 <see cref="T:Microsoft.Offic.Core.MsoPathType" /> 常量之一：</para>
           <list type="bullet">
             <item>
               <para>
@@ -654,6 +674,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Previous" />
       <MemberSignature Language="VB.NET" Value="Public Property Previous As TextFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextFrame ^ Previous { Microsoft::Office::Interop::Word::TextFrame ^ get(); void set(Microsoft::Office::Interop::Word::TextFrame ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Previous : Microsoft.Office.Interop.Word.TextFrame with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.Previous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -685,6 +706,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextRange As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ TextRange { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextRange : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.TextFrame.TextRange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -702,7 +724,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示指定的文本框架中的文本。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，表示指定的文本框架中的文本。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -713,6 +735,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.ThreeD" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreeD As ThreeDFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ThreeDFormat ^ ThreeD { Microsoft::Office::Interop::Word::ThreeDFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThreeD : Microsoft.Office.Interop.Word.ThreeDFormat" Usage="Microsoft.Office.Interop.Word.TextFrame.ThreeD" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -730,8 +753,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象, 该对象包含指定文本框架的三维效果格式设置属性。</summary>
-        <value>一个<see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" />对象, 包含指定文本框架的三维效果格式设置属性。</value>
+        <summary>获取一个 <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> 对象，该对象包含指定文本框架的三维效果格式设置属性。</summary>
+        <value>一个 <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> 对象，包含指定文本框架的三维效果格式设置属性。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -742,6 +765,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextFrame.ValidLinkTarget(Microsoft.Office.Interop.Word.TextFrame)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValidLinkTarget (TargetTextFrame As TextFrame) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidLinkTarget(Microsoft::Office::Interop::Word::TextFrame ^ TargetTextFrame);" />
+      <MemberSignature Language="F#" Value="abstract member ValidLinkTarget : Microsoft.Office.Interop.Word.TextFrame -&gt; bool" Usage="textFrame.ValidLinkTarget TargetTextFrame" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -759,10 +783,10 @@
         <Parameter Name="TargetTextFrame" Type="Microsoft.Office.Interop.Word.TextFrame" />
       </Parameters>
       <Docs>
-        <param name="TargetTextFrame">必需<see cref="T:Microsoft.Office.Interop.Word.TextFrame" />的对象。 要将指定的文本框架链接到的目标文本框架。</param>
+        <param name="TargetTextFrame">必需 <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> 的对象。 要将指定的文本框架链接到的目标文本框架。</param>
         <summary>Determines whether the text frame of one shape can be linked to the text frame of another shape.</summary>
         <returns>To be added.</returns>
-        <remarks><para>如果<paramref name="TargetTextFrame" />是有效的目标, 则<b>TextFrame</b>属性返回<b>True</b> 。 如果<paramref name="TargetTextFrame" />已包含文本或已链接, 或者形状不支持附加文本, 则返回<b>False</b> 。</para>
+        <remarks><para>如果<b>TextFrame</b>是有效的目标，则 TextFrame 属性返回<b>True</b> <paramref name="TargetTextFrame" /> 。 如果<b>False</b> <paramref name="TargetTextFrame" /> 已包含文本或已链接，或者形状不支持附加文本，则返回 False。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -772,6 +796,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.VerticalAnchor" />
       <MemberSignature Language="VB.NET" Value="Public Property VerticalAnchor As MsoVerticalAnchor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoVerticalAnchor VerticalAnchor { Microsoft::Office::Core::MsoVerticalAnchor get(); void set(Microsoft::Office::Core::MsoVerticalAnchor value); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalAnchor : Microsoft.Office.Core.MsoVerticalAnchor with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.VerticalAnchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -803,6 +828,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.WarpFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property WarpFormat As MsoWarpFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoWarpFormat WarpFormat { Microsoft::Office::Core::MsoWarpFormat get(); void set(Microsoft::Office::Core::MsoWarpFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.WarpFormat : Microsoft.Office.Core.MsoWarpFormat with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.WarpFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -823,9 +849,9 @@
         <ReturnType>Microsoft.Office.Core.MsoWarpFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置指定的文本框架的弯曲格式 (文本的变形方式)。</summary>
-        <value>指定文本框架的变形格式 (文本的变形方式)。</value>
-        <remarks><para>读/写<see cref="T:Microsoft.Office.Core.MsoWarpFormat" />。</para>
+        <summary>获取或设置指定的文本框架的弯曲格式（文本的变形方式）。</summary>
+        <value>指定文本框架的变形格式（文本的变形方式）。</value>
+        <remarks><para>读/写 <see cref="T:Microsoft.Office.Core.MsoWarpFormat" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -835,6 +861,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.WordWrap" />
       <MemberSignature Language="VB.NET" Value="Public Property WordWrap As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WordWrap { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.WordWrap : int with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.WordWrap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -857,8 +884,8 @@
       <Docs>
         <summary>如果 Microsoft Word 在指定段落或文本框架的西文单词中间断字换行，则该属性值为 <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks><para>如果仅某些指定段落或文本框架中的<b>WordWrap</b>属性设置为<b>True</b> , 则该属性返回<b>wdUndefined</b> 。</para>
-          <para>此用法可能对您不可用, 具体取决于您选择或安装的语言支持 (例如, 美国英语)。</para>
+        <remarks><para>如果仅某些指定段落或文本框架中的<b>WordWrap</b>属性设置为<b>True</b> ，则该属性返回<b>wdUndefined</b> 。</para>
+          <para>此用法可能对您不可用，具体取决于您选择或安装的语言支持（例如，美国英语）。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

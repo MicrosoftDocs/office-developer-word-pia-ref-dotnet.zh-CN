@@ -1,9 +1,10 @@
 <Type Name="Subdocuments" FullName="Microsoft.Office.Interop.Word.Subdocuments">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ddd1247b7607cf6fdec9c86653bd6de16fa1156f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143915" /></Metadata><TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="76b39d3cbb205306166b67185a253b1d5ab3eb04" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926204" /></Metadata><TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Subdocuments implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Subdocuments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Subdocuments&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Subdocuments : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Subdocuments = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,10 +23,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表某一<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />区域或文档中的子文档的对象的集合。</summary>
-    <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.Range" />或<see cref="T:Microsoft.Office.Interop.Word.Document" />对象的<b>子文档</b>属性可返回<b>子文档</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> or <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" />方法可将子文档添加到文档中。</para>
-      <para>使用<b>子文档</b>(<paramref name="index" />), <paramref name="index" />其中是索引号, 返回一个<b>子文档</b>对象。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Subdocument" />代表某一区域或文档中的子文档的对象的集合。</summary>
+    <remarks><para>使用或对象的<b>子文档</b>属性 <see cref="T:Microsoft.Office.Interop.Word.Range" /> <see cref="T:Microsoft.Office.Interop.Word.Document" /> 可返回<b>子文档</b>集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> or <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" /> 方法可将子文档添加到文档中。</para>
+      <para>使用<b>子文档</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是索引号，返回一个<b>子文档</b>对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Subdocument AddFromFile([in]object&amp; Name, [in]object&amp; ConfirmConversions, [in]object&amp; ReadOnly, [in]object&amp; PasswordDocument, [in]object&amp; PasswordTemplate, [in]object&amp; Revert, [in]object&amp; WritePasswordDocument, [in]object&amp; WritePasswordTemplate) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddFromFile (ByRef Name As Object, Optional ByRef ConfirmConversions As Object, Optional ByRef ReadOnly As Object, Optional ByRef PasswordDocument As Object, Optional ByRef PasswordTemplate As Object, Optional ByRef Revert As Object, Optional ByRef WritePasswordDocument As Object, Optional ByRef WritePasswordTemplate As Object) As Subdocument" />
+      <MemberSignature Language="F#" Value="abstract member AddFromFile : obj * obj * obj * obj * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.Subdocument" Usage="subdocuments.AddFromFile (Name, ConfirmConversions, ReadOnly, PasswordDocument, PasswordTemplate, Revert, WritePasswordDocument, WritePasswordTemplate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,28 +50,28 @@
         <ReturnType>Microsoft.Office.Interop.Word.Subdocument</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Name" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ConfirmConversions" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PasswordDocument" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PasswordTemplate" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Revert" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="WritePasswordDocument" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Name" Type="System.Object" RefType="ref" />
+        <Parameter Name="ConfirmConversions" Type="System.Object" RefType="ref" />
+        <Parameter Name="ReadOnly" Type="System.Object" RefType="ref" />
+        <Parameter Name="PasswordDocument" Type="System.Object" RefType="ref" />
+        <Parameter Name="PasswordTemplate" Type="System.Object" RefType="ref" />
+        <Parameter Name="Revert" Type="System.Object" RefType="ref" />
+        <Parameter Name="WritePasswordDocument" Type="System.Object" RefType="ref" />
+        <Parameter Name="WritePasswordTemplate" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Name">必需的<b>对象</b>。 需要插入主文档中的子文档的文件名。</param>
-        <param name="ConfirmConversions">可选<b>对象</b>。 如果为<b>True</b> , 则在文件不是 Microsoft Word 格式时, 确认转换文件对话框中的文件转换。</param>
+        <param name="ConfirmConversions">可选<b>对象</b>。 如果为<b>True</b> ，则在文件不是 Microsoft Word 格式时，确认转换文件对话框中的文件转换。</param>
         <param name="ReadOnly">可选<b>对象</b>。 <b>为</b> 要插入的子文档为只读文档。</param>
-        <param name="PasswordDocument">可选<b>对象</b>。 打开子文档时所需的密码 (如果子文档受密码保护)。</param>
+        <param name="PasswordDocument">可选<b>对象</b>。 打开子文档时所需的密码（如果子文档受密码保护）。</param>
         <param name="PasswordTemplate">可选<b>对象</b>。 如果模板已用密码加以保护，则本参数是打开子文档模板所需的密码。</param>
-        <param name="Revert">可选<b>对象</b>。 控制如果<paramref name="Name" />是打开文档的文件名, 将会发生什么情况。 <b>为</b> 插入子文档的已保存的版本。 <b>假</b> 以插入子文档时，其中可能包含未保存的更改的打开版本。</param>
-        <param name="WritePasswordDocument">可选<b>对象</b>。 保存对文档文件所做的更改 (如果文档处于写保护状态时) 所需的密码。</param>
-        <param name="WritePasswordTemplate">可选<b>对象</b>。 保存对子文档的模板所做的更改 (如果模板处于写保护状态) 所需的密码。</param>
-        <summary>将指定的子文档添加到主控文档中所选内容的开始处, <see cref="T:Microsoft.Office.Interop.Word.Subdocument" />并返回一个对象。</summary>
+        <param name="Revert">可选<b>对象</b>。 控制如果是打开文档的文件名，将会发生什么情况 <paramref name="Name" /> 。 <b>为</b> 插入子文档的已保存的版本。 <b>假</b> 以插入子文档时，其中可能包含未保存的更改的打开版本。</param>
+        <param name="WritePasswordDocument">可选<b>对象</b>。 保存对文档文件所做的更改（如果文档处于写保护状态时）所需的密码。</param>
+        <param name="WritePasswordTemplate">可选<b>对象</b>。 保存对子文档的模板所做的更改（如果模板处于写保护状态）所需的密码。</param>
+        <summary>将指定的子文档添加到主控文档中所选内容的开始处，并返回一个 <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> 对象。</summary>
         <returns>To be added.</returns>
         <remarks><para>
-            <b>注释</b> 如果活动视图不是大纲视图或主控文档视图, 则会发生错误。</para>
+            <b>注释</b> 如果活动视图不是大纲视图或主控文档视图，则会发生错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -77,7 +79,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Subdocument AddFromRange (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Subdocument AddFromRange([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddFromRange (Range As Range) As Subdocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Subdocument ^ AddFromRange(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member AddFromRange : Microsoft.Office.Interop.Word.Range -&gt; Microsoft.Office.Interop.Word.Subdocument" Usage="subdocuments.AddFromRange Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -95,11 +99,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 用于创建一个或多个子文档的<b>Range</b>对象。</param>
-        <summary>根据指定区域中的文本创建一个或多个子文档, 并返回<see cref="T:Microsoft.Office.Interop.Word.Subdocument" />一个对象。</summary>
+        <param name="Range">必需 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 的对象。 用于创建一个或多个子文档的<b>Range</b>对象。</param>
+        <summary>根据指定区域中的文本创建一个或多个子文档，并返回一个 <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> 对象。</summary>
         <returns>To be added.</returns>
         <remarks><para>
-            <b>注释</b> 区域必须以内置标题级别样式之一 (例如, "标题 1") 开头。 如果段落具有与区域开始处相同的标题格式，则为该段创建子文档。 子文档随主文档一道保存并自动以文件第一行中的文字为名。</para>
+            <b>注释</b> 区域必须以内置标题级别样式之一（例如，"标题 1"）开头。 如果段落具有与区域开始处相同的标题格式，则为该段创建子文档。 子文档随主文档一道保存并自动以文件第一行中的文字为名。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Subdocuments.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -126,7 +131,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Subdocuments.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Subdocuments.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -184,8 +191,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -195,6 +202,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="subdocuments.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -220,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Expanded" />
       <MemberSignature Language="VB.NET" Value="Public Property Expanded As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Expanded { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Expanded : bool with get, set" Usage="Microsoft.Office.Interop.Word.Subdocuments.Expanded" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -251,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="subdocuments.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -283,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Subdocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Subdocument ^ default[int] { Microsoft::Office::Interop::Word::Subdocument ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Subdocument" Usage="Microsoft.Office.Interop.Word.Subdocuments.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -314,6 +325,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Merge([in]object&amp; FirstSubdocument, [in]object&amp; LastSubdocument) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.Merge(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Merge (Optional ByRef FirstSubdocument As Object, Optional ByRef LastSubdocument As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Merge : obj * obj -&gt; unit" Usage="subdocuments.Merge (FirstSubdocument, LastSubdocument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -328,8 +340,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="FirstSubdocument" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="LastSubdocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FirstSubdocument" Type="System.Object" RefType="ref" />
+        <Parameter Name="LastSubdocument" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="FirstSubdocument">可选<b>对象</b>。 要合并的原文档的路径和文件名。</param>
@@ -344,6 +356,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocuments.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Subdocuments.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -372,6 +385,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocuments.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="subdocuments.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -389,7 +403,7 @@
       <Docs>
         <summary>选择指定的对象。</summary>
         <remarks><para>
-            <b>注释</b> 使用此方法后, 使用<b>Selection</b>属性可处理选定的项目。</para>
+            <b>注释</b> 使用此方法后，使用<b>Selection</b>属性可处理选定的项目。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

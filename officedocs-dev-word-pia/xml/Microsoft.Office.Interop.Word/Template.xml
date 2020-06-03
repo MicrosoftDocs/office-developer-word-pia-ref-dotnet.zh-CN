@@ -1,9 +1,10 @@
 <Type Name="Template" FullName="Microsoft.Office.Interop.Word.Template">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ab6c90166c80860b2142f0d365e15d418af64385" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143852" /></Metadata><TypeSignature Language="C#" Value="public interface Template" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7c85aa1c5e8ca8c343d59cf4727bce5c3dd3a49a" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926057" /></Metadata><TypeSignature Language="C#" Value="public interface Template" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Template" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Template" />
   <TypeSignature Language="VB.NET" Value="Public Interface Template" />
   <TypeSignature Language="C++ CLI" Value="public interface class Template" />
+  <TypeSignature Language="F#" Value="type Template = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,25 +20,25 @@
   </Attributes>
   <Docs>
     <summary>代表一个文档模板。</summary>
-    <remarks><para><b>模板</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Templates" />集合的一个成员。 该 <b>模板</b> 集合包括所有可用的 <b>模板</b> 对象。</para>
-      <para>使用<b>模板</b>(<paramref name="index" />) (其中<paramref name="index" />是模板名称或索引号) 可返回单个<b>模板</b>对象。 索引号代表模板的 <b>模板</b> 集合中的位置。</para>
+    <remarks><para><b>模板</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.Templates" /> 。 该 <b>模板</b> 集合包括所有可用的 <b>模板</b> 对象。</para>
+      <para>使用<b>模板</b>（ <paramref name="index" /> ）（其中 <paramref name="index" /> 是模板名称或索引号）可返回单个<b>模板</b>对象。 索引号代表模板的 <b>模板</b> 集合中的位置。</para>
       <para><b>Add</b> 方法对 <b>Templates</b> 集合无效。 相反，您可以将模板添加到 <b>模板</b> 集合通过执行下列任一操作︰</para>
       <list type="bullet">
         <item>
-          <para>将<see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />方法与<see cref="T:Microsoft.Office.Interop.Word.Documents" />集合结合使用, 打开基于模板或模板的文档</para>
+          <para>将 <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> 方法与集合结合使用， <see cref="T:Microsoft.Office.Interop.Word.Documents" /> 打开基于模板或模板的文档</para>
         </item>
         <item>
-          <para>将<see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" />方法与<b>Documents</b>集合结合使用, 打开基于模板的新文档</para>
+          <para>将 <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> 方法与<b>Documents</b>集合结合使用，打开基于模板的新文档</para>
         </item>
         <item>
-          <para>将<see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" />方法与<see cref="T:Microsoft.Office.Interop.Word.AddIns" />集合结合使用以加载全局模板</para>
+          <para>将 <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> 方法与集合结合使用 <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> 以加载全局模板</para>
         </item>
         <item>
-          <para>将<see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" />属性与<see cref="T:Microsoft.Office.Interop.Word.Document" />对象结合使用以将模板附加到文档</para>
+          <para>将 <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> 属性与对象结合使用 <see cref="T:Microsoft.Office.Interop.Word.Document" /> 以将模板附加到文档</para>
         </item>
       </list>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" />属性可返回一个代表 Normal 模板的模板对象。 使用<see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" />属性返回附加到指定文档的模板。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" />属性可返回或设置用户或工作组模板的位置 (即您要在其中存储这些模板的文件夹)。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> 属性可返回一个代表 Normal 模板的模板对象。 使用 <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> 属性返回附加到指定文档的模板。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> 属性可返回或设置用户或工作组模板的位置（即您要在其中存储这些模板的文件夹）。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -47,6 +48,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Template.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -64,7 +66,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutoTextEntries As AutoTextEntries" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::AutoTextEntries ^ AutoTextEntries { Microsoft::Office::Interop::Word::AutoTextEntries ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AutoTextEntries : Microsoft.Office.Interop.Word.AutoTextEntries" Usage="Microsoft.Office.Interop.Word.Template.AutoTextEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -95,7 +98,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoTextEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" />集合, 该集合代表指定模板中的所有 "自动图文集" 词条。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> 集合，该集合代表指定模板中的所有 "自动图文集" 词条。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.BuildingBlockEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildingBlockEntries As BuildingBlockEntries" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlockEntries ^ BuildingBlockEntries { Microsoft::Office::Interop::Word::BuildingBlockEntries ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuildingBlockEntries : Microsoft.Office.Interop.Word.BuildingBlockEntries" Usage="Microsoft.Office.Interop.Word.Template.BuildingBlockEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -123,7 +127,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集合, 该集合代表模板中构建基块条目的集合。 只读。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> 集合，该集合代表模板中构建基块条目的集合。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.BuildingBlockTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildingBlockTypes As BuildingBlockTypes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlockTypes ^ BuildingBlockTypes { Microsoft::Office::Interop::Word::BuildingBlockTypes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuildingBlockTypes : Microsoft.Office.Interop.Word.BuildingBlockTypes" Usage="Microsoft.Office.Interop.Word.Template.BuildingBlockTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -151,7 +156,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />集合, 该集合代表模板中包含的构建基块类型的集合。 只读。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> 集合，该集合代表模板中包含的构建基块类型的集合。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuiltInDocumentProperties As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ BuiltInDocumentProperties { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltInDocumentProperties : obj" Usage="Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -179,11 +185,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Core.DocumentProperties" />集合, 该集合代表指定文档的所有内置文档属性。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Core.DocumentProperties" /> 集合，该集合代表指定文档的所有内置文档属性。</summary>
         <value>To be added.</value>
-        <remarks><para>若要返回代表<see cref="T:Microsoft.Office.Core.DocumentProperty" />特定内置文档属性的单个对象, 请使用<b>BuiltinDocumentProperties</b>(<paramref name="index" />), 其中<paramref name="index" />是一个<see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" />常量。</para>
-          <para>如果 Microsoft Word 没有定义某个内置文档属性的值, 则读取该文档属性的属性<see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" />将生成错误。</para>
-          <para>使用<see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" />属性返回自定义文档属性的集合。</para>
+        <remarks><para>若要返回 <see cref="T:Microsoft.Office.Core.DocumentProperty" /> 代表特定内置文档属性的单个对象，请使用<b>BuiltinDocumentProperties</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是一个 <see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" /> 常量。</para>
+          <para>如果 Microsoft Word 没有定义某个内置文档属性的值，则读取 <see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" /> 该文档属性的属性将生成错误。</para>
+          <para>使用 <see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" /> 属性返回自定义文档属性的集合。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Template.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -212,8 +219,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomDocumentProperties As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CustomDocumentProperties { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomDocumentProperties : obj" Usage="Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -240,9 +248,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Core.DocumentProperties" />集合, 该集合代表指定文档的所有自定义文档属性。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Core.DocumentProperties" /> 集合，该集合代表指定文档的所有自定义文档属性。</summary>
         <value>To be added.</value>
-        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" />属性可返回内置文档属性的集合。</para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" /> 属性可返回内置文档属性的集合。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.FarEastLineBreakLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Property FarEastLineBreakLanguage As WdFarEastLineBreakLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFarEastLineBreakLanguageID FarEastLineBreakLanguage { Microsoft::Office::Interop::Word::WdFarEastLineBreakLanguageID get(); void set(Microsoft::Office::Interop::Word::WdFarEastLineBreakLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.FarEastLineBreakLanguage : Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.Template.FarEastLineBreakLanguage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -275,7 +284,7 @@
         <summary>返回或设置在指定的文档或模板中换行文本时使用的东亚语言。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID" />可以是下列<b>WdFarEastLineBreakLanguageID</b>常量之一:</para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID" />可以是下列<b>WdFarEastLineBreakLanguageID</b>常量之一：</para>
           <para>
             <b>wdLineBreakJapanese</b>
           </para>
@@ -297,6 +306,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.FarEastLineBreakLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property FarEastLineBreakLevel As WdFarEastLineBreakLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFarEastLineBreakLevel FarEastLineBreakLevel { Microsoft::Office::Interop::Word::WdFarEastLineBreakLevel get(); void set(Microsoft::Office::Interop::Word::WdFarEastLineBreakLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.FarEastLineBreakLevel : Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel with get, set" Usage="Microsoft.Office.Interop.Word.Template.FarEastLineBreakLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -319,9 +329,9 @@
       <Docs>
         <summary>返回或设置指定文档的行中断控制级别。</summary>
         <value>To be added.</value>
-        <remarks><para>如果将该<see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" />属性设置为<b>False</b>, 则忽略此属性。</para>
+        <remarks><para>如果将该 <see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" /> 属性设置为<b>False</b>，则忽略此属性。</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" />可以是下列<b>WdFarEastLineBreakLevel</b>常量之一:</para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" />可以是下列<b>WdFarEastLineBreakLevel</b>常量之一：</para>
           <para>
             <b>wdFarEastLineBreakLevelCustom</b>
           </para>
@@ -340,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.FullName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="Microsoft.Office.Interop.Word.Template.FullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -359,7 +370,7 @@
       <Docs>
         <summary>指定模板的名称，其中包含驱动器或 Web 路径。</summary>
         <value>To be added.</value>
-        <remarks><para>使用此属性等效于在序列中<see cref="P:Microsoft.Office.Interop.Word.Template.Path" />使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />、和<see cref="P:Microsoft.Office.Interop.Word.Template.Name" />属性。</para>
+        <remarks><para>使用此属性等效于 <see cref="P:Microsoft.Office.Interop.Word.Template.Path" /> <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> 在序列中使用、和 <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> 属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -369,6 +380,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.JustificationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property JustificationMode As WdJustificationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdJustificationMode JustificationMode { Microsoft::Office::Interop::Word::WdJustificationMode get(); void set(Microsoft::Office::Interop::Word::WdJustificationMode value); };" />
+      <MemberSignature Language="F#" Value="member this.JustificationMode : Microsoft.Office.Interop.Word.WdJustificationMode with get, set" Usage="Microsoft.Office.Interop.Word.Template.JustificationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -392,7 +404,7 @@
         <summary>返回或设置指定模板的字符间距调整。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdJustificationMode" />可以是下列<b>wdjustificationmode 类型</b>常量之一:</para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdJustificationMode" />可以是下列<b>wdjustificationmode 类型</b>常量之一：</para>
           <para>
             <b>wdJustificationModeCompress</b>
           </para>
@@ -411,6 +423,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.KerningByAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Property KerningByAlgorithm As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KerningByAlgorithm { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.KerningByAlgorithm : bool with get, set" Usage="Microsoft.Office.Interop.Word.Template.KerningByAlgorithm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -442,6 +455,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.LanguageID" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageID As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageID { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageID : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.Template.LanguageID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -464,8 +478,8 @@
       <Docs>
         <summary>返回或设置指定对象的语言。</summary>
         <value>To be added.</value>
-        <remarks><para>可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一。</para>
-          <para>某些<b>WdLanguageID</b>常量可能不可用, 具体取决于您选择或安装的语言支持 (例如, 美国英语)。</para>
+        <remarks><para>可以是 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> 常量之一。</para>
+          <para>某些<b>WdLanguageID</b>常量可能不可用，具体取决于您选择或安装的语言支持（例如，美国英语）。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -475,6 +489,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.LanguageIDFarEast" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageIDFarEast As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageIDFarEast { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageIDFarEast : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.Template.LanguageIDFarEast" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -497,7 +512,7 @@
       <Docs>
         <summary>返回或设置指定对象的东亚语言。</summary>
         <value>To be added.</value>
-        <remarks><para>可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一。</para>
+        <remarks><para>可以是 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> 常量之一。</para>
           <para>推荐使用本方法，来返回或设置用 Microsoft Word 中文版创建的文档中东亚文字的语言。</para>
           <para> </para></remarks>
       </Docs>
@@ -508,6 +523,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.ListTemplates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListTemplates As ListTemplates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListTemplates ^ ListTemplates { Microsoft::Office::Interop::Word::ListTemplates ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListTemplates : Microsoft.Office.Interop.Word.ListTemplates" Usage="Microsoft.Office.Interop.Word.Template.ListTemplates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -525,7 +541,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ListTemplates" />集合, 该集合代表指定模板的所有列表格式。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> 集合，该集合代表指定模板的所有列表格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -536,6 +552,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Template.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -564,6 +581,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.NoLineBreakAfter" />
       <MemberSignature Language="VB.NET" Value="Public Property NoLineBreakAfter As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NoLineBreakAfter { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NoLineBreakAfter : string with get, set" Usage="Microsoft.Office.Interop.Word.Template.NoLineBreakAfter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -595,6 +613,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.NoLineBreakBefore" />
       <MemberSignature Language="VB.NET" Value="Public Property NoLineBreakBefore As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NoLineBreakBefore { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NoLineBreakBefore : string with get, set" Usage="Microsoft.Office.Interop.Word.Template.NoLineBreakBefore" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -626,6 +645,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.NoProofing" />
       <MemberSignature Language="VB.NET" Value="Public Property NoProofing As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NoProofing { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NoProofing : int with get, set" Usage="Microsoft.Office.Interop.Word.Template.NoProofing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -657,6 +677,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenAsDocument () As Document" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Document ^ OpenAsDocument();" />
+      <MemberSignature Language="F#" Value="abstract member OpenAsDocument : unit -&gt; Microsoft.Office.Interop.Word.Document" Usage="template.OpenAsDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -672,9 +693,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>将指定的模板作为文档打开, 并返回<see cref="T:Microsoft.Office.Interop.Word.Document" />一个对象。</summary>
+        <summary>将指定的模板作为文档打开，并返回一个 <see cref="T:Microsoft.Office.Interop.Word.Document" /> 对象。</summary>
         <returns>To be added.</returns>
-        <remarks><para>打开一个文档作为模板允许用户编辑该模板的内容。 如果属性或方法 (例如, <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" />属性) 在<see cref="T:Microsoft.Office.Interop.Word.Template" />对象中不可用, 则可能需要执行此步骤。</para>
+        <remarks><para>打开一个文档作为模板允许用户编辑该模板的内容。 如果属性或方法（ <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> 例如，属性）在对象中不可用，则可能需要执行此步骤 <see cref="T:Microsoft.Office.Interop.Word.Template" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -684,6 +705,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Template.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -712,6 +734,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Office.Interop.Word.Template.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -731,9 +754,9 @@
       <Docs>
         <summary>返回指定对象的磁盘或 Web 路径。</summary>
         <value>To be added.</value>
-        <remarks><para>路径中不包括尾随字符   例如，"C:\MSOffice"或"http://MyServer"。 使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />属性添加用于分隔文件夹和驱动器号的字符。 使用<see cref="P:Microsoft.Office.Interop.Word.Template.Name" />属性返回不带路径的文件名, 并使用<see cref="P:Microsoft.Office.Interop.Word.Template.FullName" />属性将文件名和路径同时返回。</para>
+        <remarks><para>路径中不包括尾随字符   例如，"C:\MSOffice"或"http://MyServer"。 使用 <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> 属性添加用于分隔文件夹和驱动器号的字符。 使用 <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> 属性返回不带路径的文件名，并使用属性将文件名 <see cref="P:Microsoft.Office.Interop.Word.Template.FullName" /> 和路径同时返回。</para>
           <para>
-            <b>注释</b> 您可以使用<b>PathSeparator</b>属性来构建 Web 地址, 即使它们包含正斜杠 (/), 并且<b>PathSeparator</b>属性默认为反斜杠 (\)。</para>
+            <b>注释</b> 您可以使用<b>PathSeparator</b>属性来构建 Web 地址，即使它们包含正斜杠（/），并且<b>PathSeparator</b>属性默认为反斜杠（ \) 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -743,6 +766,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Template.Save" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
+      <MemberSignature Language="F#" Value="abstract member Save : unit -&gt; unit" Usage="template.Save " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -759,7 +783,7 @@
       <Parameters />
       <Docs>
         <summary>保存指定的文档或模板。</summary>
-        <remarks><para>如果之前未保存过该文档或模板, 则 "另存为" 对话框将提示用户输入文件名。</para>
+        <remarks><para>如果之前未保存过该文档或模板，则 "另存为" 对话框将提示用户输入文件名。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -769,6 +793,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Saved" />
       <MemberSignature Language="VB.NET" Value="Public Property Saved As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Saved { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Saved : bool with get, set" Usage="Microsoft.Office.Interop.Word.Template.Saved" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -800,6 +825,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdTemplateType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdTemplateType Type { Microsoft::Office::Interop::Word::WdTemplateType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdTemplateType" Usage="Microsoft.Office.Interop.Word.Template.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -820,7 +846,7 @@
         <summary>返回模板的类型。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />可以是下列<b>WdTemplateType</b>常量之一:</para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />可以是下列<b>WdTemplateType</b>常量之一：</para>
           <para>
             <b>wdAttachedTemplate</b>
           </para>
@@ -839,6 +865,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Template.VBProject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VBProject As VBProject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Vbe::Interop::VBProject ^ VBProject { Microsoft::Vbe::Interop::VBProject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.VBProject : Microsoft.Vbe.Interop.VBProject" Usage="Microsoft.Office.Interop.Word.Template.VBProject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -859,7 +886,7 @@
         <summary>返回指定模板的 <b>VBProject</b> 对象。</summary>
         <value>To be added.</value>
         <remarks><para>使用该属性可访问代码模块和用户窗体。</para>
-          <para>若要在对象浏览器中查看<b>VBProject</b>对象, 必须在 Visual Basic 编辑器中的 "引用" 对话框 ("工具" 菜单) 中选中 "Microsoft Visual Basic For Applications 扩展" 复选框。</para>
+          <para>若要在对象浏览器中查看<b>VBProject</b>对象，必须在 Visual Basic 编辑器中的 "引用" 对话框（"工具" 菜单）中选中 "Microsoft Visual Basic For Applications 扩展" 复选框。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

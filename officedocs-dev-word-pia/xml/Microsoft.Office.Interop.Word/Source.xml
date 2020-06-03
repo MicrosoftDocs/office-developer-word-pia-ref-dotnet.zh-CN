@@ -1,9 +1,10 @@
 <Type Name="Source" FullName="Microsoft.Office.Interop.Word.Source">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3cf829a261bb8edb3c3588016161838a1205f721" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143971" /></Metadata><TypeSignature Language="C#" Value="public interface Source" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c4cffa2925c87b27271eb655513b8fabc2b533d5" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926274" /></Metadata><TypeSignature Language="C#" Value="public interface Source" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Source" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Source" />
   <TypeSignature Language="VB.NET" Value="Public Interface Source" />
   <TypeSignature Language="C++ CLI" Value="public interface class Source" />
+  <TypeSignature Language="F#" Value="type Source = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>代表单个源，如书籍、杂志文章或采访。</summary>
-    <remarks><para>有关详细信息, 请参阅使用<a href="HV10118297">书目</a></para>
+    <remarks><para>有关详细信息，请参阅使用<a href="HV10118297">书目</a></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Source.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Source.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 对象，表示 Microsoft Word 应用程序。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Source.Cited" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cited As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cited { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Cited : bool" Usage="Microsoft.Office.Interop.Word.Source.Cited" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Source.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Source.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -106,7 +110,7 @@
         <value><b>Integer</b></value>
         <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注意</b>: 此值还可由常量<b>wdcreatorcode 表示</b>表示。</para>
+            <b>注意</b>：此值还可由常量<b>wdcreatorcode 表示</b>表示。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Source.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="source.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Source.Field(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Property Field(Name As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Field[System::String ^] { System::String ^ get(System::String ^ Name); void set(System::String ^ Name, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Field(string) : string with get, set" Usage="Microsoft.Office.Interop.Word.Source.Field" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -167,7 +173,7 @@
         <param name="Name">指定要为其检索值的域的名称。</param>
         <summary>返回一个 <b>String</b> 类型的值，该值代表书目源中域的值。 只读。</summary>
         <value><b>String</b></value>
-        <remarks><para>该域的名称相当于书目源的结果 XML 中相应 XML 元素的名称。 您可以使用<see cref="P:Microsoft.Office.Interop.Word.Source.XML" />属性返回书目源的 XML。 有关详细信息, 请参阅使用<a href="HV10118297">书目</a></para>
+        <remarks><para>该域的名称相当于书目源的结果 XML 中相应 XML 元素的名称。 您可以使用 <see cref="P:Microsoft.Office.Interop.Word.Source.XML" /> 属性返回书目源的 XML。 有关详细信息，请参阅使用<a href="HV10118297">书目</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Source.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Source.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -194,7 +201,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>Object</b>类型的对象, 该对象代表指定<see cref="T:Microsoft.Office.Interop.Word.Source" />对象的父对象。</summary>
+        <summary>返回一个<b>Object</b>类型的对象，该对象代表指定对象的父对象 <see cref="T:Microsoft.Office.Interop.Word.Source" /> 。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Source.Tag" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tag As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Tag { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : string" Usage="Microsoft.Office.Interop.Word.Source.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Source.XML" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XML As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XML { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XML : string" Usage="Microsoft.Office.Interop.Word.Source.XML" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -250,9 +259,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>字符串</b>, 表示<see cref="T:Microsoft.Office.Interop.Word.Source" />对象的 XML 标记。 只读。</summary>
+        <summary>返回一个<b>字符串</b>，表示对象的 XML 标记 <see cref="T:Microsoft.Office.Interop.Word.Source" /> 。 只读。</summary>
         <value><b>String</b></value>
-        <remarks><para>该<paramref name="Data" /> <see cref="T:Microsoft.Office.Interop.Word.Sources" />对象的<see cref="M:Microsoft.Office.Interop.Word.Sources.Add(System.String)" />方法参数需要一个有效的 XML 字符串, 其中包含必要元素的数据。 根据您添加的源的类型，可以更改 XML。  若要确定特定类型的源是否需要正确的 XML, 请通过 "创建源" 对话框创建一个源, 然后使用该<see cref="P:Microsoft.Office.Interop.Word.Source.XML" />属性返回正确的 XML 语法。</para>
+        <remarks><para>该 <paramref name="Data" /> <see cref="M:Microsoft.Office.Interop.Word.Sources.Add(System.String)" /> 对象的方法参数 <see cref="T:Microsoft.Office.Interop.Word.Sources" /> 需要一个有效的 XML 字符串，其中包含必要元素的数据。 根据您添加的源的类型，可以更改 XML。  若要确定特定类型的源是否需要正确的 XML，请通过 "创建源" 对话框创建一个源，然后使用该 <see cref="P:Microsoft.Office.Interop.Word.Source.XML" /> 属性返回正确的 XML 语法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,9 +1,10 @@
 <Type Name="XMLNamespaces" FullName="Microsoft.Office.Interop.Word.XMLNamespaces">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d9eb0ff72d7f177eb7bd98e5edbe17f3467652a3" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142631" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNamespaces : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="17ad762bd94413ee58d71733dca9438fafc163ec" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926736" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNamespaces : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNamespaces implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNamespaces" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNamespaces&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLNamespaces : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type XMLNamespaces = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,9 +23,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" />对象的集合, 该集合代表架构库中架构的整个集合。</summary>
-    <remarks><para>在 Microsoft Word 中, 可以从 "模板和加载项" 对话框中的 "XML 架构" 选项卡访问 "架构库"。 架构库表示安装在用户计算机上的架构, 用户已将其应用到 Word 文档, 或者用户已使用 "架构库" 对话框将其显式添加到架构库中。</para>
-      <para>使用 XMLNamespaces <see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" />集合的属性<b></b>可返回单个<b>XMLNameSpace</b>对象。 <b>Item</b>属性的索引值可以是<b>整数</b>(指示架构在架构库中的位置), 也可以是一个<b>字符串</b>, 表示通过使用<see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" />属性返回的架构的名称 (在架构中定义的 TargetNamespace 设置)。</para>
+    <summary>对象的集合 <see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" /> ，该集合代表架构库中架构的整个集合。</summary>
+    <remarks><para>在 Microsoft Word 中，可以从 "模板和加载项" 对话框中的 "XML 架构" 选项卡访问 "架构库"。 架构库表示安装在用户计算机上的架构，用户已将其应用到 Word 文档，或者用户已使用 "架构库" 对话框将其显式添加到架构库中。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" /> <b>XMLNamespaces</b>集合的属性可返回单个<b>XMLNameSpace</b>对象。 <b>Item</b>属性的索引值可以是<b>整数</b>（指示架构在架构库中的位置），也可以是一个<b>字符串</b>，表示通过使用 <see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" /> 属性（在架构中定义的 TargetNamespace 设置）返回的架构的名称。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.XMLNamespace Add([in]string Path, [in]object&amp; NamespaceURI, [in]object&amp; Alias, [in]bool InstallForAllUsers) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNamespaces.Add(System.String,System.Object@,System.Object@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Path As String, Optional ByRef NamespaceURI As Object, Optional ByRef Alias As Object, Optional InstallForAllUsers As Boolean = false) As XMLNamespace" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj * obj * bool -&gt; Microsoft.Office.Interop.Word.XMLNamespace" Usage="xMLNamespaces.Add (Path, NamespaceURI, Alias, InstallForAllUsers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,16 +50,16 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Path" Type="System.String" />
-        <Parameter Name="NamespaceURI" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Alias" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NamespaceURI" Type="System.Object" RefType="ref" />
+        <Parameter Name="Alias" Type="System.Object" RefType="ref" />
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="Path">必需的 <b>字符串</b> 。 架构的路径和文件名。 可以为本地文件路径、网络路径或 Internet 地址。</param>
-        <param name="NamespaceURI">可选<b>字符串</b>。 架构中指定的命名空间“统一资源标识符”。 <paramref name="NamespaceURI" />参数区分大小写, 并且必须完全按照架构中指定的拼写。</param>
+        <param name="NamespaceURI">可选<b>字符串</b>。 架构中指定的命名空间“统一资源标识符”。 <paramref name="NamespaceURI" />参数区分大小写，并且必须完全按照架构中指定的拼写。</param>
         <param name="Alias">可选<b>字符串</b>。 在“模板和加载项”对话框中的“架构”选项卡上显示的架构名称。</param>
-        <param name="InstallForAllUsers">可选属性，类型为 <b>Boolean</b>。 如果登录到计算机上的所有用户都能访问和使用新架构，则为 <b>True</b>。 默认值为 <b>False</b> 。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" />对象, 该对象代表添加到架构库中并在 Microsoft Word 中的用户可用的架构。</summary>
+        <param name="InstallForAllUsers">可选属性，类型为 <b>Boolean</b>。 如果登录到计算机上的所有用户都能访问和使用新架构，则为 <b>True</b>。 默认值为 <b>False</b>。</param>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" /> 对象，该对象代表添加到架构库中并在 Microsoft Word 中的用户可用的架构。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNamespaces.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.XMLNamespaces.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -85,7 +88,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNamespaces.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.XMLNamespaces.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNamespaces.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.XMLNamespaces.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -143,8 +148,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNamespaces.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="xMLNamespaces.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -185,6 +191,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InstallManifest([in]string Path, [in]bool InstallForAllUsers) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNamespaces.InstallManifest(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InstallManifest (Path As String, Optional InstallForAllUsers As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member InstallManifest : string * bool -&gt; unit" Usage="xMLNamespaces.InstallManifest (Path, InstallForAllUsers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -206,7 +213,7 @@
         <param name="Path">必需的 <b>字符串</b> 。 XML 扩展包的路径和文件名。</param>
         <param name="InstallForAllUsers">可选属性，类型为 <b>Boolean</b>。 如果为 <b>True</b>，则将 XML 扩展包安装到计算机上，并使这台计算机上的所有用户都可以使用它。 如果为 <b>False</b>，则 XML 扩展包仅限于当前用户使用。 默认值为 <b>False</b> 。</param>
         <summary>将指定的 XML 扩展包安装在用户计算机上，令一个或更多用户能够使用 XML 智能文档解决方案。</summary>
-        <remarks><para>出于安全目的，不能安装未签名的指令清单。 有关清单的详细信息, 请参阅 Microsoft 开发人员网络 (MSDN) 网站上的智能文档软件开发工具包 (SDK)。</para>
+        <remarks><para>出于安全目的，不能安装未签名的指令清单。 有关清单的详细信息，请参阅 Microsoft 开发人员网络（MSDN）网站上的智能文档软件开发工具包（SDK）。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As XMLNamespace" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNamespace ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::XMLNamespace ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.XMLNamespace" Usage="Microsoft.Office.Interop.Word.XMLNamespaces.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -233,10 +241,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNamespace</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">一个指示序号位置的<b>对象</b>, 或表示单个对象的名称的字符串。</param>
+        <param name="Index">一个指示序号位置的<b>对象</b>，或表示单个对象的名称的字符串。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -248,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNamespaces.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.XMLNamespaces.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

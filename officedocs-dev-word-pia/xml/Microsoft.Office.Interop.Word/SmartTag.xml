@@ -1,9 +1,10 @@
 <Type Name="SmartTag" FullName="Microsoft.Office.Interop.Word.SmartTag">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5fa49cb1dcddf81834677aefdc8cd50240fa9578" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146120" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTag" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d91d9fe394966da11d6c8d360ee2af7c62867ea5" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926330" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTag" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTag" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTag" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTag" />
   <TypeSignature Language="C++ CLI" Value="public interface class SmartTag" />
+  <TypeSignature Language="F#" Value="type SmartTag = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,8 +20,8 @@
   </Attributes>
   <Docs>
     <summary>代表文档或范围中包含识别类型信息的字符串。</summary>
-    <remarks><para><b>SmartTag</b>对象是<see cref="T:Microsoft.Office.Interop.Word.SmartTags" />集合的一个成员。 <b>SmartTags</b> 集合包含文档或文档的文本范围中的所有智能标记。 Microsoft Word 使用识别器文件标记智能标记，并使用操作文件执行与智能标记相关的操作，例如链接到网站。</para>
-      <para><see cref="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" />使用方法 (或<see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> (<paramref name="index" />), 其中<paramref name="index" />代表智能标记的编号) 返回单个<b>SmartTag</b>对象。</para>
+    <remarks><para><b>SmartTag</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> 。 <b>SmartTags</b> 集合包含文档或文档的文本范围中的所有智能标记。 Microsoft Word 使用识别器文件标记智能标记，并使用操作文件执行与智能标记相关的操作，例如链接到网站。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" /> 方法（或 <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> （ <paramref name="index" /> ），其中 <paramref name="index" /> 代表智能标记的编号）返回单个<b>SmartTag</b>对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.SmartTag.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -50,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.SmartTag.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -83,8 +86,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.SmartTag.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="smartTag.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.DownloadURL" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DownloadURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DownloadURL { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DownloadURL : string" Usage="Microsoft.Office.Interop.Word.SmartTag.DownloadURL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -142,9 +147,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>字符串</b>, 表示智能标记的 URL 地址。</summary>
+        <summary>返回一个<b>字符串</b>，表示智能标记的 URL 地址。</summary>
         <value>To be added.</value>
-        <remarks><para>在相关的智能标记识别器文件中指定 URL 地址。 当一段文本被识别和标记时, 该 URL 将成为智能标记中包含的信息的一部分。 如果向未在其计算机上安装必需的识别器和操作文件的用户发送文档, <b>DownloadURL</b>属性将非常有用。 用户可以按照 URL 下载所需的智能标记文件。</para>
+        <remarks><para>在相关的智能标记识别器文件中指定 URL 地址。 当一段文本被识别和标记时，该 URL 将成为智能标记中包含的信息的一部分。 如果向未在其计算机上安装必需的识别器和操作文件的用户发送文档， <b>DownloadURL</b>属性将非常有用。 用户可以按照 URL 下载所需的智能标记文件。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.SmartTag.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.SmartTag.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -216,6 +223,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As CustomProperties" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CustomProperties ^ Properties { Microsoft::Office::Interop::Word::CustomProperties ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : Microsoft.Office.Interop.Word.CustomProperties" Usage="Microsoft.Office.Interop.Word.SmartTag.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -236,9 +244,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.CustomProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.CustomProperties" />对象, 表示智能标记的属性。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.CustomProperties" /> 对象，表示智能标记的属性。</summary>
         <value>To be added.</value>
-        <remarks><para>您可以使用<see cref="M:Microsoft.Office.Interop.Word.SmartTags.Add(System.String,System.Object@,System.Object@)" />方法添加自定义属性。 但是, 自定义属性通常在智能标记识别器和操作文件中指定。</para>
+        <remarks><para>您可以使用 <see cref="M:Microsoft.Office.Interop.Word.SmartTags.Add(System.String,System.Object@,System.Object@)" /> 方法添加自定义属性。 但是，自定义属性通常在智能标记识别器和操作文件中指定。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -248,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.SmartTag.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -268,9 +277,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定对象中包含的文档部分。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象，该对象代表指定对象中包含的文档部分。</summary>
         <value>To be added.</value>
-        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息, 请参阅<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法。</para>
+        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息，请参阅 <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.SmartTag.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="smartTag.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -299,7 +309,7 @@
       <Parameters />
       <Docs>
         <summary>选择指定的对象。</summary>
-        <remarks><para>使用此方法后, 请使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性来处理选定的项。</para>
+        <remarks><para>使用此方法后，请使用 <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> 属性来处理选定的项。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -309,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.SmartTagActions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartTagActions As SmartTagActions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SmartTagActions ^ SmartTagActions { Microsoft::Office::Interop::Word::SmartTagActions ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartTagActions : Microsoft.Office.Interop.Word.SmartTagActions" Usage="Microsoft.Office.Interop.Word.SmartTag.SmartTagActions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -329,7 +340,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagActions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" />集合, 该集合代表智能标记上可用的操作的集合。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> 集合，该集合代表智能标记上可用的操作的集合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -340,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.XML" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XML As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XML { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XML : string" Usage="Microsoft.Office.Interop.Word.SmartTag.XML" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -360,7 +372,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>字符串</b>, 表示智能标记的相关 XML。</summary>
+        <summary>返回一个<b>字符串</b>，表示智能标记的相关 XML。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -371,6 +383,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTag.XMLNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XMLNode As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ XMLNode { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XMLNode : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.SmartTag.XMLNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -391,9 +404,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象, 表示智能标记的 XML 元素。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> 对象，表示智能标记的 XML 元素。</summary>
         <value>To be added.</value>
-        <remarks><para>并非所有智能标记都包含 XML 节点;但是, <b>XMLNode</b>属性允许开发人员访问包含 xml 节点的智能标记的 xml 节点。</para>
+        <remarks><para>并非所有智能标记都包含 XML 节点;但是， <b>XMLNode</b>属性允许开发人员访问包含 xml 节点的智能标记的 xml 节点。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

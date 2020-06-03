@@ -1,9 +1,10 @@
 <Type Name="XMLMapping" FullName="Microsoft.Office.Interop.Word.XMLMapping">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9c7faf4f3e3ffccb270c1cc125874ce43681ee78" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142638" /></Metadata><TypeSignature Language="C#" Value="public interface XMLMapping" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a613d872defc3b239ef077ce2ad4da03a037e7ee" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926750" /></Metadata><TypeSignature Language="C#" Value="public interface XMLMapping" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLMapping" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLMapping" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLMapping" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLMapping" />
+  <TypeSignature Language="F#" Value="type XMLMapping = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,8 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示在自定义 XML 与<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />内容控件之间的对象上的 XML 映射。 XML 映射是内容控件中的文本与此文档的自定义 XML 数据存储中的 XML 元素之间的链接。</summary>
-    <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法可以添加或更改使用 XPath 字符串的内容控件的 XML 映射。 以下示例设置文档作者这一内置文档属性，在活动文档中插入新的内容控件，然后将此控件的 XML 映射设置为该内置文档属性。</para>
+    <summary>表示在 <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> 自定义 XML 与内容控件之间的对象上的 XML 映射。 XML 映射是内容控件中的文本与此文档的自定义 XML 数据存储中的 XML 元素之间的链接。</summary>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> 方法可以添加或更改使用 XPath 字符串的内容控件的 XML 映射。 以下示例设置文档作者这一内置文档属性，在活动文档中插入新的内容控件，然后将此控件的 XML 映射设置为该内置文档属性。</para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -1813,7 +1814,7 @@ If blnMap = False Then
 
 
 End If&lt;/span&gt;</code>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法可使用<b>CustomXMLNode</b>对象添加或更改内容控件的 XML 映射。 下面的示例执行与上一个示例相同的操作, 但使用的是<b>SetMappingByNode</b>方法。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> 方法可使用<b>CustomXMLNode</b>对象添加或更改内容控件的 XML 映射。 下面的示例执行与上一个示例相同的操作，但使用的是<b>SetMappingByNode</b>方法。</para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -7833,7 +7834,7 @@ objCustomControl.XMLMapping.SetMappingByNode objCustomNode
 
 
 MsgBox objCustomControl.XMLMapping.IsMapped&lt;/span&gt;</code>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" />方法删除内容控件的 XML 映射。  删除内容控件的 XML 映射时，只会删除内容控件与 XML 数据之间的连接。  内容控件和 XML 数据都会留在文档中。  以下示例删除活动文档内当前映射的所有内容控件的 XML 映射。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" /> 方法删除内容控件的 XML 映射。  删除内容控件的 XML 映射时，只会删除内容控件与 XML 数据之间的连接。  内容控件和 XML 数据都会留在文档中。  以下示例删除活动文档内当前映射的所有内容控件的 XML 映射。</para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -8603,7 +8604,7 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 Next&lt;/span&gt;</code>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />属性来确定是否将内容控件映射到文档的数据存储区中的 XML 节点。 以下示例删除活动文档中所有映射的内容控件的 XML 映射。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" /> 属性来确定是否将内容控件映射到文档的数据存储区中的 XML 节点。 以下示例删除活动文档中所有映射的内容控件的 XML 映射。</para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -9373,7 +9374,7 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 Next&lt;/span&gt;</code>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />属性可访问内容控件映射到的 XML 节点。 使用<see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />属性可访问内容控件映射到的 XML 部件。 有关使用 <b>CustomXMLNode</b> 和 <b>CustomXMLPart</b> 对象的详细信息，请参阅各个对象主题。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" /> 属性可访问内容控件映射到的 XML 节点。 使用 <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" /> 属性可访问内容控件映射到的 XML 部件。 有关使用 <b>CustomXMLNode</b> 和 <b>CustomXMLPart</b> 对象的详细信息，请参阅各个对象主题。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -9383,6 +9384,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.XMLMapping.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -9400,7 +9402,7 @@ Next&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 对象，表示 Microsoft Word 应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9411,6 +9413,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.XMLMapping.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -9432,7 +9435,7 @@ Next&lt;/span&gt;</code>
         <value>To be added.</value>
         <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注意</b>: 此值还可由常量<b>wdcreatorcode 表示</b>表示。</para>
+            <b>注意</b>：此值还可由常量<b>wdcreatorcode 表示</b>表示。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -9442,6 +9445,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomXMLNode As CustomXMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLNode ^ CustomXMLNode { Microsoft::Office::Core::CustomXMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomXMLNode : Microsoft.Office.Core.CustomXMLNode" Usage="Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -11138,6 +11142,7 @@ Set objNode = objMap.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomXMLPart As CustomXMLPart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLPart ^ CustomXMLPart { Microsoft::Office::Core::CustomXMLPart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomXMLPart : Microsoft.Office.Core.CustomXMLPart" Usage="Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -11160,7 +11165,7 @@ Set objNode = objMap.&lt;/span&gt;
         <remarks>To be added.</remarks>
         <example><para>以下示例访问活动文档中的第一个内容控件以及它映射到的自定义 XML 部件，然后设置自定义 XML 部件中包含的某个 XML 节点的文本值。</para>
           <para>
-            <b>注意</b>: 此示例假定活动文档中至少有一个内容控件映射到包含 XPath 字符串中指定的 xml 节点的自定义 xml 部件。</para>
+            <b>注意</b>：此示例假定活动文档中至少有一个内容控件映射到包含 XPath 字符串中指定的 xml 节点的自定义 xml 部件。</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -11812,6 +11817,7 @@ Set objPart = objCC.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="xMLMapping.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12354,6 +12360,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property IsMapped As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMapped : bool" Usage="Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12770,6 +12777,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.XMLMapping.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12798,6 +12806,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.PrefixMappings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrefixMappings As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrefixMappings { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrefixMappings : string" Usage="Microsoft.Office.Interop.Word.XMLMapping.PrefixMappings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12817,15 +12826,16 @@ For Each objCC In ActiveDocument.ContentControls
       <Docs>
         <summary>返回一个 <b>字符串</b> ，表示用于计算 XPath 的当前 XML 映射的前缀映射。 只读的。</summary>
         <value>To be added.</value>
-        <remarks><para>若要设置内容控件的映射, 请使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法或<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法。</para>
+        <remarks><para>若要设置内容控件的映射，请使用 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> 方法或 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetMapping">
-      <MemberSignature Language="C#" Value="public bool SetMapping (string XPath, string PrefixMapping = &quot;&quot;, Microsoft.Office.Core.CustomXMLPart Source = null);" />
+      <MemberSignature Language="C#" Value="public bool SetMapping (string XPath, string PrefixMapping = &quot;&quot;, Microsoft.Office.Core.CustomXMLPart Source = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetMapping([in]string XPath, [in]string PrefixMapping, [in]class Microsoft.Office.Core.CustomXMLPart Source) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetMapping (XPath As String, Optional PrefixMapping As String = &quot;&quot;, Optional Source As CustomXMLPart = null) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member SetMapping : string * string * Microsoft.Office.Core.CustomXMLPart -&gt; bool" Usage="xMLMapping.SetMapping (XPath, PrefixMapping, Source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12846,14 +12856,14 @@ For Each objCC In ActiveDocument.ContentControls
       </Parameters>
       <Docs>
         <param name="XPath">指定 XPath 字符串，该字符串表示内容控件所映射到的 XML 节点。无效的 XPath 字符串将导致运行时错误。</param>
-        <param name="PrefixMapping">指定在查询<paramref name="XPath" />参数中提供的表达式时要使用的前缀映射。 如果省略，Word 将使用当前文档中指定的自定义 XML 部件的前缀映射集。</param>
+        <param name="PrefixMapping">指定在查询参数中提供的表达式时要使用的前缀映射 <paramref name="XPath" /> 。 如果省略，Word 将使用当前文档中指定的自定义 XML 部件的前缀映射集。</param>
         <param name="Source">指定要将内容控件映射到所需的自定义 XML 数据。如果省略此参数，则 XPath 计算依据在当前文档中的所有自定义 XML，使用 XPath 解析的 XML 节点的第一个 <b>CustomXMLPart</b> 建立映射。 </param>
-        <summary>允许创建或更改的内容控件的 XML 映射。 如果 Microsoft Office Word 将内容控件映射到文档的自定义 XML 数据存储区中的自定义 XML 节点,<b>则返回 True</b> 。</summary>
+        <summary>允许创建或更改的内容控件的 XML 映射。 如果 Microsoft Office Word 将内容控件映射到文档的自定义 XML 数据存储区中的自定义 XML 节点，<b>则返回 True</b> 。</summary>
         <returns>Boolean</returns>
         <remarks><para>如果 XML 映射已经存在，Word 将替换现有 XML 映射，并以新映射的 XML 节点的内容替换内容控件的文本。如果指定的 XPath 的计算结果不是指定的自定义 XML 部件中的 XML 节点，那么仍可以指定映射，并且将创建一个映射。当指定的 XPath 的计算结果为指定的自定义 XML 部件中的 XML 节点时，此映射将自动链接。</para>
-          <para>另请参阅<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法。</para>
+          <para>另请参阅 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> 方法。</para>
           <para>
-            <b>注意</b>: 为富文本内容控件创建映射将导致运行时错误。</para>
+            <b>注意</b>：为富文本内容控件创建映射将导致运行时错误。</para>
           <para> </para></remarks>
         <example><para>以下示例插入自定义 XML 部件并为该自定义部件设置 XML，然后在文档开头插入两个内容控件，并将控件的内容映射为自定义部件中 XML 元素的内容。</para>
           <code>&lt;span class="label"&gt;Dim objRange As Range
@@ -15301,6 +15311,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetMappingByNode (Node As CustomXMLNode) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetMappingByNode(Microsoft::Office::Core::CustomXMLNode ^ Node);" />
+      <MemberSignature Language="F#" Value="abstract member SetMappingByNode : Microsoft.Office.Core.CustomXMLNode -&gt; bool" Usage="xMLMapping.SetMappingByNode Node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -15319,11 +15330,11 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       </Parameters>
       <Docs>
         <param name="Node">指定当前内容控件所映射到的 XML 节点。</param>
-        <summary>允许创建或更改内容控件上的 XML 数据映射。 如果 Microsoft Office Word 将内容控件映射到文档的自定义 XML 数据存储区中的自定义 XML 节点,<b>则返回 True</b> 。</summary>
+        <summary>允许创建或更改内容控件上的 XML 数据映射。 如果 Microsoft Office Word 将内容控件映射到文档的自定义 XML 数据存储区中的自定义 XML 节点，<b>则返回 True</b> 。</summary>
         <returns>Boolean</returns>
-        <remarks><para>如果 XML 映射已经存在，则 Word 将替换现有 XML 映射，并以新映射的 XML 节点的内容替换内容控件的文本。 另请参阅<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法。</para>
+        <remarks><para>如果 XML 映射已经存在，则 Word 将替换现有 XML 映射，并以新映射的 XML 节点的内容替换内容控件的文本。 另请参阅 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> 方法。</para>
           <para>
-            <b>注意</b>: 为富文本内容控件创建映射将导致运行时错误。</para>
+            <b>注意</b>：为富文本内容控件创建映射将导致运行时错误。</para>
           <para> </para></remarks>
         <example><para>以下示例设置文档作者这一内置文档属性，在活动文档中插入新的内容控件，然后将此控件的 XML 映射设置为该内置文档属性。</para>
           <code>&lt;span class="label"&gt;Dim objcc As ContentControl
@@ -19821,6 +19832,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.XPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XPath : string" Usage="Microsoft.Office.Interop.Word.XMLMapping.XPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -19840,7 +19852,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <Docs>
         <summary>返回一个 <b>字符串</b> ，表示为 XML 映射，其计算结果为当前映射的 XML 节点的 XPath。 只读。</summary>
         <value>To be added.</value>
-        <remarks><para>若要设置内容控件的映射, 请使用<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />方法或<see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />方法。 如果映射不是活动的，则使用此属性将返回错误。</para>
+        <remarks><para>若要设置内容控件的映射，请使用 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> 方法或 <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> 方法。 如果映射不是活动的，则使用此属性将返回错误。</para>
           <para> </para></remarks>
         <example><para>以下示例检查活动文档中第一个内容控件是否是日期控件，以及 XPath 字符串是否设置为特定的内置文档属性。如果 XPath 不匹配并且控件是日期控件，它将设置到该控件的映射。</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl

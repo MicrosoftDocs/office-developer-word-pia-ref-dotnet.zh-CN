@@ -1,9 +1,10 @@
 <Type Name="System" FullName="Microsoft.Office.Interop.Word.System">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ed58d5c3d2752ce883fdb2461eb9995959a5ba2c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143908" /></Metadata><TypeSignature Language="C#" Value="public interface System" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f75a4371844341cc751ef2a5030a39f6f31b79f0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926183" /></Metadata><TypeSignature Language="C#" Value="public interface System" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract System" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.System" />
   <TypeSignature Language="VB.NET" Value="Public Interface System" />
   <TypeSignature Language="C++ CLI" Value="public interface class System" />
+  <TypeSignature Language="F#" Value="type System = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>包含有关计算机系统的信息。</summary>
-    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.System" />属性返回<b>系统</b>对象。</para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word._Application.System" /> 属性返回<b>系统</b>对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.System.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.ComputerType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ComputerType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ComputerType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ComputerType : string" Usage="Microsoft.Office.Interop.Word.System.ComputerType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Connect([in]string Path, [in]object&amp; Drive, [in]object&amp; Password) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.System.Connect(System.String,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Connect (Path As String, Optional ByRef Drive As Object, Optional ByRef Password As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Connect : string * obj * obj -&gt; unit" Usage="system.Connect (Path, Drive, Password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -99,17 +103,17 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Path" Type="System.String" />
-        <Parameter Name="Drive" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Password" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Drive" Type="System.Object" RefType="ref" />
+        <Parameter Name="Password" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Path">必需的 <b>字符串</b> 。 网络驱动器的路径 (例如, "\\Project\Info")。</param>
+        <param name="Path">必需的 <b>字符串</b> 。 网络驱动器的路径（例如，" \\ Project\Info"）。</param>
         <param name="Drive">可选<b>对象</b>。 对应要赋予网络驱动器盘符的数字，0（零）对应第一个有效驱动器盘符，1 对应第二个有效驱动器盘符，以此类推。 如果省略此参数，则使用下一个有效盘符。</param>
         <param name="Password">可选<b>对象</b>。 如果网络驱动器有密码保护，则指定密码。</param>
         <summary>建立到网络驱动器的连接。</summary>
         <remarks><para>
-            <b>安全性</b>   避免在应用程序中使用硬编码的密码。 如果过程中需要使用密码，请向用户请求密码并将其存储在一个变量中，然后在代码中使用该变量。</para>
-          <para>将<see cref="P:Microsoft.Office.Interop.Word._Application.Dialogs" />属性与<b>wdDialogConnect</b>常量一起使用可显示 "连接到网络驱动器" 对话框。</para>
+            <b>安全性</b>    避免在应用程序中使用硬编码的密码。 如果过程中需要使用密码，请向用户请求密码并将其存储在一个变量中，然后在代码中使用该变量。</para>
+          <para>将 <see cref="P:Microsoft.Office.Interop.Word._Application.Dialogs" /> 属性与<b>wdDialogConnect</b>常量一起使用可显示 "连接到网络驱动器" 对话框。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.Country" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Country As WdCountry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdCountry Country { Microsoft::Office::Interop::Word::WdCountry get(); };" />
+      <MemberSignature Language="F#" Value="member this.Country : Microsoft.Office.Interop.Word.WdCountry" Usage="Microsoft.Office.Interop.Word.System.Country" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.CountryRegion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CountryRegion As WdCountry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdCountry CountryRegion { Microsoft::Office::Interop::Word::WdCountry get(); };" />
+      <MemberSignature Language="F#" Value="member this.CountryRegion : Microsoft.Office.Interop.Word.WdCountry" Usage="Microsoft.Office.Interop.Word.System.CountryRegion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -252,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.System.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -271,8 +278,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -282,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.Cursor" />
       <MemberSignature Language="VB.NET" Value="Public Property Cursor As WdCursorType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdCursorType Cursor { Microsoft::Office::Interop::Word::WdCursorType get(); void set(Microsoft::Office::Interop::Word::WdCursorType value); };" />
+      <MemberSignature Language="F#" Value="member this.Cursor : Microsoft.Office.Interop.Word.WdCursorType with get, set" Usage="Microsoft.Office.Interop.Word.System.Cursor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -302,7 +310,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCursorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指针的状态（形状）。 <see cref="T:Microsoft.Office.Interop.Word.WdCursorType" />可以是下列常量之一: <b>wdCursorIBeam</b>、 <b>wdCursorNormal</b>、 <b>wdCursorNorthwestArrow</b>或<b>wdCursorWait</b>。</summary>
+        <summary>返回或设置指针的状态（形状）。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.WdCursorType" /> 常量之一： <b>wdCursorIBeam</b>、 <b>WdCursorNormal</b>、 <b>wdCursorNorthwestArrow</b>或<b>wdCursorWait</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -313,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.FreeDiskSpace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FreeDiskSpace As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FreeDiskSpace { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FreeDiskSpace : int" Usage="Microsoft.Office.Interop.Word.System.FreeDiskSpace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -333,7 +342,7 @@
         <summary>以字节为单位返回当前驱动器的可用磁盘空间。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>注释</b> Kb 中有1024个字节, 在一个 mb 中有1048576个字节。 <b>FreeDiskSpace</b> 属性返回的最大值为 2147483647。 因此, 即使有四 gb 的可用磁盘空间, 它也会返回2147483647。</para>
+            <b>注释</b> Kb 中有1024个字节，在一个 mb 中有1048576个字节。 <b>FreeDiskSpace</b> 属性返回的最大值为 2147483647。 因此，即使有四 gb 的可用磁盘空间，它也会返回2147483647。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -343,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.HorizontalResolution" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalResolution As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HorizontalResolution { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalResolution : int" Usage="Microsoft.Office.Interop.Word.System.HorizontalResolution" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -371,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.LanguageDesignation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LanguageDesignation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LanguageDesignation { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageDesignation : string" Usage="Microsoft.Office.Interop.Word.System.LanguageDesignation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -399,6 +410,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.MacintoshName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MacintoshName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MacintoshName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MacintoshName : string" Usage="Microsoft.Office.Interop.Word.System.MacintoshName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -427,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.MathCoprocessorInstalled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MathCoprocessorInstalled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MathCoprocessorInstalled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.MathCoprocessorInstalled : bool" Usage="Microsoft.Office.Interop.Word.System.MathCoprocessorInstalled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -455,6 +468,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.System.MSInfo" />
       <MemberSignature Language="VB.NET" Value="Public Sub MSInfo ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MSInfo();" />
+      <MemberSignature Language="F#" Value="abstract member MSInfo : unit -&gt; unit" Usage="system.MSInfo " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -470,7 +484,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>如果 Microsoft 系统信息应用程序未运行, 则启动它; 如果它已在运行, 则切换到该应用程序。</summary>
+        <summary>如果 Microsoft 系统信息应用程序未运行，则启动它; 如果它已在运行，则切换到该应用程序。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -480,6 +494,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.OperatingSystem" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperatingSystem As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OperatingSystem { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OperatingSystem : string" Usage="Microsoft.Office.Interop.Word.System.OperatingSystem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -508,6 +523,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.System.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -536,6 +552,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.PrivateProfileString(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Property PrivateProfileString(FileName As String, Section As String, Key As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrivateProfileString[System::String ^, System::String ^, System::String ^] { System::String ^ get(System::String ^ FileName, System::String ^ Section, System::String ^ Key); void set(System::String ^ FileName, System::String ^ Section, System::String ^ Key, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PrivateProfileString(string * string * string) : string with get, set" Usage="Microsoft.Office.Interop.Word.System.PrivateProfileString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -561,12 +578,12 @@
         <Parameter Name="Key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">必需的 <b>字符串</b> 。 设置文件的文件名。 如果没有指定路径, 则假定为 Windows 文件夹。</param>
-        <param name="Section">必需的 <b>字符串</b> 。 包含<paramref name="Key" />的设置文件中的节的名称。 在 Windows 设置文件中, 分区名称显示在关联的键前面的括号内 (不要在括号中<paramref name="Section" />包含)。 如果要从 Windows 注册表中返回项的值, <paramref name="Section" />应为子项的完整路径, 包括子树 (例如, "HKEY_CURRENT_USER\Software\Microsoft\Office\version \Word\Options")。</param>
-        <param name="Key">必需的 <b>字符串</b> 。 要检索的项设置或注册表项的值。 在 Windows 设置文件中，项名称后跟等号 (=) 和设置。 如果要从 Windows 注册表中返回项的值, <paramref name="Key" />应为指定的<paramref name="Section" />子项中的条目的名称 (例如, "STARTUP-PATH")。</param>
+        <param name="FileName">必需的 <b>字符串</b> 。 设置文件的文件名。 如果没有指定路径，则假定为 Windows 文件夹。</param>
+        <param name="Section">必需的 <b>字符串</b> 。 包含的设置文件中的节的名称 <paramref name="Key" /> 。 在 Windows 设置文件中，分区名称显示在关联的键前面的括号内（不要在括号中包含 <paramref name="Section" /> ）。 如果要从 Windows 注册表中返回项的值， <paramref name="Section" /> 应为子项的完整路径，包括子树（例如，"HKEY_CURRENT_USER \Software\microsoft\office\version \Word\Options"）。</param>
+        <param name="Key">必需的 <b>字符串</b> 。 要检索的项设置或注册表项的值。 在 Windows 设置文件中，项名称后跟等号 (=) 和设置。 如果要从 Windows 注册表中返回项的值， <paramref name="Key" /> 应为指定的子项中的条目的名称 <paramref name="Section" /> （例如，"STARTUP-PATH"）。</param>
         <summary>返回或设置设置文件或 Windows 注册表中的字符串。</summary>
         <value>To be added.</value>
-        <remarks><para>您可以编写使用设置文件存储和检索设置的代码。 例如, 您可以在退出 Word 时存储活动文档的名称, 以便在下次启动 Microsoft Word 时自动重新打开该文档。 设置文件是一个文本文件，其信息安排类似 Windows 3.x 版的 WIN.INI 文件中的信息。</para>
+        <remarks><para>您可以编写使用设置文件存储和检索设置的代码。 例如，您可以在退出 Word 时存储活动文档的名称，以便在下次启动 Microsoft Word 时自动重新打开该文档。 设置文件是一个文本文件，其信息安排类似 Windows 3.x 版的 WIN.INI 文件中的信息。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -576,6 +593,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.ProcessorType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProcessorType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProcessorType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProcessorType : string" Usage="Microsoft.Office.Interop.Word.System.ProcessorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -607,6 +625,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.ProfileString(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Property ProfileString(Section As String, Key As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProfileString[System::String ^, System::String ^] { System::String ^ get(System::String ^ Section, System::String ^ Key); void set(System::String ^ Section, System::String ^ Key, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProfileString(string * string) : string with get, set" Usage="Microsoft.Office.Interop.Word.System.ProfileString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -631,8 +650,8 @@
         <Parameter Name="Key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Section">必需的 <b>字符串</b> 。 Windows 注册表中的 "HKEY_CURRENT_USER\Software\Microsoft\Office\version \Word" 子键下的子项。</param>
-        <param name="Key">必需的 <b>字符串</b> 。 由<paramref name="Section" />指定的子项中的条目的名称 (例如, Options 子项中的 "BackgroundPrint")。</param>
+        <param name="Section">必需的 <b>字符串</b> 。 Windows 注册表中的 "HKEY_CURRENT_USER \Software\Microsoft\Office\version \Word" 子项下的子键。</param>
+        <param name="Key">必需的 <b>字符串</b> 。 由指定的子项中的条目的名称 <paramref name="Section" /> （例如，Options 子项中的 "BackgroundPrint"）。</param>
         <summary>返回或设置在以下注册表子项下的 Windows 注册表中的项的值: HKEY_CURRENT_USER\Software\Microsoft\Office\version\Word。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -644,6 +663,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.QuickDrawInstalled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QuickDrawInstalled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool QuickDrawInstalled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.QuickDrawInstalled : bool" Usage="Microsoft.Office.Interop.Word.System.QuickDrawInstalled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -672,6 +692,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="Microsoft.Office.Interop.Word.System.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -700,6 +721,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.System.VerticalResolution" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalResolution As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VerticalResolution { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalResolution : int" Usage="Microsoft.Office.Interop.Word.System.VerticalResolution" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

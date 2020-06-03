@@ -1,9 +1,10 @@
 <Type Name="View" FullName="Microsoft.Office.Interop.Word.View">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5f9e0c4e9f7ec1021964e80672f2867a5ad16420" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143719" /></Metadata><TypeSignature Language="C#" Value="public interface View" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d279a3cc15f0e12c7f0eaf0a61bf4fea46154924" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925987" /></Metadata><TypeSignature Language="C#" Value="public interface View" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract View" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.View" />
   <TypeSignature Language="VB.NET" Value="Public Interface View" />
   <TypeSignature Language="C++ CLI" Value="public interface class View" />
+  <TypeSignature Language="F#" Value="type View = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,10 +20,10 @@
   </Attributes>
   <Docs>
     <summary>包含窗口或窗格的视图属性（全部显示、域底纹、表格虚框等）。</summary>
-    <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.Window" />或<see cref="T:Microsoft.Office.Interop.Word.Pane" />对象的<b>View</b>属性可返回<b>View</b>对象。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.View.Type" />属性更改视图。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Zoom.Percentage" />属性可更改屏幕上文本的大小。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.View.SeekView" />属性可查看批注、尾注、脚注或文档页眉或页脚。</para>
+    <remarks><para>使用或对象的<b>View</b>属性 <see cref="T:Microsoft.Office.Interop.Word.Window" /> <see cref="T:Microsoft.Office.Interop.Word.Pane" /> 可返回<b>View</b>对象。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.View.Type" /> 属性更改视图。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.Zoom.Percentage" /> 属性可更改屏幕上文本的大小。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.View.SeekView" /> 属性可查看批注、尾注、脚注或文档页眉或页脚。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.View.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.BrowseToWindow" />
       <MemberSignature Language="VB.NET" Value="Public Property BrowseToWindow As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BrowseToWindow { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.BrowseToWindow : int with get, set" Usage="Microsoft.Office.Interop.Word.View.BrowseToWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.View.CollapseAllHeadings" />
       <MemberSignature Language="VB.NET" Value="Public Sub CollapseAllHeadings ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CollapseAllHeadings();" />
+      <MemberSignature Language="F#" Value="abstract member CollapseAllHeadings : unit -&gt; unit" Usage="view.CollapseAllHeadings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CollapseOutline([in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.View.CollapseOutline(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CollapseOutline (Optional ByRef Range As Object)" />
+      <MemberSignature Language="F#" Value="abstract member CollapseOutline : obj -&gt; unit" Usage="view.CollapseOutline Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -136,13 +141,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">可选<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 需要折叠的段落范围。 如果省略此参数，则折叠全部选定内容。</param>
+        <param name="Range">可选 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象。 需要折叠的段落范围。 如果省略此参数，则折叠全部选定内容。</param>
         <summary>将选定内容或指定范围内的正文折叠一个标题级别。</summary>
         <remarks><para>
-            <b>注释</b> 如果文档不在大纲或主控文档视图中, 则会发生错误。</para>
+            <b>注释</b> 如果文档不在大纲或主控文档视图中，则会发生错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ColumnWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnWidth As WdColumnWidth" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColumnWidth ColumnWidth { Microsoft::Office::Interop::Word::WdColumnWidth get(); void set(Microsoft::Office::Interop::Word::WdColumnWidth value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnWidth : Microsoft.Office.Interop.Word.WdColumnWidth with get, set" Usage="Microsoft.Office.Interop.Word.View.ColumnWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -172,7 +178,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColumnWidth</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或获取一个常量, 该常量确定在阅读模式下的列宽。 读写<see cref="T:Microsoft.Office.Interop.Word.WdColumnWidth" /></summary>
+        <summary>返回或获取一个常量，该常量确定在阅读模式下的列宽。 读写<see cref="T:Microsoft.Office.Interop.Word.WdColumnWidth" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ConflictMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ConflictMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConflictMode { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ConflictMode : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ConflictMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,7 +211,7 @@
       </ReturnValue>
       <Docs>
         <summary>获取或设置文档是否处于冲突模式视图。</summary>
-        <value>如果文档处于冲突模式视图中, 则为<b>true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <value>如果文档处于冲突模式视图中，则为<b>true</b> ; 否则为 false。否则<b>为 false</b>。</value>
         <remarks><para>读/写。</para>
           <para> </para></remarks>
       </Docs>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.View.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -234,8 +242,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -245,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.DisplayBackgrounds" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayBackgrounds As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayBackgrounds { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayBackgrounds : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.DisplayBackgrounds" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -267,7 +276,7 @@
       <Docs>
         <summary>返回或设置一个 <b>boolean 类型的值</b> ，该值表示是否在页面视图中显示文档时显示背景色和图像。</summary>
         <value>To be added.</value>
-        <remarks><para><b>DisplayBackgrounds</b>属性对应于 "选项" 对话框的 "视图" 选项卡上的 "背景色和图像 (仅页面视图)" 选项。</para>
+        <remarks><para><b>DisplayBackgrounds</b>属性对应于 "选项" 对话框的 "视图" 选项卡上的 "背景色和图像（仅页面视图）" 选项。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -277,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.DisplayPageBoundaries" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayPageBoundaries As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayPageBoundaries { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayPageBoundaries : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.DisplayPageBoundaries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -309,6 +319,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.DisplaySmartTags" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplaySmartTags As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplaySmartTags { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplaySmartTags : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.DisplaySmartTags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -347,6 +358,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.Draft" />
       <MemberSignature Language="VB.NET" Value="Public Property Draft As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Draft { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Draft : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.Draft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -378,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.EnlargeFontsLessThan" />
       <MemberSignature Language="VB.NET" Value="Public Property EnlargeFontsLessThan As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EnlargeFontsLessThan { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.EnlargeFontsLessThan : int with get, set" Usage="Microsoft.Office.Interop.Word.View.EnlargeFontsLessThan" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -415,6 +428,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.View.ExpandAllHeadings" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExpandAllHeadings ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExpandAllHeadings();" />
+      <MemberSignature Language="F#" Value="abstract member ExpandAllHeadings : unit -&gt; unit" Usage="view.ExpandAllHeadings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -440,6 +454,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExpandOutline([in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.View.ExpandOutline(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ExpandOutline (Optional ByRef Range As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ExpandOutline : obj -&gt; unit" Usage="view.ExpandOutline Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -454,13 +469,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">可选<see cref="T:Microsoft.Office.Interop.Word.Range" />对象。 要展开的段落的范围。 如果省略此参数，则展开全部选定内容。</param>
+        <param name="Range">可选 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象。 要展开的段落的范围。 如果省略此参数，则展开全部选定内容。</param>
         <summary>将所选内容或指定范围内的文本展开一个标题级别。</summary>
         <remarks><para>
-            <b>注释</b> 如果文档不在大纲或主控文档视图中, 则会发生错误。</para>
+            <b>注释</b> 如果文档不在大纲或主控文档视图中，则会发生错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -470,6 +485,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.FieldShading" />
       <MemberSignature Language="VB.NET" Value="Public Property FieldShading As WdFieldShading" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFieldShading FieldShading { Microsoft::Office::Interop::Word::WdFieldShading get(); void set(Microsoft::Office::Interop::Word::WdFieldShading value); };" />
+      <MemberSignature Language="F#" Value="member this.FieldShading : Microsoft.Office.Interop.Word.WdFieldShading with get, set" Usage="Microsoft.Office.Interop.Word.View.FieldShading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -493,7 +509,7 @@
         <summary>返回或设置窗体域的屏幕底纹。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFieldShading" />可以是下列<b>WdFieldShading</b>常量之一: </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFieldShading" />可以是下列<b>WdFieldShading</b>常量之一： </para>
           <para>
             <b>wdFieldShadingAlways</b>
           </para>
@@ -512,6 +528,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.FullScreen" />
       <MemberSignature Language="VB.NET" Value="Public Property FullScreen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FullScreen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.FullScreen : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.FullScreen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -543,6 +560,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.Magnifier" />
       <MemberSignature Language="VB.NET" Value="Public Property Magnifier As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Magnifier { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Magnifier : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.Magnifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -575,6 +593,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.MailMergeDataView" />
       <MemberSignature Language="VB.NET" Value="Public Property MailMergeDataView As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MailMergeDataView { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MailMergeDataView : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.MailMergeDataView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -607,6 +626,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.MarkupMode" />
       <MemberSignature Language="VB.NET" Value="Public Property MarkupMode As WdRevisionsMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRevisionsMode MarkupMode { Microsoft::Office::Interop::Word::WdRevisionsMode get(); void set(Microsoft::Office::Interop::Word::WdRevisionsMode value); };" />
+      <MemberSignature Language="F#" Value="member this.MarkupMode : Microsoft.Office.Interop.Word.WdRevisionsMode with get, set" Usage="Microsoft.Office.Interop.Word.View.MarkupMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -627,7 +647,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />常量, 表示修订的显示模式。 读/写。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" /> 常量，表示修订的显示模式。 读/写。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -638,6 +658,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.View.NextHeaderFooter" />
       <MemberSignature Language="VB.NET" Value="Public Sub NextHeaderFooter ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NextHeaderFooter();" />
+      <MemberSignature Language="F#" Value="abstract member NextHeaderFooter : unit -&gt; unit" Usage="view.NextHeaderFooter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -653,9 +674,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>如果所选内容位于页眉中, 则此方法将移至当前节中的下一个页眉 (例如, 从奇数页眉到偶数头) 或下一节中的第一个头。 如果所选内容位于页脚中, 则移动到下一个页脚。</summary>
+        <summary>如果所选内容位于页眉中，则此方法将移至当前节中的下一个页眉（例如，从奇数页眉到偶数头）或下一节中的第一个头。 如果所选内容位于页脚中，则移动到下一个页脚。</summary>
         <remarks><para>
-            <b>注释</b> 如果所选内容位于文档的最后一节的最后一个页眉或页脚中, 或者, 如果不在页眉或页脚中, 则会发生错误。</para>
+            <b>注释</b> 如果所选内容位于文档的最后一节的最后一个页眉或页脚中，或者，如果不在页眉或页脚中，则会发生错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -665,6 +686,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.PageColor" />
       <MemberSignature Language="VB.NET" Value="Public Property PageColor As WdPageColor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdPageColor PageColor { Microsoft::Office::Interop::Word::WdPageColor get(); void set(Microsoft::Office::Interop::Word::WdPageColor value); };" />
+      <MemberSignature Language="F#" Value="member this.PageColor : Microsoft.Office.Interop.Word.WdPageColor with get, set" Usage="Microsoft.Office.Interop.Word.View.PageColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -685,7 +707,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回并设置阅读模式下的页面颜色。 读写<see cref="T:Microsoft.Office.Interop.Word.WdPageColor" />。</summary>
+        <summary>返回并设置阅读模式下的页面颜色。 读写 <see cref="T:Microsoft.Office.Interop.Word.WdPageColor" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -696,6 +718,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.Panning" />
       <MemberSignature Language="VB.NET" Value="Public Property Panning As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Panning { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Panning : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.Panning" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -716,7 +739,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Boolean</b>类型的值, 该值代表 Microsoft Office Word 是否处于全景模式。 读/写。</summary>
+        <summary>返回或设置一个<b>Boolean</b>类型的值，该值代表 Microsoft Office Word 是否处于全景模式。 读/写。</summary>
         <value><b>Boolean</b></value>
         <remarks><para>全景模式将鼠标指针变为手形，使用户能够通过按住鼠标来拖动文档，从而滚动查看文档页。</para>
           <para> </para></remarks>
@@ -728,6 +751,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.View.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -756,6 +780,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.View.PreviousHeaderFooter" />
       <MemberSignature Language="VB.NET" Value="Public Sub PreviousHeaderFooter ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PreviousHeaderFooter();" />
+      <MemberSignature Language="F#" Value="abstract member PreviousHeaderFooter : unit -&gt; unit" Usage="view.PreviousHeaderFooter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -771,9 +796,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>如果所选内容位于页眉中, 则此方法将移至当前节中的上一个页眉 (例如, 从偶数页眉到奇数页眉) 或上一节中的最后一个页眉。 如果所选内容位于页脚中, 则移动到前一个页脚。</summary>
+        <summary>如果所选内容位于页眉中，则此方法将移至当前节中的上一个页眉（例如，从偶数页眉到奇数页眉）或上一节中的最后一个页眉。 如果所选内容位于页脚中，则移动到前一个页脚。</summary>
         <remarks><para>
-            <b>注释</b> 如果所选内容位于文档第一节的第一个页眉或页脚中, 或者, 如果不在页眉或页脚中, 则会发生错误。</para>
+            <b>注释</b> 如果所选内容位于文档第一节的第一个页眉或页脚中，或者，如果不在页眉或页脚中，则会发生错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -783,6 +808,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ReadingLayout" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadingLayout As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadingLayout { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadingLayout : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ReadingLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -803,7 +829,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个<b>Boolean</b>类型的值, 该值表示是否在阅读版式视图中查看文档。</summary>
+        <summary>设置或返回一个<b>Boolean</b>类型的值，该值表示是否在阅读版式视图中查看文档。</summary>
         <value>To be added.</value>
         <remarks><para>如果为 
             <b>True</b>，则将文档切换到阅读版式视图。 如果为 <b>False</b>，则关闭阅读版式视图。</para>
@@ -816,6 +842,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ReadingLayoutActualView" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadingLayoutActualView As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadingLayoutActualView { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadingLayoutActualView : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ReadingLayoutActualView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -848,6 +875,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ReadingLayoutAllowEditing" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadingLayoutAllowEditing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadingLayoutAllowEditing { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadingLayoutAllowEditing : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ReadingLayoutAllowEditing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -885,6 +913,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ReadingLayoutAllowMultiplePages" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadingLayoutAllowMultiplePages As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadingLayoutAllowMultiplePages { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadingLayoutAllowMultiplePages : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ReadingLayoutAllowMultiplePages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -922,6 +951,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ReadingLayoutTruncateMargins" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadingLayoutTruncateMargins As WdReadingLayoutMargin" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdReadingLayoutMargin ReadingLayoutTruncateMargins { Microsoft::Office::Interop::Word::WdReadingLayoutMargin get(); void set(Microsoft::Office::Interop::Word::WdReadingLayoutMargin value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadingLayoutTruncateMargins : Microsoft.Office.Interop.Word.WdReadingLayoutMargin with get, set" Usage="Microsoft.Office.Interop.Word.View.ReadingLayoutTruncateMargins" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -942,7 +972,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdReadingLayoutMargin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" />常量, 表示在阅读版式视图中查看文档时边距是可见还是隐藏。 读/写。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" /> 常量，表示在阅读版式视图中查看文档时边距是可见还是隐藏。 读/写。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -953,6 +983,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.Reviewers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reviewers As Reviewers" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Reviewers ^ Reviewers { Microsoft::Office::Interop::Word::Reviewers ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reviewers : Microsoft.Office.Interop.Word.Reviewers" Usage="Microsoft.Office.Interop.Word.View.Reviewers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -984,6 +1015,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.RevisionsBalloonShowConnectingLines" />
       <MemberSignature Language="VB.NET" Value="Public Property RevisionsBalloonShowConnectingLines As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RevisionsBalloonShowConnectingLines { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RevisionsBalloonShowConnectingLines : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.RevisionsBalloonShowConnectingLines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1015,6 +1047,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.RevisionsBalloonSide" />
       <MemberSignature Language="VB.NET" Value="Public Property RevisionsBalloonSide As WdRevisionsBalloonMargin" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRevisionsBalloonMargin RevisionsBalloonSide { Microsoft::Office::Interop::Word::WdRevisionsBalloonMargin get(); void set(Microsoft::Office::Interop::Word::WdRevisionsBalloonMargin value); };" />
+      <MemberSignature Language="F#" Value="member this.RevisionsBalloonSide : Microsoft.Office.Interop.Word.WdRevisionsBalloonMargin with get, set" Usage="Microsoft.Office.Interop.Word.View.RevisionsBalloonSide" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1035,10 +1068,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsBalloonMargin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个常量, 该常量指定 Microsoft Word 是否在文档的左边距或右边距中显示修订气球。</summary>
+        <summary>设置或返回一个常量，该常量指定 Microsoft Word 是否在文档的左边距或右边距中显示修订气球。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonMargin" />可以是下列<b>WdRevisionsBalloonMargin</b>常量之一: </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonMargin" />可以是下列<b>WdRevisionsBalloonMargin</b>常量之一： </para>
           <para>
             <b>wdLeftMargin</b>
           </para>
@@ -1054,6 +1087,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.RevisionsBalloonWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property RevisionsBalloonWidth As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RevisionsBalloonWidth { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.RevisionsBalloonWidth : single with get, set" Usage="Microsoft.Office.Interop.Word.View.RevisionsBalloonWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1076,7 +1110,7 @@
       <Docs>
         <summary>设置或返回一个 <b>Single</b> 类型的值，该值代表 Microsoft Word 中用于指定修订气球宽度的全局设置。</summary>
         <value>To be added.</value>
-        <remarks><para>修订气球的宽度包括文档边距和气球边缘之间的半英寸的边距以及气球的边缘与纸张边缘之间的八分之一英寸的边距。 Microsoft Word 沿纸张的左边缘或右边缘添加间距。 此宽度会扩展到边距，但并不更改文档的宽度或纸张大小。 使用<see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" />属性可指定在设置<b>RevisionsBalloonWidth</b>属性时要使用的度量。</para>
+        <remarks><para>修订气球的宽度包括文档边距和气球边缘之间的半英寸的边距以及气球的边缘与纸张边缘之间的八分之一英寸的边距。 Microsoft Word 沿纸张的左边缘或右边缘添加间距。 此宽度会扩展到边距，但并不更改文档的宽度或纸张大小。 使用 <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" /> 属性可指定在设置<b>RevisionsBalloonWidth</b>属性时要使用的度量。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1086,6 +1120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.RevisionsBalloonWidthType" />
       <MemberSignature Language="VB.NET" Value="Public Property RevisionsBalloonWidthType As WdRevisionsBalloonWidthType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRevisionsBalloonWidthType RevisionsBalloonWidthType { Microsoft::Office::Interop::Word::WdRevisionsBalloonWidthType get(); void set(Microsoft::Office::Interop::Word::WdRevisionsBalloonWidthType value); };" />
+      <MemberSignature Language="F#" Value="member this.RevisionsBalloonWidthType : Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType with get, set" Usage="Microsoft.Office.Interop.Word.View.RevisionsBalloonWidthType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1106,15 +1141,15 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个常量, 该常量代表指定 Microsoft Word 如何测量修订气球宽度的全局设置。</summary>
+        <summary>设置或返回一个常量，该常量代表指定 Microsoft Word 如何测量修订气球宽度的全局设置。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" />可以是下列<b>WdRevisionsBalloonWidthType</b>常量之一: </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" />可以是下列<b>WdRevisionsBalloonWidthType</b>常量之一： </para>
           <para>
             <b>wdBalloonWidthPercent</b> –以文档宽度的百分比度量。 </para>
           <para>
             <b>wdBalloonWidthPoints</b> –以磅为单位。 </para>
-          <para><b>RevisionsBalloonWidthType</b>属性设置在设置<see cref="P:Microsoft.Office.Interop.Word.View.RevisionsBalloonWidth" />属性时要使用的度量单位。</para>
+          <para><b>RevisionsBalloonWidthType</b>属性设置在设置属性时要使用的度量单位 <see cref="P:Microsoft.Office.Interop.Word.View.RevisionsBalloonWidth" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1124,6 +1159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.RevisionsFilter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RevisionsFilter As RevisionsFilter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::RevisionsFilter ^ RevisionsFilter { Microsoft::Office::Interop::Word::RevisionsFilter ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RevisionsFilter : Microsoft.Office.Interop.Word.RevisionsFilter" Usage="Microsoft.Office.Interop.Word.View.RevisionsFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1152,6 +1188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.RevisionsMode" />
       <MemberSignature Language="VB.NET" Value="Public Property RevisionsMode As WdRevisionsMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRevisionsMode RevisionsMode { Microsoft::Office::Interop::Word::WdRevisionsMode get(); void set(Microsoft::Office::Interop::Word::WdRevisionsMode value); };" />
+      <MemberSignature Language="F#" Value="member this.RevisionsMode : Microsoft.Office.Interop.Word.WdRevisionsMode with get, set" Usage="Microsoft.Office.Interop.Word.View.RevisionsMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1178,10 +1215,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个常量, 该常量代表全局选项, 该选项指定 Microsoft Word 是在边距中显示批注框还是嵌入到文档的文本中。</summary>
+        <summary>设置或返回一个常量，该常量代表全局选项，该选项指定 Microsoft Word 是在边距中显示批注框还是嵌入到文档的文本中。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />可以是下列<b>WdRevisionsMode</b>常量之一: </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />可以是下列<b>WdRevisionsMode</b>常量之一： </para>
           <para>
             <b>wdBalloonRevisions</b> –在左侧或右侧边距中的气球中显示修订。 </para>
           <para>
@@ -1195,6 +1232,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.RevisionsView" />
       <MemberSignature Language="VB.NET" Value="Public Property RevisionsView As WdRevisionsView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRevisionsView RevisionsView { Microsoft::Office::Interop::Word::WdRevisionsView get(); void set(Microsoft::Office::Interop::Word::WdRevisionsView value); };" />
+      <MemberSignature Language="F#" Value="member this.RevisionsView : Microsoft.Office.Interop.Word.WdRevisionsView with get, set" Usage="Microsoft.Office.Interop.Word.View.RevisionsView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1232,6 +1270,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.SeekView" />
       <MemberSignature Language="VB.NET" Value="Public Property SeekView As WdSeekView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdSeekView SeekView { Microsoft::Office::Interop::Word::WdSeekView get(); void set(Microsoft::Office::Interop::Word::WdSeekView value); };" />
+      <MemberSignature Language="F#" Value="member this.SeekView : Microsoft.Office.Interop.Word.WdSeekView with get, set" Usage="Microsoft.Office.Interop.Word.View.SeekView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1255,7 +1294,7 @@
         <summary>返回或设置在页面视图中显示的文档元素。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdSeekView" />可以是下列<b>WdSeekView</b>常量之一: </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdSeekView" />可以是下列<b>WdSeekView</b>常量之一： </para>
           <para>
             <b>wdSeekCurrentPageFooter</b>
           </para>
@@ -1299,6 +1338,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShadeEditableRanges" />
       <MemberSignature Language="VB.NET" Value="Public Property ShadeEditableRanges As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ShadeEditableRanges { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ShadeEditableRanges : int with get, set" Usage="Microsoft.Office.Interop.Word.View.ShadeEditableRanges" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1319,7 +1359,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Integer</b>类型的值, 该值表示是否对文档中用户有权修改的区域应用底纹。 如果为 <b>True</b>，则将底纹应用于文档中用户可以修改的区域。</summary>
+        <summary>返回或设置一个<b>Integer</b>类型的值，该值表示是否对文档中用户有权修改的区域应用底纹。 如果为 <b>True</b>，则将底纹应用于文档中用户可以修改的区域。</summary>
         <value>To be added.</value>
         <remarks><para>默认情况下，区域底纹处于打开状态。 当区域底纹处于打开状态，或将该属性设置为 <b>True</b> 时，<b>ShadeEditableRanges</b> 属性返回的值为 65535。 将 <b>ShadeEditableRanges</b> 属性设置为 <b>False</b> 时，返回的值为 0。 该值仅用于代表属性值为 <b>True</b> 或 <b>False</b>，没有其他意义。</para>
           <para> </para></remarks>
@@ -1331,6 +1371,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowAll" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowAll As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowAll { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowAll : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowAll" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1362,6 +1403,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.View.ShowAllHeadings" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowAllHeadings ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowAllHeadings();" />
+      <MemberSignature Language="F#" Value="abstract member ShowAllHeadings : unit -&gt; unit" Usage="view.ShowAllHeadings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1377,9 +1419,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>在显示所有文本 (包括标题和正文) 和仅显示标题之间切换。</summary>
+        <summary>在显示所有文本（包括标题和正文）和仅显示标题之间切换。</summary>
         <remarks><para>
-            <b>注释</b> 如果不是大纲视图或主控文档视图, 则此方法将生成一个错误。</para>
+            <b>注释</b> 如果不是大纲视图或主控文档视图，则此方法将生成一个错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1389,6 +1431,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowAnimation" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowAnimation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowAnimation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowAnimation : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowAnimation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1426,6 +1469,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowBookmarks" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowBookmarks As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowBookmarks { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowBookmarks : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowBookmarks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1457,6 +1501,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowComments" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowComments As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowComments { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowComments : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowComments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1489,6 +1534,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowCropMarks" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowCropMarks As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowCropMarks { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowCropMarks : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowCropMarks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1513,7 +1559,7 @@
         <value><b>Boolean</b></value>
         <remarks><para>如果显示裁减标记，将禁止用户通过拖动裁减标记来更改边距。 显示裁减标记只是为了指示边距在页面上的位置。 此属性对应于 "Word 选项" 对话框的 "高级" 选项卡中的 "裁减标记" 复选框。</para>
           <para>
-            <b>注意</b>: 默认情况下, 在东亚语言中显示裁剪标记, 默认情况下, 在所有其他语言中将其关闭。</para>
+            <b>注意</b>：默认情况下，在东亚语言中显示裁剪标记，默认情况下，在所有其他语言中将其关闭。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1523,6 +1569,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowDrawings" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowDrawings As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowDrawings { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowDrawings : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowDrawings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1554,6 +1601,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowFieldCodes" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowFieldCodes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowFieldCodes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowFieldCodes : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowFieldCodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1585,6 +1633,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowFirstLineOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowFirstLineOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowFirstLineOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowFirstLineOnly : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowFirstLineOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1617,6 +1666,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowFormat As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowFormat { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowFormat : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1649,6 +1699,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowFormatChanges" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowFormatChanges As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowFormatChanges { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowFormatChanges : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowFormatChanges" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1681,6 +1732,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.View.ShowHeading(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowHeading (Level As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowHeading(int Level);" />
+      <MemberSignature Language="F#" Value="abstract member ShowHeading : int -&gt; unit" Usage="view.ShowHeading Level" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1701,7 +1753,7 @@
         <param name="Level">必需的<b>整数</b>。 指大纲标题的级别（可取 1 到 9 之间数值）。</param>
         <summary>显示所有高于指定标题级别的标题，隐藏子标题和正文。</summary>
         <remarks><para>
-            <b>注释</b> 如果不是大纲视图或主控文档视图, 则此方法将生成一个错误。</para>
+            <b>注释</b> 如果不是大纲视图或主控文档视图，则此方法将生成一个错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1711,6 +1763,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowHiddenText" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowHiddenText As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowHiddenText { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowHiddenText : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowHiddenText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1742,6 +1795,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowHighlight" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowHighlight As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowHighlight { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowHighlight : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowHighlight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1773,6 +1827,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowHyphens" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowHyphens As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowHyphens { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowHyphens : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowHyphens" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1804,6 +1859,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowInkAnnotations" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowInkAnnotations As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowInkAnnotations { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowInkAnnotations : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowInkAnnotations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1824,7 +1880,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Boolean</b>类型的值, 该值显示或隐藏手写墨迹注释。 如果显示墨迹注释， <b>则返回 true</b> 。 <b>False</b> 隐藏墨迹注释。</summary>
+        <summary>返回或设置一个<b>Boolean</b>类型的值，该值显示或隐藏手写墨迹注释。 如果显示墨迹注释， <b>则返回 true</b> 。 <b>False</b> 隐藏墨迹注释。</summary>
         <value>To be added.</value>
         <remarks><para>若要使用墨迹注释，您必须运行 Microsoft Word 在 tablet 计算机上。</para>
           <para> </para></remarks>
@@ -1836,6 +1892,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowInsertionsAndDeletions" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowInsertionsAndDeletions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowInsertionsAndDeletions { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowInsertionsAndDeletions : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowInsertionsAndDeletions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1867,6 +1924,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowMainTextLayer" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowMainTextLayer As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowMainTextLayer { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowMainTextLayer : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowMainTextLayer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1899,6 +1957,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowMarkupAreaHighlight" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowMarkupAreaHighlight As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowMarkupAreaHighlight { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowMarkupAreaHighlight : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowMarkupAreaHighlight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1937,6 +1996,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowObjectAnchors" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowObjectAnchors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowObjectAnchors { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowObjectAnchors : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowObjectAnchors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1968,6 +2028,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowOptionalBreaks" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowOptionalBreaks As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowOptionalBreaks { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowOptionalBreaks : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowOptionalBreaks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1999,6 +2060,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowOtherAuthors" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowOtherAuthors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowOtherAuthors { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowOtherAuthors : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowOtherAuthors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2020,7 +2082,7 @@
       </ReturnValue>
       <Docs>
         <summary>获取或设置是否在文档中显示其他作者的状态。</summary>
-        <value>如果其他作者的状态应在文档中可见, 则为<b>true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <value>如果其他作者的状态应在文档中可见，则为<b>true</b> ; 否则为 false。否则<b>为 false</b>。</value>
         <remarks><para>读/写布尔。 使用此属性可在共同创作时切换显示其他作者的状态。</para>
           <para> </para></remarks>
       </Docs>
@@ -2031,6 +2093,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowParagraphs" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowParagraphs As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowParagraphs { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowParagraphs : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowParagraphs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2062,6 +2125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowPicturePlaceHolders" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowPicturePlaceHolders As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowPicturePlaceHolders { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowPicturePlaceHolders : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowPicturePlaceHolders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2093,6 +2157,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowRevisionsAndComments" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowRevisionsAndComments As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowRevisionsAndComments { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowRevisionsAndComments : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowRevisionsAndComments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2124,6 +2189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowSpaces" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowSpaces As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowSpaces { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowSpaces : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowSpaces" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2155,6 +2221,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowTabs" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowTabs As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowTabs { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowTabs : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowTabs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2186,6 +2253,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowTextBoundaries" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowTextBoundaries As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowTextBoundaries { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowTextBoundaries : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowTextBoundaries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2217,6 +2285,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.ShowXMLMarkup" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowXMLMarkup As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ShowXMLMarkup { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowXMLMarkup : int with get, set" Usage="Microsoft.Office.Interop.Word.View.ShowXMLMarkup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2237,7 +2306,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>Integer</b>类型的值, 该值表示是否在文档中查看 XML 标记。</summary>
+        <summary>返回一个<b>Integer</b>类型的值，该值表示是否在文档中查看 XML 标记。</summary>
         <value>To be added.</value>
         <remarks><para>
             <b>True</b> 指示标记是可见的。 <b>False</b> 指示标记处于隐藏状态。 <b>wdToggle</b> 允许您切换显示和隐藏 XML 标记。</para>
@@ -2250,6 +2319,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.SplitSpecial" />
       <MemberSignature Language="VB.NET" Value="Public Property SplitSpecial As WdSpecialPane" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdSpecialPane SplitSpecial { Microsoft::Office::Interop::Word::WdSpecialPane get(); void set(Microsoft::Office::Interop::Word::WdSpecialPane value); };" />
+      <MemberSignature Language="F#" Value="member this.SplitSpecial : Microsoft.Office.Interop.Word.WdSpecialPane with get, set" Usage="Microsoft.Office.Interop.Word.View.SplitSpecial" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2273,7 +2343,7 @@
         <summary>返回或设置活动窗口的窗格。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdSpecialPane" />可以是下列的<b>WdSpecialPane</b>常量之一:</para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdSpecialPane" />可以是下列的<b>WdSpecialPane</b>常量之一：</para>
           <para>
             <b>wdPaneComments</b>
           </para>
@@ -2340,6 +2410,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.TableGridlines" />
       <MemberSignature Language="VB.NET" Value="Public Property TableGridlines As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TableGridlines { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TableGridlines : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.TableGridlines" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2371,6 +2442,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.Type" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Type As WdViewType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdViewType default { Microsoft::Office::Interop::Word::WdViewType get(); void set(Microsoft::Office::Interop::Word::WdViewType value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdViewType with get, set" Usage="Microsoft.Office.Interop.Word.View.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2394,7 +2466,7 @@
         <summary>返回或设置视图的类型。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdViewType" />可以是下列<b>WdViewType</b>常量之一: </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdViewType" />可以是下列<b>WdViewType</b>常量之一： </para>
           <para>
             <b>wdMasterView</b>
           </para>
@@ -2417,7 +2489,7 @@
             <b>wdReadingView</b>
           </para>
           <para><b>Type</b> 属性返回 <b>wdMasterView</b> 是分级显示当前视图的所有文档或主控文档。当前视图将永远不会返回 <b>wdOutlineView</b> ，除非明确地设置代码中的第一次。</para>
-          <para>若要检查当前文档是否为大纲, 请使用<b>Type</b>属性和<see cref="T:Microsoft.Office.Interop.Word.Subdocuments" />集合的<see cref="P:Microsoft.Office.Interop.Word.Subdocuments.Count" />属性。 如果 <b>Type</b> 属性返回 <b>wdOutlineView</b> 或 <b>wdMasterView</b> ， <b>Count</b> 属性将返回零，该文档是大纲。</para>
+          <para>若要检查当前文档是否为大纲，请使用<b>Type</b>属性和 <see cref="T:Microsoft.Office.Interop.Word.Subdocuments" /> 集合的 <see cref="P:Microsoft.Office.Interop.Word.Subdocuments.Count" /> 属性。 如果 <b>Type</b> 属性返回 <b>wdOutlineView</b> 或 <b>wdMasterView</b> ， <b>Count</b> 属性将返回零，该文档是大纲。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2427,6 +2499,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.WrapToWindow" />
       <MemberSignature Language="VB.NET" Value="Public Property WrapToWindow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WrapToWindow { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.WrapToWindow : bool with get, set" Usage="Microsoft.Office.Interop.Word.View.WrapToWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2458,6 +2531,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.View.Zoom" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Zoom As Zoom" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Zoom ^ Zoom { Microsoft::Office::Interop::Word::Zoom ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Zoom : Microsoft.Office.Interop.Word.Zoom" Usage="Microsoft.Office.Interop.Word.View.Zoom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2475,7 +2549,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Zoom</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Zoom" />对象, 表示指定视图的缩放比例。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Zoom" /> 对象，表示指定视图的缩放比例。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

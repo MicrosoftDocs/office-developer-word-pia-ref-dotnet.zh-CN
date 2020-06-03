@@ -1,9 +1,10 @@
 <Type Name="TextColumns" FullName="Microsoft.Office.Interop.Word.TextColumns">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c1d6c908a7e72752109b1c98cf6bbd36a0e9196e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143824" /></Metadata><TypeSignature Language="C#" Value="public interface TextColumns : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="428fcb612d36593a938100de04729cd478d4996e" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926022" /></Metadata><TypeSignature Language="C#" Value="public interface TextColumns : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextColumns implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextColumns" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextColumns&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class TextColumns : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type TextColumns = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,10 +23,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><see cref="T:Microsoft.Office.Interop.Word.TextColumn" />对象的集合, 这些对象代表文档或文档中的部分文本的所有列。</summary>
-    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.PageSetup.TextColumns" />属性返回<b>TextColumns</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" />方法可向列集合中添加一列。 默认情况下, <b>TextColumns</b>集合中有一个文本列。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.TextColumns.SetCount(System.Int32)" />方法将文本排列到列中。</para>
+    <summary>对象的集合 <see cref="T:Microsoft.Office.Interop.Word.TextColumn" /> ，这些对象代表文档或文档中的部分文本的所有列。</summary>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.PageSetup.TextColumns" /> 属性返回<b>TextColumns</b>集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" /> 方法可向列集合中添加一列。 默认情况下， <b>TextColumns</b>集合中有一个文本列。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.TextColumns.SetCount(System.Int32)" /> 方法将文本排列到列中。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.TextColumn Add([in]object&amp; Width, [in]object&amp; Spacing, [in]object&amp; EvenlySpaced) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Optional ByRef Width As Object, Optional ByRef Spacing As Object, Optional ByRef EvenlySpaced As Object) As TextColumn" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj * obj * obj -&gt; Microsoft.Office.Interop.Word.TextColumn" Usage="textColumns.Add (Width, Spacing, EvenlySpaced)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,15 +50,15 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextColumn</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Spacing" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="EvenlySpaced" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object" RefType="ref" />
+        <Parameter Name="Spacing" Type="System.Object" RefType="ref" />
+        <Parameter Name="EvenlySpaced" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Width">可选<b>对象</b>。 文档中新文本栏的宽度，以磅为单位。</param>
         <param name="Spacing">可选<b>对象</b>。 文档中文本栏的间距，以磅为单位。</param>
         <param name="EvenlySpaced">可选<b>对象</b>。 <b>真</b> 要均匀所有文本栏位于文档中。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.TextColumn" /> object 类型的对象, 该对象代表添加到节或文档中的新文本栏。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.TextColumn" /> object 类型的对象，该对象代表添加到节或文档中的新文本栏。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.TextColumns.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -84,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.TextColumns.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TextColumns.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -142,8 +147,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" />
       <MemberSignature Language="VB.NET" Value="Public Property EvenlySpaced As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EvenlySpaced { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.EvenlySpaced : int with get, set" Usage="Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -175,7 +181,7 @@
       <Docs>
         <summary><b>如此</b> 如果均匀分布的文本栏。 可 <b>真</b> 、 <b>假</b> 或 <b>wdUndefined</b> 。</summary>
         <value>To be added.</value>
-        <remarks><para>如果设置<see cref="T:Microsoft.Office.Interop.Word.TextColumns" />了对象<see cref="P:Microsoft.Office.Interop.Word.TextColumns.Spacing" />的<see cref="P:Microsoft.Office.Interop.Word.TextColumns.Width" />或属性, <b>EvenlySpaced</b>属性将自动设置为<b>True</b>。 另外，设置 <b>EvenlySpaced</b> 属性可能会更改 <b>TextColumns</b> 对象的 <b>Spacing</b> 和 <b>Width</b> 属性的设置。</para>
+        <remarks><para>如果设置了 <see cref="P:Microsoft.Office.Interop.Word.TextColumns.Spacing" /> 对象的或 <see cref="P:Microsoft.Office.Interop.Word.TextColumns.Width" /> 属性 <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> ， <b>EvenlySpaced</b>属性将自动设置为<b>True</b>。 另外，设置 <b>EvenlySpaced</b> 属性可能会更改 <b>TextColumns</b> 对象的 <b>Spacing</b> 和 <b>Width</b> 属性的设置。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.FlowDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property FlowDirection As WdFlowDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFlowDirection FlowDirection { Microsoft::Office::Interop::Word::WdFlowDirection get(); void set(Microsoft::Office::Interop::Word::WdFlowDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.FlowDirection : Microsoft.Office.Interop.Word.WdFlowDirection with get, set" Usage="Microsoft.Office.Interop.Word.TextColumns.FlowDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -208,7 +215,7 @@
         <summary>返回或设置方向的文字排列从一个文本列到下一个。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFlowDirection" />可以是下列<b>WdFlowDirection</b>常量之一: </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFlowDirection" />可以是下列<b>WdFlowDirection</b>常量之一： </para>
           <para>
             <b>wdFlowLtr </b>–列中的文本从左到右排列。 </para>
           <para>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextColumns.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="textColumns.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -254,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As TextColumn" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextColumn ^ default[int] { Microsoft::Office::Interop::Word::TextColumn ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.TextColumn" Usage="Microsoft.Office.Interop.Word.TextColumns.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -286,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.LineBetween" />
       <MemberSignature Language="VB.NET" Value="Public Property LineBetween As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineBetween { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LineBetween : int with get, set" Usage="Microsoft.Office.Interop.Word.TextColumns.LineBetween" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -306,7 +316,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如此</b>如果在<see cref="T:Microsoft.Office.Interop.Word.TextColumns" />集合中的所有列之间显示垂直线。 可 <b>真</b> 、 <b>假</b> 或 <b>wdUndefined</b> 。</summary>
+        <summary><b>如此</b>如果在集合中的所有列之间显示垂直线 <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> 。 可 <b>真</b> 、 <b>假</b> 或 <b>wdUndefined</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -317,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.TextColumns.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -345,6 +356,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextColumns.SetCount(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCount (NumColumns As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCount(int NumColumns);" />
+      <MemberSignature Language="F#" Value="abstract member SetCount : int -&gt; unit" Usage="textColumns.SetCount NumColumns" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -365,7 +377,7 @@
         <param name="NumColumns">必需的<b>整数</b>。 用来编排文字的文本栏的数目。</param>
         <summary>将文字编排为指定数量的文本栏。</summary>
         <remarks><para>
-            <b>注释</b> 您还可以使用<see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.TextColumns" />对象的方法向<b>TextColumns</b>集合中添加一列。</para>
+            <b>注释</b> 您还可以使用 <see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" /> 对象的方法向 <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> <b>TextColumns</b>集合中添加一列。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -375,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.Spacing" />
       <MemberSignature Language="VB.NET" Value="Public Property Spacing As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Spacing { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Spacing : single with get, set" Usage="Microsoft.Office.Interop.Word.TextColumns.Spacing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -395,9 +408,9 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.TextColumns" />对象的列之间的间距 (以磅为单位)。</summary>
+        <summary>返回或设置对象的列之间的间距（以磅为单位） <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> 。</summary>
         <value>To be added.</value>
-        <remarks><para>为<b>TextColumns</b>对象设置此属性后, 该<see cref="P:Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" />属性将设置为<b>True</b>。 若要返回或设置单个文本列的间距为<see cref="P:Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" /> <b>False</b>时, 请使用<see cref="T:Microsoft.Office.Interop.Word.TextColumn" />对象<see cref="P:Microsoft.Office.Interop.Word.TextColumn.SpaceAfter" />的属性。</para>
+        <remarks><para>为<b>TextColumns</b>对象设置此属性后，该 <see cref="P:Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" /> 属性将设置为<b>True</b>。 若要返回或设置单个文本列的间距为 <see cref="P:Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" /> <b>False</b>时，请使用 <see cref="P:Microsoft.Office.Interop.Word.TextColumn.SpaceAfter" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Word.TextColumn" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -407,6 +420,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextColumns.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="Microsoft.Office.Interop.Word.TextColumns.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

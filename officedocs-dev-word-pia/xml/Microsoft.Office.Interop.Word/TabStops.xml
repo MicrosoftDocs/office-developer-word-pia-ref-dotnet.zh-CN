@@ -1,9 +1,10 @@
 <Type Name="TabStops" FullName="Microsoft.Office.Interop.Word.TabStops">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5dccca7a808f17210ed911b946b4012c04f38708" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143901" /></Metadata><TypeSignature Language="C#" Value="public interface TabStops : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8cf0fe3956d091a44048f4d9587982038dce4cbe" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926162" /></Metadata><TypeSignature Language="C#" Value="public interface TabStops : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TabStops implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TabStops" />
   <TypeSignature Language="VB.NET" Value="Public Interface TabStops&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class TabStops : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type TabStops = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,12 +23,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表一个段落<see cref="T:Microsoft.Office.Interop.Word.TabStop" />或一组段落的自定义和默认制表位的对象集合。</summary>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.TabStop" />代表一个段落或一组段落的自定义和默认制表位的对象集合。</summary>
     <remarks><para>使用 <b>TabStops</b> 属性返回 <b>TabStops</b> 集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" />方法添加制表位。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" /> 方法添加制表位。</para>
       <para>您还可以添加制表位 <b>TabStops</b> 属性指定一个位置。</para>
-      <para>使用<b>TabStops</b>(<paramref name="index" />), 其中<paramref name="index" />是制表位的位置 (以磅为单位) 或索引号, 返回一个<b>TabStop</b>对象。 制表位按数字进行索引从左到右沿标尺。</para>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Word.Paragraphs" />集合 (或包含多个段落的区域) 时, 如果不是所有段落中的制表位相同, 则必须单独修改集合中的每个段落。</para>
+      <para>使用<b>TabStops</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是制表位的位置（以磅为单位）或索引号，返回一个<b>TabStop</b>对象。 制表位按数字进行索引从左到右沿标尺。</para>
+      <para>使用 <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> 集合（或包含多个段落的区域）时，如果不是所有段落中的制表位相同，则必须单独修改集合中的每个段落。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.TabStop Add([in]float32 Position, [in]object&amp; Alignment, [in]object&amp; Leader) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Position As Single, Optional ByRef Alignment As Object, Optional ByRef Leader As Object) As TabStop" />
+      <MemberSignature Language="F#" Value="abstract member Add : single * obj * obj -&gt; Microsoft.Office.Interop.Word.TabStop" Usage="tabStops.Add (Position, Alignment, Leader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,14 +53,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Position" Type="System.Single" />
-        <Parameter Name="Alignment" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Leader" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Alignment" Type="System.Object" RefType="ref" />
+        <Parameter Name="Leader" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Position">必需<b>Single</b>。 制表位与页面左边距的相对位置（以磅为单位）。</param>
-        <param name="Alignment">可选<b>对象</b>。 制表位的对齐方式。 <see cref="T:Microsoft.Office.Interop.Word.WdTabAlignment" />可以是下列常量之一: <b>wdAlignTabBar</b>、 <b>wdAlignTabCenter</b>、 <b>wdAlignTabDecimal</b>、 <b>wdAlignTabLeft</b>、 <b>wdAlignTabList</b>或<b>wdAlignTabRight</b>。 如果省略此参数, 则使用<b>wdAlignTabLeft</b> 。</param>
-        <param name="Leader">可选<b>对象</b>。 制表位的前导符类型。 <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />可以是下列常量之一: <b>wdTabLeaderDashes</b>、 <b>wdTabLeaderDots</b>、 <b>wdTabLeaderHeavy</b>、 <b>wdTabLeaderLines</b>、 <b>wdTabLeaderMiddleDot</b>或<b>wdTabLeaderSpaces</b>。 如果省略本参数，则使用 <b>wdTabLeaderSpaces</b>。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.TabStop" /> object 类型的对象, 该对象代表添加到文档中的自定义制表位。</summary>
+        <param name="Alignment">可选<b>对象</b>。 制表位的对齐方式。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.WdTabAlignment" /> 常量之一： <b>wdAlignTabBar</b>、 <b>wdAlignTabCenter</b>、 <b>WdAlignTabDecimal</b>、 <b>wdAlignTabLeft</b>、 <b>wdAlignTabList</b>或<b>wdAlignTabRight</b>。 如果省略此参数，则使用<b>wdAlignTabLeft</b> 。</param>
+        <param name="Leader">可选<b>对象</b>。 制表位的前导符类型。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" /> 常量之一： <b>wdTabLeaderDashes</b>、 <b>wdTabLeaderDots</b>、 <b>WdTabLeaderHeavy</b>、 <b>wdTabLeaderLines</b>、 <b>wdTabLeaderMiddleDot</b>或<b>wdTabLeaderSpaces</b>。 如果省略本参数，则使用 <b>wdTabLeaderSpaces</b>。</param>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> object 类型的对象，该对象代表添加到文档中的自定义制表位。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.After(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function After (Position As Single) As TabStop" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::TabStop ^ After(float Position);" />
+      <MemberSignature Language="F#" Value="abstract member After : single -&gt; Microsoft.Office.Interop.Word.TabStop" Usage="tabStops.After Position" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -87,7 +90,7 @@
       </Parameters>
       <Docs>
         <param name="Position">必需<b>Single</b>。 指标尺上的位置，以磅为单位。</param>
-        <summary>返回下一个<see cref="T:Microsoft.Office.Interop.Word.TabStop" />对象的右侧<paramref name="Position" />。</summary>
+        <summary>返回下一个 <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> 对象的右侧 <paramref name="Position" /> 。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.TabStops.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -115,7 +119,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.Before(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function Before (Position As Single) As TabStop" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::TabStop ^ Before(float Position);" />
+      <MemberSignature Language="F#" Value="abstract member Before : single -&gt; Microsoft.Office.Interop.Word.TabStop" Usage="tabStops.Before Position" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -144,7 +149,7 @@
       </Parameters>
       <Docs>
         <param name="Position">必需<b>Single</b>。 指标尺上的位置，以磅为单位。</param>
-        <summary>返回左侧的<see cref="T:Microsoft.Office.Interop.Word.TabStop" /> <paramref name="Position" />下一个对象。</summary>
+        <summary>返回 <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> 左侧的下一个对象 <paramref name="Position" /> 。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.ClearAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAll();" />
+      <MemberSignature Language="F#" Value="abstract member ClearAll : unit -&gt; unit" Usage="tabStops.ClearAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -171,7 +177,7 @@
       <Parameters />
       <Docs>
         <summary>清除指定段落中的所有自定义制表位。</summary>
-        <remarks><para>若要清除单个制表位, 请使用<see cref="M:Microsoft.Office.Interop.Word.TabStop.Clear" />该<see cref="T:Microsoft.Office.Interop.Word.TabStop" />对象的方法。 <b>ClearAll</b> 方法并不清除默认的制表位。 若要操作默认的制表位, 请<see cref="P:Microsoft.Office.Interop.Word._Document.DefaultTabStop" />使用该文档的属性。</para>
+        <remarks><para>若要清除单个制表位，请使用该 <see cref="M:Microsoft.Office.Interop.Word.TabStop.Clear" /> 对象的方法 <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> 。 <b>ClearAll</b> 方法并不清除默认的制表位。 若要操作默认的制表位，请使用该 <see cref="P:Microsoft.Office.Interop.Word._Document.DefaultTabStop" /> 文档的属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.TabStops.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TabStops.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -228,8 +236,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="tabStops.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As TabStop" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TabStop ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::TabStop ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.TabStop" Usage="Microsoft.Office.Interop.Word.TabStops.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -288,10 +298,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.TabStop</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">一个指示序号位置的<b>对象</b>, 或表示单个对象的名称的字符串。</param>
+        <param name="Index">一个指示序号位置的<b>对象</b>，或表示单个对象的名称的字符串。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -303,6 +313,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.TabStops.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

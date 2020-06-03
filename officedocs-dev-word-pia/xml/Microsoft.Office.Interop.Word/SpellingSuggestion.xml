@@ -1,9 +1,10 @@
 <Type Name="SpellingSuggestion" FullName="Microsoft.Office.Interop.Word.SpellingSuggestion">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3413abdc0c5278bcc151a8955fa3d96176ddd8d3" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143950" /></Metadata><TypeSignature Language="C#" Value="public interface SpellingSuggestion" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bfc6f8c6985e06927dfd429b5e00c394c26795fe" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926253" /></Metadata><TypeSignature Language="C#" Value="public interface SpellingSuggestion" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SpellingSuggestion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SpellingSuggestion" />
   <TypeSignature Language="VB.NET" Value="Public Interface SpellingSuggestion" />
   <TypeSignature Language="C++ CLI" Value="public interface class SpellingSuggestion" />
+  <TypeSignature Language="F#" Value="type SpellingSuggestion = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>表示为拼写错误的单词的拼写建议。</summary>
-    <remarks><para><b>SpellingSuggestion</b>对象是<see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" />集合的一个成员。 <b>SpellingSuggestions</b> 集合在指定的范围中包括指定单词或第一个单词的所有建议。</para>
-      <para>使用<b>SpellingSuggestions</b>(<paramref name="index" />) (其中<paramref name="index" />是索引号) 返回单个<b>SpellingSuggestion</b>对象。</para>
-      <para>如果<see cref="P:Microsoft.Office.Interop.Word.SpellingSuggestions.Count" />单词拼写正确或没有建议, 则<b>SpellingSuggestions</b>对象的属性返回 0 (零)。</para>
+    <remarks><para><b>SpellingSuggestion</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" /> 。 <b>SpellingSuggestions</b> 集合在指定的范围中包括指定单词或第一个单词的所有建议。</para>
+      <para>使用<b>SpellingSuggestions</b>（ <paramref name="index" /> ）（其中 <paramref name="index" /> 是索引号）返回单个<b>SpellingSuggestion</b>对象。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.SpellingSuggestions.Count" />如果单词拼写正确或没有建议，则<b>SpellingSuggestions</b>对象的属性返回0（零）。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SpellingSuggestion.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.SpellingSuggestion.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SpellingSuggestion.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.SpellingSuggestion.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,8 +81,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SpellingSuggestion.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.SpellingSuggestion.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SpellingSuggestion.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.SpellingSuggestion.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

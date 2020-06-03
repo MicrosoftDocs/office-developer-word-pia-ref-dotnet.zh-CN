@@ -1,9 +1,10 @@
 <Type Name="TextRetrievalMode" FullName="Microsoft.Office.Interop.Word.TextRetrievalMode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0c1ee93d1968c1b9fe8eb8a0db78df0c1c441410" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143796" /></Metadata><TypeSignature Language="C#" Value="public interface TextRetrievalMode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ee281c74c873ee1ff193d24fbc6f30e81bfc1e85" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926008" /></Metadata><TypeSignature Language="C#" Value="public interface TextRetrievalMode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextRetrievalMode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextRetrievalMode" />
   <TypeSignature Language="C++ CLI" Value="public interface class TextRetrievalMode" />
+  <TypeSignature Language="F#" Value="type TextRetrievalMode = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,9 +19,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示控制如何从<see cref="T:Microsoft.Office.Interop.Word.Range" />对象中检索文本的选项。</summary>
-    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Range.TextRetrievalMode" />属性返回一个<b>TextRetrievalMode</b>对象。</para>
-      <para>更改 TextRetrievalMode <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" />对象<see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" />的、 <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeFieldCodes" />或属性不<b></b>会更改屏幕显示。 相反, 更改其中一个属性将决定在使用该<see cref="P:Microsoft.Office.Interop.Word.Range.Text" />属性时从<b>Range</b>对象中检索的文本。</para>
+    <summary>表示控制如何从对象中检索文本的选项 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 。</summary>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.Range.TextRetrievalMode" /> 属性返回一个<b>TextRetrievalMode</b>对象。</para>
+      <para>更改 <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" /> <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" /> TextRetrievalMode 对象的、或 <see cref="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeFieldCodes" /> 属性不<b>TextRetrievalMode</b>会更改屏幕显示。 相反，更改其中一个属性将决定在使用该属性时从<b>Range</b>对象中检索的文本 <see cref="P:Microsoft.Office.Interop.Word.Range.Text" /> 。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextRetrievalMode.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.TextRetrievalMode.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -47,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextRetrievalMode.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TextRetrievalMode.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -77,8 +80,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextRetrievalMode.Duplicate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Duplicate As TextRetrievalMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextRetrievalMode ^ Duplicate { Microsoft::Office::Interop::Word::TextRetrievalMode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Duplicate : Microsoft.Office.Interop.Word.TextRetrievalMode" Usage="Microsoft.Office.Interop.Word.TextRetrievalMode.Duplicate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -105,9 +109,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextRetrievalMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个只读<see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />对象, 该对象代表与检索指定<see cref="T:Microsoft.Office.Interop.Word.Range" />对象中的文本相关的选项。</summary>
+        <summary>返回一个只读 <see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" /> 对象，该对象代表与检索指定对象中的文本相关的选项 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 。</summary>
         <value>To be added.</value>
-        <remarks><para>可以使用<b>重复</b>的属性来选取重复<see cref="T:Microsoft.Office.Interop.Word.Font" /> <see cref="T:Microsoft.Office.Interop.Word.LetterContent" />的、或<see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" />对象的所有属性的设置。 您可以分配到要一次性应用这些设置的相同类型的另一个对象 <b>复制</b> 属性返回的对象。 在将重复对象赋给另一个对象之前, 可以更改任何重复的对象的属性而不会影响原始。</para>
+        <remarks><para>可以使用<b>重复</b>的属性来选取重复的、 <see cref="T:Microsoft.Office.Interop.Word.Font" /> <see cref="T:Microsoft.Office.Interop.Word.LetterContent" /> 或对象的所有属性的设置 <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> 。 您可以分配到要一次性应用这些设置的相同类型的另一个对象 <b>复制</b> 属性返回的对象。 在将重复对象赋给另一个对象之前, 可以更改任何重复的对象的属性而不会影响原始。</para>
           <para>通过复制 <b>Range</b> 对象，可以更改所复制的区域的开始或结尾字符位置，而不更改原始区域。</para>
           <para> </para></remarks>
       </Docs>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeFieldCodes" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeFieldCodes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeFieldCodes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeFieldCodes : bool with get, set" Usage="Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeFieldCodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,7 +146,7 @@
         <summary><b>如此</b> 如果从指定区域获取的文本包含域代码。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>注释</b> 默认值与 "选项" 对话框 ("工具" 菜单) 中 "视图" 选项卡上的 "域代码" 选项的设置相同, 直到设置了该属性。 将<see cref="P:Microsoft.Office.Interop.Word.Range.Text" />属性与<see cref="T:Microsoft.Office.Interop.Word.Range" />对象一起使用可检索指定范围内的文本。</para>
+            <b>注释</b> 默认值与 "选项" 对话框（"工具" 菜单）中 "视图" 选项卡上的 "域代码" 选项的设置相同，直到设置了该属性。 将 <see cref="P:Microsoft.Office.Interop.Word.Range.Text" /> 属性与对象一起使用 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 可检索指定范围内的文本。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeHiddenText As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeHiddenText { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeHiddenText : bool with get, set" Usage="Microsoft.Office.Interop.Word.TextRetrievalMode.IncludeHiddenText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -174,7 +180,7 @@
         <summary><b>如此</b> 如果从指定区域获取的文本包含隐藏的文字。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>注释</b> 默认值与 "工具" 菜单的 "选项" 对话框中 "视图" 选项卡上的 "隐藏文字" 选项的当前设置相同, 直到设置了该属性。 将<see cref="P:Microsoft.Office.Interop.Word.Range.Text" />属性与<see cref="T:Microsoft.Office.Interop.Word.Range" />对象一起使用可检索指定范围内的文本。</para>
+            <b>注释</b> 默认值与 "工具" 菜单的 "选项" 对话框中 "视图" 选项卡上的 "隐藏文字" 选项的当前设置相同，直到设置了该属性。 将 <see cref="P:Microsoft.Office.Interop.Word.Range.Text" /> 属性与对象一起使用 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 可检索指定范围内的文本。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -184,6 +190,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextRetrievalMode.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.TextRetrievalMode.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextRetrievalMode.ViewType" />
       <MemberSignature Language="VB.NET" Value="Default Public Property ViewType As WdViewType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdViewType default { Microsoft::Office::Interop::Word::WdViewType get(); void set(Microsoft::Office::Interop::Word::WdViewType value); };" />
+      <MemberSignature Language="F#" Value="member this.ViewType : Microsoft.Office.Interop.Word.WdViewType with get, set" Usage="Microsoft.Office.Interop.Word.TextRetrievalMode.ViewType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -232,7 +240,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdViewType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" />对象的视图。</summary>
+        <summary>返回或设置对象的视图 <see cref="T:Microsoft.Office.Interop.Word.TextRetrievalMode" /> 。</summary>
         <value>To be added.</value>
         <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdViewType" />可以是下列<b>WdViewType</b>常量之一。 </para>

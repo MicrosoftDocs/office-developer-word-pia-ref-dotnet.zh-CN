@@ -1,9 +1,10 @@
 <Type Name="Task" FullName="Microsoft.Office.Interop.Word.Task">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="475c1671362444c8d7ebcb134d01290da862e462" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143873" /></Metadata><TypeSignature Language="C#" Value="public interface Task" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1d8590e38fe131c92557becd7529f20b86a0ff14" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926085" /></Metadata><TypeSignature Language="C#" Value="public interface Task" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Task" />
   <TypeSignature Language="VB.NET" Value="Public Interface Task" />
   <TypeSignature Language="C++ CLI" Value="public interface class Task" />
+  <TypeSignature Language="F#" Value="type Task = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,8 +20,8 @@
   </Attributes>
   <Docs>
     <summary>表示系统上运行的单个任务。</summary>
-    <remarks><para><b>任务</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Tasks" />集合的一个成员。 <b>Tasks</b> 集合包含当前在系统运行的所有应用程序。</para>
-      <para>使用<b>Tasks</b>(<paramref name="index" />), 其中<paramref name="index" />是应用程序名称或索引号, 返回单个<b>任务</b>对象。</para>
+    <remarks><para><b>任务</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.Tasks" /> 。 <b>Tasks</b> 集合包含当前在系统运行的所有应用程序。</para>
+      <para>使用<b>Tasks</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是应用程序名称或索引号，返回单个<b>任务</b>对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Activate([in]object&amp; Wait) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate (Optional ByRef Wait As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Activate : obj -&gt; unit" Usage="task.Activate Wait" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -43,11 +45,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Wait" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Wait" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Wait">可选<b>对象</b>。 <b>如果为 True, 则</b>在激活该任务之前, 等待用户激活 Microsoft Word。 <b>假</b> 以立即激活该任务，即使 Word 不活动状态。</param>
-        <summary>激活<see cref="T:Microsoft.Office.Interop.Word.Task" />对象。</summary>
+        <param name="Wait">可选<b>对象</b>。 <b>如果为 True，则</b>在激活该任务之前，等待用户激活 Microsoft Word。 <b>假</b> 以立即激活该任务，即使 Word 不活动状态。</param>
+        <summary>激活 <see cref="T:Microsoft.Office.Interop.Word.Task" /> 对象。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Task.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -74,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="task.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Task.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -129,8 +134,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="Microsoft.Office.Interop.Word.Task.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -160,7 +166,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定任务窗口的高度 (以磅为单位)。</summary>
+        <summary>返回或设置指定任务窗口的高度（以磅为单位）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Left : int with get, set" Usage="Microsoft.Office.Interop.Word.Task.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -191,7 +198,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Integer</b>类型的值, 该值代表指定任务的水平位置 (以磅为单位)。</summary>
+        <summary>返回或设置一个<b>Integer</b>类型的值，该值代表指定任务的水平位置（以磅为单位）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.Move(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Move (Left As Integer, Top As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Move(int Left, int Top);" />
+      <MemberSignature Language="F#" Value="abstract member Move : int * int -&gt; unit" Usage="task.Move (Left, Top)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Task.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -260,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Task.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -288,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.Resize(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Resize (Width As Integer, Height As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resize(int Width, int Height);" />
+      <MemberSignature Language="F#" Value="abstract member Resize : int * int -&gt; unit" Usage="task.Resize (Width, Height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -310,7 +321,7 @@
         <param name="Height">必需的<b>整数</b>。 窗口的高度，以磅值为单位。</param>
         <summary>调整指定任务窗口的大小。 如果窗口处于最大化或最小化，则会导致出错。</summary>
         <remarks><para>
-            <b>注释</b> 使用<see cref="P:Microsoft.Office.Interop.Word.Task.Width" />或<see cref="P:Microsoft.Office.Interop.Word.Task.Height" />属性可单独设置窗口的宽度和高度。</para>
+            <b>注释</b> 使用 <see cref="P:Microsoft.Office.Interop.Word.Task.Width" /> 或 <see cref="P:Microsoft.Office.Interop.Word.Task.Height" /> 属性可单独设置窗口的宽度和高度。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -320,6 +331,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.SendWindowMessage(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SendWindowMessage (Message As Integer, wParam As Integer, lParam As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendWindowMessage(int Message, int wParam, int lParam);" />
+      <MemberSignature Language="F#" Value="abstract member SendWindowMessage : int * int * int -&gt; unit" Usage="task.SendWindowMessage (Message, wParam, lParam)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -339,9 +351,9 @@
         <Parameter Name="lParam" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Message">必需的<b>整数</b>。 与要发送的邮件相对应的十六进制数。 如果您拥有 Microsoft 平台软件开发工具包, 则可以在头文件 (例如 Winuser) 中查找邮件的名称, 以查找关联的十六进制数 (在十六进制值前面加上&amp;h)。</param>
-        <param name="wParam">必需的<b>整数</b>。 与所发送消息对应的参数。 有关这些值表示的内容的信息, 请参阅 Microsoft 平台软件开发工具包附带的文档中有关该邮件的参考主题。 若要检索适当的值, 可能需要使用 Spy 实用工具 (随工具包一起提供)。</param>
-        <param name="lParam">必需的<b>整数</b>。 与所发送消息对应的参数。 有关这些值表示的内容的信息, 请参阅 Microsoft 平台软件开发工具包附带的文档中有关该邮件的参考主题。 若要检索适当的值, 可能需要使用 Spy 实用工具 (随工具包一起提供)。</param>
+        <param name="Message">必需的<b>整数</b>。 与要发送的邮件相对应的十六进制数。 如果您拥有 Microsoft 平台软件开发工具包，则可以在头文件（例如 Winuser）中查找邮件的名称，以查找关联的十六进制数（在十六进制值前面加上 &amp; h）。</param>
+        <param name="wParam">必需的<b>整数</b>。 与所发送消息对应的参数。 有关这些值表示的内容的信息，请参阅 Microsoft 平台软件开发工具包附带的文档中有关该邮件的参考主题。 若要检索适当的值，可能需要使用 Spy 实用工具（随工具包一起提供）。</param>
+        <param name="lParam">必需的<b>整数</b>。 与所发送消息对应的参数。 有关这些值表示的内容的信息，请参阅 Microsoft 平台软件开发工具包附带的文档中有关该邮件的参考主题。 若要检索适当的值，可能需要使用 Spy 实用工具（随工具包一起提供）。</param>
         <summary>将 Windows 提示信息及相关参数发送到指定的任务中。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -352,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Top : int with get, set" Usage="Microsoft.Office.Interop.Word.Task.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -372,7 +385,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定任务的垂直位置 (以磅为单位)。</summary>
+        <summary>返回或设置指定任务的垂直位置（以磅为单位）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -383,6 +396,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="Microsoft.Office.Interop.Word.Task.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -415,6 +429,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="Microsoft.Office.Interop.Word.Task.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -446,6 +461,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.WindowState" />
       <MemberSignature Language="VB.NET" Value="Public Property WindowState As WdWindowState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdWindowState WindowState { Microsoft::Office::Interop::Word::WdWindowState get(); void set(Microsoft::Office::Interop::Word::WdWindowState value); };" />
+      <MemberSignature Language="F#" Value="member this.WindowState : Microsoft.Office.Interop.Word.WdWindowState with get, set" Usage="Microsoft.Office.Interop.Word.Task.WindowState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -479,7 +495,7 @@
           <para>
             <b>wdWindowStateMinimize</b>
           </para>
-          <para><b>WdWindowStateNormal</b> 常量表示未最大化或最小化的窗口。 无法设置不活动窗口的状态。 在<see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" />设置窗口状态之前, 使用方法激活窗口。</para>
+          <para><b>WdWindowStateNormal</b> 常量表示未最大化或最小化的窗口。 无法设置不活动窗口的状态。 在 <see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" /> 设置窗口状态之前，使用方法激活窗口。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

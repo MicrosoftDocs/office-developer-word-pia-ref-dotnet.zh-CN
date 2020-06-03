@@ -1,9 +1,10 @@
 <Type Name="SynonymInfo" FullName="Microsoft.Office.Interop.Word.SynonymInfo">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ada3374fbdbeb68d182821597276e5a9f0ea1732" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146064" /></Metadata><TypeSignature Language="C#" Value="public interface SynonymInfo" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1605a824da54b44f8bc562a87a5e09f13a8c665f" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926190" /></Metadata><TypeSignature Language="C#" Value="public interface SynonymInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SynonymInfo" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SynonymInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface SynonymInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class SynonymInfo" />
+  <TypeSignature Language="F#" Value="type SynonymInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>代表有关指定范围或给定字符串中的同义词、反义词、相关词或相关表达式的信息。</summary>
-    <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.Range" />或<see cref="T:Microsoft.Office.Interop.Word.Application" />对象的<b>SynonymInfo</b>属性返回一个<b>SynonymInfo</b>对象。 <b>SynonymInfo</b>对象可以从某一范围或 Microsoft Word 中返回。 如果从 Word 中返回, 则指定查找单词或短语以及校对语言 ID。 如果从某一区域返回, 则 Word 使用指定的区域作为查找单词。</para>
+    <remarks><para>使用或对象的<b>SynonymInfo</b>属性 <see cref="T:Microsoft.Office.Interop.Word.Range" /> <see cref="T:Microsoft.Office.Interop.Word.Application" /> 返回一个<b>SynonymInfo</b>对象。 <b>SynonymInfo</b>对象可以从某一范围或 Microsoft Word 中返回。 如果从 Word 中返回，则指定查找单词或短语以及校对语言 ID。 如果从某一区域返回，则 Word 使用指定的区域作为查找单词。</para>
       <para><b>SynonymInfo</b>对象的许多属性都返回一个包含字符串数组的<b>对象</b>。 时使用这些属性，可以将返回的数组赋给变量，然后索引以查看数组中的元素的变量。</para>
-      <para>您可以检查<see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningCount" />属性的值, 以避免代码中的潜在错误。</para>
+      <para>您可以检查属性的值 <see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningCount" /> ，以避免代码中的潜在错误。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.AntonymList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AntonymList As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AntonymList { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AntonymList : obj" Usage="Microsoft.Office.Interop.Word.SynonymInfo.AntonymList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -50,7 +52,7 @@
       <Docs>
         <summary>返回单词或短语的反义词列表。 该列表以字符串数组的形式返回。</summary>
         <value>To be added.</value>
-        <remarks><para><b>AntonymList</b>属性是<see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" />对象的一个属性, 可从某一范围或应用程序返回。 如果从应用程序中返回该对象，则需指明要查找的单词和使用的语言。 如果从某区域中返回该对象，则用该区域中使用的语言来查找该区域。</para>
+        <remarks><para><b>AntonymList</b>属性是对象的一个属性 <see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" /> ，可从某一范围或应用程序返回。 如果从应用程序中返回该对象，则需指明要查找的单词和使用的语言。 如果从某区域中返回该对象，则用该区域中使用的语言来查找该区域。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.SynonymInfo.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -77,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.SynonymInfo.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -107,8 +111,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Found" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Found As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Found { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Found : bool" Usage="Microsoft.Office.Interop.Word.SynonymInfo.Found" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MeaningCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MeaningCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MeaningCount : int" Usage="Microsoft.Office.Interop.Word.SynonymInfo.MeaningCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MeaningList As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ MeaningList { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MeaningList : obj" Usage="Microsoft.Office.Interop.Word.SynonymInfo.MeaningList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -205,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.SynonymInfo.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.PartOfSpeechList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartOfSpeechList As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PartOfSpeechList { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PartOfSpeechList : obj" Usage="Microsoft.Office.Interop.Word.SynonymInfo.PartOfSpeechList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -252,7 +261,7 @@
       <Docs>
         <summary>返回对应于其含义的单词或短语在同义词库中查找找到词性的列表。 作为一个整数数组，则返回列表。</summary>
         <value>To be added.</value>
-        <remarks><para>语音部分的列表以包含以下<see cref="T:Microsoft.Office.Interop.Word.WdPartOfSpeech" />常量的数组形式返回: <b>wdAdjective</b>、 <b>wdAdverb</b>、 <b>wdConjunction</b>、 <b>wdIdiom</b>、 <b>wdInterjection</b>、 <b>wdNoun</b>、 <b>wdOther</b>、<b>wdPreposition</b>、 <b>wdPronoun</b>和<b>wdVerb</b>。 数组元素的排列顺序与该<see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningList" />属性返回的元素相对应。</para>
+        <remarks><para>语音部分的列表以包含以下常量的数组形式返回 <see cref="T:Microsoft.Office.Interop.Word.WdPartOfSpeech" /> ： <b>wdAdjective</b>、 <b>wdAdverb</b>、 <b>wdConjunction</b>、 <b>wdIdiom</b>、 <b>WdInterjection</b>、 <b>wdNoun</b>、 <b>wdOther</b> <b>、wdPreposition</b>、 <b>wdPronoun</b>和<b>wdVerb</b>。 数组元素的排列顺序与该属性返回的元素相对应 <see cref="P:Microsoft.Office.Interop.Word.SynonymInfo.MeaningList" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -262,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.RelatedExpressionList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelatedExpressionList As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RelatedExpressionList { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelatedExpressionList : obj" Usage="Microsoft.Office.Interop.Word.SynonymInfo.RelatedExpressionList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -291,6 +301,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.RelatedWordList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelatedWordList As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RelatedWordList { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelatedWordList : obj" Usage="Microsoft.Office.Interop.Word.SynonymInfo.RelatedWordList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -319,6 +330,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.SynonymList(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SynonymList(ByRef Meaning As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SynonymList[System::Object ^ %] { System::Object ^ get(System::Object ^ % Meaning); };" />
+      <MemberSignature Language="F#" Value="member this.SynonymList(obj) : obj" Usage="Microsoft.Office.Interop.Word.SynonymInfo.SynonymList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -336,7 +348,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Meaning" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Meaning" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Meaning">必需的<b>对象</b>。 在可能的含义数组中的字符串或索引号的含义。</param>
@@ -351,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SynonymInfo.Word" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Word As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Word { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Word : string" Usage="Microsoft.Office.Interop.Word.SynonymInfo.Word" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -370,7 +383,7 @@
       <Docs>
         <summary>返回已在同义词库中进行查找的单词或短语。</summary>
         <value>To be added.</value>
-        <remarks><para>同义词库有时会查找用于返回<see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" />对象的字符串或区域的缩写形式。 可使用 <b>Word</b> 属性查看所使用的字符串的完整形式。</para>
+        <remarks><para>同义词库有时会查找用于返回对象的字符串或区域的缩写形式 <see cref="T:Microsoft.Office.Interop.Word.SynonymInfo" /> 。 可使用 <b>Word</b> 属性查看所使用的字符串的完整形式。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

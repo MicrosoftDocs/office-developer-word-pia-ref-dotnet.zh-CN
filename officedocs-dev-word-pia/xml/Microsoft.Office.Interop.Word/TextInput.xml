@@ -1,9 +1,10 @@
 <Type Name="TextInput" FullName="Microsoft.Office.Interop.Word.TextInput">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="25278b86c7e130fb95e96e6347a7d97c8e594d89" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143803" /></Metadata><TypeSignature Language="C#" Value="public interface TextInput" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fee44b2836129ac024463eb219b8a82b2e0c3c2b" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926015" /></Metadata><TypeSignature Language="C#" Value="public interface TextInput" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextInput" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextInput" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextInput" />
   <TypeSignature Language="C++ CLI" Value="public interface class TextInput" />
+  <TypeSignature Language="F#" Value="type TextInput = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>代表一个文本型窗体域。</summary>
-    <remarks><para>使用<b>FormFields</b>(<paramref name="index" />), 其中<paramref name="index" />是与文本窗体域或索引号关联的书签名称, 返回一个<see cref="T:Microsoft.Office.Interop.Word.FormField" />对象。 将该<see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" />属性与<b>FormField</b>对象一起使用可返回一个<b>TextInput</b>对象。</para>
-      <para>索引号表示窗体域在<see cref="T:Microsoft.Office.Interop.Word.FormFields" />集合中的位置。</para>
-      <para>将<see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" />方法与<b>FormFields</b>对象一起使用可添加文字型窗体域。</para>
+    <remarks><para>使用<b>FormFields</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是与文本窗体域或索引号关联的书签名称，返回一个 <see cref="T:Microsoft.Office.Interop.Word.FormField" /> 对象。 将该 <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> 属性与<b>FormField</b>对象一起使用可返回一个<b>TextInput</b>对象。</para>
+      <para>索引号表示窗体域在集合中的位置 <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> 。</para>
+      <para>将 <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> 方法与<b>FormFields</b>对象一起使用可添加文字型窗体域。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.TextInput.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextInput.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit" Usage="textInput.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TextInput.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -103,8 +107,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Default" />
       <MemberSignature Language="VB.NET" Value="Public Property Default As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Default : string with get, set" Usage="Microsoft.Office.Interop.Word.TextInput.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EditType([in]valuetype Microsoft.Office.Interop.Word.WdTextFormFieldType Type, [in]object&amp; Default, [in]object&amp; Format, [in]object&amp; Enabled) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextInput.EditType(Microsoft.Office.Interop.Word.WdTextFormFieldType,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EditType (Type As WdTextFormFieldType, Optional ByRef Default As Object, Optional ByRef Format As Object, Optional ByRef Enabled As Object)" />
+      <MemberSignature Language="F#" Value="abstract member EditType : Microsoft.Office.Interop.Word.WdTextFormFieldType * obj * obj * obj -&gt; unit" Usage="textInput.EditType (Type, Default, Format, Enabled)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -159,12 +165,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Word.WdTextFormFieldType" />
-        <Parameter Name="Default" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Enabled" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Default" Type="System.Object" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object" RefType="ref" />
+        <Parameter Name="Enabled" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Type">必需<see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />。 文本框类型。<b>WdTextFormFieldType</b>可以是以下常量之一: <b>wdCalculationText </b> <b>wdCurrentDateText </b> <b>wdCurrentTimeText </b> <b>wdDateText </b> <b>wdNumberText </b> <b>wdRegularText</b></param>
+        <param name="Type">必需 <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" /> 。 文本框类型。<b>WdTextFormFieldType</b>可以是以下常量之一： <b>wdCalculationText </b> <b>wdCurrentDateText </b> <b>wdCurrentTimeText </b> <b>wdDateText </b> <b>wdNumberText </b> <b>wdRegularText</b></param>
         <param name="Default">可选<b>对象</b>。 出现在文本框中的默认文字。</param>
         <param name="Format">可选<b>对象</b>。 设置文本、数字或日期格式的格式字符串（例如，“0.00”、“Title Case”或“M/d/yy”）。 有关格式的更多示例，请查看“文字型窗体域选项”对话框中指定文字型窗体域类型的格式列表。</param>
         <param name="Enabled">可选<b>对象</b>。 
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Format { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : string" Usage="Microsoft.Office.Interop.Word.TextInput.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.TextInput.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -235,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdTextFormFieldType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdTextFormFieldType Type { Microsoft::Office::Interop::Word::WdTextFormFieldType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdTextFormFieldType" Usage="Microsoft.Office.Interop.Word.TextInput.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -255,7 +264,7 @@
         <summary>返回文字型窗体域的类型。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />可以是下列<b>WdTextFormFieldType</b>常量之一: </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTextFormFieldType" />可以是下列<b>WdTextFormFieldType</b>常量之一： </para>
           <para>
             <b>wdCalculationText</b>
           </para>
@@ -283,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Valid" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Valid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Valid : bool" Usage="Microsoft.Office.Interop.Word.TextInput.Valid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -302,7 +312,7 @@
       <Docs>
         <summary><b>True</b> 表示指定的窗体字段对象是否有效复选框型窗体域。</summary>
         <value>To be added.</value>
-        <remarks><para>在应用<see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" />属性之前, <see cref="T:Microsoft.Office.Interop.Word.FormField" />请使用对象的属性来确定窗体域的类型 (<b>wdFieldFormCheckBox</b>、 <b>wdFieldFormDropDown</b>或<b>wdFieldFormTextInput</b>)。 此预防措施可确保<b>FormField</b>对象是预期的类型。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> <see cref="T:Microsoft.Office.Interop.Word.FormField" /> 在应用属性之前，请使用对象的属性来确定窗体域的类型（<b>wdFieldFormCheckBox</b>、 <b>wdFieldFormDropDown</b>或<b>wdFieldFormTextInput</b>） <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> 。 此预防措施可确保<b>FormField</b>对象是预期的类型。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -312,6 +322,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextInput.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="Microsoft.Office.Interop.Word.TextInput.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

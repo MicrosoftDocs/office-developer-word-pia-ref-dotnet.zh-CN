@@ -1,9 +1,10 @@
 <Type Name="XMLNode" FullName="Microsoft.Office.Interop.Word.XMLNode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9972982e927ab7d392fa88967c808138fa36eb51" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145420" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="461776a92f3f6382051903364f4b16798022f332" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926724" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNode" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLNode" />
+  <TypeSignature Language="F#" Value="type XMLNode = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,8 +20,8 @@
   </Attributes>
   <Docs>
     <summary>表示应用于文档的单个 XML 元素。</summary>
-    <remarks><para>每个已应用于文档的 XML 元素都显示为“XML 结构”任务窗格的树视图控件中的一个节点。 树视图中的每个节点都是一个<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象实例。 树视图的层次结构表明节点是否包含子节点。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />集合的属性返回单个<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象。 使用<see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" />方法来验证 XML 元素是否有效, 具体取决于所应用的架构以及任何必需的子元素是否存在并按所需顺序排列。 运行<see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" />方法后, 请使用<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />属性验证元素是否有效, 并使用<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />属性显示有关用户需要执行哪些操作才能使文档符合 XML 架构规则的信息。</para>
+    <remarks><para>每个已应用于文档的 XML 元素都显示为“XML 结构”任务窗格的树视图控件中的一个节点。 树视图中的每个节点都是一个 <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> 对象实例。 树视图的层次结构表明节点是否包含子节点。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> 集合的属性 <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> 返回单个 <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> 对象。 使用 <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> 方法来验证 XML 元素是否有效，具体取决于所应用的架构以及任何必需的子元素是否存在并按所需顺序排列。 运行 <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> 方法后，请使用 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> 属性验证元素是否有效，并使用 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> 属性显示有关用户需要执行哪些操作才能使文档符合 XML 架构规则的信息。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.XMLNode.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -47,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As XMLNodes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNodes ^ Attributes { Microsoft::Office::Interop::Word::XMLNodes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : Microsoft.Office.Interop.Word.XMLNodes" Usage="Microsoft.Office.Interop.Word.XMLNode.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -75,9 +78,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />集合, 该集合代表指定元素的属性。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> 集合，该集合代表指定元素的属性。</summary>
         <value>To be added.</value>
-        <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> <b>Attributes</b>属性返回的<see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" /> <b>XMLNodes</b>集合中的所有对象的属性值均为<b>wdXMLNodeAttribute</b>。</para>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />使用<b>Attributes</b>属性返回的<b>XMLNodes</b>集合中的所有对象的 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" /> 属性值均为<b>wdXMLNodeAttribute</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.BaseName" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property BaseName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseName : string" Usage="Microsoft.Office.Interop.Word.XMLNode.BaseName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ChildNodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildNodes As XMLNodes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNodes ^ ChildNodes { Microsoft::Office::Interop::Word::XMLNodes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildNodes : Microsoft.Office.Interop.Word.XMLNodes" Usage="Microsoft.Office.Interop.Word.XMLNode.ChildNodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -132,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />集合, 该集合代表指定元素的子元素。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> 集合，该集合代表指定元素的子元素。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ChildNodeSuggestions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildNodeSuggestions As XMLChildNodeSuggestions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLChildNodeSuggestions ^ ChildNodeSuggestions { Microsoft::Office::Interop::Word::XMLChildNodeSuggestions ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildNodeSuggestions : Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" Usage="Microsoft.Office.Interop.Word.XMLNode.ChildNodeSuggestions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -163,9 +169,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLChildNodeSuggestions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" />集合, 该集合代表<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象的允许元素的列表 (该集合返回指定元素的子元素)。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" /> 集合，该集合代表对象的允许元素的列表 <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> （该集合返回指定元素的子元素）。</summary>
         <value>To be added.</value>
-        <remarks><para>集合中的每个<see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion" />对象都是 "XML 结构" 任务窗格底部允许的可能的 XML 元素列表中的项。 <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" /></para>
+        <remarks><para>集合中的每个 <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion" /> 对象 <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" /> 都是 "XML 结构" 任务窗格底部允许的可能的 XML 元素列表中的项。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; unit" Usage="xMLNode.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -200,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.XMLNode.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -219,8 +227,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。 </para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。 </para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -230,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.Cut" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberSignature Language="F#" Value="abstract member Cut : unit -&gt; unit" Usage="xMLNode.Cut " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -255,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="xMLNode.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -280,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.FirstChild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstChild As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ FirstChild { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstChild : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.XMLNode.FirstChild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -297,9 +308,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />对象, 表示父节点的第一个子节点。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> 对象，表示父节点的第一个子节点。</summary>
         <value>To be added.</value>
-        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.XMLNode.LastChild" />属性可访问最后一个子节点。 使用<see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" />属性可访问图表中的父节点。</para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.LastChild" /> 属性可访问最后一个子节点。 使用 <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> 属性可访问图表中的父节点。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -309,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.HasChildNodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasChildNodes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasChildNodes { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasChildNodes : bool" Usage="Microsoft.Office.Interop.Word.XMLNode.HasChildNodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -328,7 +340,7 @@
       <Docs>
         <summary>确定指定的 XML 元素是否具有子元素。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的 XML 元素包含子元素, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。</para>
+        <remarks><para>如果指定的 XML 元素包含子元素，则此属性返回<b>True</b> ，否则返回<b>False</b> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -338,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.LastChild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastChild As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ LastChild { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastChild : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.XMLNode.LastChild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -355,9 +368,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object 类型的对象, 该对象代表父节点的最后一个子节点。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object 类型的对象，该对象代表父节点的最后一个子节点。</summary>
         <value>To be added.</value>
-        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.XMLNode.FirstChild" />属性可访问图表中的第一个子节点。 使用<see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" />属性可访问图表中的父节点。</para>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.FirstChild" /> 属性可访问图表中的第一个子节点。 使用 <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> 属性可访问图表中的父节点。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -367,6 +380,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As WdXMLNodeLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdXMLNodeLevel Level { Microsoft::Office::Interop::Word::WdXMLNodeLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.Level : Microsoft.Office.Interop.Word.WdXMLNodeLevel" Usage="Microsoft.Office.Interop.Word.XMLNode.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -395,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.NamespaceURI" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceURI As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceURI { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NamespaceURI : string" Usage="Microsoft.Office.Interop.Word.XMLNode.NamespaceURI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -414,7 +429,7 @@
       <Docs>
         <summary>返回一个代表指定对象的架构命名空间统一资源标识符 (URI) 的 <b>字符串</b> 。</summary>
         <value>To be added.</value>
-        <remarks><para>如果要创作用于 Microsoft Word 的 XML 架构, 强烈建议您在架构中指定<b>targetNamespace</b>设置。</para>
+        <remarks><para>如果要创作用于 Microsoft Word 的 XML 架构，强烈建议您在架构中指定<b>targetNamespace</b>设置。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -424,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.NextSibling" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextSibling As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ NextSibling { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NextSibling : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.XMLNode.NextSibling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -441,9 +457,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象, 表示文档中与指定元素处于同一级别的下一个元素。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> 对象，表示文档中与指定元素处于同一级别的下一个元素。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定元素是<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />集合中的最后一个元素, 则此属性返回<b>Nothing</b>。</para>
+        <remarks><para>如果指定元素是集合中的最后一个元素 <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> ，则此属性返回<b>Nothing</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -453,6 +469,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NodeType As WdXMLNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdXMLNodeType NodeType { Microsoft::Office::Interop::Word::WdXMLNodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : Microsoft.Office.Interop.Word.WdXMLNodeType" Usage="Microsoft.Office.Interop.Word.XMLNode.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -470,15 +487,15 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdXMLNodeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.WdXMLNodeType" />常量, 该常量代表节点的类型。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.WdXMLNodeType" /> 常量，该常量代表节点的类型。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdXMLNodeType" />可以是下列的<b>wdXMLNodeType</b>常量之一:</para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdXMLNodeType" />可以是下列的<b>wdXMLNodeType</b>常量之一：</para>
           <para>
             <b>wdXMLNodeAttribute</b> –表示属性节点。</para>
           <para>
             <b>wdXMLNodeElement</b> –表示元素节点。</para>
-          <para><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象可以是 XML 元素, 也可以是元素的属性。 使用<b>NodeType</b>属性可确定您正在使用的节点的类型, 以便您不尝试对节点执行无效操作。 例如, 该<see cref="P:Microsoft.Office.Interop.Word.XMLNode.Attributes" />属性仅适用于元素节点, 但它将显示在<b>XMLNode</b>对象的可用属性列表中。</para>
+          <para><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象可以是 XML 元素，也可以是元素的属性。 使用<b>NodeType</b>属性可确定您正在使用的节点的类型，以便您不尝试对节点执行无效操作。 例如，该 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.Attributes" /> 属性仅适用于元素节点，但它将显示在<b>XMLNode</b>对象的可用属性列表中。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -488,6 +505,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.NodeValue" />
       <MemberSignature Language="VB.NET" Value="Public Property NodeValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NodeValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NodeValue : string with get, set" Usage="Microsoft.Office.Interop.Word.XMLNode.NodeValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -508,10 +526,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>字符串</b>, 表示属性的值。</summary>
+        <summary>返回或设置一个<b>字符串</b>，表示属性的值。</summary>
         <value>To be added.</value>
-        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象可以是 XML 元素, 也可以是元素的属性。 使用<see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" />属性来确定所使用的节点类型。</para>
-          <para>对于具有<b>NodeType</b>值<b>wdXMLNodeElement</b>的<b>XMLNode</b>对象, <b>NodeValue</b>属性返回 nothing。</para>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象可以是 XML 元素，也可以是元素的属性。 使用 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" /> 属性来确定所使用的节点类型。</para>
+          <para>对于具有<b>NodeType</b>值<b>wdXMLNodeElement</b>的<b>XMLNode</b>对象， <b>NodeValue</b>属性返回 nothing。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -521,6 +539,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.OwnerDocument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnerDocument As Document" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Document ^ OwnerDocument { Microsoft::Office::Interop::Word::Document ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OwnerDocument : Microsoft.Office.Interop.Word.Document" Usage="Microsoft.Office.Interop.Word.XMLNode.OwnerDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -538,9 +557,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Document" />对象, 表示指定的 XML 元素的父文档。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Document" /> 对象，表示指定的 XML 元素的父文档。</summary>
         <value>To be added.</value>
-        <remarks><para><b>OwnerDocument</b>属性返回与该<see cref="P:Microsoft.Office.Interop.Word.XMLNode.Parent" />属性相同的结果。</para>
+        <remarks><para><b>OwnerDocument</b>属性返回与该属性相同的结果 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.Parent" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -550,6 +569,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.XMLNode.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -578,6 +598,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ParentNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentNode As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ ParentNode { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentNode : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.XMLNode.ParentNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -595,7 +616,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象, 表示指定元素的父元素。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> 对象，表示指定元素的父元素。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -606,6 +627,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.PlaceholderText" />
       <MemberSignature Language="VB.NET" Value="Public Property PlaceholderText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PlaceholderText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PlaceholderText : string with get, set" Usage="Microsoft.Office.Interop.Word.XMLNode.PlaceholderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -626,9 +648,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>字符串</b>, 表示为不包含文本的元素显示的文本。</summary>
+        <summary>返回或设置一个<b>字符串</b>，表示为不包含文本的元素显示的文本。</summary>
         <value>To be added.</value>
-        <remarks><para>仅当清除了 "XML 结构" 任务窗格中的 "在文档中显示 XML 标记" 复选框时，才在 Microsoft Word 中显示占位符文本。 "在文档中显示 XML 标记" 复选框对应于<see cref="P:Microsoft.Office.Interop.Word.View.ShowXMLMarkup" />属性。</para>
+        <remarks><para>仅当清除了 "XML 结构" 任务窗格中的 "在文档中显示 XML 标记" 复选框时，才在 Microsoft Word 中显示占位符文本。 "在文档中显示 XML 标记" 复选框对应于 <see cref="P:Microsoft.Office.Interop.Word.View.ShowXMLMarkup" /> 属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -638,6 +660,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.PreviousSibling" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousSibling As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ PreviousSibling { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousSibling : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.XMLNode.PreviousSibling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -655,9 +678,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象, 表示文档中与指定元素处于相同级别的上一个元素。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> 对象，表示文档中与指定元素处于相同级别的上一个元素。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定元素是<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />集合中的第一个元素, 则此属性返回<b>Nothing</b>。</para>
+        <remarks><para>如果指定元素是集合中的第一个元素 <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> ，则此属性返回<b>Nothing</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -667,6 +690,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.XMLNode.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -684,9 +708,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定对象中包含的文档部分。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象，该对象代表指定对象中包含的文档部分。</summary>
         <value>To be added.</value>
-        <remarks><para>有关从文档返回一个区域的信息, 请参阅<see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" />方法。</para>
+        <remarks><para>有关从文档返回一个区域的信息，请参阅 <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -696,6 +720,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.RemoveChild(Microsoft.Office.Interop.Word.XMLNode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveChild (ChildElement As XMLNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveChild(Microsoft::Office::Interop::Word::XMLNode ^ ChildElement);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveChild : Microsoft.Office.Interop.Word.XMLNode -&gt; unit" Usage="xMLNode.RemoveChild ChildElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -713,7 +738,7 @@
         <Parameter Name="ChildElement" Type="Microsoft.Office.Interop.Word.XMLNode" />
       </Parameters>
       <Docs>
-        <param name="ChildElement">必需<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />。 要删除的子元素。</param>
+        <param name="ChildElement">必需 <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> 。 要删除的子元素。</param>
         <summary>从指定的元素中移除指定的子元素。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -723,6 +748,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.XMLNodes SelectNodes([in]string XPath, [in]string PrefixMapping, [in]bool FastSearchSkippingTextNodes) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.SelectNodes(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SelectNodes (XPath As String, Optional PrefixMapping As String = &quot;&quot;, Optional FastSearchSkippingTextNodes As Boolean = false) As XMLNodes" />
+      <MemberSignature Language="F#" Value="abstract member SelectNodes : string * string * bool -&gt; Microsoft.Office.Interop.Word.XMLNodes" Usage="xMLNode.SelectNodes (XPath, PrefixMapping, FastSearchSkippingTextNodes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -743,11 +769,11 @@
       </Parameters>
       <Docs>
         <param name="XPath">必需的 <b>字符串</b> 。 有效的 XPath 字符串。 有关 XPath 的详细信息，请参阅 Microsoft Developer Network (MSDN) 网站上的 XPath 参考文档。</param>
-        <param name="PrefixMapping">可选<b>对象</b>。 提供用于搜索的架构中的前缀。 如果<paramref name="XPath" />参数<paramref name="PrefixMapping" />使用名称搜索元素, 请使用参数。</param>
+        <param name="PrefixMapping">可选<b>对象</b>。 提供用于搜索的架构中的前缀。 <paramref name="PrefixMapping" />如果 <paramref name="XPath" /> 参数使用名称搜索元素，请使用参数。</param>
         <param name="FastSearchSkippingTextNodes">可选属性，类型为 <b>Boolean</b>。 <b>为</b> 所有文本节点都搜索时跳过指定的节点。 <b>假</b> 在搜索中包含文本节点。 默认值为 <b>False</b> 。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XMLNodes" />集合, 该集合代表与指定的 XPath 字符串相匹配的所有节点, 并以它们出现的顺序匹配。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> 集合，该集合代表与指定的 XPath 字符串相匹配的所有节点，并以它们出现的顺序匹配。</summary>
         <returns>To be added.</returns>
-        <remarks><para>将此<paramref name="FastSearchSkippingTextNodes" />参数设置为<b>True</b>会降低性能, 因为 Microsoft Word 会针对节点中包含的文本搜索文档中的所有节点。</para>
+        <remarks><para>将此 <paramref name="FastSearchSkippingTextNodes" /> 参数设置为<b>True</b>会降低性能，因为 Microsoft Word 会针对节点中包含的文本搜索文档中的所有节点。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -756,6 +782,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.XMLNode SelectSingleNode([in]string XPath, [in]string PrefixMapping, [in]bool FastSearchSkippingTextNodes) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.SelectSingleNode(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SelectSingleNode (XPath As String, Optional PrefixMapping As String = &quot;&quot;, Optional FastSearchSkippingTextNodes As Boolean = false) As XMLNode" />
+      <MemberSignature Language="F#" Value="abstract member SelectSingleNode : string * string * bool -&gt; Microsoft.Office.Interop.Word.XMLNode" Usage="xMLNode.SelectSingleNode (XPath, PrefixMapping, FastSearchSkippingTextNodes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -775,12 +802,12 @@
         <Parameter Name="FastSearchSkippingTextNodes" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="XPath">必需的 <b>字符串</b> 。 一个有效<paramref name="XPath" />的字符串。 有关的详细信息<paramref name="XPath" />, 请参阅<paramref name="XPath" /> Microsoft 开发人员网络 (MSDN) 网站上的参考文档。</param>
-        <param name="PrefixMapping">可选<b>对象</b>。 提供用于搜索的架构中的前缀。 如果<paramref name="XPath" />参数<paramref name="PrefixMapping" />使用名称搜索元素, 请使用参数。</param>
+        <param name="XPath">必需的 <b>字符串</b> 。 一个有效的 <paramref name="XPath" /> 字符串。 有关的详细信息 <paramref name="XPath" /> ，请参阅 <paramref name="XPath" /> Microsoft 开发人员网络（MSDN）网站上的参考文档。</param>
+        <param name="PrefixMapping">可选<b>对象</b>。 提供用于搜索的架构中的前缀。 <paramref name="PrefixMapping" />如果 <paramref name="XPath" /> 参数使用名称搜索元素，请使用参数。</param>
         <param name="FastSearchSkippingTextNodes">可选属性，类型为 <b>Boolean</b>。 <b>为</b> 所有文本节点都搜索时跳过指定的节点。 <b>假</b> 在搜索中包含文本节点。 默认值为 <b>True</b> 。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象, 表示与指定的文档中指定的 XPath 字符串相匹配的第一个节点。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> 对象，表示与指定的文档中指定的 XPath 字符串相匹配的第一个节点。</summary>
         <returns>To be added.</returns>
-        <remarks><para>将此<paramref name="FastSearchSkippingTextNodes" />参数设置为<b>False</b>会降低性能, 因为 Microsoft Word 会针对节点中包含的文本搜索文档中的所有节点。</para>
+        <remarks><para>将此 <paramref name="FastSearchSkippingTextNodes" /> 参数设置为<b>False</b>会降低性能，因为 Microsoft Word 会针对节点中包含的文本搜索文档中的所有节点。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -789,6 +816,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValidationError([in]valuetype Microsoft.Office.Interop.Word.WdXMLValidationStatus Status, [in]object&amp; ErrorText, [in]bool ClearedAutomatically) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValidationError (Status As WdXMLValidationStatus, Optional ByRef ErrorText As Object, Optional ClearedAutomatically As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member SetValidationError : Microsoft.Office.Interop.Word.WdXMLValidationStatus * obj * bool -&gt; unit" Usage="xMLNode.SetValidationError (Status, ErrorText, ClearedAutomatically)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -804,14 +832,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Status" Type="Microsoft.Office.Interop.Word.WdXMLValidationStatus" />
-        <Parameter Name="ErrorText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ErrorText" Type="System.Object" RefType="ref" />
         <Parameter Name="ClearedAutomatically" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Status">必需<see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" />。 指定设置验证状态错误文本 (<b>wdXMLValidationStatusCustom</b>)，还是清除验证状态错误文本 (<b>wdXMLValidationStatusOK</b>)。</param>
-        <param name="ErrorText">可选<b>对象</b>。 向用户显示的文本。 如果<b>Status</b>参数设置为<b>wdXMLValidationStatusOK</b>, 则保留为空。</param>
-        <param name="ClearedAutomatically">可选属性，类型为 <b>Boolean</b>。 <b>真正</b> 自动清除错误消息指定节点上出现下一验证事件时，就立即。 <b>假</b>要求运行带有<b></b> <paramref name="Status" /> <b>wdXMLValidationStatusOK</b>参数的 SetValidationError 方法来清除自定义错误文本。</param>
-        <summary>将显示的验证错误文本更改为指定节点的用户, 并强制 Microsoft Word 将节点报告为无效。</summary>
+        <param name="Status">必需 <see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" /> 。 指定设置验证状态错误文本 (<b>wdXMLValidationStatusCustom</b>)，还是清除验证状态错误文本 (<b>wdXMLValidationStatusOK</b>)。</param>
+        <param name="ErrorText">可选<b>对象</b>。 向用户显示的文本。 如果<b>Status</b>参数设置为<b>wdXMLValidationStatusOK</b>，则保留为空。</param>
+        <param name="ClearedAutomatically">可选属性，类型为 <b>Boolean</b>。 <b>真正</b> 自动清除错误消息指定节点上出现下一验证事件时，就立即。 <b>假</b>要求运行带有<b>SetValidationError</b> <paramref name="Status" /> <b>wdXMLValidationStatusOK</b>参数的 SetValidationError 方法来清除自定义错误文本。</param>
+        <summary>将显示的验证错误文本更改为指定节点的用户，并强制 Microsoft Word 将节点报告为无效。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -821,6 +849,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.SmartTag" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartTag As SmartTag" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SmartTag ^ SmartTag { Microsoft::Office::Interop::Word::SmartTag ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartTag : Microsoft.Office.Interop.Word.SmartTag" Usage="Microsoft.Office.Interop.Word.XMLNode.SmartTag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -841,9 +870,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.SmartTag" />对象, 表示与 XML 元素相关联的智能标记。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.SmartTag" /> 对象，表示与 XML 元素相关联的智能标记。</summary>
         <value>To be added.</value>
-        <remarks><para>XML 元素可以通过实现<b>ISmartTag</b>接口的外部组件为其分配智能标记操作。 有关智能标记以及如何创建识别器和操作处理程序的详细信息, 请参阅 Microsoft 开发人员网络 (MSDN) 网站上的智能标记软件开发工具包。</para>
+        <remarks><para>XML 元素可以通过实现<b>ISmartTag</b>接口的外部组件为其分配智能标记操作。 有关智能标记以及如何创建识别器和操作处理程序的详细信息，请参阅 Microsoft 开发人员网络（MSDN）网站上的智能标记软件开发工具包。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -853,6 +882,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Office.Interop.Word.XMLNode.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -873,7 +903,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>字符串</b>, 表示为 XML 元素显示的文本。</summary>
+        <summary>返回或设置一个<b>字符串</b>，表示为 XML 元素显示的文本。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -884,6 +914,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Validate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Validate();" />
+      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit" Usage="xMLNode.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -900,8 +931,8 @@
       <Parameters />
       <Docs>
         <summary>对附加的 XML 架构或架构验证单个 XML 元素或整个文档。</summary>
-        <remarks><para>将<b>Validate</b>方法与<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />和<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />属性结合使用, 可确定 XML 元素是否对应用的架构有效, 以及向用户显示的错误文本。 使用<see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" />方法替代具有自定义验证错误的架构冲突。</para>
-          <para>当您运行<b>Validate</b>方法时, Microsoft Word 将使用<see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" />具有验证错误的 XML 节点来填充集合。</para>
+        <remarks><para>将<b>Validate</b>方法与和属性结合使用， <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> 可确定 XML 元素是否对应用的架构有效，以及向用户显示的错误文本。 使用 <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> 方法替代具有自定义验证错误的架构冲突。</para>
+          <para>当您运行<b>Validate</b>方法时，Microsoft Word 将 <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" /> 使用具有验证错误的 XML 节点来填充集合。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -911,6 +942,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationErrorText(Optional Advanced As Boolean = false) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValidationErrorText[bool] { System::String ^ get(bool Advanced); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationErrorText(bool) : string" Usage="Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -932,7 +964,7 @@
       </Parameters>
       <Docs>
         <param name="Advanced">可选属性，类型为 <b>Boolean</b>。 代表显示的错误文字是验证错误说明的高级版本，该版本来自 Microsoft Word 所包含的 MSXML 5.0 组件。</param>
-        <summary>返回一个<b>字符串</b>, 表示对某个<see cref="T:Microsoft.Office.Interop.Word.XMLNode" />对象的验证错误的说明。</summary>
+        <summary>返回一个<b>字符串</b>，表示对某个对象的验证错误的说明 <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -943,6 +975,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationStatus As WdXMLValidationStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdXMLValidationStatus ValidationStatus { Microsoft::Office::Interop::Word::WdXMLValidationStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationStatus : Microsoft.Office.Interop.Word.WdXMLValidationStatus" Usage="Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -960,15 +993,15 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdXMLValidationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" />常量, 该常量表示元素或属性是否有效, 具体取决于附加的架构。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" /> 常量，该常量表示元素或属性是否有效，具体取决于附加的架构。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>WdXMLValidationStatus</b>可以是下列常量之一:</para>
+            <b>WdXMLValidationStatus</b>可以是下列常量之一：</para>
           <para>
-            <b>wdXMLValidationStatusCustom</b>指示此<see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" />方法用于将属性设置<see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />为自定义文本字符串。 </para>
+            <b>wdXMLValidationStatusCustom</b>指示此 <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> 方法用于将 <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> 属性设置为自定义文本字符串。 </para>
           <para>
-            <b>wdXMLValidationStatusOK</b>指示根据附加的架构, XML 元素或属性有效。</para>
-          <para>虽然这些都是 <b>ValidationStatus</b> 属性允许仅有两个已命名的常数，有很多来自 Microsoft Word 中附带的 MSXML 5.0 组件的更未命名的值。 有关可能值及其相应含义的完整列表, 请参阅 microsoft Developer Network (MSDN) 网站上的 Microsoft Word XML 内容开发工具包。</para>
+            <b>wdXMLValidationStatusOK</b>指示根据附加的架构，XML 元素或属性有效。</para>
+          <para>虽然这些都是 <b>ValidationStatus</b> 属性允许仅有两个已命名的常数，有很多来自 Microsoft Word 中附带的 MSXML 5.0 组件的更未命名的值。 有关可能值及其相应含义的完整列表，请参阅 microsoft Developer Network （MSDN）网站上的 Microsoft Word XML 内容开发工具包。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -978,6 +1011,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.WordOpenXML" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WordOpenXML As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WordOpenXML { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WordOpenXML : string" Usage="Microsoft.Office.Interop.Word.XMLNode.WordOpenXML" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -995,7 +1029,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>字符串</b>, 表示 Microsoft Office WORD Open xml 格式的节点的 XML。 只读。</summary>
+        <summary>返回一个<b>字符串</b>，表示 Microsoft Office WORD Open xml 格式的节点的 XML。 只读。</summary>
         <value><b>String</b></value>
         <remarks><para>此属性仅返回文档中表示指定的 XML 节点所需的 XML。</para>
           <para> </para></remarks>
@@ -1007,6 +1041,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.XML(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XML(Optional DataOnly As Boolean = false) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XML[bool] { System::String ^ get(bool DataOnly); };" />
+      <MemberSignature Language="F#" Value="member this.XML(bool) : string" Usage="Microsoft.Office.Interop.Word.XMLNode.XML" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1028,7 +1063,7 @@
       </Parameters>
       <Docs>
         <param name="DataOnly">可选属性，类型为 <b>Boolean</b>。 <b>True</b> 将返回而不使用 Word XML 标记的 xml 文本。 默认设置为 <b>False</b> 。</param>
-        <summary>返回一个<b>字符串</b>, 表示指定对象中的 XML 文本。</summary>
+        <summary>返回一个<b>字符串</b>，表示指定对象中的 XML 文本。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

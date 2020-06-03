@@ -1,9 +1,10 @@
 <Type Name="WrapFormat" FullName="Microsoft.Office.Interop.Word.WrapFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9d2134484e052c9659a96b0dd53bd285acaebe61" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145430" /></Metadata><TypeSignature Language="C#" Value="public interface WrapFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dbe15493743fbe1d0cdfa6275a9d1b6b65fbe02a" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926778" /></Metadata><TypeSignature Language="C#" Value="public interface WrapFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WrapFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.WrapFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface WrapFormat" />
   <TypeSignature Language="C++ CLI" Value="public interface class WrapFormat" />
+  <TypeSignature Language="F#" Value="type WrapFormat = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>代表使文字环绕形状或形状范围的所有属性。</summary>
-    <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.Shape" />或<see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />对象的<b>WrapFormat</b>属性可返回<b>WrapFormat</b>对象。</para>
+    <remarks><para>使用或对象的<b>WrapFormat</b>属性 <see cref="T:Microsoft.Office.Interop.Word.Shape" /> <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> 可返回<b>WrapFormat</b>对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WrapFormat.AllowOverlap" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowOverlap As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AllowOverlap { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowOverlap : int with get, set" Usage="Microsoft.Office.Interop.Word.WrapFormat.AllowOverlap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WrapFormat.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.WrapFormat.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WrapFormat.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.WrapFormat.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -108,8 +112,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WrapFormat.DistanceBottom" />
       <MemberSignature Language="VB.NET" Value="Public Property DistanceBottom As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float DistanceBottom { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.DistanceBottom : single with get, set" Usage="Microsoft.Office.Interop.Word.WrapFormat.DistanceBottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,7 +146,7 @@
       <Docs>
         <summary>返回或设置文档文字与指定的图形周围的文本区底边之间的距离 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks><para>指定形状的大小和形状, 以及该<see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />对象的和属性的值, 用于确定此无文本区域的大小和形状。</para>
+        <remarks><para>指定形状的大小和形状，以及该对象的和属性的值 <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> ，用于 <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> 确定此无文本区域的大小和形状。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WrapFormat.DistanceLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property DistanceLeft As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float DistanceLeft { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.DistanceLeft : single with get, set" Usage="Microsoft.Office.Interop.Word.WrapFormat.DistanceLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -173,7 +179,7 @@
       <Docs>
         <summary>返回或设置文档文字与指定的图形周围的文本区左边的缘之间的距离 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks><para>指定形状的大小和形状, 以及该<see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />对象的和属性的值, 用于确定此无文本区域的大小和形状。</para>
+        <remarks><para>指定形状的大小和形状，以及该对象的和属性的值 <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> ，用于 <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> 确定此无文本区域的大小和形状。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WrapFormat.DistanceRight" />
       <MemberSignature Language="VB.NET" Value="Public Property DistanceRight As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float DistanceRight { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.DistanceRight : single with get, set" Usage="Microsoft.Office.Interop.Word.WrapFormat.DistanceRight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -205,7 +212,7 @@
       <Docs>
         <summary>返回或设置文档文字与指定的图形周围的文本区右边缘之间的距离 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks><para>指定形状的大小和形状, 以及该<see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />对象的和属性的值, 用于确定此无文本区域的大小和形状。</para>
+        <remarks><para>指定形状的大小和形状，以及该对象的和属性的值 <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> ，用于 <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> 确定此无文本区域的大小和形状。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WrapFormat.DistanceTop" />
       <MemberSignature Language="VB.NET" Value="Public Property DistanceTop As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float DistanceTop { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.DistanceTop : single with get, set" Usage="Microsoft.Office.Interop.Word.WrapFormat.DistanceTop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -237,7 +245,7 @@
       <Docs>
         <summary>返回或设置文档文字与指定的图形周围的文本区的上边缘之间的距离 (以磅为单位)。</summary>
         <value>To be added.</value>
-        <remarks><para>指定形状的大小和形状, 以及该<see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" />对象的和属性的值, 用于确定此无文本区域的大小和形状。</para>
+        <remarks><para>指定形状的大小和形状，以及该对象的和属性的值 <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Side" /> ，用于 <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> 确定此无文本区域的大小和形状。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -247,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WrapFormat.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.WrapFormat.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -275,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WrapFormat.Side" />
       <MemberSignature Language="VB.NET" Value="Public Property Side As WdWrapSideType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdWrapSideType Side { Microsoft::Office::Interop::Word::WdWrapSideType get(); void set(Microsoft::Office::Interop::Word::WdWrapSideType value); };" />
+      <MemberSignature Language="F#" Value="member this.Side : Microsoft.Office.Interop.Word.WdWrapSideType with get, set" Usage="Microsoft.Office.Interop.Word.WrapFormat.Side" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -295,11 +305,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWrapSideType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值, 该值指示文档文本是在指定的形状的两侧、仅在左侧还是右侧环绕, 或在距页边距最远的形状的一侧。</summary>
+        <summary>返回或设置一个值，该值指示文档文本是在指定的形状的两侧、仅在左侧还是右侧环绕，或在距页边距最远的形状的一侧。</summary>
         <value>To be added.</value>
-        <remarks><para>如果文本仅在形状的一侧进行换行, 则形状的另一侧与页边距之间有一个无文本的区域。</para>
+        <remarks><para>如果文本仅在形状的一侧进行换行，则形状的另一侧与页边距之间有一个无文本的区域。</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdWrapSideType" />可以是下列<b>WdWrapSideType</b>常量之一: </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdWrapSideType" />可以是下列<b>WdWrapSideType</b>常量之一： </para>
           <para>
             <b>wdWrapBoth</b>
           </para>
@@ -321,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.WrapFormat.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As WdWrapType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdWrapType Type { Microsoft::Office::Interop::Word::WdWrapType get(); void set(Microsoft::Office::Interop::Word::WdWrapType value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdWrapType with get, set" Usage="Microsoft.Office.Interop.Word.WrapFormat.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -344,7 +355,7 @@
         <summary>返回指定形状的换行类型。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdWrapType" />可以是下列<b>WdWrapType</b>常量之一: </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdWrapType" />可以是下列<b>WdWrapType</b>常量之一： </para>
           <para>
             <b>wdWrapInline</b>
           </para>

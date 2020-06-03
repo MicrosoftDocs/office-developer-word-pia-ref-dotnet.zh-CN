@@ -1,9 +1,10 @@
 <Type Name="Subdocument" FullName="Microsoft.Office.Interop.Word.Subdocument">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c62a47b9e81261c6e830b9e0cc33dec363fa4210" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146071" /></Metadata><TypeSignature Language="C#" Value="public interface Subdocument" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9cbfa30717157225339f13feff9be548a4db1c21" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926197" /></Metadata><TypeSignature Language="C#" Value="public interface Subdocument" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Subdocument" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Subdocument" />
   <TypeSignature Language="VB.NET" Value="Public Interface Subdocument" />
   <TypeSignature Language="C++ CLI" Value="public interface class Subdocument" />
+  <TypeSignature Language="F#" Value="type Subdocument = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>代表文档或范围中的一个子文档。</summary>
-    <remarks><para><b>子文档</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Subdocuments" />集合的一个成员。 <b>子文档</b>集合包含某一区域或文档中的所有子文档。</para>
-      <para>使用<b>子文档</b>(<paramref name="index" />), <paramref name="index" />其中是索引号, 返回一个<b>子文档</b>对象。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> or <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" />方法可将子文档添加到文档中。</para>
+    <remarks><para><b>子文档</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.Subdocuments" /> 。 <b>子文档</b>集合包含某一区域或文档中的所有子文档。</para>
+      <para>使用<b>子文档</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是索引号，返回一个<b>子文档</b>对象。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> or <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" /> 方法可将子文档添加到文档中。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocument.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Subdocument.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocument.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Subdocument.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,8 +81,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocument.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="subdocument.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -114,6 +118,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocument.HasFile" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasFile As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasFile { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasFile : bool" Usage="Microsoft.Office.Interop.Word.Subdocument.HasFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocument.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Level { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Level : int" Usage="Microsoft.Office.Interop.Word.Subdocument.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocument.Locked" />
       <MemberSignature Language="VB.NET" Value="Public Property Locked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Locked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Locked : bool with get, set" Usage="Microsoft.Office.Interop.Word.Subdocument.Locked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocument.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Subdocument.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -229,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocument.Open" />
       <MemberSignature Language="VB.NET" Value="Public Function Open () As Document" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Document ^ Open();" />
+      <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; Microsoft.Office.Interop.Word.Document" Usage="subdocument.Open " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -244,7 +253,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>打开指定的对象。 返回一个<see cref="T:Microsoft.Office.Interop.Word.Document" />对象, 表示打开的对象。</summary>
+        <summary>打开指定的对象。 返回一个 <see cref="T:Microsoft.Office.Interop.Word.Document" /> 对象，表示打开的对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -255,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocument.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Subdocument.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -283,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocument.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Office.Interop.Word.Subdocument.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -302,9 +313,9 @@
       <Docs>
         <summary>返回指定对象的磁盘或 Web 路径。</summary>
         <value>To be added.</value>
-        <remarks><para>路径中不包括尾随字符   例如，"C:\MSOffice"或"http://MyServer"。 使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />属性添加用于分隔文件夹和驱动器号的字符。 使用<see cref="P:Microsoft.Office.Interop.Word.Subdocument.Name" />属性返回不带路径的文件名。</para>
+        <remarks><para>路径中不包括尾随字符   例如，"C:\MSOffice"或"http://MyServer"。 使用 <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> 属性添加用于分隔文件夹和驱动器号的字符。 使用 <see cref="P:Microsoft.Office.Interop.Word.Subdocument.Name" /> 属性返回不带路径的文件名。</para>
           <para>
-            <b>注释</b> 您可以使用<b>PathSeparator</b>属性来构建 Web 地址, 即使它们包含正斜杠 (/), 并且<b>PathSeparator</b>属性默认为反斜杠 (\)。</para>
+            <b>注释</b> 您可以使用<b>PathSeparator</b>属性来构建 Web 地址，即使它们包含正斜杠（/），并且<b>PathSeparator</b>属性默认为反斜杠（ \) 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -314,6 +325,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Subdocument.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Subdocument.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -331,9 +343,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象, 该对象代表指定对象中包含的文档部分。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> object 类型的对象，该对象代表指定对象中包含的文档部分。</summary>
         <value>To be added.</value>
-        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息, 请参阅<see cref="T:Microsoft.Office.Interop.Word.Document" /> or <see cref="T:Microsoft.Office.Interop.Word.Shapes" />对象的<b>range</b>方法。</para>
+        <remarks><para>有关从文档返回一个区域或从形状集合返回形状范围的信息，请参阅 or 对象的<b>range</b>方法 <see cref="T:Microsoft.Office.Interop.Word.Document" /> <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -341,7 +353,9 @@
       <MemberSignature Language="C#" Value="public void Split (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Split([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Subdocument.Split(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Split (Range As Range)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Split(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member Split : Microsoft.Office.Interop.Word.Range -&gt; unit" Usage="subdocument.Split Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -359,9 +373,9 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。 在拆分子文档时，该范围成为独立的子文档。</param>
+        <param name="Range">必需 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 的对象。 在拆分子文档时，该范围成为独立的子文档。</param>
         <summary>将一篇现有子文档拆分为两篇子文档，在主控文档视图或大纲视图中这两篇文档处于同一级别。</summary>
-        <remarks><para>在指定范围的开始部分进行此操作。 如果活动文档不在主控文档或大纲视图中, 或者如果区域不在子文档的段落的开头, 则会发生错误。</para>
+        <remarks><para>在指定范围的开始部分进行此操作。 如果活动文档不在主控文档或大纲视图中，或者如果区域不在子文档的段落的开头，则会发生错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

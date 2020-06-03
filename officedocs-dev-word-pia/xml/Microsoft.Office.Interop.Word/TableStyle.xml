@@ -1,9 +1,10 @@
 <Type Name="TableStyle" FullName="Microsoft.Office.Interop.Word.TableStyle">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7853b4e30317d783a2c6181581ff9d0dca09465d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143887" /></Metadata><TypeSignature Language="C#" Value="public interface TableStyle" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7a9c348940098b532245e429b8979c64b3fa528b" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926127" /></Metadata><TypeSignature Language="C#" Value="public interface TableStyle" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableStyle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TableStyle" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableStyle" />
   <TypeSignature Language="C++ CLI" Value="public interface class TableStyle" />
+  <TypeSignature Language="F#" Value="type TableStyle = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>代表可应用于表格的单个样式。</summary>
-    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.Style.Table" /> <see cref="T:Microsoft.Office.Interop.Word.Style" />对象的属性返回一个<see cref="T:Microsoft.Office.Interop.Word.TableStyle" />对象。 使用<see cref="T:Microsoft.Office.Interop.Word.Borders" />属性将边框应用于整个表格。 使用<see cref="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" />方法仅对表的指定部分应用边框或底纹。</para>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.Style.Table" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Word.Style" /> 返回一个 <see cref="T:Microsoft.Office.Interop.Word.TableStyle" /> 对象。 使用 <see cref="T:Microsoft.Office.Interop.Word.Borders" /> 属性将边框应用于整个表格。 使用 <see cref="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" /> 方法仅对表的指定部分应用边框或底纹。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public Property Alignment As WdRowAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRowAlignment Alignment { Microsoft::Office::Interop::Word::WdRowAlignment get(); void set(Microsoft::Office::Interop::Word::WdRowAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.Alignment : Microsoft.Office.Interop.Word.WdRowAlignment with get, set" Usage="Microsoft.Office.Interop.Word.TableStyle.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRowAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个常量, 该常量代表指定行的对齐方式。</summary>
+        <summary>返回或设置一个常量，该常量代表指定行的对齐方式。</summary>
         <value>To be added.</value>
         <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdRowAlignment" />可以是下列<b>WdRowAlignment</b>常量之一。 </para>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.AllowBreakAcrossPage" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowBreakAcrossPage As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AllowBreakAcrossPage { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowBreakAcrossPage : int with get, set" Usage="Microsoft.Office.Interop.Word.TableStyle.AllowBreakAcrossPage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -91,9 +94,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个<b>Integer</b>类型的值, 该值指示设置为指定样式的表格行中的行是否跨页断行。</summary>
+        <summary>设置或返回一个<b>Integer</b>类型的值，该值指示设置为指定样式的表格行中的行是否跨页断行。</summary>
         <value>To be added.</value>
-        <remarks><para>将<b>AllowBreakAcrossPage</b>属性设置为<b>True</b>将表格行中的行拆分为多个分页符。 如果将该属性设置为<b>False</b> , 则表的行中的行都保持在同一页上。 默认设置为 <b>True</b> 。</para>
+        <remarks><para>将<b>AllowBreakAcrossPage</b>属性设置为<b>True</b>将表格行中的行拆分为多个分页符。 如果将该属性设置为<b>False</b> ，则表的行中的行都保持在同一页上。 默认设置为 <b>True</b> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.AllowPageBreaks" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowPageBreaks As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowPageBreaks { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowPageBreaks : bool with get, set" Usage="Microsoft.Office.Interop.Word.TableStyle.AllowPageBreaks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.TableStyle.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -151,7 +156,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.Borders" />
       <MemberSignature Language="VB.NET" Value="Public Property Borders As Borders" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Borders ^ Borders { Microsoft::Office::Interop::Word::Borders ^ get(); void set(Microsoft::Office::Interop::Word::Borders ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Borders : Microsoft.Office.Interop.Word.Borders with get, set" Usage="Microsoft.Office.Interop.Word.TableStyle.Borders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -182,7 +188,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合, 该集合代表指定对象的所有边框。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Borders" /> 集合，该集合代表指定对象的所有边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.BottomPadding" />
       <MemberSignature Language="VB.NET" Value="Public Property BottomPadding As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float BottomPadding { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.BottomPadding : single with get, set" Usage="Microsoft.Office.Interop.Word.TableStyle.BottomPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.ColumnStripe" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnStripe As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnStripe { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ColumnStripe : int with get, set" Usage="Microsoft.Office.Interop.Word.TableStyle.ColumnStripe" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -245,9 +253,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Integer</b>类型的值, 该值代表当样式指定奇数或偶数列条带时的镶边中的列数。</summary>
+        <summary>返回或设置一个<b>Integer</b>类型的值，该值代表当样式指定奇数或偶数列条带时的镶边中的列数。</summary>
         <value>To be added.</value>
-        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" />方法为表样式设置奇数或偶数列的条带。</para>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" /> 方法为表样式设置奇数或偶数列的条带。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -257,6 +265,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" />
       <MemberSignature Language="VB.NET" Value="Public Function Condition (ConditionCode As WdConditionCode) As ConditionalStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::ConditionalStyle ^ Condition(Microsoft::Office::Interop::Word::WdConditionCode ConditionCode);" />
+      <MemberSignature Language="F#" Value="abstract member Condition : Microsoft.Office.Interop.Word.WdConditionCode -&gt; Microsoft.Office.Interop.Word.ConditionalStyle" Usage="tableStyle.Condition ConditionCode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -274,8 +283,8 @@
         <Parameter Name="ConditionCode" Type="Microsoft.Office.Interop.Word.WdConditionCode" />
       </Parameters>
       <Docs>
-        <param name="ConditionCode">必需<see cref="T:Microsoft.Office.Interop.Word.WdConditionCode" />。 要应用格式的表格区域。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ConditionalStyle" />对象, 表示表的某个部分的特殊样式格式。</summary>
+        <param name="ConditionCode">必需 <see cref="T:Microsoft.Office.Interop.Word.WdConditionCode" /> 。 要应用格式的表格区域。</param>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.ConditionalStyle" /> 对象，表示表的某个部分的特殊样式格式。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TableStyle.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -305,8 +315,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -316,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.LeftIndent" />
       <MemberSignature Language="VB.NET" Value="Public Property LeftIndent As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LeftIndent { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.LeftIndent : single with get, set" Usage="Microsoft.Office.Interop.Word.TableStyle.LeftIndent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -336,7 +347,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Single</b>类型的值, 该值代表指定表格样式的左缩进值 (以磅为单位)。</summary>
+        <summary>返回或设置一个<b>Single</b>类型的值，该值代表指定表格样式的左缩进值（以磅为单位）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,6 +358,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.LeftPadding" />
       <MemberSignature Language="VB.NET" Value="Public Property LeftPadding As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LeftPadding { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.LeftPadding : single with get, set" Usage="Microsoft.Office.Interop.Word.TableStyle.LeftPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -367,7 +379,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置要添加到表格样式中所有单元格的内容左侧的间距 (以磅为单位)。</summary>
+        <summary>返回或设置要添加到表格样式中所有单元格的内容左侧的间距（以磅为单位）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -378,6 +390,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.TableStyle.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -406,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.RightPadding" />
       <MemberSignature Language="VB.NET" Value="Public Property RightPadding As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RightPadding { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.RightPadding : single with get, set" Usage="Microsoft.Office.Interop.Word.TableStyle.RightPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -426,7 +440,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置要添加到表格样式中所有单元格的内容右侧的间距 (以磅为单位)。</summary>
+        <summary>返回或设置要添加到表格样式中所有单元格的内容右侧的间距（以磅为单位）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -437,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.RowStripe" />
       <MemberSignature Language="VB.NET" Value="Public Property RowStripe As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowStripe { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.RowStripe : int with get, set" Usage="Microsoft.Office.Interop.Word.TableStyle.RowStripe" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -457,9 +472,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Integer</b>类型的值, 该值代表当样式指定奇数或偶数行成组时包含在条带中的行数。</summary>
+        <summary>返回或设置一个<b>Integer</b>类型的值，该值代表当样式指定奇数或偶数行成组时包含在条带中的行数。</summary>
         <value>To be added.</value>
-        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" />方法为表样式设置奇数或偶数列的条带。</para>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" /> 方法为表样式设置奇数或偶数列的条带。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -469,6 +484,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.Shading" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shading As Shading" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shading ^ Shading { Microsoft::Office::Interop::Word::Shading ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shading : Microsoft.Office.Interop.Word.Shading" Usage="Microsoft.Office.Interop.Word.TableStyle.Shading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -486,7 +502,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象, 该对象代表指定对象的底纹格式。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Shading" /> 对象，该对象代表指定对象的底纹格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -497,6 +513,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.Spacing" />
       <MemberSignature Language="VB.NET" Value="Public Property Spacing As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Spacing { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Spacing : single with get, set" Usage="Microsoft.Office.Interop.Word.TableStyle.Spacing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -528,6 +545,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.TableDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property TableDirection As WdTableDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdTableDirection TableDirection { Microsoft::Office::Interop::Word::WdTableDirection get(); void set(Microsoft::Office::Interop::Word::WdTableDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.TableDirection : Microsoft.Office.Interop.Word.WdTableDirection with get, set" Usage="Microsoft.Office.Interop.Word.TableStyle.TableDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -568,6 +586,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TableStyle.TopPadding" />
       <MemberSignature Language="VB.NET" Value="Public Property TopPadding As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TopPadding { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TopPadding : single with get, set" Usage="Microsoft.Office.Interop.Word.TableStyle.TopPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -588,7 +607,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置表格样式中所有单元格的内容上方要添加的间距 (以磅为单位)。</summary>
+        <summary>返回或设置表格样式中所有单元格的内容上方要添加的间距（以磅为单位）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

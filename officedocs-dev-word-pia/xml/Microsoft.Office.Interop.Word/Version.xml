@@ -1,9 +1,10 @@
 <Type Name="Version" FullName="Microsoft.Office.Interop.Word.Version">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1093fbf071b1d02c902b04fc31b1548af334174f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143733" /></Metadata><TypeSignature Language="C#" Value="public interface Version" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="743c51da277712b58b154aca991c497ab2f132af" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925994" /></Metadata><TypeSignature Language="C#" Value="public interface Version" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Version" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Version" />
   <TypeSignature Language="VB.NET" Value="Public Interface Version" />
   <TypeSignature Language="C++ CLI" Value="public interface class Version" />
+  <TypeSignature Language="F#" Value="type Version = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,9 +20,9 @@
   </Attributes>
   <Docs>
     <summary>表示文档的一个版本。</summary>
-    <remarks><para><b>版本</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Versions" />集合的一个成员。 <b>Versions</b> 集合包含指定文档的所有版本。</para>
-      <para>使用<b>版本</b>(<paramref name="index" />) (其中<paramref name="index" />是索引号) 可返回单个<b>版本</b>对象。 索引号代表版本的 <b>版本</b> 集合中的位置。 添加到 <b>版本</b> 集合中的第一个版本是索引号为 1。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Versions.Save(System.Object@)" />方法将项添加到<b>版本</b>集合中。</para>
+    <remarks><para><b>版本</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.Versions" /> 。 <b>Versions</b> 集合包含指定文档的所有版本。</para>
+      <para>使用<b>版本</b>（ <paramref name="index" /> ）（其中 <paramref name="index" /> 是索引号）可返回单个<b>版本</b>对象。 索引号代表版本的 <b>版本</b> 集合中的位置。 添加到 <b>版本</b> 集合中的第一个版本是索引号为 1。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.Versions.Save(System.Object@)" /> 方法将项添加到<b>版本</b>集合中。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Version.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Version.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Version.Comment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comment As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comment { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Comment : string" Usage="Microsoft.Office.Interop.Word.Version.Comment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Version.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Version.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -106,8 +110,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Version.Date" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Date As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Date { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.Date : DateTime" Usage="Microsoft.Office.Interop.Word.Version.Date" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Version.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="version.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Version.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Version.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -187,7 +194,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>Integer</b>类型的值, 该值代表项目在集合中的位置。</summary>
+        <summary>返回一个<b>Integer</b>类型的值，该值代表项目在集合中的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Version.Open" />
       <MemberSignature Language="VB.NET" Value="Public Function Open () As Document" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Document ^ Open();" />
+      <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; Microsoft.Office.Interop.Word.Document" Usage="version.Open " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -213,7 +221,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>打开指定的对象。 返回一个<see cref="T:Microsoft.Office.Interop.Word.Document" />对象, 表示打开的对象。</summary>
+        <summary>打开指定的对象。 返回一个 <see cref="T:Microsoft.Office.Interop.Word.Document" /> 对象，表示打开的对象。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Version.OpenOld" />
       <MemberSignature Language="VB.NET" Value="Public Sub OpenOld ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpenOld();" />
+      <MemberSignature Language="F#" Value="abstract member OpenOld : unit -&gt; unit" Usage="version.OpenOld " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -252,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Version.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Version.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -280,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Version.SavedBy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SavedBy As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SavedBy { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SavedBy : string" Usage="Microsoft.Office.Interop.Word.Version.SavedBy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
