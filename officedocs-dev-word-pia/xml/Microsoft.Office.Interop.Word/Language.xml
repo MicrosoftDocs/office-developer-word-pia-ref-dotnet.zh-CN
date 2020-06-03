@@ -1,9 +1,10 @@
 <Type Name="Language" FullName="Microsoft.Office.Interop.Word.Language">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="6a420e980d31a95af3eadfbd098d98e9a7886930" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146659" /></Metadata><TypeSignature Language="C#" Value="public interface Language" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9fe8c1156f3d3ac7c1a8824b329e4d3e5775e2c1" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923918" /></Metadata><TypeSignature Language="C#" Value="public interface Language" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Language" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Language" />
   <TypeSignature Language="VB.NET" Value="Public Interface Language" />
   <TypeSignature Language="C++ CLI" Value="public interface class Language" />
+  <TypeSignature Language="F#" Value="type Language = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,16 +19,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="ad3dd-101">表示用于校对或设置格式在 Microsoft Word 中的语言。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-101">Represents a language used for proofing or formatting in Microsoft Word.</span></span></summary>
-    <remarks><para><span data-ttu-id="ad3dd-102"><b>语言</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Languages" />集合的一个成员。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-102">The <b>Language</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Languages" /> collection.</span></span></para>
-      <para><span data-ttu-id="ad3dd-103">使用<b>语言</b>(<paramref name="index" />) 返回单个<b>语言</b>对象, 其中<paramref name="index" />可以是<see cref="P:Microsoft.Office.Interop.Word.Language.Name" />属性的值、 <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />属性的值、 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一或<see cref="T:Microsoft.Office.Core.MsoLanguageID" />常量之一。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-103">Use <b>Languages</b>(<paramref name="index" />) to return a single <b>Language</b> object, where <paramref name="index" /> can be the value of the <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> property, the value of the <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> property, one of the <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constants, or one of the <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> constants.</span></span></para>
-      <para><span data-ttu-id="ad3dd-104">该<see cref="P:Microsoft.Office.Interop.Word.Language.Name" />属性返回语言的名称, 而<see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />属性以用户语言返回语言的名称。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-104">The <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> property returns the name of a language, whereas the <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> property returns the name of a language in the language of the user.</span></span></para>
-      <para><span data-ttu-id="ad3dd-105">对于安装了校对工具的每种语言, 您<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />可以使用、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />和<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />属性来返回相应<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />的对象。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-105">For each language for which proofing tools are installed, you can use the <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, and <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> properties to return the corresponding <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object.</span></span></para>
-      <para><span data-ttu-id="ad3dd-106">写作风格是用语法检查器的规则集。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-106">The writing style is the set of rules used by the grammar checker.</span></span> <span data-ttu-id="ad3dd-107">该<see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" />属性返回一个字符串数组, 这些字符串代表指定语言的可用写作风格。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-107">The <see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" /> property returns an array of strings that represent the available writing styles for the specified language.</span></span></para>
-      <para><span data-ttu-id="ad3dd-108">使用<see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" />属性可设置希望 Word 使用的默认写作风格。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-108">Use the <see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" /> property to set the default writing style you want Word to use.</span></span></para>
-      <para><span data-ttu-id="ad3dd-109">您可以使用<see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" />属性替代默认的写作风格。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-109">You can override the default writing style with the <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> property.</span></span> <span data-ttu-id="ad3dd-110">此属性应用于指定的文档中以指定语言标记的文本。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-110">This property is applied to a specified document for text marked in a specified language.</span></span></para>
-      <para><span data-ttu-id="ad3dd-111">[!注释] 必须为待检查的每种语言安装校对工具。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-111">You must have the proofing tools installed for each language you intend to check.</span></span></para>
-      <para><span data-ttu-id="ad3dd-112">如果将标记为 <b>wdNoProofing</b> 的文本时，Word 会被标记的文本跳过运行拼写和语法检查。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-112">If you mark text as <b>wdNoProofing</b>, Word skips the marked text when running a spelling or grammar check.</span></span></para>
+    <summary><span data-ttu-id="f94f9-101">表示用于校对或设置格式在 Microsoft Word 中的语言。</span><span class="sxs-lookup"><span data-stu-id="f94f9-101">Represents a language used for proofing or formatting in Microsoft Word.</span></span></summary>
+    <remarks><para><span data-ttu-id="f94f9-102"><b>语言</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.Languages" /> 。</span><span class="sxs-lookup"><span data-stu-id="f94f9-102">The <b>Language</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Languages" /> collection.</span></span></para>
+      <para><span data-ttu-id="f94f9-103">使用<b>语言</b>（ <paramref name="index" /> ）返回单个<b>语言</b>对象，其中 <paramref name="index" /> 可以是属性的值、 <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> 属性的值 <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> 、 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> 常量之一或 <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> 常量之一。</span><span class="sxs-lookup"><span data-stu-id="f94f9-103">Use <b>Languages</b>(<paramref name="index" />) to return a single <b>Language</b> object, where <paramref name="index" /> can be the value of the <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> property, the value of the <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> property, one of the <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constants, or one of the <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> constants.</span></span></para>
+      <para><span data-ttu-id="f94f9-104">该 <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> 属性返回语言的名称，而 <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> 属性以用户语言返回语言的名称。</span><span class="sxs-lookup"><span data-stu-id="f94f9-104">The <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> property returns the name of a language, whereas the <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> property returns the name of a language in the language of the user.</span></span></para>
+      <para><span data-ttu-id="f94f9-105">对于安装了校对工具的每种语言，您可以使用 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" /> 、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> 、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" /> 和 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> 属性来返回相应的 <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> 对象。</span><span class="sxs-lookup"><span data-stu-id="f94f9-105">For each language for which proofing tools are installed, you can use the <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, and <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> properties to return the corresponding <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object.</span></span></para>
+      <para><span data-ttu-id="f94f9-106">写作风格是用语法检查器的规则集。</span><span class="sxs-lookup"><span data-stu-id="f94f9-106">The writing style is the set of rules used by the grammar checker.</span></span> <span data-ttu-id="f94f9-107">该 <see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" /> 属性返回一个字符串数组，这些字符串代表指定语言的可用写作风格。</span><span class="sxs-lookup"><span data-stu-id="f94f9-107">The <see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" /> property returns an array of strings that represent the available writing styles for the specified language.</span></span></para>
+      <para><span data-ttu-id="f94f9-108">使用 <see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" /> 属性可设置希望 Word 使用的默认写作风格。</span><span class="sxs-lookup"><span data-stu-id="f94f9-108">Use the <see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" /> property to set the default writing style you want Word to use.</span></span></para>
+      <para><span data-ttu-id="f94f9-109">您可以使用属性替代默认的写作风格 <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> 。</span><span class="sxs-lookup"><span data-stu-id="f94f9-109">You can override the default writing style with the <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> property.</span></span> <span data-ttu-id="f94f9-110">此属性应用于指定的文档中以指定语言标记的文本。</span><span class="sxs-lookup"><span data-stu-id="f94f9-110">This property is applied to a specified document for text marked in a specified language.</span></span></para>
+      <para><span data-ttu-id="f94f9-111">[!注释] 必须为待检查的每种语言安装校对工具。</span><span class="sxs-lookup"><span data-stu-id="f94f9-111">You must have the proofing tools installed for each language you intend to check.</span></span></para>
+      <para><span data-ttu-id="f94f9-112">如果将标记为 <b>wdNoProofing</b> 的文本时，Word 会被标记的文本跳过运行拼写和语法检查。</span><span class="sxs-lookup"><span data-stu-id="f94f9-112">If you mark text as <b>wdNoProofing</b>, Word skips the marked text when running a spelling or grammar check.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveGrammarDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveGrammarDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveGrammarDictionary : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,9 +56,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ad3dd-113">返回一个<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象, 表示指定语言的活动语法词典。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active grammar dictionary for the specified language.</span></span></summary>
+        <summary><span data-ttu-id="f94f9-113">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> 对象，表示指定语言的活动语法词典。</span><span class="sxs-lookup"><span data-stu-id="f94f9-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active grammar dictionary for the specified language.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ad3dd-114">如果没有安装指定语言的语法词典, 则此属性将返回<b>Nothing</b>。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-114">If there's no grammar dictionary installed for the specified language, this property returns <b>Nothing</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="f94f9-114">如果没有安装指定语言的语法词典，则此属性将返回<b>Nothing</b>。</span><span class="sxs-lookup"><span data-stu-id="f94f9-114">If there's no grammar dictionary installed for the specified language, this property returns <b>Nothing</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveHyphenationDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveHyphenationDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveHyphenationDictionary : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -83,9 +86,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ad3dd-115">返回一个<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象, 表示指定语言的活动断字词典。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-115">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active hyphenation dictionary for the specified language.</span></span></summary>
+        <summary><span data-ttu-id="f94f9-115">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> 对象，表示指定语言的活动断字词典。</span><span class="sxs-lookup"><span data-stu-id="f94f9-115">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active hyphenation dictionary for the specified language.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ad3dd-116">如果没有安装指定语言的断字词典, 则此属性返回<b>Nothing</b>。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-116">If there's no hyphenation dictionary installed for the specified language, this property returns <b>Nothing</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="f94f9-116">如果没有安装指定语言的断字词典，则此属性返回<b>Nothing</b>。</span><span class="sxs-lookup"><span data-stu-id="f94f9-116">If there's no hyphenation dictionary installed for the specified language, this property returns <b>Nothing</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveSpellingDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveSpellingDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveSpellingDictionary : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -112,9 +116,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ad3dd-117">返回一个<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象, 表示指定语言的活动拼写词典。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active spelling dictionary for the specified language.</span></span></summary>
+        <summary><span data-ttu-id="f94f9-117">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> 对象，表示指定语言的活动拼写词典。</span><span class="sxs-lookup"><span data-stu-id="f94f9-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active spelling dictionary for the specified language.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ad3dd-118">如果没有安装指定语言的拼写词典, 则此属性将返回<b>Nothing</b>。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-118">If there's no spelling dictionary installed for the specified language, this property returns <b>Nothing</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="f94f9-118">如果没有安装指定语言的拼写词典，则此属性将返回<b>Nothing</b>。</span><span class="sxs-lookup"><span data-stu-id="f94f9-118">If there's no spelling dictionary installed for the specified language, this property returns <b>Nothing</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveThesaurusDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveThesaurusDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveThesaurusDictionary : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,9 +146,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ad3dd-119">返回一个<see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object 类型的对象, 该对象代表指定语言的活动同义词词典。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-119">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active thesaurus dictionary for the specified language.</span></span></summary>
+        <summary><span data-ttu-id="f94f9-119">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object 类型的对象，该对象代表指定语言的活动同义词词典。</span><span class="sxs-lookup"><span data-stu-id="f94f9-119">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active thesaurus dictionary for the specified language.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ad3dd-120">如果没有安装指定语言的同义词库词典, 则此属性将返回<b>Nothing</b>。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-120">If there's no thesaurus dictionary installed for the specified language, this property returns <b>Nothing</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="f94f9-120">如果没有安装指定语言的同义词库词典，则此属性将返回<b>Nothing</b>。</span><span class="sxs-lookup"><span data-stu-id="f94f9-120">If there's no thesaurus dictionary installed for the specified language, this property returns <b>Nothing</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Language.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,7 +176,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ad3dd-121">返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-121">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="f94f9-121">返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</span><span class="sxs-lookup"><span data-stu-id="f94f9-121">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Language.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -198,10 +205,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ad3dd-122">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-122">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="f94f9-122">返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</span><span class="sxs-lookup"><span data-stu-id="f94f9-122">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ad3dd-123">如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-123">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="ad3dd-124">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-124">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="ad3dd-125"><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-125">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="ad3dd-126">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-126">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="ad3dd-127">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-127">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="f94f9-123">如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。</span><span class="sxs-lookup"><span data-stu-id="f94f9-123">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="f94f9-124">[!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</span><span class="sxs-lookup"><span data-stu-id="f94f9-124">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="f94f9-125"><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。</span><span class="sxs-lookup"><span data-stu-id="f94f9-125">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="f94f9-126">例如，Microsoft Word 提供了 MSWD 的创建者代码。</span><span class="sxs-lookup"><span data-stu-id="f94f9-126">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="f94f9-127">有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</span><span class="sxs-lookup"><span data-stu-id="f94f9-127">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultWritingStyle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultWritingStyle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultWritingStyle : string with get, set" Usage="Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -231,10 +239,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ad3dd-128">返回或设置默认的写作风格由用于指定的语言的语法检查器。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-128">Returns or sets the default writing style used by the grammar checker for the specified language.</span></span> <span data-ttu-id="ad3dd-129">The name of the writing style is the localized name for the specified language.</span><span class="sxs-lookup"><span data-stu-id="ad3dd-129">The name of the writing style is the localized name for the specified language.</span></span></summary>
+        <summary><span data-ttu-id="f94f9-128">返回或设置默认的写作风格由用于指定的语言的语法检查器。</span><span class="sxs-lookup"><span data-stu-id="f94f9-128">Returns or sets the default writing style used by the grammar checker for the specified language.</span></span> <span data-ttu-id="f94f9-129">The name of the writing style is the localized name for the specified language.</span><span class="sxs-lookup"><span data-stu-id="f94f9-129">The name of the writing style is the localized name for the specified language.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ad3dd-130">This property controls the global setting for the writing style.</span><span class="sxs-lookup"><span data-stu-id="ad3dd-130">This property controls the global setting for the writing style.</span></span> <span data-ttu-id="ad3dd-131">设置该属性时, 必须使用 "工具" 菜单 "选项" 对话框中 "拼写&amp;语法" 选项卡上 "写作风格" 框中的确切名称。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-131">When setting this property, you must use the exact name found in the Writing style box on the Spelling &amp; Grammar tab in the Options dialog box (Tools menu).</span></span></para>
-          <para><span data-ttu-id="ad3dd-132">该<see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" />属性设置文档中每种语言的写作风格。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-132">The <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> property sets the writing style for each language in a document.</span></span> <span data-ttu-id="ad3dd-133"><b>ActiveWritingStyle</b> 设置覆盖的 <b>DefaultWritingStyle</b> 设置。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-133">The <b>ActiveWritingStyle</b> setting overrides the <b>DefaultWritingStyle</b> setting.</span></span></para>
+        <remarks><para><span data-ttu-id="f94f9-130">This property controls the global setting for the writing style.</span><span class="sxs-lookup"><span data-stu-id="f94f9-130">This property controls the global setting for the writing style.</span></span> <span data-ttu-id="f94f9-131">设置该属性时，必须使用 "工具" 菜单 "选项" 对话框中 "拼写语法" &amp; 选项卡上 "写作风格" 框中的确切名称。</span><span class="sxs-lookup"><span data-stu-id="f94f9-131">When setting this property, you must use the exact name found in the Writing style box on the Spelling &amp; Grammar tab in the Options dialog box (Tools menu).</span></span></para>
+          <para><span data-ttu-id="f94f9-132">该 <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> 属性设置文档中每种语言的写作风格。</span><span class="sxs-lookup"><span data-stu-id="f94f9-132">The <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> property sets the writing style for each language in a document.</span></span> <span data-ttu-id="f94f9-133"><b>ActiveWritingStyle</b> 设置覆盖的 <b>DefaultWritingStyle</b> 设置。</span><span class="sxs-lookup"><span data-stu-id="f94f9-133">The <b>ActiveWritingStyle</b> setting overrides the <b>DefaultWritingStyle</b> setting.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID ID { Microsoft::Office::Interop::Word::WdLanguageID get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : Microsoft.Office.Interop.Word.WdLanguageID" Usage="Microsoft.Office.Interop.Word.Language.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -261,9 +270,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ad3dd-134">返回标识指定的语言的数字。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-134">Returns a number that identifies the specified language.</span></span></summary>
+        <summary><span data-ttu-id="f94f9-134">返回标识指定的语言的数字。</span><span class="sxs-lookup"><span data-stu-id="f94f9-134">Returns a number that identifies the specified language.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ad3dd-135"><b>ID</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-135">The <b>ID</b> property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constants.</span></span></para>
+        <remarks><para><span data-ttu-id="f94f9-135"><b>ID</b>属性可以是 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> 常量之一。</span><span class="sxs-lookup"><span data-stu-id="f94f9-135">The <b>ID</b> property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constants.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -273,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Language.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -290,7 +300,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ad3dd-136">返回或设置指定对象的名称。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-136">Returns or sets the name of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="f94f9-136">返回或设置指定对象的名称。</span><span class="sxs-lookup"><span data-stu-id="f94f9-136">Returns or sets the name of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -301,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.NameLocal" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property NameLocal As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NameLocal : string" Usage="Microsoft.Office.Interop.Word.Language.NameLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -318,7 +329,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ad3dd-137">返回在用户的语言校对工具语言的名称。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-137">Returns the name of a proofing tool language in the language of the user.</span></span></summary>
+        <summary><span data-ttu-id="f94f9-137">返回在用户的语言校对工具语言的名称。</span><span class="sxs-lookup"><span data-stu-id="f94f9-137">Returns the name of a proofing tool language in the language of the user.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -329,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Language.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -346,7 +358,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ad3dd-138">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-138">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="f94f9-138">返回一个对象，代表指定对象的父对象。</span><span class="sxs-lookup"><span data-stu-id="f94f9-138">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -357,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.SpellingDictionaryType" />
       <MemberSignature Language="VB.NET" Value="Public Property SpellingDictionaryType As WdDictionaryType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdDictionaryType SpellingDictionaryType { Microsoft::Office::Interop::Word::WdDictionaryType get(); void set(Microsoft::Office::Interop::Word::WdDictionaryType value); };" />
+      <MemberSignature Language="F#" Value="member this.SpellingDictionaryType : Microsoft.Office.Interop.Word.WdDictionaryType with get, set" Usage="Microsoft.Office.Interop.Word.Language.SpellingDictionaryType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -377,10 +390,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdDictionaryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ad3dd-139">返回或设置校对工具类型。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-139">Returns or sets the proofing tool type.</span></span> <span data-ttu-id="ad3dd-140">读/写。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-140">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="f94f9-139">返回或设置校对工具类型。</span><span class="sxs-lookup"><span data-stu-id="f94f9-139">Returns or sets the proofing tool type.</span></span> <span data-ttu-id="f94f9-140">读/写。</span><span class="sxs-lookup"><span data-stu-id="f94f9-140">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="ad3dd-141">您可以使用此属性将活动拼写词典更改为与 Microsoft Word 一起使用的可用加载项词典之一。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-141">You can use this property to change the active spelling dictionary to one of the available add-on dictionaries that work with Microsoft Word.</span></span> <span data-ttu-id="ad3dd-142">例如，可以用法律、医学和大型拼写词典来代替标准词典。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-142">For example, there are legal, medical, and complete spelling dictionaries you can use instead of the standard dictionary.</span></span></para>
-          <para><span data-ttu-id="ad3dd-143"><b>SpellingDictionaryType</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" />常量之一。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-143">The <b>SpellingDictionaryType</b> property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> constants.</span></span> <span data-ttu-id="ad3dd-144">由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-144">Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</span></span></para>
+        <remarks><para><span data-ttu-id="f94f9-141">您可以使用此属性将活动拼写词典更改为与 Microsoft Word 一起使用的可用加载项词典之一。</span><span class="sxs-lookup"><span data-stu-id="f94f9-141">You can use this property to change the active spelling dictionary to one of the available add-on dictionaries that work with Microsoft Word.</span></span> <span data-ttu-id="f94f9-142">例如，可以用法律、医学和大型拼写词典来代替标准词典。</span><span class="sxs-lookup"><span data-stu-id="f94f9-142">For example, there are legal, medical, and complete spelling dictionaries you can use instead of the standard dictionary.</span></span></para>
+          <para><span data-ttu-id="f94f9-143"><b>SpellingDictionaryType</b>属性可以是 <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> 常量之一。</span><span class="sxs-lookup"><span data-stu-id="f94f9-143">The <b>SpellingDictionaryType</b> property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> constants.</span></span> <span data-ttu-id="f94f9-144">由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</span><span class="sxs-lookup"><span data-stu-id="f94f9-144">Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -390,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WritingStyleList As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ WritingStyleList { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WritingStyleList : obj" Usage="Microsoft.Office.Interop.Word.Language.WritingStyleList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -407,7 +421,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="ad3dd-145">返回一个字符串数组，包含指定语言可用的所有写作风格的名称。</span><span class="sxs-lookup"><span data-stu-id="ad3dd-145">Returns a string array that contains the names of all writing styles available for the specified language.</span></span></summary>
+        <summary><span data-ttu-id="f94f9-145">返回一个字符串数组，包含指定语言可用的所有写作风格的名称。</span><span class="sxs-lookup"><span data-stu-id="f94f9-145">Returns a string array that contains the names of all writing styles available for the specified language.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
