@@ -1,9 +1,10 @@
 <Type Name="Dictionary" FullName="Microsoft.Office.Interop.Word.Dictionary">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7eb1c3a125004711f709d1a46bde81b4b66d431c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147051" /></Metadata><TypeSignature Language="C#" Value="public interface Dictionary" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7cd7215c062770ab4726b7b42ab7149362963eb9" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922211" /></Metadata><TypeSignature Language="C#" Value="public interface Dictionary" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dictionary" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dictionary" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dictionary" />
   <TypeSignature Language="C++ CLI" Value="public interface class Dictionary" />
+  <TypeSignature Language="F#" Value="type Dictionary = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,13 +21,13 @@
   <Docs>
     <summary>表示一个字典。</summary>
     <remarks><para>代表自定义词典的
-        <b>Dictionary</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Dictionaries" />集合的成员。 其他 dictionary 对象由<see cref="T:Microsoft.Office.Interop.Word.Language" />集合的属性返回;其中包括<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />和<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />属性。 您可以对安装了校对工具的每种语言使用这些属性。</para>
-      <para>使用<b>CustomDictionaries</b>(<paramref name="index" />), 其中<paramref name="index" />是字典的索引号或字符串名称, 返回一个<b>dictionary</b>对象, 该对象表示一个自定义词典。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" />属性来设置集合中添加了新单词的自定义拼写词典。 如果您尝试向不是自定义词典的词典设置该属性，则会导致出错。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" />方法可向活动自定义词典集合中添加新的词典。 如果不存在具有指定名称的文件, Microsoft Word 将创建它。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" />和<see cref="P:Microsoft.Office.Interop.Word.Dictionary.Path" />属性可查找任何词典。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" />属性可确定指定的自定义词典是否可以使用该<see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageID" />属性向其分配特定的语言。 如果字典为特定的语言，它将验证指定语言设置格式的文本。</para>
-      <para>对于<see cref="P:Microsoft.Office.Interop.Word.Dictionary.ReadOnly" /> . lex 文件 (内置校对词典) 和 Home.dic 文件设置为<b>False</b> (自定义拼写词典), 该属性将返回<b>True</b> 。</para>
+        <b>Dictionary</b>对象是集合的成员 <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> 。 其他 dictionary 对象由集合的属性返回 <see cref="T:Microsoft.Office.Interop.Word.Language" /> ; 其中包括 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" /> 、、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" /> <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> 和 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> 属性。 您可以对安装了校对工具的每种语言使用这些属性。</para>
+      <para>使用<b>CustomDictionaries</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是字典的索引号或字符串名称，返回一个<b>dictionary</b>对象，该对象表示一个自定义词典。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" /> 属性来设置集合中添加了新单词的自定义拼写词典。 如果您尝试向不是自定义词典的词典设置该属性，则会导致出错。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> 方法可向活动自定义词典集合中添加新的词典。 如果不存在具有指定名称的文件，Microsoft Word 将创建它。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> 和 <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Path" /> 属性可查找任何词典。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> 属性可确定指定的自定义词典是否可以使用该属性向其分配特定的语言 <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageID" /> 。 如果字典为特定的语言，它将验证指定语言设置格式的文本。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Word.Dictionary.ReadOnly" />对于. lex 文件（内置校对词典）和 home.dic 文件设置为<b>False</b> （自定义拼写词典），该属性将返回<b>True</b> 。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Dictionary.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -53,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Dictionary.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -83,8 +86,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Dictionary.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="dictionary.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.LanguageID" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageID As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageID { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageID : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.Dictionary.LanguageID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,8 +146,8 @@
       <Docs>
         <summary>返回或设置指定对象的语言。</summary>
         <value>To be added.</value>
-        <remarks><para>对于自定义词典, 在指定<b>LanguageID</b>属性之前<see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> , 必须首先将该属性设置为<b>True</b> 。 特定于语言的自定义词典仅查看格式为该语言的文本。</para>
-          <para>LanguageID 属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一。 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
+        <remarks><para>对于自定义词典，在指定 LanguageID 属性之前，必须首先将该 <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> 属性<b>LanguageID</b>设置为<b>True</b> 。 特定于语言的自定义词典仅查看格式为该语言的文本。</para>
+          <para>LanguageID 属性可以是 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> 常量之一。 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageSpecific As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LanguageSpecific { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageSpecific : bool with get, set" Usage="Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Dictionary.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Dictionary.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Office.Interop.Word.Dictionary.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -258,8 +267,8 @@
       <Docs>
         <summary>返回指定对象的磁盘或 Web 路径。</summary>
         <value>To be added.</value>
-        <remarks><para>路径中不包括尾随字符   例如，"C:\MSOffice"或"http://MyServer"。 使用<see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />属性添加用于分隔文件夹和驱动器号的字符。 使用<see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" />属性返回不带路径的文件名。</para>
-          <para>注意您可以使用<b>PathSeparator</b>属性来构建 Web 地址, 即使它们包含正斜杠 (/), 并且<b>PathSeparator</b>属性默认为反斜杠 (\)。</para>
+        <remarks><para>路径中不包括尾随字符   例如，"C:\MSOffice"或"http://MyServer"。 使用 <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> 属性添加用于分隔文件夹和驱动器号的字符。 使用 <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> 属性返回不带路径的文件名。</para>
+          <para>注意您可以使用<b>PathSeparator</b>属性来构建 Web 地址，即使它们包含正斜杠（/），并且<b>PathSeparator</b>属性默认为反斜杠（ \) 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool" Usage="Microsoft.Office.Interop.Word.Dictionary.ReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdDictionaryType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdDictionaryType Type { Microsoft::Office::Interop::Word::WdDictionaryType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdDictionaryType" Usage="Microsoft.Office.Interop.Word.Dictionary.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -317,7 +328,7 @@
       <Docs>
         <summary>返回词典的类型。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Type</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" />常量之一。</para>
+        <remarks><para><b>Type</b>属性可以是 <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> 常量之一。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

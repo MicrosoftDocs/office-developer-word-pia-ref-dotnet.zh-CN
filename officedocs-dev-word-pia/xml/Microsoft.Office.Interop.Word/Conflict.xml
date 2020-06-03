@@ -1,9 +1,10 @@
 <Type Name="Conflict" FullName="Microsoft.Office.Interop.Word.Conflict">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="21e74154c2475877e56ac3b4b4b6917cedd06347" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147205" /></Metadata><TypeSignature Language="C#" Value="public interface Conflict" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8fcb574f4804f8afbf21ecfb81c2808bd2bdf2b0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922323" /></Metadata><TypeSignature Language="C#" Value="public interface Conflict" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Conflict" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Conflict" />
   <TypeSignature Language="VB.NET" Value="Public Interface Conflict" />
   <TypeSignature Language="C++ CLI" Value="public interface class Conflict" />
+  <TypeSignature Language="F#" Value="type Conflict = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,10 +19,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表共同创作的文档中的冲突编辑。 <see cref="T:Microsoft.Office.Interop.Word.Conflict" />对象的类型由<see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />枚举指定。</summary>
-    <remarks><para>通常，当多个作者同时编辑一个启用了共同创作的文档时，在同一时间只有一位共同作者可以编辑某个特定范围。 Microsoft Word 2010 会在共同作者开始编辑的时间范围内自动放置锁定, 以便其他共同作者无法同时编辑同一个区域。</para>
-      <para>如果启用了共同创作的文档中的特定范围在所有单个共同作者在该范围内获得独占锁定之前, 则会发生冲突。 在发生冲突的情况下, 它会显示给每个共同作者, 其范围为独占锁, 但其锁定不会传递给其他共同作者。 第一个将文档保存到服务器的共同作者将不会发现冲突，因为其文档版本为既定版本。 而在第一位共同作者已经保存文档之后，如果其他共同作者尝试保存文档，他们将遇到冲突。 该冲突是同一范围的不同版本之间的冲突。</para>
-      <para>例如, 如果一个共同作者编辑了句子 "quick 棕色 fox" 以读取 "quick red fox", 而另一个共同创作者同时编辑该句子以进行读取, 则 "fast 白色 fox", 并且这两种编辑都是在共同创作者在其上获取独占锁之前进行的。段落时, 将发生冲突。 在这种情况下, Word 2010 不会对 "fast red" 和 "飞速白字" 进行协调。 第一个将文档版本保存到服务器上的共同作者不会遇到冲突。 而当下一个共同作者尝试将其文档版本保存到服务器时，则会发生冲突，共同作者必须选择通过接受或拒绝更改来解决冲突。</para>
+    <summary>代表共同创作的文档中的冲突编辑。 对象的类型 <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> 由 <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> 枚举指定。</summary>
+    <remarks><para>通常，当多个作者同时编辑一个启用了共同创作的文档时，在同一时间只有一位共同作者可以编辑某个特定范围。 Microsoft Word 2010 会在共同作者开始编辑的时间范围内自动放置锁定，以便其他共同作者无法同时编辑同一个区域。</para>
+      <para>如果启用了共同创作的文档中的特定范围在所有单个共同作者在该范围内获得独占锁定之前，则会发生冲突。 在发生冲突的情况下，它会显示给每个共同作者，其范围为独占锁，但其锁定不会传递给其他共同作者。 第一个将文档保存到服务器的共同作者将不会发现冲突，因为其文档版本为既定版本。 而在第一位共同作者已经保存文档之后，如果其他共同作者尝试保存文档，他们将遇到冲突。 该冲突是同一范围的不同版本之间的冲突。</para>
+      <para>例如，如果一个共同创作者编辑了句子 "quick 棕色 fox" 以读取 "quick red fox"，而另一个共同作者同时编辑该句子以进行读取，则 "fast 白色 fox"，并且两次编辑都发生在共同作者在段落上获得独占锁定之前，则会发生冲突。 在这种情况下，Word 2010 不会对 "fast red" 和 "飞速白字" 进行协调。 第一个将文档版本保存到服务器上的共同作者不会遇到冲突。 而当下一个共同作者尝试将其文档版本保存到服务器时，则会发生冲突，共同作者必须选择通过接受或拒绝更改来解决冲突。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflict.Accept" />
       <MemberSignature Language="VB.NET" Value="Public Sub Accept ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Accept();" />
+      <MemberSignature Language="F#" Value="abstract member Accept : unit -&gt; unit" Usage="conflict.Accept " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -47,7 +49,7 @@
       <Parameters />
       <Docs>
         <summary>接受用户指定的冲突更改，删除冲突，并将更改合并到文档的服务器副本中。</summary>
-        <remarks><para>此方法接受冲突更改的用户版本, 并拒绝冲突更改的服务器版本。</para>
+        <remarks><para>此方法接受冲突更改的用户版本，并拒绝冲突更改的服务器版本。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Conflict.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -74,8 +77,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.Application" /> Microsoft Word 应用程序的对象。</summary>
-        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</value>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 表示 Microsoft Word 应用程序的对象。</summary>
+        <value>一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Conflict.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -103,11 +107,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个32位整数, 该整数指示在其中创建指定对象的应用程序。</summary>
-        <value>一个32位整数, 它指示在其中创建指定对象的应用程序。</value>
-        <remarks><para><b>Long 类型</b>, 只读。 如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
+        <summary>获取一个32位整数，该整数指示在其中创建指定对象的应用程序。</summary>
+        <value>一个32位整数，它指示在其中创建指定对象的应用程序。</value>
+        <remarks><para><b>Long 类型</b>，只读。 如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
           <para>
-            <b>警告</b>: 此值还可以由常量<b>wdcreatorcode 表示</b>表示。</para>
+            <b>警告</b>：此值还可以由常量<b>wdcreatorcode 表示</b>表示。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Conflict.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -134,8 +139,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值, 该值代表项目在集合中的位置。</summary>
-        <value>返回<see cref="T:System.Int32" />。</value>
+        <summary>返回一个值，该值代表项目在集合中的位置。</summary>
+        <value>返回 <see cref="T:System.Int32" /> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Conflict.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -162,8 +168,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.Conflict" />对象的父对象的。</summary>
-        <value>一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.Conflict" />对象的父对象的。</value>
+        <summary>获取一个 <see cref="T:System.Object" /> 代表指定对象的父对象的 <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> 。</summary>
+        <value>一个 <see cref="T:System.Object" /> 代表指定对象的父对象的 <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Conflict.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -190,8 +197,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 该对象代表指定对象中包含的文档部分。</summary>
-        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示指定对象中包含的文档部分。</value>
+        <summary>获取一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，该对象代表指定对象中包含的文档部分。</summary>
+        <value>一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，表示指定对象中包含的文档部分。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflict.Reject" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reject ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reject();" />
+      <MemberSignature Language="F#" Value="abstract member Reject : unit -&gt; unit" Usage="conflict.Reject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -218,7 +226,7 @@
       <Parameters />
       <Docs>
         <summary>拒绝用户更改，删除冲突，并接受冲突更改的服务器版本。</summary>
-        <remarks><para>此方法拒绝冲突的用户版本, 并接受当前位于服务器上的版本。</para>
+        <remarks><para>此方法拒绝冲突的用户版本，并接受当前位于服务器上的版本。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdRevisionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRevisionType Type { Microsoft::Office::Interop::Word::WdRevisionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdRevisionType" Usage="Microsoft.Office.Interop.Word.Conflict.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -245,8 +254,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" />获取<see cref="T:Microsoft.Office.Interop.Word.Conflict" />对象的。</summary>
-        <value><see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> <see cref="T:Microsoft.Office.Interop.Word.Conflict" /></value>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> 对象的。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> 对象的。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>

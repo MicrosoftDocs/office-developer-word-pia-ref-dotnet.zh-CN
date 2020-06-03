@@ -1,9 +1,10 @@
 <Type Name="Endnotes" FullName="Microsoft.Office.Interop.Word.Endnotes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a74d0528b197f8c97921c1994c703d6aec5f9941" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146883" /></Metadata><TypeSignature Language="C#" Value="public interface Endnotes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="33ca248e410456a5df72dfb909903d973730955e" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922001" /></Metadata><TypeSignature Language="C#" Value="public interface Endnotes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Endnotes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Endnotes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Endnotes&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Endnotes : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Endnotes = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,10 +23,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><see cref="T:Microsoft.Office.Interop.Word.Endnote" />对象的集合, 该集合代表所选内容、范围或文档中的所有尾注。</summary>
-    <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.Selection" />、 <see cref="T:Microsoft.Office.Interop.Word.Range" /> <see cref="T:Microsoft.Office.Interop.Word.Document" />或对象的<b>尾注</b>属性返回的<b>尾注</b>集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Endnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" />方法可将尾注添加到<b>尾注</b>集合中。</para>
-      <para>使用<b>尾注</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回单个<b>尾注</b>对象。 索引号代表尾注在所选内容、 范围或文档中的位置。</para>
+    <summary>对象的集合， <see cref="T:Microsoft.Office.Interop.Word.Endnote" /> 该集合代表所选内容、范围或文档中的所有尾注。</summary>
+    <remarks><para>使用、 <b>Endnotes</b>或对象的尾注 <see cref="T:Microsoft.Office.Interop.Word.Selection" /> 属性 <see cref="T:Microsoft.Office.Interop.Word.Range" /> <see cref="T:Microsoft.Office.Interop.Word.Document" /> 返回的<b>尾注</b>集合。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> 方法可将尾注添加到<b>尾注</b>集合中。</para>
+      <para>使用<b>尾注</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是索引号，返回单个<b>尾注</b>对象。 索引号代表尾注在所选内容、 范围或文档中的位置。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Endnote Add (Microsoft.Office.Interop.Word.Range Range, ref object Reference, ref object Text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Endnote Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Reference, [in]object&amp; Text) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Endnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Range As Range, Optional ByRef Reference As Object, Optional ByRef Text As Object) As Endnote" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.Range * obj * obj -&gt; Microsoft.Office.Interop.Word.Endnote" Usage="endnotes.Add (Range, Reference, Text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,16 +51,16 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="Reference" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Text" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Reference" Type="System.Object" RefType="ref" />
+        <Parameter Name="Text" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Range">必需的<b>Range</b>对象。 为尾注标记的区域。 可以是折叠区域。</param>
         <param name="Reference">可选<b>对象</b>。 自定义引用标记的文字。 如果省略该参数，Microsoft Word 将插入自动编号的引用标记。</param>
         <param name="Text">可选<b>对象</b>。 尾注的文本。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Endnote" /> object 类型的对象, 该对象代表添加到区域中的尾注。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Endnote" /> object 类型的对象，该对象代表添加到区域中的尾注。</summary>
         <returns>To be added.</returns>
-        <remarks><para>若要指定<paramref name="Reference" />参数的符号, 请使用语法 {<paramref name="FontName CharNum" />}。 <paramref name="FontName" />是包含符号的字体的名称。 修饰字体的名称显示在“插入”菜单“符号”对话框的“字体”框中。 <paramref name="CharNum" />为31的总和与要插入的符号的位置相对应的数字, 在符号表中从左到右进行计数。 例如, 若要在符号字体中的符号表中指定位置56处的 omega 符号 (ω), 则该参数将为 "{符号 87}"。</para>
+        <remarks><para>若要指定参数的符号 <paramref name="Reference" /> ，请使用语法 { <paramref name="FontName CharNum" /> }。 <paramref name="FontName" />是包含符号的字体的名称。 修饰字体的名称显示在“插入”菜单“符号”对话框的“字体”框中。 <paramref name="CharNum" />为31的总和与要插入的符号的位置相对应的数字，在符号表中从左到右进行计数。 例如，若要在符号字体中的符号表中指定位置56处的 omega 符号（ω），则该参数将为 "{符号 87}"。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -67,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnotes.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Endnotes.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -84,7 +88,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="P:Microsoft.Office.Interop.Word.Endnotes.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="P:Microsoft.Office.Interop.Word.Endnotes.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnotes.ContinuationNotice" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContinuationNotice As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ ContinuationNotice { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContinuationNotice : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Endnotes.ContinuationNotice" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -112,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示脚注或尾注接续注明。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，表示脚注或尾注接续注明。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnotes.ContinuationSeparator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContinuationSeparator As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ ContinuationSeparator { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContinuationSeparator : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Endnotes.ContinuationSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -140,7 +146,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示脚注或尾注的接续分隔符。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，表示脚注或尾注的接续分隔符。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Endnotes.Convert" />
       <MemberSignature Language="VB.NET" Value="Public Sub Convert ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Convert();" />
+      <MemberSignature Language="F#" Value="abstract member Convert : unit -&gt; unit" Usage="endnotes.Convert " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -176,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnotes.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Endnotes.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnotes.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Endnotes.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -223,8 +232,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -234,6 +243,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Endnotes.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="endnotes.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -266,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnotes.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Endnote" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Endnote ^ default[int] { Microsoft::Office::Interop::Word::Endnote ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Endnote" Usage="Microsoft.Office.Interop.Word.Endnotes.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -298,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnotes.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As WdEndnoteLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdEndnoteLocation Location { Microsoft::Office::Interop::Word::WdEndnoteLocation get(); void set(Microsoft::Office::Interop::Word::WdEndnoteLocation value); };" />
+      <MemberSignature Language="F#" Value="member this.Location : Microsoft.Office.Interop.Word.WdEndnoteLocation with get, set" Usage="Microsoft.Office.Interop.Word.Endnotes.Location" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -329,6 +341,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnotes.NumberingRule" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberingRule As WdNumberingRule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdNumberingRule NumberingRule { Microsoft::Office::Interop::Word::WdNumberingRule get(); void set(Microsoft::Office::Interop::Word::WdNumberingRule value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberingRule : Microsoft.Office.Interop.Word.WdNumberingRule with get, set" Usage="Microsoft.Office.Interop.Word.Endnotes.NumberingRule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -360,6 +373,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnotes.NumberStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberStyle As WdNoteNumberStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdNoteNumberStyle NumberStyle { Microsoft::Office::Interop::Word::WdNoteNumberStyle get(); void set(Microsoft::Office::Interop::Word::WdNoteNumberStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberStyle : Microsoft.Office.Interop.Word.WdNoteNumberStyle with get, set" Usage="Microsoft.Office.Interop.Word.Endnotes.NumberStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -391,6 +405,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnotes.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Endnotes.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -419,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Endnotes.ResetContinuationNotice" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetContinuationNotice ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetContinuationNotice();" />
+      <MemberSignature Language="F#" Value="abstract member ResetContinuationNotice : unit -&gt; unit" Usage="endnotes.ResetContinuationNotice " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -435,7 +451,7 @@
       <Parameters />
       <Docs>
         <summary>将尾注延续标记重新设置为默认标记。</summary>
-        <remarks><para>默认通知为空, 表示不含任何文本的通知。</para>
+        <remarks><para>默认通知为空，表示不含任何文本的通知。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -445,6 +461,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Endnotes.ResetContinuationSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetContinuationSeparator ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetContinuationSeparator();" />
+      <MemberSignature Language="F#" Value="abstract member ResetContinuationSeparator : unit -&gt; unit" Usage="endnotes.ResetContinuationSeparator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -471,6 +488,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Endnotes.ResetSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetSeparator ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetSeparator();" />
+      <MemberSignature Language="F#" Value="abstract member ResetSeparator : unit -&gt; unit" Usage="endnotes.ResetSeparator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -497,6 +515,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnotes.Separator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Separator As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Separator { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Separator : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Endnotes.Separator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -514,7 +533,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示尾注或脚注分隔符。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，表示尾注或脚注分隔符。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -525,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Endnotes.StartingNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property StartingNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartingNumber { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.StartingNumber : int with get, set" Usage="Microsoft.Office.Interop.Word.Endnotes.StartingNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -556,6 +576,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Endnotes.SwapWithFootnotes" />
       <MemberSignature Language="VB.NET" Value="Public Sub SwapWithFootnotes ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SwapWithFootnotes();" />
+      <MemberSignature Language="F#" Value="abstract member SwapWithFootnotes : unit -&gt; unit" Usage="endnotes.SwapWithFootnotes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -572,7 +593,7 @@
       <Parameters />
       <Docs>
         <summary>将一篇文档中的所有尾注转换成脚注或将脚注转换为尾注。</summary>
-        <remarks><para>若要将某一区域的尾注转换为脚注<see cref="M:Microsoft.Office.Interop.Word.Endnotes.Convert" /> , 请使用方法。</para>
+        <remarks><para>若要将某一区域的尾注转换为脚注，请使用 <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Convert" /> 方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,9 +1,10 @@
 <Type Name="Bibliography" FullName="Microsoft.Office.Interop.Word.Bibliography">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="036a097987b0b8447132cbca8a45c0b2489acd6f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146288" /></Metadata><TypeSignature Language="C#" Value="public interface Bibliography" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="253e67f503022f41f80ccaf453d49eb5a01e01b0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922728" /></Metadata><TypeSignature Language="C#" Value="public interface Bibliography" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Bibliography" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Bibliography" />
   <TypeSignature Language="VB.NET" Value="Public Interface Bibliography" />
   <TypeSignature Language="C++ CLI" Value="public interface class Bibliography" />
+  <TypeSignature Language="F#" Value="type Bibliography = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>代表附加到文档的源的列表（当前列表）或应用程序中可用源的列表（主列表）。</summary>
-    <remarks><para>书目由多个源组成。  另请参阅<see cref="T:Microsoft.Office.Interop.Word.Source" />对象和<see cref="T:Microsoft.Office.Interop.Word.Sources" />集合。 有关详细信息, 请参阅<a href="HV10118297">处理构建基块</a></para>
+    <remarks><para>书目由多个源组成。  另请参阅 <see cref="T:Microsoft.Office.Interop.Word.Source" /> 对象和 <see cref="T:Microsoft.Office.Interop.Word.Sources" /> 集合。 有关详细信息，请参阅<a href="HV10118297">处理构建基块</a></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bibliography.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Bibliography.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 对象，表示 Microsoft Word 应用程序。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bibliography.BibliographyStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BibliographyStyle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BibliographyStyle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BibliographyStyle : string with get, set" Usage="Microsoft.Office.Interop.Word.Bibliography.BibliographyStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -79,7 +82,7 @@
       <Docs>
         <summary>返回或设置用于书目的活动样式的名称。 读/写。</summary>
         <value><b>String</b></value>
-        <remarks><para>有关详细信息, 请参阅<a href="HV10118297">处理构建基块</a></para>
+        <remarks><para>有关详细信息，请参阅<a href="HV10118297">处理构建基块</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bibliography.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Bibliography.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -110,7 +114,7 @@
         <value><b>Integer</b></value>
         <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注意</b>: 此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。</para>
+            <b>注意</b>：此值还可以由常量表示 <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Bibliography.GenerateUniqueTag" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateUniqueTag () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GenerateUniqueTag();" />
+      <MemberSignature Language="F#" Value="abstract member GenerateUniqueTag : unit -&gt; string" Usage="bibliography.GenerateUniqueTag " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -135,9 +140,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>为书目源生成唯一的标识标记, 并返回该标记。</summary>
+        <summary>为书目源生成唯一的标识标记，并返回该标记。</summary>
         <returns><b>String</b></returns>
-        <remarks><para>有关详细信息, 请参阅<a href="HV10118297">处理构建基块</a></para>
+        <remarks><para>有关详细信息，请参阅<a href="HV10118297">处理构建基块</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bibliography.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Bibliography.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -164,7 +170,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.Bibliography" />对象的父对象。</summary>
+        <summary>返回指定对象的父对象 <see cref="T:Microsoft.Office.Interop.Word.Bibliography" /> 。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bibliography.Sources" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sources As Sources" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Sources ^ Sources { Microsoft::Office::Interop::Word::Sources ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sources : Microsoft.Office.Interop.Word.Sources" Usage="Microsoft.Office.Interop.Word.Bibliography.Sources" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -192,7 +199,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Sources</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Sources" />集合, 该集合代表书目中包含的所有源。 只读。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Sources" /> 集合，该集合代表书目中包含的所有源。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.Sources" /></value>
         <remarks>To be added.</remarks>
       </Docs>

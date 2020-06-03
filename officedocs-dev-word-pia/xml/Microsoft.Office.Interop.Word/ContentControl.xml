@@ -1,9 +1,10 @@
 <Type Name="ContentControl" FullName="Microsoft.Office.Interop.Word.ContentControl">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2847f454c15d707ff146dc7c527cbd9a80f88237" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147289" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bbb566690cab48722a67b50e3f5c88f37f2d83d7" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922316" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class ContentControl" />
+  <TypeSignature Language="F#" Value="type ContentControl = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,10 +19,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>单个内容控件。 内容控件是文档中绑定的、有可能添加标签的区域，它们充当特定类型的内容的容器。 单个内容控件可能包含诸如日期、列表或格式化文本段落等内容。 <b>ContentControl</b>对象是<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />集合的一个成员。</summary>
-    <remarks><para>使用<see cref="T:Microsoft.Office.Interop.Word.ContentControls" />集合<see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" />的方法创建内容控件。 使用 Add <paramref name="Type" />方法的参数<b></b>指定要创建的内容控件的类型。 </para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" />属性将内容控件更改为其他类型的内容控件。  例如，你也许要从日期控件更改为文本控件。 但是，你可能无法将所有内容控件更改为其他类型；某些控件可能不允许更改其类型。  此外，根据内容控件的内容，可能无法更改类型。 例如，想要更改的内容控件不允许使用现有内容控件中的内容类型，如果尝试更改类型是不允许的，并且将产生运行时错误。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />方法可将默认字符串中的占位符文本更改为更适合控件的文本。 使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" />属性指定控件的标题文本。  当光标定位在控件内部或鼠标指针置于控件上时，这些内容将显示在控件上。</para>
+    <summary>单个内容控件。 内容控件是文档中绑定的、有可能添加标签的区域，它们充当特定类型的内容的容器。 单个内容控件可能包含诸如日期、列表或格式化文本段落等内容。 <b>ContentControl</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> 。</summary>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> 集合的方法 <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> 创建内容控件。 使用 <paramref name="Type" /> <b>Add</b>方法的参数指定要创建的内容控件的类型。 </para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> 属性将内容控件更改为其他类型的内容控件。  例如，你也许要从日期控件更改为文本控件。 但是，你可能无法将所有内容控件更改为其他类型；某些控件可能不允许更改其类型。  此外，根据内容控件的内容，可能无法更改类型。 例如，想要更改的内容控件不允许使用现有内容控件中的内容类型，如果尝试更改类型是不允许的，并且将产生运行时错误。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> 方法可将默认字符串中的占位符文本更改为更适合控件的文本。 使用 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> 属性指定控件的标题文本。  当光标定位在控件内部或鼠标指针置于控件上时，这些内容将显示在控件上。</para>
       <para>根据所拥有的内容控件的类型，你可能无法使用 <b>ContentControl</b> 对象的所有属性和方法。</para>
       <code />
       <para>Not all content control properties apply to all the different types of content controls.  The following table lists which properties apply to which types of content controls.</para>
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowInsertDeleteSection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowInsertDeleteSection { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowInsertDeleteSection : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Appearance" />
       <MemberSignature Language="VB.NET" Value="Public Property Appearance As WdContentControlAppearance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlAppearance Appearance { Microsoft::Office::Interop::Word::WdContentControlAppearance get(); void set(Microsoft::Office::Interop::Word::WdContentControlAppearance value); };" />
+      <MemberSignature Language="F#" Value="member this.Appearance : Microsoft.Office.Interop.Word.WdContentControlAppearance with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Appearance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ContentControl.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -156,7 +160,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 对象，表示 Microsoft Word 应用程序。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildingBlockCategory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BuildingBlockCategory { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildingBlockCategory : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildingBlockType As WdBuildingBlockTypes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdBuildingBlockTypes BuildingBlockType { Microsoft::Office::Interop::Word::WdBuildingBlockTypes get(); void set(Microsoft::Office::Interop::Word::WdBuildingBlockTypes value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildingBlockType : Microsoft.Office.Interop.Word.WdBuildingBlockTypes with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Checked" />
       <MemberSignature Language="VB.NET" Value="Public Property Checked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Checked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Checked : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Checked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -271,9 +278,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置复选框的当前状态 (选中/未选中)。</summary>
-        <value>如果选中复选框,<b>则为 true</b> ; 否则为 false。无权<b>false</b>。</value>
-        <remarks><para>读/写。 使用此属性可获取或设置复选框内容控件的当前状态。 如果控件不是复选框, 则尝试访问属性失败, 并出现运行时错误 "此属性仅适用于复选框内容控件。"</para>
+        <summary>获取或设置复选框的当前状态（选中/未选中）。</summary>
+        <value>如果选中复选框，<b>则为 true</b> ; 否则为 false。无权<b>false</b>。</value>
+        <remarks><para>读/写。 使用此属性可获取或设置复选框内容控件的当前状态。 如果控件不是复选框，则尝试访问属性失败，并出现运行时错误 "此属性仅适用于复选框内容控件。"</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -283,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As WdColor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColor Color { Microsoft::Office::Interop::Word::WdColor get(); void set(Microsoft::Office::Interop::Word::WdColor value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : Microsoft.Office.Interop.Word.WdColor with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -303,7 +311,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置内容控件的颜色。 读/写<see cref="T:Microsoft.Office.Interop.Word.WdColor" />。</summary>
+        <summary>返回或设置内容控件的颜色。 读/写 <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -314,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; unit" Usage="contentControl.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -330,7 +339,7 @@
       <Parameters />
       <Docs>
         <summary>将活动文档中的内容控件复制到剪贴板。</summary>
-        <remarks><para>使用 <b>Copy</b> 方法时，原始内容控件仍保留在活动文档中，但一份该控件，包括所有文本和属性设置，移动到剪贴板。 然后，可以将内容控件粘贴到活动文档的其他部分。 使用对象<see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" />的方法<see cref="T:Microsoft.Office.Interop.Word.Selection" />或<see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> <see cref="T:Microsoft.Office.Interop.Word.Range" />对象的方法来插入复制的内容控件, 或使用 Microsoft Office Word 中的粘贴函数。</para>
+        <remarks><para>使用 <b>Copy</b> 方法时，原始内容控件仍保留在活动文档中，但一份该控件，包括所有文本和属性设置，移动到剪贴板。 然后，可以将内容控件粘贴到活动文档的其他部分。 使用对象的 <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> 方法 <see cref="T:Microsoft.Office.Interop.Word.Selection" /> 或对象的 <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> 方法 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 来插入复制的内容控件，或使用 Microsoft Office Word 中的粘贴函数。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ContentControl.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -361,7 +371,7 @@
         <value><b>Integer</b></value>
         <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注意</b>: 此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。</para>
+            <b>注意</b>：此值还可以由常量表示 <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -371,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Cut" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberSignature Language="F#" Value="abstract member Cut : unit -&gt; unit" Usage="contentControl.Cut " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -387,7 +398,7 @@
       <Parameters />
       <Docs>
         <summary>从活动文档中删除内容控件并将该内容控件移动到剪贴板中。</summary>
-        <remarks><para>使用 <b>Copy</b> 方法时，原始内容控件仍保留在活动文档中，但一份该控件，包括所有文本和属性设置，移动到剪贴板。 然后，可以将内容控件粘贴到活动文档的其他部分。 使用对象<see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" />的方法<see cref="T:Microsoft.Office.Interop.Word.Selection" />或<see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> <see cref="T:Microsoft.Office.Interop.Word.Range" />对象的方法来插入复制的内容控件, 或使用 Microsoft Office Word 中的粘贴函数。</para>
+        <remarks><para>使用 <b>Copy</b> 方法时，原始内容控件仍保留在活动文档中，但一份该控件，包括所有文本和属性设置，移动到剪贴板。 然后，可以将内容控件粘贴到活动文档的其他部分。 使用对象的 <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> 方法 <see cref="T:Microsoft.Office.Interop.Word.Selection" /> 或对象的 <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> 方法 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 来插入复制的内容控件，或使用 Microsoft Office Word 中的粘贴函数。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -397,6 +408,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateCalendarType" />
       <MemberSignature Language="VB.NET" Value="Public Property DateCalendarType As WdCalendarType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdCalendarType DateCalendarType { Microsoft::Office::Interop::Word::WdCalendarType get(); void set(Microsoft::Office::Interop::Word::WdCalendarType value); };" />
+      <MemberSignature Language="F#" Value="member this.DateCalendarType : Microsoft.Office.Interop.Word.WdCalendarType with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateCalendarType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -428,6 +440,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DateDisplayFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DateDisplayFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DateDisplayFormat : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -450,7 +463,7 @@
       <Docs>
         <summary>返回或设置日期的显示格式。 读/写。</summary>
         <value><b>String</b></value>
-        <remarks><para>默认格式是在 Microsoft Office Word 中的用户系统上指定的格式设置, 通常取决于 Microsoft Windows 中的位置设置。 例如，日期为英语 (美国) 的默认格式是"mm/dd/yyyy"。 使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" />属性可指定不同的日期格式。</para>
+        <remarks><para>默认格式是在 Microsoft Office Word 中的用户系统上指定的格式设置，通常取决于 Microsoft Windows 中的位置设置。 例如，日期为英语 (美国) 的默认格式是"mm/dd/yyyy"。 使用 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> 属性可指定不同的日期格式。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -460,6 +473,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" />
       <MemberSignature Language="VB.NET" Value="Public Property DateDisplayLocale As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID DateDisplayLocale { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.DateDisplayLocale : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -482,7 +496,7 @@
       <Docs>
         <summary>返回日期内容控件中显示的日期的语言格式。 读/写。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /></value>
-        <remarks><para>默认情况下, <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" />该属性最初设置为在 Microsoft Office Word 中指定的编辑语言, 如果这与 microsoft Windows 中指定的位置不同。</para>
+        <remarks><para>默认情况下，该 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> 属性最初设置为在 Microsoft Office Word 中指定的编辑语言，如果这与 Microsoft Windows 中指定的位置不同。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -492,6 +506,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DateStorageFormat As WdContentControlDateStorageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlDateStorageFormat DateStorageFormat { Microsoft::Office::Interop::Word::WdContentControlDateStorageFormat get(); void set(Microsoft::Office::Interop::Word::WdContentControlDateStorageFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.DateStorageFormat : Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -524,6 +539,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DefaultTextStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultTextStyle As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DefaultTextStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultTextStyle : obj with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DefaultTextStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -554,6 +570,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete([in]bool DeleteContents) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Delete(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete (Optional DeleteContents As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member Delete : bool -&gt; unit" Usage="contentControl.Delete DeleteContents" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -582,6 +599,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropdownListEntries As ContentControlListEntries" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ContentControlListEntries ^ DropdownListEntries { Microsoft::Office::Interop::Word::ContentControlListEntries ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DropdownListEntries : Microsoft.Office.Interop.Word.ContentControlListEntries" Usage="Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -610,6 +628,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string" Usage="Microsoft.Office.Interop.Word.ContentControl.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -639,6 +658,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As WdContentControlLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlLevel Level { Microsoft::Office::Interop::Word::WdContentControlLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.Level : Microsoft.Office.Interop.Word.WdContentControlLevel" Usage="Microsoft.Office.Interop.Word.ContentControl.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -656,7 +676,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回内容控件的级别—内容控件是围绕文本、段落、表格单元格还是表格行。或者如果是内联的。 只读<see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />。</summary>
+        <summary>返回内容控件的级别—内容控件是围绕文本、段落、表格单元格还是表格行。或者如果是内联的。 只读 <see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -667,6 +687,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" />
       <MemberSignature Language="VB.NET" Value="Public Property LockContentControl As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LockContentControl { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LockContentControl : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.LockContentControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -691,7 +712,7 @@
         <value><b>Boolean</b></value>
         <remarks><para>此属性的默认值为 <b>False</b> 。  此属性对应于 内容控件属性对话框中的 内容不能删除控件复选框。</para>
           <para>
-            <b>注意</b>: 如果该<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" />属性设置为<b>True</b>, 则不能设置此属性。</para>
+            <b>注意</b>：如果该 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" /> 属性设置为<b>True</b>，则不能设置此属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -701,6 +722,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.LockContents" />
       <MemberSignature Language="VB.NET" Value="Public Property LockContents As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LockContents { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LockContents : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.LockContents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -733,6 +755,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.MultiLine" />
       <MemberSignature Language="VB.NET" Value="Public Property MultiLine As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MultiLine { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MultiLine : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.MultiLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -765,6 +788,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ContentControl.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -782,7 +806,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个代表指定<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />对象的父对象的。</summary>
+        <summary>返回一个代表指定对象的父对象的 <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> 。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -793,6 +817,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.ParentContentControl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentContentControl As ContentControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ContentControl ^ ParentContentControl { Microsoft::Office::Interop::Word::ContentControl ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentContentControl : Microsoft.Office.Interop.Word.ContentControl" Usage="Microsoft.Office.Interop.Word.ContentControl.ParentContentControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -822,6 +847,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.PlaceholderText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlaceholderText As BuildingBlock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlock ^ PlaceholderText { Microsoft::Office::Interop::Word::BuildingBlock ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PlaceholderText : Microsoft.Office.Interop.Word.BuildingBlock" Usage="Microsoft.Office.Interop.Word.ContentControl.PlaceholderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -839,9 +865,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlock</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象, 表示内容控件的占位符文本。 只读。</summary>
-        <value>返回<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />。</value>
-        <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />方法设置内容控件的占位符文本。</para>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> 对象，表示内容控件的占位符文本。 只读。</summary>
+        <value>返回 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> 。</value>
+        <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> 方法设置内容控件的占位符文本。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -851,6 +877,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.ContentControl.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -868,9 +895,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />表示活动文档中内容控件的内容的。 只读。</summary>
-        <value>返回<see cref="T:Microsoft.Office.Interop.Word.Range" />。</value>
-        <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" />属性可访问文本、文本格式以及其他文本属性。  有关详细信息, 请参阅<a href="HV10056876">处理 Range 对象</a></para>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 表示活动文档中内容控件的内容的。 只读。</summary>
+        <value>返回 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 。</value>
+        <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> 属性可访问文本、文本格式以及其他文本属性。  有关详细信息，请参阅<a href="HV10056876">处理 Range 对象</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -880,6 +907,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RepeatingSectionItems As RepeatingSectionItemColl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::RepeatingSectionItemColl ^ RepeatingSectionItems { Microsoft::Office::Interop::Word::RepeatingSectionItemColl ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RepeatingSectionItems : Microsoft.Office.Interop.Word.RepeatingSectionItemColl" Usage="Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -909,6 +937,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItemTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property RepeatingSectionItemTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RepeatingSectionItemTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RepeatingSectionItemTitle : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItemTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -940,6 +969,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCheckedSymbol([in]int32 CharacterNumber, [in]string Font) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.SetCheckedSymbol(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCheckedSymbol (CharacterNumber As Integer, Optional Font As String = &quot;&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member SetCheckedSymbol : int * string -&gt; unit" Usage="contentControl.SetCheckedSymbol (CharacterNumber, Font)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -958,16 +988,18 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">指定符号的 Unicode 字符编号。 该值始终是 31（字体开始处的控件符号的数目）加上此符号在符号表中的位置（从左向右计算）相应的数字。 例如, 若要在符号字体的符号表中的位置37处指定增量字符, 请将设置<paramref name="CharacterNumber" />为68。</param>
+        <param name="CharacterNumber">指定符号的 Unicode 字符编号。 该值始终是 31（字体开始处的控件符号的数目）加上此符号在符号表中的位置（从左向右计算）相应的数字。 例如，若要在符号字体的符号表中的位置37处指定增量字符，请将设置 <paramref name="CharacterNumber" /> 为68。</param>
         <param name="Font">包含符号的字体的名称。</param>
         <summary>设置用于代表复选框内容控件的选中状态的符号。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPlaceholderText">
-      <MemberSignature Language="C#" Value="public void SetPlaceholderText (Microsoft.Office.Interop.Word.BuildingBlock BuildingBlock = null, Microsoft.Office.Interop.Word.Range Range = null, string Text = &quot;&quot;);" />
+      <MemberSignature Language="C#" Value="public void SetPlaceholderText (Microsoft.Office.Interop.Word.BuildingBlock BuildingBlock = default, Microsoft.Office.Interop.Word.Range Range = default, string Text = &quot;&quot;);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPlaceholderText([in]class Microsoft.Office.Interop.Word.BuildingBlock BuildingBlock, [in]class Microsoft.Office.Interop.Word.Range Range, [in]string Text) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPlaceholderText (Optional BuildingBlock As BuildingBlock = null, Optional Range As Range = null, Optional Text As String = &quot;&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member SetPlaceholderText : Microsoft.Office.Interop.Word.BuildingBlock * Microsoft.Office.Interop.Word.Range * string -&gt; unit" Usage="contentControl.SetPlaceholderText (BuildingBlock, Range, Text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -987,11 +1019,11 @@
         <Parameter Name="Text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="BuildingBlock">指定一个<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象, 该对象包含占位符文本的内容。</param>
-        <param name="Range">指定一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 该对象包含占位符文本的内容。</param>
+        <param name="BuildingBlock">指定一个 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> 对象，该对象包含占位符文本的内容。</param>
+        <param name="Range">指定一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，该对象包含占位符文本的内容。</param>
         <param name="Text">指定占位符文本的内容。</param>
         <summary>设置在用户输入自己的文本之前显示在内容控件中的占位符文本。</summary>
-        <remarks><para>在指定占位符文本时，只使用一个参数。  如果使用多个参数, Microsoft Office Word 将使用在第一个参数中指定的文本。 如果省略所有参数，则占位符文本将为空白。</para>
+        <remarks><para>在指定占位符文本时，只使用一个参数。  如果使用多个参数，Microsoft Office Word 将使用在第一个参数中指定的文本。 如果省略所有参数，则占位符文本将为空白。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1000,6 +1032,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetUncheckedSymbol([in]int32 CharacterNumber, [in]string Font) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.SetUncheckedSymbol(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetUncheckedSymbol (CharacterNumber As Integer, Optional Font As String = &quot;&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member SetUncheckedSymbol : int * string -&gt; unit" Usage="contentControl.SetUncheckedSymbol (CharacterNumber, Font)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1018,7 +1051,7 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">指定符号的 Unicode 字符编号。 该值始终是 31（字体开始处的控件符号的数目）加上此符号在符号表中的位置（从左向右计算）相应的数字。 例如, 若要在符号字体的符号表中的位置37处指定增量字符, 请将设置<paramref name="CharacterNumber" />为68。</param>
+        <param name="CharacterNumber">指定符号的 Unicode 字符编号。 该值始终是 31（字体开始处的控件符号的数目）加上此符号在符号表中的位置（从左向右计算）相应的数字。 例如，若要在符号字体的符号表中的位置37处指定增量字符，请将设置 <paramref name="CharacterNumber" /> 为68。</param>
         <param name="Font">包含符号的字体的名称。</param>
         <summary>设置用于代表复选框内容控件的未选中状态的符号。</summary>
         <remarks>To be added.</remarks>
@@ -1030,6 +1063,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.ShowingPlaceholderText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShowingPlaceholderText As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowingPlaceholderText { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShowingPlaceholderText : bool" Usage="Microsoft.Office.Interop.Word.ContentControl.ShowingPlaceholderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1058,6 +1092,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Tag { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1078,9 +1113,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值, 用于标识内容控件。 读/写。</summary>
+        <summary>返回或设置一个值，用于标识内容控件。 读/写。</summary>
         <value><b>String</b></value>
-        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" />属性不同于<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" />属性, 因为用户在编辑文档时从不显示标记。  相反，开发人员可以使用它来存储编程操作的值，则在打开文档时。</para>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" />属性不同于 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> 属性，因为用户在编辑文档时从不显示标记。  相反，开发人员可以使用它来存储编程操作的值，则在打开文档时。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1090,6 +1125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" />
       <MemberSignature Language="VB.NET" Value="Public Property Temporary As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Temporary { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Temporary : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Temporary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1114,7 +1150,7 @@
         <value><b>Boolean</b></value>
         <remarks><para>默认值为 <b>False</b>。 此属性对应于 内容控件属性对话框中的 内容被编辑后删除内容控件复选框。</para>
           <para>
-            <b>注意</b>: 如果该<see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" />属性设置为<b>True</b>, 则不能设置此属性。</para>
+            <b>注意</b>：如果该 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" /> 属性设置为<b>True</b>，则不能设置此属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1124,6 +1160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1155,6 +1192,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As WdContentControlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlType Type { Microsoft::Office::Interop::Word::WdContentControlType get(); void set(Microsoft::Office::Interop::Word::WdContentControlType value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdContentControlType with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1177,7 +1215,7 @@
       <Docs>
         <summary>返回或设置内容控件的类型。 读/写。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdContentControlType" /></value>
-        <remarks><para>可以使用<see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" />属性将内容控件的类型从一种类型更改为另一种类型。  但是，可以更改控件的类型取决于原始类型和内容控件中的内容更改时。  所有内容控件可以变为富文本或构建基块库类型的内容控件，因为这些类型允许任意内容。  对于其他类型，如果内容类型是有效的，您想要更改，然后更改类型被允许。  否则，将拒绝该更改，从而导致运行时错误。</para>
+        <remarks><para>可以使用属性将 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> 内容控件的类型从一种类型更改为另一种类型。  但是，可以更改控件的类型取决于原始类型和内容控件中的内容更改时。  所有内容控件可以变为富文本或构建基块库类型的内容控件，因为这些类型允许任意内容。  对于其他类型，如果内容类型是有效的，您想要更改，然后更改类型被允许。  否则，将拒绝该更改，从而导致运行时错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1187,6 +1225,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Ungroup" />
       <MemberSignature Language="VB.NET" Value="Public Sub Ungroup ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Ungroup();" />
+      <MemberSignature Language="F#" Value="abstract member Ungroup : unit -&gt; unit" Usage="contentControl.Ungroup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1203,7 +1242,7 @@
       <Parameters />
       <Docs>
         <summary>从文档中删除一个组内容控件，以便它的子内容控件不再嵌套，并且可以自由地进行编辑。</summary>
-        <remarks><para>如果在类型<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />不为的控件上运行此方法, 则此方法将失败。</para>
+        <remarks><para>如果在类型不为的控件上运行此方法，则此方法将失败 <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1213,6 +1252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.XMLMapping" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XMLMapping As XMLMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLMapping ^ XMLMapping { Microsoft::Office::Interop::Word::XMLMapping ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XMLMapping : Microsoft.Office.Interop.Word.XMLMapping" Usage="Microsoft.Office.Interop.Word.ContentControl.XMLMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

@@ -1,9 +1,10 @@
 <Type Name="BuildingBlocks" FullName="Microsoft.Office.Interop.Word.BuildingBlocks">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d401d5ea86105b9d1451c3ac5f79c1694c918bbe" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142353" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlocks" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="89cfe283a608046fb319eebd68637408bf092a47" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922582" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlocks" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlocks" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlocks" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlocks" />
   <TypeSignature Language="C++ CLI" Value="public interface class BuildingBlocks" />
+  <TypeSignature Language="F#" Value="type BuildingBlocks = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,10 +19,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>代表模板中特定<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />构建基块类型和类别的对象的集合。</summary>
-    <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Add(System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" />方法创建新的构建基块并将其添加到模板中。 </para>
-      <para>随<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />集合返回的集合是基于类型和类别的经过筛选的集合。 根据访问集合的方式，更改返回的集合。  例如, 如果使用类别为 "常规" 的构建基块<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" />的集合进行访问, 则返回的集合可能与返回的集合不同, 如果您使用类别的类型<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" />访问构建基块的集合"Custom"。  如果使用类型<see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" />为 "常规" 的构建基块的集合访问构建基块的集合, 则它也不同于返回的集合。</para>
-      <para>有关构建基块的详细信息, 请参阅<a href="HV10120827">处理构建基块</a></para>
+    <summary>代表 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> 模板中特定构建基块类型和类别的对象的集合。</summary>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Add(System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> 方法创建新的构建基块并将其添加到模板中。 </para>
+      <para>随集合返回的集合 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> 是基于类型和类别的经过筛选的集合。 根据访问集合的方式，更改返回的集合。  例如，如果您使用类别为 "常规" 的构建基块的集合，并且通过使用 <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> 类别为 "Custom" 的类型来访问构建基块的集合，则返回的集合可能不同于所返回的集合。  如果使用类型为 "常规" 的构建基块的集合访问构建基块的集合，则它也不同于返回的集合 <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> 。</para>
+      <para>有关构建基块的详细信息，请参阅<a href="HV10120827">处理构建基块</a></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.BuildingBlock Add (string Name, Microsoft.Office.Interop.Word.Range Range, ref object Description, Microsoft.Office.Interop.Word.WdDocPartInsertOptions InsertOptions = Microsoft.Office.Interop.Word.WdDocPartInsertOptions.wdInsertContent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.BuildingBlock Add([in]string Name, [in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Description, [in]valuetype Microsoft.Office.Interop.Word.WdDocPartInsertOptions InsertOptions) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.BuildingBlocks.Add(System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Name As String, Range As Range, Optional ByRef Description As Object, Optional InsertOptions As WdDocPartInsertOptions = Microsoft.Office.Interop.Word.WdDocPartInsertOptions.wdInsertContent) As BuildingBlock" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * Microsoft.Office.Interop.Word.Range * obj * Microsoft.Office.Interop.Word.WdDocPartInsertOptions -&gt; Microsoft.Office.Interop.Word.BuildingBlock" Usage="buildingBlocks.Add (Name, Range, Description, InsertOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -45,15 +48,15 @@
       <Parameters>
         <Parameter Name="Name" Type="System.String" />
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="Description" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Description" Type="System.Object" RefType="ref" />
         <Parameter Name="InsertOptions" Type="Microsoft.Office.Interop.Word.WdDocPartInsertOptions" />
       </Parameters>
       <Docs>
-        <param name="Name">指定生成块条目的名称。  对应于<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />的属性。</param>
-        <param name="Range">指定生成块条目的值。 对应于<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />的属性。</param>
-        <param name="Description">指定生成块条目的说明。 对应于<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />的属性。</param>
-        <param name="InsertOptions">指定是将生成块条目作为页、段落插入还是将其内嵌。 如果省略, 则默认值为<see cref="F:Microsoft.Office.Interop.Word.WdDocPartInsertOptions.wdInsertContent" />。 对应于<see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />对象<see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" />的属性。</param>
-        <summary>创建一个新的构建基块, <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />并返回一个对象。</summary>
+        <param name="Name">指定生成块条目的名称。  对应于 <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> 。</param>
+        <param name="Range">指定生成块条目的值。 对应于 <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> 。</param>
+        <param name="Description">指定生成块条目的说明。 对应于 <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> 。</param>
+        <param name="InsertOptions">指定是将生成块条目作为页、段落插入还是将其内嵌。 如果省略，则默认值为 <see cref="F:Microsoft.Office.Interop.Word.WdDocPartInsertOptions.wdInsertContent" /> 。 对应于 <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> 。</param>
+        <summary>创建一个新的构建基块，并返回一个 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> 对象。</summary>
         <returns><see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlocks.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.BuildingBlocks.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -81,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 对象，表示 Microsoft Word 应用程序。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlocks.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.BuildingBlocks.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -109,7 +114,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />集合中项的数目。 只读。</summary>
+        <summary>返回集合中项的数目 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> 。 只读。</summary>
         <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlocks.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.BuildingBlocks.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,7 +147,7 @@
         <value><b>Integer</b></value>
         <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注意</b>: 此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。</para>
+            <b>注意</b>：此值还可以由常量表示 <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -151,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Item (ByRef Index As Object) As BuildingBlock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::BuildingBlock ^ Item(System::Object ^ % Index);" />
+      <MemberSignature Language="F#" Value="abstract member Item : obj -&gt; Microsoft.Office.Interop.Word.BuildingBlock" Usage="buildingBlocks.Item Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -165,7 +172,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlock</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index">指定的 <b>字符串</b> 或 <b>整数</b> ，它表示的名称或对象的集合中的序号位置。</param>
@@ -180,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlocks.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.BuildingBlocks.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -197,7 +205,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />对象的父对象。</summary>
+        <summary>返回指定对象的父对象 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> 。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>

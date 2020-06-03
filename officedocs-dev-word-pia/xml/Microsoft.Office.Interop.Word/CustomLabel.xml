@@ -1,9 +1,10 @@
 <Type Name="CustomLabel" FullName="Microsoft.Office.Interop.Word.CustomLabel">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0f214b3428fec4a541bfb576068a5cc01082ae76" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147260" /></Metadata><TypeSignature Language="C#" Value="public interface CustomLabel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6857894d9729cbde0a387efc4bcbcb1c28934978" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922393" /></Metadata><TypeSignature Language="C#" Value="public interface CustomLabel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomLabel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CustomLabel" />
   <TypeSignature Language="VB.NET" Value="Public Interface CustomLabel" />
   <TypeSignature Language="C++ CLI" Value="public interface class CustomLabel" />
+  <TypeSignature Language="F#" Value="type CustomLabel = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,12 +20,12 @@
   </Attributes>
   <Docs>
     <summary>表示自定义邮件标签。</summary>
-    <remarks><para><b>CustomLabel</b>对象是<see cref="T:Microsoft.Office.Interop.Word.CustomLabels" />集合的一个成员。 <b>CustomLabels</b> 集合中包含所有自定义邮件标签 标签选项对话框中列出。</para>
-      <para>使用<b>CustomLabels</b>(<paramref name="index" />), 其中<paramref name="index" />是自定义标签名称或索引号, 返回单个<b>CustomLabel</b>对象。</para>
+    <remarks><para><b>CustomLabel</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.CustomLabels" /> 。 <b>CustomLabels</b> 集合中包含所有自定义邮件标签 标签选项对话框中列出。</para>
+      <para>使用<b>CustomLabels</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是自定义标签名称或索引号，返回单个<b>CustomLabel</b>对象。</para>
       <para>索引号代表 <b>CustomLabels</b> 集合中的自定义邮件标签的位置。</para>
       <para>
-        <b>注意</b>: <b>CustomLabel</b>对象在<b>CustomLabels</b>集合中按字母顺序排序, 它们的索引号将作为集合的内容更改而动态重新分配。 由于这个原因，它会更加安全，按名称而不是通过索引号引用特定的 <b>CustomLabel</b> 对象。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.CustomLabels.Add(System.String,System.Object@)" />方法创建自定义标签。</para>
+        <b>注意</b>： <b>CustomLabel</b>对象在<b>CustomLabels</b>集合中按字母顺序排序，它们的索引号将作为集合的内容更改而动态重新分配。 由于这个原因，它会更加安全，按名称而不是通过索引号引用特定的 <b>CustomLabel</b> 对象。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.CustomLabels.Add(System.String,System.Object@)" /> 方法创建自定义标签。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.CustomLabel.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.CustomLabel.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -81,8 +84,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CustomLabel.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="customLabel.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.DotMatrix" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DotMatrix As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DotMatrix { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DotMatrix : bool" Usage="Microsoft.Office.Interop.Word.CustomLabel.DotMatrix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Height { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : single with get, set" Usage="Microsoft.Office.Interop.Word.CustomLabel.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -165,7 +171,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置指定的自定义邮件标签的高度 (以磅为单位)。</summary>
+        <summary>返回或设置指定的自定义邮件标签的高度（以磅为单位）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.HorizontalPitch" />
       <MemberSignature Language="VB.NET" Value="Public Property HorizontalPitch As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float HorizontalPitch { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalPitch : single with get, set" Usage="Microsoft.Office.Interop.Word.CustomLabel.HorizontalPitch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.CustomLabel.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -225,7 +233,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>Integer</b>类型的值, 该值代表项目在集合中的位置。</summary>
+        <summary>返回一个<b>Integer</b>类型的值，该值代表项目在集合中的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -236,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.CustomLabel.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -267,6 +276,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.NumberAcross" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberAcross As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberAcross { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberAcross : int with get, set" Usage="Microsoft.Office.Interop.Word.CustomLabel.NumberAcross" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -299,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.NumberDown" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberDown As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberDown { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberDown : int with get, set" Usage="Microsoft.Office.Interop.Word.CustomLabel.NumberDown" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -331,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.PageSize" />
       <MemberSignature Language="VB.NET" Value="Public Property PageSize As WdCustomLabelPageSize" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdCustomLabelPageSize PageSize { Microsoft::Office::Interop::Word::WdCustomLabelPageSize get(); void set(Microsoft::Office::Interop::Word::WdCustomLabelPageSize value); };" />
+      <MemberSignature Language="F#" Value="member this.PageSize : Microsoft.Office.Interop.Word.WdCustomLabelPageSize with get, set" Usage="Microsoft.Office.Interop.Word.CustomLabel.PageSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -353,7 +365,7 @@
       <Docs>
         <summary>返回或设置指定的自定义邮件标签的页面大小。</summary>
         <value>To be added.</value>
-        <remarks><para><b>PageSize</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdCustomLabelPageSize" />常量之一。 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
+        <remarks><para><b>PageSize</b>属性可以是 <see cref="T:Microsoft.Office.Interop.Word.WdCustomLabelPageSize" /> 常量之一。 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -363,6 +375,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.CustomLabel.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -391,6 +404,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.SideMargin" />
       <MemberSignature Language="VB.NET" Value="Public Property SideMargin As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SideMargin { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.SideMargin : single with get, set" Usage="Microsoft.Office.Interop.Word.CustomLabel.SideMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -423,6 +437,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.TopMargin" />
       <MemberSignature Language="VB.NET" Value="Public Property TopMargin As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TopMargin { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.TopMargin : single with get, set" Usage="Microsoft.Office.Interop.Word.CustomLabel.TopMargin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -454,6 +469,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.Valid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Valid As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Valid { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Valid : bool" Usage="Microsoft.Office.Interop.Word.CustomLabel.Valid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -471,7 +487,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>如此</b>如果指定自定义标签的各种属性<see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Height" />( <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Width" />例如、 <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.NumberDown" />、、和) 一起工作以生成有效的邮件标签。</summary>
+        <summary><b>如此</b>如果指定自定义标签的各种属性（例如、、 <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Height" /> <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Width" /> 、和 <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.NumberDown" /> ）一起工作以生成有效的邮件标签。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -482,6 +498,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.VerticalPitch" />
       <MemberSignature Language="VB.NET" Value="Public Property VerticalPitch As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float VerticalPitch { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalPitch : single with get, set" Usage="Microsoft.Office.Interop.Word.CustomLabel.VerticalPitch" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -514,6 +531,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CustomLabel.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="Microsoft.Office.Interop.Word.CustomLabel.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

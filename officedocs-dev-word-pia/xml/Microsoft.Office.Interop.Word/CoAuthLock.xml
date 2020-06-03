@@ -1,9 +1,10 @@
 <Type Name="CoAuthLock" FullName="Microsoft.Office.Interop.Word.CoAuthLock">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="6aaadd2e6d6106e1de5d69cd13baf0beed987346" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142234" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthLock" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7cc699b1011ea262a20706e28c750a2371cc0961" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922428" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthLock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthLock" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthLock" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthLock" />
   <TypeSignature Language="C++ CLI" Value="public interface class CoAuthLock" />
+  <TypeSignature Language="F#" Value="type CoAuthLock = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,8 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示文档中的锁定。 <b>CoAuthLock</b>对象是<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />集合的一个成员。</summary>
-    <remarks><para>只读。 使用<b>锁</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回一个<b>CoAuthLock</b>对象。 添加<b>CoAuthLock</b>对象时, 请使用<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />枚举指定锁定的类型。</para>
+    <summary>表示文档中的锁定。 <b>CoAuthLock</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> 。</summary>
+    <remarks><para>只读。 使用<b>锁</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是索引号，返回一个<b>CoAuthLock</b>对象。 添加<b>CoAuthLock</b>对象时，请使用 <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> 枚举指定锁定的类型。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLock.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.CoAuthLock.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.Application" /> Microsoft Word 应用程序的对象。</summary>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 表示 Microsoft Word 应用程序的对象。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.Application" /> 对象。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLock.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.CoAuthLock.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -75,9 +78,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个32位整数, 该整数指示在其中创建指定对象的应用程序。</summary>
+        <summary>获取一个32位整数，该整数指示在其中创建指定对象的应用程序。</summary>
         <value>指示在其中创建指定对象的应用程序。</value>
-        <remarks><para><b>Long 类型</b>, 只读。 如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
+        <remarks><para><b>Long 类型</b>，只读。 如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLock.HeaderFooter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderFooter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HeaderFooter { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderFooter : bool" Usage="Microsoft.Office.Interop.Word.CoAuthLock.HeaderFooter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -105,7 +109,7 @@
       </ReturnValue>
       <Docs>
         <summary>获取一个指示锁是否为文档的页眉/页脚锁。</summary>
-        <value>如果锁定是文档的页眉/页脚锁定, 则为<b>true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <value>如果锁定是文档的页眉/页脚锁定，则为<b>true</b> ; 否则为 false。否则<b>为 false</b>。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLock.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As CoAuthor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CoAuthor ^ Owner { Microsoft::Office::Interop::Word::CoAuthor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : Microsoft.Office.Interop.Word.CoAuthor" Usage="Microsoft.Office.Interop.Word.CoAuthLock.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLock.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.CoAuthLock.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -161,8 +167,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />对象的父对象的。</summary>
-        <value>一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" />对象的父对象的。</value>
+        <summary>获取一个 <see cref="T:System.Object" /> 代表指定对象的父对象的 <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> 。</summary>
+        <value>一个 <see cref="T:System.Object" /> 代表指定对象的父对象的 <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLock.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.CoAuthLock.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -189,8 +196,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 该对象代表指定对象中包含的文档部分。</summary>
-        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示指定对象中包含的文档部分。</value>
+        <summary>获取一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，该对象代表指定对象中包含的文档部分。</summary>
+        <value>一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，表示指定对象中包含的文档部分。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLock.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdLockType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLockType Type { Microsoft::Office::Interop::Word::WdLockType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdLockType" Usage="Microsoft.Office.Interop.Word.CoAuthLock.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -218,8 +226,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />常量, 该常量指定锁定类型。</summary>
-        <value>一个<see cref="T:Microsoft.Office.Interop.Word.WdLockType" />指定锁定类型的常量。</value>
+        <summary>获取一个 <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> 常量，该常量指定锁定类型。</summary>
+        <value>一个 <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> 指定锁定类型的常量。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CoAuthLock.Unlock" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unlock ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unlock();" />
+      <MemberSignature Language="F#" Value="abstract member Unlock : unit -&gt; unit" Usage="coAuthLock.Unlock " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -245,7 +254,7 @@
       <Parameters />
       <Docs>
         <summary>解除对指定锁的锁定。</summary>
-        <remarks><para>此方法解锁指定的锁定, 即使它属于当前用户之外的其他用户也是如此。</para>
+        <remarks><para>此方法解锁指定的锁定，即使它属于当前用户之外的其他用户也是如此。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

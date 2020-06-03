@@ -1,9 +1,10 @@
 <Type Name="ContentControlListEntry" FullName="Microsoft.Office.Interop.Word.ContentControlListEntry">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="58121ff87a2cbde78e578387d442ae7b9c00c1d5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147194" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControlListEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1c2b44faa6b2eca1188adcfb77a1b2cd2776166e" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922295" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControlListEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControlListEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControlListEntry" />
   <TypeSignature Language="C++ CLI" Value="public interface class ContentControlListEntry" />
+  <TypeSignature Language="F#" Value="type ContentControlListEntry = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,13 +19,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一个<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />对象, 表示下拉列表或组合框内容控件中的列表项。 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />对象是<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />对象的集合的成员。</summary>
-    <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" /> <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />集合的方法创建新<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />的对象。 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" />使用方法 (或<see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" />(<paramref name="Index" />)), 其中<paramref name="Index" />是内容控件列表项的序号位置, 以访问<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />集合中的单个列表项。</para>
+    <summary>一个 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> 对象，表示下拉列表或组合框内容控件中的列表项。 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />对象是对象的集合的成员 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> 。</summary>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" /> 集合的方法 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> 创建新的 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> 对象。 使用 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" /> 方法（或 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> （ <paramref name="Index" /> ）），其中 <paramref name="Index" /> 是内容控件列表项的序号位置，以访问集合中的单个列表项 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> 。</para>
       <para>
-        <b>注意</b>: 列表条目必须具有唯一的显示名称。  尝试添加已存在的列表项将引发运行时错误。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveUp" />和<see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveDown" />方法可重新定位下拉列表中的项。 使用<see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Select" />方法以编程方式选择内容控件列表项。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />属性来设置内容控件列表项的显示文本, 并使用<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />属性来设置稍后可用于处理窗体的编程值。 例如，可以使用内容控件下拉列表作为产品列表。 该<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />属性可能包含产品的名称, 即用户可以轻松识别和理解的显示名称。 该<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />属性可能包含与数据库中的产品编号对应的产品的产品编号。  然后, 您可以使用<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />属性中的产品编号来查找数据库中的产品信息。 此外, 如果内容控件映射<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />到数据存储区中的 xml 数据, 则该属性的值就是发送到自定义 XML 数据的内容。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Delete" />方法可从内容控件下拉列表或组合框中移除项。 </para>
+        <b>注意</b>：列表条目必须具有唯一的显示名称。  尝试添加已存在的列表项将引发运行时错误。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveUp" /> 和 <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveDown" /> 方法可重新定位下拉列表中的项。 使用 <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Select" /> 方法以编程方式选择内容控件列表项。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> 属性来设置内容控件列表项的显示文本，并使用 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> 属性来设置稍后可用于处理窗体的编程值。 例如，可以使用内容控件下拉列表作为产品列表。 该 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> 属性可能包含产品的名称，即用户可以轻松识别和理解的显示名称。 该 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> 属性可能包含与数据库中的产品编号对应的产品的产品编号。  然后，您可以使用属性中的产品编号 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> 来查找数据库中的产品信息。 此外， <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> 如果内容控件映射到数据存储区中的 xml 数据，则该属性的值就是发送到自定义 XML 数据的内容。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Delete" /> 方法可从内容控件下拉列表或组合框中移除项。 </para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ContentControlListEntry.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 对象，表示 Microsoft Word 应用程序。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ContentControlListEntry.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -83,7 +86,7 @@
         <value><b>Integer</b></value>
         <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注意</b>: 此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。</para>
+            <b>注意</b>：此值还可以由常量表示 <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="contentControlListEntry.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Index" />
       <MemberSignature Language="VB.NET" Value="Public Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int with get, set" Usage="Microsoft.Office.Interop.Word.ContentControlListEntry.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveDown" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveDown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveDown();" />
+      <MemberSignature Language="F#" Value="abstract member MoveDown : unit -&gt; unit" Usage="contentControlListEntry.MoveDown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntry.MoveUp" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveUp ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveUp();" />
+      <MemberSignature Language="F#" Value="abstract member MoveUp : unit -&gt; unit" Usage="contentControlListEntry.MoveUp " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -199,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ContentControlListEntry.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -216,7 +224,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />对象的父对象。</summary>
+        <summary>返回指定对象的父对象 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> 。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntry.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="contentControlListEntry.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -252,6 +261,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -274,7 +284,7 @@
       <Docs>
         <summary>返回或设置下拉列表或组合框内容控件的列表项的显示文本。 读/写。</summary>
         <value><b>String</b></value>
-        <remarks><para>列表中的项必须具有唯一的显示名称。  尝试将<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />属性更改为已存在于条目列表中的字符串会引发运行时错误。</para>
+        <remarks><para>列表中的项必须具有唯一的显示名称。  尝试将属性更改 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> 为已存在于条目列表中的字符串会引发运行时错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -284,6 +294,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -306,9 +317,9 @@
       <Docs>
         <summary>返回或设置下拉列表或组合框内容控件中的项的编程值。 读/写。</summary>
         <value><b>String</b></value>
-        <remarks><para>使用 <b>Value</b> 属性来存储数据，您需要在处理时使用。 例如, <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />属性可能包含要显示的字符串, 而<b>Value</b>属性可能包含可用于在数据库中查找信息的数字 (如项目号)。  <b>值</b> 属性的值也就发送到自定义 XML 数据，如果内容控件映射到数据存储区中的 XML 数据。</para>
+        <remarks><para>使用 <b>Value</b> 属性来存储数据，您需要在处理时使用。 例如， <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> 属性可能包含要显示的字符串，而<b>Value</b>属性可能包含可用于在数据库中查找信息的数字（如项目号）。  <b>值</b> 属性的值也就发送到自定义 XML 数据，如果内容控件映射到数据存储区中的 XML 数据。</para>
           <para>
-            <b>注意</b>: 不能为从附加到映射到此控件的自定义 XML 的 XML 架构自动填充的列表条目设置<b>Value</b>属性。 </para>
+            <b>注意</b>：不能为从附加到映射到此控件的自定义 XML 的 XML 架构自动填充的列表条目设置<b>Value</b>属性。 </para>
           <para> </para></remarks>
       </Docs>
     </Member>

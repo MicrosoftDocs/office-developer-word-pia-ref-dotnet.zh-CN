@@ -1,9 +1,10 @@
 <Type Name="Broadcast" FullName="Microsoft.Office.Interop.Word.Broadcast">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0d509697e025a0a6da57a59ccf0c2e2d3d1b050a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146211" /></Metadata><TypeSignature Language="C#" Value="public interface Broadcast" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c7c75c58674ed104550ff6b6f32388b120a532e" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922645" /></Metadata><TypeSignature Language="C#" Value="public interface Broadcast" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Broadcast" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Broadcast" />
   <TypeSignature Language="VB.NET" Value="Public Interface Broadcast" />
   <TypeSignature Language="C++ CLI" Value="public interface class Broadcast" />
+  <TypeSignature Language="F#" Value="type Broadcast = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Broadcast.AddMeetingNotes(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddMeetingNotes (notesUrl As String, notesWacUrl As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMeetingNotes(System::String ^ notesUrl, System::String ^ notesWacUrl);" />
+      <MemberSignature Language="F#" Value="abstract member AddMeetingNotes : string * string -&gt; unit" Usage="broadcast.AddMeetingNotes (notesUrl, notesWacUrl)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,7 +51,7 @@
         <param name="notesUrl">为使用 OneNote 富客户端的与会者指定共享会议笔记的存储 URL。</param>
         <param name="notesWacUrl">指定用于使用 OneNote Online 客户端的与会者的存储共享会议笔记的 URL。</param>
         <summary>为使用 OneNote 2013 胖客户端或 web 应用程序的与会者添加可访问的指定广播的共享会议笔记。</summary>
-        <remarks><para>如果您无法传递两个参数之一的字符串, 则<b>AddMeetingNotes</b>方法将返回一个无效参数错误。 如果由于某种原因方法调用失败, Word 将返回常规广播错误。</para>
+        <remarks><para>如果您无法传递两个参数之一的字符串，则<b>AddMeetingNotes</b>方法将返回一个无效参数错误。 如果由于某种原因方法调用失败，Word 将返回常规广播错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Broadcast.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Broadcast.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -76,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 对象，表示 Microsoft Word 应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Broadcast.AttendeeUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttendeeUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AttendeeUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AttendeeUrl : string" Usage="Microsoft.Office.Interop.Word.Broadcast.AttendeeUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -104,9 +108,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果正在进行广播, 则返回一个表示与会者链接的 URL 的<b>字符串</b>(c # 中的<b>字符串</b>)。 只读。</summary>
+        <summary>如果正在进行广播，则返回一个表示与会者链接的 URL 的<b>字符串</b>（c # 中的<b>字符串</b>）。 只读。</summary>
         <value>To be added.</value>
-        <remarks><para>如果没有进行广播, <b>AttendeeUrl</b>将返回一个空字符串。</para>
+        <remarks><para>如果没有进行广播， <b>AttendeeUrl</b>将返回一个空字符串。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Broadcast.Capabilities" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Capabilities As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Capabilities { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Capabilities : int" Usage="Microsoft.Office.Interop.Word.Broadcast.Capabilities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -133,15 +138,15 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个表示指定广播的功能的<b>UInteger</b> (在 c # 中为<b>uint</b> )。 只读。</summary>
+        <summary>返回一个表示指定广播的功能的<b>UInteger</b> （在 c # 中为<b>uint</b> ）。 只读。</summary>
         <value>To be added.</value>
-        <remarks><para>"<b>功能</b>" 属性可以返回以下值:</para>
+        <remarks><para>"<b>功能</b>" 属性可以返回以下值：</para>
           <list type="table">
             <item>
               <description>
                 <b>MSOBroadcastCapFileSizeLimited</b>
               </description>
-              <description>1</description>
+              <description>1 </description>
               <description>文件大小受限</description>
             </item>
             <item>
@@ -155,7 +160,7 @@
               <description>
                 <b>MSOBroadcastCapSupportsUpdateDoc</b>
               </description>
-              <description>4</description>
+              <description>4 </description>
               <description>支持文档更新</description>
             </item>
           </list>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Broadcast.End" />
       <MemberSignature Language="VB.NET" Value="Public Sub End ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void End();" />
+      <MemberSignature Language="F#" Value="abstract member End : unit -&gt; unit" Usage="broadcast.End " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -185,8 +191,8 @@
       <Parameters />
       <Docs>
         <summary>结束指定的广播会话。</summary>
-        <remarks><para>调用<b>End</b>方法将终止广播会话, 而不向用户显示确认提示。 它还将值设置<see cref="P:Microsoft.Office.Interop.Word.Broadcast.AttendeeUrlproperty" />为空字符串。</para>
-          <para>如果不广播文档, 该方法将返回运行时错误4702。</para>
+        <remarks><para>调用<b>End</b>方法将终止广播会话，而不向用户显示确认提示。 它还将值设置 <see cref="P:Microsoft.Office.Interop.Word.Broadcast.AttendeeUrlproperty" /> 为空字符串。</para>
+          <para>如果不广播文档，该方法将返回运行时错误4702。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Broadcast.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Broadcast.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -213,7 +220,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>对象</b>, 表示指定的<b>广播</b>对象的父对象</summary>
+        <summary>返回一个<b>对象</b>，表示指定的<b>广播</b>对象的父对象</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Broadcast.Pause" />
       <MemberSignature Language="VB.NET" Value="Public Sub Pause ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pause();" />
+      <MemberSignature Language="F#" Value="abstract member Pause : unit -&gt; unit" Usage="broadcast.Pause " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -240,7 +248,7 @@
       <Parameters />
       <Docs>
         <summary>暂停指定的广播。</summary>
-        <remarks><para>如果未进行指定的广播, <b>Pause</b>将返回运行时错误4702。</para>
+        <remarks><para>如果未进行指定的广播， <b>Pause</b>将返回运行时错误4702。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -250,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Broadcast.PresenterServiceUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresenterServiceUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PresenterServiceUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PresenterServiceUrl : string" Usage="Microsoft.Office.Interop.Word.Broadcast.PresenterServiceUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -267,9 +276,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果正在进行广播, 则返回一个<b>字符串</b>(c # 中的<b>字符串</b>), 表示广播所在的演示者服务的 URL。 只读。</summary>
+        <summary>如果正在进行广播，则返回一个<b>字符串</b>（c # 中的<b>字符串</b>），表示广播所在的演示者服务的 URL。 只读。</summary>
         <value>To be added.</value>
-        <remarks><para>如果没有进行广播, <b>PresenterServiceUrl</b>将返回一个空字符串。</para>
+        <remarks><para>如果没有进行广播， <b>PresenterServiceUrl</b>将返回一个空字符串。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -279,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Broadcast.Resume" />
       <MemberSignature Language="VB.NET" Value="Public Sub Resume ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resume();" />
+      <MemberSignature Language="F#" Value="abstract member Resume : unit -&gt; unit" Usage="broadcast.Resume " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -295,7 +305,7 @@
       <Parameters />
       <Docs>
         <summary>恢复指定的广播。</summary>
-        <remarks><para>如果文档受 DRM 保护, 则<b>Resume</b>方法将返回一个错误 (#4700)、已在广播中 (#4698)、当前未进行广播 (#4702) 或发生冲突编辑 (处于合并模式, #4701)。</para>
+        <remarks><para>如果文档受 DRM 保护，则<b>Resume</b>方法将返回一个错误（#4700）、已在广播中（#4698）、当前未进行广播（#4702）或发生冲突编辑（处于合并模式，#4701）。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -305,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Broadcast.SessionID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SessionID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SessionID : string" Usage="Microsoft.Office.Interop.Word.Broadcast.SessionID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -322,9 +333,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果正在进行广播, 则返回一个指定会话 ID 的<b>字符串</b>(c # 中的<b>字符串</b>)。 只读。</summary>
+        <summary>如果正在进行广播，则返回一个指定会话 ID 的<b>字符串</b>（c # 中的<b>字符串</b>）。 只读。</summary>
         <value>To be added.</value>
-        <remarks><para>如果没有进行广播, <b>SessionID</b>将返回一个空字符串。</para>
+        <remarks><para>如果没有进行广播， <b>SessionID</b>将返回一个空字符串。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -334,6 +345,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Broadcast.Start(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start (serverUrl As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start(System::String ^ serverUrl);" />
+      <MemberSignature Language="F#" Value="abstract member Start : string -&gt; unit" Usage="broadcast.Start serverUrl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -354,7 +366,7 @@
         <param name="serverUrl">广播服务器的 URL。</param>
         <summary>启动指定的广播会话。</summary>
         <remarks><para>调用<b>Start</b>方法将设置服务器、对用户进行身份验证并上载演示文稿。</para>
-          <para>如果为传递的<paramref name="serverUrl" />值具有无效的格式, 则<b>Start</b>将返回 "参数无效" 错误。 此外, 如果文档受 DRM 保护, 则该方法将返回错误, 已在广播或发生冲突编辑 (处于合并模式)。</para>
+          <para>如果为传递的值 <paramref name="serverUrl" /> 具有无效的格式，则<b>Start</b>将返回 "参数无效" 错误。 此外，如果文档受 DRM 保护，则该方法将返回错误，已在广播或发生冲突编辑（处于合并模式）。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -364,6 +376,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Broadcast.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As MsoBroadcastState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoBroadcastState State { Microsoft::Office::Core::MsoBroadcastState get(); };" />
+      <MemberSignature Language="F#" Value="member this.State : Microsoft.Office.Core.MsoBroadcastState" Usage="Microsoft.Office.Interop.Word.Broadcast.State" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -383,16 +396,16 @@
       <Docs>
         <summary>返回一个描述当前广播状态的<b>MSOBroadcastState</b>常量。 只读。</summary>
         <value>To be added.</value>
-        <remarks><para><b>State</b>属性可以返回以下三种状态之一:</para>
+        <remarks><para><b>State</b>属性可以返回以下三种状态之一：</para>
           <list type="bullet">
             <item>
-              <para>无广播 (0)</para>
+              <para>无广播（0）</para>
             </item>
             <item>
-              <para>广播已启动 (1)</para>
+              <para>广播已启动（1）</para>
             </item>
             <item>
-              <para>已暂停广播 (2)</para>
+              <para>已暂停广播（2）</para>
             </item>
           </list>
           <para> </para></remarks>

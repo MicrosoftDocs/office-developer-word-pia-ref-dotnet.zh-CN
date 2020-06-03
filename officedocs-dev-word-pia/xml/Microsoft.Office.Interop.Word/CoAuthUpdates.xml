@@ -1,9 +1,10 @@
 <Type Name="CoAuthUpdates" FullName="Microsoft.Office.Interop.Word.CoAuthUpdates">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="221cb78f9c2c699018cfe37e064f54c683778e79" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147212" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthUpdates : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="53eccd8af883eeec3d52a34196d623552db7287a" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922407" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthUpdates : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthUpdates implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthUpdates&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class CoAuthUpdates : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type CoAuthUpdates = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,9 +23,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示文档中<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />的可用更新的对象的集合。</summary>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />表示文档中的可用更新的对象的集合。</summary>
     <remarks><para>当多个作者同时编辑一个启用了共同创作的文档时，由其中一位共同作者进行的更改将作为更新提供给其他共同作者。 每个更改由单个 <b>CoAuthUpdate</b> 对象表示。 当某个共同作者保存其文档版本时，由其他共同作者进行的更改也将合并到该共同作者的文档版本中。 但在该共同作者保存其文档版本之前，由其他共同作者进行的更改将仅作为更新提供。</para>
-      <para>例如: 两个用户正在编辑文档, 该文档最初包含一个带有文本 "棕色的 fox" 的段落。 如果第一位共同作者将句子编辑为“敏捷的棕毛狐狸飞身跃过木头”，然后保存该文档，那么，“敏捷的”和“飞身跃过木头”将作为两个更新提供给第二位共同作者。 这两个更新在 Microsoft Word 2010 对象模型中表示为两个<b>CoAuthUpdate</b>对象。 当第二位共同作者保存该文档时，由第一位共同作者进行的更新将合并到该文档中。</para>
+      <para>例如：两个用户正在编辑文档，该文档最初包含一个带有文本 "棕色的 fox" 的段落。 如果第一位共同作者将句子编辑为“敏捷的棕毛狐狸飞身跃过木头”，然后保存该文档，那么，“敏捷的”和“飞身跃过木头”将作为两个更新提供给第二位共同作者。 这两个更新在 Microsoft Word 2010 对象模型中表示为两个<b>CoAuthUpdate</b>对象。 当第二位共同作者保存该文档时，由第一位共同作者进行的更新将合并到该文档中。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.CoAuthUpdates.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,8 +53,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.Application" /> Microsoft Word 应用程序的对象。</summary>
-        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</value>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 表示 Microsoft Word 应用程序的对象。</summary>
+        <value>一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.CoAuthUpdates.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -80,8 +83,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />集合中项的数目。</summary>
-        <value><see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />集合中项的数目。</value>
+        <summary>获取集合中项的数目 <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> 。</summary>
+        <value>集合中项的数目 <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> 。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.CoAuthUpdates.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -109,11 +113,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个32位整数, 该整数指示在其中创建指定对象的应用程序。</summary>
-        <value>一个32位整数, 它指示在其中创建指定对象的应用程序。</value>
-        <remarks><para><b>Long 类型</b>, 只读。 如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
+        <summary>获取一个32位整数，该整数指示在其中创建指定对象的应用程序。</summary>
+        <value>一个32位整数，它指示在其中创建指定对象的应用程序。</value>
+        <remarks><para><b>Long 类型</b>，只读。 如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
           <para>
-            <b>警告</b>: 此值还可以由常量<b>wdcreatorcode 表示</b>表示。</para>
+            <b>警告</b>：此值还可以由常量<b>wdcreatorcode 表示</b>表示。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CoAuthUpdates.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="coAuthUpdates.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -145,7 +150,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>返回<see cref="T:System.Collections.IEnumerator" />。</returns>
+        <returns>返回 <see cref="T:System.Collections.IEnumerator" /> 。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As CoAuthUpdate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CoAuthUpdate ^ default[int] { Microsoft::Office::Interop::Word::CoAuthUpdate ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.CoAuthUpdate" Usage="Microsoft.Office.Interop.Word.CoAuthUpdates.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -177,7 +183,7 @@
       <Docs>
         <param name="Index">要返回的单个对象。</param>
         <summary>返回集合中的单个对象， <b>CoAuthUpdates</b> 。</summary>
-        <value>返回<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" />。</value>
+        <value>返回 <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthUpdates.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.CoAuthUpdates.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,8 +211,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />对象的父对象的。</summary>
-        <value>一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />对象的父对象的。</value>
+        <summary>获取一个 <see cref="T:System.Object" /> 代表指定对象的父对象的 <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> 。</summary>
+        <value>一个 <see cref="T:System.Object" /> 代表指定对象的父对象的 <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,9 +1,10 @@
 <Type Name="CoAuthoring" FullName="Microsoft.Office.Interop.Word.CoAuthoring">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="aa37e28413aff41cf5c8b6361b6d410b11b49671" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147268" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthoring" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e4e40b294aa5dbf068b3ba755c1767a8daa31a0a" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922386" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthoring" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthoring" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthoring" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthoring" />
   <TypeSignature Language="C++ CLI" Value="public interface class CoAuthoring" />
+  <TypeSignature Language="F#" Value="type CoAuthoring = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>提供共同创作对象模型的主要入口点。</summary>
-    <remarks><para><b>CoAuthoring</b> 对象提供有关文档级共同创作的信息。 例如，<b>CoAuthoring</b> 对象可以提供以下相关信息：文档中是否存在锁，哪些用户当前在文档中具有锁，是否可从服务器更新文档内容。 使用<see cref="T:Microsoft.Office.Interop.Word.Document.CoAuthoring" />属性返回<b>合著</b>对象。</para>
+    <remarks><para><b>CoAuthoring</b> 对象提供有关文档级共同创作的信息。 例如，<b>CoAuthoring</b> 对象可以提供以下相关信息：文档中是否存在锁，哪些用户当前在文档中具有锁，是否可从服务器更新文档内容。 使用 <see cref="T:Microsoft.Office.Interop.Word.Document.CoAuthoring" /> 属性返回<b>合著</b>对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthoring.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.CoAuthoring.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,8 +48,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.Application" /> Microsoft Word 应用程序的对象。</summary>
-        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</value>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 表示 Microsoft Word 应用程序的对象。</summary>
+        <value>一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthoring.Authors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authors As CoAuthors" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CoAuthors ^ Authors { Microsoft::Office::Interop::Word::CoAuthors ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Authors : Microsoft.Office.Interop.Word.CoAuthors" Usage="Microsoft.Office.Interop.Word.CoAuthoring.Authors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -75,9 +78,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />当前正在编辑文档的所有共同作者的集合。</summary>
-        <value>一个<see cref="T:Microsoft.Office.Interop.Word.CoAuthors" />代表当前正在编辑该文档的所有共同作者的集合。</value>
-        <remarks><para>只读。 此属性返回的集合是静态的。 如果存储了此集合, 并且新用户开始编辑该文档, 或者当前用户不再编辑该文档, 则存储的集合不会更改。</para>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> 表示当前正在编辑文档的所有共同作者的集合。</summary>
+        <value>一个 <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> 代表当前正在编辑该文档的所有共同作者的集合。</value>
+        <remarks><para>只读。 此属性返回的集合是静态的。 如果存储了此集合，并且新用户开始编辑该文档，或者当前用户不再编辑该文档，则存储的集合不会更改。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthoring.CanMerge" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanMerge As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanMerge { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanMerge : bool" Usage="Microsoft.Office.Interop.Word.CoAuthoring.CanMerge" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -105,7 +109,7 @@
       </ReturnValue>
       <Docs>
         <summary>获取文档是否可以自动合并。</summary>
-        <value>如果文档可以自动合并, 则为<b>true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <value>如果文档可以自动合并，则为<b>true</b> ; 否则为 false。否则<b>为 false</b>。</value>
         <remarks><para>只有位于 Microsoft SharePoint Server 2010 文档库上的文档才能自动合并。 此外，具有以下特征的文档不能自动合并：</para>
           <list type="bullet">
             <item>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthoring.CanShare" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanShare As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanShare { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanShare : bool" Usage="Microsoft.Office.Interop.Word.CoAuthoring.CanShare" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -151,8 +156,8 @@
       </ReturnValue>
       <Docs>
         <summary>获取此文档是否可以共同创作。</summary>
-        <value>如果可以共同创作此文档, 则为<b>true</b> ; 否则为 false。否则<b>为 false</b>。</value>
-        <remarks><para>只读。 仅当<see cref="P:Microsoft.Office.Interop.Word.CoAuthoring.CanMerge" />属性为<b>true</b>且文档为 .docx 文件时, 此属性才为<b>true</b> 。</para>
+        <value>如果可以共同创作此文档，则为<b>true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <remarks><para>只读。 仅当<b>true</b> <see cref="P:Microsoft.Office.Interop.Word.CoAuthoring.CanMerge" /> 属性为<b>true</b>且文档为 .docx 文件时，此属性才为 true。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthoring.Conflicts" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Conflicts As Conflicts" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Conflicts ^ Conflicts { Microsoft::Office::Interop::Word::Conflicts ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Conflicts : Microsoft.Office.Interop.Word.Conflicts" Usage="Microsoft.Office.Interop.Word.CoAuthoring.Conflicts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -179,8 +185,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Conflicts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.Conflicts" />集合, 该集合代表文档中的所有冲突。</summary>
-        <value>一个<see cref="T:Microsoft.Office.Interop.Word.Conflicts" />代表文档中的所有冲突的集合。</value>
+        <summary>获取一个 <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> 集合，该集合代表文档中的所有冲突。</summary>
+        <value>一个 <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> 代表文档中的所有冲突的集合。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthoring.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.CoAuthoring.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -208,11 +215,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个32位整数, 该整数指示在其中创建指定对象的应用程序。</summary>
-        <value>一个32位整数, 它指示在其中创建指定对象的应用程序。</value>
-        <remarks><para><b>Long 类型</b>, 只读。 如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
+        <summary>获取一个32位整数，该整数指示在其中创建指定对象的应用程序。</summary>
+        <value>一个32位整数，它指示在其中创建指定对象的应用程序。</value>
+        <remarks><para><b>Long 类型</b>，只读。 如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 此属性主要用于在苹果 Macintosh，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Word 提供了 MSWD 的创建者代码。</para>
           <para>
-            <b>警告</b>: 此值还可以由常量<b>wdcreatorcode 表示</b>表示。</para>
+            <b>警告</b>：此值还可以由常量<b>wdcreatorcode 表示</b>表示。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -222,6 +229,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthoring.Locks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Locks As CoAuthLocks" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CoAuthLocks ^ Locks { Microsoft::Office::Interop::Word::CoAuthLocks ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Locks : Microsoft.Office.Interop.Word.CoAuthLocks" Usage="Microsoft.Office.Interop.Word.CoAuthoring.Locks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -239,8 +247,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthLocks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />文档中的锁的集合。</summary>
-        <value>一个<see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" />代表文档中的锁定的集合。</value>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> 表示文档中的锁的集合。</summary>
+        <value>一个 <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> 代表文档中的锁定的集合。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -251,6 +259,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthoring.Me" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Me As CoAuthor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CoAuthor ^ Me { Microsoft::Office::Interop::Word::CoAuthor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Me : Microsoft.Office.Interop.Word.CoAuthor" Usage="Microsoft.Office.Interop.Word.CoAuthoring.Me" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -268,8 +277,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取表示<see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />当前用户的对象。</summary>
-        <value>一个<see cref="T:Microsoft.Office.Interop.Word.CoAuthor" />代表当前用户的对象。</value>
+        <summary>获取 <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> 表示当前用户的对象。</summary>
+        <value>一个 <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> 代表当前用户的对象。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthoring.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.CoAuthoring.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -297,8 +307,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" />对象的父对象的。</summary>
-        <value>一个<see cref="T:System.Object" />代表指定<see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" />对象的父对象的。</value>
+        <summary>获取一个 <see cref="T:System.Object" /> 代表指定对象的父对象的 <see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" /> 。</summary>
+        <value>一个 <see cref="T:System.Object" /> 代表指定对象的父对象的 <see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" /> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthoring.PendingUpdates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PendingUpdates As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PendingUpdates { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.PendingUpdates : bool" Usage="Microsoft.Office.Interop.Word.CoAuthoring.PendingUpdates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -326,7 +337,7 @@
       </ReturnValue>
       <Docs>
         <summary>获取文档是否具有尚未接受的挂起更新。</summary>
-        <value>如果文档包含尚未接受的待定更新,<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <value>如果文档包含尚未接受的待定更新，<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>
@@ -337,6 +348,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthoring.Updates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Updates As CoAuthUpdates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CoAuthUpdates ^ Updates { Microsoft::Office::Interop::Word::CoAuthUpdates ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Updates : Microsoft.Office.Interop.Word.CoAuthUpdates" Usage="Microsoft.Office.Interop.Word.CoAuthoring.Updates" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -354,8 +366,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthUpdates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取一个<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />集合, 该集合代表文档中所有可用的更新。</summary>
-        <value>一个<see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />代表文档中可用的所有更新的集合。</value>
+        <summary>获取一个 <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> 集合，该集合代表文档中所有可用的更新。</summary>
+        <value>一个 <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> 代表文档中可用的所有更新的集合。</value>
         <remarks><para>只读。</para>
           <para> </para></remarks>
       </Docs>

@@ -1,9 +1,10 @@
 <Type Name="Chart" FullName="Microsoft.Office.Interop.Word.Chart">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b01d3cd03a0e6d162566e25b45eaa2b405ccb58a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147303" /></Metadata><TypeSignature Language="C#" Value="public interface Chart" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="366b1f3031d8130d3c0fc483de7409f386838a56" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922519" /></Metadata><TypeSignature Language="C#" Value="public interface Chart" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Chart" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Chart" />
   <TypeSignature Language="VB.NET" Value="Public Interface Chart" />
   <TypeSignature Language="C++ CLI" Value="public interface class Chart" />
+  <TypeSignature Language="F#" Value="type Chart = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -33,8 +34,8 @@
       </list>
       <para> </para>
       <para> </para></remarks>
-    <example><para><see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合包含文档中每个内嵌形状 (包括图表) 的对象。 使用<b>InlineShapes</b>(<paramref name="Index" />) (其中<paramref name="Index" />是内嵌形状的索引号) 返回单个<b>InlineShape</b>对象。 使用<see cref="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" />属性来确定<b>InlineShape</b>对象是否表示一个图表。 如果将<b>HasChart</b>属性设置为<b>True</b>, 则使用<see cref="P:Microsoft.Office.Interop.Word.InlineShape.Chart" />属性返回<b>Chart</b>对象。</para>
-      <para>您还可以使用<see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" />属性来确定<b>InlineShape</b>对象是否表示一个图表。 如果 <b>类型</b> 属性设置为 <b>WdInlineShapeChart</b> ，内嵌形状表示的图表。</para></example>
+    <example><para><see cref="T:Microsoft.Office.Interop.Word.InlineShapes" />集合包含文档中每个内嵌形状（包括图表）的对象。 使用<b>InlineShapes</b>（ <paramref name="Index" /> ）（其中 <paramref name="Index" /> 是内嵌形状的索引号）返回单个<b>InlineShape</b>对象。 使用 <see cref="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" /> 属性来确定<b>InlineShape</b>对象是否表示一个图表。 如果将<b>HasChart</b>属性设置为<b>True</b>，则使用 <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Chart" /> 属性返回<b>Chart</b>对象。</para>
+      <para>您还可以使用 <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> 属性来确定<b>InlineShape</b>对象是否表示一个图表。 如果 <b>类型</b> 属性设置为 <b>WdInlineShapeChart</b> ，内嵌形状表示的图表。</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -43,6 +44,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.Chart.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -60,7 +62,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <summary>在不使用对象识别符的情况下使用时，此属性返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -71,6 +73,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ApplyChartTemplate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyChartTemplate (FileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyChartTemplate(System::String ^ FileName);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyChartTemplate : string -&gt; unit" Usage="chart.ApplyChartTemplate FileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -99,6 +102,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyCustomType([in]valuetype Microsoft.Office.Core.XlChartType ChartType, [in]object TypeName) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ApplyCustomType(Microsoft.Office.Core.XlChartType,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyCustomType (ChartType As XlChartType, Optional TypeName As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyCustomType : Microsoft.Office.Core.XlChartType * obj -&gt; unit" Usage="chart.ApplyCustomType (ChartType, TypeName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -120,7 +124,7 @@
         <Parameter Name="TypeName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ChartType">需要<see cref="T:Microsoft.Office.Core.XlChartType" />标准图表类型</param>
+        <param name="ChartType">需要 <see cref="T:Microsoft.Office.Core.XlChartType" /> 标准图表类型</param>
         <param name="TypeName">必需的<b>对象</b>一个标准图表类型</param>
         <summary>将标准图表类型或自定义图表类型应用于图表。</summary>
         <remarks>To be added.</remarks>
@@ -131,6 +135,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDataLabels([in]valuetype Microsoft.Office.Interop.Word.XlDataLabelsType Type, [in]object LegendKey, [in]object AutoText, [in]object HasLeaderLines, [in]object ShowSeriesName, [in]object ShowCategoryName, [in]object ShowValue, [in]object ShowPercentage, [in]object ShowBubbleSize, [in]object Separator) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyDataLabels (Optional Type As XlDataLabelsType = Microsoft.Office.Interop.Word.XlDataLabelsType.xlDataLabelsShowValue, Optional LegendKey As Object, Optional AutoText As Object, Optional HasLeaderLines As Object, Optional ShowSeriesName As Object, Optional ShowCategoryName As Object, Optional ShowValue As Object, Optional ShowPercentage As Object, Optional ShowBubbleSize As Object, Optional Separator As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyDataLabels : Microsoft.Office.Interop.Word.XlDataLabelsType * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; unit" Usage="chart.ApplyDataLabels (Type, LegendKey, AutoText, HasLeaderLines, ShowSeriesName, ShowCategoryName, ShowValue, ShowPercentage, ShowBubbleSize, Separator)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -160,18 +165,18 @@
         <Parameter Name="Separator" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">必需<see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" />要应用的数据标签的类型。</param>
+        <param name="Type">必需 <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> 要应用的数据标签的类型。</param>
         <param name="LegendKey"><b>True</b> 显示图例项标示点旁。 默认值为 <b>False</b>。</param>
         <param name="AutoText"><b>如此</b> 如果对象自动生成合适的文字内容。</param>
-        <param name="HasLeaderLines">对于<see cref="T:Microsoft.Office.Interop.Word.Chart" />和<see cref="T:Microsoft.Office.Interop.Word.Series" />对象, 如果系列有引导线,<b>则为 True</b> 。</param>
+        <param name="HasLeaderLines">对于 <see cref="T:Microsoft.Office.Interop.Word.Chart" /> 和 <see cref="T:Microsoft.Office.Interop.Word.Series" /> 对象，如果系列有引导线，<b>则为 True</b> 。</param>
         <param name="ShowSeriesName">传递布尔值以启用或禁用数据标签的系列名称。</param>
         <param name="ShowCategoryName">传递布尔值以启用或禁用数据标签的分类名称。</param>
         <param name="ShowValue">传递布尔值以启用或禁用数据标签的值。</param>
-        <param name="ShowPercentage">一个布尔值, 用于启用或禁用数据标签的百分比。</param>
+        <param name="ShowPercentage">一个布尔值，用于启用或禁用数据标签的百分比。</param>
         <param name="ShowBubbleSize">传递布尔值以启用或禁用数据标签的气泡大小。</param>
         <param name="Separator">数据标签的分隔符。</param>
         <summary>将数据标签应用于图表中的所有系列。</summary>
-        <remarks><para>下表显示了可<see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" />传递给<paramref name="Type" /> <see cref="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />方法参数的参数。</para>
+        <remarks><para>下表显示了 <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> 可传递给 <paramref name="Type" /> 方法参数的参数 <see cref="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 。</para>
           <list type="table">
             <item>
               <description>
@@ -206,6 +211,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyLayout([in]int32 Layout, [in]object ChartType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ApplyLayout(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ApplyLayout (Layout As Integer, Optional ChartType As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyLayout : int * obj -&gt; unit" Usage="chart.ApplyLayout (Layout, ChartType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -225,7 +231,7 @@
       </Parameters>
       <Docs>
         <param name="Layout"><b>Integer</b>指定布局的类型。  版式类型由 1 到 10 的数字表示。</param>
-        <param name="ChartType">包含<b>XlChartType</b>常量的<b>对象</b>, 该常量表示图表的类型。</param>
+        <param name="ChartType">包含<b>XlChartType</b>常量的<b>对象</b>，该常量表示图表的类型。</param>
         <summary>应用功能区中显示的版式。</summary>
         <remarks><para>在当前图表类型上使用版式时，会将介于 1 到 10 之间的数字应用于该图表类型。  还可以将某一图表类型的版式应用于另一个图表类型。  例如，可以将折线图中的可用版式应用于柱形图。  版式只会添加可用于该特定图表类型的图表元素。</para>
           <para> </para></remarks>
@@ -237,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Area3DGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Area3DGroup As ChartGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Area3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Area3DGroup : Microsoft.Office.Interop.Word.ChartGroup" Usage="Microsoft.Office.Interop.Word.Chart.Area3DGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -270,6 +277,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AreaGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.AreaGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AreaGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member AreaGroups : obj -&gt; obj" Usage="chart.AreaGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -294,7 +302,7 @@
       </Parameters>
       <Docs>
         <param name="Index">可选<b>对象</b>图表组编号。</param>
-        <summary>在二维图表中, 返回一个对象, 该对象代表单个区域图表组 (一个<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或一个面积图组的集合 (一个<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合)。</summary>
+        <summary>在二维图表中，返回一个对象，该对象代表单个区域图表组（一个 <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> 对象）或一个面积图组的集合（一个 <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> 集合）。</summary>
         <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,6 +312,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AutoFormat([in]int32 Gallery, [in]object Format) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.AutoFormat(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AutoFormat (Gallery As Integer, Optional Format As Object)" />
+      <MemberSignature Language="F#" Value="abstract member AutoFormat : int * obj -&gt; unit" Usage="chart.AutoFormat (Gallery, Format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -327,7 +336,7 @@
       <Docs>
         <param name="Gallery"><b>Integer</b></param>
         <param name="Format"><b>Object</b></param>
-        <summary>此 API 支持 Visual Studio Tools for Office 基础结构, 不应在代码中直接使用。</summary>
+        <summary>此 API 支持 Visual Studio Tools for Office 基础结构，不应在代码中直接使用。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -337,6 +346,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.AutoScaling" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScaling As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoScaling { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScaling : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.AutoScaling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -363,9 +373,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>缩放三维图表, 使其大小接近于等效的二维图表。 该<see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />属性必须为<b>True</b>。 读/写。</summary>
-        <value><b>Boolean 类型</b>
-          <b>如此</b>如果 Microsoft Word 缩放三维图表, 使其大小接近于等效的二维图表;否则<b>为 False</b>。</value>
+        <summary>缩放三维图表，使其大小接近于等效的二维图表。 该 <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> 属性必须为<b>True</b>。 读/写。</summary>
+        <value>如果 Microsoft Word 缩放三维图表，使其大小接近于等效的二维图表，则<b>布尔</b>
+          <b>值为 True</b> ;否则<b>为 False</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,6 +384,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Axes([in]object Type, [in]valuetype Microsoft.Office.Interop.Word.XlAxisGroup AxisGroup) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Axes(System.Object,Microsoft.Office.Interop.Word.XlAxisGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function Axes (Optional Type As Object, Optional AxisGroup As XlAxisGroup = Microsoft.Office.Interop.Word.XlAxisGroup.xlPrimary) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Axes : obj * Microsoft.Office.Interop.Word.XlAxisGroup -&gt; obj" Usage="chart.Axes (Type, AxisGroup)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -395,8 +406,8 @@
         <Parameter Name="AxisGroup" Type="Microsoft.Office.Interop.Word.XlAxisGroup" />
       </Parameters>
       <Docs>
-        <param name="Type">必需的<b>对象</b>指定要返回的轴。 <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />可以是下列常量之一: <b>xlValue</b>、 <b>xlCategory</b>或<b>xlSeriesAxis</b> (<b>xlSeriesAxis</b>仅对三维图表有效)。</param>
-        <param name="AxisGroup">Optional <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />指定轴组。 如果省略该参数，则使用主坐标轴组。 三维图表仅有一个坐标轴组。</param>
+        <param name="Type">必需的<b>对象</b>指定要返回的轴。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> 常量之一： <b>xlValue</b>、 <b>xlCategory</b>或<b>xlSeriesAxis</b> （<b>xlSeriesAxis</b>仅对三维图表有效）。</param>
+        <param name="AxisGroup">Optional <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> 指定轴组。 如果省略该参数，则使用主坐标轴组。 三维图表仅有一个坐标轴组。</param>
         <summary>获取表示单个轴或图表上的轴集合的对象。</summary>
         <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
@@ -408,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.BackWall" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackWall As Walls" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Walls ^ BackWall { Microsoft::Office::Interop::Word::Walls ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BackWall : Microsoft.Office.Interop.Word.Walls" Usage="Microsoft.Office.Interop.Word.Chart.BackWall" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -425,7 +437,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Walls" />对象, 该对象允许用户单独对三维图表的背景墙进行格式设置。 只读。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Walls" /> 对象，该对象允许用户单独对三维图表的背景墙进行格式设置。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -436,6 +448,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Bar3DGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bar3DGroup As ChartGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Bar3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Bar3DGroup : Microsoft.Office.Interop.Word.ChartGroup" Usage="Microsoft.Office.Interop.Word.Chart.Bar3DGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -469,6 +482,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object BarGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.BarGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function BarGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member BarGroups : obj -&gt; obj" Usage="chart.BarGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -493,7 +507,7 @@
       </Parameters>
       <Docs>
         <param name="Index">Optional<b>对象</b>指定图表组。</param>
-        <summary>在二维图表中, 返回代表单个条形图图表组 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或条形图图表组集合 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合) 的对象。</summary>
+        <summary>在二维图表中，返回代表单个条形图图表组（ <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> 对象）或条形图图表组集合（ <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> 集合）的对象。</summary>
         <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -504,6 +518,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.BarShape" />
       <MemberSignature Language="VB.NET" Value="Public Property BarShape As XlBarShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlBarShape BarShape { Microsoft::Office::Interop::Word::XlBarShape get(); void set(Microsoft::Office::Interop::Word::XlBarShape value); };" />
+      <MemberSignature Language="F#" Value="member this.BarShape : Microsoft.Office.Interop.Word.XlBarShape with get, set" Usage="Microsoft.Office.Interop.Word.Chart.BarShape" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -535,6 +550,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.CategoryLabelLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryLabelLevel As XlCategoryLabelLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlCategoryLabelLevel CategoryLabelLevel { Microsoft::Office::Interop::Word::XlCategoryLabelLevel get(); void set(Microsoft::Office::Interop::Word::XlCategoryLabelLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.CategoryLabelLevel : Microsoft.Office.Interop.Word.XlCategoryLabelLevel with get, set" Usage="Microsoft.Office.Interop.Word.Chart.CategoryLabelLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -555,7 +571,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlCategoryLabelLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.XlCategoryLabelLevel" />常量, 指定图表分类标签的源级别。 读写。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Interop.Word.XlCategoryLabelLevel" /> 常量，指定图表分类标签的源级别。 读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -566,6 +582,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartArea" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartArea As ChartArea" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartArea ^ ChartArea { Microsoft::Office::Interop::Word::ChartArea ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChartArea : Microsoft.Office.Interop.Word.ChartArea" Usage="Microsoft.Office.Interop.Word.Chart.ChartArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -586,7 +603,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ChartArea" />对象, 表示图表的完整图表区域。 只读。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.ChartArea" /> 对象，表示图表的完整图表区域。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartArea" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -597,6 +614,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ChartColor As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChartColor { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ChartColor : obj with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ChartColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -629,6 +647,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartData As ChartData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartData ^ ChartData { Microsoft::Office::Interop::Word::ChartData ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChartData : Microsoft.Office.Interop.Word.ChartData" Usage="Microsoft.Office.Interop.Word.Chart.ChartData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -657,6 +676,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartGroups(Optional Index As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChartGroups[System::Object ^] { System::Object ^ get(System::Object ^ Index); };" />
+      <MemberSignature Language="F#" Value="member this.ChartGroups(obj) : obj" Usage="Microsoft.Office.Interop.Word.Chart.ChartGroups" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -680,7 +700,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">图表组的编号。 如果指定, 则返回<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />单个对象。 如果省略, 则<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />返回一个对象, 其中包含该图表的<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />每个对象的集合。</param>
+        <param name="Index">图表组的编号。 如果指定， <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> 则返回单个对象。 如果省略， <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> 则返回一个对象，其中包含该图表的每个对象的集合 <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> 。</param>
         <summary>返回代表单个图表组或所有图表组集合的某个对象。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
@@ -692,6 +712,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property ChartStyle As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChartStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ChartStyle : obj with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ChartStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -724,6 +745,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartTitle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartTitle As ChartTitle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartTitle ^ ChartTitle { Microsoft::Office::Interop::Word::ChartTitle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChartTitle : Microsoft.Office.Interop.Word.ChartTitle" Usage="Microsoft.Office.Interop.Word.Chart.ChartTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -744,9 +766,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartTitle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> object 类型的对象, 该对象代表指定图表的标题。 只读。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> object 类型的对象，该对象代表指定图表的标题。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /></value>
-        <remarks><para>该<see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />对象不存在, 如果图表的<see cref="P:Microsoft.Office.Interop.Word.Chart.HasTitle" />属性为<b>True</b>, 则不能使用该对象。</para>
+        <remarks><para>该 <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> 对象不存在，如果图表的属性为 True，则不能使用该对象 <see cref="P:Microsoft.Office.Interop.Word.Chart.HasTitle" /> 。 <b>True</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -756,6 +778,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartType" />
       <MemberSignature Language="VB.NET" Value="Public Property ChartType As XlChartType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::XlChartType ChartType { Microsoft::Office::Core::XlChartType get(); void set(Microsoft::Office::Core::XlChartType value); };" />
+      <MemberSignature Language="F#" Value="member this.ChartType : Microsoft.Office.Core.XlChartType with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ChartType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -787,6 +810,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ChartWizard([in]object Source, [in]object Gallery, [in]object Format, [in]object PlotBy, [in]object CategoryLabels, [in]object SeriesLabels, [in]object HasLegend, [in]object Title, [in]object CategoryTitle, [in]object ValueTitle, [in]object ExtraTitle) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ChartWizard (Optional Source As Object, Optional Gallery As Object, Optional Format As Object, Optional PlotBy As Object, Optional CategoryLabels As Object, Optional SeriesLabels As Object, Optional HasLegend As Object, Optional Title As Object, Optional CategoryTitle As Object, Optional ValueTitle As Object, Optional ExtraTitle As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ChartWizard : obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; unit" Usage="chart.ChartWizard (Source, Gallery, Format, PlotBy, CategoryLabels, SeriesLabels, HasLegend, Title, CategoryTitle, ValueTitle, ExtraTitle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -818,18 +842,18 @@
       </Parameters>
       <Docs>
         <param name="Source">可选<b>对象</b>包含新图表的源数据的区域。 如果省略此参数，Microsoft Word 将编辑活动图表工作表或活动工作表上处于选定状态的图表。</param>
-        <param name="Gallery">Optional<b>对象</b>包含<see cref="T:Microsoft.Office.Interop.Excel.XlChartType" />指定图表类型的常量之一。</param>
-        <param name="Format">可选<b>对象</b>内置自动套用格式的选项编号。 可为从 1 到 10 的数字，其取值依赖于库的类型。 如果省略此参数, Microsoft Word 将根据库的类型和数据源选择默认值。</param>
-        <param name="PlotBy">Optional<b>对象</b>指定每个系列的数据是否在行或列中。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />常量之一: <b>xlRows</b>或<b>xlColumns</b>。</param>
-        <param name="CategoryLabels">Optional<b>对象</b>包含一个<b>整数</b>, 用于指定包含分类标签的源区域中的行数或列数。 合法值为从 0（零）至小于相应分类或系列的最大个数间的某一数字。</param>
-        <param name="SeriesLabels">Optional<b>对象</b>包含一个<b>整数</b>, 用于指定包含系列标签的源范围内的行数或列数。 合法值为从 0（零）至小于相应分类或系列的最大个数间的某一数字。</param>
+        <param name="Gallery">Optional<b>对象</b>包含 <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" /> 指定图表类型的常量之一。</param>
+        <param name="Format">可选<b>对象</b>内置自动套用格式的选项编号。 可为从 1 到 10 的数字，其取值依赖于库的类型。 如果省略此参数，Microsoft Word 将根据库的类型和数据源选择默认值。</param>
+        <param name="PlotBy">Optional<b>对象</b>指定每个系列的数据是否在行或列中。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> 常量之一： <b>XlRows</b>或<b>xlColumns</b>。</param>
+        <param name="CategoryLabels">Optional<b>对象</b>包含一个<b>整数</b>，用于指定包含分类标签的源区域中的行数或列数。 合法值为从 0（零）至小于相应分类或系列的最大个数间的某一数字。</param>
+        <param name="SeriesLabels">Optional<b>对象</b>包含一个<b>整数</b>，用于指定包含系列标签的源范围内的行数或列数。 合法值为从 0（零）至小于相应分类或系列的最大个数间的某一数字。</param>
         <param name="HasLegend">可选<b>对象</b>设置为<b>True</b>以包含图例。</param>
         <param name="Title">可选<b>对象</b>图表标题文本。</param>
         <param name="CategoryTitle">可选<b>对象</b>分类轴标题文本。</param>
         <param name="ValueTitle">可选<b>对象</b>数值轴标题文本。</param>
         <param name="ExtraTitle">可选<b>对象</b>三维图表的系列轴标题或二维图表的第二个数值轴标题。</param>
-        <summary>修改给定图表的属性。 可使用本方法快速设置图表的格式，而不必逐个设置所有属性。 此方法是非交互式的, 它只更改指定的属性。</summary>
-        <remarks><para>如果<paramref name="Source" />省略, 并且所选内容不是活动文档中的图表, 则此方法将失败并出现错误。</para>
+        <summary>修改给定图表的属性。 可使用本方法快速设置图表的格式，而不必逐个设置所有属性。 此方法是非交互式的，它只更改指定的属性。</summary>
+        <remarks><para>如果 <paramref name="Source" /> 省略，并且所选内容不是活动文档中的图表，则此方法将失败并出现错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -839,6 +863,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ClearToMatchColorStyle" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearToMatchColorStyle ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearToMatchColorStyle();" />
+      <MemberSignature Language="F#" Value="abstract member ClearToMatchColorStyle : unit -&gt; unit" Usage="chart.ClearToMatchColorStyle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -865,6 +890,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ClearToMatchStyle" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearToMatchStyle ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearToMatchStyle();" />
+      <MemberSignature Language="F#" Value="abstract member ClearToMatchStyle : unit -&gt; unit" Usage="chart.ClearToMatchStyle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -891,6 +917,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Column3DGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column3DGroup As ChartGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Column3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column3DGroup : Microsoft.Office.Interop.Word.ChartGroup" Usage="Microsoft.Office.Interop.Word.Chart.Column3DGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -924,6 +951,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ColumnGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ColumnGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ColumnGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ColumnGroups : obj -&gt; obj" Usage="chart.ColumnGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -948,7 +976,7 @@
       </Parameters>
       <Docs>
         <param name="Index">可选<b>对象</b>。 指定图表组。</param>
-        <summary>在二维图表中, 返回代表单个柱形图组 (一个<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或柱形图组集合 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合) 的对象。</summary>
+        <summary>在二维图表中，返回代表单个柱形图组（一个 <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> 对象）或柱形图组集合（ <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> 集合）的对象。</summary>
         <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -958,6 +986,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Copy([in]object Before, [in]object After) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Copy(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy (Optional Before As Object, Optional After As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Copy : obj * obj -&gt; unit" Usage="chart.Copy (Before, After)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -990,6 +1019,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyPicture([in]valuetype Microsoft.Office.Interop.Word.XlPictureAppearance Appearance, [in]valuetype Microsoft.Office.Interop.Word.XlCopyPictureFormat Format, [in]valuetype Microsoft.Office.Interop.Word.XlPictureAppearance Size) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.CopyPicture(Microsoft.Office.Interop.Word.XlPictureAppearance,Microsoft.Office.Interop.Word.XlCopyPictureFormat,Microsoft.Office.Interop.Word.XlPictureAppearance)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyPicture (Optional Appearance As XlPictureAppearance = Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen, Optional Format As XlCopyPictureFormat = Microsoft.Office.Interop.Word.XlCopyPictureFormat.xlPicture, Optional Size As XlPictureAppearance = Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter)" />
+      <MemberSignature Language="F#" Value="abstract member CopyPicture : Microsoft.Office.Interop.Word.XlPictureAppearance * Microsoft.Office.Interop.Word.XlCopyPictureFormat * Microsoft.Office.Interop.Word.XlPictureAppearance -&gt; unit" Usage="chart.CopyPicture (Appearance, Format, Size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1012,9 +1042,9 @@
         <Parameter Name="Size" Type="Microsoft.Office.Interop.Word.XlPictureAppearance" />
       </Parameters>
       <Docs>
-        <param name="Appearance">可选<see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" />指定图片的复制方式。 默认值为 <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen" />。</param>
-        <param name="Format">可选<see cref="T:Microsoft.Office.Interop.Word.XlCopyPictureFormat" />图片的格式。 默认值为 <see cref="F:Microsoft.Office.Interop.Word.XlCopyPictureFormat.xlPicture" />。</param>
-        <param name="Size">可选<see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" /> : 当对象是图表工作表上的图表 (未嵌入在工作表上) 时复制的图片的大小。 默认值为 <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter" />。</param>
+        <param name="Appearance">可选 <see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" /> 指定图片的复制方式。 默认值为 <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen" />。</param>
+        <param name="Format">可选 <see cref="T:Microsoft.Office.Interop.Word.XlCopyPictureFormat" /> 图片的格式。 默认值为 <see cref="F:Microsoft.Office.Interop.Word.XlCopyPictureFormat.xlPicture" />。</param>
+        <param name="Size">可选 <see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" /> ：当对象是图表工作表上的图表（未嵌入在工作表上）时复制的图片的大小。 默认值为 <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter" />。</param>
         <summary>将所选对象作为图片复制到剪贴板。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1025,6 +1055,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Corners" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Corners As Corners" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Corners ^ Corners { Microsoft::Office::Interop::Word::Corners ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Corners : Microsoft.Office.Interop.Word.Corners" Usage="Microsoft.Office.Interop.Word.Chart.Corners" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1059,6 +1090,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Chart.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1076,9 +1108,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个32位整数, 该<b>整数</b>表示在其中创建指定对象的应用程序。 只读。</summary>
+        <summary>返回一个32位整数，该<b>整数</b>表示在其中创建指定对象的应用程序。 只读。</summary>
         <value><b>Integer</b></value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.Chart.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则该 <see cref="P:Microsoft.Office.Interop.Word.Chart.Creator" /> 属性返回十六进制数字是4d535744，表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1088,6 +1120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.DataTable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataTable As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DataTable ^ DataTable { Microsoft::Office::Interop::Word::DataTable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataTable : Microsoft.Office.Interop.Word.DataTable" Usage="Microsoft.Office.Interop.Word.Chart.DataTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1105,7 +1138,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DataTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.DataTable" />对象, 表示图表模拟运算表。 只读。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.DataTable" /> 对象，表示图表模拟运算表。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.DataTable" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1116,6 +1149,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; obj" Usage="chart.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1145,6 +1179,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.DeleteHiddenContent" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteHiddenContent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteHiddenContent();" />
+      <MemberSignature Language="F#" Value="abstract member DeleteHiddenContent : unit -&gt; unit" Usage="chart.DeleteHiddenContent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1173,6 +1208,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.DepthPercent" />
       <MemberSignature Language="VB.NET" Value="Public Property DepthPercent As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DepthPercent { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DepthPercent : int with get, set" Usage="Microsoft.Office.Interop.Word.Chart.DepthPercent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1211,6 +1247,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.DisplayBlanksAs" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayBlanksAs As XlDisplayBlanksAs" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlDisplayBlanksAs DisplayBlanksAs { Microsoft::Office::Interop::Word::XlDisplayBlanksAs get(); void set(Microsoft::Office::Interop::Word::XlDisplayBlanksAs value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayBlanksAs : Microsoft.Office.Interop.Word.XlDisplayBlanksAs with get, set" Usage="Microsoft.Office.Interop.Word.Chart.DisplayBlanksAs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1237,7 +1274,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlDisplayBlanksAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置图表上的空白单元格的绘制方式。 可以是<see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" />常量之一。 读/写。</summary>
+        <summary>返回或设置图表上的空白单元格的绘制方式。 可以是 <see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" /> 常量之一。 读/写。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1247,6 +1284,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object DoughnutGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.DoughnutGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function DoughnutGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member DoughnutGroups : obj -&gt; obj" Usage="chart.DoughnutGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1271,7 +1309,7 @@
       </Parameters>
       <Docs>
         <param name="Index">可选<b>对象</b>。 指定图表组。</param>
-        <summary>在二维图表中, 返回代表单个圆环图图表组 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或圆环图图表组集合 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合) 的对象。</summary>
+        <summary>在二维图表中，返回代表单个圆环图图表组（ <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> 对象）或圆环图图表组集合（ <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> 集合）的对象。</summary>
         <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1282,6 +1320,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Elevation" />
       <MemberSignature Language="VB.NET" Value="Public Property Elevation As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Elevation { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Elevation : int with get, set" Usage="Microsoft.Office.Interop.Word.Chart.Elevation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1312,7 +1351,7 @@
         <value><b>Integer</b></value>
         <remarks><para>图表的仰角以角度为单位表示观察图表的高度。对于绝大多数图表类型，其默认值为 15。本属性的值必须介于 -90 到 90 之间，但三维条形图除外，对于三维条形图，该值必须介于 0 到 44 之间。</para>
           <para>
-            <b>注意</b>: 此属性仅适用于三维图表。</para>
+            <b>注意</b>：此属性仅适用于三维图表。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1321,6 +1360,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Export([in]string FileName, [in]object FilterName, [in]object Interactive) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Export(System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Export (FileName As String, Optional FilterName As Object, Optional Interactive As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Export : string * obj * obj -&gt; bool" Usage="chart.Export (FileName, FilterName, Interactive)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1342,8 +1382,8 @@
       <Docs>
         <param name="FileName">必需的<b>字符串</b>导出的文件的名称。</param>
         <param name="FilterName">Optional<b>对象</b>显示在注册表中的图形筛选器的与语言无关的名称。</param>
-        <param name="Interactive">可选<b>对象</b><b>True</b>显示包含筛选器特定的选项的对话框。 如果此参数为<b>False</b>, Microsoft Word 将使用筛选器的默认值。 默认值为 <b>False</b>。</param>
-        <summary>以图形格式导出图表。 此方法返回一个<b>布尔</b>值, 指示导出是否成功。</summary>
+        <param name="Interactive">可选<b>对象</b><b>True</b>显示包含筛选器特定的选项的对话框。 如果此参数为<b>False</b>，Microsoft Word 将使用筛选器的默认值。 默认值为 <b>False</b>。</param>
+        <summary>以图形格式导出图表。 此方法返回一个<b>布尔</b>值，指示导出是否成功。</summary>
         <returns><b>Boolean</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1354,6 +1394,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Floor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Floor As Floor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Floor ^ Floor { Microsoft::Office::Interop::Word::Floor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Floor : Microsoft.Office.Interop.Word.Floor" Usage="Microsoft.Office.Interop.Word.Chart.Floor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1374,7 +1415,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Floor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Floor" />对象, 表示三维图表的基底。 只读。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Floor" /> 对象，表示三维图表的基底。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.Floor" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1384,6 +1425,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object FullSeriesCollection([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.FullSeriesCollection(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function FullSeriesCollection (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member FullSeriesCollection : obj -&gt; obj" Usage="chart.FullSeriesCollection Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1405,7 +1447,7 @@
       </Parameters>
       <Docs>
         <param name="Index">要返回的系列的系列集合中的索引号。</param>
-        <summary>返回指定图表中所有系列的集合, 或指定系列中的所有系列的集合。</summary>
+        <summary>返回指定图表中所有系列的集合，或指定系列中的所有系列的集合。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1416,6 +1458,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.GapDepth" />
       <MemberSignature Language="VB.NET" Value="Public Property GapDepth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GapDepth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.GapDepth : int with get, set" Usage="Microsoft.Office.Interop.Word.Chart.GapDepth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1442,10 +1485,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置三维图表中的数据系列之间的距离 (以标记宽度的百分比表示)。 该属性的值必须介于 0 到 500 之间。 读/写。</summary>
+        <summary>返回或设置三维图表中的数据系列之间的距离（以标记宽度的百分比表示）。 该属性的值必须介于 0 到 500 之间。 读/写。</summary>
         <value><b>Integer</b></value>
         <remarks><para>
-            <b>注意</b>: 此属性仅适用于三维图表。</para>
+            <b>注意</b>：此属性仅适用于三维图表。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1455,6 +1498,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.GetChartElement(System.Int32,System.Int32,System.Int32@,System.Int32@,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetChartElement (x As Integer, y As Integer, ByRef ElementID As Integer, ByRef Arg1 As Integer, ByRef Arg2 As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetChartElement(int x, int y, [Runtime::InteropServices::Out] int % ElementID, [Runtime::InteropServices::Out] int % Arg1, [Runtime::InteropServices::Out] int % Arg2);" />
+      <MemberSignature Language="F#" Value="abstract member GetChartElement : int * int * int * int * int -&gt; unit" Usage="chart.GetChartElement (x, y, ElementID, Arg1, Arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1471,24 +1515,24 @@
       <Parameters>
         <Parameter Name="x" Type="System.Int32" />
         <Parameter Name="y" Type="System.Int32" />
-        <Parameter Name="ElementID" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="Arg1" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="Arg2" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="ElementID" Type="System.Int32" RefType="out" />
+        <Parameter Name="Arg1" Type="System.Int32" RefType="out" />
+        <Parameter Name="Arg2" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="x">Chart 元素的 X 坐标所必需的<b>整数</b>。</param>
         <param name="y">必需<b>整数</b>chart 元素的 Y 坐标。</param>
-        <param name="ElementID"><b>Integer</b>方法返回时, 此参数包含指定坐标<see cref="T:Microsoft.Office.Interop.Word.XlChartItem" />处的 chart 元素的值。 有关详细信息，请参阅“备注”部分。</param>
-        <param name="Arg1"><b>Integer</b>方法返回时, 此参数包含与 chart 元素相关的信息。 有关详细信息，请参阅“备注”部分。</param>
-        <param name="Arg2"><b>Integer</b>方法返回时, 此参数包含与 chart 元素相关的信息。 有关详细信息，请参阅“备注”部分。</param>
+        <param name="ElementID"><b>Integer</b>方法返回时，此参数包含 <see cref="T:Microsoft.Office.Interop.Word.XlChartItem" /> 指定坐标处的 chart 元素的值。 有关详细信息，请参阅“备注”部分。</param>
+        <param name="Arg1"><b>Integer</b>方法返回时，此参数包含与 chart 元素相关的信息。 有关详细信息，请参阅“备注”部分。</param>
+        <param name="Arg2"><b>Integer</b>方法返回时，此参数包含与 chart 元素相关的信息。 有关详细信息，请参阅“备注”部分。</param>
         <summary>返回有关指定的 X 和 Y 坐标的 chart 元素的信息。 本方法的与众不同之处在于只需指定前两个参数的值。 Microsoft Word 会为其余参数赋值，代码应在方法返回时检查这些值。</summary>
-        <remarks><para>该方法返回<paramref name="ElementID" />后的值决定是否<paramref name="Arg1" />并<paramref name="Arg2" />包含任何信息, 如下表所示。</para>
+        <remarks><para><paramref name="ElementID" />该方法返回后的值决定是否 <paramref name="Arg1" /> 并 <paramref name="Arg2" /> 包含任何信息，如下表所示。</para>
           <list type="table">
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlAxis" />
               </description>
-              <description>不足</description>
+              <description> 21</description>
               <description>AxisIndex</description>
               <description>AxisType</description>
             </item>
@@ -1496,7 +1540,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlAxisTitle" />
               </description>
-              <description>×</description>
+              <description>17 </description>
               <description>AxisIndex</description>
               <description>AxisType</description>
             </item>
@@ -1512,7 +1556,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlMajorGridlines" />
               </description>
-              <description>个</description>
+              <description>15 </description>
               <description>AxisIndex</description>
               <description>AxisType</description>
             </item>
@@ -1520,7 +1564,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlMinorGridlines" />
               </description>
-              <description>位</description>
+              <description>16 </description>
               <description>AxisIndex</description>
               <description>AxisType</description>
             </item>
@@ -1584,7 +1628,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlUpBars" />
               </description>
-              <description>18</description>
+              <description>18 </description>
               <description>GroupIndex</description>
               <description>None</description>
             </item>
@@ -1600,7 +1644,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlChartTitle" />
               </description>
-              <description>4</description>
+              <description>4 </description>
               <description>无</description>
               <description>无</description>
             </item>
@@ -1608,7 +1652,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlCorners" />
               </description>
-              <description>型</description>
+              <description>6 </description>
               <description>无</description>
               <description>无</description>
             </item>
@@ -1616,7 +1660,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataTable" />
               </description>
-              <description>步</description>
+              <description>7 </description>
               <description>无</description>
               <description>无</description>
             </item>
@@ -1664,7 +1708,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlWalls" />
               </description>
-              <description>5</description>
+              <description>5 </description>
               <description>无</description>
               <description>无</description>
             </item>
@@ -1672,7 +1716,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataLabel" />
               </description>
-              <description>步</description>
+              <description>7 </description>
               <description>SeriesIndex</description>
               <description>PointIndex</description>
             </item>
@@ -1680,7 +1724,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlErrorBars" />
               </description>
-              <description>第</description>
+              <description>9 </description>
               <description>SeriesIndex</description>
               <description>无</description>
             </item>
@@ -1688,7 +1732,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegendEntry" />
               </description>
-              <description>12</description>
+              <description>12 </description>
               <description>SeriesIndex</description>
               <description>无</description>
             </item>
@@ -1712,7 +1756,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlShape" />
               </description>
-              <description>日</description>
+              <description>14 </description>
               <description>ShapeIndex</description>
               <description>无</description>
             </item>
@@ -1720,7 +1764,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlTrendline" />
               </description>
-              <description>utf-8</description>
+              <description>8 </description>
               <description>SeriesIndex</description>
               <description>TrendLineIndex</description>
             </item>
@@ -1728,7 +1772,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlXErrorBars" />
               </description>
-              <description>10 </description>
+              <description>10  </description>
               <description>SeriesIndex</description>
               <description>无</description>
             </item>
@@ -1741,39 +1785,39 @@
               <description>无</description>
             </item>
           </list>
-          <para>下表说明了方法返回后<paramref name="Arg1" />和<paramref name="Arg2" />的含义。</para>
+          <para>下表说明了 <paramref name="Arg1" /> <paramref name="Arg2" /> 方法返回后和的含义。</para>
           <list type="table">
             <item>
               <description>AxisIndex</description>
-              <description>指定轴主要或辅助。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />常量之一: <b>xlPrimary</b>或<b>xlSecondary</b>。</description>
+              <description>指定轴主要或辅助。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> 常量之一： <b>XlPrimary</b>或<b>xlSecondary</b>。</description>
             </item>
             <item>
               <description>AxisType</description>
-              <description>指定坐标轴类型。 <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />可以是下列常量之一: <b>xlCategory</b>、 <b>xlSeriesAxis</b>或<b>xlValue</b>。</description>
+              <description>指定坐标轴类型。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> 常量之一： <b>xlCategory</b>、 <b>xlSeriesAxis</b>或<b>xlValue</b>。</description>
             </item>
             <item>
               <description>DropZoneType</description>
-              <description>指定拖放区域类型: 列、 数据、 页或行字段。 <see cref="T:Microsoft.Office.Interop.Word.XlPivotFieldOrientation" />可以是下列常量之一: <b>xlColumnField</b>、 <b>xlDataField</b>、 <b>xlPageField</b>或<b>xlRowField</b>。 列和行字段常量分别指定系列和分类字段。</description>
+              <description>指定拖放区域类型: 列、 数据、 页或行字段。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.XlPivotFieldOrientation" /> 常量之一： <b>xlColumnField</b>、 <b>XlDataField</b>、 <b>xlPageField</b>或<b>xlRowField</b>。 列和行字段常量分别指定系列和分类字段。</description>
             </item>
             <item>
               <description>GroupIndex</description>
-              <description>指定特定图表组在<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合中的偏移量。</description>
+              <description>指定特定图表组在集合中的偏移量 <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> 。</description>
             </item>
             <item>
               <description>PointIndex</description>
-              <description>指定系列中的特定<see cref="T:Microsoft.Office.Interop.Word.Points" />点在集合中的偏移量。 -1 表示选定了所有数据点。</description>
+              <description>指定 <see cref="T:Microsoft.Office.Interop.Word.Points" /> 系列中的特定点在集合中的偏移量。 -1 表示选定了所有数据点。</description>
             </item>
             <item>
               <description>SeriesIndex</description>
-              <description>指定特定系列在<see cref="T:Microsoft.Office.Interop.Word.Series" />集合中的偏移量。</description>
+              <description>指定特定系列在集合中的偏移量 <see cref="T:Microsoft.Office.Interop.Word.Series" /> 。</description>
             </item>
             <item>
               <description>ShapeIndex</description>
-              <description>指定特定形状在<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合中的偏移量。</description>
+              <description>指定特定形状在集合中的偏移量 <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> 。</description>
             </item>
             <item>
               <description>TrendlineIndex</description>
-              <description>指定系列中特定趋势<see cref="T:Microsoft.Office.Interop.Word.Trendlines" />线在集合中的偏移量。</description>
+              <description>指定 <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> 系列中特定趋势线在集合中的偏移量。</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -1785,6 +1829,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasAxis(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Property HasAxis(Optional Index1 As Object, Optional Index2 As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ HasAxis[System::Object ^, System::Object ^] { System::Object ^ get(System::Object ^ Index1, System::Object ^ Index2); void set(System::Object ^ Index1, System::Object ^ Index2, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HasAxis(obj * obj) : obj with get, set" Usage="Microsoft.Office.Interop.Word.Chart.HasAxis" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1815,12 +1860,12 @@
         <Parameter Name="Index2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index1">必需的<b>对象</b>轴类型。 系列坐标轴仅应用于三维图表。 可以是<see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />常量之一。</param>
-        <param name="Index2">可选<b>对象</b>轴组。 三维图表有只有一组轴。 可以是<see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />常量之一。</param>
+        <param name="Index1">必需的<b>对象</b>轴类型。 系列坐标轴仅应用于三维图表。 可以是 <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> 常量之一。</param>
+        <param name="Index2">可选<b>对象</b>轴组。 三维图表有只有一组轴。 可以是 <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> 常量之一。</param>
         <summary>返回或设置图表中出现的坐标轴。 读/写。</summary>
         <value><b>Object</b></value>
         <remarks><para>设置该属性时，必须至少输入一个参数的值。</para>
-          <para>如果更改图表类型或<see cref="P:Microsoft.Office.Interop.Word.Axis.AxisGroup" />属性, Microsoft Word 可能会创建或删除坐标轴。</para>
+          <para>如果更改图表类型或属性，Microsoft Word 可能会创建或删除坐标轴 <see cref="P:Microsoft.Office.Interop.Word.Axis.AxisGroup" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1830,6 +1875,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasDataTable" />
       <MemberSignature Language="VB.NET" Value="Public Property HasDataTable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasDataTable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasDataTable : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.HasDataTable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1850,9 +1896,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置一个值, 该值指示是否<see cref="T:Microsoft.Office.Interop.Word.Chart" />具有模拟运算表。 读/写。</summary>
-        <value><b>Boolean 类型</b>
-          <b>如此</b>如果图表有模拟运算表。 否则<b>为 False</b></value>
+        <summary>获取或设置一个值，该值指示是否 <see cref="T:Microsoft.Office.Interop.Word.Chart" /> 具有模拟运算表。 读/写。</summary>
+        <value><b>Boolean</b>如果图表有模拟运算表，
+          <b>则该属性值为 True</b> 。 否则<b>为 False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1862,6 +1908,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasHiddenContent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasHiddenContent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasHiddenContent { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasHiddenContent : bool" Usage="Microsoft.Office.Interop.Word.Chart.HasHiddenContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1893,6 +1940,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasLegend" />
       <MemberSignature Language="VB.NET" Value="Public Property HasLegend As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLegend { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasLegend : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.HasLegend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1919,7 +1967,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>如果图表有图例, 则返回<b>True</b> 。 读/写。</summary>
+        <summary>如果图表有图例，则返回<b>True</b> 。 读/写。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1930,6 +1978,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasPivotFields" />
       <MemberSignature Language="VB.NET" Value="Public Property HasPivotFields As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasPivotFields { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasPivotFields : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.HasPivotFields" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1957,7 +2006,7 @@
       </ReturnValue>
       <Docs>
         <summary>确定是否在指定的数据透视图报表上显示数据透视图控件</summary>
-        <value><b>Boolean 类型</b>对于常规图表, 该属性总是返回<b>False</b>且不能进行设置。</value>
+        <value><b>Boolean 类型</b>对于常规图表，该属性总是返回<b>False</b>且不能进行设置。</value>
         <remarks><para>默认值为 <b>True</b> 。</para>
           <para> </para></remarks>
       </Docs>
@@ -1968,6 +2017,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property HasTitle As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasTitle { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HasTitle : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.HasTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1996,7 +2046,7 @@
       <Docs>
         <summary>如果坐标轴或图表有可见标题，则该属性值为 <b>True</b> 。 读/写。</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>图表标题由<see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />对象表示。</para>
+        <remarks><para>图表标题由 <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> 对象表示。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2006,6 +2056,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HeightPercent" />
       <MemberSignature Language="VB.NET" Value="Public Property HeightPercent As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HeightPercent { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.HeightPercent : int with get, set" Usage="Microsoft.Office.Interop.Word.Chart.HeightPercent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2043,6 +2094,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Legend" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Legend As Legend" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Legend ^ Legend { Microsoft::Office::Interop::Word::Legend ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Legend : Microsoft.Office.Interop.Word.Legend" Usage="Microsoft.Office.Interop.Word.Chart.Legend" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2063,7 +2115,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Legend</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Legend" />对象, 表示图表的图例。 只读。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Legend" /> 对象，表示图表的图例。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.Legend" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2074,6 +2126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Line3DGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line3DGroup As ChartGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Line3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Line3DGroup : Microsoft.Office.Interop.Word.ChartGroup" Usage="Microsoft.Office.Interop.Word.Chart.Line3DGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2107,6 +2160,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object LineGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.LineGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function LineGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member LineGroups : obj -&gt; obj" Usage="chart.LineGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2131,7 +2185,7 @@
       </Parameters>
       <Docs>
         <param name="Index">Optional<b>对象</b>指定图表组。</param>
-        <summary>在二维图表中, 返回代表单个折线图组 (一个<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或折线图图表组 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合) 的集合的对象。</summary>
+        <summary>在二维图表中，返回代表单个折线图组（一个 <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> 对象）或折线图图表组（集合）的集合的对象 <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> 。</summary>
         <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2142,6 +2196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Chart.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2169,6 +2224,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Paste([in]object Type) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Paste(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Paste (Optional Type As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Paste : obj -&gt; unit" Usage="chart.Paste Type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2189,7 +2245,7 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">指定要粘贴的图表信息（如果剪贴板中有一个图表）。 可以是下列<see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" />的<b>xlPasteFormats</b>、 <b>xlPasteFormulas</b>或<b>xlPasteAll</b>之一。 默认值为 <b>xlPasteAll</b>。 如果剪贴板上的数据不是图表数据，则不能使用该参数。 选择性</param>
+        <param name="Type">指定要粘贴的图表信息（如果剪贴板中有一个图表）。 可以是下列的 <see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" /> <b>xlPasteFormats</b>、 <b>xlPasteFormulas</b>或<b>xlPasteAll</b>之一。 默认值为 <b>xlPasteAll</b>。 如果剪贴板上的数据不是图表数据，则不能使用该参数。 选择性</param>
         <summary>将剪贴板中的图表数据粘贴到指定的图表中。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2200,6 +2256,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Perspective" />
       <MemberSignature Language="VB.NET" Value="Public Property Perspective As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Perspective { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Perspective : int with get, set" Usage="Microsoft.Office.Interop.Word.Chart.Perspective" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2226,9 +2283,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>Integer</b>类型的值, 该值代表三维图表视图的透视系数。</summary>
+        <summary>返回或设置一个<b>Integer</b>类型的值，该值代表三维图表视图的透视系数。</summary>
         <value><b>Integer</b></value>
-        <remarks><para>此属性的值必须是介于 0 和 100 之间。 如果该<see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />属性设置为<b>True</b>, 则忽略此属性。</para>
+        <remarks><para>此属性的值必须是介于 0 和 100 之间。 如果该 <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> 属性设置为<b>True</b>，则忽略此属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2238,6 +2295,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Pie3DGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pie3DGroup As ChartGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Pie3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pie3DGroup : Microsoft.Office.Interop.Word.ChartGroup" Usage="Microsoft.Office.Interop.Word.Chart.Pie3DGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2271,6 +2329,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object PieGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.PieGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function PieGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member PieGroups : obj -&gt; obj" Usage="chart.PieGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2295,7 +2354,7 @@
       </Parameters>
       <Docs>
         <param name="Index">Optional<b>对象</b>指定图表组。</param>
-        <summary>在二维图表中, 返回一个对象, 该对象代表单个饼图图表组 (一个<see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或一个饼图组的集合 (一个<see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合)。</summary>
+        <summary>在二维图表中，返回一个对象，该对象代表单个饼图图表组（一个 <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> 对象）或一个饼图组的集合（一个 <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> 集合）。</summary>
         <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2306,6 +2365,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.PivotLayout" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotLayout As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PivotLayout { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PivotLayout : obj" Usage="Microsoft.Office.Interop.Word.Chart.PivotLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2324,7 +2384,7 @@
       </ReturnValue>
       <Docs>
         <summary>不支持此对象。</summary>
-        <value>返回<see cref="T:System.Object" />。</value>
+        <value>返回 <see cref="T:System.Object" /> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2334,6 +2394,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.PlotArea" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlotArea As PlotArea" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::PlotArea ^ PlotArea { Microsoft::Office::Interop::Word::PlotArea ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PlotArea : Microsoft.Office.Interop.Word.PlotArea" Usage="Microsoft.Office.Interop.Word.Chart.PlotArea" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2354,7 +2415,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PlotArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.PlotArea" />对象, 表示图表的绘图区。 只读。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.PlotArea" /> 对象，表示图表的绘图区。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.PlotArea" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2365,6 +2426,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.PlotBy" />
       <MemberSignature Language="VB.NET" Value="Public Property PlotBy As XlRowCol" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlRowCol PlotBy { Microsoft::Office::Interop::Word::XlRowCol get(); void set(Microsoft::Office::Interop::Word::XlRowCol value); };" />
+      <MemberSignature Language="F#" Value="member this.PlotBy : Microsoft.Office.Interop.Word.XlRowCol with get, set" Usage="Microsoft.Office.Interop.Word.Chart.PlotBy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2385,7 +2447,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlRowCol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置图表上的列或行用作数据系列的方式。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />常量之一: <b>xlColumns</b>或<b>xlRows</b>。 读/写。</summary>
+        <summary>返回或设置图表上的列或行用作数据系列的方式。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> 常量之一： <b>XlColumns</b>或<b>xlRows</b>。 读/写。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /></value>
         <remarks><para>对于数据透视图报表中，此属性是只读的且始终返回 <b>xlColumns</b> 。</para>
           <para> </para></remarks>
@@ -2397,6 +2459,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.PlotVisibleOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property PlotVisibleOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PlotVisibleOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PlotVisibleOnly : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.PlotVisibleOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2423,9 +2486,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或设置一个值, 该值指示是否仅绘制可见单元格。 读/写。</summary>
-        <value><b>Boolean 类型</b>
-          <b>如此</b>如果只绘制可见单元格。 <b>假</b> 如果可见和隐藏单元格的绘制。</value>
+        <summary>获取或设置一个值，该值指示是否仅绘制可见单元格。 读/写。</summary>
+        <value>如果只绘制可见单元格，则<b>布尔</b>
+          <b>值为 True</b> 。 <b>假</b> 如果可见和隐藏单元格的绘制。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2434,6 +2497,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object RadarGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.RadarGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function RadarGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member RadarGroups : obj -&gt; obj" Usage="chart.RadarGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2458,7 +2522,7 @@
       </Parameters>
       <Docs>
         <param name="Index">Optional<b>对象</b>指定图表组。</param>
-        <summary>在二维图表中, 返回代表单个雷达图图表组 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或雷达图图表组集合 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合) 的对象。</summary>
+        <summary>在二维图表中，返回代表单个雷达图图表组（ <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> 对象）或雷达图图表组集合（ <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> 集合）的对象。</summary>
         <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2469,6 +2533,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberSignature Language="F#" Value="abstract member Refresh : unit -&gt; unit" Usage="chart.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2494,6 +2559,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />
       <MemberSignature Language="VB.NET" Value="Public Property RightAngleAxes As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RightAngleAxes { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RightAngleAxes : obj with get, set" Usage="Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2522,7 +2588,7 @@
       <Docs>
         <summary>如果图表的坐标轴为直角，并与图表的转角或仰角无关，则该属性值为 <b>True</b>。 仅应用于三维折线图、柱形图和条形图。 读/写。</summary>
         <value><b>Object</b></value>
-        <remarks><para>如果此属性设置为<b>True</b>, 则忽略<see cref="P:Microsoft.Office.Interop.Word.Chart.Perspective" />该属性。</para>
+        <remarks><para>如果此属性设置为<b>True</b>，则 <see cref="P:Microsoft.Office.Interop.Word.Chart.Perspective" /> 忽略该属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2532,6 +2598,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Rotation" />
       <MemberSignature Language="VB.NET" Value="Public Property Rotation As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Rotation { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Rotation : obj with get, set" Usage="Microsoft.Office.Interop.Word.Chart.Rotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2570,6 +2637,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SaveChartTemplate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveChartTemplate (FileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveChartTemplate(System::String ^ FileName);" />
+      <MemberSignature Language="F#" Value="abstract member SaveChartTemplate : string -&gt; unit" Usage="chart.SaveChartTemplate FileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2598,6 +2666,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Select([in]object Replace) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Select(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Select (Optional Replace As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Select : obj -&gt; obj" Usage="chart.Select Replace" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2629,6 +2698,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object SeriesCollection([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SeriesCollection(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function SeriesCollection (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member SeriesCollection : obj -&gt; obj" Usage="chart.SeriesCollection Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2650,7 +2720,7 @@
       </Parameters>
       <Docs>
         <param name="Index">必需<b>对象</b>系列的名称或编号。</param>
-        <summary>返回一个<b>Object</b>类型的对象, 该对象代表图表中的所有系列。</summary>
+        <summary>返回一个<b>Object</b>类型的对象，该对象代表图表中的所有系列。</summary>
         <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2661,6 +2731,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.SeriesNameLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property SeriesNameLevel As XlSeriesNameLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlSeriesNameLevel SeriesNameLevel { Microsoft::Office::Interop::Word::XlSeriesNameLevel get(); void set(Microsoft::Office::Interop::Word::XlSeriesNameLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.SeriesNameLevel : Microsoft.Office.Interop.Word.XlSeriesNameLevel with get, set" Usage="Microsoft.Office.Interop.Word.Chart.SeriesNameLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2681,7 +2752,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlSeriesNameLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<see cref="T:Microsoft.Office.Interop.Word.XlSeriesNameLevel" />常量, 该常量指定系列名称的源级别。 读写。</summary>
+        <summary>返回或设置一个 <see cref="T:Microsoft.Office.Interop.Word.XlSeriesNameLevel" /> 常量，该常量指定系列名称的源级别。 读写。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2692,6 +2763,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SetBackgroundPicture(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBackgroundPicture (FileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBackgroundPicture(System::String ^ FileName);" />
+      <MemberSignature Language="F#" Value="abstract member SetBackgroundPicture : string -&gt; unit" Usage="chart.SetBackgroundPicture FileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2720,6 +2792,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SetDefaultChart(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDefaultChart (Name As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDefaultChart(System::Object ^ Name);" />
+      <MemberSignature Language="F#" Value="abstract member SetDefaultChart : obj -&gt; unit" Usage="chart.SetDefaultChart Name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2737,7 +2810,7 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">必需。 <b>对象</b>指定创建新图表时将使用的默认图表模板的名称。  此名称可设置为库中用户定义的图表模板的名称或特殊<see cref="T:Microsoft.Office.Interop.Word.XlChartGallery" />常量<see cref="F:Microsoft.Office.Interop.Word.XlChartGallery.xlBuiltIn" />, 以指定内置图表模板。</param>
+        <param name="Name">必填。 <b>对象</b>指定创建新图表时将使用的默认图表模板的名称。  此名称可设置为库中用户定义的图表模板的名称或特殊 <see cref="T:Microsoft.Office.Interop.Word.XlChartGallery" /> 常量， <see cref="F:Microsoft.Office.Interop.Word.XlChartGallery.xlBuiltIn" /> 以指定内置图表模板。</param>
         <summary>指定 Microsoft Word 在创建新图表时使用的图表模板的名称。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2748,6 +2821,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetElement (Element As MsoChartElementType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetElement(Microsoft::Office::Core::MsoChartElementType Element);" />
+      <MemberSignature Language="F#" Value="abstract member SetElement : Microsoft.Office.Core.MsoChartElementType -&gt; unit" Usage="chart.SetElement Element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2765,9 +2839,9 @@
         <Parameter Name="Element" Type="Microsoft.Office.Core.MsoChartElementType" />
       </Parameters>
       <Docs>
-        <param name="Element">必需<see cref="T:Microsoft.Office.Core.MsoChartElementType" />指定图表元素类型。</param>
+        <param name="Element">必需 <see cref="T:Microsoft.Office.Core.MsoChartElementType" /> 指定图表元素类型。</param>
         <summary>设置图表上图表元素。 读/写。</summary>
-        <remarks><para>对于图表, "布局" 选项卡中的以下命令对应<see cref="M:Microsoft.Office.Interop.Word.Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" />于方法:</para>
+        <remarks><para>对于图表，"布局" 选项卡中的以下命令对应于 <see cref="M:Microsoft.Office.Interop.Word.Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" /> 方法：</para>
           <list type="bullet">
             <item>
               <para>"标签" 组中的全部内容。</para>
@@ -2792,6 +2866,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSourceData([in]string Source, [in]object PlotBy) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SetSourceData(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSourceData (Source As String, Optional PlotBy As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetSourceData : string * obj -&gt; unit" Usage="chart.SetSourceData (Source, PlotBy)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2811,8 +2886,8 @@
       </Parameters>
       <Docs>
         <param name="Source">必需的<b>字符串</b>包含源数据的图表数据区域的地址。</param>
-        <param name="PlotBy">Optional<b>对象</b>指定绘制数据的方式。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />常量之一: <b>xlColumns</b>或<b>xlRows</b>。</param>
-        <summary>设置的<see cref="T:Microsoft.Office.Interop.Word.Chart" />源数据范围。</summary>
+        <param name="PlotBy">Optional<b>对象</b>指定绘制数据的方式。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> 常量之一： <b>XlColumns</b>或<b>xlRows</b>。</param>
+        <summary>设置的源数据范围 <see cref="T:Microsoft.Office.Interop.Word.Chart" /> 。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2822,6 +2897,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Shapes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shapes As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Shapes { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shapes : obj" Usage="Microsoft.Office.Interop.Word.Chart.Shapes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2839,7 +2915,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shapes" />集合, 该集合代表图表工作表上的所有形状。 只读。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> 集合，该集合代表图表工作表上的所有形状。 只读。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2850,6 +2926,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowAllFieldButtons" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowAllFieldButtons As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowAllFieldButtons { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowAllFieldButtons : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ShowAllFieldButtons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2871,7 +2948,7 @@
       </ReturnValue>
       <Docs>
         <summary>此对象、成员或枚举已被弃用并且不适合在您的代码中使用。</summary>
-        <value>如果应显示数据透视图上的所有字段按钮,<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <value>如果应显示数据透视图上的所有字段按钮，<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2881,6 +2958,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowAxisFieldButtons" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowAxisFieldButtons As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowAxisFieldButtons { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowAxisFieldButtons : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ShowAxisFieldButtons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2912,6 +2990,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowDataLabelsOverMaximum" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowDataLabelsOverMaximum As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowDataLabelsOverMaximum { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowDataLabelsOverMaximum : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ShowDataLabelsOverMaximum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2932,9 +3011,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值, 指示当值大于数值轴上的最大值时, 是否显示数据标签。  读/写。</summary>
+        <summary>返回或设置一个值，指示当值大于数值轴上的最大值时，是否显示数据标签。  读/写。</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>如果您更改数值轴, 使其变得小于数据点的大小, 则可以使用此属性来设置是否显示数据标签。 该属性只适用于二维图表。</para>
+        <remarks><para>如果您更改数值轴，使其变得小于数据点的大小，则可以使用此属性来设置是否显示数据标签。 该属性只适用于二维图表。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2944,6 +3023,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowLegendFieldButtons" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowLegendFieldButtons As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowLegendFieldButtons { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowLegendFieldButtons : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ShowLegendFieldButtons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2965,7 +3045,7 @@
       </ReturnValue>
       <Docs>
         <summary>此对象、成员或枚举已被弃用并且不适合在您的代码中使用。</summary>
-        <value>如果应显示数据透视图上的图例字段按钮,<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <value>如果应显示数据透视图上的图例字段按钮，<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2975,6 +3055,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowReportFilterFieldButtons" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowReportFilterFieldButtons As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowReportFilterFieldButtons { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowReportFilterFieldButtons : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ShowReportFilterFieldButtons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2995,8 +3076,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此对象、成员或枚举已被弃用, 不应在您的代码中使用。</summary>
-        <value>如果应显示数据透视图上的报表筛选字段按钮,<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <summary>此对象、成员或枚举已被弃用，不应在您的代码中使用。</summary>
+        <value>如果应显示数据透视图上的报表筛选字段按钮，<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3006,6 +3087,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowValueFieldButtons" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowValueFieldButtons As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowValueFieldButtons { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowValueFieldButtons : bool with get, set" Usage="Microsoft.Office.Interop.Word.Chart.ShowValueFieldButtons" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3026,8 +3108,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此对象、成员或枚举已被弃用, 不应在您的代码中使用。</summary>
-        <value>如果应显示数据透视图上的值字段按钮,<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
+        <summary>此对象、成员或枚举已被弃用，不应在您的代码中使用。</summary>
+        <value>如果应显示数据透视图上的值字段按钮，<b>则为 true</b> ; 否则为 false。否则<b>为 false</b>。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3037,6 +3119,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.SideWall" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SideWall As Walls" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Walls ^ SideWall { Microsoft::Office::Interop::Word::Walls ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SideWall : Microsoft.Office.Interop.Word.Walls" Usage="Microsoft.Office.Interop.Word.Chart.SideWall" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3054,7 +3137,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Walls" />对象, 该对象允许用户单独对三维图表的侧面墙进行格式设置。  只读。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Walls" /> 对象，该对象允许用户单独对三维图表的侧面墙进行格式设置。  只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3065,6 +3148,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.SubType" />
       <MemberSignature Language="VB.NET" Value="Public Property SubType As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SubType { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SubType : int with get, set" Usage="Microsoft.Office.Interop.Word.Chart.SubType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3097,7 +3181,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>此 API 支持 Visual Studio Tools for Office 基础结构, 不应在代码中直接使用。</summary>
+        <summary>此 API 支持 Visual Studio Tools for Office 基础结构，不应在代码中直接使用。</summary>
         <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3108,6 +3192,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.SurfaceGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SurfaceGroup As ChartGroup" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ SurfaceGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SurfaceGroup : Microsoft.Office.Interop.Word.ChartGroup" Usage="Microsoft.Office.Interop.Word.Chart.SurfaceGroup" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3142,6 +3227,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : int with get, set" Usage="Microsoft.Office.Interop.Word.Chart.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3185,6 +3271,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Walls" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Walls As Walls" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Walls ^ Walls { Microsoft::Office::Interop::Word::Walls ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Walls : Microsoft.Office.Interop.Word.Walls" Usage="Microsoft.Office.Interop.Word.Chart.Walls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3205,7 +3292,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Walls" /> object 类型的对象, 该对象代表三维图表的背景墙。 只读。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Walls" /> object 类型的对象，该对象代表三维图表的背景墙。 只读。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3215,6 +3302,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object XYGroups([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.XYGroups(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function XYGroups (Optional Index As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member XYGroups : obj -&gt; obj" Usage="chart.XYGroups Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3239,7 +3327,7 @@
       </Parameters>
       <Docs>
         <param name="Index">Optional<b>对象</b>指定图表组。</param>
-        <summary>在二维图表中, 返回代表单个散点图图表组 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />对象) 或散点图组集合 ( <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" />集合) 的对象。</summary>
+        <summary>在二维图表中，返回代表单个散点图图表组（ <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> 对象）或散点图组集合（ <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> 集合）的对象。</summary>
         <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>

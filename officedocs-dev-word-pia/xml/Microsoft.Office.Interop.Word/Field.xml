@@ -1,9 +1,10 @@
 <Type Name="Field" FullName="Microsoft.Office.Interop.Word.Field">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="eb89b13b172f6bebe2a7acf4902ad5ae662af0d8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146855" /></Metadata><TypeSignature Language="C#" Value="public interface Field" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="41561d4e4c1d74961e90a5becf2ba85f85cd6fa6" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43921987" /></Metadata><TypeSignature Language="C#" Value="public interface Field" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Field" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Field" />
   <TypeSignature Language="VB.NET" Value="Public Interface Field" />
   <TypeSignature Language="C++ CLI" Value="public interface class Field" />
+  <TypeSignature Language="F#" Value="type Field = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,9 +19,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表示一个字段。 <b>Field</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Fields" />集合的一个成员。 <b>Fields</b> 集合代表选定内容、 范围或文档中的字段。</summary>
-    <remarks><para>使用<b>Fields</b>(<paramref name="index" />), 其中<paramref name="index" />是索引号, 返回单个<b>Field</b>对象。 索引号代表选定内容、 范围或文档中的字段位置。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />方法将字段添加到<b>Fields</b>集合。</para>
+    <summary>表示一个字段。 <b>Field</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.Fields" /> 。 <b>Fields</b> 集合代表选定内容、 范围或文档中的字段。</summary>
+    <remarks><para>使用<b>Fields</b>（ <paramref name="index" /> ），其中 <paramref name="index" /> 是索引号，返回单个<b>Field</b>对象。 索引号代表选定内容、 范围或文档中的字段位置。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> 方法将字段添加到<b>Fields</b>集合。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Field.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -47,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.Code" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Code As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ default { Microsoft::Office::Interop::Word::Range ^ get(); void set(Microsoft::Office::Interop::Word::Range ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Code : Microsoft.Office.Interop.Word.Range with get, set" Usage="Microsoft.Office.Interop.Word.Field.Code" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -78,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />代表域代码的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 代表域代码的对象。</summary>
         <value>To be added.</value>
         <remarks><para>域代码是包含在域字符 ({ }) 中的所有内容，包括前导和尾部空格。 无需更改域结果的显示方式即可访问域代码。</para>
           <para> </para></remarks>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Field.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; unit" Usage="field.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Field.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -134,8 +139,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Field.Cut" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberSignature Language="F#" Value="abstract member Cut : unit -&gt; unit" Usage="field.Cut " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.Data" />
       <MemberSignature Language="VB.NET" Value="Public Property Data As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Data { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Data : string with get, set" Usage="Microsoft.Office.Interop.Word.Field.Data" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Field.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="field.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -227,6 +235,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Field.DoClick" />
       <MemberSignature Language="VB.NET" Value="Public Sub DoClick ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DoClick();" />
+      <MemberSignature Language="F#" Value="abstract member DoClick : unit -&gt; unit" Usage="field.DoClick " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -253,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Field.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -270,7 +280,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<b>Integer</b>类型的值, 该值代表项目在集合中的位置。</summary>
+        <summary>返回一个<b>Integer</b>类型的值，该值代表项目在集合中的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -281,6 +291,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.InlineShape" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InlineShape As InlineShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::InlineShape ^ InlineShape { Microsoft::Office::Interop::Word::InlineShape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InlineShape : Microsoft.Office.Interop.Word.InlineShape" Usage="Microsoft.Office.Interop.Word.Field.InlineShape" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -298,7 +309,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.InlineShape" />对象, 表示的图片、OLE 对象或 ActiveX 控件是 INCLUDEPICTURE 或 EMBED 域的结果。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> 对象，表示的图片、OLE 对象或 ActiveX 控件是 INCLUDEPICTURE 或 EMBED 域的结果。</summary>
         <value>To be added.</value>
         <remarks><para><b>InlineShape</b> 对象被视为一个字符，并定位为一行文本字符串中的字符。</para>
           <para> </para></remarks>
@@ -310,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.Kind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As WdFieldKind" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFieldKind Kind { Microsoft::Office::Interop::Word::WdFieldKind get(); };" />
+      <MemberSignature Language="F#" Value="member this.Kind : Microsoft.Office.Interop.Word.WdFieldKind" Usage="Microsoft.Office.Interop.Word.Field.Kind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -327,17 +339,17 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFieldKind</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.Field" />对象的链接类型。</summary>
+        <summary>返回对象的链接类型 <see cref="T:Microsoft.Office.Interop.Word.Field" /> 。</summary>
         <value>To be added.</value>
-        <remarks><para>可以是下列<see cref="T:Microsoft.Office.Interop.Word.WdFieldKind" />常量之一:</para>
+        <remarks><para>可以是下列 <see cref="T:Microsoft.Office.Interop.Word.WdFieldKind" /> 常量之一：</para>
           <para>
-            <b>wdFieldKindCold</b>没有结果的字段, 例如, 索引项 (XE)、目录项 (TC) 或私有字段。</para>
+            <b>wdFieldKindCold</b>没有结果的字段，例如，索引项（XE）、目录项（TC）或私有字段。</para>
           <para>
-            <b>wdFieldKindHot</b>每次显示或重新格式化页面时都会自动更新的字段, 但也可以手动进行更新 (例如, INCLUDEPICTURE 或 FORMDROPDOWN)。</para>
+            <b>wdFieldKindHot</b>每次显示或重新格式化页面时都会自动更新的字段，但也可以手动进行更新（例如，INCLUDEPICTURE 或 FORMDROPDOWN）。</para>
           <para>
-            <b>wdFieldKindNone</b>无效字段 (例如, 不在任何内容中的一对域字符)。</para>
+            <b>wdFieldKindNone</b>无效字段（例如，不在任何内容中的一对域字符）。</para>
           <para>
-            <b>wdFieldKindWarm</b>可以更新并具有结果的字段。 此类型包括在源发生更改时自动更新的字段, 以及可手动更新的字段 (例如, DATE 或 INCLUDETEXT)。</para>
+            <b>wdFieldKindWarm</b>可以更新并具有结果的字段。 此类型包括在源发生更改时自动更新的字段，以及可手动更新的字段（例如，DATE 或 INCLUDETEXT）。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -347,6 +359,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.LinkFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinkFormat As LinkFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::LinkFormat ^ LinkFormat { Microsoft::Office::Interop::Word::LinkFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinkFormat : Microsoft.Office.Interop.Word.LinkFormat" Usage="Microsoft.Office.Interop.Word.Field.LinkFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -364,7 +377,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.LinkFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> object 类型的对象, 该对象代表链接到文件的指定域、内嵌形状或形状的链接选项。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> object 类型的对象，该对象代表链接到文件的指定域、内嵌形状或形状的链接选项。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -375,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.Locked" />
       <MemberSignature Language="VB.NET" Value="Public Property Locked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Locked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Locked : bool with get, set" Usage="Microsoft.Office.Interop.Word.Field.Locked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -397,7 +411,7 @@
       <Docs>
         <summary>确定指定的字段是否处于锁定状态。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的字段处于锁定状态, 则此属性返回<b>True</b> , 否则返回<b>False</b> 。 当域处于锁定状态时，无法更新该域的结果。</para>
+        <remarks><para>如果指定的字段处于锁定状态，则此属性返回<b>True</b> ，否则返回<b>False</b> 。 当域处于锁定状态时，无法更新该域的结果。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -407,6 +421,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.Next" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Next As Field" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Field ^ Next { Microsoft::Office::Interop::Word::Field ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Next : Microsoft.Office.Interop.Word.Field" Usage="Microsoft.Office.Interop.Word.Field.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -435,6 +450,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.OLEFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OLEFormat As OLEFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::OLEFormat ^ OLEFormat { Microsoft::Office::Interop::Word::OLEFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OLEFormat : Microsoft.Office.Interop.Word.OLEFormat" Usage="Microsoft.Office.Interop.Word.Field.OLEFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -452,7 +468,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.OLEFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.OLEFormat" />对象, 表示指定字段的 OLE 特征 (而不是链接)。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> 对象，表示指定字段的 OLE 特征（而不是链接）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -463,6 +479,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Field.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -491,6 +508,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.Previous" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Previous As Field" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Field ^ Previous { Microsoft::Office::Interop::Word::Field ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Previous : Microsoft.Office.Interop.Word.Field" Usage="Microsoft.Office.Interop.Word.Field.Previous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -519,6 +537,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.Result" />
       <MemberSignature Language="VB.NET" Value="Public Property Result As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Result { Microsoft::Office::Interop::Word::Range ^ get(); void set(Microsoft::Office::Interop::Word::Range ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Result : Microsoft.Office.Interop.Word.Range with get, set" Usage="Microsoft.Office.Interop.Word.Field.Result" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -539,9 +558,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Range" />对象, 表示一个字段的结果。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 对象，表示一个字段的结果。</summary>
         <value>To be added.</value>
-        <remarks><para>而无需改变域代码的显示，可以获得一个域结果。 使用<see cref="P:Microsoft.Office.Interop.Word.Range.Text" />属性返回<b>Range</b>对象中的文本。</para>
+        <remarks><para>而无需改变域代码的显示，可以获得一个域结果。 使用 <see cref="P:Microsoft.Office.Interop.Word.Range.Text" /> 属性返回<b>Range</b>对象中的文本。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -551,6 +570,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Field.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="field.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -567,7 +587,7 @@
       <Parameters />
       <Docs>
         <summary>选择指定的对象。</summary>
-        <remarks><para>使用此方法后, 请使用<see cref="P:Microsoft.Office.Interop.Word._Application.Selection" />属性来处理选定的项。</para>
+        <remarks><para>使用此方法后，请使用 <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> 属性来处理选定的项。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -577,6 +597,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.ShowCodes" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowCodes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowCodes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowCodes : bool with get, set" Usage="Microsoft.Office.Interop.Word.Field.ShowCodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -599,7 +620,7 @@
       <Docs>
         <summary>确定是否显示指定域而不是域结果的域代码。</summary>
         <value>To be added.</value>
-        <remarks><para>如果为指定域而不是域结果显示域代码, 则此属性返回<b>True</b> ; 如果不显示域代码, 则返回<b>False</b> 。</para>
+        <remarks><para>如果为指定域而不是域结果显示域代码，则此属性返回<b>True</b> ; 如果不显示域代码，则返回<b>False</b> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -609,6 +630,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Field.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdFieldType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdFieldType Type { Microsoft::Office::Interop::Word::WdFieldType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdFieldType" Usage="Microsoft.Office.Interop.Word.Field.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -628,7 +650,7 @@
       <Docs>
         <summary>返回域的类型。</summary>
         <value>To be added.</value>
-        <remarks><para>动态数据交换 (DDE) 是一种比较陈旧的技术并且不是十分安全。 如果可能, 请使用更安全的 DDE 替代方法。</para>
+        <remarks><para>动态数据交换 (DDE) 是一种比较陈旧的技术并且不是十分安全。 如果可能，请使用更安全的 DDE 替代方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -638,6 +660,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Field.Unlink" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unlink ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unlink();" />
+      <MemberSignature Language="F#" Value="abstract member Unlink : unit -&gt; unit" Usage="field.Unlink " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -654,7 +677,7 @@
       <Parameters />
       <Docs>
         <summary>将指定域替换为其最新结果。</summary>
-        <remarks><para>当您取消域链接时, 它的当前结果将转换为文本或图形, 并且无法再自动更新。 请注意, 某些字段 (如 XE (索引项) 域和 SEQ (序列) 域) 无法取消链接。</para>
+        <remarks><para>当您取消域链接时，它的当前结果将转换为文本或图形，并且无法再自动更新。 请注意，某些字段（如 XE （索引项）域和 SEQ （序列）域）无法取消链接。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -664,6 +687,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Field.Update" />
       <MemberSignature Language="VB.NET" Value="Public Function Update () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Update();" />
+      <MemberSignature Language="F#" Value="abstract member Update : unit -&gt; bool" Usage="field.Update " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -690,6 +714,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Field.UpdateSource" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateSource ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateSource();" />
+      <MemberSignature Language="F#" Value="abstract member UpdateSource : unit -&gt; unit" Usage="field.UpdateSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

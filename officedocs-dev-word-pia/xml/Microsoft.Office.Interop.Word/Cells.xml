@@ -1,9 +1,10 @@
 <Type Name="Cells" FullName="Microsoft.Office.Interop.Word.Cells">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5f1f919c60f50e8edbe09241cd688bb7b561fc76" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147352" /></Metadata><TypeSignature Language="C#" Value="public interface Cells : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca0ac51867187dca9935c854b619334da7088135" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922631" /></Metadata><TypeSignature Language="C#" Value="public interface Cells : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Cells implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Cells" />
   <TypeSignature Language="VB.NET" Value="Public Interface Cells&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Cells : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Cells = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,10 +23,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>表格列、 <see cref="T:Microsoft.Office.Interop.Word.Cell" />表格行、选定内容或区域中的对象的集合。</summary>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.Cell" />表格列、表格行、选定内容或区域中的对象的集合。</summary>
     <remarks><para>使用 <b>Cells</b> 属性来返回该 <b>单元格</b> 的集合。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" />方法将<b>Cell</b>对象添加到<b>单元格</b>集合。 您还可以使用<see cref="M:Microsoft.Office.Interop.Word.Selection.InsertCells(System.Object@)" /> <see cref="T:Microsoft.Office.Interop.Word.Selection" />对象的方法插入新单元格。</para>
-      <para>使用<b>单元格</b><paramref name="row" />( <paramref name="column" />,), <paramref name="row" />其中是行号, <paramref name="column" />是列号或<b>单元格</b>(<paramref name="index" />, 其中<paramref name="index" />是索引号), 用于返回<b>Cell</b>对象。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" /> 方法将<b>Cell</b>对象添加到<b>单元格</b>集合。 您还可以使用 <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertCells(System.Object@)" /> 对象的方法 <see cref="T:Microsoft.Office.Interop.Word.Selection" /> 插入新单元格。</para>
+      <para>使用<b>单元格</b>（ <paramref name="row" /> ， <paramref name="column" /> ），其中 <paramref name="row" /> 是行号， <paramref name="column" /> 是列号或<b>单元格</b>（， <paramref name="index" /> 其中 <paramref name="index" /> 是索引号），用于返回<b>Cell</b>对象。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Cell Add([in]object&amp; BeforeCell) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Optional ByRef BeforeCell As Object) As Cell" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj -&gt; Microsoft.Office.Interop.Word.Cell" Usage="cells.Add BeforeCell" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,10 +50,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Cell</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="BeforeCell" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="BeforeCell" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeCell">一个<see cref="T:Microsoft.Office.Interop.Word.Cell" />对象, 表示将紧接在指定单元格右侧显示的单元格。</param>
+        <param name="BeforeCell">一个 <see cref="T:Microsoft.Office.Interop.Word.Cell" /> 对象，表示将紧接在指定单元格右侧显示的单元格。</param>
         <summary>向表格中添加一个单元格。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cells.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Cells.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -80,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" /> object 类型的对象, 该对象代表指定对象的创建者。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> object 类型的对象，该对象代表指定对象的创建者。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cells.AutoFit" />
       <MemberSignature Language="VB.NET" Value="Public Sub AutoFit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AutoFit();" />
+      <MemberSignature Language="F#" Value="abstract member AutoFit : unit -&gt; unit" Usage="cells.AutoFit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cells.Borders" />
       <MemberSignature Language="VB.NET" Value="Public Property Borders As Borders" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Borders ^ Borders { Microsoft::Office::Interop::Word::Borders ^ get(); void set(Microsoft::Office::Interop::Word::Borders ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Borders : Microsoft.Office.Interop.Word.Borders with get, set" Usage="Microsoft.Office.Interop.Word.Cells.Borders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -137,7 +142,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Borders" />集合, 该集合代表指定对象的所有边框。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Borders" /> 集合，该集合代表指定对象的所有边框。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cells.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Cells.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cells.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Cells.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -193,10 +200,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值, 该值指示在其中创建指定对象的应用程序。</summary>
+        <summary>返回一个值，该值指示在其中创建指定对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -205,6 +212,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete([in]object&amp; ShiftCells) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cells.Delete(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete (Optional ByRef ShiftCells As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Delete : obj -&gt; unit" Usage="cells.Delete ShiftCells" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -219,11 +227,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ShiftCells" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ShiftCells" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ShiftCells">剩余单元格移动的方向。 可以是任何<see cref="T:Microsoft.Office.Interop.Word.WdDeleteCells" />常量。 如果省略，最后删除的单元格的右侧单元格向左移动。</param>
-        <summary>删除表格中的单元格, 并可选择控制剩余单元格的移动方式。</summary>
+        <param name="ShiftCells">剩余单元格移动的方向。 可以是任何 <see cref="T:Microsoft.Office.Interop.Word.WdDeleteCells" /> 常量。 如果省略，最后删除的单元格的右侧单元格向左移动。</param>
+        <summary>删除表格中的单元格，并可选择控制剩余单元格的移动方式。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cells.DistributeHeight" />
       <MemberSignature Language="VB.NET" Value="Public Sub DistributeHeight ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DistributeHeight();" />
+      <MemberSignature Language="F#" Value="abstract member DistributeHeight : unit -&gt; unit" Usage="cells.DistributeHeight " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -258,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cells.DistributeWidth" />
       <MemberSignature Language="VB.NET" Value="Public Sub DistributeWidth ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DistributeWidth();" />
+      <MemberSignature Language="F#" Value="abstract member DistributeWidth : unit -&gt; unit" Usage="cells.DistributeWidth " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -273,7 +283,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>调整指定单元格的宽度, 使其相等。</summary>
+        <summary>调整指定单元格的宽度，使其相等。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,6 +293,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cells.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="cells.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -315,6 +326,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cells.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Height { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : single with get, set" Usage="Microsoft.Office.Interop.Word.Cells.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -337,7 +349,7 @@
       <Docs>
         <summary>返回或设置表格中指定单元格的高度。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定<see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" />行的属性为<b>wdRowHeightAuto</b>, 则<b>Height</b>返回<b>wdUndefined</b>;设置<b>Height</b>属性会将<b>HeightRule</b>设置为<b>wdRowHeightAtLeast</b>。</para>
+        <remarks><para>如果 <see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" /> 指定行的属性为<b>wdRowHeightAuto</b>，则<b>height</b>返回<b>wdUndefined</b>; 设置<b>height</b>属性会将<b>HeightRule</b>设置为<b>wdRowHeightAtLeast</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -347,6 +359,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cells.HeightRule" />
       <MemberSignature Language="VB.NET" Value="Public Property HeightRule As WdRowHeightRule" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRowHeightRule HeightRule { Microsoft::Office::Interop::Word::WdRowHeightRule get(); void set(Microsoft::Office::Interop::Word::WdRowHeightRule value); };" />
+      <MemberSignature Language="F#" Value="member this.HeightRule : Microsoft.Office.Interop.Word.WdRowHeightRule with get, set" Usage="Microsoft.Office.Interop.Word.Cells.HeightRule" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -369,7 +382,7 @@
       <Docs>
         <summary>返回或设置用于确定指定单元格高度的规则。</summary>
         <value>To be added.</value>
-        <remarks><para>设置<see cref="T:Microsoft.Office.Interop.Word.Cell" />对象的<b>HeightRule</b>属性将自动设置整行的属性。</para>
+        <remarks><para>设置对象的<b>HeightRule</b>属性将 <see cref="T:Microsoft.Office.Interop.Word.Cell" /> 自动设置整行的属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -379,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cells.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Cell" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Cell ^ default[int] { Microsoft::Office::Interop::Word::Cell ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Cell" Usage="Microsoft.Office.Interop.Word.Cells.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -399,7 +413,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">一个值, 指示单个对象的序号位置。</param>
+        <param name="Index">一个值，指示单个对象的序号位置。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -411,6 +425,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cells.Merge" />
       <MemberSignature Language="VB.NET" Value="Public Sub Merge ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Merge();" />
+      <MemberSignature Language="F#" Value="abstract member Merge : unit -&gt; unit" Usage="cells.Merge " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -437,6 +452,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cells.NestingLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NestingLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NestingLevel { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NestingLevel : int" Usage="Microsoft.Office.Interop.Word.Cells.NestingLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -466,6 +482,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cells.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Cells.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -494,6 +511,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cells.PreferredWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property PreferredWidth As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float PreferredWidth { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.PreferredWidth : single with get, set" Usage="Microsoft.Office.Interop.Word.Cells.PreferredWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -525,6 +543,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cells.PreferredWidthType" />
       <MemberSignature Language="VB.NET" Value="Public Property PreferredWidthType As WdPreferredWidthType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdPreferredWidthType PreferredWidthType { Microsoft::Office::Interop::Word::WdPreferredWidthType get(); void set(Microsoft::Office::Interop::Word::WdPreferredWidthType value); };" />
+      <MemberSignature Language="F#" Value="member this.PreferredWidthType : Microsoft.Office.Interop.Word.WdPreferredWidthType with get, set" Usage="Microsoft.Office.Interop.Word.Cells.PreferredWidthType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -556,6 +575,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cells.SetHeight(System.Object@,Microsoft.Office.Interop.Word.WdRowHeightRule)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetHeight (ByRef RowHeight As Object, HeightRule As WdRowHeightRule)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetHeight(System::Object ^ % RowHeight, Microsoft::Office::Interop::Word::WdRowHeightRule HeightRule);" />
+      <MemberSignature Language="F#" Value="abstract member SetHeight : obj * Microsoft.Office.Interop.Word.WdRowHeightRule -&gt; unit" Usage="cells.SetHeight (RowHeight, HeightRule)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -570,14 +590,14 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="RowHeight" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RowHeight" Type="System.Object" RefType="ref" />
         <Parameter Name="HeightRule" Type="Microsoft.Office.Interop.Word.WdRowHeightRule" />
       </Parameters>
       <Docs>
         <param name="RowHeight">一行或多行的高度，以磅为单位。</param>
         <param name="HeightRule">确定指定单元格高度的方法。</param>
         <summary>设定表格单元格的高度。</summary>
-        <remarks><para>设置<see cref="T:Microsoft.Office.Interop.Word.Cells" />对象的<b>SetHeight</b>属性将自动设置整行的属性。</para>
+        <remarks><para>设置对象的<b>SetHeight</b>属性将 <see cref="T:Microsoft.Office.Interop.Word.Cells" /> 自动设置整行的属性。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -587,6 +607,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cells.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetWidth (ColumnWidth As Single, RulerStyle As WdRulerStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetWidth(float ColumnWidth, Microsoft::Office::Interop::Word::WdRulerStyle RulerStyle);" />
+      <MemberSignature Language="F#" Value="abstract member SetWidth : single * Microsoft.Office.Interop.Word.WdRulerStyle -&gt; unit" Usage="cells.SetWidth (ColumnWidth, RulerStyle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -605,10 +626,10 @@
         <Parameter Name="RulerStyle" Type="Microsoft.Office.Interop.Word.WdRulerStyle" />
       </Parameters>
       <Docs>
-        <param name="ColumnWidth">指定列的宽度 (以磅为单位)。</param>
+        <param name="ColumnWidth">指定列的宽度（以磅为单位）。</param>
         <param name="RulerStyle">控制 Microsoft Word 调整单元格宽度的方式。</param>
         <summary>设置表格中单元格的宽度。</summary>
-        <remarks><para>以上<see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />所述的行为适用于左对齐的表格。 中间和右对齐表的<b>WdRulerStyle</b>行为可能是意外的;在这些情况下, <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" />应谨慎使用此方法。</para>
+        <remarks><para><see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />以上所述的行为适用于左对齐的表格。 中间和右对齐表的<b>WdRulerStyle</b>行为可能是意外的;在这些情况下， <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" /> 应谨慎使用此方法。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -618,6 +639,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cells.Shading" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shading As Shading" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shading ^ Shading { Microsoft::Office::Interop::Word::Shading ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shading : Microsoft.Office.Interop.Word.Shading" Usage="Microsoft.Office.Interop.Word.Cells.Shading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -635,7 +657,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Shading" />对象, 该对象代表指定对象的底纹格式。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Shading" /> 对象，该对象代表指定对象的底纹格式。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -645,6 +667,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Split([in]object&amp; NumRows, [in]object&amp; NumColumns, [in]object&amp; MergeBeforeSplit) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Cells.Split(System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Split (Optional ByRef NumRows As Object, Optional ByRef NumColumns As Object, Optional ByRef MergeBeforeSplit As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Split : obj * obj * obj -&gt; unit" Usage="cells.Split (NumRows, NumColumns, MergeBeforeSplit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -659,14 +682,14 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NumRows" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="NumColumns" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="MergeBeforeSplit" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NumRows" Type="System.Object" RefType="ref" />
+        <Parameter Name="NumColumns" Type="System.Object" RefType="ref" />
+        <Parameter Name="MergeBeforeSplit" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="NumRows">单元格组拆分成的行数。</param>
         <param name="NumColumns">要将单元格组拆分成的列数。</param>
-        <param name="MergeBeforeSplit">一个值, 该值指示是否在拆分单元格之前将它们合并。</param>
+        <param name="MergeBeforeSplit">一个值，该值指示是否在拆分单元格之前将它们合并。</param>
         <summary>拆分表格单元格范围。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -677,6 +700,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cells.VerticalAlignment" />
       <MemberSignature Language="VB.NET" Value="Public Property VerticalAlignment As WdCellVerticalAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdCellVerticalAlignment VerticalAlignment { Microsoft::Office::Interop::Word::WdCellVerticalAlignment get(); void set(Microsoft::Office::Interop::Word::WdCellVerticalAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalAlignment : Microsoft.Office.Interop.Word.WdCellVerticalAlignment with get, set" Usage="Microsoft.Office.Interop.Word.Cells.VerticalAlignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -708,6 +732,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Cells.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="Microsoft.Office.Interop.Word.Cells.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

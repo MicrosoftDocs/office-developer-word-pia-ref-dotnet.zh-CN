@@ -1,9 +1,10 @@
 <Type Name="ChartFont" FullName="Microsoft.Office.Interop.Word.ChartFont">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7219cd262a2d7cb6c460e3a546798d13518ba259" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142297" /></Metadata><TypeSignature Language="C#" Value="public interface ChartFont" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7249eaeecfb55b65fe50a679c0c9fe9d0d53c9c9" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922463" /></Metadata><TypeSignature Language="C#" Value="public interface ChartFont" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartFont" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartFont" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartFont" />
   <TypeSignature Language="C++ CLI" Value="public interface class ChartFont" />
+  <TypeSignature Language="F#" Value="type ChartFont = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>包含图表对象的字体属性（字体名称、字号、颜色等等）。</summary>
-    <remarks><para>如果不想<see cref="T:Microsoft.Office.Interop.Word.AxisTitle" />以相同的方式设置、 <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />、或<see cref="T:Microsoft.Office.Interop.Word.DisplayUnitLabel" />对象中的所有文本的格式, 请使用该对象的<b>字符</b>属性以先以<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象的形式返回文本的子集, 然后使用该<see cref="P:Microsoft.Office.Interop.Word.ChartCharacters.Font" />属性的<see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />对象返回一个<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />对象, 您可以根据需要使用该对象设置文本子集的格式。</para>
+    <remarks><para>如果不想以相同的方式设置、、或对象中的所有文本的格式，请 <see cref="T:Microsoft.Office.Interop.Word.AxisTitle" /> <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> <see cref="T:Microsoft.Office.Interop.Word.DisplayUnitLabel" /> 使用该对象的<b>字符</b>属性以第一个作为对象返回文本的子集 <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /> ，然后使用该 <see cref="P:Microsoft.Office.Interop.Word.ChartCharacters.Font" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /> 返回一个 <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> 对象，可根据需要使用该对象来设置文本子集的格式。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.ChartFont.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,7 +48,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>在不使用对象识别符的情况下使用时<see cref="T:Microsoft.Office.Interop.Word._Application" /> , 此属性返回一个代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
+        <summary>在不使用对象识别符的情况下使用时，此属性返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 代表 Microsoft Word 应用程序的对象。 如果与对象识别符一起使用，则此属性返回代表指定对象的创建者的 <b>Application</b> 对象（可以将此属性与 OLE 自动化对象一起使用以返回该对象的应用程序）。 只读。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Background" />
       <MemberSignature Language="VB.NET" Value="Public Property Background As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Background { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Background : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Background" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Bold" />
       <MemberSignature Language="VB.NET" Value="Public Property Bold As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Bold { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Bold : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Bold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -109,7 +113,7 @@
       </ReturnValue>
       <Docs>
         <summary>返回或设置字体的状态。 读/写。</summary>
-        <value>如果字体为粗体, 则设置为<b>True</b>的<b>对象</b>。否则<b>为 False</b></value>
+        <value>如果字体为粗体，则设置为<b>True</b>的<b>对象</b>。否则<b>为 False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Color { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -139,7 +144,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>对象</b>, 表示该对象的主颜色。</summary>
+        <summary>返回或设置一个<b>对象</b>，表示该对象的主颜色。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.ColorIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property ColorIndex As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ColorIndex { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ColorIndex : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.ColorIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,9 +176,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个<b>对象</b>, 该对象代表字体的颜色。</summary>
+        <summary>返回或设置一个<b>对象</b>，该对象代表字体的颜色。</summary>
         <value><b>Object</b></value>
-        <remarks><para>将颜色指定为当前调色板中的索引值, 或指定为以下<see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />常量之一:</para>
+        <remarks><para>将颜色指定为当前调色板中的索引值，或指定为以下 <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> 常量之一：</para>
           <list type="bullet">
             <item>
               <para>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ChartFont.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -211,9 +218,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个32位整数, 该<b>整数</b>表示在其中创建指定对象的应用程序。 只读。</summary>
+        <summary>返回一个32位整数，该<b>整数</b>表示在其中创建指定对象的应用程序。 只读。</summary>
         <value><b>Integer</b></value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, <see cref="P:Microsoft.Office.Interop.Word.ChartFont.Creator" />则该属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则该 <see cref="P:Microsoft.Office.Interop.Word.ChartFont.Creator" /> 属性返回十六进制数字是4d535744，表示字符串 "MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.FontStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property FontStyle As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ FontStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FontStyle : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.FontStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -245,7 +253,7 @@
       <Docs>
         <summary>返回或设置字体样式。 读/写。</summary>
         <value><b>Object</b></value>
-        <remarks><para>更改此属性可能会影响<see cref="T:Microsoft.Office.Interop.Word.ChartFont" />其他属性 (如<see cref="P:Microsoft.Office.Interop.Word.ChartFont.Bold" />和<see cref="P:Microsoft.Office.Interop.Word.ChartFont.Italic" />)。</para>
+        <remarks><para>更改此属性可能会影响其他 <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> 属性（如 <see cref="P:Microsoft.Office.Interop.Word.ChartFont.Bold" /> 和 <see cref="P:Microsoft.Office.Interop.Word.ChartFont.Italic" /> ）。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -255,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Italic" />
       <MemberSignature Language="VB.NET" Value="Public Property Italic As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Italic { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Italic : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Italic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -276,7 +285,7 @@
       </ReturnValue>
       <Docs>
         <summary>获取或设置确定字体状态的<b>对象</b>的值。 读/写。</summary>
-        <value>如果字体为斜体, 则设置为<b>True</b>的<b>对象</b>。否则<b>为 False</b></value>
+        <value>如果字体为斜体，则设置为<b>True</b>的<b>对象</b>。否则<b>为 False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Name { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -317,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.OutlineFont" />
       <MemberSignature Language="VB.NET" Value="Public Property OutlineFont As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ OutlineFont { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OutlineFont : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.OutlineFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -343,9 +354,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>获取或返回一个值, 该值将字体描述为轮廓。</summary>
-        <value>一个<b>对象</b>, 如果字体是边框字体, 则返回<b>True</b> , 否则返回<b>False</b></value>
-        <remarks><para>返回<b>true</b>、 <b>False</b>或<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" /> (true 和 False 的混合)。 可设置为<b>True</b>、 <b>False</b>或<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdToggle" />。</para>
+        <summary>获取或返回一个值，该值将字体描述为轮廓。</summary>
+        <value>一个<b>对象</b>，如果字体是边框字体，则返回<b>True</b> ，否则返回<b>False</b></value>
+        <remarks><para>返回<b>true</b>、 <b>False</b>或 <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" /> （true 和 False 的混合）。 可设置为<b>True</b>、 <b>False</b>或 <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdToggle" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -355,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ChartFont.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -383,6 +395,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Shadow" />
       <MemberSignature Language="VB.NET" Value="Public Property Shadow As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Shadow { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Shadow : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Shadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -409,8 +422,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>设置或返回一个值, 该值将指定的字体描述为阴影</summary>
-        <value>如果指定的字体设置为阴影格式, 则该<b>对象</b>设置为<b>True</b> , 否则为<b>False</b>或<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" />。</value>
+        <summary>设置或返回一个值，该值将指定的字体描述为阴影</summary>
+        <value>如果指定的字体设置为阴影格式，则该<b>对象</b>设置为<b>True</b> ，否则为<b>False</b>或 <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" /> 。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -420,6 +433,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Size { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -451,6 +465,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.StrikeThrough" />
       <MemberSignature Language="VB.NET" Value="Public Property StrikeThrough As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ StrikeThrough { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StrikeThrough : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.StrikeThrough" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -472,7 +487,7 @@
       </ReturnValue>
       <Docs>
         <summary>获取或设置字体是否绘制了水平线条。 读/写。</summary>
-        <value>如果使用水平线将字体设置为 True, 则<b>对象</b>设置为<b>True</b> ; 否则为 false。否则<b>为 False</b></value>
+        <value>如果使用水平线将字体设置为 True，则<b>对象</b>设置为<b>True</b> ; 否则为 false。否则<b>为 False</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -482,6 +497,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Subscript" />
       <MemberSignature Language="VB.NET" Value="Public Property Subscript As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Subscript { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Subscript : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Subscript" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -503,7 +519,7 @@
       </ReturnValue>
       <Docs>
         <summary>获取和设置字体是否已呈现得更小且在周围文本的级别之下稍有略微。 读/写。</summary>
-        <value>如果将字体格式设置为下标, 则<b>对象</b>设置为<b>True</b> ;否则<b>为 False</b>。</value>
+        <value>如果将字体格式设置为下标，则<b>对象</b>设置为<b>True</b> ;否则<b>为 False</b>。</value>
         <remarks><para>默认
             <b>为 False</b></para>
           <para> </para></remarks>
@@ -515,6 +531,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Superscript" />
       <MemberSignature Language="VB.NET" Value="Public Property Superscript As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Superscript { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Superscript : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Superscript" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -536,7 +553,7 @@
       </ReturnValue>
       <Docs>
         <summary>获取和设置字体是否已呈现得更小且略高于周围文本的级别。 读/写。</summary>
-        <value>如果字体格式为上标, 则<b>对象</b>设置为<b>True</b> ;否则<b>为 False</b>。</value>
+        <value>如果字体格式为上标，则<b>对象</b>设置为<b>True</b> ;否则<b>为 False</b>。</value>
         <remarks><para>默认
             <b>为 False</b></para>
           <para> </para></remarks>
@@ -548,6 +565,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Underline" />
       <MemberSignature Language="VB.NET" Value="Public Property Underline As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Underline { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Underline : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Underline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -568,7 +586,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置应用于字体的下划线类型。 可以是下列<see cref="T:Microsoft.Office.Interop.Word.XlUnderlineStyle" />常量之一。 读/写。</summary>
+        <summary>返回或设置应用于字体的下划线类型。 可以是下列 <see cref="T:Microsoft.Office.Interop.Word.XlUnderlineStyle" /> 常量之一。 读/写。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>

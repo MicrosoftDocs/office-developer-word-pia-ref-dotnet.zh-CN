@@ -1,9 +1,10 @@
 <Type Name="AutoCorrectEntry" FullName="Microsoft.Office.Interop.Word.AutoCorrectEntry">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0a3a172351b8c23700ecf22b9e70fafa5b84be51" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146246" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrectEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d5a2c2d9edde49d600abb1f2e3c4718cce6c4dc3" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922770" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrectEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrectEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoCorrectEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrectEntry" />
   <TypeSignature Language="C++ CLI" Value="public interface class AutoCorrectEntry" />
+  <TypeSignature Language="F#" Value="type AutoCorrectEntry = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,10 +20,10 @@
   </Attributes>
   <Docs>
     <summary>代表单个自动更正词条。</summary>
-    <remarks><para><b>AutoCorrectEntry</b>对象是<see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" />集合的一个成员。 <b>AutoCorrectEntries</b>集合包括 "工具" 菜单的 "自动更正" 对话框中的条目。</para>
-      <para>Use <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" />(<paramref name="index" />), 其中<paramref name="index" />是自动更正条目的名称或索引号, 返回一个<b>AutoCorrectEntry</b>对象。 名称的拼写必须与 "自动更正" 对话框中的 "替换" 下显示的完全匹配 (但不一定是大小写)。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntry.Apply(Microsoft.Office.Interop.Word.Range)" />方法可在指定区域插入 "自动更正" 词条。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.Add(System.String,System.String)" /> or <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.AddRichText(System.String,Microsoft.Office.Interop.Word.Range)" />方法可将 "自动更正" 词条添加到可用条目的列表中。</para>
+    <remarks><para><b>AutoCorrectEntry</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" /> 。 <b>AutoCorrectEntries</b>集合包括 "工具" 菜单的 "自动更正" 对话框中的条目。</para>
+      <para>Use <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" /> （ <paramref name="index" /> ），其中 <paramref name="index" /> 是自动更正条目的名称或索引号，返回一个<b>AutoCorrectEntry</b>对象。 名称的拼写必须与 "自动更正" 对话框中的 "替换" 下显示的完全匹配（但不一定是大小写）。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntry.Apply(Microsoft.Office.Interop.Word.Range)" /> 方法可在指定区域插入 "自动更正" 词条。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.Add(System.String,System.String)" /> or 方法可 <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.AddRichText(System.String,Microsoft.Office.Interop.Word.Range)" /> 将 "自动更正" 词条添加到可用条目的列表中。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.AutoCorrectEntry.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -58,7 +60,9 @@
       <MemberSignature Language="C#" Value="public void Apply (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Apply([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.AutoCorrectEntry.Apply(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Apply (Range As Range)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Apply(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member Apply : Microsoft.Office.Interop.Word.Range -&gt; unit" Usage="autoCorrectEntry.Apply Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -76,7 +80,7 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必需<see cref="T:Microsoft.Office.Interop.Word.Range" />的对象。</param>
+        <param name="Range">必需 <see cref="T:Microsoft.Office.Interop.Word.Range" /> 的对象。</param>
         <summary>用指定的"自动更正"词条的值替换某一区域。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.AutoCorrectEntry.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -104,10 +109,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值, 该值指示在其中创建指定对象的应用程序。</summary>
+        <summary>返回一个值，该值指示在其中创建指定对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.AutoCorrectEntry.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="autoCorrectEntry.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -142,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.AutoCorrectEntry.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -159,7 +166,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值, 该值代表项目在集合中的位置。</summary>
+        <summary>返回一个值，该值代表项目在集合中的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -170,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.AutoCorrectEntry.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -201,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.AutoCorrectEntry.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -229,6 +238,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.RichText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RichText As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RichText { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RichText : bool" Usage="Microsoft.Office.Interop.Word.AutoCorrectEntry.RichText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -246,7 +256,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值, 该值指示格式设置是否与 "自动更正" 词条替换文本一起存储。</summary>
+        <summary>返回一个值，该值指示格式设置是否与 "自动更正" 词条替换文本一起存储。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Office.Interop.Word.AutoCorrectEntry.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -279,7 +290,7 @@
       <Docs>
         <summary>返回或设置自动更正条目的值。</summary>
         <value>To be added.</value>
-        <remarks><para>对于<see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntry" />对象, <b>Value</b>属性仅返回对象值的前255个字符。 将<b>value</b>属性设置为超过255个字符的值会产生错误。</para>
+        <remarks><para>对于 <see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntry" /> 对象， <b>Value</b>属性仅返回对象值的前255个字符。 将<b>value</b>属性设置为超过255个字符的值会产生错误。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

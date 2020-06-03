@@ -1,9 +1,10 @@
 <Type Name="Languages" FullName="Microsoft.Office.Interop.Word.Languages">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1baf8eae7e14a2522bca48a798cc4d1874daefdf" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146652" /></Metadata><TypeSignature Language="C#" Value="public interface Languages : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="24211fe4ed1fc4c42f6c69e7ef0b05df51945920" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923911" /></Metadata><TypeSignature Language="C#" Value="public interface Languages : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Languages implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Languages" />
   <TypeSignature Language="VB.NET" Value="Public Interface Languages&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Languages : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Languages = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,11 +23,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><see cref="T:Microsoft.Office.Interop.Word.Language" />对象的集合, 这些对象代表 Microsoft Word 中用于校对或设置格式的语言。</summary>
-    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word._Application.Languages" />属性返回<b>语言</b>集合。</para>
-      <para>使用<b>语言</b>(<paramref name="index" />) 返回单个<b>语言</b>对象, 其中<paramref name="index" />可以是<see cref="P:Microsoft.Office.Interop.Word.Language.Name" />属性的值、 <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />属性的值、 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一或<see cref="T:Microsoft.Office.Core.MsoLanguageID" />常量之一。</para>
-      <para>该<see cref="P:Microsoft.Office.Interop.Word.Languages.Count" />属性返回您可以为其标记文本的语言 (校对工具适用的语言) 的数量。 要进行校对，您必须为要检查的每种语言安装适当的校对工具。 您还需有下列各项的 .dll 文件和 .lex 文件：同义词库、拼写检查工具、语法检查工具和断字工具。</para>
-      <para>如果将标记为 <b>wdNoProofing</b> 的文本时，Word 会被标记的文本跳过运行拼写和语法检查。 若要将文本标记为指定的语言或不进行校对, 请使用 "设置语言" 命令 ("工具" 菜单, "语言" 子菜单)。</para>
+    <summary>对象的集合 <see cref="T:Microsoft.Office.Interop.Word.Language" /> ，这些对象代表 Microsoft Word 中用于校对或设置格式的语言。</summary>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word._Application.Languages" /> 属性返回<b>语言</b>集合。</para>
+      <para>使用<b>语言</b>（ <paramref name="index" /> ）返回单个<b>语言</b>对象，其中 <paramref name="index" /> 可以是属性的值、 <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> 属性的值 <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> 、 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> 常量之一或 <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> 常量之一。</para>
+      <para>该 <see cref="P:Microsoft.Office.Interop.Word.Languages.Count" /> 属性返回您可以为其标记文本的语言（校对工具适用的语言）的数量。 要进行校对，您必须为要检查的每种语言安装适当的校对工具。 您还需有下列各项的 .dll 文件和 .lex 文件：同义词库、拼写检查工具、语法检查工具和断字工具。</para>
+      <para>如果将标记为 <b>wdNoProofing</b> 的文本时，Word 会被标记的文本跳过运行拼写和语法检查。 若要将文本标记为指定的语言或不进行校对，请使用 "设置语言" 命令（"工具" 菜单，"语言" 子菜单）。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Languages.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Languages.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -53,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Languages.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Languages.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Languages.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Languages.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -111,8 +115,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Languages.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="languages.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Languages.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Language" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Language ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Language ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Language" Usage="Microsoft.Office.Interop.Word.Languages.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -171,10 +177,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Language</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">一个指示序号位置的<b>对象</b>, 或表示单个对象的名称的字符串。</param>
+        <param name="Index">一个指示序号位置的<b>对象</b>，或表示单个对象的名称的字符串。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -186,6 +192,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Languages.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Languages.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

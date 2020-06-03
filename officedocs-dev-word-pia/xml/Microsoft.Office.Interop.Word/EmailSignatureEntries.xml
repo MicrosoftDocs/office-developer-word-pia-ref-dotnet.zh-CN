@@ -1,9 +1,10 @@
 <Type Name="EmailSignatureEntries" FullName="Microsoft.Office.Interop.Word.EmailSignatureEntries">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="291d476d90182c2d9643f61032c174a3f2413a3b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146890" /></Metadata><TypeSignature Language="C#" Value="public interface EmailSignatureEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b3584654295702be7e2423271fbc10c0b26b7bb1" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922022" /></Metadata><TypeSignature Language="C#" Value="public interface EmailSignatureEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract EmailSignatureEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.EmailSignatureEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface EmailSignatureEntries&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class EmailSignatureEntries : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type EmailSignatureEntries = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><see cref="T:Microsoft.Office.Interop.Word.EmailSignatureEntry" />对象的集合, 该集合代表可用于 Microsoft Word 的所有电子邮件签名条目。</summary>
-    <remarks><para>使用<see cref="P:Microsoft.Office.Interop.Word.EmailSignature.EmailSignatureEntries" />属性返回<b>EmailSignatureEntries</b>集合。 使用 EmailSignatureEntries <see cref="M:Microsoft.Office.Interop.Word.EmailSignatureEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" />对象的方法<b></b>将电子邮件签名添加到 Word 中。</para>
+    <summary>对象的集合 <see cref="T:Microsoft.Office.Interop.Word.EmailSignatureEntry" /> ，该集合代表可用于 Microsoft Word 的所有电子邮件签名条目。</summary>
+    <remarks><para>使用 <see cref="P:Microsoft.Office.Interop.Word.EmailSignature.EmailSignatureEntries" /> 属性返回<b>EmailSignatureEntries</b>集合。 使用 <see cref="M:Microsoft.Office.Interop.Word.EmailSignatureEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> <b>EmailSignatureEntries</b>对象的方法将电子邮件签名添加到 Word 中。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,7 +32,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.EmailSignatureEntry Add (string Name, Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.EmailSignatureEntry Add([in]string Name, [in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.EmailSignatureEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Name As String, Range As Range) As EmailSignatureEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::EmailSignatureEntry ^ Add(System::String ^ Name, Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * Microsoft.Office.Interop.Word.Range -&gt; Microsoft.Office.Interop.Word.EmailSignatureEntry" Usage="emailSignatureEntries.Add (Name, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,9 +55,9 @@
       <Docs>
         <param name="Name">必需的 <b>字符串</b> 。 电子邮件项的名称。</param>
         <param name="Range">必需的<b>Range</b>对象。 作为签名添加到文档中的区域。</param>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.EmailSignatureEntry" />对象, 表示一个新的电子邮件签名条目。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.EmailSignatureEntry" /> 对象，表示一个新的电子邮件签名条目。</summary>
         <returns>To be added.</returns>
-        <remarks><para>电子邮件签名是结束电子邮件，例如您的姓名和电话号码的标准文本。 使用<see cref="P:Microsoft.Office.Interop.Word.EmailSignature.EmailSignatureEntries" />属性可创建和管理 Microsoft Word 在创建电子邮件时将使用的一组电子邮件签名。</para>
+        <remarks><para>电子邮件签名是结束电子邮件，例如您的姓名和电话号码的标准文本。 使用 <see cref="P:Microsoft.Office.Interop.Word.EmailSignature.EmailSignatureEntries" /> 属性可创建和管理 Microsoft Word 在创建电子邮件时将使用的一组电子邮件签名。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.EmailSignatureEntries.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.EmailSignatureEntries.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -81,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.EmailSignatureEntries.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.EmailSignatureEntries.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.EmailSignatureEntries.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.EmailSignatureEntries.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -139,8 +145,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.EmailSignatureEntries.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="emailSignatureEntries.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.EmailSignatureEntries.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As EmailSignatureEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::EmailSignatureEntry ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::EmailSignatureEntry ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.EmailSignatureEntry" Usage="Microsoft.Office.Interop.Word.EmailSignatureEntries.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -199,10 +207,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.EmailSignatureEntry</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">一个指示序号位置的<b>对象</b>, 或表示单个对象的名称的字符串。</param>
+        <param name="Index">一个指示序号位置的<b>对象</b>，或表示单个对象的名称的字符串。</param>
         <summary>返回集合中的单个对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -214,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.EmailSignatureEntries.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.EmailSignatureEntries.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

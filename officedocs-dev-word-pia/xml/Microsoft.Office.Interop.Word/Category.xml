@@ -1,9 +1,10 @@
 <Type Name="Category" FullName="Microsoft.Office.Interop.Word.Category">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d4ebcc53d5d821839f9a81aad950abc6d855e17c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142325" /></Metadata><TypeSignature Language="C#" Value="public interface Category" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="883c2eac5cea806181d3d69a9e45bac152fb16b6" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922533" /></Metadata><TypeSignature Language="C#" Value="public interface Category" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Category" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Category" />
   <TypeSignature Language="VB.NET" Value="Public Interface Category" />
   <TypeSignature Language="C++ CLI" Value="public interface class Category" />
+  <TypeSignature Language="F#" Value="type Category = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,10 +20,10 @@
   </Attributes>
   <Docs>
     <summary>代表构建基块类型的各个类别。</summary>
-    <remarks><para>Microsoft Office Word 使用类型和类别来组织构建基块。 每个构建基块类型由一个<see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" />常量表示。 每个类别都是用户定义的唯一字符串。 Word 附带有两个已定义的类别: "常规" 和 "自定义";您可以根据需要创建其他类别。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Category.Type" />属性可访问与特定类别相关联的构建基块类型。  使用<see cref="P:Microsoft.Office.Interop.Word.Category.BuildingBlocks" />属性可访问类别的构建基块的集合。 </para>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Word.Categories" />集合<see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" />的方法访问现有类别;若要创建新类别, 请使用<see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />集合的方法。 设置<paramref name="Category" />参数的值。 </para>
-      <para>有关构建基块的详细信息, 请参阅<a href="HV10120827">处理构建基块</a></para>
+    <remarks><para>Microsoft Office Word 使用类型和类别来组织构建基块。 每个构建基块类型由一个 <see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /> 常量表示。 每个类别都是用户定义的唯一字符串。 Word 附带有两个已定义的类别： "常规" 和 "自定义";您可以根据需要创建其他类别。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.Category.Type" /> 属性可访问与特定类别相关联的构建基块类型。  使用 <see cref="P:Microsoft.Office.Interop.Word.Category.BuildingBlocks" /> 属性可访问类别的构建基块的集合。 </para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> 集合的方法 <see cref="T:Microsoft.Office.Interop.Word.Categories" /> 访问现有类别; 若要创建新类别，请使用集合的 <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> 方法 <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> 。 设置参数的值 <paramref name="Category" /> 。 </para>
+      <para>有关构建基块的详细信息，请参阅<a href="HV10120827">处理构建基块</a></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Category.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Category.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 对象，表示 Microsoft Word 应用程序。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Category.BuildingBlocks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuildingBlocks As BuildingBlocks" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlocks ^ BuildingBlocks { Microsoft::Office::Interop::Word::BuildingBlocks ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuildingBlocks : Microsoft.Office.Interop.Word.BuildingBlocks" Usage="Microsoft.Office.Interop.Word.Category.BuildingBlocks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Category.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Category.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -109,7 +113,7 @@
         <value><b>Integer</b></value>
         <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注意</b>: 此值还可由常量<b>wdcreatorcode 表示</b>表示。</para>
+            <b>注意</b>：此值还可由常量<b>wdcreatorcode 表示</b>表示。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Category.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Category.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Category.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Category.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Category.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Category.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Category.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As BuildingBlockType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlockType ^ Type { Microsoft::Office::Interop::Word::BuildingBlockType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.BuildingBlockType" Usage="Microsoft.Office.Interop.Word.Category.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

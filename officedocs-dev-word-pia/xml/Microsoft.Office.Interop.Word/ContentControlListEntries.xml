@@ -1,9 +1,10 @@
 <Type Name="ContentControlListEntries" FullName="Microsoft.Office.Interop.Word.ContentControlListEntries">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2a65daa51ebf37c0bb3b93d5a9f9094e1b8a6931" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147282" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControlListEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="80199e98cb445946aac46466d92663f143a80fca" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922302" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControlListEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControlListEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControlListEntries&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class ContentControlListEntries : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ContentControlListEntries = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,10 +23,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />集合包含<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />表示下拉列表或组合框内容控件中的项的对象。</summary>
-    <remarks><para>使用<see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" />方法可将项添加到下拉列表或组合框中。 </para>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Word.ContentControl" />对象<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" />的方法或<see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" />属性访问集合中的单个列表项。 </para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Clear" />方法可从下拉列表或组合框中删除所有项。 下面的示例清除活动文档中第一个内容控件中的所有项目。</para>
+    <summary><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />集合包含 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> 表示下拉列表或组合框内容控件中的项的对象。</summary>
+    <remarks><para>使用 <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" /> 方法可将项添加到下拉列表或组合框中。 </para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" /> 对象的方法或 <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> 属性 <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> 访问集合中的单个列表项。 </para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Clear" /> 方法可从下拉列表或组合框中删除所有项。 下面的示例清除活动文档中第一个内容控件中的所有项目。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ContentControlListEntry Add([in]string Text, [in]string Value, [in]int32 Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Text As String, Optional Value As String = &quot;&quot;, Optional Index As Integer = 0) As ContentControlListEntry" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string * int -&gt; Microsoft.Office.Interop.Word.ContentControlListEntry" Usage="contentControlListEntries.Add (Text, Value, Index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -53,10 +55,10 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Text">指定列表项的显示文本。 与<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />对象的<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />属性相对应。</param>
-        <param name="Value">指定列表项的值。  与<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />对象的<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />属性相对应。 如果省略, 则<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" />属性等于<see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" />属性。</param>
+        <param name="Text">指定列表项的显示文本。 与对象的 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> 属性相对应 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> 。</param>
+        <param name="Value">指定列表项的值。  与对象的 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> 属性相对应 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> 。 如果省略，则 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> 属性等于 <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> 属性。</param>
         <param name="Index">指定新项在列表中的序号位置。如果在指定的位置已有某项，则该现有项将在列表中下移。如果省略它，则新项将添加到列表的末尾。</param>
-        <summary>将新的列表项添加到下拉列表或组合框内容控件中, 并返回一个<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />对象。</summary>
+        <summary>将新的列表项添加到下拉列表或组合框内容控件中，并返回一个 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> 对象。</summary>
         <returns><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /></returns>
         <remarks><para>[!注释] 列表中的项必须具有唯一的显示名称。  尝试添加已存在的列表项将引发运行时错误。</para>
           <para> </para></remarks>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ContentControlListEntries.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -85,7 +88,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word._Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word._Application" /> 对象，表示 Microsoft Word 应用程序。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit" Usage="contentControlListEntries.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.ContentControlListEntries.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -138,7 +143,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />集合中项的数目。 只读。</summary>
+        <summary>返回集合中项的数目 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> 。 只读。</summary>
         <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ContentControlListEntries.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,7 +176,7 @@
         <value><b>Integer</b></value>
         <remarks><para>如果在 Microsoft Word 中创建对象， <b>创建者</b> 属性返回的十六进制数是 4d535744，它表示字符串"MSWD"。  此属性主要用于在 Macintosh 上，其中每个应用程序都有一个四字符创建者代码中使用。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para>
-            <b>注意</b>: 此值还可以由常量<see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />表示。</para>
+            <b>注意</b>：此值还可以由常量表示 <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -180,6 +186,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControlListEntries.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="contentControlListEntries.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As ContentControlListEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ContentControlListEntry ^ default[int] { Microsoft::Office::Interop::Word::ContentControlListEntry ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.ContentControlListEntry" Usage="Microsoft.Office.Interop.Word.ContentControlListEntries.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ContentControlListEntries.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -261,7 +270,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回指定<see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />对象的父对象。</summary>
+        <summary>返回指定对象的父对象 <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> 。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>

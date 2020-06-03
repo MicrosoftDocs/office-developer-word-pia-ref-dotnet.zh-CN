@@ -1,9 +1,10 @@
 <Type Name="Language" FullName="Microsoft.Office.Interop.Word.Language">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="6a420e980d31a95af3eadfbd098d98e9a7886930" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146659" /></Metadata><TypeSignature Language="C#" Value="public interface Language" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9fe8c1156f3d3ac7c1a8824b329e4d3e5775e2c1" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923918" /></Metadata><TypeSignature Language="C#" Value="public interface Language" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Language" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Language" />
   <TypeSignature Language="VB.NET" Value="Public Interface Language" />
   <TypeSignature Language="C++ CLI" Value="public interface class Language" />
+  <TypeSignature Language="F#" Value="type Language = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,13 +20,13 @@
   </Attributes>
   <Docs>
     <summary>表示用于校对或设置格式在 Microsoft Word 中的语言。</summary>
-    <remarks><para><b>语言</b>对象是<see cref="T:Microsoft.Office.Interop.Word.Languages" />集合的一个成员。</para>
-      <para>使用<b>语言</b>(<paramref name="index" />) 返回单个<b>语言</b>对象, 其中<paramref name="index" />可以是<see cref="P:Microsoft.Office.Interop.Word.Language.Name" />属性的值、 <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />属性的值、 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一或<see cref="T:Microsoft.Office.Core.MsoLanguageID" />常量之一。</para>
-      <para>该<see cref="P:Microsoft.Office.Interop.Word.Language.Name" />属性返回语言的名称, 而<see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" />属性以用户语言返回语言的名称。</para>
-      <para>对于安装了校对工具的每种语言, 您<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />可以使用、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />和<see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />属性来返回相应<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />的对象。</para>
-      <para>写作风格是用语法检查器的规则集。 该<see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" />属性返回一个字符串数组, 这些字符串代表指定语言的可用写作风格。</para>
-      <para>使用<see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" />属性可设置希望 Word 使用的默认写作风格。</para>
-      <para>您可以使用<see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" />属性替代默认的写作风格。 此属性应用于指定的文档中以指定语言标记的文本。</para>
+    <remarks><para><b>语言</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.Languages" /> 。</para>
+      <para>使用<b>语言</b>（ <paramref name="index" /> ）返回单个<b>语言</b>对象，其中 <paramref name="index" /> 可以是属性的值、 <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> 属性的值 <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> 、 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> 常量之一或 <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> 常量之一。</para>
+      <para>该 <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> 属性返回语言的名称，而 <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> 属性以用户语言返回语言的名称。</para>
+      <para>对于安装了校对工具的每种语言，您可以使用 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" /> 、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> 、 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" /> 和 <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> 属性来返回相应的 <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> 对象。</para>
+      <para>写作风格是用语法检查器的规则集。 该 <see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" /> 属性返回一个字符串数组，这些字符串代表指定语言的可用写作风格。</para>
+      <para>使用 <see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" /> 属性可设置希望 Word 使用的默认写作风格。</para>
+      <para>您可以使用属性替代默认的写作风格 <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> 。 此属性应用于指定的文档中以指定语言标记的文本。</para>
       <para>[!注释] 必须为待检查的每种语言安装校对工具。</para>
       <para>如果将标记为 <b>wdNoProofing</b> 的文本时，Word 会被标记的文本跳过运行拼写和语法检查。</para>
       <para> </para></remarks>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveGrammarDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveGrammarDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveGrammarDictionary : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,9 +56,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象, 表示指定语言的活动语法词典。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> 对象，表示指定语言的活动语法词典。</summary>
         <value>To be added.</value>
-        <remarks><para>如果没有安装指定语言的语法词典, 则此属性将返回<b>Nothing</b>。</para>
+        <remarks><para>如果没有安装指定语言的语法词典，则此属性将返回<b>Nothing</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveHyphenationDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveHyphenationDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveHyphenationDictionary : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -83,9 +86,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象, 表示指定语言的活动断字词典。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> 对象，表示指定语言的活动断字词典。</summary>
         <value>To be added.</value>
-        <remarks><para>如果没有安装指定语言的断字词典, 则此属性返回<b>Nothing</b>。</para>
+        <remarks><para>如果没有安装指定语言的断字词典，则此属性返回<b>Nothing</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveSpellingDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveSpellingDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveSpellingDictionary : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -112,9 +116,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Dictionary" />对象, 表示指定语言的活动拼写词典。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> 对象，表示指定语言的活动拼写词典。</summary>
         <value>To be added.</value>
-        <remarks><para>如果没有安装指定语言的拼写词典, 则此属性将返回<b>Nothing</b>。</para>
+        <remarks><para>如果没有安装指定语言的拼写词典，则此属性将返回<b>Nothing</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveThesaurusDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveThesaurusDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveThesaurusDictionary : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,9 +146,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object 类型的对象, 该对象代表指定语言的活动同义词词典。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object 类型的对象，该对象代表指定语言的活动同义词词典。</summary>
         <value>To be added.</value>
-        <remarks><para>如果没有安装指定语言的同义词库词典, 则此属性将返回<b>Nothing</b>。</para>
+        <remarks><para>如果没有安装指定语言的同义词库词典，则此属性将返回<b>Nothing</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -153,6 +158,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Language.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -170,7 +176,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />代表 Microsoft Word 应用程序的对象。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 代表 Microsoft Word 应用程序的对象。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Language.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -200,8 +207,8 @@
       <Docs>
         <summary>返回一个 32 位整数，它指示在其中创建指定的对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultWritingStyle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultWritingStyle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultWritingStyle : string with get, set" Usage="Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -233,8 +241,8 @@
       <Docs>
         <summary>返回或设置默认的写作风格由用于指定的语言的语法检查器。 The name of the writing style is the localized name for the specified language.</summary>
         <value>To be added.</value>
-        <remarks><para>This property controls the global setting for the writing style. 设置该属性时, 必须使用 "工具" 菜单 "选项" 对话框中 "拼写&amp;语法" 选项卡上 "写作风格" 框中的确切名称。</para>
-          <para>该<see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" />属性设置文档中每种语言的写作风格。 <b>ActiveWritingStyle</b> 设置覆盖的 <b>DefaultWritingStyle</b> 设置。</para>
+        <remarks><para>This property controls the global setting for the writing style. 设置该属性时，必须使用 "工具" 菜单 "选项" 对话框中 "拼写语法" &amp; 选项卡上 "写作风格" 框中的确切名称。</para>
+          <para>该 <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> 属性设置文档中每种语言的写作风格。 <b>ActiveWritingStyle</b> 设置覆盖的 <b>DefaultWritingStyle</b> 设置。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID ID { Microsoft::Office::Interop::Word::WdLanguageID get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : Microsoft.Office.Interop.Word.WdLanguageID" Usage="Microsoft.Office.Interop.Word.Language.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -263,7 +272,7 @@
       <Docs>
         <summary>返回标识指定的语言的数字。</summary>
         <value>To be added.</value>
-        <remarks><para><b>ID</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />常量之一。</para>
+        <remarks><para><b>ID</b>属性可以是 <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> 常量之一。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -273,6 +282,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Language.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -301,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.NameLocal" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property NameLocal As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NameLocal : string" Usage="Microsoft.Office.Interop.Word.Language.NameLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -329,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Language.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -357,6 +369,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.SpellingDictionaryType" />
       <MemberSignature Language="VB.NET" Value="Public Property SpellingDictionaryType As WdDictionaryType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdDictionaryType SpellingDictionaryType { Microsoft::Office::Interop::Word::WdDictionaryType get(); void set(Microsoft::Office::Interop::Word::WdDictionaryType value); };" />
+      <MemberSignature Language="F#" Value="member this.SpellingDictionaryType : Microsoft.Office.Interop.Word.WdDictionaryType with get, set" Usage="Microsoft.Office.Interop.Word.Language.SpellingDictionaryType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -380,7 +393,7 @@
         <summary>返回或设置校对工具类型。 读/写。</summary>
         <value>To be added.</value>
         <remarks><para>您可以使用此属性将活动拼写词典更改为与 Microsoft Word 一起使用的可用加载项词典之一。 例如，可以用法律、医学和大型拼写词典来代替标准词典。</para>
-          <para><b>SpellingDictionaryType</b>属性可以是<see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" />常量之一。 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
+          <para><b>SpellingDictionaryType</b>属性可以是 <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> 常量之一。 由于选择或安装的语言支持（例如美国英语）不同，有些常量可能无法使用。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -390,6 +403,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WritingStyleList As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ WritingStyleList { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WritingStyleList : obj" Usage="Microsoft.Office.Interop.Word.Language.WritingStyleList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

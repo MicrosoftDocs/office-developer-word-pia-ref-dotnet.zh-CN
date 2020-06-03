@@ -1,9 +1,10 @@
 <Type Name="CaptionLabel" FullName="Microsoft.Office.Interop.Word.CaptionLabel">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9c27d8bb814948f3d36bbc6c5dfd5bf35bef5652" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142346" /></Metadata><TypeSignature Language="C#" Value="public interface CaptionLabel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="114a9baa2394c01710d40bcc6ff7478b57b67171" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="zh-CN" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922561" /></Metadata><TypeSignature Language="C#" Value="public interface CaptionLabel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CaptionLabel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CaptionLabel" />
   <TypeSignature Language="VB.NET" Value="Public Interface CaptionLabel" />
   <TypeSignature Language="C++ CLI" Value="public interface class CaptionLabel" />
+  <TypeSignature Language="F#" Value="type CaptionLabel = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,10 +20,10 @@
   </Attributes>
   <Docs>
     <summary>代表单个题注标签。</summary>
-    <remarks><para><b>CaptionLabel</b>对象是<see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" />集合的一个成员。 <b>CaptionLabels</b>集合中的项在 "标题" 对话框 ("插入" 菜单) 中的 "标签" 框中列出。</para>
-      <para>Use <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.CaptionLabels" />(<paramref name="index" />), 其中<paramref name="index" />是题注标签名称或索引号, 返回一个<b>CaptionLabel</b>对象。</para>
+    <remarks><para><b>CaptionLabel</b>对象是集合的一个成员 <see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" /> 。 <b>CaptionLabels</b>集合中的项在 "标题" 对话框（"插入" 菜单）中的 "标签" 框中列出。</para>
+      <para>Use <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.CaptionLabels" /> （ <paramref name="index" /> ），其中 <paramref name="index" /> 是题注标签名称或索引号，返回一个<b>CaptionLabel</b>对象。</para>
       <para>索引号代表 <b>CaptionLabels</b> 集合中的题注标签的位置。</para>
-      <para>使用<see cref="M:Microsoft.Office.Interop.Word.CaptionLabels.Add(System.String)" />方法添加自定义题注标签。</para>
+      <para>使用 <see cref="M:Microsoft.Office.Interop.Word.CaptionLabels.Add(System.String)" /> 方法添加自定义题注标签。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CaptionLabel.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.CaptionLabel.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -49,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个<see cref="T:Microsoft.Office.Interop.Word.Application" />对象, 表示 Microsoft Word 应用程序。</summary>
+        <summary>返回一个 <see cref="T:Microsoft.Office.Interop.Word.Application" /> 对象，表示 Microsoft Word 应用程序。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CaptionLabel.BuiltIn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuiltIn As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BuiltIn { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltIn : bool" Usage="Microsoft.Office.Interop.Word.CaptionLabel.BuiltIn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -77,9 +80,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值, 该值指示指定的对象是否是 Microsoft Word 中的内置样式或题注标签之一。</summary>
+        <summary>返回一个值，该值指示指定的对象是否是 Microsoft Word 中的内置样式或题注标签之一。</summary>
         <value>To be added.</value>
-        <remarks><para>您可以通过使用<see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" />常量或语言中的语言版本的 Word 的样式名称, 在所有语言中指定内置样式。 </para>
+        <remarks><para>您可以通过使用 <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> 常量或语言中的语言版本的 Word 的样式名称，在所有语言中指定内置样式。 </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CaptionLabel.ChapterStyleLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ChapterStyleLevel As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChapterStyleLevel { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ChapterStyleLevel : int with get, set" Usage="Microsoft.Office.Interop.Word.CaptionLabel.ChapterStyleLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -111,8 +115,8 @@
       <Docs>
         <summary>返回或设置指定的题注标签包含章节号时标记新章节的标题样式。</summary>
         <value>To be added.</value>
-        <remarks><para>返回的数字1对应于标题 1, 2 对应于标题 2, 依此类推。</para>
-          <para>若<see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.IncludeChapterNumber" />要将章节编号包含在题注标签中, 必须将该属性设置为<b>True</b> 。</para>
+        <remarks><para>返回的数字1对应于标题1，2对应于标题2，依此类推。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.IncludeChapterNumber" />若要将章节编号包含在题注标签中，必须将该属性设置为<b>True</b> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CaptionLabel.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.CaptionLabel.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -139,10 +144,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值, 该值指示在其中创建指定对象的应用程序。</summary>
+        <summary>返回一个值，该值指示在其中创建指定对象的应用程序。</summary>
         <value>To be added.</value>
-        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的, 则此属性返回十六进制数字是 4d535744, 表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
-          <para><b>Creator</b>属性主要用于在 Macintosh 上使用, 其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
+        <remarks><para>如果指定的对象是在 Microsoft Word 中创建的，则此属性返回十六进制数字是4d535744，表示字符串 "MSWD"。 [!注释] 此值还可以通过常量 <b>wdCreatorCode</b> 表示。</para>
+          <para><b>Creator</b>属性主要用于在 Macintosh 上使用，其中每个应用程序都有一个四字符创建者代码。 例如，Microsoft Word 提供了 MSWD 的创建者代码。 有关此属性的其他信息，请参阅语言参考 Microsoft Office Macintosh 版本所附带的帮助。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CaptionLabel.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="captionLabel.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -177,6 +183,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CaptionLabel.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As WdCaptionLabelID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdCaptionLabelID ID { Microsoft::Office::Interop::Word::WdCaptionLabelID get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : Microsoft.Office.Interop.Word.WdCaptionLabelID" Usage="Microsoft.Office.Interop.Word.CaptionLabel.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -194,7 +201,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCaptionLabelID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回一个值, 该值表示指定的题注标签的类型 (如果<see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.BuiltIn" /> <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" />对象的属性为<b>True</b>)。</summary>
+        <summary>返回一个值，该值表示指定的题注标签的类型（如果 <see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.BuiltIn" /> 对象的属性 <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" /> 为<b>True</b>）。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,6 +212,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CaptionLabel.IncludeChapterNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludeChapterNumber As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeChapterNumber { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IncludeChapterNumber : bool with get, set" Usage="Microsoft.Office.Interop.Word.CaptionLabel.IncludeChapterNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -225,7 +233,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值, 该值指示章节编号是否包含页码或题注标签。</summary>
+        <summary>返回或设置一个值，该值指示章节编号是否包含页码或题注标签。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -236,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CaptionLabel.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.CaptionLabel.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -264,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CaptionLabel.NumberStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberStyle As WdCaptionNumberStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdCaptionNumberStyle NumberStyle { Microsoft::Office::Interop::Word::WdCaptionNumberStyle get(); void set(Microsoft::Office::Interop::Word::WdCaptionNumberStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberStyle : Microsoft.Office.Interop.Word.WdCaptionNumberStyle with get, set" Usage="Microsoft.Office.Interop.Word.CaptionLabel.NumberStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -284,7 +294,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCaptionNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置<see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" />对象的编号样式。</summary>
+        <summary>返回或设置对象的编号样式 <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -295,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CaptionLabel.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.CaptionLabel.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -323,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CaptionLabel.Position" />
       <MemberSignature Language="VB.NET" Value="Public Property Position As WdCaptionPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdCaptionPosition Position { Microsoft::Office::Interop::Word::WdCaptionPosition get(); void set(Microsoft::Office::Interop::Word::WdCaptionPosition value); };" />
+      <MemberSignature Language="F#" Value="member this.Position : Microsoft.Office.Interop.Word.WdCaptionPosition with get, set" Usage="Microsoft.Office.Interop.Word.CaptionLabel.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -343,7 +355,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCaptionPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值, 该值指示题注标签文本的位置。</summary>
+        <summary>返回或设置一个值，该值指示题注标签文本的位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -354,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CaptionLabel.Separator" />
       <MemberSignature Language="VB.NET" Value="Public Property Separator As WdSeparatorType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdSeparatorType Separator { Microsoft::Office::Interop::Word::WdSeparatorType get(); void set(Microsoft::Office::Interop::Word::WdSeparatorType value); };" />
+      <MemberSignature Language="F#" Value="member this.Separator : Microsoft.Office.Interop.Word.WdSeparatorType with get, set" Usage="Microsoft.Office.Interop.Word.CaptionLabel.Separator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -374,7 +387,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSeparatorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返回或设置一个值, 该值指示章节编号和序列号之间的字符。</summary>
+        <summary>返回或设置一个值，该值指示章节编号和序列号之间的字符。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
